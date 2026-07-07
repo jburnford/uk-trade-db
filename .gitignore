@@ -1,0 +1,11 @@
+# source corpora + database: too large for git, obtainable/regenerable
+raw/
+raw_infinity/
+pdfs/
+db/
+page_cache/
+__pycache__/
+*.pyc
+# giant generated review artifacts (regenerate: grade_country.py, locate_review_pages.py)
+reports/country_review_queue.csv
+reports/review_pages.json
