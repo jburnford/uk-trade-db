@@ -1,196 +1,185 @@
 # UK Trade Database (Annual Statements + Trade & Navigation Accounts)
 
 Relational database of UK imports/exports by article, country, and year,
-built from Chandra-OCR'd parliamentary trade statistics, 1868–1900.
+built from double-keyed OCR of parliamentary trade statistics, 1868–1900.
 Companion to the Timber Trades Journal shipment microdata
-(`~/timber_data`).
+([timber-data](https://github.com/jburnford/timber-data), which consumes
+`exports/wood_country_year.csv` for its Canada triangulation).
 
 ## Sources
 
-- `raw/as_1872 … as_1898`: Annual Statements of Trade (27 volumes,
-  Chandra OCR, ~290–1,000 pp each). Abstract tables carry 5-year
-  comparatives → effective coverage 1868–1898.
-- `raw/tn_1871, tn_1872, tn_1895, tn_1899, tn_1900`: monthly Accounts of
-  Trade & Navigation (comparative columns → 1869–1900, monthly resolution).
-- Double-key: Infinity-Parser2-Pro FP8 runs on the same PDFs
-  (`nibi:~/projects/def-jic823/infinity/output/trade_db/`, jobs in
-  `infinity/trade_jobs.tsv`) for cell-level reconciliation.
+- `raw/as_1872 … as_1899`: Annual Statements of Trade (28 volumes, Chandra
+  OCR, ~290–1,000 pp each). Abstract tables carry 5-year comparatives →
+  effective national-total coverage 1866–1900.
+- `raw/tn_1871, tn_1872, tn_1895, tn_1899, tn_1900, tn_1901`: Accounts of
+  Trade & Navigation. **Publication-year naming**: tn_1901 holds trade of
+  1893–1900; tn_1871's comparative columns are the *only* source for
+  1866–1867 (single-keyed — treat those years as advisory).
+- Double key: Infinity-Parser2-Pro FP8 runs on the same PDFs, parsed by the
+  same parser (`parse_infinity.py` rebuilds a pseudo-markdown stream) for
+  cell-level reconciliation.
+- Gold benchmark: London's Ghost Acres British Imports 1856–1906
+  (quinquennial, hand-keyed, by country) — external truth at
+  1866/1871/1876/1881/1886/1891/1896.
+
+## Repository layout
+
+Committed: `scripts/`, `reference/` (authorities + human merges),
+`reports/` (validation scorecards), `exports/` (analysis-ready CSVs).
+Gitignored (2 GB+, regenerable or distributed separately): `raw/`,
+`raw_infinity/`, `pdfs/`, `db/uk_trade.duckdb`, `page_cache/`, and the two
+giant generated review artifacts (`reports/country_review_queue.csv`,
+`reports/review_pages.json`).
 
 ## Pipeline
 
 ```
-scripts/parse_abstract.py       markdown -> abstract_obs (DuckDB)
-scripts/parse_infinity.py       Infinity result.json -> infinity_obs
-                                (same parser, pseudo-markdown stream)
-scripts/parse_country.py        Tier 2 country sections -> country_obs
-scripts/build_dimensions.py     stable IDs: commodity + country + aliases
-scripts/reconcile.py            cross-engine cell matching + consensus
-                                table with A/B/C confidence tiers
-scripts/validate_gold_tiers.py  consensus vs hand-keyed gold DB, by tier
-scripts/validate_internal.py    printed group subtotals vs member sums
-scripts/validate_country.py     country-block sums vs printed totals;
-                                wood x country vs gold decennial
-scripts/validate_series.py      cross-volume disagreement + neighbour-jump
-                                outliers -> reports/validation_flags.csv
+parse_abstract.py            markdown -> abstract_obs        (Tier 1)
+parse_infinity.py            Infinity key -> infinity_obs
+parse_country.py             country sections -> country_obs (Tier 2)
+parse_country_infinity.py    Infinity key -> country_obs_inf
+parse_twoup.py / parse_runin.py   recovery parsers for layouts the main
+                             parser skips (feed integrate_sources gap-fill)
+build_dimensions.py          stable IDs: commodity + country + aliases
+reconcile.py                 Tier-1 cross-engine consensus (A/B/C tiers)
+reconcile_country.py         Tier-2 block arbitration -> country_consensus
+repair_country_as_article.py phantom-region repair (see Quality stages)
+anchor_tier1.py              cross-tier corroboration vs voted T1 totals
+grade_country.py             magnitude-lens grades -> country_graded
+rescore_value.py             value-as-signal price check -> country_rescored
+vote_country_years.py        cross-volume voting -> country_year_consensus
+integrate_sources.py         consensus + twoup + runin -> country_year_final
+map_wood_commodities.py      wood label crosswalk -> exports/wood_*
+wood_voted_series.py         price-aware wood series (reads country_rescored)
+build_usability_table.py     per-commodity trust grades vs gold
+validate_gold*.py, validate_internal/country/series.py   validation suite
 ```
 
-Database: `db/uk_trade.duckdb`
-- `abstract_obs(volume, flow, measure, article_group, article, unit, year,
-  value, raw_unparsed, row_seq)` — one row per printed cell; the same
-  statistical year appears in up to 5 volumes (kept for reconciliation).
-- `commodity(commodity_id, label, first_year, last_year, n_obs)` — slug IDs
-  derived from normalized text (stable across re-parses).
-- `commodity_alias(article_group, article, commodity_id)` + human merges in
-  `reference/commodity_merges.csv` (alias_id,canonical_id).
-- `country` / `country_alias` — schema ready, populated by Tier 2.
+Database: `db/uk_trade.duckdb`. Analysis tables: `consensus` (Tier-1
+national totals, cross-volume voted), `country_rescored` (Tier-2 member
+rows + grades + price verdicts), `country_year_final` (integrated
+commodity × country × year). Flows: `import`, `export_uk`, `reexport`.
 
-Flows: `import`, `export_uk` (UK produce), `reexport` (foreign & colonial).
-Measures: `quantity` (unit column), `value` (GBP).
+## Quality stages (2026-07-05/06)
 
-## Validation status (2026-07-03)
+Applied in order after reconciliation; every stage was gold-checked before
+being kept (numeric reproduction held at 85% throughout — these move
+*confidence*, not values):
 
-- Wood & timber totals match the hand-built decennial Full British Imports
-  DB **digit-perfect** at 1871, 1881, 1891.
-- 24,451 year-cells with multi-volume observations; 22.5% disagree —
-  inflated by known issue #2 below; reconcile after Infinity pass.
-- Neighbour-jump detector flags 57 wild outliers (mostly the port-table
-  leak, plus genuine digit slips).
+1. **Colonial sub-entry recovery** (vote_country_years): nested
+   `Region : Sub` rows (`British East Indies : Ceylon`) were dropped
+   wholesale, losing e.g. ~70% of tea. Re-admitted under three gates:
+   parent-row detection **global across volumes and duty tags**, garbage
+   filter, and a grand-total shortfall gate (printed grand TOTAL sourced
+   from the raw parse — the reconciler keeps only one TOTAL per block).
+   Tea 1891: 0.27× gold → 1.00×; wool unchanged at 1.00×.
+2. **Printed-subtotal unfiling** (integrate_sources): "Total from Foreign
+   Countries / British Possessions" rows leaked from the two-up gap-fill
+   parser and were summed as countries (407 rows, ~200 commodity-years).
+   Detail-aware: dropped when matching detail exists, retained as one
+   aggregate bucket when the subtotal is the only carrier of that volume.
+3. **Value-as-signal rescore** (rescore_value): quantity and value are two
+   independently printed numbers; a cell whose unit price sits in its
+   series' band (market-shock robust, asymmetric verdicts) is corroborated
+   without OCR agreement. Wired into voting and the wood series: 75.5k
+   cells carry price corroboration as their verification; 8.7k flagged
+   likely digit-slips head the review queue.
+4. **Cross-tier anchoring** (anchor_tier1): a Tier-2 block whose member-sum
+   equals the multi-volume-voted Tier-1 total is corroborated by other
+   volumes' printings — the independent check once-printed country triples
+   otherwise never get. Exact integer match → `t1_anchor` (A-logic, 548
+   blocks); within 1% → `t1_near` (B, ~2.5k blocks).
+5. **Country-as-article repair** (repair_country_as_article): region
+   headers promoted to phantom articles (`group='Fish', article='West
+   Africa', country='Gold Coast'` = Fish from West Africa : Gold Coast).
+   Frequency-detected (plain-country or `Region : Sub`-parent usage, ≥3
+   groups — protects Turkey/Guinea), 9 phantoms, **53,989 rows (13% of the
+   corpus) refiled**.
+6. **Group authority applied** (repair_groups → vote_country_years): the
+   parser's sticky group state scatters commodities across bogus groups
+   (wine articles under TEA, Raisins under CARDS PLAYING); bucket keys and
+   output labels now use the cross-volume plurality group.
 
-## Reconciliation status (2026-07-04, evening pass)
+**Measured guardrails** (A/B against gold — do not redo): sig-token article
+keys and duty-agnostic vote keys both *over-merge* distinct series (gold
+reproduction 1231→1223 of 1456). Safe canonicalizations: group authority +
+unit aliasing (cwts/cuts→cwt). The late-era (as_1897–99) flagged mass is
+**key misalignment, not parsing** — the 5-year columns parse evenly
+(~15k rows/year/volume); a parser rewrite is not justified by the evidence.
 
-Infinity fleet complete (34/34 volumes; 5 malformed result.json salvaged at
-the element level). Both keys parsed by the SAME parser (parse_infinity.py
-rebuilds a pseudo-markdown stream).
+## Validation status (2026-07-06)
 
-Cell-level: 118,983 cells matched across engines (multi-pass matcher:
-exact, unit-token-stripped, article-only within table family, group-glued
-variants — each fallback pass requires an unambiguous 1:1 candidate),
-87.7% verified identical. Consensus (51,268 series-years): **tier A 50.9%,
-B 31.4%, C 17.6%** (was 26.3/39.6/34.1 before the matcher + parser fixes).
-Gold check by tier: A 95.1% exact — the residue is dominated by known
-gold-side transcription slips (Lard 1871, Galls 1874, Madder Root 1873/77:
-all 5 printings x both engines unanimous against the gold value) and
-category-scope diffs (turpentine subcats, cutch) — B 85.1%, C 61.5%; the
-tiers stratify confidence correctly.
+- **Numeric fingerprint vs gold** (`validate_gold_numeric.py`,
+  name-independent: national total + largest origin must both match):
+  **85% of 1,456 substantive commodity-years reproduced at ±5%**
+  (92% at ±8%). Per year: 1876 84% · 1881 75% · 1886 82% · 1891 89% ·
+  1896 91%.
+- **Tier-1 vs gold incl. early anchors** (`validate_gold_tier1.py`):
+  1871 = 73% ok of comparable cells — same rate as the established
+  1876–1891 anchors (72–74%); 1866 = 61% but single-keyed (tn_1871 only);
+  1896 = 94% (late-era source prints gold's fine categories). Tiers
+  stratify out-of-sample: A 75% exact, B 70%, C 66%. `scope` (>2×) rows
+  are gold-vs-source *category granularity* (gold "Hams" vs source "Bacon
+  and Hams"), not misreads.
+- **Wood × country** vs the decennial gold DB: 26/26 matched cells exact;
+  wood quantities byte-identical through every quality stage above.
+- Cross-engine reality check: Chandra × Infinity exact agreement is ~27%
+  of blocks in 1872–84 but ~6% in 1885–96 and ~1.5% in 1897–99 — the
+  engines fail *correlatedly* on dense late layouts, which is why printed
+  block totals, T1 anchoring, and price corroboration carry the mid/late
+  era rather than a third OCR key.
 
-Parser fixes that drove the jump (2026-07-04): markdown-emphasis in late
-captions ("TOTAL **Quantities** of...") broke caption regexes and the
-sticky flow/measure mislabeled whole pages — asymmetrically across engines;
-ports/customs-duties/parcel-post table families now excluded (reset
-markers); content-based measure sanity check (quantity pages carry unit
-words/dittos, value pages none) with dash-cell collapse so both engines
-score alike.
+## Per-commodity usability (`exports/commodity_usability.csv`)
 
-## Tier 2: country detail (2026-07-04)
+Every gold-benchmarked commodity graded on two collision-resistant signals
+(`build_usability_table.py`; the name gate exists because a bare-total
+match is *not* collision-safe — Cotton Raw's total coincides with Barley,
+Sheep-skins, and Raisins):
 
-`scripts/parse_country.py` parses the GENERAL IMPORTS (free + subject-to-
-duty) and GENERAL EXPORTS (UK produce + foreign & colonial) country
-sections: article x country x (quantity, value) for the statement year,
-into `country_obs`. Two-up column layout, two-pass parse (pass 1 harvests
-country names so port-breakdown headers — "United States of America :" ->
-Atlantic/Pacific — aren't mistaken for sub-articles). Printed 'Total' rows
-kept (country_raw='TOTAL'); `validate_country.py` checks sum(countries) ==
-printed total per block and wood x country vs the decennial gold DB.
-`build_dimensions.py` populates `country`/`country_alias` (stable slugs;
-human merges in reference/country_merges.csv).
+- **TOTAL** — national total within ±5% of gold AND shares a name token.
+- **BY-COUNTRY** — total *and* largest origin both match (two independent
+  numbers).
 
-Tier 2 is double-keyed (2026-07-04 late pass): parse_country_infinity.py
-runs the same parser over the Infinity output -> country_obs_inf, and
-reconcile_country.py arbitrates block-by-block into **country_consensus**
-(the analysis table; country_obs is the raw Chandra key). Blocks pair by
-key then by content fingerprint (shared member values); a corpus-wide
-group/sub-name gazetteer (382 groups, 884 subs, harvested in pass 1)
-standardizes header classification across both engines. Per block+field
-the reconciler records how it resolved (q_block/v_block columns):
-exact | inf_struct (Infinity's self-consistent block adopted — Chandra
-broke the structure) | inf_block/swap (single-cell repair from the other
-engine) | anchor (members sum to the tier-A/B national total; the printed
-Total row was the misread) | digit_fix (total independently confirmed and
-exactly one member admits a one-digit change equal to the residual) |
-inf_only | nototal | flagged.
+Tiers SOLID / MOSTLY / MIXED / WEAK / SPARSE / UNVERIFIED per signal, with
+the reproduced-year lists (the tier is a summary; the year lists are the
+truth). Current tally (475 commodities): TOTAL 29 SOLID + 60 MOSTLY;
+BY-COUNTRY 28 + 59. WEAK means *unconfirmed against gold*, not proven
+wrong — often the origins are aggregated coarser than gold (Wool →
+"Australasia" vs gold's per-state split). `reports/commodity_usability.md`
+documents the method.
 
-Result (block arithmetic on country_consensus, 28,490 blocks): **57.2%
-exact, +15.8% within 2%, 27.0% flagged** (raw single key was 48.1 / 20.2 /
-31.7). Mid-era 1885-90: 68-73% exact; as_1897-99 still 45-64% flagged
-(changed layout, dedicated pass pending). Wood x country vs the decennial
-gold DB: 26/26 matched cells exact. 2,840 country IDs pre-merge.
-
-## Usability grades (grade_country.py -> country_graded)
-
-Every member row carries q_grade/v_grade under a MAGNITUDE-error lens
-(first-digit errors are fatal, small slips are not):
-  A — block passes printed-total arithmetic OR both engines independently
-      agree on the cell; first-digit error effectively impossible
-  B — block within 2% of its printed total and this cell isn't the
-      engine-disagreement suspect: small-error risk only
-  C — unverifiable (structural block + single-engine cell), engine-
-      disagreement suspects, series jumps >3x vs both neighbouring years,
-      or value above the 50M GBP plausibility ceiling (glued digits /
-      quantity landed in the value column — a shared-parser failure that
-      cross-engine agreement cannot catch)
-
-Corpus: A 73.2% of rows (53% of plausible GBP), B 3.0%, C 23.7% (44% of
-GBP — big articles have big multi-page blocks that break more often).
-Best era 1885-96: A 79% of rows / 75% of GBP. Wood imports: A 83% of
-rows / 73% of GBP. **Analyses should filter v_grade='A'** (add B for
-robustness checks). reports/country_review_queue.csv ranks grade-C rows
-by capped GBP value: the top 2,000 rows cover 76% of flagged exposure
-(~a day of human review); reports/review_queue_ranked.csv does the same
-for the 9.0k tier-C abstract series (top 1,500 = all >=1M exposure).
+**Rules for analysis**: filter `v_grade='A'` (add B for robustness); use a
+national series when TOTAL is SOLID/MOSTLY; use its by-country split only
+when BY-COUNTRY is too; never sum across units.
 
 ## Wood commodity crosswalk (map_wood_commodities.py)
 
-Timber article labels drift across the era (1870s ditto-depth subs
-'" " Fir' under 'Sawn or Split'; 1880s 'Sawn, Fir'; 1897+ 'Rough, Hewn,
-Sawn, or Split' CONSOLIDATION — kept as wood-rough-combined, a real
-category break, never merged into hewn or sawn). Parser now decodes
-ditto DEPTH (one token repeats the group, two repeat group+sub), 'From
-X:'/region headers open country contexts (not sub-articles), a country
-context refuses a Total >2x its members' sum (else the block total gets
-credited to one country), page-overlap duplicate blocks are fuzzily
-deduped, memberless grand-total blocks never adopt the other engine's
-members (foreign/British/grand printed splits), and orphan region
-sub-rows fold into their parent when OCR lost the parent row.
-
-reference/wood_commodity_map.csv: 71 label variants -> 13 canonical IDs
-(wood-hewn-fir/-oak/-teak/-unenumerated, wood-sawn-fir/-unenumerated,
-wood-staves, wood-lathwood, wood-mahogany, wood-furniture-hardwoods,
-wood-house-frames, wood-unenumerated, wood-rough-combined); rows marked
-'confirmed' survive regeneration; 17 variants (mostly bare 'Fir' and
-tiny 1880 leaks) in review. Stitched exports:
-- exports/wood_country_year.csv — canonical x origin x year x unit x
-  qty/value x grade (worst contributing row). Hewn-fir runs 1873-1898
-  for Canada/Russia/Sweden/Norway/France/USA, mostly grade A; sawn-fir
-  1877-1898 (~1M loads/yr Canada, grade A). Canada's decline is in
-  verified data: hewn 247k loads (1873) -> 69k (1898).
-- exports/wood_national_year.csv — Tier 1 totals x flow x measure with
-  confidence tiers.
-Continuity check: 32 >3x adjacent-year jumps among A/B cells corpus-wide,
-all plausibly genuine trade swings (Siam teak, US oak growth).
-
-## Validation status (2026-07-04 evening)
-
-- validate_gold_tiers.py: consensus vs gold by tier — A 95.1% exact
-  (~98% net of known gold-side slips), B 85.1%, C 61.5%.
-- validate_internal.py (now unit-aware + skips groups with unparsed
-  members): 857 subtotal checks, 58.8% exact; top residual mismatches are
-  two systematic layout quirks (as_1890 Corn group double-counts meal
-  lines; late-era "Goods manufactured/unmanufactured" catch-alls), all
-  flagged.
-- validate_series.py: multi-volume disagreement 20.7% (was 25.8%);
-  neighbour-jump outliers 171 (was 196); ports-leak gone.
-- validate_country.py: see Tier 2 section.
+`reference/wood_commodity_map.csv`: 71 label variants → 13 canonical IDs
+(hewn/sawn × species, staves, mahogany, the 1897+ "Rough, Hewn, Sawn, or
+Split" consolidation kept as its own category — a real break, never merged).
+Stitched exports: `exports/wood_country_year.csv` (canonical × origin ×
+year × unit × grade), `exports/wood_country_year_voted.csv` (cross-volume,
+price-aware), `exports/wood_wide/` (fixed country columns, 1872–1899 grid),
+`exports/wood_national_year.csv`. Canada's decline is in verified data:
+hewn 247k loads (1873) → 69k (1898); sawn holds ~1M loads/yr.
 
 ## Known issues / next steps
 
-1. Late-era country sections (as_1897-99) use a changed layout — block
-   arithmetic much weaker there (50-69% flagged); needs a dedicated pass.
-2. "AT PRINCIPAL PORTS" tables excluded; build their dedicated two-up
-   parser later (port-level dataset).
-3. Country/commodity crosswalk for the wood gold test (match breadth) and
-   commodity label drift (Madder Root vs Madder Root and Munjeet) —
-   candidates for reference/*_merges.csv, human review.
-4. Tier-C review queue now 9.0k (was 23.8k); targeted human review of the
-   residue.
-5. as_1890 Corn value-group and late-era "Goods" catch-all subtotal
-   layouts (validate_internal top offenders) unhandled.
+1. **Late-era key alignment** (as_1897–99): the remaining lever is
+   value-aware bucket matching (align singleton buckets across volumes by
+   value fingerprint before voting) — string loosening is ruled out by the
+   guardrail measurements above.
+2. **Targeted adjudication of the flagged residue**: ~33k flagged cells are
+   engine-*disagreement* (adjudicable from text + arithmetic context —
+   cheap); ~28k are correlated-agreement (only the page images in `pdfs/`
+   can arbitrate).
+3. **Human review**: `reports/country_review_queue.csv` (regenerate via
+   grade_country.py) ranks grade-C rows by capped GBP exposure — the top
+   2,000 rows cover ~76% of flagged value; price-flagged cells sort first.
+4. "AT PRINCIPAL PORTS" tables excluded; a dedicated two-up parser would
+   yield a port-level dataset.
+5. Known parser-level residue: tea 1883/1890 broken country blocks, the
+   1896 US-tea misread, as_1890 Corn value-group double-count, late-era
+   "Goods" catch-all subtotals.
+6. Gold 1901/1906 anchors need an as_1900/as_1901 or tn_1902 volume added
+   to the corpus (tn_1901 ends at trade-year 1900).
