@@ -1,0 +1,795 @@
+<title>UK Trade Coverage Explorer</title>
+<style>
+:root {
+  --paper: #FAF7F1; --ink: #22252C; --muted: #6B6459; --rule: #E2DCD0;
+  --panel: #F2EDE3; --accent: #33627F;
+  --r1: #1D4E6B; --r2: #4E85A8; --r3: #A9C6D8; --r3-edge: #4E85A8;
+  --m1: #A9C4D9; --m2: #7FA6C4; --m3: #4E85A8; --m4: #1D4E6B;
+  --ghost: #B9B0A2; --gold: #A07C2E;
+  --tip-bg: #22252C; --tip-ink: #FAF7F1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14171C; --ink: #E8E4DC; --muted: #9A938A; --rule: #2A2E36;
+    --panel: #1C2027; --accent: #7FAECD;
+    --r1: #8FC1E3; --r2: #5B8FB5; --r3: #33586F; --r3-edge: #5B8FB5;
+    --m1: #33586F; --m2: #4A7495; --m3: #5B8FB5; --m4: #8FC1E3;
+    --ghost: #4A4F58; --gold: #C9A85C;
+    --tip-bg: #E8E4DC; --tip-ink: #14171C;
+  }
+}
+:root[data-theme="light"] {
+  --paper: #FAF7F1; --ink: #22252C; --muted: #6B6459; --rule: #E2DCD0;
+  --panel: #F2EDE3; --accent: #33627F;
+  --r1: #1D4E6B; --r2: #4E85A8; --r3: #A9C6D8; --r3-edge: #4E85A8;
+  --m1: #A9C4D9; --m2: #7FA6C4; --m3: #4E85A8; --m4: #1D4E6B;
+  --ghost: #B9B0A2; --gold: #A07C2E;
+  --tip-bg: #22252C; --tip-ink: #FAF7F1;
+}
+:root[data-theme="dark"] {
+  --paper: #14171C; --ink: #E8E4DC; --muted: #9A938A; --rule: #2A2E36;
+  --panel: #1C2027; --accent: #7FAECD;
+  --r1: #8FC1E3; --r2: #5B8FB5; --r3: #33586F; --r3-edge: #5B8FB5;
+  --m1: #33586F; --m2: #4A7495; --m3: #5B8FB5; --m4: #8FC1E3;
+  --ghost: #4A4F58; --gold: #C9A85C;
+  --tip-bg: #E8E4DC; --tip-ink: #14171C;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  margin: 0; padding: 28px 20px 60px;
+}
+.wrap { max-width: 1100px; margin: 0 auto; }
+h1 {
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 28px; font-weight: 600; margin: 0 0 4px; text-wrap: balance;
+}
+h2 {
+  font-family: Georgia, serif; font-size: 19px; font-weight: 600;
+  margin: 34px 0 4px;
+}
+p.sub { color: var(--muted); margin: 0 0 18px; max-width: 72ch; }
+p.secnote { color: var(--muted); font-size: 13px; margin: 0 0 12px; max-width: 78ch; }
+.controls {
+  display: flex; flex-wrap: wrap; gap: 14px 18px; align-items: flex-end;
+  padding: 13px 16px; background: var(--panel); border: 1px solid var(--rule);
+  border-radius: 6px; margin-bottom: 8px;
+  position: sticky; top: 0; z-index: 10;
+}
+.ctl { display: flex; flex-direction: column; gap: 4px; }
+.ctl label {
+  font-size: 11px; letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--muted); font-weight: 600;
+}
+.ctl input, .ctl select {
+  font: 14px system-ui, sans-serif; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--rule);
+  border-radius: 4px; padding: 7px 9px;
+}
+.ctl input { width: 250px; }
+.ctl input:focus-visible, .ctl select:focus-visible, .seg button:focus-visible,
+.chip:focus-visible, .tbtn:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 1px;
+}
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 5px; overflow: hidden; }
+.seg button {
+  font: 13px system-ui, sans-serif; padding: 7px 13px; border: none; cursor: pointer;
+  background: var(--paper); color: var(--muted); border-left: 1px solid var(--rule);
+}
+.seg button:first-child { border-left: none; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--paper); font-weight: 600; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; max-width: 640px; }
+.chip {
+  font: 13px system-ui, sans-serif; padding: 5px 12px; cursor: pointer;
+  border: 1px solid var(--rule); border-radius: 14px;
+  background: var(--paper); color: var(--muted);
+}
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--paper); border-color: var(--accent); }
+.statline {
+  display: flex; flex-wrap: wrap; gap: 6px 26px; align-items: baseline;
+  margin: 12px 2px 4px; color: var(--muted); font-size: 13px;
+}
+.statline b { color: var(--ink); font-variant-numeric: tabular-nums; font-size: 15px; }
+.legend {
+  display: flex; flex-wrap: wrap; gap: 5px 20px; margin: 6px 2px 0;
+  font-size: 12.5px; color: var(--muted); align-items: center;
+}
+.legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1.5px; }
+.legend .ghost-sw { border: 1.5px dashed var(--ghost); background: transparent; }
+.legend .empty-sw { border: 1px solid var(--rule); background: transparent; }
+.legend .gold-sw { color: var(--gold); font-size: 11px; margin-right: 5px; }
+.ramp { display: inline-flex; margin-right: 6px; vertical-align: -1.5px; }
+.ramp i { width: 11px; height: 12px; display: inline-block; }
+.ramp i:first-child { border-radius: 3px 0 0 3px; }
+.ramp i:last-child { border-radius: 0 3px 3px 0; }
+#overview { display: block; width: 100%; height: auto; }
+#matrixhead { position: relative; height: 34px; }
+#matrixwrap {
+  max-height: 62vh; overflow-y: auto; border: 1px solid var(--rule);
+  border-radius: 6px; position: relative; background: var(--paper);
+}
+#matrixcanvases { position: relative; }
+#matrixcanvases canvas { display: block; cursor: pointer; }
+#chartbox, #ovbox { position: relative; }
+#charts svg { display: block; width: 100%; height: auto; }
+.panelcap {
+  font-family: Georgia, serif; font-size: 15px; margin: 20px 2px 0;
+  color: var(--muted);
+}
+.panelcap b { color: var(--ink); font-weight: 600; }
+figure { margin: 0; }
+figcaption { font-family: Georgia, serif; font-size: 19px; margin: 14px 2px 2px; }
+figcaption .cty { color: var(--muted); font-style: italic; }
+.tip {
+  position: absolute; pointer-events: none; display: none; z-index: 20;
+  background: var(--tip-bg); color: var(--tip-ink); border-radius: 5px;
+  padding: 7px 10px; font-size: 12.5px; line-height: 1.45; max-width: 260px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+.tip b { font-variant-numeric: tabular-nums; }
+.tip .rk { opacity: 0.75; }
+.tbtn {
+  font: 12.5px system-ui, sans-serif; margin-top: 14px; cursor: pointer;
+  background: none; border: 1px solid var(--rule); border-radius: 4px;
+  color: var(--muted); padding: 5px 12px;
+}
+#tblwrap { overflow-x: auto; margin-top: 10px; }
+table { border-collapse: collapse; font-size: 13px; min-width: 480px; }
+th, td { text-align: right; padding: 4px 14px 4px 0; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
+th { color: var(--muted); font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; }
+td:first-child, th:first-child, td:last-child, th:last-child { text-align: left; }
+.note { color: var(--muted); font-size: 13px; max-width: 76ch; margin-top: 26px; border-top: 1px solid var(--rule); padding-top: 14px; }
+.note code { font-family: ui-monospace, monospace; font-size: 12px; background: var(--panel); padding: 1px 5px; border-radius: 3px; }
+@media (prefers-reduced-motion: no-preference) {
+  #charts path.bar { transition: opacity 0.15s; }
+}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>UK Trade Coverage Explorer, 1866&ndash;1900</h1>
+  <p class="sub">Every import cell in the database, from double-keyed OCR of the
+  Annual Statements of Trade. <b>Each distinct commodity is its own series</b> —
+  labels merge only when they are the same words reordered or OCR-mangled
+  (&ldquo;Sheep and Lambs&rsquo; Wool&rdquo; &equiv; &ldquo;Wool &mdash; Sheep and
+  Lambs&rsquo;&rdquo;), never across real category lines (goats&rsquo; wool stays
+  separate from sheep&rsquo;s). Each commodity opens on its national total
+  (Tier-1 voted, 1866&ndash;1900); pick an origin for by-country detail
+  (1872&ndash;1899). The source also changed its category boundaries over time
+  (&ldquo;Butter and Butterine&rdquo; 1878&ndash;84, split thereafter) — such
+  related series are offered as labelled chips you can append deliberately,
+  never merged for you.</p>
+</header>
+
+<div class="controls">
+  <div class="ctl">
+    <label id="seglab">Include ranks</label>
+    <div class="seg" role="group" aria-labelledby="seglab" id="seg">
+      <button data-t="1" aria-pressed="false">1 only</button>
+      <button data-t="2" aria-pressed="true">1&ndash;2</button>
+      <button data-t="3" aria-pressed="false">1&ndash;3 (all)</button>
+    </div>
+  </div>
+  <div class="ctl">
+    <label for="search">Filter commodities</label>
+    <input id="search" type="search" placeholder="e.g. gutta, wood, tea&hellip;" autocomplete="off" spellcheck="false">
+  </div>
+  <div class="ctl">
+    <label for="sortsel">Sort commodities by</label>
+    <select id="sortsel">
+      <option value="value" selected>Trade value (largest first)</option>
+      <option value="alpha">Name (A&ndash;Z)</option>
+      <option value="cov">Coverage at threshold</option>
+    </select>
+  </div>
+</div>
+
+<h2>The whole corpus, year by year</h2>
+<p class="secnote">Cells per year by quality rank. Ranks above your threshold show as
+dashed ghosts &mdash; visible, but excluded from analysis.</p>
+<div id="ovbox">
+  <svg id="overview" role="img" aria-label="Stacked bars of database cells per year by quality rank"></svg>
+  <div class="tip" id="ovtip"></div>
+</div>
+<div class="legend">
+  <span><span class="sw" style="background:var(--r1)"></span>Rank 1 &mdash; printed in &ge;2 volumes, agreeing</span>
+  <span><span class="sw" style="background:var(--r2)"></span>Rank 2 &mdash; verified single printing</span>
+  <span><span class="sw" style="background:var(--r3);border:1px solid var(--r3-edge)"></span>Rank 3 &mdash; unverified</span>
+  <span><span class="sw ghost-sw"></span>excluded by threshold</span>
+  <span><span class="gold-sw">&#9670;</span>gold benchmark year</span>
+</div>
+
+<h2>Coverage map &mdash; every commodity</h2>
+<p class="secnote">Each row is a commodity, each column a year. Shade = share of
+that family&rsquo;s cells passing the threshold. Click any row to inspect it below.</p>
+<div class="legend" style="margin-bottom:8px">
+  <span><span class="ramp"><i style="background:var(--m1)"></i><i style="background:var(--m2)"></i><i style="background:var(--m3)"></i><i style="background:var(--m4)"></i></span>share of cells passing (25&ndash;100%)</span>
+  <span><span class="sw ghost-sw"></span>data exists, none passes</span>
+  <span><span class="sw empty-sw"></span>no parsed cell</span>
+</div>
+<div id="matrixhead"></div>
+<div id="matrixwrap">
+  <div id="matrixcanvases"></div>
+  <div class="tip" id="mtip"></div>
+</div>
+<div class="statline" id="mstats"></div>
+
+<h2 id="detailhead">Inspect a commodity</h2>
+<div class="controls" style="position:static">
+  <div class="ctl">
+    <label for="country">Series (national total or origin country)</label>
+    <select id="country"></select>
+  </div>
+  <div class="ctl">
+    <label id="unitlab">Unit</label>
+    <div class="chips" id="unitchips" role="group" aria-labelledby="unitlab"></div>
+  </div>
+  <div class="ctl">
+    <label id="varlab">Related series (append deliberately &mdash; spans shown)</label>
+    <div class="chips" id="varchips" role="group" aria-labelledby="varlab"></div>
+  </div>
+</div>
+
+<figure>
+  <figcaption id="cap"></figcaption>
+  <div class="statline" id="stats"></div>
+  <div id="chartbox">
+    <div id="charts"></div>
+    <div class="tip" id="tip"></div>
+  </div>
+</figure>
+
+<button class="tbtn" id="tgl" aria-expanded="false">Show data table</button>
+<div id="tblwrap" hidden></div>
+
+<p class="note">Rank 2 means the cell is corroborated without a second printing: its
+country block sums to the printed annual total on the page, both OCR engines read the
+same digits, or its unit price sits in the series band. Rank 3 has no proof. A missing
+year-cell means the parse lost it (e.g. Gutta Percha 1873: the country rows were read
+but the quantity column came back empty) or the source didn&rsquo;t enumerate the
+commodity separately that year. Reproduce any view in SQL against
+<code>country_year_final</code>: <code>WHERE q_rank &lt;= 2</code>.
+Never compare quantities across different units.</p>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const DATA = JSON.parse(document.getElementById('data').textContent);
+const GOLD = new Set([1866, 1871, 1876, 1881, 1886, 1891, 1896]);
+const Y0 = 1866, Y1 = 1900, NY = Y1 - Y0 + 1;
+const TK = '§TOTAL';
+const TKLABEL = '— National total (all origins, Tier 1) —';
+const RANKLBL = {1: 'rank 1 · printed in ≥2 volumes, agreeing',
+                 2: 'rank 2 · verified single printing',
+                 3: 'rank 3 · unverified'};
+const T1LBL = {1: 'tier A · cross-engine + cross-volume agreement',
+               2: 'tier B · partially corroborated',
+               3: 'tier C · unverified'};
+const css = () => getComputedStyle(document.documentElement);
+const V = n => css().getPropertyValue(n).trim();
+const fmt = n => n.toLocaleString('en-GB');
+const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+let thresh = 2;
+
+// ---------- precompute per-family per-year rank counts ----------
+const FAM = Object.keys(DATA);
+const famYear = {};   // fam -> Int8Array-ish [year-Y0] -> [n1,n2,n3]
+const corpus = Array.from({length: NY}, () => [0, 0, 0]);
+for (const f of FAM) {
+  const fy = famYear[f] = Array.from({length: NY}, () => [0, 0, 0]);
+  for (const c in DATA[f].c)
+    for (const u in DATA[f].c[c])
+      for (const [y, q, r] of DATA[f].c[c][u]) {
+        if (y < Y0 || y > Y1) continue;
+        fy[y - Y0][r - 1]++;
+        corpus[y - Y0][r - 1]++;
+      }
+}
+
+// ---------- global controls ----------
+const seg = document.getElementById('seg');
+seg.addEventListener('click', e => {
+  const b = e.target.closest('button');
+  if (!b) return;
+  thresh = +b.dataset.t;
+  for (const x of seg.children) x.setAttribute('aria-pressed', String(x === b));
+  renderOverview(); buildMatrix(); renderDetail();
+});
+const search = document.getElementById('search');
+const sortsel = document.getElementById('sortsel');
+search.addEventListener('input', buildMatrix);
+sortsel.addEventListener('change', buildMatrix);
+
+// ---------- corpus overview ----------
+const ov = document.getElementById('overview');
+const ovbox = document.getElementById('ovbox');
+const ovtip = document.getElementById('ovtip');
+function renderOverview() {
+  const W = Math.max(560, ovbox.clientWidth), H = 190;
+  const M = {t: 10, r: 12, b: 40, l: 62};
+  const pw = W - M.l - M.r, ph = H - M.t - M.b;
+  const max = Math.max(...corpus.map(c => c[0] + c[1] + c[2]));
+  const y = v => M.t + ph - (v / max) * ph;
+  const slot = pw / NY, bw = Math.max(6, slot - 4);
+  const rc = [V('--r1'), V('--r2'), V('--r3')];
+  const muted = V('--muted'), rule = V('--rule'), ghost = V('--ghost'), goldC = V('--gold');
+  let s = '';
+  for (const t of [0, Math.round(max / 2 / 1000) * 1000, Math.round(max / 1000) * 1000]) {
+    const yy = y(Math.min(t, max));
+    s += `<line x1="${M.l}" x2="${W - M.r}" y1="${yy}" y2="${yy}" stroke="${rule}"/>` +
+         `<text x="${M.l - 8}" y="${yy + 4}" text-anchor="end" font-size="11" font-family="ui-monospace,monospace" fill="${muted}">${fmt(t)}</text>`;
+  }
+  for (let i = 0; i < NY; i++) {
+    const yr = Y0 + i, x = M.l + i * slot + (slot - bw) / 2;
+    let acc = 0;
+    for (let r = 0; r < 3; r++) {          // stack rank1 at bottom
+      const n = corpus[i][r];
+      if (!n) continue;
+      const y1 = y(acc + n), h = y(acc) - y(acc + n);
+      if (r + 1 <= thresh)
+        s += `<rect x="${x}" y="${y1}" width="${bw}" height="${Math.max(h - 1, 0.5)}" fill="${rc[r]}"${r === 2 ? ` stroke="${V('--r3-edge')}" stroke-width="0.5"` : ''}/>`;
+      else
+        s += `<rect x="${x}" y="${y1}" width="${bw}" height="${Math.max(h - 1, 0.5)}" fill="none" stroke="${ghost}" stroke-dasharray="3 2.5"/>`;
+      acc += n;
+    }
+    if (yr % 2 === 0)
+      s += `<text x="${x + bw / 2}" y="${H - M.b + 16}" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="${muted}">${yr}</text>`;
+    if (GOLD.has(yr))
+      s += `<text x="${x + bw / 2}" y="${H - M.b + 30}" text-anchor="middle" font-size="9" fill="${goldC}">&#9670;</text>`;
+    s += `<rect x="${M.l + i * slot}" y="${M.t}" width="${slot}" height="${ph}" fill="transparent" data-yi="${i}"/>`;
+  }
+  ov.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  ov.setAttribute('width', W); ov.setAttribute('height', H);
+  ov.innerHTML = s;
+}
+ov.addEventListener('mousemove', e => {
+  const t = e.target.closest('[data-yi]');
+  if (!t) { ovtip.style.display = 'none'; return; }
+  const i = +t.dataset.yi, [n1, n2, n3] = corpus[i];
+  const pass = (thresh >= 1 ? n1 : 0) + (thresh >= 2 ? n2 : 0) + (thresh >= 3 ? n3 : 0);
+  ovtip.innerHTML = `<b>${Y0 + i}</b> · ${fmt(n1 + n2 + n3)} cells<br>` +
+    `<span class="rk">rank 1: ${fmt(n1)} · rank 2: ${fmt(n2)} · rank 3: ${fmt(n3)}</span><br>` +
+    `<b>${fmt(pass)}</b> pass rank ≤ ${thresh}`;
+  ovtip.style.display = 'block';
+  const bb = ovbox.getBoundingClientRect();
+  let lx = e.clientX - bb.left + 14;
+  if (lx + 250 > bb.width) lx -= 270;
+  ovtip.style.left = lx + 'px';
+  ovtip.style.top = (e.clientY - bb.top - 10) + 'px';
+});
+ov.addEventListener('mouseleave', () => ovtip.style.display = 'none');
+
+// ---------- coverage matrix (canvas chunks) ----------
+const mhead = document.getElementById('matrixhead');
+const mwrap = document.getElementById('matrixwrap');
+const mcvs = document.getElementById('matrixcanvases');
+const mtip = document.getElementById('mtip');
+const mstats = document.getElementById('mstats');
+const ROWH = 17, LABELW = 250, CHUNK = 200;
+let matRows = [];   // ordered family names after filter+sort
+
+function coverageScore(f) {
+  let yrs = 0;
+  for (let i = 0; i < NY; i++) {
+    const [n1, n2, n3] = famYear[f][i];
+    if ((thresh >= 1 ? n1 : 0) + (thresh >= 2 ? n2 : 0) + (thresh >= 3 ? n3 : 0) > 0) yrs++;
+  }
+  return yrs;
+}
+
+function buildMatrix() {
+  const q = search.value.trim().toUpperCase();
+  matRows = FAM.filter(f => !q || f.includes(q));
+  const mode = sortsel.value;
+  if (mode === 'alpha') matRows.sort((a, b) => a.localeCompare(b));
+  else if (mode === 'cov') matRows.sort((a, b) => coverageScore(b) - coverageScore(a) || DATA[b].v - DATA[a].v);
+  else matRows.sort((a, b) => DATA[b].v - DATA[a].v);
+
+  const W = Math.max(660, mwrap.clientWidth);
+  const cellW = (W - LABELW) / NY;
+  const dpr = Math.min(2, devicePixelRatio || 1);
+  const muted = V('--muted'), rule = V('--rule'), ghost = V('--ghost'),
+        ink = V('--ink'), goldC = V('--gold');
+  const ramp = [V('--m1'), V('--m2'), V('--m3'), V('--m4')];
+
+  // year header
+  let hh = '';
+  for (let i = 0; i < NY; i++) {
+    const yr = Y0 + i, cx = LABELW + i * cellW + cellW / 2;
+    if (yr % 2 === 0)
+      hh += `<span style="position:absolute;left:${cx - 20}px;width:40px;top:2px;text-align:center;font:10.5px ui-monospace,monospace;color:${muted}">${yr}</span>`;
+    if (GOLD.has(yr))
+      hh += `<span style="position:absolute;left:${cx - 20}px;width:40px;top:16px;text-align:center;font-size:8px;color:${goldC}">&#9670;</span>`;
+  }
+  mhead.innerHTML = hh;
+
+  mcvs.innerHTML = '';
+  for (let start = 0; start < matRows.length; start += CHUNK) {
+    const rows = matRows.slice(start, start + CHUNK);
+    const cv = document.createElement('canvas');
+    cv.width = W * dpr; cv.height = rows.length * ROWH * dpr;
+    cv.style.width = W + 'px'; cv.style.height = rows.length * ROWH + 'px';
+    cv.dataset.start = start;
+    const ctx = cv.getContext('2d');
+    ctx.scale(dpr, dpr);
+    ctx.textBaseline = 'middle';
+    rows.forEach((f, ri) => {
+      const yMid = ri * ROWH + ROWH / 2;
+      ctx.font = '11px system-ui, sans-serif';
+      ctx.fillStyle = ink;
+      let lbl = f.length > 38 ? f.slice(0, 37) + '…' : f;
+      ctx.fillText(lbl, 8, yMid);
+      ctx.strokeStyle = rule; ctx.lineWidth = 0.5;
+      ctx.beginPath(); ctx.moveTo(0, (ri + 1) * ROWH - 0.25); ctx.lineTo(W, (ri + 1) * ROWH - 0.25); ctx.stroke();
+      for (let i = 0; i < NY; i++) {
+        const [n1, n2, n3] = famYear[f][i];
+        const tot = n1 + n2 + n3;
+        const x = LABELW + i * cellW + 1.5, w = cellW - 3, y = ri * ROWH + 2.5, h = ROWH - 5;
+        if (!tot) continue;
+        const pass = (thresh >= 1 ? n1 : 0) + (thresh >= 2 ? n2 : 0) + (thresh >= 3 ? n3 : 0);
+        if (!pass) {
+          ctx.strokeStyle = ghost; ctx.lineWidth = 1;
+          ctx.setLineDash([2.5, 2]);
+          ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+          ctx.setLineDash([]);
+        } else {
+          const share = pass / tot;
+          ctx.fillStyle = ramp[share > 0.75 ? 3 : share > 0.5 ? 2 : share > 0.25 ? 1 : 0];
+          ctx.beginPath();
+          ctx.roundRect(x, y, w, h, 2);
+          ctx.fill();
+        }
+      }
+    });
+    mcvs.appendChild(cv);
+  }
+  mstats.innerHTML = `<span><b>${matRows.length}</b> of ${FAM.length} families shown</span>` +
+    `<span>corpus: <b>${fmt(corpus.reduce((s, c) => s + (thresh >= 1 ? c[0] : 0) + (thresh >= 2 ? c[1] : 0) + (thresh >= 3 ? c[2] : 0), 0))}</b> of ${fmt(corpus.reduce((s, c) => s + c[0] + c[1] + c[2], 0))} cells pass rank &le; ${thresh}</span>`;
+}
+
+function matHit(e) {
+  const cv = e.target.closest('canvas');
+  if (!cv) return null;
+  const r = cv.getBoundingClientRect();
+  const x = e.clientX - r.left, y = e.clientY - r.top;
+  const ri = +cv.dataset.start + Math.floor(y / ROWH);
+  if (ri >= matRows.length) return null;
+  const cellW = (r.width - LABELW) / NY;
+  const yi = x < LABELW ? -1 : Math.floor((x - LABELW) / cellW);
+  return {f: matRows[ri], yi: yi >= 0 && yi < NY ? yi : -1};
+}
+mcvs.addEventListener('mousemove', e => {
+  const h = matHit(e);
+  if (!h) { mtip.style.display = 'none'; return; }
+  let inner = `<b>${esc(h.f)}</b>`;
+  if (h.yi >= 0) {
+    const [n1, n2, n3] = famYear[h.f][h.yi];
+    const tot = n1 + n2 + n3;
+    const pass = (thresh >= 1 ? n1 : 0) + (thresh >= 2 ? n2 : 0) + (thresh >= 3 ? n3 : 0);
+    inner += ` · ${Y0 + h.yi}${GOLD.has(Y0 + h.yi) ? ' &#9670;' : ''}<br>` +
+      (tot ? `<span class="rk">r1 ${n1} · r2 ${n2} · r3 ${n3}</span><br><b>${pass}/${tot}</b> cells pass` :
+             '<span class="rk">no parsed cell</span>');
+  }
+  inner += '<br><span class="rk">click to inspect</span>';
+  mtip.innerHTML = inner;
+  mtip.style.display = 'block';
+  const wb = mwrap.getBoundingClientRect();
+  let lx = e.clientX - wb.left + 14;
+  if (lx + 270 > wb.width) lx -= 290;
+  mtip.style.left = lx + 'px';
+  mtip.style.top = (e.clientY - wb.top + mwrap.scrollTop - 8) + 'px';
+});
+mcvs.addEventListener('mouseleave', () => mtip.style.display = 'none');
+mcvs.addEventListener('click', e => {
+  const h = matHit(e);
+  if (!h) return;
+  setFamily(h.f);
+  document.getElementById('detailhead').scrollIntoView({behavior: 'smooth'});
+});
+
+// ---------- detail ----------
+const ctySel = document.getElementById('country');
+const unitChips = document.getElementById('unitchips');
+const varChips = document.getElementById('varchips');
+const charts = document.getElementById('charts');
+const tip = document.getElementById('tip');
+const cbox = document.getElementById('chartbox');
+const cap = document.getElementById('cap');
+const stats = document.getElementById('stats');
+const tgl = document.getElementById('tgl');
+const tblwrap = document.getElementById('tblwrap');
+let st = { fam: null, extra: new Set(), cty: null, unit: null };
+
+const RELSTOP = new Set(['AND','OR','THE','A','AN','OF']);
+function labToks(l) {
+  return new Set(l.toUpperCase().split(/[^A-Z0-9]+/).filter(t => t && !RELSTOP.has(t)));
+}
+function spanOf(f) {
+  let lo = Infinity, hi = -Infinity;
+  for (const c in DATA[f].c) for (const u in DATA[f].c[c])
+    for (const [y] of DATA[f].c[c][u]) { if (y < lo) lo = y; if (y > hi) hi = y; }
+  return lo <= hi ? `${lo}\u2013${hi}` : '';
+}
+function relatedTo(f) {
+  const t0 = labToks(f);
+  const out = [];
+  for (const g of FAM) {
+    if (g === f) continue;
+    const t1 = labToks(g);
+    let shared = 0;
+    for (const t of t0) if (t1.has(t)) shared++;
+    if (shared >= 2 || (shared >= 1 && (t0.size <= 2 || t1.size <= 2)))
+      out.push([g, shared]);
+  }
+  out.sort((a, b) => b[1] - a[1] || DATA[b[0]].v - DATA[a[0]].v);
+  return out.slice(0, 10).map(x => x[0]);
+}
+
+function setFamily(f) {
+  st.fam = f;
+  st.extra = new Set();          // related series always start OFF
+  renderRelChips();
+  rebuildCountries(true);
+}
+function renderRelChips() {
+  varChips.innerHTML = '';
+  for (const g of relatedTo(st.fam)) {
+    const b = document.createElement('button');
+    b.className = 'chip';
+    b.textContent = `${g} (${spanOf(g)})`;
+    b.setAttribute('aria-pressed', String(st.extra.has(g)));
+    b.onclick = () => {
+      if (st.extra.has(g)) st.extra.delete(g); else st.extra.add(g);
+      b.setAttribute('aria-pressed', String(st.extra.has(g)));
+      rebuildCountries(false);
+    };
+    varChips.appendChild(b);
+  }
+  if (!varChips.children.length)
+    varChips.innerHTML = '<span style="font-size:12.5px;color:var(--muted)">none found</span>';
+}
+function activeComms() { return [st.fam, ...st.extra]; }
+function rebuildCountries(reset) {
+  const agg = {};
+  for (const f of activeComms())
+    for (const c in DATA[f].c)
+      for (const u in DATA[f].c[c])
+        agg[c] = (agg[c] || 0) + DATA[f].c[c][u].length;
+  const list = Object.entries(agg).sort((a, b) =>
+    (a[0] === TK ? -1 : b[0] === TK ? 1 : 0) || b[1] - a[1] || a[0].localeCompare(b[0]));
+  ctySel.innerHTML = '';
+  for (const [c, n] of list) {
+    const o = document.createElement('option');
+    o.value = c;
+    o.textContent = c === TK ? TKLABEL : `${c}  (${n} cells)`;
+    ctySel.appendChild(o);
+  }
+  const keep = !reset && st.cty && agg[st.cty];
+  st.cty = keep ? st.cty : (list.length ? list[0][0] : null);
+  if (st.cty) ctySel.value = st.cty;
+  rebuildUnits(reset || !keep);
+}
+ctySel.addEventListener('change', () => {
+  st.cty = ctySel.value;
+  rebuildUnits(true);
+});
+function rebuildUnits(reset) {
+  const agg = {};
+  for (const f of activeComms()) {
+    const cc = DATA[f].c[st.cty];
+    if (cc) for (const u in cc) agg[u] = (agg[u] || 0) + cc[u].length;
+  }
+  const list = Object.entries(agg).sort((a, b) => b[1] - a[1]);
+  unitChips.innerHTML = '';
+  for (const [u] of list) {
+    const b = document.createElement('button');
+    b.className = 'chip'; b.textContent = u;
+    b.setAttribute('aria-pressed', 'false');
+    b.onclick = () => { st.unit = u; syncUnits(); renderDetail(); };
+    unitChips.appendChild(b);
+  }
+  const keep = !reset && st.unit && agg[st.unit];
+  st.unit = keep ? st.unit : (list.length ? list[0][0] : null);
+  syncUnits();
+  renderDetail();
+}
+function syncUnits() {
+  for (const b of unitChips.children)
+    b.setAttribute('aria-pressed', String(b.textContent === st.unit));
+}
+
+function seriesRows(f, unit) {
+  // one commodity's cells for (country, unit); duplicate years keep the
+  // better-ranked reading first (cells pre-sorted) with the rest as alts
+  const arr = (DATA[f].c[st.cty] || {})[unit];
+  if (!arr) return [];
+  const by = new Map();
+  for (const [y, q, r] of arr) {
+    const cur = by.get(y);
+    if (!cur) by.set(y, {y, q, r, alts: []});
+    else cur.alts.push({q, r});
+  }
+  return [...by.values()].sort((a, b) => a.y - b.y);
+}
+function seriesUnitFor(f, preferred) {
+  const cc = DATA[f].c[st.cty] || {};
+  if (preferred && cc[preferred]) return preferred;
+  let best = null, n = 0;
+  for (const u in cc) if (cc[u].length > n) { n = cc[u].length; best = u; }
+  return best;
+}
+function niceTicks(max) {
+  const raw = max / 4;
+  const mag = Math.pow(10, Math.floor(Math.log10(Math.max(raw, 1))));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => max / s <= 5) || 10 * mag;
+  const t = [];
+  for (let v = 0; v <= max + 1e-9; v += step) t.push(v);
+  return t;
+}
+function fmtAxis(n) {
+  if (n >= 1e6) return (n / 1e6).toLocaleString('en-GB', {maximumFractionDigits: 1}) + 'M';
+  if (n >= 1e3) return (n / 1e3).toLocaleString('en-GB', {maximumFractionDigits: 1}) + 'k';
+  return String(n);
+}
+
+let panels = [];
+
+function chartSVG(rows, pi, H) {
+  const W = Math.max(560, charts.clientWidth || 900);
+  const M = {t: 12, r: 12, b: 56, l: 62};
+  const pw = W - M.l - M.r, ph = H - M.t - M.b;
+  const max = Math.max(1, ...rows.map(r => r.q));
+  const ticks = niceTicks(max);
+  const ymax = ticks[ticks.length - 1] < max ? ticks[ticks.length - 1] + (ticks[1] - ticks[0]) : ticks[ticks.length - 1];
+  const y = v => M.t + ph - (v / ymax) * ph;
+  const slot = pw / NY;
+  const bw = Math.max(4, Math.min(26, slot - 3));
+  const x = yr => M.l + (yr - Y0) * slot + (slot - bw) / 2;
+  const rc = {1: V('--r1'), 2: V('--r2'), 3: V('--r3')};
+  const r3edge = V('--r3-edge'), muted = V('--muted'), rule = V('--rule'),
+        ghost = V('--ghost'), goldC = V('--gold');
+  const byYear = new Map(rows.map(r => [r.y, r]));
+
+  let s = '';
+  for (const t of niceTicks(ymax)) {
+    const yy = y(t);
+    s += `<line x1="${M.l}" x2="${W - M.r}" y1="${yy}" y2="${yy}" stroke="${rule}" stroke-width="1"/>` +
+      `<text x="${M.l - 8}" y="${yy + 4}" text-anchor="end" font-size="11.5" font-family="ui-monospace,monospace" fill="${muted}">${fmtAxis(t)}</text>`;
+  }
+  s += `<line x1="${M.l}" x2="${W - M.r}" y1="${y(0)}" y2="${y(0)}" stroke="${muted}" stroke-width="1"/>`;
+  for (let yr = Y0; yr <= Y1; yr++) {
+    const cx = M.l + (yr - Y0) * slot + slot / 2;
+    if (yr % 2 === 0)
+      s += `<text x="${cx}" y="${H - M.b + 18}" text-anchor="middle" font-size="11.5" font-family="ui-monospace,monospace" fill="${muted}">${yr}</text>`;
+    if (GOLD.has(yr))
+      s += `<text x="${cx}" y="${H - M.b + 32}" text-anchor="middle" font-size="9" fill="${goldC}">&#9670;</text>`;
+  }
+  function barPath(bx, by, w, h) {
+    const r = Math.min(3, w / 2, h);
+    return `M${bx},${by + h} L${bx},${by + r} Q${bx},${by} ${bx + r},${by} L${bx + w - r},${by} Q${bx + w},${by} ${bx + w},${by + r} L${bx + w},${by + h} Z`;
+  }
+  for (const rec of rows) {
+    const h = Math.max(rec.q > 0 ? 2 : 0, y(0) - y(rec.q));
+    const by2 = y(0) - h, bx = x(rec.y);
+    if (rec.r <= thresh) {
+      const stroke = rec.r === 3 ? ` stroke="${r3edge}" stroke-width="1"` : '';
+      s += `<path class="bar" d="${barPath(bx, by2, bw, h)}" fill="${rc[rec.r]}"${stroke}/>`;
+    } else {
+      s += `<path class="bar" d="${barPath(bx, by2, bw, h)}" fill="none" stroke="${ghost}" stroke-width="1.2" stroke-dasharray="3 2.5"/>`;
+    }
+    if (rec.alts.length)
+      s += `<circle cx="${bx + bw / 2}" cy="${Math.max(by2 - 6, M.t + 4)}" r="2.4" fill="${muted}"/>`;
+  }
+  for (let yr = Y0; yr <= Y1; yr++)
+    s += `<rect x="${M.l + (yr - Y0) * slot}" y="${M.t}" width="${slot}" height="${ph}" fill="transparent" data-hit="${yr}"/>`;
+  const stripY = H - M.b + 40;
+  for (let yr = Y0; yr <= Y1; yr++) {
+    const r = byYear.get(yr);
+    const w = Math.min(bw, 14);
+    const cx = M.l + (yr - Y0) * slot + (slot - w) / 2;
+    if (!r) s += `<rect x="${cx}" y="${stripY}" width="${w}" height="7" rx="2" fill="none" stroke="${rule}" stroke-width="1"/>`;
+    else if (r.r <= thresh) s += `<rect x="${cx}" y="${stripY}" width="${w}" height="7" rx="2" fill="${rc[r.r]}"/>`;
+    else s += `<rect x="${cx}" y="${stripY}" width="${w}" height="7" rx="2" fill="none" stroke="${ghost}" stroke-width="1"/>`;
+  }
+  s += `<text x="${M.l - 8}" y="${stripY + 7}" text-anchor="end" font-size="10" fill="${muted}" font-family="system-ui">coverage</text>`;
+  return `<svg data-pi="${pi}" role="img" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">${s}</svg>`;
+}
+
+function renderDetail() {
+  if (!st.fam || !st.cty || !st.unit) { charts.innerHTML = ''; cap.textContent = ''; stats.textContent = ''; return; }
+  panels = [];
+  for (const [i, f] of activeComms().entries()) {
+    const unit = i === 0 ? st.unit : seriesUnitFor(f, st.unit);
+    const rows = unit ? seriesRows(f, unit) : [];
+    panels.push({f, unit, rows});
+  }
+  const p0 = panels[0];
+  const ctyLabel = st.cty === TK
+    ? `national total imports (Tier 1, cross-volume voted), in ${esc(p0.unit)}`
+    : `from ${esc(st.cty)}, in ${esc(p0.unit)}`;
+  cap.innerHTML = `${esc(p0.f)} <span class="cty">${ctyLabel}</span>`;
+  const inc = p0.rows.filter(r => r.r <= thresh);
+  const qInc = inc.reduce((s, r) => s + r.q, 0);
+  const qAll = p0.rows.reduce((s, r) => s + r.q, 0);
+  stats.innerHTML =
+    `<span><b>${inc.length}</b> of ${p0.rows.length} year-cells pass rank &le; ${thresh}</span>` +
+    `<span><b>${qAll ? Math.round(100 * qInc / qAll) : 0}%</b> of recorded quantity retained</span>` +
+    `<span><b>${NY - p0.rows.length}</b> years with no parsed cell</span>` +
+    (panels.length > 1 ? `<span><b>${panels.length - 1}</b> appended series below (own axes — units are not comparable)</span>` : '');
+  let html = chartSVG(p0.rows, 0, 400);
+  for (let i = 1; i < panels.length; i++) {
+    const p = panels[i];
+    if (!p.rows.length) {
+      const nc = Object.keys(DATA[p.f].c).filter(c => c !== TK).length;
+      html += `<div class="panelcap"><b>${esc(p.f)}</b> — no data for this ` +
+        `selection (has ${DATA[p.f].c[TK] ? 'a national series' : 'no national series'}` +
+        `${nc ? ` and ${nc} origin countr${nc > 1 ? 'ies' : 'y'}` : ''})</div>`;
+      continue;
+    }
+    html += `<div class="panelcap"><b>${esc(p.f)}</b> — appended series, in ${esc(p.unit)} (own scale)</div>`;
+    html += chartSVG(p.rows, i, 250);
+  }
+  charts.innerHTML = html;
+  renderTable();
+}
+
+charts.addEventListener('mousemove', e => {
+  const sv = e.target.closest('svg[data-pi]');
+  const t = e.target.closest('[data-hit]');
+  if (!sv || !t) { tip.style.display = 'none'; return; }
+  const p = panels[+sv.dataset.pi];
+  const yr = +t.dataset.hit;
+  const rec = p.rows.find(r => r.y === yr);
+  const LBL = st.cty === TK ? T1LBL : RANKLBL;
+  if (!rec) tip.innerHTML = `<b>${yr}</b><br>no parsed cell`;
+  else {
+    const alt = rec.alts.map(a => `<br><span class="rk">also read: ${fmt(a.q)} (rank ${a.r})</span>`).join('');
+    tip.innerHTML = `<b>${yr}</b> &middot; <b>${fmt(rec.q)}</b> ${esc(p.unit)}<br>` +
+      `<span class="rk">${LBL[rec.r]} · series: ${esc(p.f)}</span>` +
+      (rec.r <= thresh ? '' : '<br><span class="rk">excluded by current threshold</span>') + alt +
+      (GOLD.has(yr) ? '<br><span class="rk">&#9670; gold benchmark year</span>' : '');
+  }
+  tip.style.display = 'block';
+  const bb = document.getElementById('chartbox').getBoundingClientRect();
+  let lx = e.clientX - bb.left + 14;
+  if (lx + 260 > bb.width) lx -= 280;
+  tip.style.left = lx + 'px';
+  tip.style.top = (e.clientY - bb.top - 12) + 'px';
+});
+charts.addEventListener('mouseleave', () => tip.style.display = 'none');
+
+function renderTable() {
+  if (tblwrap.hidden || !panels.length) return;
+  let h = '<table><thead><tr><th>Year</th><th>Quantity</th><th>Unit</th><th>Rank</th><th>Included</th><th>Series</th></tr></thead><tbody>';
+  for (const p of panels)
+    for (const r of p.rows)
+      h += `<tr><td>${r.y}${GOLD.has(r.y) ? ' ◆' : ''}</td><td>${fmt(r.q)}</td><td>${esc(p.unit)}</td><td>${r.r}</td>` +
+           `<td>${r.r <= thresh ? 'yes' : 'no'}</td><td>${esc(p.f)}${r.alts.length ? ` (+${r.alts.length} more reading${r.alts.length > 1 ? 's' : ''})` : ''}</td></tr>`;
+  tblwrap.innerHTML = h + '</tbody></table>';
+}
+tgl.addEventListener('click', () => {
+  tblwrap.hidden = !tblwrap.hidden;
+  tgl.setAttribute('aria-expanded', String(!tblwrap.hidden));
+  tgl.textContent = tblwrap.hidden ? 'Show data table' : 'Hide data table';
+  if (!tblwrap.hidden) renderTable();
+});
+
+// ---------- reactivity ----------
+new MutationObserver(() => { renderOverview(); buildMatrix(); renderDetail(); })
+  .observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',
+  () => { renderOverview(); buildMatrix(); renderDetail(); });
+let rt;
+addEventListener('resize', () => {
+  clearTimeout(rt);
+  rt = setTimeout(() => { renderOverview(); buildMatrix(); renderDetail(); }, 150);
+});
+
+// ---------- boot ----------
+renderOverview();
+buildMatrix();
+setFamily(FAM.find(f => /^Wool.*Sheep/i.test(f)) ||
+          (DATA['Gutta Percha'] ? 'Gutta Percha' : FAM[0]));
+</script>

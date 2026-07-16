@@ -1,103 +1,101 @@
 scope,raw_norm,example,years,n_rows,canonical_id,rule,status
 tier1,furniture and hardwood of all sorts,Furniture and Hardwood of all Sorts,1868-1894,11,wood-furniture-hardwoods,furniture/hardwoods,auto
-tier1,furniture woods and hard woods of all sorts,"Furniture woods and hard woods, of all Sorts - -",1891-1896,6,wood-furniture-hardwoods,furniture/hardwoods,auto
+tier1,furniture woods and hard woods of all sorts,"Furniture woods and hard woods, of all Sorts -",1891-1896,6,wood-furniture-hardwoods,furniture/hardwoods,auto
 tier1,furniture woods mahogany,Furniture woods: Mahogany,1894-1900,14,wood-mahogany,mahogany,auto
 tier1,hewn,Hewn - - - - -,1868-1896,65,wood-hewn-fir,bare hewn (fir is the default species),auto
 tier1,hewn fir,Hewn : Fir - - - - -,1894-1900,10,wood-hewn-fir,hewn+fir,auto
 tier1,hewn loads,Hewn . . . . . Loads,1888-1888,1,wood-hewn-fir,bare hewn (fir is the default species),auto
 tier1,horse frames fittings joiners and cabinet work,"Horse Frames, Fittings, Joiners' and Cabinet Work - - - - -",1894-1898,5,wood-house-frames,house frames/joinery,auto
-tier1,oak,""" Oak - - - - -",1894-1900,10,wood-hewn-oak,oak (hewn category),auto
-tier1,sawn fir,Sawn: Fir,1894-1900,10,wood-sawn-fir,sawn+fir,auto
-tier1,sawn or split,Sawn or Split,1868-1896,59,wood-sawn-fir,bare sawn (fir is the default species),auto
+tier1,oak,"""    Oak - - - - -",1894-1900,10,wood-hewn-oak,oak (hewn category),auto
+tier1,sawn fir,Sawn: Fir - - - - -,1894-1900,10,wood-sawn-fir,sawn+fir,auto
+tier1,sawn or split,"Sawn or Split . . . . . """,1868-1896,59,wood-sawn-fir,bare sawn (fir is the default species),auto
 tier1,sawn or split planed or dressed,"Sawn or Split, Planed or Dressed - - - - -",1868-1882,10,wood-sawn-fir,bare sawn (fir is the default species),auto
 tier1,sawn or split planked or dressed,"Sawn or Split, Planked or Dressed",1890-1894,5,wood-sawn-fir,bare sawn (fir is the default species),auto
 tier1,staves,Staves - - - - -,1868-1896,52,wood-staves,staves,auto
 tier1,staves of all dimensions,"Staves, of all dimensions",1894-1900,10,wood-staves,staves,auto
 tier1,teak,"""    Teak - - - - -",1894-1900,10,wood-hewn-teak,teak (hewn category),auto
-tier1,unenumerated,"""    Unenumerated - - - - -",1894-1900,14,wood-unenumerated,unenumerated (unqualified),auto
+tier1,unenumerated,„ Unenumerated,1894-1900,14,wood-unenumerated,unenumerated (unqualified),auto
 tier1,wool sheep and lambs,"Wool, Sheep and Lambs'",1887-1890,4,,UNMAPPED - needs review,review
 tier1,woollen manufactures,Woollen Manufactures,1887-1894,8,,UNMAPPED - needs review,review
-tier2,(blank),(blank),1874-1889,88,,UNMAPPED - needs review,review
+tier2,(blank),(blank),1876-1899,1166,,UNMAPPED - needs review,review
 tier2,alpaca vicuna and llama,"Alpaca, Vicuna, and Llama",1893-1898,52,,UNMAPPED - needs review,review
-tier2,blankets,Blankets,1894-1899,406,,UNMAPPED - needs review,review
-tier2,carpets not being rugs,"Carpets, not being Rugs",1894-1899,440,,UNMAPPED - needs review,review
+tier2,blankets,Blankets,1894-1899,396,,UNMAPPED - needs review,review
+tier2,carpets not being rugs,"Carpets, not being Rugs",1894-1899,430,,UNMAPPED - needs review,review
 tier2,combed or carded and tops,Combed or Carded and Tops,1895-1899,124,,UNMAPPED - needs review,review
 tier2,damasks tapestry and other furniture stuffs,"Damasks, Tapestry, and other Furniture Stuffs",1894-1899,84,wood-furniture-hardwoods,furniture/hardwoods,auto
-tier2,dutch possessions in the indian seas,Dutch Possessions in the Indian Seas,1895-1899,271,,UNMAPPED - needs review,review
-tier2,eastern coast of africa,Eastern Coast of Africa,1893-1898,80,,UNMAPPED - needs review,review
-tier2,fir,Fir,1873-1896,189,,UNMAPPED - needs review,review
-tier2,flannels,Flannels,1880-1899,317,,UNMAPPED - needs review,review
+tier2,dutch possessions in the indian seas,Dutch Possessions in the Indian Seas,1895-1899,116,,UNMAPPED - needs review,review
+tier2,fir,Fir,1872-1896,208,,UNMAPPED - needs review,review
+tier2,fir unenumerated,Fir : Unenumerated,1872-1872,9,wood-unenumerated,unenumerated (unqualified),auto
+tier2,flannels,Flannels,1894-1899,297,,UNMAPPED - needs review,review
 tier2,flocks and ragwool,Flocks and Ragwool,1895-1899,53,,UNMAPPED - needs review,review
-tier2,for fancy purposes including berlin wool and zephyr yarn,"For fancy purposes, including Berlin Wool and Zephyr Yarn",1893-1898,128,,UNMAPPED - needs review,review
-tier2,for fancy purposes including berlin wool and zephyr yarn for weaving mixed or not with silk,"For fancy purposes, including Berlin Wool and Zephyr Yarn : For Weaving, mixed or not with Silk",1893-1898,82,,UNMAPPED - needs review,review
-tier2,for fancy purposes including berlin wool and zephyr yarn of wool other than goats or of wool mixed with cotton cloths,"For fancy purposes, including Berlin Wool and Zephyr Yarn : Of Wool other than Goats', or of Wool mixed with Cotton: Cloths",1893-1898,356,,UNMAPPED - needs review,review
+tier2,for fancy purposes including berlin wool and zephyr yarn,"For fancy purposes, including Berlin Wool and Zephyr Yarn",1893-1898,118,,UNMAPPED - needs review,review
+tier2,for fancy purposes including berlin wool and zephyr yarn for weaving mixed or not with silk,"For fancy purposes, including Berlin Wool and Zephyr Yarn : For Weaving, mixed or not with Silk",1893-1898,77,,UNMAPPED - needs review,review
+tier2,for fancy purposes including berlin wool and zephyr yarn of wool other than goats or of wool mixed with cotton cloths,"For fancy purposes, including Berlin Wool and Zephyr Yarn : Of Wool other than Goats', or of Wool mixed with Cotton: Cloths",1893-1898,336,,UNMAPPED - needs review,review
 tier2,for fancy purposes including berlin wool and zephyr yarn unenumerated,"For fancy purposes, including Berlin Wool and Zephyr Yarn : Unenumerated",1893-1897,48,wood-unenumerated,unenumerated (unqualified),auto
-tier2,for weaving,For Weaving,1877-1877,4,,UNMAPPED - needs review,review
-tier2,furniture and hardwoods,Furniture and Hardwoods,1885-1887,40,wood-furniture-hardwoods,furniture/hardwoods,auto
-tier2,furniture hardwoods and veneers,Furniture Hardwoods and Veneers,1877-1877,8,wood-furniture-hardwoods,furniture/hardwoods,auto
-tier2,furniture hardwoods and veneers mahogany,Furniture Hardwoods and Veneers : Mahogany,1878-1881,19,wood-mahogany,mahogany,auto
-tier2,furniture hardwoods and veneers unenumerated,"Furniture, Hardwoods and Veneers : Unenumerated",1877-1879,55,wood-furniture-hardwoods,furniture/hardwoods residual,auto
+tier2,furniture hardwoods and veneers,"Furniture, Hardwoods, and Veneers",1883-1883,11,wood-furniture-hardwoods,furniture/hardwoods,auto
+tier2,furniture hardwoods and veneers mahogany,Furniture Hardwoods and Veneers : Mahogany,1877-1881,32,wood-mahogany,mahogany,auto
+tier2,furniture hardwoods and veneers unenumerated,"Furniture, Hardwoods and Veneers : Unenumerated",1877-1883,72,wood-furniture-hardwoods,furniture/hardwoods residual,auto
 tier2,furniture woods and hardwoods unenumerated,Furniture Woods and Hardwoods : Unenumerated,1889-1889,21,wood-furniture-hardwoods,furniture/hardwoods residual,auto
 tier2,goats wool or hair,Goats' Wool or Hair,1893-1895,41,,UNMAPPED - needs review,review
-tier2,hewn,HEWN,1886-1886,4,wood-hewn-fir,bare hewn (fir is the default species),auto
-tier2,hewn fir,Hewn : Fir,1872-1899,535,wood-hewn-fir,hewn+fir,auto
-tier2,hewn fir oak,Hewn : Fir : Oak,1874-1893,91,wood-hewn-oak,oak (hewn category),auto
-tier2,hewn fir teak,Hewn : Fir : Teak,1874-1893,32,wood-hewn-teak,teak (hewn category),auto
-tier2,hewn fir unenumerated,"Hewn, Fir : Unenumerated",1875-1899,41,wood-hewn-unenumerated,hewn+unenumerated,auto
-tier2,hewn oak,"Hewn, Oak",1893-1899,200,wood-hewn-oak,oak (hewn category),auto
-tier2,hewn teak,Hewn Teak,1881-1899,178,wood-hewn-teak,teak (hewn category),auto
-tier2,hewn teak unenumerated,"Hewn, Teak : Unenumerated",1881-1891,35,wood-hewn-unenumerated,hewn+unenumerated,auto
-tier2,hewn unenumerated,"Hewn, Unenumerated",1883-1899,214,wood-hewn-unenumerated,hewn+unenumerated,auto
-tier2,hosiery,Hosiery,1894-1898,330,,UNMAPPED - needs review,review
-tier2,house frames fittings and joiners work,"House Frames, Fittings, and Joiners' Work",1872-1896,64,wood-house-frames,house frames/joinery,auto
-tier2,house frames fittings joiners and cabinet work,"House Frames, Fittings, Joiners' and Cabinet Work",1886-1899,511,wood-house-frames,house frames/joinery,auto
+tier2,hewn,HEWN,1878-1878,13,wood-hewn-fir,bare hewn (fir is the default species),auto
+tier2,hewn fir,"Hewn, Fir",1872-1899,547,wood-hewn-fir,hewn+fir,auto
+tier2,hewn fir oak,"Hewn, Fir : Oak",1874-1893,102,wood-hewn-oak,oak (hewn category),auto
+tier2,hewn fir teak,"Hewn, Fir : Teak",1874-1893,39,wood-hewn-teak,teak (hewn category),auto
+tier2,hewn fir unenumerated,"Hewn, Fir : Unenumerated",1875-1899,56,wood-hewn-unenumerated,hewn+unenumerated,auto
+tier2,hewn oak,"Hewn, Oak",1893-1899,189,wood-hewn-oak,oak (hewn category),auto
+tier2,hewn teak,"Hewn, Teak",1880-1899,180,wood-hewn-teak,teak (hewn category),auto
+tier2,hewn teak unenumerated,"Hewn, Teak : Unenumerated",1880-1891,40,wood-hewn-unenumerated,hewn+unenumerated,auto
+tier2,hewn unenumerated,"Hewn, Unenumerated",1883-1899,220,wood-hewn-unenumerated,hewn+unenumerated,auto
+tier2,hosiery,Hosiery,1894-1898,275,,UNMAPPED - needs review,review
+tier2,house frames fittings and joiners work,"House Frames, Fittings, and Joiners' Work",1872-1896,80,wood-house-frames,house frames/joinery,auto
+tier2,house frames fittings joiners and cabinet work,"House Frames, Fittings, Joiners' and Cabinet Work",1886-1899,450,wood-house-frames,house frames/joinery,auto
 tier2,house frames fittings joiners and cabinet works,"House Frames, Fittings, Joiners' and Cabinet Works",1886-1886,5,wood-house-frames,house frames/joinery,auto
-tier2,mahogany,Mahogany,1873-1899,939,wood-mahogany,mahogany,auto
-tier2,mahogany unenumerated,Mahogany : Unenumerated,1886-1891,70,wood-unenumerated,unenumerated (unqualified),auto
+tier2,mahogany,Mahogany,1872-1899,783,wood-mahogany,mahogany,auto
+tier2,mahogany unenumerated,Mahogany : Unenumerated,1872-1893,110,wood-unenumerated,unenumerated (unqualified),auto
 tier2,manufactured,Manufactured,1877-1877,4,,UNMAPPED - needs review,review
-tier2,manufactured staves and empty casks,"Manufactured, Staves and Empty Casks",1893-1899,244,wood-staves,staves,auto
-tier2,manufactured unenumerated,"Manufactured, Unenumerated",1893-1899,743,wood-unenumerated,unenumerated (unqualified),auto
-tier2,manufactures of,Manufactures of,1880-1880,11,,UNMAPPED - needs review,review
+tier2,manufactured staves and empty casks,"Manufactured, Staves and Empty Casks",1893-1899,30,wood-staves,staves,auto
+tier2,manufactured unenumerated,"Manufactured, Unenumerated",1893-1899,235,wood-unenumerated,unenumerated (unqualified),auto
 tier2,mohair,Mohair,1896-1898,25,,UNMAPPED - needs review,review
 tier2,noils,Noils,1894-1899,139,,UNMAPPED - needs review,review
-tier2,oak,Oak,1872-1899,162,wood-hewn-oak,oak (hewn category),auto
-tier2,ore,Ore,1894-1899,590,,UNMAPPED - needs review,review
+tier2,oak,Oak,1872-1899,167,wood-hewn-oak,oak (hewn category),auto
+tier2,ore,Ore,1894-1899,223,,UNMAPPED - needs review,review
 tier2,other goats wool or hair,Other Goats' Wool or Hair,1896-1898,28,,UNMAPPED - needs review,review
-tier2,other kinds and flocks,Other kinds and Flocks,1886-1899,57,,UNMAPPED - needs review,review
-tier2,rough hewn sawn or split,"Rough, Hewn, Sawn, or Split",1872-1899,109,wood-rough-combined,rough+hewn+sawn (1897+ consolidation),auto
+tier2,other kinds and flocks,Other kinds and Flocks,1893-1899,50,,UNMAPPED - needs review,review
+tier2,rough hewn sawn or split,"Rough, Hewn, Sawn, or Split",1872-1899,118,wood-rough-combined,rough+hewn+sawn (1897+ consolidation),auto
 tier2,rough hown sawn or split,"Rough, Hown, Sawn, or Split",1893-1893,2,wood-sawn-fir,bare sawn (fir is the default species),auto
-tier2,rugs coverlets or wrappers,"Rugs, Coverlets, or Wrappers",1894-1899,445,,UNMAPPED - needs review,review
-tier2,sawn fir,"Sawn, Fir",1883-1896,95,wood-sawn-fir,sawn+fir,auto
-tier2,sawn fir unenumerated,"Sawn, Fir : Unenumerated",1885-1886,21,wood-sawn-unenumerated,sawn+unenumerated,auto
-tier2,sawn or split planed or dressed fir,"Sawn or Split, Planed or     Dressed: Fir",1875-1899,607,wood-sawn-fir,sawn+fir,auto
+tier2,rugs coverlets or wrappers,"Rugs, Coverlets, or Wrappers",1894-1899,435,,UNMAPPED - needs review,review
+tier2,sawn,SAWN,1873-1875,11,wood-sawn-fir,bare sawn (fir is the default species),auto
+tier2,sawn fir,"Sawn, Fir",1882-1896,106,wood-sawn-fir,sawn+fir,auto
+tier2,sawn fir unenumerated,"Sawn, Fir : Unenumerated",1882-1886,48,wood-sawn-unenumerated,sawn+unenumerated,auto
+tier2,sawn or split planed or dressed fir,"Sawn or Split, Planed or     Dressed: Fir",1875-1899,548,wood-sawn-fir,sawn+fir,auto
 tier2,sawn or split planed or dressed fir unenumerated,"Sawn or Split, Planed or     Dressed: Fir : Unenumerated",1893-1897,38,wood-sawn-unenumerated,sawn+unenumerated,auto
-tier2,sawn or split planed or dressed unenumerated,"Sawn or Split, Planed or Dressed : Unenumerated",1875-1895,60,wood-sawn-unenumerated,sawn+unenumerated,auto
-tier2,sawn unenumerated,"Sawn, Unenumerated",1887-1896,85,wood-sawn-unenumerated,sawn+unenumerated,auto
+tier2,sawn or split planed or dressed unenumerated,"Sawn or Split, Planed or Dressed : Unenumerated",1875-1895,71,wood-sawn-unenumerated,sawn+unenumerated,auto
+tier2,sawn unenumerated,"Sawn, Unenumerated",1887-1896,83,wood-sawn-unenumerated,sawn+unenumerated,auto
 tier2,shawls,Shawls,1894-1899,177,,UNMAPPED - needs review,review
+tier2,sheep and lambs,Sheep and Lambs',1877-1877,24,,UNMAPPED - needs review,review
 tier2,sheep and lambs british raw or undressed,"Sheep and Lambs', British,     Raw or Undressed",1895-1899,68,wood-sawn-fir,bare sawn (fir is the default species),auto
 tier2,sheep or lambs,Sheep or Lambs',1893-1899,297,,UNMAPPED - needs review,review
-tier2,staves,Staves,1872-1896,267,wood-staves,staves,auto
-tier2,staves and empty casks,Staves and Empty Casks,1872-1896,148,wood-staves,staves,auto
+tier2,staves,Staves,1872-1896,307,wood-staves,staves,auto
+tier2,staves and empty casks,Staves and Empty Casks,1872-1896,158,wood-staves,staves,auto
 tier2,staves mahogany,Staves : Mahogany,1875-1875,9,wood-staves,staves,auto
 tier2,staves of all dimensions,Staves of all Dimensions,1893-1899,150,wood-staves,staves,auto
-tier2,staves unenumerated,Staves : Unenumerated,1872-1880,41,wood-staves,staves,auto
-tier2,teak,Teak,1872-1899,465,wood-hewn-teak,teak (hewn category),auto
-tier2,unenumerated,Unenumerated,1872-1897,980,wood-unenumerated,unenumerated (unqualified),auto
-tier2,unenumerated d,Unenumerated'd),1892-1892,7,wood-unenumerated,unenumerated (unqualified),auto
-tier2,unenumerated not being ash beech birch elm oak or wainscot,"Unenumerated (not being ash,   beech, birch, elm, oak, or   wainscot)",1893-1899,632,wood-unenumerated,unenumerated (unqualified),auto
-tier2,unmanufactured,Unmanufactured,1880-1880,18,,UNMAPPED - needs review,review
-tier2,waste,Waste,1894-1899,269,,UNMAPPED - needs review,review
+tier2,staves unenumerated,Staves : Unenumerated,1875-1875,14,wood-staves,staves,auto
+tier2,teak,Teak,1872-1899,441,wood-hewn-teak,teak (hewn category),auto
+tier2,unenumerated,Unenumerated,1872-1897,935,wood-unenumerated,unenumerated (unqualified),auto
+tier2,unenumerated d,Unenumerated'd),1892-1892,8,wood-unenumerated,unenumerated (unqualified),auto
+tier2,unenumerated not being ash beech birch elm oak or wainscot,"Unenumerated (not being ash,     beech, birch, elm, oak, or     wainscot)",1893-1899,628,wood-unenumerated,unenumerated (unqualified),auto
+tier2,waste,Waste,1894-1899,239,,UNMAPPED - needs review,review
 tier2,wool and mohair plushes,Wool and Mohair Plushes,1894-1899,50,,UNMAPPED - needs review,review
-tier2,woollen tissues heavy broad all wool,"Woollen Tissues, Heavy, Broad, all Wool",1894-1899,1233,,UNMAPPED - needs review,review
-tier2,woollen tissues light broad mixed with other materials,"Woollen Tissues, Light, Broad, mixed with other Materials",1895-1899,370,,UNMAPPED - needs review,review
-tier2,woollen tissues light narrow mixed with other materials,"Woollen Tissues, Light, Narrow, mixed with other Materials",1894-1899,483,,UNMAPPED - needs review,review
+tier2,woollen tissues heavy broad all wool,"Woollen Tissues, Heavy, Broad, all Wool",1894-1899,868,,UNMAPPED - needs review,review
+tier2,woollen tissues light broad mixed with other materials,"Woollen Tissues, Light, Broad, mixed with other Materials",1895-1899,305,,UNMAPPED - needs review,review
+tier2,woollen tissues light narrow mixed with other materials,"Woollen Tissues, Light, Narrow, mixed with other Materials",1894-1899,463,,UNMAPPED - needs review,review
 tier2,woollen yarn carded,Woollen Yarn (Carded),1895-1899,90,,UNMAPPED - needs review,review
 tier2,worsted stuffs and c mixed with other materials,"Worsted Stuffs, &c., mixed with other Materials",1894-1899,380,,UNMAPPED - needs review,review
-tier2,worsted stuffs dress goods linings lastings and c all wool,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",1894-1899,461,,UNMAPPED - needs review,review
-tier2,worsted stuffs dress goods linings lastings and c mixed with other materialscont,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., Mixed with other Materials—cont.",1894-1899,260,,UNMAPPED - needs review,review
-tier2,worsted tissues coatings broad all wool,"Worsted Tissues, Coatings, Broad, all Wool",1894-1899,691,,UNMAPPED - needs review,review
-tier2,worsted tissues coatings broad mixed with other materials,"Worsted Tissues, Coatings, Broad, mixed with other Materials",1894-1898,170,,UNMAPPED - needs review,review
-tier2,worsted yarn combed or carded,Worsted Yarn (Combed or Carded),1895-1899,160,,UNMAPPED - needs review,review
+tier2,worsted stuffs dress goods linings lastings and c all wool,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",1894-1899,446,,UNMAPPED - needs review,review
+tier2,worsted stuffs dress goods linings lastings and c mixed with other materialscont,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., Mixed with other Materials—cont.",1894-1899,250,,UNMAPPED - needs review,review
+tier2,worsted tissues coatings broad all wool,"Worsted Tissues, Coatings, Broad, all Wool",1894-1899,636,,UNMAPPED - needs review,review
+tier2,worsted tissues coatings broad mixed with other materials,"Worsted Tissues, Coatings, Broad, mixed with other Materials",1894-1898,165,,UNMAPPED - needs review,review
+tier2,worsted yarn combed or carded,Worsted Yarn (Combed or Carded),1895-1899,155,,UNMAPPED - needs review,review
 tier2,yarn alpaca and mohair,"Yarn, Alpaca and Mohair",1894-1899,120,,UNMAPPED - needs review,review
 tier2,yarn hair or wool not otherwise enumerated,"Yarn, Hair or Wool, not otherwise Enumerated",1894-1899,50,,UNMAPPED - needs review,review
 tier2,yeast,YEAST,1895-1899,6,,UNMAPPED - needs review,review

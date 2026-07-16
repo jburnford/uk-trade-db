@@ -1,0 +1,71 @@
+commodity,year,kind,ratio,t1_qty,country_sum,cluster_gbp
+Parcel Post (Goods Free Of Duty),1892,missing/short,0.0,464792,0,4857967
+Parcel Post (Goods Free Of Duty),1898,missing/short,0.0,986290,0,4857967
+Parcel Post (Goods Free Of Duty),1899,missing/short,0.0,970165,0,4857967
+"Hair — Cow, Ox, Bull, Or Elk",1875,missing/short,0.293,58151,17043,3776280
+Chloroform — Coco A,1894,missing/short,0.0,1715,0,1966610
+Chloroform — Coco A,1897,missing/short,0.0,3463,0,1966610
+Chloroform — Coco A,1898,missing/short,0.0,4057,0,1966610
+Chloroform — Coco A,1899,missing/short,0.0,1814,0,1966610
+"Manufactured, Of All Kinds",1890,missing/short,0.0,3678846,0,1941082
+"Manufactured, Of All Kinds",1891,missing/short,0.0,3497408,0,1941082
+"Manufactured, Of All Kinds",1892,missing/short,0.0,4142293,0,1941082
+"Manufactured, Of All Kinds",1893,missing/short,0.0,3895104,0,1941082
+"Manufactured, Of All Kinds",1894,missing/short,0.0,3811402,0,1941082
+"Manufactured, Of All Kinds",1895,missing/short,0.0,4240770,0,1941082
+"Manufactured, Of All Kinds",1896,missing/short,0.0,5037198,0,1941082
+"Of Europe, &Amp;C.",1872,missing/short,0.0,1431082,0,1251842
+"Of Europe, &Amp;C.",1873,missing/short,0.0,1505957,0,1251842
+"Of Europe, &Amp;C.",1874,missing/short,0.0,1439544,0,1251842
+"Of Europe, &Amp;C.",1875,missing/short,0.0,1251842,0,1251842
+"Of Europe, &Amp;C.",1876,missing/short,0.0,1757261,0,1251842
+"Of Europe, &Amp;C.",1877,missing/short,0.0,1718580,0,1251842
+"Of Europe, &Amp;C.",1878,missing/short,0.0,2009438,0,1251842
+"Of Europe, &Amp;C.",1879,missing/short,0.0,2239991,0,1251842
+"Of Europe, &Amp;C.",1880,missing/short,0.0,2502951,0,1251842
+"Of Europe, &Amp;C.",1881,missing/short,0.0,2475882,0,1251842
+"Beans (Other Than Kidney, Haricot, Locust Or French)",1896,missing/short,0.0,3102990,0,837417
+"Beans (Other Than Kidney, Haricot, Locust Or French)",1897,missing/short,0.0,2840050,0,837417
+"Beans (Other Than Kidney, Haricot, Locust Or French)",1898,missing/short,0.0,2293346,0,837417
+"Beans (Other Than Kidney, Haricot, Locust Or French)",1899,missing/short,0.0,1877220,0,837417
+"Lac-Dye, Seedlac, Shellac, And Sticklac",1896,missing/short,0.0,157352,0,776217
+"Lac-Dye, Seedlac, Shellac, And Sticklac",1897,missing/short,0.0,177597,0,776217
+"Lac-Dye, Seedlac, Shellac, And Sticklac",1898,missing/short,0.0,96678,0,776217
+"Lac-Dye, Seedlac, Shellac, And Sticklac",1899,missing/short,0.0,108758,0,776217
+"Stones, &Amp;C",1885,missing/short,0.0,338983,0,625458
+"Stones, &Amp;C",1886,missing/short,0.0,386451,0,625458
+"Stones, &Amp;C",1887,missing/short,0.0,372909,0,625458
+"Stones, &Amp;C",1888,missing/short,0.0,373096,0,625458
+"Stones, &Amp;C",1889,missing/short,0.0,399122,0,625458
+"Stones, &Amp;C",1890,missing/short,0.0,443901,0,625458
+"Stones, &Amp;C",1891,missing/short,0.0,428072,0,625458
+"Stones, &Amp;C",1892,missing/short,0.0,556826,0,625458
+"Stones, &Amp;C",1893,missing/short,0.0,546219,0,625458
+"Stones, &Amp;C",1894,missing/short,0.0,585476,0,625458
+Cotton — Raw,1880,overcount,7.19,67638008,486309120,21045020223
+Cotton — Raw,1881,overcount,2.664,57890874,154225875,21045020223
+Cotton — Raw,1882,overcount,1.951,64240749,125339911,21045020223
+Cotton — Raw,1884,overcount,55.118,56400323,3108647063,21045020223
+Cotton — Raw,1885,overcount,1.92,65913827,126541997,21045020223
+Cotton — Raw,1894,overcount,2.078,90262278,187521870,21045020223
+Cotton — Raw,1895,overcount,2.16,81749955,176565120,21045020223
+Cotton — Raw,1896,overcount,1.962,99077055,194408103,21045020223
+Cotton — Raw,1897,overcount,2.687,62740180,168570084,21045020223
+Cotton — Raw,1898,overcount,2.331,75859352,176830740,21045020223
+Cotton — Raw,1899,overcount,2.283,66636078,152151462,21045020223
+Beans (Not Kidney Or French),1894,overcount,5.688,5259895,29915751,54626429
+Beans (Not Kidney Or French),1895,overcount,9.143,4130538,37765332,54626429
+Beans (Not Kidney Or French),1896,overcount,8.244,3102990,25582341,54626429
+Beans (Not Kidney Or French),1897,overcount,4.561,2840050,12953904,54626429
+Beans (Not Kidney Or French),1898,overcount,6.209,2293346,14238842,54626429
+Rye,1893,overcount,2.024,726173,1470035,6865957
+Rye,1894,overcount,2.7,1009226,2725388,6865957
+Rye,1895,overcount,2.693,956420,2575799,6865957
+Rye,1896,overcount,2.086,982700,2049658,6865957
+Collodium,1893,overcount,734.21,1942,1425836,4517460
+Collodium,1894,overcount,1194.064,1270,1516461,4517460
+Collodium,1895,overcount,1349.393,953,1285972,4517460
+Collodium,1896,overcount,655.456,1819,1192275,4517460
+Collodium,1897,overcount,877.949,1575,1382769,4517460
+Collodium,1899,overcount,2.782,307,854,4517460
+Chloroform — Coco A,1895,overcount,16965.454,3694,62670387,1966610

@@ -25,6 +25,17 @@ ditto rows are countries; printed 'Total' rows are kept (country_raw=
 Units ride in the first quantity cell of a block ("Cwts. 3,159") or in a
 header row's cells ("Gallons." / "£").
 
+Two-up GEOMETRY varies by OCR run, esp. 1872-82: besides the plain
+(label,qty,val)x2 6-cell rows, tables print 8 slots (label, dash-leader,
+qty, val)x2, 10/12-slot export variants with extra quantity columns
+(Yards+Lbs), colspan-2 labels, and pages where one half is entirely blank
+colspan cells. A fixed (0,3)/(3,6) slice loses the whole right half (the
+British Possessions continuation of big origin tables lands there) and
+shifts the left half's quantity into value. Tables whose modal expanded
+width is >=7 therefore get per-table geometry: colspan-aware slot
+expansion, the second label column found by alpha-dominance, and qty/val
+slots picked by digit-dominance within each half (first=qty, last=val).
+
 Usage: python3 parse_country.py [as_dir ...]   (tn_* monthly volumes skipped)
 """
 import re
@@ -45,6 +56,9 @@ CONTD_RE = re.compile(
 SEE_RE = re.compile(r'\bSee\b', re.I)
 NUMERICISH_RE = re.compile(r'^[\d,.\s—–\-]*$')
 DITTO_RE = re.compile(r'^\s*[”“‟"„«»\'’‘‚]+')
+UNIT_WORD_RE = re.compile(
+    r'(?:Cwts?|Tons?|Loads?|Gall?on?s?|Lbs?|Number|No|Pieces?|Qrs?'
+    r'|Quarters?|Bushels?|Yards?|Doz(?:en)?s?|Ozs?|Value)\s*\.?', re.I)
 # ditto marks encode DEPTH in the printed hierarchy: one token repeats the
 # group ("  \" Sawn or Split:"), two repeat group + sub-article
 # ("  \" \" Fir:" = Sawn or Split : Fir). Tokens may be spaced quotes,
@@ -142,12 +156,75 @@ TOP_COUNTRIES = frozenset(n.casefold() for n in (
     'France', 'Denmark', 'Holland', 'Belgium', 'Spain', 'Portugal', 'Italy',
     'Austrian Territories', 'Roumania', 'Greece', 'Turkey', 'Egypt',
     'British India', 'Australasia', 'China', 'Japan', 'Brazil', 'Chili',
-    'Argentine Republic', 'Uruguay', 'Peru', 'Mexico',
+    'Argentine Republic', 'Uruguay', 'Peru', 'Mexico', 'New Granada',
+    'United States of Colombia',
 ))
 
 
 def cell_text(c):
     return clean(c.replace('<br/>', ' ').replace('<br>', ' '))
+
+
+TD_ATTR_RE = re.compile(r'<t[hd]([^>]*)>(.*?)</t[hd]>', re.S)
+COLSPAN_RE = re.compile(r'colspan\s*=\s*"?(\d+)')
+LEADERISH_RE = re.compile(r'^[\s\-‐-―—–.·°]*$')
+
+
+def expand_slots(row_html):
+    """Cells with colspan expanded to column slots (raw HTML kept: the
+    label classifier needs <b>/indent)."""
+    slots = []
+    for attrs, content in TD_ATTR_RE.findall(row_html):
+        m = COLSPAN_RE.search(attrs)
+        slots.append(content)
+        slots.extend([''] * ((int(m.group(1)) if m else 1) - 1))
+    return slots
+
+
+def twoup_geometry(exp_rows, width):
+    """For a wide (>=7-slot) two-up table, locate the right half's label
+    column by alpha-dominance and, per half, the qty/val slots by digit-
+    dominance. Returns (mid, [(qty_i, val_i), (qty_i, val_i)]) with slot
+    indexes relative to each half's start (None = column absent)."""
+    n_rows = 0
+    alpha = [0] * width
+    digit = [0] * width
+    pound = [0] * width
+    for e in exp_rows:
+        texts = [cell_text(c) if i < len(e) else ''
+                 for i, c in enumerate(e[:width])]
+        if not any(texts):
+            continue
+        n_rows += 1
+        for i, t in enumerate(texts):
+            if i >= len(e):
+                continue
+            if re.search(r'\d', t):
+                digit[i] += 1
+            elif not LEADERISH_RE.match(t) \
+                    and sum(c.isalpha() for c in t) >= 3:
+                alpha[i] += 1
+            if '£' in t:
+                pound[i] += 1
+    # the right half starts at the second label column; blank-half pages
+    # (alpha nowhere) fall back to the midpoint
+    cand = range(2, width - 1)
+    mid = max(cand, key=lambda i: alpha[i]) if cand else width // 2
+    if alpha[mid] < 2:
+        mid = width // 2
+    halves = [(0, mid), (mid, width)]
+    picks = []
+    thresh = max(2, 0.15 * n_rows)
+    for lo, hi in halves:
+        slots = [i for i in range(lo + 1, hi) if digit[i] >= thresh]
+        if len(slots) >= 2:
+            picks.append((slots[0] - lo, slots[-1] - lo))
+        elif len(slots) == 1:
+            s = slots[0]
+            picks.append((None, s - lo) if pound[s] else (s - lo, None))
+        else:
+            picks.append((1, 2) if hi - lo >= 3 else (None, None))
+    return mid, picks
 
 
 def indent_of(c):
@@ -166,6 +243,7 @@ class SectionState:
         self.sub1 = None          # level-1 sub (parent of ditto-depth-2)
         self.cctx = None          # country whose port/coast rows follow
         self.cctx_sum = 0.0       # value sum of the context's sub-rows
+        self.pending = []         # row-slip cascade (see feed)
         self.unit = None
         self.country_names = frozenset(country_names) | SEED_COUNTRIES
         self.group_vocab = group_vocab    # names known corpus-wide as groups
@@ -196,12 +274,23 @@ class SectionState:
             # ("” United States of America :" -> On the Atlantic ... Total),
             # not a new sub-article. "From X :" is a country header by
             # construction ("Teak: From British East Indies: Bombay ...").
+            # EXCEPT when the row's cells hold a bare unit ("Lbs." | "£"):
+            # units never print without their numbers, so a unit-only
+            # country row is the ROW-SLIP signature — the OCR pushed every
+            # value one row down (as_1881/82 wool pages). Queue the label;
+            # feed() re-pairs it with the NEXT row's numbers.
             m_from = re.match(r'^(?:from|to)\s+(.*)', stripped, re.I)
             if m_from:
+                if self._unit_only(unit_probe):
+                    self.pending.append(m_from.group(1).strip())
+                    return None
                 self.cctx = m_from.group(1).strip()
                 self.cctx_sum = 0.0
                 return None
             if stripped.casefold() in self.country_names:
+                if self._unit_only(unit_probe):
+                    self.pending.append(stripped)
+                    return None
                 self.cctx = stripped
                 self.cctx_sum = 0.0
                 return None
@@ -240,6 +329,7 @@ class SectionState:
                 self.sub1 = stripped
             self.cctx = None
             self.cctx_sum = 0.0
+            self.pending.clear()      # slip cascade never crosses blocks
             # header rows can carry the block's units ("Gallons." | "£")
             self.unit = None
             if unit_probe is not None:
@@ -247,7 +337,15 @@ class SectionState:
                 if u and not re.search(r'\d', u) and u != '£' and len(u) < 26:
                     self.unit = u
             return None
-        if self.group is None or not has_vals:
+        if not has_vals:
+            # colon-less row-slip signature ("From Russia" | "Loads." | "£"
+            # — left column of the same slipped pages)
+            m = re.match(r'^(?:from|to)\s+(.*)', stripped, re.I)
+            if m and self.group is not None \
+                    and self._unit_only(unit_probe):
+                self.pending.append(m.group(1).strip(' -'))
+            return None
+        if self.group is None:
             return None
         low = stripped.lower()
         m = re.match(r'^(?:from|to)\s+(.*)', stripped, re.I)
@@ -256,6 +354,17 @@ class SectionState:
         if m:
             return m.group(1).strip(' -') or None
         return stripped or None          # ditto row / wrapped continuation
+
+    @staticmethod
+    def _unit_only(probe):
+        """True when the cell holds a bare unit ('Lbs.' / 'Loads.' / '£')
+        with no number — the row-slip signature (units never print without
+        their figures). Known units only: a looser match would queue false
+        pendings and mis-shift a healthy block."""
+        if probe is None:
+            return False
+        t = cell_text(probe).strip()
+        return t == '£' or UNIT_WORD_RE.fullmatch(t) is not None
 
     def _num(self, cell, set_unit=False):
         txt = cell_text(cell).replace('£', '').strip()
@@ -293,16 +402,42 @@ class SectionState:
         return f'{self.cctx} : {country}'
 
     def feed(self, label_raw, values):
-        """Single-year two-up row: label + [quantity, value]."""
+        """Single-year two-up row: label + [quantity, value].
+
+        Row-slip cascade: once _classify has queued a unit-only country
+        label (self.pending), each following row's numbers belong to the
+        label ONE ROW UP — emit the queued label with this row's numbers
+        and queue this row's label in its place. The orphan label-less
+        numbers row at the block's end (or its Total) drains the queue,
+        after which rows pair normally again."""
         has_vals = any(re.search(r'\d', cell_text(v) or '') for v in values)
         country = self._classify(label_raw, values[0] if values else None,
                                  has_vals)
         if country is None:
+            if self.pending and has_vals \
+                    and not cell_text(label_raw).strip():
+                nums = [self._num(v, set_unit=(i == 0))
+                        for i, v in enumerate(values)]
+                nums += [None] * (4 - len(nums))
+                self._emit(self.pending.pop(0), nums)
             return
         nums = [self._num(v, set_unit=(i == 0))
                 for i, v in enumerate(values)]
         nums += [None] * (4 - len(nums))
+        if self.pending:
+            if country == 'TOTAL':
+                # the slipped label's own numbers were never printed on a
+                # reachable row; drop it — the block-sum check will flag
+                self.pending.clear()
+            else:
+                slipped, self.pending[:] = self.pending[0], \
+                    self.pending[1:] + [country]
+                self._emit(slipped, nums)
+                return
         country = self._apply_cctx(country, nums[1])
+        self._emit(country, nums)
+
+    def _emit(self, country, nums):
         self.seq += 1
         self.out.append([self.volume, self.flow, self.duty,
                          self.group, self.sub, country, self.unit, self.year,
@@ -354,6 +489,23 @@ def looks_like_country_table(body_rows):
     if ok / len(body_rows) < 0.6:
         return False
     labels = [cell_text(c[0]) for c in body_rows if c]
+    hits = sum(1 for lab in labels if re.match(
+        r'\s*(From |To |Total|[”"„])', lab))
+    return hits >= 3
+
+
+def looks_like_twoup(exp_rows, mid):
+    """Wide-table gate: country labels may live in EITHER half's label slot
+    (pages whose left half is blank colspan filler hide the whole block
+    from the cell-0-only check above)."""
+    if len(exp_rows) < 5:
+        return False
+    labels = []
+    for e in exp_rows:
+        if e:
+            labels.append(cell_text(e[0]))
+        if len(e) > mid:
+            labels.append(cell_text(e[mid]))
     hits = sum(1 for lab in labels if re.match(
         r'\s*(From |To |Total|[”"„])', lab))
     return hits >= 3
@@ -434,6 +586,14 @@ def parse_volume_countries(md_path, volume, year, out, country_names=(),
             continue        # skip the abstract table; keep the sticky section
         body_rows = [CELL_RE.findall(r) for r in rows if '<th' not in r]
         body_rows = [c for c in body_rows if c]
+        exp_rows = [expand_slots(r) for r in rows if '<th' not in r]
+        exp_rows = [e for e in exp_rows if e]
+        w_counts = Counter(len(e) for e in exp_rows
+                           if any(cell_text(c) for c in e))
+        width = w_counts.most_common(1)[0][0] if w_counts else 0
+        wide = width >= 7
+        if wide:
+            mid, picks = twoup_geometry(exp_rows, width)
         if kind:
             flow, duty = kind
             if flow == 'import':
@@ -442,7 +602,8 @@ def parse_volume_countries(md_path, volume, year, out, country_names=(),
                 pass                       # which export: keep sticky state
             else:
                 cur = ('export_uk', '')
-        elif not (cur and looks_like_country_table(body_rows)):
+        elif not (cur and (looks_like_country_table(body_rows)
+                           or (wide and looks_like_twoup(exp_rows, mid)))):
             continue
         if cur is None:
             continue
@@ -469,11 +630,31 @@ def parse_volume_countries(md_path, volume, year, out, country_names=(),
             for cells in body_rows:
                 if len(cells) >= 2:
                     st.feed(cells[0], cells[1:5])
+        elif wide:
+            # geometry-mapped two-up: whole left column, then right column
+            for (lo, hi), (qi, vi) in zip(((0, mid), (mid, width)), picks):
+                for cells, e in zip(body_rows, exp_rows):
+                    row = cells if len(e) != width \
+                        and len(cells) == width else e
+                    part = row[lo:hi]
+                    if not part or not cell_text(part[0]).strip():
+                        # data may still ride label-less rows; nothing to
+                        # classify without a label — skip
+                        continue
+                    vals = [part[i] if i is not None and i < len(part)
+                            else '' for i in (qi, vi)]
+                    st.feed(part[0], vals)
         else:
-            # two-up: run the whole left column, then the right column
+            # two-up: run the whole left column, then the right column.
+            # A row is read via its colspan-EXPANDED slots when those hit
+            # the table's modal width (colspan'd headers otherwise collapse
+            # into the left slice and the right column's header vanishes —
+            # as_1877 Wool under "Mahogany"); rows already at width, or off
+            # width either way, keep the raw cell list.
             for lo, hi in ((0, 3), (3, 6)):
-                for cells in body_rows:
-                    part = cells[lo:hi]
+                for cells, e in zip(body_rows, exp_rows):
+                    row = e if len(e) == width else cells
+                    part = row[lo:hi]
                     if part:
                         st.feed(part[0], part[1:3])
     return n_tables
