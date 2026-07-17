@@ -262,6 +262,11 @@ def country_series_anomalies(payload_path, min_gbp=500_000,
         for (cty, u), by_y in series.items():
             if len(by_y) < 6:
                 continue
+            # residual buckets ('Other Countries', 'Other Foreign
+            # Countries', 'Other British Possessions') are not supplier
+            # series — their swings are composition-driven, not data errors
+            if cty.lower().startswith('other '):
+                continue
             shares = [q / tot[(u, y)] for y, q in by_y.items() if tot[(u, y)] > 0]
             weight = median(shares) if shares else 0
             if weight < 0.04:
