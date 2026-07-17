@@ -34,3 +34,24 @@ hole,Butter,United States Of America,1884,regime,Printed as 'Butter and Butterin
 hole,Butter,United States Of America,1885,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
 dip,Tea,Ceylon,1879,genuine,"135,336 lbs is the printed page value (hand-keyed, table sums exact): Ceylon tea was genuinely tiny in 1879 - the coffee-blight-to-tea transition had barely begun; the boom is 1880s."
 hole,Tea,Other Countries,1879,artifact,"Cell exists in the Lb unit bucket (hand-keyed 454,786); the '?'-unit series is a display bucket split."
+dip,Maize Or Indian Corn,Roumania,1880,genuine,"Both engines agree 1,761,432; member sum 37,221,733 vs printed TOTAL 37,224,733 (short only 3k, no broken digit); GBP/cwt 0.317 matches US 0.299; 1879 also depressed (2.96M) after the 1879 European crop failure, recovers 1881+."
+hole,Jute,Bengal And Burmah,1874,artifact,"Recovered 2026-07-17 via the as_1874 ISINGLASS glue repair ('Bengal and Burmah' 4,253,700; TOTAL == T1 within 3)."
+hole,Jute,Bengal And Burmah,1882,artifact,"Printed label regime: 1882-86 jute tables print plain 'Bengal' (1882 Cwt cell present); compound label not printed. Not folded: for rice the compound vs separate Bengal/Burmah distinction is real."
+hole,Jute,Bengal And Burmah,1883,artifact,"Same label regime; 1883 cell present under 'Bengal' (unit '?')."
+hole,Tea,Bengal,1883,artifact,"1883 tea table prints 'Bengal and Burmah' (58,500,667 recovered via the as_1883 SPIRITS glue repair); plain-'Bengal' label starts 1885. Burmah's tea is trivial (772 lbs in 1885) but the labels are kept as printed."
+hole,Tea,Bengal,1884,artifact,"Same: 1884 prints 'Bengal and Burmah' (62,581,576 recovered via the as_1884 SPIRITS|Rum glue repair)."
+hole,Tea,Bengal And Burmah,1882,artifact,"1882 tea table prints plain 'Bengal' (52,745,945 hand-keyed from the page image); the compound label is the 1872-81 regime."
+hole,Wool — Sheep Or Lambs',Bombay,1884,artifact,"Printed regime: 1884-90 wool tables print the 'British East Indies' aggregate line (34.6M lbs in 1886), no separate Bombay row; Bombay reappears 1891."
+hole,Wool — Sheep Or Lambs',Bombay,1885,artifact,See 1884 entry.
+hole,Wool — Sheep Or Lambs',Bombay,1886,artifact,See 1884 entry.
+hole,Wool — Sheep Or Lambs',Bombay,1887,artifact,See 1884 entry.
+hole,Wool — Sheep Or Lambs',Bombay,1888,artifact,See 1884 entry.
+hole,Wool — Sheep Or Lambs',Bombay,1889,artifact,See 1884 entry.
+hole,Wool — Sheep Or Lambs',Bombay,1890,artifact,See 1884 entry.
+hole,Cotton — Raw,Bombay,1893,artifact,"Cell exists (consensus 'bombay' 233,673 Cwt 1893); missing from the unified series' Cwt bucket for unit-label reasons only."
+dip,Cotton — Raw,Bombay,1895,genuine,"1890s regime: Indian raw-cotton exports to the UK collapsed (1891 592k, 1892 382k, 1893 234k, 1894 370k, 1895 252-255k, 1896 347k); consensus and groupfix copies agree within 3k. The 1.3M median is the 1870s-80s era of the newly-unified Bombay series."
+hole,Cheese,Canada,1885,artifact,"Data present: the as_1885 cheese table prints the pre-1883 label 'British North America' (606,769 infonly) instead of 'Canada'; BNA = Canada+Newfoundland so no fold applied."
+hole,Oil,Lagos,1887,artifact,"Scope-label alternation: 1887/89/90 print 'West Africa : The Gold Coast (including Lagos)' (343,073/446,238/414,187, present as sub-entries); plain 'Lagos' years are the narrower scope."
+hole,Oil,Lagos,1889,artifact,See 1887 entry.
+hole,Oil,Lagos,1890,artifact,See 1887 entry.
+dip,Corn And Grain — United States Of America,United States Of America (Pacific),1878,artifact,Same junk commodity as the Atlantic entries (twoup wheat tables with the article stuck as a country).

@@ -1,16 +1,12 @@
 commodity,year,kind,ratio,t1_qty,country_sum,cluster_gbp
-Rice,1872,missing/short,0.0,7033361,0,83026371
-Rice,1873,missing/short,0.0,6540318,0,83026371
-Rice,1875,missing/short,0.0,6786298,0,83026371
-Beans (Not Kidney Or French),1893,missing/short,0.187,3946985,738050,53243082
 "— Bar, Angle, Bolt And Rod",1898,missing/short,0.016,69224,1095,15787295
 — Pig And Puddled,1898,missing/short,0.408,159523,65054,8538969
+Beans (Not Kidney Or French),1893,missing/short,0.187,3946985,738050,8114668
+Beans (Not Kidney Or French),1894,missing/short,0.191,5259895,1003451,8114668
 Parcel Post (Goods Free Of Duty),1892,missing/short,0.0,464792,0,4857967
 Parcel Post (Goods Free Of Duty),1898,missing/short,0.0,986290,0,4857967
 Parcel Post (Goods Free Of Duty),1899,missing/short,0.0,970165,0,4857967
 "Hair — Cow, Ox, Bull, Or Elk",1875,missing/short,0.293,58151,17043,3776280
-Peas,1893,missing/short,0.0,2302443,0,3497513
-Peas,1899,missing/short,0.567,2752950,1561445,3497513
 Candles Of All Sorts,1878,missing/short,0.0,118147,0,3057168
 Candles Of All Sorts,1879,missing/short,0.0,120995,0,3057168
 Candles Of All Sorts,1880,missing/short,0.0,132433,0,3057168
@@ -30,6 +26,11 @@ Chloroform — Coco A,1899,missing/short,0.0,1814,0,1966610
 "Manufactured, Of All Kinds",1894,missing/short,0.0,3811402,0,1941082
 "Manufactured, Of All Kinds",1895,missing/short,0.0,4240770,0,1941082
 "Manufactured, Of All Kinds",1896,missing/short,0.0,5037198,0,1941082
+Peas,1893,missing/short,0.0,2302443,0,1936743
+Peas,1894,missing/short,0.0,2272623,0,1936743
+Peas,1895,missing/short,0.0,2422851,0,1936743
+Peas,1896,missing/short,0.0,3018657,0,1936743
+Peas,1899,missing/short,0.567,2752950,1561445,1936743
 "Of Europe, &Amp;C.",1872,missing/short,0.0,1431082,0,1251842
 "Of Europe, &Amp;C.",1873,missing/short,0.0,1505957,0,1251842
 "Of Europe, &Amp;C.",1874,missing/short,0.0,1439544,0,1251842
@@ -58,23 +59,19 @@ Chloroform — Coco A,1899,missing/short,0.0,1814,0,1966610
 "Stones, &Amp;C",1892,missing/short,0.0,556826,0,625458
 "Stones, &Amp;C",1893,missing/short,0.0,546219,0,625458
 "Stones, &Amp;C",1894,missing/short,0.0,585476,0,625458
-Cotton — Raw,1873,overcount,1.997,44244331,88361141,20897385532
-Cotton — Raw,1880,overcount,7.086,67638008,479302793,20897385532
-Cotton — Raw,1881,overcount,2.611,57890874,151128096,20897385532
-Cotton — Raw,1884,overcount,55.103,56400323,3107798848,20897385532
-Cotton — Raw,1893,overcount,2.128,76784942,163367035,20897385532
-Cotton — Raw,1894,overcount,2.041,90262278,184199291,20897385532
-Cotton — Raw,1895,overcount,3.02,81749955,246869288,20897385532
-Cotton — Raw,1896,overcount,2.063,99077055,204416264,20897385532
-Cotton — Raw,1897,overcount,2.798,62740180,175553920,20897385532
-Cotton — Raw,1898,overcount,2.385,75859352,180907839,20897385532
-Cotton — Raw,1899,overcount,2.309,66636078,153829722,20897385532
-Rice,1895,overcount,2.314,5431248,12566849,83026371
-Beans (Not Kidney Or French),1894,overcount,5.729,5259895,30132961,53243082
-Beans (Not Kidney Or French),1895,overcount,9.151,4130538,37796870,53243082
-Beans (Not Kidney Or French),1896,overcount,8.268,3102990,25654149,53243082
-Beans (Not Kidney Or French),1897,overcount,4.584,2840050,13017581,53243082
-Beans (Not Kidney Or French),1898,overcount,6.226,2293346,14278041,53243082
+Cotton — Raw,1873,overcount,1.982,44244331,87695401,20584656447
+Cotton — Raw,1880,overcount,7.076,67638008,478639668,20584656447
+Cotton — Raw,1881,overcount,2.214,57890874,128198062,20584656447
+Cotton — Raw,1884,overcount,55.098,56400323,3107559290,20584656447
+Cotton — Raw,1885,overcount,2.074,65913827,136711408,20584656447
+Cotton — Raw,1893,overcount,2.136,76784942,164046250,20584656447
+Cotton — Raw,1894,overcount,2.041,90262278,184187565,20584656447
+Cotton — Raw,1895,overcount,2.525,81749955,206405226,20584656447
+Cotton — Raw,1896,overcount,2.063,99077055,204416264,20584656447
+Cotton — Raw,1897,overcount,2.798,62740180,175569320,20584656447
+Cotton — Raw,1898,overcount,2.385,75859352,180907839,20584656447
+Cotton — Raw,1899,overcount,2.309,66636078,153829722,20584656447
+Rice,1895,overcount,2.314,5431248,12566849,99642986
 Collodium,1893,overcount,734.21,1942,1425836,4517460
 Collodium,1894,overcount,1194.064,1270,1516461,4517460
 Collodium,1895,overcount,1349.393,953,1285972,4517460

@@ -114,9 +114,23 @@ def fold_country(c):
     # of Hong Kong)' means what plain 'China' means in the neighbouring
     # years (silk 1886: 1,217,002 excl. sits between 1885's 1,444,960 and
     # 1887's 1,416,660 — both exclusive-era plain-China lines)
-    if re.match(r'^china (?:and hong\s*kong|\(?exclusive of hong\s*kong\)?)$',
-                c, re.I):
+    # 1884-era tables widen the scope label to 'China, Hong Kong, and Macao'
+    # (tea): same fold — plain-China neighbours mean the same thing
+    if re.match(r'^china(?:,| and) hong\s*kong(?:,? and macao)?$'
+                r'|^china \(?exclusive of hong\s*kong\)?$', c, re.I):
         return 'China'
+    # British India presidency labels: some volumes lose the parent colon
+    # ('British India Bombay and Scinde' as one string) — strip the stale
+    # prefix like the sub-entry split would. The Bombay customs region is
+    # printed 'Bombay and Scinde' (Scinde shipped via Karachi under the
+    # Bombay presidency) until ~1890, then plain 'Bombay': one entity —
+    # the split showed as wool holes 1877/81. 'Bengal and Burmah' is NOT
+    # folded to Bengal: Burma is printed separately in later regimes.
+    c = re.sub(r'^british india[,:]?\s+'
+               r'(?=(?:bombay|madras|bengal|burmah|scinde)\b)', '', c,
+               flags=re.I)
+    if re.match(r'^bombay(?: and scinde)?$', c, re.I):
+        return 'Bombay'
     return c.title() if c else '?'
 
 
@@ -164,6 +178,16 @@ def toks(*parts):
                     out.update(('WHEAT', 'MEAL'))
                 else:
                     out.add(t)
+    # refined-sugar subsection heading glue: the printed line is 'Other
+    # Sorts, including Candy' under a 'Refined:—' (or 'Refined, or rendered
+    # by any process equal thereto:') heading; several volumes glue the
+    # heading — or the SIBLING subsection 'In Lumps and Loaves' — onto the
+    # article, splitting one series across four sigs (Germany 1886/87/92
+    # showed as holes). Only sugar prints this tail, so the fold is safe.
+    # Done here (not sig_of) so the sticky-repair akey/art_toks fold too.
+    if {'CANDY', 'SORTS', 'INCLUDING', 'OTHER'} <= out:
+        out -= {'REFINED', 'RENDERED', 'ANY', 'BY', 'PROCESS', 'EQUAL',
+                'THERETO', 'IN', 'LUMPS', 'LOAVES', 'SUGAR'}
     return out
 
 
