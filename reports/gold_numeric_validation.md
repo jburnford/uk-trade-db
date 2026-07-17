@@ -14,9 +14,9 @@ Substantive gold commodity-years (gold total > 1,000): **1,456**
 | ±8% | 1388/1456 = **95%** |
 
 ## Per year (±5%)
-- 1876: 265/278 (95%)
+- 1876: 266/278 (96%)
 - 1881: 240/264 (91%)
-- 1886: 241/283 (85%)
+- 1886: 240/283 (85%)
 - 1891: 272/302 (90%)
 - 1896: 304/329 (92%)
 
@@ -42,9 +42,9 @@ Substantive gold commodity-years (gold total > 1,000): **1,456**
 | Cotton Raw | 1891 | 17,811,476 | CWTS (Hundredweights) |
 | Wine Total of all Kinds | 1896 | 16,695,560 | Gallons |
 | Wine Total of all Kinds | 1881 | 16,297,033 | Gallons |
+| Cotton Raw | 1886 | 15,312,900 | CWTS (Hundredweights) |
 | Skins Furs Pelts Sheep Undressed | 1891 | 13,041,530 | Number |
 | Spirits Rum | 1876 | 10,395,335 | Proof Gallons |
 | Skins Furs Pelts Goat Tanned Tawed or Dressed | 1881 | 8,983,237 | Number |
 | Spirits Brandy | 1876 | 7,913,092 | Proof Gallons |
 | Skins Furs Pelts Furs Unenumerated | 1876 | 7,574,936 | Number |
-| Skins Furs Pelts Sheep Tanned Tawed or Dressed | 1881 | 6,785,751 | Number |

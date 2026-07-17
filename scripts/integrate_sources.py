@@ -135,6 +135,22 @@ def main():
                      int(gr['seq_start']), int(gr['seq_end'])]).fetchall():
                 repaired_rows.add((gr['volume'], gr['article_group'],
                                    gr['article'] or None, ctry))
+    # manual_rows with replace=1: a page-adjudicated hand-keyed CELL replaces
+    # the pipeline's reading everywhere (as_1883 BPSA sheep wool printed a
+    # broken digit — 18,870,981 for 48,870,981; the column total, exactly
+    # 30,000,000 short, plus the GBP/lb rate pin the true value). Collected
+    # up front so step 1 can drop the superseded cells.
+    manual_replace = set()     # (group-aware sig, cnorm country, year)
+    mrf0 = BASE / 'reference' / 'manual_rows.csv'
+    if mrf0.exists():
+        for mr in csv.DictReader(open(mrf0)):
+            if (mr.get('replace') or '').strip() == '1':
+                g0 = (mr['article_group'] or '').strip()
+                a0 = (mr['article'] or '').strip()
+                ga0 = V.sig(f"{g0.upper()} {a0}") or V.sig(a0)
+                manual_replace.add((ga0, V.cnorm(mr['country']),
+                                    int(mr['year'])))
+
     supersede = set()          # (WRONG group, article, year) to drop —
                                # applied to consensus AND the gap-fill
                                # sources (infonly/twoup/runin/subentry): a
@@ -169,6 +185,9 @@ def main():
         # the same article-first sig, so COTTON|Raw|ceylon would block the
         # COFFEE|Raw|ceylon sub-entry — step 4 checks this set instead
         ga = V.sig(f"{(grp or '').strip()} {a}") or asig
+        if (ga, c, int(y)) in manual_replace:
+            n_sup += 1
+            continue           # cell replaced by a page-adjudicated manual row
         consensus_triples_ga.add((ga, c, int(y)))
         out_rows.append({'group': (grp or '').upper(), 'article': a, 'country': ctry,
             'unit': unit or '', 'qty': float(q), 'value': float(v) if v else None,
@@ -466,7 +485,9 @@ def main():
             y = int(mr['year'])
             if not asig or is_subtotal(V.cnorm(ctry)):
                 continue
-            if (asig, c, y) in consensus_triples_ga or (asig, c, y) in seen_added:
+            replacing = (asig, V.cnorm(ctry), y) in manual_replace
+            if not replacing and ((asig, c, y) in consensus_triples_ga
+                                  or (asig, c, y) in seen_added):
                 continue
             seen_added.add((asig, c, y))
             out_rows.append({

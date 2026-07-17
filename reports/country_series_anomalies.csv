@@ -1,29 +1,23 @@
 kind,commodity,country,unit,year,value,series_median,ratio_to_median,gbp
-hole,Coffee,Ceylon,Cwt,1879,,504992,,65166356
-hole,Coffee,Ceylon,Cwt,1882,,504992,,65166356
-hole,Coffee,Ceylon,Cwt,1883,,504992,,65166356
-dip,Coffee,Ceylon,Cwt,1874,30195,504992,0.06,65166356
+hole,Coffee,Ceylon,Cwt,1882,,522908,,97376180
+hole,Coffee,Ceylon,Cwt,1883,,522908,,97376180
 dip,Corn And Grain — Wheat,United States Of America (Pacific),Cwt,1885,77392,8864941,0.009,61193585
 dip,Corn And Grain — Wheat,United States Of America (Pacific),Cwt,1895,1038900,8864941,0.117,61193585
-dip,Tea,Ceylon,Lb,1879,219555,57323010,0.004,58911268
-dip,Maize Or Indian Corn,Roumania,Cwt,1880,1761432,7343682,0.24,58154174
+dip,Maize Or Indian Corn,Roumania,Cwt,1880,1761432,7343682,0.24,58647310
 hole,"Other Sorts, Including Candy",Germany,Cwt,1886,,5142084,,57665338
 hole,"Other Sorts, Including Candy",Germany,Cwt,1892,,5142084,,57665338
 hole,"Flax, Dressed Or Undressed",Other Countries,Cwt,1873,,2556,,57400776
 hole,"Flax, Dressed Or Undressed",Other Countries,Cwt,1877,,2556,,57400776
 hole,"Flax, Dressed Or Undressed",Other Countries,Cwt,1882,,2556,,57400776
 dip,"Flax, Dressed Or Undressed",Other Countries,Cwt,1883,483,2556,0.189,57400776
+hole,Tea,China,Lb,1883,,50243304,,51636413
+hole,Tea,China,Lb,1884,,50243304,,51636413
 hole,Wool — Sheep Or Lambs',British India Bombay And Scinde,Lb,1877,,22201322,,50631268
 hole,Wool — Sheep Or Lambs',British India Bombay And Scinde,Lb,1881,,22201322,,50631268
-hole,Tea,Bombay And Scinde,?,1880,,209532,,49789176
-dip,Tea,Bombay And Scinde,?,1877,50314,209532,0.24,49789176
-spike,Tea,Bombay And Scinde,?,1879,141644277,209532,676.003,49789176
-spike,Tea,Bombay And Scinde,?,1881,162238139,209532,774.288,49789176
-hole,Tobacco — Unmanufactured,United States Of America,Lb,1876,,60247715,,48785335
-hole,Tobacco — Unmanufactured,United States Of America,Lb,1877,,60247715,,48785335
-hole,Tobacco — Unmanufactured,United States Of America,Lb,1879,,60247715,,48785335
-hole,Tobacco — Unmanufactured,United States Of America,Lb,1881,,60247715,,48785335
-hole,Tobacco — Unmanufactured,United States Of America,Lb,1882,,60247715,,48785335
+hole,Tobacco — Unmanufactured,United States Of America,Lb,1876,,58920770,,49566791
+hole,Tobacco — Unmanufactured,United States Of America,Lb,1877,,58920770,,49566791
+hole,Tobacco — Unmanufactured,United States Of America,Lb,1881,,58920770,,49566791
+hole,Tobacco — Unmanufactured,United States Of America,Lb,1882,,58920770,,49566791
 hole,Cheese,Canada,Cwt,1885,,632886,,47381589
 dip,Caoutchouc,Brazil,Cwt,1873,12021,97234,0.124,46907592
 dip,Corn And Grain — United States Of America,United States Of America (Pacific),?,1878,261855,8874679,0.03,46836993
@@ -41,15 +35,21 @@ hole,Spirits — Brandy,France,Proof Gallon,1881,,2790416,,43068839
 hole,Spirits — Brandy,France,Proof Gallon,1884,,2790416,,43068839
 hole,Spirits — Brandy,France,Proof Gallon,1887,,2790416,,43068839
 hole,Spirits — Brandy,France,Proof Gallon,1888,,2790416,,43068839
+hole,Coffee,Brazil,Cwt,1882,,198930,,42036942
+hole,Coffee,Brazil,Cwt,1883,,198930,,42036942
+dip,Coffee,Brazil,Cwt,1887,1368,198930,0.007,42036942
+dip,Coffee,Brazil,Cwt,1889,2190,198930,0.011,42036942
 hole,Cotton — Flax Or Linseed,Bengal,Quarter,1884,,969183,,41085323
 hole,Cotton — Flax Or Linseed,Bengal,Quarter,1888,,969183,,41085323
 hole,Cotton — Flax Or Linseed,Bengal,Quarter,1890,,969183,,41085323
 hole,Cotton — Flax Or Linseed,Bengal,Quarter,1891,,969183,,41085323
 hole,Cotton — Flax Or Linseed,Bengal,Quarter,1892,,969183,,41085323
-hole,Tea,China,Lb,1883,,43936836,,40521670
-hole,Tea,China,Lb,1884,,43936836,,40521670
 dip,Corn And Grain — Wheat,Russia,Cwt,1874,709576,4613436,0.154,40423232
 dip,Corn And Grain — Wheat,Russia,Cwt,1895,935250,4613436,0.203,40423232
+hole,Coffee,Central America,Cwt,1882,,210979,,39882685
+hole,Coffee,Central America,Cwt,1883,,210979,,39882685
+dip,Coffee,Central America,Cwt,1887,49727,210979,0.236,39882685
+dip,Coffee,Central America,Cwt,1889,38200,210979,0.181,39882685
 hole,Butter,Sweden,?,1874,,38545,,37462204
 hole,Butter,Sweden,?,1876,,38545,,37462204
 hole,Butter,Sweden,?,1879,,38545,,37462204
@@ -58,22 +58,13 @@ hole,Roasted Or Ground,Belgium,Lb,1880,,143204,,37440997
 hole,Roasted Or Ground,Belgium,Lb,1886,,143204,,37440997
 hole,Roasted Or Ground,Belgium,Lb,1887,,143204,,37440997
 hole,Roasted Or Ground,Belgium,Lb,1888,,143204,,37440997
+dip,Tea,Madras,?,1874,39764,176864,0.225,37234544
 hole,"Wood And Timber — Sawn, Fir",Sweden,Load,1892,,1263324,,36254365
 hole,"Wood And Timber — Sawn, Fir",Sweden,Load,1893,,1263324,,36254365
 hole,"Wood And Timber — Sawn, Fir",Sweden,Load,1895,,1263324,,36254365
 hole,Wine — White,Spain,Gallon,1889,,3801888,,36036714
 hole,Wine — White,Spain,Gallon,1890,,3801888,,36036714
 hole,Wine — White,Spain,Gallon,1891,,3801888,,36036714
-hole,Coffee,Brazil,Cwt,1879,,194203,,35523645
-hole,Coffee,Brazil,Cwt,1882,,194203,,35523645
-hole,Coffee,Brazil,Cwt,1883,,194203,,35523645
-dip,Coffee,Brazil,Cwt,1887,1368,194203,0.007,35523645
-dip,Coffee,Brazil,Cwt,1889,2190,194203,0.011,35523645
-hole,Coffee,Central America,Cwt,1879,,210198,,33551120
-hole,Coffee,Central America,Cwt,1882,,210198,,33551120
-hole,Coffee,Central America,Cwt,1883,,210198,,33551120
-dip,Coffee,Central America,Cwt,1887,49727,210198,0.237,33551120
-dip,Coffee,Central America,Cwt,1889,38200,210198,0.182,33551120
 hole,Eggs,France,Great Hundred,1873,,3080319,,33422140
 dip,Eggs,France,Great Hundred,1874,144256,3080319,0.047,33422140
 dip,Eggs,France,Great Hundred,1884,8790,3080319,0.003,33422140
@@ -105,6 +96,8 @@ hole,Fruit — Currants,Greece,Cwt,1880,,1131637,,27699699
 hole,Fruit — Currants,Greece,Cwt,1881,,1131637,,27699699
 hole,Fruit — Currants,Greece,Cwt,1882,,1131637,,27699699
 hole,Fruit — Currants,Greece,Cwt,1898,,1131637,,27699699
+hole,Coffee,Madras,Cwt,1882,,157042,,27168458
+hole,Coffee,Madras,Cwt,1883,,157042,,27168458
 hole,Eggs,Germany,Great Hundred,1880,,2732912,,25761116
 hole,Eggs,Germany,Great Hundred,1882,,2732912,,25761116
 hole,Eggs,Germany,Great Hundred,1884,,2732912,,25761116
@@ -112,9 +105,6 @@ dip,Eggs,Germany,Great Hundred,1875,548120,2732912,0.201,25761116
 hole,Cotton — Flax Or Linseed,Russia,Quarter,1873,,525532,,25357297
 hole,Cotton — Flax Or Linseed,Russia,Quarter,1875,,525532,,25357297
 hole,"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",France,Cwt,1874,,1624605,,24478504
-hole,Coffee,Madras,Cwt,1879,,156703,,24474650
-hole,Coffee,Madras,Cwt,1882,,156703,,24474650
-hole,Coffee,Madras,Cwt,1883,,156703,,24474650
 hole,"Coals, Cinders, &C — Coals And Culm",United States Of America,Ton,1889,,3297,,24308483
 dip,"Coals, Cinders, &C — Coals And Culm",United States Of America,Ton,1888,429,3297,0.13,24308483
 hole,Roasted Or Ground,Channel Islands,Lb,1880,,72259,,24054074
@@ -180,6 +170,13 @@ hole,Fruit — Raisins,Spain,Cwt,1880,,313010,,16158286
 hole,Fruit — Raisins,Spain,Cwt,1881,,313010,,16158286
 hole,Fruit — Raisins,Spain,Cwt,1882,,313010,,16158286
 hole,Fruit — Raisins,Spain,Cwt,1893,,313010,,16158286
+hole,Maize Or Indian Corn,Argentine Republic,Cwt,1880,,2165275,,16116969
+hole,Maize Or Indian Corn,Argentine Republic,Cwt,1881,,2165275,,16116969
+hole,Maize Or Indian Corn,Argentine Republic,Cwt,1882,,2165275,,16116969
+hole,Maize Or Indian Corn,Argentine Republic,Cwt,1883,,2165275,,16116969
+hole,Maize Or Indian Corn,Argentine Republic,Cwt,1894,,2165275,,16116969
+dip,Maize Or Indian Corn,Argentine Republic,Cwt,1893,231956,2165275,0.107,16116969
+spike,Maize Or Indian Corn,Argentine Republic,Cwt,1896,16107900,2165275,7.439,16116969
 dip,Wood And Timber,Siam,Load,1888,96,7199,0.013,16104963
 dip,Wood And Timber,Siam,Load,1893,857,7199,0.119,16104963
 dip,Linen Yarn,Germany,?,1894,110800,2265214,0.049,16013585
@@ -203,12 +200,6 @@ hole,"Milk, Condensed",Australasia,Cwt,1893,,1767859,,15694101
 hole,"Wood And Timber — Hewn, Fir",Russia,Load,1888,,318125,,15589898
 dip,"Nitre, Cubic",Peru,Cwt,1889,74569,1516358,0.049,15328452
 hole,"Wood And Timber — Hewn, Fir",Norway,Load,1888,,275209,,15277557
-hole,Maize Or Indian Corn,Argentine Republic,Cwt,1880,,1984392,,14927682
-hole,Maize Or Indian Corn,Argentine Republic,Cwt,1881,,1984392,,14927682
-hole,Maize Or Indian Corn,Argentine Republic,Cwt,1882,,1984392,,14927682
-hole,Maize Or Indian Corn,Argentine Republic,Cwt,1883,,1984392,,14927682
-dip,Maize Or Indian Corn,Argentine Republic,Cwt,1893,231956,1984392,0.117,14927682
-spike,Maize Or Indian Corn,Argentine Republic,Cwt,1896,16107900,1984392,8.117,14927682
 dip,Cotton Twist And Yarn,Germany,?,1883,4683200,34450300,0.136,14907556
 hole,"Skins, Furs, And Pelts — Seal",United States Of America,Number,1876,,162189,,14849348
 hole,"Skins, Furs, And Pelts — Seal",United States Of America,Number,1881,,162189,,14849348
@@ -219,9 +210,9 @@ hole,Butter,Australasia,Cwt,1883,,128330,,14775272
 hole,Butter,Australasia,Cwt,1884,,128330,,14775272
 hole,Butter,Australasia,Cwt,1885,,128330,,14775272
 hole,Butter,Australasia,Cwt,1886,,128330,,14775272
-dip,Maize Or Indian Corn,Russia,Cwt,1872,423851,1939050,0.219,14619018
-dip,Maize Or Indian Corn,Russia,Cwt,1877,199931,1939050,0.103,14619018
-spike,Maize Or Indian Corn,Russia,Cwt,1894,8648446,1939050,4.46,14619018
+dip,Maize Or Indian Corn,Russia,Cwt,1872,423851,1939050,0.219,14742984
+dip,Maize Or Indian Corn,Russia,Cwt,1877,199931,1939050,0.103,14742984
+spike,Maize Or Indian Corn,Russia,Cwt,1894,8648446,1939050,4.46,14742984
 hole,"Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse",Belgium,Cwt,1890,,1496,,14306273
 dip,Wool — Goats' Wool Or Hair,Turkey,Lb,1890,1120222,6858834,0.163,14185543
 hole,Sugar — In Lumps And Loaves,Holland,Cwt,1884,,821874,,14091896
@@ -292,6 +283,7 @@ hole,"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",Hol
 hole,Dye Woods — Logwood,British West India Islands,Ton,1891,,28892,,10121721
 hole,Dye Woods — Logwood,British West India Islands,Ton,1892,,28892,,10121721
 dip,Dye Woods — Logwood,British West India Islands,Ton,1898,4757,28892,0.165,10121721
+dip,Petroleum — Refined,United States Of America,Gallon,1872,5630080,24188268,0.233,10086846
 hole,Regulus And Precipitate,United States Of America,Ton,1883,,20656,,10021876
 dip,Regulus And Precipitate,United States Of America,Ton,1894,4836,20656,0.234,10021876
 hole,Manures — Guano,Peru,Ton,1877,,21916,,9907322
@@ -388,9 +380,6 @@ dip,Barley,Germany,Cwt,1899,190618,888940,0.214,8071087
 hole,Pork — Salted (Not Hams),Other Countries,?,1873,,7539,,8022547
 hole,Pork — Salted (Not Hams),Other Countries,?,1875,,7539,,8022547
 hole,Pork — Salted (Not Hams),Other Countries,?,1876,,7539,,8022547
-hole,Petroleum — Refined,United States Of America,Gallon,1875,,29279040,,7939992
-hole,Petroleum — Refined,United States Of America,Gallon,1876,,29279040,,7939992
-dip,Petroleum — Refined,United States Of America,Gallon,1872,5630080,29279040,0.192,7939992
 dip,Ivory,Native States,?,1887,40,528,0.076,7860271
 spike,Ivory,Native States,?,1890,2806,528,5.319,7860271
 hole,"Teeth, Elephants', Sea Cow, And Sea Horse",Other Countries,Cwt,1878,,895,,7809305
@@ -524,7 +513,6 @@ hole,Tallow And Stearine,New Zealand,Cwt,1887,,194817,,5457250
 hole,Tallow And Stearine,New Zealand,Cwt,1888,,194817,,5457250
 hole,Tallow And Stearine,New Zealand,Cwt,1889,,194817,,5457250
 hole,Tallow And Stearine,New Zealand,Cwt,1890,,194817,,5457250
-dip,Oatmeal And Groats,United States Of America,Cwt,1888,41591,264534,0.157,5381138
 hole,Fruit — Oranges And Lemons,Italy,Bushel,1875,,754314,,5377749
 hole,Fruit — Oranges And Lemons,Italy,Bushel,1887,,754314,,5377749
 hole,Jute — Boots And Shoes,Belgium,Dozen Pairs,1873,,56743,,5368702
@@ -571,6 +559,11 @@ hole,"Animals, Living — Sheep And Lambs",Argentine Republic,Number,1887,,48906
 hole,"Animals, Living — Sheep And Lambs",Argentine Republic,Number,1888,,48906,,4938498
 dip,"Animals, Living — Sheep And Lambs",Argentine Republic,Number,1889,101,48906,0.002,4938498
 hole,Other Than Muslins,France,Pieces,1880,,381262,,4912176
+dip,Oatmeal And Groats,United States Of America,Cwt,1888,41591,264534,0.157,4900594
+hole,Tobacco — Unmanufactured,Holland,Lb,1876,,5718252,,4893921
+hole,Tobacco — Unmanufactured,Holland,Lb,1877,,5718252,,4893921
+hole,Tobacco — Unmanufactured,Holland,Lb,1881,,5718252,,4893921
+hole,Tobacco — Unmanufactured,Holland,Lb,1882,,5718252,,4893921
 hole,"Wood And Timber — Hewn, Fir : Oak",Canada,Load,1884,,34510,,4878870
 hole,"Wood And Timber — Hewn, Fir : Oak",Canada,Load,1885,,34510,,4878870
 hole,"Wood And Timber — Hewn, Fir : Oak",Canada,Load,1886,,34510,,4878870
@@ -579,11 +572,6 @@ hole,Caoutchouc,United States Of America,Cwt,1879,,14675,,4833150
 dip,Caoutchouc,United States Of America,Cwt,1877,1302,14675,0.089,4833150
 hole,Leather — Dressed,France,Lb,1887,,5163194,,4781104
 hole,"Sugar — Unrefined : Cane, And Other Sorts",British Guiana,Cwt,1891,,679629,,4769597
-hole,Tobacco — Unmanufactured,Holland,Lb,1876,,5707761,,4720141
-hole,Tobacco — Unmanufactured,Holland,Lb,1877,,5707761,,4720141
-hole,Tobacco — Unmanufactured,Holland,Lb,1879,,5707761,,4720141
-hole,Tobacco — Unmanufactured,Holland,Lb,1881,,5707761,,4720141
-hole,Tobacco — Unmanufactured,Holland,Lb,1882,,5707761,,4720141
 hole,"Glass — Manufactures, Unenumerated",France,Cwt,1875,,99080,,4719848
 hole,"Glass — Manufactures, Unenumerated",France,Cwt,1880,,99080,,4719848
 hole,"Glass — Manufactures, Unenumerated",France,Cwt,1881,,99080,,4719848
@@ -856,7 +844,6 @@ hole,Potatoes,Belgium,Cwt,1888,,346938,,2633501
 hole,Potatoes,Belgium,Cwt,1889,,346938,,2633501
 hole,Potatoes,Belgium,Cwt,1890,,346938,,2633501
 dip,Potatoes,Belgium,Cwt,1896,3556,346938,0.01,2633501
-dip,Beans (Not Kidney Or French),Russia,Cwt,1899,98000,1285500,0.076,2633495
 hole,Pork — Salted (Not Hams),West Africa (Foreign,?,1876,,2600,,2631461
 dip,"Fruit — Unenumerated, Dried",Other Countries,Cwt,1883,1382,11266,0.123,2626033
 dip,Metal — Wrought Or Manufactured,Germany,Ton,1885,1449,18814,0.077,2615770
@@ -1105,8 +1092,6 @@ hole,Oil — Seed,France,Ton,1885,,4829,,1779403
 hole,Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,New South Wales,Ton,1894,,7204,,1770928
 hole,Animals — Horses,France,Number,1876,,8270,,1768479
 hole,Animals — Horses,France,Number,1878,,8270,,1768479
-dip,Oatmeal And Groats,Canada,Cwt,1888,14921,92512,0.161,1744172
-dip,Oatmeal And Groats,Canada,Cwt,1890,20145,92512,0.218,1744172
 hole,Metal — Wrought Or Manufactured,France,Ton,1883,,4970,,1739305
 hole,Metal — Wrought Or Manufactured,France,Ton,1889,,4970,,1739305
 hole,Metal — Wrought Or Manufactured,France,Ton,1890,,4970,,1739305
@@ -1151,6 +1136,8 @@ hole,Cotton Manufactures — Unenumerated,Holland,?,1880,,305337,,1594991
 hole,Cotton Manufactures — Unenumerated,Holland,?,1882,,305337,,1594991
 hole,Spices — Ginger,British East Indies,Cwt,1886,,56515,,1588887
 hole,Spices — Ginger,British East Indies,Cwt,1891,,56515,,1588887
+dip,Oatmeal And Groats,Canada,Cwt,1888,14921,92512,0.161,1588415
+dip,Oatmeal And Groats,Canada,Cwt,1890,20145,92512,0.218,1588415
 hole,Isinglass,Straits Settlements,Cwt,1884,,2072,,1569413
 hole,Isinglass,Straits Settlements,Cwt,1885,,2072,,1569413
 hole,Isinglass,Straits Settlements,Cwt,1886,,2072,,1569413
