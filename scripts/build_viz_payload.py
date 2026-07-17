@@ -188,6 +188,24 @@ def toks(*parts):
     if {'CANDY', 'SORTS', 'INCLUDING', 'OTHER'} <= out:
         out -= {'REFINED', 'RENDERED', 'ANY', 'BY', 'PROCESS', 'EQUAL',
                 'THERETO', 'IN', 'LUMPS', 'LOAVES', 'SUGAR'}
+    # OCR continuation markers ('Flax or Linseed Cont', 'COTTON
+    # MANUFACTURES—con- tinued') are page furniture, never meaning
+    if out & {'CONT', 'CONTD', 'CONTINUED', 'TINUED'}:
+        if 'TINUED' in out:
+            out.discard('CON')
+        out -= {'CONT', 'CONTD', 'CONTINUED', 'TINUED'}
+    # flax/linseed is ONE commodity: T1 prints it under 'Seeds' 1869-91
+    # and groupless 1890+, the country tables carry a stale 'COTTON'
+    # column-top group — the two-era T1 attestation made the article
+    # look ambiguous, so the sticky repair never merged them (Bengal
+    # showed as holes 1888/90/91/92)
+    if {'FLAX', 'LINSEED'} <= out:
+        out -= {'SEEDS', 'COTTON'}
+    # sawn-wood section heading evolves: 'Sawn, Fir' (to 1891) vs 'Sawn
+    # or Split, planed or dressed, Fir' (1893+) are the same printed
+    # line under a grown heading — Sweden/Russia showed as 1893/95 holes
+    if 'SAWN' in out:
+        out -= {'SPLIT', 'PLANED', 'DRESSED'}
     return out
 
 
@@ -461,9 +479,24 @@ def main():
                         del units[u]
                         n_healed += len(cells)
                         continue
+                    # per-cell rescue tests against the NEAREST labeled
+                    # year, not the global median: butter Sweden's '?'
+                    # cells are all 1872-81 (20-70k) while the labeled
+                    # bucket's median sits in the 1890s (230k) — era-local
+                    # comparison is the honest test
+                    dom_by_year = {}
+                    for yy, qq, _ in units[dom]:
+                        dom_by_year.setdefault(yy, qq)
+                    def _ref(y0):
+                        for dy in range(4):
+                            for yy in (y0 - dy, y0 + dy):
+                                if dom_by_year.get(yy):
+                                    return dom_by_year[yy]
+                        return dmed
                     keep, move = [], []
                     for cell in cells:
-                        (move if cell[1] > 0 and dmed / 3 < cell[1] < dmed * 3
+                        ref = _ref(cell[0])
+                        (move if cell[1] > 0 and ref / 3 < cell[1] < ref * 3
                          else keep).append(cell)
                     if move:
                         units[dom].extend(move)

@@ -55,3 +55,16 @@ hole,Oil,Lagos,1887,artifact,"Scope-label alternation: 1887/89/90 print 'West Af
 hole,Oil,Lagos,1889,artifact,See 1887 entry.
 hole,Oil,Lagos,1890,artifact,See 1887 entry.
 dip,Corn And Grain — United States Of America,United States Of America (Pacific),1878,artifact,Same junk commodity as the Atlantic entries (twoup wheat tables with the article stuck as a country).
+hole,Cotton — Flax Or Linseed,Bengal,1884,artifact,"Printed label regime: 1884 prints 'Bengal and Burmah' (731,414 present); plain-Bengal label in neighbouring years. Same class as the jute/tea Bengal entries."
+hole,Butter,Denmark,1882,artifact,"Butterine-regime chips 1882-85 (same class as the France/Holland/Germany/US entries): butter and butterine were printed as a combined article those years, kept separate by design."
+hole,Butter,Denmark,1883,artifact,See 1882 entry.
+hole,Butter,Denmark,1884,artifact,See 1882 entry.
+hole,Butter,Denmark,1885,artifact,See 1882 entry.
+dip,Cotton — Raw,Bombay,1893,genuine,"Same 1890s regime decline as the adjudicated 1895 dip: 1891 592k, 1892 382k, 1893 234k, 1894 370k; consensus cell, both engines."
+hole,Cotton — Flax Or Linseed,British East Indies,1890,artifact,"'British East Indies' is the printed BP-subtotal row admitted as a country in some years; 1890/93/94 children (Bengal etc.) fully present - the aggregate line is redundant."
+hole,Cotton — Flax Or Linseed,British East Indies,1893,artifact,See 1890 entry.
+hole,Cotton — Flax Or Linseed,British East Indies,1894,artifact,See 1890 entry.
+dip,Coffee,Ceylon,1889,genuine,"Coffee-blight collapse continues: 155,538 (1886) -> 133,872 -> 106,082 -> 55,236 (1889) -> 69,115 (1890); the 1889 value closes the glue block's BP subtotal to the digit. Median 356k reflects the pre-blight era."
+dip,Cheese,Canada,1872,genuine,"Early growth era: 110,420 -> 202,640 -> 221,043 -> 279,682 smooth; median 589k is the late-1880s scale."
+dip,Iron — Ore Of,Spain,1872,genuine,"Spanish (Bilbao) ore exports boomed only after the mid-1870s railway/concessions; 1872 631k and 1874 512k Tons are the pre-boom scale, median 2.96M is the 1880s."
+dip,Iron — Ore Of,Spain,1874,genuine,See 1872 entry.
