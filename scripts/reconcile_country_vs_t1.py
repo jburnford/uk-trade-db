@@ -220,6 +220,23 @@ def country_series_anomalies(payload_path, min_gbp=500_000,
     Ranked by commodity GBP x country share. Run after every integrate.
     """
     p = json.load(open(payload_path))
+    # human adjudications: flags investigated and CLOSED (genuine trade
+    # swings, display artifacts, printed-regime chips) stop resurfacing;
+    # open items are never listed here
+    adjudicated = set()
+    adjf = BASE / 'reference' / 'anomaly_adjudications.csv'
+    if adjf.exists():
+        for r in csv.DictReader(open(adjf)):
+            adjudicated.add((r['kind'], r['commodity'], r['country'],
+                             int(r['year'])))
+    # coast/port drill-down series ('United States Of America (Atlantic)',
+    # 'Russia (Southern Ports)') hole structurally in years the table
+    # printed the parent line only — not a data loss when the parent
+    # covers the year
+    coastish = re.compile(r'^(.+) \((?:Atlantic|Pacific|Atlantic & Pacific|'
+                          r'Northern Ports|Southern Ports|'
+                          r'Exclusive Of Hong Kong)\)$')
+    n_sup = 0
     rows = []
     for name, d in p.items():
         gbp = d.get('v') or 0
@@ -256,9 +273,16 @@ def country_series_anomalies(payload_path, min_gbp=500_000,
             prio = round(gbp * weight)
             # holes only for CONSISTENT suppliers (>=70% of span present)
             span = ys[-1] - ys[0] + 1
+            cm = coastish.match(cty)
             if len(by_y) / span >= 0.7:
                 for y in range(ys[0] + 1, ys[-1]):
                     if y not in by_y:
+                        if cm and y in series.get((cm.group(1), u), ()):
+                            n_sup += 1        # parent covers the year
+                            continue
+                        if ('hole', name, cty, y) in adjudicated:
+                            n_sup += 1
+                            continue
                         rows.append({'kind': 'hole', 'commodity': name,
                                      'country': cty, 'unit': u, 'year': y,
                                      'series_median': round(med),
@@ -271,7 +295,11 @@ def country_series_anomalies(payload_path, min_gbp=500_000,
                     nb = [by_y.get(y - 1), by_y.get(y + 1)]
                     nb = [v for v in nb if v is not None]
                     if nb and all(lo <= v <= hi for v in nb):
-                        rows.append({'kind': 'dip' if q < lo else 'spike',
+                        kind = 'dip' if q < lo else 'spike'
+                        if (kind, name, cty, y) in adjudicated:
+                            n_sup += 1
+                            continue
+                        rows.append({'kind': kind,
                                      'commodity': name, 'country': cty,
                                      'unit': u, 'year': y,
                                      'series_median': round(med),
@@ -288,7 +316,8 @@ def country_series_anomalies(payload_path, min_gbp=500_000,
         w.writerows(rows)
     n = Counter(r['kind'] for r in rows)
     print(f"detector C/D: {n.get('hole',0)} holes, {n.get('dip',0)} dips, "
-          f"{n.get('spike',0)} spikes -> {out}")
+          f"{n.get('spike',0)} spikes "
+          f"({n_sup} suppressed: adjudicated/structural) -> {out}")
 
 
 if __name__ == '__main__' and '--series' in sys.argv:

@@ -1,0 +1,26 @@
+volume,flow,article_group,article,country,unit,year,quantity,value,q_tier,v_tier,note
+as_1892,import,Corn and Grain,Wheat,Russia : Northern Ports,Cwts.,1892,18850,6656,A,A,"Wheat 1892: table on printed p.53 (PDF p.63) lost by BOTH parsers (Chandra dropped the block; Infinity OCR'd it as <br>-run text inside a two-up td). Hand-keyed from the page image; every segment sums to its printed total to the digit and grand TOTAL 64,901,799 == T1."
+as_1892,import,Corn and Grain,Wheat,Russia : Southern Ports,Cwts.,1892,4344136,1463769,A,A,
+as_1892,import,Corn and Grain,Wheat,Germany,Cwts.,1892,606353,228965,A,A,
+as_1892,import,Corn and Grain,Wheat,Holland,Cwts.,1892,27036,9190,A,A,
+as_1892,import,Corn and Grain,Wheat,Belgium,Cwts.,1892,9700,3435,A,A,
+as_1892,import,Corn and Grain,Wheat,France,Cwts.,1892,25749,8878,A,A,
+as_1892,import,Corn and Grain,Wheat,Italy,Cwts.,1892,8482,2950,A,A,
+as_1892,import,Corn and Grain,Wheat,Bulgaria,Cwts.,1892,60289,21458,A,A,
+as_1892,import,Corn and Grain,Wheat,Roumania,Cwts.,1892,737789,248105,A,A,
+as_1892,import,Corn and Grain,Wheat,Turkey,Cwts.,1892,494184,180650,A,A,
+as_1892,import,Corn and Grain,Wheat,Egypt,Cwts.,1892,385145,139617,A,A,"OCR value 139,017 corrected to 139,617 from page image; fixes foreign value sum exactly (+600)."
+as_1892,import,Corn and Grain,Wheat,Persia,Cwts.,1892,101174,42412,A,A,
+as_1892,import,Corn and Grain,Wheat,United States of America : On the Atlantic,Cwts.,1892,27023996,10429806,A,A,
+as_1892,import,Corn and Grain,Wheat,United States of America : On the Pacific,Cwts.,1892,6862746,2821469,A,A,
+as_1892,import,Corn and Grain,Wheat,Chile,Cwts.,1892,2287556,892029,A,A,
+as_1892,import,Corn and Grain,Wheat,Uruguay,Cwts.,1892,45000,18200,A,A,"OCR quantity 46,000 corrected to 45,000 from page image; fixes foreign quantity sum exactly (-1,000)."
+as_1892,import,Corn and Grain,Wheat,Argentine Republic,Cwts.,1892,3466096,1277344,A,A,
+as_1892,import,Corn and Grain,Wheat,Other Foreign Countries,Cwts.,1892,8900,3045,A,A,
+as_1892,import,Corn and Grain,Wheat,British East Indies : Bombay and Scinde,Cwts.,1892,9202451,3551291,A,A,"Printed 'Soinde' = Scinde."
+as_1892,import,Corn and Grain,Wheat,British East Indies : Bengal,Cwts.,1892,3292991,1260889,A,A,
+as_1892,import,Corn and Grain,Wheat,Australasia : South Australia,Cwts.,1892,267290,111207,A,A,
+as_1892,import,Corn and Grain,Wheat,Australasia : Victoria,Cwts.,1892,750535,309286,A,A,
+as_1892,import,Corn and Grain,Wheat,Australasia : New Zealand,Cwts.,1892,999021,382810,A,A,
+as_1892,import,Corn and Grain,Wheat,British North America : Canada,Cwts.,1892,3874984,1443938,A,A,
+as_1892,import,Corn and Grain,Wheat,Other British Possessions,Cwts.,1892,1346,503,A,A,"OCR value 603 corrected to 503 from page image; fixes BP value sum exactly (-100)."

@@ -1,0 +1,34 @@
+kind,commodity,country,year,verdict,note
+spike,Wine — Total Of All Kinds,Canary Islands,1896,genuine,"Regime change ~1888: Canary wine jumps 1-9k to 39-82k gallons; 1896 internally exact in as_1896 (red 45,264 + white 26,063 = 71,327)."
+dip,"Animals, Living — Oxen And Bulls",United States Of America,1882,genuine,"Block cleanly paired, sums to printed TOTAL within 9; GBP23/head consistent; 1882 US cattle-trade restrictions."
+dip,Coffee,Holland,1888,genuine,"Dutch transshipment volatility; low regime corroborated across independent parses (1890 2,610 twice, 1891 2,782)."
+dip,Coffee,Holland,1890,genuine,"See 1888 entry; 2,610 corroborated by twoup + groupfix independently."
+dip,Corn And Grain — United States Of America,United States Of America,1878,artifact,Junk commodity: twoup wheat tables 1876-80 with article stuck as 'United States of America'; real wheat data lives in Corn And Grain — Wheat.
+dip,Corn And Grain — United States Of America,United States Of America,1892,artifact,Same junk commodity; 1892 wheat now hand-keyed in manual_rows.csv.
+dip,Corn And Grain — United States Of America,United States Of America (Atlantic),1878,artifact,Same junk commodity.
+dip,Corn And Grain — United States Of America,United States Of America (Atlantic),1892,artifact,Same junk commodity.
+hole,Wood And Timber,British East Indies,1890,artifact,Bare blank-article 'Wood And Timber' cells are teak dupes existing only 1888/89/93-96; the Wood — Hewn Teak series is continuous these years.
+hole,Wood And Timber,British East Indies,1891,artifact,Bare blank-article 'Wood And Timber' cells are teak dupes existing only 1888/89/93-96; the Wood — Hewn Teak series is continuous these years.
+hole,Wood And Timber,British East Indies,1892,artifact,Bare blank-article 'Wood And Timber' cells are teak dupes existing only 1888/89/93-96; the Wood — Hewn Teak series is continuous these years.
+hole,Wood And Timber,Burmah,1890,artifact,Bare blank-article 'Wood And Timber' cells are teak dupes existing only 1888/89/93-96; the Wood — Hewn Teak series is continuous these years.
+hole,Wood And Timber,Burmah,1891,artifact,Bare blank-article 'Wood And Timber' cells are teak dupes existing only 1888/89/93-96; the Wood — Hewn Teak series is continuous these years.
+hole,Wood And Timber,Burmah,1892,artifact,Bare blank-article 'Wood And Timber' cells are teak dupes existing only 1888/89/93-96; the Wood — Hewn Teak series is continuous these years.
+hole,Wood And Timber,Siam,1890,artifact,Bare blank-article 'Wood And Timber' cells are teak dupes existing only 1888/89/93-96; the Wood — Hewn Teak series is continuous these years.
+hole,Wood And Timber,Siam,1891,artifact,Bare blank-article 'Wood And Timber' cells are teak dupes existing only 1888/89/93-96; the Wood — Hewn Teak series is continuous these years.
+hole,Wood And Timber,Siam,1892,artifact,Bare blank-article 'Wood And Timber' cells are teak dupes existing only 1888/89/93-96; the Wood — Hewn Teak series is continuous these years.
+hole,Butter,France,1882,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,France,1883,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,France,1884,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,France,1885,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,Holland,1882,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,Holland,1883,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,Holland,1884,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,Holland,1885,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,Germany,1882,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,Germany,1883,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,Germany,1884,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,Germany,1885,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,United States Of America,1882,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,United States Of America,1883,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,United States Of America,1884,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.
+hole,Butter,United States Of America,1885,regime,Printed as 'Butter and Butterine' aggregate 1882-85 (never-auto-merge regime chip by design); data present in that commodity.

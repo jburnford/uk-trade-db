@@ -46,6 +46,18 @@ GENERIC = {'RAW', 'UNENUMERATED', 'OTHER', 'TOTAL', 'GOODS', 'ARTICLES',
 
 def fold_group(group):
     g = re.sub(r'\s+', ' ', (group or '').strip().upper()).rstrip(' .,:;')
+    # one printed section, many captured headings: 'Corn and Grain:' and
+    # 'Meal and Flour:' are SUBSECTIONS of 'CORN, GRAIN, MEAL, AND FLOUR' —
+    # the parser keeps whichever heading is nearest, splitting wheat-flour
+    # (etc.) across six group labels. Fold to the TOKEN-MINIMAL member of
+    # the family: with MEAL/FLOUR in the group tokens, 'Wheat' and 'Wheat
+    # Meal or Flour' would collapse to the same token SET (set-union
+    # absorption) — 'CORN AND GRAIN' keeps the article tokens load-bearing.
+    # Articles are disjoint between the subsections, so the fold is
+    # collision-free, and grouped T1 labels ('Corn, Grain, and Meal |
+    # Wheat') land on the same sig as the country data.
+    if re.match(r'^CORN\b.*\bGRAIN\b', g) or g == 'MEAL AND FLOUR':
+        g = 'CORN AND GRAIN'
     if ',' in g:
         base, suf = g.split(',', 1)
         if suf.strip() in QUALS:
@@ -96,6 +108,15 @@ def fold_country(c):
     if m:
         p = _parent_norm(parent) if parent else 'Russia'
         return f'{p} ({m.group(1).title()} Ports)'
+    # China scope labels fold to 'China': pre-1885 tables print the
+    # inclusive 'China and Hong Kong' (plain-China years then mean the
+    # same); from 1885 Hong Kong gets its own line, so 'China (exclusive
+    # of Hong Kong)' means what plain 'China' means in the neighbouring
+    # years (silk 1886: 1,217,002 excl. sits between 1885's 1,444,960 and
+    # 1887's 1,416,660 — both exclusive-era plain-China lines)
+    if re.match(r'^china (?:and hong\s*kong|\(?exclusive of hong\s*kong\)?)$',
+                c, re.I):
+        return 'China'
     return c.title() if c else '?'
 
 
@@ -137,7 +158,12 @@ def toks(*parts):
         for t in re.split(r'[^A-Za-z0-9]+', p or ''):
             t = t.upper()
             if len(t) > 1 and t not in STOP:
-                out.add(t)
+                # the abstract prints 'Wheatmeal' where the country tables
+                # print 'Wheat Meal' — same commodity, one token vs two
+                if t == 'WHEATMEAL':
+                    out.update(('WHEAT', 'MEAL'))
+                else:
+                    out.add(t)
     return out
 
 
@@ -241,12 +267,22 @@ def main():
         if sig and sig not in t1_attested and (g or '').strip() and (a or '').strip():
             art_toks = toks(a)
             cands = art2commod.get(tuple(sorted(art_toks)))
-            if cands and len(cands) == 1 and art_toks - GENERIC:
-                csig, clabel = next(iter(cands))
-                if csig != sig:
-                    cfix_log[(label, clabel)] += 1
-                    sig, label = csig, clabel
-                    n_cfixed += 1
+            if cands:
+                # label variants of ONE commodity ('Wheatmeal and Flour' /
+                # 'Wheatmeal or Flour' — same sig) are not ambiguity:
+                # collapse candidates by sig, keep each sig's best-
+                # supported label
+                by_sig = {}
+                for (csig, clabel), yrs in cands.items():
+                    cur = by_sig.get(csig)
+                    if cur is None or len(yrs) > cur[1]:
+                        by_sig[csig] = (clabel, len(yrs))
+                if len(by_sig) == 1 and art_toks - GENERIC:
+                    csig, (clabel, _) = next(iter(by_sig.items()))
+                    if csig != sig:
+                        cfix_log[(label, clabel)] += 1
+                        sig, label = csig, clabel
+                        n_cfixed += 1
         if not sig:
             sig = ('(UNLABELLED)',)
         slot(sig)['v'] += min(v, 50_000_000)     # plausibility cap, sort key
@@ -341,8 +377,12 @@ def main():
             if m:
                 groups.setdefault(m.group(1), []).append(cty)
         for parent, kids in CONSTITUENTS.items():
+            # kids[0] is the aggregate's defining member: require it, so a
+            # lone secondary cell never synthesizes a phantom parent (a
+            # commodity with only 'Hong Kong' cells must not mint a
+            # 'China' series)
             present = [k for k in kids if k in c]
-            if present:
+            if present and kids[0] in c:
                 groups.setdefault(parent, []).extend(present)
         for parent, coasts in groups.items():
             pd = c.setdefault(parent, {})
@@ -383,14 +423,40 @@ def main():
             dmed = median(domvals)
             for u in [x for x in units if x != dom]:
                 cells = units[u]
+                if u == '?':
+                    # whole-bucket fold first (a growing series' early '?'
+                    # cells sit far below the global median but share its
+                    # unit — 1873 US flour is 8x below the 1890s median);
+                    # if the bucket fails, rescue individual cells inside
+                    # the window (jute Bengal mixed a Cwt-era 1883 cell
+                    # with a Ton-era 1892 cell — only the latter folds)
+                    vals = [c[1] for c in cells if c[1] > 0]
+                    m = median(vals) if vals else 0
+                    if m and dmed / 3 < m < dmed * 3:
+                        units[dom].extend(cells)
+                        del units[u]
+                        n_healed += len(cells)
+                        continue
+                    keep, move = [], []
+                    for cell in cells:
+                        (move if cell[1] > 0 and dmed / 3 < cell[1] < dmed * 3
+                         else keep).append(cell)
+                    if move:
+                        units[dom].extend(move)
+                        n_healed += len(move)
+                        if keep:
+                            units[u] = keep
+                        else:
+                            del units[u]
+                    continue
                 vals = [c[1] for c in cells if c[1] > 0]
                 if not vals:
                     continue
                 m = median(vals)
                 if not (dmed / 3 < m < dmed * 3):
                     continue
-                if u != '?' and not (len(cells) <= 5
-                                     and len(units[dom]) >= 2 * len(cells)):
+                if not (len(cells) <= 5
+                        and len(units[dom]) >= 2 * len(cells)):
                     continue
                 units[dom].extend(cells)
                 del units[u]

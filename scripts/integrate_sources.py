@@ -442,6 +442,42 @@ def main():
                     'q_tier': 'C', 'v_tier': 'C'})
                 n_groupfix += 1
 
+    # 6b) manual rows (reference/manual_rows.csv): page-attested hand-keyed
+    #    data for tables NO parse carries (as_1892 wheat: printed p.53 was
+    #    scanned fine but Chandra dropped the block and Infinity OCR'd it as
+    #    <br>-run text inside a two-up td — invisible to both table
+    #    extractors). Tiers come from the CSV: A when every printed segment
+    #    total reconciles to the digit and digits were adjudicated against
+    #    the page image.
+    n_manual = 0
+    mrf = BASE / 'reference' / 'manual_rows.csv'
+    if mrf.exists():
+        for mr in csv.DictReader(open(mrf)):
+            if mr['flow'] != 'import':
+                continue
+            grp = (mr['article_group'] or '').strip()
+            art = (mr['article'] or '').strip()
+            ctry = mr['country']
+            asig = V.sig(f"{grp.upper()} {art}") or V.sig(art)
+            c = V.cnorm(ctry)
+            if ' : ' in (ctry or ''):
+                parent, sub = (s.strip() for s in ctry.split(':', 1))
+                c = f'{V.cnorm(parent)} :: {V.cnorm(sub)}'
+            y = int(mr['year'])
+            if not asig or is_subtotal(V.cnorm(ctry)):
+                continue
+            if (asig, c, y) in consensus_triples_ga or (asig, c, y) in seen_added:
+                continue
+            seen_added.add((asig, c, y))
+            out_rows.append({
+                'group': grp.upper(), 'article': art, 'country': ctry,
+                'unit': mr['unit'] or '', 'qty': float(mr['quantity']),
+                'value': float(mr['value']) if (mr['value'] or '').strip() else None,
+                'year': y, 'src': 'human',
+                'q_tier': mr.get('q_tier') or 'B',
+                'v_tier': mr.get('v_tier') or 'B'})
+            n_manual += 1
+
     # 7) group aliases (reference/group_aliases.csv): unambiguous OCR garbles
     #    of a group heading ('HORS' = HOPS, 'BRIINSTONE' = BRIMSTONE) —
     #    relabel IN PLACE across every source and year; the garbled string
@@ -501,6 +537,7 @@ def main():
     print(f'  colonial sub-entries recovered: {n_sub:,}')
     print(f'  flow-repaired rows: {n_flowfix:,}')
     print(f'  group-repaired rows: {n_groupfix:,}')
+    print(f'  manual (hand-keyed) rows: {n_manual:,}')
     print(f'  superseded consensus rows dropped: {n_sup:,}')
     print(f'  group-alias relabels: {n_alias:,}')
 
