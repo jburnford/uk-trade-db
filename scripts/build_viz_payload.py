@@ -86,6 +86,16 @@ def fold_country(c):
     m = re.match(r'^(.*?)[,\s]+on the (atlantic|pacific)$', c, re.I)
     if m:
         return f'{_parent_norm(m.group(1))} ({m.group(2).title()})'
+    # port-split origin regime: Russian grain/flax/hemp is printed 'Russia :
+    # Northern Ports' / 'Southern Ports' (Baltic vs Black Sea shipping), often
+    # with NO parent-Russia row. Bare forms are Russia in practice (the only
+    # origin printed port-split in these tables); 'Ports in Northern Africa'
+    # never matches — the pattern is fully anchored.
+    m = re.match(r'^(?:russia[,:\s]+)?(northern|southern)\s+ports?(?:\s+of)?$',
+                 c, re.I)
+    if m:
+        p = _parent_norm(parent) if parent else 'Russia'
+        return f'{p} ({m.group(1).title()} Ports)'
     return c.title() if c else '?'
 
 
@@ -132,7 +142,14 @@ def toks(*parts):
 
 
 def sig_of(g_base, qual, article):
-    return tuple(sorted(toks(g_base, qual, article)))
+    t = toks(g_base, qual, article)
+    # stale sibling-heading glue: teak rows print as 'Hewn : Fir : Teak' /
+    # 'Hewn, Fir : Teak' in many volumes (the parser drags the neighbouring
+    # Fir heading in). No real 'fir teak' commodity exists — drop the stale
+    # token so the teak series is one commodity 1874-99.
+    if 'TEAK' in t:
+        t.discard('FIR')
+    return tuple(sorted(t))
 
 
 def display(g_base, qual, article):
@@ -169,8 +186,8 @@ def main():
     # stale column-top group) can be re-homed when the article alone is an
     # unambiguous fingerprint of exactly one abstract commodity.
     t1_attested = set()
-    art2commod = {}
-    for g, a, *_ in t1_rows:
+    art2commod = {}          # akey -> {(full sig, label): set(years)}
+    for g, a, _u, y, *_ in t1_rows:
         if (g or '').strip():
             base, qual = fold_group(g)
             full = sig_of(base, qual, a)
@@ -187,7 +204,24 @@ def main():
         if full:
             t1_attested.add(full)
             if akey:
-                art2commod.setdefault(akey, set()).add((full, lab))
+                art2commod.setdefault(akey, {}).setdefault(
+                    (full, lab), set()).add(y)
+    # phantom grouped labels: abstract OCR glue puts an article under a stale
+    # group for a couple of volumes ('Animals, Living | Butter', 3 year-rows
+    # vs groupless Butter's 32) — such a label both self-attests and makes the
+    # article "ambiguous", vetoing the re-home of every stale-group butter
+    # block. De-attest and drop as candidate any grouped label with <=3 years
+    # of T1 support when a 5x-better-supported candidate exists. Genuinely
+    # dual-labelled articles (Wheat: grouped 24 yrs + groupless 9) are
+    # untouched.
+    for akey, cands in art2commod.items():
+        if len(cands) < 2:
+            continue
+        best = max(len(v) for v in cands.values())
+        for (full, lab), yrs in list(cands.items()):
+            if full != akey and len(yrs) <= 3 and best >= 5 * len(yrs):
+                del cands[(full, lab)]
+                t1_attested.discard(full)
 
     # ---- pass 1: country-level cells (imports, per-cell ranks) ----
     n_cfixed = 0
@@ -279,7 +313,8 @@ def main():
     # SUM of its coasts per (unit, year) wherever the parent lacks that year
     # in that unit; rank = worst component. Coast entries stay visible as
     # their own countries (drill-down detail).
-    COAST_RE = re.compile(r'^(.+) \((Atlantic|Pacific|Atlantic & Pacific)\)$')
+    COAST_RE = re.compile(r'^(.+) \((Atlantic|Pacific|Atlantic & Pacific'
+                          r'|Northern Ports|Southern Ports)\)$')
     # origin-regime changes: some aggregates stop being printed and their
     # constituent colonies take over (South African wool: 'British
     # Possessions in South Africa' 1872-90, then 'Cape of Good Hope' +
@@ -287,6 +322,15 @@ def main():
     # constituent set in years it lacks, same rules as the coast roll-up.
     CONSTITUENTS = {
         'British Possessions In South Africa': ('Cape Of Good Hope', 'Natal'),
+        # per-state era (1883+): the Australasia aggregate line is not printed
+        # in every table; synthesize it from the states in years it lacks.
+        # NB the misfiled BP-subtotal cells (wool 1886/91/96-98, where an
+        # 'Australasia' cell actually carries the whole British-Possessions
+        # subtotal) are untouched by this: the roll-up only fills years where
+        # the parent has NO cell at all.
+        'Australasia': ('New South Wales', 'Victoria', 'Queensland',
+                        'South Australia', 'Western Australia', 'Tasmania',
+                        'New Zealand'),
     }
     n_coast = 0
     for s in comms.values():

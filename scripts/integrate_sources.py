@@ -135,7 +135,12 @@ def main():
                      int(gr['seq_start']), int(gr['seq_end'])]).fetchall():
                 repaired_rows.add((gr['volume'], gr['article_group'],
                                    gr['article'] or None, ctry))
-    supersede = set()          # (WRONG group, article, year) to drop
+    supersede = set()          # (WRONG group, article, year) to drop —
+                               # applied to consensus AND the gap-fill
+                               # sources (infonly/twoup/runin/subentry): a
+                               # superseded label's rows are wrong in EVERY
+                               # parse of the page (as_1874 twoup wine is
+                               # label-slipped where the obs copy glued)
     for gr in grepairs:
         for y_sup in (gr.get('supersede_years') or '').split(';'):
             if y_sup.strip():
@@ -224,6 +229,8 @@ def main():
         v_ok = total_v and v_sum and abs(v_sum - total_v) <= 0.005 * total_v
         for g, a, c, u, q, val in members:
             art = (a or '').lstrip(',»„"”° ').strip()
+            if ((g or '').upper(), art, y) in supersede:
+                continue
             asig = V.sig(art) or V.sig(f"{g or ''} {art}")
             if not asig or (asig, y) in consensus_commod:
                 continue
@@ -242,6 +249,8 @@ def main():
     for path, src in [(BASE / 'exports' / 'twoup_country.csv', 'twoup'),
                       (BASE / 'exports' / 'runin_country.csv', 'runin')]:
         for (asig, c, y), rec in load_csv(path, src):
+            if (rec['group'], (rec['article'] or '').strip(), y) in supersede:
+                continue
             if (asig, y) in consensus_commod:
                 continue                          # consensus already has this commodity
             if (asig, c, y) in seen_added:
@@ -285,6 +294,8 @@ def main():
                 or sub.split()[0].lower() == 'total' or len(sub) > 60):
             continue
         art = (art or '').lstrip(',»„"”° ').strip()
+        if ((grp or '').upper(), art, int(y)) in supersede:
+            continue
         # GROUP-AWARE sig: an article-first sig conflates every commodity
         # printing the same generic article — COTTON|Raw|ceylon in consensus
         # was blocking the COFFEE|Raw|ceylon sub-entries (Ceylon coffee
@@ -356,9 +367,17 @@ def main():
     n_groupfix = 0
     if grepairs:
         for gr in grepairs:
-            fixed_rows = con.execute("""SELECT country_raw, unit, year,
+            # obs_source='inf': pull the segment from the OTHER engine —
+            # used when the primary's copy is label-slipped beyond repair
+            # (as_1893 oats lost its leading 'Russia' label so every
+            # foreign-half value sits one country up; Infinity's copy is
+            # complete and sums to the printed TOTAL exactly)
+            obs_table = ('country_obs_inf'
+                         if (gr.get('obs_source') or '').strip() == 'inf'
+                         else 'country_obs')
+            fixed_rows = con.execute(f"""SELECT country_raw, unit, year,
                     quantity, value
-                FROM country_obs
+                FROM {obs_table}
                 WHERE volume = ? AND flow = ? AND article_group = ?
                   AND article IS NOT DISTINCT FROM ?
                   AND row_seq BETWEEN ? AND ?
@@ -402,6 +421,13 @@ def main():
                     parent, sub = (s.strip() for s in ctry.split(':', 1))
                     if not sub or re.search(r'\d', sub) or len(sub) > 60:
                         continue
+                    # key sub-entries by parent+sub, not the cnorm-folded
+                    # parent alone: cnorm('Russia : Northern Ports') is
+                    # 'russia', so a ports row admitted by one repair was
+                    # blocking the plain-Russia row of another (as_1893
+                    # oats) — parent and sub-detail must coexist, same
+                    # contract as step 4
+                    c = f'{V.cnorm(parent)} :: {V.cnorm(sub)}'
                 if not asig or (asig, c, int(y)) in consensus_triples_ga:
                     continue
                 if (asig, c, int(y)) in seen_added:
