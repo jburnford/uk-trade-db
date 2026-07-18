@@ -281,3 +281,77 @@ as_1888,import,COFFEE,,Ceylon,Cwts.,1888,106082,434704,A,A,,
 as_1888,import,COFFEE,,Hong Kong,Cwts.,1888,2859,11898,A,A,,
 as_1888,import,COFFEE,,British West Indies,Cwts.,1888,38165,138502,A,A,,
 as_1888,import,COFFEE,,Other British Possessions,Cwts.,1888,230,780,A,A,,
+as_1892,import,WOOD and TIMBER,"Sawn or Split, planed or dressed, Fir",Russia,Loads.,1892,1281532,2667126,A,A,"Sawn fir 1892: whole table absent from BOTH engines' table space; present in Infinity raw text (PDF page idx 103, printed p.94) under a stray 'Mahogany' heading (the real sawn-fir heading was lost in two-up interleave). Arithmetic-proven: Foreign 3,762,090/£8,067,803 and BP 1,166,434/£2,689,054 both sum EXACTLY; TOTAL 4,928,524 + Sawn Unenumerated 162,274 = 5,090,798 == T1 'Sawn or Split' to the digit.",
+as_1892,import,WOOD and TIMBER,"Sawn or Split, planed or dressed, Fir",Sweden,Loads.,1892,1572198,3216149,A,A,,
+as_1892,import,WOOD and TIMBER,"Sawn or Split, planed or dressed, Fir",Norway,Loads.,1892,439948,955546,A,A,,
+as_1892,import,WOOD and TIMBER,"Sawn or Split, planed or dressed, Fir",Germany,Loads.,1892,78473,171687,A,A,,
+as_1892,import,WOOD and TIMBER,"Sawn or Split, planed or dressed, Fir",United States of America,Loads.,1892,384614,1048081,A,A,,
+as_1892,import,WOOD and TIMBER,"Sawn or Split, planed or dressed, Fir",Other Foreign Countries,Loads.,1892,5325,9214,A,A,,
+as_1892,import,WOOD and TIMBER,"Sawn or Split, planed or dressed, Fir",Australasia,Loads.,1892,1497,8226,A,A,,
+as_1892,import,WOOD and TIMBER,"Sawn or Split, planed or dressed, Fir",Canada,Loads.,1892,1158079,2665158,A,A,,
+as_1892,import,WOOD and TIMBER,"Sawn or Split, planed or dressed, Fir",Newfoundland,Loads.,1892,6858,15670,A,A,,
+as_1875,import,CHICORY,Roasted or Ground,Belgium,Lbs.,1875,121580,1297,A,A,"Chicory roasted import duty table (printed p.64): twoup lost the FIRST label (Belgium); Channel Islands+Other survived. Members 121,580+70,808+3,107=195,495 == printed Total; values 1,297+1,156+79=2,532 exact.",
+as_1879,import,CHICORY,Roasted or Ground,Holland,Lbs.,1879,51373,1365,A,A,"Chicory roasted 1879: Holland row lost by twoup (Belgium/CI/Other survived). 51,373+147,640+122,880+14,957=336,850 == printed Total exact; values close exact too.",
+as_1880,import,CHICORY,Roasted or Ground,Holland,Lbs.,1880,65685,1766,A,A,"Chicory roasted 1880: whole plain-roasted import table absent (only in-Bond rows parsed). Belgium 103,899 per Chandra (Infinity misread 103,599); with it qty col sums 370,840 == printed Total EXACT. Member values agree in both engines (sum 6,200; engines disagree on the total-row print 6,300/6,500 - members kept as printed).",
+as_1880,import,CHICORY,Roasted or Ground,Belgium,Lbs.,1880,103899,1235,A,A,,
+as_1880,import,CHICORY,Roasted or Ground,Channel Islands,Lbs.,1880,181421,3051,A,A,,
+as_1880,import,CHICORY,Roasted or Ground,Other Countries,Lbs.,1880,19835,148,A,A,,
+as_1880,import,CHICORY,Raw or Kiln-dried,Holland,Cwts.,1880,10945,6808,A,A,"Chicory raw 1880: whole import table absent. 10,945+129,437+1,629=142,011 == printed Total; 6,808+80,187+1,134=88,129 exact.",
+as_1880,import,CHICORY,Raw or Kiln-dried,Belgium,Cwts.,1880,129437,80187,A,A,,
+as_1880,import,CHICORY,Raw or Kiln-dried,Other Countries,Cwts.,1880,1629,1134,A,A,,
+as_1886,import,CHICORY,Roasted or Ground,Holland,Lbs.,1886,118347,1303,A,A,"Chicory roasted 1886 import table (printed p.91-92) absent from both engines' table space; in Infinity raw text. 118,347+233,842+14,159=366,348 == Total-Foreign; +76,287 CI = 442,635 == TOTAL; both value cols exact.",
+as_1886,import,CHICORY,Roasted or Ground,Belgium,Lbs.,1886,233842,2094,A,A,,
+as_1886,import,CHICORY,Roasted or Ground,Other Foreign Countries,Lbs.,1886,14159,227,A,A,,
+as_1886,import,CHICORY,Roasted or Ground,Channel Islands,Lbs.,1886,76287,696,A,A,,
+as_1887,import,CHICORY,Roasted or Ground,Germany,Lbs.,1887,20630,525,A,A,"Chicory roasted 1887 import table (printed p.92): 20,630+139,595+302,281+14,731=477,237 == Total-Foreign exact; BP side 103,068+36=103,104 exact; TOTAL 580,341 exact; value cols exact.",
+as_1887,import,CHICORY,Roasted or Ground,Holland,Lbs.,1887,139595,1543,A,A,,
+as_1887,import,CHICORY,Roasted or Ground,Belgium,Lbs.,1887,302281,2718,A,A,,
+as_1887,import,CHICORY,Roasted or Ground,Other Foreign Countries,Lbs.,1887,14731,183,A,A,,
+as_1887,import,CHICORY,Roasted or Ground,Channel Islands,Lbs.,1887,103068,936,A,A,,
+as_1887,import,CHICORY,Roasted or Ground,British North America,Lbs.,1887,36,1,A,A,,
+as_1887,import,CHICORY,Raw or Kiln dried,Belgium,Cwts.,1887,127964,62001,A,A,"1887 raw chicory label slip: twoup Belgium cell carries HOLLAND's 881/374; print (Infinity p.97 idx) reads Holland 881/374 + Belgium 127,964/62,001 = TOTAL 128,845/62,375 EXACT both cols. Replace the slipped cell.",1
+as_1887,import,CHICORY,Raw or Kiln dried,Holland,Cwts.,1887,881,374,A,A,,
+as_1888,import,CHICORY,Roasted or Ground,Germany,Lbs.,1888,29479,331,A,A,"Chicory roasted 1888 import table (printed p.92): Germany value 331 per Chandra (Infinity misread 381); 331+405+2,002+124=2,862 == Total-Foreign exact; qty col 29,479+29,902+208,537+6,434=274,352 exact; TOTAL 356,163/3,644 exact.",
+as_1888,import,CHICORY,Roasted or Ground,Holland,Lbs.,1888,29902,405,A,A,,
+as_1888,import,CHICORY,Roasted or Ground,Belgium,Lbs.,1888,208537,2002,A,A,,
+as_1888,import,CHICORY,Roasted or Ground,Other Foreign Countries,Lbs.,1888,6434,124,A,A,,
+as_1888,import,CHICORY,Roasted or Ground,Channel Islands,Lbs.,1888,81811,782,A,A,,
+as_1885,import,SUGAR,"Other Sorts, including Candy",Germany,Cwts.,1885,974025,839388,A,A,"Germany trimmed from the 'Refined; Total of' inf repair (groupfix cannot digit-fix in place): qty 974,025 is T1-anchored (member sum == foreign total 5,328,630 exactly); value 839,388 proven two ways - column closes to printed 4,835,289 exactly, and lumps 177,953 + other-sorts 661,435 = 839,388 (the block's own 839,335 is the misread).",
+as_1872,import,EGGS,,Denmark,Great Hundreds.,1872,109546,36734,A,A,"Eggs 1872: consensus block slipped TWO labels (the two-line 'Great/Hundreds.' unit header ate two rows) - Spain carried France's 3.38M etc. PAGE-ADJUDICATED (PDF p.49): Denmark 109,546 ... Other 8,055. Value column sums to printed Total 1,762,600 == T1 EXACTLY (France 1,394,152). Qty members sum 4,430,201 vs printed/T1 4,429,931 - a 270 printer-side arithmetic slip, members kept as printed.",
+as_1872,import,EGGS,,Germany,Great Hundreds.,1872,422900,125059,A,A,,
+as_1872,import,EGGS,,Holland,Great Hundreds.,1872,16458,6316,A,A,,1
+as_1872,import,EGGS,,Belgium,Great Hundreds.,1872,113799,49433,A,A,,1
+as_1872,import,EGGS,,France,Great Hundreds.,1872,3380812,1394152,A,A,,1
+as_1872,import,EGGS,,"Portugal, Azores, and Madeira",Great Hundreds.,1872,44843,15755,A,A,,1
+as_1872,import,EGGS,,Spain,Great Hundreds.,1872,151296,47677,A,A,,1
+as_1872,import,EGGS,,Channel Islands,Great Hundreds.,1872,182492,85196,A,A,,1
+as_1872,import,EGGS,,Other Countries,Great Hundreds.,1872,8055,2278,A,A,,1
+as_1873,import,EGGS,,Denmark,Great Hundreds.,1873,244806,79460,A,A,"Eggs 1873: consensus slipped ONE label (Denmark lost; Portugal carried France's 4.31M). PAGE-ADJUDICATED (PDF p.49): BOTH columns close EXACTLY - qty 5,503,950 == T1 (Denmark 244,806 per Chandra), value 2,359,022 == T1 (Spain 47,550, the printed leading '1' is border bleed; Other 322 not 392).",
+as_1873,import,EGGS,,Germany,Great Hundreds.,1873,434277,126192,A,A,,1
+as_1873,import,EGGS,,Holland,Great Hundreds.,1873,1801,1027,A,A,,1
+as_1873,import,EGGS,,Belgium,Great Hundreds.,1873,104715,45744,A,A,,1
+as_1873,import,EGGS,,France,Great Hundreds.,1873,4307468,1952814,A,A,,1
+as_1873,import,EGGS,,"Portugal, Azores, and Madeira",Great Hundreds.,1873,74922,26195,A,A,,1
+as_1873,import,EGGS,,Spain,Great Hundreds.,1873,151564,47550,A,A,,1
+as_1873,import,EGGS,,Channel Islands,Great Hundreds.,1873,183370,79718,A,A,,1
+as_1873,import,EGGS,,Other Countries,Great Hundreds.,1873,1027,322,A,A,,1
+as_1874,import,EGGS,,Denmark,Great Hundreds.,1874,219887,81274,A,A,"Eggs 1874: consensus slipped ONE label. PAGE-ADJUDICATED (PDF p.52, badly broken type): value column sums 2,433,104 vs printed/T1 2,433,134 (30 residual, members kept). Germany qty 486,651 - the leading glyph is the volume's broken-4-reads-as-1 type defect; ratio 0.33 GBP/GH matches peers (printed-as-read 186,651 gives impossible 0.86) and trend 434,277(73)-548,120(75). France 4,191,062 as printed (leading broken-4; both engines read 1,191,062): qty members then sum 5,332,246 vs T1 5,671,269 - residual 339,023 unresolvable by any single-glyph emendation; if the printed France cell is a compositor error the arithmetic-implied value is 4,530,085 (ratio 0.446, on trend) - kept as printed, tier B.",
+as_1874,import,EGGS,,Germany,Great Hundreds.,1874,486651,160077,B,A,,1
+as_1874,import,EGGS,,Holland,Great Hundreds.,1874,1469,1216,A,A,,1
+as_1874,import,EGGS,,Belgium,Great Hundreds.,1874,141236,62526,A,A,,1
+as_1874,import,EGGS,,France,Great Hundreds.,1874,4191062,2018725,B,A,,1
+as_1874,import,EGGS,,Portugal,Great Hundreds.,1874,59502,21283,A,A,,1
+as_1874,import,EGGS,,Spain,Great Hundreds.,1874,147548,47641,A,A,,1
+as_1874,import,EGGS,,Channel Islands,Great Hundreds.,1874,81989,39083,A,A,,1
+as_1874,import,EGGS,,Other Countries,Great Hundreds.,1874,2902,1279,A,A,,1
+as_1884,import,EGGS,,Russia,Great Hundreds.,1884,29531,10094,A,A,"Eggs 1884: consensus slipped ONE label (Russia's label absorbed the unit row). Re-paired by one-up shift; EVERY country then matches its 1883-1885 bracket (Belgium 1.87M-2.09M-2.09M; Denmark 158k-551k-560k; France 3.08M-3.27M-3.34M; CI 34k-8.8k-11k). Qty members sum to printed Total 8,280,073 == T1 EXACTLY (incl. the unlabeled tail row 616 = Other Countries). Value col 2,909,994 vs printed 2,910,493 (499 residual, members kept as printed).",
+as_1884,import,EGGS,,Sweden,Great Hundreds.,1884,6401,2189,A,A,,1
+as_1884,import,EGGS,,Denmark,Great Hundreds.,1884,551295,174353,A,A,,1
+as_1884,import,EGGS,,Germany,Great Hundreds.,1884,2266287,682906,A,A,,1
+as_1884,import,EGGS,,Holland,Great Hundreds.,1884,5438,3165,A,A,,1
+as_1884,import,EGGS,,Belgium,Great Hundreds.,1884,2097561,712043,A,A,,1
+as_1884,import,EGGS,,Channel Islands,Great Hundreds.,1884,8790,3574,A,A,,1
+as_1884,import,EGGS,,France,Great Hundreds.,1884,3269374,1305200,A,A,,1
+as_1884,import,EGGS,,Portugal,Great Hundreds.,1884,16828,5956,A,A,,1
+as_1884,import,EGGS,,Spain,Great Hundreds.,1884,27952,10310,A,A,,1
+as_1884,import,EGGS,,Other Countries,Great Hundreds.,1884,616,204,A,A,,1

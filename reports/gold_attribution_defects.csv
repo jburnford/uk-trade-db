@@ -18,17 +18,17 @@ Bark Peruvian,1886,value-error,10/16 countries match,"Bark, Peruvian"
 Bark Peruvian,1891,value-error,8/12 countries match,"Bark, Peruvian"
 Bark Peruvian,1896,value-error,0/11 countries match,"Bark, Peruvian"
 Barley,1896,value-error,17/19 countries match,Barley
-Beads of Glass,1876,value-error,0/4 countries match,"BEADS, of all Sorts None"
-Beads of all Sorts,1886,value-error,8/9 countries match,"BEADS, of all Sorts None"
-Beads of all Sorts,1891,value-error,6/7 countries match,"BEADS, of all Sorts None"
-Beads of all Sorts,1896,value-error,6/7 countries match,"BEADS, of all Sorts None"
+Beads of all Sorts,1886,value-error,8/9 countries match,BEADS OF ALL SORTS None
+Beads of all Sorts,1891,value-error,6/7 countries match,BEADS OF ALL SORTS None
+Beads of all Sorts,1896,value-error,6/7 countries match,BEADS OF ALL SORTS None
 Bean Meal and Pea Meal,1876,value-error,0/1 countries match,Bean Meal and Pea Meal
 Beans,1886,value-error,10/12 countries match,Beans (not Kidney or French)
 Beans,1896,value-error,1/12 countries match,Beans (not Kidney or French)
 Beef Fresh,1896,value-error,0/9 countries match,Beef
 Beef Salted,1896,value-error,0/6 countries match,Beef
 Beer and Ale Mum,1876,value-error,0/1 countries match,of other Sorts
-Beer and Ale Mum and Spruce,1896,value-error,0/1 countries match,Mum and Spruce
+Beer and Ale Mum and Spruce,1891,value-error,0/2 countries match,of other Sorts
+Beer and Ale Mum and Spruce,1896,value-error,0/1 countries match,of other Sorts
 Beer and Ale Spruce,1876,value-error,0/2 countries match,of other Sorts
 Beer and Ale of other Sorts,1896,value-error,0/7 countries match,of other Sorts
 Bones (except Whalefins),1876,value-error,0/9 countries match,"Bones of Animals, and Fish for Manure only"
@@ -56,8 +56,8 @@ Caoutchouc,1881,value-error,13/15 countries match,CAOUTCHouc None
 Caoutchouc,1886,value-error,12/27 countries match,CAOUTCHouc None
 Caoutchouc,1896,value-error,29/39 countries match,CAOUTCHouc None
 Cheese,1881,value-error,3/4 countries match,CHEESE None
-Chemical Essential or Perfumed Oils,1886,value-error,8/13 countries match,"Chemical, Essential or Perfumed"
-Chemical Essential or Perfumed Oils,1896,value-error,3/18 countries match,"Chemical, Essential or Perfumed"
+Chemical Essential or Perfumed Oils,1886,value-error,8/13 countries match,"Chemical, Essential, or Perfumed"
+Chemical Essential or Perfumed Oils,1896,value-error,3/18 countries match,"Chemical, Essential, or Perfumed"
 Chemical Manufactures and Products Unenumerated,1881,value-error,0/0 countries match,"CHEMICAL MANUFACTURES and PRODUCTS, Unenumerated"
 Cherries Raw,1896,value-error,0/4 countries match,"Cherries, Raw"
 Chicory Other Vegetable matter,1896,value-error,0/1 countries match,Vegetable
@@ -70,17 +70,17 @@ Clocks,1886,value-error,6/7 countries match,CLOCKS None
 Clover and Grass Seeds,1896,value-error,0/13 countries match,Clover and Grass
 "Coals, Culm, or Cinders",1886,value-error,1/3 countries match,"COAL, CULM, AND CINDERS None"
 "Coals, Culm, or Cinders",1896,value-error,2/4 countries match,"COAL, CULM, AND CINDERS None"
-Cochineal,1876,value-error,5/6 countries match,Cochineal
-Cochineal,1881,value-error,1/2 countries match,Cochineal
-Cochineal,1891,value-error,2/3 countries match,Cochineal
-Cochineal,1896,value-error,0/3 countries match,Cochineal
+Cochineal,1876,value-error,5/6 countries match,COCHINEAL (including Granilla and Dust)
+Cochineal,1881,value-error,1/2 countries match,COCHINEAL (including Granilla and Dust)
+Cochineal,1891,value-error,2/3 countries match,COCHINEAL (including Granilla and Dust)
+Cochineal,1896,value-error,0/3 countries match,COCHINEAL (including Granilla and Dust)
 Cocoa,1876,value-error,12/14 countries match,COCOA None
 Cocoa,1891,value-error,12/21 countries match,COCOA None
 Cocoa,1896,value-error,12/17 countries match,COCOA None
-Cocoa Butter,1896,value-error,0/2 countries match,COCOA None
+Cocoa Butter,1896,value-error,0/2 countries match,BUTTER None
 Cocoa Cocoa or Chocolate in the manufacture of which Spirit has been used,1896,value-error,0/4 countries match,"Cocoa or Chocolate, in the manufacture   of which Spirit has been used"
 Cocoa Husks and Shells,1896,value-error,0/3 countries match,Husks and Shells
-Cocoa-nut Oil,1891,value-error,0/7 countries match,OIL None
+Cocoa-nut Oil,1891,value-error,0/7 countries match,Unenumerated
 Coffee,1876,value-error,23/27 countries match,COFFEE None
 Coffee,1881,value-error,18/22 countries match,COFFEE None
 Coffee Kiln Dried Roasted or Ground,1891,value-error,3/4 countries match,"Kiln Dried, Roasted, or Ground"
@@ -96,7 +96,7 @@ Confectionery,1896,value-error,8/9 countries match,CONFECTIONERY (not containing
 Confectionery containing not more than 50% Chocolate in the manufacture of which Spirit has been use,1896,value-error,0/3 countries match,"CONFECTIONERY, containing not more than 50 % Chocolate, in the Manufacture of which Spirit has been used"
 Confectionery containing not more than 50% chocolate,1896,value-error,0/3 countries match,"CONFECTIONERY, containing not more than 50 % Chocolate"
 Confectionery in the Manufacture of which Spirit has been used,1896,value-error,0/5 countries match,"CONFECTIONERY, in the Manufacture of which Spirit has been used None"
-Copper Ore,1891,value-error,16/18 countries match,"COPPER, ORE OF None"
+Copper Ore,1891,value-error,16/18 countries match,"COPPER, Ore of None"
 Copper Part Wrought,1891,value-error,6/7 countries match,Part Wrought
 Copper Part Wrought,1896,value-error,1/5 countries match,Part Wrought
 Copper Regulus (and Precipitate from 1886 onward),1876,value-error,7/8 countries match,Regulus
@@ -120,14 +120,15 @@ Cotton Raw,1881,value-error,0/17 countries match,Cotton None
 Cotton Raw,1886,value-error,0/24 countries match,Cotton None
 Cotton Raw,1891,value-error,0/27 countries match,Cotton None
 Cotton Raw,1896,value-error,0/18 countries match,Cotton None
-Cotton Seeds,1876,value-error,0/6 countries match,Seed
-Cotton Seeds,1881,value-error,0/5 countries match,Seed
-Cotton Seeds,1886,value-error,0/9 countries match,Seed
-Cotton Seeds,1891,value-error,0/15 countries match,Seed
-Cotton Seeds,1896,value-error,0/11 countries match,Seed
-Cotton Waste,1886,value-error,8/9 countries match,Waste of (Raw and Yarn)
-Cotton Waste,1891,value-error,10/13 countries match,Waste of (Raw and Yarn)
-Cotton Waste,1896,value-error,11/13 countries match,Waste of (Raw and Yarn)
+Cotton Seeds,1881,value-error,2/5 countries match,Cotton None
+Cotton Seeds,1886,value-error,8/9 countries match,Cotton None
+Cotton Seeds,1891,value-error,13/15 countries match,Cotton None
+Cotton Seeds,1896,value-error,1/11 countries match,Cotton None
+Cotton Waste,1876,value-error,0/4 countries match,Cotton None
+Cotton Waste,1881,value-error,0/6 countries match,Cotton None
+Cotton Waste,1886,value-error,0/9 countries match,Cotton None
+Cotton Waste,1891,value-error,0/13 countries match,Cotton None
+Cotton Waste,1896,value-error,0/13 countries match,Cotton None
 Cotton Yarn,1876,value-error,0/5 countries match,Cotton None
 Cotton Yarn,1881,value-error,0/3 countries match,Cotton None
 Cotton Yarn,1886,value-error,0/6 countries match,Cotton None
@@ -145,11 +146,11 @@ Dye Stuffs and Substances used in Tanning Extracts,1891,value-error,0/0 countrie
 Dye Woods Logwood,1886,value-error,0/7 countries match,Unenumerated
 Dye Woods Logwood,1896,value-error,0/9 countries match,Unenumerated
 Dye Woods Unenumerated,1896,value-error,15/17 countries match,Unenumerated
-Eggs,1876,value-error,7/8 countries match,EGGS None
-Eggs,1896,value-error,0/16 countries match,EGGS None
-Ether Butyric,1896,value-error,0/1 countries match,ETHER None
+Eggs,1876,value-error,7/8 countries match,Eggs None
+Eggs,1896,value-error,0/16 countries match,Eggs None
+Ether Butyric,1896,attribution-shift,1/1 values present but mislabeled,BUTYRIC
 Ether Sulphuric,1896,value-error,0/2 countries match,ETHER None
-Farinaceous Substances and Manufactures thereof,1896,value-error,0/0 countries match,FARINACEOUS SUBSTANCES AND MANUFACTURES THEREOF None
+Farinaceous Substances and Manufactures thereof,1896,value-error,0/0 countries match,FARINACEOUS SUBSTANCES and Manufactures thereof None
 Feathers Ornamental,1886,value-error,14/16 countries match,Ornamental
 Feathers Ornamental,1891,value-error,13/15 countries match,Ornamental
 Feathers Ornamental,1896,value-error,6/20 countries match,Ornamental
@@ -165,20 +166,20 @@ Flaxseed and Linseed,1886,value-error,0/12 countries match,Flax or Linseed
 Flaxseed and Linseed,1891,value-error,12/15 countries match,Flax or Linseed
 Flaxseed and Linseed,1896,value-error,12/15 countries match,Flax or Linseed
 Fresh Milk,1896,value-error,1/3 countries match,"MILK AND CREAM, fresh or preserved, other than condensed milk None"
-Fruit Dried unenumerated,1891,value-error,0/11 countries match,FRUIT None
+Fruit Dried unenumerated,1896,value-error,1/12 countries match,"Unenumerated, Dried"
 Fruit Preserved without Sugar Unenumerated,1886,value-error,3/15 countries match,"FRUIT: 
                     „ Unenumerated: Preserved without Sugar None"
 Fruit Raw unenumerated,1891,value-error,0/16 countries match,FRUIT None
-Furs,1886,value-error,11/13 countries match,Furs
-Furs,1891,value-error,19/22 countries match,Furs
+Furs,1886,value-error,11/13 countries match,"Unenumerated, being Furs"
+Furs,1891,value-error,19/22 countries match,"Unenumerated, being Furs"
 Galls,1876,value-error,4/5 countries match,GALLS None
 Galls,1891,value-error,6/7 countries match,GALLS None
 Galls,1896,value-error,6/7 countries match,GALLS None
 Geldings,1891,value-error,2/12 countries match,Geldings
-Ginger Raw,1876,attribution-shift,6/7 values present but mislabeled,Ginger
-Ginger Raw,1881,value-error,3/4 countries match,Ginger
-Ginger Spice,1886,value-error,0/6 countries match,Ginger
-Ginger Spice,1896,value-error,1/12 countries match,Ginger
+Ginger Raw,1876,value-error,0/7 countries match,Raw
+Ginger Raw,1881,value-error,0/4 countries match,Raw
+Ginger Spice,1886,value-error,0/6 countries match,Unenumerated
+Ginger Spice,1896,value-error,0/12 countries match,Unenumerated
 Glass Bottles,1896,value-error,0/8 countries match,GLASS None
 Glass Plate Fluted Rolled or Rough,1896,value-error,0/4 countries match,"Plate, Fluted, Rolled, or Rough"
 "Glass Plate, whether Silvered or not",1886,value-error,5/6 countries match,"Plate, whether Silvered or not"
@@ -187,20 +188,22 @@ Glucose,1891,value-error,5/6 countries match,Glucose
 Glucose,1896,value-error,5/6 countries match,Glucose
 Goats Wool or Hair,1886,value-error,9/11 countries match,Other Goats' Wool or Hair
 Goats Wool or Hair,1891,value-error,11/14 countries match,Other Goats' Wool or Hair
-Goats Wool or Hair Mohair,1896,value-error,6/8 countries match,"Goats' wool, Mohair"
+Goats Wool or Hair Mohair,1896,value-error,0/8 countries match,Other Goats' Wool or Hair
 Gold Leave,1886,value-error,0/4 countries match,GOLD None
 Gold Leave,1896,value-error,0/5 countries match,GOLD None
 "Gold Ore of, or Ore of which the greater part in Value is Gold",1886,value-error,1/3 countries match,"Ore of, or Ore of which the greater part in Value is Gold"
 "Gold Ore of, or Ore of which the greater part in Value is Gold",1896,value-error,1/12 countries match,"Ore of, or Ore of which the greater part in Value is Gold"
 Grapes,1896,value-error,1/9 countries match,"Grapes, Raw"
-Guano,1876,value-error,7/9 countries match,Guano
-Guano,1881,value-error,4/6 countries match,Guano
-Guano,1891,value-error,10/12 countries match,Guano
+Guano,1876,value-error,7/9 countries match,GUANO
+Guano,1881,value-error,4/6 countries match,GUANO
+Guano,1891,value-error,10/12 countries match,GUANO
 Gum Arabic,1886,value-error,6/11 countries match,"GUM : 
                     „ Arabic None"
-Gum Kowrie,1886,value-error,0/3 countries match,Kowrie
-Gum Kowrie,1891,value-error,0/4 countries match,Kowrie
-Gum Kowrie,1896,value-error,3/5 countries match,Kowrie
+Gum Kowrie,1876,value-error,2/3 countries match,GUM None
+Gum Kowrie,1881,value-error,0/2 countries match,GUM None
+Gum Kowrie,1886,value-error,0/3 countries match,GUM None
+Gum Kowrie,1891,value-error,0/4 countries match,GUM None
+Gum Kowrie,1896,value-error,0/5 countries match,GUM None
 "Gum Lac, Seed, Shell, Stick, and Dye",1876,value-error,2/3 countries match,"Lac, Seed, Shell, Stick, and Dye"
 "Gum Lac, Seed, Shell, Stick, and Dye",1881,attribution-shift,2/2 values present but mislabeled,"Lac, Seed, Shell, Stick, and Dye"
 "Gum Lac, Seed, Shell, Stick, and Dye",1886,value-error,4/9 countries match,"Lac, Seed, Shell, Stick, and Dye"
@@ -226,10 +229,12 @@ Hemp Rough or Undressed,1881,value-error,5/8 countries match,Rough or Undressed
 Hemp Tow or Codilla of Hemp,1876,value-error,1/4 countries match,Tow or Codilla of
 Hemp Tow or Codilla of Hemp,1886,value-error,2/7 countries match,Tow or Codilla of
 Hemp Tow or Codilla of Hemp,1891,value-error,2/6 countries match,Tow or Codilla of
-Hides Raw Dry,1876,value-error,12/15 countries match,Dry
-Hides Raw Dry,1886,value-error,29/35 countries match,Dry
-Hides Raw Dry,1896,value-error,1/38 countries match,Dry
-Hides Raw Wet,1896,value-error,0/29 countries match,Wet
+Hides Raw Dry,1876,value-error,0/15 countries match,Raw
+Hides Raw Dry,1886,value-error,0/35 countries match,Raw
+Hides Raw Dry,1896,value-error,0/38 countries match,Raw
+Hides Raw Wet,1876,value-error,0/13 countries match,Raw
+Hides Raw Wet,1886,value-error,0/25 countries match,Raw
+Hides Raw Wet,1896,value-error,0/29 countries match,Raw
 Hides Tanned not otherwise Dressed,1876,value-error,9/12 countries match,"Tanned, not otherwise Dressed"
 Hides Tanned not otherwise Dressed,1881,value-error,10/12 countries match,"Tanned, not otherwise Dressed"
 "Hides Tawed Curried or in any way Dress, not being Varnished Japanned or Enamelled",1876,value-error,0/6 countries match,"Varnished, Japanned, or Enamelled"
@@ -242,18 +247,18 @@ Horns Tips and Pieces of Horns and Hoofs,1876,value-error,11/13 countries match,
 Horns Tips and Pieces of Horns and Hoofs,1896,value-error,3/22 countries match,"HORNS, tips and pieces of Horns and Hoofs None"
 Horns and Hoofs,1881,value-error,10/12 countries match,HORNS and HOOFs None
 Horns and Hoofs,1891,value-error,14/17 countries match,HORNS and HOOFs None
-Horses,1876,value-error,5/9 countries match,Horse None
-Horses,1881,value-error,3/7 countries match,Horse None
-Horses,1896,value-error,0/0 countries match,Horse None
+Horses,1876,value-error,5/9 countries match,Horses
+Horses,1881,value-error,3/7 countries match,Horses
+Horses,1896,value-error,0/0 countries match,Horses
 Imitation Rum,1896,value-error,0/3 countries match,"Rum, Imitation"
 Indian Corn or Maize,1886,value-error,8/13 countries match,Maize or Indian Cornmeal
 Indian Corn or Maize,1891,value-error,14/16 countries match,Maize or Indian Cornmeal
 Indian Corn or Maize,1896,value-error,0/11 countries match,Maize or Indian Cornmeal
-Indigo,1876,value-error,8/12 countries match,Indigo
-Indigo,1881,value-error,3/5 countries match,Indigo
-Indigo,1886,value-error,6/12 countries match,Indigo
-Indigo,1891,value-error,8/12 countries match,Indigo
-Indigo,1896,value-error,0/16 countries match,Indigo
+Indigo,1876,value-error,8/12 countries match,INDIGO
+Indigo,1881,value-error,3/5 countries match,INDIGO
+Indigo,1886,value-error,6/12 countries match,INDIGO
+Indigo,1891,value-error,8/12 countries match,INDIGO
+Indigo,1896,value-error,0/16 countries match,INDIGO
 Iron Bar Angle Bolt and Rod,1886,value-error,7/8 countries match,Bar. Angle. Bolt and Rod
 Iron Bar Angle Bolt and Rod,1896,value-error,4/6 countries match,Bar. Angle. Bolt and Rod
 Iron Manufacturers of Tyres and Axles,1896,value-error,0/3 countries match,Tyres and axles
@@ -287,7 +292,6 @@ Lead Ore,1896,value-error,0/11 countries match,Ore of (including Chrome)
 Lead Pig and Sheet,1891,value-error,13/18 countries match,Pig and Sheet
 Lead Pig and Sheet,1896,value-error,0/15 countries match,Pig and Sheet
 Leather Dressed,1896,value-error,9/17 countries match,Dressed
-Leather Manufactures Boots and Shoes,1896,value-error,0/7 countries match,Boots and Shoes
 Leather Undressed,1886,value-error,16/20 countries match,"LEATHER, Undressed None"
 Lemons,1896,value-error,0/6 countries match,Lemons
 Lemons and Oranges,1876,value-error,4/5 countries match,Oranges and Lemons
@@ -296,20 +300,19 @@ Liquorice,1891,value-error,4/5 countries match,LIQUORICE None
 Liquorice,1896,value-error,1/5 countries match,LIQUORICE None
 Madder Madder Root Garancine and Munjeet,1886,value-error,4/5 countries match,"Madder, Madder Root, Garancine,     and Munjeet"
 Madder Madder Root Garancine and Munjeet,1896,value-error,1/4 countries match,"Madder, Madder Root, Garancine,     and Munjeet"
-Maize or Indian Corn Meal,1876,value-error,1/2 countries match,Maize or Indian Corn Meal
-Maize or Indian Corn Meal,1886,value-error,2/3 countries match,Maize or Indian Corn Meal
-Maize or Indian Corn Meal,1891,value-error,2/3 countries match,Maize or Indian Corn Meal
-Malt,1896,value-error,0/3 countries match,MALT
-Manganese Ore,1886,value-error,12/14 countries match,"MANGANESE, Ore of"
-Manganese Ore,1891,value-error,9/12 countries match,"MANGANESE, Ore of"
-Manganese Ore,1896,value-error,2/13 countries match,"MANGANESE, Ore of"
-Manure Unenumerated,1886,value-error,6/10 countries match,Unenumerated
+Maize or Indian Corn Meal,1876,value-error,1/2 countries match,Maize or Indian Corn Meal (including Maizena)
+Maize or Indian Corn Meal,1886,value-error,2/3 countries match,Maize or Indian Corn Meal (including Maizena)
+Maize or Indian Corn Meal,1891,value-error,2/3 countries match,Maize or Indian Corn Meal (including Maizena)
+Malt,1896,value-error,0/3 countries match,MALT None
+Manganese Ore,1886,value-error,12/14 countries match,MANGANESE ORE None
+Manganese Ore,1891,value-error,9/12 countries match,MANGANESE ORE None
+Manganese Ore,1896,value-error,2/13 countries match,MANGANESE ORE None
+Manure Unenumerated,1886,value-error,6/10 countries match,UNENUMERATED
 Mares,1896,value-error,4/14 countries match,Mares
 Margarine,1891,value-error,7/8 countries match,Margarine (including all kinds of Artificial or Imitation Butters)
 Margarine,1896,value-error,0/7 countries match,Margarine (including all kinds of Artificial or Imitation Butters)
-Meal Unenumerated,1886,value-error,9/11 countries match,"Meal, unenumerated"
-Meal Unenumerated,1891,value-error,8/10 countries match,"Meal, unenumerated"
-Meat Preserved not Salted,1876,value-error,0/8 countries match,Salted
+Meal Unenumerated,1886,value-error,9/11 countries match,"Meal, Unenumerated"
+Meal Unenumerated,1891,value-error,8/10 countries match,"Meal, Unenumerated"
 Meat Unenumerated Salted or Fresh,1891,value-error,8/12 countries match,Salted or Fresh
 Metal Leaf not Gold,1886,value-error,3/4 countries match,"Leaf, not Gold"
 Metal Leaf not Gold,1896,value-error,2/3 countries match,"Leaf, not Gold"
@@ -319,43 +322,43 @@ Metal Old other than Iron or Copper for re-manufacture,1876,value-error,0/6 coun
 Metal Old other than Iron or Copper for re-manufacture,1881,value-error,0/3 countries match,"Manufactures, unenumerated"
 Metal Old other than Iron or Copper for re-manufacture,1891,value-error,0/10 countries match,"Manufactures, unenumerated"
 Metal Unenumerated Wrought,1881,value-error,0/4 countries match,Metals
-Metal Unenumerated Wrought or Manufactured,1876,value-error,0/5 countries match,"Unenumerated, Wrought or     Manufactured"
-Metal Unenumerated Wrought or Manufactured,1896,value-error,0/7 countries match,"Unenumerated, Wrought or     Manufactured"
-Metal Unenumerated unwrought,1881,value-error,0/5 countries match,"Unenumerated, Unwrought"
-Metal Unenumerated unwrought,1896,value-error,5/6 countries match,"Unenumerated, Unwrought"
+Metal Unenumerated Wrought or Manufactured,1876,value-error,0/5 countries match,Wrought or Manufactured
+Metal Unenumerated Wrought or Manufactured,1896,value-error,0/7 countries match,Wrought or Manufactured
+Metal Unenumerated unwrought,1881,value-error,0/5 countries match,Metals
 Methylic Alcohol,1896,value-error,4/5 countries match,"METHYLIC ALCOHOL, not purified so as to be Potable"
 Mica Talc etc,1896,attribution-shift,8/8 values present but mislabeled,MICA AND TALC None
 Milk Condensed,1891,value-error,8/9 countries match,"MILK, CONDENSED None"
-Moss Litter,1891,value-error,3/4 countries match,MOSS LITTER None
-Mutton Fresh,1886,value-error,5/10 countries match,"MUTTON, Fresh None"
-Mutton Fresh,1896,value-error,5/11 countries match,"MUTTON, Fresh None"
+Moss Litter,1891,value-error,3/4 countries match,Moss LITTER None
+Mutton Fresh,1886,value-error,5/10 countries match,"MUTTON, FRESH None"
+Mutton Fresh,1896,value-error,5/11 countries match,"MUTTON, FRESH None"
 Myrabolans,1876,attribution-shift,4/4 values present but mislabeled,MYRABOLANS None
 Naphtha or Methylic Alcohol purified,1876,value-error,0/1 countries match,NAPHTHA (Crude) None
 Nitrate of Soda,1896,value-error,4/5 countries match,Nitrate of Soda (cubic nitre)
-Nuts and Kernels Unenumerated,1886,value-error,0/0 countries match,"Other sorts, unenumerated (not used as fruit)"
-Nuts and Kernels Unenumerated,1891,value-error,0/0 countries match,"Other sorts, unenumerated (not used as fruit)"
-Nuts and Kernels Unenumerated,1896,value-error,0/0 countries match,"Other sorts, unenumerated (not used as fruit)"
-Nuts and Kernels for expressing Oil,1886,value-error,3/14 countries match,"Other sorts, unenumerated (not used as fruit)"
-Nuts and Kernels for expressing Oil,1891,value-error,3/27 countries match,"Other sorts, unenumerated (not used as fruit)"
-Nuts and Kernels for expressing Oil,1896,value-error,0/25 countries match,"Other sorts, unenumerated (not used as fruit)"
+Nuts and Kernels Unenumerated,1886,value-error,0/0 countries match,NUTS AND KERNELS None
+Nuts and Kernels Unenumerated,1891,value-error,0/0 countries match,NUTS AND KERNELS None
+Nuts and Kernels Unenumerated,1896,value-error,0/0 countries match,NUTS AND KERNELS None
+Nuts and Kernels for expressing Oil,1886,value-error,3/14 countries match,NUTS AND KERNELS None
+Nuts and Kernels for expressing Oil,1891,value-error,3/27 countries match,NUTS AND KERNELS None
+Nuts and Kernels for expressing Oil,1896,value-error,0/25 countries match,NUTS AND KERNELS None
 Oatmeal,1876,attribution-shift,3/3 values present but mislabeled,Oatmeal
 Oatmeal and Groats,1886,value-error,2/4 countries match,Oatmeal and Groats
 Oatmeal and Groats,1891,value-error,2/4 countries match,Oatmeal and Groats
 Oatmeal and Groats,1896,value-error,0/3 countries match,Oatmeal and Groats
 Oats,1876,value-error,8/9 countries match,Oats
 Oats,1896,value-error,2/12 countries match,Oats
-Oil Castor,1886,value-error,0/6 countries match,OIL None
-Oil Castor,1891,value-error,0/4 countries match,OIL None
+Oil Castor,1876,value-error,1/3 countries match,Castor
+Oil Castor,1886,value-error,3/6 countries match,Castor
+Oil Castor,1896,value-error,5/8 countries match,Castor
 Oil Coco-nut,1896,value-error,0/10 countries match,Coco-nut
 Oil Seed Cake Cotton Seed,1896,value-error,0/8 countries match,Of other sorts
 Oil Seed Cake Linseed,1896,value-error,0/18 countries match,Of other sorts
 Oil Seed Cake of other sorts,1896,attribution-shift,7/8 values present but mislabeled,Of other sorts
 Oil Seed Cakes,1886,value-error,10/14 countries match,Of other sorts
-Oil Unenumerated,1886,value-error,0/0 countries match,OIL None
-Oil Unenumerated,1891,value-error,0/0 countries match,OIL None
+Oil Unenumerated,1886,value-error,0/0 countries match,Unenumerated
+Oil Unenumerated,1891,value-error,0/0 countries match,Unenumerated
 Oleo Margarine or Oleo Oil,1896,value-error,3/7 countries match,OLEO-MARGARINE None
-Olive Oil,1886,value-error,0/14 countries match,OIL None
-Olive Oil,1891,value-error,0/12 countries match,OIL None
+Olive Oil,1886,value-error,0/14 countries match,Unenumerated
+Olive Oil,1891,value-error,0/12 countries match,Unenumerated
 Opium,1886,value-error,5/7 countries match,Opium
 Opium,1891,value-error,6/10 countries match,Opium
 Opium,1896,value-error,3/8 countries match,Opium
@@ -368,17 +371,20 @@ Other Fresh Fish,1896,value-error,5/9 countries match,Other sorts of Fresh Fish
 Other Nuts used as Fruit,1896,value-error,0/0 countries match,"Nuts, used as Fruit"
 Oxen and Bulls,1896,value-error,0/5 countries match,Oxen and Bulls
 Oysters Fresh,1896,value-error,4/5 countries match,"Fresh (not of British taking) : Shell fish, Oysters"
-Palm Oil,1886,value-error,1/12 countries match,OIL None
-Palm Oil,1891,value-error,4/14 countries match,OIL None
-Paper Brown and Waste Unenumerated,1876,value-error,0/0 countries match,Waste of (Raw and Yarn)
+Palm Oil,1876,attribution-shift,6/6 values present but mislabeled,Palm
+Palm Oil,1881,value-error,3/4 countries match,Palm
+Palm Oil,1886,value-error,4/12 countries match,Palm
+Palm Oil,1891,value-error,3/14 countries match,Palm
+Palm Oil,1896,value-error,0/13 countries match,Palm
+Paper Brown and Waste Unenumerated,1876,value-error,0/0 countries match,Waste
 Paper Hangings,1886,value-error,0/7 countries match,Unenumerated
 Paper Hangings,1891,value-error,0/8 countries match,Unenumerated
-Paper Making Materials Esparto and other Vegetable Fibres,1896,value-error,1/6 countries match,"Esparto, and other Vegetable Fibres"
+Paper Making Materials Esparto and other Vegetable Fibres,1896,value-error,1/6 countries match,Esparto and other Vegetable Fibres
 Paper Making Materials Linen and Cotton Rags,1896,value-error,8/10 countries match,Linen and Cotton Rags
+Paper Making Materials Other Paper Making Materials,1896,value-error,0/10 countries match,Of Other Materials
 Paper Millboard and Pasteboard,1886,value-error,7/9 countries match,Millboard and Pasteboard
 Paper Printed or Coated,1896,value-error,7/8 countries match,Printed or Coated
 Paper Strawboard or Millboard,1896,value-error,0/10 countries match,Strawboard and Millboard
-Paper and Pasteboard Unprinted,1896,value-error,0/15 countries match,Unprinted
 Paper for Printing or Writing,1891,value-error,11/13 countries match,For Printing or Writing
 Peas,1891,value-error,9/14 countries match,Peas
 Peas,1896,value-error,2/9 countries match,Peas
@@ -387,15 +393,13 @@ Pepper (Spice),1891,value-error,4/12 countries match,Pepper
 Pepper (Spice),1896,value-error,4/15 countries match,Pepper
 Perfumery and Articles used in the Manufacture thereof except Perfumed Spirits,1896,value-error,0/11 countries match,"PERFUMERY, and Articles used in the Manufacture thereof, except Perfumed Spirits None"
 Petroleum,1886,value-error,7/8 countries match,PETROLEUM None
-Petroleum Unrefined,1876,value-error,1/2 countries match,Unrefined
-Petroleum Unrefined,1881,value-error,1/2 countries match,Unrefined
 Phosphate of Lime and Rock,1886,value-error,8/11 countries match,Phosphate of Lime and Rock
 Phosphate of Lime and Rock,1896,value-error,0/10 countries match,Phosphate of Lime and Rock
 Pickles and Vegetables Preserved in Salt or Vinegar,1896,value-error,6/8 countries match,"PICKLES and VEGETABLES, preserved in Salt or Vinegar None"
 Pitch,1886,value-error,6/8 countries match,PITCH None
 Pitch,1896,value-error,7/8 countries match,PITCH None
 Plate of Silver gilt or ungilt,1896,value-error,5/7 countries match,"Of Silver, gilt or ungilt"
-Platina Wrought and Unwrought,1891,value-error,4/5 countries match,"PLATINA, Wrought or Unwrought None"
+Platina Wrought and Unwrought,1891,value-error,4/5 countries match,"PLATINA, Wrought and Unwrought None"
 Playing Cards,1876,attribution-shift,5/6 values present but mislabeled,"CARDS, PLAYING None"
 Playing Cards,1896,value-error,0/7 countries match,"CARDS, PLAYING None"
 Plumbago,1886,value-error,4/5 countries match,PLUMBAGO None
@@ -407,7 +411,7 @@ Plums Raw,1896,value-error,1/7 countries match,"Plums, Raw"
 Pork Fresh,1891,value-error,5/6 countries match,PORK None
 Pork Salted not Hams,1891,value-error,0/7 countries match,PORK None
 Prunes,1896,value-error,0/5 countries match,Prunes
-Quicksilver,1886,value-error,5/6 countries match,QUICKSILVER None
+Quicksilver,1886,value-error,5/6 countries match,QUICKSILVER (Metallic) None
 Rabbits,1886,value-error,4/5 countries match,RABBITS None
 Rabbits,1896,value-error,3/7 countries match,RABBITS None
 Rags Woollen applicable to other uses than Manure torn up or not,1876,value-error,6/7 countries match,"RAGS WOOLLEN: Applicable to other uses than Manure, torn up or not None"
@@ -417,28 +421,28 @@ Rice,1881,value-error,6/8 countries match,RICE None
 Rice,1886,attribution-shift,17/17 values present but mislabeled,RICE None
 Rice,1891,value-error,12/19 countries match,RICE None
 Rice,1896,value-error,12/15 countries match,RICE None
+Rice not in the Husk,1876,value-error,6/8 countries match,In the Husk
 Rifles Carbines Muskets and Fowling Pieces,1896,value-error,0/0 countries match,"Muskets, Rifles, Carbines,     Fowling Pieces, or Guns of     any other sorts not enumer-     ated, and parts thereof, and     Pistols"
 Rye,1896,value-error,1/6 countries match,Rye
 Safflower,1896,attribution-shift,2/2 values present but mislabeled,Safflower
-Sago and Sago Flour,1876,value-error,2/3 countries match,SAGO and SAGO FLOUR
-Sago and Sago Flour,1886,value-error,2/3 countries match,SAGO and SAGO FLOUR
-Sago and Sago Flour,1891,value-error,3/5 countries match,SAGO and SAGO FLOUR
+Sago and Sago Flour,1876,value-error,2/3 countries match,SAGO and SAGO FLOUR None
+Sago and Sago Flour,1886,value-error,2/3 countries match,SAGO and SAGO FLOUR None
+Sago and Sago Flour,1891,value-error,3/5 countries match,SAGO and SAGO FLOUR None
 Saltpetre,1876,value-error,4/6 countries match,SALTPETRE (Nitrate of Potash) None
 Saltpetre,1886,value-error,4/5 countries match,SALTPETRE (Nitrate of Potash) None
 Saltpetre,1891,value-error,4/6 countries match,SALTPETRE (Nitrate of Potash) None
 Saltpetre,1896,value-error,5/7 countries match,SALTPETRE (Nitrate of Potash) None
-Sardines Cured or Salted,1891,value-error,0/6 countries match,"Cured or salted, unenumerated"
-Sardines Cured or Salted,1896,value-error,0/10 countries match,"Cured or salted, unenumerated"
-Sauces or Condiments Unenumerated,1896,value-error,9/12 countries match,"SAUCES or CONDIMENTS, unenumerated None"
+Sardines Cured or Salted,1896,value-error,2/10 countries match,"Cured, Sardines"
+Sauces or Condiments Unenumerated,1896,value-error,9/12 countries match,"SAUCES or CONDIMENTS, Unenumerated None"
 Seeds Garden unenumerated,1876,value-error,0/6 countries match,Seed
 Seeds Garden unenumerated,1881,value-error,0/8 countries match,Seed
 Seeds Garden unenumerated,1886,value-error,0/9 countries match,Seed
 Seeds Garden unenumerated,1891,value-error,0/10 countries match,Seed
 Seeds Garden unenumerated,1896,value-error,0/10 countries match,Seed
-Seeds Rape,1876,value-error,0/6 countries match,Seed
-Seeds Rape,1886,value-error,0/10 countries match,Seed
-Seeds Rape,1891,value-error,0/12 countries match,Seed
-Seeds Rape,1896,value-error,0/10 countries match,Seed
+Seeds Rape,1876,attribution-shift,6/6 values present but mislabeled,Rape
+Seeds Rape,1886,value-error,7/10 countries match,Rape
+Seeds Rape,1891,value-error,8/12 countries match,Rape
+Seeds Rape,1896,value-error,1/10 countries match,Rape
 Seeds Tares and Lentils,1886,value-error,6/7 countries match,Tares and Lentils
 Seeds Tares and Lentils,1896,value-error,8/10 countries match,Tares and Lentils
 Seeds Unenumerated Other Sorts,1881,value-error,0/13 countries match,Seed
@@ -452,38 +456,33 @@ Sheep and Lambs,1881,value-error,4/8 countries match,Sheep and Lambs
 Sheep and Lambs,1886,value-error,4/11 countries match,Sheep and Lambs
 Sheep and Lambs,1891,value-error,3/7 countries match,Sheep and Lambs
 Sheep and Lambs,1896,value-error,0/8 countries match,Sheep and Lambs
-Shell Fish Other sorts,1896,value-error,4/7 countries match,Shell Fish of all sorts
+Shell Fish Other sorts,1896,value-error,4/7 countries match,"Shell fish, all sorts"
 Shells of all kinds,1896,value-error,0/0 countries match,SHELLS of all kinds None
-Shumach,1886,value-error,4/5 countries match,Shumach
-Shumach,1891,value-error,7/8 countries match,Shumach
-Silk Knobs or Husks and Waste,1876,value-error,0/5 countries match,Waste of (Raw and Yarn)
-Silk Knobs or Husks and Waste,1881,value-error,0/9 countries match,Waste of (Raw and Yarn)
-Silk Knobs or Husks and Waste,1886,value-error,0/13 countries match,Waste of (Raw and Yarn)
-Silk Knobs or Husks and Waste,1891,value-error,0/11 countries match,Waste of (Raw and Yarn)
-Silk Knobs or Husks and Waste,1896,value-error,0/13 countries match,Waste of (Raw and Yarn)
+Shumach,1886,value-error,4/5 countries match,SHUMACH
+Shumach,1891,value-error,7/8 countries match,SHUMACH
 Silk Raw,1886,value-error,6/9 countries match,"SILK, Raw"
 Silk Thrown dyed or not,1896,value-error,0/4 countries match,"Thrown, Dyed, or not Dyed"
 Silver Ore or Ore of which the greater part in value is Silver,1896,value-error,0/0 countries match,"SILVER, Ore of, or Ore of which the greater part in Value is Silver None"
 Skins Furs Pelts Goat Tanned Tawed or Dressed,1881,value-error,0/9 countries match,"Unenumerated: Other Sorts, Tanned, Tawed,     or Dressed"
-Skins Furs Pelts Goat undressed,1891,value-error,0/22 countries match,Unenumerated
-Skins Furs Pelts Seal,1891,value-error,0/12 countries match,Unenumerated
+Skins Furs Pelts Goat undressed,1896,value-error,0/27 countries match,"Skins, Goat, undressed"
+Skins Furs Pelts Seal,1896,value-error,14/16 countries match,"Furs, Seal Skins"
 Skins Furs Pelts Sheep Tanned Tawed or Dressed,1881,value-error,0/6 countries match,"Unenumerated: Other Sorts, Tanned, Tawed,     or Dressed"
-Skins Furs Pelts Sheep Undressed,1891,value-error,0/25 countries match,Unenumerated
+Skins Furs Pelts Sheep Undressed,1896,value-error,0/29 countries match,"Skins, Sheep, undressed"
 Skins Furs Pelts Unenumerated Dressed not Leather,1891,value-error,0/5 countries match,Unenumerated
 Skins Furs Pelts Unenumerated Other Sorts Undressed,1891,value-error,0/9 countries match,Unenumerated
-Skins Furs Pelts Unenumerated not being Furs Dressed and Undressed,1876,value-error,8/9 countries match,"Unenumerated, not being Furs, Dressed and Undressed"
 Skins Furs and Pelts Goat and Kid Tanned Tawed or Dressed,1876,value-error,4/6 countries match,"Goat and Kid, Tanned, Tawed, or Dressed"
 Skins Furs and Pelts Sheep and Lamb Tanned Tawed or Dressed,1876,attribution-shift,5/6 values present but mislabeled,"Sheep and Lamb, Tanned, Tawed, or Dressed"
 Slates,1896,value-error,1/6 countries match,SLATES None
-Spices Cinnamon,1876,value-error,1/2 countries match,Cinnamon
-Spices Cinnamon,1886,value-error,0/3 countries match,Cinnamon
-Spices Cinnamon,1896,value-error,1/5 countries match,Cinnamon
+Spices Cinnamon,1876,value-error,0/2 countries match,Unenumerated
+Spices Cinnamon,1881,value-error,0/2 countries match,Unenumerated
+Spices Cinnamon,1886,value-error,0/3 countries match,Unenumerated
+Spices Cinnamon,1896,value-error,0/5 countries match,Unenumerated
 Spirits Brandy,1876,value-error,0/4 countries match,Spirits None
 Spirits Brandy,1881,value-error,0/4 countries match,Spirits None
 Spirits Geneva,1876,value-error,0/2 countries match,Spirits None
 Spirits Geneva,1881,value-error,0/2 countries match,Spirits None
-Spirits Rum,1891,value-error,12/16 countries match,Rum
-Spirits Rum,1896,value-error,0/9 countries match,Rum
+Spirits Rum,1876,value-error,0/8 countries match,Spirits None
+Spirits Rum,1881,value-error,0/4 countries match,Spirits None
 Spirits Sweetened or Mixed Tested,1891,value-error,3/11 countries match,"Unenumerated, Sweetened, or Mixed (Tested)"
 Spirits Unenumerated not Sweetened,1881,value-error,0/4 countries match,Spirits None
 Spirits Unenumerated not Sweetened or Mixed,1896,value-error,2/10 countries match,"Unenumerated, Sweetened, or Mixed (Tested)"
@@ -503,28 +502,21 @@ Tar,1881,value-error,2/3 countries match,TAR None
 Tar,1886,attribution-shift,7/8 values present but mislabeled,TAR None
 Tea,1891,value-error,19/22 countries match,TEA None
 Tea,1896,value-error,2/16 countries match,TEA None
-Teeth Elephants Sea Cow and Sea Horses,1876,value-error,9/14 countries match,"Teeth, Elephants', Sea Cow, Sea   Horse, or Sea Horse"
+Teeth Elephants Sea Cow and Sea Horses,1876,value-error,9/14 countries match,"TEETH, Elephants', Sea Cow, and Sea Horse None"
 Tin Manufactures Unenumerated,1876,value-error,0/0 countries match,"Manufactures, unenumerated"
 Tin Manufactures Unenumerated,1881,value-error,0/0 countries match,"Manufactures, unenumerated"
 Tin Manufactures Unenumerated,1886,value-error,0/0 countries match,"Manufactures, unenumerated"
 Tin Manufactures Unenumerated,1891,value-error,0/0 countries match,"Manufactures, unenumerated"
 Tin Manufactures Unenumerated,1896,value-error,0/0 countries match,"Manufactures, unenumerated"
-Tin Ore,1876,value-error,0/3 countries match,Ore of (including Chrome)
-Tin Ore,1886,value-error,0/7 countries match,Ore of (including Chrome)
-Tin Ore,1891,value-error,0/9 countries match,Ore of (including Chrome)
-Tin Ore,1896,value-error,0/10 countries match,Ore of (including Chrome)
+Tin Ore,1896,value-error,6/10 countries match,TIN None
 Tin in Blocks Ingots Bars or Slabs,1886,value-error,11/13 countries match,"In Blocks, Ingots, Bars, or Slabs"
 Tin in Blocks Ingots Bars or Slabs,1896,value-error,0/11 countries match,"In Blocks, Ingots, Bars, or Slabs"
-Tobacco Manufactured Cigars,1891,value-error,0/15 countries match,Other Manufactured Tobacco
-Tobacco Manufactured Snuff,1891,value-error,0/2 countries match,Other Manufactured Tobacco
 Tobacco Unenumerated,1896,value-error,9/12 countries match,Other Sorts
 Tobacco Unmanufactured,1881,value-error,0/9 countries match,Unmanufactured
 Tobacco Unmanufactured,1886,value-error,15/18 countries match,Unmanufactured
 Tobacco Unmanufactured,1891,value-error,14/18 countries match,Unmanufactured
 Tobacco Unmanufactured,1896,value-error,0/17 countries match,Unmanufactured
 Train Blubber and Spermaceti (Whale Oils),1881,value-error,0/3 countries match,Train or Blubber
-Turpentine Oil,1886,value-error,0/4 countries match,OIL None
-Turpentine Oil,1891,value-error,0/4 countries match,OIL None
 Valonia,1896,value-error,1/6 countries match,Valonia
 Varnish Not containing Alcohol,1876,value-error,0/0 countries match,"VARNISH, CONTAINING ALCOHOL None"
 Varnish Not containing Alcohol,1881,value-error,0/0 countries match,"VARNISH, CONTAINING ALCOHOL None"
@@ -543,13 +535,11 @@ Wheat,1876,value-error,14/19 countries match,Wheat
 Wheat,1886,value-error,17/21 countries match,Wheat
 Wheat,1891,value-error,17/24 countries match,Wheat
 Wheat,1896,attribution-shift,12/14 values present but mislabeled,Wheat
-Wheat Meal and Flour,1876,value-error,10/12 countries match,Wheat Meal or Flour
-Wheat Meal and Flour,1881,value-error,8/10 countries match,Wheat Meal or Flour
-Wheat Meal and Flour,1886,value-error,10/14 countries match,Wheat Meal or Flour
-Wheat Meal and Flour,1891,value-error,12/16 countries match,Wheat Meal or Flour
+Wheat Meal and Flour,1876,value-error,10/12 countries match,Wheat Meal and Flour
+Wheat Meal and Flour,1881,value-error,8/10 countries match,Wheat Meal and Flour
+Wheat Meal and Flour,1886,value-error,10/14 countries match,Wheat Meal and Flour
+Wheat Meal and Flour,1891,value-error,12/16 countries match,Wheat Meal and Flour
 Wine Red Total of,1896,value-error,14/19 countries match,Red: Total of
-Wine Red in Bottles Sparkling Burgundy,1896,value-error,0/3 countries match,Bottles
-Wine Red in Bottles Sparkling Other Sorts,1896,value-error,0/2 countries match,Bottles
 Wine Red in Bottles Still,1896,value-error,0/12 countries match,"Red, in Bottles : Still"
 Wine Red in Casks,1896,value-error,1/17 countries match,"Red, in Casks"
 Wine Total of all Kinds,1876,value-error,14/16 countries match,Total of all Kinds
@@ -560,21 +550,19 @@ Wine White in Bottles Sparkling Champagne,1896,value-error,2/3 countries match,"
 Wine White in Bottles Sparkling Moselle,1896,value-error,3/4 countries match,"White, in Bottles, Sparkling : Moselle"
 Wine White in Bottles Still,1896,value-error,0/11 countries match,"White, in Bottles—Still"
 Wine White in Casks,1896,value-error,2/16 countries match,"White, in Casks"
-Wine in Bottles Sparkling Hock,1896,value-error,0/3 countries match,Bottles
+Wine in Bottles Sparkling Hock,1891,value-error,2/3 countries match,Hock
+Wine in Bottles Sparkling Hock,1896,value-error,2/3 countries match,Hock
 "Wood and Timber Fir - Sawn or Split, Planed or Dressed",1896,value-error,8/11 countries match,"Sawn or Split, Planed or Dressed : Fir"
 Wood and Timber Furniture Woods Hardwoods and Veneers Unenumerated,1876,value-error,10/14 countries match,Wood and Timber None
 Wood and Timber Furniture Woods Hardwoods and Veneers Unenumerated,1881,attribution-shift,11/12 values present but mislabeled,Wood and Timber None
 Wood and Timber Furniture Woods Hardwoods and Veneers Unenumerated,1886,value-error,0/22 countries match,Wood and Timber None
 Wood and Timber Furniture Woods Hardwoods and Veneers Unenumerated,1896,value-error,9/27 countries match,Wood and Timber None
-Wood and Timber Hewn Fir (Other than Pit Wood or Pit Props as of 1901),1876,value-error,0/8 countries match,Wood and Timber None
-Wood and Timber Hewn Fir (Other than Pit Wood or Pit Props as of 1901),1881,value-error,0/8 countries match,Wood and Timber None
-Wood and Timber Hewn Fir (Other than Pit Wood or Pit Props as of 1901),1886,value-error,0/9 countries match,Wood and Timber None
-Wood and Timber Hewn Fir (Other than Pit Wood or Pit Props as of 1901),1896,value-error,0/11 countries match,Wood and Timber None
+Wood and Timber Hewn Fir (Other than Pit Wood or Pit Props as of 1901),1876,value-error,2/8 countries match,"Hewn, Fir"
 Wood and Timber Hewn Oak,1896,value-error,1/7 countries match,"Hewn, Oak"
-Wood and Timber Hewn Teak,1876,value-error,0/3 countries match,Wood and Timber None
-Wood and Timber Hewn Teak,1881,value-error,0/3 countries match,Wood and Timber None
-Wood and Timber Hewn Teak,1886,value-error,0/9 countries match,Wood and Timber None
-Wood and Timber Hewn Teak,1896,value-error,1/11 countries match,Wood and Timber None
+Wood and Timber Hewn Teak,1881,value-error,1/3 countries match,"Hewn, Teak"
+Wood and Timber Hewn Teak,1886,value-error,4/9 countries match,"Hewn, Teak"
+Wood and Timber Hewn Teak,1891,value-error,2/7 countries match,"Hewn, Teak"
+Wood and Timber Hewn Teak,1896,attribution-shift,11/11 values present but mislabeled,"Hewn, Teak"
 Wood and Timber Hewn Unenumerated,1876,value-error,8/9 countries match,Wood and Timber None
 Wood and Timber Hewn Unenumerated,1881,value-error,0/6 countries match,Wood and Timber None
 Wood and Timber Hewn Unenumerated,1896,value-error,0/9 countries match,Wood and Timber None
