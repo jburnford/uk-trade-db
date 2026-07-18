@@ -83194,6 +83194,13 @@ OIL SEED CAKE,,British North America,Tons,import,1883,516.0,4150.0,human,A,A,1,1
 OIL SEED CAKE,,United States of America,Tons,import,1883,189494.0,1456153.0,human,A,B,1,2
 OIL SEED CAKE,,Chile,Tons,import,1883,870.0,6237.0,human,A,A,1,1
 OIL SEED CAKE,,Brazil,Tons,import,1883,294.0,1815.0,human,A,A,1,1
+SPIRITS,Perfumed,Germany,Gallons,import,1890,2539.0,3583.0,human,A,A,1,1
+SPIRITS,Perfumed,Holland,Gallons,import,1890,21953.0,39293.0,human,A,A,1,1
+SPIRITS,Perfumed,France,Gallons,import,1890,18038.0,48209.0,human,A,A,1,1
+SPIRITS,Perfumed,United States of America,Gallons,import,1890,1483.0,3098.0,human,A,A,1,1
+SPIRITS,Perfumed,Other Foreign Countries,Gallons,import,1890,750.0,1090.0,human,A,A,1,1
+SPIRITS,Perfumed,Channel Islands,Gallons,import,1890,1339.0,2116.0,human,A,A,1,1
+SPIRITS,Perfumed,Other British Possessions,Gallons,import,1890,160.0,235.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -110138,11 +110145,6 @@ SPIRITS,"Not tested, for ascertaining the strength",France,,import,1890,272.0,23
 SPIRITS,"Not tested, for ascertaining the strength",United States of America,,import,1890,6906.0,11953.0,twoup,C,C,3,3
 SPIRITS,"Not tested, for ascertaining the strength",Other Foreign Countries,,import,1890,965.0,1636.0,twoup,C,C,3,3
 SPIRITS,"Not tested, for ascertaining the strength",Other British Possessions,,import,1890,285.0,296.0,twoup,C,C,3,3
-SPIRITS,Perfumed,Holland,,import,1890,2539.0,3583.0,twoup,C,C,3,3
-SPIRITS,Perfumed,France,,import,1890,21953.0,39293.0,twoup,C,C,3,3
-SPIRITS,Perfumed,United States of America,,import,1890,18038.0,48209.0,twoup,C,C,3,3
-SPIRITS,Perfumed,Other Foreign Countries,,import,1890,1483.0,3098.0,twoup,C,C,3,3
-SPIRITS,Perfumed,Other British Possessions,,import,1890,1339.0,2116.0,twoup,C,C,3,3
 TEA,,Holland,,import,1890,1601695.0,66044.0,twoup,C,C,3,3
 TEA,,France,,import,1890,1136578.0,47181.0,twoup,C,C,3,3
 TEA,,Java,,import,1890,1527440.0,65402.0,twoup,C,C,3,3
