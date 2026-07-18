@@ -1,15 +1,7 @@
 kind,commodity,country,unit,year,value,series_median,ratio_to_median,gbp
 hole,"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",France,Cwt,1874,,1624605,,24478504
-hole,"Lac, Seed, Shell, Stick, And Dye",Bengal And Burmah,Cwt,1882,,76028,,22165610
-hole,"Lac, Seed, Shell, Stick, And Dye",Bengal And Burmah,Cwt,1883,,76028,,22165610
 dip,Roasted Or Ground,Channel Islands,Lb,1878,6335,78025,0.081,21640365
 dip,Roasted Or Ground,Channel Islands,Lb,1898,112,78025,0.001,21640365
-hole,"Tin — In Blocks, Ingots, Bars, Or Slabs",Straits Settlements,Cwt,1891,,369936,,21510427
-hole,Leather Manufactures — Gloves,France,Dozen Pairs,1882,,751806,,20802056
-hole,Leather Manufactures — Gloves,France,Dozen Pairs,1883,,751806,,20802056
-hole,Leather Manufactures — Gloves,France,Dozen Pairs,1884,,751806,,20802056
-hole,Leather Manufactures — Gloves,France,Dozen Pairs,1885,,751806,,20802056
-dip,Leather Manufactures — Gloves,France,Dozen Pairs,1874,149744,751806,0.199,20802056
 hole,"Wood And Timber — Hewn, Fir",France,Load,1888,,335801,,19733119
 dip,Sugar — Unrefined Of All Kinds,Germany,Cwt,1875,568208,2436380,0.233,19137105
 hole,Fruit — Oranges And Lemons,Spain,Bushel,1875,,2765254,,18657741
@@ -84,10 +76,6 @@ hole,Silk — Raw,British East Indies,Lb,1892,,227428,,13771851
 dip,"— Bar, Angle, Bolt And Rod",Sweden,Ton,1898,256,76616,0.003,13686944
 hole,Wine — White,United States Of America,Lb,1883,,1622352,,13520062
 dip,Wine — White,United States Of America,Lb,1878,393200,1622352,0.242,13520062
-hole,Leather Manufactures — Gloves,Holland,Dozen Pairs,1882,,515623,,13360618
-hole,Leather Manufactures — Gloves,Holland,Dozen Pairs,1883,,515623,,13360618
-hole,Leather Manufactures — Gloves,Holland,Dozen Pairs,1884,,515623,,13360618
-hole,Leather Manufactures — Gloves,Holland,Dozen Pairs,1885,,515623,,13360618
 dip,Butter,Victoria,Cwt,1891,20033,154865,0.129,13236393
 dip,Barley,Turkey,Cwt,1887,175884,2352567,0.075,13168663
 dip,Yarn,Germany,Lb,1883,4140,6164816,0.001,12591659
@@ -188,11 +176,6 @@ hole,Wood And Timber — Mahogany,Mexico,Ton,1886,,19798,,9058247
 hole,Wood And Timber — Mahogany,Mexico,Ton,1887,,19798,,9058247
 hole,Wood And Timber — Mahogany,Mexico,Ton,1888,,19798,,9058247
 hole,Wood And Timber — Mahogany,Mexico,Ton,1892,,19798,,9058247
-hole,Leather Manufactures — Gloves,Belgium,Dozen Pairs,1882,,353487,,8945626
-hole,Leather Manufactures — Gloves,Belgium,Dozen Pairs,1883,,353487,,8945626
-hole,Leather Manufactures — Gloves,Belgium,Dozen Pairs,1884,,353487,,8945626
-hole,Leather Manufactures — Gloves,Belgium,Dozen Pairs,1885,,353487,,8945626
-dip,Leather Manufactures — Gloves,Belgium,Dozen Pairs,1874,38564,353487,0.109,8945626
 hole,Tobacco — Cigars,United States Of America,Lb,1873,,830366,,8794503
 hole,Tobacco — Cigars,United States Of America,Lb,1874,,830366,,8794503
 hole,Tobacco — Cigars,United States Of America,Lb,1876,,830366,,8794503
@@ -238,6 +221,7 @@ hole,"Zinc — Crude, In Cakes",Holland,Ton,1884,,15388,,7501608
 hole,"Sugar — Unrefined, Total",Australasia,Cwt,1888,,709914,,7500215
 dip,"Sugar — Unrefined, Total",Australasia,Cwt,1894,28581,709914,0.04,7500215
 spike,"Sugar — Unrefined, Total",Australasia,Cwt,1896,3101039,709914,4.368,7500215
+dip,"Tin — In Blocks, Ingots, Bars, Or Slabs",Australasia,Cwt,1884,7725,125984,0.061,7436605
 hole,"Hides, Not Tanned, Tawed, Curried, Or In Any Way Dressed — Tanned, Not Otherwise Dressed",United States Of America,Lb,1876,,17131317,,7425662
 hole,Fish — Cured Or Salted,Canada,Cwt,1875,,258116,,7418117
 spike,Fish — Cured Or Salted,Canada,Cwt,1885,3283425,258116,12.721,7418117
@@ -260,8 +244,6 @@ hole,"Zinc — Crude, In Cakes",Belgium,Ton,1884,,11731,,7108845
 hole,"Sugar — Unrefined, Total",British Guiana,Cwt,1891,,766466,,7106477
 dip,"Sugar — Unrefined, Total",British Guiana,Cwt,1899,63,766466,0.0,7106477
 dip,Caoutchouc,Peru,?,1893,82,1765,0.046,7046085
-hole,"Tin — In Blocks, Ingots, Bars, Or Slabs",Australasia,Cwt,1891,,130836,,7043383
-dip,"Tin — In Blocks, Ingots, Bars, Or Slabs",Australasia,Cwt,1884,7725,130836,0.059,7043383
 hole,"Cane, And Other Sorts",British West India Islands,Cwt,1883,,1204467,,7040623
 hole,"Cane, And Other Sorts",British West India Islands,Cwt,1886,,1204467,,7040623
 dip,"Cane, And Other Sorts",British West India Islands,Cwt,1887,34433,1204467,0.029,7040623
@@ -414,6 +396,7 @@ hole,"Glass — Manufactures, Unenumerated",France,Cwt,1885,,99080,,4719848
 hole,Woollen Yarn — For Weaving,France,Lb,1890,,1795490,,4704838
 hole,Other Than Muslins,Belgium,Yard,1884,,13967606,,4665517
 hole,Other Than Muslins,Belgium,Yard,1885,,13967606,,4665517
+hole,"Tin — In Blocks, Ingots, Bars, Or Slabs",New South Wales,Cwt,1884,,80294,,4664955
 hole,"Wood And Timber — Hewn, Fir : Oak",Germany,Load,1885,,42600,,4659900
 hole,"Wood And Timber — Hewn, Fir : Oak",Germany,Load,1886,,42600,,4659900
 hole,"Wood And Timber — Hewn, Fir : Oak",Germany,Load,1888,,42600,,4659900
@@ -460,8 +443,6 @@ hole,Lead — Pig And Sheet,Greece,Ton,1898,,7142,,4366078
 spike,Linen Yarn,Holland,?,1894,2614000,89542,29.193,4351577
 hole,Collodium,Germany,Gallon,1886,,947,,4294256
 hole,Collodium,Germany,Gallon,1892,,947,,4294256
-hole,"Tin — In Blocks, Ingots, Bars, Or Slabs",New South Wales,Cwt,1884,,77678,,4291008
-hole,"Tin — In Blocks, Ingots, Bars, Or Slabs",New South Wales,Cwt,1891,,77678,,4291008
 dip,Caoutchouc,French Possessions,Cwt,1893,1609,15798,0.102,4246315
 dip,Lead — Pig And Sheet,New South Wales,Ton,1897,5703,25528,0.223,4213746
 hole,"Mutton, Fresh",Holland,Cwt,1883,,123083,,4140656
