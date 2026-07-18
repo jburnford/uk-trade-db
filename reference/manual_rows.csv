@@ -355,3 +355,20 @@ as_1884,import,EGGS,,France,Great Hundreds.,1884,3269374,1305200,A,A,,1
 as_1884,import,EGGS,,Portugal,Great Hundreds.,1884,16828,5956,A,A,,1
 as_1884,import,EGGS,,Spain,Great Hundreds.,1884,27952,10310,A,A,,1
 as_1884,import,EGGS,,Other Countries,Great Hundreds.,1884,616,204,A,A,,1
+as_1878,import,TEA,,Other Countries,Lbs.,1878,437378,28565,A,A,"Tea 1878 'Other Countries' digit fix: current groupfix copy reads 487,378 but the column closes to the printed/T1 Total 204,872,899 ONLY with 437,378 (value col closes exactly with 28,565 too).",1
+as_1880,import,Corn and Grain,Wheat,Other Countries,Cwts.,1880,152569,80099,A,B,"Wheat 1880 Other Countries: pair dropped by Chandra in the fusion-slip; qty 152,569 from Infinity closes the column to the printed TOTAL 55,261,924 EXACTLY. Value 80,099 (Infinity) leaves a ~3k column residual (unnameable single misread among members) - tier B.",
+as_1882,import,Corn and Grain,Wheat,Germany,Cwts.,1882,3080101,1730648,A,A,"Wheat 1882 digit fixes trimmed from the block repair: all three qty values are the Infinity readings that close the column to the printed TOTAL 64,240,749 EXACTLY (Chandra dropped a digit in each); values are the consensus readings that close the value column exactly.",
+as_1882,import,Corn and Grain,Wheat,Chile,Cwts.,1882,1657224,874503,A,A,,
+as_1882,import,Corn and Grain,Wheat,British North America,Cwts.,1882,2689264,1454622,A,A,,
+as_1881,import,"SKINS, FURS, AND PELTS",Seal,Norway,Number.,1881,40506,10023,A,A,"Seal skins 1881: table lost by both engines' parsers; present as a slipped br-run in Infinity raw text (values one row below labels). One-up re-pairing is arithmetic-perfect: members sum 700,898 == T1 EXACTLY and values sum 607,162 == printed total EXACTLY. BNA 413,116/112,982 matches the BNA seal profile (high count, low unit value).",
+as_1881,import,"SKINS, FURS, AND PELTS",Seal,Japan,Number.,1881,6131,12648,A,A,,
+as_1881,import,"SKINS, FURS, AND PELTS",Seal,United States of America,Number.,1881,159050,394522,A,A,,
+as_1881,import,"SKINS, FURS, AND PELTS",Seal,Uruguay,Number.,1881,8887,29330,A,A,,
+as_1881,import,"SKINS, FURS, AND PELTS",Seal,Whale Fisheries : Northern,Number.,1881,32618,9192,A,A,,
+as_1881,import,"SKINS, FURS, AND PELTS",Seal,Australasia,Number.,1881,7705,18038,A,A,,
+as_1881,import,"SKINS, FURS, AND PELTS",Seal,British North America,Number.,1881,413116,112982,A,A,,
+as_1881,import,"SKINS, FURS, AND PELTS",Seal,Other Countries,Number.,1881,32885,20427,A,A,,
+as_1876,import,"SKINS, FURS, AND PELTS",Seal,Germany,Number.,1876,32771,11882,A,A,"Seal 1876 digit fixes trimmed from the inf repair: Germany value 11,882 (Chandra; closes the value column to 219,540 exactly); Other Countries 21,848 (Chandra; closes the qty column to 607,276 exactly).",
+as_1876,import,"SKINS, FURS, AND PELTS",Seal,Other Countries,Number.,1876,21848,13666,A,A,,
+as_1881,import,Corn and Grain,Wheat,Russia : Northern Ports,Cwts.,1881,426852,241546,A,A,"Wheat 1881: 'Russia: Northern Ports' (colon-no-space) cnorm'd to plain russia in consensus, showing as a bogus parent-Russia 426,852 dip and blocking the port roll-up (true Russia = 426,852 N + 3,619,797 S). Replace-relabel, same mechanism as barley 1888.",1
+as_1879,import,Cotton,Flax and Linseed,Other Countries,Quarters,1879,14405,35690,A,A,"Flax 1879 Other Countries: pair lost in the fusion-slip; recovered by exact residual against BOTH printed totals (qty and value columns each close to the digit).",

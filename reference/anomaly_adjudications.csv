@@ -70,3 +70,9 @@ dip,Iron — Ore Of,Spain,1872,genuine,"Spanish (Bilbao) ore exports boomed only
 dip,Iron — Ore Of,Spain,1874,genuine,See 1872 entry.
 hole,"Wood And Timber — Sawn Or Split, Planed Or Dressed, Fir",Canada,1888,regime,"1888 print aggregates to 'British North America' 912,198 loads with no separate Canada line (BP total 912,887 = 4 + 685 + 912,198 exactly); value present in the BNA-labelled infonly row."
 dip,Roasted Or Ground,Belgium,1899,genuine,"as_1899 prints a 5-year comparative (p.290 idx): Belgium roasted chicory 73,525 / 113,725 / 105,367 / 60,365 / 36,010 for 1895-99 - the decline is print-attested."
+hole,Tea,Ceylon,1877,regime,"1877 printed tea origin table (duty section, p.75 idx) lists Holland/China/Japan/Bombay/Madras/Bengal-Burmah/Other only - Ceylon (still ~100k lbs, pre-boom) is inside 'Other Countries' 110,157. Members sum to printed Total 187,515,284 EXACTLY."
+hole,Tea,Ceylon,1878,regime,"Same as 1877: no Ceylon line in the printed table; inside 'Other Countries'. Column closes exactly with Other=437,378."
+dip,"Skins, Furs, And Pelts — Seal",Canada,1892,regime,"Newfoundland gets its own line from 1892 (400,552 alongside Canada 74,927); the pre-1892 'canada' cells are the BNA aggregate dominated by the Newfoundland seal hunt. Canada-proper ~50-120k thereafter."
+hole,Cotton — Flax Or Linseed,Bengal And Burmah,1882,regime,"1882/83 print the row as plain 'Bengal' (840,703 / 969,183 present in final under the Bengal series); 'and Burmah' returns later. Not folded - Burmah is a real separate line for rice."
+hole,Cotton — Flax Or Linseed,Bengal And Burmah,1883,regime,"See 1882 entry."
+dip,Cotton — Flax Or Linseed,Russia,1885,genuine,"Year reconciles with T1 2,046,352 (~2.048M country sum): the mid-1880s Russian flax collapse is real - British East Indies 1,563,094 dominates 1885; Russia 143,756 sits between 1884 722,801 and 1886 214,473."

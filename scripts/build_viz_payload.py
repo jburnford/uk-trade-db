@@ -129,8 +129,16 @@ def fold_country(c):
     c = re.sub(r'^british india[,:]?\s+'
                r'(?=(?:bombay|madras|bengal|burmah|scinde)\b)', '', c,
                flags=re.I)
-    if re.match(r'^bombay(?: and scinde)?$', c, re.I):
+    # 'soinde' = OCR garble of Scinde (wheat 1889); bare 'Scinde' = the
+    # same row with 'Bombay and' truncated (wheat 1884) — never a
+    # separate customs line in these tables.
+    if re.match(r'^bombay(?: and s[co]inde)?$|^scinde$', c, re.I):
         return 'Bombay'
+    # match the integrate-level alias: consensus rows already land as
+    # 'canada'; groupfix/manual rows keep the printed 'British North
+    # America' and must join the same series (seal skins 1876-86).
+    if re.match(r'^british north america$', c, re.I):
+        return 'Canada'
     return c.title() if c else '?'
 
 
