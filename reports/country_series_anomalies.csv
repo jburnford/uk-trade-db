@@ -1,16 +1,11 @@
 kind,commodity,country,unit,year,value,series_median,ratio_to_median,gbp
 hole,"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",France,Cwt,1874,,1624605,,24478504
-dip,Perfumed,France,Gallon,1882,874,19578,0.045,22953044
-spike,Barley,Russia (Southern Ports),Cwt,1888,11068691,1969642,5.62,22717249
-spike,Barley,Russia (Southern Ports),Cwt,1890,8042065,1969642,4.083,22717249
-dip,Oil Seed Cake,United States Of America,Ton,1883,1666,178876,0.009,22417167
+dip,Perfumed,Holland,Gallon,1890,2539,21124,0.12,22942076
 hole,"Lac, Seed, Shell, Stick, And Dye",Bengal And Burmah,Cwt,1882,,76028,,22165610
 hole,"Lac, Seed, Shell, Stick, And Dye",Bengal And Burmah,Cwt,1883,,76028,,22165610
 dip,Roasted Or Ground,Channel Islands,Lb,1878,6335,78025,0.081,21640365
 dip,Roasted Or Ground,Channel Islands,Lb,1898,112,78025,0.001,21640365
 hole,"Tin — In Blocks, Ingots, Bars, Or Slabs",Straits Settlements,Cwt,1891,,369936,,21510427
-dip,Perfumed,Holland,Gallon,1882,1480,20768,0.071,21397988
-dip,Perfumed,Holland,Gallon,1890,2539,20768,0.122,21397988
 hole,Leather Manufactures — Gloves,France,Dozen Pairs,1882,,751806,,20802056
 hole,Leather Manufactures — Gloves,France,Dozen Pairs,1883,,751806,,20802056
 hole,Leather Manufactures — Gloves,France,Dozen Pairs,1884,,751806,,20802056
@@ -621,7 +616,6 @@ hole,Wood And Timber — Staves,Russia,Load,1892,,24414,,2878971
 dip,Wood And Timber — Staves,Russia,Load,1873,2234,24414,0.092,2878971
 hole,"Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse",Tripoli,Cwt,1890,,316,,2875789
 hole,"Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse",Tripoli,Cwt,1892,,316,,2875789
-hole,Oil Seed Cake,Russia,Ton,1883,,22651,,2859906
 hole,"Hides, Not Tanned, Tawed, Curried, Or In Any Way Dressed — Tanned, Not Otherwise Dressed",Australia,Lb,1876,,6262505,,2851990
 hole,Quicksilver (Metallic),Portugal,Lb,1873,,2731725,,2844044
 hole,Saltpetre (Nitrate Of Potash),Bengal,Cwt,1884,,180744,,2843653
@@ -783,6 +777,7 @@ hole,"Seeds — Unenumerated, Other Sorts",Turkey,Cwt,1881,,225230,,2117797
 hole,"Seeds — Unenumerated, Other Sorts",Turkey,Cwt,1882,,225230,,2117797
 hole,"Seeds — Unenumerated, Other Sorts",Turkey,Cwt,1883,,225230,,2117797
 dip,"Seeds — Unenumerated, Other Sorts",Turkey,Cwt,1874,39577,225230,0.176,2117797
+dip,Oil Seed Cake,France,Ton,1882,3919,16980,0.231,2110372
 hole,Paper — Millboard And Pasteboard,Germany,Cwt,1874,,175721,,2103354
 hole,Paper — Millboard And Pasteboard,Germany,Cwt,1889,,175721,,2103354
 hole,Castor,British East Indies,Cwt,1881,,71102,,2072701

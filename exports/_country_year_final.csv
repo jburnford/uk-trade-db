@@ -23641,20 +23641,6 @@ OIL,"Chemical, Essential, or Perfumed",australasia,Lbs,import,1883,16672.0,1739.
 OIL,"Chemical, Essential, or Perfumed",united states of america,Lbs,import,1883,21873.0,12151.0,consensus,B,B,2,2
 OIL,"Chemical, Essential, or Perfumed",british west india islands,Lbs,import,1883,6166.0,1655.0,consensus,B,B,2,2
 OIL,"Chemical, Essential, or Perfumed",other countries,Lbs,import,1883,603.0,300.0,consensus,B,B,2,2
-OIL SEED CAKE,,sweden,,import,1883,32162.0,259081.0,consensus,B,C,2,3
-OIL SEED CAKE,,norway,,import,1883,2162.0,17819.0,consensus,B,C,2,3
-OIL SEED CAKE,,germany,,import,1883,2286.0,19590.0,consensus,B,C,2,3
-OIL SEED CAKE,,holland,,import,1883,1784.0,15184.0,consensus,B,C,2,3
-OIL SEED CAKE,,belgium,,import,1883,211.0,1579.0,consensus,B,C,2,3
-OIL SEED CAKE,,france,,import,1883,104.0,781.0,consensus,B,C,2,3
-OIL SEED CAKE,,spain,,import,1883,23147.0,136852.0,consensus,B,C,2,3
-OIL SEED CAKE,,italy,,import,1883,740.0,1722.0,consensus,B,C,2,3
-OIL SEED CAKE,,egypt,,import,1883,717.0,4579.0,consensus,B,C,2,3
-OIL SEED CAKE,,british east indies,,import,1883,227.0,1325.0,consensus,B,C,2,3
-OIL SEED CAKE,,united states of america,,import,1883,1666.0,10606.0,consensus,B,C,2,3
-OIL SEED CAKE,,chile,,import,1883,516.0,4150.0,consensus,B,C,2,3
-OIL SEED CAKE,,brazil,,import,1883,189494.0,1153153.0,consensus,B,C,2,3
-OIL SEED CAKE,,other countries,,import,1883,870.0,6237.0,consensus,B,C,2,3
 "ONIONS, RAW",,germany,Bushels,import,1883,181887.0,26855.0,consensus,B,B,2,2
 "ONIONS, RAW",,holland,Bushels,import,1883,1090241.0,151297.0,consensus,B,B,2,2
 "ONIONS, RAW",,belgium,Bushels,import,1883,234492.0,25993.0,consensus,B,B,2,2
@@ -83176,6 +83162,38 @@ EGGS,,France,Great Hundreds,import,1882,2812110.0,1133491.0,human,A,A,1,1
 EGGS,,Spain,Great Hundreds,import,1882,72559.0,24812.0,human,A,A,1,1
 EGGS,,Channel Islands,Great Hundreds,import,1882,154978.0,65724.0,human,A,A,1,1
 EGGS,,Other Countries,Great Hundreds,import,1882,27578.0,9014.0,human,A,B,1,2
+SPIRITS,Perfumed Spirits (including Water Cologne),Holland,Gallons,import,1879,22413.0,32384.0,human,A,A,1,1
+SPIRITS,Perfumed Spirits (including Water Cologne),France,Gallons,import,1879,13874.0,27968.0,human,A,A,1,1
+SPIRITS,Perfumed Spirits (including Water Cologne),Channel Islands,Gallons,import,1879,1158.0,1698.0,human,A,A,1,1
+SPIRITS,Perfumed Spirits (including Water Cologne),Other Countries,Gallons,import,1879,1659.0,1959.0,human,A,A,1,1
+SPIRITS,Perfumed Spirits and Cologne Water,Holland,Gallons,import,1880,24570.0,36777.0,human,A,A,1,1
+SPIRITS,Perfumed Spirits and Cologne Water,France,Gallons,import,1880,16386.0,33487.0,human,A,A,1,1
+SPIRITS,Perfumed Spirits and Cologne Water,Other Countries,Gallons,import,1880,4221.0,5789.0,human,A,A,1,1
+SPIRITS,"Perfumed Spirits, and Cologne Water",Holland,Gallons,import,1881,26521.0,38588.0,human,A,A,1,1
+SPIRITS,"Perfumed Spirits, and Cologne Water",France,Gallons,import,1881,15522.0,30258.0,human,A,A,1,1
+SPIRITS,"Perfumed Spirits, and Cologne Water",Other Countries,Gallons,import,1881,4193.0,5129.0,human,A,A,1,1
+SPIRITS,Perfumed,Germany,Gallons,import,1882,1480.0,1145.0,human,A,A,1,1
+SPIRITS,Perfumed,Holland,Gallons,import,1882,27177.0,41025.0,human,A,A,1,1
+SPIRITS,Perfumed,Belgium,Gallons,import,1882,874.0,1306.0,human,A,A,1,1
+SPIRITS,Perfumed,France,Gallons,import,1882,18152.0,36813.0,human,A,A,1,1
+SPIRITS,Perfumed,United States of America,Gallons,import,1882,635.0,1829.0,human,A,A,1,1
+SPIRITS,Perfumed,Channel Islands,Gallons,import,1882,1895.0,2899.0,human,A,A,1,1
+SPIRITS,Perfumed,Other Countries,Gallons,import,1882,161.0,204.0,human,A,A,1,1
+OIL SEED CAKE,,Russia,Tons,import,1883,32162.0,259081.0,human,A,A,1,1
+OIL SEED CAKE,,Sweden,Tons,import,1883,2162.0,17819.0,human,A,A,1,1
+OIL SEED CAKE,,Norway,Tons,import,1883,2286.0,19590.0,human,A,A,1,1
+OIL SEED CAKE,,Germany,Tons,import,1883,1784.0,15184.0,human,A,A,1,1
+OIL SEED CAKE,,Holland,Tons,import,1883,211.0,1579.0,human,A,A,1,1
+OIL SEED CAKE,,Belgium,Tons,import,1883,104.0,781.0,human,A,A,1,1
+OIL SEED CAKE,,France,Tons,import,1883,23447.0,136852.0,human,A,A,1,1
+OIL SEED CAKE,,Spain,Tons,import,1883,740.0,1722.0,human,A,A,1,1
+OIL SEED CAKE,,Italy,Tons,import,1883,717.0,4579.0,human,A,A,1,1
+OIL SEED CAKE,,Egypt,Tons,import,1883,227.0,1325.0,human,A,A,1,1
+OIL SEED CAKE,,British East Indies,Tons,import,1883,1666.0,10606.0,human,A,A,1,1
+OIL SEED CAKE,,British North America,Tons,import,1883,516.0,4150.0,human,A,A,1,1
+OIL SEED CAKE,,United States of America,Tons,import,1883,189494.0,1456153.0,human,A,B,1,2
+OIL SEED CAKE,,Chile,Tons,import,1883,870.0,6237.0,human,A,A,1,1
+OIL SEED CAKE,,Brazil,Tons,import,1883,294.0,1815.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -101380,9 +101398,6 @@ CHICORY,,Other Countries,,import,1879,451.0,336.0,twoup,C,C,3,3
 CHICORY,Roasted or Ground,Belgium,,import,1879,147640.0,1724.0,twoup,C,C,3,3
 CHICORY,Roasted or Ground,Channel Islands,,import,1879,122880.0,2031.0,twoup,C,C,3,3
 CHICORY,Roasted or Ground,Other Countries,,import,1879,14957.0,224.0,twoup,C,C,3,3
-SPIRITS,Perfumed Spirits (including Water Cologne),France,,import,1879,22413.0,32384.0,twoup,C,C,3,3
-SPIRITS,Perfumed Spirits (including Water Cologne),Channel Islands,,import,1879,13874.0,27968.0,twoup,C,C,3,3
-SPIRITS,Perfumed Spirits (including Water Cologne),Other Countries,,import,1879,1158.0,1698.0,twoup,C,C,3,3
 SPIRITS,"Unenumerated, including Shrub",Germany,,import,1879,4390.0,3401.0,twoup,C,C,3,3
 SPIRITS,"Unenumerated, including Shrub",Holland,,import,1879,10404.0,5320.0,twoup,C,C,3,3
 SPIRITS,"Unenumerated, including Shrub",France,,import,1879,10901.0,9126.0,twoup,C,C,3,3
@@ -102180,8 +102195,6 @@ WOOLLEN MANUFACTURES,Unenumerated,British India,,import,1880,52218.0,,twoup,C,C,
 WOOLLEN MANUFACTURES,Unenumerated,Other Countries,,import,1880,20107.0,,twoup,C,C,3,3
 COCOA,"Cocoa or Chocolate, ground, prepared or in anywaymanufactured",France,,import,1880,167681.0,14558.0,twoup,C,C,3,3
 COCOA,"Cocoa or Chocolate, ground, prepared or in anywaymanufactured",Other Countries,,import,1880,8108.0,579.0,twoup,C,C,3,3
-SPIRITS,Perfumed Spirits and Cologne Water,France,,import,1880,21570.0,36777.0,twoup,C,C,3,3
-SPIRITS,Perfumed Spirits and Cologne Water,Other Countries,,import,1880,16386.0,33197.0,twoup,C,C,3,3
 SPIRITS,Unenumerated,Germany,,import,1880,3771.0,3122.0,twoup,C,C,3,3
 SPIRITS,Unenumerated,Holland,,import,1880,13616.0,7961.0,twoup,C,C,3,3
 SPIRITS,Unenumerated,France,,import,1880,12307.0,10498.0,twoup,C,C,3,3
@@ -103152,8 +103165,6 @@ SPIRITS,Sweetened or Mixed (Tested),France,,import,1881,9191.0,10243.0,twoup,C,C
 SPIRITS,Sweetened or Mixed (Tested),United States,,import,1881,9923.0,13415.0,twoup,C,C,3,3
 SPIRITS,Sweetened or Mixed (Tested),British West India Islands,,import,1881,4363.0,5876.0,twoup,C,C,3,3
 SPIRITS,Sweetened or Mixed (Tested),Other Countries,,import,1881,4928.0,7061.0,twoup,C,C,3,3
-SPIRITS,"Perfumed Spirits, and Cologne Water",France,,import,1881,26521.0,38588.0,twoup,C,C,3,3
-SPIRITS,"Perfumed Spirits, and Cologne Water",Other Countries,,import,1881,15522.0,30258.0,twoup,C,C,3,3
 TOBACCO,Cigars,Holland,,import,1881,154717.0,47605.0,twoup,C,C,3,3
 TOBACCO,Cigars,Belgium,,import,1881,98132.0,25607.0,twoup,C,C,3,3
 TOBACCO,Cigars,France,,import,1881,66148.0,21872.0,twoup,C,C,3,3
@@ -104268,12 +104279,6 @@ CHICORY,Roasted or Ground,Other Countries,,import,1882,255960.0,7553.0,twoup,C,C
 SPIRITS,Not tested for ascertaining strength,Belgium,,import,1882,6183.0,2658.0,twoup,C,C,3,3
 SPIRITS,Not tested for ascertaining strength,France,,import,1882,109.0,1067.0,twoup,C,C,3,3
 SPIRITS,Not tested for ascertaining strength,Other Countries,,import,1882,3733.0,5908.0,twoup,C,C,3,3
-SPIRITS,Perfumed,Holland,,import,1882,1480.0,1145.0,twoup,C,C,3,3
-SPIRITS,Perfumed,Belgium,,import,1882,27177.0,41025.0,twoup,C,C,3,3
-SPIRITS,Perfumed,France,,import,1882,874.0,1306.0,twoup,C,C,3,3
-SPIRITS,Perfumed,United States of America,,import,1882,18152.0,36813.0,twoup,C,C,3,3
-SPIRITS,Perfumed,Channel Islands,,import,1882,635.0,1829.0,twoup,C,C,3,3
-SPIRITS,Perfumed,Other Countries,,import,1882,1895.0,2899.0,twoup,C,C,3,3
 "ANIMALS, LIVING","Bulls, Oxen, Cows, and Calves",Belgium,,import,1882,50.0,1785.0,twoup,C,C,3,3
 "ANIMALS, LIVING","Bulls, Oxen, Cows, and Calves",United States: Atlantic,,import,1882,933.0,38634.0,twoup,C,C,3,3
 "ANIMALS, LIVING","Bulls, Oxen, Cows, and Calves",Argentine Republic,,import,1882,207.0,18926.0,twoup,C,C,3,3
@@ -106452,6 +106457,7 @@ LEATHER MANUFACTURES,Gloves,Australasia,,import,1883,21714.0,33013.0,twoup,C,C,3
 LEATHER MANUFACTURES,Gloves,Other Countries,,import,1883,4617.0,5544.0,twoup,C,C,3,3
 LEATHER MANUFACTURES,Unenumerated,Australasia,,import,1883,8514.0,,twoup,C,C,3,3
 LEATHER MANUFACTURES,Unenumerated,Other Countries,,import,1883,8428.0,,twoup,C,C,3,3
+OIL-SEED CAKE,,Other Countries,,import,1883,475.0,2893.0,twoup,C,C,3,3
 "PAINTERS' COLOURS AND PIGMENTS, UNENUMERATED",,Germany,,import,1883,3972.0,,twoup,C,C,3,3
 "PAINTERS' COLOURS AND PIGMENTS, UNENUMERATED",,Italy,,import,1883,4696.0,,twoup,C,C,3,3
 "PAINTERS' COLOURS AND PIGMENTS, UNENUMERATED",,China,,import,1883,5342.0,,twoup,C,C,3,3
