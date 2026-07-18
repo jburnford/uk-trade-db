@@ -18136,14 +18136,6 @@ DYE WOODS,Unenumerated,central america,,import,1880,2128.0,12244.0,consensus,B,B
 DYE WOODS,Unenumerated,venezuela,,import,1880,5751.0,29381.0,consensus,B,B,2,2
 DYE WOODS,Unenumerated,british east indies,,import,1880,5068.0,30321.0,consensus,B,B,2,2
 DYE WOODS,Unenumerated,west indies,,import,1880,3834.0,21300.0,consensus,B,B,2,2
-EGGS,,germany,,import,1880,409694.0,117744.0,consensus,B,B,2,2
-EGGS,,holland,,import,1880,1313560.0,381999.0,consensus,B,B,2,2
-EGGS,,belgium,,import,1880,182637.0,74063.0,consensus,B,B,2,2
-EGGS,,france,,import,1880,905002.0,294711.0,consensus,B,C,2,3
-EGGS,,portugal,,import,1880,3151158.0,1273310.0,consensus,B,B,2,2
-EGGS,,spain,,import,1880,18751.0,6271.0,consensus,B,B,2,2
-EGGS,,channel islands,,import,1880,85959.0,29441.0,consensus,B,B,2,2
-EGGS,,other countries,,import,1880,115529.0,52371.0,consensus,B,B,2,2
 FATHERS,For Beds,russia,Cwts,import,1880,2120.0,16518.0,consensus,B,B,2,2
 FATHERS,For Beds,germany,Cwts,import,1880,9640.0,54888.0,consensus,B,B,2,2
 FATHERS,For Beds,france,Cwts,import,1880,4055.0,14767.0,consensus,B,B,2,2
@@ -20988,13 +20980,6 @@ DYE WOODS,Unenumerated,venezuela,Tons,import,1882,2581.0,14367.0,consensus,B,B,2
 DYE WOODS,Unenumerated,brazil,Tons,import,1882,661.0,6312.0,consensus,B,B,2,2
 DYE WOODS,Unenumerated,british east indies,Tons,import,1882,3581.0,28253.0,consensus,B,B,2,2
 DYE WOODS,Unenumerated,other countries,Tons,import,1882,3596.0,24212.0,consensus,B,B,2,2
-EGGS,,germany,,import,1882,442697.0,131560.0,consensus,B,B,2,2
-EGGS,,holland,,import,1882,1582879.0,471392.0,consensus,B,B,2,2
-EGGS,,belgium,,import,1882,110853.0,38767.0,consensus,B,C,2,3
-EGGS,,france,,import,1882,1562366.0,510503.0,consensus,B,C,2,3
-EGGS,,spain,,import,1882,2812110.0,1133491.0,consensus,B,C,2,3
-EGGS,,channel islands,,import,1882,72559.0,24812.0,consensus,B,C,2,3
-EGGS,,other countries,,import,1882,154978.0,65724.0,consensus,B,C,2,3
 FATHERS,For Bens,russia,Cwts,import,1882,1711.0,12780.0,consensus,B,B,2,2
 FATHERS,For Bens,germany,Cwts,import,1882,10262.0,64992.0,consensus,B,B,2,2
 FATHERS,For Bens,france,Cwts,import,1882,5166.0,26184.0,consensus,B,B,2,2
@@ -83174,6 +83159,23 @@ WOOLLEN YARN,"For Weaving, Mixed or not with Silk",France,Lbs.,import,1896,39638
 WOOLLEN YARN,"For Weaving, Mixed or not with Silk",Germany,Lbs.,import,1896,2015592.0,141536.0,human,A,A,1,1
 WOOLLEN YARN,"For Weaving, Mixed or not with Silk",Holland,Lbs.,import,1896,180435.0,16229.0,human,A,A,1,1
 WOOLLEN YARN,"For Weaving, Mixed or not with Silk",Other Foreign Countries,Lbs.,import,1896,4010.0,347.0,human,A,A,1,1
+EGGS,,Denmark,Great Hundreds,import,1880,409694.0,117744.0,human,A,A,1,1
+EGGS,,Germany,Great Hundreds,import,1880,1313560.0,381999.0,human,A,A,1,1
+EGGS,,Holland,Great Hundreds,import,1880,182637.0,74063.0,human,A,A,1,1
+EGGS,,Belgium,Great Hundreds,import,1880,905002.0,294711.0,human,A,A,1,1
+EGGS,,France,Great Hundreds,import,1880,3151158.0,1273310.0,human,A,A,1,1
+EGGS,,Portugal,Great Hundreds,import,1880,18751.0,6271.0,human,A,A,1,1
+EGGS,,Spain,Great Hundreds,import,1880,85959.0,29441.0,human,A,A,1,1
+EGGS,,Channel Islands,Great Hundreds,import,1880,115529.0,52371.0,human,A,A,1,1
+EGGS,,Other Countries,Great Hundreds,import,1880,46115.0,5541.0,human,A,B,1,2
+EGGS,,Denmark,Great Hundreds,import,1882,442697.0,131560.0,human,A,A,1,1
+EGGS,,Germany,Great Hundreds,import,1882,1582879.0,471392.0,human,A,A,1,1
+EGGS,,Holland,Great Hundreds,import,1882,110853.0,38767.0,human,A,A,1,1
+EGGS,,Belgium,Great Hundreds,import,1882,1562366.0,510503.0,human,A,A,1,1
+EGGS,,France,Great Hundreds,import,1882,2812110.0,1133491.0,human,A,A,1,1
+EGGS,,Spain,Great Hundreds,import,1882,72559.0,24812.0,human,A,A,1,1
+EGGS,,Channel Islands,Great Hundreds,import,1882,154978.0,65724.0,human,A,A,1,1
+EGGS,,Other Countries,Great Hundreds,import,1882,27578.0,9014.0,human,A,B,1,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -117070,3 +117072,4 @@ WOOLLEN YARN,For Weaving,Germany,Lbs.,import,1882,1089595.0,103271.0,groupfix,C,
 WOOLLEN YARN,For Weaving,Holland,Lbs.,import,1882,102077.0,12364.0,groupfix,C,C,3,3
 WOOLLEN YARN,For Weaving,Belgium,Lbs.,import,1882,9744177.0,1184471.0,groupfix,C,C,3,3
 WOOLLEN YARN,For Weaving,France,Lbs.,import,1882,1795490.0,285219.0,groupfix,C,C,3,3
+"COALS, CULM, AND CINDERS",,United States of America,Tons,import,1889,413.0,380.0,groupfix,C,C,3,3

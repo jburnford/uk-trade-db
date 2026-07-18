@@ -1,14 +1,5 @@
 kind,commodity,country,unit,year,value,series_median,ratio_to_median,gbp
-hole,"Skins, Furs, And Pelts — Seal",Newfoundland,Number,1893,,251576,,26434749
 hole,"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",France,Cwt,1874,,1624605,,24478504
-dip,Eggs,Germany,Great Hundred,1880,409694,2272096,0.18,24413204
-dip,Eggs,Germany,Great Hundred,1882,442697,2272096,0.195,24413204
-hole,"Coals, Cinders, &C — Coals And Culm",United States Of America,Ton,1889,,3297,,24308483
-dip,"Coals, Cinders, &C — Coals And Culm",United States Of America,Ton,1888,429,3297,0.13,24308483
-hole,Butter,Sweden,Cwt,1882,,184718,,23853218
-hole,Butter,Sweden,Cwt,1883,,184718,,23853218
-hole,Butter,Sweden,Cwt,1884,,184718,,23853218
-hole,Butter,Sweden,Cwt,1885,,184718,,23853218
 dip,Perfumed,France,Gallon,1882,874,19578,0.045,22953044
 spike,Barley,Russia (Southern Ports),Cwt,1888,11068691,1969642,5.62,22717249
 spike,Barley,Russia (Southern Ports),Cwt,1890,8042065,1969642,4.083,22717249
@@ -36,10 +27,8 @@ hole,Spirits — Rum,British Guiana,Proof Gallon,1880,,2883468,,18195014
 hole,Spirits — Rum,British Guiana,Proof Gallon,1881,,2883468,,18195014
 dip,Wine — White,Bombay,Lb,1878,214424,1022396,0.21,17854775
 spike,Wine — White,Bombay,Lb,1882,5197985,1022396,5.084,17854775
+dip,Eggs,Belgium,Great Hundred,1878,372897,1797881,0.207,17540164
 hole,Leather — Dressed,United States Of America,Lb,1887,,19657930,,17252259
-dip,Eggs,Belgium,Great Hundred,1878,372897,1797881,0.207,17075667
-dip,Eggs,Belgium,Great Hundred,1880,182637,1797881,0.102,17075667
-dip,Eggs,Belgium,Great Hundred,1882,110853,1797881,0.062,17075667
 dip,Cotton — Flax Or Linseed,Russia (Southern Ports),Quarter,1877,30739,212201,0.145,16965708
 hole,Cocoa,British East Indies,?,1889,,623542,,16721469
 hole,Cocoa,British East Indies,?,1890,,623542,,16721469
@@ -282,10 +271,6 @@ dip,"Tin — In Blocks, Ingots, Bars, Or Slabs",Australasia,Cwt,1884,7725,130836
 hole,"Cane, And Other Sorts",British West India Islands,Cwt,1883,,1204467,,7040623
 hole,"Cane, And Other Sorts",British West India Islands,Cwt,1886,,1204467,,7040623
 dip,"Cane, And Other Sorts",British West India Islands,Cwt,1887,34433,1204467,0.029,7040623
-hole,Eggs,Denmark,Great Hundred,1880,,597208,,6950374
-hole,Eggs,Denmark,Great Hundred,1882,,597208,,6950374
-dip,Eggs,Denmark,Great Hundred,1872,109546,597208,0.183,6950374
-dip,Eggs,Denmark,Great Hundred,1877,147580,597208,0.247,6950374
 hole,"Animals, Living — Sheep And Lambs",Holland,Number,1881,,212784,,6879439
 hole,"Animals, Living — Sheep And Lambs",Holland,Number,1882,,212784,,6879439
 hole,"Animals, Living — Sheep And Lambs",Holland,Number,1887,,212784,,6879439
@@ -297,6 +282,7 @@ spike,"Unenumerated, Not Sweetened Or Mixed",Russia,Proof Gallon,1890,1089692,20
 hole,"Cane, And Other Sorts",British Guiana,Cwt,1883,,1224782,,6603683
 hole,"Cane, And Other Sorts",British Guiana,Cwt,1886,,1224782,,6603683
 dip,"Cane, And Other Sorts",British Guiana,Cwt,1887,9099,1224782,0.007,6603683
+dip,Eggs,Denmark,Great Hundred,1872,109546,555430,0.197,6584470
 dip,Wet,Uruguay,Cwt,1899,3479,58292,0.06,6517732
 hole,Gutta Percha,British East Indies,Cwt,1887,,43550,,6506656
 hole,Gutta Percha,British East Indies,Cwt,1888,,43550,,6506656
