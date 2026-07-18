@@ -1,15 +1,4 @@
 kind,commodity,country,unit,year,value,series_median,ratio_to_median,gbp
-hole,Fruit — Currants,Greece,Cwt,1878,,1131637,,27699699
-hole,Fruit — Currants,Greece,Cwt,1880,,1131637,,27699699
-hole,Fruit — Currants,Greece,Cwt,1881,,1131637,,27699699
-hole,Fruit — Currants,Greece,Cwt,1882,,1131637,,27699699
-hole,Fruit — Currants,Greece,Cwt,1898,,1131637,,27699699
-hole,Rice,British East Indies,Cwt,1886,,3994509,,27691330
-hole,Rice,British East Indies,Cwt,1893,,3994509,,27691330
-dip,Rice,British East Indies,Cwt,1891,2682,3994509,0.001,27691330
-hole,Woollen Yarn — For Weaving,Belgium,Lb,1882,,10346584,,27351637
-hole,Woollen Yarn — For Weaving,Belgium,Lb,1894,,10346584,,27351637
-hole,Woollen Yarn — For Weaving,Belgium,Lb,1895,,10346584,,27351637
 hole,"Skins, Furs, And Pelts — Seal",Newfoundland,Number,1893,,251576,,26434749
 hole,"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",France,Cwt,1874,,1624605,,24478504
 dip,Eggs,Germany,Great Hundred,1880,409694,2272096,0.18,24413204
@@ -36,8 +25,6 @@ hole,Leather Manufactures — Gloves,France,Dozen Pairs,1883,,751806,,20802056
 hole,Leather Manufactures — Gloves,France,Dozen Pairs,1884,,751806,,20802056
 hole,Leather Manufactures — Gloves,France,Dozen Pairs,1885,,751806,,20802056
 dip,Leather Manufactures — Gloves,France,Dozen Pairs,1874,149744,751806,0.199,20802056
-hole,Rice,Burmah,Cwt,1888,,2776163,,20569676
-hole,Rice,Burmah,Cwt,1893,,2776163,,20569676
 hole,"Wood And Timber — Hewn, Fir",France,Load,1888,,335801,,19733119
 dip,Sugar — Unrefined Of All Kinds,Germany,Cwt,1875,568208,2436380,0.233,19137105
 hole,Fruit — Oranges And Lemons,Spain,Bushel,1875,,2765254,,18657741
@@ -310,12 +297,6 @@ spike,"Unenumerated, Not Sweetened Or Mixed",Russia,Proof Gallon,1890,1089692,20
 hole,"Cane, And Other Sorts",British Guiana,Cwt,1883,,1224782,,6603683
 hole,"Cane, And Other Sorts",British Guiana,Cwt,1886,,1224782,,6603683
 dip,"Cane, And Other Sorts",British Guiana,Cwt,1887,9099,1224782,0.007,6603683
-hole,Rice,Madras,Cwt,1885,,696908,,6529482
-hole,Rice,Madras,Cwt,1892,,696908,,6529482
-hole,Rice,Madras,Cwt,1893,,696908,,6529482
-hole,Rice,Madras,Cwt,1894,,696908,,6529482
-dip,Rice,Madras,Cwt,1887,41672,696908,0.06,6529482
-dip,Rice,Madras,Cwt,1889,65904,696908,0.095,6529482
 dip,Wet,Uruguay,Cwt,1899,3479,58292,0.06,6517732
 hole,Gutta Percha,British East Indies,Cwt,1887,,43550,,6506656
 hole,Gutta Percha,British East Indies,Cwt,1888,,43550,,6506656
@@ -446,14 +427,11 @@ hole,Jute — Boots And Shoes,Belgium,Dozen Pairs,1874,,56743,,4747423
 hole,Jute — Boots And Shoes,Belgium,Dozen Pairs,1875,,56743,,4747423
 hole,Jute — Boots And Shoes,Belgium,Dozen Pairs,1880,,56743,,4747423
 hole,Jute — Boots And Shoes,Belgium,Dozen Pairs,1881,,56743,,4747423
-hole,Woollen Yarn — For Weaving,France,Lb,1882,,1952015,,4735639
-hole,Woollen Yarn — For Weaving,France,Lb,1890,,1952015,,4735639
-hole,Woollen Yarn — For Weaving,France,Lb,1894,,1952015,,4735639
-hole,Woollen Yarn — For Weaving,France,Lb,1895,,1952015,,4735639
 hole,"Glass — Manufactures, Unenumerated",France,Cwt,1875,,99080,,4719848
 hole,"Glass — Manufactures, Unenumerated",France,Cwt,1880,,99080,,4719848
 hole,"Glass — Manufactures, Unenumerated",France,Cwt,1881,,99080,,4719848
 hole,"Glass — Manufactures, Unenumerated",France,Cwt,1885,,99080,,4719848
+hole,Woollen Yarn — For Weaving,France,Lb,1890,,1795490,,4704838
 hole,Other Than Muslins,Belgium,Yard,1884,,13967606,,4665517
 hole,Other Than Muslins,Belgium,Yard,1885,,13967606,,4665517
 hole,"Wood And Timber — Hewn, Fir : Oak",Germany,Load,1885,,42600,,4659900
@@ -641,9 +619,6 @@ hole,Fruit — Figs And Fig Cake,Turkey,Cwt,1885,,101847,,3073009
 hole,Fruit — Figs And Fig Cake,Turkey,Cwt,1891,,101847,,3073009
 dip,Calves,Holland,Number,1892,762,33312,0.023,3067720
 hole,Wood And Timber — Staves,Germany,Load,1892,,24356,,3047876
-hole,Woollen Yarn — For Weaving,Germany,Lb,1882,,1031552,,3026378
-hole,Woollen Yarn — For Weaving,Germany,Lb,1894,,1031552,,3026378
-hole,Woollen Yarn — For Weaving,Germany,Lb,1895,,1031552,,3026378
 dip,Tobacco — Unmanufactured,Hong Kong,?,1895,65,3195,0.02,3000455
 hole,"Buttons And Studs, Not Of Metal",Holland,Gross,1880,,1681546,,2997051
 hole,"Buttons And Studs, Not Of Metal",Holland,Gross,1881,,1681546,,2997051

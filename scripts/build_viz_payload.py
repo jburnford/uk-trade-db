@@ -214,6 +214,11 @@ def toks(*parts):
     # line under a grown heading — Sweden/Russia showed as 1893/95 holes
     if 'SAWN' in out:
         out -= {'SPLIT', 'PLANED', 'DRESSED'}
+    # woollen-yarn label era: 'For Weaving' (1878-92) grows to 'For Weaving,
+    # Mixed or not with Silk' (1893+) — same printed series (Belgium showed
+    # as 1894/95 holes). Only yarn prints a WEAVING article, so this is safe.
+    if 'WEAVING' in out:
+        out -= {'MIXED', 'SILK'}
     return out
 
 
