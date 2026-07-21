@@ -83159,6 +83159,15 @@ LEATHER MANUFACTURES,Gloves,France,Dozen Pairs.,import,1874,874369.0,1254074.0,h
 LEATHER MANUFACTURES,Gloves,Other Countries,Dozen Pairs.,import,1874,3300.0,4005.0,human,A,A,1,1
 GUM,"Lac, Seed, Shell, Stick, and Dye",United States of America,Cwts.,import,1883,707.0,2100.0,human,A,A,1,1
 GUM,"Lac, Seed, Shell, Stick, and Dye",Other Countries,Cwts.,import,1883,409.0,1916.0,human,A,A,1,1
+SPIRITS,Rum,Spanish West India Islands,Proof Gallons,import,1874,612687.0,57772.0,human,A,A,1,1
+SPIRITS,Rum,Egypt,Proof Gallons,import,1876,107155.0,7035.0,human,A,A,1,1
+SPIRITS,Rum,Dutch Guiana,Proof Gallons,import,1876,98457.0,9105.0,human,A,A,1,1
+SPIRITS,Rum,Other Countries,Proof Gallons,import,1876,254549.0,24336.0,human,A,A,1,1
+SPIRITS,Rum,Spanish West India Islands,Proof Gallons,import,1879,218465.0,19913.0,human,A,B,1,2
+SPIRITS,Rum,Spanish West India Islands,Proof Gallons,import,1880,209421.0,20819.0,human,A,A,1,1
+SPIRITS,Rum,Mauritius,Proof Gallons,import,1881,110468.0,9404.0,human,A,A,1,1
+SPIRITS,Rum,British West India Islands,Proof Gallons,import,1881,1840966.0,217240.0,human,A,A,1,1
+SPIRITS,Rum,Other Countries,Proof Gallons,import,1881,278984.0,25832.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -89409,22 +89418,6 @@ METAL,"Unenumerated: Unwrought : Old, fit only to be re-manufactured",Other Brit
 "STONES, MARBLE, AND SLATE : ROUGH, HEWN OR MANUFACTURED : (OTHER THAN WORKS OF ART)",,Other Foreign Countries,Tons,import,1888,128.0,1280.0,infonly,C,C,3,3
 "STONES, MARBLE, AND SLATE : ROUGH, HEWN OR MANUFACTURED : (OTHER THAN WORKS OF ART)",,Channel Islands,Tons,import,1888,234541.0,137509.0,infonly,C,C,3,3
 "STONES, MARBLE, AND SLATE : ROUGH, HEWN OR MANUFACTURED : (OTHER THAN WORKS OF ART)",,Other British Possessions,Tons,import,1888,75.0,483.0,infonly,C,C,3,3
-WAX,Hewn : Fir,Russia,Loads,import,1888,310522.0,493655.0,infonly,C,C,3,3
-WAX,Hewn : Fir,Sweden,Loads,import,1888,277021.0,386141.0,infonly,C,C,3,3
-WAX,Hewn : Fir,Norway,Loads,import,1888,295014.0,391864.0,infonly,C,C,3,3
-WAX,Hewn : Fir,Germany,Loads,import,1888,219987.0,415924.0,infonly,C,C,3,3
-WAX,Hewn : Fir,France,Loads,import,1888,440768.0,359801.0,infonly,C,C,3,3
-WAX,Hewn : Fir,Spain,Loads,import,1888,34736.0,27182.0,infonly,C,C,3,3
-WAX,Hewn : Fir,United States of America,Loads,import,1888,60066.0,171251.0,infonly,C,C,3,3
-WAX,Hewn : Fir,Other Foreign Countries,Loads,import,1888,694.0,686.0,infonly,C,C,3,3
-WAX,Hewn : Fir,British North America,Loads,import,1888,134183.0,565581.0,infonly,C,C,3,3
-WAX,Hewn : Fir : Oak,Russia,Loads,import,1888,5347.0,25078.0,infonly,C,C,3,3
-WAX,Hewn : Fir : Oak,Germany,Loads,import,1888,37813.0,150587.0,infonly,C,C,3,3
-WAX,Hewn : Fir : Oak,Austrian Territories,Loads,import,1888,5377.0,50345.0,infonly,C,C,3,3
-WAX,Hewn : Fir : Oak,United States of America,Loads,import,1888,38130.0,223467.0,infonly,C,C,3,3
-WAX,Hewn : Fir : Oak,Other Foreign Countries,Loads,import,1888,415.0,2228.0,infonly,C,C,3,3
-WAX,Hewn : Fir : Oak,West Africa Settlements,Loads,import,1888,3.0,12.0,infonly,C,C,3,3
-WAX,Hewn : Fir : Oak,British North America,Loads,import,1888,24570.0,152692.0,infonly,C,C,3,3
 WOOD AND TIMBER,Hewn. Teak,Belgium,Loads,import,1888,77.0,924.0,infonly,C,C,3,3
 WOOD AND TIMBER,Hewn. Teak,Austrian Territories,Loads,import,1888,120.0,1200.0,infonly,C,C,3,3
 WOOD AND TIMBER,Hewn. Teak,Siam,Loads,import,1888,7189.0,80968.0,infonly,C,C,3,3
@@ -101962,20 +101955,6 @@ SILK MANUFACTURES,"SILVER, Ore of, or Ore of which the greater partin Value is S
 "SKINS, FURS, AND PELTS","Tanned, Tawed, or Dressed",France,,import,1879,1011080.0,112115.0,twoup,C,C,3,3
 "SKINS, FURS, AND PELTS","Tanned, Tawed, or Dressed",United States of America,,import,1879,448415.0,65258.0,twoup,C,C,3,3
 "SKINS, FURS, AND PELTS","Tanned, Tawed, or Dressed",Other Countries,,import,1879,165041.0,21283.0,twoup,C,C,3,3
-SPIRITS,Rum,Holland,,import,1879,96225.0,15776.0,twoup,C,C,3,3
-SPIRITS,Rum,Belgium,,import,1879,49215.0,7972.0,twoup,C,C,3,3
-SPIRITS,Rum,France,,import,1879,135324.0,19897.0,twoup,C,C,3,3
-SPIRITS,Rum,Italy,,import,1879,62752.0,8225.0,twoup,C,C,3,3
-SPIRITS,Rum,West Africa (Foreign),,import,1879,278044.0,25039.0,twoup,C,C,3,3
-SPIRITS,Rum,United States of America,,import,1879,52361.0,10786.0,twoup,C,C,3,3
-SPIRITS,Rum,Channel Islands,,import,1879,37069.0,3950.0,twoup,C,C,3,3
-SPIRITS,Rum,Gibraltar,,import,1879,38126.0,4310.0,twoup,C,C,3,3
-SPIRITS,Rum,Malta and Gozo,,import,1879,37173.0,4642.0,twoup,C,C,3,3
-SPIRITS,Rum,West Africa (British),,import,1879,31896.0,3371.0,twoup,C,C,3,3
-SPIRITS,Rum,British Possessions in South Africa,,import,1879,13114.0,4153.0,twoup,C,C,3,3
-SPIRITS,Rum,Australia,,import,1879,392656.0,52454.0,twoup,C,C,3,3
-SPIRITS,Rum,British North America,,import,1879,27612.0,3917.0,twoup,C,C,3,3
-SPIRITS,Rum,Other Countries,,import,1879,89737.0,14001.0,twoup,C,C,3,3
 WOOLLEN MANUFACTURES,Unenumerated,Turkey Proper,,import,1879,2095.0,,twoup,C,C,3,3
 WOOLLEN MANUFACTURES,Unenumerated,China,,import,1879,3532.0,,twoup,C,C,3,3
 WOOLLEN MANUFACTURES,Unenumerated,Japan,,import,1879,16651.0,,twoup,C,C,3,3
@@ -117061,3 +117040,43 @@ TIN,"In Blocks, Ingots, Bars, or Slabs",Australasia : Victoria,Cwts,import,1891,
 TIN,"In Blocks, Ingots, Bars, or Slabs",Australasia : New South Wales,Cwts,import,1891,87868.0,403284.0,groupfix,C,C,3,3
 TIN,"In Blocks, Ingots, Bars, or Slabs",Australasia : Queensland,Cwts,import,1891,6260.0,28565.0,groupfix,C,C,3,3
 TIN,"In Blocks, Ingots, Bars, or Slabs",Australasia : Tasmania,Cwts,import,1891,1754.0,7834.0,groupfix,C,C,3,3
+SPIRITS,Rum,Danish West India Islands,Proof Gallons,import,1874,77019.0,6307.0,groupfix,C,C,3,3
+SPIRITS,Rum,Dutch Guiana,Proof Gallons,import,1874,160060.0,15660.0,groupfix,C,C,3,3
+SPIRITS,Rum,Mauritius,Proof Gallons,import,1874,728851.0,59219.0,groupfix,C,C,3,3
+SPIRITS,Rum,British West India Islands,Proof Gallons,import,1874,2927315.0,405131.0,groupfix,C,C,3,3
+SPIRITS,Rum,British Guiana,Proof Gallons,import,1874,3578982.0,367998.0,groupfix,C,C,3,3
+SPIRITS,Rum,Other Countries,Proof Gallons,import,1874,65458.0,7365.0,groupfix,C,C,3,3
+SPIRITS,Rum,Spanish West India Islands,Proof Gallons,import,1876,1132516.0,88921.0,groupfix,C,C,3,3
+SPIRITS,Rum,Peru,Proof Gallons,import,1876,64343.0,4191.0,groupfix,C,C,3,3
+SPIRITS,Rum,Mauritius,Proof Gallons,import,1876,591193.0,38706.0,groupfix,C,C,3,3
+SPIRITS,Rum,British West India Islands,Proof Gallons,import,1876,3449058.0,439300.0,groupfix,C,C,3,3
+SPIRITS,Rum,British Guiana,Proof Gallons,import,1876,4698064.0,462113.0,groupfix,C,C,3,3
+SPIRITS,Rum,Dutch Guiana,Proof Gallons,import,1879,111623.0,7805.0,groupfix,C,C,3,3
+SPIRITS,Rum,Mauritius,Proof Gallons,import,1879,338917.0,19183.0,groupfix,C,C,3,3
+SPIRITS,Rum,British West India Islands,Proof Gallons,import,1879,2616598.0,278729.0,groupfix,C,C,3,3
+SPIRITS,Rum,British Guiana,Proof Gallons,import,1879,3539647.0,251420.0,groupfix,C,C,3,3
+SPIRITS,Rum,Australia,Proof Gallons,import,1879,49078.0,3070.0,groupfix,C,C,3,3
+SPIRITS,Rum,Other Countries,Proof Gallons,import,1879,72329.0,5102.0,groupfix,C,C,3,3
+SPIRITS,Rum,Dutch Guiana,Proof Gallons,import,1880,77910.0,5267.0,groupfix,C,C,3,3
+SPIRITS,Rum,Mauritius,Proof Gallons,import,1880,61337.0,3643.0,groupfix,C,C,3,3
+SPIRITS,Rum,Australia,Proof Gallons,import,1880,31780.0,2208.0,groupfix,C,C,3,3
+SPIRITS,Rum,British West India Islands,Proof Gallons,import,1880,2420297.0,263303.0,groupfix,C,C,3,3
+SPIRITS,Rum,British Guiana,Proof Gallons,import,1880,3288560.0,231100.0,groupfix,C,C,3,3
+SPIRITS,Rum,Other Countries,Proof Gallons,import,1880,18356.0,2485.0,groupfix,C,C,3,3
+SPIRITS,Rum,British Guiana,Proof Gallons,import,1881,2586469.0,233209.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir,Russia,Loads,import,1888,310522.0,493655.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir,Sweden,Loads,import,1888,277021.0,386141.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir,Norway,Loads,import,1888,295014.0,391864.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir,Germany,Loads,import,1888,219987.0,415924.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir,France,Loads,import,1888,440768.0,359801.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir,Spain,Loads,import,1888,34736.0,27182.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir,United States of America,Loads,import,1888,60066.0,171251.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir,Other Foreign Countries,Loads,import,1888,694.0,686.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir,British North America,Loads,import,1888,134183.0,565581.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir : Oak,Russia,Loads,import,1888,5347.0,25078.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir : Oak,Germany,Loads,import,1888,37813.0,150587.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir : Oak,Austrian Territories,Loads,import,1888,5377.0,50345.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir : Oak,United States of America,Loads,import,1888,38130.0,223467.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir : Oak,Other Foreign Countries,Loads,import,1888,415.0,2228.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir : Oak,West Africa Settlements,Loads,import,1888,3.0,12.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Hewn : Fir : Oak,British North America,Loads,import,1888,24570.0,152692.0,groupfix,C,C,3,3
