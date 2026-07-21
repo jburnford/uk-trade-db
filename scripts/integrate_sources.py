@@ -472,7 +472,10 @@ def main():
     mrf = BASE / 'reference' / 'manual_rows.csv'
     if mrf.exists():
         for mr in csv.DictReader(open(mrf)):
-            if mr['flow'] != 'import':
+            # export_uk manual rows are admitted the same way (the final
+            # table already mixes flows via the twoup gap-fill; the 1883
+            # piece-goods Aden cell is export-flow and page-attested)
+            if mr['flow'] not in ('import', 'export_uk'):
                 continue
             grp = (mr['article_group'] or '').strip()
             art = (mr['article'] or '').strip()
