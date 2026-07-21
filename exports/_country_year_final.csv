@@ -14520,7 +14520,6 @@ COTTON,,turkey,Tons,import,1877,8577.0,56876.0,consensus,B,B,2,2
 COTTON,,egypt,Tons,import,1877,246457.0,2080197.0,consensus,B,B,2,2
 COTTON,,united states of america,Tons,import,1877,5480.0,47206.0,consensus,B,B,2,2
 COTTON,,other countries,Tons,import,1877,4105.0,31890.0,consensus,B,B,2,2
-COTTON,Flax and Linseed,russia,Quarters,import,1877,467448.0,1185843.0,consensus,B,B,2,2
 COTTON,Flax and Linseed,southern ports,Quarters,import,1877,30739.0,82471.0,consensus,B,B,2,2
 COTTON,Flax and Linseed,germany,Quarters,import,1877,57597.0,136053.0,consensus,B,B,2,2
 COTTON,Flax and Linseed,holland,Quarters,import,1877,17425.0,62616.0,consensus,B,B,2,2
@@ -16004,7 +16003,6 @@ COTTON,,turkey,Tons,import,1878,5642.0,35126.0,consensus,B,B,2,2
 COTTON,,egypt,Tons,import,1878,155321.0,1360598.0,consensus,B,B,2,2
 COTTON,,united states of america,Tons,import,1878,9209.0,71043.0,consensus,B,B,2,2
 COTTON,,other countries,Tons,import,1878,2547.0,17848.0,consensus,B,B,2,2
-COTTON,Flax and Linseed,russia,Quarters,import,1878,447714.0,1047884.0,consensus,B,B,2,2
 COTTON,Flax and Linseed,southern ports,Quarters,import,1878,449129.0,1087315.0,consensus,B,B,2,2
 COTTON,Flax and Linseed,germany,Quarters,import,1878,26052.0,47459.0,consensus,B,B,2,2
 COTTON,Flax and Linseed,holland,Quarters,import,1878,18880.0,73304.0,consensus,B,B,2,2
@@ -28420,19 +28418,6 @@ COTTON,"Garden, Unenumerated",united states of america,Lbs,import,1885,39438.0,1
 COTTON,"Garden, Unenumerated",other foreign countries,Lbs,import,1885,8216.0,416.0,consensus,B,B,2,2
 COTTON,"Garden, Unenumerated",australasia,Lbs,import,1885,30886.0,1280.0,consensus,B,B,2,2
 COTTON,"Garden, Unenumerated",other british possessions,Lbs,import,1885,6280.0,216.0,consensus,B,B,2,2
-COTTON,Flax or Linseed,russia,,import,1885,143756.0,303797.0,consensus,B,B,2,2
-COTTON,Flax or Linseed,northern ports,,import,1885,25085.0,46321.0,consensus,B,B,2,2
-COTTON,Flax or Linseed,southern ports,,import,1885,10146.0,22139.0,consensus,B,C,2,3
-COTTON,Flax or Linseed,germany,,import,1885,24685.0,90572.0,consensus,B,C,2,3
-COTTON,Flax or Linseed,holland,,import,1885,1592.0,4037.0,consensus,B,C,2,3
-COTTON,Flax or Linseed,belgium,,import,1885,6313.0,14555.0,consensus,B,C,2,3
-COTTON,Flax or Linseed,italy,,import,1885,16287.0,34766.0,consensus,B,C,2,3
-COTTON,Flax or Linseed,turkey,,import,1885,13201.0,22769.0,consensus,B,C,2,3
-COTTON,Flax or Linseed,egypt,,import,1885,8291.0,18158.0,consensus,B,C,2,3
-COTTON,Flax or Linseed,united states of america,,import,1885,2641.0,5942.0,consensus,B,C,2,3
-COTTON,Flax or Linseed,brazil,,import,1885,229733.0,480050.0,consensus,B,C,2,3
-COTTON,Flax or Linseed,argentine republic,,import,1885,1498.0,3472.0,consensus,B,C,2,3
-COTTON,Flax or Linseed,british east indies,,import,1885,1563094.0,3337886.0,consensus,B,C,2,3
 COTTON,Tares and Lentils,russia,,import,1885,49587.0,10489.0,consensus,B,B,2,2
 COTTON,Tares and Lentils,sweden,,import,1885,17353.0,3861.0,consensus,B,B,2,2
 COTTON,Tares and Lentils,germany,,import,1885,171735.0,37822.0,consensus,B,B,2,2
@@ -30595,7 +30580,6 @@ COTTON,,brazil,Tons,import,1886,6666.0,30401.0,consensus,B,B,2,2
 COTTON,,other foreign countries,Tons,import,1886,842.0,3909.0,consensus,B,B,2,2
 COTTON,,british east indies,Tons,import,1886,684.0,4357.0,consensus,B,B,2,2
 COTTON,,other british possessions,Tons,import,1886,123.0,701.0,consensus,B,B,2,2
-COTTON,Flax or Linseed,russia,,import,1886,214473.0,405221.0,consensus,B,B,2,2
 COTTON,Flax or Linseed,northern ports,,import,1886,15387.0,30712.0,consensus,B,B,2,2
 COTTON,Flax or Linseed,southern ports,,import,1886,16358.0,32161.0,consensus,B,B,2,2
 COTTON,Flax or Linseed,germany,,import,1886,30743.0,108610.0,consensus,B,B,2,2
@@ -35861,12 +35845,6 @@ BEER AND ALE,Roasted or Ground,holland,Lbs,import,1889,55330.0,513.0,consensus,B
 BEER AND ALE,Roasted or Ground,belgium,Lbs,import,1889,311974.0,2870.0,consensus,B,B,2,2
 BEER AND ALE,Roasted or Ground,other foreign countries,Lbs,import,1889,1619.0,49.0,consensus,B,B,2,2
 BEER AND ALE,Roasted or Ground,channel islands,Lbs,import,1889,62710.0,577.0,consensus,B,B,2,2
-COCOA,,united states of america,,import,1889,425711.0,9965.0,consensus,B,C,2,3
-COCOA,,united states of colombia,,import,1889,166968.0,4507.0,consensus,B,C,2,3
-COCOA,,venezuela,,import,1889,73559.0,2531.0,consensus,B,C,2,3
-COCOA,,ecuador,,import,1889,999864.0,28621.0,consensus,B,C,2,3
-COCOA,,chile,,import,1889,44820.0,1243.0,consensus,B,C,2,3
-COCOA,,brazil,,import,1889,1496786.0,42862.0,consensus,B,C,2,3
 COCOA,Husks and Shells,spain,Cwts,import,1889,1527.0,1104.0,consensus,B,B,2,2
 COCOA,Husks and Shells,other foreign countries,Cwts,import,1889,10.0,9.0,consensus,B,B,2,2
 CHICORY,"Cocoa or Chocolate, ground, prepared or in any way manufactured",germany,Lbs,import,1889,6157.0,423.0,consensus,B,C,2,3
@@ -41218,18 +41196,6 @@ ZINC,"ARTICLES Imported by PARCEL
 POST",british west indies,No. of Parcels,import,1890,5883.0,7162.0,consensus,B,B,2,2
 ZINC,"ARTICLES Imported by PARCEL 
 POST",other british possessions,No. of Parcels,import,1890,648.0,724.0,consensus,B,B,2,2
-COCOA,,germany,,import,1890,2267887.0,60940.0,consensus,B,C,2,3
-COCOA,,holland,,import,1890,988955.0,12664.0,consensus,B,C,2,3
-COCOA,,france,,import,1890,3928473.0,117394.0,consensus,B,C,2,3
-COCOA,,portugal,,import,1890,1428555.0,41147.0,consensus,B,C,2,3
-COCOA,,united states of america,,import,1890,483384.0,11065.0,consensus,B,C,2,3
-COCOA,,united states of colombia,,import,1890,91002.0,2915.0,consensus,B,C,2,3
-COCOA,,venezuela,,import,1890,124694.0,4782.0,consensus,B,C,2,3
-COCOA,,ecuador,,import,1890,1236903.0,44544.0,consensus,B,C,2,3
-COCOA,,chile,,import,1890,707936.0,17195.0,consensus,B,C,2,3
-COCOA,,brazil,,import,1890,2196417.0,65180.0,consensus,B,C,2,3
-COCOA,,british west indies,,import,1890,1654651.0,67598.0,consensus,B,C,2,3
-COCOA,,other british possessions,,import,1890,13018815.0,428435.0,consensus,B,C,2,3
 COCOA,Husks and Shells,spain,Cwts,import,1890,1522.0,1491.0,consensus,B,B,2,2
 COCOA,Husks and Shells,other foreign countries,Cwts,import,1890,509.0,79.0,consensus,B,B,2,2
 BEER AND ALE,Mum and Spruce,germany,Barrels,import,1891,2043.0,13053.0,consensus,B,B,2,2
@@ -77390,12 +77356,6 @@ BEER AND ALE,of other Sorts,other british possessions,Barrels,import,1889,25.0,6
 CHLORAL HYDRATE,,germany,,import,1889,9639.0,2295.0,consensus,C,C,3,3
 CHLORAL HYDRATE,,holland,,import,1889,7837.0,1589.0,consensus,C,C,3,3
 CHLOROFORM,,germany,,import,1889,2801.0,308.0,consensus,C,C,3,3
-COCOA,,germany,,import,1889,1696038.0,45123.0,consensus,C,C,3,3
-COCOA,,holland,,import,1889,441035.0,12565.0,consensus,C,C,3,3
-COCOA,,france,,import,1889,2359180.0,70809.0,consensus,C,C,3,3
-COCOA,,portugal,,import,1889,1632932.0,52175.0,consensus,C,C,3,3
-COCOA,,british west indies,,import,1889,1341912.0,49895.0,consensus,C,C,3,3
-COCOA,,other british possessions,,import,1889,15135233.0,464703.0,consensus,C,C,3,3
 CHICORY,"Cocoa or Chocolate, ground, prepared or in any way manufactured",venezuela,Lbs,import,1889,3075.0,13478.0,consensus,C,B,3,2
 CHICORY,"Cocoa or Chocolate, ground, prepared or in any way manufactured",madras,Lbs,import,1889,38536.0,411099.0,consensus,C,B,3,2
 CHICORY,"Cocoa or Chocolate, ground, prepared or in any way manufactured",ceylon,Lbs,import,1889,55236.0,258345.0,consensus,C,B,3,2
@@ -83109,6 +83069,36 @@ FRUIT,Raisins,Austrian Territories,Cwts.,import,1874,5369.0,7397.0,human,A,A,1,1
 FRUIT,Raisins,Greece,Cwts.,import,1874,5841.0,10072.0,human,A,A,1,1
 FRUIT,Raisins,"Turkey, Asiatic",Cwts.,import,1874,165438.0,286391.0,human,A,A,1,1
 FRUIT,Raisins,Other Countries,Cwts.,import,1874,10481.0,16340.0,human,A,A,1,1
+COCOA,,Germany,Lbs.,import,1889,1696038.0,45123.0,human,A,A,1,1
+COCOA,,Holland,Lbs.,import,1889,441035.0,12865.0,human,A,A,1,1
+COCOA,,France,Lbs.,import,1889,2359180.0,70809.0,human,A,A,1,1
+COCOA,,Portugal,Lbs.,import,1889,1632332.0,52175.0,human,A,A,1,1
+COCOA,,West Africa : Foreign,Lbs.,import,1889,420887.0,9164.0,human,A,A,1,1
+COCOA,,United States of America,Lbs.,import,1889,425711.0,9965.0,human,A,A,1,1
+COCOA,,United States of Colombia,Lbs.,import,1889,166968.0,4507.0,human,A,A,1,1
+COCOA,,Venezuela,Lbs.,import,1889,73559.0,2531.0,human,A,A,1,1
+COCOA,,Ecuador,Lbs.,import,1889,999864.0,28621.0,human,A,A,1,1
+COCOA,,Chile,Lbs.,import,1889,44820.0,1243.0,human,A,A,1,1
+COCOA,,Brazil,Lbs.,import,1889,1496786.0,42862.0,human,A,A,1,1
+COCOA,,Other Foreign Countries,Lbs.,import,1889,223798.0,5295.0,human,A,A,1,1
+COCOA,,British East Indies,Lbs.,import,1889,1341912.0,49895.0,human,A,A,1,1
+COCOA,,British West Indies,Lbs.,import,1889,15135233.0,464763.0,human,A,A,1,1
+COCOA,,Other British Possessions,Lbs.,import,1889,51668.0,1381.0,human,A,A,1,1
+COCOA,,Germany,Lbs.,import,1890,2267887.0,60940.0,human,A,A,1,1
+COCOA,,Holland,Lbs.,import,1890,338955.0,12664.0,human,A,A,1,1
+COCOA,,France,Lbs.,import,1890,3928473.0,117394.0,human,A,A,1,1
+COCOA,,Portugal,Lbs.,import,1890,1428555.0,41147.0,human,A,A,1,1
+COCOA,,West Africa : Foreign,Lbs.,import,1890,479313.0,9855.0,human,A,A,1,1
+COCOA,,United States of America,Lbs.,import,1890,483384.0,11065.0,human,A,A,1,1
+COCOA,,United States of Colombia,Lbs.,import,1890,91002.0,2915.0,human,A,A,1,1
+COCOA,,Venezuela,Lbs.,import,1890,124694.0,4782.0,human,A,A,1,1
+COCOA,,Ecuador,Lbs.,import,1890,1236903.0,44544.0,human,A,A,1,1
+COCOA,,Chile,Lbs.,import,1890,707936.0,17195.0,human,A,A,1,1
+COCOA,,Brazil,Lbs.,import,1890,2196417.0,65180.0,human,A,A,1,1
+COCOA,,Other Foreign Countries,Lbs.,import,1890,136472.0,3594.0,human,A,A,1,1
+COCOA,,British East Indies,Lbs.,import,1890,1654651.0,67598.0,human,A,A,1,1
+COCOA,,British West Indies,Lbs.,import,1890,13018815.0,428435.0,human,A,A,1,1
+COCOA,,Other British Possessions,Lbs.,import,1890,18753.0,454.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -84163,10 +84153,6 @@ SALTPETRE (NITRATE OF POTASH),,British East Indies : Bengal,Cwts,import,1885,225
 COTTON,Rape,British East Indies : Bombay and Scinde,Quarters,import,1885,25040.0,47776.0,subentry,B,B,2,2
 COTTON,Rape,British East Indies : Madras,Quarters,import,1885,16107.0,30120.0,subentry,B,B,2,2
 COTTON,Rape,British East Indies : Bengal,Quarters,import,1885,319063.0,603201.0,subentry,B,B,2,2
-COTTON,Flax or Linseed,British East Indies : Bombay and Scinde,,import,1885,527075.0,1167250.0,subentry,B,C,2,3
-COTTON,Flax or Linseed,British East Indies : Bengal,,import,1885,1031641.0,2161343.0,subentry,B,B,2,2
-COTTON,Flax or Linseed,British East Indies : British West India Islands,,import,1885,3780.0,8000.0,subentry,B,B,2,2
-COTTON,Flax or Linseed,British East Indies : Other British Possessions,,import,1885,598.0,1295.0,subentry,B,B,2,2
 SPICES,"Cane, and other sorts",British East Indies : Madras,Cwts,import,1885,764895.0,398555.0,subentry,B,B,2,2
 SPICES,"Cane, and other sorts",British East Indies : Bengal,Cwts,import,1885,3468.0,2400.0,subentry,B,B,2,2
 SPICES,"Cane, and other sorts",British East Indies : Straits Settlements,Cwts,import,1885,81024.0,44585.0,subentry,B,B,2,2
@@ -88147,6 +88133,9 @@ LEATHER MANUFACTURES,Gloves,Channel Islands,Dozen Pairs.,import,1883,10.0,16.0,h
 LEATHER MANUFACTURES,Gloves,France,Dozen Pairs.,import,1883,1138313.0,1375988.0,human,B,B,2,2
 LEATHER MANUFACTURES,Gloves,Italy,Dozen Pairs.,import,1883,232.0,280.0,human,B,B,2,2
 LEATHER MANUFACTURES,Gloves,Australasia : Victoria,Dozen Pairs.,import,1883,13.0,96.0,human,B,B,2,2
+COTTON,Flax and Linseed,Russia : Northern Ports,Quarters,import,1877,467448.0,1185843.0,human,B,B,2,2
+COTTON,Flax and Linseed,Russia : Northern Ports,Quarters,import,1878,447714.0,1047884.0,human,B,B,2,2
+COTTON,Flax or Linseed,Russia,Quarters,import,1886,214473.0,405221.0,human,B,B,2,2
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
@@ -111791,7 +111780,6 @@ WOOD AND TIMBER,,British East Indies : Bengal,Loads,import,1888,2273.0,28826.0,s
 WOOD AND TIMBER,,British East Indies : Burmah,Loads,import,1888,27194.0,315781.0,subentry,C,C,3,3
 WOOD AND TIMBER,,British East Indies : Straits Settlements,Loads,import,1888,20.0,187.0,subentry,C,C,3,3
 WOOD AND TIMBER,,British East Indies : Ceylon,Loads,import,1888,35.0,280.0,subentry,C,C,3,3
-COCOA,,West Africa : Foreign,,import,1889,420887.0,9164.0,subentry,C,C,3,3
 CAOUTCHOUC,,East Africa : Portuguese,,import,1889,2364.0,26728.0,subentry,C,B,3,2
 CORN AND GRAIN,Barley,Russia : Northern Ports,Cwts,import,1889,149967.0,43652.0,subentry,C,C,3,3
 JUTE,,British East Indies : Bombay and Scinde,Tons,import,1889,89.0,1230.0,subentry,C,C,3,3
@@ -111818,7 +111806,6 @@ COTTON,Flax or Linseed,British East Indies : Other British Possessions,Quarters,
           TANNING",Indigo,British East Indies : Bombay and Scinde,Cwts,import,1890,480.0,5229.0,subentry,C,B,3,2
 SPICES,,East Coast of Africa : Native States,,import,1890,146808.0,2865.0,subentry,C,C,3,3
 SPICES,,East Coast of Africa : West Africa Settlements,,import,1890,58531.0,744.0,subentry,C,C,3,3
-COCOA,,West Africa : Foreign,,import,1890,479313.0,9855.0,subentry,C,C,3,3
 COCOA,,West Africa : Portuguese,,import,1891,17000.0,57390.0,subentry,C,C,3,3
 COCOA,,West Africa : Not designated,,import,1891,3833.0,14135.0,subentry,C,C,3,3
 COCOA,,British East Indies : Bombay and Scinde,,import,1891,30821.0,163811.0,subentry,C,C,3,3
@@ -117108,3 +117095,20 @@ FRUIT,Raisins,Italy,Cwts.,import,1899,11.0,13.0,groupfix,C,C,3,3
 FRUIT,Raisins,Greece,Cwts.,import,1899,14134.0,21020.0,groupfix,C,C,3,3
 FRUIT,Raisins,"Turkey, Asiatic",Cwts.,import,1899,348751.0,571021.0,groupfix,C,C,3,3
 FRUIT,Raisins,Other Foreign Countries,Cwts.,import,1899,5359.0,8347.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Russia : Northern Ports,Quarters,import,1885,143756.0,303797.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Russia : Southern Ports,Quarters,import,1885,25085.0,46321.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Germany,Quarters,import,1885,10146.0,22139.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Holland,Quarters,import,1885,24685.0,90572.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Belgium,Quarters,import,1885,1592.0,4037.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Italy,Quarters,import,1885,6313.0,14555.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Turkey,Quarters,import,1885,16287.0,34766.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Egypt,Quarters,import,1885,13201.0,22769.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,United States of America,Quarters,import,1885,8291.0,18158.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Brazil,Quarters,import,1885,2641.0,5942.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Argentine Republic,Quarters,import,1885,229733.0,480050.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,Other Foreign Countries,Quarters,import,1885,1498.0,3472.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,British East Indies : Bombay and Scinde,Quarters,import,1885,527075.0,1167260.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,British East Indies : Bengal,Quarters,import,1885,1031641.0,2161343.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,British East Indies : British West India Islands,Quarters,import,1885,3780.0,8000.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,British East Indies : Other British Possessions,Quarters,import,1885,598.0,1295.0,groupfix,C,C,3,3
+COTTON,Flax or Linseed,British East Indies,Quarters,import,1885,1563094.0,3337888.0,groupfix,C,C,3,3
