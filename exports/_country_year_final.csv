@@ -28137,9 +28137,6 @@ FISH,Olive,tunis,Tuns,import,1885,1197.0,46744.0,consensus,B,B,2,2
 FISH,Olive,morocco,Tuns,import,1885,1969.0,69206.0,consensus,B,B,2,2
 FISH,Olive,other foreign countries,Tuns,import,1885,82.0,3229.0,consensus,B,B,2,2
 FISH,Olive,malta,Tuns,import,1885,25.0,838.0,consensus,B,B,2,2
-FISH,Palm,germany,Cwts,import,1885,21728.0,31010.0,consensus,B,B,2,2
-FISH,Palm,holland,Cwts,import,1885,2567.0,2446.0,consensus,B,B,2,2
-FISH,Palm,france,Cwts,import,1885,7778.0,10226.0,consensus,B,B,2,2
 FISH,,other foreign countries,,import,1885,1024.0,1272.0,consensus,B,B,2,2
 FISH,,other british possessions,,import,1885,70.0,101.0,consensus,B,B,2,2
 FISH,Seed,germany,Tuns,import,1885,4762.0,128086.0,consensus,B,B,2,2
@@ -83099,6 +83096,17 @@ COCOA,,Other Foreign Countries,Lbs.,import,1890,136472.0,3594.0,human,A,A,1,1
 COCOA,,British East Indies,Lbs.,import,1890,1654651.0,67598.0,human,A,A,1,1
 COCOA,,British West Indies,Lbs.,import,1890,13018815.0,428435.0,human,A,A,1,1
 COCOA,,Other British Possessions,Lbs.,import,1890,18753.0,454.0,human,A,A,1,1
+OIL,Palm,Germany,Cwts.,import,1885,21728.0,31010.0,human,A,A,1,1
+OIL,Palm,Holland,Cwts.,import,1885,2567.0,2446.0,human,A,A,1,1
+OIL,Palm,France,Cwts.,import,1885,7778.0,10226.0,human,A,A,1,1
+OIL,Palm,West Africa : French,Cwts.,import,1885,8798.0,12161.0,human,A,A,1,1
+OIL,Palm,West Africa : Fernando Po,Cwts.,import,1885,4201.0,5540.0,human,A,A,1,1
+OIL,Palm,West Africa : Portuguese,Cwts.,import,1885,745.0,977.0,human,A,A,1,1
+OIL,Palm,West Africa : Not designated,Cwts.,import,1885,486113.0,649147.0,human,A,A,1,1
+OIL,Palm,Other Foreign Countries,Cwts.,import,1885,1024.0,1272.0,human,A,A,1,1
+OIL,Palm,West Africa Settlements,Cwts.,import,1885,14602.0,18551.0,human,A,A,1,1
+OIL,Palm,The Gold Coast (including Lagos),Cwts.,import,1885,357810.0,486385.0,human,A,A,1,1
+OIL,Palm,Other British Possessions,Cwts.,import,1885,70.0,101.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
