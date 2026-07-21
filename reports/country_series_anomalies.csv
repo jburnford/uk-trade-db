@@ -1,8 +1,7 @@
 kind,commodity,country,unit,year,value,series_median,ratio_to_median,gbp
 hole,"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",France,Cwt,1874,,1624605,,24478504
 dip,Roasted Or Ground,Channel Islands,Lb,1898,112,78025,0.001,21640365
-hole,Oil — Palm,Germany,Cwt,1898,,104097,,18747946
-dip,Oil — Palm,Germany,Cwt,1882,11809,104097,0.113,18747946
+dip,Oil — Palm,Germany,Cwt,1882,11809,111220,0.106,19674084
 dip,"Cotton Manufactures — Piece Goods, Plain",Japan,?,1877,4190800,213731100,0.02,16663940
 dip,"Cotton Manufactures — Piece Goods, Plain",Japan,?,1884,31532600,213731100,0.148,16663940
 dip,"Cordage — Cables (Not Of Iron), Twine, And Cable Yarn",Russia,?,1899,2517900,10482273,0.24,16420001

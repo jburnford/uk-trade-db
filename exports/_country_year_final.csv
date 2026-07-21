@@ -83096,6 +83096,7 @@ OIL,Palm,Other British Possessions,Cwts.,import,1885,70.0,101.0,human,A,A,1,1
 OIL,Palm,West Africa : Fernando Po,Cwts.,import,1884,4097.0,6878.0,human,A,A,1,1
 OIL,Palm,West Africa : Portuguese,Cwts.,import,1884,764.0,1369.0,human,A,A,1,1
 OIL,Palm,West Africa : Not designated,Cwts.,import,1884,454295.0,757359.0,human,A,A,1,1
+OIL,Palm,Western Coast of Africa : Niger Protectorate,Cwts.,import,1898,153168.0,150147.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -91912,11 +91913,6 @@ METAL,"MILK, condensed",Other Foreign Countries,Cwts,import,1898,76.0,622.0,info
 METAL,"MILK, condensed",Sweden,Cwts,import,1898,1204.0,4901.0,infonly,C,C,3,3
 METAL,"MILK, condensed",Argentine Republic,Cwts,import,1898,1106201.0,1357026.0,infonly,C,C,3,3
 METAL,"MILK, condensed",Australasia,Cwts,import,1898,1934283.0,2941072.0,infonly,C,C,3,3
-METAL,Palm,Germany,Cwts,import,1898,120970.0,135321.0,infonly,C,C,3,3
-METAL,Palm,Belgium,Cwts,import,1898,3810.0,4187.0,infonly,C,C,3,3
-METAL,Palm,France,Cwts,import,1898,57.0,54.0,infonly,C,C,3,3
-METAL,Palm,Other Foreign Countries,Cwts,import,1898,1149.0,1248.0,infonly,C,C,3,3
-METAL,Palm,Western Coast of Africa,Cwts,import,1898,759577.0,810059.0,infonly,C,C,3,3
 METAL,Of other sorts,Russia,Tons,import,1894,820.0,4579.0,infonly,C,C,3,3
 METAL,Of other sorts,Cyprus,Tons,import,1894,476.0,2037.0,infonly,C,C,3,3
 METAL,Of other sorts,Canada,Tons,import,1894,189.0,1425.0,infonly,C,C,3,3
@@ -92979,11 +92975,6 @@ OIL,Olive,Crete,Tuns,import,1899,1271.0,39052.0,infonly,C,B,3,2
 OIL,Olive,"Turkey, Asiatic",Tuns,import,1899,1564.0,47678.0,infonly,C,B,3,2
 OIL,Olive,Morocco,Tuns,import,1899,310.0,9711.0,infonly,C,B,3,2
 OIL,Olive,Other Foreign Countries,Tuns,import,1899,145.0,4683.0,infonly,C,B,3,2
-OIL,Palm,Germany,Cwts,import,1899,131213.0,153801.0,infonly,C,C,3,3
-OIL,Palm,Belgium,Cwts,import,1899,9462.0,10148.0,infonly,C,C,3,3
-OIL,Palm,France,Cwts,import,1899,45.0,57.0,infonly,C,C,3,3
-OIL,Palm,Other Foreign Countries,Cwts,import,1899,306.0,341.0,infonly,C,C,3,3
-OIL,Palm,Western Coast of Africa,Cwts,import,1899,757705.0,825100.0,infonly,C,C,3,3
 OIL,Linseed Cake,Northern Ports,,import,1899,90336.0,610772.0,infonly,C,C,3,3
 OIL,Linseed Cake,Southern Ports,,import,1899,145.0,1025.0,infonly,C,C,3,3
 OIL,Linseed Cake,Norway,,import,1899,170.0,1050.0,infonly,C,C,3,3
@@ -117058,3 +117049,33 @@ OIL,Palm,Western Coast of Africa : The Gold Coast,Cwts.,import,1897,9833.0,9401.
 OIL,Palm,Western Coast of Africa : Lagos,Cwts.,import,1897,625363.0,651734.0,groupfix,C,C,3,3
 OIL,Palm,Western Coast of Africa : Niger Protectorate,Cwts.,import,1897,175588.0,165192.0,groupfix,C,C,3,3
 OIL,Palm,Western Coast of Africa : Other British Possessions,Cwts.,import,1897,20.0,16.0,groupfix,C,C,3,3
+OIL,Palm,Germany,Cwts.,import,1898,120970.0,135321.0,groupfix,C,C,3,3
+OIL,Palm,Belgium,Cwts.,import,1898,3810.0,4187.0,groupfix,C,C,3,3
+OIL,Palm,France,Cwts.,import,1898,57.0,54.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : French Possessions,Cwts.,import,1898,11523.0,11134.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Spanish Possessions,Cwts.,import,1898,2234.0,2302.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Portuguese Possessions,Cwts.,import,1898,600.0,520.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : German Possessions,Cwts.,import,1898,4722.0,4671.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Congo Free State,Cwts.,import,1898,967.0,908.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Liberia,Cwts.,import,1898,3459.0,3196.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Not Particularly Designated,Cwts.,import,1898,1832.0,1827.0,groupfix,C,C,3,3
+OIL,Palm,Other Foreign Countries,Cwts.,import,1898,1149.0,1248.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Sierra Leone,Cwts.,import,1898,3934.0,3868.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : The Gold Coast,Cwts.,import,1898,9849.0,8967.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Lagos,Cwts.,import,1898,592626.0,647077.0,groupfix,C,C,3,3
+OIL,Palm,Germany,Cwts.,import,1899,131243.0,153804.0,groupfix,C,C,3,3
+OIL,Palm,Belgium,Cwts.,import,1899,9462.0,10448.0,groupfix,C,C,3,3
+OIL,Palm,France,Cwts.,import,1899,48.0,57.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : French Possessions,Cwts.,import,1899,7608.0,8020.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Spanish Possessions,Cwts.,import,1899,1104.0,1135.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Portuguese Possessions,Cwts.,import,1899,1386.0,1441.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : German Possessions,Cwts.,import,1899,1469.0,1508.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Congo Free State,Cwts.,import,1899,962.0,983.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Liberia,Cwts.,import,1899,2221.0,2205.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Not Particularly Designated,Cwts.,import,1899,1955.0,2220.0,groupfix,C,C,3,3
+OIL,Palm,Other Foreign Countries,Cwts.,import,1899,306.0,344.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Sierra Leone,Cwts.,import,1899,4096.0,4060.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : The Gold Coast,Cwts.,import,1899,13144.0,14834.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Lagos,Cwts.,import,1899,624862.0,683884.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Niger Protectorate,Cwts.,import,1899,145646.0,152298.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Other British Possessions,Cwts.,import,1899,29.0,24.0,groupfix,C,C,3,3
