@@ -554,6 +554,12 @@ def main():
             prev = cur
         return prev[-1] <= 2
 
+    # distinct real words the edit-distance net would wrongly conflate
+    # (WASTE->WHITE was homing Cotton-Waste Bombay cells into Wine-White)
+    FALSE_PAIRS = {frozenset(p) for p in (
+        ('WASTE', 'WHITE'), ('WHALE', 'WHITE'), ('BEADS', 'BEANS'),
+        ('CANDY', 'CARDS'), ('PLAIN', 'PLATE'), ('SHEEP', 'SHEET'))}
+
     def fuzzy_same(s1, s2):
         if len(s1) != len(s2):
             return False
@@ -563,7 +569,9 @@ def main():
                 rest.remove(t)
                 continue
             hit = next((r for r in rest if len(t) >= 5 and len(r) >= 5
-                        and t[0] == r[0] and edist_le2(t, r)), None)
+                        and t[0] == r[0]
+                        and frozenset((t, r)) not in FALSE_PAIRS
+                        and edist_le2(t, r)), None)
             if hit is None:
                 return False
             rest.remove(hit)
