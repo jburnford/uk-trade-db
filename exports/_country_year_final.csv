@@ -25934,16 +25934,6 @@ GIL,Olive,turkey,Tuns,import,1884,2207.0,86592.0,consensus,B,B,2,2
 GIL,Olive,egypt,Tuns,import,1884,191.0,7161.0,consensus,B,B,2,2
 GIL,Olive,tunis,Tuns,import,1884,1886.0,71567.0,consensus,B,B,2,2
 GIL,Olive,other countries,Tuns,import,1884,59.0,2019.0,consensus,B,B,2,2
-GIL,Palm,germany,,import,1884,11127.0,17817.0,consensus,B,B,2,2
-GIL,Palm,holland,,import,1884,2575.0,3987.0,consensus,B,B,2,2
-GIL,Palm,west africa french,,import,1884,10083.0,16441.0,consensus,B,B,2,2
-GIL,Palm,british west africa settle ments,,import,1884,10196.0,17006.0,consensus,B,B,2,2
-GIL,Palm,the gold coast,,import,1884,340346.0,575196.0,consensus,B,B,2,2
-GIL,Palm,fernando po,,import,1884,4697.0,6875.0,consensus,B,C,2,3
-GIL,Palm,portuguese,,import,1884,761.0,1369.0,consensus,B,B,2,2
-GIL,Palm,not designated,,import,1884,454205.0,737359.0,consensus,B,C,2,3
-GIL,Palm,united states of america,,import,1884,6023.0,9864.0,consensus,B,B,2,2
-GIL,Palm,other countries,,import,1884,1506.0,2836.0,consensus,B,C,2,3
 GIL,Seed,holland,,import,1884,3729.0,107880.0,consensus,B,B,2,2
 GIL,Seed,belgium,,import,1884,1061.0,31551.0,consensus,B,B,2,2
 GIL,Seed,portugal,,import,1884,3721.0,129737.0,consensus,B,B,2,2
@@ -58163,10 +58153,6 @@ NUTS AND KERNELS,Palm,germany,Cwts,import,1896,233552.0,273695.0,consensus,B,C,2
 NUTS AND KERNELS,Palm,belgium,Cwts,import,1896,2109.0,2210.0,consensus,B,C,2,3
 NUTS AND KERNELS,Palm,france,Cwts,import,1896,1198.0,1241.0,consensus,B,B,2,2
 NUTS AND KERNELS,Palm,western coast of africa,Cwts,import,1896,876302.0,896750.0,consensus,B,C,2,3
-NUTS AND KERNELS,Palm,germany,Cwts,import,1897,123922.0,157391.0,consensus,B,C,2,3
-NUTS AND KERNELS,Palm,belgium,Cwts,import,1897,179.0,167.0,consensus,B,B,2,2
-NUTS AND KERNELS,Palm,france,Cwts,import,1897,537.0,504.0,consensus,B,C,2,3
-NUTS AND KERNELS,Palm,western coast of africa,Cwts,import,1897,818610.0,833685.0,consensus,B,C,2,3
 NUTS AND KERNELS,Seed,denmark,,import,1893,36.0,1112.0,consensus,B,B,2,2
 NUTS AND KERNELS,Seed,germany,,import,1893,7890.0,185767.0,consensus,B,B,2,2
 NUTS AND KERNELS,Seed,holland,,import,1893,2332.0,59495.0,consensus,B,B,2,2
@@ -83107,6 +83093,9 @@ OIL,Palm,Other Foreign Countries,Cwts.,import,1885,1024.0,1272.0,human,A,A,1,1
 OIL,Palm,West Africa Settlements,Cwts.,import,1885,14602.0,18551.0,human,A,A,1,1
 OIL,Palm,The Gold Coast (including Lagos),Cwts.,import,1885,357810.0,486385.0,human,A,A,1,1
 OIL,Palm,Other British Possessions,Cwts.,import,1885,70.0,101.0,human,A,A,1,1
+OIL,Palm,West Africa : Fernando Po,Cwts.,import,1884,4097.0,6878.0,human,A,A,1,1
+OIL,Palm,West Africa : Portuguese,Cwts.,import,1884,764.0,1369.0,human,A,A,1,1
+OIL,Palm,West Africa : Not designated,Cwts.,import,1884,454295.0,757359.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -86228,45 +86217,6 @@ NUTS AND KERNELS,Commonly used for expressing Oil therefrom,Western Coast of Afr
 NUTS AND KERNELS,Commonly used for expressing Oil therefrom,Western Coast of Africa : Not particularly designated,Tons,import,1893,1522.0,17220.0,subentry,B,C,2,3
 NUTS AND KERNELS,Dutch Possessions in the Indian Seas,United States of America : On the Atlantic,,import,1895,145.0,1729.0,subentry,B,B,2,2
 NUTS AND KERNELS,Dutch Possessions in the Indian Seas,United States of America : On the Atlantic,,import,1896,21.0,1143.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : French Possessions,Cwts,import,1893,10503.0,12158.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,"Western Coast of Africa : Spanish """,Cwts,import,1893,2451.0,2066.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Portuguese,Cwts,import,1893,610.0,743.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Congo Free State,Cwts,import,1893,379.0,510.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Not Particularly Designated,Cwts,import,1893,55586.0,68262.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Sierra Leone,Cwts,import,1893,8244.0,9418.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : French Possessions,Cwts,import,1894,24405.0,25815.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Portuguese,Cwts,import,1894,5352.0,7111.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Congo Free State,Cwts,import,1894,2962.0,3118.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Not Particularly Designated,Cwts,import,1894,30452.0,32020.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Sierra Leone,Cwts,import,1894,11611.0,12141.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Lagos,Cwts,import,1894,623105.0,676486.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Other British Possessions,Cwts,import,1894,618.0,620.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : French Possessions,Cwts,import,1895,37574.0,37155.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,"Western Coast of Africa : Spanish """,Cwts,import,1895,360.0,349.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Portuguese,Cwts,import,1895,42100.0,1749.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,"Western Coast of Africa : German """,Cwts,import,1895,15122.0,15554.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,United States of America : On the Atlantic,Cwts,import,1895,7120.0,7921.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,United States of America : Other Foreign Countries,Cwts,import,1895,676.0,681.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Sierra Leone,Cwts,import,1895,23200.0,23777.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Niger Protectorate,Cwts,import,1895,247231.0,252180.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Other British Possessions,Cwts,import,1895,14.0,17.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,"Western Coast of Africa : Spanish """,Cwts,import,1896,201.0,285.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,"Western Coast of Africa : German """,Cwts,import,1896,6023.0,5567.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Congo Free State,Cwts,import,1896,2035.0,1525.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,United States of America : Other Foreign Countries,Cwts,import,1896,1374.0,1360.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Sierra Leone,Cwts,import,1896,16605.0,15959.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Lagos,Cwts,import,1896,671642.0,700054.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Other British Possessions,Cwts,import,1896,47.0,48.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,"Western Coast of Africa : Spanish """,Cwts,import,1897,635.0,670.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Portuguese,Cwts,import,1897,1015.0,864.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,"Western Coast of Africa : German """,Cwts,import,1897,11475.0,10281.0,subentry,B,C,2,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Liberia,Cwts,import,1897,3570.0,3275.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Not Particularly Designated,Cwts,import,1897,2030.0,2176.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,United States of America : Other Foreign Countries,Cwts,import,1897,915.0,914.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : The Gold Coast,Cwts,import,1897,9833.0,9401.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Lagos,Cwts,import,1897,625343.0,651734.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Niger Protectorate,Cwts,import,1897,175588.0,105102.0,subentry,B,B,2,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Other British Possessions,Cwts,import,1897,20.0,16.0,subentry,B,C,2,3
 NUTS AND KERNELS,Seed,United States of America : On the Atlantic,,import,1895,14662.0,247193.0,subentry,B,C,2,3
 NUTS AND KERNELS,Seed,United States of America : On the Atlantic,,import,1896,9627.0,169005.0,subentry,B,C,2,3
 NUTS AND KERNELS,Turpentine,United States of America : On the Atlantic,Cwts,import,1893,412549.0,452561.0,subentry,B,C,2,3
@@ -112876,25 +112826,6 @@ NUTS AND KERNELS,Castor,British East Indies : Bengal,Cwts,import,1893,65650.0,70
 NUTS AND KERNELS,Castor,British East Indies : Other British Possessions,Cwts,import,1893,3.0,5.0,subentry,C,C,3,3
 NUTS AND KERNELS,Coco-nut,United States of America : On the Atlantic,Cwts,import,1896,1063.0,2603.0,subentry,C,C,3,3
 NUTS AND KERNELS,Coco-nut,United States of America : On the Atlantic,Cwts,import,1897,25.0,15.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : The Gold Coast,Cwts,import,1893,38171.0,46639.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Lagos,Cwts,import,1893,710397.0,993197.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Niger Protectorate,Cwts,import,1893,136158.0,102059.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Other British Possessions,Cwts,import,1893,69.0,80.0,subentry,C,B,3,2
-NUTS AND KERNELS,Palm,"Western Coast of Africa : Spanish """,Cwts,import,1894,2524.0,2277.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : The Gold Coast,Cwts,import,1894,82682.0,86253.0,subentry,C,B,3,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Niger Protectorate,Cwts,import,1894,101912.0,200663.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Congo Free State,Cwts,import,1895,479.0,482.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Not Particularly Designated,Cwts,import,1895,8910.0,8868.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : The Gold Coast,Cwts,import,1895,65807.0,66395.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Lagos,Cwts,import,1895,618690.0,689428.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : French Possessions,Cwts,import,1896,13625.0,12415.0,subentry,C,B,3,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : Portuguese,Cwts,import,1896,3650.0,285.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Not Particularly Designated,Cwts,import,1896,6047.0,6711.0,subentry,C,B,3,2
-NUTS AND KERNELS,Palm,Western Coast of Africa : The Gold Coast,Cwts,import,1896,16712.0,15866.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Niger Protectorate,Cwts,import,1896,171356.0,161829.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : French Possessions,Cwts,import,1897,9659.0,9586.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Congo Free State,Cwts,import,1897,1420.0,1245.0,subentry,C,C,3,3
-NUTS AND KERNELS,Palm,Western Coast of Africa : Sierra Leone,Cwts,import,1897,7815.0,7342.0,subentry,C,B,3,2
 NUTS AND KERNELS,Seed,United States of America : On the Atlantic,,import,1894,4139.0,84479.0,subentry,C,C,3,3
 NUTS AND KERNELS,Seed,United States of America : On the Atlantic,,import,1897,9376.0,15156.0,subentry,C,C,3,3
 NUTS AND KERNELS,Turpentine,United States of America : On the Atlantic,Cwts,import,1895,422547.0,511527.0,subentry,C,C,3,3
@@ -114175,30 +114106,14 @@ NUTS AND KERNELS,Commonly used for expressing Oil therefrom,Western Coast of Afr
 NUTS AND KERNELS,"Other sorts, unenumerated (not used as fruit)",British East Indies : Other British Possessions,Nuts and Kernels,import,1898,505.0,,subentry,C,C,3,3
 NUTS AND KERNELS,"Other sorts, unenumerated (not used as fruit)",British East Indies : Other British Possessions,Nuts and Kernels,import,1899,186.0,,subentry,C,C,3,3
 NUTS AND KERNELS,Castor,British East Indies : Madras,Cwts,import,1899,6498.0,6932.0,subentry,C,B,3,2
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Lagoa,Cwts,import,1895,618506.0,639428.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Lagoa,Cwts,import,1896,671642.0,709054.0,subentry,C,C,3,3
 NUTS AND KERNELS,Coco-nut,Australasia : Victoria,Cwts,import,1897,114.0,107.0,subentry,C,C,3,3
 NUTS AND KERNELS,Coco-nut,Australasia : New South Wales,Cwts,import,1897,27469.0,28060.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Lagoa,Cwts,import,1897,625363.0,651734.0,subentry,C,C,3,3
 NUTS AND KERNELS,Coco-nut,Australasia : New South Wales,Cwts,import,1898,76078.0,83290.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Lagoa,Cwts,import,1898,592626.0,617977.0,subentry,C,C,3,3
 NUTS AND KERNELS,Coco-nut,British East Indies : Madras,Cwts,import,1899,84703.0,110054.0,subentry,C,C,3,3
 NUTS AND KERNELS,Coco-nut,British East Indies : Bengal,Cwts,import,1899,2517.0,3173.0,subentry,C,C,3,3
 NUTS AND KERNELS,Coco-nut,British East Indies : Straits Settlements,Cwts,import,1899,785.0,1150.0,subentry,C,C,3,3
 NUTS AND KERNELS,Coco-nut,British East Indies : Ceylon,Cwts,import,1899,185842.0,216345.0,subentry,C,C,3,3
 NUTS AND KERNELS,Coco-nut,Australasia : New South Wales,Cwts,import,1899,102730.0,113453.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : French Possessions,Cwts,import,1899,7608.0,8020.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,"Western Coast of Africa : Spanish """,Cwts,import,1899,1104.0,1135.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,"Western Coast of Africa : Portuguese """,Cwts,import,1899,1386.0,1441.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,"Western Coast of Africa : German """,Cwts,import,1899,1469.0,1508.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Congo Free State,Cwts,import,1899,962.0,983.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Liberia,Cwts,import,1899,2221.0,2205.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Not Particularly Designated,Cwts,import,1899,1955.0,2220.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Sierra Leone,Cwts,import,1899,4096.0,4060.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : The Gold Coast,Cwts,import,1899,13144.0,14834.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Lagoa,Cwts,import,1899,624862.0,683884.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Niger Protectorate,Cwts,import,1899,145646.0,152298.0,subentry,C,C,3,3
-NUTS AND KERNELS,Coco-nut,Western Coast of Africa : Other British Possessions,Cwts,import,1899,29.0,24.0,subentry,C,C,3,3
 NUTS AND KERNELS,"Chemical, Essential or Perfumed",British East Indies : Madras,Lbs,import,1898,113160.0,18611.0,subentry,C,C,3,3
 NUTS AND KERNELS,"Chemical, Essential or Perfumed",British East Indies : Straits Settlements,Lbs,import,1898,31142.0,3368.0,subentry,C,C,3,3
 NUTS AND KERNELS,"Chemical, Essential or Perfumed",British East Indies : Ceylon,Lbs,import,1898,737180.0,40826.0,subentry,C,C,3,3
@@ -117120,3 +117035,26 @@ COTTON,Flax or Linseed,British East Indies : Bengal,Quarters,import,1885,1031641
 COTTON,Flax or Linseed,British East Indies : British West India Islands,Quarters,import,1885,3780.0,8000.0,groupfix,C,C,3,3
 COTTON,Flax or Linseed,British East Indies : Other British Possessions,Quarters,import,1885,598.0,1295.0,groupfix,C,C,3,3
 COTTON,Flax or Linseed,British East Indies,Quarters,import,1885,1563094.0,3337888.0,groupfix,C,C,3,3
+OIL,Palm,Germany,Cwts.,import,1884,11127.0,17817.0,groupfix,C,C,3,3
+OIL,Palm,Holland,Cwts.,import,1884,2575.0,3987.0,groupfix,C,C,3,3
+OIL,Palm,West Africa : French,Cwts.,import,1884,10083.0,16441.0,groupfix,C,C,3,3
+OIL,Palm,West Africa Settlements,Cwts.,import,1884,10196.0,17006.0,groupfix,C,C,3,3
+OIL,Palm,The Gold Coast,Cwts.,import,1884,340346.0,575196.0,groupfix,C,C,3,3
+OIL,Palm,United States of America,Cwts.,import,1884,6023.0,9864.0,groupfix,C,C,3,3
+OIL,Palm,Other Countries,Cwts.,import,1884,1506.0,2836.0,groupfix,C,C,3,3
+OIL,Palm,Germany,Cwts.,import,1897,123022.0,137301.0,groupfix,C,C,3,3
+OIL,Palm,Belgium,Cwts.,import,1897,170.0,167.0,groupfix,C,C,3,3
+OIL,Palm,France,Cwts.,import,1897,537.0,504.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : French Possessions,Cwts.,import,1897,9639.0,9586.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Spanish Possessions,Cwts.,import,1897,638.0,670.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Portuguese Possessions,Cwts.,import,1897,1015.0,864.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : German Possessions,Cwts.,import,1897,11475.0,10981.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Congo Free State,Cwts.,import,1897,1430.0,1245.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Liberia,Cwts.,import,1897,3570.0,3275.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Not Particularly Designated,Cwts.,import,1897,2030.0,2170.0,groupfix,C,C,3,3
+OIL,Palm,Other Foreign Countries,Cwts.,import,1897,915.0,914.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Sierra Leone,Cwts.,import,1897,7815.0,7342.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : The Gold Coast,Cwts.,import,1897,9833.0,9401.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Lagos,Cwts.,import,1897,625363.0,651734.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Niger Protectorate,Cwts.,import,1897,175588.0,165192.0,groupfix,C,C,3,3
+OIL,Palm,Western Coast of Africa : Other British Possessions,Cwts.,import,1897,20.0,16.0,groupfix,C,C,3,3
