@@ -36,8 +36,8 @@ dip,Tea,Ceylon,1879,genuine,"135,336 lbs is the printed page value (hand-keyed, 
 hole,Tea,Other Countries,1879,artifact,"Cell exists in the Lb unit bucket (hand-keyed 454,786); the '?'-unit series is a display bucket split."
 dip,Maize Or Indian Corn,Roumania,1880,genuine,"Both engines agree 1,761,432; member sum 37,221,733 vs printed TOTAL 37,224,733 (short only 3k, no broken digit); GBP/cwt 0.317 matches US 0.299; 1879 also depressed (2.96M) after the 1879 European crop failure, recovers 1881+."
 hole,Jute,Bengal And Burmah,1874,artifact,"Recovered 2026-07-17 via the as_1874 ISINGLASS glue repair ('Bengal and Burmah' 4,253,700; TOTAL == T1 within 3)."
-hole,Jute,Bengal And Burmah,1882,artifact,"Printed label regime: 1882-86 jute tables print plain 'Bengal' (1882 Cwt cell present); compound label not printed. Not folded: for rice the compound vs separate Bengal/Burmah distinction is real."
-hole,Jute,Bengal And Burmah,1883,artifact,"Same label regime; 1883 cell present under 'Bengal' (unit '?')."
+hole,Jute,Bengal And Burmah,1882,artifact,Printed label regime: 1882-86 jute tables print plain 'Bengal' (1882 Cwt cell present); compound label not printed. Not folded: for rice the compound vs separate Bengal/Burmah distinction is real.
+hole,Jute,Bengal And Burmah,1883,artifact,Same label regime; 1883 cell present under 'Bengal' (unit '?').
 hole,Tea,Bengal,1883,artifact,"1883 tea table prints 'Bengal and Burmah' (58,500,667 recovered via the as_1883 SPIRITS glue repair); plain-'Bengal' label starts 1885. Burmah's tea is trivial (772 lbs in 1885) but the labels are kept as printed."
 hole,Tea,Bengal,1884,artifact,"Same: 1884 prints 'Bengal and Burmah' (62,581,576 recovered via the as_1884 SPIRITS|Rum glue repair)."
 hole,Tea,Bengal And Burmah,1882,artifact,"1882 tea table prints plain 'Bengal' (52,745,945 hand-keyed from the page image); the compound label is the 1872-81 regime."
@@ -61,7 +61,7 @@ hole,Butter,Denmark,1883,artifact,See 1882 entry.
 hole,Butter,Denmark,1884,artifact,See 1882 entry.
 hole,Butter,Denmark,1885,artifact,See 1882 entry.
 dip,Cotton — Raw,Bombay,1893,genuine,"Same 1890s regime decline as the adjudicated 1895 dip: 1891 592k, 1892 382k, 1893 234k, 1894 370k; consensus cell, both engines."
-hole,Cotton — Flax Or Linseed,British East Indies,1890,artifact,"'British East Indies' is the printed BP-subtotal row admitted as a country in some years; 1890/93/94 children (Bengal etc.) fully present - the aggregate line is redundant."
+hole,Cotton — Flax Or Linseed,British East Indies,1890,artifact,'British East Indies' is the printed BP-subtotal row admitted as a country in some years; 1890/93/94 children (Bengal etc.) fully present - the aggregate line is redundant.
 hole,Cotton — Flax Or Linseed,British East Indies,1893,artifact,See 1890 entry.
 hole,Cotton — Flax Or Linseed,British East Indies,1894,artifact,See 1890 entry.
 dip,Coffee,Ceylon,1889,genuine,"Coffee-blight collapse continues: 155,538 (1886) -> 133,872 -> 106,082 -> 55,236 (1889) -> 69,115 (1890); the 1889 value closes the glue block's BP subtotal to the digit. Median 356k reflects the pre-blight era."
@@ -74,17 +74,17 @@ hole,Tea,Ceylon,1877,regime,"1877 printed tea origin table (duty section, p.75 i
 hole,Tea,Ceylon,1878,regime,"Same as 1877: no Ceylon line in the printed table; inside 'Other Countries'. Column closes exactly with Other=437,378."
 dip,"Skins, Furs, And Pelts — Seal",Canada,1892,regime,"Newfoundland gets its own line from 1892 (400,552 alongside Canada 74,927); the pre-1892 'canada' cells are the BNA aggregate dominated by the Newfoundland seal hunt. Canada-proper ~50-120k thereafter."
 hole,Cotton — Flax Or Linseed,Bengal And Burmah,1882,regime,"1882/83 print the row as plain 'Bengal' (840,703 / 969,183 present in final under the Bengal series); 'and Burmah' returns later. Not folded - Burmah is a real separate line for rice."
-hole,Cotton — Flax Or Linseed,Bengal And Burmah,1883,regime,"See 1882 entry."
+hole,Cotton — Flax Or Linseed,Bengal And Burmah,1883,regime,See 1882 entry.
 dip,Cotton — Flax Or Linseed,Russia,1885,genuine,"Year reconciles with T1 2,046,352 (~2.048M country sum): the mid-1880s Russian flax collapse is real - British East Indies 1,563,094 dominates 1885; Russia 143,756 sits between 1884 722,801 and 1886 214,473."
 hole,"Skins, Furs, And Pelts — Seal",Newfoundland,1893,regime,"as_1893's own volume prints 157,305 on Canada (round-9 decision: the year's own volume outranks the as_1897 comparative, which attributes it to Newfoundland). No NF line exists in the winning attribution - hole is the flip side of that call."
 hole,Butter,Sweden,1882,regime,"1882-85 butter prints under the combined 'Butter and Butterine' group (regime chip class, same as France/Holland/Germany/US); Sweden's cells exist there (67,821/96,965/101,822/128,079) and are deliberately not auto-merged into the plain Butter commodity."
-hole,Butter,Sweden,1883,regime,"See 1882 entry."
-hole,Butter,Sweden,1884,regime,"See 1882 entry."
-hole,Butter,Sweden,1885,regime,"See 1882 entry."
+hole,Butter,Sweden,1883,regime,See 1882 entry.
+hole,Butter,Sweden,1884,regime,See 1882 entry.
+hole,Butter,Sweden,1885,regime,See 1882 entry.
 dip,"Coals, Cinders, &C — Coals And Culm",United States Of America,1888,genuine,"Small noisy trickle series: 1,634 (1887), 429 (1888), 413 (1889, recovered from Infinity), 1,212 (1890). The whole-series median is inflated by the 1891-93 rise; 429 is in line with its neighbours."
 spike,"Coals, Cinders, &C — Coals And Culm",United States Of America,1892,genuine,"Smooth rise 1,212 (1890) / 4,960 (1891) / 9,354 (1892) / 6,153 (1893) - early US anthracite trickle growing; median is dragged down by the 1887-89 sub-2k years."
 spike,Barley,Russia (Southern Ports),1888,regime,"1888-90 print port detail with no parent Russia line, so Southern Ports carries Russia's whole barley volume (11.1M/7.7M/8.0M vs the 1872-81 drill-down era's 0.6-4.2M). Detector A reconciles the year totals; 1888 is the pre-famine Russian export boom. Parent synthesized by the viz port roll-up."
-spike,Barley,Russia (Southern Ports),1890,regime,"See 1888 entry."
+spike,Barley,Russia (Southern Ports),1890,regime,See 1888 entry.
 hole,"Lac, Seed, Shell, Stick, And Dye",Bengal And Burmah,1882,regime,"1882/83 print presidency detail (plain 'Bengal' line carries the volume; no Burmah line) - flax-1882/83 class. Data present under Bengal; 1882 block sums to T1 112,025/508,357 EXACTLY, 1883 re-paired to T1 exactly."
 hole,"Lac, Seed, Shell, Stick, And Dye",Bengal And Burmah,1883,regime,"1882/83 print presidency detail (plain 'Bengal' line carries the volume; no Burmah line) - flax-1882/83 class. Data present under Bengal; 1882 block sums to T1 112,025/508,357 EXACTLY, 1883 re-paired to T1 exactly."
 dip,Roasted Or Ground,Channel Islands,1878,genuine,"Print-attested (as_1878 duty page, Infinity br-run page idx 71): CI 6,335 Lbs/GBP73; BOTH columns close to printed totals EXACTLY (238,902 / 3,202) with this pairing - a CI-scale (~122k) value does not exist in the column. One-year collapse between 122,540 (1877) and 122,880 (1879)."
@@ -92,3 +92,6 @@ dip,Sugar — Unrefined Of All Kinds,Germany,1875,genuine,"First year of the Ger
 dip,Eggs,Belgium,1878,genuine,"Print-attested (as_1878 raw two-up text, Infinity page idx 51): the print pairs Holland 361,448 / Belgium 372,897 - exactly what final holds. Complementary Holland spike (vs 63k/199k neighbours) suggests Belgian eggs transshipped via Dutch ports in 1878. Members sum to printed Total 6,530,956 == T1 (10-over with Portugal 56,391; Chandra's 56,381 variant would close exactly - GBP10-scale, left as printed)."
 dip,Cotton — Flax Or Linseed,Russia (Southern Ports),1877,genuine,"RUSSO-TURKISH WAR: Southern Ports = Black Sea trade, collapsed 503,692 (1875) -> 92,945 (1876 buildup) -> 30,739 (1877 war) -> recovered 449,129 (1878). Print-attested in BOTH engines; the 1877 block sums to T1 1,706,796 / 4,552,798 EXACTLY. Bengal linseed (912,387) substituted for Russian supply that year."
 dip,"Cotton Manufactures — Piece Goods, Plain",Japan,1884,genuine,"Japan's TRUE plain-piece-goods series is 16-43M yards (the ~200-240M cells 1875-83 were CHINA's values on Japan's slot - twoup one-row slip, repaired). 31,532,600 in 1884 is print-attested in BOTH the obs export block and the correctly-paired 1884 twoup, and sits mid-range of the true series (Matsukata-deflation era)."
+dip,Wood And Timber,Siam,1888,artifact,"Bare blank-article 'WOOD AND TIMBER|None' viz commodity is a teak-dupe mix (round-2 finding); the 96/747 cell is a stray small row. Real teak Siam 1888 = 7,189/80,968 (infonly Hewn. Teak) - teak series continuous."
+dip,Wood And Timber,Siam,1893,genuine,"Teak Siam 1893 = 857/8,856 CONFIRMED by three independent prints: as_1893 own-year consensus, as_1893 twoup, and the as_1897 5-yr comparative (independently typeset, stale 'Eastern Coast of Africa' label). 1893 depression-year teak dip; recovers 5,619 (1894), 14,673 (1895)."
+dip,"Animals, Living — Oxen And Bulls",Denmark,1892,regime,"UK livestock-disease import restrictions 1892 (Diseases of Animals Act): Denmark scheduled, live cattle trade ceased - series ENDS at 1892 (no Denmark rows 1893-99) and Sweden collapses in parallel (4,187 -> 497 -> none). 901 = last partial year before the ban. Same class as oxen US 1882 pleuro-pneumonia adjudication."
