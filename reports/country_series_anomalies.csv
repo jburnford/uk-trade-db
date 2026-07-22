@@ -1,23 +1,8 @@
 kind,commodity,country,unit,year,value,series_median,ratio_to_median,gbp
-hole,"Cotton Manufactures — Piece Goods, Printed",Bengal And Burmah,Yard,1882,,80858400,,61531712
-hole,"Cotton Manufactures — Piece Goods, Printed",Bengal And Burmah,Yard,1883,,80858400,,61531712
-hole,"Cotton Manufactures — Piece Goods, Printed",Bengal And Burmah,Yard,1884,,80858400,,61531712
-hole,"Cotton Manufactures — Piece Goods, Printed",Bengal And Burmah,Yard,1885,,80858400,,61531712
-dip,"Cotton Manufactures — Piece Goods, Printed",Bengal And Burmah,Yard,1878,9498700,80858400,0.117,61531712
-dip,"Cotton Manufactures — Piece Goods, Printed",Bengal And Burmah,Yard,1880,20029900,80858400,0.248,61531712
 hole,"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",France,Cwt,1874,,1624605,,24478504
 dip,Roasted Or Ground,Channel Islands,Lb,1898,112,78025,0.001,21640365
-hole,"Cotton Manufactures — Piece Goods, Printed",Canada,Yard,1882,,25047807,,20038946
-hole,"Cotton Manufactures — Piece Goods, Printed",Canada,Yard,1883,,25047807,,20038946
-hole,"Cotton Manufactures — Piece Goods, Printed",Canada,Yard,1884,,25047807,,20038946
-hole,"Cotton Manufactures — Piece Goods, Printed",Canada,Yard,1885,,25047807,,20038946
+hole,"Cotton Manufactures — Piece Goods, Printed",Turkey,Yard,1881,,101283600,,20527874
 dip,Oil — Palm,Germany,Cwt,1882,11809,111220,0.106,19674084
-hole,"Cotton Manufactures — Piece Goods, Printed",Brazil,?,1882,,92375200,,19054858
-hole,"Cotton Manufactures — Piece Goods, Printed",Brazil,?,1883,,92375200,,19054858
-hole,"Cotton Manufactures — Piece Goods, Printed",Brazil,?,1884,,92375200,,19054858
-hole,"Cotton Manufactures — Piece Goods, Printed",Brazil,?,1885,,92375200,,19054858
-dip,"Cotton Manufactures — Piece Goods, Printed",Brazil,?,1878,12475300,92375200,0.135,19054858
-dip,"Cotton Manufactures — Piece Goods, Printed",Brazil,?,1880,18441200,92375200,0.2,19054858
 hole,"Milk, Condensed",Australasia,Cwt,1892,,1767859,,15694101
 hole,"Milk, Condensed",Australasia,Cwt,1893,,1767859,,15694101
 dip,"Nitre, Cubic",Peru,Cwt,1889,74569,1516358,0.049,15328452
@@ -46,9 +31,6 @@ hole,Corn And Grain — From British East Indies,Bombay,?,1891,,5969376,,1381979
 hole,Corn And Grain — From British East Indies,Bombay,?,1894,,5969376,,13819791
 hole,Silk — Raw,British East Indies,Lb,1892,,227428,,13771851
 dip,"— Bar, Angle, Bolt And Rod",Sweden,Ton,1898,256,76616,0.003,13686944
-hole,"Cotton Manufactures — Piece Goods, Printed",Western Africa (British,Yard,1882,,16033100,,13374065
-hole,"Cotton Manufactures — Piece Goods, Printed",Western Africa (British,Yard,1883,,16033100,,13374065
-hole,"Cotton Manufactures — Piece Goods, Printed",Western Africa (British,Yard,1884,,16033100,,13374065
 dip,Butter,Victoria,Cwt,1891,20033,154865,0.129,13236393
 dip,Barley,Turkey,Cwt,1887,175884,2352567,0.075,13168663
 dip,Yarn,Germany,Lb,1883,4140,6164816,0.001,12591659
@@ -86,12 +68,6 @@ hole,Oil — Olive,Italy,Tun,1885,,11492,,11103199
 hole,Oil — Olive,Italy,Tun,1897,,11492,,11103199
 hole,Oil — Olive,Italy,Tun,1898,,11492,,11103199
 dip,"Skins, Furs, And Pelts — Furs",Australasia,Number,1894,2579833,18776986,0.137,10972765
-hole,"Cotton Manufactures — Piece Goods, Printed",Madras,Yard,1882,,14196700,,10805810
-hole,"Cotton Manufactures — Piece Goods, Printed",Madras,Yard,1883,,14196700,,10805810
-hole,"Cotton Manufactures — Piece Goods, Printed",Madras,Yard,1884,,14196700,,10805810
-hole,"Cotton Manufactures — Piece Goods, Printed",Madras,Yard,1885,,14196700,,10805810
-spike,"Cotton Manufactures — Piece Goods, Printed",Madras,Yard,1878,86059100,14196700,6.062,10805810
-spike,"Cotton Manufactures — Piece Goods, Printed",Madras,Yard,1880,166058700,14196700,11.697,10805810
 hole,"Dye Stuffs, And Substances Used In Tanning — Indigo",Bengal,Cwt,1884,,46749,,10787711
 dip,Cows,Denmark,Number,1892,844,23292,0.036,10761210
 dip,Barley,Wallachia And Moldavia,Cwt,1877,212315,958576,0.221,10534998
@@ -102,11 +78,6 @@ dip,Fresh (Not Of British Taking) — Herrings,Germany,?,1873,26553,546773,0.049
 hole,"Zinc — Crude, In Cakes",Germany,Ton,1877,,15568,,10359863
 hole,"Zinc — Crude, In Cakes",Germany,Ton,1879,,15568,,10359863
 hole,"Zinc — Crude, In Cakes",Germany,Ton,1884,,15568,,10359863
-hole,"Cotton Manufactures — Piece Goods, Printed",Straits Settlements,Yard,1882,,12952250,,10209857
-hole,"Cotton Manufactures — Piece Goods, Printed",Straits Settlements,Yard,1883,,12952250,,10209857
-hole,"Cotton Manufactures — Piece Goods, Printed",Straits Settlements,Yard,1884,,12952250,,10209857
-hole,"Cotton Manufactures — Piece Goods, Printed",Straits Settlements,Yard,1885,,12952250,,10209857
-dip,"Cotton Manufactures — Piece Goods, Printed",Straits Settlements,Yard,1878,3081900,12952250,0.238,10209857
 hole,"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",Holland,Cwt,1874,,647605,,10134839
 hole,Dye Woods — Logwood,British West India Islands,Ton,1891,,28892,,10121721
 hole,Dye Woods — Logwood,British West India Islands,Ton,1892,,28892,,10121721
@@ -133,10 +104,6 @@ dip,Roasted Or Ground,Holland,Lb,1878,10021,51373,0.195,10071597
 spike,Roasted Or Ground,Holland,Lb,1884,235185,51373,4.578,10071597
 hole,Regulus And Precipitate,United States Of America,Ton,1883,,20656,,10021876
 dip,Regulus And Precipitate,United States Of America,Ton,1894,4836,20656,0.234,10021876
-hole,"Cotton Manufactures — Piece Goods, Printed",United States Of America,?,1882,,42016950,,9936820
-hole,"Cotton Manufactures — Piece Goods, Printed",United States Of America,?,1883,,42016950,,9936820
-hole,"Cotton Manufactures — Piece Goods, Printed",United States Of America,?,1884,,42016950,,9936820
-hole,"Cotton Manufactures — Piece Goods, Printed",United States Of America,?,1885,,42016950,,9936820
 hole,Glucose (Solid Or Liquid),Germany,Cwt,1885,,144889,,9913319
 hole,Glucose (Solid Or Liquid),Germany,Cwt,1888,,144889,,9913319
 hole,Glucose (Solid Or Liquid),Germany,Cwt,1889,,144889,,9913319
@@ -147,13 +114,6 @@ hole,"Glass — Manufactures, Unenumerated",Belgium,Cwt,1875,,219260,,9759845
 hole,"Glass — Manufactures, Unenumerated",Belgium,Cwt,1880,,219260,,9759845
 hole,"Glass — Manufactures, Unenumerated",Belgium,Cwt,1881,,219260,,9759845
 hole,"Glass — Manufactures, Unenumerated",Belgium,Cwt,1885,,219260,,9759845
-hole,"Cotton Manufactures — Piece Goods, Printed",British Possessions In South Africa,Yard,1882,,11447820,,9745701
-hole,"Cotton Manufactures — Piece Goods, Printed",British Possessions In South Africa,Yard,1883,,11447820,,9745701
-hole,"Cotton Manufactures — Piece Goods, Printed",British Possessions In South Africa,Yard,1884,,11447820,,9745701
-hole,"Cotton Manufactures — Piece Goods, Printed",Foreign West Indies,?,1882,,43030942,,9702764
-hole,"Cotton Manufactures — Piece Goods, Printed",Foreign West Indies,?,1883,,43030942,,9702764
-hole,"Cotton Manufactures — Piece Goods, Printed",Foreign West Indies,?,1884,,43030942,,9702764
-hole,"Cotton Manufactures — Piece Goods, Printed",Foreign West Indies,?,1885,,43030942,,9702764
 hole,"Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse",Holland,Cwt,1890,,918,,9326098
 dip,"Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse",Holland,Cwt,1882,207,918,0.225,9326098
 hole,"Wood And Timber — Hewn, Teak",British East Indies,Load,1889,,41222,,9220964
@@ -197,10 +157,6 @@ dip,Fresh (Not Of British Taking) — Herrings,Sweden,Cwt,1897,67871,421380,0.16
 dip,Fresh (Not Of British Taking) — Herrings,Sweden,Cwt,1899,81317,421380,0.193,8169781
 dip,Fish — Fresh,Germany,Cwt,1885,866,7529,0.115,8071801
 spike,Fish — Fresh,Germany,Cwt,1895,531230,7529,70.558,8071801
-hole,"Cotton Manufactures — Piece Goods, Printed",Hong Kong,Yard,1882,,9940850,,8037132
-hole,"Cotton Manufactures — Piece Goods, Printed",Hong Kong,Yard,1883,,9940850,,8037132
-hole,"Cotton Manufactures — Piece Goods, Printed",Hong Kong,Yard,1884,,9940850,,8037132
-hole,"Cotton Manufactures — Piece Goods, Printed",Hong Kong,Yard,1885,,9940850,,8037132
 dip,Ivory,Native States,?,1887,40,528,0.076,7860271
 spike,Ivory,Native States,?,1890,2806,528,5.319,7860271
 hole,Sugar — In Lumps And Loaves,France,Cwt,1884,,488290,,7723143
