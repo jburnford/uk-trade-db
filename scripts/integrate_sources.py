@@ -452,11 +452,19 @@ def main():
                 if (asig, c, int(y)) in seen_added:
                     continue
                 seen_added.add((asig, c, int(y)))
+                # strip_values=1: the block's quantity column is proven
+                # (closure/brackets) but its value column is a PHANTOM — a
+                # neighbouring table's column both engines swallowed (the
+                # as_1882 leather 'values' fail every rate/total check in
+                # BOTH engines while the qtys bracket cleanly). Admit the
+                # quantities, drop the values.
+                strip = (gr.get('strip_values') or '').strip() == '1'
                 out_rows.append({
                     'group': new_grp, 'article': new_art,
                     'country': ctry,
                     'unit': gr.get('new_unit') or unit or '', 'qty': float(q),
-                    'value': float(v) if v is not None else None,
+                    'value': None if strip else (
+                        float(v) if v is not None else None),
                     'year': int(y), 'src': 'groupfix',
                     'q_tier': 'C', 'v_tier': 'C'})
                 n_groupfix += 1
