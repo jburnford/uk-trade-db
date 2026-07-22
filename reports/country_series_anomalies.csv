@@ -834,6 +834,7 @@ hole,Spices — Ginger,British East Indies,Cwt,1891,,56515,,1624114
 hole,Saltpetre (Nitrate Of Potash),Germany,Cwt,1878,,78543,,1621830
 hole,Saltpetre (Nitrate Of Potash),Germany,Cwt,1879,,78543,,1621830
 dip,Saltpetre (Nitrate Of Potash),Germany,Cwt,1876,14378,78543,0.183,1621830
+dip,"Leather — Tanned, Unwrought",Belgium,Cwt,1877,4259,23575,0.181,1614869
 hole,Glucose (Solid Or Liquid),France,Cwt,1885,,30066,,1608216
 hole,Glucose (Solid Or Liquid),France,Cwt,1888,,30066,,1608216
 hole,Glucose (Solid Or Liquid),France,Cwt,1889,,30066,,1608216
@@ -972,7 +973,6 @@ hole,Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,West Africa
 hole,"— Bar, Angle, Bolt And Rod",Belgium,Ton,1897,,8012,,1310974
 hole,"— Bar, Angle, Bolt And Rod",Belgium,Ton,1898,,8012,,1310974
 dip,"— Bar, Angle, Bolt And Rod",Belgium,Ton,1886,359,8012,0.045,1310974
-dip,"Leather — Tanned, Unwrought",Belgium,?,1877,4259,23575,0.181,1310890
 hole,"Flowers, Artificial — Raw, Not Otherwise Described",Holland,Bushel,1875,,358613,,1308312
 dip,"Nuts And Kernels — Unenumerated, Commonly Used For Expressing Oil Therefrom",Bengal And Burmah,Quarter,1872,2254,58554,0.038,1304646
 hole,Zinc — Ore Of,Italy,Ton,1877,,13342,,1301815
@@ -1975,9 +1975,6 @@ dip,"Fruit — Preserved Without Sugar, Unenumerated",British East Indies,Lb,188
 dip,"Fruit — Preserved Without Sugar, Unenumerated",British East Indies,Lb,1884,102230,804242,0.127,198657
 spike,"Fruit — Preserved Without Sugar, Unenumerated",British East Indies,Lb,1895,4874544,804242,6.061,198657
 dip,Gum,Bengal,?,1898,198,2111,0.094,198592
-hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",Western Africa (Foreign,?,1873,,17256,,198390
-hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",Western Africa (Foreign,?,1874,,17256,,198390
-hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",Western Africa (Foreign,?,1875,,17256,,198390
 spike,Soap,France,?,1885,566010247,7248,78086.535,197847
 dip,"Metal — Unenumerated, Unwrought",Holland,Ton,1896,22,166,0.133,197719
 dip,"Metal — Unenumerated, Unwrought",Holland,Ton,1898,23,166,0.139,197719
@@ -1993,9 +1990,6 @@ hole,"Glass — Plate, Whether Silvered Or Not",Germany,Cwt,1881,,4168,,194449
 hole,"Skins And Furs — Foreign, Dressed In The United Kingdom",France,?,1879,,119616,,193184
 hole,Waste Of,United States Of America,Lb,1883,,1622352,,193097
 dip,Waste Of,United States Of America,Lb,1878,393200,1622352,0.242,193097
-hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",United States Of America,?,1873,,14585,,192082
-hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",United States Of America,?,1874,,14585,,192082
-hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",United States Of America,?,1875,,14585,,192082
 spike,"Perfumery, And Articles Used In The Manufacture Thereof, Except Perfumed Spirits",United States Of America,Lb,1895,822786,202832,4.056,189325
 hole,"Old, Fit Only To Be Re-Manu- Factured",United States Of America,Ton,1891,,728,,189305
 hole,"Old, Fit Only To Be Re-Manu- Factured",United States Of America,Ton,1892,,728,,189305
@@ -2013,9 +2007,6 @@ hole,"Garden, Unenumerated",Holland,Lb,1888,,213011,,184415
 hole,"Garden, Unenumerated",Holland,Lb,1889,,213011,,184415
 hole,"Garden, Unenumerated",Holland,Lb,1890,,213011,,184415
 dip,"Garden, Unenumerated",Holland,Lb,1873,39082,213011,0.183,184415
-hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",United States Of America (Atlantic),?,1873,,13995,,184312
-hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",United States Of America (Atlantic),?,1874,,13995,,184312
-hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",United States Of America (Atlantic),?,1875,,13995,,184312
 hole,"Books, Bound Or Unbound, Including Maps And Charts",Belgium,Cwt,1888,,1512,,184081
 hole,"Books, Bound Or Unbound, Including Maps And Charts",Belgium,Cwt,1889,,1512,,184081
 hole,"Books, Bound Or Unbound, Including Maps And Charts",Belgium,Cwt,1891,,1512,,184081
@@ -2120,7 +2111,6 @@ spike,"Corn And Grain — Meal, Not Otherwise Enumerated Or Described",United St
 dip,Woollen Yarn — Unenumerated,Belgium,Lb,1890,928,6045,0.154,128778
 dip,Beef — Applicable To Manufacturing Purposes,Argentine Republic,Ton,1894,16,714,0.022,126323
 dip,"Cotton — Unenumerated, Other Sorts",Russia,Cwt,1880,7718,33915,0.228,121861
-dip,"Arms, Ammunition, And Military Stores — Rifles",British Possessions In South Africa,?,1881,1238,9630,0.129,121745
 dip,"Plate, Fluted, Rolled Or Rough",Holland,Cwt,1893,634,5182,0.122,119920
 spike,"Plate, Fluted, Rolled Or Rough",Holland,Cwt,1895,22484,5182,4.338,119920
 dip,"Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",Madagascar,Cwt,1886,879,4981,0.176,119834
