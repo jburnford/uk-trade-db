@@ -139,6 +139,11 @@ def fold_country(c):
     # America' and must join the same series (seal skins 1876-86).
     if re.match(r'^british north america$', c, re.I):
         return 'Canada'
+    # 'British West Indies' and 'British West India Islands' are the same
+    # printed entity (short vs long form, era-dependent); 45 commodities
+    # carried both as split series (cocoa raw 1887-90 vs 1891-99).
+    if re.match(r'^british west ind(?:ies|ia islands?)$', c, re.I):
+        return 'British West India Islands'
     return c.title() if c else '?'
 
 
