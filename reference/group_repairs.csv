@@ -768,3 +768,8 @@ as_1897,import,LEATHER,Gloves,0,0,LEATHER,Gloves,,,,1893;1894;1895;1896;1897,inf
 as_1897,import,LEATHER MANUFACTURES,Gloves,0,0,LEATHER MANUFACTURES,Gloves,,,,1893;1894;1895;1896;1897,own-label copies replaced by the arbitrated manual rows.,,
 as_1897,import,IRON,Gloves,0,0,IRON,Gloves,,,,1893;1894;1895;1896;1897,inf as_1897 stale-group gloves copies (hijack guard).,,
 as_1898,import,LEATHER MANUFACTURES,.. Gloves,0,0,LEATHER MANUFACTURES,.. Gloves,,,,1893;1894;1895;1896;1897,"Supersede-only: twoup gloves copy under the dot-prefixed article spelling (hijacked 1895 after the main supersede freed the year).",,
+as_1888,import,SPIRITS,Brandy,0,0,SPIRITS,Brandy,,,,1883;1885;1886,"SPIRITS-glue phantom pollution purge: the duty-page glue blocks stored tea/tobacco/wine table cells inside spirits consensus (Lbs-unit rows, 5M+-scale cells, and rate-impossible wine/brandy cells). Real spirits rows re-added as manual rows with the same consensus readings; SPIRITS|British Indies 1885 is the tea BP table entire (no real spirits data, tea 1885 healthy in its own commodity).",,
+as_1888,import,SPIRITS,Not tested for ascertaining strength,0,0,SPIRITS,Not tested for ascertaining strength,,,,1883,,,
+as_1888,import,SPIRITS,Rum,0,0,SPIRITS,Rum,,,,1884;1887;1888,,,
+as_1888,import,SPIRITS,Perfumed,0,0,SPIRITS,Perfumed,,,,1893;1894;1895;1896;1897,,,
+as_1888,import,SPIRITS,British Indies,0,0,SPIRITS,British Indies,,,,1885,,,

@@ -566,9 +566,6 @@ hole,Other Than Muslins,United States Of America,Pieces,1880,,219334,,2505595
 dip,Other Than Muslins,United States Of America,Pieces,1874,4575,219334,0.021,2505595
 hole,Paper — For Printing Or Writing,Sweden,Cwt,1874,,48876,,2493236
 hole,"Flowers, Artificial — Apples, Raw",United States Of America,Bushel,1887,,1516201,,2481341
-hole,Spirits — Not Tested For Ascertaining Strength,France,Gallon,1884,,4268,,2467486
-hole,Spirits — Not Tested For Ascertaining Strength,France,Gallon,1885,,4268,,2467486
-dip,Spirits — Not Tested For Ascertaining Strength,France,Gallon,1882,109,4268,0.026,2467486
 hole,"Zinc — Manufactures, Unenumerated",Germany,Cwt,1877,,99365,,2447427
 hole,"Zinc — Manufactures, Unenumerated",Germany,Cwt,1879,,99365,,2447427
 hole,"Zinc — Manufactures, Unenumerated",Germany,Cwt,1884,,99365,,2447427
@@ -1098,9 +1095,6 @@ dip,"Sugar — Sawn Or Split, Planed Or Dressed : Unenumerated",Norway,Load,1899
 hole,Tin — Ore Of,Chile,Ton,1884,,1117,,914478
 hole,Tin — Ore Of,Chile,Ton,1886,,1117,,914478
 hole,Tin — Ore Of,Chile,Ton,1887,,1117,,914478
-spike,Spirits — Not Tested For Ascertaining Strength,Belgium,Gallon,1882,6183,1495,4.136,912556
-dip,Spirits — Not Tested For Ascertaining Strength,Belgium,Gallon,1888,219,1495,0.146,912556
-dip,Spirits — Not Tested For Ascertaining Strength,Belgium,Gallon,1891,190,1495,0.127,912556
 spike,"Platina, Wrought Or Unwrought",Russia,Oz Troy,1875,144900,18026,8.038,903360
 hole,Gum — Arabic,Egypt,Cwt,1874,,10672,,894921
 hole,Gum — Arabic,Egypt,Cwt,1876,,10672,,894921
@@ -1251,8 +1245,6 @@ hole,Beef — Applicable To Manufacturing Purposes,Brazil,Ton,1888,,3257,,671986
 hole,Beef — Applicable To Manufacturing Purposes,Brazil,Ton,1889,,3257,,671986
 hole,Beef — Applicable To Manufacturing Purposes,Brazil,Ton,1890,,3257,,671986
 dip,Beef — Applicable To Manufacturing Purposes,Brazil,Ton,1878,756,3257,0.232,671986
-hole,Spirits — Not Tested For Ascertaining Strength,United States Of America,Gallon,1884,,941,,668870
-hole,Spirits — Not Tested For Ascertaining Strength,United States Of America,Gallon,1885,,941,,668870
 spike,Pears — Raw,Belgium,Bushel,1894,693017,165752,4.181,667718
 hole,Wood And Timber — Staves,Canada,Load,1892,,5498,,665546
 dip,Wood And Timber — Staves,Canada,Load,1888,62,5498,0.011,665546
@@ -2143,6 +2135,10 @@ hole,Waste Of,Italy,Lb,1879,,828944,,103184
 hole,Waste Of,Italy,Lb,1880,,828944,,103184
 hole,Waste Of,Italy,Lb,1881,,828944,,103184
 dip,"Fruit — Plums, Dried Or Preserved",Austrian Territories,Cwt,1890,350,3819,0.092,101741
+hole,Perfumed,Germany,Gallon,1883,,2044,,100579
+hole,Perfumed,Germany,Gallon,1884,,2044,,100579
+hole,Perfumed,Germany,Gallon,1885,,2044,,100579
+hole,Perfumed,Germany,Gallon,1886,,2044,,100579
 hole,Myrabolams,Bengal And Burmah,Cwt,1874,,13184,,100341
 spike,Myrabolams,Bengal And Burmah,Cwt,1872,55477,13184,4.208,100341
 spike,Myrabolams,Bengal And Burmah,Cwt,1878,79936,13184,6.063,100341
