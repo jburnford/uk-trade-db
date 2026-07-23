@@ -219,6 +219,13 @@ def toks(*parts):
     # as 1894/95 holes). Only yarn prints a WEAVING article, so this is safe.
     if 'WEAVING' in out:
         out -= {'MIXED', 'SILK'}
+    # condensed-milk label era: 'Milk, Condensed' (1888-91 own-year tables,
+    # 1892 manual rows) vs 'Milk, Condensed or Preserved' (1893+ comparative
+    # era) are one printed series — France/Holland showed as 1892/93 holes.
+    # The fresh-milk commodity ('Milk and Cream, Fresh or Preserved, other
+    # than Condensed Milk') keeps its identity via CREAM/FRESH tokens.
+    if {'MILK', 'CONDENSED'} <= out and 'CREAM' not in out:
+        out.discard('PRESERVED')
     return out
 
 
@@ -601,6 +608,29 @@ def main():
             for u, cells in units.items():
                 d['c'].setdefault(cty, {}).setdefault(u, []).extend(cells)
 
+    # ---- dedupe: a comparative-block groupfix can re-admit a (country,
+    # year) the consensus already carries (maize 1895-97 showed every
+    # Argentine/Canada/... cell twice, doubling year sums in the detectors).
+    # Same sig+country+unit+year = pathological duplicate, never a split
+    # segment (segments live under distinct labels/sigs). Keep the
+    # best-ranked cell; on rank tie keep the first-assembled (consensus and
+    # own-year sources are queried before gap-fill/groupfix copies).
+    n_dedup = 0
+    for s in comms.values():
+        for cty, units in s['c'].items():
+            for u, cells in units.items():
+                best = {}
+                for cell in cells:
+                    y, q, r = cell[0], cell[1], cell[2]
+                    if y not in best or r < best[y][2]:
+                        if y in best:
+                            n_dedup += 1
+                        best[y] = cell
+                    else:
+                        n_dedup += 1
+                if len(best) != len(cells):
+                    units[u] = [best[y] for y in sorted(best)]
+
     # ---- emit: display label = most common printed rendering ----
     payload = {}
     for sig, s in comms.items():
@@ -617,7 +647,8 @@ def main():
             print(f'  {n:5d}  {old}  ->  {new}')
     print(f'commodities: {len(payload)}  T1 cells: {n_tot:,} '
           f'(sticky repaired: {n_fixed:,}; fuzzy-merged: {n_fuzzy}; '
-          f'unit-healed: {n_healed:,}; coast-rollup: {n_coast:,})  '
+          f'unit-healed: {n_healed:,}; coast-rollup: {n_coast:,}; '
+          f'deduped: {n_dedup:,})  '
           f'MB: {len(js) / 1e6:.2f}  -> {out}')
 
 

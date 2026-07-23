@@ -104,3 +104,12 @@ hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",United States Of
 hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",United States Of America (Atlantic),1873,regime,See fowling 1873 note.
 hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",United States Of America (Atlantic),1874,regime,See fowling 1873 note.
 hole,"Arms, Ammunition, And Military Stores — Fowling Pieces",United States Of America (Atlantic),1875,regime,See fowling 1873 note.
+dip,"Nitre, Cubic",Peru,1889,regime,"War of the Pacific statistical aftermath: Chile annexed Tarapaca (Treaty of Ancon 1883) and in 1889 the UK statistics switch the nitrate attribution - Peru 1,773,135 (1888) -> 74,569 while Chile 106,700 -> 2,275,993 the same year; combined total continuous (1.88M -> 2.35M). Peru stays residual thereafter (third historical-event check after Russo-Turkish flax and piece-goods Peru 1883)."
+hole,Maize Or Indian Corn,Argentine Republic,1880,regime,"No Argentine row printed 1880/81 (own-year tables list Russia/Turkey/Roumania/US/BNA/Other only - Argentina's small pre-boom exports sat in Other Countries 80,696/231,400). Series starts properly 1882."
+hole,Maize Or Indian Corn,Argentine Republic,1881,regime,See maize Argentine 1880 note.
+dip,Maize Or Indian Corn,Argentine Republic,1893,genuine,"Two independent prints agree (own-year infonly + as_1897 comparative both 231,956/57,680). 1893 Argentine crop failure (locust plague) after the 1892 4.5M surge; recovers 1894 334k -> 1895 7.2M."
+spike,Maize Or Indian Corn,Argentine Republic,1896,genuine,"Two prints agree (consensus + as_1897 comparative both 16,107,900/2,789,134). 1896 = US maize shortage year; the whole import market spiked (grand 32.7M 1895 -> 48.9M 1896 per the comparative TOTALs)."
+spike,Maize Or Indian Corn,Russia,1894,genuine,"Consensus and the as_1897 comparative agree (Southern Ports 8,648,446/1,924,079); 1894 record Russian harvest + rate 0.22 in-series. Neighbours genuine (1893 2.9M, 1895 5.2M)."
+spike,Maize Or Indian Corn,Canada,1893,artifact,"The 8,260,851 spike was the S-form-broken infonly cell - replaced by the comparative's 3,250,851/756,614 (manual replace row + step-2 manual_replace check added to integrate)."
+spike,Maize Or Indian Corn,Canada,1898,genuine,"as_1899 comparative 7,972,502/1,533,749, rate 0.192 in-series; Canadian corn-export surge 1897 4.2M -> 1898 8.0M -> 1899 5.4M."
+dip,Maize Or Indian Corn,Russia,1877,regime,"Russo-Turkish War Black Sea export halt (same event as flax Southern Ports 1877): 199,931 vs neighbours; recovers 1878."

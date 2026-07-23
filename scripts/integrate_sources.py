@@ -255,6 +255,14 @@ def main():
                 continue
             if (asig, V.cnorm(c), y) in seen_added:
                 continue
+            # honor page-adjudicated manual replaces the way step 1 does
+            # (maize Canada 1893: the infonly cell reads 8,260,851/786,614,
+            # both digits S-form-broken; the manual row carries the page
+            # truth and must not be shadowed by the broken infonly copy)
+            ga2 = V.sig(f"{(g or '').upper()} {art}") or asig
+            if ((ga2, V.cnorm(c), y) in manual_replace
+                    or (asig, V.cnorm(c), y) in manual_replace):
+                continue
             seen_added.add((asig, V.cnorm(c), y))
             out_rows.append({'group': (g or '').upper(), 'article': art,
                 'country': c, 'unit': u or '', 'qty': float(q),
