@@ -146,3 +146,50 @@ before committing to it.
 1. Go/no-go on the campaign at all, and whether re-exports are in scope.
 2. Accept the recommended finish line (top-30 families) or set another.
 3. Whether to commission the mini-gold benchmark first.
+
+## Note added 2026-07-24 (round 28): export data is ALREADY PARSED, misfiled as imports
+
+Not acted on — recorded so the campaign starts from the real baseline rather
+than from zero. Found while adjudicating the import commodity list, not while
+looking for exports.
+
+**Two populations, both sitting in the import payload:**
+
+1. **Broken labels (21, adjudicated and dropped from the import payload).**
+   Listed with `klass=export-leakage` in `reports/phantom_label_shift.csv`.
+   The commodity head fused with a section country ('Cotton Twist And Yarn —
+   British India'), and the cells are destinations of British produce: cotton
+   yarn to Bombay/Madras/Bengal/Straits, woollens to Mexico/Venezuela/Ecuador/
+   Peru, beer to Bermudas and the Foreign West Indies, arms to Brazil and West
+   Africa, machinery and apparel to British Guiana, coals to Peru. Years span
+   1883–1892. These are dropped from the IMPORT payload only; the underlying
+   rows are untouched in `country_year_final`.
+
+2. **Clean labels (not adjudicated, much larger).** The signature is a
+   commodity with NO Tier-1 anchor, an export unit, and a destination-shaped
+   country list:
+   - `Woollen And Worsted Manufactures — Broad Cloths, Coatings, Duffs, &C.,
+     Plain, All Wool` and the rest of that family — unit **Yard**, 'origins'
+     Chile, Gibraltar, Bombay, Hong Kong, Australia, Canada, Japan. Britain
+     did not import broadcloth from Chile.
+   - `Cotton Manufactures — Piece Goods, Plain` (GBP527M) and `— Printed`
+     (GBP295M), `Cotton Twist And Yarn` (GBP95M) — same signature.
+   - 23 self-identifying `— To <Place>` labels ('Cotton Manufactures — To
+     United States Of America'): the preposition is printed only on the export
+     side, so these are free training examples.
+
+**Screening tool**: `scripts/detect_export_leakage.py` learns a destination
+country profile from both known sets and scores every unanchored commodity,
+writing `reports/export_leakage_candidates.csv` (363 candidates). Read the
+docstring first — it is a screen, not a verdict: the training set is small,
+the large partners trade in both directions so they carry no discriminating
+weight, and the log-odds over-rewards rare countries. Genuine unanchored
+imports ('Wine — Total Of All Kinds', 'Sugar — Unrefined, Total') rank inside
+the list. Judge each candidate on the printed evidence instead: a destination
+that could not have shipped the good, export units where the import tables use
+another, and no §TOTAL anchor anywhere in the family.
+
+**Consequence for the campaign**: phase 0 should begin by measuring this
+existing population rather than assuming exports are unparsed. If the phase-0
+count is large, the campaign is closer to a de-misfiling and validation job
+than to a fresh extraction job, which would change the 15–25 session estimate.
