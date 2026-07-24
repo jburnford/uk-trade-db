@@ -1,0 +1,59 @@
+commodity,gbp,klass,candidates
+Wheat,18760505,ambiguous-article,"Corn And Grain — Wheat | China, Or Porcelain, And Earthenware — Wheat | Cheese — Wheat | Corn — Wheat"
+Unrefined,8334361,ambiguous-article,Sugar — Unrefined | Petroleum — Unrefined
+Stuffs,5111544,ambiguous-article,Woollen Yarn — Stuffs | Woollen Manufactures — Stuffs
+Raw,4727126,ambiguous-article,Cotton — Raw | Cherries — Raw | Grapes — Raw | Onions — Raw
+Fresh,4413148,ambiguous-article,Fish — Fresh | Beef — Fresh | Beads Of All Sorts — Fresh
+Dressed,3236894,ambiguous-article,Lead — Dressed | Hemp — Dressed | Flax — Dressed | Leather — Dressed
+"In Blocks, Ingots, Bars, Or Slabs",2743814,ambiguous-article,"Tin — In Blocks, Ingots, Bars, Or Slabs | Slates — In Blocks, Ingots, Bars, Or Slabs | Sugar — In Blocks, Ingots, Bars, Or Slabs"
+Guano,2039478,overlapping-t1,Manures — Guano
+Pig And Sheet,1976436,overlapping-t1,Lead — Pig And Sheet
+Indigo,1903401,ambiguous-article,"Ice — Indigo | Drugs — Indigo | Dye Stuffs, And Substances Used In Tanning — Indigo | Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Indigo"
+Palm,1713829,ambiguous-article,"Oil — Palm | Nitre, Cubic (Nitrate Of Soda) — Palm"
+"Unwrought, In Bars, Blocks, Slabs, Cakes, Or Ingots",1703535,ambiguous-article,"Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots | Copper, Ore Of — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots"
+Oranges,1591052,overlapping-t1,Fruit — Oranges
+Currants,1586042,overlapping-t1,Fruit — Currants
+Olive,1559183,ambiguous-article,Oil — Olive | Gil — Olive | Fish — Olive | Nuts And Kernels — Olive
+For Weaving,1511924,overlapping-t1,Woollen Yarn — For Weaving
+Brandy,1261800,ambiguous-article,"Spirits — Brandy | Fruit — Brandy | Cards, Playing — Brandy | Spices — Brandy"
+Gloves,1219989,overlapping-t1,Leather Manufactures — Gloves
+Of All Kinds (Except Hangings),1065018,overlapping-t1,Paper And Pasteboard — Of All Kinds (Except Hangings)
+Raisins,1033510,ambiguous-article,Fruit — Raisins | Fruit Dried — Raisins
+Horses,921490,ambiguous-article,"Animals — Horses | Cows — Horses | Animals, Living — Horses"
+Clover And Grass - - - - -,855524,ambiguous-article,Seeds — Clover And Grass | Saltpetre (Nitrate Of Potash) — Clover And Grass
+Strawboard Or Millboard,517161,overlapping-t1,Paper — Strawboard And Millboard
+Turpentine,420029,ambiguous-article,Oil — Turpentine | Nuts And Kernels — Turpentine
+Opium,403170,ambiguous-article,Drugs — Opium | Oil — Opium | Oil Seed Cake — Opium | Onions — Opium
+Seed,396126,ambiguous-article,"Nuts And Kernels — Seed | Nitre, Cubic (Nitrate Of Soda) — Seed | Oil — Seed | Gil — Seed"
+Logwood,363083,ambiguous-article,Dye Woods — Logwood | Bark — Logwood
+"Train Or Blubber, And Sperm",361947,overlapping-t1,"Oil — Train Or Blubber, And Sperm"
+Rum,344446,ambiguous-article,Fruit — Rum | Spirits — Rum | Cocoa — Rum
+Almonds,340409,ambiguous-article,"Flowers, Artificial — Almonds | Fruit — Almonds | Flax, Dressed Or Undressed — Almonds | Flax — Almonds"
+All Other Sorts,338957,ambiguous-article,Meat — Other Sorts | Beer And Ale — Of Other Sorts | Tobacco — Other Sorts | Bank — Of Other Sorts
+Of Other Sorts,309099,ambiguous-article,Meat — Other Sorts | Beer And Ale — Of Other Sorts | Tobacco — Other Sorts | Bank — Of Other Sorts
+Rape,307348,ambiguous-article,Cotton — Rape | Seeds — Rape | Saltpetre (Nitrate Of Potash) — Rape
+Wrought Or Manufactured,301953,ambiguous-article,Metal — Wrought Or Manufactured | Manufactures Of Iron And Steel — Wrought Or Manufactured
+Pepper,301942,ambiguous-article,"Slates — Pepper | Spices — Pepper | Skins, Furs, And Pelts — Pepper | Skins, And Furs — Pepper"
+Wrought,284317,overlapping-t1,Metal Not Otherwise Enumerated — Wrought
+Ornamental,250631,ambiguous-article,Feathers And Down — Ornamental | Feathers — Ornamental | Eggs — Ornamental
+"Cow, Ox, Bull, Or Elk",218396,overlapping-t1,"Hair — Cow, Ox, Bull, Or Elk"
+Arabic,200083,ambiguous-article,Gum — Arabic | Glass — Arabic
+Manufactures Of,189461,ambiguous-article,Caoutchouc — Manufactures Of | Gutta Percha — Manufactures Of | Cloucharouc — Manufactures Of | Lead — Manufactures
+Myrobalans,179007,ambiguous-article,"Musical Instruments — Myrobalans | Drugs — Myrobalans | Dye Stuffs, And Substances Used In Tanning — Myrobalans | Corn And Grain — Myrobalans"
+Ginger,175435,ambiguous-article,"Spices — Ginger | Skins, Furs, And Pelts — Ginger'D) | Lates — Ginger | Cotton — Ginger"
+Molasses,169283,ambiguous-article,"Cards, Playing — Molasses | Sugar — Molasses | Sugarrefined, Or Rendered By Any Process Equal Thereto; Other Sorts, Including Candy — Molasses | Spices — Molasses"
+"Unenumerated, For Expressing Oil Therefrom",164083,ambiguous-article,"Cotton — Unenumerated, For Expressing Oil Therefrom | Seeds — Unenumerated, For Expressing Oil Therefrom"
+"Manufactures, Unenumerated",86211,ambiguous-article,"Lead — Manufactures, Unenumerated | Zinc — Manufactures, Unenumerated | Glass — Manufactures, Unenumerated | Zino — Manufactures, Unenumerated"
+Unenumerated,66414,ambiguous-article,Dye Woods — Unenumerated | Woollen Yarn — Unenumerated | Beads — Unenumerated | Manures — Unenumerated
+Geneva,61252,ambiguous-article,"Spirits — Geneva | Fruit — Geneva | Cards, Playing — Geneva"
+Animal,60152,ambiguous-article,Nuts And Kernels — Animal | Oil — Animal | Gil — Animal | Fish — Animal
+Other Materials,7896,ambiguous-article,Paper — Of Other Materials | Hats Or Bonnets — Of Other Materials
+Swine,668,ambiguous-article,"Animals, Living — Swine | Animals — Swine | Cows — Swine | Ammunition — Swine"
+Mahogany,0,ambiguous-article,Wood And Timber — Mahogany | Furniture And Hardwoods — Mahogany
+Cinnamon,0,ambiguous-article,Spices — Cinnamon | Lates — Cinnamon | Cotton — Cinnamon
+Refined And Candy,0,overlapping-t1,Sugar — Refined And Candy
+Unmanufactured,0,ambiguous-article,"Tobacco — Unmanufactured | Cork — Unmanufactured | Spirits — Unmanufactured | Cordage, Twine, And Cable Yarn — Unmanufactured"
+"Alpaca, Vicuña, And Llama - - - - -",0,ambiguous-article,"Wool — Alpaca, Vicuña, And Llama | Woollen Manufactures — Alpaca, Vicuña, And Llama"
+Beef,0,ambiguous-article,Meat — Beef | Manures — Beef
+For Beds,0,ambiguous-article,Feathers — For Beds | Feathers And Down — For Beds | Wood — For Beds
+Skins: Sheep And Lamb,0,overlapping-t1,Skins And Furs — Skins : Sheep And Lamb
