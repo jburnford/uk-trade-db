@@ -90,6 +90,7 @@ ALIAS = {
 }
 outliers = []            # origin cells that exceed the national anchor (log)
 value_dropped = []       # per-cell values over CAP (corrupt, not large)
+quality = []             # (commodity, [flag,...]) for the audit report
 cov_num = cov_den = 0
 out = {}
 for n in wl:
@@ -198,10 +199,39 @@ for n in wl:
     # NOT the wider Tier-1 anchor span (1866-1900): otherwise the slider lands
     # on years with a national total but no origin breakdown -> empty map.
     yrs = sorted(nat)
+    # ---- per-commodity quality flags, shown on the map itself ------------
+    # A reader cannot tell a well-measured series from a one-year fragment of
+    # a mislabelled table by looking at bubbles, so the limits travel with the
+    # data instead of living in a caveats paragraph nobody opens.
+    fl = []
+    if not per:
+        fl.append('noorig')          # nothing the gazetteer can place: blank map
+    if not sum(v for v, _q in nat.values()):
+        fl.append('noval')           # value toggle would show an empty map
+    if dom == '?':
+        fl.append('nounit')          # quantity axis unlabelled; units may be mixed
+    if len(yrs) == 1:
+        fl.append('oneyear')         # slider/sparkline imply a series of one point
+    if not t1:
+        fl.append('noanchor')        # no national total to check the origins against
+    else:
+        rr = sorted(nat[y][1] / t1[y] for y in yrs if t1.get(y) and nat[y][1])
+        if rr:
+            med = rr[len(rr) // 2]
+            if med > 1.15:
+                fl.append('overanchor')   # origins still double-count
+            elif med < 0.5:
+                fl.append('underanchor')  # map shows a slice as if it were the whole
+    rv = sum(a for a, _b in res.values())
+    tv = sum(v for v, _q in nat.values())
+    if tv and rv / tv > 0.6:
+        fl.append('resid')           # most of the trade is in unplaceable origins
+    quality.append((n, fl))
     out[n] = {
         'u': dom,
         'v': round(e['v']),
         'cat': classify(n),
+        'q': fl,
         'y': [yrs[0], yrs[-1]] if yrs else [0, 0],
         'c': {c: {str(y): [round(vv[0]), round(vv[1]), vv[2]]
                   for y, vv in d.items()}
@@ -226,6 +256,21 @@ payload = {
                          'so origins no longer double-count against the anchor. '
                          'Per-origin values remain provisional.',
         'n_commodities': len(out),
+        'flag_note': {
+            'noorig': 'no origin the gazetteer can place — the map stays blank',
+            'noval': 'no value figures — only the quantity measure works',
+            'nounit': 'the printed unit was not captured, so quantities may '
+                      'mix units and the axis is unlabelled',
+            'oneyear': 'origins for a single year only',
+            'noanchor': 'no national total published for this line, so the '
+                        'origins cannot be checked against one',
+            'overanchor': 'origins add up to more than the national total — '
+                          'residual double-counting',
+            'underanchor': 'origins add up to less than half the national '
+                           'total — the map shows part of the trade',
+            'resid': 'most of the trade is consigned from origins the '
+                     'gazetteer cannot place',
+        },
     },
     'gaz': gaz,
     'commodities': out,
@@ -247,6 +292,13 @@ with open('reports/value_cap_cells.csv', 'w', newline='') as f:
     w.writerow(['commodity', 'origin', 'year', 'value'])
     w.writerows(sorted(value_dropped, key=lambda r: -r[3]))
 print(f'impossible-origin cells dropped: {len(outliers)} -> reports/origin_outliers.csv')
+with open('reports/map_quality.csv', 'w', newline='') as f:
+    w = csv.writer(f)
+    w.writerow(['commodity', 'gbp', 'flags'])
+    w.writerows(sorted(((n, out[n]['v'], ' '.join(fl)) for n, fl in quality),
+                       key=lambda r: (-len(r[2].split()) if r[2] else 0, -r[1])))
+clean = sum(1 for _n, fl in quality if not fl)
+print(f'quality: {clean}/{len(quality)} unflagged -> reports/map_quality.csv')
 print(f'over-cap value cells dropped: {len(value_dropped)} '
       f'({len({r[0] for r in value_dropped})} commodities) -> reports/value_cap_cells.csv')
 print(f'map_slim.json: {sz/1e6:.2f} MB')

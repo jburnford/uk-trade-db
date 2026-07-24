@@ -96,6 +96,15 @@ h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
 .pickitem:hover,.pickitem.active{background:var(--panel2)}
 .pickitem .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pickitem .gb{color:var(--muted);font-size:12px;flex:none;font-variant-numeric:tabular-nums}
+.pickitem.flagged .nm{color:var(--muted)}
+.pickitem .fl{color:var(--warn);font-size:11px;flex:none;letter-spacing:.04em}
+.qnote{margin-top:9px;border-left:3px solid var(--warn-soft);background:var(--panel2);
+  border-radius:0 6px 6px 0;padding:7px 10px;font-size:12px;color:var(--muted);display:none}
+.qnote.show{display:block}
+.qnote b{color:var(--warn);font-weight:600}
+.qnote ul{margin:4px 0 0;padding-left:16px}
+.qnote li{margin:2px 0}
+.toggle button[disabled]{opacity:.4;cursor:not-allowed}
 .catchip{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--muted);
   border:1px solid var(--line);border-radius:20px;padding:2px 9px;margin-left:4px;vertical-align:middle}
 .slider-row{display:flex;align-items:center;gap:14px}
@@ -228,6 +237,7 @@ details.foot[open]>summary .chev{transform:rotate(90deg)}
       <div class="card pad">
         <div class="cname serif" id="cname">—</div>
         <div class="cmeta" id="cmeta"></div>
+        <div class="qnote" id="qnote"></div>
         <div class="stat"><div class="big mono" id="statbig">—</div><div class="u" id="statu"></div></div>
         <div class="cmeta" id="statsub"></div>
         <svg class="spark" id="spark" viewBox="0 0 300 52" preserveAspectRatio="none"></svg>
@@ -283,7 +293,7 @@ const VB={w:1000,h:548}, LON=[-135,182], LAT=[-52,74];
 const px = lon => (lon-LON[0])/(LON[1]-LON[0])*VB.w;
 const py = lat => (LAT[1]-lat)/(LAT[1]-LAT[0])*VB.h;
 
-let state={com:null, year:1885, meas:'v'};
+let state={com:null, year:1885, meas:'v', pref:'v'};
 const issuesByKey={};
 ISSUES.forEach(it=>{issuesByKey[it.c+' '+it.y]=it;});
 
@@ -302,23 +312,45 @@ const catList=Object.keys(cats).sort((a,b)=>cats[b].length-cats[a].length);
 let activeCat='All';
 function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 function catDot(c){return `<span class="cd" style="background:${CATCOLORS[c]||'#8A908C'}"></span>`;}
+// data-quality flags travel with each commodity (see meta.flag_note): a
+// reader cannot tell a well-measured series from a one-year fragment of a
+// mislabelled table by looking at bubbles, so the picker marks the difference
+// and the side panel spells it out.
+const FLAGNOTE = D.meta.flag_note||{};
+const flagsOf = n => COM[n].q||[];
+const cleanNames = names.filter(n=>!flagsOf(n).length);
+let cleanOnly=false;
 function renderTabs(){
-  const tabs=[['All',names.length]].concat(catList.map(c=>[c,cats[c].length]));
+  const base = cleanOnly? cleanNames : names;
+  const tabs=[['All',base.length]].concat(catList.map(c=>
+    [c, (cleanOnly? cats[c].filter(n=>!flagsOf(n).length) : cats[c]).length]));
   cattabs.innerHTML=tabs.map(([c,n])=>
-    `<button class="cattab${c===activeCat?' on':''}" data-cat="${esc(c)}">${c==='All'?'':catDot(c)}${esc(c)} <span class="c">${n}</span></button>`).join('');
+    `<button class="cattab${c===activeCat?' on':''}" data-cat="${esc(c)}">${c==='All'?'':catDot(c)}${esc(c)} <span class="c">${n}</span></button>`).join('')
+    + `<button class="cattab${cleanOnly?' on':''}" data-clean="1" title="Hide commodities with a data-quality caveat">`
+    + `Well&#8209;measured only <span class="c">${cleanNames.length}</span></button>`;
 }
 function renderPick(q){
   q=q.trim().toLowerCase();
-  const pool = activeCat==='All'? names : (cats[activeCat]||[]);
+  let pool = activeCat==='All'? names : (cats[activeCat]||[]);
+  if(cleanOnly) pool = pool.filter(n=>!flagsOf(n).length);
   const hits=(q? pool.filter(n=>n.toLowerCase().includes(q)) : pool).slice(0,150);
-  pickitems.innerHTML = hits.map(n=>
-    `<div class="pickitem" data-n="${esc(n)}">${catDot(catOf(n))}<span class="nm">${esc(n)}</span><span class="gb">${fmtGBP(COM[n].v)}</span></div>`).join('')
+  pickitems.innerHTML = hits.map(n=>{
+    const f=flagsOf(n);
+    const mark = f.includes('noorig')? 'not mappable'
+               : f.length? '&#9679;'.repeat(Math.min(f.length,3)) : '';
+    return `<div class="pickitem${f.length?' flagged':''}" data-n="${esc(n)}" `
+      + `title="${f.length? esc(f.map(k=>FLAGNOTE[k]||k).join(' · ')) : ''}">`
+      + `${catDot(catOf(n))}<span class="nm">${esc(n)}</span>`
+      + `<span class="gb">${mark? '<span class="fl">'+mark+'</span> ':''}${fmtGBP(COM[n].v)}</span></div>`;
+  }).join('')
     || '<div class="pickitem" style="grid-template-columns:1fr"><span class="nm">no match'+(activeCat!=='All'?' in '+esc(activeCat):'')+'</span></div>';
   picklist.classList.add('open');
 }
 cattabs.addEventListener('mousedown',e=>{const t=e.target.closest('.cattab');if(!t)return;
-  e.preventDefault();activeCat=t.dataset.cat;renderTabs();renderPick(search.value);search.focus();});
-search.addEventListener('focus',()=>{renderTabs();renderPick(search.value);});
+  e.preventDefault();
+  if(t.dataset.clean){cleanOnly=!cleanOnly;} else {activeCat=t.dataset.cat;}
+  renderTabs();renderPick(search.value);search.focus();});
+search.addEventListener('focus',()=>{renderTabs();renderPick('');search.select();});
 search.addEventListener('input',()=>renderPick(search.value));
 pickitems.addEventListener('mousedown',e=>{const it=e.target.closest('.pickitem');
   if(it&&it.dataset.n){select(it.dataset.n);picklist.classList.remove('open');search.blur();}});
@@ -327,8 +359,9 @@ document.addEventListener('click',e=>{if(!e.target.closest('.pickwrap'))picklist
 // ---------- controls ----------
 const yearEl=$('#year'), yearLbl=$('#yearlbl');
 yearEl.addEventListener('input',()=>{state.year=+yearEl.value;yearLbl.textContent=yearEl.value;draw();});
-$('#measure').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
-  state.meas=b.dataset.m;[...e.currentTarget.children].forEach(x=>x.classList.toggle('on',x===b));draw();});
+$('#measure').addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;
+  state.meas=state.pref=b.dataset.m;
+  [...e.currentTarget.children].forEach(x=>x.classList.toggle('on',x===b));draw();});
 let playing=null;
 $('#play').addEventListener('click',function(){
   if(playing){clearInterval(playing);playing=null;this.textContent='▶';return;}
@@ -347,6 +380,11 @@ function richestYear(c){let best=-1,by=null;
 function select(name){
   state.com=name;
   const c=COM[name];
+  // never leave the reader on a measure this commodity cannot answer, but
+  // restore their chosen measure as soon as one supports it
+  state.meas = (c.q||[]).includes('noval') ? 'q' : state.pref;
+  document.querySelectorAll('#measure button').forEach(b=>
+    b.classList.toggle('on', b.dataset.m===state.meas));
   const y0=c.y[0],y1=c.y[1];
   if(state.year<y0)state.year=y0; if(state.year>y1)state.year=y1;
   // if the carried-over year has no origins for this commodity, jump to its
@@ -414,6 +452,15 @@ function drawSide(c,pts){
   $('#cname').textContent=state.com;
   const cat=c.cat||'Other & miscellaneous';
   $('#cmeta').innerHTML=`<span class="catchip">${catDot(cat)}${cat}</span> ${c.y[0]}–${c.y[1]} · ${c.u} · ${fmtGBP(c.v)} lifetime`;
+  const qn=$('#qnote'), fl=c.q||[];
+  qn.classList.toggle('show', fl.length>0);
+  if(fl.length) qn.innerHTML='<b>Read with care</b><ul>'
+    + fl.map(k=>`<li>${esc(FLAGNOTE[k]||k)}</li>`).join('') + '</ul>';
+  // a commodity with no value figures cannot answer the value question: say so
+  // on the control rather than drawing an empty map
+  const vbtn=document.querySelector('#measure button[data-m="v"]');
+  vbtn.disabled = fl.includes('noval');
+  vbtn.title = vbtn.disabled? 'No value figures published for this commodity' : '';
   const yr=String(state.year), nat=c.nat[yr];
   const hasOrigins = pts.length>0 || (c.res[yr]&&(c.res[yr][0]||c.res[yr][1]));
   const statbig=$('#statbig'),statu=$('#statu'),statsub=$('#statsub'),origbox=$('#origbox');
