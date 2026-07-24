@@ -18,11 +18,17 @@ targets = {r['target'] for r in cur if r['action'] in ('fold', 'rename') and r['
 wl = sorted((keep | targets) & set(m), key=lambda n: -m[n]['v'])
 
 # commodity category (ordered keyword rules, first match wins) — a browsing
-# aid for the picker, not a scientific taxonomy
+# aid for the picker, not a scientific taxonomy.
+# Several keywords need explicit word boundaries: as bare substrings they
+# matched inside unrelated words and mis-filed the commodity in the picker —
+# 'rug' put every Drugs line under Textiles, 'fur' put Furniture under Animal
+# products, 'ale' put Whale Fisheries under Food, 'rum' put Musical
+# Instruments there too, and 'oat' would catch Coatings. Plural-only matches
+# ('wool' in 'woollen', 'skin' in 'skins') are left alone: those are correct.
 CAT_RULES = [
- ('Textiles, fibres & apparel', r'cotton|wool|worsted|silk|flax|linseed|jute|hemp|yarn|cloth|linen|muslin|manufactures of|piece goods|lace|carpet|hosiery|alpaca|mohair|vicu|thread|twist|apparel|haberdash|blanket|flannel|duffel|ribbon|velvet|tissue|embroider|felt|boot|shoe|hat|bonnet|glove|straw plat|coating|drawers|shawl|rug'),
- ('Food, drink & tobacco', r'sugar|molasses|treacle|glucose|tea\b|coffee|cocoa|chocolate|wine|spirit|brandy|geneva|rum|beer|ale|liqueur|corn|grain|wheat|maize|barley|oat|rye|rice|flour|meal|bread|biscuit|fruit|raisin|currant|orange|lemon|apple|prune|fig|nut|almond|meat|beef|pork|bacon|ham|mutton|fish|herring|salmon|oyster|butter|cheese|milk|egg|lard|tallow|stearine|margarine|spice|pepper|ginger|cinnamon|tobacco|cigar|snuff|salt|vinegar|sauce|honey|hops|potato|onion|vegetable|succade|confection|provision|yeast|chicory|sago|tapioca|arrowroot|coco.?nut|cured|preserved|pickle|seed'),
- ('Animals & animal products', r'animal|cattle|ox\b|oxen|sheep|lamb|swine|horse|cow|bull|hide|skin|fur|pelt|leather|horn|hoof|bone|bristle|feather|ivory|hair|isinglass|glue|gut|sponge|shell|coral|pearl'),
+ ('Textiles, fibres & apparel', r'cotton|wool|worsted|silk|flax|linseed|jute|hemp|yarn|cloth|linen|muslin|manufactures of|piece goods|lace|carpet|hosiery|alpaca|mohair|vicu|thread|twist|apparel|haberdash|blanket|flannel|duffel|ribbon|velvet|tissue|embroider|felt|boot|shoe|hat|bonnet|glove|straw plat|coating|drawers|shawl|\brugs?\b'),
+ ('Food, drink & tobacco', r'sugar|molasses|treacle|glucose|tea\b|coffee|cocoa|chocolate|wine|spirit|brandy|geneva|\brum\b|beer|\bales?\b|liqueur|corn|grain|wheat|maize|barley|\boats?\b|rye|rice|flour|meal|bread|biscuit|fruit|raisin|currant|orange|lemon|apple|prune|fig|nut|almond|meat|beef|pork|bacon|ham|mutton|fish|herring|salmon|oyster|butter|cheese|milk|egg|lard|tallow|stearine|margarine|spice|pepper|ginger|cinnamon|tobacco|cigar|snuff|salt|vinegar|sauce|honey|hops|potato|onion|vegetable|succade|confection|provision|yeast|chicory|sago|tapioca|arrowroot|coco.?nut|cured|preserved|pickle|seed'),
+ ('Animals & animal products', r'animal|cattle|ox\b|oxen|sheep|lamb|swine|horse|cow|bull|hide|skin|\bfurs?\b|pelt|leather|horn|hoof|bone|bristle|feather|ivory|hair|isinglass|glue|gut|sponge|shell|coral|pearl'),
  ('Chemicals, dyes & oils', r'chemical|acid|alkali|soda|potash|saltpetre|nitre|nitrate|ammonia|sulphur|dye|madder|indigo|logwood|cochineal|cutch|gambier|tanning|bark|drug|medicin|oil\b|petroleum|paraffin|naphtha|resin|rosin|gum|varnish|paint|colour|manure|guano|phosphate|soap|candle|collodi|caoutchouc|rubber|gutta|wax|bleaching|regulus|precipitate'),
  ('Metals & ores', r'iron|steel|copper|lead|tin\b|zinc|brass|bronze|gold\b|silver\b|platina|mercury|quicksilver|ore\b|metal|nickel|antimony|ingot|pig and|hardware|cutlery|nail|wire|anchor|chain|anvil'),
  ('Wood, forest & paper', r'wood|timber|deal|batten|stave|log\b|mahogany|oak|fir|teak|pine|cork|rattan|cane\b|osier|bamboo|paper|pulp|millboard|book|stationer|card'),
