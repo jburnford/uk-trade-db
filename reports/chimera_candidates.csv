@@ -1,0 +1,36 @@
+commodity,target,gbp,head_family,article_family,bucket,target_bucket
+"Slates — In Blocks, Ingots, Bars, Or Slabs","In Blocks, Ingots, Bars, Or Slabs",21296011,"Minerals, stone & glass",Metals & ores,NAME-ART?,EMPTY
+"China, Or Porcelain, And Earthenware — Wheat",Wheat,13599977,"Minerals, stone & glass","Food, drink & tobacco",KEEP,EMPTY
+"Sugar — In Blocks, Ingots, Bars, Or Slabs","In Blocks, Ingots, Bars, Or Slabs",11154125,"Food, drink & tobacco",Metals & ores,NAME-ART?,EMPTY
+Tobacco — Wood,Wood,8581342,"Food, drink & tobacco","Wood, forest & paper",KEEP,DUPE-FAM
+Rosin — Sago And Sago Flour,Sago And Sago Flour,4047255,"Chemicals, dyes & oils","Food, drink & tobacco",KEEP,FOLD?
+Slates — Pepper,Pepper,2600152,"Minerals, stone & glass","Food, drink & tobacco",REVIEW,EMPTY
+Flax — Almonds,Almonds,2004790,"Textiles, fibres & apparel","Food, drink & tobacco",DUPE-FAM,EMPTY
+"Beef — Books, Bound Or Unbound, Including Maps And Charts","Books, Bound Or Unbound, Including Maps And Charts",1572844,"Food, drink & tobacco","Wood, forest & paper",REVIEW,FOLD?
+"Skins, Furs, And Pelts — Pepper",Pepper,1364884,Animals & animal products,"Food, drink & tobacco",KEEP,EMPTY
+Animals — Swine,Swine,1177604,Animals & animal products,"Food, drink & tobacco",FOLD?,EMPTY
+"Cards, Playing — Brandy",Brandy,1138897,"Wood, forest & paper","Food, drink & tobacco",REVIEW,EMPTY
+"Silk Manufactures — Silver Ore, Or Ore Of Which The Greater Part In Value Is Silver","Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",998593,"Textiles, fibres & apparel",Metals & ores,KEEP,REVIEW
+"Soap — Spirits, British And Irish","Spirits, British And Irish",995182,"Chemicals, dyes & oils","Food, drink & tobacco",KEEP,KEEP
+"Cards, Playing — Geneva",Geneva,891908,"Wood, forest & paper","Food, drink & tobacco",REVIEW,EMPTY
+"Leather — Varnished, Japanned, Or Enamelled","Varnished, Japanned Or Enamelled",857971,Animals & animal products,"Chemicals, dyes & oils",NAME-ART?,REVIEW
+"Copper, Ore Of — Bark",Bark,626553,Metals & ores,"Chemicals, dyes & oils",DUPE-FAM,KEEP
+"Nitre, Cubic (Nitrate Of Soda) — Seed",Seed,517812,"Chemicals, dyes & oils","Food, drink & tobacco",KEEP,EMPTY
+"Cotton Manufactures — Earthenware, Not Being China Or Porcelain Ware","Earthenware, Not Being China Or Porcelain Ware",499052,"Textiles, fibres & apparel","Minerals, stone & glass",REVIEW,KEEP
+Cotton Manufactures — Cutch,Cutch,483388,"Textiles, fibres & apparel","Chemicals, dyes & oils",REVIEW,FOLD?
+Cows — Swine,Swine,455347,Animals & animal products,"Food, drink & tobacco",KEEP,EMPTY
+"Pyrites Of Iron Or Copper Or Sulphur Ore — Quicksilver, Metallic",Quicksilver (Metallic),407029,"Chemicals, dyes & oils",Metals & ores,DUPE-FAM,REVIEW
+"Cards, Playing — Molasses",Molasses,350741,"Wood, forest & paper","Food, drink & tobacco",KEEP,EMPTY
+Stationery Other Than Paper — Succades (Including Fruits And Vegetables Pre- Served In Sugar),Succades (Including Fruits And Vegetables Pre- Served In Sugar),319863,"Wood, forest & paper","Food, drink & tobacco",KEEP,KEEP
+"Flax, Dressed Or Undressed — Almonds",Almonds,259949,"Textiles, fibres & apparel","Food, drink & tobacco",KEEP,EMPTY
+Rags And Other Materials For Making Paper — Sago And Sago Flour,Sago And Sago Flour,244954,"Wood, forest & paper","Food, drink & tobacco",KEEP,FOLD?
+Fish — Animal,Animal,229971,"Food, drink & tobacco",Animals & animal products,KEEP,EMPTY
+Stationery Other Than Paper — Succades (Including All Fruits And Vegetables Pre- Served In Sugar),Succades (Including Fruits And Vegetables Pre- Served In Sugar),120794,"Wood, forest & paper","Food, drink & tobacco",REVIEW,KEEP
+Cotton — Cinnamon,Cinnamon,79433,"Textiles, fibres & apparel","Food, drink & tobacco",KEEP,EMPTY
+"Skins, And Furs — Pepper",Pepper,69753,Animals & animal products,"Food, drink & tobacco",DUPE-FAM,EMPTY
+"Arms, Ammunition, And Military Stores — Asphalt, Or Bitumen Judaicum","Asphalt, Or Bitumen Judaicum",68997,Machinery & manufactures,"Minerals, stone & glass",KEEP,KEEP
+Cotton — Ginger,Ginger,63310,"Textiles, fibres & apparel","Food, drink & tobacco",KEEP,EMPTY
+Ammunition — Swine,Swine,1492,Machinery & manufactures,"Food, drink & tobacco",REVIEW,EMPTY
+"Cards, Playing — Pickles Preserved In Vinegar",Pickles Preserved In Vinegar,1060,"Wood, forest & paper","Food, drink & tobacco",KEEP,FOLD?
+"Tobacco — Varnish, Containing Alcohol","Varnish, Containing Alcohol",378,"Food, drink & tobacco","Chemicals, dyes & oils",KEEP,KEEP
+"Butter — Buttons And Straps, Not Of Metal","Buttons And Straps, Not Of Metal",0,"Food, drink & tobacco",Metals & ores,KEEP,DUPE-FAM
