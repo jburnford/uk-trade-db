@@ -18,12 +18,20 @@ targets = {r['target'] for r in cur if r['action'] in ('fold', 'rename') and r['
 wl = sorted((keep | targets) & set(m), key=lambda n: -m[n]['v'])
 
 located = {k for k, v in gaz.items() if v['lat'] is not None}
-# child -> parent (coast, presidency, colony) from the gazetteer, inverted to
-# parent -> {children} for the parent<->child origin de-duplication
+# parent -> {children} for parent<->child origin de-duplication, built from
+# BOTH directions: child->parent pointers AND the umbrella 'children' lists
+# (umbrellas like 'Australia' / 'Sweden And Norway' / 'British West India
+# Islands' list children that don't carry a reciprocal parent pointer).
 children_of = collections.defaultdict(set)
 for k, v in gaz.items():
     if v.get('parent'):
         children_of[v['parent']].add(k)
+    for ch in v.get('children', ()):
+        children_of[k].add(ch)
+# label-variant duplicates: the same place printed two ways would be summed
+# twice. Canonicalise to one origin key.
+ALIAS = {'Chili': 'Chile', 'Portugal, Azores, And Madeira': 'Portugal'}
+outliers = []            # origin cells that exceed the national anchor (log)
 cov_num = cov_den = 0
 out = {}
 for n in wl:
@@ -37,11 +45,24 @@ for n in wl:
             if u != '?':
                 ucnt[u] += len(s)
     dom = ucnt.most_common(1)[0][0] if ucnt else '?'
+    # ---- Tier-1 anchor quantity per year (authoritative national total) ----
+    t1 = collections.defaultdict(int)
+    for u, s in e['c'].get('§TOTAL', {}).items():
+        if u == dom or dom == '?':
+            for cell in s:
+                t1[cell[0]] += cell[1]
+    if not t1:
+        for u, s in e['c'].get('§TOTAL', {}).items():
+            for cell in s:
+                t1[cell[0]] += cell[1]
     # ---- aggregate to (label, year) -> [value, qty(dom unit), bestRank] ----
+    # label-variant duplicates are canonicalised (Chili -> Chile) so the same
+    # place is never summed under two spellings.
     ly = {}
     for c, byu in e['c'].items():
         if c == '§TOTAL':
             continue
+        c = ALIAS.get(c, c)
         for u, s in byu.items():
             for y, q, r, v in s:
                 cell = ly.setdefault((c, y), [0, 0, r])
@@ -73,6 +94,20 @@ for n in wl:
             else:
                 for k in kids:
                     drop.add((k, y))              # parent is the fuller total
+    # ---- impossible-origin filter: one origin cannot exceed the whole
+    # national total. A cell whose quantity tops the Tier-1 anchor (x1.15
+    # tolerance for anchor noise) is corrupt — country-column glue from another
+    # commodity or a magnitude error (Burma 2.79M cwt "potatoes"; Russia 3.5M
+    # ton "logwood"; Greece 1.3M gal "collodion"). Drop it and log for a
+    # source-level fix. Only applied where the anchor is itself substantial.
+    for (c, y), cell in list(ly.items()):
+        t = t1.get(y, 0)
+        if t > 1000 and cell[1] > t * 1.15:
+            outliers.append({'commodity': n, 'year': y, 'origin': c,
+                             'unit': dom, 'qty': round(cell[1]),
+                             'anchor': round(t),
+                             'x_anchor': round(cell[1] / t, 1)})
+            drop.add((c, y))
     # ---- build per-origin / residual / national total from de-duped cells --
     per = {}
     res = collections.defaultdict(lambda: [0, 0])
@@ -89,16 +124,6 @@ for n in wl:
             res[y][0] += v
             res[y][1] += q
         cov_den += v
-    # Tier-1 anchor quantity per year (authoritative national total)
-    t1 = collections.defaultdict(int)
-    for u, s in e['c'].get('§TOTAL', {}).items():
-        if u == dom or dom == '?':
-            for cell in s:
-                t1[cell[0]] += cell[1]
-    if not t1:
-        for u, s in e['c'].get('§TOTAL', {}).items():
-            for cell in s:
-                t1[cell[0]] += cell[1]
     if not per and not res:
         continue
     yrs = sorted(set(nat) | set(t1))
@@ -136,6 +161,14 @@ payload = {
 Path('exports/map_slim.json').write_text(
     json.dumps(payload, ensure_ascii=False, separators=(',', ':')))
 sz = Path('exports/map_slim.json').stat().st_size
+# log the impossible-origin cells for source-level follow-up
+outliers.sort(key=lambda r: -r['x_anchor'])
+with open('reports/origin_outliers.csv', 'w', newline='') as f:
+    w = csv.DictWriter(f, fieldnames=['commodity', 'year', 'origin', 'unit',
+                                      'qty', 'anchor', 'x_anchor'])
+    w.writeheader()
+    w.writerows(outliers)
 print(f'commodities embedded: {len(out)}  gaz located: {len(located)}')
 print(f'mapped-origin value coverage: {100*cov_num/(cov_den or 1):.1f}% of located+residual value')
+print(f'impossible-origin cells dropped: {len(outliers)} -> reports/origin_outliers.csv')
 print(f'map_slim.json: {sz/1e6:.2f} MB')
