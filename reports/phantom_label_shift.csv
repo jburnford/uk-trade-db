@@ -1,0 +1,78 @@
+commodity,klass,gbp,n_cells,n_countries,host,host_share
+Cotton — British India,dupe-of-host,76964049,29,18,Cotton — Raw,90
+Cotton — United States Of America,dupe-of-host,11306351,24,10,Cotton — Raw,96
+Corn And Grain — British East Indies,dupe-of-host,10654106,9,7,Corn And Grain — Wheat,100
+Caoutchouc — East Coast Of Africa,dupe-of-host,6608505,52,33,Caoutchouc,87
+Cotton Manufactures — Eastern Africa,export-leakage,6245382,19,11,"Cotton Manufactures — Piece Goods, Plain",37
+Corn And Grain — Australasia,dupe-of-host,6205986,29,9,Corn And Grain — Wheat,76
+Cotton Twist And Yarn — British India,export-leakage,5841157,14,7,,0
+Cotton — British East Indies,dupe-of-host,4117799,14,11,Cotton — Raw,93
+Bark — Canada,recovery-candidate,3325426,24,6,"Cured Or Salted, Unenumerated",29
+Cotton Manufactures — United States Of America,dupe-of-host,3142525,13,8,"Cotton Manufactures — Piece Goods, Plain",54
+Lard — United States Of America,dupe-of-host,2707325,3,3,Lard,67
+Sugar — British East Indies,dupe-of-host,2659232,6,6,"Cane, And Other Sorts",100
+Cotton Manufactures — Australasia,dupe-of-host,2382967,19,12,"Cotton Manufactures — Piece Goods, Printed",79
+Spices — East Coast Of Africa,dupe-of-host,2172236,40,20,Spices,60
+Tea — British East Indies,dupe-of-host,1888895,5,5,Tea,100
+Butter — Australasia,dupe-of-host,1429977,5,5,Butter,100
+Coffee — British India,dupe-of-host,1109087,12,10,Coffee,75
+Rice — British East Indies,dupe-of-host,1099135,2,2,Rice,100
+Wood And Timber — British East Indies,dupe-of-host,908574,11,12,Wood And Timber,91
+Drugs — British India,dupe-of-host,719120,10,8,"Drugs — Bark, Peruvian",100
+Gutta Percha — British East Indies,dupe-of-host,678267,3,2,Gutta Percha,100
+Spirits — Australasia,recovery-candidate,562369,12,9,Spirits — Rum,17
+Coffee — British East Indies,dupe-of-host,559701,7,4,Coffee,71
+Caoutchouc — British East Indies,dupe-of-host,540565,15,8,Caoutchouc,100
+Drugs — British East Indies,dupe-of-host,435089,3,3,"Drugs — Bark, Peruvian",100
+Fruit — .. Australasia,dupe-of-host,402186,5,3,"Fruit — Apples, Raw",100
+Manures — British East Indies,dupe-of-host,363508,8,4,Manures — Bones For Manure,100
+Nuts And Kernels — .. British East Indies,dupe-of-host,331262,10,7,Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,90
+Ivory — East Coast Of Africa,recovery-candidate,316148,7,11,"Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse",29
+Hats Or Bonnets — Australasia,dupe-of-host,305194,9,5,Hemp — Dressed Or Undressed,100
+Cement — United States Of America,export-leakage,283239,6,5,,0
+Beer And Ale — United States Of America,export-leakage,212022,4,4,,0
+Leather — Australasia,dupe-of-host,178494,3,3,"Leather, Undressed",100
+Woollen And Worsted Manufactures — United States Of America,export-leakage,176921,5,5,,0
+"Arms, Ammunition, And Military Stores — Eastern Africa",export-leakage,154014,8,6,,0
+"Coals, Cinders, &C — United States Of America",export-leakage,151818,4,4,,0
+"Copper, Ore Of — Australasia",dupe-of-host,148497,12,6,Regulus And Precipitate,50
+Nuts And Kernels — .. East Coast Of Africa,dupe-of-host,132490,7,7,Nuts And Kernels,57
+"Arms, Ammunition, And Military Stores — Australasia",export-leakage,114374,6,6,,0
+Iron And Steel — Australasia,dupe-of-host,104262,2,2,"Iron — Old Broken, And Old Cast Iron And Steel",50
+Wine — Australasia,dupe-of-host,100515,6,6,"Tea — Red, In Casks",83
+Wood And Timber — East Coast Of Africa,dupe-of-host,82886,5,6,"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",60
+Cheese — Australasia,dupe-of-host,74257,1,1,Cheese,100
+Cotton Twist And Yarn — United States Of America,export-leakage,62818,2,2,,0
+Drugs — Australasia,dupe-of-host,58565,5,3,"Dye Stuffs, And Substances Used In Tanning — Bark",80
+Spices — Australasia,dupe-of-host,51675,2,2,"Skins, Furs, And Pelts — Furs, Unenumerated",100
+"Arms, Ammunition, And Militarystores — Eastern Africa",export-leakage,50358,4,4,,0
+Wood And Timber — Australasia,dupe-of-host,49334,3,2,"Wood And Timber — Unenumerated (Not Being Ash,     Beech, Birch, Elm, Oak, Or     Wainscot)",67
+Spices — British East Indies,recovery-candidate,46102,7,6,Spices — Ginger,29
+Nuts And Kernels — Australasia,dupe-of-host,45341,2,1,Nuts And Kernels,100
+Articles Imported By Parcelpost — British Possessions In Southafrica,dupe-of-host,41650,4,4,Zinc — Articles Imported By Parcel Post,100
+Zinc Or Spelter — British India,export-leakage,30840,1,1,,0
+Articles Imported By Parcelpost — British East Indies,dupe-of-host,28072,2,3,Zinc — Articles Imported By Parcel Post,100
+Gutta Percha — British India,dupe-of-host,24932,2,2,Gutta Percha,100
+"Skins, Furs, And Pelts — British East Indies",dupe-of-host,24336,4,2,"Skins, Furs, And Pelts — Goat, Undressed",50
+Lead — .. Australasia,dupe-of-host,21947,2,2,Lead — Pig And Sheet,100
+Cotton Manufactures — British India,dupe-of-host,16339,2,2,"Cotton Manufactures — Piece Goods, Plain",50
+Beer And Ale — British India,export-leakage,12867,1,1,,0
+Tallow And Stearine — .. Australasia,dupe-of-host,11987,3,3,Tallow And Stearine,100
+Woollen And Worsted Manufactures — Australasia,export-leakage,11681,1,1,,0
+Glass — United States Of America,export-leakage,11437,1,1,,0
+Gum — British India,dupe-of-host,10569,1,1,"Lac, Seed, Shell, Stick, And Dye",100
+Soap — United States Of America,export-leakage,9814,2,2,,0
+"Arms, Ammunition, And Militarystores — Australasia",export-leakage,8334,3,4,,0
+Coco A — British East Indies,dupe-of-host,7858,1,1,Cocoa,100
+Horns And Hoops — British East Indies,dupe-of-host,7774,1,1,Horns And Hoofs,100
+"Arms, Ammunition, And Militarystores — British India",export-leakage,7058,1,1,,0
+Cocoa — British East Indies,dupe-of-host,5557,4,3,Cocoa,100
+Copper — Australasia,dupe-of-host,4897,1,1,Regulus And Precipitate,100
+"Animals, Living — United States Of America",export-leakage,3722,2,2,,0
+"Cordage, Cables, Ropes, And Twine Of Hemp, Or Like Material — Australasia",export-leakage,3137,1,2,,0
+"Skins, Furs, And Pelts — East Coast Of Africa",dupe-of-host,2533,1,1,"Skins, Furs, And Pelts — Goat, Undressed",100
+Fruit — .. British Possessions In South Africa,dupe-of-host,1589,3,3,Grapes — Raw,100
+Seeds — British East Indies,dupe-of-host,262,1,1,"Seeds — Unenumerated, For Expressing Oil Therefrom",100
+Apparel And Slops — British India,export-leakage,0,6,5,,0
+Machinery And Mill Work — British India,export-leakage,0,1,1,,0
+"Shells, Of All Kinds — East Coast Of Africa",recovery-candidate,0,8,8,,0

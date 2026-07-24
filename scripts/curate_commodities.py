@@ -32,10 +32,15 @@ def toks(name):
 # so they pass the place-vocab frequency gate and wrongly mark real qualifier
 # articles ('Iron — Unenumerated') as place-article phantoms. A label whose
 # tokens are ALL generic is never a place.
+# 'MANUFACTURES'/'MANUFACTURED' earn their place here for the opposite reason:
+# they never occur in a country label, but 'Manufactures Of' IS a legitimate
+# commodity article ('Caoutchouc — Manufactures Of' = rubber goods). It reached
+# the place vocabulary only because the same string is also a junk country
+# label in >=5 commodities, which then marked three real commodities PHANTOM?.
 GENERIC_PLACE = {'UNENUMERATED', 'UNENUMBERED', 'FOREIGN', 'TOTAL', 'OTHER',
                  'SORTS', 'KINDS', 'UNSPECIFIED', 'DESCRIPTIONS', 'ARTICLES',
                  'GOODS', 'SUNDRIES', 'DECLARED', 'SUCH', 'VALUE', 'ENUMERATED',
-                 'NULL', 'NONE', 'MISCELLANEOUS'}
+                 'NULL', 'NONE', 'MISCELLANEOUS', 'MANUFACTURES', 'MANUFACTURED'}
 
 
 def real_place(label):
@@ -47,6 +52,15 @@ def main(path):
     p = json.load(open(path))
     # cell fingerprint index
     cell_owner = collections.defaultdict(set)   # (country,unit,year,qty) -> names
+    # UNIT-BLIND index (country,year,qty). A label-shift copy of a printed
+    # origin table usually loses its unit header, so the duplicate cells carry
+    # unit '?' while the host carries 'Cwt' — the unit-aware fingerprint then
+    # scores 0% dupe and the copy looks like a genuine tail commodity
+    # ('Cotton — British India' is an exact '?'-unit copy of Cotton — Raw's
+    # 1883/84 table and scored dupe=0). Matching on (country, year, qty) alone
+    # catches these; a >100 qty triple colliding by chance across two labels is
+    # rare enough to be worth the false-positive risk.
+    cell_owner_ub = collections.defaultdict(set)
     stats = {}
     for name, e in p.items():
         c = e.get('c') or {}
@@ -60,6 +74,7 @@ def main(path):
                         cells.append((ctry, u, row[0], row[1]))
         for k in cells:
             cell_owner[k].add(name)
+            cell_owner_ub[(k[0], k[2], k[3])].add(name)
         stats[name] = dict(gbp=e.get('v') or 0, has_t1='§TOTAL' in c,
                            n_cells=len(cells), cells=cells,
                            n_countries=sum(1 for k in c if k != '§TOTAL'))
@@ -105,6 +120,20 @@ def main(path):
                 if o != name:
                     co[o] += 1
         co_top = co.most_common(1)[0][0] if co else ''
+        # unit-blind pass: same measures on (country, year, qty)
+        ub_keys = [(k[0], k[2], k[3]) for k in s['cells']]
+        dupes_ub = sum(1 for k in ub_keys if len(cell_owner_ub[k]) > 1)
+        dupe_score_ub = dupes_ub / s['n_cells'] if s['n_cells'] else 0
+        co_ub = collections.Counter()
+        for k in ub_keys:
+            for o in cell_owner_ub[k]:
+                if o != name:
+                    co_ub[o] += 1
+        co_top_ub, co_top_ub_n = co_ub.most_common(1)[0] if co_ub else ('', 0)
+        # host share: what fraction of THIS commodity's cells the single
+        # biggest co-owner accounts for. >=0.5 means the label is essentially
+        # a re-print of that host's table, not an overlapping neighbour.
+        host_share = co_top_ub_n / s['n_cells'] if s['n_cells'] else 0
         place_article = ''
         name_article = ''            # article IS a standalone commodity name
         m = re.match(r'^(.*?) — (.+)$', name)
@@ -137,6 +166,9 @@ def main(path):
             bucket = 'NAME-ART?'
         elif dupe_score > 0.5 and co_top and stats.get(co_top, {}).get('gbp', 0) >= s['gbp']:
             bucket = 'DUPE-FAM'
+        elif (host_share > 0.5 and co_top_ub
+                and stats.get(co_top_ub, {}).get('gbp', 0) >= s['gbp']):
+            bucket = 'DUPE-FAM'      # unit-lost re-print of a single host
         elif frag:
             bucket = 'FOLD?'
         elif s['has_t1'] and dupe_score < 0.2:
@@ -149,7 +181,10 @@ def main(path):
                          has_t1=int(s['has_t1']), n_cells=s['n_cells'],
                          n_countries=s['n_countries'],
                          dupe_pct=round(100*dupe_score),
-                         dupe_partner=co_top, place_article=place_article,
+                         dupe_partner=co_top,
+                         dupe_pct_ub=round(100*dupe_score_ub),
+                         host_share=round(100*host_share),
+                         dupe_partner_ub=co_top_ub, place_article=place_article,
                          name_article=name_article, fold_candidate=frag))
     rows.sort(key=lambda r: (r['bucket'], -r['gbp']))
     out = 'reports/commodity_curation_queue.csv'
