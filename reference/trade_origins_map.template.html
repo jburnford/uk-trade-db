@@ -74,16 +74,30 @@ h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
 #search{width:100%;padding:9px 11px;border:1px solid var(--line2);border-radius:7px;
   background:var(--paper);color:var(--ink);font-size:15px;font-family:inherit}
 #search:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
-.picklist{position:absolute;z-index:30;top:calc(100% + 4px);left:0;right:0;max-height:320px;
-  overflow-y:auto;background:var(--panel);border:1px solid var(--line2);border-radius:8px;
-  box-shadow:var(--shadow);display:none}
+.cathint{color:var(--muted);text-transform:none;letter-spacing:0;font-weight:400;font-size:11px}
+.picklist{position:absolute;z-index:30;top:calc(100% + 4px);left:0;right:0;
+  background:var(--panel);border:1px solid var(--line2);border-radius:8px;
+  box-shadow:var(--shadow);display:none;overflow:hidden}
 .picklist.open{display:block}
-.pickitem{padding:7px 11px;cursor:pointer;display:flex;justify-content:space-between;gap:12px;
-  border-bottom:1px solid var(--line)}
+.cattabs{display:flex;gap:6px;flex-wrap:wrap;padding:9px 9px 8px;border-bottom:1px solid var(--line);
+  background:var(--panel2)}
+.cattab{border:1px solid var(--line2);background:var(--paper);color:var(--muted);border-radius:20px;
+  padding:4px 10px;font-size:11.5px;cursor:pointer;white-space:nowrap;font-weight:600;font-family:inherit;
+  display:inline-flex;align-items:center;gap:5px}
+.cattab:hover{border-color:var(--accent);color:var(--ink)}
+.cattab.on{background:var(--accent);color:var(--on-ink);border-color:var(--accent)}
+.cattab .c{opacity:.65;font-weight:500;font-variant-numeric:tabular-nums}
+.cattab.on .c{opacity:.85}
+.cd{width:8px;height:8px;border-radius:2px;flex:none}
+.pickitems{max-height:300px;overflow-y:auto}
+.pickitem{padding:7px 11px;cursor:pointer;display:grid;grid-template-columns:8px 1fr auto;
+  gap:9px;align-items:center;border-bottom:1px solid var(--line)}
 .pickitem:last-child{border-bottom:none}
 .pickitem:hover,.pickitem.active{background:var(--panel2)}
 .pickitem .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.pickitem .gb{color:var(--muted);font-size:12px;flex:none}
+.pickitem .gb{color:var(--muted);font-size:12px;flex:none;font-variant-numeric:tabular-nums}
+.catchip{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--muted);
+  border:1px solid var(--line);border-radius:20px;padding:2px 9px;margin-left:4px;vertical-align:middle}
 .slider-row{display:flex;align-items:center;gap:14px}
 #year{flex:1;accent-color:var(--accent);height:4px}
 .yearbig{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:30px;font-weight:600;
@@ -172,9 +186,12 @@ details.foot[open]>summary .chev{transform:rotate(90deg)}
 
   <div class="toolbar">
     <div class="field pickwrap">
-      <label for="search">Commodity</label>
-      <input id="search" type="search" autocomplete="off" spellcheck="false" placeholder="Search 1,235 commodities…">
-      <div class="picklist" id="picklist"></div>
+      <label for="search">Commodity <span class="cathint" id="cathint"></span></label>
+      <input id="search" type="search" autocomplete="off" spellcheck="false" placeholder="Search or browse by category…">
+      <div class="picklist" id="picklist">
+        <div class="cattabs" id="cattabs"></div>
+        <div class="pickitems" id="pickitems"></div>
+      </div>
     </div>
     <div class="field">
       <label for="year">Year</label>
@@ -239,7 +256,7 @@ details.foot[open]>summary .chev{transform:rotate(90deg)}
       <h4>Provenance tiers</h4>
       <p>Each origin cell carries a confidence tier from the reconciliation pipeline: <b>A</b> anchored to a national total, <b>B</b> intermediate, <b>C</b> weakly supported. Bubble darkness encodes the tier; bubble area encodes the measure.</p>
       <h4>Reconciling the origins</h4>
-      <p>A printed origin table often lists a parent total <em>and</em> its breakdown — "United States of America" alongside "on the Atlantic / on the Pacific", or "British East Indies" alongside Bombay, Madras and Bengal. Naïvely summing every line double‑counts, which made raw cotton (and ~50 other staples) read up to 1.8× their true volume in some years and produced a spurious "collapse" wherever the breakdown lines switched on or off. Origins are therefore de‑duplicated to the finest level available, and the national total is taken from the Statement's own Tier‑1 figure, so the two reconcile.</p>
+      <p>A printed origin table often lists a parent total <em>and</em> its breakdown — "United States of America" alongside "on the Atlantic / on the Pacific", or "British East Indies" alongside Bombay, Madras and Bengal. Naïvely summing every line double‑counts, which made raw cotton (and ~50 other staples) read up to 1.8× their true volume in some years and produced a spurious "collapse" wherever the breakdown lines switched on or off. Origins are therefore de‑duplicated to the finest level available, and the national total is taken from the Statement's own Tier‑1 figure, so the two reconcile. A further filter drops any single origin that exceeds the whole national total — an impossibility that flags corrupt cells (a mis‑attributed "84 billion lb of raw silk from Bombay", "1.3 million gallons of collodion from Greece"); 164 such cells are removed and logged for correction at source.</p>
       <h4>Draft status</h4>
       <p>This is a first draft for review. Value figures are provisional (value‑side reconciliation is pending; only quantities are anchored). The sugar commodity family and a set of country‑as‑article label defects remain queued. Basemap is a schematic equirectangular graticule, not a boundary map — appropriate to origins that are ports and shifting historical entities.</p>
     </div>
@@ -270,18 +287,41 @@ let state={com:null, year:1885, meas:'v'};
 const issuesByKey={};
 ISSUES.forEach(it=>{issuesByKey[it.c+' '+it.y]=it;});
 
-// ---------- commodity picker ----------
-const search=$('#search'), picklist=$('#picklist');
+// ---------- commodity picker: browse by category + search ----------
+const search=$('#search'), picklist=$('#picklist'), cattabs=$('#cattabs'),
+      pickitems=$('#pickitems'), cathint=$('#cathint');
+const CATCOLORS={
+ 'Textiles, fibres & apparel':'#4C6EA8','Food, drink & tobacco':'#C2703D',
+ 'Animals & animal products':'#9B6A8C','Chemicals, dyes & oils':'#3E8B80',
+ 'Metals & ores':'#6E7A86','Wood, forest & paper':'#8A6A46',
+ 'Minerals, stone & glass':'#5E8390','Machinery & manufactures':'#7A6BA8',
+ 'Other & miscellaneous':'#8A908C'};
+const catOf=n=>COM[n].cat||'Other & miscellaneous';
+const cats={}; names.forEach(n=>{(cats[catOf(n)]=cats[catOf(n)]||[]).push(n);});
+const catList=Object.keys(cats).sort((a,b)=>cats[b].length-cats[a].length);
+let activeCat='All';
+function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function catDot(c){return `<span class="cd" style="background:${CATCOLORS[c]||'#8A908C'}"></span>`;}
+function renderTabs(){
+  const tabs=[['All',names.length]].concat(catList.map(c=>[c,cats[c].length]));
+  cattabs.innerHTML=tabs.map(([c,n])=>
+    `<button class="cattab${c===activeCat?' on':''}" data-cat="${esc(c)}">${c==='All'?'':catDot(c)}${esc(c)} <span class="c">${n}</span></button>`).join('');
+}
 function renderPick(q){
   q=q.trim().toLowerCase();
-  const hits = (q? names.filter(n=>n.toLowerCase().includes(q)) : names).slice(0,50);
-  picklist.innerHTML = hits.map(n=>`<div class="pickitem" data-n="${esc(n)}"><span class="nm">${esc(n)}</span><span class="gb">${fmtGBP(COM[n].v)}</span></div>`).join('') || '<div class="pickitem"><span class="nm">no match</span></div>';
+  const pool = activeCat==='All'? names : (cats[activeCat]||[]);
+  const hits=(q? pool.filter(n=>n.toLowerCase().includes(q)) : pool).slice(0,150);
+  pickitems.innerHTML = hits.map(n=>
+    `<div class="pickitem" data-n="${esc(n)}">${catDot(catOf(n))}<span class="nm">${esc(n)}</span><span class="gb">${fmtGBP(COM[n].v)}</span></div>`).join('')
+    || '<div class="pickitem" style="grid-template-columns:1fr"><span class="nm">no match'+(activeCat!=='All'?' in '+esc(activeCat):'')+'</span></div>';
   picklist.classList.add('open');
 }
-function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
-search.addEventListener('focus',()=>renderPick(search.value));
+cattabs.addEventListener('mousedown',e=>{const t=e.target.closest('.cattab');if(!t)return;
+  e.preventDefault();activeCat=t.dataset.cat;renderTabs();renderPick(search.value);search.focus();});
+search.addEventListener('focus',()=>{renderTabs();renderPick(search.value);});
 search.addEventListener('input',()=>renderPick(search.value));
-picklist.addEventListener('mousedown',e=>{const it=e.target.closest('.pickitem');if(it&&it.dataset.n){select(it.dataset.n);picklist.classList.remove('open');search.blur();}});
+pickitems.addEventListener('mousedown',e=>{const it=e.target.closest('.pickitem');
+  if(it&&it.dataset.n){select(it.dataset.n);picklist.classList.remove('open');search.blur();}});
 document.addEventListener('click',e=>{if(!e.target.closest('.pickwrap'))picklist.classList.remove('open');});
 
 // ---------- controls ----------
@@ -362,7 +402,8 @@ function bindBubbles(c){
 // ---------- side panel ----------
 function drawSide(c,pts){
   $('#cname').textContent=state.com;
-  $('#cmeta').textContent=`${c.y[0]}–${c.y[1]} · unit ${c.u} · lifetime ${fmtGBP(c.v)}`;
+  const cat=c.cat||'Other & miscellaneous';
+  $('#cmeta').innerHTML=`<span class="catchip">${catDot(cat)}${cat}</span> ${c.y[0]}–${c.y[1]} · ${c.u} · ${fmtGBP(c.v)} lifetime`;
   const yr=String(state.year), nat=c.nat[yr];
   const hasOrigins = pts.length>0 || (c.res[yr]&&(c.res[yr][0]||c.res[yr][1]));
   const statbig=$('#statbig'),statu=$('#statu'),statsub=$('#statsub'),origbox=$('#origbox');

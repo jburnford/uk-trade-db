@@ -17,6 +17,26 @@ cur = list(csv.DictReader(open('reference/commodity_curation.csv')))
 targets = {r['target'] for r in cur if r['action'] in ('fold', 'rename') and r['target']}
 wl = sorted((keep | targets) & set(m), key=lambda n: -m[n]['v'])
 
+# commodity category (ordered keyword rules, first match wins) — a browsing
+# aid for the picker, not a scientific taxonomy
+CAT_RULES = [
+ ('Textiles, fibres & apparel', r'cotton|wool|worsted|silk|flax|linseed|jute|hemp|yarn|cloth|linen|muslin|manufactures of|piece goods|lace|carpet|hosiery|alpaca|mohair|vicu|thread|twist|apparel|haberdash|blanket|flannel|duffel|ribbon|velvet|tissue|embroider|felt|boot|shoe|hat|bonnet|glove|straw plat|coating|drawers|shawl|rug'),
+ ('Food, drink & tobacco', r'sugar|molasses|treacle|glucose|tea\b|coffee|cocoa|chocolate|wine|spirit|brandy|geneva|rum|beer|ale|liqueur|corn|grain|wheat|maize|barley|oat|rye|rice|flour|meal|bread|biscuit|fruit|raisin|currant|orange|lemon|apple|prune|fig|nut|almond|meat|beef|pork|bacon|ham|mutton|fish|herring|salmon|oyster|butter|cheese|milk|egg|lard|tallow|stearine|margarine|spice|pepper|ginger|cinnamon|tobacco|cigar|snuff|salt|vinegar|sauce|honey|hops|potato|onion|vegetable|succade|confection|provision|yeast|chicory|sago|tapioca|arrowroot|coco.?nut|cured|preserved|pickle|seed'),
+ ('Animals & animal products', r'animal|cattle|ox\b|oxen|sheep|lamb|swine|horse|cow|bull|hide|skin|fur|pelt|leather|horn|hoof|bone|bristle|feather|ivory|hair|isinglass|glue|gut|sponge|shell|coral|pearl'),
+ ('Chemicals, dyes & oils', r'chemical|acid|alkali|soda|potash|saltpetre|nitre|nitrate|ammonia|sulphur|dye|madder|indigo|logwood|cochineal|cutch|gambier|tanning|bark|drug|medicin|oil\b|petroleum|paraffin|naphtha|resin|rosin|gum|varnish|paint|colour|manure|guano|phosphate|soap|candle|collodi|caoutchouc|rubber|gutta|wax|bleaching|regulus|precipitate'),
+ ('Metals & ores', r'iron|steel|copper|lead|tin\b|zinc|brass|bronze|gold\b|silver\b|platina|mercury|quicksilver|ore\b|metal|nickel|antimony|ingot|pig and|hardware|cutlery|nail|wire|anchor|chain|anvil'),
+ ('Wood, forest & paper', r'wood|timber|deal|batten|stave|log\b|mahogany|oak|fir|teak|pine|cork|rattan|cane\b|osier|bamboo|paper|pulp|millboard|book|stationer|card'),
+ ('Minerals, stone & glass', r'coal|coke|culm|cinder|stone|marble|slate|granite|clay|earthenware|china|porcelain|glass|cement|lime\b|chalk|flint|sand|gravel|asphalt|mineral|diamond'),
+ ('Machinery & manufactures', r'machin|engine|locomot|apparatus|instrument|clock|watch|arms|ammunition|gun|rifle|carriage|vehicle|ship|furniture|toy|brush|jewel|fancy|musical'),
+]
+_catre = [(c, __import__('re').compile(p)) for c, p in CAT_RULES]
+def classify(n):
+    l = n.lower()
+    for cat, rx in _catre:
+        if rx.search(l):
+            return cat
+    return 'Other & miscellaneous'
+
 located = {k for k, v in gaz.items() if v['lat'] is not None}
 # parent -> {children} for parent<->child origin de-duplication, built from
 # BOTH directions: child->parent pointers AND the umbrella 'children' lists
@@ -130,6 +150,7 @@ for n in wl:
     out[n] = {
         'u': dom,
         'v': round(e['v']),
+        'cat': classify(n),
         'y': [yrs[0], yrs[-1]] if yrs else [0, 0],
         'c': {c: {str(y): [round(vv[0]), round(vv[1]), vv[2]]
                   for y, vv in d.items()}
