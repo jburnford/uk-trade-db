@@ -892,6 +892,57 @@
   "parent": null,
   "children": []
  },
+ "British West Africa": {
+  "lat": 6.45,
+  "lon": 3.39,
+  "kind": "aggregate",
+  "note": "the British West African settlements as one printed line (Gambia, Sierra Leone, Gold Coast, Lagos); placed at Lagos",
+  "parent": null,
+  "children": [
+   "Gambia",
+   "Sierra Leone",
+   "The Gold Coast",
+   "Lagos",
+   "Niger Protectorate"
+  ]
+ },
+ "Portuguese Possessions In Western Africa": {
+  "lat": -8.84,
+  "lon": 13.23,
+  "kind": "aggregate",
+  "note": "Portuguese West Africa (Angola, Cabinda, Portuguese Guinea); Luanda",
+  "parent": null,
+  "children": []
+ },
+ "East Coast Of Africa": {
+  "lat": -6.16,
+  "lon": 39.19,
+  "kind": "aggregate",
+  "note": "the East African coast as one printed line (Zanzibar, the Swahili coast, Mozambique); placed at Zanzibar",
+  "parent": null,
+  "children": [
+   "Zanzibar And Pemba"
+  ]
+ },
+ "Islands In The Pacific": {
+  "lat": -18.14,
+  "lon": 178.44,
+  "kind": "aggregate",
+  "note": "Pacific islands as one printed line (Fiji, the Friendly and Navigator Islands); placed at Levuka/Suva, Fiji",
+  "parent": null,
+  "children": []
+ },
+ "Tripoli And Tunis": {
+  "lat": 34.5,
+  "lon": 11.5,
+  "kind": "aggregate",
+  "note": "the Ottoman/French North African coast printed as one line; placed between Tunis and Tripoli",
+  "parent": null,
+  "children": [
+   "Tripoli",
+   "Tunis"
+  ]
+ },
  "Other Countries": {
   "lat": null,
   "lon": null,

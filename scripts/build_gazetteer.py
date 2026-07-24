@@ -137,6 +137,29 @@ add('Costa Rica', 9.98, -83.03, 'country', 'Puerto Limon (coffee, bananas)')
 add('Bulgaria', 43.20, 27.91, 'country', 'Black Sea; Varna (grain)')
 add('Bermudas', 32.29, -64.78, 'colony', 'British North Atlantic')
 
+# ---- third wave: regional groupings the residual audit showed recurring
+# across many commodities. These are printed as one line covering a stretch of
+# coast rather than a port, so each is placed at the coast's principal
+# consignment point and marked 'aggregate' - the reader sees a bubble on the
+# right coast instead of an unplaceable residual, and the note says what it
+# actually covers.
+add('British West Africa', 6.45, 3.39, 'aggregate',
+    'the British West African settlements as one printed line (Gambia, '
+    'Sierra Leone, Gold Coast, Lagos); placed at Lagos',
+    children=['Gambia', 'Sierra Leone', 'The Gold Coast', 'Lagos',
+              'Niger Protectorate'])
+add('Portuguese Possessions In Western Africa', -8.84, 13.23, 'aggregate',
+    'Portuguese West Africa (Angola, Cabinda, Portuguese Guinea); Luanda')
+add('East Coast Of Africa', -6.16, 39.19, 'aggregate',
+    'the East African coast as one printed line (Zanzibar, the Swahili coast, '
+    'Mozambique); placed at Zanzibar', children=['Zanzibar And Pemba'])
+add('Islands In The Pacific', -18.14, 178.44, 'aggregate',
+    'Pacific islands as one printed line (Fiji, the Friendly and Navigator '
+    'Islands); placed at Levuka/Suva, Fiji')
+add('Tripoli And Tunis', 34.50, 11.50, 'aggregate',
+    'the Ottoman/French North African coast printed as one line; placed '
+    'between Tunis and Tripoli', children=['Tripoli', 'Tunis'])
+
 # ---- residual aggregates (no single port: shown as unmapped total) ----
 for lbl, note in [
     ('Other Countries', 'residual "all other" foreign origins'),

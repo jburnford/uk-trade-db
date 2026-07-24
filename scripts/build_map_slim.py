@@ -87,6 +87,31 @@ ALIAS = {
     'Aden And Dependencies': 'Aden',
     'Guiana': 'British Guiana',
     'Hayti And St. Domingo': 'Hayti And St Domingo',
+    # ---- third-wave residual audit: variants of the regional groupings ----
+    # West Africa, British and foreign, is printed a dozen ways
+    'Western Africa (British': 'British West Africa',
+    'West Africa Settlements': 'British West Africa',
+    'Western Africa British Settlements': 'British West Africa',
+    'British Possessions On The Gold Coast': 'British West Africa',
+    'British Possessions In Western Africa': 'British West Africa',
+    'West Coast Of Africa Not Particularly Designated': 'Western Africa (Foreign',
+    'West Coast Of Africa Foreign': 'Western Africa (Foreign',
+    'West Africa (Foreign': 'Western Africa (Foreign',
+    'West Africa Foreign': 'Western Africa (Foreign',
+    'West Coast Of Africa (Foreign)': 'Western Africa (Foreign',
+    'West Coast Of Africa': 'Western Africa (Foreign',
+    'Portuguese Possessions': 'Portuguese Possessions In Western Africa',
+    'West Africa Portuguese Possessions Not Particularly Design Nated':
+        'Portuguese Possessions In Western Africa',
+    'East Coast Of Africa Native States': 'East Coast Of Africa',
+    'Eastern Coast Of Africa': 'East Coast Of Africa',
+    'Eastern Africa': 'East Coast Of Africa',
+    # spelling / comma variants of places already on the map
+    'United States Of Columbia': 'United States Of Colombia',
+    'Portugal Azores And Madeira': 'Portugal',
+    'British India And Burmah': 'British India',
+    'British East Indies Bengal': 'Bengal',
+    'The Cape Of Good Hope': 'Cape Of Good Hope',
 }
 outliers = []            # origin cells that exceed the national anchor (log)
 value_dropped = []       # per-cell values over CAP (corrupt, not large)
