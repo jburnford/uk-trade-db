@@ -63,3 +63,9 @@ Cheese — Wheatmeal Or Flour,rename,Wheatmeal And Flour,reclaim clean commodity
 Cotton — Tares And Lentils,rename,Tares And Lentils,reclaim clean commodity name; host group was cross-commodity glue
 "Sugar — Staves, Of All Dimensions",rename,"Staves, Of All Dimensions",reclaim clean commodity name; host group was cross-commodity glue
 Oil — Cotton Cake,rename,Cotton Cake,reclaim clean commodity name; host group was cross-commodity glue
+"Slates — Unrefined, Cane, And Other Sorts",fold,"Sugar — Unrefined : Cane, And Other Sorts",OCR-garble group prefix (Slates/Lates=Sugar glue); article is unambiguously sugar; recover cells to canonical sugar entry
+"Lates — Unrefined, Cane, And Other Sorts",fold,"Sugar — Unrefined : Cane, And Other Sorts",OCR-garble group prefix (Slates/Lates=Sugar glue); article is unambiguously sugar; recover cells to canonical sugar entry
+"Slates — Unrefined, Total",fold,"Sugar — Unrefined, Total",OCR-garble group prefix (Slates/Lates=Sugar glue); article is unambiguously sugar; recover cells to canonical sugar entry
+"Lates — Unrefined, Total",fold,"Sugar — Unrefined, Total",OCR-garble group prefix (Slates/Lates=Sugar glue); article is unambiguously sugar; recover cells to canonical sugar entry
+"Slates — Refined, Total",fold,Sugar — Refined : Total Of,OCR-garble group prefix (Slates/Lates=Sugar glue); article is unambiguously sugar; recover cells to canonical sugar entry
+Sugar — In Jumps And Loaves,fold,Sugar — In Lumps And Loaves,OCR-garble group prefix (Slates/Lates=Sugar glue); article is unambiguously sugar; recover cells to canonical sugar entry
