@@ -133,6 +133,7 @@ svg.map{width:100%;height:auto;display:block;border-radius:7px;background:var(--
 .issuechip b{color:var(--warn)}
 .legend{display:flex;flex-wrap:wrap;gap:16px 22px;padding:9px 14px 4px;font-size:12px;color:var(--muted)}
 .legend .grp{display:flex;align-items:center;gap:7px}
+.legend .grp.absent{opacity:.28}
 .dot{width:12px;height:12px;border-radius:50%;flex:none;border:1px solid rgba(0,0,0,.18)}
 .szdemo{display:flex;align-items:flex-end;gap:7px}
 .szdemo span{border-radius:50%;background:var(--faint);opacity:.5;border:1px solid var(--muted)}
@@ -226,9 +227,9 @@ details.foot[open]>summary .chev{transform:rotate(90deg)}
       <svg class="map" id="map" viewBox="0 0 1000 548" role="img" aria-label="Map of import origins"></svg>
       <div class="legend">
         <div class="grp"><b style="color:var(--ink)">Provenance</b></div>
-        <div class="grp"><span class="dot" style="background:var(--pA)"></span>Tier A — anchored</div>
-        <div class="grp"><span class="dot" style="background:var(--pB)"></span>Tier B</div>
-        <div class="grp"><span class="dot" style="background:var(--pC)"></span>Tier C — weak</div>
+        <div class="grp tierleg" data-t="1"><span class="dot" style="background:var(--pA)"></span>Tier A — anchored</div>
+        <div class="grp tierleg" data-t="2"><span class="dot" style="background:var(--pB)"></span>Tier B</div>
+        <div class="grp tierleg" data-t="3"><span class="dot" style="background:var(--pC)"></span>Tier C — weak</div>
         <div class="grp szdemo" style="margin-left:auto"><span style="width:8px;height:8px"></span><span style="width:15px;height:15px"></span><span style="width:24px;height:24px"></span>&nbsp;larger = more</div>
       </div>
     </div>
@@ -408,6 +409,22 @@ function draw(){
     const val = meas==='v'?cell[0]:cell[1];
     if(!val||!GAZ[lab]||GAZ[lab].lat==null)continue;
     pts.push({lab,val,rank:cell[2]||3,g:GAZ[lab]});
+  }
+  // the darkness ramp only means something where the tiers actually differ,
+  // and 669 of the mapped commodities carry a single tier throughout - dim the
+  // tiers this commodity-year does not use rather than implying a distinction
+  // The tier turns out to be a property of the YEAR's table, not of the
+  // individual origin: raw cotton is uniformly C in 1883, B in 1885, mixed in
+  // 1893. So the darkness ramp is usually flat within a view and the real
+  // signal is year to year - name the year's provenance in the subtitle and
+  // dim the tiers this view does not use.
+  const shown=new Set(pts.map(p=>p.rank));
+  document.querySelectorAll('.tierleg').forEach(el=>
+    el.classList.toggle('absent', pts.length>0 && !shown.has(+el.dataset.t)));
+  if(pts.length){
+    const L={1:'A',2:'B',3:'C'};
+    const t=[...shown].sort().map(k=>L[k]).join('/');
+    $('#mt-s').textContent += ' · provenance '+(shown.size>1?'mixed '+t:'tier '+t);
   }
   const maxAll = commodityMax(c,meas);
   const rOf = v => Math.max(2.2, Math.sqrt(v/maxAll)*38);
