@@ -1,0 +1,24 @@
+commodity,class,reason,suggested_action
+"Glass — Manufactures, Unenumerated",chimera-magnet,"groupless head 'Manufactures, Unenumerated' is shared by Glass/Zinc/Flint/Zino/Lead — each host IS its own real commodity (glass manufactures != zinc manufactures); the groupless head is the chimera. Do NOT fold hosts together.",keep hosts; drop or source-split the groupless 'Manufactures, Unenumerated' head
+"Zinc — Manufactures, Unenumerated",chimera-magnet,see Glass — Manufactures Unenumerated,keep host
+"Flint — Manufactures, Unenumerated",chimera-magnet,see Glass — Manufactures Unenumerated,keep host
+"Zino — Manufactures, Unenumerated",chimera-magnet,"OCR 'Zino'=Zinc; see Manufactures Unenumerated chimera",fold to Zinc — Manufactures Unenumerated (metal id confirmed)
+"Lead — Manufactures, Unenumerated",chimera-magnet,see Glass — Manufactures Unenumerated,keep host
+"Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",metal-fold,"host is the full real copper-unwrought series (Ton:292); groupless head 'Unwrought, In Bars, Blocks, Slabs...' is copper printed groupless. Metal — needs anomaly-workflow care before folding.",fold groupless head -> this host
+"Copper, Ore Of — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",metal-glue,"unwrought bars/ingots = refined copper METAL, not ore; glued under 'Copper, Ore Of'. Likely belongs to Copper — Unwrought.",fold to Copper — Unwrought (verify)
+"Sugar — In Blocks, Ingots, Bars, Or Slabs",chimera-magnet,"head 'In Blocks, Ingots, Bars, Or Slabs' shared by Sugar/Slates/Lates; Slates/Lates are OCR-garbled metal (tin?), Sugar-in-blocks is sugar. Different commodities.",source-split; identify the metal
+"Slates — In Blocks, Ingots, Bars, Or Slabs",ocr-garble,"'Slates'/'Lates' in ingots/bars is nonsensical for roofing slate — OCR garble of a metal (tin?). Needs page check.",queue for anomaly workflow
+"Lates — In Blocks, Ingots, Bars, Or Slabs",ocr-garble,"'Lates' = 'Slates' missing S; same metal garble as above",queue for anomaly workflow
+"Copper — Old, Fit Only To Be Re-Manufactured",metal-fold,"copper scrap; groupless head 'Old, Fit Only To Be Re-Manufactured' shared with Copper Ore Of and Meat(!). Metal — care.",fold groupless head + Copper Ore Of variant -> here
+"Copper, Ore Of — Old, Fit Only To Be Re-Manufactured",metal-glue,"copper scrap glued under Copper Ore Of",fold to Copper — Old Fit Only To Be Re-Manufactured
+"Meat, Unenumerated — Old, Fit Only To Be Re-Manufactured",cross-glue,"metal scrap (Ton) glued under Meat — clearly wrong host; belongs to copper/metal scrap",fold to metal scrap or drop
+"Metal — Wrought Or Manufactured",generic-fold,"generic 'Metal' host; groupless head 'Wrought Or Manufactured' same. Ambiguous which metal.",queue
+"Saltpetre (Nitrate Of Potash) — Clover And Grass",cross-glue,"clover-and-grass SEED (Cwt 1893-97) glued under Saltpetre fertilizer; 23M GBP. Real target likely 'Seeds — Clover And Grass' (a KEEP), NOT the tiny groupless 'Clover And Grass' head.",fold to Seeds — Clover And Grass (verify target)
+"Cotton — Unenumerated, For Expressing Oil Therefrom",cross-glue,"oilseed article (Quarter unit) glued under Cotton; belongs to Seeds — Unenumerated For Expressing Oil Therefrom",fold to seeds-oil target (verify)
+"Jute Yarn — Manufactures, Piece Goods",ambiguous,"jute piece-goods vs generic 'Manufactures: Piece Goods' head (Yard); single year 1882",queue
+"Chemical Manufactures And Products — Vegetable Matter Applicable To The Uses Of Chicory Or Coffee",cross-glue,"chicory-substitute vegetable matter glued under Chemical Manufactures; target 'Chicory : Other Vegetable Matter...'",fold to chicory target (verify)
+"Fish (Including Turtle) — Shell Fish Of All Sorts",semi-legit,"shellfish under Fish is semantically fine; groupless head 'Other Sorts Of Shell Fish' may be same commodity across eras",consider fold head->host
+"Eggs — Shell Fish, Oysters, All Sorts",cross-glue,"oysters/shellfish glued under Eggs; small",fold to oyster/shellfish head (verify)
+"Eggs — Shell Fish, Oysters For Food",cross-glue,see Eggs — Shell Fish Oysters All Sorts,fold to oyster head
+"Woollen Manufactures — Alpaca, Vicuña, And Llama",display-name,"alpaca/vicuna/llama wool glued under Woollen Manufactures; head 'Alpaca, Vicuña, And Llama - - - - -' has ugly dash-tail display name",fold to a clean alpaca-wool target
+"Skins, Furs, And Pelts — In Any Way Dressed; Not Leather : Undressed",messy-head,"head 'All Other Sorts, Undressed And Dressed }(Not Leather)' has brace garble; likely same skins commodity",fold head->host after name cleanup
