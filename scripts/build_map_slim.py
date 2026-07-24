@@ -89,6 +89,7 @@ ALIAS = {
     'Hayti And St. Domingo': 'Hayti And St Domingo',
 }
 outliers = []            # origin cells that exceed the national anchor (log)
+value_dropped = []       # per-cell values over CAP (corrupt, not large)
 cov_num = cov_den = 0
 out = {}
 for n in wl:
@@ -123,7 +124,17 @@ for n in wl:
         for u, s in byu.items():
             for y, q, r, v in s:
                 cell = ly.setdefault((c, y), [0, 0, r])
-                cell[0] += min(v, CAP)
+                # A value over the cap is a corrupt cell (a whole column read
+                # as one number), not a large one. Clamping it to the cap
+                # FABRICATES a GBP50M figure and, repeated across a table,
+                # floats the commodity to the top of the value ranking - three
+                # woollen export tables reached GBP0.75-1.0bn that way. Drop
+                # the cell and log it instead; the quantity side is unaffected
+                # because it is anchored separately.
+                if v > CAP:
+                    value_dropped.append((n, c, y, v))
+                    v = 0
+                cell[0] += v
                 if u == dom:
                     cell[1] += q
                 cell[2] = min(cell[2], r)
@@ -231,5 +242,11 @@ with open('reports/origin_outliers.csv', 'w', newline='') as f:
     w.writerows(outliers)
 print(f'commodities embedded: {len(out)}  gaz located: {len(located)}')
 print(f'mapped-origin value coverage: {100*cov_num/(cov_den or 1):.1f}% of located+residual value')
+with open('reports/value_cap_cells.csv', 'w', newline='') as f:
+    w = csv.writer(f)
+    w.writerow(['commodity', 'origin', 'year', 'value'])
+    w.writerows(sorted(value_dropped, key=lambda r: -r[3]))
 print(f'impossible-origin cells dropped: {len(outliers)} -> reports/origin_outliers.csv')
+print(f'over-cap value cells dropped: {len(value_dropped)} '
+      f'({len({r[0] for r in value_dropped})} commodities) -> reports/value_cap_cells.csv')
 print(f'map_slim.json: {sz/1e6:.2f} MB')
