@@ -144,14 +144,20 @@ for n in wl:
         for cell in ser:
             t1_by_u[u][cell[0]] = t1_by_u[u].get(cell[0], 0) + cell[1]
     unit_note = None
-    if dom in t1_by_u:
+    if dom != '?' and dom in t1_by_u:
         t1 = t1_by_u[dom]
     elif dom == '?' and t1_by_u:
-        # origins lost their unit but the national line kept one: adopt it,
-        # which both anchors the series and labels the quantity axis
-        dom = max(t1_by_u, key=lambda u: len(t1_by_u[u]))
+        # Origins lost their unit but the national line may have kept one, so
+        # adopt it: that both anchors the series and labels the quantity axis.
+        # Prefer a LABELLED §TOTAL unit even when the unlabelled one has more
+        # years - matching '?' to '?' is what let "Wool — Other Goats' Wool Or
+        # Hair" anchor its 1896-99 unlabelled series and ignore the Lb series
+        # covering 1893-95, giving a 4.95x ratio out of two different regimes.
+        dom = max(t1_by_u, key=lambda u: (u != '?', len(t1_by_u[u])))
         t1 = t1_by_u[dom]
-        unit_note = 'unit taken from the national total'
+        unit_note = (None if dom == '?' else
+                     'the origins carry no printed unit; the unit shown is '
+                     'the one on the national total')
     elif t1_by_u:
         # origins and anchor are labelled with DIFFERENT units. Decide by the
         # numbers, not by the labels: 'Oil — Olive' origins in "Tun" against a
