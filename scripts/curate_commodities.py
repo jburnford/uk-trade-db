@@ -27,6 +27,22 @@ def toks(name):
                      ('AND','THE','FOR','NOT','ALL','ANY','WAY','SORTS','OTHER',
                       'OF','OR','IN'))
 
+# generic country-column labels: OCR glue drops these junk 'countries'
+# ('Unenumerated', 'Foreign', 'Total of', 'Other Sorts') into >=5 commodities,
+# so they pass the place-vocab frequency gate and wrongly mark real qualifier
+# articles ('Iron — Unenumerated') as place-article phantoms. A label whose
+# tokens are ALL generic is never a place.
+GENERIC_PLACE = {'UNENUMERATED', 'UNENUMBERED', 'FOREIGN', 'TOTAL', 'OTHER',
+                 'SORTS', 'KINDS', 'UNSPECIFIED', 'DESCRIPTIONS', 'ARTICLES',
+                 'GOODS', 'SUNDRIES', 'DECLARED', 'SUCH', 'VALUE', 'ENUMERATED',
+                 'NULL', 'NONE', 'MISCELLANEOUS'}
+
+
+def real_place(label):
+    """True if the label carries at least one token that is not generic
+    junk-country vocab (so 'British India' is a place, 'Unenumerated' is not)."""
+    return bool(toks(label) - GENERIC_PLACE)
+
 def main(path):
     p = json.load(open(path))
     # cell fingerprint index
@@ -55,8 +71,28 @@ def main(path):
         for k in (e.get('c') or {}):
             if k != '§TOTAL':
                 cfreq[k.upper()] += 1
-    countries = {k for k, n in cfreq.items() if n >= 5}
+    countries = {k for k, n in cfreq.items() if n >= 5 and real_place(k)}
     t1_names = {n: toks(n) for n, s in stats.items() if s['has_t1']}
+
+    # standalone commodity vocabulary for the name-as-article check: a
+    # commodity printed as a bare head (no ' — ' article) that is itself
+    # T1-attested is a genuine independent top-level commodity. When such a
+    # name appears as ANOTHER commodity's article ('Cards, Playing — Molasses',
+    # 'Iron — Leather Manufacturers', 'Jute — Boots And Shoes'), the article's
+    # cells are that standalone commodity's rows glued under a stale host label.
+    # Keyed by token signature so 'Molasses' the head matches 'Molasses' the
+    # article. Requiring the head to be T1-attested is what keeps out glue
+    # bare-heads like 'In Blocks, Ingots, Bars' or 'Manufactures, Unenumerated'
+    # (article fragments that only exist as truncation artifacts, never printed
+    # as their own abstract line). Multi-token heads only (single-token
+    # 'Iron'/'Wool' collide with legitimate compound articles).
+    heads = {}
+    for name, s in stats.items():
+        if ' — ' in name or not s['has_t1']:
+            continue
+        sig = toks(name)
+        if sig and sig not in heads:
+            heads[sig] = name
 
     rows = []
     for name, s in stats.items():
@@ -70,11 +106,21 @@ def main(path):
                     co[o] += 1
         co_top = co.most_common(1)[0][0] if co else ''
         place_article = ''
+        name_article = ''            # article IS a standalone commodity name
         m = re.match(r'^(.*?) — (.+)$', name)
         if m:
             art = re.sub(r'^[.\s]+', '', m.group(2)).upper()
             if art in countries:
                 place_article = m.group(2)
+            # only when the host—article combo is NOT itself T1-attested: a
+            # printed abstract commodity ('Wool — Sheep or Lambs'',
+            # 'Animals, Living — Oxen and Bulls') is real, not glue, even
+            # though its article fragment recurs as a bare head elsewhere.
+            art_sig = toks(m.group(2))
+            host_sig = toks(m.group(1))
+            if (not s['has_t1'] and len(art_sig) >= 2 and art_sig in heads
+                    and art_sig != host_sig and heads[art_sig] != name):
+                name_article = heads[art_sig]
         frag = ''
         if not s['has_t1'] and s['n_cells']:
             t = toks(name)
@@ -87,6 +133,8 @@ def main(path):
             bucket = 'EMPTY'
         elif place_article:
             bucket = 'PHANTOM?'
+        elif name_article:
+            bucket = 'NAME-ART?'
         elif dupe_score > 0.5 and co_top and stats.get(co_top, {}).get('gbp', 0) >= s['gbp']:
             bucket = 'DUPE-FAM'
         elif frag:
@@ -102,7 +150,7 @@ def main(path):
                          n_countries=s['n_countries'],
                          dupe_pct=round(100*dupe_score),
                          dupe_partner=co_top, place_article=place_article,
-                         fold_candidate=frag))
+                         name_article=name_article, fold_candidate=frag))
     rows.sort(key=lambda r: (r['bucket'], -r['gbp']))
     out = 'reports/commodity_curation_queue.csv'
     with open(out, 'w', newline='') as f:
@@ -115,8 +163,9 @@ def main(path):
         gbp[r['bucket']] += r['gbp']
     G = sum(gbp.values()) or 1
     print(f'{len(rows)} commodities -> {out}')
-    for b in ('KEEP', 'FOLD?', 'DUPE-FAM', 'PHANTOM?', 'REVIEW', 'EMPTY'):
-        print(f'  {b:8s}: {cnt[b]:5d}  ({100*gbp[b]/G:5.1f}% of GBP)')
+    for b in ('KEEP', 'FOLD?', 'DUPE-FAM', 'NAME-ART?', 'PHANTOM?', 'REVIEW',
+              'EMPTY'):
+        print(f'  {b:9s}: {cnt[b]:5d}  ({100*gbp[b]/G:5.1f}% of GBP)')
 
 if __name__ == '__main__':
     main(sys.argv[1])
