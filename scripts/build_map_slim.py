@@ -15,6 +15,17 @@ rows = list(csv.DictReader(open('reports/commodity_curation_queue.csv')))
 keep = {r['commodity'] for r in rows if r['bucket'] == 'KEEP'}
 cur = list(csv.DictReader(open('reference/commodity_curation.csv')))
 targets = {r['target'] for r in cur if r['action'] in ('fold', 'rename') and r['target']}
+# commodities whose 'country' column is a list of commodities, not places
+# (scripts/detect_transposed_tables.py). The ones with no national series are
+# dropped outright by curation; these still publish a real §TOTAL, so the
+# commodity stays and only its bogus origins are suppressed - the map then
+# shows the national series with 'no origin breakdown published', which is
+# what the source actually supports.
+try:
+    TRANSPOSED = {r['commodity'] for r in
+                  csv.DictReader(open('reports/transposed_tables.csv'))}
+except FileNotFoundError:
+    TRANSPOSED = set()
 wl = sorted((keep | targets) & set(m), key=lambda n: -m[n]['v'])
 
 # commodity category (ordered keyword rules, first match wins) — a browsing
@@ -206,7 +217,7 @@ for n in wl:
     # label-variant duplicates are canonicalised (Chili -> Chile) so the same
     # place is never summed under two spellings.
     ly = {}
-    for c, byu in e['c'].items():
+    for c, byu in ({} if n in TRANSPOSED else e['c']).items():
         if c == '§TOTAL':
             continue
         c = ALIAS.get(c, c)
@@ -281,17 +292,19 @@ for n in wl:
             res[y][0] += v
             res[y][1] += q
         cov_den += v
-    if not per and not res:
-        continue
+    if not per and not res and n not in TRANSPOSED:
+        continue          # a suppressed table still has its national series
     # slider range = years that actually have ORIGIN data (bubbles/residual),
     # NOT the wider Tier-1 anchor span (1866-1900): otherwise the slider lands
     # on years with a national total but no origin breakdown -> empty map.
-    yrs = sorted(nat)
+    yrs = sorted(nat) or sorted(t1)
     # ---- per-commodity quality flags, shown on the map itself ------------
     # A reader cannot tell a well-measured series from a one-year fragment of
     # a mislabelled table by looking at bubbles, so the limits travel with the
     # data instead of living in a caveats paragraph nobody opens.
     fl = []
+    if n in TRANSPOSED:
+        fl.append('transposed')
     if not per:
         fl.append('noorig')          # nothing the gazetteer can place: blank map
     if not sum(v for v, _q in nat.values()):
@@ -347,6 +360,9 @@ payload = {
         'n_commodities': len(out),
         'flag_note': {
             'noorig': 'no origin the gazetteer can place — the map stays blank',
+            'transposed': 'the printed page was a list of commodities, not of '
+                          'origins, so the origin column has been suppressed — '
+                          'only the national total is shown',
             'noval': 'no value figures — only the quantity measure works',
             'nounit': 'the printed unit was not captured, so quantities may '
                       'mix units and the axis is unlabelled',
