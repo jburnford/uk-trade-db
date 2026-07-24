@@ -452,10 +452,11 @@ function drawSide(c,pts){
   $('#cname').textContent=state.com;
   const cat=c.cat||'Other & miscellaneous';
   $('#cmeta').innerHTML=`<span class="catchip">${catDot(cat)}${cat}</span> ${c.y[0]}–${c.y[1]} · ${c.u} · ${fmtGBP(c.v)} lifetime`;
-  const qn=$('#qnote'), fl=c.q||[];
-  qn.classList.toggle('show', fl.length>0);
-  if(fl.length) qn.innerHTML='<b>Read with care</b><ul>'
-    + fl.map(k=>`<li>${esc(FLAGNOTE[k]||k)}</li>`).join('') + '</ul>';
+  const qn=$('#qnote'), fl=c.q||[], notes=fl.map(k=>FLAGNOTE[k]||k);
+  if(c.un) notes.unshift(c.un);     // how the unit/anchor was reconciled
+  qn.classList.toggle('show', notes.length>0);
+  if(notes.length) qn.innerHTML='<b>Read with care</b><ul>'
+    + notes.map(x=>`<li>${esc(x)}</li>`).join('') + '</ul>';
   // a commodity with no value figures cannot answer the value question: say so
   // on the control rather than drawing an empty map
   const vbtn=document.querySelector('#measure button[data-m="v"]');

@@ -116,6 +116,8 @@ ALIAS = {
 outliers = []            # origin cells that exceed the national anchor (log)
 value_dropped = []       # per-cell values over CAP (corrupt, not large)
 quality = []             # (commodity, [flag,...]) for the audit report
+unit_alias = []          # origin/anchor unit labels that measure the same thing
+unit_mismatch = []       # ...and those that do not, so the anchor is dropped
 cov_num = cov_den = 0
 out = {}
 for n in wl:
@@ -130,15 +132,64 @@ for n in wl:
                 ucnt[u] += len(s)
     dom = ucnt.most_common(1)[0][0] if ucnt else '?'
     # ---- Tier-1 anchor quantity per year (authoritative national total) ----
-    t1 = collections.defaultdict(int)
-    for u, s in e['c'].get('§TOTAL', {}).items():
-        if u == dom or dom == '?':
-            for cell in s:
-                t1[cell[0]] += cell[1]
-    if not t1:
-        for u, s in e['c'].get('§TOTAL', {}).items():
-            for cell in s:
-                t1[cell[0]] += cell[1]
+    # The anchor must be ONE unit. The old code summed every §TOTAL unit
+    # whenever the origins carried no unit, which added a value series to a
+    # tonnage ('Nuts And Kernels' has both), and fell back to summing them all
+    # whenever the origin unit was absent from §TOTAL, which produced an
+    # anchor in Tons for origins measured in Cwts.
+    t1_by_u = collections.defaultdict(dict)
+    for u, ser in e['c'].get('§TOTAL', {}).items():
+        if u == 'Value':          # a value line is not a quantity anchor
+            continue
+        for cell in ser:
+            t1_by_u[u][cell[0]] = t1_by_u[u].get(cell[0], 0) + cell[1]
+    unit_note = None
+    if dom in t1_by_u:
+        t1 = t1_by_u[dom]
+    elif dom == '?' and t1_by_u:
+        # origins lost their unit but the national line kept one: adopt it,
+        # which both anchors the series and labels the quantity axis
+        dom = max(t1_by_u, key=lambda u: len(t1_by_u[u]))
+        t1 = t1_by_u[dom]
+        unit_note = 'unit taken from the national total'
+    elif t1_by_u:
+        # origins and anchor are labelled with DIFFERENT units. Decide by the
+        # numbers, not by the labels: 'Oil — Olive' origins in "Tun" against a
+        # "Ton" anchor come out at ratio 1.00, so those are one unit OCR'd two
+        # ways, while a genuine Ton/Cwt regime difference lands near 20. Only
+        # an exact-definition factor is applied; anything else means the two
+        # series are not comparable and the anchor is dropped rather than
+        # silently mis-scaling the map's national total.
+        au = max(t1_by_u, key=lambda u: len(t1_by_u[u]))
+        osum = collections.defaultdict(float)
+        for c2, byu2 in e['c'].items():
+            if c2 == '§TOTAL':
+                continue
+            for u2, ser2 in byu2.items():
+                for cell in ser2:
+                    osum[cell[0]] += cell[1]
+        rr = sorted(osum[y] / t1_by_u[au][y] for y in t1_by_u[au]
+                    if t1_by_u[au].get(y) and osum.get(y))
+        med = rr[len(rr) // 2] if rr else 0
+        FACT = {20: 'Cwt per Ton', 112: 'Lb per Cwt', 12: 'per dozen'}
+        if 0.95 <= med <= 1.05:
+            t1 = t1_by_u[au]
+            unit_note = (f'the national total is labelled "{au}" and the '
+                         f'origins "{dom}", but the figures are the same '
+                         f'series - one label is an OCR error')
+            unit_alias.append((n, dom, au, round(med, 3)))
+        elif any(0.95 <= med / f <= 1.05 for f in FACT):
+            f = next(f for f in FACT if 0.95 <= med / f <= 1.05)
+            t1 = {y: q * f for y, q in t1_by_u[au].items()}
+            unit_note = f'national total converted from {au} ({FACT[f]})'
+        else:
+            t1 = {}
+            unit_note = (f'the national total is printed in "{au}" while the '
+                         f'origins are in "{dom}" - not comparable, so no '
+                         f'anchor is used')
+            unit_mismatch.append((n, dom, au, round(med, 2)))
+    else:
+        t1 = {}
     # ---- aggregate to (label, year) -> [value, qty(dom unit), bestRank] ----
     # label-variant duplicates are canonicalised (Chili -> Chile) so the same
     # place is never summed under two spellings.
@@ -254,6 +305,7 @@ for n in wl:
     quality.append((n, fl))
     out[n] = {
         'u': dom,
+        **({'un': unit_note} if unit_note else {}),
         'v': round(e['v']),
         'cat': classify(n),
         'q': fl,
@@ -324,6 +376,13 @@ with open('reports/map_quality.csv', 'w', newline='') as f:
                        key=lambda r: (-len(r[2].split()) if r[2] else 0, -r[1])))
 clean = sum(1 for _n, fl in quality if not fl)
 print(f'quality: {clean}/{len(quality)} unflagged -> reports/map_quality.csv')
+with open('reports/unit_reconciliation.csv', 'w', newline='') as f:
+    w = csv.writer(f)
+    w.writerow(['commodity', 'origin_unit', 'anchor_unit', 'ratio', 'verdict'])
+    w.writerows([r + ('same unit, OCR variant',) for r in unit_alias]
+                + [r + ('not comparable, anchor dropped',) for r in unit_mismatch])
+print(f'unit labels reconciled: {len(unit_alias)} same-unit, '
+      f'{len(unit_mismatch)} incomparable -> reports/unit_reconciliation.csv')
 print(f'over-cap value cells dropped: {len(value_dropped)} '
       f'({len({r[0] for r in value_dropped})} commodities) -> reports/value_cap_cells.csv')
 print(f'map_slim.json: {sz/1e6:.2f} MB')
