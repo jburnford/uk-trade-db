@@ -1,5 +1,5 @@
 commodity,year,origin,unit,qty,anchor,x_anchor
-Silk — Raw,1873,Bombay And Scinde Bengal And Burmah,Lb,84778433506,6445213,13153.7
+Silk — Raw,1873,British East Indies,Lb,84778433506,6445213,13153.7
 "Teeth, Elephants', Sea Cow, And Sea Horse",1881,Other Countries,Cwt,25711341,12377,2077.3
 Collodium,1894,Greece,Gallon,1301735,1270,1025.0
 Collodium,1897,Greece,Gallon,1120478,1575,711.4
@@ -87,7 +87,7 @@ Leather — Dressed,1893,Canada,Lb,1544765,344263,4.5
 Collodium,1896,Italy,Gallon,7931,1819,4.4
 Collodium,1894,Austrian Territories,Gallon,5471,1270,4.3
 Saltpetre (Nitrate Of Potash),1897,Hong Kong,Cwt,1348490,330013,4.1
-Collodium,1894,Turkey Asiatic,Gallon,5218,1270,4.1
+Collodium,1894,Turkey,Gallon,5218,1270,4.1
 Collodium,1893,Portugal,Gallon,7892,1942,4.1
 "Madder, Madder Root, Garancine, And Munjeet",1896,Bengal,Cwt,21340,5217,4.1
 "Cured Or Salted, Unenumerated",1894,Canada,Cwt,249970,61927,4.0
@@ -104,7 +104,7 @@ Horse,1874,Belgium,Cwt,69180,19102,3.6
 Collodium,1893,France,Gallon,6903,1942,3.6
 Dye Woods — Logwood,1898,Egypt,Ton,149334,42374,3.5
 Collodium,1897,France,Gallon,5575,1575,3.5
-Collodium,1897,Turkey Asiatic,Gallon,5386,1575,3.4
+Collodium,1897,Turkey,Gallon,5386,1575,3.4
 Collodium,1896,Austrian Territories,Gallon,6021,1819,3.3
 Saltpetre (Nitrate Of Potash),1897,United States Of America,Cwt,1032074,330013,3.1
 Saltpetre (Nitrate Of Potash),1897,United States Of America (Atlantic),Cwt,1025074,330013,3.1
@@ -118,7 +118,7 @@ Yarn,1891,Germany,Lb,8528710,3021391,2.8
 Yarn,1887,Germany,Lb,6978561,2556642,2.7
 Yarn,1884,Germany,Lb,6530353,2534462,2.6
 Saltpetre (Nitrate Of Potash),1895,United States Of America,Cwt,598730,228477,2.6
-Collodium,1893,Turkey Asiatic,Gallon,4780,1942,2.5
+Collodium,1893,Turkey,Gallon,4780,1942,2.5
 Dye Woods — Logwood,1898,Portugal,Ton,100700,42374,2.4
 Yarn,1889,Germany,Lb,7910652,3422121,2.3
 Wool — Other Goats' Wool Or Hair,1896,Russia (Southern Ports),?,5058469,2156233,2.3
@@ -153,6 +153,8 @@ Tobacco — Unmanufactured,1894,United States Of America,Lb,76105900,57781317,1.
 Leather — Dressed,1893,Belgium,Lb,440251,344263,1.3
 Dye Woods — Logwood,1897,Holland,Ton,52583,39297,1.3
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Brazil,Lb,102199,81037,1.3
+Galls,1895,Turkey,Cwt,33631,26248,1.3
+Galls,1896,Turkey,Cwt,30728,23807,1.3
 "Animals, Living — Oxen And Bulls",1894,United States Of America,Number,581657,471794,1.2
 Bacon,1893,United States Of America,Cwt,3935097,3198887,1.2
 "Mutton, Fresh",1892,Chile,Cwt,2069441,1699966,1.2

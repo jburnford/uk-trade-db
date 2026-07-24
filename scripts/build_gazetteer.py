@@ -108,6 +108,35 @@ add('Western Australia', -32.06, 115.74, 'colony', 'Fremantle (Perth)', parent='
 add('Tasmania', -42.88, 147.33, 'colony', 'Hobart', parent='Australasia')
 add('New Zealand', -41.29, 174.78, 'colony', 'Wellington', parent='Australasia')
 
+# ---- second wave: real recurring origins surfaced by the residual audit ----
+add('Canary Islands', 28.10, -15.42, 'region', 'Spanish Atlantic islands; Las Palmas (bananas, tomatoes)')
+add('Ecuador', -2.19, -79.88, 'country', 'Guayaquil (cocoa)')
+add('Persia', 28.98, 50.84, 'country', 'consignment via the Persian Gulf (Bushire)')
+add('Newfoundland', 47.56, -52.71, 'colony', 'British; St John\'s (dried cod)')
+add('British Honduras', 17.50, -88.20, 'colony', 'Belize (mahogany, logwood)')
+add('Sierra Leone', 8.48, -13.23, 'colony', 'British West Africa; Freetown')
+add('The Gold Coast', 5.55, -0.20, 'colony', 'British West Africa; Accra (palm oil, later cocoa)')
+add('Gambia', 13.45, -16.58, 'colony', 'British West Africa; Bathurst (groundnuts)')
+add('Niger Protectorate', 4.75, 7.00, 'colony', 'Niger delta / Oil Rivers, British West Africa (palm oil)')
+add('Fernando Po', 3.75, 8.78, 'colony', 'Gulf of Guinea island (Bioko)')
+add('Madagascar', -18.15, 49.41, 'country', 'Tamatave (Toamasina)')
+add('Zanzibar And Pemba', -6.16, 39.19, 'colony', 'East African entrepot; cloves, ivory')
+add('Congo Free State', -5.85, 13.06, 'country', 'Boma / lower Congo (rubber, ivory)')
+add('Tripoli', 32.90, 13.19, 'region', 'Ottoman North Africa (Libya)')
+add('Tunis', 36.80, 10.18, 'country', 'Tunisia (French protectorate from 1881)')
+add('Siam', 13.75, 100.50, 'country', 'Thailand; Bangkok (rice)')
+add('Cyprus', 35.10, 33.40, 'colony', 'British from 1878; Larnaca')
+add('Dutch Guiana', 5.87, -55.17, 'colony', 'Surinam; Paramaribo')
+add('Danish West India Islands', 17.74, -64.70, 'colony', 'St Croix / St Thomas (Danish, sugar)')
+add('Dutch West India Islands', 12.11, -68.93, 'colony', 'Curacao (Dutch)')
+add('Hayti And St Domingo', 18.54, -72.34, 'country', 'Hispaniola — Haiti + Santo Domingo (coffee)')
+add('Falkland Islands', -51.70, -57.85, 'colony', 'British South Atlantic (wool)')
+add('Bolivia', -17.78, -63.18, 'country', 'consignment via the Pacific coast (silver, tin)')
+add('Nicaragua', 12.15, -86.27, 'country', 'Corinto (coffee)')
+add('Costa Rica', 9.98, -83.03, 'country', 'Puerto Limon (coffee, bananas)')
+add('Bulgaria', 43.20, 27.91, 'country', 'Black Sea; Varna (grain)')
+add('Bermudas', 32.29, -64.78, 'colony', 'British North Atlantic')
+
 # ---- residual aggregates (no single port: shown as unmapped total) ----
 for lbl, note in [
     ('Other Countries', 'residual "all other" foreign origins'),

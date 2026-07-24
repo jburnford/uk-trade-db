@@ -676,6 +676,222 @@
   "parent": "Australasia",
   "children": []
  },
+ "Canary Islands": {
+  "lat": 28.1,
+  "lon": -15.42,
+  "kind": "region",
+  "note": "Spanish Atlantic islands; Las Palmas (bananas, tomatoes)",
+  "parent": null,
+  "children": []
+ },
+ "Ecuador": {
+  "lat": -2.19,
+  "lon": -79.88,
+  "kind": "country",
+  "note": "Guayaquil (cocoa)",
+  "parent": null,
+  "children": []
+ },
+ "Persia": {
+  "lat": 28.98,
+  "lon": 50.84,
+  "kind": "country",
+  "note": "consignment via the Persian Gulf (Bushire)",
+  "parent": null,
+  "children": []
+ },
+ "Newfoundland": {
+  "lat": 47.56,
+  "lon": -52.71,
+  "kind": "colony",
+  "note": "British; St John's (dried cod)",
+  "parent": null,
+  "children": []
+ },
+ "British Honduras": {
+  "lat": 17.5,
+  "lon": -88.2,
+  "kind": "colony",
+  "note": "Belize (mahogany, logwood)",
+  "parent": null,
+  "children": []
+ },
+ "Sierra Leone": {
+  "lat": 8.48,
+  "lon": -13.23,
+  "kind": "colony",
+  "note": "British West Africa; Freetown",
+  "parent": null,
+  "children": []
+ },
+ "The Gold Coast": {
+  "lat": 5.55,
+  "lon": -0.2,
+  "kind": "colony",
+  "note": "British West Africa; Accra (palm oil, later cocoa)",
+  "parent": null,
+  "children": []
+ },
+ "Gambia": {
+  "lat": 13.45,
+  "lon": -16.58,
+  "kind": "colony",
+  "note": "British West Africa; Bathurst (groundnuts)",
+  "parent": null,
+  "children": []
+ },
+ "Niger Protectorate": {
+  "lat": 4.75,
+  "lon": 7.0,
+  "kind": "colony",
+  "note": "Niger delta / Oil Rivers, British West Africa (palm oil)",
+  "parent": null,
+  "children": []
+ },
+ "Fernando Po": {
+  "lat": 3.75,
+  "lon": 8.78,
+  "kind": "colony",
+  "note": "Gulf of Guinea island (Bioko)",
+  "parent": null,
+  "children": []
+ },
+ "Madagascar": {
+  "lat": -18.15,
+  "lon": 49.41,
+  "kind": "country",
+  "note": "Tamatave (Toamasina)",
+  "parent": null,
+  "children": []
+ },
+ "Zanzibar And Pemba": {
+  "lat": -6.16,
+  "lon": 39.19,
+  "kind": "colony",
+  "note": "East African entrepot; cloves, ivory",
+  "parent": null,
+  "children": []
+ },
+ "Congo Free State": {
+  "lat": -5.85,
+  "lon": 13.06,
+  "kind": "country",
+  "note": "Boma / lower Congo (rubber, ivory)",
+  "parent": null,
+  "children": []
+ },
+ "Tripoli": {
+  "lat": 32.9,
+  "lon": 13.19,
+  "kind": "region",
+  "note": "Ottoman North Africa (Libya)",
+  "parent": null,
+  "children": []
+ },
+ "Tunis": {
+  "lat": 36.8,
+  "lon": 10.18,
+  "kind": "country",
+  "note": "Tunisia (French protectorate from 1881)",
+  "parent": null,
+  "children": []
+ },
+ "Siam": {
+  "lat": 13.75,
+  "lon": 100.5,
+  "kind": "country",
+  "note": "Thailand; Bangkok (rice)",
+  "parent": null,
+  "children": []
+ },
+ "Cyprus": {
+  "lat": 35.1,
+  "lon": 33.4,
+  "kind": "colony",
+  "note": "British from 1878; Larnaca",
+  "parent": null,
+  "children": []
+ },
+ "Dutch Guiana": {
+  "lat": 5.87,
+  "lon": -55.17,
+  "kind": "colony",
+  "note": "Surinam; Paramaribo",
+  "parent": null,
+  "children": []
+ },
+ "Danish West India Islands": {
+  "lat": 17.74,
+  "lon": -64.7,
+  "kind": "colony",
+  "note": "St Croix / St Thomas (Danish, sugar)",
+  "parent": null,
+  "children": []
+ },
+ "Dutch West India Islands": {
+  "lat": 12.11,
+  "lon": -68.93,
+  "kind": "colony",
+  "note": "Curacao (Dutch)",
+  "parent": null,
+  "children": []
+ },
+ "Hayti And St Domingo": {
+  "lat": 18.54,
+  "lon": -72.34,
+  "kind": "country",
+  "note": "Hispaniola — Haiti + Santo Domingo (coffee)",
+  "parent": null,
+  "children": []
+ },
+ "Falkland Islands": {
+  "lat": -51.7,
+  "lon": -57.85,
+  "kind": "colony",
+  "note": "British South Atlantic (wool)",
+  "parent": null,
+  "children": []
+ },
+ "Bolivia": {
+  "lat": -17.78,
+  "lon": -63.18,
+  "kind": "country",
+  "note": "consignment via the Pacific coast (silver, tin)",
+  "parent": null,
+  "children": []
+ },
+ "Nicaragua": {
+  "lat": 12.15,
+  "lon": -86.27,
+  "kind": "country",
+  "note": "Corinto (coffee)",
+  "parent": null,
+  "children": []
+ },
+ "Costa Rica": {
+  "lat": 9.98,
+  "lon": -83.03,
+  "kind": "country",
+  "note": "Puerto Limon (coffee, bananas)",
+  "parent": null,
+  "children": []
+ },
+ "Bulgaria": {
+  "lat": 43.2,
+  "lon": 27.91,
+  "kind": "country",
+  "note": "Black Sea; Varna (grain)",
+  "parent": null,
+  "children": []
+ },
+ "Bermudas": {
+  "lat": 32.29,
+  "lon": -64.78,
+  "kind": "colony",
+  "note": "British North Atlantic",
+  "parent": null,
+  "children": []
+ },
  "Other Countries": {
   "lat": null,
   "lon": null,

@@ -48,9 +48,46 @@ for k, v in gaz.items():
         children_of[v['parent']].add(k)
     for ch in v.get('children', ()):
         children_of[k].add(ch)
-# label-variant duplicates: the same place printed two ways would be summed
-# twice. Canonicalise to one origin key.
-ALIAS = {'Chili': 'Chile', 'Portugal, Azores, And Madeira': 'Portugal'}
+# label-variant duplicates AND OCR/era variants of a mapped place: the same
+# origin printed several ways would be summed as separate residual, never a
+# bubble. Canonicalise each to one gazetteer key so it lands on the map.
+ALIAS = {
+    'Chili': 'Chile', 'Portugal, Azores, And Madeira': 'Portugal',
+    'Madeira': 'Portugal', 'Azores': 'Portugal',
+    # Ottoman variants -> Turkey
+    'Turkey European': 'Turkey', 'Turkey, European': 'Turkey',
+    'Turkey Asiatic': 'Turkey', 'Turkey, Asiatic': 'Turkey',
+    'Wallachia And Moldavia': 'Roumania',
+    # Colombia (many historic names)
+    'Republic Of Colombia': 'United States Of Colombia',
+    'New Granada': 'United States Of Colombia',
+    'United States Of Colombia (New Granada': 'United States Of Colombia',
+    'United States Of Colombia (Newgranada': 'United States Of Colombia',
+    # India presidencies / OCR-glued lists -> Bombay or the India umbrella
+    'Bombay And Seinde': 'Bombay', 'Bombay And Scinde': 'Bombay',
+    'Bombay And Soinde': 'Bombay',
+    'Bombay And Scindemadras': 'British East Indies',
+    'Bombay And Scinde Bengal And Burmah': 'British East Indies',
+    'Bombay And Scindebengal And Burmah': 'British East Indies',
+    'Other British East Indian Possessions': 'British East Indies',
+    'Native States': 'British East Indies',
+    # Australia / South Africa / Mauritius variants
+    'West Australia': 'Western Australia',
+    'South Africa': 'British Possessions In South Africa',
+    'British Possessions In Southafrica': 'British Possessions In South Africa',
+    'British Possessions In South Africamauritius': 'British Possessions In South Africa',
+    'Mauritius And Dependencies': 'Mauritius',
+    'Australasia New Zealand': 'New Zealand',
+    # Spain + islands, West Indies + Guiana, Aden, Guiana
+    'Spain And Canaries': 'Spain', 'Spain And Canary Islands': 'Spain',
+    'British West India Islands And British Guiana': 'British West India Islands',
+    'British West India Islands And Britishguiana': 'British West India Islands',
+    'British West India Islands And British': 'British West India Islands',
+    'British West Indies And Guiana': 'British West India Islands',
+    'Aden And Dependencies': 'Aden',
+    'Guiana': 'British Guiana',
+    'Hayti And St. Domingo': 'Hayti And St Domingo',
+}
 outliers = []            # origin cells that exceed the national anchor (log)
 cov_num = cov_den = 0
 out = {}
@@ -146,7 +183,10 @@ for n in wl:
         cov_den += v
     if not per and not res:
         continue
-    yrs = sorted(set(nat) | set(t1))
+    # slider range = years that actually have ORIGIN data (bubbles/residual),
+    # NOT the wider Tier-1 anchor span (1866-1900): otherwise the slider lands
+    # on years with a national total but no origin breakdown -> empty map.
+    yrs = sorted(nat)
     out[n] = {
         'u': dom,
         'v': round(e['v']),

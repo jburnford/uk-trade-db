@@ -336,12 +336,22 @@ $('#play').addEventListener('click',function(){
   playing=setInterval(()=>{let y=state.year+1;if(y>1899)y=1872;state.year=y;yearEl.value=y;yearLbl.textContent=y;draw();},900);
 });
 
+function yearBubbles(c,y){const yr=String(y);
+  for(const lab in c.c){const g=GAZ[lab];
+    if(g&&g.lat!=null&&c.c[lab][yr]&&c.c[lab][yr][0]>0)return true;}
+  return false;}
+function richestYear(c){let best=-1,by=null;
+  for(const lab in c.c){const g=GAZ[lab];if(!g||g.lat==null)continue;
+    for(const yr in c.c[lab]){if(c.c[lab][yr][0]>best){best=c.c[lab][yr][0];by=+yr;}}}
+  return by;}
 function select(name){
   state.com=name;
   const c=COM[name];
-  // clamp year into the commodity's span
   const y0=c.y[0],y1=c.y[1];
   if(state.year<y0)state.year=y0; if(state.year>y1)state.year=y1;
+  // if the carried-over year has no origins for this commodity, jump to its
+  // richest year so the map is populated on selection rather than blank
+  if(!yearBubbles(c,state.year)){const by=richestYear(c); if(by!=null)state.year=by;}
   yearEl.min=y0;yearEl.max=y1;yearEl.value=state.year;yearLbl.textContent=state.year;
   search.value=name;
   draw();
@@ -443,12 +453,14 @@ function drawSide(c,pts){
 }
 function drawSpark(c){
   const sp=$('#spark');
-  const useT1 = state.meas==='q' && c.t1;
-  const val1=y=>{const k=String(y);return useT1?(c.t1[k]||0):(c.nat[k]?(state.meas==='v'?c.nat[k][0]:c.nat[k][1]):0);};
-  const has=y=>{const k=String(y);return useT1?(c.t1[k]!=null):(c.nat[k]!=null);};
-  const ys=[];for(let y=c.y[0];y<=c.y[1];y++){if(has(y))ys.push(y);}
+  // sparkline spans the full national series (Tier-1 for quantity can run
+  // wider than the origin-bubble years), independent of the slider range
+  const useT1 = state.meas==='q' && c.t1 && Object.keys(c.t1).length>1;
+  const src = useT1 ? c.t1 : c.nat;
+  const val1=k=>useT1?(c.t1[k]||0):(c.nat[k]?(state.meas==='v'?c.nat[k][0]:c.nat[k][1]):0);
+  const ys=Object.keys(src).map(Number).sort((a,b)=>a-b);
   if(ys.length<2){sp.innerHTML='';return;}
-  const vals=ys.map(val1);
+  const vals=ys.map(y=>val1(String(y)));
   const mx=Math.max(...vals)||1, W=300,H=52,pad=3;
   const X=y=>(y-ys[0])/(ys[ys.length-1]-ys[0])*(W-2*pad)+pad;
   const Y=v=>H-pad-(v/mx)*(H-2*pad);
