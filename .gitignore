@@ -9,3 +9,5 @@ __pycache__/
 # giant generated review artifacts (regenerate: grade_country.py, locate_review_pages.py)
 reports/country_review_queue.csv
 reports/review_pages.json
+# map build intermediate (regenerate: build_viz_payload.py)
+exports/map_data.json

@@ -1,0 +1,435 @@
+<title>Whence Consigned — UK Import Origins, 1872–1899</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script id="dataset" type="application/json">/*__DATA__*/</script>
+<style>
+:root{
+  --paper:#E9E5DA; --panel:#F3F0E7; --panel2:#E3DECF;
+  --ink:#1E2A28; --muted:#63716D; --faint:#8A958F;
+  --line:#D3CDBE; --line2:#C4BCA8;
+  --accent:#96651B; --accent-soft:#B98E3F;
+  --sea:#DCE4E2; --grid:#CBD4D0;
+  --pA:#0C5C54; --pB:#3E8B80; --pC:#95C1B9;
+  --warn:#A6412E; --warn-soft:#C98A78;
+  --shadow:0 1px 2px rgba(30,42,40,.08),0 8px 24px rgba(30,42,40,.06);
+  --on-ink:#FBF7EC;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#131A19; --panel:#1A2220; --panel2:#212B29;
+  --ink:#E9E4D6; --muted:#93A09B; --faint:#6E7B77;
+  --line:#2A3532; --line2:#374340;
+  --accent:#D6A24A; --accent-soft:#B9863A;
+  --sea:#101615; --grid:#26302E;
+  --pA:#42C2B1; --pB:#2B897C; --pC:#1D524B;
+  --warn:#D66A52; --warn-soft:#8A4132;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28);
+  --on-ink:#141A19;
+}}
+:root[data-theme="dark"]{
+  --paper:#131A19; --panel:#1A2220; --panel2:#212B29;
+  --ink:#E9E4D6; --muted:#93A09B; --faint:#6E7B77;
+  --line:#2A3532; --line2:#374340;
+  --accent:#D6A24A; --accent-soft:#B9863A;
+  --sea:#101615; --grid:#26302E;
+  --pA:#42C2B1; --pB:#2B897C; --pC:#1D524B;
+  --warn:#D66A52; --warn-soft:#8A4132;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28);
+  --on-ink:#141A19;
+}
+:root[data-theme="light"]{
+  --paper:#E9E5DA; --panel:#F3F0E7; --panel2:#E3DECF;
+  --ink:#1E2A28; --muted:#63716D; --faint:#8A958F;
+  --line:#D3CDBE; --line2:#C4BCA8;
+  --accent:#96651B; --accent-soft:#B98E3F;
+  --sea:#DCE4E2; --grid:#CBD4D0;
+  --pA:#0C5C54; --pB:#3E8B80; --pC:#95C1B9;
+  --warn:#A6412E; --warn-soft:#C98A78;
+  --shadow:0 1px 2px rgba(30,42,40,.08),0 8px 24px rgba(30,42,40,.06);
+  --on-ink:#FBF7EC;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif}
+.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+.wrap{max-width:1280px;margin:0 auto;padding:22px 20px 60px}
+h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  font-weight:600;font-size:clamp(26px,3.4vw,38px);line-height:1.08;margin:.1em 0 .12em;
+  letter-spacing:-.01em;text-wrap:balance}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:11.5px;
+  font-weight:600;color:var(--accent)}
+.lede{color:var(--muted);max-width:66ch;margin:.2em 0 0;font-size:15.5px}
+.frame{margin-top:16px;padding:11px 14px;border:1px solid var(--line2);
+  border-left:3px solid var(--accent);background:var(--panel);border-radius:7px;
+  font-size:13.5px;color:var(--ink);display:flex;gap:10px;align-items:flex-start}
+.frame b{color:var(--accent)}
+.frame svg{flex:none;margin-top:1px}
+
+.toolbar{display:grid;grid-template-columns:minmax(240px,1.4fr) 2fr auto;gap:16px;
+  align-items:end;margin:20px 0 14px;padding:15px 16px;background:var(--panel);
+  border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+.field label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.11em;
+  color:var(--muted);font-weight:600;margin-bottom:5px}
+.pickwrap{position:relative}
+#search{width:100%;padding:9px 11px;border:1px solid var(--line2);border-radius:7px;
+  background:var(--paper);color:var(--ink);font-size:15px;font-family:inherit}
+#search:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.picklist{position:absolute;z-index:30;top:calc(100% + 4px);left:0;right:0;max-height:320px;
+  overflow-y:auto;background:var(--panel);border:1px solid var(--line2);border-radius:8px;
+  box-shadow:var(--shadow);display:none}
+.picklist.open{display:block}
+.pickitem{padding:7px 11px;cursor:pointer;display:flex;justify-content:space-between;gap:12px;
+  border-bottom:1px solid var(--line)}
+.pickitem:last-child{border-bottom:none}
+.pickitem:hover,.pickitem.active{background:var(--panel2)}
+.pickitem .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pickitem .gb{color:var(--muted);font-size:12px;flex:none}
+.slider-row{display:flex;align-items:center;gap:14px}
+#year{flex:1;accent-color:var(--accent);height:4px}
+.yearbig{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:30px;font-weight:600;
+  min-width:2.6em;text-align:center;letter-spacing:.01em}
+.playbtn{border:1px solid var(--line2);background:var(--paper);color:var(--ink);width:38px;height:38px;
+  border-radius:8px;cursor:pointer;font-size:15px;display:grid;place-items:center}
+.playbtn:hover{border-color:var(--accent);color:var(--accent)}
+.toggle{display:inline-flex;border:1px solid var(--line2);border-radius:8px;overflow:hidden}
+.toggle button{border:none;background:var(--paper);color:var(--muted);padding:9px 15px;cursor:pointer;
+  font-size:13px;font-weight:600;font-family:inherit}
+.toggle button.on{background:var(--accent);color:var(--on-ink)}
+
+.grid{display:grid;grid-template-columns:1fr 340px;gap:18px;align-items:start}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+.mapcard{padding:6px 6px 4px;position:relative}
+svg.map{width:100%;height:auto;display:block;border-radius:7px;background:var(--sea)}
+.maptitle{position:absolute;top:16px;left:18px;pointer-events:none}
+.maptitle .t{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:18px;font-weight:600}
+.maptitle .s{font-size:12px;color:var(--muted)}
+.issuechip{position:absolute;top:15px;right:16px;background:var(--panel);border:1px solid var(--warn-soft);
+  border-left:3px solid var(--warn);border-radius:7px;padding:7px 11px;max-width:280px;font-size:12px;
+  color:var(--ink);display:none;box-shadow:var(--shadow)}
+.issuechip.show{display:block}
+.issuechip b{color:var(--warn)}
+.legend{display:flex;flex-wrap:wrap;gap:16px 22px;padding:9px 14px 4px;font-size:12px;color:var(--muted)}
+.legend .grp{display:flex;align-items:center;gap:7px}
+.dot{width:12px;height:12px;border-radius:50%;flex:none;border:1px solid rgba(0,0,0,.18)}
+.szdemo{display:flex;align-items:flex-end;gap:7px}
+.szdemo span{border-radius:50%;background:var(--faint);opacity:.5;border:1px solid var(--muted)}
+
+.side{display:flex;flex-direction:column;gap:16px}
+.pad{padding:15px 16px}
+.hd{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600;margin:0 0 10px}
+.cname{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:19px;font-weight:600;line-height:1.15;
+  margin:0 0 2px;text-wrap:balance}
+.cmeta{font-size:12.5px;color:var(--muted)}
+.stat{display:flex;align-items:baseline;gap:8px;margin:12px 0 2px}
+.stat .big{font-size:29px;font-weight:600;font-family:ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.stat .u{font-size:12.5px;color:var(--muted)}
+.spark{width:100%;height:52px;display:block;margin:8px 0 2px}
+.nostate{padding:14px;border:1px dashed var(--line2);border-radius:8px;color:var(--muted);font-size:13px;text-align:center}
+.orig{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+.orow{display:grid;grid-template-columns:15px 1fr auto;gap:8px;align-items:center;font-size:13px}
+.orow .bar{height:16px;border-radius:0 3px 3px 0;min-width:2px}
+.orow .lab{display:flex;flex-direction:column;line-height:1.2}
+.orow .lab .n{font-size:12.5px}
+.orow .lab .k{font-size:10.5px;color:var(--faint)}
+.orow .val{font-family:ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;font-size:12.5px;color:var(--muted);white-space:nowrap}
+.residual{margin-top:9px;padding-top:9px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between}
+
+details.foot{margin-top:22px;border:1px solid var(--line);border-radius:10px;background:var(--panel);overflow:hidden}
+details.foot>summary{padding:13px 16px;cursor:pointer;font-weight:600;font-size:14px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.foot>summary::-webkit-details-marker{display:none}
+details.foot>summary .chev{color:var(--muted);transition:transform .2s}
+details.foot[open]>summary .chev{transform:rotate(90deg)}
+.footbody{padding:2px 16px 16px;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink)}
+.footbody h4{margin:14px 0 5px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+.footbody p{color:var(--muted);margin:5px 0;max-width:80ch}
+.itable{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}
+.itable th,.itable td{text-align:left;padding:5px 8px;border-bottom:1px solid var(--line)}
+.itable th{color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:10.5px}
+.itable td.num{text-align:right;font-family:ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+.tag{display:inline-block;padding:1px 7px;border-radius:20px;font-size:11px;font-weight:600}
+.tag.short{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn)}
+.tag.over{background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent)}
+.bubble{cursor:default;transition:opacity .18s}
+.bubble:hover{stroke:var(--ink);stroke-width:1.4}
+.blabel{font-size:10px;fill:var(--ink);paint-order:stroke;stroke:var(--sea);stroke-width:2.4px;pointer-events:none;font-weight:600}
+.tip{position:fixed;z-index:60;pointer-events:none;background:var(--ink);color:var(--paper);
+  padding:7px 10px;border-radius:6px;font-size:12px;box-shadow:var(--shadow);opacity:0;transition:opacity .1s;max-width:230px}
+.tip .tn{font-weight:600;margin-bottom:2px}
+.tip .tv{font-family:ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.credit{margin-top:20px;font-size:12px;color:var(--faint);text-align:center}
+@media (max-width:880px){.grid{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">UK Annual Statement of Trade · Imports · 1872–1899</div>
+  <h1 class="serif">Whence Consigned</h1>
+  <p class="lede">A working draft explorer of where Britain's imports were <em>shipped from</em>, commodity by commodity, year by year — drawn from the reconstructed customs ledgers.</p>
+  <div class="frame">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6.5"/><path d="M8 7.2v4M8 4.6v.1"/></svg>
+    <div>These origins are the country or port <b>whence goods were consigned</b> (the last place of shipment to the UK) — <b>not</b> where they were produced. Entrepôts such as Holland, Belgium, Gibraltar and Hong Kong therefore appear far larger than their own output. Quantities are anchored to national totals; per‑origin <b>values are provisional</b>.</div>
+  </div>
+
+  <div class="toolbar">
+    <div class="field pickwrap">
+      <label for="search">Commodity</label>
+      <input id="search" type="search" autocomplete="off" spellcheck="false" placeholder="Search 1,235 commodities…">
+      <div class="picklist" id="picklist"></div>
+    </div>
+    <div class="field">
+      <label for="year">Year</label>
+      <div class="slider-row">
+        <button class="playbtn" id="play" title="Play through years" aria-label="Play through years">▶</button>
+        <input id="year" type="range" min="1872" max="1899" value="1885" step="1">
+        <div class="yearbig serif mono" id="yearlbl">1885</div>
+      </div>
+    </div>
+    <div class="field">
+      <label>Measure</label>
+      <div class="toggle" id="measure">
+        <button data-m="v" class="on">Value £</button>
+        <button data-m="q">Quantity</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card mapcard">
+      <div class="maptitle"><div class="t serif" id="mt-t">—</div><div class="s" id="mt-s"></div></div>
+      <div class="issuechip" id="issuechip"></div>
+      <svg class="map" id="map" viewBox="0 0 1000 548" role="img" aria-label="Map of import origins"></svg>
+      <div class="legend">
+        <div class="grp"><b style="color:var(--ink)">Provenance</b></div>
+        <div class="grp"><span class="dot" style="background:var(--pA)"></span>Tier A — anchored</div>
+        <div class="grp"><span class="dot" style="background:var(--pB)"></span>Tier B</div>
+        <div class="grp"><span class="dot" style="background:var(--pC)"></span>Tier C — weak</div>
+        <div class="grp szdemo" style="margin-left:auto"><span style="width:8px;height:8px"></span><span style="width:15px;height:15px"></span><span style="width:24px;height:24px"></span>&nbsp;larger = more</div>
+      </div>
+    </div>
+
+    <div class="side">
+      <div class="card pad">
+        <div class="cname serif" id="cname">—</div>
+        <div class="cmeta" id="cmeta"></div>
+        <div class="stat"><div class="big mono" id="statbig">—</div><div class="u" id="statu"></div></div>
+        <div class="cmeta" id="statsub"></div>
+        <svg class="spark" id="spark" viewBox="0 0 300 52" preserveAspectRatio="none"></svg>
+        <div id="origbox"></div>
+      </div>
+    </div>
+  </div>
+
+  <details class="foot">
+    <summary>Known reconciliation issues<span class="chev">›</span></summary>
+    <div class="footbody">
+      <p>Rows where the sum of published origins does not reconcile with the anchored national total for that commodity‑year — the origin table is incomplete (<span class="tag short">short</span>) or over‑counts (<span class="tag over">over</span>). When the selected commodity‑year is flagged, a note appears on the map. Full list ranked by value at stake:</p>
+      <div style="overflow-x:auto"><table class="itable" id="itable"></table></div>
+    </div>
+  </details>
+
+  <details class="foot">
+    <summary>Method, gazetteer &amp; caveats<span class="chev">›</span></summary>
+    <div class="footbody">
+      <h4>What you are looking at</h4>
+      <p>Import quantities and values from the UK Annual Statement of Trade (1872–1899), reconstructed by OCR and reconciled against the Statement's own Tier‑1 national totals. Each commodity is one curated series (the curated whitelist of 1,235; glue‑phantom and duplicate labels have been folded away).</p>
+      <h4>Consignment, not origin</h4>
+      <p>The Statement records the country <em>whence goods were consigned</em> to the UK — the last port of shipment. This is a fact about trade routes, not production. Great entrepôts (Holland, Belgium, the Hanse ports, Gibraltar, Hong Kong, the Straits) re‑shipped goods produced elsewhere and so are systematically overstated as "origins".</p>
+      <h4>Placement at ports of shipment</h4>
+      <p>Each origin sits at its principal <em>port of consignment</em>, not a geographic centroid: United States → New York, Canada → Montreal, Germany → Hamburg, Austria‑Hungary → Trieste, China → Shanghai, Russia → St Petersburg. Colonial umbrellas (British East Indies, Australasia, British Possessions in South Africa) resolve to their constituent colonies where the ledger itemises them. About 90% of located‑origin value is placed; the remainder — residual "Other Countries" lines and un‑gazetteered minor origins — is reported as an unmapped total, never silently dropped.</p>
+      <h4>Provenance tiers</h4>
+      <p>Each origin cell carries a confidence tier from the reconciliation pipeline: <b>A</b> anchored to a national total, <b>B</b> intermediate, <b>C</b> weakly supported. Bubble darkness encodes the tier; bubble area encodes the measure.</p>
+      <h4>Draft status</h4>
+      <p>This is a first draft for review. Value figures are provisional (value‑side reconciliation is pending; only quantities are anchored). The sugar commodity family and a set of country‑as‑article label defects remain queued. Basemap is a schematic equirectangular graticule, not a boundary map — appropriate to origins that are ports and shifting historical entities.</p>
+    </div>
+  </details>
+
+  <div class="credit serif">A draft visualisation · data reconstructed from the UK Annual Statement of Trade</div>
+</div>
+
+<div class="tip" id="tip"></div>
+
+<script>
+"use strict";
+const D = JSON.parse(document.getElementById('dataset').textContent);
+const GAZ = D.gaz, COM = D.commodities, ISSUES = D.issues||[];
+const names = Object.keys(COM).sort((a,b)=>COM[b].v-COM[a].v);
+const $ = s=>document.querySelector(s);
+const fmtGBP = v => v>=1e9?'£'+(v/1e9).toFixed(2)+'bn':v>=1e6?'£'+(v/1e6).toFixed(1)+'m':v>=1e3?'£'+Math.round(v/1e3)+'k':'£'+Math.round(v);
+const fmtQ = v => v>=1e9?(v/1e9).toFixed(2)+'bn':v>=1e6?(v/1e6).toFixed(1)+'m':v>=1e3?(v/1e3).toFixed(0)+'k':Math.round(v).toString();
+const PC = ['',getVar('--pA'),getVar('--pB'),getVar('--pC')];
+function getVar(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();}
+
+// projection (equirectangular, framed on the inhabited world)
+const VB={w:1000,h:548}, LON=[-135,182], LAT=[-52,74];
+const px = lon => (lon-LON[0])/(LON[1]-LON[0])*VB.w;
+const py = lat => (LAT[1]-lat)/(LAT[1]-LAT[0])*VB.h;
+
+let state={com:null, year:1885, meas:'v'};
+const issuesByKey={};
+ISSUES.forEach(it=>{issuesByKey[it.c+' '+it.y]=it;});
+
+// ---------- commodity picker ----------
+const search=$('#search'), picklist=$('#picklist');
+function renderPick(q){
+  q=q.trim().toLowerCase();
+  const hits = (q? names.filter(n=>n.toLowerCase().includes(q)) : names).slice(0,50);
+  picklist.innerHTML = hits.map(n=>`<div class="pickitem" data-n="${esc(n)}"><span class="nm">${esc(n)}</span><span class="gb">${fmtGBP(COM[n].v)}</span></div>`).join('') || '<div class="pickitem"><span class="nm">no match</span></div>';
+  picklist.classList.add('open');
+}
+function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+search.addEventListener('focus',()=>renderPick(search.value));
+search.addEventListener('input',()=>renderPick(search.value));
+picklist.addEventListener('mousedown',e=>{const it=e.target.closest('.pickitem');if(it&&it.dataset.n){select(it.dataset.n);picklist.classList.remove('open');search.blur();}});
+document.addEventListener('click',e=>{if(!e.target.closest('.pickwrap'))picklist.classList.remove('open');});
+
+// ---------- controls ----------
+const yearEl=$('#year'), yearLbl=$('#yearlbl');
+yearEl.addEventListener('input',()=>{state.year=+yearEl.value;yearLbl.textContent=yearEl.value;draw();});
+$('#measure').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  state.meas=b.dataset.m;[...e.currentTarget.children].forEach(x=>x.classList.toggle('on',x===b));draw();});
+let playing=null;
+$('#play').addEventListener('click',function(){
+  if(playing){clearInterval(playing);playing=null;this.textContent='▶';return;}
+  this.textContent='‖';
+  playing=setInterval(()=>{let y=state.year+1;if(y>1899)y=1872;state.year=y;yearEl.value=y;yearLbl.textContent=y;draw();},900);
+});
+
+function select(name){
+  state.com=name;
+  const c=COM[name];
+  // clamp year into the commodity's span
+  const y0=c.y[0],y1=c.y[1];
+  if(state.year<y0)state.year=y0; if(state.year>y1)state.year=y1;
+  yearEl.min=y0;yearEl.max=y1;yearEl.value=state.year;yearLbl.textContent=state.year;
+  search.value=name;
+  draw();
+}
+
+// ---------- draw ----------
+const map=$('#map'), tip=$('#tip');
+function draw(){
+  const c=COM[state.com]; if(!c)return;
+  const yr=String(state.year), meas=state.meas;
+  $('#mt-t').textContent=state.com;
+  $('#mt-s').textContent=state.year+' · '+(meas==='v'?'value consigned':'quantity, '+c.u);
+  // ----- gather origin points for the year -----
+  const pts=[];
+  for(const lab in c.c){const cell=c.c[lab][yr];if(!cell)continue;
+    const val = meas==='v'?cell[0]:cell[1];
+    if(!val||!GAZ[lab]||GAZ[lab].lat==null)continue;
+    pts.push({lab,val,rank:cell[2]||3,g:GAZ[lab]});
+  }
+  const maxAll = commodityMax(c,meas);
+  const rOf = v => Math.max(2.2, Math.sqrt(v/maxAll)*38);
+  pts.sort((a,b)=>b.val-a.val);
+  // ----- svg -----
+  let s='';
+  // graticule
+  for(let lon=-120;lon<=180;lon+=30){s+=`<line x1="${px(lon).toFixed(1)}" y1="0" x2="${px(lon).toFixed(1)}" y2="${VB.h}" stroke="var(--grid)" stroke-width="1"/>`;}
+  for(let lat=-40;lat<=60;lat+=20){s+=`<line x1="0" y1="${py(lat).toFixed(1)}" x2="${VB.w}" y2="${py(lat).toFixed(1)}" stroke="var(--grid)" stroke-width="1"/>`;}
+  s+=`<line x1="0" y1="${py(0).toFixed(1)}" x2="${VB.w}" y2="${py(0).toFixed(1)}" stroke="var(--grid)" stroke-width="1.6" stroke-dasharray="2 5"/>`;
+  // bubbles (large first, so small draw on top)
+  pts.forEach(p=>{
+    const x=px(p.g.lon),y=py(p.g.lat),r=rOf(p.val);
+    s+=`<circle class="bubble" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="${PC[p.rank]}" fill-opacity="0.82" stroke="${PC[p.rank]}" stroke-opacity="0.9" stroke-width="0.8" data-lab="${esc(p.lab)}" data-val="${p.val}" data-rank="${p.rank}"/>`;
+  });
+  // labels for the top few
+  pts.slice(0,7).forEach(p=>{const x=px(p.g.lon),y=py(p.g.lat),r=rOf(p.val);
+    s+=`<text class="blabel" x="${(x).toFixed(1)}" y="${(y-r-3).toFixed(1)}" text-anchor="middle">${esc(shortLab(p.lab))}</text>`;});
+  map.innerHTML=s;
+  bindBubbles(c);
+  drawSide(c,pts);
+  drawIssue();
+}
+function shortLab(l){return l.replace(/ \(.*/,'').replace('United States Of America','U.S.A.').replace('British Possessions In South Africa','S. Africa').replace('British East Indies','Brit. E. Indies').replace('Argentine Republic','Argentina');}
+function commodityMax(c,meas){let m=1;for(const lab in c.c){if(!GAZ[lab]||GAZ[lab].lat==null)continue;const s=c.c[lab];for(const y in s){const v=meas==='v'?s[y][0]:s[y][1];if(v>m)m=v;}}return m;}
+
+function bindBubbles(c){
+  map.querySelectorAll('.bubble').forEach(el=>{
+    el.addEventListener('mousemove',e=>{
+      const lab=el.dataset.lab, val=+el.dataset.val, rk=+el.dataset.rank, g=GAZ[lab];
+      tip.innerHTML=`<div class="tn">${esc(lab)}</div><div class="tv">${state.meas==='v'?fmtGBP(val):fmtQ(val)+' '+esc(c.u)}</div>`+
+        (g.note?`<div style="opacity:.75;margin-top:3px;font-size:11px">${esc(g.note)}</div>`:'')+
+        `<div style="opacity:.6;margin-top:2px;font-size:11px">Tier ${['','A','B','C'][rk]}${g.kind==='aggregate'?' · aggregate':''}</div>`;
+      tip.style.left=Math.min(e.clientX+14,innerWidth-244)+'px';tip.style.top=(e.clientY+14)+'px';tip.style.opacity=1;
+    });
+    el.addEventListener('mouseleave',()=>tip.style.opacity=0);
+  });
+}
+
+// ---------- side panel ----------
+function drawSide(c,pts){
+  $('#cname').textContent=state.com;
+  $('#cmeta').textContent=`${c.y[0]}–${c.y[1]} · unit ${c.u} · lifetime ${fmtGBP(c.v)}`;
+  const yr=String(state.year), nat=c.nat[yr];
+  const hasOrigins = pts.length>0 || (c.res[yr]&&(c.res[yr][0]||c.res[yr][1]));
+  const statbig=$('#statbig'),statu=$('#statu'),statsub=$('#statsub'),origbox=$('#origbox');
+  if(!nat && !hasOrigins){
+    statbig.textContent='—';statu.textContent='';statsub.textContent='';
+    origbox.innerHTML=`<div class="nostate">No data recorded for ${state.year}.</div>`;drawSpark(c);return;
+  }
+  const natV = nat? (state.meas==='v'?nat[0]:nat[1]) : 0;
+  statbig.textContent = state.meas==='v'?fmtGBP(natV):fmtQ(natV);
+  statu.textContent = state.meas==='v'?'consigned '+state.year : c.u+' · '+state.year;
+  statsub.textContent = 'national total (all origins)';
+  drawSpark(c);
+  if(!hasOrigins){
+    origbox.innerHTML=`<div class="nostate">No origin breakdown published for ${state.year}.<br>Only the national total was tabulated.</div>`;return;
+  }
+  // ranked origins
+  const tot = pts.reduce((a,p)=>a+p.val,0) + (c.res[yr]?(state.meas==='v'?c.res[yr][0]:c.res[yr][1]):0);
+  const maxv = pts.length?pts[0].val:1;
+  let h='<div class="hd" style="margin-top:14px">Origins of shipment · '+state.year+'</div><div class="orig">';
+  pts.slice(0,9).forEach(p=>{
+    const w=Math.max(2,p.val/maxv*100);
+    h+=`<div class="orow"><span class="dot" style="background:${PC[p.rank]}"></span>`+
+       `<div class="lab"><span class="n">${esc(shortLab(p.lab))}</span><span class="k">${p.g.kind}${tot?' · '+Math.round(p.val/tot*100)+'%':''}</span></div>`+
+       `<span class="val">${state.meas==='v'?fmtGBP(p.val):fmtQ(p.val)}</span></div>`+
+       `<div class="orow"><span></span><div class="bar" style="width:${w}%;background:${PC[p.rank]};opacity:.5"></div><span></span></div>`;
+  });
+  h+='</div>';
+  const res=c.res[yr], resv=res?(state.meas==='v'?res[0]:res[1]):0;
+  if(resv) h+=`<div class="residual"><span>Other / unmapped origins</span><span class="val">${state.meas==='v'?fmtGBP(resv):fmtQ(resv)}${tot?' · '+Math.round(resv/tot*100)+'%':''}</span></div>`;
+  origbox.innerHTML=h;
+}
+function drawSpark(c){
+  const sp=$('#spark');const ys=[];for(let y=c.y[0];y<=c.y[1];y++){if(c.nat[String(y)])ys.push(y);}
+  if(ys.length<2){sp.innerHTML='';return;}
+  const vals=ys.map(y=>state.meas==='v'?c.nat[String(y)][0]:c.nat[String(y)][1]);
+  const mx=Math.max(...vals)||1, W=300,H=52,pad=3;
+  const X=y=>(y-ys[0])/(ys[ys.length-1]-ys[0])*(W-2*pad)+pad;
+  const Y=v=>H-pad-(v/mx)*(H-2*pad);
+  let d='';ys.forEach((y,i)=>{d+=(i?'L':'M')+X(y).toFixed(1)+' '+Y(vals[i]).toFixed(1);});
+  const area=d+`L${X(ys[ys.length-1]).toFixed(1)} ${H-pad} L${X(ys[0]).toFixed(1)} ${H-pad} Z`;
+  const ci=ys.indexOf(state.year);
+  let s=`<path d="${area}" fill="var(--accent)" fill-opacity="0.10"/><path d="${d}" fill="none" stroke="var(--accent)" stroke-width="1.6"/>`;
+  if(ci>=0)s+=`<circle cx="${X(state.year).toFixed(1)}" cy="${Y(vals[ci]).toFixed(1)}" r="3" fill="var(--accent)"/>`;
+  sp.innerHTML=s;
+}
+
+// ---------- issue chip ----------
+function drawIssue(){
+  const chip=$('#issuechip');
+  const it=issuesByKey[state.com+' '+state.year];
+  if(!it){chip.classList.remove('show');return;}
+  const pct=Math.round(it.ratio*100);
+  chip.innerHTML=`<b>Reconciliation flag</b> — published origins sum to <b>${pct}%</b> of the national total this year (${it.kind}). Treat the origin split for ${state.year} with caution.`;
+  chip.classList.add('show');
+}
+
+// ---------- known-issues table ----------
+(function(){
+  const t=$('#itable');
+  const top=ISSUES.slice().sort((a,b)=>b.gbp-a.gbp).slice(0,30);
+  t.innerHTML='<tr><th>Commodity</th><th>Year</th><th>Flag</th><th class="num">Origins vs total</th><th class="num">Value at stake</th></tr>'+
+    top.map(it=>`<tr><td>${esc(it.c)}</td><td class="num">${it.y}</td><td><span class="tag ${it.kind==='over'?'over':'short'}">${it.kind==='over'?'over':'short'}</span></td><td class="num">${Math.round(it.ratio*100)}%</td><td class="num">${fmtGBP(it.gbp)}</td></tr>`).join('');
+})();
+
+// ---------- theme changes: repaint the JS-drawn marks ----------
+new MutationObserver(()=>{PC[1]=getVar('--pA');PC[2]=getVar('--pB');PC[3]=getVar('--pC');if(state.com)draw();})
+  .observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+
+// ---------- init ----------
+const start = names.find(n=>n==='Cotton — Raw') || names.find(n=>n==='Tea') || names[0];
+select(start);
+</script>

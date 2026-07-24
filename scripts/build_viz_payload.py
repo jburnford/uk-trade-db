@@ -263,11 +263,13 @@ def main():
     def slot(sig):
         return comms.setdefault(sig, {'v': 0, 'labels': Counter(), 'c': {}})
 
-    def add_cell(sig, label, cty, unit, y, q, r, weight=1):
+    def add_cell(sig, label, cty, unit, y, q, r, v=0, weight=1):
+        # cells carry a 4th element, per-country-year VALUE (GBP), used only
+        # by the map export; viz_payload.json strips it back to [y,q,r].
         s = slot(sig)
         s['labels'][label] += weight
         s['c'].setdefault(cty, {}).setdefault(unit, []).append(
-            [int(y), round(float(q)), int(r)])
+            [int(y), round(float(q)), int(r), round(float(v))])
 
     # ---- T1 label authority (fetched early: pass 1 repair needs it) ----
     t1_rows = con.execute("""
@@ -354,7 +356,7 @@ def main():
         if not sig:
             sig = ('(UNLABELLED)',)
         slot(sig)['v'] += min(v, 50_000_000)     # plausibility cap, sort key
-        add_cell(sig, label, fold_country(c), norm_unit(u), y, q, r)
+        add_cell(sig, label, fold_country(c), norm_unit(u), y, q, r, v)
 
     country_sigs = set(comms)
 
@@ -458,14 +460,15 @@ def main():
             agg = {}
             for cc in coasts:
                 for u, cells in c[cc].items():
-                    for y, q, r in cells:
+                    for y, q, r, *rest in cells:
                         if y in have.get(u, ()):
                             continue          # parent already carries it
-                        a = agg.setdefault((u, y), [0, 1])
+                        a = agg.setdefault((u, y), [0, 1, 0])
                         a[0] += q
                         a[1] = max(a[1], r)
-            for (u, y), (q, r) in agg.items():
-                pd.setdefault(u, []).append([y, round(q), r])
+                        a[2] += rest[0] if rest else 0
+            for (u, y), (q, r, v) in agg.items():
+                pd.setdefault(u, []).append([y, round(q), r, round(v)])
                 n_coast += 1
 
     # ---- unit healing: OCR loses/mangles the unit column, not the number.
@@ -511,8 +514,8 @@ def main():
                     # bucket's median sits in the 1890s (230k) — era-local
                     # comparison is the honest test
                     dom_by_year = {}
-                    for yy, qq, _ in units[dom]:
-                        dom_by_year.setdefault(yy, qq)
+                    for cell in units[dom]:
+                        dom_by_year.setdefault(cell[0], cell[1])
                     def _ref(y0):
                         for dy in range(4):
                             for yy in (y0 - dy, y0 + dy):
@@ -674,6 +677,16 @@ def main():
                                 row for row in series if row[0] not in have)
         if n_cur:
             print(f'  curation: {n_cur} commodities dropped/folded/renamed')
+    # map export: same structure, cells keep the per-country-year value
+    # [year, qty, rank, value] for the public map's value/quantity toggle.
+    map_out = out.with_name('map_data.json')
+    map_js = json.dumps(payload, separators=(',', ':')).replace('</', '<\\/')
+    map_out.write_text(map_js)
+    # viz_payload.json: strip value back to [y, q, r] (back-compat schema)
+    for e in payload.values():
+        for byu in e['c'].values():
+            for u in list(byu):
+                byu[u] = [c[:3] for c in byu[u]]
     js = json.dumps(payload, separators=(',', ':')).replace('</', '<\\/')
     out.write_text(js)
     if cfix_log:
