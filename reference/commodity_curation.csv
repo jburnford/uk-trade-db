@@ -1,0 +1,6 @@
+commodity,action,target,note
+"Corn And Grain — United States Of America",drop,,"known junk commodity (round-12 memory): country label absorbed as article; cells are dupes of the corn family"
+"Isinglass — East Coast Of Africa",drop,,article-drift phantom: a place name as article; cells belong to the isinglass/sugar glue neighbourhood
+"Sugar — East Coast Of Africa",drop,,article-drift phantom (same class)
+"Spirits — .. British East Indies",drop,,dot-prefixed place-article phantom from the spirits glue
+"Guano. See Manures",drop,,cross-reference line parsed as a commodity; cells are dupes (DUPE-FAM vs Manures)

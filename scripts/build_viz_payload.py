@@ -22,6 +22,7 @@ under the pseudo-country '§TOTAL'; tiers map A/B/C -> rank 1/2/3.
 
 Usage: python3 scripts/build_viz_payload.py [out.json]
 """
+import csv
 import json
 import re
 import sys
@@ -643,6 +644,36 @@ def main():
         if label in payload:                     # rare display collision
             label = f'{label} ({" ".join(sig)[:24]})'
         payload[label] = {'v': round(s['v']), 'c': s['c']}
+
+    # commodity curation (reference/commodity_curation.csv): adjudicated
+    # actions from the triage queue (scripts/curate_commodities.py).
+    #   drop            — phantom/junk commodity, remove entirely
+    #   fold,<target>   — merge into target (target's cells win on conflict)
+    #   rename,<target> — display-name fix / era-label unification
+    cur_f = BASE / 'reference' / 'commodity_curation.csv'
+    n_cur = 0
+    if cur_f.exists():
+        for r in csv.DictReader(open(cur_f)):
+            name, act, tgt = r['commodity'], r['action'], (r.get('target') or '').strip()
+            if name not in payload:
+                continue
+            if act == 'drop':
+                del payload[name]; n_cur += 1
+            elif act in ('fold', 'rename') and tgt:
+                src = payload.pop(name); n_cur += 1
+                if tgt not in payload:
+                    payload[tgt] = src
+                else:
+                    dst = payload[tgt]
+                    dst['v'] = dst.get('v', 0) + src.get('v', 0)
+                    for ctry, byu in src['c'].items():
+                        dbyu = dst['c'].setdefault(ctry, {})
+                        for u, series in byu.items():
+                            have = {row[0] for row in dbyu.get(u, [])}
+                            dbyu.setdefault(u, []).extend(
+                                row for row in series if row[0] not in have)
+        if n_cur:
+            print(f'  curation: {n_cur} commodities dropped/folded/renamed')
     js = json.dumps(payload, separators=(',', ':')).replace('</', '<\\/')
     out.write_text(js)
     if cfix_log:
