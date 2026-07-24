@@ -238,6 +238,8 @@ details.foot[open]>summary .chev{transform:rotate(90deg)}
       <p>Each origin sits at its principal <em>port of consignment</em>, not a geographic centroid: United States → New York, Canada → Montreal, Germany → Hamburg, Austria‑Hungary → Trieste, China → Shanghai, Russia → St Petersburg. Colonial umbrellas (British East Indies, Australasia, British Possessions in South Africa) resolve to their constituent colonies where the ledger itemises them. About 90% of located‑origin value is placed; the remainder — residual "Other Countries" lines and un‑gazetteered minor origins — is reported as an unmapped total, never silently dropped.</p>
       <h4>Provenance tiers</h4>
       <p>Each origin cell carries a confidence tier from the reconciliation pipeline: <b>A</b> anchored to a national total, <b>B</b> intermediate, <b>C</b> weakly supported. Bubble darkness encodes the tier; bubble area encodes the measure.</p>
+      <h4>Reconciling the origins</h4>
+      <p>A printed origin table often lists a parent total <em>and</em> its breakdown — "United States of America" alongside "on the Atlantic / on the Pacific", or "British East Indies" alongside Bombay, Madras and Bengal. Naïvely summing every line double‑counts, which made raw cotton (and ~50 other staples) read up to 1.8× their true volume in some years and produced a spurious "collapse" wherever the breakdown lines switched on or off. Origins are therefore de‑duplicated to the finest level available, and the national total is taken from the Statement's own Tier‑1 figure, so the two reconcile.</p>
       <h4>Draft status</h4>
       <p>This is a first draft for review. Value figures are provisional (value‑side reconciliation is pending; only quantities are anchored). The sugar commodity family and a set of country‑as‑article label defects remain queued. Basemap is a schematic equirectangular graticule, not a boundary map — appropriate to origins that are ports and shifting historical entities.</p>
     </div>
@@ -368,16 +370,23 @@ function drawSide(c,pts){
     statbig.textContent='—';statu.textContent='';statsub.textContent='';
     origbox.innerHTML=`<div class="nostate">No data recorded for ${state.year}.</div>`;drawSpark(c);return;
   }
-  const natV = nat? (state.meas==='v'?nat[0]:nat[1]) : 0;
+  const t1q = c.t1 && c.t1[yr];
+  let natV, anchored=false;
+  if(state.meas==='q' && t1q){ natV=t1q; anchored=true; }
+  else natV = nat? (state.meas==='v'?nat[0]:nat[1]) : 0;
   statbig.textContent = state.meas==='v'?fmtGBP(natV):fmtQ(natV);
   statu.textContent = state.meas==='v'?'consigned '+state.year : c.u+' · '+state.year;
-  statsub.textContent = 'national total (all origins)';
+  statsub.textContent = anchored?'Tier‑1 anchored national total':'national total (sum of origins)';
   drawSpark(c);
   if(!hasOrigins){
     origbox.innerHTML=`<div class="nostate">No origin breakdown published for ${state.year}.<br>Only the national total was tabulated.</div>`;return;
   }
-  // ranked origins
-  const tot = pts.reduce((a,p)=>a+p.val,0) + (c.res[yr]?(state.meas==='v'?c.res[yr][0]:c.res[yr][1]):0);
+  // ranked origins — for quantity the residual is measured against the Tier-1
+  // anchor, so mapped origins + residual reconcile to the true national total
+  const shown = pts.reduce((a,p)=>a+p.val,0);
+  const resv0 = c.res[yr]?(state.meas==='v'?c.res[yr][0]:c.res[yr][1]):0;
+  let tot = shown + resv0, resShown = resv0;
+  if(state.meas==='q' && t1q){ tot = Math.max(t1q, shown+resv0); resShown = tot - shown; }
   const maxv = pts.length?pts[0].val:1;
   let h='<div class="hd" style="margin-top:14px">Origins of shipment · '+state.year+'</div><div class="orig">';
   pts.slice(0,9).forEach(p=>{
@@ -388,14 +397,17 @@ function drawSide(c,pts){
        `<div class="orow"><span></span><div class="bar" style="width:${w}%;background:${PC[p.rank]};opacity:.5"></div><span></span></div>`;
   });
   h+='</div>';
-  const res=c.res[yr], resv=res?(state.meas==='v'?res[0]:res[1]):0;
-  if(resv) h+=`<div class="residual"><span>Other / unmapped origins</span><span class="val">${state.meas==='v'?fmtGBP(resv):fmtQ(resv)}${tot?' · '+Math.round(resv/tot*100)+'%':''}</span></div>`;
+  if(resShown>0.5) h+=`<div class="residual"><span>Other / unmapped origins</span><span class="val">${state.meas==='v'?fmtGBP(resShown):fmtQ(resShown)}${tot?' · '+Math.round(resShown/tot*100)+'%':''}</span></div>`;
   origbox.innerHTML=h;
 }
 function drawSpark(c){
-  const sp=$('#spark');const ys=[];for(let y=c.y[0];y<=c.y[1];y++){if(c.nat[String(y)])ys.push(y);}
+  const sp=$('#spark');
+  const useT1 = state.meas==='q' && c.t1;
+  const val1=y=>{const k=String(y);return useT1?(c.t1[k]||0):(c.nat[k]?(state.meas==='v'?c.nat[k][0]:c.nat[k][1]):0);};
+  const has=y=>{const k=String(y);return useT1?(c.t1[k]!=null):(c.nat[k]!=null);};
+  const ys=[];for(let y=c.y[0];y<=c.y[1];y++){if(has(y))ys.push(y);}
   if(ys.length<2){sp.innerHTML='';return;}
-  const vals=ys.map(y=>state.meas==='v'?c.nat[String(y)][0]:c.nat[String(y)][1]);
+  const vals=ys.map(val1);
   const mx=Math.max(...vals)||1, W=300,H=52,pad=3;
   const X=y=>(y-ys[0])/(ys[ys.length-1]-ys[0])*(W-2*pad)+pad;
   const Y=v=>H-pad-(v/mx)*(H-2*pad);
