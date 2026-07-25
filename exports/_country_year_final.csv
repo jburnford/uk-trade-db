@@ -26399,6 +26399,15 @@ SUGAR,"Refined, or rendered by any process equal thereto; In lumps and loaves",b
 SUGAR,"Refined, or rendered by any process equal thereto; In lumps and loaves",france,Cwts,import,1884,658112.0,757993.0,consensus,B,B,2,2
 SUGAR,"Refined, or rendered by any process equal thereto; In lumps and loaves",canada,Cwts,import,1884,40.0,56.0,consensus,B,B,2,2
 SUGAR,"Refined, or rendered by any process equal thereto; In lumps and loaves",united states of america,Cwts,import,1884,231192.0,257547.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",germany,Cwts,import,1884,619610.0,598065.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",holland,Cwts,import,1884,466500.0,486737.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",belgium,Cwts,import,1884,33644.0,43234.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",france,Cwts,import,1884,389389.0,413109.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",british possessions in south africa,Cwts,import,1884,3223.0,3024.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",united states of america,Cwts,import,1884,813361.0,796638.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",british west indies and guiana,Cwts,import,1884,14438.0,16086.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",brazil,Cwts,import,1884,1424.0,1530.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",other countries,Cwts,import,1884,2509.0,2962.0,consensus,B,B,2,2
 SUGAR,Unrefined; Beetroot,denmark,Cwts,import,1884,7700.0,4285.0,consensus,B,B,2,2
 SUGAR,Unrefined; Beetroot,germany,Cwts,import,1884,7181237.0,5035247.0,consensus,B,B,2,2
 SUGAR,Unrefined; Beetroot,holland,Cwts,import,1884,112648.0,85234.0,consensus,B,B,2,2
@@ -28574,6 +28583,11 @@ SPICES,Unenumerated,france,Lbs,import,1885,125267.0,2494.0,consensus,B,B,2,2
 SPICES,Unenumerated,tive states,Lbs,import,1885,815426.0,16790.0,consensus,B,B,2,2
 SPICES,Unenumerated,java,Lbs,import,1885,103785.0,8672.0,consensus,B,B,2,2
 SPICES,Unenumerated,other foreign countries,Lbs,import,1885,66224.0,1096.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",russia,Cwts,import,1885,231365.0,207008.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",germany,Cwts,import,1885,779504.0,661435.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",united states of america,Cwts,import,1885,2111559.0,1905282.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",british east indies,Cwts,import,1885,199.0,277.0,consensus,B,B,2,2
+SUGAR,"Other Sorts, including Candy",other british possessions,Cwts,import,1885,217.0,176.0,consensus,B,B,2,2
 SUGAR,Unrefined; Beetroot,denmark,Cwts,import,1885,2000.0,1550.0,consensus,B,B,2,2
 SUGAR,Unrefined; Beetroot,germany,Cwts,import,1885,7322686.0,4705421.0,consensus,B,B,2,2
 SUGAR,Unrefined; Beetroot,holland,Cwts,import,1885,169033.0,111213.0,consensus,B,B,2,2
@@ -80835,8 +80849,6 @@ SUGAR,Unrefined,other countries,Tons,import,1875,25.0,248.0,consensus,C,B,3,2
 SUGAR,In lumps and loaves,holland,,import,1885,919172.0,857661.0,consensus,C,B,3,2
 SUGAR,In lumps and loaves,belgium,,import,1885,45115.0,41062.0,consensus,C,B,3,2
 SUGAR,In lumps and loaves,france,,import,1885,383452.0,368958.0,consensus,C,B,3,2
-SUGAR,In lumps and loaves,united states of america,,import,1885,169695.0,165702.0,consensus,C,B,3,2
-SUGAR,In lumps and loaves,other foreign countries,,import,1885,323.0,276.0,consensus,C,B,3,2
 GUM,Manufactures of,germany,Cwts,import,1890,86.0,761.0,consensus,C,B,3,2
 GUM,Manufactures of,other foreign countries,Cwts,import,1890,3.0,18.0,consensus,C,B,3,2
 TOBACCO,Cigars'd),channel islands,Lbs,import,1894,10580.0,4673.0,consensus,C,B,3,2
@@ -81955,7 +81967,7 @@ CHICORY,Roasted or Ground,Holland,Lbs.,import,1888,29902.0,405.0,human,A,A,1,1
 CHICORY,Roasted or Ground,Belgium,Lbs.,import,1888,208537.0,2002.0,human,A,A,1,1
 CHICORY,Roasted or Ground,Other Foreign Countries,Lbs.,import,1888,6434.0,124.0,human,A,A,1,1
 CHICORY,Roasted or Ground,Channel Islands,Lbs.,import,1888,81811.0,782.0,human,A,A,1,1
-SUGAR,"Other Sorts, including Candy",Germany,Cwts.,import,1885,974025.0,839388.0,human,A,A,1,1
+SUGAR,Refined : Total of,Germany,Cwts.,import,1885,974025.0,839388.0,human,A,A,1,1
 EGGS,,Denmark,Great Hundreds.,import,1872,109546.0,36734.0,human,A,A,1,1
 EGGS,,Germany,Great Hundreds.,import,1872,422900.0,125059.0,human,A,A,1,1
 EGGS,,Holland,Great Hundreds.,import,1872,16458.0,6316.0,human,A,A,1,1
@@ -82489,6 +82501,13 @@ COCHINEAL (INCLUDING GRANILIA AND DUST),,Mexico,Cwts.,import,1874,3146.0,44442.0
 COCHINEAL (INCLUDING GRANILIA AND DUST),,Central America,Cwts.,import,1874,1492.0,19596.0,human,A,A,1,1
 COCHINEAL (INCLUDING GRANILIA AND DUST),,New Granada,Cwts.,import,1874,152.0,2334.0,human,A,A,1,1
 COCHINEAL (INCLUDING GRANILIA AND DUST),,Other Countries,Cwts.,import,1874,1593.0,25746.0,human,A,A,1,1
+SUGAR,In lumps and loaves,Germany,Cwts.,import,1885,194521.0,177953.0,human,A,A,1,1
+SUGAR,In lumps and loaves,Other Foreign Countries,Cwts.,import,1885,353.0,276.0,human,A,A,1,1
+SUGAR,"Other Sorts, including Candy",France,Cwts.,import,1885,115386.0,107395.0,human,A,A,1,1
+SUGAR,"Other Sorts, including Candy",Holland,Cwts.,import,1885,349350.0,308238.0,human,A,A,1,1
+SUGAR,"Other Sorts, including Candy",Other Foreign Countries,Cwts.,import,1885,216.0,200.0,human,A,A,1,1
+SUGAR,"Other Sorts, including Candy",Belgium,Cwts.,import,1885,28942.0,34119.0,human,A,A,1,1
+SUGAR,In lumps and loaves,United States of America,Cwts.,import,1885,169695.0,165702.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -97072,20 +97091,6 @@ STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Pacific,,i
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Australia,,import,1875,1138.0,7939.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",British North America,,import,1875,618.0,7549.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Other Countries,,import,1875,11031.0,35506.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Denmark,,import,1875,154010.0,180224.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Germany,,import,1875,37950.0,45532.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Holland,,import,1875,26593.0,31363.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Belgium,,import,1875,36635.0,41764.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,France,,import,1875,15499.0,19042.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,"Portugal, Azores, and Madeira",,import,1875,21728.0,27156.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Spain and Canaries,,import,1875,29413.0,37595.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Italy,,import,1875,248018.0,299798.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,United States: Atlantic,,import,1875,49841.0,54605.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Channel Islands,,import,1875,9002.0,10721.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Gibraltar,,import,1875,43737.0,52634.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Malta,,import,1875,34805.0,40037.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,British North America,,import,1875,196944.0,219207.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Other Countries,,import,1875,27435.0,40176.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, and Syrup",Germany,,import,1875,65470.0,53593.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, and Syrup",Other Countries,,import,1875,19361.0,15014.0,twoup,C,C,3,3
 TELEGRAPHIC WIRES AND APPARATUS,,Germany,,import,1875,13545.0,,twoup,C,C,3,3
@@ -98690,20 +98695,6 @@ STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",British In
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Australia,,import,1877,1005.0,8694.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",British North America,,import,1877,2286.0,4708.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Other Countries,,import,1877,15374.0,41085.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Denmark,,import,1877,141926.0,193607.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Germany,,import,1877,28207.0,59777.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Holland,,import,1877,31188.0,42922.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Belgium,,import,1877,53030.0,71635.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,France,,import,1877,29545.0,39402.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,"Portugal, Azores, and Madeira",,import,1877,51272.0,71791.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Spain and Canaries,,import,1877,45616.0,69332.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Italy,,import,1877,189235.0,266729.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,United States: Atlantic,,import,1877,69594.0,94980.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Pacific,,import,1877,1445.0,2095.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Gibraltar,,import,1877,33848.0,47544.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Malta,,import,1877,37279.0,51747.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,British North America,,import,1877,389909.0,452995.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Other Countries,,import,1877,30862.0,48193.0,twoup,C,C,3,3
 SUGAR,"Moasses, Treacle, and Syrup",Germany,,import,1877,63643.0,46844.0,twoup,C,C,3,3
 SUGAR,"Moasses, Treacle, and Syrup",Belgium,,import,1877,24033.0,16895.0,twoup,C,C,3,3
 SUGAR,"Moasses, Treacle, and Syrup",Other Countries,,import,1877,39771.0,26534.0,twoup,C,C,3,3
@@ -98898,11 +98889,6 @@ SILK MANUFACTURES,"Manufactures of Silk, or of Silk mixed with other Materials, 
 "SKINS, FURS, AND PELTS","Tanned, Tawed, or Dressed",France,,import,1877,1033723.0,104083.0,twoup,C,C,3,3
 "SKINS, FURS, AND PELTS","Tanned, Tawed, or Dressed",United States of America,,import,1877,229949.0,30666.0,twoup,C,C,3,3
 "SKINS, FURS, AND PELTS","Tanned, Tawed, or Dressed",Other Countries,,import,1877,112557.0,9462.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Spain and Canary Islands,,import,1877,8065.0,13739.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Austrian Territories,,import,1877,6179.0,9881.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Turkey Proper,,import,1877,24950.0,39301.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Channel Islands,,import,1877,10276.0,16409.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Australia,,import,1877,12767.0,19781.0,twoup,C,C,3,3
 SUGAR,Glucose,Other Countries,,import,1877,2208.0,1917.0,twoup,C,C,3,3
 TAR,,Australia,,import,1877,2009.0,2323.0,twoup,C,C,3,3
 WHALEPINS,,France,,import,1877,126.0,7400.0,twoup,C,C,3,3
@@ -99948,19 +99934,6 @@ PLUMBAGO,"PORK, Salted (not Hams)",Other Countries,,import,1878,6004.0,7663.0,tw
 "SKINS, FURS, AND PELTS","Tanned, Tawed, or Dressed",Other Countries,,import,1878,27934.0,2322.0,twoup,C,C,3,3
 "SKINS, FURS, AND PELTS",Manufactures of Skins and Furs,France,,import,1878,23466.0,,twoup,C,C,3,3
 "SKINS, FURS, AND PELTS",Manufactures of Skins and Furs,Other Countries,,import,1878,1531.0,,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Belgium,,import,1878,2945.0,3471.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy","Portugal, Azores, and Madeira",,import,1878,38593.0,50006.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Italy,,import,1878,10259.0,14825.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Greece,,import,1878,2275.0,3216.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Turkey Proper,,import,1878,25082.0,37591.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Wallachia and Moldavia,,import,1878,2783.0,4171.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Channel Islands,,import,1878,13343.0,19908.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Gibraltar,,import,1878,9652.0,13115.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Malta and Gozo,,import,1878,18447.0,26194.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",British Possessions in South Africa,,import,1878,4435.0,6961.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Australia,,import,1878,19037.0,27133.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",British North America,,import,1878,5695.0,6359.0,twoup,C,C,3,3
-SUGAR,"Refined, and Candy",Other Countries,,import,1878,12447.0,17667.0,twoup,C,C,3,3
 SUGAR,Glucose,Other Countries,,import,1878,2838.0,2734.0,twoup,C,C,3,3
 TOBACCO,"Manufactured, Cavendish or Negrohead",British Possessions in South Africa,,import,1878,175223.0,7905.0,twoup,C,C,3,3
 TOBACCO,"Manufactured, Cavendish or Negrohead",British India,,import,1878,199266.0,9755.0,twoup,C,C,3,3
@@ -101313,20 +101286,6 @@ STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",United Sta
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Australia,,import,1880,1047.0,4756.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Canada,,import,1880,2111.0,2159.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Other Countries,,import,1880,7321.0,19834.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Denmark,,import,1880,184746.0,213994.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Germany,,import,1880,22491.0,25583.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Holland,,import,1880,16998.0,19736.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Belgium,,import,1880,67257.0,76215.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,France,,import,1880,64896.0,74331.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Portugal,,import,1880,76898.0,86293.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Italy,,import,1880,193519.0,230262.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Algeria,,import,1880,12537.0,15140.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,United States: Atlantic,,import,1880,24207.0,27916.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Gibraltar,,import,1880,28929.0,34392.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Malta,,import,1880,45631.0,53278.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Australia,,import,1880,21196.0,27139.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,British North America,,import,1880,128231.0,143712.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Other Countries,,import,1880,25701.0,35978.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, and Syrup",Germany,,import,1880,56848.0,36009.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, and Syrup",Belgium,,import,1880,61712.0,30610.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, and Syrup",France,,import,1880,44053.0,12264.0,twoup,C,C,3,3
@@ -102216,20 +102175,6 @@ STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",France,,im
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",United States: Atlantic,,import,1881,5330.0,21839.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Australasia,,import,1881,797.0,5070.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Other Countries,,import,1881,4793.0,21415.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Denmark,,import,1881,160958.0,186431.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Germany,,import,1881,29504.0,34526.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Holland,,import,1881,20135.0,24198.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Belgium,,import,1881,73783.0,84830.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,France,,import,1881,106364.0,119605.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Portugal,,import,1881,67229.0,74811.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Italy,,import,1881,199087.0,246433.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Algeria,,import,1881,13802.0,16697.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,United States: Atlantic,,import,1881,19240.0,20809.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Gibraltar,,import,1881,29915.0,39068.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Malta,,import,1881,47371.0,55592.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Australasia,,import,1881,10306.0,13289.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,British North America,,import,1881,37895.0,42394.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Other Countries,,import,1881,29165.0,39912.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, and Syrup",Germany,,import,1881,47405.0,31452.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, and Syrup",Belgium,,import,1881,96555.0,44594.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, and Syrup",Other Countries,,import,1881,29280.0,14487.0,twoup,C,C,3,3
@@ -104431,21 +104376,6 @@ STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Germany,,i
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",United States: Atlantic,,import,1883,5301.0,35650.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Australasia,,import,1883,1321.0,9086.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Other Countries,,import,1883,7108.0,29168.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Denmark,,import,1883,232387.0,247132.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Germany,,import,1883,34479.0,35725.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Holland,,import,1883,34532.0,36788.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Belgium,,import,1883,95250.0,94879.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,France,,import,1883,130151.0,139744.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Portugal,,import,1883,79482.0,79963.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Italy,,import,1883,232318.0,252207.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Algeria,,import,1883,12455.0,14599.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,United States: Atlantic,,import,1883,19093.0,17827.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Chile,,import,1883,16196.0,23436.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Gibraltar,,import,1883,33146.0,35568.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Malta,,import,1883,56320.0,60217.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Australasia,,import,1883,10709.0,13923.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,British North America,,import,1883,51851.0,50172.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Other Countries,,import,1883,32231.0,39277.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, Syrup, and Glucose",Denmark,,import,1883,11668.0,6086.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, Syrup, and Glucose",Germany,,import,1883,61637.0,40136.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, Syrup, and Glucose",Belgium,,import,1883,67594.0,35512.0,twoup,C,C,3,3
@@ -105737,22 +105667,6 @@ STONES AND SLATES,"Grindstones, Millstones, and otherSorts of Stone",United Stat
 STONES AND SLATES,"Grindstones, Millstones, and otherSorts of Stone",Argentine Republic,,import,1884,4080.0,5611.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and otherSorts of Stone",British North America,,import,1884,1169.0,5768.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and otherSorts of Stone",Other Countries,,import,1884,7425.0,30280.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Denmark,,import,1884,216082.0,180133.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Germany,,import,1884,38059.0,31397.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Holland,,import,1884,52653.0,42014.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Belgium,,import,1884,90532.0,73493.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,France,,import,1884,183531.0,157473.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Portugal,,import,1884,93329.0,76996.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Italy,,import,1884,239701.0,198630.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Algeria,,import,1884,21884.0,21765.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,United States: Atlantic,,import,1884,21552.0,19016.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Chile,,import,1884,8282.0,10234.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Gibraltar,,import,1884,30769.0,26181.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Malta,,import,1884,57432.0,51515.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,British East Indies,,import,1884,12267.0,12065.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Australasia,,import,1884,23277.0,25033.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,British North America,,import,1884,75129.0,59972.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Other Countries,,import,1884,31199.0,32791.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, Syrup, andGlucose",Denmark,,import,1884,16841.0,7458.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, Syrup, andGlucose",Germany,,import,1884,38567.0,22535.0,twoup,C,C,3,3
 SUGAR,"Molasses, Treacle, Syrup, andGlucose",Holland,,import,1884,27321.0,7725.0,twoup,C,C,3,3
@@ -106652,13 +106566,6 @@ STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stones",Sweden an
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stones",Germany,,import,1885,3273.0,8096.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stones",United States of America,,import,1885,7336.0,37494.0,twoup,C,C,3,3
 STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stones",Other Foreign Countries,,import,1885,5158.0,17996.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Denmark,,import,1885,129403.0,99517.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Germany,,import,1885,34312.0,26972.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Holland,,import,1885,67071.0,51928.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Belgium,,import,1885,77694.0,56763.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,France,,import,1885,78404.0,61116.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Portugal,,import,1885,84235.0,63824.0,twoup,C,C,3,3
-SUGAR,Refined and Candy,Italy,,import,1885,296844.0,224518.0,twoup,C,C,3,3
 WOOLLEN AND WORSTED MANUFACTURES,Worsted Yarn (Combed),Sweden and Norway,,import,1885,1943900.0,166027.0,twoup,C,C,3,3
 WOOLLEN AND WORSTED MANUFACTURES,Worsted Yarn (Combed),Denmark,,import,1885,1007300.0,93112.0,twoup,C,C,3,3
 WOOLLEN AND WORSTED MANUFACTURES,Worsted Yarn (Combed),Germany,,import,1885,17951200.0,1724318.0,twoup,C,C,3,3
@@ -107075,14 +106982,6 @@ PICTURES,,Other Foreign Countries,,import,1886,807.0,9379.0,twoup,C,C,3,3
 STONES AND SLATES,.. Slate by Sale,Germany,,import,1886,31828700.0,155962.0,twoup,C,C,3,3
 STONES AND SLATES,.. Slate by Sale,Austrian Territories,,import,1886,1498600.0,3602.0,twoup,C,C,3,3
 STONES AND SLATES,.. Slate by Sale,Other Foreign Countries,,import,1886,2012900.0,5364.0,twoup,C,C,3,3
-SUGAR,.. Refined and Candy,Denmark,,import,1886,146052.0,95645.0,twoup,C,C,3,3
-SUGAR,.. Refined and Candy,Germany,,import,1886,27851.0,19468.0,twoup,C,C,3,3
-SUGAR,.. Refined and Candy,Holland,,import,1886,109574.0,81642.0,twoup,C,C,3,3
-SUGAR,.. Refined and Candy,Belgium,,import,1886,51378.0,35471.0,twoup,C,C,3,3
-SUGAR,.. Refined and Candy,France,,import,1886,42931.0,31447.0,twoup,C,C,3,3
-SUGAR,.. Refined and Candy,"Portugal, Azores, and Madeira",,import,1886,97673.0,68360.0,twoup,C,C,3,3
-SUGAR,.. Refined and Candy,Italy,,import,1886,143084.0,98058.0,twoup,C,C,3,3
-SUGAR,.. Refined and Candy,Other Foreign Countries,,import,1886,14286.0,11328.0,twoup,C,C,3,3
 WOOLLEN AND WORSTED MANUFACTURES,United States of America,Mexico,,import,1886,1310400.0,30329.0,twoup,C,C,3,3
 WOOLLEN AND WORSTED MANUFACTURES,United States of America,Venezuela,,import,1886,160700.0,8971.0,twoup,C,C,3,3
 WOOLLEN AND WORSTED MANUFACTURES,United States of America,Ecuador,,import,1886,137500.0,16094.0,twoup,C,C,3,3
@@ -114587,24 +114486,24 @@ WINE,White,Australasia : New South Wales,Gallons,import,1893,7096.0,2732.0,group
 WINE,White,Australasia : Other Colonies,Gallons,import,1893,557.0,539.0,groupfix,C,C,3,3
 WINE,White,British North America,Gallons,import,1893,161.0,131.0,groupfix,C,C,3,3
 WINE,White,Other British Possessions,Gallons,import,1893,203.0,182.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",Russia,Cwts.,import,1885,231365.0,207008.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",Holland,Cwts.,import,1885,1268522.0,1165899.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",Belgium,Cwts.,import,1885,74057.0,75181.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",France,Cwts.,import,1885,498838.0,476353.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",United States of America,Cwts.,import,1885,2281254.0,2070984.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",Other Foreign Countries,Cwts.,import,1885,569.0,476.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",British East Indies,Cwts.,import,1885,199.0,277.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",Other British Possessions,Cwts.,import,1885,217.0,176.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",Germany,Cwts.,import,1884,752027.0,733712.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",Holland,Cwts.,import,1884,1320324.0,1379227.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",Belgium,Cwts.,import,1884,77834.0,90967.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",France,Cwts.,import,1884,1047501.0,1171102.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",British Possessions in South Africa,Cwts.,import,1884,3223.0,3024.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",British North America,Cwts.,import,1884,40.0,56.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",United States of America,Cwts.,import,1884,1044553.0,1054185.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",British West Indies and Guiana,Cwts.,import,1884,14438.0,16086.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",Brazil,Cwts.,import,1884,1424.0,1530.0,groupfix,C,C,3,3
-SUGAR,"Other Sorts, including Candy",Other Countries,Cwts.,import,1884,2509.0,2962.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,Russia,Cwts.,import,1885,231365.0,207008.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,Holland,Cwts.,import,1885,1268522.0,1165899.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,Belgium,Cwts.,import,1885,74057.0,75181.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,France,Cwts.,import,1885,498838.0,476353.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,United States of America,Cwts.,import,1885,2281254.0,2070984.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,Other Foreign Countries,Cwts.,import,1885,569.0,476.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,British East Indies,Cwts.,import,1885,199.0,277.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,Other British Possessions,Cwts.,import,1885,217.0,176.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,Germany,Cwts.,import,1884,752027.0,733712.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,Holland,Cwts.,import,1884,1320324.0,1379227.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,Belgium,Cwts.,import,1884,77834.0,90967.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,France,Cwts.,import,1884,1047501.0,1171102.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,British Possessions in South Africa,Cwts.,import,1884,3223.0,3024.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,British North America,Cwts.,import,1884,40.0,56.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,United States of America,Cwts.,import,1884,1044553.0,1054185.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,British West Indies and Guiana,Cwts.,import,1884,14438.0,16086.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,Brazil,Cwts.,import,1884,1424.0,1530.0,groupfix,C,C,3,3
+SUGAR,Refined : Total of,Other Countries,Cwts.,import,1884,2509.0,2962.0,groupfix,C,C,3,3
 "MUTTON, FRESH",,Australasia : Victoria,Cwts.,import,1885,44489.0,107306.0,groupfix,C,C,3,3
 "MUTTON, FRESH",,Australasia : New South Wales,Cwts.,import,1885,9085.0,24333.0,groupfix,C,C,3,3
 "MUTTON, FRESH",,Australasia : New Zealand,Cwts.,import,1885,284013.0,701919.0,groupfix,C,C,3,3
