@@ -322,19 +322,30 @@ for n in wl:
         # measure on the axis the map shows, falling back to value where the
         # year carries no dominant-unit quantity at all
         ix = 1 if (t > 1000 and any(ly[(c, y)][1] for c in present)) else 0
-        if t > 1000 and ix == 1:
-            tot = sum(ly[(c, y)][ix] for c in present)
-            for pa, kids in sorted(groups, key=lambda g: -ly[(g[0], y)][ix]):
-                if (pa, y) in drop or all((k, y) in drop for k in kids):
-                    continue                      # settled by an outer group
-                pq = ly[(pa, y)][ix]
-                kq = sum(ly[(k, y)][ix] for k in kids if (k, y) not in drop)
-                if abs(tot - pq - t) <= abs(tot - kq - t):
-                    drop.add((pa, y)); tot -= pq  # children read truer
-                else:
-                    for k in kids:
-                        drop.add((k, y))
-                    tot -= kq                     # parent reads truer
+        if t > 1000 and ix == 1 and len(groups) <= 10:
+            # Choose the groups TOGETHER, not one after another. Deciding each
+            # against a running total that still holds the other groups'
+            # duplicates biases every choice but the last: wool 1894 has both
+            # an Australasia group and a South Africa one, and judged first
+            # against the uncleaned total Australasia's parent looked 4.8M
+            # from the anchor when the honest comparison was 75M. A commodity
+            # rarely has more than three or four such groups in a year, so
+            # every combination can simply be tried. Overlapping groups (a
+            # child that is itself a parent) come out right because each
+            # combination is scored on the set it actually keeps.
+            best = None
+            for mask in range(1 << len(groups)):
+                dropped = set()
+                for i, (pa, kids) in enumerate(groups):
+                    if mask >> i & 1:
+                        dropped.add(pa)
+                    else:
+                        dropped.update(kids)
+                kept = sum(ly[(c, y)][ix] for c in present if c not in dropped)
+                d = abs(kept - t)
+                if best is None or d < best[0]:
+                    best = (d, dropped)
+            drop.update((c, y) for c in best[1])
         else:
             for pa, kids in groups:
                 pv = ly[(pa, y)][0] or 1
