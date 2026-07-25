@@ -430,17 +430,22 @@ for n in wl:
             # and the anchor started at 1893, overlapping on one year in which
             # the origin quantity happened to be zero.
             fl.append('nooverlap')
-    # A HOLE inside the origin span: the national total says thousands of tons
-    # crossed the quay and no origin table is published for it. The ratio tests
-    # above cannot see this - a median ignores however many zeroes you give it -
-    # so 'Butter' read as perfectly measured while 1882, 1883, 1884 and 1885
-    # were blank in the middle of a continuous 1872-99 series, its origins for
-    # those years sitting under the era label 'Butter And Butterine'. Only years
-    # BETWEEN the first and last origin year count: an anchor that starts before
-    # the origin tables do is the normal state of the source, not a defect.
+    # A HOLE: the national total says thousands of tons crossed the quay and no
+    # origin table is published for it. The ratio tests above cannot see this -
+    # a median ignores however many zeroes you give it - so 'Butter' read as
+    # perfectly measured while 1882-85 were blank in the middle of a continuous
+    # 1872-99 series, its origins for those years sitting under the era label
+    # 'Butter And Butterine'.
+    # The window is the one in which the source publishes origin tables at all,
+    # 1872-1899, NOT the commodity's own span. Restricting it to the span was
+    # the obvious thing and it was wrong: it can only see holes a sibling year
+    # happens to bracket. Coffee's origins stopped in 1890 with the anchor
+    # running to 1897 - nine blank years at the END, the same split-label defect
+    # as butter's, and invisible to a span-bounded test. Outside 1872-1899 there
+    # are no origin tables to be missing, so nothing there is a defect.
     oyrs = [y for y in nat if nat[y][1]]
-    if t1 and oyrs:
-        gaps = [y for y in t1 if min(oyrs) <= y <= max(oyrs) and t1[y] > 1000
+    if t1 and len(oyrs) >= 3:
+        gaps = [y for y in t1 if 1872 <= y <= 1899 and t1[y] > 1000
                 and nat.get(y, [0, 0])[1] < 0.1 * t1[y]]
         if gaps:
             fl.append('gapyears')

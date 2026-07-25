@@ -1,5 +1,6 @@
 commodity,year,origin,unit,qty,anchor,x_anchor
 Silk — Raw,1873,British East Indies,Lb,84778433506,6445213,13153.7
+Coffee — Raw,1880,Prunes From France Other Countries,Cwt,362501129,1546451,234.4
 Tobacco — Unmanufactured,1894,United States Of America,Lb,76105900,57781317,1.3
 Wine — Total Of All Kinds,1882,Leather Lbs,Gallon,75217704,15715813,4.8
 Wine — Total Of All Kinds,1882,Corn Wheat,Gallon,64240749,15715813,4.1
@@ -20,6 +21,7 @@ Wine — Total Of All Kinds,1876,Petroleum Gallons,Gallon,25201177,19950723,1.3
 Wine — Total Of All Kinds,1881,Cocoa Lbs,Gallon,22451834,16297033,1.4
 Wine — Total Of All Kinds,1882,Cocoa Lbs,Gallon,19101646,15715813,1.2
 Wine — Total Of All Kinds,1882,Indian Corn Or Maize,Gallon,18275731,15715813,1.2
+Coffee — Raw,1880,Plums French And Pruneloes From France Other Countries,Cwt,13029327,1546451,8.4
 Linen Yarn,1890,Belgium,Lb,12485017,432556,28.9
 Feathers And Down — Ornamental,1889,British East Indies,Lb,8793614,796537,11.0
 Yarn,1891,Germany,Lb,8528710,3021391,2.8
@@ -186,9 +188,7 @@ Collodium,1893,United States Of America (Atlantic),Gallon,2385,1942,1.2
 Collodium,1893,United States Of America,Gallon,2305,1942,1.2
 "Unenumerated, Not Sweetened Or Mixed",1883,United States Of America Other Countries,Proof Gallon,1395602183,0,foreign to this commodity
 "Skins, Furs, And Pelts — Seal",1884,Whale Fisheries Northern Other Countries,Number,502306368,713632,foreign to this commodity
-Coffee,1880,Prunes From France Other Countries,Cwt,362501129,1546451,foreign to this commodity
 Umbrellas And Parasols,1872,United States Of America (Atlantic & Pacific),?,45939100,0,foreign to this commodity
-Coffee,1880,Plums French And Pruneloes From France Other Countries,Cwt,13029327,1546451,foreign to this commodity
 "Skins, Furs, And Pelts — Goat, Undressed",1884,British India,Number,2414005,0,foreign to this commodity
 "Skins And Furs — Foreign, Dressed In The United Kingdom",1878,Germany,?,2251113,0,foreign to this commodity
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Other Foreign Countries,?,1657113,0,foreign to this commodity
@@ -311,12 +311,6 @@ Oil,1886,Norway,Tun,185,0,foreign to this commodity
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,British East Indies,Number,46,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Japan,?,24,0,foreign to this commodity
 "Dye Stuffs, And Substances Used In Tanning — Safflower",1884,Turkey,Cwt,18,0,foreign to this commodity
-Coffee,1880,Malt Foreign From All Countries,Cwt,0,1546451,foreign to this commodity
-Coffee,1880,Dutch Guiana,Cwt,0,1546451,foreign to this commodity
-Coffee,1898,Entered 1895,Cwt,0,0,foreign to this commodity
-Coffee,1898,Entered 1896,Cwt,0,0,foreign to this commodity
-Coffee,1898,Entered 1897,Cwt,0,0,foreign to this commodity
-Coffee,1898,Entered 1898,Cwt,0,0,foreign to this commodity
 Jute,1872,British India,Ton,0,0,foreign to this commodity
 Petroleum,1899,Illuminating Gallons,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Plumbago Tons,Gallon,0,0,foreign to this commodity
