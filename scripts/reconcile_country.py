@@ -207,18 +207,34 @@ def match_blocks(ch, inf):
     return pairs
 
 
+def sub_name(raw):
+    """A member's own name, without the region it sits under: the engines
+    disagree about whether to carry the parent, so one prints 'West Coast Of
+    Africa (Foreign) : Fernando Po' where the other prints 'Fernando Po'.
+    Matching on the full string then leaves every member of the block
+    unmatched, and the positional fallback pairs each label with the WRONG
+    engine's row whenever the two differ by a line (a heading row one engine
+    read as data) — which relabels the whole block by one."""
+    return norm((raw or '').rsplit(' : ', 1)[-1])
+
+
 def align_members(ch_blk, inf_blk):
-    """{ch_norm_country: inf_row} — by country name, leftovers by order."""
+    """{ch_norm_country: inf_row} — by country name, then by the member's own
+    name under a region header, leftovers by order."""
     out = {}
     inf_left = list(inf_blk['members'])
-    by_c = {}
+    by_c, by_sub = {}, {}
     for nc, r in inf_blk['members']:
         by_c.setdefault(nc, r)
+        by_sub.setdefault(sub_name(r[5]), r)
     ch_left = []
     for nc, r in ch_blk['members']:
-        if nc in by_c:
-            out[nc] = by_c[nc]
-            inf_left = [(inc, ir) for inc, ir in inf_left if inc != nc]
+        hit = by_c.get(nc)
+        if hit is None:
+            hit = by_sub.get(sub_name(r[5]))
+        if hit is not None:
+            out[nc] = hit
+            inf_left = [(inc, ir) for inc, ir in inf_left if ir is not hit]
         else:
             ch_left.append(nc)
     for nc, (inc, ir) in zip(ch_left, inf_left):

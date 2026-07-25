@@ -26,6 +26,7 @@ class,commodity,year,origin,twin_origin,qty,value
 "same place, dropped","Silk — Knubs Or Husks Of Silk, And Waste",1897,Turkey,,612,7452
 "same place, dropped",Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1896,Madras,,464,6738
 "same place, dropped",Manufactures Of Iron And Steel — Tyres And Axles,1896,Holland,,6590,6160
+"same place, dropped",Saltpetre (Nitrate Of Potash),1896,Russia,,23326,5116
 "same place, dropped",Caoutchouc,1894,Aden,,321,3299
 "same place, dropped","Perfumery, And Articles Used In The Manufacture Thereof, Except Perfumed Spirits",1896,Aden,,253,3226
 "same place, dropped",Oats,1894,Turkey,,13288,3143
@@ -47,6 +48,8 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept","Sugar — Unrefined : Cane, And Other Sorts",1895,British East Indies,Australasia,2894873,1525112
 "two places, kept",Rice,1895,Bengal,Burmah,2864646,900845
 "two places, kept",Rye,1893,Russia,Germany,320893,82492
+"two places, kept",Bacon,1897,Russia,Northern Parts,27713,59953
+"two places, kept",Barley,1893,Morocco,United States Of America,250612,54088
 "two places, kept",Corn And Grain — Pease,1893,Germany,Russia,180123,51442
 "two places, kept",Wood And Timber — Oak,1875,Russia,Germany,4731,51185
 "two places, kept",Oil — Palm,1895,Portuguese Possessions In Western Africa,Portuguese,42100,44133
@@ -54,6 +57,7 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept","Sugar — Unrefined, Total",1886,Mexico,Hayti And St Domingo,55225,39776
 "two places, kept",Tea,1897,Bombay,Bombay And Schinde,1013714,38256
 "two places, kept",Caoutchouc,1883,East Coast Of Africa Portu Guese,"East Coast Of Africa, Portuguese",3048,36700
+"two places, kept",Bacon,1896,Russia,Northern Parts,19001,35421
 "two places, kept","Gold — Ore Of, Or Ore Of Which The Greater Part In Value Is Gold",1874,Chile,United States Of America,180,35020
 "two places, kept",Oil — Oil Seed Cakes,1874,Denmark,Germany,2596,25326
 "two places, kept",Potatoes,1894,Java,Siam,49272,24356
@@ -92,10 +96,12 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept","Copper, Ore Of",1896,Other British Possessions,British East Indies,48,1195
 "two places, kept",Zinc — Ore Of,1897,Tunis,Tunisia,430,1070
 "two places, kept",Cotton,1894,Zanzibar And Pemba,The Protectorate Of Zanzibar And Pemba,790,1050
+"two places, kept","Skins : Goat, Undressed",1896,Algeric,Algeria,12600,981
 "two places, kept",Zinc — Ore Of,1895,Tunis,Tunisia,350,875
 "two places, kept","Madder, Madder Root, Garancine, And Munjeet",1896,Asiatic,Turkey,593,826
 "two places, kept","Madder, Madder Root, Garancine, And Munjeet",1894,Asiatic,Turkey,653,763
 "two places, kept","Animals, Living — Sheep And Lambs",1893,Chile,Other Foreign Countries,694,694
+"two places, kept","Skins : Goat, Undressed",1895,Algeric,Algeria,7300,685
 "two places, kept","Cheese — Imitation Cheese (Including Lard Cheese, And All Kinds Of Artificial Or Imitation Cheese)",1893,United States Of America,Other Foreign Countries,277,542
 "two places, kept",Potatoes,1896,Siam,French Indo China,1200,540
 "two places, kept",Cutch And Gambier,1895,Other British Possessions,Hong Kong,21,531

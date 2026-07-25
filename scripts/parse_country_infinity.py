@@ -14,7 +14,7 @@ import duckdb
 
 sys.path.insert(0, str(Path(__file__).parent))
 from parse_abstract import BASE
-from parse_country import build_vocab, parse_volume_countries
+from parse_country import build_vocab, bulk_insert, parse_volume_countries
 from parse_infinity import pseudo_md
 
 
@@ -61,9 +61,7 @@ def main():
         finally:
             tmp.unlink()
         if out:
-            con.executemany(
-                'INSERT INTO country_obs_inf VALUES '
-                '(?,?,?,?,?,?,?,?,?,?,?,?,?)', out)
+            bulk_insert(con, 'country_obs_inf', out)
         print(f'{volume}: {nt} tables, {len(out):,} rows')
     con.commit()
     print('\ntotal country_obs_inf:',

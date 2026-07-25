@@ -18,6 +18,7 @@ Wine — Total Of All Kinds,1881,Indian Corn Or Maize,Gallon,33480846,16297033,2
 Wine — Total Of All Kinds,1877,Indian Corn Or Maize,Gallon,30477818,19568807,1.6
 "Teeth, Elephants', Sea Cow, And Sea Horse",1881,Other Countries,Cwt,25711341,12377,2077.3
 Wine — Total Of All Kinds,1876,Petroleum Gallons,Gallon,25201177,19950723,1.3
+Cotton — Raw,1897,United States Of America,Cwt,24646180,15394289,1.6
 Wine — Total Of All Kinds,1881,Cocoa Lbs,Gallon,22451834,16297033,1.4
 Wine — Total Of All Kinds,1882,Cocoa Lbs,Gallon,19101646,15715813,1.2
 Wine — Total Of All Kinds,1882,Indian Corn Or Maize,Gallon,18275731,15715813,1.2
@@ -73,7 +74,6 @@ Butter — Margarine (Including All Kinds Of Artificial Or Imitation Butter),189
 "Metal — Leaf, Not Gold",1895,New Zealand,Packets,1171048,186727,6.3
 Collodium,1897,Greece,Gallon,1120478,1575,711.4
 Saltpetre (Nitrate Of Potash),1897,United States Of America,Cwt,1032074,330013,3.1
-Saltpetre (Nitrate Of Potash),1897,United States Of America (Atlantic),Cwt,1025074,330013,3.1
 Saltpetre (Nitrate Of Potash),1898,Bombay,Cwt,1009563,262270,3.8
 Collodium,1896,Greece,Gallon,983609,1819,540.7
 Saltpetre (Nitrate Of Potash),1898,United States Of America,Cwt,982419,262270,3.7
@@ -90,10 +90,8 @@ Saltpetre (Nitrate Of Potash),1895,United States Of America,Cwt,598730,228477,2.
 "Animals, Living — Oxen And Bulls",1894,United States Of America,Number,581657,471794,1.2
 Dye Woods — Logwood,1897,Canada,Ton,568769,39297,14.5
 "Madder, Madder Root, Garancine, And Munjeet",1896,British East Indies,Cwt,521906,5217,100.0
-Saltpetre (Nitrate Of Potash),1895,United States Of America (Atlantic),Cwt,505730,228477,2.2
 Dye Woods — Logwood,1896,Canada,Ton,500317,76075,6.6
 Saltpetre (Nitrate Of Potash),1894,Bombay,Cwt,480901,289363,1.7
-Saltpetre (Nitrate Of Potash),1896,United States Of America (Atlantic),Cwt,465650,340750,1.4
 Saltpetre (Nitrate Of Potash),1896,United States Of America,Cwt,465090,340750,1.4
 "Madder, Madder Root, Garancine, And Munjeet",1895,Bombay,Cwt,458359,6054,75.7
 "Madder, Madder Root, Garancine, And Munjeet",1893,British East Indies,Cwt,449157,7006,64.1
@@ -107,12 +105,11 @@ Vegetable,1898,Bengal,Cwt,360702,254320,1.4
 Horns And Hoofs,1889,Norway,Ton,342009,5746,59.5
 Saltpetre (Nitrate Of Potash),1898,Madras,Cwt,316114,262270,1.2
 "Cured Or Salted, Unenumerated",1894,Norway,Cwt,293335,61927,4.7
+Saltpetre (Nitrate Of Potash),1895,Italy,Cwt,283185,228477,1.2
 "Madder, Madder Root, Garancine, And Munjeet",1897,Bombay,Cwt,270329,3793,71.3
 "Varnished, Japanned Or Enamelled",1896,United States Of America,Lb,259659,4295,60.5
 Dye Woods — Logwood,1894,Canada,Ton,254604,68457,3.7
 "Cured Or Salted, Unenumerated",1894,Canada,Cwt,249970,61927,4.0
-Lead — Pig And Sheet,1895,Madras,Ton,235469,162924,1.4
-Lead — Pig And Sheet,1894,Madras,Ton,220815,161861,1.4
 "Varnished, Japanned Or Enamelled",1895,Holland,Lb,219701,4210,52.2
 "Varnished, Japanned Or Enamelled",1893,United States Of America,Lb,205054,3993,51.4
 "Varnished, Japanned Or Enamelled",1895,United States Of America,Lb,203110,4210,48.2
@@ -194,7 +191,6 @@ Umbrellas And Parasols,1872,United States Of America (Atlantic & Pacific),?,4593
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Other Foreign Countries,?,1657113,0,foreign to this commodity
 Cavendish Or Negrohead,1884,British West India Islands,Lb,1243720,0,foreign to this commodity
 "Silk Manufactures — Velvet, Plain Or Figured",1884,Holland,?,851919,0,foreign to this commodity
-Oil — Palm,1876,Postuguese Possessions,Cwt,651915,879824,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Germany,Load,440768,0,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Fir,Load,310522,0,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Russia,Load,277021,0,foreign to this commodity
@@ -246,6 +242,7 @@ Wood And Timber — Teak,1873,United States Of America,Load,6670,0,foreign to th
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,France,Number,6517,0,foreign to this commodity
 "Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,West Coast Of Africa (Foreign,Ton,6450,43292,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1881,Argentine Republic,?,6376,0,foreign to this commodity
+Oil — Palm,1876,Postuguese Possessions,Cwt,6138,879824,foreign to this commodity
 "Silk Manufactures — Velvet, Plain Or Figured",1881,Australasia,?,6004,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,United States Of America (Pacific),?,5831,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,United States Of America,?,5831,0,foreign to this commodity
@@ -365,8 +362,8 @@ Nuts And Kernels,1872,Other Countries,Ton,0,0,foreign to this commodity
 "Flowers, Artificial — Raw, Not Otherwise Described",1875,China,Bushel,0,0,foreign to this commodity
 "Buttons And Studs, Not Of Metal",1880,All Countries,Gross,0,0,foreign to this commodity
 Isinglass,1874,Bengal And Burmah,Cwt,0,4098,foreign to this commodity
-Castor,1881,British India,Cwt,0,0,foreign to this commodity
 "Ore, Unenumerated",1893,Seas (Except Borneo,Ton,0,0,foreign to this commodity
+Castor,1881,British India,Cwt,0,0,foreign to this commodity
 China And Porcelain Ware,1882,Australasia,Cwt,0,0,foreign to this commodity
 Candles Of All Sorts,1875,Central America,Cwt,0,0,foreign to this commodity
 Candles Of All Sorts,1875,United States Of Colombia,Cwt,0,0,foreign to this commodity

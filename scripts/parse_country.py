@@ -244,6 +244,8 @@ class SectionState:
         self.cctx = None          # country whose port/coast rows follow
         self.cctx_sum = 0.0       # value sum of the context's sub-rows
         self.pending = []         # row-slip cascade (see feed)
+        self.slip_colon = False   # cascade came from a `From X :` heading, so
+        self.slip_rows = []       # it is provisional until the block ends
         self.unit = None
         self.country_names = frozenset(country_names) | SEED_COUNTRIES
         self.group_vocab = group_vocab    # names known corpus-wide as groups
@@ -274,22 +276,32 @@ class SectionState:
             # ("” United States of America :" -> On the Atlantic ... Total),
             # not a new sub-article. "From X :" is a country header by
             # construction ("Teak: From British East Indies: Bombay ...").
-            # EXCEPT when the row's cells hold a bare unit ("Lbs." | "£"):
-            # units never print without their numbers, so a unit-only
-            # country row is the ROW-SLIP signature — the OCR pushed every
-            # value one row down (as_1881/82 wool pages). Queue the label;
-            # feed() re-pairs it with the NEXT row's numbers.
+            # When the row's cells hold a bare unit ("Lbs." | "£") the
+            # reading is AMBIGUOUS and only the end of the block settles it:
+            #   * the heading legitimately carries the block's unit caption
+            #     ("From West Coast of Africa (Foreign) : | Cwts. | £" over
+            #     indented Fernando Po / Portuguese Possessions / ...) — by
+            #     far the common case, 82 blocks of 83 corpus-wide; or
+            #   * the OCR pushed every value one row down (as_1882 wool,
+            #     "From Russia:" a plain sibling of "„ Denmark"), the
+            #     ROW-SLIP signature, since units never print without their
+            #     figures.
+            # Only the slip leaves an orphan label-less numbers row at the
+            # block's end. So shift provisionally and mark the block: if it
+            # drains at the printed Total instead of at an orphan row, feed()
+            # un-shifts it in place (_unshift_colon_block).
             m_from = re.match(r'^(?:from|to)\s+(.*)', stripped, re.I)
             if m_from:
                 if self._unit_only(unit_probe):
-                    self.pending.append(m_from.group(1).strip())
+                    self._queue_colon_slip(m_from.group(1).strip(),
+                                           unit_probe)
                     return None
                 self.cctx = m_from.group(1).strip()
                 self.cctx_sum = 0.0
                 return None
             if stripped.casefold() in self.country_names:
                 if self._unit_only(unit_probe):
-                    self.pending.append(stripped)
+                    self._queue_colon_slip(stripped, unit_probe)
                     return None
                 self.cctx = stripped
                 self.cctx_sum = 0.0
@@ -329,7 +341,10 @@ class SectionState:
                 self.sub1 = stripped
             self.cctx = None
             self.cctx_sum = 0.0
-            self.pending.clear()      # slip cascade never crosses blocks
+            # slip cascade never crosses blocks; an unresolved colon-path
+            # shift ended without a Total, so it never earned its orphan
+            self._drain_colon_slip()
+            self.pending.clear()
             # header rows can carry the block's units ("Gallons." | "£")
             self.unit = None
             if unit_probe is not None:
@@ -344,6 +359,7 @@ class SectionState:
             if m and self.group is not None \
                     and self._unit_only(unit_probe):
                 self.pending.append(m.group(1).strip(' -'))
+                self.slip_colon = False    # colon-less: the slip is real
             return None
         if self.group is None:
             return None
@@ -354,6 +370,64 @@ class SectionState:
         if m:
             return m.group(1).strip(' -') or None
         return stripped or None          # ditto row / wrapped continuation
+
+    def _queue_colon_slip(self, name, unit_probe):
+        """Open a provisional row-slip cascade for a `From X :` heading whose
+        cells hold only the block's unit caption. Take the unit from the
+        caption — it is the block's unit whichever reading wins, and these
+        blocks otherwise parse unit-less."""
+        self.pending.append(name)
+        self.slip_colon = True
+        self.slip_rows = []
+        u = cell_text(unit_probe).strip(' .')
+        if u and u != '£' and not re.search(r'\d', u) and len(u) < 26:
+            self.unit = u
+
+    def _unshift_colon_block(self, leftover):
+        """Undo a provisional colon-path shift: the block drained at its
+        printed Total, so no orphan numbers row existed and the values were
+        never slipped. Every emitted row holds the label of the row ABOVE
+        it, and `leftover` is the last label, whose numbers were dropped.
+        Re-pair each row with its own label and reopen the heading as the
+        port/coast context so members read 'Parent : Child'.
+
+        Only rows the cascade itself shifted are touched: the multi-year
+        layout (feed_multiyear, as_1897-99) never consumes `pending`, so its
+        rows were paired normally and must be left alone."""
+        rows = self.slip_rows
+        if not rows:
+            return
+        head, labels = rows[0][5], [r[5] for r in rows[1:]] + [leftover]
+        self.cctx, self.cctx_sum = head, 0.0
+        for row, label in zip(rows, labels):
+            row[5] = self._apply_cctx(label, row[9])
+        self.cctx, self.cctx_sum = None, 0.0   # never rename the Total row
+
+    def _drain_colon_slip(self):
+        """Resolve an open colon-path shift as un-slipped (the common case)."""
+        if self.slip_colon and self.pending:
+            self._unshift_colon_block(self.pending[0])
+        self.slip_colon = False
+
+    def _resolve_colon_slip(self, total_nums):
+        """Settle a provisional colon-path shift at the block's printed Total.
+
+        A 'Total' SMALLER than the block's largest member cannot be a block
+        total: there the OCR really did push every value down a row, and the
+        Total row holds the last member's own figures while the true total
+        prints below it (as_1874 palm oil — 'Total 10,193' is Other
+        Countries, the real total 1,067,767 follows). Keep the shift and
+        emit the queued label with these numbers; return True so the caller
+        does not also record a Total row. Otherwise the block was never
+        slipped — un-shift it."""
+        self.slip_colon = False
+        qtys = [r[8] for r in self.slip_rows if r[8] is not None]
+        if qtys and total_nums[0] is not None \
+                and total_nums[0] < max(qtys):
+            self._emit(self.pending[0], total_nums)
+            return True
+        self._unshift_colon_block(self.pending[0])
+        return False
 
     @staticmethod
     def _unit_only(probe):
@@ -408,8 +482,9 @@ class SectionState:
         label (self.pending), each following row's numbers belong to the
         label ONE ROW UP — emit the queued label with this row's numbers
         and queue this row's label in its place. The orphan label-less
-        numbers row at the block's end (or its Total) drains the queue,
-        after which rows pair normally again."""
+        numbers row at the block's end drains the queue, after which rows
+        pair normally again; draining at the printed Total instead means a
+        provisional colon-path shift was wrong and gets undone."""
         has_vals = any(re.search(r'\d', cell_text(v) or '') for v in values)
         country = self._classify(label_raw, values[0] if values else None,
                                  has_vals)
@@ -420,19 +495,30 @@ class SectionState:
                         for i, v in enumerate(values)]
                 nums += [None] * (4 - len(nums))
                 self._emit(self.pending.pop(0), nums)
+                self.slip_colon = False   # the orphan row proves the slip
             return
         nums = [self._num(v, set_unit=(i == 0))
                 for i, v in enumerate(values)]
         nums += [None] * (4 - len(nums))
         if self.pending:
             if country == 'TOTAL':
-                # the slipped label's own numbers were never printed on a
-                # reachable row; drop it — the block-sum check will flag
+                # No orphan numbers row ever came. For a colon-path heading
+                # that usually settles the ambiguity the other way — the
+                # block was never slipped, so re-pair it. For the colon-less
+                # signature the slipped label's own numbers were never
+                # printed on a reachable row; drop it — the block-sum check
+                # will flag.
+                if self.slip_colon and self._resolve_colon_slip(nums):
+                    self.pending.clear()
+                    return
+                self._drain_colon_slip()
                 self.pending.clear()
             else:
                 slipped, self.pending[:] = self.pending[0], \
                     self.pending[1:] + [country]
                 self._emit(slipped, nums)
+                if self.slip_colon:
+                    self.slip_rows.append(self.out[-1])
                 return
         country = self._apply_cctx(country, nums[1])
         self._emit(country, nums)
@@ -638,8 +724,15 @@ def parse_volume_countries(md_path, volume, year, out, country_names=(),
                         and len(cells) == width else e
                     part = row[lo:hi]
                     if not part or not cell_text(part[0]).strip():
-                        # data may still ride label-less rows; nothing to
-                        # classify without a label — skip
+                        # A label-less numbers row is meaningful in exactly
+                        # one place: it drains an open row-slip cascade (it
+                        # carries the last queued label's figures — as_1872
+                        # CHEESE, 'Other Countries' 4,039). Feed it only
+                        # then; otherwise there is nothing to classify.
+                        if part and st.pending:
+                            vals = [part[i] if i is not None and i < len(part)
+                                    else '' for i in (qi, vi)]
+                            st.feed(part[0] if part else '', vals)
                         continue
                     vals = [part[i] if i is not None and i < len(part)
                             else '' for i in (qi, vi)]
@@ -658,6 +751,20 @@ def parse_volume_countries(md_path, volume, year, out, country_names=(),
                     if part:
                         st.feed(part[0], part[1:3])
     return n_tables
+
+
+COLS = ('volume', 'flow', 'duty', 'article_group', 'article', 'country_raw',
+        'unit', 'year', 'quantity', 'value', 'consumption', 'duty_received',
+        'row_seq')
+
+
+def bulk_insert(con, table, rows):
+    """Append parsed rows in one shot. executemany binds row by row (~2s per
+    thousand here — over ten minutes for a corpus pass), so hand DuckDB an
+    Arrow-backed frame and let it scan that instead."""
+    import pandas as pd
+    df = pd.DataFrame(rows, columns=COLS)      # noqa: F841 - read by DuckDB
+    con.execute(f'INSERT INTO {table} SELECT * FROM df')
 
 
 def main():
@@ -696,9 +803,7 @@ def main():
         nt = parse_volume_countries(md, volume, year, out, names,
                                     group_vocab, sub_vocab)
         if out:
-            con.executemany(
-                'INSERT INTO country_obs VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)',
-                out)
+            bulk_insert(con, 'country_obs', out)
         n_tot = sum(1 for o in out if o[5] == 'TOTAL')
         print(f'{volume}: {nt} country tables, {len(out):,} rows '
               f'({n_tot:,} printed totals)')
