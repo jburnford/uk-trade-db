@@ -46,6 +46,17 @@ UNIT_TOKENS = {
 }
 
 
+def _sig(group, article):
+    """Token signature of a Tier-1 label, for matching manual overrides.
+    Punctuation, dash leaders, ditto marks and case all vary between
+    printings of the same line ('" Flax or Linseed', '„ Flax or Linseed',
+    'Oil Seed Cake - - - - -'), so match on the token SET."""
+    txt = f"{group or ''} {article or ''}".lower()
+    txt = re.sub(r'[^a-z0-9 ]+', ' ', txt)
+    return tuple(sorted(t for t in txt.split()
+                        if t and t not in ('and', 'or', 'the', 'of', 'a')))
+
+
 def norm(s):
     s = (s or '').replace('&amp;', '&').replace('&AMP;', '&')
     s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode()
@@ -176,6 +187,15 @@ def main():
         cg, ca = canon(flow, meas, g, a)
         series[(flow, meas, cg, ca, y)].append((st, v, unit, grp, art, vol))
 
+    # ---------------- page-adjudicated Tier-1 overrides
+    t1_override, _override_hit = {}, set()
+    ovf = BASE / 'reference' / 'manual_t1.csv'
+    if ovf.exists():
+        for r in csv.DictReader(open(ovf)):
+            t1_override[(r['flow'], r['measure'], int(r['year']),
+                         _sig(r['article_group'], r['article']))] = {
+                'value': float(r['value']), 'tier': (r.get('tier') or 'A')}
+
     # ---------------- consensus across volumes
     con.execute('DROP TABLE IF EXISTS consensus')
     con.execute('''CREATE TABLE consensus (
@@ -201,11 +221,34 @@ def main():
             tier, val = 'C', ac.most_common(1)[0][0]
             review.append((flow, meas, grp, art, y,
                            '|'.join(f'{v:,.0f}' for v in set(allv))))
+        # ---- page-adjudicated Tier-1 override (reference/manual_t1.csv).
+        # The vote can be wrong in the one way no amount of voting fixes: a
+        # broken digit copied forward. as_1890, as_1892 and as_1893 all print
+        # oil seed cake 1890 as 282,616 Tons and as_1894/tn_1895 print
+        # 229,616; the origin table sums to 282,582. Flax and linseed 1899 is
+        # the mirror image — the majority reading is the wrong one, and only
+        # the country block's own arithmetic says so. country_obs has
+        # manual_rows.csv for exactly this; Tier 1 had nothing, so a provably
+        # wrong national total dragged its year's ratio with it forever.
+        # Matched on the token signature of group+article, so an OCR variant
+        # of the label on re-parse still resolves.
+        okey = (flow, meas, y, _sig(grp, art))
+        ov = t1_override.get(okey)
+        if ov:
+            val, tier = ov['value'], ov['tier']
+            vols += ',manual'
+            _override_hit.add(okey)
         tiers[tier] += 1
         con.execute('INSERT INTO consensus VALUES (?,?,?,?,?,?,?,?,?,?,?)',
                     [flow, meas, grp, art, unit, y, val,
                      len(obs), len(ver), tier, vols])
     con.commit()
+    if t1_override:
+        print(f'manual T1 overrides applied: {len(_override_hit)} '
+              f'of {len(t1_override)} rules')
+        for k in t1_override:
+            if k not in _override_hit:
+                print(f'  UNMATCHED RULE (nothing to override): {k}')
     total = sum(tiers.values())
     print(f'\nconsensus series-years: {total:,}')
     for t in 'ABC':
