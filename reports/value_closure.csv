@@ -1,6 +1,5 @@
 commodity,year,t1_value,origin_value,v_ratio,v_bucket,t1_qty,origin_qty,q_ratio,q_bucket,unit,n_origins,split
 Cotton — Raw,1899,27672399,18671869,0.6747,under,14520062,14520033,1.0,exact01,Cwt,25,VALUE-ONLY-DEFECT
-"Sugar — Unrefined, Total",1888,17857469,12108668,0.6781,under,17857469,17857469,1.0,exact01,Cwt,32,VALUE-ONLY-DEFECT
 Maize Or Indian Corn,1899,12978025,13848016,1.067,over,62741350,62791050,1.0008,exact01,Cwt,14,VALUE-ONLY-DEFECT
 Maize Or Indian Corn,1897,9188708,8564423,0.9321,under,53785380,53825580,1.0007,exact01,Cwt,14,VALUE-ONLY-DEFECT
 "Sugar — Other Sorts, Including Candy",1898,8482915,7982668,0.941,under,13974041,13976483,1.0002,exact01,Cwt,10,VALUE-ONLY-DEFECT
@@ -19,18 +18,13 @@ Paper-Making Materials — Pulp Of Wood,1897,1939761,1604059,0.8269,under,388304
 Cotton,1875,1743326,6819711,3.9119,over,202205,202205,1.0,exact01,Ton,12,VALUE-ONLY-DEFECT
 Sugar — In Lumps And Loaves,1898,1685967,1589764,0.9429,under,2546213,2546185,1.0,exact01,Cwt,4,VALUE-ONLY-DEFECT
 "Animals, Living — Sheep And Lambs",1874,1610355,2310065,1.4345,over,758915,758315,0.9992,exact01,Number,7,VALUE-ONLY-DEFECT
-Leather Manufactures — Gloves,1887,1513456,1628716,1.0762,over,1513456,1513456,1.0,exact01,Dozen Pairs,8,VALUE-ONLY-DEFECT
 Caoutchouc,1877,1484794,1584794,1.0673,over,159723,159723,1.0,exact01,Cwt,18,VALUE-ONLY-DEFECT
-Leather Manufactures — Gloves,1888,1470966,1598616,1.0868,over,1470966,1470876,0.9999,exact01,Dozen Pairs,6,VALUE-ONLY-DEFECT
 Fruit — Currants,1878,1415179,1666946,1.1779,over,1087266,1087266,1.0,exact01,Cwt,9,VALUE-ONLY-DEFECT
 Pyrites Of Iron Or Copper,1875,1406995,1406995,1.0,exact01,537555,507555,0.9442,under,Ton,4,QTY-ONLY-DEFECT
 Spirits — Brandy,1890,1401919,1901035,1.356,over,3100450,3098458,0.9994,exact01,Proof Gallon,6,VALUE-ONLY-DEFECT
 "Preserved, Otherwise Than By Salting",1878,1315701,1415701,1.076,over,439900,439905,1.0,exact01,Cwt,7,VALUE-ONLY-DEFECT
 Oil — Palm,1882,1240866,1240966,1.0001,exact01,813870,873872,1.0737,over,Cwt,7,QTY-ONLY-DEFECT
-"Woollen Yarn — For Fancy Purposes, Including Berlin Wool And Zephyr Yarn",1895,1221104,216440,0.1772,under,1221194,1220214,0.9992,exact01,Lb,5,VALUE-ONLY-DEFECT
-"Woollen Yarn — For Fancy Purposes, Including Berlin Wool And Zephyr Yarn",1894,1219965,224357,0.1839,under,1219965,1219151,0.9993,exact01,Lb,4,VALUE-ONLY-DEFECT
 Fruit — Oranges And Lemons,1881,1167562,1467562,1.2569,over,3835103,3835103,1.0,exact01,Bushel,6,VALUE-ONLY-DEFECT
-"Woollen Yarn — For Fancy Purposes, Including Berlin Wool And Zephyr Yarn",1897,1129496,196567,0.174,under,1129496,1129496,1.0,exact01,Lb,5,VALUE-ONLY-DEFECT
 "Drugs — Bark, Peruvian",1883,1123516,1423516,1.267,over,116921,116921,1.0,exact01,Cwt,20,VALUE-ONLY-DEFECT
 Fruit — Raisins,1876,1058106,2370961,2.2408,over,583860,583860,1.0,exact01,Cwt,27,VALUE-ONLY-DEFECT
 Oil — Palm,1886,1050459,1209556,1.1515,over,1004419,1004419,1.0,exact01,Cwt,17,VALUE-ONLY-DEFECT
@@ -38,7 +32,6 @@ Oil — Olive,1885,981348,981354,1.0,exact01,21227,24209,1.1405,over,Tun,11,QTY-
 "Animals, Living — Sheep And Lambs",1899,942891,131811,0.1398,under,607755,608055,1.0005,exact01,Number,6,VALUE-ONLY-DEFECT
 "Paper-Making Materials — Esparto, And Other Vegetable Fibres",1897,825195,825105,0.9999,exact01,204579,123159,0.602,under,Ton,5,QTY-ONLY-DEFECT
 Oil — Coco-Nut,1872,822257,822257,1.0,exact01,433883,403883,0.9309,under,Cwt,5,QTY-ONLY-DEFECT
-"Skins, Furs, And Pelts — Seal",1888,712743,578655,0.8119,under,712743,712743,1.0,exact01,Number,12,VALUE-ONLY-DEFECT
 Gutta Percha,1890,708296,798296,1.1271,over,70176,70176,1.0,exact01,Cwt,9,VALUE-ONLY-DEFECT
 Wool — Goats' Wool Or Hair,1890,696738,696738,1.0,exact01,15880314,12940254,0.8149,under,Lb,10,QTY-ONLY-DEFECT
 Onions — Raw,1896,681949,1355443,1.9876,over,6086905,6086855,1.0,exact01,Bushel,16,VALUE-ONLY-DEFECT
@@ -49,7 +42,6 @@ Iron — In Bars,1879,678357,878357,1.2948,over,95519,95549,1.0003,exact01,Ton,3
 Mares,1897,522029,474562,0.9091,under,19927,19932,1.0003,exact01,Number,22,VALUE-ONLY-DEFECT
 "Glass — Window And German Sheet, Including Shades And Cylinders",1893,503040,450040,0.8946,under,936825,936525,0.9997,exact01,Cwt,6,VALUE-ONLY-DEFECT
 Rosin,1872,492216,492246,1.0001,exact01,919494,619194,0.6734,under,Cwt,3,QTY-ONLY-DEFECT
-Sugar — Glucose,1888,480799,324292,0.6745,under,480799,480799,1.0,exact01,Cwt,5,VALUE-ONLY-DEFECT
 Yarn,1886,450039,450039,1.0,exact01,3948886,8125556,2.0577,over,Lb,6,QTY-ONLY-DEFECT
 Paraffine,1888,448234,448234,1.0,exact01,318019,348019,1.0943,over,Cwt,5,QTY-ONLY-DEFECT
 "Skins, Furs, And Pelts — Seal",1883,443026,393026,0.8871,under,671284,671284,1.0,exact01,Number,17,VALUE-ONLY-DEFECT
@@ -72,17 +64,13 @@ Boots And Shoes,1878,370147,370147,1.0,exact01,102690,202690,1.9738,over,Dozen P
 Oil — Coco-Nut,1881,369779,369779,1.0,exact01,218412,248412,1.1374,over,Cwt,4,QTY-ONLY-DEFECT
 Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,1880,358865,358865,1.0,exact01,41349,38049,0.9202,under,Ton,6,QTY-ONLY-DEFECT
 Boots And Shoes,1889,350856,350856,1.0,exact01,1575242,100195,0.0636,under,Dozen Pairs,8,QTY-ONLY-DEFECT
-Sugar — Molasses,1888,345894,109375,0.3162,under,345894,345894,1.0,exact01,Cwt,5,VALUE-ONLY-DEFECT
 "Cured, Sardines",1894,341828,341848,1.0001,exact01,925244,105155,0.1137,under,Cwt,9,QTY-ONLY-DEFECT
 Boots And Shoes,1890,333011,333011,1.0,exact01,1628481,99613,0.0612,under,Dozen Pairs,8,QTY-ONLY-DEFECT
-Seeds — Clover And Grass,1888,330039,680792,2.0628,over,330039,330039,1.0,exact01,Cwt,8,VALUE-ONLY-DEFECT
 Quicksilver,1885,326959,474892,1.4525,over,4136519,4136369,1.0,exact01,Lb,10,VALUE-ONLY-DEFECT
 "Manganese, Ore Of",1891,325445,325145,0.9991,exact01,256772,98236,0.3826,under,Ton,12,QTY-ONLY-DEFECT
 Boots And Shoes,1891,322746,322746,1.0,exact01,1777697,102082,0.0574,under,Dozen Pairs,7,QTY-ONLY-DEFECT
 Brimstone,1877,317596,317596,1.0,exact01,1085614,1025614,0.9447,under,Cwt,3,QTY-ONLY-DEFECT
-Manures — Phosphate Of Lime And Rock,1892,314130,665689,2.1192,over,314130,314130,1.0,exact01,Ton,13,VALUE-ONLY-DEFECT
 Yeast,1898,308708,368708,1.1944,over,152245,152245,1.0,exact01,Cwt,6,VALUE-ONLY-DEFECT
-Manures — Phosphate Of Lime And Rock,1889,304953,703794,2.3079,over,304953,304963,1.0,exact01,Ton,11,VALUE-ONLY-DEFECT
 "Glass — Plate, Whether Silvered Or Not",1897,303047,252997,0.8348,under,252033,251943,0.9996,exact01,Cwt,6,VALUE-ONLY-DEFECT
 "Zinc — Crude, In Cakes",1872,299689,299689,1.0,exact01,15761,14761,0.9366,under,Ton,5,QTY-ONLY-DEFECT
 Gutta Percha — Raw,1874,299522,299502,0.9999,exact01,29970,26970,0.8999,under,Cwt,4,QTY-ONLY-DEFECT
@@ -91,15 +79,11 @@ Tobacco — Other Sorts,1898,296988,207044,0.6971,under,790870,790870,1.0,exact0
 Oil — Turpentine,1879,290437,290437,1.0,exact01,237232,254232,1.0717,over,Cwt,2,QTY-ONLY-DEFECT
 Oleo-Margarine,1899,263435,233435,0.8861,under,166184,166184,1.0,exact01,Cwt,7,VALUE-ONLY-DEFECT
 Gum — Unenumerated,1874,258198,258198,1.0,exact01,80880,75830,0.9376,under,Cwt,11,QTY-ONLY-DEFECT
-Manures — Phosphate Of Lime And Rock,1888,257886,544919,2.113,over,257886,257886,1.0,exact01,Ton,12,VALUE-ONLY-DEFECT
-Manures — Phosphate Of Lime And Rock,1891,256772,621732,2.4213,over,256772,256772,1.0,exact01,Ton,11,VALUE-ONLY-DEFECT
 "Platina, Wrought Or Unwrought",1899,235574,205574,0.8727,under,173752,173722,0.9998,exact01,Oz Troy,4,VALUE-ONLY-DEFECT
 Pears — Raw,1898,221779,191680,0.8643,under,491669,491669,1.0,exact01,Bushel,9,VALUE-ONLY-DEFECT
 Linen Yarn,1882,221222,679561,3.0719,over,4935747,4935747,1.0,exact01,Lb,9,VALUE-ONLY-DEFECT
 Cork — Unmanufactured,1883,217181,187181,0.8619,under,11779,11776,0.9997,exact01,Ton,7,VALUE-ONLY-DEFECT
-Oil — Coco-Nut,1888,194025,245867,1.2672,over,194025,194025,1.0,exact01,Cwt,7,VALUE-ONLY-DEFECT
 Gum — Arabic,1892,191617,191617,1.0,exact01,68602,78602,1.1458,over,Cwt,13,QTY-ONLY-DEFECT
-Oil — Coco-Nut,1887,180792,248218,1.3729,over,180792,180792,1.0,exact01,Cwt,7,VALUE-ONLY-DEFECT
 Cherries — Raw,1897,178131,168229,0.9444,under,312294,312294,1.0,exact01,Bushel,5,VALUE-ONLY-DEFECT
 Horns And Hoofs Of Cattle,1875,172966,1309764,7.5724,over,5968,5968,1.0,exact01,Ton,13,VALUE-ONLY-DEFECT
 Horse,1875,171053,198188,1.1586,over,20231,20231,1.0,exact01,Cwt,11,VALUE-ONLY-DEFECT
@@ -111,46 +95,32 @@ Gum — Arabic,1872,123080,123080,1.0,exact01,12837,42917,3.3432,over,Cwt,6,QTY-
 Confectionery,1876,120812,420842,3.4834,over,124027,124027,1.0,exact01,Cwt,8,VALUE-ONLY-DEFECT
 Spices — Ginger (Raw),1879,116607,146607,1.2573,over,61840,61840,1.0,exact01,Cwt,6,VALUE-ONLY-DEFECT
 Horse,1879,114964,266773,2.3205,over,19582,19582,1.0,exact01,Cwt,19,VALUE-ONLY-DEFECT
-"Plate — Of Silver, Gilt Or Ungilt",1899,111777,31922,0.2856,under,111777,111747,0.9997,exact01,Oz Troy,9,VALUE-ONLY-DEFECT
-"Lac, Seed, Shell, Stick, And Dye",1887,110778,287618,2.5963,over,110778,110778,1.0,exact01,Cwt,3,VALUE-ONLY-DEFECT
 "Varnished, Japanned Or Enamelled",1896,110778,221548,1.9999,over,4295,4295,1.0,exact01,Cwt,10,VALUE-ONLY-DEFECT
 "Platina, Wrought Or Unwrought",1893,108878,75088,0.6897,under,83130,83083,0.9994,exact01,Oz Troy,3,VALUE-ONLY-DEFECT
 Plumbago,1881,103996,114194,1.0981,over,7947,7947,1.0,exact01,Ton,6,VALUE-ONLY-DEFECT
-"Lac, Seed, Shell, Stick, And Dye",1888,103138,271406,2.6315,over,103183,103183,1.0,exact01,Cwt,2,VALUE-ONLY-DEFECT
 Cochineal (Including Granilla And Dust),1877,102989,402989,3.9129,over,32094,32064,0.9991,exact01,Cwt,7,VALUE-ONLY-DEFECT
-"Hair — Cow, Ox, Bull, Or Elk",1891,98380,143188,1.4555,over,98380,98347,0.9997,exact01,Cwt,13,VALUE-ONLY-DEFECT
 Isinglass,1879,98253,98253,1.0,exact01,5146,5446,1.0583,over,Cwt,6,QTY-ONLY-DEFECT
 Waste Of (Raw And Yarn),1899,97819,88726,0.907,under,14028104,14018804,0.9993,exact01,Lb,10,VALUE-ONLY-DEFECT
-"Hair — Cow, Ox, Bull, Or Elk",1888,94994,145027,1.5267,over,94994,94994,1.0,exact01,Cwt,12,VALUE-ONLY-DEFECT
 Moss Litter,1898,94681,94591,0.999,exact01,89449,80449,0.8994,under,Ton,4,QTY-ONLY-DEFECT
-"Lac, Seed, Shell, Stick, And Dye",1890,91834,389538,4.2418,over,91834,91834,1.0,exact01,Cwt,2,VALUE-ONLY-DEFECT
-"Hair — Cow, Ox, Bull, Or Elk",1889,91707,134862,1.4706,over,91707,91707,1.0,exact01,Cwt,11,VALUE-ONLY-DEFECT
 Galls,1898,90188,80889,0.8969,under,36140,36143,1.0001,exact01,Cwt,7,VALUE-ONLY-DEFECT
 Brimstone,1898,90031,99031,1.1,over,386647,386647,1.0,exact01,Cwt,3,VALUE-ONLY-DEFECT
 Spices — Cinnamon,1884,86003,6003,0.0698,under,1967744,1967744,1.0,exact01,Lb,3,VALUE-ONLY-DEFECT
 Liquorice,1892,85476,85476,1.0,exact01,34119,31119,0.9121,under,Cwt,6,QTY-ONLY-DEFECT
 Cows,1897,84754,84754,1.0,exact01,5038,5437,1.0792,over,Number,3,QTY-ONLY-DEFECT
 Isinglass,1874,83880,3618264,43.1362,over,4098,4098,1.0,exact01,Cwt,7,VALUE-ONLY-DEFECT
-"Hair — Cow, Ox, Bull, Or Elk",1887,83013,115730,1.3941,over,83043,82983,0.9993,exact01,Cwt,10,VALUE-ONLY-DEFECT
 Whalefins,1877,82987,90843,1.0947,over,1969,1969,1.0,exact01,Cwt,5,VALUE-ONLY-DEFECT
-"Lac, Seed, Shell, Stick, And Dye",1889,78581,276296,3.5161,over,78581,78581,1.0,exact01,Cwt,2,VALUE-ONLY-DEFECT
 Alkali,1879,76631,76631,1.0,exact01,73014,42984,0.5887,under,Cwt,3,QTY-ONLY-DEFECT
 "Plums, French, And Pruneloes",1893,68539,63536,0.927,under,27663,27663,1.0,exact01,Cwt,2,VALUE-ONLY-DEFECT
 Straw,1888,66026,66026,1.0,exact01,303537,227922,0.7509,under,Lb,8,QTY-ONLY-DEFECT
-Kowrie,1888,66000,177822,2.6943,over,66000,66000,1.0,exact01,Cwt,4,VALUE-ONLY-DEFECT
-Kowrie,1889,59882,149396,2.4948,over,59882,59882,1.0,exact01,Cwt,3,VALUE-ONLY-DEFECT
 Cavendish Or Negrohead,1899,56748,66748,1.1762,over,1246521,1246522,1.0,exact01,Lb,8,VALUE-ONLY-DEFECT
-Kowrie,1890,55076,141088,2.5617,over,55076,55076,1.0,exact01,Cwt,3,VALUE-ONLY-DEFECT
 Galls,1872,54963,59963,1.091,over,21931,21931,1.0,exact01,Cwt,5,VALUE-ONLY-DEFECT
 Whalefins,1881,50394,50394,1.0,exact01,30956,2103,0.0679,under,Cwt,5,QTY-ONLY-DEFECT
 Cavendish Or Negrohead,1894,49507,40507,0.8182,under,902015,902015,1.0,exact01,Lb,8,VALUE-ONLY-DEFECT
 Oil — Animal,1874,41287,38687,0.937,under,20660,20660,1.0,exact01,Cwt,3,VALUE-ONLY-DEFECT
 Part Wrought,1898,30369,27232,0.8967,under,568,568,1.0,exact01,Ton,8,VALUE-ONLY-DEFECT
 Manufactures Of Iron And Steel — Tyres And Axles,1897,25174,22183,0.8812,under,29485,29485,1.0,exact01,Cwt,5,VALUE-ONLY-DEFECT
-Dye Woods — Unenumerated,1886,22466,125127,5.5696,over,22466,22466,1.0,exact01,Ton,14,VALUE-ONLY-DEFECT
 Pitch,1873,21346,21346,1.0,exact01,50493,47493,0.9406,under,Cwt,2,QTY-ONLY-DEFECT
 Madder,1878,21039,24039,1.1426,over,21859,21859,1.0,exact01,Cwt,3,VALUE-ONLY-DEFECT
-Dye Woods — Unenumerated,1889,18207,95954,5.2702,over,18207,18207,1.0,exact01,Ton,17,VALUE-ONLY-DEFECT
 Madder,1880,16215,15215,0.9383,under,12329,12329,1.0,exact01,Cwt,3,VALUE-ONLY-DEFECT
 "Madder, Madder Root, Garancine, And Munjeet",1899,3254,8110,2.4923,over,2465,2465,1.0,exact01,Cwt,4,VALUE-ONLY-DEFECT
 Roasted Or Ground,1893,2053,2858,1.3921,over,171685,171685,1.0,exact01,Lb,7,VALUE-ONLY-DEFECT
@@ -159,7 +129,6 @@ Calves,1898,969,909,0.9381,under,176,176,1.0,exact01,Number,3,VALUE-ONLY-DEFECT
 Butyric,1893,481,431,0.896,under,260,260,1.0,exact01,Gallon,1,VALUE-ONLY-DEFECT
 Plate — Of Gold,1894,40,49,1.225,over,6,6,1.0,exact01,Oz Troy,1,VALUE-ONLY-DEFECT
 Iodide Of,1897,5,6,1.2,over,1,1,1.0,exact01,Gallon,1,VALUE-ONLY-DEFECT
-Iodide Of,1899,2,10,5.0,over,2,2,1.0,exact01,Gallon,1,VALUE-ONLY-DEFECT
 "Ivory :Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse ,,Vegetable",1896,1091130129,0,0.0,nodata,1691130129,0,0.0,nodata,?,0,
 "Ivory :Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse ,,Vegetable",1895,1091112988,0,0.0,nodata,1091112988,0,0.0,nodata,?,0,
 "Ivory :Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse ,,Vegetable",1897,1028816412,0,0.0,nodata,1028816412,0,0.0,nodata,?,0,
@@ -171,7 +140,6 @@ Cotton — Raw,1873,54704847,54704847,1.0,exact01,13639252,13639252,1.0,exact01,
 Cotton — Raw,1870,53477735,0,0.0,nodata,11949157,0,0.0,nodata,Cwt,0,
 Cotton — Raw,1872,53380670,53385640,1.0001,exact01,12578906,12678876,1.0079,within5,Cwt,22,
 Cotton — Raw,1874,50696496,50492248,0.996,within5,13989861,14896420,1.0648,over,Cwt,22,
-Tobacco — Unmanufactured,1888,46679898,1464557,0.0314,under,46679898,46739898,1.0013,within5,Lb,18,
 Unmanufactured,1888,46679898,0,0.0,nodata,14293,0,0.0,nodata,Ton,0,
 Cotton — Raw,1882,46654570,46654570,1.0,exact01,15929564,15929664,1.0,exact01,Cwt,17,
 Cotton — Raw,1875,46259822,46155219,0.9977,within5,13324564,13303820,0.9984,within5,Cwt,21,
@@ -270,7 +238,6 @@ Corn And Grain — Other Kinds Of Corn And Grain,1875,20645058,0,0.0,nodata,4942
 "Wool — Goats' Wool, Mohair",1898,20611560,1866321,0.0905,under,20611569,0,0.0,nodata,Lb,10,
 Corn And Grain — Other Kinds Of Corn And Grain,1890,20561202,0,0.0,nodata,78710478,0,0.0,nodata,Cwt,0,
 Wool — Sheep Or Lambs',1874,20558584,25540531,1.2423,over,340288030,336995628,0.9903,within5,Lb,25,
-"Sugar — Unrefined, Total",1883,20473237,20473204,1.0,exact01,20366627,20366627,1.0,exact01,Cwt,35,
 "Sugar — Unrefined, Total",1881,20251865,20267234,1.0008,exact01,18651383,18651383,1.0,exact01,Cwt,26,
 Corn And Grain — Other Kinds Of Corn And Grain,1874,20080122,0,0.0,nodata,45141024,0,0.0,nodata,Cwt,0,
 Corn And Grain — Other Kinds Of Corn And Grain,1893,20062268,0,0.0,nodata,76784942,0,0.0,nodata,Cwt,0,
@@ -320,7 +287,6 @@ Silk Manufactures — Of Countries In Europe,1870,15098327,0,0.0,nodata,15098327
 "Wool — Goats' Wool, Mohair",1896,14986979,1153645,0.077,under,14986979,0,0.0,nodata,Lb,12,
 Wool — Sheep Or Lambs',1868,14873623,0,0.0,nodata,250928854,0,0.0,nodata,Lb,0,
 "Wood And Timber — Sawn Or Split, Planed Or Dressed, Fir",1898,14572561,13575758,0.9316,under,6204787,5781207,0.9317,under,Load,20,
-Woollen Yarn,1884,14522476,0,0.0,nodata,14522476,0,0.0,nodata,Lb,0,
 Corn And Grain — Other Kinds Of Corn And Grain,1870,14502085,0,0.0,nodata,38364680,0,0.0,nodata,Cwt,0,
 Corn And Grain — Other Kinds Of Corn And Grain,1868,14495216,0,0.0,nodata,31211670,0,0.0,nodata,Cwt,0,
 "Sugar — Unrefined, Total",1870,14440502,0,0.0,nodata,12798631,0,0.0,nodata,Cwt,0,
@@ -684,7 +650,6 @@ Woollen Manufactures,1877,5235948,0,0.0,nodata,5235948,0,0.0,nodata,Value,0,
 Wood And Timber — Hewn,1872,5209802,0,0.0,nodata,1789576,0,0.0,nodata,Load,0,
 Coffee — Raw,1882,5201536,5159998,0.992,within5,1364084,1338626,0.9813,within5,Cwt,23,
 Cheese,1893,5160918,5259931,1.0192,within5,2077462,2085652,1.0039,within5,Cwt,14,
-Potatoes,1899,5159011,1573738,0.305,under,5159011,5128849,0.9942,within5,Cwt,13,
 Barley,1900,5152977,0,0.0,nodata,17054090,0,0.0,nodata,Cwt,0,
 Seeds — Flax Or Linseed,1875,5135182,5149589,1.0028,within5,1961987,1968098,1.0031,within5,Quarter,11,
 Wine — Total Of All Kinds,1885,5126392,5093492,0.9936,within5,14629738,14629738,1.0,exact01,Gallon,22,
@@ -776,7 +741,6 @@ Sugar — Refined : Total Of,1883,4468617,4468617,1.0,exact01,3283920,3283920,1.
 Eggs,1898,4457117,4457117,1.0,exact01,14424601,14424631,1.0,exact01,Great Hundred,17,
 Ore Of (Including Chrome),1897,4456004,4523419,1.0151,within5,5968680,13823,0.0023,under,?,29,
 Sugar — Refined : Total Of,1884,4452851,4452851,1.0,exact01,4263873,4263873,1.0,exact01,Cwt,10,
-Silk — Raw,1877,4452045,4452045,1.0,exact01,4441891,4441891,1.0,exact01,Lb,10,
 "Animals, Living — Bulls, Oxen, Cows, And Calves",1887,4438785,0,0.0,nodata,295961,0,0.0,nodata,Number,0,
 Sugar — Refined : Total Of,1880,4436872,4436842,1.0,exact01,3036074,3036074,1.0,exact01,Cwt,6,
 Iron — Ore Of (Including Chrome),1897,4436004,4522823,1.0196,within5,5968680,5996004,1.0046,within5,Ton,32,
@@ -833,7 +797,6 @@ Sugar — Unrefined : Beetroot,1896,4168484,4168484,1.0,exact01,8063918,8063918,
 Jute,1896,4167992,8321080,1.9964,over,0,0,,noanchor,Cwt,11,
 "Sugar — Unrefined : Cane, And Other Sorts",1896,4165877,6478712,1.5552,over,7679758,12225980,1.592,over,Cwt,34,
 Seeds — Flax Or Linseed,1900,4162146,0,0.0,nodata,1666031,0,0.0,nodata,Quarter,0,
-Spirits — Rum,1888,4146564,373799,0.0901,under,4146564,4303096,1.0377,within5,Proof Gallon,19,
 Seeds — Flax Or Linseed,1873,4136664,4136805,1.0,exact01,1445938,1445938,1.0,exact01,Quarter,11,
 Jute,1900,4134389,0,0.0,nodata,0,0,,noanchor,Cwt,0,
 Sugar — Refined : Total Of,1879,4134014,4134014,1.0,exact01,3018824,3018824,1.0,exact01,Cwt,6,
@@ -1510,7 +1473,6 @@ Fruit — Oranges And Lemons,1892,2052501,2052561,1.0,exact01,6763276,6764176,1.
 Fish,1884,2048800,0,0.0,nodata,1336422,0,0.0,nodata,Cwt,0,
 Cotton,1891,2047747,2047747,1.0,exact01,350437,350407,0.9999,exact01,Ton,15,
 Woollen Yarn — For Weaving,1900,2046745,0,0.0,nodata,19858359,0,0.0,nodata,Lb,0,
-Seeds — Flax Or Linseed,1885,2046352,7722364,3.7737,over,2046352,3609416,1.7638,over,Quarter,16,
 Paper — Unprinted,1895,2046271,2047318,1.0005,exact01,2083924,2084423,1.0002,exact01,Cwt,15,
 Tallow And Stearine,1875,2045863,2045863,1.0,exact01,967396,967396,1.0,exact01,Cwt,10,
 "Yarn, Of All Kinds",1895,2045773,0,0.0,nodata,19633481,0,0.0,nodata,Lb,0,
@@ -1805,7 +1767,6 @@ Sugar — In Lumps And Loaves,1897,1684605,1684850,1.0001,exact01,2512851,251289
 Caoutchouc,1871,1684281,0,0.0,nodata,161085,0,0.0,nodata,Cwt,0,
 Tobacco — Raw,1870,1680140,0,0.0,nodata,45557887,0,0.0,nodata,Lb,0,
 "Glass, Of All Kinds",1882,1679325,0,0.0,nodata,1339444,0,0.0,nodata,Cwt,0,
-Seeds — Flax Or Linseed,1874,1675212,4675242,2.7908,over,1682048,1619748,0.963,within5,Quarter,9,
 "Glass, Of All Kinds",1887,1674268,0,0.0,nodata,1657354,0,0.0,nodata,Cwt,0,
 "Glass, Of All Kinds",1881,1674241,0,0.0,nodata,1283119,0,0.0,nodata,Cwt,0,
 Indigo,1887,1673067,0,0.0,nodata,76700,0,0.0,nodata,Cwt,0,
@@ -2195,7 +2156,6 @@ Chemical Manufactures And Pro-Ducts,1895,1276670,0,0.0,nodata,1276670,0,0.0,noda
 Fruit — Currants,1873,1275445,1275445,1.0,exact01,991353,991353,1.0,exact01,Cwt,4,
 "Nitre, Cubic (Nitrate Of Soda)",1874,1271443,1271443,1.0,exact01,2118552,2118552,1.0,exact01,Cwt,4,
 "Nitre, Cubic (Nitrate Of Soda)",1882,1270352,1270352,1.0,exact01,1915138,1915138,1.0,exact01,Cwt,4,
-"Woollen Yarn — For Fancy Purposes, Including Berlin Wool And Zephyr Yarn",1896,1267323,130957,0.1033,under,1267323,1265393,0.9985,within5,Lb,5,
 Lead — Pig And Sheet,1882,1266999,1266999,1.0,exact01,87853,86953,0.9898,within5,Ton,6,
 Fish,1875,1266577,0,0.0,nodata,840090,0,0.0,nodata,Cwt,0,
 Eggs,1871,1263612,0,0.0,nodata,3337275,0,0.0,nodata,Great Hundred,0,
@@ -2328,7 +2288,6 @@ Beef,1895,1164491,0,0.0,nodata,470739,0,0.0,nodata,Cwt,0,
 Pyrites Of Iron Or Copper,1871,1164247,0,0.0,nodata,454512,0,0.0,nodata,Ton,0,
 Fruit — Oranges And Lemons,1874,1163296,1159993,0.9972,within5,2405054,2044991,0.8503,under,Bushel,5,
 Fruit — Oranges And Lemons,1880,1163019,1462969,1.2579,over,3658799,3598799,0.9836,within5,Bushel,7,
-Iron — Ore Of,1878,1162851,0,0.0,nodata,1173411,0,0.0,nodata,Ton,0,
 Oil Seed Cake — Linseed Cake,1896,1162840,1163607,1.0007,exact01,220602,221311,1.0032,within5,Ton,21,
 Other Farinaceous Substances,1892,1161788,0,0.0,nodata,1161788,0,0.0,nodata,Value,0,
 Of All Kinds (Except Hangings),1880,1159646,0,0.0,nodata,1021952,0,0.0,nodata,Cwt,0,
@@ -2475,7 +2434,6 @@ Seed,1900,1038564,0,0.0,nodata,41131,0,0.0,nodata,Ton,0,
 "Woollen Yarn — For Fancy Purposes, Including Berlin Wool And Zephyr Yarn",1898,1037849,187319,0.1805,under,1937849,1037840,0.5356,under,Lb,3,
 Oil — Palm,1899,1037265,1037265,1.0,exact01,945472,945541,1.0001,exact01,Cwt,16,
 Oil — Palm,1900,1036555,0,0.0,nodata,938350,0,0.0,nodata,Cwt,0,
-"Glass — Window And German Sheet, Including Shades And Cylinders",1895,1036352,593347,0.5725,under,1036352,1033442,0.9972,within5,Cwt,5,
 Of All Kinds (Except Hangings),1875,1036056,0,0.0,nodata,762670,0,0.0,nodata,Cwt,0,
 "Stones, Marble, And Slate : Rough, Hewn Or Manufactured : (Other Than Works Of Art)",1898,1035990,0,0.0,nodata,869782,0,0.0,nodata,Ton,0,
 Furs Of All Sorts,1892,1035418,0,0.0,nodata,1035418,0,0.0,nodata,Value,0,
@@ -2652,7 +2610,6 @@ Potatoes,1892,950332,947329,0.9968,within5,3008336,3008336,1.0,exact01,Cwt,15,
 Wood And Timber — Oak,1898,947589,0,0.0,nodata,167314,0,0.0,nodata,Load,0,
 Oil — Olive,1882,947154,947154,1.0,exact01,23450,23450,1.0,exact01,Tun,10,
 Olive,1882,947154,0,0.0,nodata,23450,0,0.0,nodata,Ton,0,
-Oil — Palm,1888,945896,945896,1.0,exact01,953799,953799,1.0,exact01,Cwt,11,
 "Preserved, Otherwise Than By Salting",1872,945819,950789,1.0053,within5,350729,350729,1.0,exact01,Cwt,6,
 Furs Of All Sorts,1880,945574,0,0.0,nodata,945574,0,0.0,nodata,Value,0,
 "Manufactured, Of All Kinds",1894,945066,0,0.0,nodata,3811402,0,0.0,nodata,Lb,0,
@@ -3579,7 +3536,6 @@ Strawboard Or Millboard,1899,596970,0,0.0,nodata,1774880,0,0.0,nodata,Cwt,0,
 "China, Or Porcelain, And Earthenware",1882,596202,587142,0.9848,within5,148316,148310,1.0,exact01,Cwt,7,
 Opium,1871,596158,0,0.0,nodata,591466,0,0.0,nodata,Lb,0,
 Fruit — Unenumerated : Raw,1871,596107,0,0.0,nodata,1128568,0,0.0,nodata,Bushel,0,
-Grapes — Raw,1900,595000,0,0.0,nodata,592857,0,0.0,nodata,Bushel,0,
 "Seed, Of All Kinds",1870,594933,0,0.0,nodata,13429,0,0.0,nodata,Ton,0,
 Phosphate Of Lime And Rock,1893,594467,1046820,1.7609,over,323527,322927,0.9981,within5,Ton,22,
 Dyes Obtained From Coal Tar,1890,594378,0,0.0,nodata,594378,0,0.0,nodata,Value,0,
@@ -3671,7 +3627,6 @@ Coco Nut,1869,572804,0,0.0,nodata,264365,0,0.0,nodata,Cwt,0,
 Toys,1885,572792,0,0.0,nodata,572792,0,0.0,nodata,Value,0,
 "Silk — Knubs Or Husks Of Silk, And Waste",1893,572753,576909,1.0073,within5,56839,57146,1.0054,within5,Cwt,14,
 Rabbits (Dead),1898,572603,842838,1.4719,over,314398,519331,1.6518,over,Cwt,9,
-Pears — Raw,1899,571832,265651,0.4646,under,571832,570842,0.9983,within5,Bushel,9,
 Seeds — Of Other Sorts,1876,571430,0,0.0,nodata,571430,0,0.0,nodata,Value,0,
 "Bar, Angle, Bolt And Rod",1896,570412,570149,0.9995,exact01,71058,70993,0.9991,exact01,Ton,8,
 "Seed, Of All Kinds",1877,569967,0,0.0,nodata,14827,0,0.0,nodata,Ton,0,
@@ -3746,7 +3701,6 @@ Nuts: Almonds,1898,553431,0,0.0,nodata,170274,0,0.0,nodata,Cwt,0,
 Olive,1899,553286,0,0.0,nodata,15939,0,0.0,nodata,Ton,0,
 Spirits — Rum,1890,552997,553027,1.0001,exact01,6237773,6236873,0.9999,exact01,Proof Gallon,14,
 Seeds — Clover And Grass,1891,552979,552949,0.9999,exact01,256920,256920,1.0,exact01,Cwt,8,
-Coco Nut,1900,552743,0,0.0,nodata,552743,0,0.0,nodata,Cwt,0,
 Cordage And Twine,1874,552665,0,0.0,nodata,552665,0,0.0,nodata,Value,0,
 "Wool — Alpaca, Vicuña, And Llama",1875,551870,551870,1.0,exact01,4162308,4162308,1.0,exact01,Lb,4,
 "Of Other Sorts (Including ""Nuts, For Fruit"")",1887,551623,0,0.0,nodata,551623,0,0.0,nodata,Value,0,
@@ -4105,7 +4059,6 @@ Grapes,1894,470423,0,0.0,nodata,832893,0,0.0,nodata,Bushel,0,
 Oil — Turpentine,1872,470085,470085,1.0,exact01,220292,220292,1.0,exact01,Cwt,3,
 "Drugs, Unenumerated",1872,469898,0,0.0,nodata,469898,0,0.0,nodata,Value,0,
 Wood And Timber — Staves,1880,469847,469817,0.9999,exact01,103536,103536,1.0,exact01,Load,8,
-Clocks,1888,469450,0,0.0,nodata,469450,0,0.0,nodata,Number,0,
 "Clocks, And Parts Thereof",1888,469450,0,0.0,nodata,469450,0,0.0,nodata,Value,0,
 Watches,1871,469414,0,0.0,nodata,469414,0,0.0,nodata,Value,0,
 For Expressing Oil Therefrom,1876,469275,0,0.0,nodata,31471,0,0.0,nodata,Ton,0,
@@ -4130,7 +4083,6 @@ Of Wool (Other Than Goats'): Cloths,1894,466834,0,0.0,nodata,2744851,0,0.0,nodat
 "Silk — Knubs Or Husks Of Silk, And Waste",1874,466283,466283,1.0,exact01,35141,35141,1.0,exact01,Cwt,8,
 Rags And Other Materials For Making Paper — Linen And Cotton,1887,466167,466137,0.9999,exact01,38273,38273,1.0,exact01,Ton,14,
 Phosphate Of Lime And Rock,1896,465931,486334,1.0438,within5,291314,295803,1.0154,within5,Ton,21,
-"Skins, Furs, And Pelts — Seal",1890,465844,465844,1.0,exact01,470230,470230,1.0,exact01,Number,14,
 Valonia,1885,465112,0,0.0,nodata,29487,0,0.0,nodata,Ton,0,
 Mares,1899,464229,438619,0.9448,under,17014,16722,0.9828,within5,Number,16,
 Spices — Pepper,1881,464009,464009,1.0,exact01,20795087,20795087,1.0,exact01,Lb,4,
@@ -4496,7 +4448,6 @@ Leather Manufactures — Boots And Shoes,1895,399065,0,0.0,nodata,132058,0,0.0,n
 Boots And Shoes,1895,399065,397736,0.9967,within5,132058,131438,0.9953,within5,Dozen Pairs,6,
 "Teeth, Elephants', Sea-Cows', Or Walrus",1900,398654,0,0.0,nodata,9889,0,0.0,nodata,?,0,
 Valonia,1881,398481,0,0.0,nodata,26795,0,0.0,nodata,Ton,0,
-Clocks,1887,398259,0,0.0,nodata,398259,0,0.0,nodata,Number,0,
 "Clocks, And Parts Thereof",1887,398259,0,0.0,nodata,398259,0,0.0,nodata,Value,0,
 Rabbits,1890,398110,397392,0.9982,within5,143645,143336,0.9978,within5,Cwt,4,
 Spices — Pepper,1880,398087,398087,1.0,exact01,21729968,21729968,1.0,exact01,Lb,2,
@@ -5153,7 +5104,6 @@ Rosin,1886,292229,292229,1.0,exact01,1168555,1168555,1.0,exact01,Cwt,4,
 Pork — Salted (Not Hams),1896,291966,291966,1.0,exact01,255339,255339,1.0,exact01,Cwt,8,
 Rosin,1889,291567,291567,1.0,exact01,1321620,1321620,1.0,exact01,Cwt,4,
 Fruit — Figs,1881,291427,0,0.0,nodata,138225,0,0.0,nodata,Cwt,0,
-Spirits — Geneva,1888,291085,49523,0.1701,under,291085,289021,0.9929,within5,Proof Gallon,2,
 Myrobalans,1892,291076,0,0.0,nodata,645937,0,0.0,nodata,Cwt,0,
 Rye,1898,291045,297246,1.0213,within5,1057770,1079770,1.0208,within5,Cwt,6,
 Saltpetre,1889,291021,0,0.0,nodata,331390,0,0.0,nodata,Cwt,0,
@@ -5192,7 +5142,6 @@ Manures — Bones For Manure,1892,286452,450191,1.5716,over,63603,97677,1.5357,o
 Candles Of All Sorts,1882,286393,280393,0.979,within5,109323,109323,1.0,exact01,Cwt,5,
 "Oil — Chemical, Essential, Or Perfumed",1872,286393,285993,0.9986,within5,707409,707409,1.0,exact01,Lb,9,
 "Oil — Chemical, Essential, Or Perfumed",1894,286234,285334,0.9969,within5,1450180,1456180,1.0041,within5,Lb,17,
-Saltpetre,1883,286187,0,0.0,nodata,285647,0,0.0,nodata,Cwt,0,
 "Yeast, Dried",1870,286097,0,0.0,nodata,128641,0,0.0,nodata,Cwt,0,
 "Seeds — Unenumerated, For Expressing Oil Therefrom",1886,285989,341906,1.1955,over,161742,192127,1.1879,over,Quarter,10,
 Linen Yarn,1877,285942,285942,1.0,exact01,5308395,5308395,1.0,exact01,Lb,3,
@@ -5201,7 +5150,6 @@ Candles — Stearine,1870,285333,0,0.0,nodata,78996,0,0.0,nodata,Cwt,0,
 "Pictures And Drawings, By Hand",1898,285279,285379,1.0004,exact01,19805,19796,0.9995,exact01,Number,12,
 Rags And Other Materials For Making Paper — Linen And Cotton,1878,285215,285215,1.0,exact01,18771,18771,1.0,exact01,Ton,7,
 Silk Manufactures — Of Countries Out Of Europe,1873,284889,0,0.0,nodata,284889,0,0.0,nodata,Value,0,
-Pork — Salted (Not Hams),1899,284720,215824,0.758,under,284720,285020,1.0011,within5,Cwt,8,
 Quicksilver,1870,284503,0,0.0,nodata,2765780,0,0.0,nodata,Lb,0,
 Metal Not Otherwise Enumerated — Wrought,1892,284317,0,0.0,nodata,2230,0,0.0,nodata,Ton,0,
 Wrought,1892,284317,0,0.0,nodata,2231,0,0.0,nodata,Cwt,0,
@@ -5246,7 +5194,6 @@ Saltpetre,1896,278484,0,0.0,nodata,340750,0,0.0,nodata,Cwt,0,
 "Drugs, Unenumerated",1868,278186,0,0.0,nodata,278186,0,0.0,nodata,Value,0,
 "Pictures And Drawings, By Hand",1899,277963,277903,0.9998,exact01,18319,18319,1.0,exact01,Number,12,
 Oatmeal And Groats,1895,277736,277746,1.0,exact01,468941,468961,1.0,exact01,Cwt,6,
-Seeds — Rape,1888,277727,720620,2.5947,over,277727,421820,1.5188,over,Quarter,11,
 Coco Nut,1889,277602,0,0.0,nodata,213090,0,0.0,nodata,Cwt,0,
 Lace,1868,277450,0,0.0,nodata,277450,0,0.0,nodata,Value,0,
 "Books, Printed, Bound And Unbound, Including Maps And Charts",1897,277394,0,0.0,nodata,46484,0,0.0,nodata,Cwt,0,
@@ -5275,7 +5222,6 @@ Fruits And Vegetables Preserved In Sugar,1897,274261,443014,1.6153,over,175497,2
 Books,1890,274251,0,0.0,nodata,32268,0,0.0,nodata,Cwt,0,
 Books,1891,274191,0,0.0,nodata,33052,0,0.0,nodata,Cwt,0,
 "Glass — Plate, Whether Silvered Or Not",1894,274108,274193,1.0003,exact01,211417,211417,1.0,exact01,Cwt,6,
-Sugar — Glucose,1877,273997,1917,0.007,under,276627,2208,0.008,under,Cwt,1,
 "Lac, Seed, Shell, Stick, And Dye",1878,273923,273923,1.0,exact01,79593,79593,1.0,exact01,Cwt,3,
 Rags And Other Materials For Making Paper — Linen And Cotton,1875,273851,0,0.0,nodata,15792,0,0.0,nodata,Ton,0,
 Straw,1870,273846,0,0.0,nodata,199382,0,0.0,nodata,Lb,0,
@@ -5384,7 +5330,6 @@ Hay,1892,259593,259563,0.9999,exact01,61237,61157,0.9987,within5,Ton,10,
 Saltpetre,1887,259566,0,0.0,nodata,301048,0,0.0,nodata,Cwt,0,
 "Flowers, Artificial",1888,259479,0,0.0,nodata,259479,0,0.0,nodata,Value,0,
 Madder — Root,1874,258912,258592,0.9988,within5,148002,143846,0.9719,within5,Cwt,5,
-Clocks,1870,258628,0,0.0,nodata,256861,0,0.0,nodata,Number,0,
 "Manganese, Ore Of",1868,258520,0,0.0,nodata,50042,0,0.0,nodata,Ton,0,
 "Prepared, And Chocolate",1892,258465,0,0.0,nodata,2538460,0,0.0,nodata,Lb,0,
 Rape,1897,258233,0,0.0,nodata,185232,0,0.0,nodata,Quarter,0,
@@ -5485,7 +5430,6 @@ For Expressing Oil Therefrom,1868,246456,0,0.0,nodata,22432,0,0.0,nodata,Ton,0,
 "Slates, For Roofing Purposes",1900,246435,0,0.0,nodata,46462295,0,0.0,nodata,Number,0,
 "Yeast, Dried",1869,246344,0,0.0,nodata,120912,0,0.0,nodata,Cwt,0,
 "Glass — Plate, Whether Silvered Or Not",1893,246302,246302,1.0,exact01,162147,162147,1.0,exact01,Cwt,6,
-"Glass — Plate, Whether Silvered Or Not",1899,246254,283599,1.1517,over,246254,241213,0.9795,within5,Cwt,6,
 Sugar — Molasses,1897,246242,41925,0.1703,under,1165574,1320771,1.1332,over,Cwt,10,
 Silk Manufactures — Of Countries Out Of Europe,1875,246200,0,0.0,nodata,246200,0,0.0,nodata,Value,0,
 "Sweetened And Perfumed, Of All Kinds",1894,246155,0,0.0,nodata,130873,0,0.0,nodata,Gallon,0,
@@ -5529,7 +5473,6 @@ Saltpetre,1886,240066,0,0.0,nodata,270876,0,0.0,nodata,Cwt,0,
 Leather Manufactures — Boots And Shoes,1875,240000,0,0.0,nodata,0,0,,noanchor,Dozen Pairs,0,
 Boots And Shoes,1875,240000,240000,1.0,exact01,0,0,,noanchor,Dozen Pairs,4,
 "Manganese, Ore Of",1886,239822,239822,1.0,exact01,73424,73924,1.0068,within5,Ton,14,
-Sugar — Glucose,1875,239585,0,0.0,nodata,237997,0,0.0,nodata,Cwt,0,
 Leather Manufactures — Unenumerated,1893,239075,0,0.0,nodata,289075,0,0.0,nodata,Value,0,
 "Seeds — Unenumerated, For Expressing Oil Therefrom",1876,238887,175010,0.7326,under,106740,71686,0.6716,under,Quarter,6,
 Toys,1870,238879,0,0.0,nodata,238879,0,0.0,nodata,Value,0,
@@ -6249,7 +6192,6 @@ Myrobalans,1896,152955,0,0.0,nodata,521956,0,0.0,nodata,Cwt,0,
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1895,152919,65494,0.4283,under,9601,7236,0.7537,under,Ton,7,
 Horse,1881,152814,152844,1.0002,exact01,26632,26632,1.0,exact01,Cwt,7,
 Horse Hair,1869,152631,0,0.0,nodata,19867,0,0.0,nodata,Cwt,0,
-Sugar — Glucose,1874,152593,0,0.0,nodata,151395,0,0.0,nodata,Cwt,0,
 "Meat, Salted Or Fresh",1869,152503,0,0.0,nodata,53199,0,0.0,nodata,Cwt,0,
 "Unenumerated, Not Sweetened",1870,152371,0,0.0,nodata,2023067,0,0.0,nodata,Proof Gallon,0,
 Ore Of,1899,152351,40785,0.2677,under,290,1586,5.469,over,Ton,5,
@@ -6330,7 +6272,6 @@ Feathers — For Beds,1882,144694,144694,1.0,exact01,31291,31291,1.0,exact01,Cwt
 "Unenumerated, Not Sweetened",1889,144293,0,0.0,nodata,3199470,0,0.0,nodata,Proof Gallon,0,
 Spices — Cinnamon,1871,144146,0,0.0,nodata,1584638,0,0.0,nodata,Lb,0,
 Ginger,1899,144080,0,0.0,nodata,75826,0,0.0,nodata,Cwt,0,
-Wood And Timber — Staves,1888,143796,1153468,8.0216,over,143796,141087,0.9812,within5,Load,9,
 Alkali,1871,143741,0,0.0,nodata,99985,0,0.0,nodata,Cwt,0,
 Sugar — Molasses,1889,143662,143612,0.9997,exact01,391475,391475,1.0,exact01,Cwt,8,
 Candles Of All Sorts,1886,143652,143664,1.0001,exact01,58242,58248,1.0001,exact01,Cwt,8,
@@ -6567,7 +6508,6 @@ Tin — Ore Of,1893,119890,119490,0.9967,within5,3040,3040,1.0,exact01,Ton,8,
 Isinglass,1891,119756,119756,1.0,exact01,8856,8856,1.0,exact01,Cwt,8,
 "Fish : Fresh, Herrings",1895,119564,0,0.0,nodata,767598,0,0.0,nodata,Cwt,0,
 "Fresh, Herrings",1895,119564,0,0.0,nodata,767598,0,0.0,nodata,?,0,
-"Lac, Seed, Shell, Stick, And Dye",1885,119511,852,0.0071,under,119511,239,0.002,under,Cwt,1,
 Tares And Lentils,1884,119452,119452,1.0,exact01,634676,634676,1.0,exact01,Bushel,7,
 "Meat, Salted Or Fresh",1868,119423,0,0.0,nodata,41359,0,0.0,nodata,Cwt,0,
 Fresh (Not Of British Taking) — Herrings,1896,119390,119390,1.0,exact01,773591,770582,0.9961,within5,Cwt,4,
@@ -6629,7 +6569,6 @@ Steel — Unwrought,1870,113368,0,0.0,nodata,8070,0,0.0,nodata,Ton,0,
 Steel — Unwrought,1885,113057,0,0.0,nodata,11208,0,0.0,nodata,Ton,0,
 Yarn,1873,113026,0,0.0,nodata,2646524,0,0.0,nodata,Lb,0,
 Wax,1890,112573,113173,1.0053,within5,35948,35918,0.9992,exact01,Cwt,19,
-"Lac, Seed, Shell, Stick, And Dye",1884,112479,924714,8.2212,over,112479,224958,2.0,over,Cwt,7,
 Perfumed,1894,112475,112475,1.0,exact01,49873,49870,0.9999,exact01,Gallon,8,
 Straw,1875,112394,0,0.0,nodata,464651,0,0.0,nodata,Lb,0,
 Plumbago,1884,112385,112385,1.0,exact01,8806,8806,1.0,exact01,Ton,4,
@@ -6663,7 +6602,6 @@ Boots And Shoes,1868,110160,0,0.0,nodata,0,0,,noanchor,Dozen Pairs,0,
 Tares And Lentils,1893,110068,135785,1.2336,over,599981,752456,1.2541,over,Bushel,12,
 "Unenumerated, Not Sweetened",1873,110015,0,0.0,nodata,1260050,0,0.0,nodata,Proof Gallon,0,
 "Sweetened Or Mixed, Tested",1893,109964,0,0.0,nodata,68615,0,0.0,nodata,Proof Gallon,0,
-"Hair — Cow, Ox, Bull, Or Elk",1890,109749,146345,1.3335,over,109749,109904,1.0014,within5,Cwt,12,
 Isinglass,1882,109715,109715,1.0,exact01,6377,6377,1.0,exact01,Cwt,5,
 Fruit — Figs,1868,109684,0,0.0,nodata,79637,0,0.0,nodata,Cwt,0,
 "Of Other Materials, Trimmed Or Untrimmed",1900,109597,0,0.0,nodata,129926,0,0.0,nodata,Number,0,
@@ -6677,7 +6615,6 @@ Feathers — For Beds,1877,109011,102820,0.9432,under,22876,20912,0.9141,under,C
 Alkali,1897,109002,110100,1.0101,within5,227394,227394,1.0,exact01,Cwt,10,
 Galls,1883,108945,108945,1.0,exact01,39552,39552,1.0,exact01,Cwt,8,
 Wax,1889,108857,108857,1.0,exact01,32777,32777,1.0,exact01,Cwt,18,
-"Lac, Seed, Shell, Stick, And Dye",1899,108758,882662,8.1158,over,108758,266876,2.4539,over,Cwt,18,
 Bark,1897,108707,139998,1.2878,over,313985,390302,1.2431,over,Cwt,15,
 "Bark, For Tanning",1897,108707,0,0.0,nodata,313985,0,0.0,nodata,Cwt,0,
 "Old, Fit Only To Be Re-Manufactured",1897,108694,110525,1.0168,within5,3282,3248,0.9896,within5,Ton,22,
@@ -6686,7 +6623,6 @@ Beads Of All Sorts,1882,108277,138756,1.2815,over,2221952,2973775,1.3384,over,Lb
 "Manufactures Of Hair, And Of Goats' Wool",1880,107902,0,0.0,nodata,107902,0,0.0,nodata,Value,0,
 "Meat, Salted Or Fresh",1871,107814,0,0.0,nodata,42340,0,0.0,nodata,Cwt,0,
 Feathers — For Beds,1880,107554,107524,0.9997,exact01,22639,22619,0.9991,exact01,Cwt,5,
-"Lac, Seed, Shell, Stick, And Dye",1886,107261,608707,5.675,over,107261,213509,1.9906,over,Cwt,10,
 "Plate, Fluted, Rolled Or Rough",1899,107229,107229,1.0,exact01,112900,112900,1.0,exact01,Cwt,5,
 Of Other Sorts,1897,106936,0,0.0,nodata,44639,0,0.0,nodata,Cwt,0,
 Tares And Lentils,1885,106881,106881,1.0,exact01,581538,581538,1.0,exact01,Bushel,8,
@@ -6975,7 +6911,6 @@ Beads Of All Sorts,1893,84185,85590,1.0167,within5,2131459,2138799,1.0034,within
 "Animals, Living — Swine",1884,84153,84153,1.0,exact01,26437,26437,1.0,exact01,Number,4,
 Cochineal (Including Granilla And Dust),1884,84081,84091,1.0001,exact01,14766,14766,1.0,exact01,Cwt,5,
 Plumbago,1887,83958,83958,1.0,exact01,8026,8026,1.0,exact01,Ton,5,
-"Hair — Cow, Ox, Bull, Or Elk",1886,83941,124643,1.4849,over,83941,80941,0.9643,within5,Cwt,10,
 Wood Pulp Board,1895,83912,0,0.0,nodata,171548,0,0.0,nodata,Cwt,0,
 Liquorice,1869,83832,0,0.0,nodata,38146,0,0.0,nodata,Cwt,0,
 Liquorice,1891,83786,83786,1.0,exact01,29324,29024,0.9898,within5,Cwt,5,
@@ -6996,7 +6931,6 @@ Feathers — For Beds,1894,82422,0,0.0,nodata,26383,0,0.0,nodata,Cwt,0,
 Feathers And Down — For Beds,1894,82422,0,0.0,nodata,26383,0,0.0,nodata,Cwt,0,
 "Varnished, Japanned Or Enamelled",1894,82365,82365,1.0,exact01,3210,3231,1.0065,within5,Cwt,5,
 "Manganese, Ore Of",1883,82314,82314,1.0,exact01,22362,22362,1.0,exact01,Ton,14,
-Kowrie,1885,82266,512250,6.2268,over,82266,163242,1.9843,over,Cwt,6,
 Saumur,1899,81978,0,0.0,nodata,155044,0,0.0,nodata,?,0,
 Alkali,1883,81952,81952,1.0,exact01,60466,60466,1.0,exact01,Cwt,7,
 "Animals, Living — Swine",1881,81917,0,0.0,nodata,24283,0,0.0,nodata,Number,0,
@@ -7357,7 +7291,6 @@ Alkali,1886,55828,55828,1.0,exact01,78154,78154,1.0,exact01,Cwt,7,
 Paper — Hangings,1879,55511,55511,1.0,exact01,13522,13522,1.0,exact01,Cwt,3,
 Paper — Hangings,1880,55402,55402,1.0,exact01,14849,14849,1.0,exact01,Cwt,3,
 "Cow, Ox, Bull, Or Elk",1879,55199,0,0.0,nodata,51427,0,0.0,nodata,?,0,
-Kowrie,1887,55144,170459,3.0912,over,55144,52144,0.9456,under,Cwt,3,
 Liquorice,1871,55120,0,0.0,nodata,19607,0,0.0,nodata,Cwt,0,
 Whalefins,1874,54920,54920,1.0,exact01,2911,2911,1.0,exact01,Cwt,2,
 Waste Of (Raw And Yarn),1894,54918,93765,1.7074,over,6585961,11494407,1.7453,over,Lb,13,
@@ -7376,7 +7309,6 @@ Manufactures Of India And China,1876,53498,0,0.0,nodata,117685,0,0.0,nodata,Piec
 "Chicory, Raw Or Kiln-Dried",1891,53497,0,0.0,nodata,113961,0,0.0,nodata,Cwt,0,
 Other Sorts Of Shell Fish,1900,53447,0,0.0,nodata,153774,0,0.0,nodata,Cwt,0,
 "Chicory, Raw Or Kiln-Dried",1895,53434,53434,1.0,exact01,112103,112103,1.0,exact01,Cwt,4,
-Oil — Castor,1900,53335,0,0.0,nodata,53335,0,0.0,nodata,Cwt,0,
 "Plate, Fluted, Rolled Or Rough",1895,53065,53065,1.0,exact01,48990,48990,1.0,exact01,Cwt,4,
 Spirits — Geneva,1871,53001,0,0.0,nodata,352025,0,0.0,nodata,Proof Gallon,0,
 Spirits — Geneva,1889,52752,52741,0.9998,exact01,304493,304458,0.9999,exact01,Proof Gallon,2,
@@ -7489,7 +7421,6 @@ Embroidery And Needlework,1880,45240,0,0.0,nodata,45210,0,0.0,nodata,Value,0,
 Whalefins,1871,45178,0,0.0,nodata,2853,0,0.0,nodata,Cwt,0,
 Paper — Hangings,1891,45169,45166,0.9999,exact01,8223,8222,0.9999,exact01,Cwt,8,
 "Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1870,45034,0,0.0,nodata,19091,0,0.0,nodata,Ton,0,
-Kowrie,1886,44724,265341,5.9329,over,44724,89002,1.99,over,Cwt,4,
 "Manganese, Ore Of",1876,44659,44659,1.0,exact01,8914,8914,1.0,exact01,Ton,5,
 Cavendish Or Negrohead,1896,44631,44631,1.0,exact01,998264,998264,1.0,exact01,Lb,8,
 Confectionery,1890,44371,44371,1.0,exact01,14906,14906,1.0,exact01,Cwt,9,
@@ -7694,12 +7625,10 @@ Fruit — Prunes,1893,26128,26095,0.9987,within5,21659,21674,1.0007,exact01,Cwt,
 "Coals, Culm, Cinders, And Shale",1896,26015,0,0.0,nodata,15750,0,0.0,nodata,Ton,0,
 Fruit — Prunes,1894,25623,25037,0.9771,within5,27925,27950,1.0009,exact01,Cwt,5,
 Manufactures Of India And China,1871,25446,0,0.0,nodata,39518,0,0.0,nodata,Pieces,0,
-Dye Woods — Unenumerated,1887,24807,131900,5.317,over,24807,21306,0.8589,under,Ton,14,
 Ore Of,1893,24665,8755,0.355,under,241,454,1.8838,over,Ton,5,
 Sugar — Glucose,1871,24593,0,0.0,nodata,22046,0,0.0,nodata,Cwt,0,
 Pitch And Tar :Pitch,1884,24455,0,0.0,nodata,86649,0,0.0,nodata,Cwt,0,
 "Madder, Madder Root, Garancine, And Munjeet",1880,24345,0,0.0,nodata,22868,0,0.0,nodata,Cwt,0,
-Dye Woods — Unenumerated,1890,24321,108127,4.4458,over,24321,19169,0.7882,under,Ton,13,
 Pitch And Tar :Pitch,1882,24321,0,0.0,nodata,74195,0,0.0,nodata,Cwt,0,
 "Madder, Madder Root, Garancine, And Munjeet",1887,24177,24177,1.0,exact01,19347,19347,1.0,exact01,Cwt,6,
 Fruit — Prunes,1895,24024,23124,0.9625,within5,21130,21130,1.0,exact01,Cwt,5,
@@ -7757,7 +7686,6 @@ Not Tested,1895,20273,0,0.0,nodata,13678,0,0.0,nodata,Gallon,0,
 "Milk And Cream, Fresh Or Preserved, Other Than Condensed Milk",1895,19991,19991,1.0,exact01,126995,126995,1.0,exact01,Gallon,4,
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1893,19821,0,0.0,nodata,147433,0,0.0,nodata,Number,0,
 "Spun Silk Yarn, Dyed Or Not Dyed",1900,19727,0,0.0,nodata,68264,0,0.0,nodata,Lb,0,
-Madder — Root,1877,19496,19171,0.9833,within5,19491,19240,0.9871,within5,Cwt,4,
 Dyeing Or Tanning Stuffs — Madder Root And Munjeet,1877,19496,0,0.0,nodata,19491,0,0.0,nodata,Cwt,0,
 Pitch,1885,19483,0,0.0,nodata,70449,0,0.0,nodata,Cwt,0,
 Pitch And Tar :Pitch,1885,19483,0,0.0,nodata,70449,0,0.0,nodata,Cwt,0,
@@ -7784,7 +7712,6 @@ Pitch,1874,17671,17671,1.0,exact01,37701,37701,1.0,exact01,Cwt,2,
 Not Tested,1894,17375,0,0.0,nodata,11396,0,0.0,nodata,Gallon,0,
 Cider And Perry,1894,17309,17397,1.0051,within5,431155,432808,1.0038,within5,Gallon,6,
 Cider And Perry,1897,17270,17270,1.0,exact01,500759,500759,1.0,exact01,Gallon,6,
-Dye Woods — Unenumerated,1888,17232,90030,5.2246,over,17232,17292,1.0035,within5,Ton,17,
 "Madder, Madder Root, Garancine, And Munjeet",1889,17184,17184,1.0,exact01,14236,14236,1.0,exact01,Cwt,5,
 "Metal — Leaf, Not Gold",1896,16845,159798,9.4864,over,180985,186474,1.0303,within5,Packets,22,
 "Leaf, Not Gold",1896,16845,0,0.0,nodata,180985,0,0.0,nodata,Packets,0,
@@ -7816,7 +7743,6 @@ Part Wrought,1900,14830,0,0.0,nodata,201,0,0.0,nodata,Ton,0,
 Pitch,1875,14801,14801,1.0,exact01,35921,35921,1.0,exact01,Cwt,2,
 "Skins, Furs, And Pelts — Unenumerated : Undressed",1895,14721,21951,1.4911,over,133858,200684,1.4992,over,Number,11,
 Vinegar,1894,14711,14709,0.9999,exact01,215852,215812,0.9998,exact01,Gallon,5,
-Dye Woods — Unenumerated,1896,14705,88903,6.0458,over,14705,17811,1.2112,over,Ton,25,
 "Confectionery, In The Manufacture Of Which Spirit Has Been Used",1896,14565,14556,0.9994,exact01,185478,185478,1.0,exact01,Lb,5,
 Cider And Perry,1898,14514,14514,1.0,exact01,391739,391739,1.0,exact01,Gallon,6,
 "Animals, Living — Swine",1890,14474,14474,1.0,exact01,4036,4036,1.0,exact01,Number,4,
@@ -7853,7 +7779,6 @@ In The Manufacture Of Which Spirit Has Been Used,1894,12355,0,0.0,nodata,181737,
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1894,12255,12205,0.9959,within5,131737,131737,1.0,exact01,Lb,4,
 "Coals, Culm, Cinders, And Shale",1900,12154,0,0.0,nodata,9949,0,0.0,nodata,Ton,0,
 Tobacco — Burgundy,1898,11693,11205,0.9583,within5,14564,0,0.0,nodata,?,3,
-Dye Woods — Unenumerated,1899,11645,0,0.0,nodata,11645,0,0.0,nodata,Ton,0,
 "Sweetened Or Mixed, Tested",1894,11615,0,0.0,nodata,69604,0,0.0,nodata,Proof Gallon,0,
 Vinegar,1893,11477,11477,1.0,exact01,172642,172642,1.0,exact01,Gallon,4,
 "Dyeing Or Tanning Stuffs — Madder, Madder Root, Garanoine, And Munjeet",1890,11373,0,0.0,nodata,11378,0,0.0,nodata,Cwt,0,
@@ -7885,7 +7810,6 @@ Imitation Cheese,1899,10136,0,0.0,nodata,5731,0,0.0,nodata,Cwt,0,
 "Manufactures, Piece Goods, Muslins",1899,10102,0,0.0,nodata,540042,0,0.0,nodata,Yard,0,
 "Cards, Playing",1897,10062,9589,0.953,within5,43218,34100,0.789,under,Dozen Packs,5,
 Vinegar,1896,9984,9984,1.0,exact01,186237,186237,1.0,exact01,Gallon,5,
-Dye Woods — Unenumerated,1898,9963,0,0.0,nodata,9963,0,0.0,nodata,Ton,0,
 "Beer And Ale: Mum, Spruce Or Black } Beer, Berlin White Beer, And Other Similar Preparations",1897,9898,0,0.0,nodata,1518,0,0.0,nodata,Barrels Of Gallons,0,
 "Milk And Cream, Fresh Or Preserved, Other Than Condensed Milk",1897,9848,9543,0.969,within5,10006,9975,0.9969,within5,Gallon,6,
 "Manufactures, Piece Goods, Muslins",1900,9790,0,0.0,nodata,565442,0,0.0,nodata,Yard,0,

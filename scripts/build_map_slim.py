@@ -229,6 +229,7 @@ outliers = []
 junk = []
 totals_as_origin = []            # origin cells that exceed the national anchor (log)
 value_dropped = []       # per-cell values over CAP (corrupt, not large)
+quantity_as_value = []   # national VALUE lines that are really the quantity
 quality = []             # (commodity, [flag,...]) for the audit report
 unit_alias = []          # origin/anchor unit labels that measure the same thing
 unit_mismatch = []       # ...and those that do not, so the anchor is dropped
@@ -546,6 +547,25 @@ for n in wl:
     # NOT the wider Tier-1 anchor span (1866-1900): otherwise the slider lands
     # on years with a national total but no origin breakdown -> empty map.
     yrs = sorted(nat) or sorted(t1)
+    # ---- a value anchor that is really the QUANTITY line ------------------
+    # Some printings put the quantity figure in the value column of the
+    # abstract, and the cross-volume vote copies it faithfully: the flax and
+    # linseed value line for 1885 IS its quantity line, 2,046,352, in six
+    # volumes, while the origins come to GBP4.4M at 2.1 a quarter. Left in, it
+    # does not merely fail the value test, it reports a real block as 2.14x
+    # its total. Detected on the commodity's OWN price, so a commodity whose
+    # goods genuinely cost about a pound a unit is never touched.
+    prices = sorted(v / q for v, q in nat.values() if q and v)
+    if prices and t1v:
+        price = prices[len(prices) // 2]
+        if not 0.9 <= price <= 1.1:
+            for y, v in list(t1v.items()):
+                if t1.get(y) and abs(v - t1[y]) <= 0.01 * t1[y]:
+                    quantity_as_value.append(
+                        {'commodity': n, 'year': y, 'value_line': round(v),
+                         'quantity_line': round(t1[y]),
+                         'price': round(price, 2)})
+                    del t1v[y]
     # ---- per-commodity quality flags, shown on the map itself ------------
     # A reader cannot tell a well-measured series from a one-year fragment of
     # a mislabelled table by looking at bubbles, so the limits travel with the
@@ -685,6 +705,16 @@ with open('reports/value_cap_cells.csv', 'w', newline='') as f:
     w = csv.writer(f)
     w.writerow(['commodity', 'origin', 'year', 'value'])
     w.writerows(sorted(value_dropped, key=lambda r: -r[3]))
+with open('reports/quantity_as_value.csv', 'w', newline='') as f:
+    w = csv.DictWriter(f, fieldnames=['commodity', 'year', 'value_line',
+                                      'quantity_line', 'price'])
+    w.writeheader()
+    w.writerows(sorted(quantity_as_value,
+                       key=lambda r: -r['quantity_line']))
+print(f'national value lines that are really the quantity: '
+      f'{len(quantity_as_value)} '
+      f'({len({r["commodity"] for r in quantity_as_value})} commodities) '
+      f'-> reports/quantity_as_value.csv')
 with open('reports/junk_origin_cells.csv', 'w', newline='') as f:
     w = csv.DictWriter(f, fieldnames=['commodity', 'year', 'origin',
                                       'value', 'qty'])

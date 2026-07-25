@@ -105,6 +105,20 @@ def main():
                     if unit == qunit and row[1] and y in t1q:
                         qsum[y] += row[1]
 
+        # Some printings put the quantity figure in the abstract's value
+        # column and the vote copies it faithfully (flax and linseed 1885 is
+        # its own quantity line, 2,046,352, in six volumes). Such a year is
+        # not a failing test, it is an absent one — left in, it reports a
+        # sound block as 2.14x its total. Tested on the commodity's own
+        # price, so goods that genuinely cost about a pound a unit are safe.
+        prices = sorted(vsum[y] / qsum[y] for y in qsum
+                        if qsum[y] and vsum[y])
+        if prices:
+            price = prices[len(prices) // 2]
+            if not 0.9 <= price <= 1.1:
+                t1v = {y: v for y, v in t1v.items()
+                       if not (t1q.get(y) and abs(v - t1q[y]) <= 0.01 * t1q[y])}
+
         for y, tv in sorted(t1v.items()):
             b = bucket(vsum[y], tv)
             tot[b] += 1
