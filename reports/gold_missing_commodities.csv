@@ -181,7 +181,8 @@ Eggs,1871,Great Hundreds,3337275,name-matched(exact) but absent in 1871
 Embroidery and Needlework,1871,None,0,name-matched(exact) but absent in 1871
 Esparto and other Vegetable Fibres for making Paper,1871,Tons,144411,name-matched(subset) but absent in 1871
 Essence of Spruce,1871,None,0,name-matched(subset) but absent in 1871
-Ether Acetic,1891,Lbs. (Pounds),1351,name-matched(subset) but absent in 1891
+Ether Acetic,1896,Lbs. (Pounds),540,name-matched(subset) but absent in 1896
+Ether Butyric,1891,Gallons,286,name-matched(subset) but absent in 1891
 Ether Sulphuric,1876,Gallons,2649,name-matched(subset) but absent in 1876
 Ether Sulphuric,1886,Gallons,4505,name-matched(subset) but absent in 1886
 Ethyl Iodide of,1876,Gallons,5,name-matched(exact) but absent in 1876
@@ -222,10 +223,8 @@ Fruit Preserved without Sugar Unenumerated,1871,Lbs. (Pounds),2769609,name-match
 Fruit Preserved without Sugar Unenumerated,1876,Lbs. (Pounds),11989173,name-matched(exact) but absent in 1876
 Fruit Preserved without Sugar Unenumerated,1881,Lbs. (Pounds),19401186,name-matched(exact) but absent in 1881
 Fruit Preserved without Sugar Unenumerated,1891,Lbs. (Pounds),38182759,name-matched(exact) but absent in 1891
+Fruit Preserved without sugar not dried,1896,Lbs. (Pounds),62986516,name-matched(subset) but absent in 1896
 Fruit Raw or otherwise not described,1871,Bushels,1128568,name-matched(subset) but absent in 1871
-Fruit Raw unenumerated,1881,Bushels,4045691,name-matched(subset) but absent in 1881
-Fruit Raw unenumerated,1886,Bushels,2601334,name-matched(subset) but absent in 1886
-Fruit Raw unenumerated,1896,Bushels,1427105,name-matched(subset) but absent in 1896
 Galls,1871,CWTS (Hundredweights),14932,name-matched(exact) but absent in 1871
 Galls,1886,CWTS (Hundredweights),36222,name-matched(exact) but absent in 1886
 Gambier,1871,Tons,25207,name-matched(exact) but absent in 1871
@@ -257,6 +256,7 @@ Gum Arabic,1881,CWTS (Hundredweights),101130,name-matched(exact) but absent in 1
 Gum Arabic,1891,CWTS (Hundredweights),62352,name-matched(exact) but absent in 1891
 Gum Arabic,1896,CWTS (Hundredweights),80506,name-matched(exact) but absent in 1896
 Gum Kowrie,1871,CWTS (Hundredweights),85779,name-matched(subset) but absent in 1871
+Gum Kowrie,1876,CWTS (Hundredweights),38200,name-matched(subset) but absent in 1876
 "Gum Lac, Seed, Shell, Stick, and Dye",1871,CWTS (Hundredweights),60665,name-matched(subset) but absent in 1871
 Gum Unenumerated,1871,CWTS (Hundredweights),95426,name-matched(exact) but absent in 1871
 "Gunstocks in the rough, or Wood",1871,CWTS (Hundredweights),20138,name-matched(exact) but absent in 1871
@@ -306,14 +306,14 @@ Hops,1871,CWTS (Hundredweights),218664,name-matched(exact) but absent in 1871
 Hops,1876,CWTS (Hundredweights),167366,name-matched(exact) but absent in 1876
 Horns Tips and Pieces of Horns and Hoofs,1871,Tons,5700,name-matched(exact) but absent in 1871
 Horse Hair,1871,CWTS (Hundredweights),21365,name-matched(subset) but absent in 1871
+Horse Hair,1876,CWTS (Hundredweights),24311,name-matched(subset) but absent in 1876
 Horses,1871,Number,3448,name-matched(exact) but absent in 1871
 Ice,1871,Tons,95956,name-matched(exact) but absent in 1871
 Indian Corn or Maize,1871,CWTS (Hundredweights),16825023,name-matched(exact) but absent in 1871
 Indigo,1871,CWTS (Hundredweights),106307,name-matched(exact) but absent in 1871
 Ink,1871,None,0,name-matched(exact) but absent in 1871
 Iron Bars,1871,Tons,74329,name-matched(subset) but absent in 1871
-Iron Bars,1876,Tons,85384,name-matched(subset) but absent in 1876
-Iron Bars,1881,Tons,111511,name-matched(subset) but absent in 1881
+Iron Bars,1891,Tons,77427,name-matched(subset) but absent in 1891
 Iron Manufactures Girders Beams and Pillars,1891,Tons,74035,name-matched(subset) but absent in 1891
 Iron Manufactures Unenumerated,1886,CWTS (Hundredweights),3537652,name-matched(subset) but absent in 1886
 Iron Ore Including Chrome,1871,Tons,324034,name-matched(subset) but absent in 1871
@@ -343,7 +343,6 @@ Lead Manufactures Unenumerated,1871,CWTS (Hundredweights),6347,name-matched(subs
 Lead Ore,1871,Tons,20860,name-matched(subset) but absent in 1871
 Lead Pig and Sheet,1871,Tons,64908,name-matched(subset) but absent in 1871
 Leather Manufactures Boots and Shoes,1871,Dozen Pairs,44229,name-matched(subset) but absent in 1871
-Leather Manufactures Boots and Shoes,1876,Dozen Pairs,109896,name-matched(subset) but absent in 1876
 Leather Manufactures Gloves,1871,Dozen Pairs,1114193,name-matched(subset) but absent in 1871
 Leather Manufactures Gloves,1876,Dozen Pairs,1497437,name-matched(subset) but absent in 1876
 Leather Manufactures Manufactures Unenumerated,1871,None,0,name-matched(exact) but absent in 1871
@@ -372,6 +371,7 @@ Madder Munjeet,1876,CWTS (Hundredweights),419,name-matched(subset) but absent in
 Madder Munjeet,1881,CWTS (Hundredweights),64,name-matched(subset) but absent in 1881
 Madder Root,1871,CWTS (Hundredweights),154801,name-matched(subset) but absent in 1871
 Madder Root,1876,CWTS (Hundredweights),33824,name-matched(subset) but absent in 1876
+Madder and Madder Root,1891,CWTS (Hundredweights),11477,name-matched(subset) but absent in 1891
 "Mahogany - Furniture, Hardwoods or Veneers",1871,Tons,29335,name-matched(exact) but absent in 1871
 "Mahogany - Furniture, Hardwoods or Veneers",1876,Tons,52461,name-matched(exact) but absent in 1876
 "Mahogany - Furniture, Hardwoods or Veneers",1886,Tons,48732,name-matched(exact) but absent in 1886
@@ -393,18 +393,13 @@ Meat not Otherwise Described,1871,CWTS (Hundredweights),42340,name-matched(subse
 Meat unenumerated Preserved otherwise than by Salting Other Sorts,1891,CWTS (Hundredweights),156953,name-matched(subset) but absent in 1891
 Meat unenumerated Preserved otherwise than by Salting Other Sorts,1896,CWTS (Hundredweights),177238,name-matched(subset) but absent in 1896
 Metal Bell,1871,Tons,4,name-matched(subset) but absent in 1871
-Metal Bell,1876,Tons,1,name-matched(subset) but absent in 1876
 "Metal Bell Leaf, not Gold",1871,Packets of 250 Leaves,225315,name-matched(subset) but absent in 1871
-Metal Manufactured,1891,Tons,2179,name-matched(subset) but absent in 1891
 Metal Old other than Iron or Copper for re-manufacture,1871,Tons,2698,name-matched(subset) but absent in 1871
 Metal Old other than Iron or Copper for re-manufacture,1876,Tons,1864,name-matched(subset) but absent in 1876
-Metal Old other than Iron or Copper for re-manufacture,1891,Tons,2517,name-matched(subset) but absent in 1891
+Metal Old other than Iron or Copper for re-manufacture,1881,Tons,1320,name-matched(subset) but absent in 1881
 Metal Unenumerated Wrought,1871,Tons,536,name-matched(subset) but absent in 1871
 Metal Unenumerated unwrought,1871,Tons,430,name-matched(subset) but absent in 1871
-Metal Unenumerated unwrought,1876,Tons,1918,name-matched(subset) but absent in 1876
-Metal Unenumerated unwrought,1886,Tons,3137,name-matched(subset) but absent in 1886
 Metal Unenumerated unwrought,1891,Tons,1637,name-matched(subset) but absent in 1891
-Metal Unenumerated unwrought,1896,Tons,2469,name-matched(subset) but absent in 1896
 Milk Condensed,1896,CWTS (Hundredweights),611335,name-matched(exact) but absent in 1896
 Molasses,1871,CWTS (Hundredweights),628163,name-matched(exact) but absent in 1871
 Musical Instruments,1871,None,0,name-matched(exact) but absent in 1871
@@ -456,6 +451,7 @@ Painters Colours Unmanufactured,1871,None,0,name-matched(subset) but absent in 1
 Palm Oil,1871,CWTS (Hundredweights),1047882,name-matched(subset) but absent in 1871
 Paper Brown and Waste Unenumerated,1876,None,0,name-matched(subset) but absent in 1876
 Paper Hangings,1871,CWTS (Hundredweights),5151,name-matched(subset) but absent in 1871
+Paper Hangings,1876,CWTS (Hundredweights),10807,name-matched(subset) but absent in 1876
 Paper Millboard and Pasteboard,1871,CWTS (Hundredweights),213937,name-matched(subset) but absent in 1871
 Paper Unenumerated,1871,None,0,name-matched(exact) but absent in 1871
 Paper for Printing or Writing,1871,CWTS (Hundredweights),158885,name-matched(subset) but absent in 1871
@@ -476,6 +472,7 @@ Perfumed Spirits and Cologne Water,1891,Gallons,46573,name-matched(subset) but a
 Perfumed Spirits and Cologne Water,1896,Gallons,54318,name-matched(subset) but absent in 1896
 Perfumery Unenumerated,1871,Lbs. (Pounds),673661,name-matched(exact) but absent in 1871
 Petroleum Refined,1871,Gallons,8526674,name-matched(subset) but absent in 1871
+Petroleum Refined,1876,Gallons,24725905,name-matched(subset) but absent in 1876
 Petroleum Refined,1881,Gallons,58371386,name-matched(subset) but absent in 1881
 Petroleum Unrefined,1871,Tuns (whale oil),1801,name-matched(subset) but absent in 1871
 Pickles and Vegetables preserved in Salt,1871,None,0,name-matched(exact) but absent in 1871
@@ -542,7 +539,6 @@ Safflower,1891,CWTS (Hundredweights),78,name-matched(exact) but absent in 1891
 Sago and Sago Flour,1871,CWTS (Hundredweights),245123,name-matched(exact) but absent in 1871
 Salt,1871,Tons,19698,name-matched(exact) but absent in 1871
 Saltpetre,1871,CWTS (Hundredweights),329561,name-matched(exact) but absent in 1871
-Sardines Cured or Salted,1891,CWTS (Hundredweights),125618,name-matched(subset) but absent in 1891
 Sauces or Condiments Unenumerated,1871,Lbs. (Pounds),840348,name-matched(exact) but absent in 1871
 Seed Oil,1881,Tuns (whale oil),17102,name-matched(exact) but absent in 1881
 Seed Oil,1886,Tuns (whale oil),16315,name-matched(exact) but absent in 1886
@@ -566,10 +562,10 @@ Shot of Lead,1881,CWTS (Hundredweights),117,name-matched(exact) but absent in 18
 Shumach,1871,Tons,16481,name-matched(exact) but absent in 1871
 Shumach,1896,Tons,15172,name-matched(exact) but absent in 1896
 Silk Knobs or Husks and Waste,1871,CWTS (Hundredweights),38984,name-matched(subset) but absent in 1871
+Silk Knobs or Husks and Waste,1876,CWTS (Hundredweights),29663,name-matched(subset) but absent in 1876
 Silk Knobs or Husks and Waste,1881,CWTS (Hundredweights),54119,name-matched(subset) but absent in 1881
 Silk Knobs or Husks and Waste,1886,CWTS (Hundredweights),68026,name-matched(subset) but absent in 1886
 Silk Knobs or Husks and Waste,1891,CWTS (Hundredweights),77556,name-matched(subset) but absent in 1891
-Silk Knobs or Husks and Waste,1896,CWTS (Hundredweights),62923,name-matched(subset) but absent in 1896
 Silk Manufactures Broad Stuffs Plain,1876,None,0,name-matched(subset) but absent in 1876
 Silk Manufactures Broad Stuffs of Silk or Satin,1871,None,0,name-matched(exact) but absent in 1871
 Silk Manufactures Broad Stuffs of Silk or Satin,1881,None,0,name-matched(exact) but absent in 1881
@@ -601,6 +597,7 @@ Silk Raw,1881,Lbs. (Pounds),2904580,name-matched(exact) but absent in 1881
 Silk Raw,1891,Lbs. (Pounds),2434609,name-matched(exact) but absent in 1891
 Silk Raw,1896,Lbs. (Pounds),1697668,name-matched(exact) but absent in 1896
 Silk Thrown,1871,Lbs. (Pounds),177386,name-matched(subset) but absent in 1871
+Silk Thrown,1876,Lbs. (Pounds),164040,name-matched(subset) but absent in 1876
 Silk Unenumerated,1886,None,0,name-matched(exact) but absent in 1886
 Silver Ore,1871,Tons,14978,name-matched(subset) but absent in 1871
 Silver Ore or Ore of which the greater part in value is Silver,1876,None,0,name-matched(exact) but absent in 1876
@@ -613,12 +610,11 @@ Skins Furs Pelts Goat undressed,1871,Number,1057712,name-matched(subset) but abs
 Skins Furs Pelts Goat undressed,1881,Number,2263542,name-matched(subset) but absent in 1881
 Skins Furs Pelts Goat undressed,1886,Number,5158176,name-matched(subset) but absent in 1886
 Skins Furs Pelts Goat undressed,1896,Number,9982054,name-matched(subset) but absent in 1896
-Skins Furs Pelts Rabbit,1896,Number,30157616,name-matched(subset) but absent in 1896
 Skins Furs Pelts Seal,1871,Number,833709,name-matched(subset) but absent in 1871
 Skins Furs Pelts Seal,1876,Number,607276,name-matched(subset) but absent in 1876
 Skins Furs Pelts Seal,1881,Number,700898,name-matched(subset) but absent in 1881
 Skins Furs Pelts Seal,1886,Number,717121,name-matched(subset) but absent in 1886
-Skins Furs Pelts Seal,1891,Number,683588,name-matched(subset) but absent in 1891
+Skins Furs Pelts Seal,1896,Number,567007,name-matched(subset) but absent in 1896
 Skins Furs Pelts Sheep Tanned Tawed or Dressed,1871,Number,2156979,name-matched(subset) but absent in 1871
 Skins Furs Pelts Sheep Tanned Tawed or Dressed,1881,Number,6785751,name-matched(subset) but absent in 1881
 Skins Furs Pelts Sheep Undressed,1871,Number,8460328,name-matched(subset) but absent in 1871
@@ -636,6 +632,7 @@ Skins Furs Pelts Unenumerated not being Furs Dressed and Undressed,1871,Number,2
 Skins Furs Pelts Unenumerated not being Furs Dressed and Undressed,1876,Number,1589640,name-matched(subset) but absent in 1876
 Skins Furs and Pelts Articles manufactured of Skins and Furs,1871,None,0,name-matched(subset) but absent in 1871
 Skins Furs and Pelts Articles manufactured of Skins and Furs,1881,None,0,name-matched(subset) but absent in 1881
+Skins Furs and Pelts Goat and Kid Undressed,1876,Number,1318386,name-matched(subset) but absent in 1876
 Skins Furs and Pelts Manufactures of including Rugs,1886,None,0,name-matched(subset) but absent in 1886
 Skins Furs and Pelts Manufactures of including Rugs,1891,None,0,name-matched(subset) but absent in 1891
 Soap Transparent in the manufacture of which Spirit has been used,1881,Lbs. (Pounds),126863,name-matched(exact) but absent in 1881
@@ -655,13 +652,12 @@ Spirits Brandy,1871,Proof Gallons,5228568,name-matched(subset) but absent in 187
 Spirits Brandy,1876,Proof Gallons,7913092,name-matched(subset) but absent in 1876
 Spirits Brandy,1881,Proof Gallons,2351039,name-matched(subset) but absent in 1881
 Spirits Geneva,1871,Proof Gallons,352025,name-matched(subset) but absent in 1871
+Spirits Geneva,1876,Proof Gallons,326368,name-matched(subset) but absent in 1876
+Spirits Geneva,1881,Proof Gallons,264109,name-matched(subset) but absent in 1881
 Spirits Geneva,1886,Proof Gallons,297410,name-matched(subset) but absent in 1886
-Spirits Geneva,1891,Proof Gallons,337711,name-matched(subset) but absent in 1891
-Spirits Geneva,1896,Proof Gallons,359088,name-matched(subset) but absent in 1896
 Spirits Rum,1871,Proof Gallons,7526890,name-matched(subset) but absent in 1871
-Spirits Rum,1886,Proof Gallons,5100010,name-matched(subset) but absent in 1886
-Spirits Rum,1891,Proof Gallons,6981328,name-matched(subset) but absent in 1891
-Spirits Rum,1896,Proof Gallons,5347580,name-matched(subset) but absent in 1896
+Spirits Rum,1876,Proof Gallons,10395335,name-matched(subset) but absent in 1876
+Spirits Rum,1881,Proof Gallons,4816887,name-matched(subset) but absent in 1881
 Spirits Sweetened or Mixed Perfumed Spirits including Water Cologne,1871,Gallons,31708,name-matched(subset) but absent in 1871
 Spirits Sweetened or Mixed Tested,1881,Proof Gallons,62766,name-matched(subset) but absent in 1881
 Spirits Sweetened or Mixed Tested,1886,Proof Gallons,52608,name-matched(subset) but absent in 1886
@@ -705,16 +701,22 @@ Tea,1881,Lbs. (Pounds),209801522,name-matched(exact) but absent in 1881
 Tea,1886,Lbs. (Pounds),230669292,name-matched(exact) but absent in 1886
 Teeth Elephants Sea Cow and Sea Horses,1871,CWTS (Hundredweights),12797,name-matched(exact) but absent in 1871
 Tin Manufactures Unenumerated,1871,None,0,name-matched(subset) but absent in 1871
+Tin Manufactures Unenumerated,1876,None,0,name-matched(subset) but absent in 1876
+Tin Manufactures Unenumerated,1881,None,0,name-matched(subset) but absent in 1881
+Tin Manufactures Unenumerated,1886,None,0,name-matched(subset) but absent in 1886
+Tin Manufactures Unenumerated,1891,None,0,name-matched(subset) but absent in 1891
 Tin Ore,1871,Tons,448,name-matched(subset) but absent in 1871
+Tin Ore,1876,Tons,342,name-matched(subset) but absent in 1876
+Tin Ore,1886,Tons,749,name-matched(subset) but absent in 1886
+Tin Ore,1891,Tons,2332,name-matched(subset) but absent in 1891
 Tin in Blocks Ingots Bars or Slabs and Regulus,1871,CWTS (Hundredweights),171659,name-matched(subset) but absent in 1871
 Tobacco Manufactured Cavendish or Negrohead,1871,Lbs. (Pounds),2498208,name-matched(subset) but absent in 1871
 Tobacco Manufactured Cavendish or Negrohead,1886,Lbs. (Pounds),1333071,name-matched(subset) but absent in 1886
 Tobacco Manufactured Cavendish or Negrohead,1891,Lbs. (Pounds),917033,name-matched(subset) but absent in 1891
 Tobacco Manufactured Cavendish or Negrohead,1896,Lbs. (Pounds),998264,name-matched(subset) but absent in 1896
 Tobacco Manufactured Cigars,1871,Lbs. (Pounds),1086228,name-matched(subset) but absent in 1871
-Tobacco Manufactured Cigars,1876,Lbs. (Pounds),1680592,name-matched(subset) but absent in 1876
-Tobacco Manufactured Cigars,1881,Lbs. (Pounds),1600418,name-matched(subset) but absent in 1881
 Tobacco Manufactured Cigars,1886,Lbs. (Pounds),1921734,name-matched(subset) but absent in 1886
+Tobacco Manufactured Cigars,1891,Lbs. (Pounds),2238674,name-matched(subset) but absent in 1891
 Tobacco Manufactured Cigars,1896,Lbs. (Pounds),3380969,name-matched(subset) but absent in 1896
 Tobacco Manufactured Other Sorts,1871,Lbs. (Pounds),253888,name-matched(exact) but absent in 1871
 Tobacco Manufactured Other Sorts,1876,Lbs. (Pounds),69103,name-matched(exact) but absent in 1876
@@ -782,9 +784,6 @@ Wood and Timber Furniture Woods Hardwoods and Veneers Unenumerated,1871,Tons,244
 Wood and Timber Furniture Woods Hardwoods and Veneers Unenumerated,1891,Tons,91077,name-matched(subset) but absent in 1891
 Wood and Timber Hewn Fir (Other than Pit Wood or Pit Props as of 1901),1871,Loads,1453571,name-matched(subset) but absent in 1871
 Wood and Timber Hewn Oak,1871,Loads,97412,name-matched(subset) but absent in 1871
-Wood and Timber Hewn Oak,1876,Loads,135951,name-matched(subset) but absent in 1876
-Wood and Timber Hewn Oak,1881,Loads,87881,name-matched(subset) but absent in 1881
-Wood and Timber Hewn Oak,1886,Loads,95178,name-matched(subset) but absent in 1886
 Wood and Timber Hewn Oak,1891,Loads,122796,name-matched(subset) but absent in 1891
 Wood and Timber Hewn Teak,1871,Loads,23353,name-matched(subset) but absent in 1871
 Wood and Timber Hewn Teak,1891,Loads,49962,name-matched(subset) but absent in 1891
@@ -817,12 +816,12 @@ Wool Sheep and Lambs,1881,Lbs. (Pounds),447521441,name-matched(exact) but absent
 Wool Sheep and Lambs,1886,Lbs. (Pounds),592544221,name-matched(exact) but absent in 1886
 Wool Sheep and Lambs,1891,Lbs. (Pounds),715470708,name-matched(exact) but absent in 1891
 Woollen Manufactures Cloths and Stuffs,1871,Pieces,392384,name-matched(subset) but absent in 1871
+Woollen Manufactures Cloths and Stuffs,1881,Pieces,824870,name-matched(subset) but absent in 1881
 Woollen Manufactures Unenumerated,1871,None,0,name-matched(exact) but absent in 1871
 Woollen Manufactures Unenumerated,1881,None,0,name-matched(exact) but absent in 1881
 Woollen Manufactures of Goats Wool or Hair,1886,None,0,name-matched(subset) but absent in 1886
 Woollen Manufactures of Goats Wool or Hair,1896,None,0,name-matched(subset) but absent in 1896
 Woollen Yarn For Fancy Purposes,1871,Lbs. (Pounds),464058,name-matched(subset) but absent in 1871
-Woollen Yarn For Fancy Purposes,1876,Lbs. (Pounds),841878,name-matched(subset) but absent in 1876
 Woollen Yarn For Weaving,1871,Lbs. (Pounds),11665165,name-matched(subset) but absent in 1871
 Woollen Yarn Unenumerated,1871,None,0,name-matched(exact) but absent in 1871
 Woollen Yarn for Weaving Mixed or not with Silk,1891,Lbs. (Pounds),14712167,name-matched(subset) but absent in 1891

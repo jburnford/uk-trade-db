@@ -522,6 +522,7 @@ def main():
                         'New Zealand'),
     }
     n_coast = 0
+    synth = {}          # id(commodity) -> {(parent, unit, year)} the roll-up made
     for s in comms.values():
         c = s['c']
         groups = {}
@@ -552,7 +553,77 @@ def main():
                         a[2] += rest[0] if rest else 0
             for (u, y), (q, r, v) in agg.items():
                 pd.setdefault(u, []).append([y, round(q), r, round(v)])
+                synth.setdefault(id(s), set()).add((parent, u, y))
                 n_coast += 1
+
+    # ---- the bare parent that is really one coast. Every consumer treats a
+    # '(coast)' cell as drill-down detail inside its parent and sums the
+    # parent only. That is right when the parent is the printed aggregate —
+    # and wrong when the parser gave ONE coast its bare country name and
+    # qualified the other, which is what 'Russia : Northern Ports / Southern
+    # Ports' does in the 1880-83 flax tables: 'Russia' 597,454 IS the northern
+    # row, and 'Russia (Southern Ports)' 442,058 was being dropped as
+    # redundant to it. Flax and linseed read 0.82-0.92 for four years with
+    # country_year_final summing to its printed total TO THE DIGIT.
+    # Told apart the only way that cannot guess: fold the coasts into the
+    # parent cell ONLY when doing so brings the year CLOSER to its printed
+    # national total (heal_by_anchor's rule). A parent that really is the
+    # aggregate overshoots and is left alone.
+    n_sib = 0
+    for s in comms.values():
+        c = s['c']
+        anch = {}
+        for u, cells in (c.get(TK) or {}).items():
+            for cell in cells:
+                if cell[1]:
+                    anch[(u, cell[0])] = cell[1]
+        if not anch:
+            continue
+        groups = {}
+        for cty in list(c):
+            m = COAST_RE.match(cty)
+            if m and m.group(1) in c:
+                groups.setdefault(m.group(1), []).append(cty)
+        if not groups:
+            continue
+        # the year's origin sum AS CONSUMERS SEE IT: parents only, drill-down
+        # '(coast)' cells excluded. That, not the parent cell alone, is what
+        # has to move closer to the printed total.
+        seen = {}
+        for cty, byu in c.items():
+            if cty == TK or '(' in cty:
+                continue
+            for u, cells in byu.items():
+                for cell in cells:
+                    seen[(u, cell[0])] = seen.get((u, cell[0]), 0) + cell[1]
+        for parent, coasts in groups.items():
+            kid = {}
+            for cc in coasts:
+                for u, cells in c[cc].items():
+                    for y, q, r, *rest in cells:
+                        a = kid.setdefault((u, y), [0, 1, 0])
+                        a[0] += q
+                        a[1] = max(a[1], r)
+                        a[2] += rest[0] if rest else 0
+            for u, cells in c[parent].items():
+                for cell in cells:
+                    k = (u, cell[0])
+                    add = kid.get(k)
+                    t1 = anch.get(k)
+                    tot = seen.get(k)
+                    if not add or not t1 or not add[0] or not tot:
+                        continue
+                    if (parent, u, cell[0]) in synth.get(id(s), ()):
+                        continue     # this parent cell IS the coast sum
+                    if abs(cell[1] - add[0]) <= 0.01 * add[0]:
+                        continue     # parent already equals its coasts
+                    if abs(tot + add[0] - t1) < abs(tot - t1):
+                        cell[1] += round(add[0])
+                        cell[2] = max(cell[2], add[1])
+                        if len(cell) > 3:
+                            cell[3] += round(add[2])
+                        seen[k] = tot + add[0]
+                        n_sib += 1
 
     # ---- unit healing: OCR loses/mangles the unit column, not the number.
     # Within a commodity x country, '?'-unit cells fold into the dominant
@@ -990,7 +1061,8 @@ def main():
             print(f'  {n:5d}  {old}  ->  {new}')
     print(f'commodities: {len(payload)}  T1 cells: {n_tot:,} '
           f'(sticky repaired: {n_fixed:,}; fuzzy-merged: {n_fuzzy}; '
-          f'unit-healed: {n_healed:,}; coast-rollup: {n_coast:,}; '
+          f"unit-healed: {n_healed:,}; coast-rollup: {n_coast:,}; "
+          f"coast-sibling folds: {n_sib:,}; "
           f'deduped: {n_dedup:,})  '
           f'MB: {len(js) / 1e6:.2f}  -> {out}')
 
