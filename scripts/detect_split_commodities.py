@@ -169,6 +169,9 @@ for n in allnames:
             'origin_years_shared': len(set(porg.get(ou, {})) & oy),
             'own_origin_years': f'{min(oy)}-{max(oy)}',
             'own_anchor_years': f'{min(ay)}-{max(ay)}' if ay else 'none',
+            'own_origin_cells': sum(len(s) for c, byu in m[n]['c'].items()
+                                    if c != '§TOTAL' for u, s in byu.items()
+                                    if u == ou),
             'merged_checked_years': len(rr),
             'ratio_median': round(med, 3),
             'ratio_range': f'{round(rr[0], 2)}-{round(rr[-1], 2)}',
@@ -176,7 +179,15 @@ for n in allnames:
             'anchor_conflicts': conflict,
             # A good merge is right in MOST years, not on average: a median of
             # 1.0 over a range of 0.3-4 is two series crossing, not one.
-            'verdict': ('CONFIRMS' if 0.9 <= med <= 1.1 and near >= 0.6
+            # An UNLABELLED origin series ('?') is only ever weak evidence: two
+            # unitless columns agreeing says much less than two that each name
+            # the same unit. 'Dye Stuffs, And Substances Used In Tanning' -
+            # one '?' cell, in one year - scored a confident 1.00 against a
+            # Valonia anchor it has nothing to do with. Never better than
+            # 'partial', and on a single year not evidence at all.
+            'verdict': ('rejects' if ou == '?' and len(rr) < 2 else
+                        'partial' if ou == '?' else
+                        'CONFIRMS' if 0.9 <= med <= 1.1 and near >= 0.6
                         and not conflict else
                         'partial' if 0.75 <= med <= 1.3 and not conflict else
                         'rejects'),

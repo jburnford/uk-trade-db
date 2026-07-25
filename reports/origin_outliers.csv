@@ -21,7 +21,7 @@ Wine — Total Of All Kinds,1881,Cocoa Lbs,Gallon,22451834,16297033,1.4
 Wine — Total Of All Kinds,1882,Cocoa Lbs,Gallon,19101646,15715813,1.2
 Wine — Total Of All Kinds,1882,Indian Corn Or Maize,Gallon,18275731,15715813,1.2
 Linen Yarn,1890,Belgium,Lb,12485017,432556,28.9
-Feathers — Ornamental,1889,British East Indies,Lb,8793614,796537,11.0
+Feathers And Down — Ornamental,1889,British East Indies,Lb,8793614,796537,11.0
 Yarn,1891,Germany,Lb,8528710,3021391,2.8
 Yarn,1889,Germany,Lb,7910652,3422121,2.3
 Yarn,1882,Germany,Lb,7455607,1408069,5.3
@@ -44,10 +44,10 @@ Dye Woods — Logwood,1896,Russia,Ton,2496038,76075,32.8
 Dye Woods — Logwood,1896,Russia (Northern Ports),Ton,2493779,76075,32.8
 Dye Woods — Logwood,1897,Belgium,Ton,2464182,39297,62.7
 Dye Woods — Logwood,1898,Belgium,Ton,2349962,42374,55.5
-Feathers — Ornamental,1889,France,Lb,2283838,796537,2.9
+Feathers And Down — Ornamental,1889,France,Lb,2283838,796537,2.9
 Dye Woods — Logwood,1895,Belgium,Ton,2261630,58964,38.4
 Dye Woods — Logwood,1896,Belgium,Ton,2243909,76075,29.5
-Feathers — Ornamental,1889,United States Of America,Lb,2237278,796537,2.8
+Feathers And Down — Ornamental,1889,United States Of America,Lb,2237278,796537,2.8
 Dye Woods — Logwood,1895,Russia,Ton,2229870,58964,37.8
 Dye Woods — Logwood,1895,Russia (Northern Ports),Ton,2215220,58964,37.6
 "Mutton, Fresh",1892,Chile,Cwt,2069441,1699966,1.2
@@ -56,7 +56,7 @@ Saltpetre (Nitrate Of Potash),1895,Hong Kong,Cwt,2003260,228477,8.8
 Saltpetre (Nitrate Of Potash),1894,Hong Kong,Cwt,1863624,289363,6.4
 Dye Woods — Logwood,1897,Denmark,Ton,1748809,39297,44.5
 Dye Woods — Logwood,1896,Denmark,Ton,1566623,76075,20.6
-Feathers — Ornamental,1889,British Possessions In South Africa,Lb,1481670,796537,1.9
+Feathers And Down — Ornamental,1889,British Possessions In South Africa,Lb,1481670,796537,1.9
 Saltpetre (Nitrate Of Potash),1897,Hong Kong,Cwt,1348490,330013,4.1
 Collodium,1894,Greece,Gallon,1301735,1270,1025.0
 Saltpetre (Nitrate Of Potash),1896,Hong Kong,Cwt,1280110,340750,3.8
@@ -241,7 +241,7 @@ Wood And Timber — Teak,1873,Russia,Load,8349,0,foreign to this commodity
 Wood And Timber — Teak,1873,Norway,Load,7103,0,foreign to this commodity
 Wood And Timber — Teak,1873,United States Of America,Load,6670,0,foreign to this commodity
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,France,Number,6517,0,foreign to this commodity
-"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,West Coast Of Africa (Foreign,Ton,6450,0,foreign to this commodity
+"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,West Coast Of Africa (Foreign,Ton,6450,43292,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1881,Argentine Republic,?,6376,0,foreign to this commodity
 Oil,1886,Train Or Blubber,Tun,6358,0,foreign to this commodity
 "Silk Manufactures — Velvet, Plain Or Figured",1881,Australasia,?,6004,0,foreign to this commodity
@@ -258,7 +258,7 @@ Sulphuric,1894,Foreign Countries,Gallon,3739,3739,foreign to this commodity
 "Flowers, Artificial — Raw, Not Otherwise Described",1875,Egypt,Bushel,3020,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1880,Belgium,?,2802,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1880,United States Of America (Pacific),?,2782,0,foreign to this commodity
-"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,British Honduras,Ton,2699,0,foreign to this commodity
+"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,British Honduras,Ton,2699,43292,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Peru,Lb,2197,81037,foreign to this commodity
 "Dye Stuffs, And Substances Used In Tanning — Safflower",1884,Bengal And Burmah,Cwt,1776,0,foreign to this commodity
 "Skins, Furs, And Pelts — Seal",1884,Brazil,Number,1724,713632,foreign to this commodity
