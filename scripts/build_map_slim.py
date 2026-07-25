@@ -159,6 +159,7 @@ unit_alias = []          # origin/anchor unit labels that measure the same thing
 unit_mismatch = []       # ...and those that do not, so the anchor is dropped
 reparse_dropped = []     # one printed row read twice under two spellings
 twin_origins = []        # ...and read twice under two DIFFERENT places (logged)
+gap_log = []             # years inside the origin span with no origin table
 cov_num = cov_den = 0
 out = {}
 for n in wl:
@@ -387,6 +388,22 @@ for n in wl:
             # and the anchor started at 1893, overlapping on one year in which
             # the origin quantity happened to be zero.
             fl.append('nooverlap')
+    # A HOLE inside the origin span: the national total says thousands of tons
+    # crossed the quay and no origin table is published for it. The ratio tests
+    # above cannot see this - a median ignores however many zeroes you give it -
+    # so 'Butter' read as perfectly measured while 1882, 1883, 1884 and 1885
+    # were blank in the middle of a continuous 1872-99 series, its origins for
+    # those years sitting under the era label 'Butter And Butterine'. Only years
+    # BETWEEN the first and last origin year count: an anchor that starts before
+    # the origin tables do is the normal state of the source, not a defect.
+    oyrs = [y for y in nat if nat[y][1]]
+    if t1 and oyrs:
+        gaps = [y for y in t1 if min(oyrs) <= y <= max(oyrs) and t1[y] > 1000
+                and nat.get(y, [0, 0])[1] < 0.1 * t1[y]]
+        if gaps:
+            fl.append('gapyears')
+            gap_log.append((n, round(e['v']), len(gaps),
+                            ' '.join(str(y) for y in sorted(gaps))))
     rv = sum(a for a, _b in res.values())
     tv = sum(v for v, _q in nat.values())
     if tv and rv / tv > 0.6:
@@ -433,6 +450,9 @@ payload = {
             'oneyear': 'origins for a single year only',
             'noanchor': 'no national total published for this line, so the '
                         'origins cannot be checked against one',
+            'gapyears': 'some years inside the series have a national total '
+                        'but no origin table at all - the map goes blank for '
+                        'them while the trade was real',
             'nooverlap': 'the national total and the origin tables cover '
                          'different years, so neither has ever been checked '
                          'against the other',
@@ -490,6 +510,12 @@ with open('reports/reparsed_origin_cells.csv', 'w', newline='') as f:
     w.writerows(['two places, kept', n, y, a, b, q, v]
                 for n, y, a, b, q, v in sorted(twin_origins,
                                                key=lambda r: -r[5]))
+with open('reports/origin_gap_years.csv', 'w', newline='') as f:
+    w = csv.writer(f)
+    w.writerow(['commodity', 'gbp', 'n_gap_years', 'years'])
+    w.writerows(sorted(gap_log, key=lambda r: (-r[2], -r[1])))
+print(f'blank years inside a series: {sum(r[2] for r in gap_log)} across '
+      f'{len(gap_log)} commodities -> reports/origin_gap_years.csv')
 print(f're-parsed origin rows: {len(reparse_dropped)} dropped as one place '
       f'read twice, {len(twin_origins)} logged as two places sharing a row '
       f'-> reports/reparsed_origin_cells.csv')

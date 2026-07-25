@@ -564,72 +564,87 @@ def main():
         t = sorted(vals)
         return t[len(t) // 2]
 
-    n_healed = 0
-    for s in comms.values():
-        for cty, units in s['c'].items():
-            labeled = {u: cs for u, cs in units.items() if u != '?'}
-            if not labeled:
-                continue
-            dom = max(labeled, key=lambda u: len(labeled[u]))
-            domvals = [c[1] for c in units[dom] if c[1] > 0]
-            if not domvals:
-                continue
-            dmed = median(domvals)
-            for u in [x for x in units if x != dom]:
-                cells = units[u]
-                if u == '?':
-                    # whole-bucket fold first (a growing series' early '?'
-                    # cells sit far below the global median but share its
-                    # unit — 1873 US flour is 8x below the 1890s median);
-                    # if the bucket fails, rescue individual cells inside
-                    # the window (jute Bengal mixed a Cwt-era 1883 cell
-                    # with a Ton-era 1892 cell — only the latter folds)
-                    vals = [c[1] for c in cells if c[1] > 0]
-                    m = median(vals) if vals else 0
-                    if m and dmed / 3 < m < dmed * 3:
-                        units[dom].extend(cells)
-                        del units[u]
-                        n_healed += len(cells)
-                        continue
-                    # per-cell rescue tests against the NEAREST labeled
-                    # year, not the global median: butter Sweden's '?'
-                    # cells are all 1872-81 (20-70k) while the labeled
-                    # bucket's median sits in the 1890s (230k) — era-local
-                    # comparison is the honest test
-                    dom_by_year = {}
-                    for cell in units[dom]:
-                        dom_by_year.setdefault(cell[0], cell[1])
-                    def _ref(y0):
-                        for dy in range(4):
-                            for yy in (y0 - dy, y0 + dy):
-                                if dom_by_year.get(yy):
-                                    return dom_by_year[yy]
-                        return dmed
-                    keep, move = [], []
-                    for cell in cells:
-                        ref = _ref(cell[0])
-                        (move if cell[1] > 0 and ref / 3 < cell[1] < ref * 3
-                         else keep).append(cell)
-                    if move:
-                        units[dom].extend(move)
-                        n_healed += len(move)
-                        if keep:
-                            units[u] = keep
-                        else:
+    def heal_units(store):
+        """Fold '?'-unit cells into the country's dominant labelled unit.
+
+        Run once over the raw signatures and AGAIN after commodity curation:
+        a fold can hand a commodity a country whose cells are unit-less while
+        the target's are labelled, which is exactly this situation arriving
+        late. "Wool - Sheep Or Lambs'" is the case that forced it - the
+        colonial wool for 1897-99 (Australasia, New South Wales, New Zealand,
+        the Cape) sits under the de-headed label 'Wool' with no unit, so
+        folding alone moved the cells in but left them invisible to the
+        quantity axis, which only counts the dominant unit.
+        """
+        n_healed = 0
+        for s in store.values():
+            for cty, units in s['c'].items():
+                labeled = {u: cs for u, cs in units.items() if u != '?'}
+                if not labeled:
+                    continue
+                dom = max(labeled, key=lambda u: len(labeled[u]))
+                domvals = [c[1] for c in units[dom] if c[1] > 0]
+                if not domvals:
+                    continue
+                dmed = median(domvals)
+                for u in [x for x in units if x != dom]:
+                    cells = units[u]
+                    if u == '?':
+                        # whole-bucket fold first (a growing series' early '?'
+                        # cells sit far below the global median but share its
+                        # unit — 1873 US flour is 8x below the 1890s median);
+                        # if the bucket fails, rescue individual cells inside
+                        # the window (jute Bengal mixed a Cwt-era 1883 cell
+                        # with a Ton-era 1892 cell — only the latter folds)
+                        vals = [c[1] for c in cells if c[1] > 0]
+                        m = median(vals) if vals else 0
+                        if m and dmed / 3 < m < dmed * 3:
+                            units[dom].extend(cells)
                             del units[u]
-                    continue
-                vals = [c[1] for c in cells if c[1] > 0]
-                if not vals:
-                    continue
-                m = median(vals)
-                if not (dmed / 3 < m < dmed * 3):
-                    continue
-                if not (len(cells) <= 5
-                        and len(units[dom]) >= 2 * len(cells)):
-                    continue
-                units[dom].extend(cells)
-                del units[u]
-                n_healed += len(cells)
+                            n_healed += len(cells)
+                            continue
+                        # per-cell rescue tests against the NEAREST labeled
+                        # year, not the global median: butter Sweden's '?'
+                        # cells are all 1872-81 (20-70k) while the labeled
+                        # bucket's median sits in the 1890s (230k) — era-local
+                        # comparison is the honest test
+                        dom_by_year = {}
+                        for cell in units[dom]:
+                            dom_by_year.setdefault(cell[0], cell[1])
+                        def _ref(y0):
+                            for dy in range(4):
+                                for yy in (y0 - dy, y0 + dy):
+                                    if dom_by_year.get(yy):
+                                        return dom_by_year[yy]
+                            return dmed
+                        keep, move = [], []
+                        for cell in cells:
+                            ref = _ref(cell[0])
+                            (move if cell[1] > 0 and ref / 3 < cell[1] < ref * 3
+                             else keep).append(cell)
+                        if move:
+                            units[dom].extend(move)
+                            n_healed += len(move)
+                            if keep:
+                                units[u] = keep
+                            else:
+                                del units[u]
+                        continue
+                    vals = [c[1] for c in cells if c[1] > 0]
+                    if not vals:
+                        continue
+                    m = median(vals)
+                    if not (dmed / 3 < m < dmed * 3):
+                        continue
+                    if not (len(cells) <= 5
+                            and len(units[dom]) >= 2 * len(cells)):
+                        continue
+                    units[dom].extend(cells)
+                    del units[u]
+                    n_healed += len(cells)
+        return n_healed
+
+    n_healed = heal_units(comms)
     for s in comms.values():                     # better rank first per year
         for units in s['c'].values():
             for cells in units.values():
@@ -780,6 +795,13 @@ def main():
                         src.get('v', 0) * kept_v / src_v if src_v else 0)
         if n_cur:
             print(f'  curation: {n_cur} commodities dropped/folded/renamed')
+    # NOTE: heal_units() could be run again here, on the folded payload, so a
+    # fold that brings in unit-less cells lands them on the target's unit and
+    # therefore on the quantity axis. It was tried for "Wool - Sheep Or
+    # Lambs'" and REVERTED: it fixed 1897-99 and broke 1896 (1.00 -> 0.48)
+    # while inflating 1893-94, because the healed cells then collide with the
+    # target's own for years both labels cover. Whatever is right here needs
+    # the collision resolved first - see reports/origin_gap_years.csv.
     shifted = drop_shifted_duplicates(payload)
     if shifted:
         with open(BASE / 'reports' / 'shifted_duplicate_cells.csv', 'w',

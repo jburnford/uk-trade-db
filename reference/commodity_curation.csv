@@ -1,9 +1,9 @@
 commodity,action,target,note
-"Corn And Grain — United States Of America",drop,,"known junk commodity (round-12 memory): country label absorbed as article; cells are dupes of the corn family"
-"Isinglass — East Coast Of Africa",drop,,article-drift phantom: a place name as article; cells belong to the isinglass/sugar glue neighbourhood
-"Sugar — East Coast Of Africa",drop,,article-drift phantom (same class)
-"Spirits — .. British East Indies",drop,,dot-prefixed place-article phantom from the spirits glue
-"Guano. See Manures",drop,,cross-reference line parsed as a commodity; cells are dupes (DUPE-FAM vs Manures)
+Corn And Grain — United States Of America,drop,,known junk commodity (round-12 memory): country label absorbed as article; cells are dupes of the corn family
+Isinglass — East Coast Of Africa,drop,,article-drift phantom: a place name as article; cells belong to the isinglass/sugar glue neighbourhood
+Sugar — East Coast Of Africa,drop,,article-drift phantom (same class)
+Spirits — .. British East Indies,drop,,dot-prefixed place-article phantom from the spirits glue
+Guano. See Manures,drop,,cross-reference line parsed as a commodity; cells are dupes (DUPE-FAM vs Manures)
 "Sheep, Undressed",fold,"Skins, Furs, And Pelts — Sheep, Undressed",name-as-article glue folded to real commodity (curation round 27 NAME-ART?)
 Cutch And Gambier,fold,"Dye Stuffs, And Substances Used In Tanning — Cutch And Gambier",name-as-article glue folded to real commodity (curation round 27 NAME-ART?)
 Dye Stuffs (Other Than Dye Woods) And Substances Used In Tan- Ning Or Dyeing — Cutch And Gambier,fold,"Dye Stuffs, And Substances Used In Tanning — Cutch And Gambier",name-as-article glue folded to real commodity (curation round 27 NAME-ART?)
@@ -476,3 +476,4 @@ Feathers — Ornamental,fold,Feathers And Down — Ornamental,"era label for the
 Oil Seed Cake,fold,Oil — Oil Seed Cakes,de-headed era label holding the 1866-96 national total and origins 1875-91; the target holds 1872-74
 Furniture And Hardwoods — Mahogany,fold,Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,"era label for the same line, carrying the 1868-87 national total and origins 1886-88; the target holds origins 1876-81 and matches at 1.00 in four of six checkable years"
 Furniture And Hardwoods — Unenumerated,fold,"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated","era label for the same line, holding the national total the target lacks; six checkable years at 1.00"
+Butter And Butterine,fold,Butter,"the era name for the same printed line: the two national totals are identical to the digit in all eight overlapping years, 1878-85. It holds the 1882-85 origin tables, which the target lacks entirely - butter showed four blank years in the middle of a continuous series. Merged, 1882-85 close at 1.00. (The line really did include butterine until 1886, which is why the national total falls 36% that year when the two were printed separately.)"
