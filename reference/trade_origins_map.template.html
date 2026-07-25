@@ -170,6 +170,8 @@ details.foot[open]>summary .chev{transform:rotate(90deg)}
 .itable th,.itable td{text-align:left;padding:5px 8px;border-bottom:1px solid var(--line)}
 .itable th{color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:10.5px}
 .itable td.num{text-align:right;font-family:ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+.itable tr.notmapped td{color:var(--muted)}
+.inote{color:var(--muted);font-size:12px;margin:8px 0 0}
 .tag{display:inline-block;padding:1px 7px;border-radius:20px;font-size:11px;font-weight:600}
 .tag.short{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn)}
 .tag.over{background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent)}
@@ -252,6 +254,7 @@ details.foot[open]>summary .chev{transform:rotate(90deg)}
     <div class="footbody">
       <p>Rows where the sum of published origins does not reconcile with the anchored national total for that commodity‑year — the origin table is incomplete (<span class="tag short">short</span>) or over‑counts (<span class="tag over">over</span>). When the selected commodity‑year is flagged, a note appears on the map. Full list ranked by value at stake:</p>
       <div style="overflow-x:auto"><table class="itable" id="itable"></table></div>
+      <p class="inote" id="inote"></p>
     </div>
   </details>
 
@@ -550,9 +553,19 @@ function drawIssue(){
 // ---------- known-issues table ----------
 (function(){
   const t=$('#itable');
-  const top=ISSUES.slice().sort((a,b)=>b.gbp-a.gbp).slice(0,30);
+  // reachable rows first: about half the reconciliation report names a
+  // commodity outside the curated whitelist, which the reader cannot open
+  const top=ISSUES.slice().sort((a,b)=>(b.m-a.m)||(b.gbp-a.gbp)).slice(0,30);
+  const nOut=ISSUES.filter(i=>!i.m).length;
   t.innerHTML='<tr><th>Commodity</th><th>Year</th><th>Flag</th><th class="num">Origins vs total</th><th class="num">Value at stake</th></tr>'+
-    top.map(it=>`<tr><td>${esc(it.c)}</td><td class="num">${it.y}</td><td><span class="tag ${it.kind==='over'?'over':'short'}">${it.kind==='over'?'over':'short'}</span></td><td class="num">${Math.round(it.ratio*100)}%</td><td class="num">${fmtGBP(it.gbp)}</td></tr>`).join('');
+    top.map(it=>`<tr class="${it.m?'':'notmapped'}"><td>${esc(it.c)}${it.m?'':' <span style="font-size:11px">(not in the explorer)</span>'}</td><td class="num">${it.y}</td><td><span class="tag ${it.kind==='over'?'over':'short'}">${it.kind==='over'?'over':'short'}</span></td><td class="num">${Math.round(it.ratio*100)}%</td><td class="num">${fmtGBP(it.gbp)}</td></tr>`).join('');
+  const parts=[`${ISSUES.length} flagged commodity-years remain.`];
+  if(nOut) parts.push(`${nOut} of them are on commodities outside the curated `
+    + `list this explorer carries, so they cannot be opened here.`);
+  if(D.resolved_issues) parts.push(`A further ${D.resolved_issues} flags raised `
+    + `against the raw tables no longer apply to what you are looking at: the `
+    + `parent/child de-duplication resolved them.`);
+  $('#inote').textContent = parts.join(' ');
 })();
 
 // ---------- theme changes: repaint the JS-drawn marks ----------

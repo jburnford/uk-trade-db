@@ -1,11 +1,21 @@
 commodity,year,kind,ratio,t1_qty,country_sum,cluster_gbp
-"— Bar, Angle, Bolt And Rod",1898,missing/short,0.125,69224,8682,15787295
-— Pig And Puddled,1898,missing/short,0.408,159523,65054,8538969
+Glucose (Solid Or Liquid),1893,missing/short,0.0,1235800,0,18926846
+Glucose (Solid Or Liquid),1894,missing/short,0.0,1062074,0,18926846
+Glucose (Solid Or Liquid),1895,missing/short,0.0,1315866,0,18926846
+Glucose (Solid Or Liquid),1896,missing/short,0.0,1539127,0,18926846
+Glucose (Solid Or Liquid),1897,missing/short,0.0,1610115,0,18926846
+Glucose (Solid Or Liquid),1898,missing/short,0.0,1887046,0,18926846
+Glucose (Solid Or Liquid),1899,missing/short,0.0,1825609,0,18926846
+"Bar, Angle, Bolt And Rod",1898,missing/short,0.125,69224,8682,15787295
+Bristles,1874,missing/short,0.354,2664374,943648,12682886
+"Thrown, Dyed Or Not Dyed",1899,missing/short,0.0,317786,0,9672480
+Pig And Puddled,1898,missing/short,0.408,159523,65054,8538969
 Beans (Not Kidney Or French),1893,missing/short,0.187,3946985,738050,8114668
 Beans (Not Kidney Or French),1894,missing/short,0.191,5259895,1003451,8114668
 Parcel Post (Goods Free Of Duty),1892,missing/short,0.0,464792,0,4857967
 Parcel Post (Goods Free Of Duty),1898,missing/short,0.0,986290,0,4857967
 Parcel Post (Goods Free Of Duty),1899,missing/short,0.0,970165,0,4857967
+"Staves, Of All Dimensions",1893,missing/short,0.0,131708,0,4160348
 "Hair — Cow, Ox, Bull, Or Elk",1875,missing/short,0.293,58151,17043,3776280
 Candles Of All Sorts,1878,missing/short,0.0,118147,0,3057168
 Candles Of All Sorts,1879,missing/short,0.0,120995,0,3057168
@@ -53,19 +63,19 @@ Peas,1899,missing/short,0.567,2752950,1561445,1936743
 "Stones, &Amp;C",1892,missing/short,0.0,556826,0,625458
 "Stones, &Amp;C",1893,missing/short,0.0,546219,0,625458
 "Stones, &Amp;C",1894,missing/short,0.0,585476,0,625458
-Cotton — Raw,1873,overcount,1.988,44244331,87967403,20756838489
-Cotton — Raw,1880,overcount,7.057,67638008,477308849,20756838489
-Cotton — Raw,1881,overcount,2.253,57890874,130416922,20756838489
-Cotton — Raw,1884,overcount,55.078,56400323,3106393389,20756838489
-Cotton — Raw,1885,overcount,118.844,65913827,7833484092,20756838489
-Cotton — Raw,1893,overcount,2.106,76784942,161725348,20756838489
-Cotton — Raw,1894,overcount,2.038,90262278,183927783,20756838489
-Cotton — Raw,1895,overcount,2.477,81749955,202513603,20756838489
-Cotton — Raw,1896,overcount,2.056,99077055,203740168,20756838489
-Cotton — Raw,1897,overcount,2.788,62740180,174918656,20756838489
-Cotton — Raw,1898,overcount,2.342,75859352,177687958,20756838489
-Cotton — Raw,1899,overcount,2.313,66636078,154162056,20756838489
-Rice,1895,overcount,2.314,5431248,12566849,105527360
+Cotton — Raw,1873,overcount,1.988,44244331,87967403,19954555557
+Cotton — Raw,1880,overcount,7.053,67638008,477070698,19954555557
+Cotton — Raw,1881,overcount,2.253,57890874,130416922,19954555557
+Cotton — Raw,1884,overcount,55.078,56400323,3106393389,19954555557
+Cotton — Raw,1885,overcount,118.844,65913827,7833484092,19954555557
+Cotton — Raw,1893,overcount,2.106,76784942,161725279,19954555557
+Cotton — Raw,1894,overcount,2.038,90262278,183917552,19954555557
+Cotton — Raw,1895,overcount,2.436,81749955,199167460,19954555557
+Cotton — Raw,1896,overcount,2.056,99077055,203740168,19954555557
+Cotton — Raw,1897,overcount,2.787,62740180,174858003,19954555557
+Cotton — Raw,1898,overcount,2.34,75859352,177477058,19954555557
+Cotton — Raw,1899,overcount,2.313,66636078,154162056,19954555557
+Rice,1895,overcount,2.314,5431248,12566849,97664400
 Collodium,1893,overcount,734.21,1942,1425836,4517460
 Collodium,1894,overcount,1194.064,1270,1516461,4517460
 Collodium,1895,overcount,1349.393,953,1285972,4517460
