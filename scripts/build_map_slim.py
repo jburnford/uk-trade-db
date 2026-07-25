@@ -139,6 +139,16 @@ ALIAS = {
     'United States Of Columbia': 'United States Of Colombia',
     'Portugal Azores And Madeira': 'Portugal',
     'British India And Burmah': 'British India',
+    # ---- found by the re-parsed-row log: the same printed row read under two
+    # spellings of one place, which without these lines is counted twice ----
+    'Gold Coast Colony': 'The Gold Coast',
+    'British Maduras': 'British Honduras',        # OCR: H read as M
+    'Algoria': 'Algeria',
+    'East Coast Of Africa, Native States': 'East Coast Of Africa',
+    'Canada (Atlantic)': 'Canada',                # Canada prints no Pacific side
+    # the Spanish West Indies WERE Cuba and Puerto Rico; the later volumes
+    # simply name them instead of the grouping
+    'Cuba And Porto Rico': 'Spanish West India Islands',
     'British East Indies Bengal': 'Bengal',
     'The Cape Of Good Hope': 'Cape Of Good Hope',
 }
@@ -147,6 +157,8 @@ value_dropped = []       # per-cell values over CAP (corrupt, not large)
 quality = []             # (commodity, [flag,...]) for the audit report
 unit_alias = []          # origin/anchor unit labels that measure the same thing
 unit_mismatch = []       # ...and those that do not, so the anchor is dropped
+reparse_dropped = []     # one printed row read twice under two spellings
+twin_origins = []        # ...and read twice under two DIFFERENT places (logged)
 cov_num = cov_den = 0
 out = {}
 for n in wl:
@@ -229,12 +241,38 @@ for n in wl:
     # label-variant duplicates are canonicalised (Chili -> Chile) so the same
     # place is never summed under two spellings.
     ly = {}
+    # One printed row read twice. Canonicalising spellings makes this WORSE
+    # rather than better: 'Turkey European' and 'Turkey, European' both alias
+    # to Turkey and were then summed, so Oats 1893 counted the same 110,047
+    # quarters as two shipments. The fingerprint is the one the teak work
+    # established - the quantity AND the value match to the digit, which two
+    # genuine rows do not do - and here it is decisive, because after aliasing
+    # the two cells claim the same place in the same year as well.
+    # Rows that stay two DIFFERENT places after aliasing are a harder case
+    # (which of the two is the misread?) and are logged, not dropped.
+    reparsed = set()
+    twins = {}
     for c, byu in ({} if n in TRANSPOSED else e['c']).items():
         if c == '§TOTAL':
             continue
         c = ALIAS.get(c, c)
         for u, s in byu.items():
             for y, q, r, v in s:
+                if q and v:
+                    if (c, y, q, v) in reparsed:
+                        reparse_dropped.append((n, y, c, round(q), round(v)))
+                        continue
+                    reparsed.add((c, y, q, v))
+                    twin = twins.get((y, q, v))
+                    # A parent and its sole child legitimately carry the same
+                    # figure ('United States Of America' and 'United States Of
+                    # America (Atlantic)' when the Pacific shipped none), and
+                    # the parent<->child pass below already counts that once.
+                    if (twin and twin != c and v >= 100 and q >= 10
+                            and c not in children_of.get(twin, ())
+                            and twin not in children_of.get(c, ())):
+                        twin_origins.append((n, y, twin, c, round(q), round(v)))
+                    twins[(y, q, v)] = c
                 cell = ly.setdefault((c, y), [0, 0, r])
                 # A value over the cap is a corrupt cell (a whole column read
                 # as one number), not a large one. Clamping it to the cap
@@ -442,4 +480,17 @@ print(f'unit labels reconciled: {len(unit_alias)} same-unit, '
       f'{len(unit_mismatch)} incomparable -> reports/unit_reconciliation.csv')
 print(f'over-cap value cells dropped: {len(value_dropped)} '
       f'({len({r[0] for r in value_dropped})} commodities) -> reports/value_cap_cells.csv')
+with open('reports/reparsed_origin_cells.csv', 'w', newline='') as f:
+    w = csv.writer(f)
+    w.writerow(['class', 'commodity', 'year', 'origin', 'twin_origin',
+                'qty', 'value'])
+    w.writerows(['same place, dropped', n, y, c, '', q, v]
+                for n, y, c, q, v in sorted(reparse_dropped,
+                                            key=lambda r: -r[4]))
+    w.writerows(['two places, kept', n, y, a, b, q, v]
+                for n, y, a, b, q, v in sorted(twin_origins,
+                                               key=lambda r: -r[5]))
+print(f're-parsed origin rows: {len(reparse_dropped)} dropped as one place '
+      f'read twice, {len(twin_origins)} logged as two places sharing a row '
+      f'-> reports/reparsed_origin_cells.csv')
 print(f'map_slim.json: {sz/1e6:.2f} MB')

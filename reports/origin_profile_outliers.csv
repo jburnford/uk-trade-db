@@ -230,12 +230,12 @@ Sugar,1886,British Honduras,7269,9112119,0.93,18,29744645
 Sugar,1898,Refined Cuts,1499271,1623352,0.92,1,29744645
 Oil — Palm,1876,Postuguese Possessions,651915,879825,0.74,1,25929457
 "Lac, Seed, Shell, Stick, And Dye",1884,British India,112479,224958,0.5,1,23754989
-Wood And Timber — Teak,1873,Canada,61599,138645,0.69,6,23536263
-Wood And Timber — Teak,1873,Sweden,10487,138645,0.69,6,23536263
-Wood And Timber — Teak,1873,Russia,8349,138645,0.69,6,23536263
-Wood And Timber — Teak,1873,Norway,7103,138645,0.69,6,23536263
-Wood And Timber — Teak,1873,United States Of America,6670,138645,0.69,6,23536263
-Wood And Timber — Teak,1873,British Guiana,1267,138645,0.69,6,23536263
+Wood And Timber — Teak,1873,Canada,61599,138645,0.69,6,21826273
+Wood And Timber — Teak,1873,Sweden,10487,138645,0.69,6,21826273
+Wood And Timber — Teak,1873,Russia,8349,138645,0.69,6,21826273
+Wood And Timber — Teak,1873,Norway,7103,138645,0.69,6,21826273
+Wood And Timber — Teak,1873,United States Of America,6670,138645,0.69,6,21826273
+Wood And Timber — Teak,1873,British Guiana,1267,138645,0.69,6,21826273
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1872,West Coast Of Africa,27818,48767,0.57,1,19084393
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1886,West Africa,16067,31480,0.51,1,19084393
 Iron,1878,Spain,1088862,1218736,1.0,9,17210964
@@ -286,31 +286,7 @@ Nuts And Kernels,1872,Australia,271,9578,0.85,3,12138097
 "Flowers, Artificial — Raw, Not Otherwise Described",1875,Gibraltar,3526,136008,0.82,6,9217789
 "Flowers, Artificial — Raw, Not Otherwise Described",1875,Egypt,3020,136008,0.82,6,9217789
 Saltpetre (Nitrate Of Potash),1882,British India,163862,322024,0.51,1,8851660
-Sugar — Unrefined,1886,Germany,5671612,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,British Guiana,1322165,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,British East Indies,877080,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Belgium,750671,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,British West India Islands,645902,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Chile,597228,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Central America,476524,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Mauritius,291759,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Holland,281031,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Egypt,247404,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Peru,84928,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Hayti And St Domingo,55225,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,British Possessions In South Africa,44344,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Hong Kong,39708,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,France,38007,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Mexico,33287,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Australasia,19706,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Cane And Other Sorts,19220,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Sweden,17674,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Russia,13200,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,British Honduras,7269,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Other British Possessions,1212,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Other Foreign Countries,142,11535440,1.0,24,7466354
-Sugar — Unrefined,1886,Brazil,142,11535440,1.0,24,7466354
-Bark — Peruvian,1881,United States Of Colombia,70944,125358,0.57,1,7281868
+Bark — Peruvian,1881,United States Of Colombia,70944,125358,0.57,1,7063303
 "Buttons And Studs, Not Of Metal",1880,All Countries,7177,7177,1.0,1,6875576
 Isinglass,1874,Bengal And Burmah,4253700,4257409,1.0,1,6854460
 Castor,1881,British India,128943,130375,0.99,1,6509246
@@ -589,7 +565,7 @@ Hemp — Dressed,1876,United States Of America,16060,194248,0.56,3,820279
 "Brass, Bronze, And Metal, Bronze And Lacquered",1883,Italy,3375,7145,0.67,2,698565
 "Brass, Bronze, And Metal, Bronze And Lacquered",1883,Greece,1441,7145,0.67,2,698565
 "Brass, Bronze, And Metal, Bronze And Lacquered",1884,Spain,3934,5284,0.74,1,698565
-"Plums, French, And Pruneloes",1886,British Possessions,598,676,0.88,1,687603
+"Plums, French, And Pruneloes",1886,British Possessions,598,676,0.88,1,619064
 "Feathers And Down — For Beds, In Beds Or Otherwise",1877,Other Countries,1296,1296,1.0,1,595772
 Whalefins,1876,Wine See Page 70,1799,2853,0.63,1,591849
 "Fruit — Plums, Dried Or Preserved",1883,Turkey,1024,1811,0.57,1,527076

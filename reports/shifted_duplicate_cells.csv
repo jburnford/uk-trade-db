@@ -1,21 +1,21 @@
 commodity,year,dropped_country,kept_country,qty,value
-"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",1877,France,France,2069543,3464915
+Sugar — Refined : Total Of,1877,France,France,2069543,3464915
 "Flax, Dressed Or Undressed",1896,Russia,Russia,57095,1592081
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1896,United States Of America,United States Of America,32187,1523980
+"Sugar — Unrefined : Cane, And Other Sorts",1882,Philippine Islands,Philippine Islands,1696346,1425688
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1894,United States Of America,United States Of America,31456,1307121
 Hemp — Dressed Or Undressed,1893,Philippine And Ladrone Islands,Philippine Islands,36403,970166
 "Iron — Old, For Re-Manufacture",1880,United States Of America,United States Of America (Atlantic),197653,946172
-"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",1877,Holland,Holland,521891,904934
+Sugar — Refined : Total Of,1877,Holland,Holland,521891,904934
 "Sugar — Refined, Or Rendered By Any Process Equal Thereto : In Lumps And Loaves",1884,Holland,Holland,853824,892490
-Eggs,1897,Russia (Northern Ports),Russia,3122323,812297
 "Animals, Living — Sheep And Lambs",1895,United States Of America,United States Of America,453250,769864
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1893,United States Of America,United States Of America,17093,761225
 "Sugar — Refined, Or Rendered By Any Process Equal Thereto : In Lumps And Loaves",1884,France,France,658112,757993
-"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",1877,Germany,Germany,411635,663570
+Sugar — Refined : Total Of,1877,Germany,Germany,411635,663570
 Butter,1896,United States Of America (Atlantic),United States Of America,141553,617525
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1894,Chile,Chile,13672,531508
 "Animals, Living — Sheep And Lambs",1897,Argentine Republic,Argentine Republic,345217,528607
-"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",1877,United States Of America,United States Of America,282507,521305
+Sugar — Refined : Total Of,1877,United States Of America,United States Of America,282507,521305
 Wood And Timber — Teak,1884,Bombay,Bengal And Burmah,35498,514447
 Hay,1893,United States Of America (Atlantic),United States Of America,101132,506564
 "Animals, Living — Sheep And Lambs",1895,Argentine Republic,Argentine Republic,308094,505537
@@ -31,6 +31,7 @@ Wood And Timber — Teak,1875,Other Countries,Bengal And Burmah,30515,364439
 "Silk — Knubs Or Husks Of Silk, And Waste",1887,China,China,28860,334944
 Brimstone,1877,Italy,Italy,1004591,307181
 "Wood And Timber — Hewn, Oak",1895,United States Of America (Atlantic),United States Of America,50986,299104
+"Sugar — Unrefined : Cane, And Other Sorts",1882,China,China,342733,279932
 "Animals, Living — Sheep And Lambs",1897,United States Of America,United States Of America,186755,272421
 Butter,1895,United States Of America (Atlantic),United States Of America,66932,271776
 "Sugar — Refined, Or Rendered By Any Process Equal Thereto : In Lumps And Loaves",1884,United States Of America,United States Of America,231192,257547
@@ -42,11 +43,13 @@ Meat — Other Sorts,1893,United States Of America (Atlantic),United States Of A
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1894,Australasia,Australasia,5495,228367
 "Seeds — Unenumerated, For Expressing Oil Therefrom",1884,British East Indies,British East Indies,118228,226072
 Mares,1896,United States Of America (Atlantic),United States Of America,7692,225714
+"Sugar — Unrefined : Cane, And Other Sorts",1882,Straits Settlements,Straits Settlements,266002,225315
 "Zinc — Crude, In Cakes",1897,United States Of America (Atlantic),United States Of America,13207,211757
 "Silk — Knubs Or Husks Of Silk, And Waste",1888,Hong Kong,Hong Kong,18065,205341
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1891,Lagos,Lagos,15868,185076
 Caoutchouc,1896,United States Of America (Atlantic),United States Of America,22721,179076
 Corn And Grain — Pease,1893,Chile,United States Of America (Atlantic),515325,170567
+"Sugar — Unrefined : Cane, And Other Sorts",1882,Bengal,Bengal,158197,169278
 Cutch And Gambier,1894,Burmah,Burmah,6005,162173
 "Quicksilver, (Metallic) — Woollen: Applicable To Other Uses Than Manure, Torn Up Or Not",1875,Germany,Germany,6899,159320
 Cocoa,1895,France,France,5175298,152170
@@ -73,7 +76,8 @@ Myrabolams,1874,Madras,Madras,193276,111827
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1894,Japan,Japan,2668,109016
 "Silk — Knubs Or Husks Of Silk, And Waste",1888,British East Indies,British East Indies,8113,107284
 Butter,1893,United States Of America (Atlantic),United States Of America,22930,104220
-"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",1877,Russia,Russia,64197,99959
+Sugar — Refined : Total Of,1877,Russia,Russia,64197,99959
+"Sugar — Unrefined : Cane, And Other Sorts",1882,Danish West India Islands,Danish West India Islands,84519,98755
 Cocoa,1895,Ecuador,Ecuador,2747032,96114
 "Animals, Living — Sheep And Lambs",1897,Canada,Canada,63761,95602
 Caoutchouc,1895,United States Of America (Atlantic),United States Of America,15764,92336
@@ -91,18 +95,20 @@ Bones For Manure (Whether Burnt Or Not),1894,Peru,Peru,17556,81546
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1893,France,France,1654,80646
 "Animals, Living — Sheep And Lambs",1894,Denmark,Denmark,65439,80417
 "Wood And Timber — Hewn, Unenumerated",1897,United States Of America (Atlantic),United States Of America,16054,72019
+"Sugar — Unrefined : Cane, And Other Sorts",1884,China,China,103647,71476
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1896,Mexico,Mexico,1564,70330
 Wood And Timber — Teak,1884,Burmah,Siam,4784,70318
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1893,Japan,Japan,1515,69999
 "Silk — Knubs Or Husks Of Silk, And Waste",1888,Belgium,Belgium,4787,65081
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1891,Niger Protectorate,Niger Protectorate,5628,64553
-"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",1877,Egypt,Egypt,37485,64440
+Sugar — Refined : Total Of,1877,Egypt,Egypt,37485,64440
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1887,Islands In The Pacific(Except Fiji,Islands In The Pacific Except Fiji,4697,64346
 "Zinc — Crude, In Cakes",1893,United States Of America (Atlantic),United States Of America,4307,64117
 Bones For Manure (Whether Burnt Or Not),1894,Bengal,Bengal,13449,63569
 Cocoa,1895,Germany,Germany,2332357,63358
-"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",1877,Belgium,Belgium,35775,62739
+Sugar — Refined : Total Of,1877,Belgium,Belgium,35775,62739
 "Silk — Knubs Or Husks Of Silk, And Waste",1888,Japan,Japan,5153,62691
+"Sugar — Unrefined : Cane, And Other Sorts",1884,British Possessions In Southafrica,British Possessions In South Africa,70922,61989
 Bacon,1897,Northern Parts,Russia,27713,59953
 "Wood And Timber — Hewn, Unenumerated",1896,United States Of America (Atlantic),United States Of America,12910,59722
 "Ivory — Teeth, Elephants', Sea Cow, Sea Horse, Or Sea Morsé",1892,Holland,Holland,1353,59145
@@ -121,12 +127,12 @@ Bones For Manure (Whether Burnt Or Not),1896,Argentine Republic,Argentine Republ
 "Sugar — Refined, Or Rendered By Any Process Equal Thereto : In Lumps And Loaves",1884,Belgium,Belgium,44190,47733
 "Wood And Timber — Hewn, Unenumerated",1895,United States Of America (Atlantic),United States Of America,11638,47708
 Zinc — Ore Of,1898,Tunisia,Tunis,19681,47513
+"Sugar — Unrefined : Cane, And Other Sorts",1884,Bengal Andburmah,Bengal And Burmah,56739,46503
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1896,Germany,Germany,999,45640
 "Silk — Knubs Or Husks Of Silk, And Waste",1887,British East Indies,British East Indies,4042,45123
 Dye Woods — Unenumerated,1875,Mexico,Mexico,4590,44166
 Cement,1873,United States Of America (Atlantic & Pacific),United States Of America,245615,43412
 "Seeds — Unenumerated, For Expressing Oil Therefrom",1888,Russia,Russia,36024,42335
-Eggs,1897,United States Of America (Atlantic),United States Of America,115509,42247
 Cement,1872,United States Of America (Atlantic & Pacific),United States Of America,305490,40554
 "Ivory — Teeth, Elephants', Sea Cow, Sea Horse, Or Sea Morsé",1892,Germany,Germany,803,40527
 "Wood And Timber — Hewn, Unenumerated",1894,United States Of America (Atlantic),United States Of America,8444,40435
@@ -140,6 +146,7 @@ Bones For Manure (Whether Burnt Or Not),1897,German Possessions,German Possessio
 Bacon,1896,Northern Parts,Russia,19001,35421
 Cement,1878,United States Of America (Atlantic & Pacific),United States Of America,274600,35409
 "Animals, Living — Sheep And Lambs",1893,Denmark,Denmark,29227,35254
+"Sugar — Unrefined : Cane, And Other Sorts",1882,Other Countries,Other Countries,31488,34933
 Dye Woods — Unenumerated,1875,Other Countries,Other Countries,4314,34528
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1897,Germany,Germany,396831,34116
 Hemp — Dressed Or Undressed,1893,New Zealand,Australasia,1537,33803
@@ -172,6 +179,7 @@ Dye Woods — Unenumerated,1876,British West India Islands,British West India Is
 Oats,1895,United States Of America,Argentine Republic,96760,22335
 "Seeds — Unenumerated, For Expressing Oil Therefrom",1884,Holland,Holland,5252,21941
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1897,Spain,Spain,175558,21202
+"Sugar — Unrefined : Cane, And Other Sorts",1884,United States Of Colombia,United States Of Colombia,25349,20892
 Hemp — Dressed Or Undressed,1897,New Zealand,Australasia,1309,20763
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1896,Spain,Spain,182660,20711
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1891,Gambia,Gambia,1618,20587
@@ -203,6 +211,7 @@ Hemp — Dressed Or Undressed,1894,United States Of America (Atlantic),United St
 "Silk — Knubs Or Husks Of Silk, And Waste",1888,Turkey,Turkey,1010,16467
 Wood And Timber — Mahogany,1895,Cuba And Porto Rico,Spanish West India Islands,2819,16318
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1895,Russia (Northern Ports),Russia (Northern Ports),157204,16277
+"Sugar — Unrefined : Cane, And Other Sorts",1882,Holland,Holland,15300,16248
 Cocoa,1895,United States Of America,United States Of America,580979,15780
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1897,Russia (Northern Ports),Russia (Northern Ports),134330,15767
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,United States Of America,United States Of America,911,15259
@@ -237,13 +246,14 @@ Hemp — Dressed Or Undressed,1894,Strait Settlements,Straits Settlements,454,10
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1891,Sierra Leone,Sierra Leone,3831,10654
 "Ivory — Teeth, Elephants', Sea Cow, Sea Horse, Or Sea Morsé",1892,Other Foreign Countries,Other Foreign Countries,298,10478
 Dye Woods — Unenumerated,1875,Venezuela,Venezuela,1366,10430
-"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",1877,Denmark,Denmark,6257,10282
+Sugar — Refined : Total Of,1877,Denmark,Denmark,6257,10282
 Zinc — Ore Of,1896,United States Of America (Atlantic),United States Of America,1069,10074
 "Quicksilver, (Metallic) — Woollen: Applicable To Other Uses Than Manure, Torn Up Or Not",1873,Channel Islands,Channel Islands,1006,10059
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1896,Queensland,Queensland,215,9930
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1897,Russia (Southern Ports),Russia (Southern Ports),108090,9910
 Dye Woods — Unenumerated,1875,France,France,1264,9716
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1891,Gold Coast Colony,Gold Coast Colony,825,9716
+"Sugar — Unrefined : Cane, And Other Sorts",1884,Portugal,Portugal,18792,9683
 Hemp — Dressed Or Undressed,1896,United States Of America,United States Of America,569,9651
 Hemp — Dressed Or Undressed,1896,United States Of America (Atlantic),United States Of America,569,9651
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1891,Mauritius,Mauritius,594,9580
@@ -324,6 +334,7 @@ Bones For Manure (Whether Burnt Or Not),1896,Ecuador,Ecuador,640,4977
 "Seeds — Unenumerated, For Expressing Oil Therefrom",1888,Turkey,Turkey,3715,4896
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,Argentine Republic,Argentine Republic,395,4832
 Bones For Manure (Whether Burnt Or Not),1896,Egypt,Egypt,1334,4831
+"Sugar — Unrefined : Cane, And Other Sorts",1884,Ecuador,Ecuador,5507,4819
 "Seeds — Unenumerated, For Expressing Oil Therefrom",1887,Other Foreign Countries,Other Foreign Countries,2404,4746
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1885,Other Foreign Countries,Other Foreign Countries,343,4714
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1885,"Dutch Possessions In Theindian Seas, Other Thanjava",Dutch Possessions In The Indian Seas Other Than Java,291,4700
@@ -366,6 +377,7 @@ Bones For Manure (Whether Burnt Or Not),1894,Holland,Holland,805,3672
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1894,Germany,Germany,178,3260
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1896,Other British Possessions,Other British Possessions,72,3252
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1894,Argentine Republic,Argentine Republic,80,3233
+"Sugar — Unrefined : Cane, And Other Sorts",1884,Bombay Andscinde,Bombay,5166,3216
 Bones For Manure (Whether Burnt Or Not),1896,Norway,Norway,583,3142
 Bones For Manure (Whether Burnt Or Not),1894,Brazil,Brazil,658,3113
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1888,Hong Kong,Hong Kong,1846,3110
@@ -405,7 +417,7 @@ Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1891,Germany,Ger
 "Cannon And Mortars, Mounted Or Accompanied With Carriages — Swords, Cutlasses, Bayonets, And Arms Of Other Sorts, Unenumerated",1873,Other Countries,Other Countries,1330,2132
 "Seeds — Unenumerated, For Expressing Oil Therefrom",1888,Chile,Chile,1565,2125
 Wax,1897,Portuguese Possessions,Eastern Coast Of Africa Portuguese Possessions,321,2121
-"Sugar — Refined, Or Sugar Equal In Quality Thereto, And Sugar Candy",1877,Other Countries,Other Countries,563,2088
+Sugar — Refined : Total Of,1877,Other Countries,Other Countries,563,2088
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1893,Other Foreign Countries,Other Foreign Countries,45,2083
 Wax,1895,Portuguese Possessions,Eastern Coast Of Africa Portuguese Possessions,342,2078
 "Metal — Unenumerated, Wrought Or Manufactured : Old, Fit Only To Be Re-Manufactured",1883,British Possessions In South Africa,British Possessions In South Africa,124,2073
@@ -471,6 +483,7 @@ Bones For Manure (Whether Burnt Or Not),1897,Russia,Russia,325,1133
 Bones For Manure (Whether Burnt Or Not),1896,Denmark,Denmark,380,1132
 "Animals, Living — Sheep And Lambs",1895,Other Foreign Countries,Other Foreign Countries,709,1116
 Woollen Yarn — Cloths,1894,United States Of America (Atlantic),United States Of America,8323,1076
+"Sugar — Unrefined : Cane, And Other Sorts",1884,Other Countries,Other Countries,1447,1071
 "Metal — Unenumerated, Wrought Or Manufactured : Old, Fit Only To Be Re-Manufactured",1883,Channel Islands,Channel Islands,76,1039
 Bones For Manure (Whether Burnt Or Not),1895,Burmah,Burmah,290,1017
 Wood And Timber — Teak,1883,Other Countries,Other Countries,79,1004
@@ -570,4 +583,5 @@ Bones For Manure (Whether Burnt Or Not),1896,Other British Possessions,Other Bri
 Bones For Manure (Whether Burnt Or Not),1894,Straits Settlements,Straits Settlements,5,22
 Phosphate Of Lime And Rock,1893,Other British Possessions,Other British Possessions,6,22
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1887,British West India Islands,British West India Islands,1,15
+"Sugar — Unrefined : Cane, And Other Sorts",1884,Belgium,Belgium,9,9
 "Animals, Living — Sheep And Lambs",1897,Other British Possessions,Other British Possessions,2,8
