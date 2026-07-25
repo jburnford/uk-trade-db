@@ -66710,7 +66710,6 @@ BUTTER,,canada,Cwts,import,1899,250053.0,1113926.0,consensus,B,C,2,3
 BUTTER,,other british possessions,Cwts,import,1899,485.0,2388.0,consensus,B,C,2,3
 BUTTER,Margarine (including all kinds of Artificial or Imitation Butters),norway,Cwts,import,1899,8278.0,22631.0,consensus,B,C,2,3
 BUTTER,Margarine (including all kinds of Artificial or Imitation Butters),germany,Cwts,import,1899,12208.0,52373.0,consensus,B,C,2,3
-BUTTER,Margarine (including all kinds of Artificial or Imitation Butters),holland,Cwts,import,1899,597806.0,2379044.0,consensus,B,C,2,3
 BUTTER,Margarine (including all kinds of Artificial or Imitation Butters),belgium,Cwts,import,1899,4208.0,10293.0,consensus,B,C,2,3
 BUTTER,Margarine (including all kinds of Artificial or Imitation Butters),france,Cwts,import,1899,29675.0,103682.0,consensus,B,C,2,3
 BUTTER,Margarine (including all kinds of Artificial or Imitation Butters),united states of america,Cwts,import,1899,328.0,430.0,consensus,B,C,2,3
@@ -75969,7 +75968,6 @@ FISH,Fresh,other british possessions,Cwts,import,1886,60.0,161.0,consensus,C,C,3
 BONES (EXCEPT WHALEFINS),Applicable to Manufacturing Pur-     poses,other british possessions,Tons,import,1886,117.0,811.0,consensus,C,C,3,3
 "BRASS, BRONZE, AND METAL, BRONZED OR LACQUERED, MANUFACTURES OF, UNENUMERATED",,portugal,Cwts,import,1886,1073.0,1988.0,consensus,C,C,3,3
 "BRASS, BRONZE, AND METAL, BRONZED OR LACQUERED, MANUFACTURES OF, UNENUMERATED",,other british possessions,Cwts,import,1886,166.0,497.0,consensus,C,C,3,3
-BUTTERINE,,holland,Cwts,import,1886,335328.0,2771488.0,consensus,C,B,3,2
 COPPER,Regulus and Precipitate,other foreign countries,Tons,import,1886,176.0,4557.0,consensus,C,B,3,2
 CORN AND GRAIN,Beans,australasia new zealand,Cwts,import,1886,30665.0,11910.0,consensus,C,B,3,2
 CORN AND GRAIN,Maize or Indian Corn,bombay and scinde,Cwts,import,1886,1874156.0,464885.0,consensus,C,C,3,3
@@ -82368,6 +82366,8 @@ TALLOW AND STEARINE,,Australasia : New Zealand,Cwts,import,1897,299874.0,285083.
 TALLOW AND STEARINE,,Canada,Cwts,import,1897,1358.0,1051.0,human,A,A,1,1
 OIL,Palm,West Coast of Africa (Foreign) : Not particularly designated,Cwts,import,1878,461074.0,797648.0,human,A,A,1,1
 SEEDS,Flax or Linseed,British East Indies : Bengal,Quarters,import,1899,898023.0,1688072.0,human,A,A,1,1
+BUTTERINE,,Holland,Cwts,import,1886,835328.0,2771488.0,human,A,A,1,1
+BUTTER,Margarine (including all kinds of Artificial or Imitation Butters),Holland,Cwts,import,1899,897806.0,2379044.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
