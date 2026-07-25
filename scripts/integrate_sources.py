@@ -412,6 +412,14 @@ def main():
         asig = V.sig(f"{grp or ''} {art}") or V.sig(art)
         if not asig:
             continue
+        # a page-adjudicated manual replace supersedes the sub-entry too —
+        # steps 1 and 2 already honour it, and without this a replace=1 row
+        # aimed at a 'Region : Sub' cell (palm oil 1878's West African
+        # 'Not particularly designated') is ADDED BESIDE the broken reading
+        # instead of instead of it
+        if ((asig, V.cnorm(ctry), int(y)) in manual_replace
+                or (V.sig(art), V.cnorm(ctry), int(y)) in manual_replace):
+            continue
         key = (asig, V.cnorm(parent), V.cnorm(sub), (unit or '').strip(), int(y))
         subbuckets[key].append({
             'grp': grp, 'art': art, 'ctry': f'{parent} : {sub}', 'q': q, 'v': v,

@@ -27820,7 +27820,6 @@ JUTE,Yarn,france,Lbs,import,1885,6139506.0,221120.0,consensus,B,B,2,2
 JUTE,Yarn,other foreign countries,Lbs,import,1885,7580.0,137.0,consensus,B,B,2,2
 LARD,,denmark,Cwts,import,1885,21385.0,62041.0,consensus,B,B,2,2
 LARD,,germany,Cwts,import,1885,4050.0,10966.0,consensus,B,B,2,2
-LARD,,united states of america,Cwts,import,1885,500406.0,1449766.0,consensus,B,B,2,2
 LARD,,other foreign countries,Cwts,import,1885,194.0,394.0,consensus,B,B,2,2
 LARD,,canada,Cwts,import,1885,45156.0,83281.0,consensus,B,B,2,2
 LARD,,other british possessions,Cwts,import,1885,19.0,37.0,consensus,B,B,2,2
@@ -82363,6 +82362,11 @@ SUGAR,Unrefined; Beetroot,Holland,Cwts.,import,1883,198444.0,198036.0,human,A,A,
 SUGAR,Unrefined; Beetroot,Belgium,Cwts.,import,1883,1461953.0,1472356.0,human,A,A,1,1
 SUGAR,Unrefined; Beetroot,France,Cwts.,import,1883,213727.0,257420.0,human,A,A,1,1
 SUGAR,Unrefined; Beetroot,Portugal,Cwts.,import,1883,56.0,52.0,human,A,A,1,1
+LARD,,United States of America,Cwts.,import,1885,800406.0,1449766.0,human,A,A,1,1
+TALLOW AND STEARINE,,Australasia : New South Wales,Cwts,import,1897,695473.0,661202.0,human,A,A,1,1
+TALLOW AND STEARINE,,Australasia : New Zealand,Cwts,import,1897,299874.0,285083.0,human,A,A,1,1
+TALLOW AND STEARINE,,Canada,Cwts,import,1897,1358.0,1051.0,human,A,A,1,1
+OIL,Palm,West Coast of Africa (Foreign) : Not particularly designated,Cwts,import,1878,461074.0,797648.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -83388,7 +83392,6 @@ SUGAR,Unrefined of all Kinds,British India : Madras,Cwts,import,1877,332874.0,29
 CAOUTCHOUC,,British India : Bengal and Burmah,Cwts,import,1878,9260.0,63834.0,subentry,B,B,2,2
 OIL,Coco-nut,British India : Bombay,,import,1878,7544.0,19474.0,subentry,B,B,2,2
 OIL,Palm,West Coast of Africa (Foreign) : Portuguese Possessions,Cwts,import,1878,3791.0,6297.0,subentry,B,B,2,2
-OIL,Palm,West Coast of Africa (Foreign) : Not particularly designated,Cwts,import,1878,161074.0,797648.0,subentry,B,B,2,2
 OIL,Palm,West Coast of Africa (Foreign) : British West Africa,Cwts,import,1878,15970.0,28394.0,subentry,B,B,2,2
 RICE,,British India : Bombay and Scinde,Cwts,import,1878,128216.0,75104.0,subentry,B,B,2,2
 SUGAR,Unrefined of all Kinds,British India : Madras,Cwts,import,1878,234955.0,186091.0,subentry,B,B,2,2
@@ -91287,10 +91290,7 @@ SUGAR,TALLOW and STEARINE,Other Foreign Countries,Cwts,import,1897,3207.0,357.0,
 SUGAR,TALLOW AND STEARINE,British East Indies,Cwts,import,1897,8243.0,9503.0,infonly,C,C,3,3
 SUGAR,TALLOW AND STEARINE,Australasia : South Australia,Cwts,import,1897,17617.0,16342.0,infonly,C,C,3,3
 SUGAR,TALLOW AND STEARINE,Australasia : Victoria,Cwts,import,1897,234216.0,223987.0,infonly,C,C,3,3
-SUGAR,TALLOW AND STEARINE,Australasia : New South Wales,Cwts,import,1897,605473.0,661202.0,infonly,C,C,3,3
 SUGAR,TALLOW AND STEARINE,Australasia : Queensland,Cwts,import,1897,146721.0,136917.0,infonly,C,C,3,3
-SUGAR,TALLOW AND STEARINE,Australasia : New Zealand,Cwts,import,1897,200874.0,235683.0,infonly,C,C,3,3
-SUGAR,TALLOW AND STEARINE,Canada,Cwts,import,1897,1353.0,1054.0,infonly,C,C,3,3
 SUGAR,TALLOW AND STEARINE,Falkland Islands,Cwts,import,1897,745.0,713.0,infonly,C,C,3,3
 SUGAR,TALLOW AND STEARINE,Other British Possessions,Cwts,import,1897,2118.0,1826.0,infonly,C,C,3,3
 SUGAR,TAR,Russia : Northern Ports,,import,1897,87595.0,53524.0,infonly,C,C,3,3
@@ -93588,6 +93588,8 @@ SUGAR,Molasses,British West India Islands,Cwts,import,1899,15484.0,5935.0,infonl
 SUGAR,Molasses,British Guiana,Cwts,import,1899,63.0,31.0,infonly,C,C,3,3
 SUGAR,Molasses,Other British Possessions,Cwts,import,1899,712.0,329.0,infonly,C,C,3,3
 SUGAR,TALLOW and STEARINE,Russia,Cwts,import,1897,260.0,180.0,infonly,C,C,3,3
+SUGAR,TALLOW and STEARINE,New South Wales,Cwts,import,1897,695473.0,661202.0,infonly,C,C,3,3
+SUGAR,TALLOW and STEARINE,New Zealand,Cwts,import,1897,209874.0,285083.0,infonly,C,C,3,3
 SUGAR,TALLOW and STEARINE,United States of America,Cwts,import,1897,6608.0,3128.0,infonly,C,C,3,3
 SUGAR,TALLOW and STEARINE,Channel Islands,Cwts,import,1897,6062.0,1788.0,infonly,C,C,3,3
 SUGAR,TALLOW and STEARINE,Spain,Cwts,import,1897,42.0,851.0,infonly,C,C,3,3
