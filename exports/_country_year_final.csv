@@ -74366,12 +74366,6 @@ CAOUTCHOUC,,mauritius,Cwts,import,1874,5984.0,50090.0,consensus,C,C,3,3
 CAOUTCHOUC,,british india bengal and burmah,Cwts,import,1874,9341.0,72163.0,consensus,C,C,3,3
 CAOUTCHOUC,,straits settlements,Cwts,import,1874,7101.0,52878.0,consensus,C,C,3,3
 CAOUTCHOUC,,other countries,Cwts,import,1874,939.0,12095.0,consensus,C,C,3,3
-COCHINEAL (INCLUDING GRANILIA AND DUST),,france,,import,1874,30368.0,366363.0,consensus,C,C,3,3
-COCHINEAL (INCLUDING GRANILIA AND DUST),,canary islands,,import,1874,589.0,6484.0,consensus,C,C,3,3
-COCHINEAL (INCLUDING GRANILIA AND DUST),,west coast of africa,,import,1874,3146.0,44442.0,consensus,C,C,3,3
-COCHINEAL (INCLUDING GRANILIA AND DUST),,mexico,,import,1874,1492.0,19596.0,consensus,C,C,3,3
-COCHINEAL (INCLUDING GRANILIA AND DUST),,central america,,import,1874,152.0,2334.0,consensus,C,C,3,3
-COCHINEAL (INCLUDING GRANILIA AND DUST),,new granada,,import,1874,1593.0,25746.0,consensus,C,C,3,3
 CORN AND GRAIN,Barley,united states of america,Cwts,import,1874,92200.0,18624.0,consensus,C,B,3,2
 CORN AND GRAIN,Barley,austrian territories,Cwts,import,1874,96767.0,12295.0,consensus,C,C,3,3
 COPPER,Buckwheat Meal,all countries,Cwts,import,1874,59.0,71.0,consensus,C,C,3,3
@@ -82488,6 +82482,13 @@ SPIRITS,Rum,Australasia : Queensland,Proof Gallons,import,1894,21282.0,927.0,hum
 SPIRITS,Rum,Natal,Proof Gallons,import,1894,69053.0,2968.0,human,A,A,1,1
 SPIRITS,Rum,Mauritius,Proof Gallons,import,1894,64205.0,2920.0,human,A,A,1,1
 SPIRITS,Rum,Other British Possessions,Proof Gallons,import,1894,37.0,6.0,human,A,A,1,1
+COCHINEAL (INCLUDING GRANILIA AND DUST),,France,Cwts.,import,1874,2053.0,13796.0,human,A,A,1,1
+COCHINEAL (INCLUDING GRANILIA AND DUST),,Canary Islands,Cwts.,import,1874,30368.0,366363.0,human,A,A,1,1
+COCHINEAL (INCLUDING GRANILIA AND DUST),,West Coast of Africa,Cwts.,import,1874,589.0,6484.0,human,A,A,1,1
+COCHINEAL (INCLUDING GRANILIA AND DUST),,Mexico,Cwts.,import,1874,3146.0,44442.0,human,A,A,1,1
+COCHINEAL (INCLUDING GRANILIA AND DUST),,Central America,Cwts.,import,1874,1492.0,19596.0,human,A,A,1,1
+COCHINEAL (INCLUDING GRANILIA AND DUST),,New Granada,Cwts.,import,1874,152.0,2334.0,human,A,A,1,1
+COCHINEAL (INCLUDING GRANILIA AND DUST),,Other Countries,Cwts.,import,1874,1593.0,25746.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
