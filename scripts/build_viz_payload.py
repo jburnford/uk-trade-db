@@ -625,6 +625,34 @@ def main():
                         seen[k] = tot + add[0]
                         n_sib += 1
 
+    # ---- Tun and Ton are one OCR-confusable pair, not two units (u/o). The
+    # oils are printed in TUNS and the two engines alternate almost year by
+    # year — 'Oil: Olive' reads Ton in 1872, Tun in 1873, Ton in 1874 — so half
+    # a commodity's origins never share a unit key with its own T1 line and the
+    # map's quantity axis drops them without saying so. heal_units cannot see
+    # it: the split is by YEAR across all countries, so no country has a
+    # minority unit to fold. No article in these tables is printed in both, so
+    # within ONE commodity the two spellings are the same unit. Fold to
+    # whichever is better attested across the commodity, anchor included.
+    def fold_tun_ton(store):
+        n = 0
+        for s in store.values():
+            cnt = Counter()
+            for cty, units in s['c'].items():
+                for u in ('Tun', 'Ton'):
+                    cnt[u] += len(units.get(u, ()))
+            if not (cnt['Tun'] and cnt['Ton']):
+                continue
+            keep = 'Tun' if cnt['Tun'] >= cnt['Ton'] else 'Ton'
+            drop_u = 'Ton' if keep == 'Tun' else 'Tun'
+            for cty, units in s['c'].items():
+                if drop_u in units:
+                    units.setdefault(keep, []).extend(units.pop(drop_u))
+                    n += 1
+        return n
+
+    n_tunton = fold_tun_ton(comms)
+
     # ---- unit healing: OCR loses/mangles the unit column, not the number.
     # Within a commodity x country, '?'-unit cells fold into the dominant
     # labeled unit when their magnitudes agree within 3x (cotton 1868-95 was
@@ -1028,6 +1056,7 @@ def main():
     # left alone. Re-running the whole of heal_units was tried and reverted -
     # its per-country magnitude tests have no such guard and doubled the years
     # a fold's two halves both covered.
+    n_tunton += fold_tun_ton(payload)
     n_heal2 = heal_by_anchor(payload)
     if n_heal2:
         print(f'  unit-healed against the anchor after curation: {n_heal2}')
@@ -1062,7 +1091,7 @@ def main():
     print(f'commodities: {len(payload)}  T1 cells: {n_tot:,} '
           f'(sticky repaired: {n_fixed:,}; fuzzy-merged: {n_fuzzy}; '
           f"unit-healed: {n_healed:,}; coast-rollup: {n_coast:,}; "
-          f"coast-sibling folds: {n_sib:,}; "
+          f"coast-sibling folds: {n_sib:,}; Tun/Ton: {n_tunton:,}; "
           f'deduped: {n_dedup:,})  '
           f'MB: {len(js) / 1e6:.2f}  -> {out}')
 
