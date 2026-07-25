@@ -254,3 +254,198 @@ folds remain correct. The caution is the one this round taught: **a year that
 closes against its printed total is not a year that is right.** Geography and
 arithmetic both passed the 1870s palm tables while every country on them was
 wrong.
+
+---
+
+# The careful fats-and-oils review (2026-07-25, session 8)
+
+The user's framing came with a warning worth keeping: **the tallow price
+collapsed in the 1890s when Australian tallow flooded the market.** A price
+series that falls by half is not evidence of a defect here, and unit price is
+only usable as a check WITHIN a block, against its own neighbours — which is
+how it is used below, and how it settled New Zealand's tallow and the
+United States' lard.
+
+Where the family stands after the review (map view, 1872-99):
+
+| commodity | before | after |
+|---|---|---|
+| `Lard` | 27 of 28 years close | **28 of 28** |
+| `Tallow And Stearine` | 24 (0.82/0.73/0.74 in 1897-99) | **27**, 1889 alone |
+| `Oil — Palm` | 25 | **26** |
+| `Seeds — Flax Or Linseed` | 22 | **25** |
+| `Seeds — Rape` | 19 | **20** |
+| `Nuts And Kernels — Commonly…` | no anchor at all | **18 measurable, 6 exact** |
+| `Oil — Animal` / `Oil — Chemical…` | stop 1896 | **run to 1899** |
+
+## What the family actually taught, in order of how far it reached
+
+### 1. The integrator was throwing away every region-qualified row of an Infinity-only block
+
+`Tallow And Stearine` sits at 1.000 of its printed national total in every
+year 1872-96 and then falls to 0.821 / 0.726 / 0.740. Nothing was missing
+from the parse. The 1897-99 origins come from an Infinity-only block whose
+whole American section is printed region-qualified —
+
+```
+United States of America : On the Atlantic   260,602   571,959   519,847
+                         " On the Pacific     10,931         -     7,341
+```
+
+— and `integrate_sources` step 2 dropped every member whose country contained
+`' : '`. Half a million cwt a year.
+
+The blanket skip exists for a real reason: a `Region : Sub` row must not
+double-count against a `Region` aggregate printed beside it. The guard now
+looks at the **printed segment** (the run between Total rows) rather than the
+whole block, because an Infinity glue block runs several commodities under one
+stale article — the plain `United States of America` that vetoed tallow's
+Atlantic/Pacific split in as_1899 belongs to the TAR table below it.
+
+This is not an oils defect. It is a corpus-wide one:
+
+```
+Wheatmeal And Flour 1895-99   0.15-0.28 -> 0.96-1.00
+Barley 1897-99                0.82-0.88 -> 0.96-1.00
+Seeds - Rape 1883             0.281 -> 1.000
+Spices - Unenumerated 1891    0.161 -> 1.000
+Tar 1897                      0.082 -> 0.991
+Shell Fish : Oysters 1897     0.294 -> 1.000
+```
+
+It also exposed an older double-count: a group repair names ONE engine's copy
+of a glue block, and the other engine's copy re-enters as Infinity-only under
+its own stale group. as_1899 oats is printed once and reached
+country_year_final twice. The guard for that has to work **cell by cell** —
+scoped to the whole commodity-year it killed barley 1893, and scoped to the
+volume it killed as_1873 lard's Germany, a row whose own repair note says
+"Germany stays lost (honest)". The honest loss was only Chandra's; Infinity
+had the row.
+
+### 2. 'Russia' was the northern ports, and the southern ports were being dropped
+
+Every consumer treats a `(coast)` cell as drill-down detail inside its parent
+and sums the parent alone. That is right when the parent is the printed
+aggregate and wrong when the parser gave ONE coast its bare country name and
+qualified the other — which is what `Russia : Northern Ports / Southern
+Ports` does through the 1870s and 1880s. In the 1882 flax table `Russia`
+597,454 IS the northern row, and `Russia (Southern Ports)` 442,058 was being
+discarded as redundant to it. `country_year_final` summed to the printed
+total to the digit the whole time; only the payload's view of it was short.
+
+Told apart the one way that cannot guess: fold the coasts into the parent
+only when doing so brings **the year's origin sum** closer to its printed
+national total. Measuring against the parent cell alone instead — the obvious
+mistake, and one I made first — fires 421 times and costs five points of
+closure.
+
+```
+Corn And Grain - Wheat 1872           0.625 -> 0.999
+Corn And Grain - Wheat 1875,77-79,84  0.84-0.94 -> 0.99-1.00
+Wool - Sheep Or Lambs' 1873,75,78-80  0.968-0.987 -> 1.000
+Seeds - Flax Or Linseed 1881-83       0.82-0.88 -> 1.000
+```
+
+### 3. Four digits, each pinned by two columns
+
+The method that keeps working: **one engine is right about the quantity and
+the other about the value, and each block's own printed subtotal says which.**
+
+* **Lard 1885, United States 500,406 -> 800,406.** Chandra's Foreign subtotal
+  526,035 agrees with its own 500,406, but its grand total 871,210 does not
+  (526,035 + 45,175 = 571,210). Infinity reads 800,406, subtotal 826,035, and
+  826,035 + 45,175 = 871,210 = T1. The value runs the other way: Chandra's
+  1,449,766 closes the printed 1,523,167 exactly.
+* **Tallow 1897, New Zealand 209,874 -> 299,874**, and BOTH engines were
+  wrong (200,874 / 209,874). Grand total less Foreign total requires 1,406,365
+  from the British section; with New South Wales 695,473 and Canada 1,358 the
+  members reach 1,316,365, exactly 90,000 short. The value column agrees
+  independently — 285,083 / 299,874 = GBP0.951/cwt, the rate every other
+  Australasian row carries, where 209,874 would price New Zealand tallow at
+  GBP1.36 against New South Wales's 0.95.
+* **Palm 1878, 161,074 -> 461,074** — the repair queued above, now applied.
+* **Flax and linseed 1899, Bengal 593,023 -> 897,423.** The printed British
+  total less Gibraltar, Bombay and Canada leaves 897,423; the printed British
+  VALUE total less the same three leaves 1,688,072, which is Chandra's value
+  exactly while Infinity's is wrong.
+
+### 4. The palm-kernel line's anchor was never missing, only differently worded
+
+`Nuts And Kernels — Commonly Used For Expressing Oil Therefrom` — palm
+kernels, copra and ground nuts, GBP18.3M — had origins in all 28 years and an
+anchor of zero, so nothing about it was checkable. The abstract prints the
+same line as `Nuts and Kernels: For expressing Oil therefrom` (34 years) and
+as `Nuts, For expressing Oil therefrom` (1893-97). The arithmetic settles it:
+the T1 series equals the origin sum **to the digit** in 1873, 1877-79,
+1882-85 and 1887, and within ten tons in 1888-90.
+
+Folding it in paid for itself immediately, because the parent/child de-dup
+decides against the anchor: 1876 went 1.94 -> 0.88 as duplicated parent rows
+were dropped.
+
+### 5. The 1883-87 abstract printed the whole OILS section under a NUTS AND KERNELS head
+
+…and the 1893+ five-year country tables did it again, so every `Nuts And
+Kernels — <oil article>` label is a second copy of an `Oil — <same article>`
+line. Checked pair by pair, they do not all say the same thing — which is why
+the scoping note's "verify before folding" was right:
+
+* **Animal** and **Chemical, Essential Or Perfumed**: 1883-87 T1 is the oil
+  line's T1 to the digit and 1893-96 repeats origins the oil already has, but
+  1897-99 the oil label has nothing and the stale one does. Folded, scoped to
+  1897-99.
+* **Turpentine**: pure duplication, no recovery. Dropped.
+* **Coco-Nut**: NOT folded. Its 1894-99 origins run 1.3-2.3M cwt against
+  coconut oil's ~200k, so whatever they are they are not that oil.
+
+## Still open, with the evidence
+
+1. **The T1 for flax and linseed 1899 is wrong and there is no way to fix it.**
+   as_1899 prints 1,708,887; tn_1901 prints 1,798,887; the country block's own
+   grand total is 1,798,857 and both its section totals close. So the year now
+   reads 1.05, and the 1.05 is the anchor's error. **There is no override path
+   for a T1 cell** — `reconcile.py` has no manual-adjudication input, the way
+   `country_obs` has `manual_rows.csv`. That gap is worth closing; it will not
+   be the only anchor with a broken digit.
+2. **Flax and linseed 1880 reads 1.060** now that the southern-ports row is
+   counted. The row belongs there, so the year carries a separate ~100,000-
+   quarter error elsewhere: candidates are `bengal and burmah` 664,741,
+   `russia` 534,956 and `bombay and scinde` 239,472, all round-100,000 away
+   from a plausible neighbour.
+3. **`Nuts And Kernels — Commonly Used…` 1894 reads 0.079** — 5,907 tons
+   against 75,102. That is a lost table, not a digit. 1886 reads 0.291, 1874
+   0.493, 1891 0.789; 1872 is still double-counted at 1.751; and 1881 has a
+   printed origin table with no T1 line in either engine.
+4. **`Oil — Oil Seed Cakes` stops in 1891 while its T1 runs to 1896**, and
+   `Oil Seed Cake — Linseed Cake` / `Oil-Seed Cake — Cotton Cake` start in
+   1892. That is an era split — one aggregate line becoming named sub-sorts —
+   and it needs the sugar treatment (printed parent + siblings), NOT a merge.
+   1890 reads 1.23 as well.
+5. **`Oil — Olive` 1884 and 1885 have no origins at all** and 1894-96, 1899
+   have origins with no anchor. `Nuts And Kernels — Olive` 1893-97 is a
+   candidate carrier but its 1894 (35,553) does not match olive's own 26,332,
+   so it needs the print, not arithmetic.
+6. **`Seeds — Unenumerated, For Expressing Oil Therefrom` runs 0.48-0.73
+   through the 1870s** with four blank years — the most systematically short
+   series left in the family.
+7. **The margarine/butterine cluster is split across four labels**
+   (`Butterine` 1886 only, `Butterine (Margarine)` 1887 only, `Butter —
+   Margarine…` 1893-99 reading 0.08 in 1893, `Lard — Imitation Lard…`). One
+   printed line renamed twice; the sugar era-label method applies.
+8. **`Nuts And Kernels` (plain, GBP12.2M)** carries 1893-97 "origins" of
+   840,131 to 28,295,329 TONS — junk from some other table under a stale head
+   — beside a T1 for 1887-91 that duplicates the palm-kernel line's. Its real
+   content needs separating before either half is usable.
+9. **Tallow 1897-99 still carries ~13,000 cwt of intruders** (Channel Islands,
+   a second United States row, Peru, Spain) belonging to the TAR and following
+   tables in the same Infinity glue block — the round-9 group-repair class.
+
+## A caution about the metrics themselves
+
+`scripts/validate_gold.py` is **not deterministic**. Three consecutive runs on
+identical data gave match 510 / 529 / 517 and national-exact 630 / 653 / 639,
+because `build_crosswalk` re-resolves ambiguous name matches each run. Judge
+changes on `reconcile_baseline.py` and `validate_gold_numeric.py`, which are
+stable. Over this session the stable pair went from **34.5% to 36.6% of GBP
+within 0.1% of T1 and 51.5% to 53.6% within 5%**, with under-counted
+commodity-years 325 -> 289.
