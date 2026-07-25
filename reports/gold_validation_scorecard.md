@@ -10,18 +10,18 @@ Overlap years: [1871, 1876, 1881, 1886, 1891, 1896]
 - 1871: matched 0/336 (0%)
 - 1876: matched 269/355 (76%)
 - 1881: matched 217/325 (67%)
-- 1886: matched 240/344 (70%)
-- 1891: matched 247/367 (67%)
-- 1896: matched 325/403 (81%)
+- 1886: matched 242/344 (70%)
+- 1891: matched 249/367 (68%)
+- 1896: matched 321/403 (80%)
 
 ## B. National total accuracy (matched cells, same-unit)
-- exact (≤1%): 646   close (≤5%): 48   off (>5%): 314   unit-differs(skipped): 161
+- exact (≤1%): 646   close (≤5%): 46   off (>5%): 312   unit-differs(skipped): 166
 
 ## C. Country attribution (matched cells)
-- match: 523
-- attribution-shift: 20
-- value-error: 579
-- missing: 176
+- match: 525
+- attribution-shift: 21
+- value-error: 577
+- missing: 175
 
 ## Files
 - reports/gold_missing_commodities.csv

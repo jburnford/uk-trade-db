@@ -163,15 +163,19 @@ def main():
                 supersede.add((gr['article_group'].upper(),
                                (gr['article'] or '').strip(), int(y_sup)))
 
-    # commodity-years a group repair already supplies (step 6). The repair
-    # names ONE engine's copy of a glue block; the OTHER engine's copy of the
-    # same printed table is Infinity-only under its own stale group, so step 2
+    # cells a group repair already supplies (step 6). The repair names ONE
+    # engine's copy of a glue block; the OTHER engine's copy of the same
+    # printed table is Infinity-only under its own stale group, so step 2
     # admits it a second time and the year doubles. as_1899 oats is printed
     # once and reached country_year_final twice — CORDAGE|Oats repaired to
     # CORN AND GRAIN (Chandra) plus CHEESE|Oats (Infinity) — reading 1.02 of
     # its printed total only because the sub-entry rows were dropped from one
-    # of them. A hand-adjudicated repair outranks a stale-group re-print.
-    repaired_commod = set()
+    # of them. A hand-adjudicated repair outranks a stale-group re-print, but
+    # only CELL BY CELL: the two engines rarely lose the same row, and the
+    # Infinity copy is often the only carrier of what the repair concedes
+    # (as_1873 LARD's repair note says "Germany stays lost (honest)" — the
+    # Infinity copy has it, 21,848 cwt).
+    repaired_cells = set()
     for gr in grepairs:
         tbl = ('country_obs_inf' if (gr.get('obs_source') or '').strip() == 'inf'
                else 'country_obs')
@@ -179,14 +183,26 @@ def main():
                   or V.sig(f"{gr['new_group']} {gr['new_article'] or ''}"))
         if not asig_r or not (gr['seq_start'] or '').strip():
             continue
-        for (y_r,) in con.execute(f"""SELECT DISTINCT year FROM {tbl}
+        rrows = con.execute(f"""SELECT country_raw, year FROM {tbl}
                 WHERE volume = ? AND flow = ? AND article_group = ?
                   AND article IS NOT DISTINCT FROM ?
-                  AND row_seq BETWEEN ? AND ? AND year IS NOT NULL""",
+                  AND row_seq BETWEEN ? AND ? AND year IS NOT NULL
+                ORDER BY row_seq""",
                 [gr['volume'], gr['flow'], gr['article_group'],
                  gr['article'] or None,
-                 int(gr['seq_start']), int(gr['seq_end'])]).fetchall():
-            repaired_commod.add((gr['volume'], asig_r, int(y_r)))
+                 int(gr['seq_start']), int(gr['seq_end'])]).fetchall()
+        if (gr.get('label_shift') or '').strip() == '1':
+            # the repair re-pairs label(i+1) with numbers(i), so the FIRST
+            # label keeps nothing — it is precisely the row the repair note
+            # concedes as lost, and the other engine may still carry it
+            # (as_1873 LARD Germany, 21,848 cwt)
+            rrows = rrows[1:]
+        for ctry_r, y_r in rrows:
+            cr = V.cnorm(gr['new_country'] or ctry_r)
+            repaired_cells.add((gr['volume'], asig_r, cr, int(y_r)))
+            if ' : ' in (ctry_r or ''):
+                repaired_cells.add((gr['volume'], asig_r,
+                                    V.cnorm(ctry_r.partition(' : ')[2]), int(y_r)))
 
     # 1) consensus (voted) — keep every row, no collapsing
     rows = con.execute("""SELECT article_group, article, country, unit, year,
@@ -309,14 +325,15 @@ def main():
             asig = V.sig(art) or V.sig(f"{g or ''} {art}")
             if not asig or (asig, y) in consensus_commod:
                 continue
-            if (v, asig, y) in repaired_commod:
-                continue          # step 6 already supplies this printed table
             # dedup key: a 'Region : Sub' member and a bare 'Sub' member are
             # the same printed line read out of two volumes' copies of the
             # five-year table (as_1897 tallow prints 'Australasia : New South
             # Wales', as_1899 prints it bare), so both must compete for ONE
             # slot or the year doubles.
             ckey = V.cnorm(c.partition(' : ')[2]) if ' : ' in c else V.cnorm(c)
+            if ((v, asig, V.cnorm(c), y) in repaired_cells
+                    or (v, asig, ckey, y) in repaired_cells):
+                continue          # step 6 already supplies this printed cell
             if (asig, ckey, y) in seen_added or (asig, V.cnorm(c), y) in seen_added:
                 continue
             # honor page-adjudicated manual replaces the way step 1 does
