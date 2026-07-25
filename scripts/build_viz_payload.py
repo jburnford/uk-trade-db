@@ -152,7 +152,17 @@ _UNIT_ALIAS = {
     'cwt': 'Cwt', 'cwts': 'Cwt', 'cuts': 'Cwt', 'cts': 'Cwt', 'cwis': 'Cwt',
     'cwtts': 'Cwt', 'gwts': 'Cwt', 'owts': 'Cwt', 'wts': 'Cwt', 'cwt s': 'Cwt',
     'ccts': 'Cwt', 'cicts': 'Cwt', 'cets': 'Cwt', 'ccwts': 'Cwt',
+    # Each of these was found sitting BESIDE its canonical form on the same
+    # commodity, splitting one national series into two unit keys - which
+    # matters because the map's anchor has to be a single unit, so the half in
+    # the misread key was invisible. 'Cnts' carried the whole 1893-1900 anchor
+    # for the beetroot, cane and glucose sugar lines while their origins were
+    # in Cwt; it is the same figure to the digit where both are printed
+    # ('Sugar - Other Sorts, Including Candy' 1896-98).
+    'cnts': 'Cwt', 'cwtz': 'Cwt', 'cwtss': 'Cwt', 'ciots': 'Cwt',
     'lb': 'Lb', 'lbs': 'Lb', 'lbds': 'Lb',
+    # compound column headers take the leading unit, as 'tons cwts' already does
+    'lbs ozs': 'Lb', 'lbs oz': 'Lb',
     'ton': 'Ton', 'tons': 'Ton', 'fons': 'Ton', 'tons cwts': 'Ton',
     'load': 'Load', 'loads': 'Load', 'louds': 'Load',
     'gallon': 'Gallon', 'gallons': 'Gallon', 'galls': 'Gallon', 'gals': 'Gallon',
@@ -164,9 +174,11 @@ _UNIT_ALIAS = {
     'bushel': 'Bushel', 'bushels': 'Bushel',
     'barrel': 'Barrel', 'barrels': 'Barrel',
     'dozen': 'Dozen', 'dozens': 'Dozen',
+    'dozen pairs': 'Dozen Pairs', 'doz pairs': 'Dozen Pairs',
+    'doz prs': 'Dozen Pairs',   # 'Pairs' alone is NOT this: it is 12x smaller
     'tun': 'Tun', 'tuns': 'Tun',
     'great hundred': 'Great Hundred', 'great hundreds': 'Great Hundred',
-    'gt hundreds': 'Great Hundred',
+    'gt hundreds': 'Great Hundred', 'gt hunds': 'Great Hundred',
 }
 
 
