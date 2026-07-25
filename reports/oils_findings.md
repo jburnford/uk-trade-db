@@ -691,3 +691,192 @@ of T1, 51.5% -> 54.0% within 5%**; unflagged map commodities 160 -> 166.
 7. Flax 1880 (1.06, a ~100,000-quarter digit), palm 1882/1887, tallow 1889,
    `Coco Nut` 1885's doubled table, margarine 1899's value column, and the
    ~13,000 cwt of TAR-block intruders in tallow 1897-99.
+
+## Fourth pass: building the instruments that see what closure cannot
+
+The previous three passes repaired what the closure test could find. Asked
+how confident I was that any given fats-and-oils commodity is 95% right, the
+answer was no — because closure had four proven blind spots and every one of
+them had produced a defect in this family in a single day. This pass builds
+an instrument for each blind spot, and then measures the family with them.
+
+### 1. The anchor itself — `scripts/anchor_disagreement.py`
+
+Closure measures a country table against its printed national total, so a
+wrong anchor is invisible to it: the table can be perfect and read 0.81, or
+be missing a section and read 1.000. The 1893+ Abstract prints each year up
+to five times and both engines read every printing, so a national total can
+have ten independent readings; `reconcile.py` votes and keeps one.
+
+This keeps the rest. **2,889 of 11,285 quantity series-years (25.6%) have
+disagreeing readings, and 4,068 of 11,331 value series-years (35.9%).** Most
+are one garbled printing outvoted eight to one. The queue is the 21 where the
+payload's origin sum closes on a **losing** candidate:
+
+| year | line | vote | origins say | GBP |
+|---|---|---|---|---|
+| 1884 | `silk \| raw` | 4,322,702 | **4,522,702** | 3.3M |
+| 1894 | `tobacco unmanufactured` | 57,781,317 | **87,781,317** | 2.5M |
+| 1881 | `oil \| coco nut` | 218,412 | **248,412** | 370k |
+| 1899 | `bottles` | 1,206,959 | **1,266,959** | 528k |
+
+Every one is a single digit, and the country block's own arithmetic lands on
+the loser to the digit. This is the report that would have found oil seed
+cake 1890 and flax 1899 without anyone noticing them by hand.
+
+### 2. The value column — `scripts/value_closure.py`
+
+Every block prints two columns and two printed totals and only one had ever
+been tested. The national value line was sitting in `consensus`, used as a
+sort key and nothing else. It now rides on the `§TOTAL` cell's fourth
+element through `build_viz_payload` and `build_map_slim`, which puts value
+closure in exactly the curated, de-duplicated space quantity closure lives
+in.
+
+    quantity   22.2% of commodity-years within 0.1%, 30.4% within 5%
+    value      25.1% within 0.1%, 33.9% within 5%   (8,163 with an anchor)
+
+The two columns are independent tests of the same block, so the signal is
+where they **disagree**: 113 commodity-years close to the digit on quantity
+and fail on value, 48 the other way round. Those are single-column digit
+errors and `reports/value_closure.csv` names them.
+
+### 3. The relabelled block — `scripts/cross_engine_labels.py`
+
+**This is the one that matters most, because arithmetic cannot reach it.**
+Relabelling preserves sums: the 1870s palm oil tables had every quantity
+right, every label one row out, and closed against their printed total.
+
+So the detector uses the second reading rather than the sum. For each block
+in both keys it aligns the two readings twice — once on the sequence of
+numbers, once on the sequence of countries — and flags the blocks where the
+numbers line up at one offset and the labels at another. **83 blocks
+corpus-wide, GBP338M; 15 in this family.**
+
+Two things had to be got right for the verdict to mean anything:
+
+- **The third voice must be cross-engine, not just cross-volume.** A parser
+  that takes the country column one row out on a table shape does it in
+  every volume printing that shape, so "as_1898's Chandra reading agrees
+  with as_1897's Chandra reading" is not a second opinion. Scored properly,
+  21 blocks have an independent verdict, **11 are engine-systematic
+  disagreements no vote can settle, and 51 are printed once** — everything
+  before 1893. For those the vote is structurally unable to help.
+- **Segment arithmetic settles the single-printing case.** The engines have
+  different ROW SETS, not merely different labels, so the one whose members
+  add up to the printed segment total read the right rows. That decides 62
+  of the 83.
+
+### 4. The misread digit — `scripts/digit_repair_candidates.py`
+
+The proposed instrument was a unit-price outlier detector. It turned out a
+stronger one was available, because the same page prints the answer:
+
+    delta = printed TOTAL - sum(members)
+    if a member's figure + delta differs from what was read in exactly ONE
+    digit position, that member is the misread row and delta is the digit
+
+Corroboration in order of worth: **the other engine already prints the
+repaired number** for that line (then it is not a hypothesis about a digit,
+it is a reading the vote lost); the repaired row's unit price moves towards
+its own block's rate; the digit pair is one these tables confuse. Peer
+agreement outranks uniqueness — butter 1889 has four members sitting one
+digit from closing, and only Russia's 8,393 is printed anywhere.
+
+Two traps, both now handled and both found by getting them wrong first:
+
+- The peer lookup must be scoped to the same **article**, not the same
+  volume. Unscoped, a five-cwt coincidence in the tar table counted as
+  corroboration for a seed-oil row: nine false positives out of 34.
+- When the member sum is **itself** one digit from the printed total, the
+  TOTAL may be the error instead. Margarine 1898 is either France 9,000
+  short or the total 9,000 long; only the within-block price test separates
+  them (France at GBP3.48/cwt against a block rate of 2.68 is the outlier,
+  so the member is wrong). Those rows are flagged, never applied on closure
+  alone.
+
+Corpus-wide: 24,435 blocks, 50,809 arithmetic possibilities, 3,811 either
+unique or printed by the other engine, **547 corroborated and still shipping
+the misreading.**
+
+### What was repaired
+
+Twenty-five one-digit cells in this family, each closing its block exactly,
+each printed by the other engine, each still shipping the wrong number.
+The two that close open items:
+
+    tallow 1889   Australasia   481,169 -> 431,169
+        British segment then sums to its printed 456,242 to the digit, and
+        787,789 + 456,242 = the printed grand total 1,244,031. Tallow 1889
+        was the one year of twenty-eight that did not close.
+    linseed cake 1894  France        943 ->     343
+        closes the foreign segment at 179,714 exactly; GBP1.92/ton against a
+        block running 6.0-7.1 was impossible anyway.
+
+And the whole of **`OIL | Olive` 1874**, ten rows, reconstructed. Chandra
+lost the leading France label, so every country carried the line above's
+figures — Italy was given Spain's 7,683 tuns, Austrian Territories Italy's
+9,728 — and the last data row, 253, landed on the TOTAL label. That is
+precisely why the block still summed and why no closure test ever flinched.
+
+The reconstruction is fixed by arithmetic, not by preferring an engine. With
+Infinity's labels, Chandra's Spain value (328,464) and Chandra's last
+quantity (253), **both** printed columns close to the digit:
+
+    France 159 / 9,029        Portugal 503 / 20,963
+    Spain 7,683 / 328,464     Italy 9,728 / 467,089
+    Austrian Terr. 311 / 13,412   Greece 554 / 23,397
+    Tripoli and Tunis 937 / 38,679  Morocco 1,781 / 72,142
+    Malta 811 / 34,193        Other Countries 253 / 10,093
+    ------------------------------------------------------
+    22,720 tuns   GBP1,017,461   = both printed totals, exactly
+
+Each engine had exactly one wrong number and neither had the labels wrong
+twice.
+
+### The honest confidence number — `reports/oils_confidence.md`
+
+Generated by `scripts/family_confidence.py`, measured on `map_slim.json`
+(the shipped, de-duplicated file — judging tallow on the raw payload reads
+1.4-1.8 through the 1890s purely because `Australasia` and `Victoria` are
+both still present there), with years that have no origin table at all
+counted separately rather than as failures.
+
+**Of 452 fats-and-oils commodity-years with an origin table, both printed
+columns close to the digit in 216 — 48%.** Quantity alone closes in 65%,
+value alone in 65%. At the looser 5% tolerance earlier sessions quoted:
+quantity 90%, both columns 74%.
+
+That is the number to quote, and it is lower than the family's headline
+looked. Two columns closing on the same block are two independent tests, and
+it is the strongest statement available without the page image. Per
+commodity the spread is wide and worth reading: `Seeds — Rape` 17/20,
+`Tallow And Stearine` 20/28, `Butter` 15/28, `Oil — Palm` 7/28,
+`Nuts And Kernels — Commonly Used…` 2/27.
+
+### Still open after the fourth pass
+
+1. **The 51 label-slipped blocks printed once**, where each engine is
+   self-consistent and segment arithmetic does not separate them. These are
+   the page-image queue, and they are the reason a confidence figure above
+   the mid-80s cannot be claimed for the 1870s and 1880s from internal
+   evidence alone.
+2. **`Nuts And Kernels — Commonly Used For Expressing Oil Therefrom` closes
+   in 2 of 27 years** — the worst in the family by far, and the five
+   `NUTS AND KERNELS | Seed` blocks in as_1898 are all label-slipped by two
+   rows with Infinity's row set closing.
+3. **Olive 1891 Italy's value** — 174,266 where 474,266 closes the block
+   exactly and the price test is decisive (GBP15.16/tun against a block
+   running 34-41). Not applied because the other engine reads it the same
+   way, so it is a genuine misprint-or-misread rather than a lost vote.
+   Same shape: lard 1890 US value, margarine 1898 France quantity.
+4. **Butter 1899 Victoria's value**, GBP1,651,338 on 211,744 cwt = 7.80
+   against a block at 4.9, with the British segment GBP599,987 over its
+   printed total. No single-digit repair closes it.
+5. **Margarine 1899's value column** is still 19,492 over, and no unique
+   one-digit repair exists — consistent with the note already in
+   `manual_rows.csv`.
+6. Everything on the third pass's open list that these instruments do not
+   touch: the oil-seed-cake era split, `Oil — Fish : Train Or Blubber`
+   reading exactly 0.50 in 1894-96, the two disjoint tables under
+   `Seeds — Unenumerated`, olive 1885, the map's parent-or-children de-dup.
