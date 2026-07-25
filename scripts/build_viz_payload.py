@@ -784,6 +784,57 @@ def main():
                     src_v = kept_v = 0.0
                     for ctry, byu in src['c'].items():
                         dbyu = dst['c'].setdefault(ctry, {})
+                        # A source cell that lost its printed unit belongs to
+                        # whatever unit the TARGET uses for this country, and
+                        # has to be relabelled BEFORE the year check rather
+                        # than after it. Otherwise it slides past under the
+                        # '?' key and becomes a second copy of a row the
+                        # target already holds - which is what folding the
+                        # de-headed label 'Wool' into "Wool - Sheep Or Lambs'"
+                        # did: its 1896 cells are digit-identical to the
+                        # target's (New South Wales 163,717,080 either way)
+                        # and were added again, while its 1897-99 cells, the
+                        # only copy of the colonial wool for those years, were
+                        # invisible to the quantity axis. Same magnitude guard
+                        # heal_units uses: three times either way, or the two
+                        # are not the same measure and the cells stay '?'.
+                        lab = {u: cs for u, cs in dbyu.items() if u != '?'}
+                        if '?' in byu and lab:
+                            dt = max(lab, key=lambda u: len(lab[u]))
+                            dv = sorted(c[1] for c in lab[dt] if c[1] > 0)
+                            sv = sorted(c[1] for c in byu['?'] if c[1] > 0)
+                            dm = dv[len(dv) // 2] if dv else 0
+                            sm = sv[len(sv) // 2] if sv else 0
+                            move = []
+                            if dm and sm and dm / 3 < sm < dm * 3:
+                                move = byu['?']          # whole bucket agrees
+                            elif dm:
+                                # ...or rescue cell by cell against the
+                                # NEAREST labelled year, as heal_units does.
+                                # A span median is the wrong yardstick for a
+                                # growing series: Australasia's wool runs from
+                                # 1872, so the target's median sits far below
+                                # its 1897 cell and the bucket test rejects a
+                                # cell that is 1.3x the neighbouring year.
+                                near = {}
+                                for c in lab[dt]:
+                                    near.setdefault(c[0], c[1])
+                                def _ref(y0):
+                                    for dy in range(4):
+                                        for yy in (y0 - dy, y0 + dy):
+                                            if near.get(yy):
+                                                return near[yy]
+                                    return dm
+                                move = [c for c in byu['?'] if c[1] > 0
+                                        and _ref(c[0]) / 3 < c[1] < _ref(c[0]) * 3]
+                            if move:
+                                byu = dict(byu)
+                                rest = [c for c in byu['?'] if c not in move]
+                                byu[dt] = byu.get(dt, []) + move
+                                if rest:
+                                    byu['?'] = rest
+                                else:
+                                    byu.pop('?')
                         for u, series in byu.items():
                             have = {row[0] for row in dbyu.get(u, [])}
                             new = [row for row in series if row[0] not in have]
