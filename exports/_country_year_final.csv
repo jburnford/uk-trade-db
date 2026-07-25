@@ -1034,7 +1034,6 @@ COTTON,,peru,Tons,import,1895,3318.0,15564.0,consensus,A,A,1,1
 COTTON,,brazil,Tons,import,1895,13211.0,50738.0,consensus,A,A,1,1
 COTTON,Flax or Linseed,germany,Quarters,import,1895,30772.0,50553.0,consensus,A,A,1,1
 COTTON,Flax or Linseed,holland,Quarters,import,1895,17396.0,44070.0,consensus,A,A,1,1
-COTTON,Flax or Linseed,belgium,Quarters,import,1895,923.0,2603.0,consensus,A,A,1,1
 COTTON,Flax or Linseed,france,Quarters,import,1895,6311.0,11062.0,consensus,A,A,1,1
 COTTON,Flax or Linseed,italy,Quarters,import,1895,2996.0,5801.0,consensus,A,A,1,1
 COTTON,Flax or Linseed,united states of america,Quarters,import,1895,3990.0,6442.0,consensus,A,A,1,1
@@ -5033,7 +5032,6 @@ COTTON,Flax or Linseed,asiatic,Quarters,import,1896,8930.0,14523.0,consensus,A,A
 COTTON,Flax or Linseed,cyprus,Quarters,import,1896,845.0,1775.0,consensus,A,A,1,1
 COTTON,Flax or Linseed,uruguay,Quarters,import,1896,633.0,1070.0,consensus,A,A,1,1
 COTTON,Flax or Linseed,gibraltar,Quarters,import,1896,513.0,1131.0,consensus,A,C,1,3
-COTTON,Flax or Linseed,madras,Quarters,import,1896,40.0,60.0,consensus,A,B,1,2
 COTTON,Flax or Linseed,northern ports,Quarters,import,1897,531951.0,834973.0,consensus,A,C,1,3
 COTTON,Flax or Linseed,germany,Quarters,import,1897,46730.0,72101.0,consensus,A,C,1,3
 COTTON,Flax or Linseed,belgium,Quarters,import,1897,474.0,1592.0,consensus,A,A,1,1
@@ -9655,10 +9653,6 @@ OIL,Coco-nut,british india madras,Cwts,import,1874,18410.0,36470.0,consensus,B,B
 OIL,Coco-nut,ceylon,Cwts,import,1874,98538.0,175389.0,consensus,B,B,2,2
 OIL,Coco-nut,australia,Cwts,import,1874,7096.0,13073.0,consensus,B,B,2,2
 OIL,Coco-nut,other countries,Cwts,import,1874,1594.0,2839.0,consensus,B,B,2,2
-OIL,Olive,spain,,import,1874,503.0,20963.0,consensus,B,C,2,3
-OIL,Olive,italy,,import,1874,7683.0,328464.0,consensus,B,C,2,3
-OIL,Olive,austrian territories,,import,1874,9728.0,467089.0,consensus,B,C,2,3
-OIL,Olive,greece,,import,1874,311.0,13412.0,consensus,B,C,2,3
 OIL,Palm,fernando po,Cwts,import,1874,5940.0,9879.0,consensus,B,B,2,2
 OIL,Palm,portuguese possessions,Cwts,import,1874,10633.0,17584.0,consensus,B,B,2,2
 OIL,Palm,not particularly designated,Cwts,import,1874,878548.0,1476386.0,consensus,B,B,2,2
@@ -9860,7 +9854,6 @@ COTTON,Tares and Lentils,other countries,Bushels,import,1874,23382.0,5659.0,cons
 NUTS AND KERNELS,"Unenumerated, commonly used for expressing     Oil therefrom",germany,Quarters,import,1874,1565.0,3556.0,consensus,B,B,2,2
 NUTS AND KERNELS,"Unenumerated, commonly used for expressing     Oil therefrom",madras,Quarters,import,1874,8811.0,20796.0,consensus,B,B,2,2
 NUTS AND KERNELS,"Unenumerated, commonly used for expressing     Oil therefrom",bengal and burmah,Quarters,import,1874,80181.0,233268.0,consensus,B,B,2,2
-NUTS AND KERNELS,"Unenumerated, commonly used for expressing     Oil therefrom",other countries,Quarters,import,1874,12939.0,41096.0,consensus,B,B,2,2
 SEEDS,"Unenumerated, other Sorts",germany,Cwts,import,1874,39182.0,12016.0,consensus,B,C,2,3
 SEEDS,"Unenumerated, other Sorts",holland,Cwts,import,1874,64519.0,103384.0,consensus,B,C,2,3
 SEEDS,"Unenumerated, other Sorts",france,Cwts,import,1874,52734.0,77961.0,consensus,B,B,2,2
@@ -32383,7 +32376,6 @@ OIL,Olive,italy,Tuns,import,1887,10994.0,423386.0,consensus,B,B,2,2
 OIL,Olive,austrian territories,Tuns,import,1887,679.0,24621.0,consensus,B,B,2,2
 OIL,Olive,greece,Tuns,import,1887,347.0,11991.0,consensus,B,B,2,2
 OIL,Olive,turkey,Tuns,import,1887,5653.0,187338.0,consensus,B,B,2,2
-OIL,Olive,tunis,Tuns,import,1887,936.0,33598.0,consensus,B,B,2,2
 OIL,Olive,morocco,Tuns,import,1887,902.0,28865.0,consensus,B,B,2,2
 OIL,Olive,other foreign countries,Tuns,import,1887,86.0,3244.0,consensus,B,B,2,2
 OIL,Olive,gibraltar,Tuns,import,1887,9.0,241.0,consensus,B,B,2,2
@@ -32395,7 +32387,6 @@ OIL,Palm,portugal,Cwts,import,1887,4134.0,4703.0,consensus,B,B,2,2
 OIL,,united states of america,,import,1887,27614.0,23494.0,consensus,B,B,2,2
 OIL,,other foreign countries,,import,1887,1039.0,1059.0,consensus,B,B,2,2
 OIL,Seed,germany,Tons,import,1887,6562.0,157053.0,consensus,B,B,2,2
-OIL,Seed,holland,Tons,import,1887,1232.0,29825.0,consensus,B,B,2,2
 OIL,Seed,belgium,Tons,import,1887,3055.0,70269.0,consensus,B,B,2,2
 OIL,Seed,france,Tons,import,1887,3013.0,82370.0,consensus,B,B,2,2
 OIL,Seed,portugal,Tons,import,1887,327.0,6935.0,consensus,B,B,2,2
@@ -34795,7 +34786,6 @@ METAL,"Old, fit only to be re-manu- factured",other british possessions,Tons,imp
 "NAPHTHA, WOOD, NOT POTABLE","NITRE, CUBIC",bolivia,Cwts,import,1888,150670.0,74530.0,consensus,B,B,2,2
 "NAPHTHA, WOOD, NOT POTABLE","NITRE, CUBIC",chile,Cwts,import,1888,106700.0,50355.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,germany,Tons,import,1888,173.0,2550.0,consensus,B,B,2,2
-NUTS AND KERNELS,Commonly used for expressing oil therefrom,france,Tons,import,1888,597.0,8497.0,consensus,B,C,2,3
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,portugal,Tons,import,1888,1350.0,12847.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,west africa foreign,Tons,import,1888,18619.0,179889.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,east africa portuguese,Tons,import,1888,697.0,9674.0,consensus,B,B,2,2
@@ -34806,7 +34796,6 @@ NUTS AND KERNELS,Commonly used for expressing oil therefrom,islands in the pacif
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,united states of america,Tons,import,1888,268.0,3434.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,other foreign countries,Tons,import,1888,181.0,2540.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,west africa settlements,Tons,import,1888,4210.0,44165.0,consensus,B,B,2,2
-NUTS AND KERNELS,Commonly used for expressing oil therefrom,the gold coast including lagos,Tons,import,1888,13388.0,134344.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,british possessions in south africa,Tons,import,1888,1288.0,17978.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,british east indies,Tons,import,1888,14102.0,188293.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,australasia,Tons,import,1888,3012.0,39643.0,consensus,B,B,2,2
@@ -34815,7 +34804,6 @@ OIL,Fish: Train or Blubber,russia,Tuns,import,1888,143.0,2292.0,consensus,B,B,2,
 OIL,Fish: Train or Blubber,sweden,Tuns,import,1888,203.0,3385.0,consensus,B,B,2,2
 OIL,Fish: Train or Blubber,norway,Tuns,import,1888,7086.0,128296.0,consensus,B,B,2,2
 OIL,Fish: Train or Blubber,denmark,Tuns,import,1888,509.0,8823.0,consensus,B,B,2,2
-OIL,Fish: Train or Blubber,germany,Tuns,import,1888,308.0,6280.0,consensus,B,C,2,3
 OIL,Fish: Train or Blubber,belgium,Tuns,import,1888,76.0,1240.0,consensus,B,B,2,2
 OIL,Fish: Train or Blubber,portugal,Tuns,import,1888,122.0,2407.0,consensus,B,B,2,2
 OIL,Fish: Train or Blubber,japan,Tuns,import,1888,75.0,1114.0,consensus,B,B,2,2
@@ -34875,7 +34863,6 @@ OIL,,lagos,,import,1888,440662.0,440793.0,consensus,B,B,2,2
 OIL,Seed,denmark,Tons,import,1888,190.0,5730.0,consensus,B,B,2,2
 OIL,Seed,germany,Tons,import,1888,6120.0,159258.0,consensus,B,B,2,2
 OIL,Seed,holland,Tons,import,1888,909.0,21489.0,consensus,B,B,2,2
-OIL,Seed,belgium,Tons,import,1888,4130.0,99205.0,consensus,B,C,2,3
 OIL,Seed,france,Tons,import,1888,3960.0,104580.0,consensus,B,B,2,2
 OIL,Seed,portugal,Tons,import,1888,264.0,5588.0,consensus,B,B,2,2
 OIL,Seed,united states of america,Tons,import,1888,559.0,13608.0,consensus,B,B,2,2
@@ -34891,7 +34878,6 @@ OIL,"Chemical, Essential, or Perfumed",germany,Lbs,import,1888,42646.0,8511.0,co
 OIL,"Chemical, Essential, or Perfumed",holland,Lbs,import,1888,14471.0,6944.0,consensus,B,B,2,2
 OIL,"Chemical, Essential, or Perfumed",belgium,Lbs,import,1888,3150.0,4999.0,consensus,B,B,2,2
 OIL,"Chemical, Essential, or Perfumed",france,Lbs,import,1888,162317.0,37076.0,consensus,B,B,2,2
-OIL,"Chemical, Essential, or Perfumed",italy,Lbs,import,1888,268693.0,63626.0,consensus,B,B,2,2
 OIL,"Chemical, Essential, or Perfumed",turkey,Lbs,import,1888,1857.0,13198.0,consensus,B,B,2,2
 OIL,"Chemical, Essential, or Perfumed",japan,Lbs,import,1888,5730.0,1502.0,consensus,B,B,2,2
 OIL,"Chemical, Essential, or Perfumed",united states of america,Lbs,import,1888,63698.0,29518.0,consensus,B,B,2,2
@@ -36182,7 +36168,6 @@ BRISTLES,,united states of america,Lbs,import,1889,7908.0,1293.0,consensus,B,B,2
 BRISTLES,,other foreign countries,Lbs,import,1889,15944.0,1411.0,consensus,B,B,2,2
 BRISTLES,,british east indies,Lbs,import,1889,210842.0,30391.0,consensus,B,B,2,2
 BRISTLES,,hong kong,Lbs,import,1889,100585.0,12075.0,consensus,B,B,2,2
-BUTTER,,russia,Cwts,import,1889,3393.0,42007.0,consensus,B,B,2,2
 BUTTER,,sweden,Cwts,import,1889,212157.0,1141322.0,consensus,B,B,2,2
 BUTTER,,norway,Cwts,import,1889,5282.0,29550.0,consensus,B,B,2,2
 BUTTER,,denmark,Cwts,import,1889,677398.0,3742869.0,consensus,B,B,2,2
@@ -36193,7 +36178,6 @@ BUTTER,,france,Cwts,import,1889,566524.0,3073473.0,consensus,B,B,2,2
 BUTTER,,united states of america,Cwts,import,1889,110292.0,449222.0,consensus,B,C,2,3
 BUTTER,,other foreign countries,Cwts,import,1889,495.0,2501.0,consensus,B,B,2,2
 BUTTER,,channel islands,Cwts,import,1889,319.0,1757.0,consensus,B,B,2,2
-BUTTER,,british east indies,Cwts,import,1889,1091.0,9063.0,consensus,B,C,2,3
 BUTTER,,australasia,Cwts,import,1889,16315.0,75439.0,consensus,B,B,2,2
 BUTTER,,canada,Cwts,import,1889,22782.0,95159.0,consensus,B,B,2,2
 BUTTER,,other british possessions,Cwts,import,1889,14.0,72.0,consensus,B,B,2,2
@@ -37356,7 +37340,6 @@ NUTS AND KERNELS,Commonly used for expressing oil therefrom,java,Tons,import,188
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,philippine islands,Tons,import,1889,1407.0,18767.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,japan,Tons,import,1889,192.0,1602.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,islands in the pacific except fiji,Tons,import,1889,2193.0,27995.0,consensus,B,B,2,2
-NUTS AND KERNELS,Commonly used for expressing oil therefrom,united states of america,Tons,import,1889,223.0,2277.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,other foreign countries,Tons,import,1889,156.0,2294.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,west africa settlements,Tons,import,1889,4461.0,42482.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,the gold coast including lagos,Tons,import,1889,17223.0,172147.0,consensus,B,B,2,2
@@ -38143,7 +38126,6 @@ TALLOW AND STEARINE,,argentine republic,Cwts,import,1889,115933.0,165035.0,conse
 TALLOW AND STEARINE,,other foreign countries,Cwts,import,1889,1890.0,2570.0,consensus,B,B,2,2
 TALLOW AND STEARINE,,british possessions in south africa,Cwts,import,1889,387.0,445.0,consensus,B,B,2,2
 TALLOW AND STEARINE,,british east indies,Cwts,import,1889,7223.0,11446.0,consensus,B,B,2,2
-TALLOW AND STEARINE,,australasia,Cwts,import,1889,481169.0,551072.0,consensus,B,B,2,2
 TALLOW AND STEARINE,,canada,Cwts,import,1889,10879.0,17555.0,consensus,B,B,2,2
 TALLOW AND STEARINE,,falkland islands,Cwts,import,1889,5052.0,6556.0,consensus,B,B,2,2
 TALLOW AND STEARINE,,other british possessions,Cwts,import,1889,1532.0,1682.0,consensus,B,B,2,2
@@ -40041,7 +40023,6 @@ NUTS AND KERNELS,Commonly used for expressing oil therefrom,islands in the pacif
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,other foreign countries,Tons,import,1890,368.0,6988.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,west africa settlements,Tons,import,1890,7382.0,85678.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,the gold coast including lagos,Tons,import,1890,10674.0,122684.0,consensus,B,B,2,2
-NUTS AND KERNELS,Commonly used for expressing oil therefrom,british possessions in south africa,Tons,import,1890,51.0,633.0,consensus,B,C,2,3
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,british east indies,Tons,import,1890,7757.0,108976.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,australasia,Tons,import,1890,5541.0,85320.0,consensus,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing oil therefrom,other british possessions,Tons,import,1890,128.0,1105.0,consensus,B,C,2,3
@@ -40089,7 +40070,6 @@ OIL,Olive,spain,Tons,import,1890,970.0,37136.0,consensus,B,B,2,2
 OIL,Olive,italy,Tons,import,1890,7768.0,320221.0,consensus,B,B,2,2
 OIL,Olive,austrian territories,Tons,import,1890,425.0,14506.0,consensus,B,B,2,2
 OIL,Olive,greece,Tons,import,1890,384.0,14629.0,consensus,B,B,2,2
-OIL,Olive,turkey,Tons,import,1890,5577.0,219803.0,consensus,B,C,2,3
 OIL,Olive,egypt,Tons,import,1890,392.0,14557.0,consensus,B,B,2,2
 OIL,Olive,morocco,Tons,import,1890,2967.0,106658.0,consensus,B,B,2,2
 OIL,Olive,other foreign countries,Tons,import,1890,159.0,6082.0,consensus,B,B,2,2
@@ -40465,7 +40445,6 @@ COTTON,Tares and Lentils,british east indies,Bushels,import,1890,14452.0,3564.0,
 COTTON,Tares and Lentils,australasia,Bushels,import,1890,3000.0,735.0,consensus,B,B,2,2
 SEEDS,"Unenumerated, for expressing oil therefrom",russia,Quarters,import,1890,20008.0,27273.0,consensus,B,B,2,2
 SEEDS,"Unenumerated, for expressing oil therefrom",germany,Quarters,import,1890,12574.0,24133.0,consensus,B,B,2,2
-SEEDS,"Unenumerated, for expressing oil therefrom",holland,Quarters,import,1890,8717.0,24638.0,consensus,B,C,2,3
 SEEDS,"Unenumerated, for expressing oil therefrom",belgium,Quarters,import,1890,322.0,502.0,consensus,B,B,2,2
 SEEDS,"Unenumerated, for expressing oil therefrom",france,Quarters,import,1890,536.0,1389.0,consensus,B,B,2,2
 SEEDS,"Unenumerated, for expressing oil therefrom",turkey,Quarters,import,1890,2061.0,3941.0,consensus,B,B,2,2
@@ -42818,7 +42797,6 @@ OIL,Seed,belgium,Tons,import,1891,1685.0,125712.0,consensus,B,C,2,3
 OIL,Seed,france,Tons,import,1891,3859.0,120031.0,consensus,B,C,2,3
 OIL,Seed,portugal,Tons,import,1891,86.0,2247.0,consensus,B,B,2,2
 OIL,Seed,japan,Tons,import,1891,489.0,11451.0,consensus,B,B,2,2
-OIL,Seed,united states of america,Tons,import,1891,5283.0,107584.0,consensus,B,C,2,3
 OIL,Seed,other foreign countries,Tons,import,1891,104.0,2666.0,consensus,B,B,2,2
 OIL,Seed,british east indies,Tons,import,1891,45.0,1273.0,consensus,B,B,2,2
 OIL,Seed,other british possessions,Tons,import,1891,5.0,147.0,consensus,B,B,2,2
@@ -45320,7 +45298,6 @@ OIL,Castor,france,Cwts,import,1892,71728.0,98770.0,consensus,B,B,2,2
 OIL,Castor,italy,Cwts,import,1892,5392.0,9336.0,consensus,B,B,2,2
 OIL,Castor,other foreign countries,Cwts,import,1892,436.0,610.0,consensus,B,B,2,2
 OIL,Castor,british east indies,Cwts,import,1892,91891.0,120466.0,consensus,B,B,2,2
-OIL,Coco-Nut,germany,Cwts,import,1892,4688.0,5211.0,consensus,B,C,2,3
 OIL,Coco-Nut,holland,Cwts,import,1892,1549.0,1700.0,consensus,B,B,2,2
 OIL,Coco-Nut,france,Cwts,import,1892,2742.0,3046.0,consensus,B,B,2,2
 OIL,Coco-Nut,other foreign countries,Cwts,import,1892,462.0,570.0,consensus,B,B,2,2
@@ -45362,7 +45339,6 @@ OIL,Chemical. Essential. or Perfumed,belgium,Lbs,import,1892,3477.0,2532.0,conse
 OIL,Chemical. Essential. or Perfumed,france,Lbs,import,1892,158212.0,48328.0,consensus,B,B,2,2
 OIL,Chemical. Essential. or Perfumed,spain,Lbs,import,1892,11175.0,4410.0,consensus,B,B,2,2
 OIL,Chemical. Essential. or Perfumed,italy,Lbs,import,1892,258251.0,87823.0,consensus,B,B,2,2
-OIL,Chemical. Essential. or Perfumed,turkey,Lbs,import,1892,1141.0,9571.0,consensus,B,C,2,3
 OIL,Chemical. Essential. or Perfumed,united states of america,Lbs,import,1892,90101.0,31780.0,consensus,B,B,2,2
 OIL,Chemical. Essential. or Perfumed,other foreign countries,Lbs,import,1892,4556.0,2192.0,consensus,B,B,2,2
 OIL,Chemical. Essential. or Perfumed,british east indies,Lbs,import,1892,503381.0,36925.0,consensus,B,B,2,2
@@ -51901,7 +51877,6 @@ COTTON,Rape,russia,Quarters,import,1895,257077.0,210289.0,consensus,B,B,2,2
 COTTON,Rape,other foreign countries,Quarters,import,1895,1855.0,1373.0,consensus,B,B,2,2
 COTTON,Tares and Lentils,turkey,Bushels,import,1895,15690.0,2354.0,consensus,B,B,2,2
 COTTON,Tares and Lentils,british east indies,Bushels,import,1895,150260.0,28460.0,consensus,B,B,2,2
-COTTON,"Unenumerated, for expressing oil therefrom",russia,Quarters,import,1895,13301.0,18629.0,consensus,B,B,2,2
 COTTON,"Unenumerated, for expressing oil therefrom",germany,Quarters,import,1895,17134.0,27098.0,consensus,B,B,2,2
 COTTON,"Unenumerated, for expressing oil therefrom",holland,Quarters,import,1895,7274.0,28411.0,consensus,B,B,2,2
 COTTON,"Unenumerated, for expressing oil therefrom",france,Quarters,import,1895,1701.0,3953.0,consensus,B,B,2,2
@@ -71213,7 +71188,6 @@ SEEDS,Clover and Grass,other british possessions,Cwts,import,1897,4.0,12.0,conse
 SEEDS,Clover and Grass,denmark,Cwts,import,1898,797.0,1745.0,consensus,B,B,2,2
 SEEDS,Clover and Grass,germany,Cwts,import,1898,47446.0,111229.0,consensus,B,B,2,2
 SEEDS,Clover and Grass,holland,Cwts,import,1898,14727.0,23728.0,consensus,B,B,2,2
-SEEDS,Clover and Grass,belgium,Cwts,import,1898,11813.0,16532.0,consensus,B,C,2,3
 SEEDS,Clover and Grass,france,Cwts,import,1898,72574.0,114945.0,consensus,B,B,2,2
 SEEDS,Clover and Grass,italy,Cwts,import,1898,1648.0,3737.0,consensus,B,B,2,2
 SEEDS,Clover and Grass,united states of america,Cwts,import,1898,155458.0,302566.0,consensus,B,C,2,3
@@ -74323,11 +74297,6 @@ OIL,Train or Blubber,portugal,,import,1874,277.0,13053.0,consensus,C,C,3,3
 OIL,Train or Blubber,united states of america,,import,1874,249.0,8168.0,consensus,C,C,3,3
 OIL,Train or Blubber,northern,,import,1874,1593.0,43048.0,consensus,C,C,3,3
 OIL,Train or Blubber,channel islands,,import,1874,2763.0,82390.0,consensus,C,C,3,3
-OIL,Olive,portugal,,import,1874,159.0,9029.0,consensus,C,C,3,3
-OIL,Olive,tripoli and tunis,,import,1874,554.0,23397.0,consensus,C,C,3,3
-OIL,Olive,morocco,,import,1874,937.0,38679.0,consensus,C,C,3,3
-OIL,Olive,malta,,import,1874,1781.0,72142.0,consensus,C,C,3,3
-OIL,Olive,other countries,,import,1874,811.0,34193.0,consensus,C,C,3,3
 OIL,Turpentine (Oil or Spirit of),germany,Cwts,import,1874,3653.0,4919.0,consensus,C,B,3,2
 OIL,"Chemical, Essential, or Perfumed",straits settlements,,import,1874,68069.0,15364.0,consensus,C,C,3,3
 OIL,"Chemical, Essential, or Perfumed",ceylon,,import,1874,37962.0,16977.0,consensus,C,C,3,3
@@ -76031,7 +76000,6 @@ OIL,Whale Fisheries,portugal,Tuns,import,1886,236.0,11756.0,consensus,C,C,3,3
 "ORE, UNENUMERATED",,canada,,import,1886,8758.0,50556.0,consensus,C,C,3,3
 PAPER,Unenumerated,other british possessions,Cwts,import,1886,133.0,369.0,consensus,C,B,3,2
 COTTON,Rape,madras,Quarters,import,1886,3580.0,6113.0,consensus,C,B,3,2
-SEEDS,"Unenumerated, other sorts",belgium,,import,1886,5482.0,5252.0,consensus,C,B,3,2
 "SKINS, FURS, AND PELTS",Furs,other british possessions,Number,import,1886,2514.0,754.0,consensus,C,B,3,2
 SPONGE,,spanish west india islands,Lbs,import,1886,29499.0,21391.0,consensus,C,C,3,3
 SUCCADES (INCLUDING ALL FRUITS AND VEGETABLES PRESERVED IN SUGAR),,china exclusive of hong kong,Cwts,import,1886,1970.0,3380.0,consensus,C,C,3,3
@@ -77242,7 +77210,6 @@ METAL,Wrought or Manufactured,belgium,Tons. Cwts,import,1894,1327.0,12678.0,cons
 NUTS AND KERNELS,,lagos,,import,1894,26324.0,264442.0,consensus,C,B,3,2
 OIL,Seed,other foreign countries,Tons,import,1894,245.0,5080.0,consensus,C,B,3,2
 OIL,"Chemical, Essential, or Perfumed",turkey,Lbs,import,1894,2554.0,3060.0,consensus,C,B,3,2
-OIL SEED CAKE,Linseed Cake,france,Tons,import,1894,943.0,1813.0,consensus,C,A,3,1
 PLATE OF GOLD,,france,Ozs. Troy,import,1894,6.0,40.0,consensus,C,C,3,3
 RABBITS,,belgium,Owts,import,1894,35978.0,233828.0,consensus,C,B,3,2
 "SAUCES OR CONDIMENTS, UNENUMERATED",,russia,Lbs,import,1894,13958.0,2776.0,consensus,C,B,3,2
@@ -79517,7 +79484,6 @@ NUTS AND KERNELS,Seed,turkey european,Tons,import,1897,41030.0,2022.0,consensus,
 NUTS AND KERNELS,Seed,china,Tons,import,1897,695.0,506.0,consensus,C,C,3,3
 NUTS AND KERNELS,Seed,turkey european,Tons,import,1898,4782.0,54.0,consensus,C,C,3,3
 NUTS AND KERNELS,Seed,china,Tons,import,1898,58.0,20.0,consensus,C,C,3,3
-OIL SEED CAKE,Linseed Cake,bombay,Tons,import,1894,2104.0,14134.0,consensus,C,B,3,2
 OIL SEED CAKE,Linseed Cake,chile,Tons,import,1895,106.0,1103.0,consensus,C,C,3,3
 OIL SEED CAKE,Linseed Cake,austrian territories,Tons,import,1898,794.0,5905.0,consensus,C,B,3,2
 OIL-SEED CAKE,Of other sorts,cyprus,Tons,import,1894,476.0,2037.0,consensus,C,C,3,3
@@ -81415,6 +81381,7 @@ NUTS AND KERNELS,Commonly used for expressing Oil therefrom,Western Coast of Afr
 NUTS AND KERNELS,Castor,British East Indies : Bengal,Cwts,import,1898,31216.0,44462.0,subentry,A,A,1,1
 COTTON,Flax or Linseed,Russia : Northern Ports,Quarters,import,1895,439722.0,720985.0,subentry,A,B,1,2
 COTTON,Flax or Linseed,British East Indies : Madras,Quarters,import,1895,70.0,124.0,subentry,A,A,1,1
+COTTON,Flax or Linseed,British East Indies : Madras,Quarters,import,1896,40.0,60.0,subentry,A,B,1,2
 COTTON,Rape,Russia : Northern Ports,Quarters,import,1895,155.0,177.0,subentry,A,A,1,1
 COTTON,Rape,British East Indies : Bombay,Quarters,import,1897,18574.0,34800.0,subentry,A,A,1,1
 COTTON,Rape,British East Indies : Other British Possessions,Quarters,import,1897,17.0,41.0,subentry,A,A,1,1
@@ -82368,6 +82335,29 @@ OIL,Palm,West Coast of Africa (Foreign) : Not particularly designated,Cwts,impor
 SEEDS,Flax or Linseed,British East Indies : Bengal,Quarters,import,1899,898023.0,1688072.0,human,A,A,1,1
 BUTTERINE,,Holland,Cwts,import,1886,835328.0,2771488.0,human,A,A,1,1
 BUTTER,Margarine (including all kinds of Artificial or Imitation Butters),Holland,Cwts,import,1899,897806.0,2379044.0,human,A,A,1,1
+TALLOW AND STEARINE,,australasia,Cwts,import,1889,431169.0,551072.0,human,A,B,1,2
+OIL,"Chemical, Essential, or Perfumed",italy,Lbs,import,1888,263693.0,63626.0,human,A,B,1,2
+BUTTER,,russia,Cwts,import,1889,8393.0,42007.0,human,A,B,1,2
+OIL SEED CAKE,Linseed Cake,france,Tons,import,1894,343.0,1813.0,human,A,B,1,2
+OIL SEED CAKE,Linseed Cake,bombay,Tons,import,1894,2164.0,14134.0,human,A,B,1,2
+NUTS AND KERNELS,Commonly used for expressing oil therefrom,the gold coast including lagos,Tons,import,1888,13383.0,134344.0,human,A,B,1,2
+COTTON,Flax or Linseed,belgium,Quarters,import,1895,928.0,2603.0,human,A,B,1,2
+SEEDS,"Unenumerated, other sorts",belgium,,import,1886,5432.0,5252.0,human,A,B,1,2
+OIL,Olive,tunis,Tuns,import,1887,986.0,33598.0,human,A,B,1,2
+OIL,Seed,holland,Tons,import,1887,1282.0,29825.0,human,A,B,1,2
+NUTS AND KERNELS,"Unenumerated, commonly used for expressing     Oil therefrom",other countries,Quarters,import,1874,12959.0,41096.0,human,A,B,1,2
+NUTS AND KERNELS,Commonly used for expressing oil therefrom,united states of america,Tons,import,1889,228.0,2277.0,human,A,B,1,2
+COTTON,"Unenumerated, for expressing oil therefrom",russia,Quarters,import,1895,13304.0,18629.0,human,A,B,1,2
+OIL,Olive,France,Tuns,import,1874,159.0,9029.0,human,A,A,1,1
+OIL,Olive,Portugal,Tuns,import,1874,503.0,20963.0,human,A,A,1,1
+OIL,Olive,Spain,Tuns,import,1874,7683.0,328464.0,human,A,A,1,1
+OIL,Olive,Italy,Tuns,import,1874,9728.0,467089.0,human,A,A,1,1
+OIL,Olive,Austrian Territories,Tuns,import,1874,311.0,13412.0,human,A,A,1,1
+OIL,Olive,Greece,Tuns,import,1874,554.0,23397.0,human,A,A,1,1
+OIL,Olive,Tripoli and Tunis,Tuns,import,1874,937.0,38679.0,human,A,A,1,1
+OIL,Olive,Morocco,Tuns,import,1874,1781.0,72142.0,human,A,A,1,1
+OIL,Olive,Malta,Tuns,import,1874,811.0,34193.0,human,A,A,1,1
+OIL,Olive,Other Countries,Tuns,import,1874,253.0,10093.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -87988,6 +87978,18 @@ SPIRITS,Perfumed,United States of America,Gallons,import,1897,1092.0,2476.0,huma
 SPIRITS,Perfumed,Other Foreign Countries,Gallons,import,1897,31.0,137.0,human,B,B,2,2
 SPIRITS,Perfumed,Channel Islands,Gallons,import,1897,1127.0,1988.0,human,B,B,2,2
 SPIRITS,Perfumed,Other British Possessions,Gallons,import,1897,192.0,241.0,human,B,B,2,2
+BUTTER,,british east indies,Cwts,import,1889,1091.0,3063.0,human,B,A,2,1
+COTTON,Flax or Linseed,madras,Quarters,import,1896,40.0,69.0,human,B,A,2,1
+OIL,Olive,turkey,Tons,import,1890,5577.0,213803.0,human,B,A,2,1
+SEEDS,Clover and Grass,belgium,Cwts,import,1898,11813.0,16832.0,human,B,A,2,1
+OIL,Seed,belgium,Tons,import,1888,4130.0,99295.0,human,B,A,2,1
+NUTS AND KERNELS,Commonly used for expressing oil therefrom,france,Tons,import,1888,597.0,8437.0,human,B,A,2,1
+SEEDS,"Unenumerated, for expressing oil therefrom",holland,Quarters,import,1890,8717.0,24633.0,human,B,A,2,1
+OIL,Seed,united states of america,Tons,import,1891,5283.0,107984.0,human,B,A,2,1
+OIL,Chemical. Essential. or Perfumed,turkey,Lbs,import,1892,1141.0,9871.0,human,B,A,2,1
+NUTS AND KERNELS,Commonly used for expressing oil therefrom,british possessions in south africa,Tons,import,1890,51.0,683.0,human,B,A,2,1
+OIL,Coco-Nut,germany,Cwts,import,1892,4688.0,5241.0,human,B,A,2,1
+OIL,Fish: Train or Blubber,germany,Tuns,import,1888,308.0,6289.0,human,B,A,2,1
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
@@ -110138,6 +110140,7 @@ CAOUTCHOUC,,West Coast of Africa (Foreign) : Portuguese Possessions,Cwts,import,
 CAOUTCHOUC,,West Coast of Africa (Foreign) : Not particularly designated,Cwts,import,1874,13297.0,90937.0,subentry,C,C,3,3
 NUTS AND KERNELS,Commonly used for expressing Oil therefrom,West Coast of Africa (Foreign) : British Possessions on the River             Gambia,Tons,import,1874,2378.0,30317.0,subentry,C,B,3,2
 NUTS AND KERNELS,Commonly used for expressing Oil therefrom,West Coast of Africa (Foreign) : Australia,Tons,import,1874,189.0,2426.0,subentry,C,C,3,3
+NUTS AND KERNELS,Commonly used for expressing Oil therefrom,West Coast of Africa (Foreign) : Other Countries,Tons,import,1874,1081.0,17736.0,subentry,C,C,3,3
 COFFEE,,British India : Bombay and Scinde,Cwts,import,1875,22700.0,112875.0,subentry,C,C,3,3
 COFFEE,,COLLODION : From all Countries,Gallons,import,1875,128.0,128.0,subentry,C,C,3,3
 COFFEE,,"ETHER, SULPHURIC : From all Countries",Gallons,import,1875,2503.0,1134.0,subentry,C,C,3,3
@@ -110429,6 +110432,7 @@ IRON AND STEEL,"Old Broken, and Old Cast Iron and Steel",Australasia : Other Bri
 LARD,,United States of America : Atlantic,Cwts,import,1894,1374688.0,2706653.0,subentry,C,C,3,3
 LEATHER,Undressed,British East Indies : Ceylon,Lbs,import,1894,275173.0,9611.0,subentry,C,B,3,2
 LEATHER,Dressed,Australasia : New South Wales,Lbs,import,1894,69787.0,4272.0,subentry,C,B,3,2
+OIL SEED-CAKE,Linseed Cake,British East Indies : Bombay,Tons,import,1894,2161.0,14184.0,subentry,C,B,3,2
 SEEDS,"Unenumerated, other sorts",British East Indies : Bombay,Cwts,import,1894,76192.0,22280.0,subentry,C,C,3,3
 SEEDS,"Unenumerated, other sorts",British East Indies : Other British East       Indian Possessions,Cwts,import,1894,780.0,853.0,subentry,C,C,3,3
 SEEDS,"Unenumerated, other sorts",British East Indies : Other British Possessions,Cwts,import,1894,1672.0,1119.0,subentry,C,C,3,3
