@@ -55,7 +55,7 @@ The map now suppresses these (`scripts/detect_profile_outliers.py`, which
 generalises the case: 137 commodity-years across the dataset), leaving 1873 at
 43,170 loads. **The source tables still carry them.**
 
-## Queued: country-shifted duplicate cells, 1875/1876/1884
+## FIXED: country-shifted duplicate cells, 1875/1876/1884
 
 The same quantity appears twice in one year — once under a plausible origin in
 `Load`, once under a *different* origin with the unit lost:
@@ -69,8 +69,20 @@ The same quantity appears twice in one year — once under a plausible origin in
 ```
 
 A second parse of the same rows with the country column slipped by one. The
-quantity side is unaffected (the map takes the dominant unit, `Load`) but the
-**value side double-counts** those years. The `Load` copy is the reliable one.
+quantity side was unaffected (consumers take the dominant unit, `Load`) but
+the **value side double-counted** those years.
+
+Fixed in `build_viz_payload.drop_shifted_duplicates`, which turned out to
+cover a much wider class than teak: **572 cells across 74 commodities,
+GBP37.8M of duplicated value**. 421 are same-country — the second parse lost
+only the unit header — and 151 lost the column alignment as well. The
+fingerprint is that the quantity AND the value match to the digit, which two
+genuinely different origins do not do; for the cross-country case a floor of
+GBP100 and 10 units applies, because small round pairs really can coincide.
+The labelled copy is kept: it is the one that still has its unit, and where
+the two disagree about the country it is also the one that is right — teak's
+bulk belongs to Bengal And Burmah, not to the Straits entrepot or to Bombay on
+the wrong coast of India. Log: `reports/shifted_duplicate_cells.csv`.
 
 ## Queued: a one-digit disagreement in the 1866 total
 

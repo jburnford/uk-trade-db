@@ -255,6 +255,77 @@ def display(g_base, qual, article):
     return g or tail or '(unlabelled)'
 
 
+# ---- shifted-duplicate dedupe: the SAME printed row parsed twice ----
+# The dedupe above keys on (country, unit, year), so it cannot see a
+# duplicate that landed under a different country or a different unit —
+# and that is what a second parse of the same table produces. The unit
+# header is lost, and the country column comes out misaligned:
+#
+#   teak 1876   Bengal And Burmah  Load 34,416 / 407,444
+#               Straits Settlements   ?  34,416 / 407,444   <- same row
+#   teak 1876   Straits Settlements Load    810 /   9,088
+#               Other Countries       ?     810 /   9,088   <- same row
+#
+# Both the quantity AND the value match to the digit, which is what makes
+# this safe to act on: two genuinely different origins agreeing on both
+# numbers in the same year does not happen. The same fingerprint also
+# catches the milder case where the country is merely spelled differently
+# ('Mauritius' / 'Mauritius And Dependencies', 'French Possessions' /
+# 'French') rather than slipped outright.
+#
+# The labelled copy is kept. It is the one that still has its unit, and
+# where the two disagree about the country it is also the one that is
+# right: teak's bulk belongs to Bengal And Burmah, not to the Straits
+# entrepot or to Bombay on the wrong coast of India. Quantity was already
+# safe (consumers take the dominant unit) but VALUE summed both copies.
+def drop_shifted_duplicates(payload):
+    """Drop '?'-unit cells that repeat a labelled cell's qty AND value in the
+    same commodity-year. The country may be the same (the second parse only
+    lost the unit header) or different (it lost the column alignment too);
+    either way the row is already carried by the labelled copy. Returns the
+    dropped rows for the audit log."""
+    dropped = []
+    for name, e in payload.items():
+        cd = e.get('c') or {}
+        seen = {}                    # (year, qty, value) -> country
+        for cty, units in cd.items():
+            if cty == '\u00a7TOTAL':
+                continue
+            for u, cells in units.items():
+                if u == '?':
+                    continue
+                for c in cells:
+                    if len(c) > 3 and c[1] and c[3]:
+                        seen[(c[0], c[1], c[3])] = cty
+        for cty, units in list(cd.items()):
+            if cty == '\u00a7TOTAL' or '?' not in units:
+                continue
+            keep, out = [], []
+            for c in units['?']:
+                k = (c[0], c[1], c[3]) if len(c) > 3 else None
+                dup = bool(k) and k in seen
+                # Same country: a duplicate however small - it is the same
+                # place, the same year, the same two numbers. A DIFFERENT
+                # country needs the pair to be distinctive before it counts as
+                # evidence, because two unrelated origins really can both ship
+                # 1 unit for GBP5 in the same year; below the floor the pair
+                # proves nothing and the cell is left alone.
+                if dup and seen[k] != cty and (c[3] < 100 or c[1] < 10):
+                    dup = False
+                (out if dup else keep).append(c)
+            if not out:
+                continue
+            dropped.extend((name, c[0], cty, seen[(c[0], c[1], c[3])], c[1], c[3])
+                           for c in out)
+            if keep:
+                units['?'] = keep
+            else:
+                del units['?']
+            if not units:
+                del cd[cty]
+    return dropped
+
+
 def main():
     out = Path(sys.argv[1]) if len(sys.argv) > 1 else BASE / 'exports' / 'viz_payload.json'
     con = duckdb.connect(str(BASE / 'db' / 'uk_trade.duckdb'), read_only=True)
@@ -677,6 +748,17 @@ def main():
                                 row for row in series if row[0] not in have)
         if n_cur:
             print(f'  curation: {n_cur} commodities dropped/folded/renamed')
+    shifted = drop_shifted_duplicates(payload)
+    if shifted:
+        with open(BASE / 'reports' / 'shifted_duplicate_cells.csv', 'w',
+                  newline='') as f:
+            w = csv.writer(f)
+            w.writerow(['commodity', 'year', 'dropped_country', 'kept_country',
+                        'qty', 'value'])
+            w.writerows(sorted(shifted, key=lambda r: (-r[5], r[0], r[1])))
+        print(f'  shifted duplicates dropped: {len(shifted)} '
+              f'-> reports/shifted_duplicate_cells.csv')
+
     # map export: same structure, cells keep the per-country-year value
     # [year, qty, rank, value] for the public map's value/quantity toggle.
     map_out = out.with_name('map_data.json')
