@@ -25,10 +25,17 @@ One row per intruding cell, so build_map_slim can suppress exactly those from
 the map the way it already suppresses impossible origins. The payload itself
 is left alone: the repair belongs in the source tables.
 """
-import json, sys, csv, collections
+import json, sys, csv, re, collections
 
 PAY = 'exports/viz_payload.json'
 OUT = 'reports/origin_profile_outliers.csv'
+
+
+def _key(c):
+    """OCR-tolerant origin key: lowercase alphanumerics with runs of a
+    repeated letter collapsed, so 'Designnated' and 'Designated' agree."""
+    t = re.sub(r'[^a-z0-9]+', '', (c or '').lower())
+    return re.sub(r'(.)\1+', r'\1', t)
 MIN_YEARS = 5             # fewer, and "the other years" is not a profile
 SHARE = 0.5               # majority of the year's quantity from outside it
 MIN_QTY = 500             # ignore trivia
@@ -48,16 +55,22 @@ def main(path=PAY, out=OUT):
                         byyear[y][c] = byyear[y].get(c, 0) + q
         if len(byyear) < MIN_YEARS:
             continue
+        # Count years on an OCR-tolerant key, not the raw label. The same
+        # place is spelled several ways across volumes ('Not Particularly
+        # Designated' / 'Designnated' / 'Design- Nated'), and on the raw label
+        # each variant looks like an origin used in one year only — which is
+        # precisely this detector's signature for a glued block. Palm oil 1887
+        # lost 496,801 cwt, 55% of the year, to that.
         years_of = collections.Counter()
         for y, d in byyear.items():
             for c in d:
-                years_of[c] += 1
+                years_of[_key(c)] += 1
         for y, d in byyear.items():
             tot = sum(d.values())
             if tot < MIN_QTY:
                 continue
             # profile = origins this commodity uses in some OTHER year
-            outside = {c: q for c, q in d.items() if years_of[c] == 1}
+            outside = {c: q for c, q in d.items() if years_of[_key(c)] == 1}
             share = sum(outside.values()) / tot
             if share < SHARE or not outside:
                 continue

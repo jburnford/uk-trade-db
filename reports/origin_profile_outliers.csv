@@ -3,8 +3,6 @@ Coffee — Raw,1880,Prunes From France Other Countries,362501129,380477834,0.99,
 Coffee — Raw,1880,Plums French And Pruneloes From France Other Countries,13029327,380477834,0.99,4,283561505
 Coffee — Raw,1880,Dutch Guiana,77910,380477834,0.99,4,283561505
 Coffee — Raw,1880,Malt Foreign From All Countries,384,380477834,0.99,4,283561505
-Spirits,1879,"Other Unsweetened Spirits - ,,",100957,104113,1.0,2,270977195
-Spirits,1879,"Manufactured, Cigars And Snuff - ,,",3156,104113,1.0,2,270977195
 Spirits,1885,Germany,11360,19284,1.0,8,270977195
 Spirits,1885,France,4327,19284,1.0,8,270977195
 Spirits,1885,Other Foreign Countries,1676,19284,1.0,8,270977195
@@ -52,35 +50,6 @@ Petroleum,1899,Gum Kowrie,316229,295124602,1.0,30,112746849
 Petroleum,1899,Pork Salted,305829,295124602,1.0,30,112746849
 Petroleum,1899,Pork Salted Cts,284720,295124602,1.0,30,112746849
 Petroleum,1899,Plumbago Tons,17497,295124602,1.0,30,112746849
-Oil — Palm,1887,Not Particularly Designnated,496801,968227,0.51,1,109970954
-Oil — Palm,1898,Petroleum Gallons,219249539,246686439,0.93,28,109970954
-Oil — Palm,1898,Paper Including Strawboard And C Ccts,5011241,246686439,0.93,28,109970954
-Oil — Palm,1898,Chemical Essential Or Perfumed Lbs,1893405,246686439,0.93,28,109970954
-Oil — Palm,1898,Paraffine Ccts,946933,246686439,0.93,28,109970954
-Oil — Palm,1898,Palm Ccts,910900,246686439,0.93,28,109970954
-Oil — Palm,1898,Turpentine Ccts,573087,246686439,0.93,28,109970954
-Oil — Palm,1898,Fresh,557602,246686439,0.93,28,109970954
-Oil — Palm,1898,Coco Nut Ccts,307101,246686439,0.93,28,109970954
-Oil — Palm,1898,Pork Salted Ccts,275993,246686439,0.93,28,109970954
-Oil — Palm,1898,Bar,207820,246686439,0.93,28,109970954
-Oil — Palm,1898,Of All Other Kinds Cicts,166152,246686439,0.93,28,109970954
-Oil — Palm,1898,Paper Including Strawboard And C Cicts,106442,246686439,0.93,28,109970954
-Oil — Palm,1898,Seal,37896,246686439,0.93,28,109970954
-Oil — Palm,1898,Pig And Sheet,22274,246686439,0.93,28,109970954
-Oil — Palm,1898,Lard,20203,246686439,0.93,28,109970954
-Oil — Palm,1898,Rabbits Dead,18937,246686439,0.93,28,109970954
-Oil — Palm,1898,Glass Manufactures Bottles Gross,7593,246686439,0.93,28,109970954
-Oil — Palm,1898,Leather,4636,246686439,0.93,28,109970954
-Oil — Palm,1898,Hides Raw Cicts,4226,246686439,0.93,28,109970954
-Oil — Palm,1898,Manufactures Of,2509,246686439,0.93,28,109970954
-Oil — Palm,1898,Seal Tons,1659,246686439,0.93,28,109970954
-Oil — Palm,1898,Jute,407,246686439,0.93,28,109970954
-Oil — Palm,1898,Cutta Percha,55,246686439,0.93,28,109970954
-Oil — Palm,1898,Chemical Essential Or Perfumed,32,246686439,0.93,28,109970954
-Oil — Palm,1898,Quicksilver,25,246686439,0.93,28,109970954
-Oil — Palm,1898,Hay Tons,8,246686439,0.93,28,109970954
-Oil — Palm,1898,Gum Lac,4,246686439,0.93,28,109970954
-Oil — Palm,1898,Pork Salted Cicts,4,246686439,0.93,28,109970954
 Roasted Or Ground,1894,British East Indies,17035547,31317763,0.72,6,81107095
 Roasted Or Ground,1894,Portugal,4787326,31317763,0.72,6,81107095
 Roasted Or Ground,1894,Republic Of Colombia,452555,31317763,0.72,6,81107095
@@ -94,56 +63,44 @@ Roasted Or Ground,1894,Denmark,61,31317763,0.72,6,81107095
 Fruit,1885,British East Indies,780419,806736,1.0,3,55388625
 Fruit,1885,Australasia,13404,806736,1.0,3,55388625
 Fruit,1885,Canada,12913,806736,1.0,3,55388625
-Fruit,1897,Of All Other Kinds Carts,174182,563564,0.51,8,55388625
-Fruit,1897,"Glass Manufactures, Bottles",49811,563564,0.51,8,55388625
-Fruit,1897,Of All Other Kinds . . Casks,26458,563564,0.51,8,55388625
-Fruit,1897,"Hides, Raw",16460,563564,0.51,8,55388625
-Fruit,1897,Hay,9735,563564,0.51,8,55388625
-Fruit,1897,"Glass Manufactures, Bottles . . . . Gross",8174,563564,0.51,8,55388625
-Fruit,1897,Preserved Without Sugar (Not Dried,2947,563564,0.51,8,55388625
-Fruit,1897,"Hides, Raw . . . . . . . . Casks",57,563564,0.51,8,55388625
-Fruit,1899,Preserved Without Sugar Not Dried Lbs,63510823,102370101,0.97,31,55388625
-Fruit,1899,Oranges Bushels,8553718,102370101,0.97,31,55388625
-Fruit,1899,Raw Of All Other Kinds,8100853,102370101,0.97,31,55388625
-Fruit,1899,Apples Raw Bushels,3801172,102370101,0.97,31,55388625
-Fruit,1899,Of All Other Kinds Cts,2567010,102370101,0.97,31,55388625
-Fruit,1899,Oranges,2152233,102370101,0.97,31,55388625
-Fruit,1899,Glass Manufactures Bottles Gross,1266939,102370101,0.97,31,55388625
-Fruit,1899,Hides Raw Cts,1210273,102370101,0.97,31,55388625
-Fruit,1899,Apples Raw,1186143,102370101,0.97,31,55388625
-Fruit,1899,Grapes Raw,1167047,102370101,0.97,31,55388625
-Fruit,1899,Lemons,1088503,102370101,0.97,31,55388625
-Fruit,1899,Preserved Without Sugar Not Dried,746105,102370101,0.97,31,55388625
-Fruit,1899,Plums Raw,658273,102370101,0.97,31,55388625
-Fruit,1899,Nuts Used As Fruit,608658,102370101,0.97,31,55388625
-Fruit,1899,Ice Tons,595142,102370101,0.97,31,55388625
-Fruit,1899,Almonds,514023,102370101,0.97,31,55388625
-Fruit,1899,Dried Unenumerated Cuts,462575,102370101,0.97,31,55388625
-Fruit,1899,Fruits And Vegetables Preserved In Sugar,411674,102370101,0.97,31,55388625
-Fruit,1899,Dried Unenumerated,327600,102370101,0.97,31,55388625
-Fruit,1899,Fruits And Vegetables Preserved In Sugar Cuts,203001,102370101,0.97,31,55388625
-Fruit,1899,Of All Other Kinds Cuts,153542,102370101,0.97,31,55388625
-Fruit,1899,Almonds Cuts,140153,102370101,0.97,31,55388625
-Fruit,1899,Hay Tons,131546,102370101,0.97,31,55388625
-Fruit,1899,Gum Kowrie,116955,102370101,0.97,31,55388625
-Fruit,1899,Lac,108758,102370101,0.97,31,55388625
-Fruit,1899,Fruit And Vegetables Preserved In Sugar,11719,102370101,0.97,31,55388625
-Fruit,1899,Fruits And Vegetables Preserved In Sugar Cts,6338,102370101,0.97,31,55388625
-Fruit,1899,Hides Raw Cuts,5764,102370101,0.97,31,55388625
-Fruit,1899,Fruits And Vegetables Preserved Cuts,2690,102370101,0.97,31,55388625
-Fruit,1899,Dried Unenumerated Cts,18,102370101,0.97,31,55388625
-Fruit,1899,Fruit And Vegetables Preserved In Sugar Cuts,10,102370101,0.97,31,55388625
+Fruit,1899,Preserved Without Sugar Not Dried Lbs,63510823,102370101,0.96,29,55388625
+Fruit,1899,Oranges Bushels,8553718,102370101,0.96,29,55388625
+Fruit,1899,Raw Of All Other Kinds,8100853,102370101,0.96,29,55388625
+Fruit,1899,Apples Raw Bushels,3801172,102370101,0.96,29,55388625
+Fruit,1899,Of All Other Kinds Cts,2567010,102370101,0.96,29,55388625
+Fruit,1899,Oranges,2152233,102370101,0.96,29,55388625
+Fruit,1899,Hides Raw Cts,1210273,102370101,0.96,29,55388625
+Fruit,1899,Apples Raw,1186143,102370101,0.96,29,55388625
+Fruit,1899,Grapes Raw,1167047,102370101,0.96,29,55388625
+Fruit,1899,Lemons,1088503,102370101,0.96,29,55388625
+Fruit,1899,Plums Raw,658273,102370101,0.96,29,55388625
+Fruit,1899,Nuts Used As Fruit,608658,102370101,0.96,29,55388625
+Fruit,1899,Ice Tons,595142,102370101,0.96,29,55388625
+Fruit,1899,Almonds,514023,102370101,0.96,29,55388625
+Fruit,1899,Dried Unenumerated Cuts,462575,102370101,0.96,29,55388625
+Fruit,1899,Fruits And Vegetables Preserved In Sugar,411674,102370101,0.96,29,55388625
+Fruit,1899,Dried Unenumerated,327600,102370101,0.96,29,55388625
+Fruit,1899,Fruits And Vegetables Preserved In Sugar Cuts,203001,102370101,0.96,29,55388625
+Fruit,1899,Of All Other Kinds Cuts,153542,102370101,0.96,29,55388625
+Fruit,1899,Almonds Cuts,140153,102370101,0.96,29,55388625
+Fruit,1899,Hay Tons,131546,102370101,0.96,29,55388625
+Fruit,1899,Gum Kowrie,116955,102370101,0.96,29,55388625
+Fruit,1899,Lac,108758,102370101,0.96,29,55388625
+Fruit,1899,Fruit And Vegetables Preserved In Sugar,11719,102370101,0.96,29,55388625
+Fruit,1899,Fruits And Vegetables Preserved In Sugar Cts,6338,102370101,0.96,29,55388625
+Fruit,1899,Hides Raw Cuts,5764,102370101,0.96,29,55388625
+Fruit,1899,Fruits And Vegetables Preserved Cuts,2690,102370101,0.96,29,55388625
+Fruit,1899,Dried Unenumerated Cts,18,102370101,0.96,29,55388625
+Fruit,1899,Fruit And Vegetables Preserved In Sugar Cuts,10,102370101,0.96,29,55388625
 "Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse",1884,West Africa British Portuguese Not Distin Guished,3001712531,3001770558,1.0,2,55237121
 "Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse",1884,East Coast Of Africa Portuguese Native,51521,3001770558,1.0,2,55237121
-Biscuit And Bread,1876,Bombay And Scindebengal And Burmah,12663701,12776040,0.99,4,52143734
-Biscuit And Bread,1876,Other Countries,27143,12776040,0.99,4,52143734
-Biscuit And Bread,1876,Ceylon,2625,12776040,0.99,4,52143734
-Biscuit And Bread,1876,British West India Islands And Britishguiana,2501,12776040,0.99,4,52143734
+Biscuit And Bread,1876,Bombay And Scindebengal And Burmah,12663701,12776040,0.99,3,52143734
+Biscuit And Bread,1876,Other Countries,27143,12776040,0.99,3,52143734
+Biscuit And Bread,1876,Ceylon,2625,12776040,0.99,3,52143734
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Other Foreign Countries,1657113,2548852,0.72,2,51320916
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Belgium,166866,2548852,0.72,2,51320916
 "Spirits — Unenumerated, Sweetened Or Mixed (Tested)",1883,United States Of America British West India Islands,31853635,31884387,1.0,2,50651924
 "Spirits — Unenumerated, Sweetened Or Mixed (Tested)",1883,Other Countries,1032,31884387,1.0,2,50651924
-"Spirits — Unenumerated, Sweetened Or Mixed (Tested)",1885,British West Indiaislands,4188,6481,0.65,1,50651924
 "Spirits — Unenumerated, Sweetened Or Mixed (Tested)",1886,Italy,13807,19569,0.71,1,50651924
 Fruit — Raisins,1879,China,141644277,192323117,0.95,14,40226566
 Fruit — Raisins,1879,Bengal And Burmah,38007628,192323117,0.95,14,40226566
@@ -231,28 +188,26 @@ Iron,1878,Russia,8051,1218736,1.0,9,17210964
 Iron,1878,Turkey,3874,1218736,1.0,9,17210964
 Iron,1890,Norway,356282,356341,1.0,2,17210964
 Iron,1890,Other Foreign Countries,59,356341,1.0,2,17210964
-Iron,1897,"Linen, Yarn",213964,864932,0.99,22,17210964
-Iron,1897,"Manufactures, Of All Kinds",168426,864932,0.99,22,17210964
-Iron,1897,"Meat, Unenumerated, Salted Or Fresh Carts",139573,864932,0.99,22,17210964
-Iron,1897,Nitrate Of Soda,89267,864932,0.99,22,17210964
-Iron,1897,Musical Instruments,46429,864932,0.99,22,17210964
-Iron,1897,Boots And Shoes,41049,864932,0.99,22,17210964
-Iron,1897,"Milk, Condensed",27752,864932,0.99,22,17210964
-Iron,1897,Land,22926,864932,0.99,22,17210964
-Iron,1897,Manufactures,17638,864932,0.99,22,17210964
-Iron,1897,Phosphate Of Lime And Rock,17375,864932,0.99,22,17210964
-Iron,1897,"Lead, Pig And Sheet",15963,864932,0.99,22,17210964
-Iron,1897,"Metal, Unenumerated, Wrought",14972,864932,0.99,22,17210964
-Iron,1897,Matches,10724,864932,0.99,22,17210964
-Iron,1897,"Preserved, Not Salted",10649,864932,0.99,22,17210964
-Iron,1897,Lard . . . . . . . . . . . Casks,4104,864932,0.99,22,17210964
-Iron,1897,"Manufactures, Unenumerated",3995,864932,0.99,22,17210964
-Iron,1897,"Meat, Unenumerated, Salted Or Fresh",3600,864932,0.99,22,17210964
-Iron,1897,Gloves,2576,864932,0.99,22,17210964
-Iron,1897,"Milk, Condensed . . . . . . Casks",601,864932,0.99,22,17210964
-Iron,1897,Boots And Shoes . . . . Doz. Prs,541,864932,0.99,22,17210964
-Iron,1897,"Manganese, Ore Of",59,864932,0.99,22,17210964
-Iron,1897,Leather . . . . . . . . . . Casks,23,864932,0.99,22,17210964
+Iron,1897,"Linen, Yarn",213964,864932,0.77,20,17210964
+Iron,1897,"Meat, Unenumerated, Salted Or Fresh Carts",139573,864932,0.77,20,17210964
+Iron,1897,Nitrate Of Soda,89267,864932,0.77,20,17210964
+Iron,1897,Musical Instruments,46429,864932,0.77,20,17210964
+Iron,1897,Boots And Shoes,41049,864932,0.77,20,17210964
+Iron,1897,"Milk, Condensed",27752,864932,0.77,20,17210964
+Iron,1897,Land,22926,864932,0.77,20,17210964
+Iron,1897,Manufactures,17638,864932,0.77,20,17210964
+Iron,1897,Phosphate Of Lime And Rock,17375,864932,0.77,20,17210964
+Iron,1897,"Metal, Unenumerated, Wrought",14972,864932,0.77,20,17210964
+Iron,1897,Matches,10724,864932,0.77,20,17210964
+Iron,1897,"Preserved, Not Salted",10649,864932,0.77,20,17210964
+Iron,1897,Lard . . . . . . . . . . . Casks,4104,864932,0.77,20,17210964
+Iron,1897,"Manufactures, Unenumerated",3995,864932,0.77,20,17210964
+Iron,1897,"Meat, Unenumerated, Salted Or Fresh",3600,864932,0.77,20,17210964
+Iron,1897,Gloves,2576,864932,0.77,20,17210964
+Iron,1897,"Milk, Condensed . . . . . . Casks",601,864932,0.77,20,17210964
+Iron,1897,Boots And Shoes . . . . Doz. Prs,541,864932,0.77,20,17210964
+Iron,1897,"Manganese, Ore Of",59,864932,0.77,20,17210964
+Iron,1897,Leather . . . . . . . . . . Casks,23,864932,0.77,20,17210964
 Wood And Timber — Staves,1888,Australasia,141841,282928,0.5,1,15404033
 "Drugs — Bark, Peruvian",1882,Turkey,359560,587635,0.7,2,12443774
 "Drugs — Bark, Peruvian",1882,Persia,54442,587635,0.7,2,12443774
@@ -327,8 +282,6 @@ Oil — Train Or Blubber,1886,Other Foreign Countries,204,1307,0.83,4,4664445
 "Mutton, Fresh — From Australasia",1892,Peru,286700,2401400,1.0,4,4312562
 "Mutton, Fresh — From Australasia",1892,Germany,29301,2401400,1.0,4,4312562
 "Mutton, Fresh — From Australasia",1892,Other Foreign Countries,5775,2401400,1.0,4,4312562
-Caoutchouc — West Africa,1885,Not Particularly Desig-Nated,15830,15830,1.0,1,4134243
-Caoutchouc — West Africa,1886,Not Particularly Design-Nated,18689,23813,0.78,1,4134243
 Caoutchouc — West Africa,1891,Brazil,109456,211167,0.9,10,4134243
 Caoutchouc — West Africa,1891,United States Of America,28517,211167,0.9,10,4134243
 Caoutchouc — West Africa,1891,The Gold Coast Colony,22406,211167,0.9,10,4134243
@@ -391,10 +344,6 @@ Sago And Sago Flour,1890,Other British Possessions,11,1106075,0.5,6,3032962
 "Tobacco — White, Total Of",1894,Other Foreign Countries,5956,4822537,0.98,13,2981141
 "Tobacco — White, Total Of",1894,Turkey,2378,4822537,0.98,13,2981141
 "Tobacco — White, Total Of",1894,Other Colonies,290,4822537,0.98,13,2981141
-"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,Hayti And St. Domingo,8664,40435,0.55,4,2854074
-"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,West Coast Of Africa (Foreign,6450,40435,0.55,4,2854074
-"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,British West Indies And Guiana,4461,40435,0.55,4,2854074
-"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,British Honduras,2699,40435,0.55,4,2854074
 Whalebone (Whalefins) — Whale Fisheries,1888,Germany,440768,1592637,1.0,11,2608319
 Whalebone (Whalefins) — Whale Fisheries,1888,Fir,310522,1592637,1.0,11,2608319
 Whalebone (Whalefins) — Whale Fisheries,1888,Russia,277021,1592637,1.0,11,2608319
@@ -406,8 +355,6 @@ Whalebone (Whalefins) — Whale Fisheries,1888,France,34736,1592637,1.0,11,26083
 Whalebone (Whalefins) — Whale Fisheries,1888,Oak,5347,1592637,1.0,11,2608319
 Whalebone (Whalefins) — Whale Fisheries,1888,United States Of America,694,1592637,1.0,11,2608319
 Whalebone (Whalefins) — Whale Fisheries,1888,West Africa Settlements,3,1592637,1.0,11,2608319
-Glass — Common Bottles,1887,"British West India Islands, And British Guiana",50686,61671,1.0,2,2606714
-Glass — Common Bottles,1887,Other British Possessions,10985,61671,1.0,2,2606714
 "Fruit — Unenumerated, Sweetened, Or Mixed (Tested)",1896,China,31115707,32823613,1.0,5,2467527
 "Fruit — Unenumerated, Sweetened, Or Mixed (Tested)",1896,Java,980084,32823613,1.0,5,2467527
 "Fruit — Unenumerated, Sweetened, Or Mixed (Tested)",1896,Macao,497091,32823613,1.0,5,2467527
@@ -575,7 +522,6 @@ Metal,1895,Chile,51,2857,0.67,5,158605
 Metal,1895,Other British Possessions,18,2857,0.67,5,158605
 "Arms, Ammunition, And Military Stores — Revolvers",1886,British Possessions,3570,3570,1.0,1,71149
 "Arms, Ammunition, And Military Stores — Revolvers",1887,Other British Possessions,1635,1635,1.0,1,71149
-Chicory — Roasted Or Ground In Bond,1883,British Possessions In Southafrica,417464,775549,0.54,1,66909
 Corn And Grain — Rye Meal,1878,Germany,55453,56322,1.0,2,62817
 Corn And Grain — Rye Meal,1878,Other Countries,869,56322,1.0,2,62817
 Beads — Unenumerated,1879,Other Countries,100584,100584,1.0,1,52026

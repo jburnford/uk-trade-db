@@ -226,7 +226,8 @@ ALIAS = {
     'The Cape Of Good Hope': 'Cape Of Good Hope',
 }
 outliers = []
-junk = []            # origin cells that exceed the national anchor (log)
+junk = []
+totals_as_origin = []            # origin cells that exceed the national anchor (log)
 value_dropped = []       # per-cell values over CAP (corrupt, not large)
 quality = []             # (commodity, [flag,...]) for the audit report
 unit_alias = []          # origin/anchor unit labels that measure the same thing
@@ -385,9 +386,51 @@ for n in wl:
     # GBP2.0M against GBP21.8M in 1893 for a similar tonnage), so the test was
     # deciding the quantity axis on a number it never shows.
     drop = set()
+    # ---- printed-Total-as-origin filter: an "origin" whose quantity is the
+    # year's whole national total is the table's Total row, parsed as a
+    # country. The parser renames a Total to whatever region context is open
+    # ('From West Coast of Africa (Foreign):' over palm oil's 1875 members),
+    # and its guard - Total more than twice the context's own sum - cannot
+    # fire when the context spans the entire block. The impossible-origin
+    # filter below steps over it too, because it only looks above 1.15x.
+    #
+    # Self-validating, so it cannot misfire on a commodity that genuinely has
+    # one origin: the cell goes only when the REMAINING cells already account
+    # for most of the anchor, i.e. only when dropping it makes the year close.
+    # It runs BEFORE the parent/child de-duplication below, which weighs each
+    # parent against its children by how close the year then lands to the
+    # anchor: with the phantom still in the sum that comparison is made against
+    # a total twice its true size and picks the wrong side (palm oil 1875 lost
+    # The Gold Coast, 123,166 cwt, that way).
+    for y in sorted({yy for (_, yy) in ly}):
+        t = t1.get(y, 0)
+        if t <= 1000:
+            continue
+        cells = [(c, v) for (c, yy), v in ly.items()
+                 if yy == y and (c, y) not in drop]
+        for c, cell in cells:
+            # EXACT, not approximate: a printed Total row carries the anchor
+            # to the digit. At 0.5% the test also swept up genuine dominant
+            # origins that merely sit near the total (jute's Bengal, hops from
+            # the United States), which are the parent/child pass's business,
+            # not this one.
+            if not cell[1] or abs(cell[1] - t) > 0.0005 * t:
+                continue
+            rest = sum(v[1] for cc, v in cells if cc != c)
+            if rest >= 0.5 * t:
+                totals_as_origin.append(
+                    {'commodity': n, 'year': y, 'origin': c,
+                     'qty': round(cell[1]), 'anchor': round(t),
+                     'others_sum': round(rest)})
+                drop.add((c, y))
+                break
+
     years = {y for (_c, y) in ly}
     for y in years:
-        present = {c for (c, yy) in ly if yy == y}
+        # cells already dropped above must not weigh in here: a phantom Total
+        # left in `present` doubles the year's sum and flips the parent/child
+        # choice below
+        present = {c for (c, yy) in ly if yy == y and (c, y) not in drop}
         groups = [(pa, kids) for pa in present
                   if (kids := [k for k in children_of.get(pa, ()) if k in present])]
         if not groups:
@@ -614,6 +657,13 @@ with open('reports/junk_origin_cells.csv', 'w', newline='') as f:
                                       'value', 'qty'])
     w.writeheader()
     w.writerows(sorted(junk, key=lambda r: -r['value']))
+with open('reports/total_row_as_origin.csv', 'w', newline='') as f:
+    w = csv.DictWriter(f, fieldnames=['commodity', 'year', 'origin', 'qty',
+                                      'anchor', 'others_sum'])
+    w.writeheader()
+    w.writerows(sorted(totals_as_origin, key=lambda r: -r['qty']))
+print(f'printed-Total rows parsed as origins: {len(totals_as_origin)}'
+      f' -> reports/total_row_as_origin.csv')
 print(f'junk-origin cells dropped (commodity names as countries): {len(junk)}'
       f' -> reports/junk_origin_cells.csv')
 print(f'impossible-origin cells dropped: {len(outliers)} -> reports/origin_outliers.csv')
