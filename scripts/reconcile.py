@@ -132,8 +132,16 @@ def match_cells(ch, inf):
     return pairs, ch_un, inf_un
 
 
-def main():
-    con = duckdb.connect(str(BASE / 'db' / 'uk_trade.duckdb'))
+def build_series(con):
+    """Match the two engines cell-by-cell and group the results into
+    canonical series-years.
+
+    Returns {(flow, measure, group, article, year):
+             [(status, value, unit, grp, art, volume, readings)]}.
+    `readings` is [(engine, value), ...] — both engines for a matched pair,
+    one for a single-key cell. reconcile's vote ignores it, but the
+    cross-volume disagreement report needs every engine's number, not just
+    the Chandra one the verdict carries."""
     ch = load(con, 'abstract_obs')
     inf = load(con, 'infinity_obs')
     print(f'chandra cells: {len(ch):,}   infinity cells: {len(inf):,}')
@@ -148,17 +156,18 @@ def main():
     for ck, ik in pairs:
         cv, unit, grp, art = ch[ck]
         iv = inf[ik][0]
+        reads = [('ch', cv), ('inf', iv)]
         if abs(cv - iv) < 0.5:
-            verdict[ck] = ('verified', cv, unit, grp, art)
+            verdict[ck] = ('verified', cv, unit, grp, art, reads)
             n['verified'] += 1
         else:
-            verdict[ck] = ('engine_dis', cv, unit, grp, art)
+            verdict[ck] = ('engine_dis', cv, unit, grp, art, reads)
             n['engine_dis'] += 1
     for k, (v, unit, grp, art) in ch_un.items():
-        verdict[k] = ('single', v, unit, grp, art)
+        verdict[k] = ('single', v, unit, grp, art, [('ch', v)])
         n['single_chandra'] += 1
     for k, (v, unit, grp, art) in inf_un.items():
-        verdict.setdefault(k, ('single', v, unit, grp, art))
+        verdict.setdefault(k, ('single', v, unit, grp, art, [('inf', v)]))
         n['single_infinity'] += 1
     both = n['verified'] + n['engine_dis']
     print(f'cells in both keys: {both:,}  '
@@ -183,9 +192,15 @@ def main():
         return g, sa
 
     series = defaultdict(list)
-    for (vol, flow, meas, g, a, y), (st, v, unit, grp, art) in verdict.items():
+    for (vol, flow, meas, g, a, y), (st, v, unit, grp, art, rd) in verdict.items():
         cg, ca = canon(flow, meas, g, a)
-        series[(flow, meas, cg, ca, y)].append((st, v, unit, grp, art, vol))
+        series[(flow, meas, cg, ca, y)].append((st, v, unit, grp, art, vol, rd))
+    return series
+
+
+def main():
+    con = duckdb.connect(str(BASE / 'db' / 'uk_trade.duckdb'))
+    series = build_series(con)
 
     # ---------------- page-adjudicated Tier-1 overrides
     t1_override, _override_hit = {}, set()
