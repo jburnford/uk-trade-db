@@ -1,10 +1,4 @@
 article_group,article,country,unit,flow,year,quantity,value,source,q_tier,v_tier,q_rank,v_rank
-SUGAR,Unrefined; Beetroot,denmark,Cwts,import,1883,96.0,93.0,consensus,A,A,1,1
-SUGAR,Unrefined; Beetroot,germany,Cwts,import,1883,6371031.0,6308645.0,consensus,A,A,1,1
-SUGAR,Unrefined; Beetroot,holland,Cwts,import,1883,198444.0,198036.0,consensus,A,A,1,1
-SUGAR,Unrefined; Beetroot,belgium,Cwts,import,1883,1461953.0,1472356.0,consensus,A,A,1,1
-SUGAR,Unrefined; Beetroot,france,Cwts,import,1883,213727.0,257420.0,consensus,A,A,1,1
-SUGAR,Unrefined; Beetroot,portugal,Cwts,import,1883,56.0,52.0,consensus,A,A,1,1
 CHEMICAL MANUFACTURES AND PRODUCTS,"Vegetable Matter, applicable     to the uses of Chicory or     Coffee",germany,Cwts,import,1890,27.0,69.0,consensus,A,A,1,1
 CHEMICAL MANUFACTURES AND PRODUCTS,"Vegetable Matter, applicable     to the uses of Chicory or     Coffee",holland,Cwts,import,1890,4.0,10.0,consensus,A,A,1,1
 TOBACCO,Burgundy,holland,Gallons,import,1893,72.0,66.0,consensus,A,A,1,1
@@ -24267,16 +24261,6 @@ SUGAR,"Refined, or rendered by any process equal thereto; Total of",united state
 SUGAR,"Refined, or rendered by any process equal thereto; Total of",british guiana,Cwts,import,1883,5468.0,7622.0,consensus,B,B,2,2
 SUGAR,"Refined, or rendered by any process equal thereto; Total of",brazil,Cwts,import,1883,2704.0,3380.0,consensus,B,B,2,2
 SUGAR,"Refined, or rendered by any process equal thereto; Total of",other countries,Cwts,import,1883,1013.0,1305.0,consensus,B,B,2,2
-SUGAR,Unrefined; Beetroot,danish west india islands,Cwts,import,1883,26006.0,25890.0,consensus,B,B,2,2
-SUGAR,Unrefined; Beetroot,mexico,Cwts,import,1883,40051.0,43203.0,consensus,B,B,2,2
-SUGAR,Unrefined; Beetroot,central america,Cwts,import,1883,2929.0,2968.0,consensus,B,B,2,2
-SUGAR,Unrefined; Beetroot,united states of colombia,Cwts,import,1883,23426.0,23893.0,consensus,B,B,2,2
-SUGAR,Unrefined; Beetroot,peru,Cwts,import,1883,462923.0,470819.0,consensus,B,B,2,2
-SUGAR,Unrefined; Beetroot,chile,Cwts,import,1883,112996.0,116860.0,consensus,B,B,2,2
-SUGAR,Unrefined; Beetroot,brazil,Cwts,import,1883,1233846.0,1105700.0,consensus,B,B,2,2
-SUGAR,Unrefined; Beetroot,uruguay,Cwts,import,1883,6200.0,7130.0,consensus,B,B,2,2
-SUGAR,Unrefined; Beetroot,other countries,Cwts,import,1883,195.0,216.0,consensus,B,B,2,2
-SUGAR,Unrefined; Beetroot : Total of,germany,Cwts,import,1883,6532317.0,6319750.0,consensus,B,C,2,3
 SUGAR,Unrefined; Beetroot : Total of,holland,Cwts,import,1883,326836.0,331858.0,consensus,B,C,2,3
 SUGAR,Unrefined; Beetroot : Total of,belgium,Cwts,import,1883,1462143.0,1472541.0,consensus,B,C,2,3
 SUGAR,Unrefined; Beetroot : Total of,france,Cwts,import,1883,245994.0,291472.0,consensus,B,C,2,3
@@ -33006,21 +32990,6 @@ SUGAR,Unrefined : Beetroot,germany,Cwts,import,1887,7646976.0,4515676.0,consensu
 SUGAR,Unrefined : Beetroot,holland,Cwts,import,1887,327195.0,179024.0,consensus,B,B,2,2
 SUGAR,Unrefined : Beetroot,belgium,Cwts,import,1887,1062389.0,635688.0,consensus,B,B,2,2
 SUGAR,Unrefined : Beetroot,france,Cwts,import,1887,50230.0,31089.0,consensus,B,B,2,2
-SUGAR,"Unrefined : Beetroot : Cane, and Other Sorts",germany,Cwts,import,1887,11605.0,8051.0,consensus,B,C,2,3
-SUGAR,"Unrefined : Beetroot : Cane, and Other Sorts",holland,Cwts,import,1887,79813.0,50978.0,consensus,B,C,2,3
-SUGAR,"Unrefined : Beetroot : Cane, and Other Sorts",egypt,Cwts,import,1887,274693.0,155022.0,consensus,B,C,2,3
-SUGAR,Cane and Other Sorts,java,Cwts,import,1887,3200343.0,2085627.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,philippine islands,Cwts,import,1887,460386.0,210438.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,united states of america,Cwts,import,1887,18507.0,10180.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,spanish west india islands,Cwts,import,1887,176611.0,109520.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,dutch guiana,Cwts,import,1887,30007.0,21740.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,danish west india islands,Cwts,import,1887,8976.0,5396.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,mexico,Cwts,import,1887,31853.0,20458.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,central america,Cwts,import,1887,16269.0,8182.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,peru,Cwts,import,1887,439017.0,279088.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,chile,Cwts,import,1887,70335.0,44294.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,brazil,Cwts,import,1887,869843.0,480066.0,consensus,B,B,2,2
-SUGAR,Cane and Other Sorts,other foreign countries,Cwts,import,1887,1026.0,535.0,consensus,B,B,2,2
 SUGAR,SUGAR UNREFINED : Total of,russia,Cwts,import,1887,658.0,370.0,consensus,B,B,2,2
 SUGAR,SUGAR UNREFINED : Total of,denmark,Cwts,import,1887,26509.0,17010.0,consensus,B,B,2,2
 SUGAR,SUGAR UNREFINED : Total of,germany,Cwts,import,1887,7658481.0,4523727.0,consensus,B,B,2,2
@@ -40772,31 +40741,6 @@ SUGAR,Unrefined: Beetroot,holland,,import,1890,403760.0,231382.0,consensus,B,B,2
 SUGAR,Unrefined: Beetroot,belgium,,import,1890,1301689.0,785371.0,consensus,B,B,2,2
 SUGAR,Unrefined: Beetroot,france,,import,1890,1378320.0,876158.0,consensus,B,B,2,2
 SUGAR,Unrefined: Beetroot,austrian territories,,import,1890,43300.0,28910.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",germany,,import,1890,18661.0,14915.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",holland,,import,1890,26123.0,18930.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",france,,import,1890,15374.0,11288.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",spain,,import,1890,3078.0,2258.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",egypt,,import,1890,149805.0,104990.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",madagascar,,import,1890,6868.0,4843.0,consensus,B,C,2,3
-SUGAR,"Unrefined: Cane, and Other Sorts",java,,import,1890,1377241.0,979886.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",philippine islands,,import,1890,566187.0,300688.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",united states of america,,import,1890,14854.0,10814.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",spanish west india islands,,import,1890,42130.0,31597.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",dutch guiana,,import,1890,55162.0,41193.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",danish west india islands,,import,1890,1755.0,1403.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",hayti and st domingo,,import,1890,8300.0,6225.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",mexico,,import,1890,3604.0,2319.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",peru,,import,1890,607120.0,412246.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",chile,,import,1890,50944.0,36951.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",brazil,,import,1890,430847.0,259369.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",other foreign countries,,import,1890,293.0,209.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",british possessions in south africa,,import,1890,13431.0,7189.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",mauritius,,import,1890,249528.0,157687.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",british east indies,,import,1890,710736.0,367571.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",australasia,,import,1890,21112.0,16105.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",british west india islands,,import,1890,578978.0,420658.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",british guiana,,import,1890,758540.0,597615.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",other british possessions,,import,1890,2193.0,1689.0,consensus,B,B,2,2
 SUGAR,Unrefined: Total of,russia,,import,1890,5383.0,2860.0,consensus,B,B,2,2
 SUGAR,Unrefined: Total of,denmark,,import,1890,2726.0,1639.0,consensus,B,B,2,2
 SUGAR,Unrefined: Total of,germany,,import,1890,6888101.0,4215064.0,consensus,B,B,2,2
@@ -43464,26 +43408,6 @@ SUGAR,Unrefined : Beetroot,holland,Cwts,import,1891,364996.0,220342.0,consensus,
 SUGAR,Unrefined : Beetroot,belgium,Cwts,import,1891,818073.0,493921.0,consensus,B,C,2,3
 SUGAR,Unrefined : Beetroot,france,Cwts,import,1891,1404437.0,940586.0,consensus,B,C,2,3
 SUGAR,Unrefined : Beetroot,austrian territories,Cwts,import,1891,33720.0,22185.0,consensus,B,C,2,3
-SUGAR,"Unrefined: Cane, and Other Sorts",germany,,import,1891,21246.0,19072.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",holland,,import,1891,52963.0,40168.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",france,,import,1891,32846.0,25752.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",italy,,import,1891,10400.0,7960.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",austrian territories,,import,1891,5800.0,4500.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",egypt,,import,1891,236852.0,158674.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",madagascar,,import,1891,10601.0,7253.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",java,,import,1891,2309420.0,1628647.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",philippine islands,,import,1891,1004805.0,542971.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",united states of america,,import,1891,10783.0,7804.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",spanish west india islands,,import,1891,19935.0,15699.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",dutch guiana,,import,1891,32352.0,24956.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",united states of colombia,,import,1891,7459.0,5372.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",ecuador,,import,1891,12490.0,9108.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",peru,,import,1891,422211.0,298336.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",chile,,import,1891,43903.0,31114.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",brazil,,import,1891,502095.0,306912.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",other foreign countries,,import,1891,909.0,585.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",british possessions in south africanatal,,import,1891,3791.0,2271.0,consensus,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",mauritius,,import,1891,222789.0,135845.0,consensus,B,B,2,2
 SUGAR,Unrefined: Total of,denmark,,import,1891,31456.0,18591.0,consensus,B,B,2,2
 SUGAR,Unrefined: Total of,germany,,import,1891,6421998.0,4074986.0,consensus,B,B,2,2
 SUGAR,Unrefined: Total of,holland,,import,1891,417959.0,260510.0,consensus,B,B,2,2
@@ -76356,17 +76280,6 @@ SUCCADES (INCLUDING ALL FRUITS AND VEGETABLES PRESERVED IN SUGAR),,danish west i
 SUCCADES (INCLUDING ALL FRUITS AND VEGETABLES PRESERVED IN SUGAR),,hong kong,Cwts,import,1887,14148.0,25197.0,consensus,C,C,3,3
 SUCCADES (INCLUDING ALL FRUITS AND VEGETABLES PRESERVED IN SUGAR),,british west india islands,Cwts,import,1887,3305.0,3286.0,consensus,C,C,3,3
 SUCCADES (INCLUDING ALL FRUITS AND VEGETABLES PRESERVED IN SUGAR),,other british possessions,Cwts,import,1887,81.0,190.0,consensus,C,C,3,3
-SUGAR,"Unrefined : Beetroot : Cane, and Other Sorts",belgium,Cwts,import,1887,625.0,505.0,consensus,C,C,3,3
-SUGAR,"Unrefined : Beetroot : Cane, and Other Sorts",france,Cwts,import,1887,17956.0,10337.0,consensus,C,C,3,3
-SUGAR,"Unrefined : Beetroot : Cane, and Other Sorts",italy,Cwts,import,1887,3420.0,2132.0,consensus,C,C,3,3
-SUGAR,"Unrefined : Beetroot : Cane, and Other Sorts",madagascar,Cwts,import,1887,4741.0,3606.0,consensus,C,C,3,3
-SUGAR,Cane and Other Sorts,mauritius,Cwts,import,1887,53275.0,25366.0,consensus,C,C,3,3
-SUGAR,Cane and Other Sorts,british east indies,Cwts,import,1887,104986.0,57498.0,consensus,C,C,3,3
-SUGAR,Cane and Other Sorts,hong kong,Cwts,import,1887,828547.0,397722.0,consensus,C,C,3,3
-SUGAR,Cane and Other Sorts,australasia,Cwts,import,1887,12182.0,9133.0,consensus,C,C,3,3
-SUGAR,Cane and Other Sorts,british west india islands,Cwts,import,1887,34433.0,21803.0,consensus,C,C,3,3
-SUGAR,Cane and Other Sorts,british honduras,Cwts,import,1887,755744.0,494267.0,consensus,C,C,3,3
-SUGAR,Cane and Other Sorts,british guiana,Cwts,import,1887,9099.0,5603.0,consensus,C,C,3,3
 TIN,"In Blocks, Ingots, Bars, or Slabs",queensland,Cwts,import,1887,3384.0,20386.0,consensus,C,B,3,2
 ZINC,ARTICLES Imported by PARCEL POST,germany,,import,1887,1291.0,1132.0,consensus,C,C,3,3
 ZINC,ARTICLES Imported by PARCEL POST,holland,,import,1887,78937.0,83829.0,consensus,C,C,3,3
@@ -76567,26 +76480,6 @@ METAL,Unenumerated : Unwrought : Wrought or Manufactured,other british possessio
 "SKINS, FURS, AND PELTS","Goat, Undressed",other british possessions,,import,1888,4066.0,258.0,consensus,C,C,3,3
 "SKINS, FURS, AND PELTS",Furs,hong kong,Number,import,1888,3138.0,1410.0,consensus,C,B,3,2
 SPICES,Unenumerated,java,Lbs,import,1888,11080.0,1160.0,consensus,C,C,3,3
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",germany,Cwts,import,1888,22660.0,16935.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",holland,Cwts,import,1888,64652.0,47995.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",france,Cwts,import,1888,9763.0,7773.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",portugal,Cwts,import,1888,35968.0,29898.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",egypt,Cwts,import,1888,380507.0,278009.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",madagascar,Cwts,import,1888,3595.0,2657.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",java,Cwts,import,1888,3612487.0,2704310.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",philippine islands,Cwts,import,1888,722425.0,345317.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",united states of america,Cwts,import,1888,22727.0,13678.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",spanish west india islands,Cwts,import,1888,303823.0,222944.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",dutch guiana,Cwts,import,1888,25919.0,23132.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",danish west india islands,Cwts,import,1888,20475.0,13570.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",hayti and st domingo,Cwts,import,1888,20926.0,14316.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",mexico,Cwts,import,1888,28838.0,20176.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",central america,Cwts,import,1888,25690.0,19845.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",united states of columbia,Cwts,import,1888,1752.0,1394.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",peru,Cwts,import,1888,497440.0,369369.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",chile,Cwts,import,1888,59217.0,43777.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",brazil,Cwts,import,1888,2269235.0,1427247.0,consensus,C,B,3,2
-"SUGAR, REFINED","Unrefined : Cane, and Other Sorts",other foreign countries,Cwts,import,1888,332.0,196.0,consensus,C,B,3,2
 WHALEBONE (WHALEFINS),,denmark,Cwts,import,1888,258.0,1293.0,consensus,C,B,3,2
 WHALEBONE (WHALEFINS),Whale Fisheries,other foreign countries,,import,1888,136.0,978.0,consensus,C,C,3,3
 WHALEBONE (WHALEFINS),Whale Fisheries,australasia,,import,1888,60.0,2150.0,consensus,C,C,3,3
@@ -77002,7 +76895,6 @@ SILK,"Knubs or Husks, and Waste",france,Cwts,import,1891,2515.0,80921.0,consensu
 "SKINS, FURS, AND PELTS","Goat, Undressed",bengal,Number,import,1891,1847583.0,155629.0,consensus,C,C,3,3
 "SKINS, FURS, AND PELTS","Goat, Undressed",other british possessions,Number,import,1891,610.0,44.0,consensus,C,C,3,3
 SUCCADES,,australasia,Cwts,import,1891,9205.0,12275.0,consensus,C,B,3,2
-SUGAR,"Unrefined: Cane, and Other Sorts",australasia,,import,1891,2361874.0,1580161.0,consensus,C,C,3,3
 SUGAR,Unrefined: Total of,russia,,import,1891,50680.0,29997.0,consensus,C,B,3,2
 SUGAR,Unrefined: Total of,belgium,,import,1891,518272.0,500019.0,consensus,C,B,3,2
 TALLOW AND STEARINE,,new zealand,Cwts,import,1891,195557.0,254061.0,consensus,C,B,3,2
@@ -82508,6 +82400,14 @@ SUGAR,"Other Sorts, including Candy",Holland,Cwts.,import,1885,349350.0,308238.0
 SUGAR,"Other Sorts, including Candy",Other Foreign Countries,Cwts.,import,1885,216.0,200.0,human,A,A,1,1
 SUGAR,"Other Sorts, including Candy",Belgium,Cwts.,import,1885,28942.0,34119.0,human,A,A,1,1
 SUGAR,In lumps and loaves,United States of America,Cwts.,import,1885,169695.0,165702.0,human,A,A,1,1
+SUGAR,"Cane, and other sorts",Mauritius,Cwts.,import,1883,289195.0,310051.0,human,A,A,1,1
+SUGAR,Unrefined; Beetroot : Total of,Germany,Cwts.,import,1883,6382317.0,6319750.0,human,A,A,1,1
+SUGAR,Unrefined; Beetroot,Denmark,Cwts.,import,1883,96.0,93.0,human,A,A,1,1
+SUGAR,Unrefined; Beetroot,Germany,Cwts.,import,1883,6371031.0,6308645.0,human,A,A,1,1
+SUGAR,Unrefined; Beetroot,Holland,Cwts.,import,1883,198444.0,198036.0,human,A,A,1,1
+SUGAR,Unrefined; Beetroot,Belgium,Cwts.,import,1883,1461953.0,1472356.0,human,A,A,1,1
+SUGAR,Unrefined; Beetroot,France,Cwts.,import,1883,213727.0,257420.0,human,A,A,1,1
+SUGAR,Unrefined; Beetroot,Portugal,Cwts.,import,1883,56.0,52.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -84165,10 +84065,6 @@ SILK,Raw,British East Indies : Hong Kong,Lbs,import,1891,389724.0,250773.0,suben
 "SKINS, FURS, AND PELTS",Pepper,British East Indies : Other British East Indian Possessions,Lbs,import,1891,842837.0,14986.0,subentry,B,C,2,3
 "SKINS, FURS, AND PELTS",Pepper,British East Indies : Other British Possessions,Lbs,import,1891,18918.0,444.0,subentry,B,B,2,2
 "SKINS, FURS, AND PELTS",Unenumerated,British East Indies : Other British East Indian Possessions,Lbs,import,1891,203153.0,9957.0,subentry,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",British East Indies : Madras,,import,1891,801600.0,406975.0,subentry,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",British East Indies : Straits Settlements,,import,1891,136103.0,80141.0,subentry,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",British East Indies : Other British East Indian Possessions,,import,1891,15203.0,10138.0,subentry,B,B,2,2
-SUGAR,"Unrefined: Cane, and Other Sorts",Australasia : Other Colonies,,import,1891,6923.0,5204.0,subentry,B,B,2,2
 SUGAR,Unrefined: Total of,British Possessions in South Africa : Natal,,import,1891,3791.0,2271.0,subentry,B,B,2,2
 SUGAR,Unrefined: Total of,British Possessions in South Africa : Mauritius,,import,1891,222789.0,135845.0,subentry,B,B,2,2
 SUGAR,Unrefined: Total of,British Possessions in South Africa : British East Indies,,import,1891,952906.0,497254.0,subentry,B,B,2,2
@@ -88595,37 +88491,6 @@ SUGAR,"Cane, and other sorts",Portugal,Cwts,import,1883,2529.0,2326.0,infonly,C,
 SUGAR,"Cane, and other sorts",Spain,Cwts,import,1883,17048.0,11109.0,infonly,C,C,3,3
 SUGAR,"Cane, and other sorts",Egypt,Cwts,import,1883,147522.0,147315.0,infonly,C,C,3,3
 SUGAR,"Cane, and other sorts",British Possessions in South Africa,Cwts,import,1883,43388.0,40431.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Native States,,import,1883,12016.0,14272.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Madagascar,,import,1883,4200.0,5030.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Bourbon (Réunion),,import,1883,66380.0,77914.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Mauritius,,import,1883,269195.0,310051.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,British India: Bombay,,import,1883,891.0,501.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Bengal,,import,1883,221124.0,227339.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Java,,import,1883,3396782.0,3879923.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Philippine Islands,,import,1883,971873.0,749160.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,United States of America,,import,1883,15114.0,15356.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,British West India Islands,,import,1883,1656217.0,1718491.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,British Honduras,,import,1883,15045.0,13851.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,British Guiana,,import,1883,1068616.0,1378923.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Spanish West India Islands,,import,1883,323000.0,354595.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,French West India Islands,,import,1883,13950.0,15842.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Dutch Guiana,,import,1883,108421.0,122116.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Danish West India Islands,,import,1883,26006.0,25890.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Mexico,,import,1883,40051.0,43203.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Central America,,import,1883,2929.0,2968.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,United States of Colombia,,import,1883,23426.0,23893.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Peru,,import,1883,462923.0,470819.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Chile,,import,1883,112996.0,116860.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Brazil,,import,1883,1233846.0,1105700.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa,Uruguay,,import,1883,6200.0,7130.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa : Total of,Germany,Cwts,import,1883,6832817.0,6319750.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa : Total of,Holland,Cwts,import,1883,326836.0,331855.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa : Total of,Belgium,Cwts,import,1883,1462143.0,1472541.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa : Total of,France,Cwts,import,1883,245994.0,291472.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa : Total of,Portugal,Cwts,import,1883,2585.0,2375.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa : Total of,Spain,Cwts,import,1883,17045.0,11109.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa : Total of,Egypt,Cwts,import,1883,147522.0,147315.0,infonly,C,C,3,3
-SUGAR,East Coast of Africa : Total of,British Possessions in South Africa,Cwts,import,1883,43388.0,40431.0,infonly,C,C,3,3
 WOOD AND TIMBER,Mahogany : Unenumerated,Russia,Tons,import,1883,5031.0,63380.0,infonly,C,C,3,3
 WOOD AND TIMBER,Mahogany : Unenumerated,Holland,Tons,import,1883,450.0,3659.0,infonly,C,C,3,3
 WOOD AND TIMBER,Mahogany : Unenumerated,Spain,Tons,import,1883,103.0,1006.0,infonly,C,C,3,3
@@ -88633,12 +88498,19 @@ WOOD AND TIMBER,Mahogany : Unenumerated,Gibraltar,Tons,import,1883,369.0,4730.0,
 WOOD AND TIMBER,Mahogany : Unenumerated,Greece,Tons,import,1883,128.0,769.0,infonly,C,C,3,3
 WOOD AND TIMBER,Mahogany : Unenumerated,Turkey,Tons,import,1883,7293.0,72242.0,infonly,C,C,3,3
 WOOD AND TIMBER,Mahogany : Unenumerated,"West Coast of Africa, not particularly designated",Tons,import,1883,1411.0,11102.0,infonly,C,C,3,3
+WOOD AND TIMBER,East Coast of Africa,Native States,,import,1883,175.0,1310.0,infonly,C,C,3,3
 WOOD AND TIMBER,East Coast of Africa,British East Indies,,import,1883,413.0,5349.0,infonly,C,C,3,3
 WOOD AND TIMBER,East Coast of Africa,"Dutch Possessions in Indian Seas, other than Java",,import,1883,12.0,420.0,infonly,C,C,3,3
 WOOD AND TIMBER,East Coast of Africa,British North America,,import,1883,5085.0,33430.0,infonly,C,C,3,3
+WOOD AND TIMBER,East Coast of Africa,United States of America,,import,1883,26523.0,229795.0,infonly,C,C,3,3
 WOOD AND TIMBER,East Coast of Africa,British West Indies,,import,1883,3223.0,28887.0,infonly,C,C,3,3
+WOOD AND TIMBER,East Coast of Africa,Spanish West India Islands,,import,1883,1241.0,11735.0,infonly,C,C,3,3
 WOOD AND TIMBER,East Coast of Africa,Hayti and St. Domingo,,import,1883,1500.0,10745.0,infonly,C,C,3,3
+WOOD AND TIMBER,East Coast of Africa,Mexico,,import,1883,1499.0,15386.0,infonly,C,C,3,3
+WOOD AND TIMBER,East Coast of Africa,Central America,,import,1883,1536.0,14952.0,infonly,C,C,3,3
+WOOD AND TIMBER,East Coast of Africa,United States of Colombia,,import,1883,203.0,1624.0,infonly,C,C,3,3
 WOOD AND TIMBER,East Coast of Africa,Venezuela,,import,1883,793.0,4055.0,infonly,C,C,3,3
+WOOD AND TIMBER,East Coast of Africa,Brazil,,import,1883,1646.0,17069.0,infonly,C,C,3,3
 CORN AND GRAIN,Unenumerated,Sweden,Cwts,import,1884,1270.0,1497.0,infonly,C,C,3,3
 CORN AND GRAIN,Unenumerated,Germany,Cwts,import,1884,1539.0,1986.0,infonly,C,C,3,3
 CORN AND GRAIN,Unenumerated,Holland,Cwts,import,1884,2160.0,5241.0,infonly,C,C,3,3
@@ -101438,16 +101310,6 @@ SILK MANUFACTURES,"Manufactures of Silk, or of Silk mixed with other Materials, 
 SILK MANUFACTURES,"Manufactures of Silk, or of Silk mixed with other Materials, Unenumerated",British India,,import,1880,4567.0,,twoup,C,C,3,3
 SILK MANUFACTURES,"Manufactures of Silk, or of Silk mixed with other Materials, Unenumerated",Australia,,import,1880,5874.0,,twoup,C,C,3,3
 SILK MANUFACTURES,"Manufactures of Silk, or of Silk mixed with other Materials, Unenumerated",Other Countries,,import,1880,9744.0,,twoup,C,C,3,3
-SUGAR,"Unrefined, Beetroot",Other Countries,,import,1880,2812.0,3738.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Denmark,,import,1880,71108.0,92703.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Germany,,import,1880,15354.0,17947.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Holland,,import,1880,19935.0,22558.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Belgium,,import,1880,21581.0,21705.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",France,,import,1880,9200.0,12049.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Portugal and Azores,,import,1880,60977.0,71465.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Italy,,import,1880,10949.0,14916.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",United States of America,,import,1880,38960.0,42634.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Other Countries,,import,1880,9085.0,11337.0,twoup,C,C,3,3
 SUGAR,Glucose,Other Countries,,import,1880,770.0,807.0,twoup,C,C,3,3
 TEETH,"Elephants, Sea Cow, and Sea Horse",France,,import,1880,1553.0,71614.0,twoup,C,C,3,3
 TEETH,"Elephants, Sea Cow, and Sea Horse",United States of America,,import,1880,1952.0,87591.0,twoup,C,C,3,3
@@ -102339,16 +102201,6 @@ SILK MANUFACTURES,"Broad Stuffs, Silk or Satin",British India,,import,1881,7189.
 SILK MANUFACTURES,"Velvet, Plain or Figured",Australasia,,import,1881,6004.0,,twoup,C,C,3,3
 SILK MANUFACTURES,"Ribbons, Silk or Satin",Other Countries,,import,1881,4535.0,,twoup,C,C,3,3
 SILK MANUFACTURES,in Value is Silver,Other Countries,,import,1881,10792.0,,twoup,C,C,3,3
-SUGAR,"Unrefined, Beetroot",United States of America,,import,1881,11005.0,13238.0,twoup,C,C,3,3
-SUGAR,"Unrefined, Beetroot",Other Countries,,import,1881,314.0,414.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Denmark,,import,1881,47776.0,59854.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Germany,,import,1881,32475.0,33199.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Holland,,import,1881,29493.0,30703.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Belgium,,import,1881,39938.0,46768.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts","Portugal, Azores, and Madeira",,import,1881,37795.0,45588.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",United States of America,,import,1881,18471.0,19519.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",British Possessions in South Africa,,import,1881,12022.0,8691.0,twoup,C,C,3,3
-SUGAR,"Cane, and other Sorts",Other Countries,,import,1881,6587.0,8025.0,twoup,C,C,3,3
 SUGAR,Glucose,Other Countries,,import,1881,1030.0,889.0,twoup,C,C,3,3
 SUGAR,"Elephants, Sea Cow, and Sea Horse",Holland,,import,1881,248.0,10776.0,twoup,C,C,3,3
 SUGAR,"Elephants, Sea Cow, and Sea Horse",Belgium,,import,1881,211.0,8758.0,twoup,C,C,3,3
@@ -109864,9 +109716,6 @@ SEEDS,Rape,British East Indies : Madras,Quarters,import,1891,12124.0,26671.0,sub
 SEEDS,Rape,British East Indies : Bengal,Quarters,import,1891,69837.0,149616.0,subentry,C,C,3,3
 SEEDS,Rape,British East Indies : Ceylon,Quarters,import,1891,1092.0,2400.0,subentry,C,C,3,3
 "SKINS, FURS, AND PELTS","Goat, Undressed",British East Indies : Other British East In-     dian Possessions,Number,import,1891,76823.0,8695.0,subentry,C,C,3,3
-SUGAR,"Unrefined: Cane, and Other Sorts",Australasia : Queensland,,import,1891,79331.0,54744.0,subentry,C,C,3,3
-SUGAR,"Unrefined: Cane, and Other Sorts",Australasia : British West Indies,,import,1891,1096129.0,884837.0,subentry,C,C,3,3
-SUGAR,"Unrefined: Cane, and Other Sorts",Australasia : Other British Possessions,,import,1891,5.0,6.0,subentry,C,C,3,3
 WOOD AND TIMBER,"Hewn, Teak",British East Indies : Bengal,Loads,import,1891,2366.0,27704.0,subentry,C,C,3,3
 WOOD AND TIMBER,"Hewn, Teak",British East Indies : Burmah,Loads,import,1891,34858.0,364331.0,subentry,C,C,3,3
 WOOD AND TIMBER,"Hewn, Teak",British East Indies : Straits Settlements,Loads,import,1891,2457.0,21221.0,subentry,C,C,3,3
@@ -117501,6 +117350,131 @@ COCOA,,British East Indies : Other Possessions,Lbs.,import,1896,5537.0,216.0,gro
 COCOA,,British West India Islands,Lbs.,import,1896,17409013.0,484049.0,groupfix,C,C,3,3
 COCOA,,British Guiana,Lbs.,import,1896,122438.0,4053.0,groupfix,C,C,3,3
 COCOA,,Other British Possessions,Lbs.,import,1896,722.0,27.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Java,Cwts.,import,1887,3200343.0,2085627.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Philippine Islands,Cwts.,import,1887,460386.0,210438.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,United States of America,Cwts.,import,1887,18507.0,10180.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Spanish West India Islands,Cwts.,import,1887,176611.0,109520.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Dutch Guiana,Cwts.,import,1887,30007.0,21740.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Danish West India Islands,Cwts.,import,1887,8976.0,5396.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Mexico,Cwts.,import,1887,31853.0,20458.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Central America,Cwts.,import,1887,16269.0,8182.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Peru,Cwts.,import,1887,439017.0,279088.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Chile,Cwts.,import,1887,70335.0,44294.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Brazil,Cwts.,import,1887,869843.0,480066.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Other Foreign Countries,Cwts.,import,1887,1026.0,535.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,British Possessions in South Africa,Cwts.,import,1887,53275.0,25366.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Mauritius,Cwts.,import,1887,104986.0,57498.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,British East Indies,Cwts.,import,1887,828547.0,397722.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Hong Kong,Cwts.,import,1887,12182.0,9133.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Australasia,Cwts.,import,1887,34433.0,21803.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,British West India Islands,Cwts.,import,1887,755744.0,494267.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,British Honduras,Cwts.,import,1887,9099.0,5603.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,British Guiana,Cwts.,import,1887,1382217.0,1058108.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Germany,Cwts.,import,1887,11505.0,8051.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Holland,Cwts.,import,1887,79813.0,50978.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Belgium,Cwts.,import,1887,625.0,505.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,France,Cwts.,import,1887,17956.0,10837.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Italy,Cwts.,import,1887,3420.0,2132.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Egypt,Cwts.,import,1887,274693.0,155022.0,groupfix,C,C,3,3
+SUGAR,Cane and Other Sorts,Madagascar,Cwts.,import,1887,4741.0,3606.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Germany,Cwts,import,1888,22660.0,16935.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Holland,Cwts,import,1888,64652.0,47995.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,France,Cwts,import,1888,9763.0,7773.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Portugal,Cwts,import,1888,35968.0,29898.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Egypt,Cwts,import,1888,380507.0,278009.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Madagascar,Cwts,import,1888,3596.0,2657.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Java,Cwts,import,1888,3612487.0,2704310.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Philippine Islands,Cwts,import,1888,722425.0,345317.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,United States of America,Cwts,import,1888,22727.0,13678.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Spanish West India Islands,Cwts,import,1888,303823.0,222944.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Dutch Guiana,Cwts,import,1888,25919.0,22132.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Danish West India Islands,Cwts,import,1888,20475.0,13570.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Hayti and St. Domingo,Cwts,import,1888,20926.0,14316.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Mexico,Cwts,import,1888,28838.0,20176.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Central America,Cwts,import,1888,25690.0,19845.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,United States of Columbia,Cwts,import,1888,1752.0,1394.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Peru,Cwts,import,1888,497440.0,369369.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Chile,Cwts,import,1888,59217.0,43777.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Brazil,Cwts,import,1888,2269235.0,1427247.0,groupfix,C,C,3,3
+"SUGAR, UNREFINED",Cane and Other Sorts,Other Foreign Countries,Cwts,import,1888,332.0,196.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Germany,Cwts.,import,1891,21246.0,19072.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Holland,Cwts.,import,1891,52963.0,40168.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",France,Cwts.,import,1891,32846.0,25752.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Italy,Cwts.,import,1891,10400.0,7960.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Austrian Territories,Cwts.,import,1891,5800.0,4500.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Egypt,Cwts.,import,1891,236852.0,158674.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Madagascar,Cwts.,import,1891,10601.0,7253.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Java,Cwts.,import,1891,2309420.0,1628647.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Philippine Islands,Cwts.,import,1891,1004805.0,542971.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",United States of America,Cwts.,import,1891,10783.0,7804.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Spanish West India Islands,Cwts.,import,1891,19935.0,15699.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Dutch Guiana,Cwts.,import,1891,32352.0,24956.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",United States of Colombia,Cwts.,import,1891,7459.0,5372.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Ecuador,Cwts.,import,1891,12490.0,9108.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Peru,Cwts.,import,1891,422211.0,298336.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Chile,Cwts.,import,1891,43903.0,31114.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Brazil,Cwts.,import,1891,502095.0,306912.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Other Foreign Countries,Cwts.,import,1891,909.0,585.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",British Possessions in South Africa—Natal,Cwts.,import,1891,3791.0,2271.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Mauritius,Cwts.,import,1891,222789.0,135845.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",British East Indies : Madras,Cwts.,import,1891,801600.0,406975.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",British East Indies : Straits Settlements,Cwts.,import,1891,136103.0,80141.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",British East Indies : Other British East Indian Possessions,Cwts.,import,1891,15203.0,10138.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Australasia : Queensland,Cwts.,import,1891,79331.0,54744.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Australasia : Other Colonies,Cwts.,import,1891,6923.0,5204.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",British West Indies,Cwts.,import,1891,1096129.0,884837.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Other British Possessions,Cwts.,import,1891,5.0,6.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Germany,Cwts.,import,1890,18661.0,14915.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Holland,Cwts.,import,1890,26123.0,18930.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",France,Cwts.,import,1890,15374.0,11288.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Spain,Cwts.,import,1890,3078.0,2258.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Egypt,Cwts.,import,1890,149805.0,104990.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Madagascar,Cwts.,import,1890,6868.0,4843.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Java,Cwts.,import,1890,1377241.0,979886.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Philippine Islands,Cwts.,import,1890,566187.0,300688.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",United States of America,Cwts.,import,1890,14854.0,10814.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Spanish West India Islands,Cwts.,import,1890,42130.0,31597.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Dutch Guiana,Cwts.,import,1890,55162.0,41193.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Danish West India Islands,Cwts.,import,1890,1755.0,1403.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Hayti and St. Domingo,Cwts.,import,1890,8300.0,6225.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Mexico,Cwts.,import,1890,3604.0,2319.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Peru,Cwts.,import,1890,607120.0,412246.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Chile,Cwts.,import,1890,50944.0,36951.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Brazil,Cwts.,import,1890,430847.0,259369.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Other Foreign Countries,Cwts.,import,1890,293.0,209.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",British Possessions in South Africa,Cwts.,import,1890,13431.0,7189.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Mauritius,Cwts.,import,1890,249528.0,157687.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",British East Indies,Cwts.,import,1890,710736.0,367571.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Australasia,Cwts.,import,1890,21112.0,16105.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",British West India Islands,Cwts.,import,1890,578978.0,420658.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",British Guiana,Cwts.,import,1890,758540.0,597615.0,groupfix,C,C,3,3
+SUGAR,"Unrefined: Cane, and Other Sorts",Other British Possessions,Cwts.,import,1890,2193.0,1689.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",British India: Bombay,Cwts.,import,1883,891.0,501.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Madras,Cwts.,import,1883,1197754.0,804270.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Bengal,Cwts.,import,1883,221124.0,227339.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Straits Settlements,Cwts.,import,1883,278038.0,218337.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Java,Cwts.,import,1883,3396782.0,3879923.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Philippine Islands,Cwts.,import,1883,971873.0,749160.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",China,Cwts.,import,1883,191507.0,153610.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",United States of America,Cwts.,import,1883,15114.0,15356.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",British West India Islands,Cwts.,import,1883,1656217.0,1718491.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",British Honduras,Cwts.,import,1883,15045.0,13851.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",British Guiana,Cwts.,import,1883,1068616.0,1378923.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Spanish West India Islands,Cwts.,import,1883,323000.0,354595.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",French West India Islands,Cwts.,import,1883,13950.0,15842.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Dutch Guiana,Cwts.,import,1883,108421.0,122116.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Danish West India Islands,Cwts.,import,1883,26006.0,25890.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Mexico,Cwts.,import,1883,40051.0,43203.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Central America,Cwts.,import,1883,2929.0,2968.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",United States of Colombia,Cwts.,import,1883,23426.0,23893.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Peru,Cwts.,import,1883,462923.0,470819.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Chile,Cwts.,import,1883,112996.0,116860.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Brazil,Cwts.,import,1883,1233846.0,1105700.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Uruguay,Cwts.,import,1883,6200.0,7130.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Other Countries,Cwts.,import,1883,195.0,216.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Native States,Cwts.,import,1883,12016.0,14272.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Madagascar,Cwts.,import,1883,4200.0,5030.0,groupfix,C,C,3,3
+SUGAR,"Cane, and other sorts",Bourbon (Réunion),Cwts.,import,1883,66380.0,77914.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
