@@ -53,6 +53,7 @@ setTimeout(() => {
 
   ok(names.length > 500, `dataset loaded (${names.length} commodities)`);
   ok(!!D.meta.flag_note, 'quality flag glossary is present');
+  ok((D.land || []).length > 20, `land outlines present (${(D.land||[]).length} rings)`);
 
   // picker opens on the full list, not filtered by whatever name is in the box
   $('#search').dispatchEvent(new w.Event('focus'));
@@ -78,6 +79,8 @@ setTimeout(() => {
   ok(!$('#qnote').classList.contains('show'), 'clean commodity shows no caveats');
   ok(w.eval('state.meas') === 'v', "reader's measure is restored, not left on the fallback");
   ok(d.querySelectorAll('#map circle').length > 0, 'clean commodity draws bubbles');
+  const lp = d.querySelector('#map path');
+  ok(!!lp && lp.getAttribute('d').length > 5000, 'coastlines drawn under the bubbles');
 
   // a commodity with nothing mappable must not throw on the way to a blank map
   const no = withFlag('noorig');

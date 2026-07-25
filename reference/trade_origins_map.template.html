@@ -7,7 +7,7 @@
   --ink:#1E2A28; --muted:#63716D; --faint:#8A958F;
   --line:#D3CDBE; --line2:#C4BCA8;
   --accent:#96651B; --accent-soft:#B98E3F;
-  --sea:#DCE4E2; --grid:#CBD4D0;
+  --sea:#DCE4E2; --grid:#CBD4D0; --land:#EDE7D8; --landline:#BFB79F;
   --pA:#0C5C54; --pB:#3E8B80; --pC:#95C1B9;
   --warn:#A6412E; --warn-soft:#C98A78;
   --shadow:0 1px 2px rgba(30,42,40,.08),0 8px 24px rgba(30,42,40,.06);
@@ -18,7 +18,7 @@
   --ink:#E9E4D6; --muted:#93A09B; --faint:#6E7B77;
   --line:#2A3532; --line2:#374340;
   --accent:#D6A24A; --accent-soft:#B9863A;
-  --sea:#101615; --grid:#26302E;
+  --sea:#101615; --grid:#26302E; --land:#1D2624; --landline:#33403D;
   --pA:#42C2B1; --pB:#2B897C; --pC:#1D524B;
   --warn:#D66A52; --warn-soft:#8A4132;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28);
@@ -29,7 +29,7 @@
   --ink:#E9E4D6; --muted:#93A09B; --faint:#6E7B77;
   --line:#2A3532; --line2:#374340;
   --accent:#D6A24A; --accent-soft:#B9863A;
-  --sea:#101615; --grid:#26302E;
+  --sea:#101615; --grid:#26302E; --land:#1D2624; --landline:#33403D;
   --pA:#42C2B1; --pB:#2B897C; --pC:#1D524B;
   --warn:#D66A52; --warn-soft:#8A4132;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28);
@@ -40,7 +40,7 @@
   --ink:#1E2A28; --muted:#63716D; --faint:#8A958F;
   --line:#D3CDBE; --line2:#C4BCA8;
   --accent:#96651B; --accent-soft:#B98E3F;
-  --sea:#DCE4E2; --grid:#CBD4D0;
+  --sea:#DCE4E2; --grid:#CBD4D0; --land:#EDE7D8; --landline:#BFB79F;
   --pA:#0C5C54; --pB:#3E8B80; --pC:#95C1B9;
   --warn:#A6412E; --warn-soft:#C98A78;
   --shadow:0 1px 2px rgba(30,42,40,.08),0 8px 24px rgba(30,42,40,.06);
@@ -272,7 +272,7 @@ details.foot[open]>summary .chev{transform:rotate(90deg)}
       <h4>Reconciling the origins</h4>
       <p>A printed origin table often lists a parent total <em>and</em> its breakdown — "United States of America" alongside "on the Atlantic / on the Pacific", or "British East Indies" alongside Bombay, Madras and Bengal. Naïvely summing every line double‑counts, which made raw cotton (and ~50 other staples) read up to 1.8× their true volume in some years and produced a spurious "collapse" wherever the breakdown lines switched on or off. Origins are therefore de‑duplicated to the finest level available, and the national total is taken from the Statement's own Tier‑1 figure, so the two reconcile. A further filter drops any single origin that exceeds the whole national total — an impossibility that flags corrupt cells (a mis‑attributed "84 billion lb of raw silk from Bombay", "1.3 million gallons of collodion from Greece"); 164 such cells are removed and logged for correction at source.</p>
       <h4>Draft status</h4>
-      <p>This is a first draft for review. Value figures are provisional (value‑side reconciliation is pending; only quantities are anchored). The sugar commodity family and a set of country‑as‑article label defects remain queued. Basemap is a schematic equirectangular graticule, not a boundary map — appropriate to origins that are ports and shifting historical entities.</p>
+      <p>This is a first draft for review. Value figures are provisional (value‑side reconciliation is pending; only quantities are anchored). The sugar commodity family and a set of country‑as‑article label defects remain queued. Coastlines are Natural Earth 1:110m land (public domain), simplified and drawn in an equirectangular projection; they are modern outlines shown to locate the ports, and carry no claim about nineteenth‑century borders — which is also why no political boundaries are drawn, the origins being ports and shifting historical entities.</p>
     </div>
   </details>
 
@@ -284,7 +284,7 @@ details.foot[open]>summary .chev{transform:rotate(90deg)}
 <script>
 "use strict";
 const D = JSON.parse(document.getElementById('dataset').textContent);
-const GAZ = D.gaz, COM = D.commodities, ISSUES = D.issues||[];
+const GAZ = D.gaz, COM = D.commodities, ISSUES = D.issues||[], LAND = D.land||[];
 const names = Object.keys(COM).sort((a,b)=>COM[b].v-COM[a].v);
 const $ = s=>document.querySelector(s);
 const fmtGBP = v => v>=1e9?'£'+(v/1e9).toFixed(2)+'bn':v>=1e6?'£'+(v/1e6).toFixed(1)+'m':v>=1e3?'£'+Math.round(v/1e3)+'k':'£'+Math.round(v);
@@ -401,6 +401,7 @@ function select(name){
 
 // ---------- draw ----------
 const map=$('#map'), tip=$('#tip');
+let LANDPATH='';        // built once: 75 rings projected to screen units
 function draw(){
   const c=COM[state.com]; if(!c)return;
   const yr=String(state.year), meas=state.meas;
@@ -434,6 +435,10 @@ function draw(){
   pts.sort((a,b)=>b.val-a.val);
   // ----- svg -----
   let s='';
+  // land first, graticule over it, bubbles on top
+  if(LAND.length && !LANDPATH) LANDPATH = LAND.map(r=>
+    'M'+r.map(p=>px(p[0]).toFixed(1)+' '+py(p[1]).toFixed(1)).join('L')+'Z').join('');
+  if(LANDPATH) s+=`<path d="${LANDPATH}" fill="var(--land)" stroke="var(--landline)" stroke-width="0.6" fill-rule="evenodd"/>`;
   // graticule
   for(let lon=-120;lon<=180;lon+=30){s+=`<line x1="${px(lon).toFixed(1)}" y1="0" x2="${px(lon).toFixed(1)}" y2="${VB.h}" stroke="var(--grid)" stroke-width="1"/>`;}
   for(let lat=-40;lat<=60;lat+=20){s+=`<line x1="0" y1="${py(lat).toFixed(1)}" x2="${VB.w}" y2="${py(lat).toFixed(1)}" stroke="var(--grid)" stroke-width="1"/>`;}

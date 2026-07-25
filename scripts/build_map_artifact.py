@@ -5,6 +5,9 @@ import json, csv
 from pathlib import Path
 
 slim = json.load(open('exports/map_slim.json'))
+# land outlines (Natural Earth 110m, public domain) as lon/lat rings; the page
+# projects them with the same px()/py() as the bubbles
+slim['land'] = json.load(open('reference/world_land_110m.json'))
 # The reconciliation report covers the whole payload, but the map only carries
 # the curated whitelist, so roughly half its rows name a commodity the reader
 # cannot open. Mark which ones are reachable ('m') instead of listing them all
