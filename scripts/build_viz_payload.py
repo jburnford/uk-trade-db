@@ -739,13 +739,33 @@ def main():
                     payload[tgt] = src
                 else:
                     dst = payload[tgt]
-                    dst['v'] = dst.get('v', 0) + src.get('v', 0)
+                    # Cells merge by (country, unit, YEAR) with the target
+                    # winning, so a source year the target already has adds
+                    # nothing. 'v' - the size the map ranks and reports by -
+                    # must follow the cells rather than being added whole:
+                    #   * a source carrying only §TOTAL (an era label that
+                    #     published the national line and no origin table)
+                    #     contributes no trade at all. It MEASURES trade the
+                    #     target already counts, so adding its value would
+                    #     inflate the commodity by its own anchor.
+                    #   * a source overlapping the target's years contributes
+                    #     only the years actually taken.
+                    # 'v' is an accumulated sort key rather than the exact sum
+                    # of surviving cells, so it is carried over in proportion
+                    # to the cell value kept. A fully disjoint fold keeps all
+                    # of it, which is what every fold adjudicated so far does.
+                    src_v = kept_v = 0.0
                     for ctry, byu in src['c'].items():
                         dbyu = dst['c'].setdefault(ctry, {})
                         for u, series in byu.items():
                             have = {row[0] for row in dbyu.get(u, [])}
-                            dbyu.setdefault(u, []).extend(
-                                row for row in series if row[0] not in have)
+                            new = [row for row in series if row[0] not in have]
+                            if ctry != '§TOTAL':
+                                src_v += sum(row[3] for row in series)
+                                kept_v += sum(row[3] for row in new)
+                            dbyu.setdefault(u, []).extend(new)
+                    dst['v'] = dst.get('v', 0) + (
+                        src.get('v', 0) * kept_v / src_v if src_v else 0)
         if n_cur:
             print(f'  curation: {n_cur} commodities dropped/folded/renamed')
     shifted = drop_shifted_duplicates(payload)
