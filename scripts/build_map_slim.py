@@ -298,21 +298,52 @@ for n in wl:
     # when they account for it (>=85% of parent value); if the parent is much
     # larger (extra un-itemised sub-regions), keep the parent and drop the
     # partial children instead. Either way the label-year is counted once.
+    # Where the year has a Tier-1 anchor, that share test is second-best
+    # evidence and the anchor is first-best: it was printed on another page and
+    # says what the year's origins have to add up to. So try both readings and
+    # keep whichever lands closer to it. Wool is the case that forced this. Its
+    # 'Australasia' row runs 1.22-1.28x the colonies listed under it in some
+    # years and equals them in others, and the 85% share test therefore flipped
+    # its verdict from year to year - 1888, 1889 and 1896 dropped the parent and
+    # closed at 1.00 while 1890-93, 1895 and 1898 kept it and sat at 1.15-1.20.
+    # Worse, the share was measured on VALUE while the map displays QUANTITY,
+    # and the parent's value cells are the unreliable ones (Australasia 1897:
+    # GBP2.0M against GBP21.8M in 1893 for a similar tonnage), so the test was
+    # deciding the quantity axis on a number it never shows.
     drop = set()
     years = {y for (_c, y) in ly}
     for y in years:
         present = {c for (c, yy) in ly if yy == y}
-        for pa in present:
-            kids = [k for k in children_of.get(pa, ()) if k in present]
-            if not kids:
-                continue
-            pv = ly[(pa, y)][0] or 1
-            kv = sum(ly[(k, y)][0] for k in kids)
-            if kv >= 0.85 * pv:
-                drop.add((pa, y))                 # children cover parent
-            else:
-                for k in kids:
-                    drop.add((k, y))              # parent is the fuller total
+        groups = [(pa, kids) for pa in present
+                  if (kids := [k for k in children_of.get(pa, ()) if k in present])]
+        if not groups:
+            continue
+        t = t1.get(y, 0)
+        # measure on the axis the map shows, falling back to value where the
+        # year carries no dominant-unit quantity at all
+        ix = 1 if (t > 1000 and any(ly[(c, y)][1] for c in present)) else 0
+        if t > 1000 and ix == 1:
+            tot = sum(ly[(c, y)][ix] for c in present)
+            for pa, kids in sorted(groups, key=lambda g: -ly[(g[0], y)][ix]):
+                if (pa, y) in drop or all((k, y) in drop for k in kids):
+                    continue                      # settled by an outer group
+                pq = ly[(pa, y)][ix]
+                kq = sum(ly[(k, y)][ix] for k in kids if (k, y) not in drop)
+                if abs(tot - pq - t) <= abs(tot - kq - t):
+                    drop.add((pa, y)); tot -= pq  # children read truer
+                else:
+                    for k in kids:
+                        drop.add((k, y))
+                    tot -= kq                     # parent reads truer
+        else:
+            for pa, kids in groups:
+                pv = ly[(pa, y)][0] or 1
+                kv = sum(ly[(k, y)][0] for k in kids)
+                if kv >= 0.85 * pv:
+                    drop.add((pa, y))             # children cover parent
+                else:
+                    for k in kids:
+                        drop.add((k, y))          # parent is the fuller total
     # ---- impossible-origin filter: one origin cannot exceed the whole
     # national total. A cell whose quantity tops the Tier-1 anchor (x1.15
     # tolerance for anchor noise) is corrupt — country-column glue from another
