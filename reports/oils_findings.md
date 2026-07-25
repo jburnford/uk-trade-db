@@ -880,3 +880,129 @@ commodity the spread is wide and worth reading: `Seeds — Rape` 17/20,
    touch: the oil-seed-cake era split, `Oil — Fish : Train Or Blubber`
    reading exactly 0.50 in 1894-96, the two disjoint tables under
    `Seeds — Unenumerated`, olive 1885, the map's parent-or-children de-dup.
+
+## Fifth pass: what the confidence card exposed downstream of the data
+
+The card from the fourth pass is measured on `map_slim.json` — the file the
+public map ships — and comparing it against the payload turned out to be an
+instrument in its own right. Three of the family's worst-looking commodities
+were not defective at all; the pipeline between the payload and the map was
+losing them.
+
+### The map could only choose parent OR children
+
+The parent/child de-duplication weighs a parent line against its breakdown
+and drops one side. That is right when the two are the same trade counted
+twice, and wrong when the printed table carries a parent that is a genuine
+REMAINDER beside children that do not cover it. Forced into a binary choice,
+the pass was throwing away whichever side was smaller — **on years that were
+already exactly right**:
+
+    tea 1885-92        1.000 -> 0.96
+    silk raw 1886-92   1.000 -> 0.79-0.91
+    Oil — Palm         eleven years 1.000 -> 0.976-0.993
+
+86 exact commodity-years broken against 289 fixed. The exhaustive search now
+has three options per group — drop the parent, drop the children, or keep
+both — which is safe for exactly the reason the anchor became the arbiter
+here in the first place: a genuine duplicate kept twice overshoots the
+Tier-1 total and loses. **Broken 86 -> 5, fixed 289 -> 301.** Palm oil goes
+from 7 of 28 years closing on both columns to 19.
+
+### `Oil — Fish : Train Or Blubber` was not missing half of anything
+
+It read **exactly 0.500 in 1894, 1895 and 1896**, and the fourth pass wrote
+that up as "half of something three years running, a missing section". It
+was not. `fold_tun_ton` appended the folded unit's cells without checking
+for a year the keep-unit already had, so the national line — printed under
+both spellings in one year — left TWO `§TOTAL` cells, and `build_map_slim`
+**added them**. A doubled anchor halves a commodity and trips no flag.
+
+The fold now skips colliding years and the slim anchor takes one reading per
+year rather than their sum. **0 of 3 years closing -> 3 of 3.**
+
+### A value anchor that is really the quantity line
+
+Making the value column a first-class metric exposed the class hiding behind
+it never having been tested. Some printings put the quantity figure in the
+abstract's VALUE column and the cross-volume vote copies it faithfully:
+`Seeds — Flax Or Linseed` 1885 has a value line of 2,046,352 which IS its
+quantity line, in six volumes, while the origins come to GBP4.4M at 2.1 a
+quarter. Left in, that is worse than an untested column — it reports a sound
+block as 2.14x its printed total.
+
+Detected on the commodity's own median price, so goods that genuinely cost
+about a pound a unit are never touched, and **dropped rather than failed**:
+the year has no value test, which is not the same as failing one. 68 anchors
+across 33 commodities -> `reports/quantity_as_value.csv`. Two years already
+written up as data defects were not: sugar unrefined 1888 at 0.678 and flax
+1874 at 2.79 were both bad anchors.
+
+### Export tables riding in as imports — `scripts/detect_flow_leakage.py`
+
+Butter 1882's import block closes to the digit at its printed 2,169,717 cwt,
+and a second block of six origins — Portugal, Gibraltar, Malta, South
+Africa, Brazil — rides in beside it and adds 1.3% to a commodity that was
+already complete. Those six are the UK export table. The proof is not a
+judgement about which countries look like destinations (that screen was
+tried on tallow and tripped on Chile and the Channel Islands, which is where
+British tallow came from); it is arithmetic:
+
+    the intruding block's own printed Total   31,640 cwt / GBP219,726
+    the export_uk Tier-1 line, butter 1882    31,640 cwt / GBP219,726
+
+**318 blocks corpus-wide whose printed Total is an export or re-export
+national line, 222 matching on both columns, 217 with cells reaching
+country_year_final — 2,039 cells of export data shown as imports.** In this
+family: butter in eleven years, tallow in four, lard in one.
+
+`integrate_sources` now rejects such a block from the gap-fill sources, with
+the guard that makes it safe: only when NONE of the block's Totals is the
+import line. Some volumes print all three tables under one lost heading —
+butter 1880 has three Total rows, 2,326,305 import, 31,408 export, 43,125
+re-export — and dropping that block would take the import table with it.
+Those stay, logged for per-cell work. 3,306 cells rejected across 369
+blocks; **butter 1882, 1883 and 1885 now close on both columns**.
+
+### A manual replace could not reach a sub-entry
+
+`V.cnorm('Australasia : Victoria')` is `'australasia'`, so a manual row
+naming Victoria never matched the cell it was written to replace, and the
+hand-adjudicated figure was ADDED BESIDE the broken one. Step 4 now tests
+the sub half on its own name.
+
+The row in question: butter 1899 Victoria, GBP1,651,338 on 211,744 cwt =
+7.80, in a British section whose value members exceed their printed
+2,972,430 by 599,987 and whose other rows run 4.4-5.0. Victoria's own price
+series reads 5.16, 4.93, 4.62, 4.97, 4.80 for 1893-97; 1,051,338 gives 4.97.
+A printed 0 read as 6. Stated plainly, **it does not close to the digit** —
+the segment is still 13 over and the quantity column separately 30 short, so
+one more small error remains on that page. Value 1.035 -> 0.9999.
+
+### Where the family stands after the fifth pass
+
+    quantity closes   73% of measurable commodity-years  (was 65%)
+    value closes      75%                                (was 65%)
+    BOTH columns      54% of 446 commodity-years         (was 48%)
+
+Corpus-wide on the shipped map, both columns close in 49.7% of the 3,790
+commodity-years that have origins at all, up from 47.3%.
+
+### Still open
+
+Everything from the fourth pass except train oil and the palm shortfall,
+plus:
+
+1. **The mixed export blocks** — butter 1872-81 and 1886, tallow 1872/74/77/
+   80, lard 1883: one lost heading over all three tables, so the export rows
+   have to come out cell by cell. `reports/flow_leakage.csv` lists them with
+   the member rows.
+2. **Two years the de-dup still breaks, both outside this family**: Indigo
+   1882 loses Bengal (60,888 of 95,272) and `Bark — Peruvian` 1881 loses
+   United States Of Colombia (70,944 of 125,358) to some other filter in the
+   slim build — not the parent/child pass.
+3. **Butter 1899's residual 13** on value and 30 on quantity, and
+   **Victoria 1897 is in the final table twice**, 169,975 and 169,075 cwt
+   against one value of 816,399.
+4. `Oil — Chemical, Essential, Or Perfumed` 1874 at 0.780 and
+   `Oil Seed Cake — Linseed Cake` 1899 at 0.961.
