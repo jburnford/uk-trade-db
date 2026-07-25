@@ -260,7 +260,13 @@ for n in wl:
         if u == 'Value':          # a value line is not a quantity anchor
             continue
         for cell in ser:
-            t1_by_u[u][cell[0]] = t1_by_u[u].get(cell[0], 0) + cell[1]
+            # take one reading per year, never the SUM of two. A national
+            # total is one printed line; two §TOTAL cells for the same unit
+            # and year are two readings of it, and adding them doubles the
+            # anchor, which halves the commodity on the map without tripping
+            # any flag. The larger is kept because the failure that produces
+            # a pair is a fold, and a folded-in zero must not win.
+            t1_by_u[u][cell[0]] = max(t1_by_u[u].get(cell[0], 0), cell[1])
             if len(cell) > 3 and cell[3]:
                 t1v.setdefault(cell[0], cell[3])
     unit_note = None
@@ -453,18 +459,35 @@ for n in wl:
             # every combination can simply be tried. Overlapping groups (a
             # child that is itself a parent) come out right because each
             # combination is scored on the set it actually keeps.
+            # THREE options per group, not two: drop the parent, drop the
+            # children, or KEEP BOTH. The printed table sometimes carries a
+            # parent line that is a genuine remainder beside children that do
+            # not cover it — 'British East Indies' beside Bombay, Madras and
+            # Bengal, which between them are 88% of it — and forcing a binary
+            # choice there throws away whichever side is smaller. It was
+            # costing exact years: tea 1885-92 fell to 0.96, silk 1886-92 to
+            # 0.79-0.91, palm oil eleven years to 0.98. Adding the third
+            # option is safe precisely because the score is the distance to
+            # the Tier-1 anchor: a genuine duplicate kept twice overshoots and
+            # loses, which is the same evidence that made the anchor the
+            # arbiter here in the first place.
+            #
+            # Ties keep the DROPPING reading, so nothing that used to be
+            # de-duplicated stops being de-duplicated on a coin toss.
             best = None
-            for mask in range(1 << len(groups)):
-                dropped = set()
-                for i, (pa, kids) in enumerate(groups):
-                    if mask >> i & 1:
-                        dropped.add(pa)
-                    else:
-                        dropped.update(kids)
-                kept = sum(ly[(c, y)][ix] for c in present if c not in dropped)
-                d = abs(kept - t)
-                if best is None or d < best[0]:
-                    best = (d, dropped)
+            for mask in range(3 ** len(groups)):
+                dropped, rem = set(), mask
+                for pa, kids in groups:
+                    choice, rem = rem % 3, rem // 3
+                    if choice == 0:
+                        dropped.update(kids)      # parent is the fuller total
+                    elif choice == 1:
+                        dropped.add(pa)           # children cover the parent
+                kept_cells = [c for c in present if c not in dropped]
+                kept = sum(ly[(c, y)][ix] for c in kept_cells)
+                score = (abs(kept - t), len(kept_cells))
+                if best is None or score < best[0]:
+                    best = (score, dropped)
             drop.update((c, y) for c in best[1])
         else:
             for pa, kids in groups:

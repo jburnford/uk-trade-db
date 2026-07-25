@@ -669,7 +669,16 @@ def main():
             drop_u = 'Ton' if keep == 'Tun' else 'Tun'
             for cty, units in s['c'].items():
                 if drop_u in units:
-                    units.setdefault(keep, []).extend(units.pop(drop_u))
+                    # skip a year the keep-unit already has: where the
+                    # national line was printed under BOTH spellings in one
+                    # year, appending blindly leaves two §TOTAL cells for that
+                    # year, and build_map_slim used to add them — which
+                    # doubled the anchor and made 'Oil — Fish : Train Or
+                    # Blubber' read exactly 0.500 in 1894, 1895 and 1896.
+                    # Same contract as the curation fold: existing cell wins.
+                    have = {row[0] for row in units.get(keep, ())}
+                    units.setdefault(keep, []).extend(
+                        r for r in units.pop(drop_u) if r[0] not in have)
                     n += 1
         return n
 

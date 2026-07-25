@@ -89,7 +89,6 @@ NOUNIT,421917,"Sugar — Molasses, Treacle, And Syrup",421917
 NOUNIT,405291,Coffee — Raw · British East Indies,405291
 NOUNIT,395503,"Carriages, Carts, &C — Railway Carriages For Passengers",395503
 NOUNIT,394889,"Lead — Rolled And Sheet, Piping And Tubing",394889
-NOUNIT,385126,Gil — Seed,385126
 NOUNIT,379833,Painters' Colours And Pigments,379833
 NOUNIT,379171,Saddlery And Harness — Salt (Rock And White),379171
 NOUNIT,376537,"Skins And Furs — British: Sheep And Lambs', Undressed, Without The Wool",376537
@@ -410,10 +409,8 @@ ONEYEAR,11637694,"Coffee — Rum Shrub, Liqueurs And Cordials, Of And From Briti
 ONEYEAR,5634669,"Cotton — Raw, And Waste Of",5634669
 ONEYEAR,5434597,Unrefined — 2Nd Class,5434597
 ONEYEAR,4423963,"Cotton Manufactures — Piece Goods, Printed And Dyed",4423963
-ONEYEAR,3880327,Butterine (Margarine),3880327
 ONEYEAR,3772279,Fish — Rough Or Undressed,3772279
 ONEYEAR,3658840,Woollen And Worsted Manufactures — Worsted Yarn (Combed),3658840
-ONEYEAR,2962264,Butterine,2962264
 ONEYEAR,2723762,Tea — Red: Total Of,2723762
 ONEYEAR,2533015,Iron And Steel — Manufactures Of Iron And Steel,2533015
 ONEYEAR,2372364,"Jute Yarn — Manufactures, Piece Goods",2372364
@@ -429,15 +426,14 @@ ONEYEAR,1295272,"Pyrites Of Iron, Copper, Or Sulphur",1295272
 ONEYEAR,1175947,Woollen And Worsted Manufactures — Sorts Unenumerated,1175947
 ONEYEAR,1048546,Feathers — Cured Or Salted,1048546
 ONEYEAR,985462,"Skins, Furs, And Pelts — Goat, Tanned, Tawed, Or Dressed",985462
-ONEYEAR,981354,Fish — Olive,981354
 ONEYEAR,962654,Iron — Leather Manufacturers,962654
 ONEYEAR,916008,"Petroleum, Lubricating",916008
 ONEYEAR,834458,Cotton Manufactures — Other Than Muslims,834458
 ONEYEAR,798911,"Copper — Unwrought, In Ingots, Cakes, Or Slabs",798911
+ONEYEAR,790841,Coco Nut,790841
 ONEYEAR,783906,"Flax, Dressed Or Undressed — Apples, Raw",783906
 ONEYEAR,737550,Wood And Timber — Staves : Mahogany,737550
 ONEYEAR,731558,"Bags And Sacks, Empty",731558
-ONEYEAR,715964,Gil — Olive,715964
 ONEYEAR,705211,Cheese — Manufactured,705211
 ONEYEAR,695162,"Painters' Colours And Materials — Writing Or Printing, And Envelopes",695162
 ONEYEAR,693235,Fruit — Snuff : Cigars,693235
@@ -459,10 +455,8 @@ ONEYEAR,466063,"Prints, Engravings, Drawings, &C — Rags (Except Woollen) And O
 ONEYEAR,428458,"Cordage, Cables, Ropes, And Twine Of Hemp Or Like Material",428458
 ONEYEAR,415293,"Plumbago — Quicksilver, Metallic",415293
 ONEYEAR,385356,Wood And Timber — Staves : Unenumerated,385356
-ONEYEAR,385126,Gil — Seed,385126
 ONEYEAR,380858,Cork — Pease,380858
 ONEYEAR,379171,Saddlery And Harness — Salt (Rock And White),379171
-ONEYEAR,368130,Fish — Seed,368130
 ONEYEAR,361539,"Ivory — Teeth, Elephants, Sea Dogs, Sea Horse, Or Sea Morses",361539
 ONEYEAR,352674,"Matches, Safety And Other Sorts — Safety",352674
 ONEYEAR,351211,"Iron — Bars, Unwrought",351211
@@ -484,7 +478,6 @@ ONEYEAR,248761,Beer And Ale — To United States Of America,248761
 ONEYEAR,244954,Rags And Other Materials For Making Paper — Sago And Sago Flour,244954
 ONEYEAR,244196,Dye Woods: Logwood — Unenumerated,244196
 ONEYEAR,233770,"Animals, Living — Horses",233770
-ONEYEAR,229971,Fish — Animal,229971
 ONEYEAR,226650,"Eggs — Shell Fish, Oysters For Food",226650
 ONEYEAR,223970,"Coal, Cinders, &C — Fuel, Manufactured",223970
 ONEYEAR,220001,Drugs — Myrobalans,220001
@@ -495,7 +488,6 @@ ONEYEAR,208010,"Paper — Unenumerated, And Articles Of Paper (Except Papier Mac
 ONEYEAR,207939,Icr,207939
 ONEYEAR,200776,Figs And Fig Cake,200776
 ONEYEAR,198945,"Jute Manufactures — Rolled, Sheet, Piping Andtubing",198945
-ONEYEAR,194636,Gil — Animal,194636
 ONEYEAR,192783,Leather — Locust Beans,192783
 ONEYEAR,192532,Oil — Whale Fisheries,192532
 ONEYEAR,181219,"Honey — Horns, Tips And Pieces Of Horn, And Hooks",181219
@@ -511,7 +503,6 @@ ONEYEAR,154924,Cloucharouc — Manufactures Of,154924
 ONEYEAR,151553,Iron — Bar,151553
 ONEYEAR,149508,Iron — Facture,149508
 ONEYEAR,143967,Sugar (Including All Fruits And Vegetables Preserved In Sugar),143967
-ONEYEAR,143621,Olje-Margarine,143621
 ONEYEAR,142211,Musical Instruments — Myrobalans,142211
 ONEYEAR,134071,Cotton — Ginger,134071
 ONEYEAR,133097,"Metal — Gold (Other Than Iron Or Copper), Fit Only For Re-Manufacture",133097
@@ -874,16 +865,12 @@ ANCHOR-over,1.868,"Kiln-Dried, Roasted, Or Ground",12855
 ANCHOR-over,1.683,Wine — White,77056561
 ANCHOR-over,1.363,Saltpetre (Nitrate Of Potash),8862101
 ANCHOR-under,0.485,"Varnished, Japanned Or Enamelled",4272643
-ANCHOR-under,0.445,"Hides, Raw, And Pieces Thereof — Dry",21507472
-ANCHOR-under,0.437,Butterine,2962264
 ANCHOR-under,0.226,"Ivory — Teeth, Elephants', Sea Cow, And Sea Horse",364764
-ANCHOR-under,0.191,Nuts And Kernels,12192456
 ANCHOR-under,0.166,"Skins, Furs, And Pelts — Sheep, Undressed",18458529
 ANCHOR-under,0.06,Woollen Yarn,162387
-ANCHOR-under,0.035,Hides — Raw,917765
-ANCHOR-under,0.013,"Flax, Dressed Or Undressed",57412975
+ANCHOR-under,0.036,Hides — Raw,917765
+ANCHOR-under,0.024,"Flax, Dressed Or Undressed",57412975
 MONO,36631940,Diamonds,36631940
-MONO,1907256,Nuts And Kernels — Turpentine,1907256
 MONO,1567972,"Animals, Living — British North America",1567972
 MONO,518420,Flax And Hemp — To United States Of America,518420
 MONO,374660,"Fish, Fresh And Cured — Salmon",374660
