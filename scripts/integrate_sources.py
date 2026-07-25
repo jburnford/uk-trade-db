@@ -353,12 +353,65 @@ def main():
                 'v_tier': 'B' if v_ok else 'C'})
             added['infonly'] += 1
 
+    # ---- gap-fill blocks that are really EXPORT tables -------------------
+    # The Abstract prints an import table, a table of British produce
+    # EXPORTED and a table of foreign goods RE-EXPORTED for the same
+    # commodity and year, and they are typographically identical. When a
+    # column-top heading is lost the parser files an export table as an
+    # import one, and the gap-fill sources admit it because its stale label
+    # gives it a different signature from the import commodity's — which is
+    # exactly why the "consensus already has this commodity" guard misses.
+    # Butter 1882's import block closes to the digit at its printed 2,169,717
+    # cwt and a second block of six origins rides in beside it, adding 1.3%.
+    #
+    # The test is arithmetic, not a guess about which countries look like
+    # destinations (that screen was tried on tallow and tripped on Chile and
+    # the Channel Islands, which is where British tallow came from): the
+    # block's own printed Total IS the export_uk or reexport national line,
+    # to the digit. Butter 1882's intruder totals 31,640 cwt / GBP219,726 and
+    # the export_uk Tier-1 line is 31,640 / GBP219,726.
+    #
+    # A block is only rejected when NONE of its Totals is the import line.
+    # Some volumes print all three tables under one lost heading — butter
+    # 1880 has three Total rows, 2,326,305 import, 31,408 export, 43,125
+    # re-export — and dropping that block would take the import table with
+    # it. Those are logged by scripts/detect_flow_leakage.py for per-cell
+    # work, not handled here.
+    t1_flow = defaultdict(dict)
+    for flow, g0, a0, y0, v0 in con.execute(
+            """SELECT flow, article_group, article, year, value FROM consensus
+               WHERE measure='quantity' AND value > 0""").fetchall():
+        a0 = (a0 or '').strip()
+        s0 = V.sig(a0) or V.sig(f"{(g0 or '').strip()} {a0}")
+        if s0:
+            t1_flow[(s0, int(y0))].setdefault(flow, v0)
+    leak_blocks, n_leak = set(), 0
+    for tbl in ('country_obs_twoup', 'country_obs_runin'):
+        btot = defaultdict(list)
+        for g0, a0, y0, q0 in con.execute(
+                f"""SELECT article_group, article, year, quantity FROM {tbl}
+                    WHERE flow='import' AND year IS NOT NULL AND quantity > 0
+                      AND lower(country_raw) LIKE '%total%'""").fetchall():
+            btot[((g0 or '').upper(), (a0 or '').strip(), int(y0))].append(q0)
+        for (g0, a0, y0), qs in btot.items():
+            sig0 = V.sig(a0) or V.sig(f"{g0} {a0}")
+            fl = t1_flow.get((sig0, y0)) or {}
+            imp = fl.get('import')
+            if imp and any(abs(q0 - imp) < 0.5 for q0 in qs):
+                continue                      # the import table is in here too
+            if any(fl.get(f) and abs(q0 - fl[f]) < 0.5
+                   for q0 in qs for f in ('export_uk', 'reexport')):
+                leak_blocks.add((g0, a0, y0))
+
     # 3) two-up, 4) run-in — add ONLY commodity-years absent from consensus
     #    (dedup within the added source by (article-sig, country, year))
     for path, src in [(BASE / 'exports' / 'twoup_country.csv', 'twoup'),
                       (BASE / 'exports' / 'runin_country.csv', 'runin')]:
         for (asig, c, y), rec in load_csv(path, src):
             if (rec['group'], (rec['article'] or '').strip(), y) in supersede:
+                continue
+            if (rec['group'], (rec['article'] or '').strip(), y) in leak_blocks:
+                n_leak += 1
                 continue
             if (asig, y) in consensus_commod:
                 continue                          # consensus already has this commodity
@@ -417,8 +470,14 @@ def main():
         # aimed at a 'Region : Sub' cell (palm oil 1878's West African
         # 'Not particularly designated') is ADDED BESIDE the broken reading
         # instead of instead of it
-        if ((asig, V.cnorm(ctry), int(y)) in manual_replace
-                or (V.sig(art), V.cnorm(ctry), int(y)) in manual_replace):
+        # ...and the SUB half has to be tested on its own, because
+        # V.cnorm('Australasia : Victoria') is 'australasia': a manual row
+        # naming Victoria never matched the sub-entry cell it was written to
+        # replace, so butter 1899 kept the GBP1,651,338 reading beside the
+        # hand-adjudicated 1,051,338 and the value column stayed 3.5% over.
+        if any((s, cn, int(y)) in manual_replace
+               for s in (asig, V.sig(art))
+               for cn in (V.cnorm(ctry), V.cnorm(sub))):
             continue
         key = (asig, V.cnorm(parent), V.cnorm(sub), (unit or '').strip(), int(y))
         subbuckets[key].append({
@@ -663,6 +722,8 @@ def main():
     con.close()
     print(f'country_year_final: {n[0]:,} rows')
     print(f'  by source: {dict(bysrc)}')
+    print(f'  gap-fill cells rejected as export/re-export tables: {n_leak:,} '
+          f'({len(leak_blocks)} blocks)')
     print(f'  gap-fill added: {dict(added)}')
     print(f'  colonial sub-entries recovered: {n_sub:,}')
     print(f'  flow-repaired rows: {n_flowfix:,}')
