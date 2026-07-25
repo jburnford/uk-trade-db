@@ -26,6 +26,18 @@ try:
                   csv.DictReader(open('reports/transposed_tables.csv'))}
 except FileNotFoundError:
     TRANSPOSED = set()
+# (commodity, year, origin) cells whose origin appears in no other year of the
+# commodity and carries most of that year — a glued block from a neighbouring
+# table (scripts/detect_profile_outliers.py). The impossible-origin filter
+# below cannot see these: it needs a Tier-1 anchor to measure against, and
+# these land in years that have none. Teak 1873 is the case in point, reading
+# 138,645 loads against ~30,000 either side because Canada, Sweden, Russia and
+# Norway - the hewn-softwood trade - were glued into it.
+try:
+    PROFILE_OUT = {(r['commodity'], int(r['year']), r['origin']) for r in
+                   csv.DictReader(open('reports/origin_profile_outliers.csv'))}
+except FileNotFoundError:
+    PROFILE_OUT = set()
 wl = sorted((keep | targets) & set(m), key=lambda n: -m[n]['v'])
 
 # commodity category (ordered keyword rules, first match wins) — a browsing
@@ -269,6 +281,13 @@ for n in wl:
     # ton "logwood"; Greece 1.3M gal "collodion"). Drop it and log for a
     # source-level fix. Only applied where the anchor is itself substantial.
     for (c, y), cell in list(ly.items()):
+        if (n, y, c) in PROFILE_OUT:
+            outliers.append({'commodity': n, 'year': y, 'origin': c,
+                             'unit': dom, 'qty': round(cell[1]),
+                             'anchor': round(t1.get(y, 0)),
+                             'x_anchor': 'foreign to this commodity'})
+            drop.add((c, y))
+            continue
         t = t1.get(y, 0)
         if t > 1000 and cell[1] > t * 1.15:
             outliers.append({'commodity': n, 'year': y, 'origin': c,
@@ -323,6 +342,13 @@ for n in wl:
                 fl.append('overanchor')   # origins still double-count
             elif med < 0.5:
                 fl.append('underanchor')  # map shows a slice as if it were the whole
+        else:
+            # There IS a national total and there ARE origins, but no single
+            # year carries both, so nothing has ever been checked against
+            # anything. Teak read as unflagged this way: origins ran to 1893
+            # and the anchor started at 1893, overlapping on one year in which
+            # the origin quantity happened to be zero.
+            fl.append('nooverlap')
     rv = sum(a for a, _b in res.values())
     tv = sum(v for v, _q in nat.values())
     if tv and rv / tv > 0.6:
@@ -369,6 +395,9 @@ payload = {
             'oneyear': 'origins for a single year only',
             'noanchor': 'no national total published for this line, so the '
                         'origins cannot be checked against one',
+            'nooverlap': 'the national total and the origin tables cover '
+                         'different years, so neither has ever been checked '
+                         'against the other',
             'overanchor': 'origins add up to more than the national total — '
                           'residual double-counting',
             'underanchor': 'origins add up to less than half the national '
@@ -384,7 +413,7 @@ Path('exports/map_slim.json').write_text(
     json.dumps(payload, ensure_ascii=False, separators=(',', ':')))
 sz = Path('exports/map_slim.json').stat().st_size
 # log the impossible-origin cells for source-level follow-up
-outliers.sort(key=lambda r: -r['x_anchor'])
+outliers.sort(key=lambda r: (isinstance(r['x_anchor'], str), -r['qty']))
 with open('reports/origin_outliers.csv', 'w', newline='') as f:
     w = csv.DictWriter(f, fieldnames=['commodity', 'year', 'origin', 'unit',
                                       'qty', 'anchor', 'x_anchor'])

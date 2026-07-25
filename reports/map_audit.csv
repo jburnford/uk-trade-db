@@ -6,7 +6,7 @@ NOUNIT,51538661,"Arms, Ammunition, And Military Stores — Bags And Sacks Empty"
 NOUNIT,51320916,"Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",51320916
 NOUNIT,50887840,"Brass — Manufactures Of, Not Being Ordnance",50887840
 NOUNIT,50071380,"Wine, British Made — Rough, Hewn, Sawn, Or Split",50071380
-NOUNIT,20754861,Sugar — Total Unrefined Of All Kinds—(Contd),20754861
+NOUNIT,20754861,Sugar — Total Unrefined Of All Kinds,20754861
 NOUNIT,16266636,Woollen And Worsted Yarn — Worsted Yarn (Combed),16266636
 NOUNIT,14606437,"Linen And Jute Manufactures — Plain, Unbleached Or Bleached",14606437
 NOUNIT,14126067,"Pork — Poultry And Game, Alive Or Dead",14126067
@@ -109,6 +109,7 @@ NOUNIT,337959,"Plants, Shrubs, Trees, And Flower Roots",337959
 NOUNIT,324742,Fruit — Unenumerated : Preserved Without Sugar,324742
 NOUNIT,322156,Stones And Slates — Slate By Sale,322156
 NOUNIT,316644,"Paraffine — Perfumery, And Articles Used Inthe Manufacture Thereof",316644
+NOUNIT,309471,"Hides, Raw, And Pieces Thereof — British Possessions In South Africa",309471
 NOUNIT,294156,"Plate, Gold — Silver",294156
 NOUNIT,292216,"Tar — West Coast Of Africa, Foreign",292216
 NOUNIT,290726,"Arms, Ammunition, And Military Stores — Muskets, Rifles And Fowling Pieces",290726
@@ -183,7 +184,7 @@ NOUNIT,62414,Toys,62414
 NOUNIT,61025,"Tobacco — Manufactured, In Bond",61025
 NOUNIT,58835,Dye Woods — Spanish Possessions,58835
 NOUNIT,58484,"Spirits — British And Foreign, Mixed In Bond",58484
-NOUNIT,54558,"Woollen And Worsted Manufactures — Coatings, Duffels, &C., All Wool (Contd)",54558
+NOUNIT,54558,"Woollen And Worsted Manufactures — Coatings, Duffels, &C., All Wool",54558
 NOUNIT,52814,Corn And Grain — From Australasia,52814
 NOUNIT,52051,"Brass, Bronze, And Metal Bronzed Orlacquered",52051
 NOUNIT,51301,Seeds — From British East Indies,51301
@@ -216,7 +217,7 @@ NOUNIT,14805,Manures — From British East Indies,14805
 NOUNIT,14793,"Dye Woods — Earthenware, Not Being Porcelain Or Chinaware",14793
 NOUNIT,14683,"Slates — Refined, Or Rendered By Any Process Equal Thereto : In Lumps And Loaves",14683
 NOUNIT,14491,Sawn — Unenumerated,14491
-NOUNIT,14379,"Glass — Plate, Rough Or Silvered (Contd)",14379
+NOUNIT,14379,"Glass — Plate, Rough Or Silvered",14379
 NOUNIT,13640,"Spirits — Liqueurs, Cordials, &C., Not Tested",13640
 NOUNIT,12335,Hemp — British Dressed,12335
 NOUNIT,12317,"Hides — Tawed, Curried, Or Dressed, Varnished",12317
@@ -266,8 +267,6 @@ NOUNIT,0,"Wine, British Made — Staves And Empty Casks",0
 NOUNIT,0,Value Of Articles Imported Byparcel Post,0
 NOUNIT,0,Umbrellas And Parasols,0
 NOUNIT,0,Toys — Not Containing Spirit,0
-NOUNIT,0,Total Value — Dyes And Dyeing Stuffs,0
-NOUNIT,0,Total Value - - - - -,0
 NOUNIT,0,Tobacco — Toxs,0
 NOUNIT,0,Telegraphic Wires And Apparatus,0
 NOUNIT,0,Sugar— — 4Th Class,0
@@ -360,7 +359,7 @@ NOUNIT,0,"Embroidery And Needlework — Extracts Of Other Sorts, Unenumerated",0
 NOUNIT,0,Earthen And China Ware — United States,0
 NOUNIT,0,Earthen And China Ware — Red Pottery And Brown Stone Ware,0
 NOUNIT,0,"Earthen And China Ware — Earthenware, Chinaware, Parian, And Porcelain",0
-NOUNIT,0,"Earthen And China Ware — Earthenware, Chinaware, &C. (Contd)",0
+NOUNIT,0,"Earthen And China Ware — Earthenware, Chinaware, &C.",0
 NOUNIT,0,Dye Stuffs — Products Of Coal Tar,0
 NOUNIT,0,Dye Stuffs — Other Sorts: Unenumerated,0
 NOUNIT,0,Dye Stuffs — Extracts,0
@@ -415,14 +414,13 @@ ONEYEAR,100636087,"Bleaching Materials — Books, Printed",100636087
 ONEYEAR,50071380,"Wine, British Made — Rough, Hewn, Sawn, Or Split",50071380
 ONEYEAR,13652302,Wood And Timber — Sawn Or Split,13652302
 ONEYEAR,12755988,Silk — Manufactures,12755988
-ONEYEAR,11637694,"Coffee — Rum Shrub, Liqueurs And Cordials, Of And From       British Possessions",11637694
+ONEYEAR,11637694,"Coffee — Rum Shrub, Liqueurs And Cordials, Of And From British Possessions",11637694
 ONEYEAR,5634669,"Cotton — Raw, And Waste Of",5634669
 ONEYEAR,4743377,Cheese — Wheat,4743377
 ONEYEAR,4423963,"Cotton Manufactures — Piece Goods, Printed And Dyed",4423963
 ONEYEAR,3880327,Butterine (Margarine),3880327
 ONEYEAR,3772279,Fish — Rough Or Undressed,3772279
 ONEYEAR,3658840,Woollen And Worsted Manufactures — Worsted Yarn (Combed),3658840
-ONEYEAR,3054679,"Bristles — Note.—The Total Quantities And Value Of ""Butterine,"" Declared As Such, Imported In The Year 1885 Were",3054679
 ONEYEAR,2977100,"Jute Yarn — Manufactures, Piece Goods",2977100
 ONEYEAR,2962264,Butterine,2962264
 ONEYEAR,2723762,Tea — Red: Total Of,2723762
@@ -481,14 +479,17 @@ ONEYEAR,385126,Gil — Seed,385126
 ONEYEAR,380858,Cork — Pease,380858
 ONEYEAR,379171,Saddlery And Harness — Salt (Rock And White),379171
 ONEYEAR,368130,Fish — Seed,368130
+ONEYEAR,361539,"Ivory — Teeth, Elephants, Sea Dogs, Sea Horse, Or Sea Morses",361539
 ONEYEAR,352674,"Matches, Safety And Other Sorts — Safety",352674
 ONEYEAR,351211,"Iron — Bars, Unwrought",351211
 ONEYEAR,350741,"Cards, Playing — Molasses",350741
 ONEYEAR,330170,Guar — Unenumerated,330170
+ONEYEAR,309471,"Hides, Raw, And Pieces Thereof — British Possessions In South Africa",309471
 ONEYEAR,302567,Pork,302567
 ONEYEAR,294558,"Cotton Manufactures — Dye Stuffs, And Substances Used In Tanning; Unenumerated",294558
 ONEYEAR,292216,"Tar — West Coast Of Africa, Foreign",292216
 ONEYEAR,291437,Feathers — Tow Or Codilla Of,291437
+ONEYEAR,287100,Pyrites Of Iron Or Copper Or Sulphur — Linen And Cotton Rag,287100
 ONEYEAR,282046,"Manganese, One Of",282046
 ONEYEAR,272720,"Provisions, Unenumerated — Raos (Except Woollen) And Other Materials For Making Paper",272720
 ONEYEAR,259949,"Flax, Dressed Or Undressed — Almonds",259949
@@ -528,6 +529,7 @@ ONEYEAR,149508,Iron — Facture,149508
 ONEYEAR,143967,Sugar (Including All Fruits And Vegetables Preserved In Sugar),143967
 ONEYEAR,143621,Olje-Margarine,143621
 ONEYEAR,142211,Musical Instruments — Myrobalans,142211
+ONEYEAR,133097,"Metal — Gold (Other Than Iron Or Copper), Fit Only For Re-Manufacture",133097
 ONEYEAR,131628,"Cannon And Mortars, Mounted Or Accompanied With Carriages — Muskets, Rifles, Carbines, Fowling Pieces, Or Guns Of Any Other Sorts, Not Enumerated, And Pistols",131628
 ONEYEAR,124262,"Ore, Unenumerated — Eastern Coast Of Africa",124262
 ONEYEAR,120139,"Arms, And Ammunition",120139
@@ -559,7 +561,7 @@ ONEYEAR,61035,"Iron (Con.) — Steel, Unwrought",61035
 ONEYEAR,59815,Gals,59815
 ONEYEAR,58835,Dye Woods — Spanish Possessions,58835
 ONEYEAR,58484,"Spirits — British And Foreign, Mixed In Bond",58484
-ONEYEAR,54558,"Woollen And Worsted Manufactures — Coatings, Duffels, &C., All Wool (Contd)",54558
+ONEYEAR,54558,"Woollen And Worsted Manufactures — Coatings, Duffels, &C., All Wool",54558
 ONEYEAR,51127,"Dye Stuffs, And Substances Used In Tanning — Cocchineal",51127
 ONEYEAR,50749,Bark — Cocaine,50749
 ONEYEAR,50462,Earthen And China Ware — Salmon,50462
@@ -587,7 +589,7 @@ ONEYEAR,14932,Meat — Bell,14932
 ONEYEAR,14793,"Dye Woods — Earthenware, Not Being Porcelain Or Chinaware",14793
 ONEYEAR,14683,"Slates — Refined, Or Rendered By Any Process Equal Thereto : In Lumps And Loaves",14683
 ONEYEAR,14491,Sawn — Unenumerated,14491
-ONEYEAR,14379,"Glass — Plate, Rough Or Silvered (Contd)",14379
+ONEYEAR,14379,"Glass — Plate, Rough Or Silvered",14379
 ONEYEAR,13912,Hewn: Fir,13912
 ONEYEAR,13640,"Spirits — Liqueurs, Cordials, &C., Not Tested",13640
 ONEYEAR,13425,Cotton Manufactures — Piece Goods Of Other Countries,13425
@@ -653,7 +655,6 @@ ONEYEAR,0,Wood And Timber — Staves And Empty Casks,0
 ONEYEAR,0,"Wine, British Made — Unenumerated",0
 ONEYEAR,0,"Wine, British Made — Staves And Empty Casks",0
 ONEYEAR,0,Value Of Articles Imported Byparcel Post,0
-ONEYEAR,0,Total Value — Dyes And Dyeing Stuffs,0
 ONEYEAR,0,Tobacco — Toxs,0
 ONEYEAR,0,Sugar— — 4Th Class,0
 ONEYEAR,0,Sugar— — 3Rd Class,0
@@ -686,7 +687,7 @@ ONEYEAR,0,General Exports,0
 ONEYEAR,0,"Furniture And Hardwoods — House Frames, Fittings, And Joiners' Work",0
 ONEYEAR,0,"Fish, Fresh And Cured",0
 ONEYEAR,0,Earthen And China Ware — United States,0
-ONEYEAR,0,"Earthen And China Ware — Earthenware, Chinaware, &C. (Contd)",0
+ONEYEAR,0,"Earthen And China Ware — Earthenware, Chinaware, &C.",0
 ONEYEAR,0,"Cutch — Envoys, Unenumerated",0
 ONEYEAR,0,"Cotton — Drugs, Unenumerated:(Including Medicinal Preparations)",0
 ONEYEAR,0,Cotton Manufactures — Red Pottery And Brown Stone Ware,0
@@ -749,8 +750,6 @@ NOVALUE,0,Value Of Articles Imported Byparcel Post,0
 NOVALUE,0,Unrefined — 1St Class,0
 NOVALUE,0,Umbrellas And Parasols,0
 NOVALUE,0,Toys — Not Containing Spirit,0
-NOVALUE,0,Total Value — Dyes And Dyeing Stuffs,0
-NOVALUE,0,Total Value - - - - -,0
 NOVALUE,0,Tobacco — Toxs,0
 NOVALUE,0,Telegraphic Wires And Apparatus,0
 NOVALUE,0,Sugar— — 4Th Class,0
@@ -843,7 +842,7 @@ NOVALUE,0,"Embroidery And Needlework — Extracts Of Other Sorts, Unenumerated",
 NOVALUE,0,Earthen And China Ware — United States,0
 NOVALUE,0,Earthen And China Ware — Red Pottery And Brown Stone Ware,0
 NOVALUE,0,"Earthen And China Ware — Earthenware, Chinaware, Parian, And Porcelain",0
-NOVALUE,0,"Earthen And China Ware — Earthenware, Chinaware, &C. (Contd)",0
+NOVALUE,0,"Earthen And China Ware — Earthenware, Chinaware, &C.",0
 NOVALUE,0,Dye Stuffs — Products Of Coal Tar,0
 NOVALUE,0,Dye Stuffs — Other Sorts: Unenumerated,0
 NOVALUE,0,Dye Stuffs — Extracts,0
@@ -895,6 +894,7 @@ NOVALUE,0,Apparel And Slops,0
 RESID,597485071,Wine — Total Of All Kinds,597485071
 RESID,80928139,Oil,80928139
 RESID,5991391,Copper,5991391
+RESID,2608319,Whalebone (Whalefins) — Whale Fisheries,2608319
 RESID,1704488,Oil — West Coast Of Africa (Foreign),1704488
 RESID,962654,Iron — Leather Manufacturers,962654
 RESID,591849,Whalefins,591849
@@ -908,13 +908,13 @@ RESID,65005,"Wine — White, In Bottles : Sparkling : Saumur",65005
 RESID,63721,Metals And Ores — Puddled,63721
 RESID,62817,Corn And Grain — Rye Meal,62817
 RESID,61025,"Tobacco — Manufactured, In Bond",61025
-RESID,54558,"Woollen And Worsted Manufactures — Coatings, Duffels, &C., All Wool (Contd)",54558
+RESID,54558,"Woollen And Worsted Manufactures — Coatings, Duffels, &C., All Wool",54558
 RESID,52026,Beads — Unenumerated,52026
 RESID,19070,"Cannon And Mortars, Mounted Or Accompanied With Carriages — Shot Of Iron",19070
 RESID,18643,Flax & Hemp — Dressed And Undressed,18643
 RESID,15324,Perfumery — Refined,15324
 RESID,14491,Sawn — Unenumerated,14491
-RESID,14379,"Glass — Plate, Rough Or Silvered (Contd)",14379
+RESID,14379,"Glass — Plate, Rough Or Silvered",14379
 RESID,12733,Turpentine (Rough),12733
 RESID,12335,Hemp — British Dressed,12335
 RESID,11414,"Cannon And Mortars, Mounted Or Accompanied With Carriages — Percussion Caps",11414
@@ -991,13 +991,13 @@ MONO,207939,Icr,207939
 MONO,200776,Figs And Fig Cake,200776
 MONO,193540,"Fish, Fresh And Cured — Oysters",193540
 MONO,184749,Spirits — To British East Indies,184749
+MONO,171574,"Fish, Fresh And Cured — Cod And Ling",171574
 MONO,124262,"Ore, Unenumerated — Eastern Coast Of Africa",124262
 MONO,105908,"Fish, Fresh And Cured — Dressed And Undressed",105908
 MONO,104638,Flax — Dressed And Endressed,104638
 MONO,84422,Fruit — Snuff : Cavendish Or Negrohead,84422
 MONO,63721,Metals And Ores — Puddled,63721
-MONO,62817,Corn And Grain — Rye Meal,62817
-MONO,54558,"Woollen And Worsted Manufactures — Coatings, Duffels, &C., All Wool (Contd)",54558
+MONO,54558,"Woollen And Worsted Manufactures — Coatings, Duffels, &C., All Wool",54558
 MONO,34660,Sugar — Complete,34660
 MONO,28198,Cocoa — Paste Or Chocolate,28198
 MONO,27440,"Quicksilver, (Metallic) — In The Husk",27440
@@ -1023,6 +1023,7 @@ MONO,7067,Petroleum — Pickles,7067
 MONO,6911,Plumbago — From British East Indies,6911
 MONO,6181,Copper — Piece Goods Of Other Countries,6181
 MONO,5259,Linen Manufactures — To United States Of America,5259
+MONO,4883,"Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Safflower",4883
 MONO,4848,Drugs — Safflower,4848
 MONO,4572,"Copper, Ore Of — Safflower",4572
 MONO,3549,Beads Of All Sorts — Salted,3549

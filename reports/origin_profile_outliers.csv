@@ -1,0 +1,680 @@
+commodity,year,origin,qty,year_qty,outside_share,n_outside,gbp
+Spirits,1879,"Other Unsweetened Spirits - ,,",100957,104113,1.0,2,270977195
+Spirits,1879,"Manufactured, Cigars And Snuff - ,,",3156,104113,1.0,2,270977195
+Spirits,1885,Germany,11360,19284,1.0,8,270977195
+Spirits,1885,France,4327,19284,1.0,8,270977195
+Spirits,1885,Other Foreign Countries,1676,19284,1.0,8,270977195
+Spirits,1885,Holland,930,19284,1.0,8,270977195
+Spirits,1885,United States Of America,682,19284,1.0,8,270977195
+Spirits,1885,British West India Islands,146,19284,1.0,8,270977195
+Spirits,1885,Other British Possessions,104,19284,1.0,8,270977195
+Spirits,1885,Channel Islands,59,19284,1.0,8,270977195
+Wood And Timber,1888,Sawn Fir,1198319,1389981,0.92,8,229561174
+Wood And Timber,1888,Denmark,56377,1389981,0.92,8,229561174
+Wood And Timber,1888,Unenumerated,12729,1389981,0.92,8,229561174
+Wood And Timber,1888,Austrian Territories,7189,1389981,0.92,8,229561174
+Wood And Timber,1888,Australasia New Zealand,685,1389981,0.92,8,229561174
+Wood And Timber,1888,Belgium,120,1389981,0.92,8,229561174
+Wood And Timber,1888,Hewn Teak,77,1389981,0.92,8,229561174
+Wood And Timber,1888,Channel Islands,1,1389981,0.92,8,229561174
+Wool,1880,?,9781,9781,1.0,1,216440825
+Coffee,1880,Prunes From France Other Countries,362501129,380477834,0.99,4,212222301
+Coffee,1880,Plums French And Pruneloes From France Other Countries,13029327,380477834,0.99,4,212222301
+Coffee,1880,Dutch Guiana,77910,380477834,0.99,4,212222301
+Coffee,1880,Malt Foreign From All Countries,384,380477834,0.99,4,212222301
+Coffee,1898,Entered 1898,250715,1240043,0.8,4,212222301
+Coffee,1898,Entered 1895,249545,1240043,0.8,4,212222301
+Coffee,1898,Entered 1897,248411,1240043,0.8,4,212222301
+Coffee,1898,Entered 1896,247956,1240043,0.8,4,212222301
+Jute,1872,British India,3972010,4041018,0.98,1,161053835
+Petroleum,1899,Illuminating Gallons,203521374,295124602,1.0,30,112746849
+Petroleum,1899,Lubricating,56625993,295124602,1.0,30,112746849
+Petroleum,1899,Potatoes,5150011,295124602,1.0,30,112746849
+Petroleum,1899,Hams,4094500,295124602,1.0,30,112746849
+Petroleum,1899,Illuminating,3566592,295124602,1.0,30,112746849
+Petroleum,1899,Hides Raw,2788687,295124602,1.0,30,112746849
+Petroleum,1899,Of All Other Kinds,2681276,295124602,1.0,30,112746849
+Petroleum,1899,Hemp,2664647,295124602,1.0,30,112746849
+Petroleum,1899,Rice,2504004,295124602,1.0,30,112746849
+Petroleum,1899,Pyrites Of Iron Or Copper,1164667,295124602,1.0,30,112746849
+Petroleum,1899,Raisins,1054136,295124602,1.0,30,112746849
+Petroleum,1899,Gutta Percha,1005966,295124602,1.0,30,112746849
+Petroleum,1899,Hops,809842,295124602,1.0,30,112746849
+Petroleum,1899,Poultry And Game Alive Or Dead,785294,295124602,1.0,30,112746849
+Petroleum,1899,Pyrites Of Iron Or Copper Tons,701174,295124602,1.0,30,112746849
+Petroleum,1899,Fresh,668972,295124602,1.0,30,112746849
+Petroleum,1899,Rabbits Dead,635055,295124602,1.0,30,112746849
+Petroleum,1899,Glass Manufactures Bottles,527534,295124602,1.0,30,112746849
+Petroleum,1899,Plumbago,461587,295124602,1.0,30,112746849
+Petroleum,1899,Plants,444566,295124602,1.0,30,112746849
+Petroleum,1899,Hay,429799,295124602,1.0,30,112746849
+Petroleum,1899,Prints,418788,295124602,1.0,30,112746849
+Petroleum,1899,Quicksilver,415430,295124602,1.0,30,112746849
+Petroleum,1899,Rosin,390656,295124602,1.0,30,112746849
+Petroleum,1899,Lac,372587,295124602,1.0,30,112746849
+Petroleum,1899,Ice,317190,295124602,1.0,30,112746849
+Petroleum,1899,Gum Kowrie,316229,295124602,1.0,30,112746849
+Petroleum,1899,Pork Salted,305829,295124602,1.0,30,112746849
+Petroleum,1899,Pork Salted Cts,284720,295124602,1.0,30,112746849
+Petroleum,1899,Plumbago Tons,17497,295124602,1.0,30,112746849
+Roasted Or Ground,1894,British East Indies,17035547,31317763,0.72,6,81107095
+Roasted Or Ground,1894,Portugal,4787326,31317763,0.72,6,81107095
+Roasted Or Ground,1894,Republic Of Colombia,452555,31317763,0.72,6,81107095
+Roasted Or Ground,1894,British West Africa,95578,31317763,0.72,6,81107095
+Roasted Or Ground,1894,West Africa Foreign,92251,31317763,0.72,6,81107095
+Roasted Or Ground,1894,Denmark,61,31317763,0.72,6,81107095
+Oil,1886,Not Designated,498761,949943,0.53,5,80928139
+Oil,1886,Train Or Blubber,6358,949943,0.53,5,80928139
+Oil,1886,Denmark,214,949943,0.53,5,80928139
+Oil,1886,Norway,185,949943,0.53,5,80928139
+Oil,1886,New Zealand,25,949943,0.53,5,80928139
+Oil,1887,Not Particularly Designnated,496801,886936,0.56,1,80928139
+Oil,1897,"Paper, Including Strawboard, &C",135931,668205,0.85,9,80928139
+Oil,1897,"Paper, Including Strawboard, &C. - Carts",128834,668205,0.85,9,80928139
+Oil,1897,Paper-Making Materials,94900,668205,0.85,9,80928139
+Oil,1897,Oil-Seed Cake,79058,668205,0.85,9,80928139
+Oil,1897,"Paper, Including Strawboard, &C. . . . Casks",54310,668205,0.85,9,80928139
+Oil,1897,Painters' Colours,47737,668205,0.85,9,80928139
+Oil,1897,"Onions, Raw",27496,668205,0.85,9,80928139
+Oil,1897,"Poultry And Game, Alive Or Dead",576,668205,0.85,9,80928139
+Oil,1897,Olive . . . . . . . . . . Tuns,4,668205,0.85,9,80928139
+Oil,1898,Petroleum Gallons,219249539,245775539,0.94,28,80928139
+Oil,1898,Paper Including Strawboard And C Ccts,5011241,245775539,0.94,28,80928139
+Oil,1898,Chemical Essential Or Perfumed Lbs,1893405,245775539,0.94,28,80928139
+Oil,1898,Paraffine Ccts,946933,245775539,0.94,28,80928139
+Oil,1898,Palm Ccts,910900,245775539,0.94,28,80928139
+Oil,1898,Turpentine Ccts,573087,245775539,0.94,28,80928139
+Oil,1898,Fresh,557602,245775539,0.94,28,80928139
+Oil,1898,Coco Nut Ccts,307101,245775539,0.94,28,80928139
+Oil,1898,Pork Salted Ccts,275993,245775539,0.94,28,80928139
+Oil,1898,Bar,207820,245775539,0.94,28,80928139
+Oil,1898,Of All Other Kinds Cicts,166152,245775539,0.94,28,80928139
+Oil,1898,Paper Including Strawboard And C Cicts,106442,245775539,0.94,28,80928139
+Oil,1898,Seal,37896,245775539,0.94,28,80928139
+Oil,1898,Pig And Sheet,22274,245775539,0.94,28,80928139
+Oil,1898,Lard,20203,245775539,0.94,28,80928139
+Oil,1898,Rabbits Dead,18937,245775539,0.94,28,80928139
+Oil,1898,Glass Manufactures Bottles Gross,7593,245775539,0.94,28,80928139
+Oil,1898,Leather,4636,245775539,0.94,28,80928139
+Oil,1898,Hides Raw Cicts,4226,245775539,0.94,28,80928139
+Oil,1898,Manufactures Of,2509,245775539,0.94,28,80928139
+Oil,1898,Seal Tons,1659,245775539,0.94,28,80928139
+Oil,1898,Jute,407,245775539,0.94,28,80928139
+Oil,1898,Cutta Percha,55,245775539,0.94,28,80928139
+Oil,1898,Chemical Essential Or Perfumed,32,245775539,0.94,28,80928139
+Oil,1898,Quicksilver,25,245775539,0.94,28,80928139
+Oil,1898,Hay Tons,8,245775539,0.94,28,80928139
+Oil,1898,Gum Lac,4,245775539,0.94,28,80928139
+Oil,1898,Pork Salted Cicts,4,245775539,0.94,28,80928139
+"Unenumerated, Not Sweetened Or Mixed",1883,United States Of America Other Countries,1395602183,1396721636,1.0,1,73088906
+"Skins, Furs, And Pelts — Seal",1884,Whale Fisheries Northern Other Countries,502306368,502963402,1.0,3,63340335
+"Skins, Furs, And Pelts — Seal",1884,Brazil,1724,502963402,1.0,3,63340335
+"Skins, Furs, And Pelts — Seal",1884,United States Of Colombia,1390,502963402,1.0,3,63340335
+Fruit,1885,British East Indies,780419,806736,1.0,3,55388625
+Fruit,1885,Australasia,13404,806736,1.0,3,55388625
+Fruit,1885,Canada,12913,806736,1.0,3,55388625
+Fruit,1897,Of All Other Kinds Carts,174182,563564,0.51,8,55388625
+Fruit,1897,"Glass Manufactures, Bottles",49811,563564,0.51,8,55388625
+Fruit,1897,Of All Other Kinds . . Casks,26458,563564,0.51,8,55388625
+Fruit,1897,"Hides, Raw",16460,563564,0.51,8,55388625
+Fruit,1897,Hay,9735,563564,0.51,8,55388625
+Fruit,1897,"Glass Manufactures, Bottles . . . . Gross",8174,563564,0.51,8,55388625
+Fruit,1897,Preserved Without Sugar (Not Dried,2947,563564,0.51,8,55388625
+Fruit,1897,"Hides, Raw . . . . . . . . Casks",57,563564,0.51,8,55388625
+Fruit,1899,Preserved Without Sugar Not Dried Lbs,63510823,102370101,0.97,31,55388625
+Fruit,1899,Oranges Bushels,8553718,102370101,0.97,31,55388625
+Fruit,1899,Raw Of All Other Kinds,8100853,102370101,0.97,31,55388625
+Fruit,1899,Apples Raw Bushels,3801172,102370101,0.97,31,55388625
+Fruit,1899,Of All Other Kinds Cts,2567010,102370101,0.97,31,55388625
+Fruit,1899,Oranges,2152233,102370101,0.97,31,55388625
+Fruit,1899,Glass Manufactures Bottles Gross,1266939,102370101,0.97,31,55388625
+Fruit,1899,Hides Raw Cts,1210273,102370101,0.97,31,55388625
+Fruit,1899,Apples Raw,1186143,102370101,0.97,31,55388625
+Fruit,1899,Grapes Raw,1167047,102370101,0.97,31,55388625
+Fruit,1899,Lemons,1088503,102370101,0.97,31,55388625
+Fruit,1899,Preserved Without Sugar Not Dried,746105,102370101,0.97,31,55388625
+Fruit,1899,Plums Raw,658273,102370101,0.97,31,55388625
+Fruit,1899,Nuts Used As Fruit,608658,102370101,0.97,31,55388625
+Fruit,1899,Ice Tons,595142,102370101,0.97,31,55388625
+Fruit,1899,Almonds,514023,102370101,0.97,31,55388625
+Fruit,1899,Dried Unenumerated Cuts,462575,102370101,0.97,31,55388625
+Fruit,1899,Fruits And Vegetables Preserved In Sugar,411674,102370101,0.97,31,55388625
+Fruit,1899,Dried Unenumerated,327600,102370101,0.97,31,55388625
+Fruit,1899,Fruits And Vegetables Preserved In Sugar Cuts,203001,102370101,0.97,31,55388625
+Fruit,1899,Of All Other Kinds Cuts,153542,102370101,0.97,31,55388625
+Fruit,1899,Almonds Cuts,140153,102370101,0.97,31,55388625
+Fruit,1899,Hay Tons,131546,102370101,0.97,31,55388625
+Fruit,1899,Gum Kowrie,116955,102370101,0.97,31,55388625
+Fruit,1899,Lac,108758,102370101,0.97,31,55388625
+Fruit,1899,Fruit And Vegetables Preserved In Sugar,11719,102370101,0.97,31,55388625
+Fruit,1899,Fruits And Vegetables Preserved In Sugar Cts,6338,102370101,0.97,31,55388625
+Fruit,1899,Hides Raw Cuts,5764,102370101,0.97,31,55388625
+Fruit,1899,Fruits And Vegetables Preserved Cuts,2690,102370101,0.97,31,55388625
+Fruit,1899,Dried Unenumerated Cts,18,102370101,0.97,31,55388625
+Fruit,1899,Fruit And Vegetables Preserved In Sugar Cuts,10,102370101,0.97,31,55388625
+"Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse",1884,West Africa British Portuguese Not Distin Guished,3001712531,3001770558,1.0,2,55237121
+"Teeth, Elephants', Sea-Cow, Sea-Horse, Or Sea-Morse",1884,East Coast Of Africa Portuguese Native,51521,3001770558,1.0,2,55237121
+Biscuit And Bread,1876,Bombay And Scindebengal And Burmah,12663701,12776040,0.99,4,52143734
+Biscuit And Bread,1876,Other Countries,27143,12776040,0.99,4,52143734
+Biscuit And Bread,1876,Ceylon,2625,12776040,0.99,4,52143734
+Biscuit And Bread,1876,British West India Islands And Britishguiana,2501,12776040,0.99,4,52143734
+"Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Other Foreign Countries,1657113,2548852,0.72,2,51320916
+"Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Belgium,166866,2548852,0.72,2,51320916
+"Spirits — Unenumerated, Sweetened Or Mixed (Tested)",1883,United States Of America British West India Islands,31853635,31884387,1.0,2,50651924
+"Spirits — Unenumerated, Sweetened Or Mixed (Tested)",1883,Other Countries,1032,31884387,1.0,2,50651924
+"Spirits — Unenumerated, Sweetened Or Mixed (Tested)",1885,British West Indiaislands,4188,6481,0.65,1,50651924
+"Spirits — Unenumerated, Sweetened Or Mixed (Tested)",1886,Italy,13807,19569,0.71,1,50651924
+Fruit — Raisins,1879,China,141644277,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Bengal And Burmah,38007628,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Unenumerated Not Sweetened Or Mixed From Germany,1071892,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Japan,805928,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Argentine Republic,470309,192323117,0.95,14,40226566
+Fruit — Raisins,1879,British India,246305,192323117,0.95,14,40226566
+Fruit — Raisins,1879,New Granada,241638,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Straits Settlements,219555,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Spirits Rum From Spanish West India Islands,218465,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Ceylon,135336,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Bombay,126591,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Madras,106511,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Tafia From France,100,192323117,0.95,14,40226566
+Fruit — Raisins,1879,Malt Foreign From All Countries,76,192323117,0.95,14,40226566
+"Dye Stuffs, And Substances Used In Tanning — Indigo",1884,Bengal And Burmah,66654,104423,0.64,2,34416948
+"Dye Stuffs, And Substances Used In Tanning — Indigo",1884,Aden,87,104423,0.64,2,34416948
+Seeds,1892,Bengal,1181496,1794729,1.0,25,30353807
+Seeds,1892,Egypt,356761,1794729,1.0,25,30353807
+Seeds,1892,Argentine Republic,110418,1794729,1.0,25,30353807
+Seeds,1892,British East Indies,61539,1794729,1.0,25,30353807
+Seeds,1892,Turkey,19400,1794729,1.0,25,30353807
+Seeds,1892,Brazil,18072,1794729,1.0,25,30353807
+Seeds,1892,Holland,10495,1794729,1.0,25,30353807
+Seeds,1892,Peru,6660,1794729,1.0,25,30353807
+Seeds,1892,United States Of America,4525,1794729,1.0,25,30353807
+Seeds,1892,Germany,3800,1794729,1.0,25,30353807
+Seeds,1892,Burmah,3276,1794729,1.0,25,30353807
+Seeds,1892,Roumania,2848,1794729,1.0,25,30353807
+Seeds,1892,Italy,2194,1794729,1.0,25,30353807
+Seeds,1892,Madras,2126,1794729,1.0,25,30353807
+Seeds,1892,Belgium,1911,1794729,1.0,25,30353807
+Seeds,1892,Morocco,1812,1794729,1.0,25,30353807
+Seeds,1892,Other British East Indian Possessions,1784,1794729,1.0,25,30353807
+Seeds,1892,France,1343,1794729,1.0,25,30353807
+Seeds,1892,Chile,1117,1794729,1.0,25,30353807
+Seeds,1892,Republic Of Colombia,925,1794729,1.0,25,30353807
+Seeds,1892,Niger Protectorate,733,1794729,1.0,25,30353807
+Seeds,1892,Sierra Leone,686,1794729,1.0,25,30353807
+Seeds,1892,Other Foreign Countries,569,1794729,1.0,25,30353807
+Seeds,1892,Other British Possessions,210,1794729,1.0,25,30353807
+Seeds,1892,Ceylon,29,1794729,1.0,25,30353807
+Seeds,1899,Flax Or Linseed,3383902,7552419,0.72,2,30353807
+Seeds,1899,Cotton,2036550,7552419,0.72,2,30353807
+Sugar,1885,Germany,194521,239636,1.0,2,29744645
+Sugar,1885,Belgium,45115,239636,1.0,2,29744645
+Sugar,1886,Java,3909412,9112119,0.93,18,29744645
+Sugar,1886,British Guiana,1322165,9112119,0.93,18,29744645
+Sugar,1886,British East Indies,877080,9112119,0.93,18,29744645
+Sugar,1886,British West India Islands,645902,9112119,0.93,18,29744645
+Sugar,1886,Brazil,597228,9112119,0.93,18,29744645
+Sugar,1886,Philippine Islands,556970,9112119,0.93,18,29744645
+Sugar,1886,Mauritius,291759,9112119,0.93,18,29744645
+Sugar,1886,Mexico,55225,9112119,0.93,18,29744645
+Sugar,1886,British Possessions In South Africa,44344,9112119,0.93,18,29744645
+Sugar,1886,Hong Kong,39708,9112119,0.93,18,29744645
+Sugar,1886,Dutch Guiana,36426,9112119,0.93,18,29744645
+Sugar,1886,Central America,33287,9112119,0.93,18,29744645
+Sugar,1886,Native States,23107,9112119,0.93,18,29744645
+Sugar,1886,Spanish West India Islands,21409,9112119,0.93,18,29744645
+Sugar,1886,China,19480,9112119,0.93,18,29744645
+Sugar,1886,Hayti And St Domingo,19220,9112119,0.93,18,29744645
+Sugar,1886,Danish West India Islands,8603,9112119,0.93,18,29744645
+Sugar,1886,British Honduras,7269,9112119,0.93,18,29744645
+Sugar,1898,Refined Cuts,1499271,1623352,0.92,1,29744645
+Oil — Palm,1876,Postuguese Possessions,651915,879825,0.74,1,25929457
+"Lac, Seed, Shell, Stick, And Dye",1884,British India,112479,224958,0.5,1,23754989
+Wood And Timber — Teak,1873,Canada,61599,138645,0.69,6,23536263
+Wood And Timber — Teak,1873,Sweden,10487,138645,0.69,6,23536263
+Wood And Timber — Teak,1873,Russia,8349,138645,0.69,6,23536263
+Wood And Timber — Teak,1873,Norway,7103,138645,0.69,6,23536263
+Wood And Timber — Teak,1873,United States Of America,6670,138645,0.69,6,23536263
+Wood And Timber — Teak,1873,British Guiana,1267,138645,0.69,6,23536263
+Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1872,West Coast Of Africa,27818,48767,0.57,1,19084393
+Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1886,West Africa,16067,31480,0.51,1,19084393
+Iron,1878,Spain,1088862,1218736,1.0,9,17210964
+Iron,1878,Italy,48771,1218736,1.0,9,17210964
+Iron,1878,Belgium,20968,1218736,1.0,9,17210964
+Iron,1878,Sweden,15273,1218736,1.0,9,17210964
+Iron,1878,Algeria,13124,1218736,1.0,9,17210964
+Iron,1878,Other Countries,10729,1218736,1.0,9,17210964
+Iron,1878,Holland,9084,1218736,1.0,9,17210964
+Iron,1878,Russia,8051,1218736,1.0,9,17210964
+Iron,1878,Turkey,3874,1218736,1.0,9,17210964
+Iron,1890,Norway,356282,356341,1.0,2,17210964
+Iron,1890,Other Foreign Countries,59,356341,1.0,2,17210964
+Iron,1897,"Linen, Yarn",213964,864932,0.99,22,17210964
+Iron,1897,"Manufactures, Of All Kinds",168426,864932,0.99,22,17210964
+Iron,1897,"Meat, Unenumerated, Salted Or Fresh Carts",139573,864932,0.99,22,17210964
+Iron,1897,Nitrate Of Soda,89267,864932,0.99,22,17210964
+Iron,1897,Musical Instruments,46429,864932,0.99,22,17210964
+Iron,1897,Boots And Shoes,41049,864932,0.99,22,17210964
+Iron,1897,"Milk, Condensed",27752,864932,0.99,22,17210964
+Iron,1897,Land,22926,864932,0.99,22,17210964
+Iron,1897,Manufactures,17638,864932,0.99,22,17210964
+Iron,1897,Phosphate Of Lime And Rock,17375,864932,0.99,22,17210964
+Iron,1897,"Lead, Pig And Sheet",15963,864932,0.99,22,17210964
+Iron,1897,"Metal, Unenumerated, Wrought",14972,864932,0.99,22,17210964
+Iron,1897,Matches,10724,864932,0.99,22,17210964
+Iron,1897,"Preserved, Not Salted",10649,864932,0.99,22,17210964
+Iron,1897,Lard . . . . . . . . . . . Casks,4104,864932,0.99,22,17210964
+Iron,1897,"Manufactures, Unenumerated",3995,864932,0.99,22,17210964
+Iron,1897,"Meat, Unenumerated, Salted Or Fresh",3600,864932,0.99,22,17210964
+Iron,1897,Gloves,2576,864932,0.99,22,17210964
+Iron,1897,"Milk, Condensed . . . . . . Casks",601,864932,0.99,22,17210964
+Iron,1897,Boots And Shoes . . . . Doz. Prs,541,864932,0.99,22,17210964
+Iron,1897,"Manganese, Ore Of",59,864932,0.99,22,17210964
+Iron,1897,Leather . . . . . . . . . . Casks,23,864932,0.99,22,17210964
+Wood And Timber — Staves,1888,Australasia,141841,282928,0.5,1,15414533
+"Drugs — Bark, Peruvian",1882,Turkey,359560,587635,0.7,2,12362206
+"Drugs — Bark, Peruvian",1882,Persia,54442,587635,0.7,2,12362206
+Nuts And Kernels,1872,British India,5764,9578,0.85,3,12138097
+Nuts And Kernels,1872,Other Countries,2139,9578,0.85,3,12138097
+Nuts And Kernels,1872,Australia,271,9578,0.85,3,12138097
+"Skins, Furs, And Pelts — Goat, Undressed",1884,British India,2414005,4570325,0.53,1,11334935
+"Metal — Leaf, Not Gold",1877,All Countries,56327,56327,1.0,1,11276969
+"Flowers, Artificial — Raw, Not Otherwise Described",1875,Turkey,71157,136008,0.82,6,9217789
+"Flowers, Artificial — Raw, Not Otherwise Described",1875,Bombay,15860,136008,0.82,6,9217789
+"Flowers, Artificial — Raw, Not Otherwise Described",1875,China,13714,136008,0.82,6,9217789
+"Flowers, Artificial — Raw, Not Otherwise Described",1875,Persia,4303,136008,0.82,6,9217789
+"Flowers, Artificial — Raw, Not Otherwise Described",1875,Gibraltar,3526,136008,0.82,6,9217789
+"Flowers, Artificial — Raw, Not Otherwise Described",1875,Egypt,3020,136008,0.82,6,9217789
+Saltpetre (Nitrate Of Potash),1882,British India,163862,322024,0.51,1,8851660
+Sugar — Unrefined,1886,Germany,5671612,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,British Guiana,1322165,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,British East Indies,877080,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Belgium,750671,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,British West India Islands,645902,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Chile,597228,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Central America,476524,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Mauritius,291759,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Holland,281031,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Egypt,247404,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Peru,84928,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Hayti And St Domingo,55225,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,British Possessions In South Africa,44344,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Hong Kong,39708,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,France,38007,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Mexico,33287,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Australasia,19706,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Cane And Other Sorts,19220,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Sweden,17674,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Russia,13200,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,British Honduras,7269,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Other British Possessions,1212,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Other Foreign Countries,142,11535440,1.0,24,7466354
+Sugar — Unrefined,1886,Brazil,142,11535440,1.0,24,7466354
+Bark — Peruvian,1881,United States Of Colombia,70944,125358,0.57,1,7281868
+"Buttons And Studs, Not Of Metal",1880,All Countries,7177,7177,1.0,1,6875576
+Isinglass,1874,Bengal And Burmah,4253700,4257409,1.0,1,6854460
+Castor,1881,British India,128943,130375,0.99,1,6509246
+Castor,1884,Bengal And Burmah,103372,148359,0.7,1,6509246
+"Ore, Unenumerated",1891,Native Islands In The Indian Seas Not Borneo,26323,47101,0.56,1,6472928
+"Ore, Unenumerated",1893,Seas (Except Borneo,24655,43991,0.56,1,6472928
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,British East Indies,226828,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,United States Of America,113942,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Brazil,102199,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Madras,82400,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Guatemala,72569,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Bombay,60123,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Republic Of Colombia,51599,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Costa Rica,50229,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Ceylon,46570,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,San Salvador,23448,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Aden,17548,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Nicaragua,16004,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,British West India Islands,14603,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Straits Settlements,4513,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Mexico,3595,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Peru,2197,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,West Africa Foreign,2140,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Ecuador,1533,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Chile,1300,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Other British Possessions,965,1030750,0.87,21,5160404
+"Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Bengal,106,1030750,0.87,21,5160404
+Cotton Manufactures — Unenumerated,1876,Mexico,6116,22258,0.89,7,4961454
+Cotton Manufactures — Unenumerated,1876,British West India Islands,3847,22258,0.89,7,4961454
+Cotton Manufactures — Unenumerated,1876,West Coast Of Africa Foreign,3557,22258,0.89,7,4961454
+Cotton Manufactures — Unenumerated,1876,Central America,2009,22258,0.89,7,4961454
+Cotton Manufactures — Unenumerated,1876,New Granada,1641,22258,0.89,7,4961454
+Cotton Manufactures — Unenumerated,1876,Venezuela,1442,22258,0.89,7,4961454
+Cotton Manufactures — Unenumerated,1876,Philippine Islands,1156,22258,0.89,7,4961454
+Cotton Manufactures — Unenumerated,1896,Cape Of Good Hope,3527810,7090415,1.0,2,4961454
+Cotton Manufactures — Unenumerated,1896,British Possessions In South Africa,3527810,7090415,1.0,2,4961454
+Beef — Eastern Coast Of Africa,1898,Brazil,209753,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Peru,7805,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Zanzibar And Pemba,3727,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Uruguay,3519,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Portuguese Possessions,1329,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Australasia,961,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Madagascar,882,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Other Foreign Countries,800,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Argentine Republic,266,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Aden And Dependencies,156,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Chile,97,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,British West India Islands,82,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Other British Possessions,61,253746,0.9,14,4863460
+Beef — Eastern Coast Of Africa,1898,Mauritius And Dependencies,3,253746,0.9,14,4863460
+Oil — Train Or Blubber,1886,France,318,1307,0.83,4,4664445
+Oil — Train Or Blubber,1886,Belgium,286,1307,0.83,4,4664445
+Oil — Train Or Blubber,1886,Holland,278,1307,0.83,4,4664445
+Oil — Train Or Blubber,1886,Other Foreign Countries,204,1307,0.83,4,4664445
+"Mutton, Fresh — From Australasia",1892,Chile,2069441,2401400,1.0,4,4312562
+"Mutton, Fresh — From Australasia",1892,Peru,286700,2401400,1.0,4,4312562
+"Mutton, Fresh — From Australasia",1892,Germany,29301,2401400,1.0,4,4312562
+"Mutton, Fresh — From Australasia",1892,Other Foreign Countries,5775,2401400,1.0,4,4312562
+Caoutchouc — West Africa,1885,Not Particularly Desig-Nated,15830,15830,1.0,1,4134243
+Caoutchouc — West Africa,1886,Not Particularly Design-Nated,18689,23813,0.78,1,4134243
+Caoutchouc — West Africa,1891,Brazil,109456,211167,0.9,10,4134243
+Caoutchouc — West Africa,1891,United States Of America,28517,211167,0.9,10,4134243
+Caoutchouc — West Africa,1891,The Gold Coast Colony,22406,211167,0.9,10,4134243
+Caoutchouc — West Africa,1891,Sierra Leone,17602,211167,0.9,10,4134243
+Caoutchouc — West Africa,1891,Niger Protectorate,6310,211167,0.9,10,4134243
+Caoutchouc — West Africa,1891,Gambia,1846,211167,0.9,10,4134243
+Caoutchouc — West Africa,1891,United States Of Colombia,1735,211167,0.9,10,4134243
+Caoutchouc — West Africa,1891,Other Foreign Countries,1050,211167,0.9,10,4134243
+Caoutchouc — West Africa,1891,Central America,339,211167,0.9,10,4134243
+Caoutchouc — West Africa,1891,Mauritius,280,211167,0.9,10,4134243
+Fruit — Almonds,1875,Holland,6210,21525,0.54,5,3959759
+Fruit — Almonds,1875,Australia,1784,21525,0.54,5,3959759
+Fruit — Almonds,1875,Sweden,1521,21525,0.54,5,3959759
+Fruit — Almonds,1875,United States Of America,1104,21525,0.54,5,3959759
+Fruit — Almonds,1875,Denmark,942,21525,0.54,5,3959759
+Caoutchouc — Eastern Coast Of Africa,1899,Brazil,169836,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,United States Of America,18656,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Peru,9830,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Uruguay,4380,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Republic Of Colombia,2952,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Zanzibar And Pemba,2458,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Portuguese Possessions,1810,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Madagascar,816,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Ecuador,604,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,British West India Islands,420,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Chile,349,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Other Foreign Countries,317,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Australasia,309,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Aden And Dependencies,208,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Other British Possessions,208,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Venezuela,157,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Nicaragua,100,213961,1.0,18,3594620
+Caoutchouc — Eastern Coast Of Africa,1899,Mauritius And Dependencies,5,213961,1.0,18,3594620
+"Cotton Manufactures — Piece Goods Of Mixed Materials, Cotton Predominating",1885,British Possessions,45700,45700,1.0,1,3557159
+China And Porcelain Ware,1882,Australasia,10670,17411,0.61,1,3129080
+Candles Of All Sorts,1875,British West India Islands And Britishguiana,1150310,5176560,0.63,8,3057148
+Candles Of All Sorts,1875,Australia,1067766,5176560,0.63,8,3057148
+Candles Of All Sorts,1875,Canada,268484,5176560,0.63,8,3057148
+Candles Of All Sorts,1875,United States Of Colombia,196852,5176560,0.63,8,3057148
+Candles Of All Sorts,1875,Central America,188740,5176560,0.63,8,3057148
+Candles Of All Sorts,1875,Bengal And Burmah,149287,5176560,0.63,8,3057148
+Candles Of All Sorts,1875,Bombay,138467,5176560,0.63,8,3057148
+Candles Of All Sorts,1875,Madras,117450,5176560,0.63,8,3057148
+Sago And Sago Flour,1890,British East Indies,549057,1106075,0.5,6,3032962
+Sago And Sago Flour,1890,China,5004,1106075,0.5,6,3032962
+Sago And Sago Flour,1890,Java,1970,1106075,0.5,6,3032962
+Sago And Sago Flour,1890,Other Foreign Countries,987,1106075,0.5,6,3032962
+Sago And Sago Flour,1890,Bombay,501,1106075,0.5,6,3032962
+Sago And Sago Flour,1890,Other British Possessions,11,1106075,0.5,6,3032962
+"Tobacco — White, Total Of",1894,Spain,2192478,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,France,1541626,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,Holland,422173,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,Italy,294944,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,Germany,98497,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,Madeira,94594,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,Canary Islands,27988,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,United States Of America,18451,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,Portugal,15263,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,Belgium,14035,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,Other Foreign Countries,5956,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,Turkey,2378,4822537,0.98,13,2981141
+"Tobacco — White, Total Of",1894,Other Colonies,290,4822537,0.98,13,2981141
+Whalebone (Whalefins) — Whale Fisheries,1888,Germany,440768,1592637,1.0,11,2608319
+Whalebone (Whalefins) — Whale Fisheries,1888,Fir,310522,1592637,1.0,11,2608319
+Whalebone (Whalefins) — Whale Fisheries,1888,Russia,277021,1592637,1.0,11,2608319
+Whalebone (Whalefins) — Whale Fisheries,1888,Norway,219987,1592637,1.0,11,2608319
+Whalebone (Whalefins) — Whale Fisheries,1888,Sweden,205014,1592637,1.0,11,2608319
+Whalebone (Whalefins) — Whale Fisheries,1888,Spain,60066,1592637,1.0,11,2608319
+Whalebone (Whalefins) — Whale Fisheries,1888,Austrian Territories,38130,1592637,1.0,11,2608319
+Whalebone (Whalefins) — Whale Fisheries,1888,France,34736,1592637,1.0,11,2608319
+Whalebone (Whalefins) — Whale Fisheries,1888,Oak,5347,1592637,1.0,11,2608319
+Whalebone (Whalefins) — Whale Fisheries,1888,United States Of America,694,1592637,1.0,11,2608319
+Whalebone (Whalefins) — Whale Fisheries,1888,West Africa Settlements,3,1592637,1.0,11,2608319
+Glass — Common Bottles,1887,"British West India Islands, And British Guiana",50686,61671,1.0,2,2606714
+Glass — Common Bottles,1887,Other British Possessions,10985,61671,1.0,2,2606714
+"Fruit — Unenumerated, Sweetened, Or Mixed (Tested)",1896,China,31115707,32823613,1.0,5,2467527
+"Fruit — Unenumerated, Sweetened, Or Mixed (Tested)",1896,Java,980084,32823613,1.0,5,2467527
+"Fruit — Unenumerated, Sweetened, Or Mixed (Tested)",1896,Macao,497091,32823613,1.0,5,2467527
+"Fruit — Unenumerated, Sweetened, Or Mixed (Tested)",1896,Japan,143863,32823613,1.0,5,2467527
+"Fruit — Unenumerated, Sweetened, Or Mixed (Tested)",1896,Other Foreign Possessions,1771,32823613,1.0,5,2467527
+"Cotton Manufactures — Dye Stuffs, Unenumerated",1872,Ecuador,53878,277912,0.53,6,2372760
+"Cotton Manufactures — Dye Stuffs, Unenumerated",1872,British India,35639,277912,0.53,6,2372760
+"Cotton Manufactures — Dye Stuffs, Unenumerated",1872,Dutch West India Islands,23860,277912,0.53,6,2372760
+"Cotton Manufactures — Dye Stuffs, Unenumerated",1872,East Coast Of Africa Native States,15939,277912,0.53,6,2372760
+"Cotton Manufactures — Dye Stuffs, Unenumerated",1872,Egypt,11688,277912,0.53,6,2372760
+"Cotton Manufactures — Dye Stuffs, Unenumerated",1872,Portugal Azores And Madeira,7632,277912,0.53,6,2372760
+"Skins And Furs — Foreign, Dressed In The United Kingdom",1878,Germany,2251113,2601874,0.87,1,2344494
+"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,Hayti And St. Domingo,8664,40435,0.55,4,2239610
+"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,West Coast Of Africa (Foreign,6450,40435,0.55,4,2239610
+"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,British West Indies And Guiana,4461,40435,0.55,4,2239610
+"Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,British Honduras,2699,40435,0.55,4,2239610
+Myrabolams,1880,Bombay And Seinde,238151,368361,0.65,1,2160705
+"Oils — Fish, Train Or Blubber",1884,Canada,6353,16032,0.56,5,1839979
+"Oils — Fish, Train Or Blubber",1884,Whale Fisheries Northern,2185,16032,0.56,5,1839979
+"Oils — Fish, Train Or Blubber",1884,Channel Islands,222,16032,0.56,5,1839979
+"Oils — Fish, Train Or Blubber",1884,Other Countries,183,16032,0.56,5,1839979
+"Oils — Fish, Train Or Blubber",1884,Brazil,112,16032,0.56,5,1839979
+Gum,1885,British East India,119000,238242,0.5,2,1468450
+Gum,1885,Portuguese,187,238242,0.5,2,1468450
+Gum,1894,And Pemba,2123,3226,1.0,2,1468450
+Gum,1894,Aden,1103,3226,1.0,2,1468450
+Snuff,1883,Portugal,3082066,4913507,0.98,19,1388816
+Snuff,1883,Spain,1309002,4913507,0.98,19,1388816
+Snuff,1883,Italy,175568,4913507,0.98,19,1388816
+Snuff,1883,Madecira,81975,4913507,0.98,19,1388816
+Snuff,1883,Australasia,37534,4913507,0.98,19,1388816
+Snuff,1883,Turkey,29477,4913507,0.98,19,1388816
+Snuff,1883,Egypt,20758,4913507,0.98,19,1388816
+Snuff,1883,British Possessions In South Africa,18716,4913507,0.98,19,1388816
+Snuff,1883,Germany,11352,4913507,0.98,19,1388816
+Snuff,1883,Malta,9386,4913507,0.98,19,1388816
+Snuff,1883,Austrian Territories,9136,4913507,0.98,19,1388816
+Snuff,1883,France,7658,4913507,0.98,19,1388816
+Snuff,1883,Algeria,4479,4913507,0.98,19,1388816
+Snuff,1883,Spanish West India Islands,2884,4913507,0.98,19,1388816
+Snuff,1883,Russia,2405,4913507,0.98,19,1388816
+Snuff,1883,British East Indies,1774,4913507,0.98,19,1388816
+Snuff,1883,Gibraltar,1187,4913507,0.98,19,1388816
+Snuff,1883,Madeira,1176,4913507,0.98,19,1388816
+Snuff,1883,Canary Islands,2,4913507,0.98,19,1388816
+Snuff,1890,Foreign Countries,3558,4680,1.0,2,1388816
+Snuff,1890,British Possessions,1122,4680,1.0,2,1388816
+Cavendish Or Negrohead,1873,Australia,470858,1433414,0.74,5,1314301
+Cavendish Or Negrohead,1873,Malta And Gozo,272388,1433414,0.74,5,1314301
+Cavendish Or Negrohead,1873,British India,147118,1433414,0.74,5,1314301
+Cavendish Or Negrohead,1873,British Possessions In South Africa,92082,1433414,0.74,5,1314301
+Cavendish Or Negrohead,1873,Mauritius,79446,1433414,0.74,5,1314301
+Cavendish Or Negrohead,1884,British West India Islands,1243720,1400531,0.93,2,1314301
+Cavendish Or Negrohead,1884,British North America United States Of America,61910,1400531,0.93,2,1314301
+Gunpowder,1881,Western Africa (Foreign,4316000,14362700,0.88,15,1279494
+Gunpowder,1881,Australasia,4291800,14362700,0.88,15,1279494
+Gunpowder,1881,Brazil,975400,14362700,0.88,15,1279494
+Gunpowder,1881,Chili,657500,14362700,0.88,15,1279494
+Gunpowder,1881,Greece,395600,14362700,0.88,15,1279494
+Gunpowder,1881,Western Africa (British,393200,14362700,0.88,15,1279494
+Gunpowder,1881,United States Of Colombia,258900,14362700,0.88,15,1279494
+Gunpowder,1881,British West India Islands And British Guiana,257000,14362700,0.88,15,1279494
+Gunpowder,1881,Malta,207100,14362700,0.88,15,1279494
+Gunpowder,1881,Argentine Republic,187300,14362700,0.88,15,1279494
+Gunpowder,1881,Hong Kong,184700,14362700,0.88,15,1279494
+Gunpowder,1881,Ceylon,167200,14362700,0.88,15,1279494
+Gunpowder,1881,British Possessions In South Africa,166400,14362700,0.88,15,1279494
+Gunpowder,1881,Bombay,128400,14362700,0.88,15,1279494
+Gunpowder,1881,Straits Settlements,109100,14362700,0.88,15,1279494
+"Ivory — Teeth, Elephants', &C.",1888,United States Of Colombia,39954,70536,0.92,9,1259799
+"Ivory — Teeth, Elephants', &C.",1888,Ecuador,19437,70536,0.92,9,1259799
+"Ivory — Teeth, Elephants', &C.",1888,Germany,2316,70536,0.92,9,1259799
+"Ivory — Teeth, Elephants', &C.",1888,Brazil,1525,70536,0.92,9,1259799
+"Ivory — Teeth, Elephants', &C.",1888,France,724,70536,0.92,9,1259799
+"Ivory — Teeth, Elephants', &C.",1888,Other Foreign Countries,392,70536,0.92,9,1259799
+"Ivory — Teeth, Elephants', &C.",1888,British Possessions In South,181,70536,0.92,9,1259799
+"Ivory — Teeth, Elephants', &C.",1888,The Gold Coast Including,175,70536,0.92,9,1259799
+"Ivory — Teeth, Elephants', &C.",1888,Hong Kong,89,70536,0.92,9,1259799
+"Ivory — Teeth, Elephants', &C.",1892,The Protectorates Of Zanzibar And Pemba,2989,6060,0.71,3,1259799
+"Ivory — Teeth, Elephants', &C.",1892,Bombay,1276,6060,0.71,3,1259799
+"Ivory — Teeth, Elephants', &C.",1892,Other British East In Dian Possessions,9,6060,0.71,3,1259799
+"Arms, Ammunition, And Military Stores — Cannon And Mortars",1878,Greece,4857,8616,0.56,1,1232356
+"Arms, Ammunition, And Military Stores — Cannon And Mortars",1879,Australia,2015,10549,0.7,4,1232356
+"Arms, Ammunition, And Military Stores — Cannon And Mortars",1879,Sweden And Norway,1918,10549,0.7,4,1232356
+"Arms, Ammunition, And Military Stores — Cannon And Mortars",1879,Morocco,1739,10549,0.7,4,1232356
+"Arms, Ammunition, And Military Stores — Cannon And Mortars",1879,Chili (Exclusive Of Hong Kong,1660,10549,0.7,4,1232356
+Cotton — Eastern Coast Of Africa,1899,British East Indies,226214,248424,0.91,1,1074503
+Cutch,1881,Germany,1134,4106,0.91,5,1001438
+Cutch,1881,United States Of America,1029,4106,0.91,5,1001438
+Cutch,1881,France,904,4106,0.91,5,1001438
+Cutch,1881,Holland,447,4106,0.91,5,1001438
+Cutch,1881,Belgium,220,4106,0.91,5,1001438
+"Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Egypt,190,1741,0.52,8,968670
+"Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Canada,180,1741,0.52,8,968670
+"Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Sweden,169,1741,0.52,8,968670
+"Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Belgium,142,1741,0.52,8,968670
+"Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Mexico,104,1741,0.52,8,968670
+"Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,New Zealand,54,1741,0.52,8,968670
+"Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Hong Kong,50,1741,0.52,8,968670
+"Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Japan,24,1741,0.52,8,968670
+"Cards, Playing — Geneva",1872,Spanish West India Islands,922284,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Germany,620901,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,France,596408,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Brazil,333482,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,British Guiana,147977,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Mauritius,135289,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Philippine Islands,63594,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Bengal And Burmah,62070,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Peru,29021,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Dutch Guiana,27665,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Java,15573,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Egypt,15499,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,British Possessions In South Africa,14421,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,British Honduras,11264,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,China,9998,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Siam,9016,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Straits Settlements,8879,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Madras,6885,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Other Countries,5861,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,New Granada,4388,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Denmark,3634,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,United States Of America,3167,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Austrian Territories,2254,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Central America,2105,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,British West India Islands,1506,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,British India,842,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Bombay,831,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Channel Islands,798,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,"Portugal, Azores, And Madeira",763,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Asiatic Turkey,735,3431356,0.89,31,891908
+"Cards, Playing — Geneva",1872,Russia,570,3431356,0.89,31,891908
+Woollen Yarn — Unenumerated,1872,All Countries,12883,12883,1.0,1,848738
+"Fruit — Nuts, Used As Fruit",1883,United States Of America,30996,51580,0.91,3,833684
+"Fruit — Nuts, Used As Fruit",1883,Other Countries,10533,51580,0.91,3,833684
+"Fruit — Nuts, Used As Fruit",1883,Belgium,5168,51580,0.91,3,833684
+Hemp — Dressed,1876,British East Indies,65247,194248,0.56,3,820279
+Hemp — Dressed,1876,Mexico,26619,194248,0.56,3,820279
+Hemp — Dressed,1876,United States Of America,16060,194248,0.56,3,820279
+"Metal — Old (Other Than Iron Or Copper), Fit Only For Re-Manufacture",1880,Italy,7379,11849,0.9,2,746485
+"Metal — Old (Other Than Iron Or Copper), Fit Only For Re-Manufacture",1880,Canada,3250,11849,0.9,2,746485
+"Brass, Bronze, And Metal, Bronze And Lacquered",1883,Italy,3375,7145,0.67,2,698565
+"Brass, Bronze, And Metal, Bronze And Lacquered",1883,Greece,1441,7145,0.67,2,698565
+"Brass, Bronze, And Metal, Bronze And Lacquered",1884,Spain,3934,5284,0.74,1,698565
+"Plums, French, And Pruneloes",1886,British Possessions,598,676,0.88,1,687603
+"Feathers And Down — For Beds, In Beds Or Otherwise",1877,Other Countries,1296,1296,1.0,1,595772
+Whalefins,1876,Wine See Page 70,1799,2853,0.63,1,591849
+"Fruit — Plums, Dried Or Preserved",1883,Turkey,1024,1811,0.57,1,527076
+"Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1877,China (Except Hong Kong,15929,31235,0.51,1,447072
+"Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,Argentine Republic,7139,29536,0.69,4,447072
+"Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,United States Of America (Pacific),5831,29536,0.69,4,447072
+"Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,United States Of America,5831,29536,0.69,4,447072
+"Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,British Possessions In South Africa,1442,29536,0.69,4,447072
+Cotton Manufactures — Muslins,1872,United States Of America,12250,23261,0.53,1,251507
+Cotton Manufactures — Muslins,1881,All Countries,890,890,1.0,1,251507
+Bark — Of Other Sorts,1881,From All Countries,7194,7194,1.0,1,190535
+Beer And Ale,1887,Egypt,13075,28594,1.0,5,187843
+Beer And Ale,1887,France,10649,28594,1.0,5,187843
+Beer And Ale,1887,Turkey,1940,28594,1.0,5,187843
+Beer And Ale,1887,China,1612,28594,1.0,5,187843
+Beer And Ale,1887,Japan,1318,28594,1.0,5,187843
+Beer And Ale,1888,United States Of Colombia,6972,13945,1.0,3,187843
+Beer And Ale,1888,Argentine Republic,4866,13945,1.0,3,187843
+Beer And Ale,1888,Brazil,2107,13945,1.0,3,187843
+"Fish, Fresh And Cured — Cod And Ling",1881,Spain,29775,46679,0.84,2,171574
+"Fish, Fresh And Cured — Cod And Ling",1881,Australasia,9565,46679,0.84,2,171574
+"Gunstocks In The Rough, Of Wood",1880,All Countries,4707,4707,1.0,1,166666
+Metal,1895,Australasia,928,2857,0.67,5,158605
+Metal,1895,New South Wales,600,2857,0.67,5,158605
+Metal,1895,Victoria,310,2857,0.67,5,158605
+Metal,1895,Chile,51,2857,0.67,5,158605
+Metal,1895,Other British Possessions,18,2857,0.67,5,158605
+"Arms, Ammunition, And Military Stores — Revolvers",1886,British Possessions,3570,3570,1.0,1,71149
+"Arms, Ammunition, And Military Stores — Revolvers",1887,Other British Possessions,1635,1635,1.0,1,71149
+Chicory — Roasted Or Ground In Bond,1883,British Possessions In Southafrica,417464,775549,0.54,1,66909
+Corn And Grain — Rye Meal,1878,Germany,55453,56322,1.0,2,62817
+Corn And Grain — Rye Meal,1878,Other Countries,869,56322,1.0,2,62817
+Beads — Unenumerated,1879,Other Countries,100584,100584,1.0,1,52026
+"Seeds — Unenumerated, Commonly Used For Expressing Oil Therefrom",1879,Bombay And Scinde Madras,4128,4128,1.0,1,37089
+"Dye Stuffs, And Substances Used In Tanning — Safflower",1884,Bengal And Burmah,1776,1794,1.0,2,29418
+"Dye Stuffs, And Substances Used In Tanning — Safflower",1884,Turkey,18,1794,1.0,2,29418
+"Skins, And Furs — Eastern Coast Of Africa",1898,British East Indies,236055,376379,1.0,5,24907
+"Skins, And Furs — Eastern Coast Of Africa",1898,Spain,73229,376379,1.0,5,24907
+"Skins, And Furs — Eastern Coast Of Africa",1898,Persia,31500,376379,1.0,5,24907
+"Skins, And Furs — Eastern Coast Of Africa",1898,Germany,23900,376379,1.0,5,24907
+"Skins, And Furs — Eastern Coast Of Africa",1898,France,10131,376379,1.0,5,24907
+"Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,Germany,22424,44443,0.66,5,14559
+"Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,France,6517,44443,0.66,5,14559
+"Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,Spain,415,44443,0.66,5,14559
+"Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,Belgium,47,44443,0.66,5,14559
+"Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,British East Indies,46,44443,0.66,5,14559
+"Kiln-Dried, Roasted, Or Ground",1891,Channel Islands,16471,40255,0.71,3,12855
+"Kiln-Dried, Roasted, Or Ground",1891,Chile,11358,40255,0.71,3,12855
+"Kiln-Dried, Roasted, Or Ground",1891,Other British Possessions,683,40255,0.71,3,12855
+Sulphuric,1894,Foreign Countries,3739,3739,1.0,1,8136
+Maps And Charts,1881,Other Countries,7627,13262,1.0,2,5881
+Maps And Charts,1881,United States Of America,5635,13262,1.0,2,5881
+"Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Safflower",1896,Bengal,413,1072,0.5,2,4883
+"Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Safflower",1896,Madras,123,1072,0.5,2,4883
+Umbrellas And Parasols,1872,Bombay And Scindebengal And Burmah,1205174702,1297257476,0.96,2,0
+Umbrellas And Parasols,1872,United States Of America (Atlantic & Pacific),45939100,1297257476,0.96,2,0
+"Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1872,Turkey Proper,22590,28829,0.78,1,0
+Telegraphic Wires And Apparatus,1876,Bombay And Scindebengal And Burmah,7749366134,7750004938,1.0,1,0
+"Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1880,Chili,20166,40707,0.63,3,0
+"Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1880,Belgium,2802,40707,0.63,3,0
+"Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1880,United States Of America (Pacific),2782,40707,0.63,3,0
+"Specimens, Illustrative Of Naturalscience",1881,All Countries,10271,10271,1.0,1,0
+"Pictures, Drawings, And Photographs",1881,Australasia,9431,9431,1.0,1,0
+"Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1881,Argentine Republic,6376,8176,0.78,1,0
+"Silk Manufactures — Velvet, Plain Or Figured",1881,Australasia,6004,9800,0.61,1,0
+"Silk Manufactures — Velvet, Plain Or Figured",1884,Holland,851919,867750,0.98,1,0
+Plated And Gilt Wares,1885,British East Indies,21368,21368,1.0,1,0
+At Certain Ports,1894,Islands,306,9070,0.65,21,0
+At Certain Ports,1894,Africa,305,9070,0.65,21,0
+At Certain Ports,1894,Fernande Po,305,9070,0.65,21,0
+At Certain Ports,1894,Macao,300,9070,0.65,21,0
+At Certain Ports,1894,Portugal,294,9070,0.65,21,0
+At Certain Ports,1894,Guiana,293,9070,0.65,21,0
+At Certain Ports,1894,North America,292,9070,0.65,21,0
+At Certain Ports,1894,Bourbon (Reunion,290,9070,0.65,21,0
+At Certain Ports,1894,West Africa,289,9070,0.65,21,0
+At Certain Ports,1894,Algeria,288,9070,0.65,21,0
+At Certain Ports,1894,France,282,9070,0.65,21,0
+At Certain Ports,1894,Belgium,277,9070,0.65,21,0
+At Certain Ports,1894,Indian Seas,274,9070,0.65,21,0
+At Certain Ports,1894,Java,273,9070,0.65,21,0
+At Certain Ports,1894,Holland,268,9070,0.65,21,0
+At Certain Ports,1894,Germany,262,9070,0.65,21,0
+At Certain Ports,1894,Denmark,259,9070,0.65,21,0
+At Certain Ports,1894,Norway,257,9070,0.65,21,0
+At Certain Ports,1894,Sweden,254,9070,0.65,21,0
+At Certain Ports,1894,Russia (Southern Ports),253,9070,0.65,21,0
+At Certain Ports,1894,Russia,253,9070,0.65,21,0
