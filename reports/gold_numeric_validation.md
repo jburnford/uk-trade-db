@@ -10,17 +10,17 @@ Substantive gold commodity-years (gold total > 1,000): **1,456**
 |---|---|
 | ±2% | 1215/1456 = **83%** |
 | ±3% | 1270/1456 = **87%** |
-| ±5% | 1327/1456 = **91%** |
-| ±8% | 1392/1456 = **96%** |
+| ±5% | 1326/1456 = **91%** |
+| ±8% | 1391/1456 = **96%** |
 
 ## Per year (±5%)
 - 1876: 267/278 (96%)
 - 1881: 242/264 (92%)
 - 1886: 239/283 (84%)
-- 1891: 272/302 (90%)
+- 1891: 271/302 (90%)
 - 1896: 307/329 (93%)
 
-## Not reproduced at ±5% (129), largest
+## Not reproduced at ±5% (130), largest
 | commodity | year | gold total | unit |
 |---|---|--:|---|
 | Wool Sheep and Lambs | 1891 | 715,470,708 | Lbs. (Pounds) |
@@ -44,7 +44,7 @@ Substantive gold commodity-years (gold total > 1,000): **1,456**
 | Skins Furs Pelts Sheep Undressed | 1891 | 13,041,530 | Number |
 | Skins Furs Pelts Goat Tanned Tawed or Dressed | 1881 | 8,983,237 | Number |
 | Skins Furs Pelts Furs Unenumerated | 1876 | 7,574,936 | Number |
+| Sugar Unrefined Cane and Other Sorts | 1891 | 7,098,944 | CWTS (Hundredweights) |
 | Skins Furs Pelts Sheep Tanned Tawed or Dressed | 1881 | 6,785,751 | Number |
 | Rice | 1886 | 6,557,213 | CWTS (Hundredweights) |
 | Skins Furs Pelts Sheep Undressed | 1881 | 6,475,264 | Number |
-| Rice | 1891 | 6,198,979 | CWTS (Hundredweights) |

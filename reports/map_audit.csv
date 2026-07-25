@@ -6,11 +6,9 @@ NOUNIT,51538661,"Arms, Ammunition, And Military Stores — Bags And Sacks Empty"
 NOUNIT,51320916,"Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",51320916
 NOUNIT,50887840,"Brass — Manufactures Of, Not Being Ordnance",50887840
 NOUNIT,50071380,"Wine, British Made — Rough, Hewn, Sawn, Or Split",50071380
-NOUNIT,20754861,Sugar — Total Unrefined Of All Kinds,20754861
 NOUNIT,16266636,Woollen And Worsted Yarn — Worsted Yarn (Combed),16266636
 NOUNIT,14606437,"Linen And Jute Manufactures — Plain, Unbleached Or Bleached",14606437
 NOUNIT,14126067,"Pork — Poultry And Game, Alive Or Dead",14126067
-NOUNIT,13947232,"Horns, Tips And Pieces Of Horns And Hoofs — Unenumerated",13947232
 NOUNIT,12755988,Silk — Manufactures,12755988
 NOUNIT,9608018,"Linen Manufactures — Plain, Unbleached Or Bleached",9608018
 NOUNIT,7716495,"Hides — Not Tanned, &C., Dry",7716495
@@ -23,7 +21,6 @@ NOUNIT,3594046,"Leather — Wrought, Boots And Shoes",3594046
 NOUNIT,3557159,"Cotton Manufactures — Piece Goods Of Mixed Materials, Cotton Predominating",3557159
 NOUNIT,3037906,"Telegraphic Wires And Apparatus — Tin, Unwrought",3037906
 NOUNIT,2723762,Tea — Red: Total Of,2723762
-NOUNIT,2721431,Oil — West Coast Of Africa,2721431
 NOUNIT,2717794,"Skins And Furs — Sheep And Lambs', Undressed, Without The Wool",2717794
 NOUNIT,2680207,Silk Manufactures — Broad Stuffs Of Silk Or Satin,2680207
 NOUNIT,2344494,"Skins And Furs — Foreign, Dressed In The United Kingdom",2344494
@@ -31,14 +28,12 @@ NOUNIT,2318466,Cotton Manufactures — To United States Of America,2318466
 NOUNIT,2286259,Tobacco — Red : Total Of,2286259
 NOUNIT,2237972,Cotton Manufactures — Thread For Sewing,2237972
 NOUNIT,2183141,Copper — Unenumerated,2183141
-NOUNIT,2056425,Shells Of All Kinds — Dressed,2056425
 NOUNIT,1877237,Caoutchouc — West Coast Of Africa,1877237
 NOUNIT,1863437,"Woollen And Worsted Manufactures — Coatings, Duffels, &C. Of Wool Mixed With Other Materials",1863437
 NOUNIT,1856222,Land,1856222
 NOUNIT,1786051,"Quicksilver — Woollen, Applicable To Other Uses Than Manure, Torn Up Or Not",1786051
 NOUNIT,1753971,Silk Manufactures — Broad Stuffs,1753971
 NOUNIT,1721942,"Hides — Not Tanned, &C., Wet",1721942
-NOUNIT,1704488,Oil — West Coast Of Africa (Foreign),1704488
 NOUNIT,1567972,"Animals, Living — British North America",1567972
 NOUNIT,1511924,Woollen Yarn — From British North America,1511924
 NOUNIT,1450651,"Silk — Thrown, Twist Or Yarn",1450651
@@ -65,6 +60,7 @@ NOUNIT,782682,Nuts And Kernels — Whale Fisheries,782682
 NOUNIT,765700,Linen And Jute Manufactures — Sail Cloth And Sails,765700
 NOUNIT,750112,Linen Manufactures — Thread For Sewing,750112
 NOUNIT,739552,"Skins, Furs, And Pelts — Tanned, Tawed, Or Dressed",739552
+NOUNIT,695162,"Painters' Colours And Materials — Writing Or Printing, And Envelopes",695162
 NOUNIT,694074,Machinery And Mill Work — Not Being Steam Engines: Sewing Machines,694074
 NOUNIT,666805,Cotton — Piece Goods Other Than Muslins,666805
 NOUNIT,659303,"Stones And Slates — Grindstones, Millstones, And Other Sorts Of Stones",659303
@@ -73,7 +69,6 @@ NOUNIT,652665,"Skins, Furs, And Pelts — Manufactures Of Skins And Furs",652665
 NOUNIT,645623,Woollen And Worsted Manufactures — United States,645623
 NOUNIT,639975,"Glass — Flint, Plain, Cut, Or Ornamented (Including Bottles And Other Manufactures Of Flint Glass)",639975
 NOUNIT,613492,Leather Manufactures — Unenumerated,613492
-NOUNIT,613295,"Painters' Colours And Materials — Writing Or Printing, And Envelopes",613295
 NOUNIT,588776,Woollen And Worsted Manufactures — Blankets,588776
 NOUNIT,574224,Wood And Timber — Fir : Unenumerated,574224
 NOUNIT,559969,"Cordage, Twine, And Cable Yarn",559969
@@ -81,7 +76,6 @@ NOUNIT,555907,Oil — Pulp Of Wood—Mechanical,555907
 NOUNIT,555388,Spirits — Succades And Confectionery (Including Fruits Andvegetables Preserved In Sugar),555388
 NOUNIT,545580,"Stationery, Other Than Paper — Stones, Marble, And Slate; Rough,Hewn Or Manufactured; Other Thanworks Of Art",545580
 NOUNIT,533773,"Linen And Jute Manufactures — Checked, Printed, Or Dyed, And Damasks And Diapers",533773
-NOUNIT,531497,Chemical Manufactures And Pro-Ducts,531497
 NOUNIT,518420,Flax And Hemp — To United States Of America,518420
 NOUNIT,514730,"Paper — Unenumerated, And Articles Of Paper (Except Papier Mâché)",514730
 NOUNIT,507377,Salt (Rock And White),507377
@@ -121,8 +115,8 @@ NOUNIT,264525,"Vegetables, Raw, Unenumerated",264525
 NOUNIT,257785,Woollen And Worsted Yarn — Woollen Yarn (Carded),257785
 NOUNIT,248761,Beer And Ale — To United States Of America,248761
 NOUNIT,239790,Rosin — From British East Indies,239790
-NOUNIT,236303,"Sugar — Elephants, Sea Cow, And Sea Horse",236303
 NOUNIT,227231,"Linen Manufactures — Checked, Printed, Or Dyed, And Damasks And Diapers",227231
+NOUNIT,224833,"Animals, Living — From British North America",224833
 NOUNIT,224506,"Sugar — Molasses, Treacle, Syrup, And Glucose",224506
 NOUNIT,223970,"Coal, Cinders, &C — Fuel, Manufactured",223970
 NOUNIT,217520,Stones And Slates — Slate By Talc,217520
@@ -131,6 +125,7 @@ NOUNIT,208483,Spirits — Suggades And Confectionery (Including Fruits And Veget
 NOUNIT,208010,"Paper — Unenumerated, And Articles Of Paper (Except Papier Maché)",208010
 NOUNIT,203386,"Arms And Ammunition — Muskets, Rifles, Carbines, Fowling-Pieces, Or Guns Of Any Other Sort, Not Enumerated, And Parts Thereof And Pistols",203386
 NOUNIT,198945,"Jute Manufactures — Rolled, Sheet, Piping Andtubing",198945
+NOUNIT,196710,Metal — Mica And Talc,196710
 NOUNIT,193540,"Fish, Fresh And Cured — Oysters",193540
 NOUNIT,192783,Leather — Locust Beans,192783
 NOUNIT,184749,Spirits — To British East Indies,184749
@@ -196,7 +191,6 @@ NOUNIT,39312,Silk Manufactures — To United States Of America,39312
 NOUNIT,37932,Earthen And China Ware — Cod And Ling,37932
 NOUNIT,37912,"Tobacco — Manufactured, Cavendish Or Negrohead",37912
 NOUNIT,34679,Zinc Or Spelter — To British India,34679
-NOUNIT,34660,Sugar — Complete,34660
 NOUNIT,34134,Wood And Timber — British North America,34134
 NOUNIT,33755,Imported In Bottles — Hook,33755
 NOUNIT,33533,Cement — India,33533
@@ -205,7 +199,6 @@ NOUNIT,29091,Varnish — Not Containing Spirit,29091
 NOUNIT,27825,"Tobacco — Cavendish, Manufactured, In Bond",27825
 NOUNIT,24266,Animals Living — Unenumerated,24266
 NOUNIT,22515,"Spirits — Other Sorts, Not Sweetened",22515
-NOUNIT,22425,Metal — Mica And Talc,22425
 NOUNIT,20870,Beer And Ale — Bones (Except Whalefins) Applicable To Manufacturing Purposes,20870
 NOUNIT,19576,Fruit — Snuff : Other Sorts (Including Cigarettes),19576
 NOUNIT,18643,Flax & Hemp — Dressed And Undressed,18643
@@ -269,8 +262,6 @@ NOUNIT,0,Umbrellas And Parasols,0
 NOUNIT,0,Toys — Not Containing Spirit,0
 NOUNIT,0,Tobacco — Toxs,0
 NOUNIT,0,Telegraphic Wires And Apparatus,0
-NOUNIT,0,Sugar— — 4Th Class,0
-NOUNIT,0,Sugar— — 3Rd Class,0
 NOUNIT,0,"Stationery, Other Than Paper",0
 NOUNIT,0,"Spirits, British And Irish — Stationery, Other Than Paper",0
 NOUNIT,0,"Specimens, Illustrative Of Naturalscience",0
@@ -375,6 +366,7 @@ NOUNIT,0,"Cordage, Twine, And Cable Yarn — From British East Indies",0
 NOUNIT,0,"Copper — Manufactures Of, Unenumerated, Including Copper Coin",0
 NOUNIT,0,"Coals, Cinders, &C — Products Of Coal, Peat, Or Shale, Includingnaphtha, Paraffine, And Oil Thereof, Andpetroleum, Pitch, And Tar",0
 NOUNIT,0,"Coals, Cinders, &C — Products Of Coal, Peat, Or Shale, Including Naphtha, Paraffine, Paraffine Oil, Petroleum, Pitch, And Tar",0
+NOUNIT,0,Chemical Manufactures And Pro-Ducts,0
 NOUNIT,0,"Cheese — Chemical Products Or Preparations, Not Speciallyenumerated",0
 NOUNIT,0,"Cheese — Chemical Manufactures And Products, Unenumerated",0
 NOUNIT,0,"Cement — Chemical Products Or Preparations, Not Speciallyenumerated",0
@@ -412,26 +404,23 @@ ONEYEAR,950000000,"Woollen And Worsted Manufactures — Broad Cloths; Coatings, 
 ONEYEAR,750040033,"Woollen And Worsted Manufactures — Narrow Cloths: Coatings, Duffs, &C., Plain,All Wool",750040033
 ONEYEAR,100636087,"Bleaching Materials — Books, Printed",100636087
 ONEYEAR,50071380,"Wine, British Made — Rough, Hewn, Sawn, Or Split",50071380
-ONEYEAR,13652302,Wood And Timber — Sawn Or Split,13652302
+ONEYEAR,20374219,Cheese — Wheat,20374219
 ONEYEAR,12755988,Silk — Manufactures,12755988
 ONEYEAR,11637694,"Coffee — Rum Shrub, Liqueurs And Cordials, Of And From British Possessions",11637694
 ONEYEAR,5634669,"Cotton — Raw, And Waste Of",5634669
-ONEYEAR,4743377,Cheese — Wheat,4743377
+ONEYEAR,5434597,Unrefined — 2Nd Class,5434597
 ONEYEAR,4423963,"Cotton Manufactures — Piece Goods, Printed And Dyed",4423963
 ONEYEAR,3880327,Butterine (Margarine),3880327
 ONEYEAR,3772279,Fish — Rough Or Undressed,3772279
 ONEYEAR,3658840,Woollen And Worsted Manufactures — Worsted Yarn (Combed),3658840
-ONEYEAR,2977100,"Jute Yarn — Manufactures, Piece Goods",2977100
 ONEYEAR,2962264,Butterine,2962264
 ONEYEAR,2723762,Tea — Red: Total Of,2723762
-ONEYEAR,2605841,Drugs — Indigo,2605841
 ONEYEAR,2533015,Iron And Steel — Manufactures Of Iron And Steel,2533015
+ONEYEAR,2372364,"Jute Yarn — Manufactures, Piece Goods",2372364
 ONEYEAR,2286259,Tobacco — Red : Total Of,2286259
 ONEYEAR,1930998,"Hides — Tanned, Not Otherwise Dressed",1930998
 ONEYEAR,1863437,"Woollen And Worsted Manufactures — Coatings, Duffels, &C. Of Wool Mixed With Other Materials",1863437
 ONEYEAR,1856222,Land,1856222
-ONEYEAR,1704488,Oil — West Coast Of Africa (Foreign),1704488
-ONEYEAR,1519701,"Nitre, Cubic (Nitrate Of Soda) — Palm",1519701
 ONEYEAR,1511924,Woollen Yarn — From British North America,1511924
 ONEYEAR,1415252,"Flax, Dressed Or Undressed — Unenumerated, Raw",1415252
 ONEYEAR,1364884,"Skins, Furs, And Pelts — Pepper",1364884
@@ -443,7 +432,6 @@ ONEYEAR,985462,"Skins, Furs, And Pelts — Goat, Tanned, Tawed, Or Dressed",9854
 ONEYEAR,981354,Fish — Olive,981354
 ONEYEAR,962654,Iron — Leather Manufacturers,962654
 ONEYEAR,916008,"Petroleum, Lubricating",916008
-ONEYEAR,907308,"Nitre, Cubic (Nitrate Of Soda) — Olive",907308
 ONEYEAR,834458,Cotton Manufactures — Other Than Muslims,834458
 ONEYEAR,798911,"Copper — Unwrought, In Ingots, Cakes, Or Slabs",798911
 ONEYEAR,783906,"Flax, Dressed Or Undressed — Apples, Raw",783906
@@ -451,12 +439,12 @@ ONEYEAR,737550,Wood And Timber — Staves : Mahogany,737550
 ONEYEAR,731558,"Bags And Sacks, Empty",731558
 ONEYEAR,715964,Gil — Olive,715964
 ONEYEAR,705211,Cheese — Manufactured,705211
+ONEYEAR,695162,"Painters' Colours And Materials — Writing Or Printing, And Envelopes",695162
 ONEYEAR,693235,Fruit — Snuff : Cigars,693235
 ONEYEAR,659704,"Fish — Flax, Dressed",659704
 ONEYEAR,658402,"Ore, Unenumerated — Pulp Of Wood—Mechanical",658402
 ONEYEAR,645623,Woollen And Worsted Manufactures — United States,645623
 ONEYEAR,639278,Eggs — Ornamental,639278
-ONEYEAR,613295,"Painters' Colours And Materials — Writing Or Printing, And Envelopes",613295
 ONEYEAR,608112,Wood And Timber — Furniture Woods And Hardwoods : Unenumerated,608112
 ONEYEAR,574224,Wood And Timber — Fir : Unenumerated,574224
 ONEYEAR,555907,Oil — Pulp Of Wood—Mechanical,555907
@@ -464,12 +452,8 @@ ONEYEAR,545580,"Stationery, Other Than Paper — Stones, Marble, And Slate; Roug
 ONEYEAR,534299,"Rags And Other Materials For Making Paper — Woollen: Applicable To Other Uses Than Manure, Torn Up Or Not",534299
 ONEYEAR,526361,Drugs — Valonia,526361
 ONEYEAR,520054,Tin — Valonia,520054
-ONEYEAR,517812,"Nitre, Cubic (Nitrate Of Soda) — Seed",517812
-ONEYEAR,508615,"Ivory — Teeth, Elephants', Sea Cow, Sea Horse, Or Sea Morsé",508615
 ONEYEAR,507377,Salt (Rock And White),507377
 ONEYEAR,488512,Gum — From British India,488512
-ONEYEAR,481720,Onions — Opium,481720
-ONEYEAR,477743,"Eggs — Shell Fish, Oysters For Food",477743
 ONEYEAR,470914,"Skins, Furs, And Pelts — Sheep, Tanned, Tawed, Or Dressed",470914
 ONEYEAR,466063,"Prints, Engravings, Drawings, &C — Rags (Except Woollen) And Othermaterials For Making Paper",466063
 ONEYEAR,428458,"Cordage, Cables, Ropes, And Twine Of Hemp Or Like Material",428458
@@ -482,7 +466,6 @@ ONEYEAR,368130,Fish — Seed,368130
 ONEYEAR,361539,"Ivory — Teeth, Elephants, Sea Dogs, Sea Horse, Or Sea Morses",361539
 ONEYEAR,352674,"Matches, Safety And Other Sorts — Safety",352674
 ONEYEAR,351211,"Iron — Bars, Unwrought",351211
-ONEYEAR,350741,"Cards, Playing — Molasses",350741
 ONEYEAR,330170,Guar — Unenumerated,330170
 ONEYEAR,309471,"Hides, Raw, And Pieces Thereof — British Possessions In South Africa",309471
 ONEYEAR,302567,Pork,302567
@@ -491,16 +474,18 @@ ONEYEAR,292216,"Tar — West Coast Of Africa, Foreign",292216
 ONEYEAR,291437,Feathers — Tow Or Codilla Of,291437
 ONEYEAR,287100,Pyrites Of Iron Or Copper Or Sulphur — Linen And Cotton Rag,287100
 ONEYEAR,282046,"Manganese, One Of",282046
+ONEYEAR,280277,"Ivory — Teeth, Elephants', Sea Cow, Sea Horse, Or Sea Morsé",280277
 ONEYEAR,272720,"Provisions, Unenumerated — Raos (Except Woollen) And Other Materials For Making Paper",272720
+ONEYEAR,271722,Wood And Timber — Sawn Or Split,271722
 ONEYEAR,259949,"Flax, Dressed Or Undressed — Almonds",259949
 ONEYEAR,257667,Linen Yarn (Including Linen Yarn Waste),257667
 ONEYEAR,256865,"Buttons And Strips, Not Of Metal — L Of All Sorts",256865
 ONEYEAR,248761,Beer And Ale — To United States Of America,248761
 ONEYEAR,244954,Rags And Other Materials For Making Paper — Sago And Sago Flour,244954
 ONEYEAR,244196,Dye Woods: Logwood — Unenumerated,244196
-ONEYEAR,236303,"Sugar — Elephants, Sea Cow, And Sea Horse",236303
 ONEYEAR,233770,"Animals, Living — Horses",233770
 ONEYEAR,229971,Fish — Animal,229971
+ONEYEAR,226650,"Eggs — Shell Fish, Oysters For Food",226650
 ONEYEAR,223970,"Coal, Cinders, &C — Fuel, Manufactured",223970
 ONEYEAR,220001,Drugs — Myrobalans,220001
 ONEYEAR,217520,Stones And Slates — Slate By Talc,217520
@@ -522,19 +507,18 @@ ONEYEAR,163157,Gum — Dutch Possessions In India,163157
 ONEYEAR,162387,Woollen Yarn,162387
 ONEYEAR,158383,Stones And Slates,158383
 ONEYEAR,157053,Preserved Without Sugar,157053
-ONEYEAR,155410,"Sugarrefined, Or Rendered By Any Process Equal Thereto; Other Sorts, Including Candy — Molasses",155410
 ONEYEAR,154924,Cloucharouc — Manufactures Of,154924
 ONEYEAR,151553,Iron — Bar,151553
 ONEYEAR,149508,Iron — Facture,149508
 ONEYEAR,143967,Sugar (Including All Fruits And Vegetables Preserved In Sugar),143967
 ONEYEAR,143621,Olje-Margarine,143621
 ONEYEAR,142211,Musical Instruments — Myrobalans,142211
+ONEYEAR,134071,Cotton — Ginger,134071
 ONEYEAR,133097,"Metal — Gold (Other Than Iron Or Copper), Fit Only For Re-Manufacture",133097
 ONEYEAR,131628,"Cannon And Mortars, Mounted Or Accompanied With Carriages — Muskets, Rifles, Carbines, Fowling Pieces, Or Guns Of Any Other Sorts, Not Enumerated, And Pistols",131628
 ONEYEAR,124262,"Ore, Unenumerated — Eastern Coast Of Africa",124262
 ONEYEAR,120139,"Arms, And Ammunition",120139
 ONEYEAR,109749,"Woollen Manufactures — Of Wool Other Than Goats, Or Of Wool Mixedwith Cotton: Cloths",109749
-ONEYEAR,109375,"Sugar, Unrefined : Total Of — Molasses",109375
 ONEYEAR,105945,"Eggs — For Beds, In Beds Or Otherwise",105945
 ONEYEAR,105908,"Fish, Fresh And Cured — Dressed And Undressed",105908
 ONEYEAR,104688,"Beef — Brass, Bronze, And Metal, Bronzed And Lacquered",104688
@@ -555,7 +539,6 @@ ONEYEAR,69946,Fruit — Perfumed Spirits (Including Water Cologne),69946
 ONEYEAR,69287,Hats Or Bonnets — Vegetable Substances Applicable To The Same Uses As Hemp Or Flax,69287
 ONEYEAR,66619,Spirits — Cavendish Or Negrolhead,66619
 ONEYEAR,65005,"Wine — White, In Bottles : Sparkling : Saumur",65005
-ONEYEAR,63310,Cotton — Ginger,63310
 ONEYEAR,63183,"Arms, And Ammunition — Swords, Cutlasses, Matchets, Bayonets, Gun Barrels, Gun Locks, And Cannon And Mortars Of Iron, Not Mounted Nor Accompanied With Carriages",63183
 ONEYEAR,61035,"Iron (Con.) — Steel, Unwrought",61035
 ONEYEAR,59815,Gals,59815
@@ -570,7 +553,6 @@ ONEYEAR,41669,"Arms, Ammunition, And Military Stores — Swords, Cutlasses, Bayo
 ONEYEAR,37932,Earthen And China Ware — Cod And Ling,37932
 ONEYEAR,37912,"Tobacco — Manufactured, Cavendish Or Negrohead",37912
 ONEYEAR,34679,Zinc Or Spelter — To British India,34679
-ONEYEAR,34660,Sugar — Complete,34660
 ONEYEAR,33755,Imported In Bottles — Hook,33755
 ONEYEAR,33533,Cement — India,33533
 ONEYEAR,29091,Varnish — Not Containing Spirit,29091
@@ -597,7 +579,6 @@ ONEYEAR,12202,"Skins, Furs, And Pelts — Seal, Undressed",12202
 ONEYEAR,11712,"Plate Of Silver (Free From 1St May, 1890)",11712
 ONEYEAR,11541,"Arms, Ammunition, And Military Stores — To British India",11541
 ONEYEAR,10885,Copper — To Australasia,10885
-ONEYEAR,10537,"Leather Manufactures — Metal, Bell",10537
 ONEYEAR,10533,Cement — To United States Of America,10533
 ONEYEAR,10376,Beer And Ale — Malt And Spruce,10376
 ONEYEAR,10365,"Onions — One, Unenumerated",10365
@@ -655,9 +636,8 @@ ONEYEAR,0,Wood And Timber — Staves And Empty Casks,0
 ONEYEAR,0,"Wine, British Made — Unenumerated",0
 ONEYEAR,0,"Wine, British Made — Staves And Empty Casks",0
 ONEYEAR,0,Value Of Articles Imported Byparcel Post,0
+ONEYEAR,0,Unrefined — 1St Class,0
 ONEYEAR,0,Tobacco — Toxs,0
-ONEYEAR,0,Sugar— — 4Th Class,0
-ONEYEAR,0,Sugar— — 3Rd Class,0
 ONEYEAR,0,Skins And Furs — British: Unenumerated,0
 ONEYEAR,0,"Silk — Broad Stuffs, Silk Or Satin",0
 ONEYEAR,0,"Silk Manufactures — Silver One, Or One Of Which The Greater Part Invalue Is Silver",0
@@ -704,6 +684,7 @@ ONEYEAR,0,"Bark — Extracts Of Bark, Or Of Other Substances To Be Usedin Tannin
 ONEYEAR,0,Bark — Extracts Of Bark Or Other Vegetable Substancesto Be Used In Tanning Or Dyeing,0
 ONEYEAR,0,Bank — Extract Of Bank Or Other Vegetable Substancesto Be Used In Tanning Or Dyeing,0
 ONEYEAR,0,Articles Subject To Duty — Customs Duty,0
+ONEYEAR,0,Articles Subject To Duty,0
 ONEYEAR,0,"Arms, And Ammunition — Rockets And Other Combustibles For Purposesof War, Explosives, Percussion Caps, Andammunition, Unenumerated",0
 ONEYEAR,0,"Arms, And Ammunition — Rockets And Other Combustibles For Purposesof War And Ammunition, Unenumerated",0
 ONEYEAR,0,"Arms, And Ammunition — Art, Works Or, Other Than Pictures",0
@@ -720,7 +701,6 @@ NOVALUE,991329,"Painters' Colours And Pigments, Unenumerated",991329
 NOVALUE,652665,"Skins, Furs, And Pelts — Manufactures Of Skins And Furs",652665
 NOVALUE,613492,Leather Manufactures — Unenumerated,613492
 NOVALUE,559969,"Cordage, Twine, And Cable Yarn",559969
-NOVALUE,531497,Chemical Manufactures And Pro-Ducts,531497
 NOVALUE,379833,Painters' Colours And Pigments,379833
 NOVALUE,371455,"Cotton — Hosiery, Of All Sorts",371455
 NOVALUE,341176,"Flowers, Artificial",341176
@@ -736,7 +716,6 @@ NOVALUE,69670,"Manufactures Of Hair, And Of Goats' Wool",69670
 NOVALUE,43786,Precious Stones (Unset),43786
 NOVALUE,29091,Varnish — Not Containing Spirit,29091
 NOVALUE,14852,Plated And Gilt Ware,14852
-NOVALUE,11291,Wine,11291
 NOVALUE,3334,Metals,3334
 NOVALUE,0,"Yarn, Alpaca, Mohair, And Other Sorts Une-Numerated",0
 NOVALUE,0,Woollen And Worsted Manufactures — Zinc Or Spekter,0
@@ -752,8 +731,6 @@ NOVALUE,0,Umbrellas And Parasols,0
 NOVALUE,0,Toys — Not Containing Spirit,0
 NOVALUE,0,Tobacco — Toxs,0
 NOVALUE,0,Telegraphic Wires And Apparatus,0
-NOVALUE,0,Sugar— — 4Th Class,0
-NOVALUE,0,Sugar— — 3Rd Class,0
 NOVALUE,0,"Stationery, Other Than Paper",0
 NOVALUE,0,"Spirits, British And Irish — Stationery, Other Than Paper",0
 NOVALUE,0,"Specimens, Illustrative Of Naturalscience",0
@@ -858,6 +835,7 @@ NOVALUE,0,"Cordage, Twine, And Cable Yarn — From British East Indies",0
 NOVALUE,0,"Copper — Manufactures Of, Unenumerated, Including Copper Coin",0
 NOVALUE,0,"Coals, Cinders, &C — Products Of Coal, Peat, Or Shale, Includingnaphtha, Paraffine, And Oil Thereof, Andpetroleum, Pitch, And Tar",0
 NOVALUE,0,"Coals, Cinders, &C — Products Of Coal, Peat, Or Shale, Including Naphtha, Paraffine, Paraffine Oil, Petroleum, Pitch, And Tar",0
+NOVALUE,0,Chemical Manufactures And Pro-Ducts,0
 NOVALUE,0,"Cheese — Chemical Products Or Preparations, Not Speciallyenumerated",0
 NOVALUE,0,"Cheese — Chemical Manufactures And Products, Unenumerated",0
 NOVALUE,0,"Cement — Chemical Products Or Preparations, Not Speciallyenumerated",0
@@ -891,11 +869,74 @@ NOVALUE,0,"Arms And Ammunition — Rockets And Other Combustibles Of War, Andamm
 NOVALUE,0,"Arms And Ammunition — Rockets And Other Combustibles Of War, &C., And Ammunition, Unenumerated",0
 NOVALUE,0,Apparel And Stores,0
 NOVALUE,0,Apparel And Slops,0
-RESID,597485071,Wine — Total Of All Kinds,597485071
-RESID,80928139,Oil,80928139
+ANCHOR-over,2.017,Collodium,4517460
+ANCHOR-over,1.868,"Kiln-Dried, Roasted, Or Ground",12855
+ANCHOR-over,1.683,Wine — White,77056561
+ANCHOR-over,1.363,Saltpetre (Nitrate Of Potash),8862101
+ANCHOR-under,0.485,"Varnished, Japanned Or Enamelled",4272643
+ANCHOR-under,0.445,"Hides, Raw, And Pieces Thereof — Dry",21507472
+ANCHOR-under,0.437,Butterine,2962264
+ANCHOR-under,0.226,"Ivory — Teeth, Elephants', Sea Cow, And Sea Horse",364764
+ANCHOR-under,0.191,Nuts And Kernels,12192456
+ANCHOR-under,0.166,"Skins, Furs, And Pelts — Sheep, Undressed",18458529
+ANCHOR-under,0.06,Woollen Yarn,162387
+ANCHOR-under,0.035,Hides — Raw,917765
+ANCHOR-under,0.013,"Flax, Dressed Or Undressed",57412975
+MONO,36631940,Diamonds,36631940
+MONO,1907256,Nuts And Kernels — Turpentine,1907256
+MONO,1567972,"Animals, Living — British North America",1567972
+MONO,518420,Flax And Hemp — To United States Of America,518420
+MONO,374660,"Fish, Fresh And Cured — Salmon",374660
+MONO,244954,Rags And Other Materials For Making Paper — Sago And Sago Flour,244954
+MONO,224833,"Animals, Living — From British North America",224833
+MONO,207939,Icr,207939
+MONO,200776,Figs And Fig Cake,200776
+MONO,193540,"Fish, Fresh And Cured — Oysters",193540
+MONO,184749,Spirits — To British East Indies,184749
+MONO,182137,Corn And Grain — Maize Or Indian Corn Meal (Including Maizena),182137
+MONO,171574,"Fish, Fresh And Cured — Cod And Ling",171574
+MONO,124262,"Ore, Unenumerated — Eastern Coast Of Africa",124262
+MONO,105908,"Fish, Fresh And Cured — Dressed And Undressed",105908
+MONO,104638,Flax — Dressed And Endressed,104638
+MONO,84422,Fruit — Snuff : Cavendish Or Negrohead,84422
+MONO,63721,Metals And Ores — Puddled,63721
+MONO,54558,"Woollen And Worsted Manufactures — Coatings, Duffels, &C., All Wool",54558
+MONO,28198,Cocoa — Paste Or Chocolate,28198
+MONO,27440,"Quicksilver, (Metallic) — In The Husk",27440
+MONO,21789,Rags And Other Materials For Making Paper — Safflower,21789
+MONO,20870,Beer And Ale — Bones (Except Whalefins) Applicable To Manufacturing Purposes,20870
+MONO,15855,Hops — To United States Of America,15855
+MONO,15471,Cotton Manufactures — Maize Or Indian Corn Meal (Including Maizena),15471
+MONO,15324,Perfumery — Refined,15324
+MONO,15027,Gold : „ Leaves Of — Ore Of. Or Ore Of Which The Greater Part In Value Is Gold,15027
+MONO,14805,Manures — From British East Indies,14805
+MONO,14793,"Dye Woods — Earthenware, Not Being Porcelain Or Chinaware",14793
+MONO,14683,"Slates — Refined, Or Rendered By Any Process Equal Thereto : In Lumps And Loaves",14683
+MONO,14491,Sawn — Unenumerated,14491
+MONO,12335,Hemp — British Dressed,12335
+MONO,12202,"Skins, Furs, And Pelts — Seal, Undressed",12202
+MONO,11541,"Arms, Ammunition, And Military Stores — To British India",11541
+MONO,10533,Cement — To United States Of America,10533
+MONO,10365,"Onions — One, Unenumerated",10365
+MONO,9913,Pi-Umbago,9913
+MONO,8641,"Cordage, Cables, Ropes, And Twine Of Hemp, Or Like Material — To British East Indies",8641
+MONO,8147,Dye Stuffs — Myrobalans,8147
+MONO,7067,Petroleum — Pickles,7067
+MONO,6911,Plumbago — From British East Indies,6911
+MONO,6181,Copper — Piece Goods Of Other Countries,6181
+MONO,5259,Linen Manufactures — To United States Of America,5259
+MONO,4883,"Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Safflower",4883
+MONO,4848,Drugs — Safflower,4848
+MONO,4572,"Copper, Ore Of — Safflower",4572
+MONO,3549,Beads Of All Sorts — Salted,3549
+MONO,2794,Glass — To United States Of America,2794
+MONO,2591,Cotton Manufactures — Piece Goods Of Mixed Materials : Cotton Predominating : To United States Of America,2591
+MONO,2517,"Tobacco — Red, In Bottles : Sparkling : Other Sorts",2517
+MONO,1064,Chicory — Champagne : Burgundy,1064
+MONO,1056,Silk Manufactures — To Australasia,1056
+MONO,476,Cork — Manufactured,476
 RESID,5991391,Copper,5991391
 RESID,2608319,Whalebone (Whalefins) — Whale Fisheries,2608319
-RESID,1704488,Oil — West Coast Of Africa (Foreign),1704488
 RESID,962654,Iron — Leather Manufacturers,962654
 RESID,591849,Whalefins,591849
 RESID,210411,Ivory — West Africa,210411
@@ -960,76 +1001,3 @@ RESID,386,Drugs — From British Possessions In Southafrica,386
 RESID,295,"Naphtha Or Methylic Alcohol, Purified",295
 RESID,265,"Arms, Ammunition, And Military Stores — Shot Of Lead",265
 RESID,148,"Cheese — Imitation (Including Lard,Cheese, And All Kinds Ofartificial Cheese)",148
-ANCHOR-under,0.485,"Varnished, Japanned Or Enamelled",4207314
-ANCHOR-under,0.445,"Hides, Raw, And Pieces Thereof — Dry",21450168
-ANCHOR-under,0.437,Butterine,2962264
-ANCHOR-under,0.347,Bacon,123647765
-ANCHOR-under,0.32,"Seeds — Unenumerated, For Expressing Oil Therefrom",4823286
-ANCHOR-under,0.253,Wheatmeal And Flour,19235606
-ANCHOR-under,0.162,"Skins, Furs, And Pelts — Sheep, Undressed",19828875
-ANCHOR-under,0.115,Oil — Palm,25929457
-ANCHOR-under,0.08,"Ivory — Teeth, Elephants', Sea Cow, And Sea Horse",364764
-ANCHOR-under,0.06,Woollen Yarn,162387
-ANCHOR-under,0.048,Furniture And Hardwoods — Unenumerated,720592
-ANCHOR-under,0.031,Hides — Raw,917765
-ANCHOR-under,0.002,"Flax, Dressed Or Undressed",57400776
-ANCHOR-over,2.587,Saltpetre (Nitrate Of Potash),8851660
-ANCHOR-over,2.408,Collodium,4517460
-ANCHOR-over,1.868,"Kiln-Dried, Roasted, Or Ground",12855
-ANCHOR-over,1.683,Wine — White,77056561
-ANCHOR-over,1.286,"Sauces Or Condiments, Unenumerated",1324910
-ANCHOR-over,1.199,"Skins, Furs, And Pelts — Goat, Undressed",11334935
-ANCHOR-over,1.199,"Cured Or Salted, Unenumerated",42271072
-MONO,36631940,Diamonds,36631940
-MONO,1907256,Nuts And Kernels — Turpentine,1907256
-MONO,1567972,"Animals, Living — British North America",1567972
-MONO,518420,Flax And Hemp — To United States Of America,518420
-MONO,374660,"Fish, Fresh And Cured — Salmon",374660
-MONO,244954,Rags And Other Materials For Making Paper — Sago And Sago Flour,244954
-MONO,242986,Corn And Grain — Maize Or Indian Corn Meal (Including Maizena),242986
-MONO,207939,Icr,207939
-MONO,200776,Figs And Fig Cake,200776
-MONO,193540,"Fish, Fresh And Cured — Oysters",193540
-MONO,184749,Spirits — To British East Indies,184749
-MONO,171574,"Fish, Fresh And Cured — Cod And Ling",171574
-MONO,124262,"Ore, Unenumerated — Eastern Coast Of Africa",124262
-MONO,105908,"Fish, Fresh And Cured — Dressed And Undressed",105908
-MONO,104638,Flax — Dressed And Endressed,104638
-MONO,84422,Fruit — Snuff : Cavendish Or Negrohead,84422
-MONO,63721,Metals And Ores — Puddled,63721
-MONO,54558,"Woollen And Worsted Manufactures — Coatings, Duffels, &C., All Wool",54558
-MONO,34660,Sugar — Complete,34660
-MONO,28198,Cocoa — Paste Or Chocolate,28198
-MONO,27440,"Quicksilver, (Metallic) — In The Husk",27440
-MONO,21789,Rags And Other Materials For Making Paper — Safflower,21789
-MONO,20870,Beer And Ale — Bones (Except Whalefins) Applicable To Manufacturing Purposes,20870
-MONO,15855,Hops — To United States Of America,15855
-MONO,15471,Cotton Manufactures — Maize Or Indian Corn Meal (Including Maizena),15471
-MONO,15324,Perfumery — Refined,15324
-MONO,15027,Gold : „ Leaves Of — Ore Of. Or Ore Of Which The Greater Part In Value Is Gold,15027
-MONO,14805,Manures — From British East Indies,14805
-MONO,14793,"Dye Woods — Earthenware, Not Being Porcelain Or Chinaware",14793
-MONO,14683,"Slates — Refined, Or Rendered By Any Process Equal Thereto : In Lumps And Loaves",14683
-MONO,14491,Sawn — Unenumerated,14491
-MONO,12335,Hemp — British Dressed,12335
-MONO,12202,"Skins, Furs, And Pelts — Seal, Undressed",12202
-MONO,11541,"Arms, Ammunition, And Military Stores — To British India",11541
-MONO,10533,Cement — To United States Of America,10533
-MONO,10365,"Onions — One, Unenumerated",10365
-MONO,9913,Pi-Umbago,9913
-MONO,8641,"Cordage, Cables, Ropes, And Twine Of Hemp, Or Like Material — To British East Indies",8641
-MONO,8147,Dye Stuffs — Myrobalans,8147
-MONO,7067,Petroleum — Pickles,7067
-MONO,6911,Plumbago — From British East Indies,6911
-MONO,6181,Copper — Piece Goods Of Other Countries,6181
-MONO,5259,Linen Manufactures — To United States Of America,5259
-MONO,4883,"Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Safflower",4883
-MONO,4848,Drugs — Safflower,4848
-MONO,4572,"Copper, Ore Of — Safflower",4572
-MONO,3549,Beads Of All Sorts — Salted,3549
-MONO,2794,Glass — To United States Of America,2794
-MONO,2591,Cotton Manufactures — Piece Goods Of Mixed Materials : Cotton Predominating : To United States Of America,2591
-MONO,2517,"Tobacco — Red, In Bottles : Sparkling : Other Sorts",2517
-MONO,1064,Chicory — Champagne : Burgundy,1064
-MONO,1056,Silk Manufactures — To Australasia,1056
-MONO,476,Cork — Manufactured,476

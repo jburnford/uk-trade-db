@@ -2,13 +2,13 @@ gold_commodity,pipeline_fullname,method,confidence
 Alkali,ALKALI None,exact,1.0
 Almonds,Almonds,exact,1.0
 Aniline,Aniline,exact,1.0
-Animal Oil,Unenumerated,subset,1.0
+Animal Oil,Animal,subset,1.0
 Animals Living Horses Mares Geldings Colts and Foals,"Horses, Mares, Geldings,     Colts and Foals",subset,1.0
 Animals Unenumerated,Animal,exact,1.0
 Apples Raw,"Apples, Raw",exact,1.0
 Arms and Ammunition Gunpowder,Unenumerated,subset,1.0
 Arms and Ammunition Shot Large and Small,"Shot, Large and Small",subset,1.0
-"Art, Works of, other than Pictures","ART, WORKS OF, other than PICTURES None",exact,1.0
+"Art, Works of, other than Pictures","ART, WORKS of, other than PICTURES None",exact,1.0
 Asphalt or Bitumen,ASPHALT or BITUMEN None,exact,1.0
 Bacon,BACON None,exact,1.0
 Bark Extracts of Bark or other Substances to be used in Tanning or Dyeing,Extracts of Bark or other Substances to be used     in Tanning or Dyeing,exact,1.0
@@ -17,24 +17,24 @@ Bark Of other sorts,Bark,exact,1.0
 Bark Peruvian,"Bark, Peruvian",exact,1.0
 Barley,Barley,exact,1.0
 Barley meal,Barley Meal,exact,1.0
-Beads of Glass,GLASS None,subset,1.0
-Beads of all Sorts,Unenumerated,exact,1.0
+Beads of Glass,BEADS OF ALL SORTS None,subset,1.0
+Beads of all Sorts,BEADS OF ALL SORTS None,exact,1.0
 Bean Meal and Pea Meal,Bean Meal and Pea Meal,exact,1.0
 Bean meal,Bean meal,exact,1.0
 Beans,Beans (not Kidney or French),exact,1.0
-Beef Fresh,Beef,subset,1.0
+Beef Fresh,Fresh,subset,1.0
 Beef Fresh or Slightly Salted,Fresh or Slightly Salted,subset,1.0
 Beef Preserved not by Salting,"Preserved, otherwise than by Salting : Beef",exact,1.0
 Beef Salted,Beef,subset,1.0
 Beer and Ale Mum,Of other Sorts,subset,1.0
-Beer and Ale Mum and Spruce,Mum and Spruce,subset,1.0
+Beer and Ale Mum and Spruce,Of other Sorts,subset,1.0
 Beer and Ale Spruce,Of other Sorts,subset,1.0
 Beer and Ale of other Sorts,Of other Sorts,exact,1.0
 Bones (except Whalefins),"Bones of Animals, and Fish for Manure only",subset,1.0
-Bones except Whalebone for Manufacturing,WHALEBONE None,subset,1.0
-Bones for manure,Bones for Manure (whether burnt or not),exact,1.0
+Bones except Whalebone for Manufacturing,WHALEBONE (Whalefins) None,subset,1.0
+Bones for manure,Bones for Manure,exact,1.0
 Books,BOOKS None,exact,1.0
-Books including Maps and Charts,"BOOKS, Bound and Unbound, including Maps and Charts None",subset,1.0
+Books including Maps and Charts,"BOOKS, Bound or Unbound, including     MAPS and CHARTS",subset,1.0
 Boots and Shoes,Boots and Shoes,exact,1.0
 Brandy,Brandy,exact,1.0
 "Brass, Bronze, and Metal, Bronzed or Lacquered","BRASS, BRONZE, and METAL, Bronzed and Lacquered None",exact,1.0
@@ -46,8 +46,8 @@ Butter,BUTTER None,exact,1.0
 Butterine,BUTTERINE None,exact,1.0
 "Buttons and Studs, not of Metal","BUTTONS AND STUDS, not of Metal None",exact,1.0
 Calves,Calves,exact,1.0
-Candles Stearine,Other Kinds,subset,1.0
-Candles of all Sorts,Other Kinds,exact,1.0
+Candles Stearine,CANDLES OF ALL SORTS None,subset,1.0
+Candles of all Sorts,CANDLES OF ALL SORTS None,exact,1.0
 Cannon and Mortars,Cannon and Mortars,exact,1.0
 Cannon and Mortars not Mounted or Accompanied with Carriages,"Cannon and Mortars, mounted or accompanied with Carriages None",exact,1.0
 Caoutchouc,CAOUTCHouc None,exact,1.0
@@ -57,7 +57,7 @@ Cheese Imitation,"Imitation Cheese (including Lard Cheese, and all kinds of Arti
 Chemical Essential or Perfumed Oils,"Chemical, Essential, or Perfumed",subset,1.0
 Chemical Manufactures and Products,"CHEMICAL MANUFACTURES and PRODUCTS, Unenumerated",exact,1.0
 Cherries Raw,"Cherries, Raw",exact,1.0
-Chicory Other Vegetable matter,Vegetable,subset,1.0
+Chicory Other Vegetable matter,"VEGETABLES, Unenumerated None",subset,1.0
 Chicory Raw or Kiln-Dried,Raw or Kiln-dried,subset,1.0
 Chicory Roasted or Ground,Roasted or Ground,subset,1.0
 China or Porcelain Ware,CHINA or PORCELAIN WARE,exact,1.0
@@ -76,9 +76,9 @@ Cocoa Cocoa or Chocolate in the manufacture of which Spirit has been used,"Cocoa
 Cocoa Husks and Shells,Husks and Shells,subset,1.0
 Cocoa Paste or Chocolate,Paste or Chocolate,subset,1.0
 Cocoa or Chocolate ground prepared or in anyway manufactured,"Cocoa or Chocolate, ground, prepared or in anyway manufactured None",exact,1.0
-Cocoa-nut Oil,Unenumerated,subset,1.0
+Cocoa-nut Oil,COCOA None,subset,1.0
 Coffee,COFFEE None,exact,1.0
-Coffee Kiln Dried Roasted or Ground,"Kiln Dried, Roasted, or Ground",subset,1.0
+Coffee Kiln Dried Roasted or Ground,"Kiln dried, roasted or ground",subset,1.0
 Coffee Raw,"COFFEE, Raw None",exact,1.0
 Coffee and Chicory mixed,"COFFEE AND CHICORY, mixed",exact,1.0
 Collodion,COLLODION,exact,1.0
@@ -88,7 +88,7 @@ Confectionery containing not more than 50% chocolate,"CONFECTIONERY, containing 
 Confectionery in the Manufacture of which Spirit has been used,"CONFECTIONERY, in the Manufacture of which Spirit has been used None",exact,1.0
 Copper Manufactures Unenumerated including Copper Coin,"Manufactures, Unenumerated, including Copper Coin",exact,1.0
 Copper Old (fit only to be re-manufactured from 1876 onward),,unmatched,0.2
-Copper Ore,"COPPER, ORE OF None",exact,1.0
+Copper Ore,"COPPER, Ore of None",exact,1.0
 Copper Part Wrought,Part Wrought,subset,1.0
 Copper Regulus (and Precipitate from 1886 onward),Regulus,subset,1.0
 Copper Unwrought,"Unenumerated, Unwrought",subset,1.0
@@ -103,15 +103,15 @@ Cotton Manufactures Piece Goods of Other Countries Hosiery of all sorts,Unenumer
 Cotton Manufactures Piece Goods of Other Countries Unenumerated,Unenumerated,subset,1.0
 Cotton Manufactures Piece Goods of other Countries Muslins,"Piece Goods, Muslins",subset,1.0
 Cotton Raw,Cotton None,subset,1.0
-"Cotton Raw, and Waste of",Waste,subset,1.0
+"Cotton Raw, and Waste of",Cotton None,subset,1.0
 Cotton Seeds,Cotton None,subset,1.0
-Cotton Waste,Waste,subset,1.0
+Cotton Waste,Cotton None,subset,1.0
 Cotton Yarn,Cotton None,subset,1.0
 "Cotton Yarn, and Waste of",Yarn and Waste of,subset,1.0
 Cow Ox Bull or Elk Hair,"Cow, Ox, Bull, or Elk",subset,1.0
 Cows,Cows,exact,1.0
 Currants,Currants,exact,1.0
-Currants Dried,Currants,subset,1.0
+Currants Dried,"Unenumerated, Dried",subset,1.0
 Cutch,Cutch and Gambier,subset,1.0
 Cutch and Gambier,Cutch and Gambier,exact,1.0
 Drugs Unenumerated,"DRUGS, Unenumerated",exact,1.0
@@ -126,12 +126,12 @@ Eggs,Eggs None,exact,1.0
 Embroidery and Needlework,EMBROIDERY and NEEDLEWORK None,exact,1.0
 Esparto and other Vegetable Fibres for making Paper,Esparto and other Vegetable Fibres,subset,1.0
 Essence of Spruce,Spruce,subset,1.0
-Ether Acetic,ACETIC,subset,1.0
+Ether Acetic,ETHER None,subset,1.0
 Ether Butyric,ETHER None,subset,1.0
-Ether Sulphuric,ETHER None,subset,1.0
+Ether Sulphuric,SULPHURIC,subset,1.0
 Ethyl Iodide of,"ETHYL, IODIDE OF",exact,1.0
 Extract of Bark or Other Vegetable Substance for Tanning or Dyeing,Extracts of Bark or other Substances to be used     in Tanning or Dyeing,subset,1.0
-Extracts Unenumerated,EXTRACTS (other than for Tanning or Dyeing) None,exact,1.0
+Extracts Unenumerated,Extracts,exact,1.0
 Farinaceous Substances and Manufactures thereof,FARINACEOUS SUBSTANCES and Manufactures thereof None,exact,1.0
 Feathers Ornamental,Ornamental,subset,1.0
 Feathers for Beds,"For Beds, in Beds or otherwise",subset,1.0
@@ -143,35 +143,35 @@ Fish Fresh Not of British Taking,Other sorts of Fresh Fish,subset,1.0
 Flax Dressed,"FLAX, Dressed or Undressed None",subset,1.0
 Flax Dressed or Undressed,"FLAX, Dressed or Undressed None",exact,1.0
 Flax Rough or Undressed,Rough or Undressed,subset,1.0
-Flaxseed and Linseed,Flax or Linseed,exact,1.0
+Flaxseed and Linseed,Flax and Linseed,exact,1.0
 Flint Glass,Flint Glass,exact,1.0
 Flowers Artificial,"FLOWERS, ARTIFICIAL None",exact,1.0
 Fresh Herrings,Fresh (not of British taking) : Herrings,exact,1.0
 Fresh Milk,"MILK AND CREAM, fresh or preserved, other than condensed milk None",subset,1.0
-Fruit Dried unenumerated,"Unenumerated, Dried",subset,1.0
+Fruit Dried unenumerated,FRUIT None,subset,1.0
 Fruit Preserved without Sugar Unenumerated,"FRUIT: 
                     „ Unenumerated: Preserved without Sugar None",exact,1.0
 Fruit Preserved without sugar not dried,"FRUIT: 
                     „ Unenumerated: Preserved without Sugar None",subset,1.0
 Fruit Raw or otherwise not described,"Raw, not otherwise described",subset,1.0
-Fruit Raw unenumerated,Raw,subset,1.0
+Fruit Raw unenumerated,FRUIT None,subset,1.0
 Fruits and Vegetables Preserved in Sugar,FRUITS AND VEGETABLES: Preserved in Sugar None,exact,1.0
 Furs,"Unenumerated, being Furs",exact,1.0
 Galls,GALLS None,exact,1.0
 Gambier,GAMBIER None,exact,1.0
 Geldings,Geldings,exact,1.0
-Ginger Raw,Ginger,subset,1.0
-Ginger Spice,Ginger,subset,1.0
-Glass Bottles,GLASS None,subset,1.0
+Ginger Raw,Raw,subset,1.0
+Ginger Spice,Unenumerated,subset,1.0
+Glass Bottles,Bottles,subset,1.0
 "Glass Manufactures, Unenumerated","GLASS: 
                     „ Manufactures, unenumerated None",exact,1.0
 Glass Plate Fluted Rolled or Rough,"Plate, Fluted, Rolled, or Rough",subset,1.0
 "Glass Plate, whether Silvered or not","Plate, whether Silvered or not",subset,1.0
 Gloves,Gloves,exact,1.0
 Glucose,Glucose,exact,1.0
-Goats Wool or Hair Mohair,Other Goats' Wool or Hair,subset,1.0
-Gold Leave,Leaves of,subset,1.0
-"Gold Ore of, or Ore of which the greater part in Value is Gold","Ore of, or Ore of which the greater part in Value is Gold",exact,1.0
+Goats Wool or Hair Mohair,Goats' Hair or Wool,subset,1.0
+Gold Leave,Of Gold,subset,1.0
+"Gold Ore of, or Ore of which the greater part in Value is Gold","Ore of, or Ore of which the greater part in     Value is Gold",exact,1.0
 Goods Unenumerated Manufactured,"GOODS, not being either in part or wholly manufactured, unenum- erated",subset,1.0
 Goods Unenumerated Unmanufactured,"Goods, Unenumerated",subset,1.0
 Grapes,"Grapes, Raw",subset,1.0
@@ -198,7 +198,7 @@ Hemp Dressed or Undressed,"HEMP, Dressed or Undressed None",exact,1.0
 Hemp Rough or Undressed,Rough or Undressed,subset,1.0
 Hemp Tow or Codilla of Hemp,Tow or Codilla of,subset,1.0
 Hides Raw Dry,Raw,subset,1.0
-Hides Raw Wet,Raw,subset,1.0
+Hides Raw Wet,Wet,subset,1.0
 Hides Tanned Tawed Curried or Dressed (except Russia Hides),"Unenumerated: Other Sorts, Tanned, Tawed,     or Dressed",subset,1.0
 Hides Tanned not otherwise Dressed,"Tanned, not otherwise Dressed",subset,1.0
 "Hides Tawed Curried or in any way Dress, not being Varnished Japanned or Enamelled","Varnished, Japanned, or Enamelled",subset,1.0
@@ -207,9 +207,9 @@ Hides Untanned Wet,Wet,subset,1.0
 "Hides Varnished, Japanned or Enamelled","Varnished, Japanned, or Enamelled",subset,1.0
 Honey,HONEY None,exact,1.0
 Hops,HOPS None,exact,1.0
-Horns Tips and Pieces of Horns and Hoofs,"HORNS, tips and pieces of Horns and Hoofs None",exact,1.0
+Horns Tips and Pieces of Horns and Hoofs,Tips and Pieces of Horn and Hoofs,exact,1.0
 Horns and Hoofs,HORNS and HOOFs None,exact,1.0
-Horse Hair,Horses,subset,1.0
+Horse Hair,Unenumerated,subset,1.0
 Horses,Horses,exact,1.0
 Ice,ICE None,exact,1.0
 Imitation Lard,Imitation Lard (including all kinds of Artificial or Imitation Lard),exact,1.0
@@ -218,7 +218,7 @@ Indian Corn or Maize,Maize or Indian Cornmeal,exact,1.0
 Indigo,INDIGO,exact,1.0
 Ink,INK None,exact,1.0
 Iron Bar Angle Bolt and Rod,Bar. Angle. Bolt and Rod,subset,1.0
-Iron Bars,Bars,subset,1.0
+Iron Bars,Unenumerated,subset,1.0
 Iron Manufacturers of Tyres and Axles,Tyres and axles,subset,1.0
 Iron Manufactures Girders Beams and Pillars,"Manufactures of Iron or Steel: Girders, Beams, and Pillars",subset,1.0
 Iron Manufactures Unenumerated,Manufactures of Iron or Steel: Sewing Machines and parts thereof,subset,1.0
@@ -242,11 +242,11 @@ Lace and Articles thereof Cotton,"LACE, and Articles thereof None",subset,1.0
 Lace and Articles thereof Other Materials,"LACE, and Articles thereof None",subset,1.0
 Lace and Articles thereof Silk,"LACE, and Articles thereof None",subset,1.0
 Lard,LARD None,exact,1.0
-Lead Manufactures Unenumerated,"Manufactures, unenumerated",subset,1.0
-Lead Ore,Ore of (including Chrome),subset,1.0
+Lead Manufactures Unenumerated,Manufactures of,subset,1.0
+Lead Ore,Ore,subset,1.0
 Lead Pig and Sheet,Pig and Sheet,subset,1.0
 Leather Dressed,Dressed,subset,1.0
-Leather Manufactures Boots and Shoes,Unenumerated,subset,1.0
+Leather Manufactures Boots and Shoes,Boots and Shoes,subset,1.0
 Leather Manufactures Gloves,Unenumerated,subset,1.0
 Leather Manufactures Manufactures Unenumerated,Unenumerated,exact,1.0
 Leather Undressed,"LEATHER, Undressed None",exact,1.0
@@ -267,7 +267,7 @@ Madder Munjeet,"Madder, Madder Root, Guaiacine and Munjeet",subset,1.0
 Madder and Madder Root,"Madder, Madder Root, Guaiacine and Munjeet",subset,1.0
 "Mahogany - Furniture, Hardwoods or Veneers","Furniture, Hardwoods, and Veneers : Mahogany",exact,1.0
 Maize or Indian Corn Meal,Maize or Indian Corn Meal (including Maizena),exact,1.0
-Malt,MALT,exact,1.0
+Malt,MALT None,exact,1.0
 Manganese Ore,MANGANESE ORE None,exact,1.0
 Manure Unenumerated,UNENUMERATED,exact,1.0
 Maps and Charts,MAPS and CHARTS None,exact,1.0
@@ -278,25 +278,25 @@ Meal Unenumerated,"Meal, Unenumerated",exact,1.0
 Meal and Flour Unenumerated,"SAGO, and flour or meal thereof None",subset,1.0
 Meat Preserved not Salted,"MEAT, unenumerated None",subset,1.0
 Meat Unenumerated Salted or Fresh,Salted or Fresh,subset,1.0
-Meat not Otherwise Described,Not otherwise described,subset,1.0
+Meat not Otherwise Described,"MEAT, unenumerated None",subset,1.0
 Meat unenumerated Preserved otherwise than by Salting Other Sorts,"Preserved, otherwise than by Salting",subset,1.0
 Metal Bell,Metals,subset,1.0
 "Metal Bell Leaf, not Gold","Leaf, not Gold",subset,1.0
 Metal Leaf not Gold,"Leaf, not Gold",subset,1.0
-Metal Manufactured,Metals,subset,1.0
+Metal Manufactured,Manufactured : Other Sorts (including Cigarettes),subset,1.0
 Metal Old fit only to be re-manufactured,"Old, fit only to be re-manufactured",subset,1.0
-Metal Old other than Iron or Copper for re-manufacture,Metals,subset,1.0
+Metal Old other than Iron or Copper for re-manufacture,Unenumerated,subset,1.0
 Metal Unenumerated Wrought,Metals,subset,1.0
 Metal Unenumerated Wrought or Manufactured,Wrought or Manufactured,subset,1.0
-Metal Unenumerated unwrought,Metals,subset,1.0
+Metal Unenumerated unwrought,"Unenumerated, Unwrought",subset,1.0
 Methylic Alcohol,"METHYLIC ALCOHOL, not purified so as to be Potable",subset,1.0
 Mica Talc etc,MICA AND TALC None,subset,1.0
 Milk Condensed,"MILK, CONDENSED None",exact,1.0
 Molasses,Molasses,exact,1.0
-Moss Litter,MOSS LITTER None,exact,1.0
+Moss Litter,Moss LITTER None,exact,1.0
 Musical Instruments,MUSICAL INSTRUMENTS None,exact,1.0
 Muskets Rifles and Guns of any other Sort and Pistols,"Muskets, Rifles, and Guns of any other Sort, and Pistols",exact,1.0
-Mutton Fresh,"MUTTON, Fresh None",exact,1.0
+Mutton Fresh,"MUTTON, FRESH None",exact,1.0
 Mutton Preserved not by Salting,"Preserved, otherwise than by Salting",subset,1.0
 Myrabolans,MYRABOLANS None,exact,1.0
 Naphtha,NAPHTHA (Crude) None,exact,1.0
@@ -306,27 +306,27 @@ Naphtha or Methylic Alcohol purified,NAPHTHA (Crude) None,subset,1.0
 Nitrate of Soda,Nitrate of Soda (cubic nitre),exact,1.0
 Nitre Cubic,"NITRE, CUBIC None",exact,1.0
 None,,unmatched,0.0
-Nuts and Kernels Unenumerated,"Other sorts, unenumerated (not used as fruit)",exact,1.0
-Nuts and Kernels for expressing Oil,"Other sorts, unenumerated (not used as fruit)",subset,1.0
+Nuts and Kernels Unenumerated,NUTS AND KERNELS None,exact,1.0
+Nuts and Kernels for expressing Oil,NUTS AND KERNELS None,subset,1.0
 Oatmeal,Oatmeal,exact,1.0
 Oatmeal and Groats,Oatmeal and Groats,exact,1.0
 Oats,Oats,exact,1.0
-Oil Castor,Unenumerated,subset,1.0
+Oil Castor,Castor,subset,1.0
 Oil Coco-nut,Coco-nut,subset,1.0
 Oil Seed,"Seed Oil, of all Kinds",exact,1.0
-Oil Seed Cake Cotton Seed,Of other sorts,subset,1.0
-Oil Seed Cake Linseed,Of other sorts,subset,1.0
-Oil Seed Cake of other sorts,Of other sorts,exact,1.0
-Oil Turpentine Oil or Spirit of,Spirits None,subset,1.0
+Oil Seed Cake Cotton Seed,Oil SEED CAKE None,subset,1.0
+Oil Seed Cake Linseed,Oil SEED CAKE None,subset,1.0
+Oil Seed Cake of other sorts,Oil SEED CAKE None,exact,1.0
+Oil Turpentine Oil or Spirit of,Turpentine (Oil or Spirit of),subset,1.0
 Oil Unenumerated,Unenumerated,exact,1.0
 Oleo Margarine or Oleo Oil,OLEO-MARGARINE None,subset,1.0
-Olive Oil,Unenumerated,subset,1.0
+Olive Oil,Olive,subset,1.0
 Onions,ONIONS,exact,1.0
 Opium,Opium,exact,1.0
 Oranges,Oranges,exact,1.0
 Ordinance Stores Explosives and Ammunition Unenumerated,Unenumerated,subset,1.0
 Ordnance Stores and Ammunition Unenumerated,"Ordnance Stores, Explosives, and Ammunition,     Unenumerated",subset,1.0
-Ore Unenumerated,Ore of (including Chrome),exact,1.0
+Ore Unenumerated,Ore,exact,1.0
 Other Fresh Fish,Other sorts of Fresh Fish,exact,1.0
 Other Materials and Pulp of Rags and of Wood for Making Paper,"Other Materials, and Pulp of Rags and of Wood",subset,1.0
 Other Nuts used as Fruit,"Nuts, used as Fruit",exact,1.0
@@ -347,7 +347,7 @@ Paper Printed or Coated,Printed or Coated,subset,1.0
 Paper Strawboard or Millboard,Strawboard and Millboard,subset,1.0
 Paper Unenumerated,Unenumerated,exact,1.0
 Paper Wood Pulp Board,Wood Pulp Boards,subset,1.0
-Paper and Pasteboard Unprinted,Unenumerated,subset,1.0
+Paper and Pasteboard Unprinted,Unprinted,subset,1.0
 Paper for Printing or Writing,For Printing or Writing,subset,1.0
 Paraffin,,unmatched,0.0
 Pea meal,Pea meal,exact,1.0
@@ -367,7 +367,7 @@ Pickles and Vegetables Preserved in Salt or Vinegar,"PICKLES and VEGETABLES, pre
 Pickles and Vegetables preserved in Salt,PICKLES and VEGETABLES preserved in Salt None,exact,1.0
 Pickles preserved in Vinegar,"PICKLES and VEGETABLES, preserved in Salt or Vinegar None",subset,1.0
 Pictures Drawings and Photographs,"PICTURES, DRAWINGS, and PHOTOGRAPHS None",exact,1.0
-Pictures and Drawings by hand,"PICTURES AND DRAWINGS, by hand None",exact,1.0
+Pictures and Drawings by hand,"PICTURES and DRAWINGS, by HAND None",exact,1.0
 Pitch,PITCH None,exact,1.0
 Plants Shrubs Trees and Flower Roots,"PLANTS, SHRUBS, TREES, and FLOWER ROOTS None",exact,1.0
 Plate of Gold,PLATE OF GOLD None,exact,1.0
@@ -381,10 +381,10 @@ Plums French and Prunelloes,Plums (French) and Prunelloes,subset,1.0
 Plums Raw,"Plums, Raw",exact,1.0
 Pork Fresh,PORK None,subset,1.0
 Pork Salted,PORK None,subset,1.0
-Pork Salted not Hams,Hams,subset,1.0
+Pork Salted not Hams,PORK None,subset,1.0
 Potatoes,POTATOES None,exact,1.0
 Poultry and Game alive or dead,"POULTRY and GAME, alive or dead None",exact,1.0
-Poultry and Game alive or dead including Rabbits,"POULTRY and GAME, alive or dead None",subset,1.0
+Poultry and Game alive or dead including Rabbits,"POULTRY and GAME (alive or dead), including Rabbits None",subset,1.0
 Precious Stones Diamonds,PRECIOUS STONES (Unset) None,subset,1.0
 Precious Stones Unset,"PRECIOUS STONES, unset None",exact,1.0
 Prints Engravings and Photographs,PRINTS and ENGRAVINGS None,subset,1.0
@@ -395,7 +395,7 @@ Pulp of Rags and Wood,Pulp of Rags and Wood,exact,1.0
 Pyrites of Iron or Copper,PYRITES of IRON or COPPER None,exact,1.0
 Pyrites of Iron or Copper or Sulphur Ore,PYRITES of IRON or COPPER None,subset,1.0
 Quicksilver,QUICKSILVER (Metallic) None,exact,1.0
-Rabbits,RABBITS (Dead) None,exact,1.0
+Rabbits,RABBITS None,exact,1.0
 Rags Woollen,"RAGS WOOLLEN: Applicable to other uses than Manure, torn up or not None",subset,1.0
 Rags Woollen applicable to other uses than Manure torn up or not,"RAGS WOOLLEN: Applicable to other uses than Manure, torn up or not None",exact,1.0
 Raisins,Raisins,exact,1.0
@@ -412,18 +412,18 @@ Safflower,Safflower,exact,1.0
 Sago Sago Meal and Flour,"SAGO, and flour or meal thereof None",subset,1.0
 Sago and Sago Flour,SAGO and SAGO FLOUR None,exact,1.0
 Salt,SALT None,exact,1.0
-Saltpetre,SALTPETRE (Nitrate of Potash) None,exact,1.0
+Saltpetre,SALTPETRE (NITRATE OF POTASH) None,exact,1.0
 Sardines Cured or Salted,"Cured or salted, unenumerated",subset,1.0
 Sauces or Condiments Unenumerated,"SAUCES or CONDIMENTS, Unenumerated None",exact,1.0
-Seeds Garden unenumerated,"Garden, unenumerated",subset,1.0
+Seeds Garden unenumerated,"Garden, Unenumerated",subset,1.0
 Seeds Rape,Rape,subset,1.0
 Seeds Tares and Lentils,Tares and Lentils,subset,1.0
-Seeds Unenumerated Other Sorts,Seed,exact,1.0
+Seeds Unenumerated Other Sorts,Seeds None,exact,1.0
 Seeds Unenumerated for expressing Oil therefrom,"Unenumerated, for expressing oil therefrom",subset,1.0
 Sewing Machines,Sewing Machines,exact,1.0
 Sheep and Lamb Skins,Sheep and Lambs,subset,1.0
 Sheep and Lambs,Sheep and Lambs,exact,1.0
-Shell Fish Other sorts,Shell Fish of all sorts,exact,1.0
+Shell Fish Other sorts,"Shell fish, all sorts",exact,1.0
 Shells of all kinds,SHELLS of all kinds None,exact,1.0
 Ships Foreign wrecked broken up or to be broken up,"SHIPS, FOREIGN, wrecked, broken up, or to be broken up",exact,1.0
 Ships with the Tackle Apparel and Furniture Broken up or to be Broken Up,Broken up or to be Broken up,subset,1.0
@@ -441,24 +441,24 @@ Silk Manufactures Unenumerated,Other Kinds,exact,1.0
 Silk Manufactures Velvet Plain,"Manufactures, Broad Stuffs, Velvet, plain or figured, wholly of Silk",subset,1.0
 Silk Manufactures Velvet plain or figured,"Manufactures, Broad Stuffs, Velvet, plain or figured, wholly of Silk",subset,1.0
 Silk Manufactures of Europe Other Kinds,Other Kinds,subset,1.0
-Silk Manufactures of Silk or of Silk mixed with other Materials Unenumerated,"Manufactures of Silk or of Silk mixed with other Materials, unenumerated",exact,1.0
+Silk Manufactures of Silk or of Silk mixed with other Materials Unenumerated,"Manufactures of Silk, or of Silk mixed with other Materials, Unenumerated",exact,1.0
 Silk Raw,"SILK, Raw",exact,1.0
 Silk Thrown,Of Silk,subset,1.0
-Silk Thrown dyed or not,"Thrown, Dyed, or not Dyed",subset,1.0
+Silk Thrown dyed or not,"Thrown, Dyed or not Dyed",subset,1.0
 Silk Unenumerated,Of Silk,exact,1.0
-Silver Ore,"SILVER, Ore of, or Ore of which the greater part in Value is Silver None",subset,1.0
-Silver Ore or Ore of which the greater part in value is Silver,"SILVER, Ore of, or Ore of which the greater part in Value is Silver None",exact,1.0
-Skins Furs Pelts Goat Tanned Tawed or Dressed,"Unenumerated: Other Sorts, Tanned, Tawed,     or Dressed",subset,1.0
-Skins Furs Pelts Goat undressed,Unenumerated,subset,1.0
+Silver Ore,"SILVER ORE, or Ore of which the greater part in Value is Silver None",subset,1.0
+Silver Ore or Ore of which the greater part in value is Silver,"SILVER ORE, or Ore of which the greater part in Value is Silver None",exact,1.0
+Skins Furs Pelts Goat Tanned Tawed or Dressed,Unenumerated,subset,1.0
+Skins Furs Pelts Goat undressed,"Skins, Goat, undressed",subset,1.0
 Skins Furs Pelts Rabbit,"Furs, Rabbit Skins",subset,1.0
-Skins Furs Pelts Seal,Unenumerated,subset,1.0
-Skins Furs Pelts Sheep Tanned Tawed or Dressed,"Unenumerated: Other Sorts, Tanned, Tawed,     or Dressed",subset,1.0
-Skins Furs Pelts Sheep Undressed,Unenumerated,subset,1.0
+Skins Furs Pelts Seal,"Furs, Seal Skins",subset,1.0
+Skins Furs Pelts Sheep Tanned Tawed or Dressed,Unenumerated,subset,1.0
+Skins Furs Pelts Sheep Undressed,"Skins, Sheep, undressed",subset,1.0
 Skins Furs Pelts Unenumerated Dressed not Leather,Unenumerated,subset,1.0
 Skins Furs Pelts Unenumerated Other Sorts,Unenumerated,exact,1.0
-Skins Furs Pelts Unenumerated Other Sorts Tanned Tawed or Dressed,"Unenumerated: Other Sorts, Tanned, Tawed,     or Dressed",subset,1.0
+Skins Furs Pelts Unenumerated Other Sorts Tanned Tawed or Dressed,Unenumerated,subset,1.0
 Skins Furs Pelts Unenumerated Other Sorts Undressed,Unenumerated,subset,1.0
-Skins Furs Pelts Unenumerated not being Furs Dressed and Undressed,Unenumerated,subset,1.0
+Skins Furs Pelts Unenumerated not being Furs Dressed and Undressed,"Unenumerated, not being Furs, Dressed and Undressed",subset,1.0
 Skins Furs and Pelts Articles manufactured of Skins and Furs,Articles manufactured of Skins and Furs,subset,1.0
 Skins Furs and Pelts Goat and Kid Tanned Tawed or Dressed,"Goat and Kid, Tanned, Tawed, or Dressed",subset,1.0
 Skins Furs and Pelts Goat and Kid Undressed,"Goat and Kid, Undressed",subset,1.0
@@ -473,13 +473,13 @@ Spices Unenumerated,Unenumerated,exact,1.0
 Spirits Brandy,Spirits None,subset,1.0
 Spirits Geneva,Spirits None,subset,1.0
 Spirits Rum,Rum,subset,1.0
-Spirits Sweetened or Mixed Perfumed Spirits including Water Cologne,Perfumed Spirits (including Water Cologne),subset,1.0
-Spirits Sweetened or Mixed Tested,"Unenumerated, Sweetened, or Mixed (Tested)",subset,1.0
+Spirits Sweetened or Mixed Perfumed Spirits including Water Cologne,"Unenumerated, not Sweetened or Mixed",subset,1.0
+Spirits Sweetened or Mixed Tested,"Unenumerated, not Sweetened or Mixed",subset,1.0
 Spirits Tafla,Spirits None,subset,1.0
 Spirits Unenumerated,Spirits None,exact,1.0
 Spirits Unenumerated including Shrub,"Perfumed Spirits (including Water Cologne) : Unenumerated, including Shrub",subset,1.0
 Spirits Unenumerated not Sweetened,Spirits None,subset,1.0
-Spirits Unenumerated not Sweetened or Mixed,"Unenumerated, Sweetened, or Mixed (Tested)",subset,1.0
+Spirits Unenumerated not Sweetened or Mixed,"Unenumerated, not Sweetened or Mixed",subset,1.0
 Spirits Unenumerated not tested,Spirits None,subset,1.0
 Sponge,SPONGE None,exact,1.0
 Stallions,Stallions,exact,1.0
@@ -492,14 +492,14 @@ Straw For Agricultural purposes,For Agricultural purposes,subset,1.0
 Straw Platting for Hats,"STRAW PLATTING, for making Hats or Bonnets None",subset,1.0
 Succades and Confectionery including Fruits and Vegetables except Plums preserved in Sugar,FRUITS AND VEGETABLES: Preserved in Sugar None,subset,1.0
 Succades including all Fruits and Vegetables preserved in Sugar,FRUITS AND VEGETABLES: Preserved in Sugar None,subset,1.0
-Sugar Glucose Liquid or Vegetable Syrup,Vegetable,subset,1.0
+Sugar Glucose Liquid or Vegetable Syrup,Glucose,subset,1.0
 Sugar Refined,"Refined, or Sugar equal in quality thereto, and Sugar Candy",subset,1.0
-Sugar Refined In Lumps and Loaves,In Lumps and Loaves,subset,1.0
-Sugar Refined Total,"Refined, Total",subset,1.0
+Sugar Refined In Lumps and Loaves,In Lumps or Loaves,subset,1.0
+Sugar Refined Total,Refined : Total of,subset,1.0
 Sugar Refined and Sugar Candy,"Refined, or Sugar equal in quality thereto, and Sugar Candy",subset,1.0
 Sugar Unrefined Beetroot,Unrefined : Beetroot,subset,1.0
-Sugar Unrefined Cane and Other Sorts,"Unrefined, Cane, and other Sorts",subset,1.0
-Sugar Unrefined Total,"Unrefined, Total",subset,1.0
+Sugar Unrefined Cane and Other Sorts,"Unrefined: Cane, and Other Sorts",subset,1.0
+Sugar Unrefined Total,Unrefined: Total of,subset,1.0
 Swine,Swine,exact,1.0
 Swine and Hogs,Swine,subset,1.0
 Swords Cutlasses Bayonets and Arms of other Sorts Unenumerated,"Swords, Cutlasses, Bayonets, and Arms of other     Sorts, Unenumerated",exact,1.0
@@ -508,38 +508,38 @@ Tallow and Stearine,TALLOW and STEARINE None,exact,1.0
 Tar,TAR None,exact,1.0
 Tea,TEA None,exact,1.0
 Teeth Elephants Sea Cow and Sea Horses,"TEETH, Elephants', Sea Cow, and Sea Horse None",exact,1.0
-Tin Manufactures Unenumerated,TIN None,subset,1.0
-Tin Ore,Ore of (including Chrome),subset,1.0
+Tin Manufactures Unenumerated,Manufactures of,subset,1.0
+Tin Ore,Ore,subset,1.0
 Tin in Blocks Ingots Bars or Slabs,"In Blocks, Ingots, Bars, or Slabs",subset,1.0
 Tin in Blocks Ingots Bars or Slabs and Regulus,"In Blocks, Ingots, Bars, or Slabs, and Regulus",subset,1.0
 Tobacco Manufactured Cavendish or Negrohead,Manufactured : Cavendish or Negrohead,subset,1.0
-Tobacco Manufactured Cigars,Other Manufactured Tobacco,subset,1.0
+Tobacco Manufactured Cigars,Manufactured : Cigars,subset,1.0
 Tobacco Manufactured Other Sorts,Other Manufactured Tobacco,exact,1.0
 Tobacco Manufactured Snuff,Manufactured : Snuff,subset,1.0
-Tobacco Unenumerated,Other Sorts,exact,1.0
-Tobacco Unmanufactured,Unmanufactured,subset,1.0
+Tobacco Unenumerated,Tobacco None,exact,1.0
+Tobacco Unmanufactured,Tobacco None,subset,1.0
 Toys,TOYS None,exact,1.0
 Train Blubber and Spermaceti (Whale Oils),Train or Blubber,subset,1.0
 Train or Blubber (Whale Oils),Train or Blubber,exact,1.0
 Turpentine,Turpentine (Oil or Spirit of),exact,1.0
-Turpentine Oil,Unenumerated,subset,1.0
+Turpentine Oil,Turpentine (Oil or Spirit of),subset,1.0
 Valonia,Valonia,exact,1.0
 Value of Articles Imported by Parcel Post,VALUE of ARTICLES Imported by PARCEL POST,exact,1.0
 Varnish Not containing Alcohol,"VARNISH, CONTAINING ALCOHOL None",exact,1.0
-Vegetable Ivory,IVORY None,subset,1.0
+Vegetable Ivory,"VEGETABLES, Unenumerated None",subset,1.0
 Vegetable Substances applicable to the same uses as Hemp or Flax,Vegetable Substances applicable to the same   uses as Hemp or Flax,exact,1.0
-Vegetables Unenumerated,Vegetable,exact,1.0
+Vegetables Unenumerated,"VEGETABLES, Unenumerated None",exact,1.0
 Vinegar,VINEGAR None,exact,1.0
 Watches,WATCHES None,exact,1.0
 Wax,WAX None,exact,1.0
 Whale Fins,,unmatched,0.0
-Whalebone,WHALEBONE None,exact,1.0
+Whalebone,WHALEBONE (Whalefins) None,exact,1.0
 Wheat,Wheat,exact,1.0
 Wheat Meal and Flour,Wheat Meal and Flour,exact,1.0
 "Window Glass (not being Plate Glass), and German Sheet Glass, including Shades and Cylinders","Window Glass (not being Plate Glass), and German Sheet Glass, including Shades and Cylinders",exact,1.0
 Wine Red,Red,subset,1.0
 Wine Red Total of,Red: Total of,subset,1.0
-Wine Red in Bottles Sparkling Burgundy,Burgundy,subset,1.0
+Wine Red in Bottles Sparkling Burgundy,Red,subset,1.0
 Wine Red in Bottles Sparkling Other Sorts,Red,subset,1.0
 Wine Red in Bottles Still,"Red, in Bottles : Still",subset,1.0
 Wine Red in Casks,"Red, in Casks",subset,1.0
@@ -548,40 +548,40 @@ Wine White,White,subset,1.0
 Wine White in Bottles Sparkling Burgundy,"White, in Bottles: Sparkling : Burgundy",subset,1.0
 Wine White in Bottles Sparkling Champagne,"White, in Bottles: Sparkling : Champagne",subset,1.0
 Wine White in Bottles Sparkling Moselle,"White, in Bottles, Sparkling : Moselle",subset,1.0
-Wine White in Bottles Sparkling Other Sorts,White,subset,1.0
-Wine White in Bottles Sparkling Samur,White,subset,1.0
+Wine White in Bottles Sparkling Other Sorts,Bottles,subset,1.0
+Wine White in Bottles Sparkling Samur,Bottles,subset,1.0
 Wine White in Bottles Still,"White, in Bottles—Still",subset,1.0
 Wine White in Casks,"White, in Casks",subset,1.0
-Wine in Bottles Sparkling Champagne,Champagne,subset,1.0
-Wine in Bottles Sparkling Hock,Hock,subset,1.0
+Wine in Bottles Sparkling Champagne,Bottles,subset,1.0
+Wine in Bottles Sparkling Hock,Bottles,subset,1.0
 Wine in Bottles Sparkling Moselle,Moselle,subset,1.0
-Wine in Bottles Sparkling Saumur,Saumur,subset,1.0
+Wine in Bottles Sparkling Saumur,Bottles,subset,1.0
 "Wood and Timber Fir - Sawn or Split, Planed or Dressed","Sawn or Split, Planed or Dressed : Fir",subset,1.0
 Wood and Timber Furniture Woods Hardwoods and Veneers Unenumerated,Wood and Timber None,subset,1.0
-Wood and Timber Hewn Fir (Other than Pit Wood or Pit Props as of 1901),Wood and Timber None,subset,1.0
-Wood and Timber Hewn Oak,Wood and Timber None,subset,1.0
-Wood and Timber Hewn Teak,"Hewn, Teak",subset,1.0
+Wood and Timber Hewn Fir (Other than Pit Wood or Pit Props as of 1901),"Hewn, Fir",subset,1.0
+Wood and Timber Hewn Oak,"Hewn, Oak",subset,1.0
+Wood and Timber Hewn Teak,Wood and Timber None,subset,1.0
 Wood and Timber Hewn Unenumerated,Wood and Timber None,subset,1.0
 Wood and Timber House Frames Fittings and Joiners Work,"House Frames, Fittings, and Joiners' Work",subset,1.0
 "Wood and Timber Sawn or Split, Planed or Dressed Unenumerated","Sawn or Split, Planed or Dressed : Unenumerated",subset,1.0
 "Wood and Timber Staves - Sawn or Split, Planed or Dressed","Sawn or Split, Planed or Dressed : Unenumerated",subset,1.0
 Wool Alpaca Llama and Vicuna,"Alpaca, Llama, and Vicuna",subset,1.0
-Wool Goats Wool or Hair Other Sorts,Other Goats' Wool or Hair,exact,1.0
+Wool Goats Wool or Hair Other Sorts,Goats' Hair or Wool,exact,1.0
 Wool Other kinds and Flocks,Other Kinds and Wool Flocks,exact,1.0
 Wool Sheep and Lambs,Sheep or Lambs' Wool,exact,1.0
 Woollen Manufactures Cloths,Unenumerated,subset,1.0
-Woollen Manufactures Cloths and Stuffs,Unenumerated,subset,1.0
+Woollen Manufactures Cloths and Stuffs,Cloths and Stuffs,subset,1.0
 Woollen Manufactures Stuffs,Unenumerated,subset,1.0
 Woollen Manufactures Unenumerated,Unenumerated,exact,1.0
 Woollen Manufactures of Goats Wool or Hair,"Manufactures of Hair, not being of Goats' Hair   or Wool",subset,1.0
-Woollen Yarn For Fancy Purposes,For Fancy Purposes,subset,1.0
+Woollen Yarn For Fancy Purposes,WOOLLEN YARN None,subset,1.0
 Woollen Yarn For Weaving,WOOLLEN YARN None,subset,1.0
 Woollen Yarn Unenumerated,WOOLLEN YARN None,exact,1.0
 Woollen Yarn for Weaving Mixed or not with Silk,"For Weaving, Mixed or not with Silk",subset,1.0
 Yeast,YEAST None,exact,1.0
 Yeast Dried,"YEAST, Dried None",exact,1.0
 Zinc Crude,,unmatched,0.33
-Zinc Crude in Cakes,"Crude, in cakes",subset,1.0
+Zinc Crude in Cakes,"Crude, in Cakes",subset,1.0
 Zinc Manufactured,Manufactured : Other Sorts (including Cigarettes),subset,1.0
-Zinc Manufactures Unenumerated,"Manufactures, unenumerated",subset,1.0
-Zinc Ore,Ore of (including Chrome),subset,1.0
+Zinc Manufactures Unenumerated,Manufactures of,subset,1.0
+Zinc Ore,Ore,subset,1.0

@@ -163,6 +163,31 @@ def main():
                 supersede.add((gr['article_group'].upper(),
                                (gr['article'] or '').strip(), int(y_sup)))
 
+    # commodity-years a group repair already supplies (step 6). The repair
+    # names ONE engine's copy of a glue block; the OTHER engine's copy of the
+    # same printed table is Infinity-only under its own stale group, so step 2
+    # admits it a second time and the year doubles. as_1899 oats is printed
+    # once and reached country_year_final twice — CORDAGE|Oats repaired to
+    # CORN AND GRAIN (Chandra) plus CHEESE|Oats (Infinity) — reading 1.02 of
+    # its printed total only because the sub-entry rows were dropped from one
+    # of them. A hand-adjudicated repair outranks a stale-group re-print.
+    repaired_commod = set()
+    for gr in grepairs:
+        tbl = ('country_obs_inf' if (gr.get('obs_source') or '').strip() == 'inf'
+               else 'country_obs')
+        asig_r = (V.sig((gr['new_article'] or '').strip())
+                  or V.sig(f"{gr['new_group']} {gr['new_article'] or ''}"))
+        if not asig_r or not (gr['seq_start'] or '').strip():
+            continue
+        for (y_r,) in con.execute(f"""SELECT DISTINCT year FROM {tbl}
+                WHERE volume = ? AND flow = ? AND article_group = ?
+                  AND article IS NOT DISTINCT FROM ?
+                  AND row_seq BETWEEN ? AND ? AND year IS NOT NULL""",
+                [gr['volume'], gr['flow'], gr['article_group'],
+                 gr['article'] or None,
+                 int(gr['seq_start']), int(gr['seq_end'])]).fetchall():
+            repaired_commod.add((gr['volume'], asig_r, int(y_r)))
+
     # 1) consensus (voted) — keep every row, no collapsing
     rows = con.execute("""SELECT article_group, article, country, unit, year,
         quantity, value, q_tier, v_tier
@@ -223,10 +248,41 @@ def main():
             continue
         total_q = next((q for _, _, c, _, q, _ in rows if c == 'TOTAL'), None)
         total_v = next((vv for _, _, c, _, _, vv in rows if c == 'TOTAL'), None)
+        # 'Parent : Sub' members: dropping them outright loses the only copy of
+        # a segment whenever the block prints its detail region-qualified and
+        # never prints the parent aggregate — as_1897 TALLOW's whole American
+        # section is three 'United States of America : On the Atlantic/Pacific'
+        # rows (260,602 cwt in 1897 alone), so tallow read 0.82/0.73/0.74 of
+        # its printed total for 1897-99. Keep them unless the SAME PRINTED
+        # SEGMENT also carries a plain 'Parent' row, which is the case where
+        # the sub-entries only re-state an aggregate the voter already has.
+        # Segment, not block: an Infinity glue block runs several commodities
+        # under one stale article, and as_1899's next commodity contributes a
+        # plain 'United States of America' that has nothing to do with the
+        # tallow table's Atlantic/Pacific split. Label stays literal
+        # ('Region : Sub'), the step-4 convention: every validator skips ' : '
+        # countries, so gold numbers are untouched.
+        seg_plain, seg_of, seg = [], {}, set()
+        for i, (_, _, c, _, _, _) in enumerate(rows):
+            if (c or 'TOTAL') == 'TOTAL':
+                seg_plain.append(seg)
+                seg = set()
+            elif c and ' : ' not in c:
+                seg.add(V.cnorm(c))
+            seg_of[i] = len(seg_plain)
+        seg_plain.append(seg)
         members = []
-        for g, a, c, u, q, val in rows:
-            if (c or 'TOTAL') == 'TOTAL' or ' : ' in (c or ''):
+        for i, (g, a, c, u, q, val) in enumerate(rows):
+            if (c or 'TOTAL') == 'TOTAL':
                 continue
+            if ' : ' in c:
+                parent, _, sub = c.partition(' : ')
+                sub = sub.strip()
+                if (V.cnorm(parent) in seg_plain[seg_of[i]]
+                        or c.count(':') != 1
+                        or not sub or len(sub) > 60 or re.search(r'\d', sub)
+                        or is_subtotal(V.cnorm(sub))):
+                    continue
             cn = V.cnorm(c)
             if (is_subtotal(cn) or re.search(r'\d', c) or len(c) > 60
                     or not q or q <= 0 or q > 1e12):
@@ -253,7 +309,15 @@ def main():
             asig = V.sig(art) or V.sig(f"{g or ''} {art}")
             if not asig or (asig, y) in consensus_commod:
                 continue
-            if (asig, V.cnorm(c), y) in seen_added:
+            if (v, asig, y) in repaired_commod:
+                continue          # step 6 already supplies this printed table
+            # dedup key: a 'Region : Sub' member and a bare 'Sub' member are
+            # the same printed line read out of two volumes' copies of the
+            # five-year table (as_1897 tallow prints 'Australasia : New South
+            # Wales', as_1899 prints it bare), so both must compete for ONE
+            # slot or the year doubles.
+            ckey = V.cnorm(c.partition(' : ')[2]) if ' : ' in c else V.cnorm(c)
+            if (asig, ckey, y) in seen_added or (asig, V.cnorm(c), y) in seen_added:
                 continue
             # honor page-adjudicated manual replaces the way step 1 does
             # (maize Canada 1893: the infonly cell reads 8,260,851/786,614,
@@ -264,6 +328,7 @@ def main():
                     or (asig, V.cnorm(c), y) in manual_replace):
                 continue
             seen_added.add((asig, V.cnorm(c), y))
+            seen_added.add((asig, ckey, y))
             out_rows.append({'group': (g or '').upper(), 'article': art,
                 'country': c, 'unit': u or '', 'qty': float(q),
                 'value': float(val) if val else None, 'year': y,
