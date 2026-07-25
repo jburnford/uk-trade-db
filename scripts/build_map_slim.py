@@ -255,11 +255,14 @@ for n in wl:
     # whenever the origin unit was absent from §TOTAL, which produced an
     # anchor in Tons for origins measured in Cwts.
     t1_by_u = collections.defaultdict(dict)
+    t1v = {}
     for u, ser in e['c'].get('§TOTAL', {}).items():
         if u == 'Value':          # a value line is not a quantity anchor
             continue
         for cell in ser:
             t1_by_u[u][cell[0]] = t1_by_u[u].get(cell[0], 0) + cell[1]
+            if len(cell) > 3 and cell[3]:
+                t1v.setdefault(cell[0], cell[3])
     unit_note = None
     if dom != '?' and dom in t1_by_u:
         t1 = t1_by_u[dom]
@@ -592,6 +595,13 @@ for n in wl:
                 if a or b},
         'nat': {str(y): [round(a), round(b)] for y, (a, b) in nat.items()},
         't1': {str(y): round(q) for y, q in t1.items() if q},
+        # the printed national VALUE, carried on the §TOTAL cell's 4th
+        # element by build_viz_payload. Unit-independent, so it needs none of
+        # the unit reconciliation above: it exists so value closure can be
+        # measured on the DE-DUPLICATED numbers the map actually shows,
+        # rather than on the raw payload where a parent line and its children
+        # are both still present.
+        't1v': {str(y): round(v) for y, v in sorted(t1v.items()) if v},
     }
 
 payload = {

@@ -453,6 +453,35 @@ def main():
             t1_sigs.add(sig_of(b, ql, None))
     known = country_sigs | t1_sigs
 
+    # ---- the printed national VALUE line, carried on the §TOTAL cell ----
+    # Every block in the Abstract prints two columns and two printed totals,
+    # and until now only the quantity one was ever tested. The value anchor
+    # rides on the §TOTAL cell's 4th element (the same slot the country cells
+    # use for their value), so value closure can be measured in exactly the
+    # curated space quantity closure is measured in. viz_payload.json strips
+    # the 4th element, so its schema is unchanged.
+    t1val, _vart = {}, {}
+    for g, a, y, v in con.execute("""
+            SELECT article_group, article, year, value FROM consensus
+            WHERE flow='import' AND measure='value' AND value > 0""").fetchall():
+        if (g or '').strip():
+            base, qual = fold_group(g)
+            vsig = sig_of(base, qual, a)
+            # the quantity cell may have been re-homed by the sticky-group
+            # repair below, which files it under the ARTICLE's signature; key
+            # the value line both ways so the pair still meets
+            akey_v = tuple(sorted(toks(a)))
+            if akey_v:
+                _vart.setdefault((akey_v, y), []).append(v)
+        else:
+            base, qual = fold_group(a)
+            vsig = sig_of(base, qual, None)
+        if vsig:
+            t1val.setdefault((vsig, y), v)      # first printing wins, as before
+    for k, vs in _vart.items():
+        if len(set(vs)) == 1:                   # unambiguous article-year
+            t1val.setdefault(k, vs[0])
+
     n_tot = n_fixed = 0
     for g, a, u, y, q, tier in t1_rows:
         grouped = bool((g or '').strip())
@@ -478,21 +507,14 @@ def main():
             label = display(base, qual, None)
         if not sig:
             continue
-        add_cell(sig, label, TK, norm_unit(u), y, q, RANK.get(tier, 3))
+        add_cell(sig, label, TK, norm_unit(u), y, q, RANK.get(tier, 3),
+                 t1val.get((sig, y), 0))
         n_tot += 1
 
     # ---- sort key for T1-only commodities: voted national GBP value ----
-    for g, a, y, v in con.execute("""
-            SELECT article_group, article, year, value FROM consensus
-            WHERE flow='import' AND measure='value' AND value > 0""").fetchall():
-        if (g or '').strip():
-            base, qual = fold_group(g)
-            sig = sig_of(base, qual, a)
-        else:
-            base, qual = fold_group(a)
-            sig = sig_of(base, qual, None)
-        if sig in comms and comms[sig]['v'] == 0:
-            comms[sig]['v'] += min(v, 50_000_000)
+    for (vsig, _y), v in t1val.items():
+        if vsig in comms and comms[vsig]['v'] == 0:
+            comms[vsig]['v'] += min(v, 50_000_000)
 
     # ---- coastal roll-up: some origins are printed split by shipping coast
     # ('United States of America : On the Atlantic / On the Pacific', US raw
