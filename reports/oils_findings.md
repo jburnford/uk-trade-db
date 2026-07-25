@@ -449,3 +449,141 @@ changes on `reconcile_baseline.py` and `validate_gold_numeric.py`, which are
 stable. Over this session the stable pair went from **34.5% to 36.6% of GBP
 within 0.1% of T1 and 51.5% to 53.6% within 5%**, with under-counted
 commodity-years 325 -> 289.
+
+## Continued the same day: the anchors, the era labels, and 1884-85
+
+The first half of the review fixed what the origins were doing. The second
+half turned out to be about everything else — anchors that were wrong,
+labels that were the same line twice, and two whole years that had gone
+missing behind a garbled group head.
+
+### Tier 1 can be wrong, and now it can be told so
+
+`country_obs` has had `reference/manual_rows.csv` from the start. Tier 1 had
+nothing, so a provably wrong national total dragged its year's ratio forever
+and made every commodity measured against it read as broken. Two turned up in
+one afternoon, so it is a mechanism now: **`reference/manual_t1.csv`**,
+applied in `reconcile.py` after the cross-volume vote, matched on the TOKEN
+SIGNATURE of group+article (the same line comes through as `" Flax or
+Linseed`, `„ Flax or Linseed`, `Oil Seed Cake - - - - -`; a literal key would
+go stale on the next re-parse). Overridden rows carry `manual` in `volumes`,
+and a rule matching nothing is reported by name.
+
+* **Oil seed cake 1890, 229,616 -> 282,616 Tons.** The vote picked 229,616
+  because two late printings carry it; the three volumes nearest the year all
+  print 282,616 and the origin table sums to 282,582 — thirty-four tons from
+  one figure, fifty-three thousand from the other. 1.231 -> 1.000.
+* **Flax and linseed 1899, 1,708,887 -> 1,798,887 Quarters**, and this one is
+  exact three ways: the Foreign members sum to their printed 780,265; with
+  Bengal at 898,023 the British members come to 1,018,622; and their sum is
+  tn_1901's printed national total to the digit. as_1899 misread the
+  ten-thousands digit of the national line AND the hundreds digit of the
+  British subtotal, and **the two errors hid each other** — taking its
+  subtotal at face value (which is what I did first) gives a Bengal 600 short
+  and a year that never closes.
+
+### 'GIL' is OIL, and 1884-85 lost the whole section
+
+Every oil read 0.00 origins in 1884 AND 1885 while 1883 and 1886 both closed
+at 1.00. The tables were never missing; they were under a group nobody looked
+for. as_1884's group is **`GIL`** — OIL with the O read as G — carrying 100
+rows and all eleven articles. as_1885's is **`Fish`**, which is not a garble:
+the printed line is `Oil: Fish, Train or Blubber`, so the parser kept `Fish`
+as the sticky group for everything below it.
+
+The identification is arithmetic, not typographic. Olive 1884's block total
+is 17,213 Tuns — olive oil's national total to the digit. Animal 1885 is
+121,498 cwt against a printed 121,498. `GIL` is a global alias (it appears in
+one volume, on oil articles only); `Fish` is folded label by label, because
+`Fish` is a real group in as_1874/84/88.
+
+  Oil — Animal   1884 0.00 -> 1.00, 1885 0.00 -> 1.00
+  Oil — Olive    1884 0.00 -> 1.00, 1885 0.00 -> 1.14
+  Oil — Coco-Nut 1884 0.00 -> 1.00
+  Oil — Seed     1884 0.00 -> 0.92, 1885 0.00 -> 1.00
+
+### One line, six labels: the butter substitutes
+
+`Butterine` (1886) becomes `Butterine (Margarine)` after the Margarine Act
+1887 and `Margarine (including all kinds of Artificial or Imitation Butter)`
+in the 1890s. The payload carried it as six commodities, four of them
+anchor-only. The sixth was a signature accident: `…of Imitation Butter` and
+`…of Artificial or Imitation Butter` differ by one word.
+
+Folded INTO `Margarine` rather than out of it, because its cells are the
+better ones where they overlap. Two digit repairs finished it, both the same
+**8-read-as-5** as lard 1885 and flax 1899 — 1886 Holland 335,328 -> 835,328
+and 1899 Holland 597,806 -> 897,806. **GBP46.0M, closing in every year
+1886-99.** `Oleo-Margarine` stays separate (it is the beef-fat raw material,
+not the butter substitute) and now closes in all eight of its years.
+
+### Where the family stands
+
+| commodity | closing years 1872-99 |
+|---|---|
+| `Butter` GBP325.7M | **28 of 28** |
+| `Lard` GBP69.6M | **28 of 28** |
+| `Margarine` GBP46.0M | **14 of 14** |
+| `Seeds — Rape` GBP23.1M | **20 of 20** |
+| `Tallow And Stearine` GBP61.2M | 27, 1889 alone |
+| `Seeds — Clover And Grass` GBP19.8M | 27, 1874 alone |
+| `Seeds — Flax Or Linseed` GBP148.2M | 26, 1874 and 1880 |
+| `Oil — Palm` GBP111.9M | 26, 1882 and 1887 |
+| `Oil — Turpentine` GBP13.2M | 25 of 28 |
+| `Oil — Coco-Nut` GBP8.2M | 17 of 21 |
+| `Oil — Olive` GBP24.3M | 15 of 21 |
+
+Payload within 0.1% of T1 **34.5% -> 36.8%** of GBP over the session, within
+5% **51.5% -> 53.7%**; under-counted commodity-years 325 -> 289.
+
+### Still open, revised
+
+1. **`Oil — Oil Seed Cakes` 1892-96 is an ERA SPLIT, not a hole.** The
+   printed identity is proven: `Linseed Cake` + `Cotton Cake` + `Of other
+   sorts` = `Oil Seed Cake` exactly in 1894, 1895 and 1896 and within 30 in
+   1893. The aggregate keeps a national line to 1896 while the country tables
+   move to the sub-sorts in 1892, so the parent has no origin table of its
+   own for five years. Do NOT merge parent into children (the sugar trap);
+   the honest options are to synthesise the parent from its children the way
+   the country-side roll-up does, or to mark it an era label.
+2. **`Nuts And Kernels — Commonly Used…` 1894 reads 0.079** — 5,907 tons
+   against 75,102, a lost table rather than a digit. 1874 0.49, 1886 0.29,
+   1872 1.75.
+3. **`Oil — Seed` runs 0.81-0.94 through the 1880s** and `Seeds —
+   Unenumerated, For Expressing Oil Therefrom` has six 1870s years at
+   0.48-0.73 whose two candidate tables are geographically disjoint — one
+   Indian and Black Sea (and closing exactly in 1875), one European. Two
+   different tables under one national total; merging them produces a number
+   that is neither.
+4. **Olive 1885 folds at 24,209 against a printed 21,227** because Chandra
+   totals that block 24,204 where Infinity totals 21,201 — a live digit
+   dispute the fold does not settle. Olive 1888/90/91 run 0.88-0.93.
+5. **`Coco Nut` holds an 1885 table of 368,757** that is almost exactly TWICE
+   coconut oil's printed 185,496 — a parent-plus-children double count.
+6. **`Nuts And Kernels` (plain, GBP12.2M)** carries 1893-97 "origins" of
+   840,131 to 28,295,329 TONS, junk from another table under a stale head,
+   beside a T1 for 1887-91 that duplicates the palm-kernel line's.
+7. **`Oil — Fish : Train Or Blubber` has no anchor in any year** and stops in
+   1896; 1894 reads 0.44 against what anchor it has.
+8. **Margarine 1899's VALUE column** exceeds its printed total by 19,492, and
+   Germany at GBP4.29/cwt against Holland's 2.65 is the row to look at.
+9. **Tallow 1897-99 still carries ~13,000 cwt of intruders** (Channel
+   Islands, a second United States row, Peru, Spain) belonging to the TAR and
+   following tables in the same Infinity glue block.
+
+### The digit class this family kept producing
+
+Four separate repairs this session were the same confusion — **a printed 8
+read as 5** — and all four were caught the same way, by a printed subtotal on
+the same page rather than by anything about the number itself:
+
+| | reads | should be |
+|---|---|---|
+| Lard 1885, United States | 500,406 | 800,406 |
+| Flax and linseed 1899, Bengal | 593,023 | 898,023 |
+| Butterine 1886, Holland | 335,328 | 835,328 |
+| Margarine 1899, Holland | 597,806 | 897,806 |
+
+Worth a detector: **a member row whose value/quantity ratio is 1.5x or more
+off its own block's rate, where adding 300,000 or 500,000 to the quantity
+closes the block's printed total.**
