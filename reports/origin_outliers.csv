@@ -194,6 +194,7 @@ Umbrellas And Parasols,1872,United States Of America (Atlantic & Pacific),?,4593
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Other Foreign Countries,?,1657113,0,foreign to this commodity
 Cavendish Or Negrohead,1884,British West India Islands,Lb,1243720,0,foreign to this commodity
 "Silk Manufactures — Velvet, Plain Or Figured",1884,Holland,?,851919,0,foreign to this commodity
+Oil — Palm,1876,Postuguese Possessions,Cwt,651915,879824,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Germany,Load,440768,0,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Fir,Load,310522,0,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Russia,Load,277021,0,foreign to this commodity
@@ -245,7 +246,6 @@ Wood And Timber — Teak,1873,United States Of America,Load,6670,0,foreign to th
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,France,Number,6517,0,foreign to this commodity
 "Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",1876,West Coast Of Africa (Foreign,Ton,6450,43292,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1881,Argentine Republic,?,6376,0,foreign to this commodity
-Oil,1886,Train Or Blubber,Tun,6358,0,foreign to this commodity
 "Silk Manufactures — Velvet, Plain Or Figured",1881,Australasia,?,6004,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,United States Of America (Pacific),?,5831,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,United States Of America,?,5831,0,foreign to this commodity
@@ -295,9 +295,7 @@ At Certain Ports,1894,Norway,?,257,0,foreign to this commodity
 At Certain Ports,1894,Sweden,?,254,0,foreign to this commodity
 At Certain Ports,1894,Russia (Southern Ports),?,253,0,foreign to this commodity
 At Certain Ports,1894,Russia,?,253,0,foreign to this commodity
-Oil,1886,Denmark,Tun,214,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Egypt,?,190,0,foreign to this commodity
-Oil,1886,Norway,Tun,185,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Canada,?,180,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Sweden,?,169,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Belgium,?,142,0,foreign to this commodity
@@ -342,46 +340,6 @@ Petroleum,1899,Pyrites Of Iron Or Copper,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Rabbits Dead,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Rice,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Rosin,Gallon,0,0,foreign to this commodity
-Oil,1898,Coco Nut Ccts,Tun,0,0,foreign to this commodity
-Oil,1898,Palm Ccts,Tun,0,0,foreign to this commodity
-Oil,1898,Turpentine Ccts,Tun,0,0,foreign to this commodity
-Oil,1898,Paper Including Strawboard And C Ccts,Tun,0,0,foreign to this commodity
-Oil,1898,Paraffine Ccts,Tun,0,0,foreign to this commodity
-Oil,1898,Fresh,Tun,0,0,foreign to this commodity
-Oil,1898,Glass Manufactures Bottles Gross,Tun,0,0,foreign to this commodity
-Oil,1898,Gum Lac,Tun,0,0,foreign to this commodity
-Oil,1898,Hay Tons,Tun,0,0,foreign to this commodity
-Oil,1898,Chemical Essential Or Perfumed,Tun,0,0,foreign to this commodity
-Oil,1898,Chemical Essential Or Perfumed Lbs,Tun,0,0,foreign to this commodity
-Oil,1898,Petroleum Gallons,Tun,0,0,foreign to this commodity
-Oil,1898,Pork Salted Ccts,Tun,0,0,foreign to this commodity
-Oil,1898,Of All Other Kinds Cicts,Tun,0,0,foreign to this commodity
-Oil,1898,Cutta Percha,Tun,0,0,foreign to this commodity
-Oil,1898,Hides Raw Cicts,Tun,0,0,foreign to this commodity
-Oil,1898,Paper Including Strawboard And C Cicts,Tun,0,0,foreign to this commodity
-Oil,1898,Pork Salted Cicts,Tun,0,0,foreign to this commodity
-Oil,1898,Quicksilver,Tun,0,0,foreign to this commodity
-Oil,1898,Rabbits Dead,Tun,0,0,foreign to this commodity
-Oil,1898,Seal Tons,Tun,0,0,foreign to this commodity
-Oil,1898,Bar,Tun,0,0,foreign to this commodity
-Oil,1898,Jute,Tun,0,0,foreign to this commodity
-Oil,1898,Manufactures Of,Tun,0,0,foreign to this commodity
-Oil,1898,Lard,Tun,0,0,foreign to this commodity
-Oil,1898,Pig And Sheet,Tun,0,0,foreign to this commodity
-Oil,1898,Leather,Tun,0,0,foreign to this commodity
-Oil,1898,Seal,Tun,0,0,foreign to this commodity
-Oil,1886,Not Designated,Tun,0,0,foreign to this commodity
-Oil,1886,New Zealand,Tun,0,0,foreign to this commodity
-Oil,1887,Not Particularly Designnated,Tun,0,0,foreign to this commodity
-Oil,1897,"Paper, Including Strawboard, &C. - Carts",Tun,0,0,foreign to this commodity
-Oil,1897,Oil-Seed Cake,Tun,0,0,foreign to this commodity
-Oil,1897,"Onions, Raw",Tun,0,0,foreign to this commodity
-Oil,1897,Painters' Colours,Tun,0,0,foreign to this commodity
-Oil,1897,"Paper, Including Strawboard, &C",Tun,0,0,foreign to this commodity
-Oil,1897,Paper-Making Materials,Tun,0,0,foreign to this commodity
-Oil,1897,"Poultry And Game, Alive Or Dead",Tun,0,0,foreign to this commodity
-Oil,1897,Olive . . . . . . . . . . Tuns,Tun,0,0,foreign to this commodity
-Oil,1897,"Paper, Including Strawboard, &C. . . . Casks",Tun,0,0,foreign to this commodity
 Biscuit And Bread,1876,Ceylon,Cwt,0,0,foreign to this commodity
 Biscuit And Bread,1876,Other Countries,Cwt,0,0,foreign to this commodity
 Fruit — Raisins,1879,Malt Foreign From All Countries,Cwt,0,585538,foreign to this commodity
@@ -397,7 +355,6 @@ Fruit — Raisins,1879,Ceylon,Cwt,0,585538,foreign to this commodity
 Fruit — Raisins,1879,Japan,Cwt,0,585538,foreign to this commodity
 Fruit — Raisins,1879,Argentine Republic,Cwt,0,585538,foreign to this commodity
 Fruit — Raisins,1879,British India,Cwt,0,585538,foreign to this commodity
-Oil — Palm,1876,Postuguese Possessions,Cwt,0,879824,foreign to this commodity
 Wood And Timber — Staves,1888,Australasia,Load,0,143796,foreign to this commodity
 "Drugs — Bark, Peruvian",1882,Turkey,Cwt,0,139285,foreign to this commodity
 "Drugs — Bark, Peruvian",1882,Persia,Cwt,0,139285,foreign to this commodity

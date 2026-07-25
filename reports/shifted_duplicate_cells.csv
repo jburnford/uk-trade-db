@@ -26,6 +26,7 @@ Caoutchouc,1895,French,French Possessions,15798,125175
 Hay,1895,United States Of America (Atlantic),United States Of America,36176,122358
 Myrabolams,1874,Madras,Madras,193276,111827
 Butter,1893,United States Of America (Atlantic),United States Of America,22930,104220
+"Buttons And Studs, Not Of Metal",1882,Other Countries,Other Countries,846011,101512
 "Sugar — Unrefined : Cane, And Other Sorts",1882,Danish West India Islands,Danish West India Islands,84519,98755
 Caoutchouc,1895,United States Of America (Atlantic),United States Of America,15764,92336
 Nuts And Kernels — Seed,1893,United States Of America (Atlantic),United States Of America,4230,89550
@@ -43,7 +44,6 @@ Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1885,Islands In 
 Phosphate Of Lime And Rock,1893,France,France,34866,55036
 Dye Woods — Unenumerated,1876,Mexico,Mexico,6116,52878
 Wood And Timber — Teak,1883,Siam,Siam,3447,51682
-"Silk — Knubs Or Husks Of Silk, And Waste",1886,Japan,Japan,5003,50921
 Mares,1894,United States Of America (Atlantic),United States Of America,1261,49212
 "Wood And Timber — Hewn, Unenumerated",1895,United States Of America (Atlantic),United States Of America,11638,47708
 Zinc — Ore Of,1898,Tunisia,Tunis,19681,47513
@@ -67,7 +67,6 @@ Wood And Timber — Mahogany,1895,French Possessions,Western Africa,3603,31476
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1894,"Turkey, Asiatic",Turkey Asiatic,653,24467
 Linen And Jute Manufactures — Jute Manufactures,1881,United States Of America (Pacific),United States Of America,2274500,23794
 Hemp — Dressed Or Undressed,1893,Mauritius And Dependencies,Mauritius,975,23571
-"Silk — Knubs Or Husks Of Silk, And Waste",1886,Turkey,Turkey,1500,23530
 Dye Woods — Unenumerated,1875,West Coast Of Africa (Not Particularly Designated,West Coast Of Africa Not Particularly Designated,3555,23071
 Dye Woods — Unenumerated,1875,British East Indies,British East Indies,2572,22956
 "Wood And Timber — Hewn, Unenumerated",1897,Russia (Northern Ports),Russia,14650,22821
@@ -98,6 +97,7 @@ Hemp — Dressed Or Undressed,1894,United States Of America (Atlantic),United St
 Wood And Timber — Mahogany,1895,Cuba And Porto Rico,Spanish West India Islands,2819,16318
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1895,Russia (Northern Ports),Russia (Northern Ports),157204,16277
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1897,Russia (Northern Ports),Russia (Northern Ports),134330,15767
+Oil — Palm,1895,German,German Possessions,15122,15554
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,United States Of America,United States Of America,911,15259
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1897,Holland,Holland,130963,15185
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1895,France,France,226612,15042
@@ -120,7 +120,6 @@ Caoutchouc,1893,Mauritius And Dependencies,Mauritius,1223,10774
 Dye Woods — Unenumerated,1876,Central America,Central America,2009,10723
 Hemp — Dressed Or Undressed,1894,Strait Settlements,Straits Settlements,454,10712
 Dye Woods — Unenumerated,1875,Venezuela,Venezuela,1366,10430
-Zinc — Ore Of,1896,United States Of America (Atlantic),United States Of America,1069,10074
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1897,Russia (Southern Ports),Russia (Southern Ports),108090,9910
 Dye Woods — Unenumerated,1875,France,France,1264,9716
 Hemp — Dressed Or Undressed,1896,United States Of America,United States Of America,569,9651
@@ -145,7 +144,6 @@ Dye Woods — Unenumerated,1875,Philippine Islands,Philippine Islands,726,7125
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,Germany,Germany,217,7012
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,Other Foreign Countries,Other Foreign Countries,350,6986
 Wood And Timber — Teak,1893,Other Foreign Countries,Other Foreign Countries,734,6958
-Paper — Unprinted,1893,Russia (Northern Ports),Russia,14513,6539
 Phosphate Of Lime And Rock,1893,Algeria,Algeria,3069,6470
 "Feathers And Down — For Beds, In Beds Or Otherwise",1895,United States Of America (Atlantic),United States Of America,3445,6419
 Plate Of Silver,1883,United States Of America (Atlantic),United States Of America,19195,6406
@@ -174,9 +172,7 @@ Meat — Other Sorts,1893,Russia (Northern Ports),Russia,1071,4162
 Wax,1895,Zanzibar And Pemba,Eastern Coast Of Africa Zanzibar And Pemba,653,4096
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,Natal,Natal,106,4072
 "Flax, Dressed Or Undressed",1896,Australasia,Australasia,152,3809
-Zinc — Ore Of,1894,Tunisia,Tunis,1148,3722
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,China,China,122,3525
-"Silk — Knubs Or Husks Of Silk, And Waste",1886,Egypt,Egypt,259,3472
 "Sugar — Unrefined : Cane, And Other Sorts",1884,Bombay Andscinde,Bombay,5166,3216
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1888,Hong Kong,Hong Kong,1846,3110
 Caoutchouc,1895,Mauritius And Dependencies,Mauritius,343,3100
@@ -197,9 +193,7 @@ Bottles,1895,United States Of America (Atlantic),United States Of America,4620,2
 Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1891,British Possessions In Southafrica,British Possessions In South Africa,513,1934
 "Metal — Unenumerated, Wrought Or Manufactured : Old, Fit Only To Be Re-Manufactured",1883,British West India Islands,British West India Islands,48,1829
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1888,Australasia,Australasia,1157,1816
-Zinc — Ore Of,1896,Tunisia,Tunis,625,1813
 Glass,1897,France,Belgium,577,1749
-Oleo-Margarine,1896,Other British Possessions,Australasia,1215,1630
 Hay,1896,Russia (Northern Ports),Russia,707,1581
 "Buttons And Studs, Not Of Metal",1896,United States Of America (Atlantic),United States Of America,37065,1577
 Brimstone,1876,Turkey,Turkey,5000,1550
@@ -255,7 +249,6 @@ Wood And Timber — Teak,1878,Straits Settlements,Straits Settlements,64,400
 Butter — Margarine (Including All Kinds Of Artificial Or Imitation Butter),1896,United States Of America (Atlantic),United States Of America,239,370
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1895,Egypt,Egypt,5220,356
 "Woollen Yarn — For Fancy Purposes, Including Berlin Wool And Zephyr Yarn",1894,France,Other Foreign Countries,2716,342
-Paper — Hangings,1890,Other Foreign Countries,Other Foreign Countries,83,331
 Wax,1896,Portuguese Possessions,Eastern Coast Of Africa Portuguese Possessions,38,242
 Wax,1895,Mauritius And Dependencies,Mauritius,45,232
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1894,Egypt,Egypt,2450,213
@@ -263,7 +256,6 @@ Wax,1895,Mauritius And Dependencies,Mauritius,45,232
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1894,Morocco,Morocco,2414,174
 Wax,1894,Portuguese Possessions,Eastern Coast Of Africa Portuguese Possessions,29,167
 Wax,1896,Mauritius And Dependencies,Mauritius,30,127
-Oleo-Margarine,1896,Egypt,Other Foreign Countries,105,105
 Rosin,1883,Germany,Belgium,330,100
 Phosphate Of Lime And Rock,1893,Other British Possessions,Other British Possessions,6,22
 "Sugar — Unrefined : Cane, And Other Sorts",1884,Belgium,Belgium,9,9

@@ -564,6 +564,72 @@ def main():
         t = sorted(vals)
         return t[len(t) // 2]
 
+    def heal_by_anchor(store):
+        """Fold a year's unit-less cells into the dominant unit when that
+        moves the year closer to its own printed national total.
+
+        Run inside heal_units AND again after commodity curation: a fold
+        brings in countries the target has no labelled cell for, so the
+        per-country tests cannot reach them. Palm oil 1888 gained Lagos
+        (which the target does have, so it was relabelled at fold time) but
+        not 'Nated', 412,183 cwt of the same West African trade under a
+        mangled name, and the year stopped at 0.56 instead of 1.00.
+        """
+        n_healed = 0
+        for s in store.values():
+            ucnt = Counter()
+            for cty, units in s['c'].items():
+                if cty == TK:
+                    continue
+                for u, cs in units.items():
+                    if u != '?':
+                        ucnt[u] += len(cs)
+            dom_all = ucnt.most_common(1)[0][0] if ucnt else None
+            # Last resort, decided a YEAR at a time against the commodity's own
+            # printed national total. The per-country tests above compare a
+            # country's unit-less cells with its own labelled ones, and a
+            # genuine collapse in one origin's trade defeats them: palm oil's
+            # Portuguese Possessions ships 878,548 unit-less in 1874 and 600 to
+            # 42,100 labelled in the 1890s, two hundred times apart, so the
+            # magnitude guard reads a unit change where there was only the
+            # Niger and Lagos trade taking over. The year's arithmetic settles
+            # it - 1874's labelled cells alone come to 32,633 against an anchor
+            # of 1,067,767, and adding the unit-less ones gives 1,067,767 to the
+            # digit. So: fold a year's unit-less cells into the dominant unit
+            # when doing that moves the year CLOSER to its anchor, and not
+            # otherwise. A cell that is really in some other unit overshoots and
+            # is left alone.
+            anchor = {}
+            for cell in s['c'].get(TK, {}).get(dom_all, []) if dom_all else ():
+                anchor[cell[0]] = anchor.get(cell[0], 0) + cell[1]
+            if anchor:
+                lab = Counter()
+                unl = Counter()
+                for cty, units in s['c'].items():
+                    if cty == TK:
+                        continue
+                    for cell in units.get(dom_all, ()):
+                        lab[cell[0]] += cell[1]
+                    for cell in units.get('?', ()):
+                        unl[cell[0]] += cell[1]
+                fix = {y for y, q in unl.items()
+                       if q and anchor.get(y, 0) > 0
+                       and abs(lab[y] + q - anchor[y]) < abs(lab[y] - anchor[y])}
+                for cty, units in s['c'].items():
+                    if cty == TK or '?' not in units:
+                        continue
+                    move = [c for c in units['?'] if c[0] in fix and c[1] > 0]
+                    if not move:
+                        continue
+                    rest = [c for c in units['?'] if c not in move]
+                    units.setdefault(dom_all, []).extend(move)
+                    n_healed += len(move)
+                    if rest:
+                        units['?'] = rest
+                    else:
+                        del units['?']
+        return n_healed
+
     def heal_units(store):
         """Fold '?'-unit cells into the country's dominant labelled unit.
 
@@ -578,6 +644,16 @@ def main():
         """
         n_healed = 0
         for s in store.values():
+            # the commodity's dominant labelled unit, across every country -
+            # the one the map's quantity axis will use
+            ucnt = Counter()
+            for cty, units in s['c'].items():
+                if cty == TK:
+                    continue
+                for u, cs in units.items():
+                    if u != '?':
+                        ucnt[u] += len(cs)
+            dom_all = ucnt.most_common(1)[0][0] if ucnt else None
             for cty, units in s['c'].items():
                 labeled = {u: cs for u, cs in units.items() if u != '?'}
                 if not labeled:
@@ -642,6 +718,7 @@ def main():
                     units[dom].extend(cells)
                     del units[u]
                     n_healed += len(cells)
+            n_healed += heal_by_anchor({'x': s})
         return n_healed
 
     n_healed = heal_units(comms)
@@ -846,13 +923,18 @@ def main():
                         src.get('v', 0) * kept_v / src_v if src_v else 0)
         if n_cur:
             print(f'  curation: {n_cur} commodities dropped/folded/renamed')
-    # NOTE: heal_units() could be run again here, on the folded payload, so a
-    # fold that brings in unit-less cells lands them on the target's unit and
-    # therefore on the quantity axis. It was tried for "Wool - Sheep Or
-    # Lambs'" and REVERTED: it fixed 1897-99 and broke 1896 (1.00 -> 0.48)
-    # while inflating 1893-94, because the healed cells then collide with the
-    # target's own for years both labels cover. Whatever is right here needs
-    # the collision resolved first - see reports/origin_gap_years.csv.
+    # A fold brings in countries the target has no labelled cell for, so the
+    # per-country unit tests inside the fold cannot reach them and they arrive
+    # unit-less - invisible to the quantity axis. Only the ANCHOR pass is safe
+    # to re-run here, and it is safe precisely because its test is the year's
+    # arithmetic: it moves cells only when doing so brings the year CLOSER to
+    # its own printed national total, so a duplicate (which overshoots) is
+    # left alone. Re-running the whole of heal_units was tried and reverted -
+    # its per-country magnitude tests have no such guard and doubled the years
+    # a fold's two halves both covered.
+    n_heal2 = heal_by_anchor(payload)
+    if n_heal2:
+        print(f'  unit-healed against the anchor after curation: {n_heal2}')
     shifted = drop_shifted_duplicates(payload)
     if shifted:
         with open(BASE / 'reports' / 'shifted_duplicate_cells.csv', 'w',

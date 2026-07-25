@@ -49,6 +49,7 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept",Rye,1893,Russia,Germany,320893,82492
 "two places, kept",Corn And Grain — Pease,1893,Germany,Russia,180123,51442
 "two places, kept",Wood And Timber — Oak,1875,Russia,Germany,4731,51185
+"two places, kept",Oil — Palm,1895,Portuguese Possessions In Western Africa,Portuguese,42100,44133
 "two places, kept",Tea,1898,Bombay,Bombay And Schinde,1146147,42592
 "two places, kept","Sugar — Unrefined, Total",1886,Mexico,Hayti And St Domingo,55225,39776
 "two places, kept",Tea,1897,Bombay,Bombay And Schinde,1013714,38256
@@ -63,12 +64,14 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept",Caoutchouc,1896,Portuguese,Portuguese Possessions In Western Africa,1706,16350
 "two places, kept",Wet,1893,Republic Of Columbia,United States Of Colombia,7181,14177
 "two places, kept","Sugar — Unrefined, Total",1886,Hayti And St Domingo,Cane And Other Sorts,19220,14120
+"two places, kept",Oil — Palm,1893,French,French Possessions,10503,12158
 "two places, kept",Dye Woods — Unenumerated,1893,West Africa Not Particu Larly Designated,Not Particularly Designated,690,7926
 "two places, kept",Wax,1896,Gambia,Western Coast Of Africa Gambia,803,5219
 "two places, kept",Wax,1895,Gambia,Western Coast Of Africa Gambia,807,5181
 "two places, kept",Wax,1894,Gambia,Western Coast Of Africa Gambia,724,4653
 "two places, kept",Gum — Unenumerated,1888,Western Africa (Foreign,"West Africa, Foreign",1441,4238
 "two places, kept",Wax,1894,British Possessions In South Africa,Africa,613,4051
+"two places, kept",Zinc — Ore Of,1894,Tunis,Tunisia,1148,3722
 "two places, kept","Cured Or Salted, Unenumerated",1893,Cape Of Good Hope,From Cape Of Good Hope,2462,3669
 "two places, kept","Cured Or Salted, Unenumerated",1893,From Cape Of Good Hope,British Possessions In South Africa,2462,3669
 "two places, kept","Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1895,British East Indies,Other British Possessions,76,3453
@@ -78,6 +81,7 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept",Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1896,French Possessions,French West Africa,256,2338
 "two places, kept",Honey,1895,Spanish West India Islands,Spanish West Indian Islands,2006,2291
 "two places, kept",Wax,1896,Bombay,British East Indies Bombay,270,2067
+"two places, kept",Zinc — Ore Of,1896,Tunis,Tunisia,625,1813
 "two places, kept",Gum — Unenumerated,1888,East Africa Native States,"East Africa, Native States",194,1577
 "two places, kept",Wet,1896,Sonth Australia,South Australia,794,1427
 "two places, kept",Linen Yarn,1894,Holland,Other Foreign Countries,37076,1391
@@ -89,7 +93,6 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept",Zinc — Ore Of,1895,Tunis,Tunisia,350,875
 "two places, kept","Madder, Madder Root, Garancine, And Munjeet",1896,Asiatic,Turkey,593,826
 "two places, kept","Madder, Madder Root, Garancine, And Munjeet",1894,Asiatic,Turkey,653,763
-"two places, kept",Manures — Phosphate Of Lime And Rock,1899,Other British Possessions,Australasia,140,695
 "two places, kept","Animals, Living — Sheep And Lambs",1893,Chile,Other Foreign Countries,694,694
 "two places, kept","Cheese — Imitation Cheese (Including Lard Cheese, And All Kinds Of Artificial Or Imitation Cheese)",1893,United States Of America,Other Foreign Countries,277,542
 "two places, kept",Potatoes,1896,Siam,French Indo China,1200,540
