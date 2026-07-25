@@ -587,3 +587,107 @@ the same page rather than by anything about the number itself:
 Worth a detector: **a member row whose value/quantity ratio is 1.5x or more
 off its own block's rate, where adding 300,000 or 500,000 to the quantity
 closes the block's printed total.**
+
+## Third pass, same day: the region headers and the unit that was two units
+
+### The phantom-region class, and why 1894 read 0.079
+
+`Nuts And Kernels — Commonly Used For Expressing Oil Therefrom` read **0.079**
+for 1894 — 5,907 tons against a printed 75,102. Neither a digit nor a lost
+page: the whole table was in the parse, split across three phantom "articles"
+that are region headers absorbed as article names (`West Africa`, `India`,
+`East Coast of Africa`), leaving a four-row European fragment carrying the
+commodity's own label.
+
+It closes at three levels once reassembled, which is what makes the
+identification certain rather than plausible:
+
+    foreign members   16,745  = printed Foreign TOTAL
+    British members   58,357  = printed British TOTAL
+    16,745 + 58,357 = 75,102  = printed grand total AND the national line
+
+Same class found and repaired in **1886** (a header absorbed as `India`, and
+three-level closure at 24,262 / 28,632 / 52,894) and **1891** (a header
+absorbed as `West Africa`, 12,465 tons, closing at 13,452 + 49,478 = 62,930).
+
+  1894  0.079 -> 0.986   (5 origins -> 23: Lagos 26,324, Sierra Leone 5,511,
+                          the Niger Protectorate 4,527, the Philippines 6,765)
+  1891  0.789 -> 0.981
+  1886  0.291 -> 0.696 on the map, and the payload sums to 52,894 EXACTLY
+
+1886 needed one extra one-row repair: the table prints West Africa TWICE,
+16,067 tons foreign and 13,834 British, and the OCR lost the qualifier from
+both, so the two rows collided on one country key and the British one was
+dropped as a duplicate.
+
+**A scan for place-name articles under `NUTS AND KERNELS` is the cheap way to
+find the rest of this class** — it also turns up as_1883, as_1893, as_1895,
+as_1897 and as_1898, not all of which are defects (1893 and 1895 already
+close, so their segments are reaching the commodity another way).
+
+### Tun and Ton are one unit
+
+`Oil — Olive` is printed in TUNS and the two engines alternate almost year by
+year — Ton in 1872, Tun in 1873, Ton in 1874 — so half the origins never
+shared a unit key with the commodity's own Tier-1 line and the quantity axis
+dropped them silently. `heal_units` cannot see it: it folds a country's
+minority unit into its dominant one, and this split is by YEAR across every
+country at once, so no country has a minority.
+
+u and o are the OCR pair and no article in these tables is printed in both,
+so within ONE commodity the two spellings are the same unit. Folded to
+whichever is better attested, anchor included, once over the raw signatures
+and again after curation (a curation fold is exactly how a Tun commodity
+acquires Ton cells). **80 folds, 31 commodity-years better and ZERO worse.**
+
+  Oil — Olive   1882-93 from nodata or 0.06-0.12 to 1.00; the series now
+                closes in 20 of its 21 measurable years, 1885 alone
+  Oil — Seed    7 closing years -> 13, after folding `Oil — Seed Oil, Of All
+                Kinds` (the same line pre-1880: its 1878 origins are 12,863
+                tuns, the target's printed 1878 total to the digit)
+
+### Where the family stands at the end of the session
+
+| commodity | closing years |
+|---|---|
+| `Butter` GBP325.7M | **28 of 28** |
+| `Lard` GBP69.6M | **28 of 28** |
+| `Margarine` GBP46.0M | **14 of 14** |
+| `Seeds — Rape` GBP23.1M | **20 of 20** |
+| `Oil-Seed Cake — Cotton Cake` GBP4.3M | **5 of 5** |
+| `Tallow And Stearine` GBP61.2M | 27, 1889 alone |
+| `Seeds — Clover And Grass` GBP19.8M | 27, 1874 alone |
+| `Seeds — Flax Or Linseed` GBP148.2M | 26, 1874 and 1880 |
+| `Oil — Palm` GBP111.9M | 26, 1882 and 1887 |
+| `Oil — Turpentine` GBP13.2M | 25 of 28 |
+| `Oil — Animal` GBP4.5M | 21 of 21 in span |
+| `Oil — Olive` GBP24.3M | **20 of 21**, 1885 alone |
+| `Oil — Coco-Nut` GBP8.2M | 17 of 21 |
+| `Oil — Seed` GBP13.9M | 13 of 16 |
+
+Payload closure over the whole session: **34.5% -> 37.0% of GBP within 0.1%
+of T1, 51.5% -> 54.0% within 5%**; unflagged map commodities 160 -> 166.
+
+### Still open at the close
+
+1. **`Nuts And Kernels — Commonly Used…` 1872-1884 runs 0.88-0.94** with 3-7
+   origins a year — the same missing-segment shape as 1886/91/94 but with no
+   place-name article to find it by. 1872 reads 1.751 and 1875 1.527 (the
+   European block at as_1872 seq 745-751 and the West African at 1214-1222 do
+   not sum to the 27,848 anchor, so at least one belongs elsewhere); 1874
+   reads 0.493.
+2. **`Oil — Fish : Train Or Blubber` reads exactly 0.50 in 1894, 1895 and
+   1896** — newly visible, because the Tun/Ton fold gave it anchors it did not
+   have. Half of something, three years running, is a missing section.
+3. **`Oil — Oil Seed Cakes` 1892-96 is an ERA SPLIT, not a hole** — identity
+   proven (`Linseed` + `Cotton` + `Of other sorts` = the aggregate exactly in
+   1894-96). Needs a decision, not a repair.
+4. **`Seeds — Unenumerated, For Expressing Oil Therefrom`**: six 1870s years
+   at 0.48-0.73 whose two candidate tables are geographically disjoint.
+5. **Olive 1885 at 1.14** — Chandra totals the block 24,204 where Infinity
+   totals 21,201.
+6. **The map's parent/child de-dup can only choose parent-or-children**, never
+   keep-both, so 1886 kernels shows 0.696 where the payload closes at 1.000.
+7. Flax 1880 (1.06, a ~100,000-quarter digit), palm 1882/1887, tallow 1889,
+   `Coco Nut` 1885's doubled table, margarine 1899's value column, and the
+   ~13,000 cwt of TAR-block intruders in tallow 1897-99.
