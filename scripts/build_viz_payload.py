@@ -835,10 +835,35 @@ def main():
             name, act, tgt = r['commodity'], r['action'], (r.get('target') or '').strip()
             if name not in payload:
                 continue
+            # Optional 'years' scope ("1886-1892", or ';'-separated): a
+            # de-headed label can be the only carrier of some years and pure
+            # glue in others. 'Oil' holds palm oil's 1886-92 West African
+            # origins, which nothing else has, and ALSO 1897-99 cells whose
+            # 'countries' are commodity names (Petroleum Gallons, Potatoes,
+            # Paper-Making Materials) that inflated palm's 1898 origin value
+            # ninefold. Folding the whole label buys the good years at the
+            # price of the bad ones; scoping takes only what it came for.
+            yrs = None
+            if (r.get('years') or '').strip():
+                yrs = set()
+                for part in re.split(r'[;,]', r['years']):
+                    part = part.strip()
+                    if '-' in part:
+                        a, b = part.split('-', 1)
+                        yrs.update(range(int(a), int(b) + 1))
+                    elif part:
+                        yrs.add(int(part))
             if act == 'drop':
                 del payload[name]; n_cur += 1
             elif act in ('fold', 'rename') and tgt:
                 src = payload.pop(name); n_cur += 1
+                if yrs is not None:
+                    src = {**src, 'c': {c: {u: [x for x in cells if x[0] in yrs]
+                                            for u, cells in byu.items()}
+                                        for c, byu in (src.get('c') or {}).items()}}
+                    src['c'] = {c: {u: v for u, v in byu.items() if v}
+                                for c, byu in src['c'].items()}
+                    src['c'] = {c: byu for c, byu in src['c'].items() if byu}
                 if tgt not in payload:
                     payload[tgt] = src
                 else:

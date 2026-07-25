@@ -5,7 +5,7 @@ Reads the curated map_data.json (cells [year,qty,rank,value]) + the whitelist
 compact per-commodity structure: mapped-origin series (value + dominant-unit
 quantity), an unmapped residual, and the national total per year.
 """
-import json, csv, collections
+import json, csv, collections, re
 from pathlib import Path
 
 CAP = 50_000_000          # per-cell value plausibility cap (matches payload sort cap)
@@ -38,6 +38,79 @@ try:
                    csv.DictReader(open('reports/origin_profile_outliers.csv'))}
 except FileNotFoundError:
     PROFILE_OUT = set()
+
+# ---- per-cell junk-origin filter -------------------------------------------
+# The transposed-table detector asks whether a WHOLE commodity's country column
+# is really a list of commodities. It cannot see the commoner case: a genuine
+# origin table with a handful of commodity names mixed into it, left behind by
+# a fold or a glued block. Palm oil carried 'Petroleum Gallons' (GBP97.6M),
+# 'Potatoes', 'Onions Raw Bushels' and 'Paper Including Strawboard' for
+# 1897-99. Those cells lost their unit, so they never reached the quantity
+# axis and looked harmless — but VALUE has no unit to lose, and they inflated
+# palm oil's 1898 origin value ninefold.
+#
+# The detector's SUBSET test ('Hewn Of All Sorts' sits inside 'Wood And Timber
+# — Hewn Of All Sorts') is safe only in aggregate, where it has to hold for 60%
+# of a commodity's labels. Per cell it eats real places, because the corpus is
+# full of country-as-article phantoms whose names contain place tokens: it
+# dropped 'West Coast Of Africa (Foreign' — palm oil's own region — for sitting
+# inside 'Nuts And Kernels — From West Coast Of Africa (Foreign)', and 'United
+# States' likewise. So per cell the tokens must match a commodity name EXACTLY,
+# and anything the gazetteer recognises is a place whatever it resembles.
+# Unit words INCLUDING the OCR garbles the payload already aliases (Cwts reads
+# as Cicts / Ccts / Cwis / Gwts / Cnts...). Without them a glued cell keeps its
+# unit token and reads as an ordinary name: 'Paper Including Strawboard And C
+# Cicts' survived the first pass while '... And C Ccts' did not.
+_UNITW = re.compile(r'\b(lbs?|lbds|cwts?|cuts?|ccts?|cts?|cicts|ciots|cwis'
+                    r'|cwtts|cwtss|cwtz|ccwts|cnts|cets|gwts|owts|wts'
+                    r'|tons?|fons|tuns?|gallons?|galls?|gals?|bushels?'
+                    r'|numbers?|yards?|yds|loads?|louds|quarters?|qrs'
+                    r'|pairs?|prs|doz|dozen|gross|carats?|centals?'
+                    r'|packages?|barrels?|proof)\b', re.I)
+
+
+def _toks(s):
+    return frozenset(w for w in re.split(r'[^A-Za-z0-9]+', s.upper())
+                     if len(w) > 2 and w not in
+                     ('AND', 'THE', 'FOR', 'NOT', 'ALL', 'ANY', 'OF', 'OR', 'IN'))
+
+
+_use = collections.Counter()
+for _n, _e in m.items():
+    for _c in (_e.get('c') or {}):
+        if _c != '§TOTAL':
+            _use[_c] += 1
+PLACE_LIKE = {c for c, k in _use.items() if k >= 5}
+# Only commodities that publish a national line contribute to the vocabulary.
+# The corpus is full of country-as-article phantoms ('Tar — West Coast Of
+# Africa, Foreign', 'Dye Woods — Spanish Possessions', 'Cotton Manufactures —
+# United States'); left in, each teaches the filter that a real place is a
+# commodity name and it deletes that place's cells. None of them carries a
+# §TOTAL, and every real commodity does. The cost is a few junk labels going
+# unrecognised ('Bar', from the anchorless 'Iron — Bar') — the right way to be
+# wrong, since a missed junk cell only clutters, while a false positive
+# silently deletes trade.
+COM_VOCAB = set()
+for _n, _e in m.items():
+    if '§TOTAL' not in (_e.get('c') or {}):
+        continue
+    COM_VOCAB.add(_toks(_n))
+    if '—' in _n:
+        # both halves: a glued cell may carry the family head alone ('Oil Seed
+        # Cake', 'Paper-Making Materials') or the article alone ('Olive')
+        COM_VOCAB.add(_toks(_n.split('—', 1)[1]))
+        COM_VOCAB.add(_toks(_n.split('—', 1)[0]))
+
+
+def junk_origin(c):
+    """True when this 'country' is really a commodity name."""
+    if c == '§TOTAL' or c in PLACE_LIKE or c in gaz or ALIAS.get(c) in gaz:
+        return False
+    if _UNITW.search(c):
+        return True                      # no country carries a unit word
+    return _toks(_UNITW.sub('', c)) in COM_VOCAB
+
+
 wl = sorted((keep | targets) & set(m), key=lambda n: -m[n]['v'])
 
 # commodity category (ordered keyword rules, first match wins) — a browsing
@@ -152,7 +225,8 @@ ALIAS = {
     'British East Indies Bengal': 'Bengal',
     'The Cape Of Good Hope': 'Cape Of Good Hope',
 }
-outliers = []            # origin cells that exceed the national anchor (log)
+outliers = []
+junk = []            # origin cells that exceed the national anchor (log)
 value_dropped = []       # per-cell values over CAP (corrupt, not large)
 quality = []             # (commodity, [flag,...]) for the audit report
 unit_alias = []          # origin/anchor unit labels that measure the same thing
@@ -362,6 +436,11 @@ for n in wl:
     # ton "logwood"; Greece 1.3M gal "collodion"). Drop it and log for a
     # source-level fix. Only applied where the anchor is itself substantial.
     for (c, y), cell in list(ly.items()):
+        if junk_origin(c):
+            junk.append({'commodity': n, 'year': y, 'origin': c,
+                         'value': round(cell[0]), 'qty': round(cell[1])})
+            drop.add((c, y))
+            continue
         if (n, y, c) in PROFILE_OUT:
             outliers.append({'commodity': n, 'year': y, 'origin': c,
                              'unit': dom, 'qty': round(cell[1]),
@@ -530,6 +609,13 @@ with open('reports/value_cap_cells.csv', 'w', newline='') as f:
     w = csv.writer(f)
     w.writerow(['commodity', 'origin', 'year', 'value'])
     w.writerows(sorted(value_dropped, key=lambda r: -r[3]))
+with open('reports/junk_origin_cells.csv', 'w', newline='') as f:
+    w = csv.DictWriter(f, fieldnames=['commodity', 'year', 'origin',
+                                      'value', 'qty'])
+    w.writeheader()
+    w.writerows(sorted(junk, key=lambda r: -r['value']))
+print(f'junk-origin cells dropped (commodity names as countries): {len(junk)}'
+      f' -> reports/junk_origin_cells.csv')
 print(f'impossible-origin cells dropped: {len(outliers)} -> reports/origin_outliers.csv')
 with open('reports/map_quality.csv', 'w', newline='') as f:
     w = csv.writer(f)

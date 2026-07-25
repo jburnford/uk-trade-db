@@ -1,5 +1,5 @@
 commodity,year,kind,ratio,t1_qty,country_sum,cluster_gbp
-Oil — Palm,1878,missing/short,0.553,670797,370797,109970954
+Oil — Palm,1878,missing/short,0.553,670797,370797,111901676
 Bristles,1874,missing/short,0.354,2664374,943648,12682886
 "Thrown, Dyed Or Not Dyed",1899,missing/short,0.0,317786,0,9672480
 Beans (Not Kidney Or French),1893,missing/short,0.187,3946985,738050,8114668
@@ -64,7 +64,7 @@ Wine — Total Of All Kinds,1876,overcount,13.325,19950723,265848319,597496362
 Wine — Total Of All Kinds,1877,overcount,14.298,19568807,279796857,597496362
 Wine — Total Of All Kinds,1881,overcount,20.084,16297033,327306921,597496362
 Wine — Total Of All Kinds,1882,overcount,22.704,15715813,356808231,597496362
-Oil — Palm,1875,overcount,2.0,904562,1809124,109970954
+Oil — Palm,1875,overcount,2.0,904562,1809124,111901676
 Glucose (Solid Or Liquid),1895,overcount,3.894,1315866,5124087,18926846
 Glucose (Solid Or Liquid),1896,overcount,2.853,1539127,4391240,18926846
 Glucose (Solid Or Liquid),1897,overcount,2.84,1610115,4572159,18926846
