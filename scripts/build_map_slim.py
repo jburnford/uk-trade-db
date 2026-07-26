@@ -236,6 +236,7 @@ unit_mismatch = []       # ...and those that do not, so the anchor is dropped
 reparse_dropped = []     # one printed row read twice under two spellings
 twin_origins = []        # ...and read twice under two DIFFERENT places (logged)
 gap_log = []             # years inside the origin span with no origin table
+origin_dedup = []        # every origin cell + its keep/drop verdict (see below)
 cov_num = cov_den = 0
 out = {}
 for n in wl:
@@ -548,6 +549,16 @@ for n in wl:
     res = collections.defaultdict(lambda: [0, 0])
     nat = collections.defaultdict(lambda: [0, 0])       # de-duped sum of origins
     for (c, y), (v, q, r) in ly.items():
+        # Export every cell with its keep/drop verdict. map_data.json still
+        # carries parent AND children (Australasia beside its six colonies, a
+        # clean 2x double count in tallow 1883-86 and 1891-96) and map_slim
+        # resolves that but folds every unlocated origin into an anonymous
+        # residual, losing 'Other Foreign Countries' as a label. Anything that
+        # needs de-duplicated cells WITH their labels -- the gold comparisons,
+        # notably -- had no source for them. This is that source, and it comes
+        # from the same drop set the map ships, so the two cannot drift.
+        origin_dedup.append((n, y, c, q, v, int((c, y) not in drop),
+                             int(c in located)))
         if (c, y) in drop:
             continue
         nat[y][0] += v
@@ -745,6 +756,14 @@ with open('reports/total_row_as_origin.csv', 'w', newline='') as f:
     w.writerows(sorted(totals_as_origin, key=lambda r: -r['qty']))
 print(f'printed-Total rows parsed as origins: {len(totals_as_origin)}'
       f' -> reports/total_row_as_origin.csv')
+with open('exports/_origin_dedup.csv', 'w', newline='') as f:
+    w = csv.writer(f)
+    w.writerow(['commodity', 'year', 'country', 'quantity', 'value',
+                'kept', 'located'])
+    w.writerows(sorted(origin_dedup, key=lambda r: (r[0], r[1], r[2])))
+_kept = sum(r[5] for r in origin_dedup)
+print(f'origin cells: {len(origin_dedup):,} ({_kept:,} kept after de-duplication)'
+      f' -> exports/_origin_dedup.csv')
 print(f'junk-origin cells dropped (commodity names as countries): {len(junk)}'
       f' -> reports/junk_origin_cells.csv')
 print(f'impossible-origin cells dropped: {len(outliers)} -> reports/origin_outliers.csv')

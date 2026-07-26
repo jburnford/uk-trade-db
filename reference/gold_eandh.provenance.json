@@ -1,0 +1,31 @@
+{
+  "source_path": "/mnt/c/Users/jic823/Dropbox/2026/BritishImportsDatabase_EandH.xls",
+  "source_sha256": "6fa90e2309970f4bd9770ac1beee500b20f72dc5bc2718f1f6c164f1e74a061e",
+  "source_bytes": 259584,
+  "source_mtime": 1785011246.285445,
+  "output_path": "reference/gold_eandh.csv",
+  "output_sha256": "2fc7fd8633e75182ce9b839205fe2273015f807d9625c42572fd920659413b99",
+  "sheets_read": [
+    "Tallow (raw)",
+    "Rosin (raw)"
+  ],
+  "n_rows": 1120,
+  "year_min": 1800,
+  "year_max": 1909,
+  "commodities": [
+    "Rosin",
+    "Tallow",
+    "Tallow and Stearine"
+  ],
+  "units": [
+    "CWTS (Hundredweights)"
+  ],
+  "series": [
+    "HCPP_Annual Statement of Trade",
+    "HCPP_Other",
+    "KEW_CUST 5"
+  ],
+  "n_world_rows": 92,
+  "n_hygiene_flags": 43,
+  "wide_sheet_disagreements": []
+}

@@ -1,0 +1,40 @@
+source_label,country_id,parent_id,level,note
+australasia new south wales,New South Wales,Australasia,colony,gold flattens the hierarchy into the label
+australasia victoria,Victoria,Australasia,colony,gold flattens the hierarchy into the label
+australasia queensland,Queensland,Australasia,colony,gold flattens the hierarchy into the label
+australasia new zealand,New Zealand,Australasia,colony,gold flattens the hierarchy into the label
+australasia south australia,South Australia,Australasia,colony,gold flattens the hierarchy into the label
+australasia tasmania,Tasmania,Australasia,colony,gold flattens the hierarchy into the label
+australasia west australia,Western Australia,Australasia,colony,pipeline flattens the hierarchy into the label
+australasia falkland islands,Falkland Islands,,country,"printed under the Australasia heading; not an Australasian colony"
+australasia other british possessions,§RESIDUAL,,residual,residual bucket printed under the Australasia heading
+australia victoria,Victoria,Australasia,colony,gold flattens the hierarchy into the label
+west australia,Western Australia,Australasia,colony,era spelling
+wales,New South Wales,Australasia,colony,"OCR truncation of 'New South Wales'. Confirmed: our 1884 cell reads 204,282 cwt and the gold's Australasia New South Wales reads 204,282 cwt exactly."
+british north america,Canada,,country,"the printed returns say British North America; the gazetteer key is Canada, so canonicalise to Canada and keep the map joinable"
+new granada,United States Of Colombia,,country,era name; canonicalise to the gazetteer key so the map stays joinable
+united states of colombia,United States Of Colombia,,country,gazetteer key; country_standardize.csv folds this to Colombia, which the map cannot place
+republic of colombia,United States Of Colombia,,country,era name
+turkey european,Turkey,,country,era name
+united states of america atlantic ports,United States Of America (Atlantic),United States Of America,port,gold's spelling of the port breakdown
+united states of america pacific ports,United States Of America (Pacific),United States Of America,port,gold's spelling of the port breakdown
+united states of america atlantic,United States Of America (Atlantic),United States Of America,port,pipeline's spelling after paren-stripping
+united states of america pacific,United States Of America (Pacific),United States Of America,port,pipeline's spelling after paren-stripping
+united states north atlantic ports,United States Of America (Atlantic),United States Of America,port,pre-1870 spelling
+united states south atlantic ports,United States Of America (Atlantic),United States Of America,port,pre-1870 spelling
+united states pacific ports,United States Of America (Pacific),United States Of America,port,pre-1870 spelling
+russia northern ports,Russia (Northern Ports),Russia,port,
+russia southern ports,Russia (Southern Ports),Russia,port,
+united states of america chile,Chile,,country,"country-column slip: Chile filed under a United States prefix"
+british east indies straits settlements,Straits Settlements,British East Indies,colony,
+british north america newfoundland and coast of labrador,Newfoundland,Canada,colony,
+newfoundland and coast of labrador,Newfoundland,Canada,colony,
+eastern coast of africa portuguese possessions,Portuguese Possessions In Eastern Africa,,country,
+portuguese possessions in western africa,Portuguese Possessions In Western Africa,,country,
+other british possessions,§RESIDUAL,,residual,"printed residual bucket; folded with the other 'Other ...' lines so the residual identity is testable"
+other foreign countries,§RESIDUAL,,residual,printed residual bucket
+other countries,§RESIDUAL,,residual,printed residual bucket
+other parts,§RESIDUAL,,residual,printed residual bucket
+unenumerated,§RESIDUAL,,residual,printed residual bucket
+british possessions,§RESIDUAL,,residual,"unqualified residual bucket; too coarse to place"
+northern ports,§DROP,,junk,"orphan port fragment with no country attached"
