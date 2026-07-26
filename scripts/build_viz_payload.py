@@ -467,15 +467,20 @@ def main():
         if (g or '').strip():
             base, qual = fold_group(g)
             vsig = sig_of(base, qual, a)
-            # the quantity cell may have been re-homed by the sticky-group
-            # repair below, which files it under the ARTICLE's signature; key
-            # the value line both ways so the pair still meets
-            akey_v = tuple(sorted(toks(a)))
-            if akey_v:
-                _vart.setdefault((akey_v, y), []).append(v)
         else:
             base, qual = fold_group(a)
             vsig = sig_of(base, qual, None)
+        # ALSO key every value line on its article's tokens alone. The two
+        # columns of one printed line routinely land under different group
+        # headings — essential oils are quantified under 'Oil | Chemical,
+        # Essential, and Perfumed' and valued under a groupless 'Chemical,
+        # Essential, and Perfumed' in almost every year — so a signature
+        # built from the group can only pair them when both copies happen to
+        # carry it. Restricted to article-years with ONE distinct value, so a
+        # generic article printed under several commodities is never paired.
+        akey_v = tuple(sorted(toks(a)))
+        if akey_v:
+            _vart.setdefault((akey_v, y), []).append(v)
         if vsig:
             t1val.setdefault((vsig, y), v)      # first printing wins, as before
     for k, vs in _vart.items():
@@ -508,7 +513,8 @@ def main():
         if not sig:
             continue
         add_cell(sig, label, TK, norm_unit(u), y, q, RANK.get(tier, 3),
-                 t1val.get((sig, y), 0))
+                 t1val.get((sig, y))
+                 or t1val.get((tuple(sorted(toks(a))), y), 0))
         n_tot += 1
 
     # ---- sort key for T1-only commodities: voted national GBP value ----
