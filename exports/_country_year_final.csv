@@ -9326,6 +9326,8 @@ FRUIT,"Preserved without Sugar, Unenumerated",other countries,Lbs,import,1874,81
 FRUIT,"Dried, not otherwise described",france,Bushels,import,1874,7487.0,10675.0,consensus,B,C,2,3
 FRUIT,"Dried, not otherwise described",turkey,Bushels,import,1874,32706.0,20839.0,consensus,B,C,2,3
 FRUIT,"Dried, not otherwise described",egypt,Bushels,import,1874,5361.0,5102.0,consensus,B,C,2,3
+FRUIT,"Dried, not otherwise described",persia,Bushels,import,1874,10210.0,7157.0,consensus,B,C,2,3
+FRUIT,"Dried, not otherwise described",bombay,Bushels,import,1874,87093.0,25195.0,consensus,B,C,2,3
 FRUIT,"Dried, not otherwise described",other countries,Bushels,import,1874,11736.0,12161.0,consensus,B,C,2,3
 GALLS,,turkey,Cwts,import,1874,6038.0,17633.0,consensus,B,B,2,2
 GALLS,,china,Cwts,import,1874,7630.0,16299.0,consensus,B,B,2,2
@@ -37272,6 +37274,7 @@ MANURES,Unenumerated,other british possessions,Tons,import,1889,37.0,274.0,conse
 "MEAT, UNENUMERATED","Preserved, otherwise than by Salting",united states of america,Cwts,import,1889,411077.0,931239.0,consensus,B,B,2,2
 "MEAT, UNENUMERATED","Preserved, otherwise than by Salting",uruguay,Cwts,import,1889,56836.0,67600.0,consensus,B,B,2,2
 "MEAT, UNENUMERATED","Preserved, otherwise than by Salting",argentine republic,Cwts,import,1889,9749.0,21143.0,consensus,B,B,2,2
+"MEAT, UNENUMERATED","Preserved, otherwise than by Salting",other foreign countries,Cwts,import,1889,512.0,1085.0,consensus,B,B,2,2
 "MEAT, UNENUMERATED","Preserved, otherwise than by Salting",australasia,Cwts,import,1889,65310.0,158033.0,consensus,B,B,2,2
 "MEAT, UNENUMERATED","Preserved, otherwise than by Salting",canada,Cwts,import,1889,60977.0,143596.0,consensus,B,B,2,2
 "MEAT, UNENUMERATED","Preserved, otherwise than by Salting",other british possessions,Cwts,import,1889,3.0,17.0,consensus,B,B,2,2
@@ -66622,6 +66625,7 @@ BRIMSTONE,,other foreign countries,Cwts,import,1896,4065.0,1406.0,consensus,B,B,
 BRIMSTONE,,spain,Cwts,import,1897,7000.0,1251.0,consensus,B,C,2,3
 BRIMSTONE,,italy,Cwts,import,1897,410955.0,109580.0,consensus,B,C,2,3
 BRIMSTONE,,other foreign countries,Cwts,import,1897,833.0,318.0,consensus,B,C,2,3
+BRIMSTONE,,british possessions,Cwts,import,1897,240.0,60.0,consensus,B,C,2,3
 BRIMSTONE,,spain,Cwts,import,1898,48000.0,8662.0,consensus,B,C,2,3
 BRIMSTONE,,italy,Cwts,import,1898,336561.0,89913.0,consensus,B,C,2,3
 BRIMSTONE,,other foreign countries,Cwts,import,1898,2086.0,456.0,consensus,B,C,2,3
@@ -74244,8 +74248,6 @@ FISH,Cured or Salted,norway,Cwts,import,1874,12141.0,36625.0,consensus,C,C,3,3
 FLAX,Rough or Undressed,australia,Cwts,import,1874,7445.0,7902.0,consensus,C,C,3,3
 FRUIT,Oranges and Lemons,portugal,Bushels,import,1874,107811.0,191699.0,consensus,C,C,3,3
 FRUIT,"Preserved without Sugar, Unenumerated",spain and canary islands,Lbs,import,1874,100535.0,7092.0,consensus,C,C,3,3
-FRUIT,"Dried, not otherwise described",persia,Bushels,import,1874,10210.0,7157.0,consensus,C,C,3,3
-FRUIT,"Dried, not otherwise described",bombay,Bushels,import,1874,87093.0,25195.0,consensus,C,C,3,3
 GLASS,"Window Glass (not being Plate Glass), and     German Sheet Glass, including Shades and     Cylinders",belgium,Cwts,import,1874,500912.0,123791.0,consensus,C,C,3,3
 GLASS,Flint Glass,france,Cwts,import,1874,1363.0,11872.0,consensus,C,C,3,3
 GLASS,Flint Glass,other countries,Cwts,import,1874,28.0,195.0,consensus,C,C,3,3
@@ -76514,7 +76516,6 @@ HEMP,"Unenumerated Vegetable Substances, applicable to the same uses as Flax or 
 MANURES,Bones for Manure,greece,Tons,import,1889,110.0,600.0,consensus,C,C,3,3
 MANURES,Bones for Manure,tripoli,Tons,import,1889,329.0,1650.0,consensus,C,C,3,3
 MANURES,Bones for Manure,channel islands,Tons,import,1889,198.0,912.0,consensus,C,C,3,3
-"MEAT, UNENUMERATED","Preserved, otherwise than by Salting",other foreign countries,Cwts,import,1889,512.0,1085.0,consensus,C,B,3,2
 METAL,Unenumerated : Unwrought : Wrought or Manufactured,germany,Tons. Cwts,import,1889,2345.0,28185.0,consensus,C,C,3,3
 METAL,Unenumerated : Unwrought : Wrought or Manufactured,holland,Tons. Cwts,import,1889,101317.0,180489.0,consensus,C,C,3,3
 METAL,Unenumerated : Unwrought : Wrought or Manufactured,belgium,Tons. Cwts,import,1889,11611.0,12173.0,consensus,C,C,3,3
@@ -79958,7 +79959,6 @@ ALKALI,,belgium,,import,1896,66232.0,427.0,consensus,C,B,3,2
 "ANIMALS, LIVING","Muskets, Rifles, Carbines, Fowling Pieces, or Guns of any other sorts not enumerated, and parts thereof, and Pistols",united states of america,Arms,import,1899,258.0,1023.0,consensus,C,C,3,3
 FISH,Fresh,new south wales,Cwts,import,1899,33346.0,114873.0,consensus,C,B,3,2
 "BRASS, BRONZE, AND METAL BRONZED OR LACQUERED, MANUFACTURES OF, NOT OTHERWISE ENUMERATED",,other british possessions,Cwts,import,1899,117.0,660.0,consensus,C,C,3,3
-BRIMSTONE,,british possessions,Cwts,import,1897,240.0,60.0,consensus,C,C,3,3
 BUTTER,,victoria,Cwts,import,1897,169075.0,816399.0,consensus,C,C,3,3
 BUTTER,,south australia,Cwts,import,1899,7072.0,34875.0,consensus,C,C,3,3
 BUTTER,,new south wales,Cwts,import,1899,43561.0,215274.0,consensus,C,C,3,3
