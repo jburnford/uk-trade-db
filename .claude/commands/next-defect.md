@@ -7,6 +7,26 @@ description: Work the top queued defect to exact closure or re-queue it with evi
 Re-entrant by design: every iteration rebuilds its own state from disk, so
 `/clear` between iterations is free and loses nothing.
 
+## 0. Usage gate (first thing, every iteration)
+
+Run the estimator in the session scratchpad:
+
+```
+python3 <scratchpad>/usage_check.py
+```
+
+- Exit 0 → under 80%, continue.
+- Exit 1 → **at or past 80%. Stop the loop** (`ScheduleWakeup stop:true`) and
+  report the estimate. Do not start another item.
+- Exit 2 → no anchor. Ask the user for their `/usage` percentage, then
+  `usage_check.py anchor <pct>`.
+
+The limit is **not** readable locally — transcripts record consumption only,
+with no rate-limit or reset fields. The estimator extrapolates from a
+percentage the user read off `/usage`. Treat it as an estimate: re-anchor every
+few iterations by asking for a fresh `/usage` figure, and say plainly that it is
+an extrapolation whenever reporting it.
+
 ## 1. Rebuild state (always, even if you think you remember it)
 
 - Read the `opus-work-plan-to-monday` memory — the ranked open list lives in
