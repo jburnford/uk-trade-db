@@ -505,6 +505,11 @@ for n in wl:
     # commodity or a magnitude error (Burma 2.79M cwt "potatoes"; Russia 3.5M
     # ton "logwood"; Greece 1.3M gal "collodion"). Drop it and log for a
     # source-level fix. Only applied where the anchor is itself substantial.
+    # the year's de-duplicated origin sum, for the anchor test below
+    ysum = collections.defaultdict(float)
+    for (c, y), cell in ly.items():
+        if (c, y) not in drop:
+            ysum[y] += cell[1]
     for (c, y), cell in list(ly.items()):
         if junk_origin(c):
             junk.append({'commodity': n, 'year': y, 'origin': c,
@@ -512,6 +517,19 @@ for n in wl:
             drop.add((c, y))
             continue
         if (n, y, c) in PROFILE_OUT:
+            # The profile test asks whether an origin looks like it belongs to
+            # this commodity, and it exists for years with NO anchor — that is
+            # its stated remit. Where there IS one, the year's own arithmetic
+            # outranks the resemblance, and it has to, because the origin most
+            # likely to look unfamiliar is the one that dominates a single
+            # year: Bengal was being suppressed from Indigo 1882 (60,888 of a
+            # printed 95,272) and United States Of Colombia from Peruvian bark
+            # 1881 (70,944 of 125,358) — the archetypal source of each. Keep
+            # the cell whenever dropping it moves the year AWAY from its
+            # printed national total.
+            t = t1.get(y, 0)
+            if t > 1000 and abs(ysum[y] - cell[1] - t) >= abs(ysum[y] - t):
+                continue
             outliers.append({'commodity': n, 'year': y, 'origin': c,
                              'unit': dom, 'qty': round(cell[1]),
                              'anchor': round(t1.get(y, 0)),

@@ -1,8 +1,6 @@
 check,metric,commodity,gbp
 NOUNIT,950000000,"Woollen And Worsted Manufactures — Broad Cloths; Coatings, Duffs, &C., Ofwool, Mixed With Other Materials",950000000
 NOUNIT,750040033,"Woollen And Worsted Manufactures — Narrow Cloths: Coatings, Duffs, &C., Plain,All Wool",750040033
-NOUNIT,100636087,"Bleaching Materials — Books, Printed",100636087
-NOUNIT,51538661,"Arms, Ammunition, And Military Stores — Bags And Sacks Empty",51538661
 NOUNIT,51320916,"Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",51320916
 NOUNIT,50887840,"Brass — Manufactures Of, Not Being Ordnance",50887840
 NOUNIT,50071380,"Wine, British Made — Rough, Hewn, Sawn, Or Split",50071380
@@ -19,17 +17,16 @@ NOUNIT,4214488,Woollen And Worsted Manufactures — Shawls,4214488
 NOUNIT,3658840,Woollen And Worsted Manufactures — Worsted Yarn (Combed),3658840
 NOUNIT,3594046,"Leather — Wrought, Boots And Shoes",3594046
 NOUNIT,3557159,"Cotton Manufactures — Piece Goods Of Mixed Materials, Cotton Predominating",3557159
-NOUNIT,3037906,"Telegraphic Wires And Apparatus — Tin, Unwrought",3037906
 NOUNIT,2723762,Tea — Red: Total Of,2723762
 NOUNIT,2717794,"Skins And Furs — Sheep And Lambs', Undressed, Without The Wool",2717794
 NOUNIT,2680207,Silk Manufactures — Broad Stuffs Of Silk Or Satin,2680207
 NOUNIT,2344494,"Skins And Furs — Foreign, Dressed In The United Kingdom",2344494
 NOUNIT,2318466,Cotton Manufactures — To United States Of America,2318466
 NOUNIT,2286259,Tobacco — Red : Total Of,2286259
-NOUNIT,2237972,Cotton Manufactures — Thread For Sewing,2237972
 NOUNIT,2183141,Copper — Unenumerated,2183141
 NOUNIT,1877237,Caoutchouc — West Coast Of Africa,1877237
 NOUNIT,1863437,"Woollen And Worsted Manufactures — Coatings, Duffels, &C. Of Wool Mixed With Other Materials",1863437
+NOUNIT,1863219,Cotton Manufactures — Thread For Sewing,1863219
 NOUNIT,1856222,Land,1856222
 NOUNIT,1786051,"Quicksilver — Woollen, Applicable To Other Uses Than Manure, Torn Up Or Not",1786051
 NOUNIT,1753971,Silk Manufactures — Broad Stuffs,1753971
@@ -41,7 +38,6 @@ NOUNIT,1433700,Cocoa — West Coast Of Africa,1433700
 NOUNIT,1406888,"Grease, Tallow And Animal Fat",1406888
 NOUNIT,1341405,"Wool — Other Sorts, Including Foreign, Dressed In The United Kingdom, And Flocks And Ragwool",1341405
 NOUNIT,1314086,"Hardwares And Cutlery, Un-Enumerated",1314086
-NOUNIT,1222970,"Provisions, Unenumerated — Rags (Except Woollen) And Other Materials For Making Paper",1222970
 NOUNIT,1175947,Woollen And Worsted Manufactures — Sorts Unenumerated,1175947
 NOUNIT,1164776,"Glass — Flint, Plain, Cut, Or Ornamented (Including Bottles And Phials Of Flint Glass)",1164776
 NOUNIT,1123063,"Glass — Grease, Not Otherwise Described",1123063
@@ -53,6 +49,7 @@ NOUNIT,962654,Iron — Leather Manufacturers,962654
 NOUNIT,916008,"Petroleum, Lubricating",916008
 NOUNIT,903752,Stones And Slates — Slate By Tale,903752
 NOUNIT,902765,"Cotton — Piece Goods Of Other Countries, Other Than Muslins",902765
+NOUNIT,881899,"Provisions, Unenumerated — Rags (Except Woollen) And Other Materials For Making Paper",881899
 NOUNIT,864140,"Arms, Ammunition, And Military Stores — Fowling Pieces",864140
 NOUNIT,860563,"Cordage, Cables, And Ropes Of Hemp Or Like Material",860563
 NOUNIT,798911,"Copper — Unwrought, In Ingots, Cakes, Or Slabs",798911
@@ -60,6 +57,7 @@ NOUNIT,782682,Nuts And Kernels — Whale Fisheries,782682
 NOUNIT,765700,Linen And Jute Manufactures — Sail Cloth And Sails,765700
 NOUNIT,750112,Linen Manufactures — Thread For Sewing,750112
 NOUNIT,739552,"Skins, Furs, And Pelts — Tanned, Tawed, Or Dressed",739552
+NOUNIT,716052,"Arms, Ammunition, And Military Stores — Bags And Sacks Empty",716052
 NOUNIT,695162,"Painters' Colours And Materials — Writing Or Printing, And Envelopes",695162
 NOUNIT,694074,Machinery And Mill Work — Not Being Steam Engines: Sewing Machines,694074
 NOUNIT,666805,Cotton — Piece Goods Other Than Muslins,666805
@@ -69,7 +67,6 @@ NOUNIT,652665,"Skins, Furs, And Pelts — Manufactures Of Skins And Furs",652665
 NOUNIT,645623,Woollen And Worsted Manufactures — United States,645623
 NOUNIT,639975,"Glass — Flint, Plain, Cut, Or Ornamented (Including Bottles And Other Manufactures Of Flint Glass)",639975
 NOUNIT,613492,Leather Manufactures — Unenumerated,613492
-NOUNIT,588776,Woollen And Worsted Manufactures — Blankets,588776
 NOUNIT,574224,Wood And Timber — Fir : Unenumerated,574224
 NOUNIT,559969,"Cordage, Twine, And Cable Yarn",559969
 NOUNIT,555907,Oil — Pulp Of Wood—Mechanical,555907
@@ -79,22 +76,19 @@ NOUNIT,533773,"Linen And Jute Manufactures — Checked, Printed, Or Dyed, And Da
 NOUNIT,518420,Flax And Hemp — To United States Of America,518420
 NOUNIT,514730,"Paper — Unenumerated, And Articles Of Paper (Except Papier Mâché)",514730
 NOUNIT,507377,Salt (Rock And White),507377
-NOUNIT,489730,Linen And Jute Yarn — Jute Yarn,489730
 NOUNIT,488512,Gum — From British India,488512
 NOUNIT,466063,"Prints, Engravings, Drawings, &C — Rags (Except Woollen) And Othermaterials For Making Paper",466063
-NOUNIT,453974,Cotton Manufactures — Stockings And Socks,453974
 NOUNIT,447072,"Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",447072
 NOUNIT,428458,"Cordage, Cables, Ropes, And Twine Of Hemp Or Like Material",428458
 NOUNIT,421917,"Sugar — Molasses, Treacle, And Syrup",421917
 NOUNIT,405291,Coffee — Raw · British East Indies,405291
-NOUNIT,395503,"Carriages, Carts, &C — Railway Carriages For Passengers",395503
 NOUNIT,394889,"Lead — Rolled And Sheet, Piping And Tubing",394889
 NOUNIT,379833,Painters' Colours And Pigments,379833
-NOUNIT,379171,Saddlery And Harness — Salt (Rock And White),379171
 NOUNIT,376537,"Skins And Furs — British: Sheep And Lambs', Undressed, Without The Wool",376537
 NOUNIT,374660,"Fish, Fresh And Cured — Salmon",374660
 NOUNIT,372895,"Arms, Ammunition, And Military Stores — Muskets",372895
 NOUNIT,371455,"Cotton — Hosiery, Of All Sorts",371455
+NOUNIT,353486,"Telegraphic Wires And Apparatus — Tin, Unwrought",353486
 NOUNIT,352674,"Matches, Safety And Other Sorts — Safety",352674
 NOUNIT,351211,"Iron — Bars, Unwrought",351211
 NOUNIT,341176,"Flowers, Artificial",341176
@@ -125,6 +119,7 @@ NOUNIT,208010,"Paper — Unenumerated, And Articles Of Paper (Except Papier Mach
 NOUNIT,203386,"Arms And Ammunition — Muskets, Rifles, Carbines, Fowling-Pieces, Or Guns Of Any Other Sort, Not Enumerated, And Parts Thereof And Pistols",203386
 NOUNIT,198945,"Jute Manufactures — Rolled, Sheet, Piping Andtubing",198945
 NOUNIT,196710,Metal — Mica And Talc,196710
+NOUNIT,196029,Cotton Manufactures — Stockings And Socks,196029
 NOUNIT,193540,"Fish, Fresh And Cured — Oysters",193540
 NOUNIT,192783,Leather — Locust Beans,192783
 NOUNIT,184749,Spirits — To British East Indies,184749
@@ -133,6 +128,7 @@ NOUNIT,177280,Tar — West Coast Of Africa,177280
 NOUNIT,173038,"Wood And Timber — Rough, Hewn, Sawn, Or Split",173038
 NOUNIT,172542,"Arms, Ammunition, And Military Stores — To Australasia",172542
 NOUNIT,171574,"Fish, Fresh And Cured — Cod And Ling",171574
+NOUNIT,170759,Linen And Jute Yarn — Jute Yarn,170759
 NOUNIT,163157,Gum — Dutch Possessions In India,163157
 NOUNIT,162991,"Spirits — Various Sorts, Mixed In Bond",162991
 NOUNIT,162084,"Paper — Pasteboard, Millboard, &C. (Including Playing Cards)",162084
@@ -154,13 +150,13 @@ NOUNIT,105908,"Fish, Fresh And Cured — Dressed And Undressed",105908
 NOUNIT,104688,"Beef — Brass, Bronze, And Metal, Bronzed And Lacquered",104688
 NOUNIT,104638,Flax — Dressed And Endressed,104638
 NOUNIT,104559,"Saddlery And Harness — Saltpetre, British Prepared",104559
+NOUNIT,102195,"Carriages, Carts, &C — Railway Carriages For Passengers",102195
 NOUNIT,101609,Embroidery And Needlework,101609
 NOUNIT,99492,Spirits — Unenumerated,99492
 NOUNIT,98492,Gum — British East-Indies,98492
 NOUNIT,97639,"Hemp — Tow, Or Cordilla Of, And Other Vegetable Substances, Applicable To The Same Uses As Hemp Or Flax",97639
 NOUNIT,96419,"Spirits — Perfumed, In Bond",96419
 NOUNIT,94162,"Glass — Other Manufactures, Unenume- Rated",94162
-NOUNIT,93274,Spices — Brandy,93274
 NOUNIT,89780,Lead — Oro Of,89780
 NOUNIT,88688,"Hides — Tawed, Curried, Or Dressed, Not Varnished",88688
 NOUNIT,86489,"Arms And Ammunition — Muskets, Rifles, Carbines, Fowling-Pieces,Or Guns Of Any Other Sort, Not Enumerated,And Pistols",86489
@@ -260,7 +256,6 @@ NOUNIT,0,Value Of Articles Imported Byparcel Post,0
 NOUNIT,0,Umbrellas And Parasols,0
 NOUNIT,0,Toys — Not Containing Spirit,0
 NOUNIT,0,Tobacco — Toxs,0
-NOUNIT,0,Telegraphic Wires And Apparatus,0
 NOUNIT,0,"Stationery, Other Than Paper",0
 NOUNIT,0,"Spirits, British And Irish — Stationery, Other Than Paper",0
 NOUNIT,0,"Specimens, Illustrative Of Naturalscience",0
@@ -284,7 +279,6 @@ NOUNIT,0,Silk Manufactures — In Value Is Silver,0
 NOUNIT,0,"Silk Manufactures — Handkerchiefs, Scarfs, And Shawls",0
 NOUNIT,0,Scotland,0
 NOUNIT,0,Saddlery And Harness,0
-NOUNIT,0,"Provisions, Unenumerated",0
 NOUNIT,0,"Prints, Engravings, Drawings, &C",0
 NOUNIT,0,"Potatoes — Poultry And Game (Alive Or Dead),Including Rabbits",0
 NOUNIT,0,Plated And Gilt Wares,0
@@ -292,7 +286,6 @@ NOUNIT,0,Plated And Gift Wares,0
 NOUNIT,0,Pilchards — Unenumerated,0
 NOUNIT,0,"Pictures, Drawings, And Photographs",0
 NOUNIT,0,"Pickles, Vinegar, Sauces, Condiments, Preserved Fruits, And Confectionery",0
-NOUNIT,0,"Pickles, Vinegar, And Sauces",0
 NOUNIT,0,Petroleum — Pickles And Vegetables Preserved In Salt,0
 NOUNIT,0,Paper — To United States Of America,0
 NOUNIT,0,"Paper — Brown Or Waste, Or Any Other Sort Un- Enumerated",0
@@ -314,7 +307,6 @@ NOUNIT,0,Machinery And Mill Work — Agricultural,0
 NOUNIT,0,Lucifer And Vesta Matches,0
 NOUNIT,0,Linen Manufactures — To Australasia,0
 NOUNIT,0,"Linen Manufactures — Steam Engines Or Parts Of Steam Engines,Locomotive",0
-NOUNIT,0,Linen Manufactures — Lucifers And Vesta Matches,0
 NOUNIT,0,Linen And Jute Manufactures — Luoifer And Vesta Matches,0
 NOUNIT,0,Lace — Pillow Lace,0
 NOUNIT,0,Lace — Machine Or Imitation Lace,0
@@ -401,7 +393,6 @@ NOUNIT,0,Apparel And Stores,0
 NOUNIT,0,Apparel And Slops,0
 ONEYEAR,950000000,"Woollen And Worsted Manufactures — Broad Cloths; Coatings, Duffs, &C., Ofwool, Mixed With Other Materials",950000000
 ONEYEAR,750040033,"Woollen And Worsted Manufactures — Narrow Cloths: Coatings, Duffs, &C., Plain,All Wool",750040033
-ONEYEAR,100636087,"Bleaching Materials — Books, Printed",100636087
 ONEYEAR,50071380,"Wine, British Made — Rough, Hewn, Sawn, Or Split",50071380
 ONEYEAR,20374219,Cheese — Wheat,20374219
 ONEYEAR,12755988,Silk — Manufactures,12755988
@@ -454,10 +445,11 @@ ONEYEAR,470914,"Skins, Furs, And Pelts — Sheep, Tanned, Tawed, Or Dressed",470
 ONEYEAR,466063,"Prints, Engravings, Drawings, &C — Rags (Except Woollen) And Othermaterials For Making Paper",466063
 ONEYEAR,428458,"Cordage, Cables, Ropes, And Twine Of Hemp Or Like Material",428458
 ONEYEAR,415293,"Plumbago — Quicksilver, Metallic",415293
+ONEYEAR,390246,Woollen And Worsted Manufactures — Flannels,390246
 ONEYEAR,385356,Wood And Timber — Staves : Unenumerated,385356
 ONEYEAR,380858,Cork — Pease,380858
-ONEYEAR,379171,Saddlery And Harness — Salt (Rock And White),379171
 ONEYEAR,361539,"Ivory — Teeth, Elephants, Sea Dogs, Sea Horse, Or Sea Morses",361539
+ONEYEAR,353486,"Telegraphic Wires And Apparatus — Tin, Unwrought",353486
 ONEYEAR,352674,"Matches, Safety And Other Sorts — Safety",352674
 ONEYEAR,351211,"Iron — Bars, Unwrought",351211
 ONEYEAR,330170,Guar — Unenumerated,330170
@@ -494,6 +486,7 @@ ONEYEAR,181219,"Honey — Horns, Tips And Pieces Of Horn, And Hooks",181219
 ONEYEAR,178777,"Cordage, Twine, And Cable Yarn — Unmanufactured",178777
 ONEYEAR,177280,Tar — West Coast Of Africa,177280
 ONEYEAR,174711,"Oil — Fish, Train, Or Blubber : Sperm, Or Head Matter",174711
+ONEYEAR,170759,Linen And Jute Yarn — Jute Yarn,170759
 ONEYEAR,167097,Spices — Molasses,167097
 ONEYEAR,163157,Gum — Dutch Possessions In India,163157
 ONEYEAR,162387,Woollen Yarn,162387
@@ -515,11 +508,11 @@ ONEYEAR,105908,"Fish, Fresh And Cured — Dressed And Undressed",105908
 ONEYEAR,104688,"Beef — Brass, Bronze, And Metal, Bronzed And Lacquered",104688
 ONEYEAR,104638,Flax — Dressed And Endressed,104638
 ONEYEAR,104559,"Saddlery And Harness — Saltpetre, British Prepared",104559
+ONEYEAR,102195,"Carriages, Carts, &C — Railway Carriages For Passengers",102195
 ONEYEAR,99366,Hats Or Bonnets — Tow Or Codilla Of Hemp,99366
 ONEYEAR,99006,"Metal — Old, Fit Only For Re-Manufacture",99006
 ONEYEAR,96210,Of Felt,96210
 ONEYEAR,94162,"Glass — Other Manufactures, Unenume- Rated",94162
-ONEYEAR,93274,Spices — Brandy,93274
 ONEYEAR,89780,Lead — Oro Of,89780
 ONEYEAR,86629,Feathers — For Bends,86629
 ONEYEAR,84422,Fruit — Snuff : Cavendish Or Negrohead,84422
@@ -629,6 +622,7 @@ ONEYEAR,0,"Wine, British Made — Staves And Empty Casks",0
 ONEYEAR,0,Value Of Articles Imported Byparcel Post,0
 ONEYEAR,0,Unrefined — 1St Class,0
 ONEYEAR,0,Tobacco — Toxs,0
+ONEYEAR,0,"Spirits, British And Irish — Stationery, Other Than Paper",0
 ONEYEAR,0,Skins And Furs — British: Unenumerated,0
 ONEYEAR,0,"Silk — Broad Stuffs, Silk Or Satin",0
 ONEYEAR,0,"Silk Manufactures — Silver One, Or One Of Which The Greater Part Invalue Is Silver",0
@@ -646,7 +640,7 @@ ONEYEAR,0,Machinery And Mills Work — Not Being Steam Engines ; Agricultural,0
 ONEYEAR,0,Machinery And Mill Work — Agricultural,0
 ONEYEAR,0,Linen Manufactures — To Australasia,0
 ONEYEAR,0,"Linen Manufactures — Steam Engines Or Parts Of Steam Engines,Locomotive",0
-ONEYEAR,0,Linen Manufactures — Lucifers And Vesta Matches,0
+ONEYEAR,0,Linen And Jute Manufactures — Luoifer And Vesta Matches,0
 ONEYEAR,0,Jute — Lace And Articles Thereof,0
 ONEYEAR,0,Isle Of Man,0
 ONEYEAR,0,Ireland,0
@@ -721,7 +715,6 @@ NOVALUE,0,Unrefined — 1St Class,0
 NOVALUE,0,Umbrellas And Parasols,0
 NOVALUE,0,Toys — Not Containing Spirit,0
 NOVALUE,0,Tobacco — Toxs,0
-NOVALUE,0,Telegraphic Wires And Apparatus,0
 NOVALUE,0,"Stationery, Other Than Paper",0
 NOVALUE,0,"Spirits, British And Irish — Stationery, Other Than Paper",0
 NOVALUE,0,"Specimens, Illustrative Of Naturalscience",0
@@ -745,7 +738,6 @@ NOVALUE,0,Silk Manufactures — In Value Is Silver,0
 NOVALUE,0,"Silk Manufactures — Handkerchiefs, Scarfs, And Shawls",0
 NOVALUE,0,Scotland,0
 NOVALUE,0,Saddlery And Harness,0
-NOVALUE,0,"Provisions, Unenumerated",0
 NOVALUE,0,"Prints, Engravings, Drawings, &C",0
 NOVALUE,0,"Potatoes — Poultry And Game (Alive Or Dead),Including Rabbits",0
 NOVALUE,0,Plated And Gilt Wares,0
@@ -753,7 +745,6 @@ NOVALUE,0,Plated And Gift Wares,0
 NOVALUE,0,Pilchards — Unenumerated,0
 NOVALUE,0,"Pictures, Drawings, And Photographs",0
 NOVALUE,0,"Pickles, Vinegar, Sauces, Condiments, Preserved Fruits, And Confectionery",0
-NOVALUE,0,"Pickles, Vinegar, And Sauces",0
 NOVALUE,0,Petroleum — Pickles And Vegetables Preserved In Salt,0
 NOVALUE,0,Paper — To United States Of America,0
 NOVALUE,0,"Paper — Brown Or Waste, Or Any Other Sort Un- Enumerated",0
@@ -775,7 +766,6 @@ NOVALUE,0,Machinery And Mill Work — Agricultural,0
 NOVALUE,0,Lucifer And Vesta Matches,0
 NOVALUE,0,Linen Manufactures — To Australasia,0
 NOVALUE,0,"Linen Manufactures — Steam Engines Or Parts Of Steam Engines,Locomotive",0
-NOVALUE,0,Linen Manufactures — Lucifers And Vesta Matches,0
 NOVALUE,0,Linen And Jute Manufactures — Luoifer And Vesta Matches,0
 NOVALUE,0,Lace — Pillow Lace,0
 NOVALUE,0,Lace — Machine Or Imitation Lace,0

@@ -184,16 +184,13 @@ Whalebone (Whalefins) — Whale Fisheries,1888,Sweden,Load,205014,0,foreign to t
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Belgium,?,166866,0,foreign to this commodity
 Saltpetre (Nitrate Of Potash),1882,British India,Cwt,163862,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,United States Of America,Lb,113942,81037,foreign to this commodity
-"Lac, Seed, Shell, Stick, And Dye",1884,British India,Cwt,112479,112479,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Brazil,Lb,102199,81037,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Madras,Lb,82400,81037,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Guatemala,Lb,72569,81037,foreign to this commodity
 "Flowers, Artificial — Raw, Not Otherwise Described",1875,Turkey,Bushel,71157,0,foreign to this commodity
-Bark — Peruvian,1881,United States Of Colombia,Cwt,70944,125358,foreign to this commodity
 "Dye Stuffs, And Substances Used In Tanning — Indigo",1884,Bengal And Burmah,Cwt,66654,0,foreign to this commodity
 Cavendish Or Negrohead,1884,British North America United States Of America,Lb,61910,0,foreign to this commodity
 Wood And Timber — Teak,1873,Canada,Load,61599,0,foreign to this commodity
-Indigo,1882,Bengal,Cwt,60888,95272,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Bombay,Lb,60123,81037,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Spain,Load,60066,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Costa Rica,Lb,50229,81037,foreign to this commodity
@@ -209,7 +206,6 @@ Whalebone (Whalefins) — Whale Fisheries,1888,France,Load,34736,0,foreign to th
 Plated And Gilt Wares,1885,British East Indies,?,21368,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Aden,Lb,17548,81037,foreign to this commodity
 "Kiln-Dried, Roasted, Or Ground",1891,Channel Islands,Lb,16471,0,foreign to this commodity
-Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1886,West Africa,Ton,16067,52894,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Nicaragua,Lb,16004,81037,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1877,China (Except Hong Kong,?,15929,0,foreign to this commodity
 "Flowers, Artificial — Raw, Not Otherwise Described",1875,Bombay,Bushel,15860,0,foreign to this commodity
@@ -231,7 +227,6 @@ Wood And Timber — Teak,1873,United States Of America,Load,6670,0,foreign to th
 "Gunstocks In The Rough, Of Wood",1880,All Countries,Cwt,4707,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Straits Settlements,Lb,4513,81037,foreign to this commodity
 "Flowers, Artificial — Raw, Not Otherwise Described",1875,Persia,Bushel,4303,0,foreign to this commodity
-Sulphuric,1894,Foreign Countries,Gallon,3739,3739,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Mexico,Lb,3595,81037,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Revolvers",1886,British Possessions,?,3570,0,foreign to this commodity
 "Flowers, Artificial — Raw, Not Otherwise Described",1875,Gibraltar,Bushel,3526,0,foreign to this commodity
@@ -250,7 +245,6 @@ Wood And Timber — Teak,1873,British Guiana,Load,1267,0,foreign to this commodi
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Other British Possessions,Lb,965,81037,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,United States Of America,Load,694,0,foreign to this commodity
 "Kiln-Dried, Roasted, Or Ground",1891,Other British Possessions,Lb,683,0,foreign to this commodity
-Indigo,1882,British Honduras,Cwt,641,95272,foreign to this commodity
 At Certain Ports,1894,Portugal,?,591,0,foreign to this commodity
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,Spain,Number,415,0,foreign to this commodity
 "Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Safflower",1896,Bengal,Cwt,413,0,foreign to this commodity
@@ -287,8 +281,6 @@ At Certain Ports,1894,Russia,?,253,0,foreign to this commodity
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,British East Indies,Number,46,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Japan,?,24,0,foreign to this commodity
 "Dye Stuffs, And Substances Used In Tanning — Safflower",1884,Turkey,Cwt,18,0,foreign to this commodity
-Coffee — Raw,1880,Malt Foreign From All Countries,Cwt,0,1546451,foreign to this commodity
-Coffee — Raw,1880,Dutch Guiana,Cwt,0,1546451,foreign to this commodity
 Jute,1872,British India,Ton,0,0,foreign to this commodity
 Petroleum,1899,Glass Manufactures Bottles,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Lac,Gallon,0,0,foreign to this commodity
@@ -299,26 +291,9 @@ Petroleum,1899,Plants,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Pork Salted,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Poultry And Game Alive Or Dead,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Prints,Gallon,0,0,foreign to this commodity
-Fruit — Raisins,1879,Malt Foreign From All Countries,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,Spirits Rum From Spanish West India Islands,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,Tafia From France,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,Unenumerated Not Sweetened Or Mixed From Germany,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,China,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,Bombay,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,Madras,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,Bengal And Burmah,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,Straits Settlements,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,Ceylon,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,Japan,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,Argentine Republic,Cwt,0,585538,foreign to this commodity
-Fruit — Raisins,1879,British India,Cwt,0,585538,foreign to this commodity
-Wood And Timber — Staves,1888,Australasia,Load,0,143796,foreign to this commodity
-"Drugs — Bark, Peruvian",1882,Turkey,Cwt,0,139285,foreign to this commodity
-"Drugs — Bark, Peruvian",1882,Persia,Cwt,0,139285,foreign to this commodity
 "Metal — Leaf, Not Gold",1877,All Countries,Packets,0,0,foreign to this commodity
 "Flowers, Artificial — Raw, Not Otherwise Described",1875,China,Bushel,0,0,foreign to this commodity
 "Buttons And Studs, Not Of Metal",1880,All Countries,Gross,0,0,foreign to this commodity
-Isinglass,1874,Bengal And Burmah,Cwt,0,4098,foreign to this commodity
 "Ore, Unenumerated",1893,Seas (Except Borneo,Ton,0,0,foreign to this commodity
 China And Porcelain Ware,1882,Australasia,Cwt,0,0,foreign to this commodity
 "Cotton Manufactures — Dye Stuffs, Unenumerated",1872,Egypt,Cwt,0,0,foreign to this commodity
@@ -353,7 +328,6 @@ Gunpowder,1881,Australasia,Cwt,0,0,foreign to this commodity
 "Brass, Bronze, And Metal, Bronze And Lacquered",1883,Greece,Cwt,0,0,foreign to this commodity
 "Brass, Bronze, And Metal, Bronze And Lacquered",1884,Spain,Cwt,0,0,foreign to this commodity
 "Plums, French, And Pruneloes",1886,British Possessions,Cwt,0,0,foreign to this commodity
-Whalefins,1876,Wine See Page 70,Cwt,0,1799,foreign to this commodity
 Cotton Manufactures — Muslins,1872,United States Of America,Yard,0,0,foreign to this commodity
 Cotton Manufactures — Muslins,1881,All Countries,Yard,0,0,foreign to this commodity
 Corn And Grain — Rye Meal,1878,Germany,Cwt,0,0,foreign to this commodity

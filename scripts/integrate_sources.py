@@ -385,6 +385,22 @@ def main():
         s0 = V.sig(a0) or V.sig(f"{(g0 or '').strip()} {a0}")
         if s0:
             t1_flow[(s0, int(y0))].setdefault(flow, v0)
+    # Member sums of every PRIMARY-parse block, keyed by the number they come
+    # to. Used for the mixed case below: if some block in the same year
+    # already adds up to the import national total, that table is parsed and
+    # a gap-fill copy of the page has nothing to contribute to it.
+    obs_closes = set()
+    for tbl in ('country_obs', 'country_obs_inf'):
+        bsum = defaultdict(float)
+        for g0, a0, y0, c0, q0 in con.execute(
+                f"""SELECT article_group, article, year, country_raw, quantity
+                    FROM {tbl} WHERE flow='import' AND year IS NOT NULL
+                      AND quantity > 0""").fetchall():
+            if 'total' in (c0 or '').lower():
+                continue
+            bsum[((g0 or ''), (a0 or ''), int(y0))] += q0
+        obs_closes |= {(k[2], round(s)) for k, s in bsum.items()}
+
     leak_blocks, n_leak = set(), 0
     for tbl in ('country_obs_twoup', 'country_obs_runin'):
         btot = defaultdict(list)
@@ -397,10 +413,20 @@ def main():
             sig0 = V.sig(a0) or V.sig(f"{g0} {a0}")
             fl = t1_flow.get((sig0, y0)) or {}
             imp = fl.get('import')
+            other = any(fl.get(f) and abs(q0 - fl[f]) < 0.5
+                        for q0 in qs for f in ('export_uk', 'reexport'))
             if imp and any(abs(q0 - imp) < 0.5 for q0 in qs):
-                continue                      # the import table is in here too
-            if any(fl.get(f) and abs(q0 - fl[f]) < 0.5
-                   for q0 in qs for f in ('export_uk', 'reexport')):
+                # MIXED: all three tables under one lost heading (butter 1880
+                # has three Total rows, 2,326,305 import / 31,408 export /
+                # 43,125 re-export). Rejecting the block would take the import
+                # table with it — unless the primary parse already carries
+                # that table and closes on it, in which case the gap-fill copy
+                # can only contribute the export rows. A gap-filler with no
+                # gap to fill is all surplus.
+                if other and (y0, round(imp)) in obs_closes:
+                    leak_blocks.add((g0, a0, y0))
+                continue
+            if other:
                 leak_blocks.add((g0, a0, y0))
 
     # 3) two-up, 4) run-in — add ONLY commodity-years absent from consensus
