@@ -344,3 +344,77 @@ a parent total on another page, or the same table read by the other engine.
 The reconciliation baseline barely moved across this whole review (34.1% to
 34.5% of GBP within 0.1%) because it can only score commodity-years that
 carry their own Tier-1 line. That is exactly why these survived.
+
+---
+
+# Third pass, 2026-07-26: the sibling identity run as a measurement
+
+Prompted by the corpus-wide plan, not by a new defect. The two printed
+identities this family supplies —
+
+    beetroot + cane and other sorts   = unrefined, total
+    lumps and loaves + other sorts    = refined, total
+
+— were run as a systematic per-year test rather than as spot checks, against
+both the Tier-1 anchors and the de-duplicated origin sums in `map_slim.json`.
+
+## The curation question this closes
+
+`reports/commodity_curation_queue.csv` still buckets five sugar commodities as
+REVIEW or DUPE-FAM, GBP839M between them — 79% of all shipped non-KEEP value —
+and none carries a decision in `reference/commodity_curation.csv`. That reads
+like the largest piece of curation debt in the corpus.
+
+It is not debt. The queue is pairing each parent with its own sub-sort, and the
+two identities hold **exactly, in all four years testable on the anchors**
+(1893-96, both families, to the hundredweight). The five rows are correctly
+separate commodities and need no fold. **Merging any of them would double the
+family** — the same trap this file's first pass named.
+
+The bucket is a false positive of the dupe detector, which compares names and
+magnitudes and cannot tell a parent from a child.
+
+## What the identity did find
+
+Run against origin sums the picture is different, and it is the argument for
+automating this test corpus-wide.
+
+**Unrefined** — identity holds in 11 of 15 years with origin tables on both
+sub-sorts; off in 1885 (0.1%), 1886 (0.3%), 1893 (1.5%), 1895 (1.0%), 1896
+(0.1%).
+
+**Refined** — holds in 13 of 15; off in 1882 (3.0%) and 1889 (1.0%).
+
+Three classes worth a queue entry:
+
+1. **Unrefined 1872 and 1874 origin tables are effectively empty** — they sum to
+   **1,385 cwt** and **929 cwt** against anchors of 13.8M and 14.1M, a ratio of
+   0.0001. Neither year has sub-sorts to check against (the split is not printed
+   before 1882), so nothing else in the pipeline reports them.
+
+2. **The siblings beat the parent's own origin table in three years.** Unrefined
+   1891: parent origins 15,906,849 against a 16,202,458 anchor (0.9818) while
+   the siblings sum to 16,187,255 (0.9991). Unrefined 1895: parent origins
+   overshoot at 1.0427 while the siblings land at 1.0105. Refined 1895: parent
+   0.9739, siblings exact. Where the two disagree the sibling sum is the better
+   reading, because it is constrained twice.
+
+3. **Both parents lose their anchor after 1896 and it is not a parse failure.**
+   No era label anywhere in the payload carries an unrefined or refined total
+   for 1897-99 — the Abstract stopped printing the combined lines and published
+   only the four sub-sorts. The parents nonetheless still carry origin cells for
+   those years, and those cells overshoot the sub-sort totals by 5.6% (1899),
+   7.8% (1897) and 11.4% (1898). That looks like the parent's origin table
+   absorbing sub-sort rows, and it is unchecked because the anchor that would
+   catch it was never printed.
+
+Nothing here has been repaired. Items 1-3 are queued with the evidence above.
+
+## Method note
+
+This pass changed no data and cost one query, and it found a defect class
+(item 1) that has been invisible since the corpus was built. The identity is
+strictly stronger than an anchor where both exist, because it constrains two
+series at once and says which one is short — and it is the only check available
+at all to the sub-sorts before 1893, which have no anchor of their own. That is
+the case for `scripts/sibling_identity.py` in the corpus-wide plan.
