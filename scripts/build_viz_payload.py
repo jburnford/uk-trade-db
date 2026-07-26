@@ -402,6 +402,51 @@ def main():
                 del cands[(full, lab)]
                 t1_attested.discard(full)
 
+    # ---- absorbed siblings: two printed sub-sorts collapsing to one key ----
+    # sig_of unions the group and article tokens, so an article that only
+    # repeats a word already in its group heading contributes NOTHING and
+    # vanishes into the group. That is deliberate almost everywhere — it is
+    # what makes 'Sawn, Fir' and 'Sawn : Fir' one commodity, and 104
+    # signatures currently carry more than one printed article for exactly
+    # that reason. It is catastrophic in the one case where the two absorbed
+    # articles are DIFFERENT COMMODITIES: 'BACON AND HAMS | Bacon' and
+    # 'BACON AND HAMS | Hams' both key on ('BACON','HAMS'), so the two tables
+    # merge, and because add_cell dedupes on (country, unit, year) — and the
+    # bacon and ham tables list the same origins in the same year — the ham
+    # cell is DISCARDED. Twenty-three years of ham origin tables were being
+    # destroyed, and the survivor was measured against the combined
+    # 'Bacon and Hams' national total, so it read 0.75-0.93 for its whole
+    # life and no flag could see why. (Proof it is one line split in two:
+    # bacon + hams country sums equal the printed combined total to the digit
+    # in thirteen years, and within 0.2% in six more.)
+    #
+    # The discriminator has to separate this from the 103 benign cases. Two
+    # articles under one signature are the SAME printed line, spelled two
+    # ways, iff their vocabularies overlap ("Sheep or Lambs'" vs "Sheep or
+    # Lambs' Wool", 'Ore' vs 'Ore of'). They are different lines iff their
+    # meaningful vocabularies are DISJOINT and the volumes print both IN THE
+    # SAME YEAR. Run over the whole corpus that fires on BACON AND HAMS and
+    # on nothing else; it is a general rule that currently has one member.
+    split_sigs = set()
+    _bysig = {}
+    for g, a, y in con.execute("""
+            SELECT DISTINCT article_group, coalesce(article, ''), year
+            FROM country_year_final
+            WHERE flow='import' AND coalesce(article_group, '') <> ''""").fetchall():
+        base, qual = fold_group(g)
+        _bysig.setdefault((base, qual, sig_of(base, qual, a)), {}).setdefault(
+            frozenset(toks(a) - GENERIC), set()).add(y)
+    for key, byvocab in _bysig.items():
+        vocabs = [v for v in byvocab if v]
+        for i, vi in enumerate(vocabs):
+            for vj in vocabs[i + 1:]:
+                if not (vi & vj) and len(byvocab[vi] & byvocab[vj]) >= 2:
+                    split_sigs.add(key)
+
+    def article_marker(a):
+        """A token that keeps an absorbed article load-bearing, and only it."""
+        return '~' + '+'.join(sorted(toks(a) - GENERIC))
+
     # ---- pass 1: country-level cells (imports, per-cell ranks) ----
     n_cfixed = 0
     cfix_log = Counter()
@@ -412,6 +457,8 @@ def main():
         base, qual = fold_group(g)
         sig = sig_of(base, qual, a)
         label = display(base, qual, a)
+        if (base, qual, sig) in split_sigs and toks(a) - GENERIC:
+            sig = sig + (article_marker(a),)
         # sticky-group repair, country edition: fires ONLY when the printed
         # group+article is NOT an abstract-attested commodity but the article
         # alone unambiguously names exactly one (and isn't pure qualifier
