@@ -84,19 +84,35 @@ Applied as `manual_rows` `replace=1`.
 
 ## Still open, with the evidence
 
-**The `AMMUNITION` glue block is the root cause and is not repaired.** In
-`as_1897` (obs `row_seq` 145–700) and `as_1898` (`row_seq` 152–698) the whole
-`ANIMALS, LIVING` section is parsed under the preceding `ARMS AND AMMUNITION`
-head: Oxen and Bulls, Cows, Calves, Sheep and Lambs, Swine, Stallions, Mares,
-Geldings and Unenumerated, five years apiece in the comparative layout, with the
-real arms articles resuming at seq 701 and 699. Only the oxen line has been
-adjudicated. The others are duplicated in `country_year_final` exactly the same
-way — `Cows` and `Calves` each appear twice for 1893–98, once under each head —
-which is why the broad-line identity above reads 2.0 to 3.2 for those years
-before the payload de-dup. The instrument is a `group_repairs` row per volume
-with `new_group = ANIMALS, LIVING` and `supersede_years`, but it must be checked
-line by line first: for oxen the stale-head copy is the **better** reading in
-1894, 1896 and 1898 and superseding it wholesale would lose those.
+**The `AMMUNITION` glue block — worked 2026-07-26, and it was smaller than this
+section first claimed.** In `as_1897` (obs `row_seq` 145–700) and `as_1898`
+(`row_seq` 152–698) the whole `ANIMALS, LIVING` section is parsed under the
+preceding `ARMS AND AMMUNITION` head: Oxen and Bulls, Cows, Calves, Sheep and
+Lambs, Swine, Stallions, Mares, Geldings and Unenumerated, five years apiece in
+the comparative layout, with the real arms articles resuming at seq 701 and 699.
+Every line is therefore in `country_year_final` twice.
+
+Measured line by line, the `ANIMALS, LIVING` copy is the better reading
+everywhere except oxen: sheep closes 1.0000–1.0040 in every year 1893–99 while
+the stale head runs 1.3054–1.4253; the three horse lines close 0.99–1.01 while
+the stale head is **truncated** to 0.0004–0.65. But **the payload was already
+absorbing that correctly** — `Cows`, `Calves`, `Mares`, `Geldings` and
+`Animals, Living — Sheep And Lambs` all close at 0.99–1.01, because the
+duplicate cells collide on `(country, unit, year)` and one copy is discarded.
+The exposure was two labels that escaped as commodities of their own,
+`Ammunition — Stallions` and `Ammunition — Swine`, whose article alone names no
+attested commodity so the sticky-group repair could not re-home them. Both
+dropped.
+
+**A `group_repairs` relabel is the WRONG instrument here and this is worth
+recording.** Relabelling the block to `ANIMALS, LIVING` with `supersede_years`
+was tried and reverted: superseding removes the bad consensus copies, but the
+repair's step-6 gap-fill then adds them straight back, because the stale-head
+parse spells its countries differently (`United States of America : On the
+Atlantic` against a plain name) so they miss the "already in consensus" guard.
+Sheep went from 1.0040 to 1.4027 in 1894, swine from 1.0000 to 4.0000. Every one
+of the seven lines got worse. Superseding *without* re-adding would need a
+supersede-only row, which the schema has no way to express.
 
 **1893 US value understates by £3M.** The stale-head copy carries
 £1,667,152 where the `ANIMALS, LIVING` copy carries £4,667,152 — a 4 read as a
@@ -106,6 +122,15 @@ set gives 3,213,147. The fold keeps the stale-head cell, so the shipped 1893
 value is low. Not patched because its country key is itself junk — the parser
 kept `On the Atlantic` with the parent lost — and a manual row on that key would
 not survive a re-parse. Fix it with the group repair above.
+
+**Stallions had an anchor and origins under two labels and could not be checked
+at all.** Fixed 2026-07-26: the printed national line is `Horses (including
+ponies), viz.: Stallions` (anchor 1893–1900, no origin table) while the country
+tables sit under `Animals, Living — Stallions` (origins 1888–99, no anchor).
+Folded; the series now reads 0.9822 / 0.9948 / 1.0420 / 1.0241 / 1.0264 / 1.0726
+/ 0.9968 for 1893–99 — loose, but the line is 462–933 head a year and was
+previously unmeasurable in every year. Mares and Geldings need no such fold;
+their groupless labels already carry both halves.
 
 **The four missing cow tables** (1876, 1878, 1881, 1882), worth 58,520 / 29,384
 / 34,056 / 45,052 head, each pinned to the digit by the identity residual.
