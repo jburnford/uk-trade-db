@@ -54341,14 +54341,12 @@ BACON,,sweden,Cwts,import,1893,62320.0,163603.0,consensus,B,C,2,3
 BACON,,denmark,Cwts,import,1893,711551.0,2148138.0,consensus,B,C,2,3
 BACON,,germany,Cwts,import,1893,9742.0,29890.0,consensus,B,C,2,3
 BACON,,holland,Cwts,import,1893,21650.0,69599.0,consensus,B,C,2,3
-BACON,,united states of america,Cwts,import,1893,3935097.0,7984601.0,consensus,B,C,2,3
 BACON,,canada,Cwts,import,1893,193772.0,495166.0,consensus,B,C,2,3
 BACON,,other british possessions,Cwts,import,1893,17.0,43.0,consensus,B,C,2,3
 BACON,,northern parts,Cwts,import,1894,9902.0,21536.0,consensus,B,C,2,3
 BACON,,denmark,Cwts,import,1894,766826.0,2189599.0,consensus,B,C,2,3
 BACON,,germany,Cwts,import,1894,339.0,929.0,consensus,B,C,2,3
 BACON,,holland,Cwts,import,1894,22666.0,63206.0,consensus,B,C,2,3
-BACON,,united states of america,Cwts,import,1894,3434775.0,7557489.0,consensus,B,C,2,3
 BACON,,other british possessions,Cwts,import,1894,338.0,945.0,consensus,B,C,2,3
 BACON,,northern parts,Cwts,import,1895,12054.0,23924.0,consensus,B,C,2,3
 BACON,,germany,Cwts,import,1895,232.0,609.0,consensus,B,C,2,3
@@ -54356,7 +54354,6 @@ BACON,,northern parts,Cwts,import,1896,19001.0,35421.0,consensus,B,C,2,3
 BACON,,germany,Cwts,import,1896,512.0,997.0,consensus,B,C,2,3
 BACON,,northern parts,Cwts,import,1897,27713.0,59953.0,consensus,B,C,2,3
 BACON,,germany,Cwts,import,1897,45.0,99.0,consensus,B,C,2,3
-BACON,,united states of america,Cwts,import,1897,4713979.0,8313446.0,consensus,B,C,2,3
 BACON,,canada,Cwts,import,1897,299282.0,523195.0,consensus,B,A,2,1
 "BEADS, OF ALL SORTS",,western coast of africa,Lbs,import,1893,7350.0,1405.0,consensus,B,C,2,3
 "BEADS, OF ALL SORTS",,western coast of africa,Lbs,import,1894,2836.0,202.0,consensus,B,A,2,1
@@ -82349,6 +82346,9 @@ OIL,Castor,italy,Cwts,import,1895,4691.0,6417.0,human,A,B,1,2
 BUTTER,,sweden,Cwts,import,1899,245599.0,1246137.0,human,A,B,1,2
 BUTTER,,sweden,Cwts,import,1896,323829.0,1664685.0,human,A,B,1,2
 OIL,"Chemical, Essential, or Perfumed",straits settlements,,import,1874,38069.0,15364.0,human,A,B,1,2
+BACON,,United States of America,Cwts,import,1893,2177293.0,5523447.0,human,A,A,1,1
+BACON,,United States of America,Cwts,import,1894,2561203.0,,human,A,B,1,2
+BACON,,United States of America,Cwts,import,1897,3592635.0,,human,A,B,1,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2

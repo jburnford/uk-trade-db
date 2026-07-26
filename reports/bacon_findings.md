@@ -119,3 +119,118 @@ vocabulary does not have.
 
 **`Hams` 1898 reads 0.8479** (1,672,294 against 1,972,299) — a 300,005 shortfall
 in a series that closes in every neighbouring year.
+
+---
+
+# The 1893/94/97 over-count was a lost TOTAL label (2026-07-26)
+
+The first "still open" item above read the 1.55/1.24/1.23 over-counts as a
+country counted beside its own sub-entry, and proposed substituting the
+`: On the Atlantic` figure. The substitution arithmetic was right and the
+diagnosis was wrong, which matters because the two call for different repairs.
+
+## What the row actually is
+
+`as_1897` prints bacon as a five-year comparative table — one printed row per
+country, five year-columns — and the parser emits one observation per
+(row, year), so a single printed row occupies five consecutive `row_seq`
+values. Seq **982–986** is one such row, and it is the **foreign-countries
+TOTAL**, carrying the `United States of America` label of the rows above it:
+
+```
+972-976  United States of America : On the Atlantic     2,177,293 … 3,592,635
+977-981  United States of America : Other Foreign Coun.     2,495 …       404
+982-986  United States of America                       3,935,097 … 4,713,979  <- TOTAL
+987-991  Canada                                           193,772 …   299,282
+997-1001 TOTAL  (British)                                 193,790 …   299,926
+1002-06  TOTAL  (grand)                                 3,198,887 … 5,063,915
+```
+
+`United States of America : Other Foreign Countries` is the same mis-nesting
+one row earlier: a top-level row swallowed as a US sub-entry.
+
+Four independent proofs, no page image needed:
+
+1. **The row plus the British total is the printed grand total.**
+   1895: `3,792,945 + 270,473 = 4,063,418`.
+   1896: `4,092,512 + 457,014 = 4,549,526`. Both exact.
+2. **The other engine labels the identical numbers `TOTAL`.** `country_obs_inf`
+   carries 3,792,945 (as_1895, as_1899), 4,092,512 (as_1896, as_1898, as_1899)
+   and 4,713,979 (as_1898, as_1899) — every one of them as `TOTAL`.
+3. **1893's value column gives it away.** as_1897's row reads
+   `3,935,097 / 7,984,601`; `as_1893`'s own foreign TOTAL row reads
+   `3,005,097 / 7,984,601`. The value matches to all seven digits, so the
+   quantity is a misread of 3,005,097 — and `3,005,097 + 193,790 = 3,198,887`,
+   the anchor.
+4. **`as_1898`'s 1897 block closes at all three levels.**
+   `27,713 + 48,879 + 1,026,552 + 17,751 + 3,592,635 + 449 = 4,713,979` foreign;
+   `290,283 + 565 + 88 = 290,936` British; sum `5,004,915` = the anchor.
+
+**Why it survived.** `BACON` with no article is a 1896+-era label, and for 1893,
+1894 and 1897 `as_1897` was its *only* witness. The vote had nothing to compare
+against, so a printed total entered `country_year_final` as an origin.
+
+## The repair, and a mechanism worth knowing
+
+Two rows were needed, because they fix different things:
+
+- `group_repairs.csv`: `as_1897 / BACON / seq 982-986 / new_country=TOTAL`.
+- `manual_rows.csv` `replace=1` for the three US cells: 1893 = 2,177,293,
+  1894 = 2,561,203, 1897 = 3,592,635.
+
+The mechanism, which cost a cycle to learn: **a `new_country` group repair does
+not remove a consensus cell.** `repaired_rows` is consulted only by step 4 to
+stop the sub-entry path re-adding a relabelled row; the `consensus` source comes
+from `vote_country_years`, which ran before `integrate_sources` ever read the
+manifest. `supersede_years` would reach it but is keyed
+`(group, article, year)` — superseding `BACON|''` for these years drops Denmark,
+Sweden, Canada and the rest of the table with it. The only country-scoped
+instrument is `manual_rows`.
+
+1893 is quotable as a two-column proof: with Germany at 9,744 the block closes
+on **both** columns —
+`16,823+62,339+711,854+9,744+24,639+2,177,293+2,405 = 3,005,097` and
+`43,947+163,693+2,148,138+29,890+69,599+5,523,447+5,887 = 7,984,601` — so the
+same arithmetic that identifies the TOTAL row also pins Germany 1893 at 9,744
+(as_1893 read 5,744, as_1897 read 9,742).
+
+1894 and 1897 ship with **no value**: the three volumes read 5,082,951 /
+5,032,951 / 5,632,951 and 5,253,624 / 5,353,624 / 5,553,624, and no combination
+closes the printed foreign-total value without choosing among the other rows
+first. A blank is honest; the figure it replaced was the total's value.
+
+## Result
+
+| year | before | after |
+|---|---|---|
+| 1893 | 1.5485 | **0.9990** |
+| 1894 | 1.2392 | **1.0025** |
+| 1897 | 1.2314 | **1.0073** |
+
+Every Bacon year 1892–99 now closes within 0.75%. Corpus baseline 38.2% → 38.3%
+of GBP within 0.1%, 55.2% → 55.8% within 5% (same 9,935-commodity-year universe);
+under-counted commodity-years unchanged at 245.
+
+## Still open, with the evidence
+
+**The residual in each year is fully accounted for and is a different class —
+the vote preferring `as_1897`'s drifted readings over a block that closes.**
+
+- **1897 (+36,757).** `Russia` 27,713 and `Northern Parts` 27,713 are the same
+  printed row counted twice (+27,713), and Canada reads 299,282 where the
+  printed British total 290,936 requires **290,283** (+8,999). 27,713 + 8,999 +
+  45 (Germany, which as_1898 folds into Other Foreign) = 36,757 exactly.
+- **1894 (+9,279).** The same duplicated Russia row, as `Russia` 9,992 beside
+  `Northern Parts` 9,902.
+- **1893 (−3,224).** Every country where the vote took as_1897 over as_1893:
+  Sweden −19, Denmark −303, Germany −2, Holland −2,989, Other Foreign +90,
+  Canada −1. as_1893's block closes on both columns; as_1897's does not.
+
+**`Northern Parts` is an OCR misread of `Northern Ports`.** `fold_country`'s
+port-split regex matches `ports?` only, so the Russian northern-ports row
+survives as a phantom country named `Northern Parts` and double-counts against
+the volumes that spell it `Russia`. Widening the pattern would fix 1894 and
+1897 here; **blast radius not measured — do not apply blind.**
+
+**`Hams` 1898 still reads 0.8479** (1,672,294 against 1,972,299), untouched by
+this work.
