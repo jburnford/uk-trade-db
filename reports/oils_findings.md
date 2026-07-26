@@ -1098,3 +1098,75 @@ still open; the rule as written is not the way to fix it.
     fats and oils   quantity 74%, value 75%, BOTH 55% of 446 years
     shipped map     quantity 64.3%, BOTH 50.4% of 3,791 years
                     (from 60.8% / 47.3% at the start of the fifth pass)
+
+## Seventh pass: coverage, and ranking the rest by money
+
+### 77 family-years had no value test for a filing accident
+
+Essential oils are quantified under `Oil | Chemical, Essential, and
+Perfumed` and valued under a **groupless** `Chemical, Essential, and
+Perfumed` in almost every year of the corpus. The value anchor was keyed on
+a signature built from the group, so the two halves of one printed line
+could only meet when both copies happened to carry it.
+
+Every value line is now keyed on its ARTICLE tokens as well, restricted to
+article-years carrying one distinct value so a generic article printed under
+several commodities is never paired.
+
+    value-measurable commodity-years   3,497 -> 3,649
+    value exact                        2,222 -> 2,312
+    BOTH columns exact                 1,909 -> 1,989
+
+Three checks that this pairs lines rather than pairing anything: no year went
+from value-exact to not-exact, no already-anchored year had its anchor
+changed, and **90 of the 152 newly-paired years close to the digit** — which
+a wrong pairing does not do. In this family: essential oils 4/23 -> 11/23,
+olive 13/21 -> 17/21, turpentine 15/28 -> 19/28, coco-nut 8/19 -> 12/19.
+
+### The remaining error, ranked by money
+
+204 failing commodity-years hold **GBP3.35M of error between them, out of
+GBP999M — 0.34% of the family**. That is the number worth quoting alongside
+the closure counts, and it reorders the work: the commodity with the worst
+ratio is not where the money is.
+
+| GBP at stake | commodity | year | quantity off by |
+|---|---|---|---|
+| 463,870 | `Oil — Turpentine` | 1897 | 3.0% |
+| 300,103 | `Oil — Olive` | 1891 | — (value only) |
+| 294,287 | `Seeds — Flax Or Linseed` | 1892 | 0.9% |
+| 248,946 | `Nuts And Kernels — Commonly Used…` | 1872 | 75% |
+| 216,732 | `Tallow And Stearine` | 1899 | 0.4% |
+| 164,223 | `Butter` | 1884 | — (value only) |
+| 159,097 | `Oil — Palm` | 1886 | — (value only) |
+
+`Oil Seed Cake — Linseed Cake` scores 1 of 7 and is **not** in this list: six
+of its seven years are within 0.8% and only 1899 has a real gap. The strict
+0.1% bar overstates it, which is worth knowing before spending a session on
+it.
+
+### Eleven cells repaired, and one guardrail learned by breaking it
+
+Applied where the block's arithmetic and the within-block price agree —
+olive 1891 Italy GBP174,266 -> 474,266 (the block 300,000 short, GBP15.16 a
+tun against a block running 34-41), lard 1890 United States, and nine
+smaller. Skipped by the same test: five whose repaired price moves AWAY from
+the block rate, including a 500,000 cwt jump on margarine 1892's dominant
+row.
+
+**A block closing is not the same as the commodity-year closing.** Three of
+the fourteen first applied made their year WORSE despite closing their own
+printed segment exactly: margarine 1898's block is 9,000 cwt short and the
+year was already summing to its national total, because another source
+supplies those 9,000. Both cannot be right and the block arithmetic cannot
+say which. Removed and queued. The rule is now in the detector's docstring —
+after applying a batch, re-measure per commodity-year and keep only what did
+not regress.
+
+### Where the family stands
+
+    quantity closes   74% of 446 commodity-years with origins
+    value closes      76% of 419 with a value anchor
+    BOTH columns      62%   (was 48% three passes ago)
+    at 5% tolerance   quantity 94%, both columns 87%
+    money still wrong GBP3.35M of GBP999M
