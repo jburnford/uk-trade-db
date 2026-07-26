@@ -44,6 +44,27 @@ Take the top item from the ranked open list, with these exclusions:
 - **SKIP anything that changes taxonomy or the vote.** If the item turns out to
   need one, STOP and ask rather than deciding alone.
 
+## 2b. Keep a running note (this is what makes compaction survivable)
+
+Maintain `<scratchpad>/LOOP_STATE.md` — overwrite it, don't append:
+
+```
+ITEM: <the one item>
+ESTABLISHED: <each proof as it lands, with the numbers>
+REJECTED: <hypotheses killed, so they aren't re-tried>
+NEXT: <the immediate next step>
+```
+
+**Update it the moment a proof lands, not at the end of the iteration.** The
+between-iteration handoff is already safe (step 1 rebuilds from disk); the real
+exposure is compaction landing mid-iteration, after the analysis and before the
+report. A proof that exists only in context is one compaction away from being
+re-derived from scratch.
+
+Keep bulk out of context: dump wide query results to the scratchpad and read
+back only the rows that matter. In step 1, read the plan memory's ranked list
+and the most recent session log — not the whole file, which is long and grows.
+
 ## 3. Work it
 
 Guardrails, all learned the hard way — see the "Hard guardrails" section of the
