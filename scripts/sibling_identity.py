@@ -51,6 +51,35 @@ A family is ACCEPTED only if the identity closes within 0.1% in at least two
 years (three for SEARCH) on some measure. Everything else is discarded
 unreported -- a family that never closes was never an identity.
 
+## Era wordings are folded before any family is proposed
+
+The abstract RE-WORDS lines mid-series and the country tables follow, so one
+printed line becomes two or three payload commodities: 'Woollen Yarn — For
+Weaving' becomes '... For Weaving, Mixed or not with Silk' in 1894. Families are
+built from label text, so without this stage an era change silently truncates a
+child's span and the cross test reports a shortfall that is not there -- woollen
+yarn 1894-99 was queued for a session as a collapse of its sub-sort origin
+tables, and on era-correct labels the family closes to the digit in 1882, 1886
+and 1887 and nothing had collapsed.
+
+Two labels are one line in two eras when they share a head and unit, one
+article's vocabulary is a PROPER SUBSET of the other's, and their origin spans
+succeed rather than nest. Three things must NOT be merged, each learned by
+breaking it:
+
+  * siblings of a union parent. 'Fruit — Oranges' is a proper subset of
+    'Fruit — Oranges and Lemons', and folding them destroyed that family.
+  * two lines that merely start alike. Oranges and oranges-and-lemons agree in
+    1892 (6,763,276 under both names) and diverge in 1893 (4,593,127 against
+    5,674,747) once oranges are printed separately, so the changeover years are
+    checked on origins, or on the printed total where only that is comparable.
+  * nothing, on silence. Wordings often overlap without ever carrying the same
+    measure in one year; disagreement refutes, absence of evidence does not.
+
+Where both wordings do carry a year, it is counted ONCE. That de-duplication is
+itself a repair: woollen yarn's fancy line reads 1,320,619 under both of its
+names in 1893, and summing them put the family 8.6% over its printed total.
+
 Names are compared on the ARTICLE, not the whole label: the group head is a
 section heading the children often do not repeat ('Animals, Living — Bulls,
 Oxen, Cows, and Calves' = 'Oxen and Bulls' + 'Cows' + 'Calves', where only the
@@ -185,6 +214,151 @@ def series(entry):
     return unit, t1, dict(orig)
 
 
+# --------------------------------------------------------- era-wording merge
+def _years(entry):
+    _, t1, orig = entry
+    return set(t1) | set(orig)
+
+
+def _completes_union(a, b, bucket, ser):
+    """True if some third label in the same bucket makes `b` the CONCATENATION
+    of `a` and it -- 'Fruit — Oranges and Lemons' = 'Fruit — Oranges' +
+    'Fruit — Lemons'. Then a and b are parent and child, not two eras, and
+    merging them destroys exactly the union family this script is built to
+    find. (It did: the first cut of this merge ate `Fruit — Oranges`.)"""
+    va, vb = vocab(a), vocab(b)
+    for c in bucket:
+        if c in (a, b) or c not in ser:
+            continue
+        vc = vocab(c)
+        if vc and not (vc & va) and (va | vc) == vb:
+            return True
+    return False
+
+
+def _era_pair(a, b, ser, bucket=()):
+    """(canonical, other, later_is_b) if a and b are one printed line in two
+    eras, else None.
+
+    Three conditions, all necessary:
+
+    * one article's vocabulary is a PROPER SUBSET of the other's, so the
+      wording gains or loses a qualifier without changing subject
+      ('For Weaving' / 'For Weaving, Mixed or not with Silk'). Disjoint
+      vocabularies are siblings, not eras -- merging 'Oxen and Bulls' with
+      'Cows' would destroy the identity this script exists to test.
+    * the spans SUCCEED one another rather than nest. A short label sitting
+      wholly inside another's years is a duplicate or a fragment, not an era.
+    * where the spans overlap, both names must carry the SAME table (within
+      1%). The volumes print the old and new wording together for a year or
+      two at the changeover; a real disagreement there means these are two
+      lines and must not be summed into one.
+    """
+    ua, t1a, oa = ser[a]
+    ub, t1b, ob = ser[b]
+    if ua != ub or not head_of(a) or head_of(a) != head_of(b):
+        return None
+    va, vb = vocab(a), vocab(b)
+    if not va or not vb or not (va < vb or vb < va):
+        return None
+    if _completes_union(a, b, bucket, ser) or _completes_union(b, a, bucket, ser):
+        return None
+    ya, yb = _years(ser[a]), _years(ser[b])
+    if not ya or not yb:
+        return None
+    # Succeed-not-nest is judged on the ORIGIN spans, which are what gets
+    # summed. Anchors are assigned to one wording or the other by the Tier-1
+    # vote and scatter independently: 'Woollen Yarn — For Weaving' stops
+    # printing country tables in 1893 but carries a T1 line to 1900, and
+    # judging succession on t1|origins made its own successor look nested.
+    sa, sb = (set(oa), set(ob)) if (oa and ob) else (ya, yb)
+    if not ((min(sa) < min(sb) and max(sa) < max(sb))
+            or (min(sb) < min(sa) and max(sb) < max(sa))):
+        return None
+    # Agreement in the changeover years, on origins where both have them and
+    # on the printed total otherwise. Testing origins ALONE passes vacuously
+    # whenever the two wordings never carry a country table in the same year,
+    # which is the normal case -- and that hole merged 'Fruit — Oranges' into
+    # 'Fruit — Oranges and Lemons'. Their totals agree in 1892 (6,763,276 both,
+    # the combined line filed under each name) and then diverge in 1893
+    # (4,593,127 against 5,674,747) because oranges start being printed on
+    # their own. Two lines, not two eras.
+    # Disagreement refutes; silence does not. Two wordings often overlap
+    # without ever carrying the same MEASURE in the same year -- woollen yarn's
+    # 'For Weaving' stops printing country tables in 1893 and carries only a
+    # T1 line from 1896, against a successor that has origins and no T1 -- and
+    # demanding positive agreement there rejects the very case this exists for.
+    for y in ya & yb:
+        for x, z in ((oa.get(y, 0), ob.get(y, 0)), (t1a.get(y, 0), t1b.get(y, 0))):
+            if x and z:
+                if abs(x - z) > LOOSE * max(x, z):
+                    return None
+                break
+    canon = a if len(ya) >= len(yb) else b
+    return canon, (b if canon == a else a), max(yb) > max(ya)
+
+
+def _fold_era(ea, eb, later_is_b):
+    """Union the two eras. A year carried by BOTH names is counted ONCE -- the
+    later wording wins, since that is the era that continues. This
+    de-duplication is itself a repair: woollen yarn's fancy line reads
+    1,320,619 under both of its names in 1893, and summing them put the family
+    8.6% over its printed total."""
+    unit, t1a, oa = ea
+    _, t1b, ob = eb
+
+    def m(da, db):
+        out = dict(da)
+        for y, v in db.items():
+            if y not in out or later_is_b:
+                out[y] = v
+        return out
+    return (unit, m(t1a, t1b), m(oa, ob))
+
+
+def merge_era_variants(ser, gbp):
+    """Fold each printed line's era wordings into one series BEFORE any family
+    is proposed.
+
+    The abstract re-words lines mid-series and the country tables follow, so
+    one printed line becomes two or three payload commodities. Families are
+    built from label text, so an era change silently truncates a child's span
+    and the cross test then reports a shortfall that is not there. Woollen yarn
+    1894-99 was queued for a session as a collapse of its sub-sort origin
+    tables; on era-correct labels the family closes to the digit in 1882, 1886
+    and 1887 and nothing had collapsed at all.
+    """
+    buckets = collections.defaultdict(list)
+    for n, (u, _, _) in ser.items():
+        if head_of(n):
+            buckets[(u, head_of(n))].append(n)
+    merges = []
+    for names in buckets.values():
+        if len(names) < 2:
+            continue
+        changed = True
+        while changed:
+            changed = False
+            live = sorted(n for n in names if n in ser)
+            for i, a in enumerate(live):
+                for b in live[i + 1:]:
+                    pair = _era_pair(a, b, ser, live)
+                    if not pair:
+                        continue
+                    canon, other, later_is_b = pair
+                    if canon == b:            # keep the flag relative to canon
+                        later_is_b = not later_is_b
+                    ser[canon] = _fold_era(ser[canon], ser[other], later_is_b)
+                    gbp[canon] = gbp.get(canon, 0) + gbp.pop(other, 0)
+                    del ser[other]
+                    merges.append((canon, other))
+                    changed = True
+                    break
+                if changed:
+                    break
+    return merges
+
+
 # ------------------------------------------------------------ family proposal
 MAX_SEARCH_SIBLINGS = 8
 
@@ -257,6 +431,14 @@ def main():
         if unit and (t1 or orig):
             ser[name] = (unit, t1, orig)
             gbp[name] = float(entry.get('v') or 0)
+
+    era_merges = merge_era_variants(ser, gbp)
+    if era_merges:
+        print(f'era-wording merges: {len(era_merges)}')
+        for canon, other in era_merges[:12]:
+            print(f'    {other}  ->  {canon}')
+        if len(era_merges) > 12:
+            print(f'    ... and {len(era_merges) - 12} more')
 
     voc = {n: vocab(n) for n in ser}
     names_by_unit = collections.defaultdict(list)

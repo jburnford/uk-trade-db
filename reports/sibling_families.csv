@@ -1,10 +1,10 @@
 gbp,rule,parent,children,unit,anchor_years,anchor_close,anchor_off1pct,origin_years,origin_close,origin_off1pct,cross_years,cross_close,cross_off1pct,worst_ratio,worst_year,worst_measure,worst_parent_ratio
 615695511,TOTAL,"Sugar — Unrefined, Total","Sugar — Unrefined : Cane, And Other Sorts + Sugar — Unrefined : Beetroot",Cwt,4,4,0,18,7,8,15,6,4,1.4430,1895,cross,1.3596
 448868958,SEARCH,Sugar — Refined : Total Of,"Sugar — In Lumps And Loaves + Sugar — Other Sorts, Including Candy",Cwt,4,4,0,18,14,3,15,13,2,0.9698,1882,cross,0.9962
-351222963,UNION,Bacon And Hams,Bacon + Hams,Cwt,4,4,0,0,0,0,24,16,4,1.4213,1893,cross,
+332890874,UNION,Bacon And Hams,Bacon + Hams,Cwt,4,4,0,0,0,0,24,16,2,1.1744,1885,cross,
 212909364,UNION,"Animals, Living — Bulls, Oxen, Cows, And Calves",Oxen And Bulls + Calves + Cows,Number,3,3,0,0,0,0,24,18,2,0.9820,1890,cross,
+59782017,SEARCH,Glass,"Glass — Flint Glass + Glass — Manufactures, Unenumerated + Glass — Plate, Whether Silvered Or Not + Glass — Window And German Sheet, Including Shades And Cylinders",Cwt,0,0,0,0,0,0,4,3,0,0.9932,1874,cross,
+54127124,HEAD,Woollen Yarn,Woollen Yarn — Unenumerated + Woollen Yarn — For Fancy Purposes + Woollen Yarn — For Weaving,Lb,0,0,0,0,0,0,17,10,5,0.9874,1874,cross,
 51040208,UNION,Fruit — Oranges And Lemons,Fruit — Oranges + Lemons,Bushel,2,2,0,0,0,0,2,1,0,0.9968,1893,cross,
-49368898,SEARCH,Glass,"Glass — Flint Glass + Glass — Manufactures, Unenumerated + Glass — Plate, Whether Silvered Or Not + Glass — Window Glass (Not Being Plate Glass), And German Sheet Glass, Including Shades And Cylinders",Cwt,0,0,0,0,0,0,4,3,0,0.9932,1874,cross,
-41420644,SEARCH,Woollen Yarn,Woollen Yarn — For Fancy Purposes + Woollen Yarn — For Weaving + Woollen Yarn — Unenumerated,Lb,0,0,0,0,0,0,16,9,5,0.9874,1874,cross,
 37294209,UNION,"Copper, Ore And Regulus","Copper, Ore Of + Copper — Regulus",Ton,0,0,0,0,0,0,10,3,6,0.9444,1872,cross,
 22511650,UNION,Cutch And Gambier,Cotton Manufactures — Cutch + Gambier,Ton,0,0,0,0,0,0,4,3,0,0.9989,1872,cross,
