@@ -231,7 +231,16 @@ def main():
             tier, val = 'A', vc.most_common(1)[0][0]
         elif len(ver) == 1 or (ac and ac.most_common(1)[0][1] >= 2):
             tier = 'B'
-            val = ver[0] if ver else ac.most_common(1)[0][0]
+            # Two volumes can each be internally verified — both engines
+            # agreeing — and still disagree with each other. `ver[0]` decided
+            # those by list order, which is to say by nothing: coco-nut oil
+            # 1881 is printed 248,412 in as_1881, as_1883, as_1884 and
+            # as_1885 and 218,412 in as_1882, the origin table sums to
+            # 248,412 exactly, and the year shipped at 218,412 because
+            # as_1882's cell happened to come first. Among verified readings,
+            # take the one the corpus supports most overall.
+            val = (max(set(ver), key=lambda x: (ac[x], ver.count(x)))
+                   if ver else ac.most_common(1)[0][0])
         else:
             tier, val = 'C', ac.most_common(1)[0][0]
             review.append((flow, meas, grp, art, y,
