@@ -234,3 +234,67 @@ the volumes that spell it `Russia`. Widening the pattern would fix 1894 and
 
 **`Hams` 1898 still reads 0.8479** (1,672,294 against 1,972,299), untouched by
 this work.
+
+---
+
+# `Hams` 1898 closes: the vote preferred a lone reprint over two agreeing engines (2026-07-26)
+
+The last open item on this family read 0.8479 — 1,672,294 against an anchor of
+1,972,299, short by **300,005**. It is now 1.0000.
+
+## Where the 1898 table lives
+
+Under stale heads in both engines, which is why it was never obvious:
+
+```
+country_obs_inf  as_1898 seq 9082-9133   GUM | HAMS
+country_obs      as_1898 seq 9364        GLASS | Australia
+```
+
+and reprinted by `as_1899` in both. The payload's own copy sits under a headless
+`HAMS` group — the same promoted-article shape as the cow tables.
+
+## The proof
+
+Four independent readings of the United States cell exist, and the two from the
+contemporary volume agree:
+
+```
+as_1898  country_obs      1,851,520
+as_1898  country_obs_inf  1,851,520
+as_1899  country_obs_inf  1,591,520
+as_1899  country_obs      1,551,520   <- what the vote took
+```
+
+All four agree the value is 3,651,414. The vote took the lone outlier, and the
+same happened at Denmark (908 in both as_1898 engines, 903 in as_1899).
+
+Each volume closes one half of the block and corrupts the other, so together
+they pin it exactly:
+
+```
+as_1898 foreign   908 + 1,125 + 420 + 204 + 1,851,520 + 690 = 1,854,867   = its printed foreign TOTAL
+as_1899 British   117,428 + 4                               =   117,432   = its printed British TOTAL
+                  1,854,867 + 117,432                       = 1,972,299   = the anchor
+```
+
+Restoring the two cells closes the year to the digit:
+`1,851,520 + 117,428 + 1,125 + 908 + 690 + 420 + 204 + 4 = 1,972,299`. The
+300,000 and the 5 are exactly the two disputed cells.
+
+## Where the family stands now
+
+| year | 1892 | 1893 | 1894 | 1895 | 1896 | 1897 | 1898 | 1899 |
+|---|---|---|---|---|---|---|---|---|
+| `Hams` | 1.0000 | 1.0097 | 1.0002 | 1.0002 | 1.0000 | 1.0018 | **1.0000** | 0.9999 |
+
+Only 1893 remains over 0.1%. Both `Bacon` and `Hams` close within 0.75% in every
+year they are printed.
+
+**The class worth naming**: a cross-volume vote that treats every printing as an
+equal witness will prefer a single late reprint over two contemporary engines
+that agree. Bacon 1893/94/97 was the same shape (a lone as_1897 reading winning
+a tie) and so was copper 1888 (a lone as_1891 reading winning a tie). Three
+defects in one session with one cause. **A vote that weighted the contemporary
+volume, or simply broke ties toward engine agreement, would have caught all
+three.** That is a reconcile-level change and is not made here.

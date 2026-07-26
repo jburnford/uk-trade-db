@@ -68482,11 +68482,9 @@ HORSE,,canada,Cwts,import,1899,77.0,641.0,consensus,B,C,2,3
 HORSE,,other british possessions,Cwts,import,1899,313.0,1722.0,consensus,B,C,2,3
 HAMS,,other foreign countries,Cwts,import,1895,277.0,1074.0,consensus,B,B,2,2
 HAMS,,other foreign countries,Cwts,import,1897,281.0,998.0,consensus,B,B,2,2
-HAMS,,denmark,Cwts,import,1898,903.0,2483.0,consensus,B,C,2,3
 HAMS,,germany,Cwts,import,1898,1125.0,3523.0,consensus,B,C,2,3
 HAMS,,belgium,Cwts,import,1898,420.0,600.0,consensus,B,B,2,2
 HAMS,,spain,Cwts,import,1898,204.0,1136.0,consensus,B,B,2,2
-HAMS,,united states of america,Cwts,import,1898,1551520.0,3651414.0,consensus,B,B,2,2
 HAMS,,other foreign countries,Cwts,import,1898,690.0,2357.0,consensus,B,B,2,2
 HAMS,,canada,Cwts,import,1898,117428.0,233272.0,consensus,B,B,2,2
 HAMS,,other british possessions,Cwts,import,1898,4.0,10.0,consensus,B,B,2,2
@@ -82349,6 +82347,8 @@ OIL,"Chemical, Essential, or Perfumed",straits settlements,,import,1874,38069.0,
 BACON,,United States of America,Cwts,import,1893,2177293.0,5523447.0,human,A,A,1,1
 BACON,,United States of America,Cwts,import,1894,2561203.0,,human,A,B,1,2
 BACON,,United States of America,Cwts,import,1897,3592635.0,,human,A,B,1,2
+HAMS,,United States of America,Cwts,import,1898,1851520.0,3651414.0,human,A,A,1,1
+HAMS,,Denmark,Cwts,import,1898,908.0,2488.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
