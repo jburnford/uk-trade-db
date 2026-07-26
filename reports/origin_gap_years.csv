@@ -31,7 +31,7 @@ Paper-Making Materials — Linen And Cotton Rags,809585,7,1889 1890 1891 1892 18
 Wood And Timber — Oak,14607399,6,1894 1895 1896 1897 1898 1899
 "Stones, Marble, And Slate : Rough, Hewn Or Manufactured : (Other Than Works Of Art)",8639675,6,1889 1893 1896 1897 1898 1899
 "Seeds — Unenumerated, For Expressing Oil Therefrom",7265593,6,1872 1873 1874 1875 1876 1879
-"Varnished, Japanned Or Enamelled",4272643,6,1894 1895 1896 1897 1898 1899
+Hemp — Dressed Or Undressed,40182126,5,1872 1873 1874 1898 1899
 Oil — Oil Seed Cakes,33926835,5,1892 1893 1894 1895 1896
 Pyrites Of Iron Or Copper,27886702,5,1872 1873 1897 1898 1899
 Gutta Percha,13473083,5,1876 1877 1878 1880 1881
@@ -39,7 +39,6 @@ Gutta Percha,13473083,5,1876 1877 1878 1880 1881
 Spices — Ginger,2293290,5,1878 1879 1880 1881 1886
 Candles Of All Sorts,1776017,5,1878 1879 1880 1881 1884
 "Perfumery, And Articles Used In The Manufacture Thereof",1414281,5,1893 1894 1895 1896 1897
-"Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1355538,5,1895 1896 1897 1898 1899
 "Meal, Unenumerated",1112669,5,1895 1896 1897 1898 1899
 "Animals, Living — Swine",845785,5,1876 1877 1878 1879 1881
 "Methylic Alcohol, Not Purified So As To Be Potable",699130,5,1894 1896 1897 1898 1899
@@ -69,7 +68,7 @@ Metals And Ores — Puddled,63721,4,1896 1897 1898 1899
 "Unenumerated, Not Sweetened Or Mixed",73088906,3,1897 1898 1899
 "Flax, Dressed Or Undressed",57412975,3,1872 1873 1874
 Wheatmeal And Flour,48597275,3,1892 1893 1894
-Hemp — Dressed Or Undressed,40182126,3,1872 1873 1874
+"Nitre, Cubic (Nitrate Of Soda)",26603417,3,1892 1894 1896
 "Hides, Raw, And Pieces Thereof — Dry",21507472,3,1897 1898 1899
 Onions — Raw,15346577,3,1872 1877 1879
 Spices — Pepper,13745201,3,1889 1890 1891
@@ -81,9 +80,11 @@ Manures — Unenumerated,7610945,3,1897 1898 1899
 Rags And Other Materials For Making Paper — Linen And Cotton,6627064,3,1873 1874 1875
 Cork — Unmanufactured,5178257,3,1880 1882 1892
 Parcel Post (Goods Free Of Duty),4298039,3,1892 1898 1899
+"Varnished, Japanned Or Enamelled",4272643,3,1895 1896 1899
 Dye Woods — Unenumerated,3908895,3,1891 1898 1899
 Tar,2747196,3,1888 1898 1899
 Tin — Ore Of,1915742,3,1897 1898 1899
+"Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1355538,3,1897 1898 1899
 "Skins, Furs, And Pelts — Unenumerated : Undressed",434912,3,1897 1898 1899
 "Skins, Furs, And Pelts — In Any Way Dressed (Not Leather)",212096,3,1897 1898 1899
 Chloral Hydrate,79024,3,1897 1898 1899
@@ -105,12 +106,10 @@ Sugar — Molasses,5182584,2,1874 1885
 Woollen Yarn — For Fancy Purposes,4458294,2,1895 1897
 Fruit — Figs And Fig Cake,3536988,2,1885 1891
 Pitch,776644,2,1878 1885
-Whalefins,591849,2,1873 1881
 Husks And Shells,60480,2,1898 1899
 Caoutchouc,103714097,1,1872
 "Iron — Manufactures Of Iron Or Steel, Unenumerated",52591705,1,1892
 "Animals, Living — Sheep And Lambs",44500584,1,1887
-"Nitre, Cubic (Nitrate Of Soda)",26603417,1,1892
 Wool — Goats' Wool Or Hair,25119912,1,1896
 "Lac, Seed, Shell, Stick, And Dye",23761989,1,1885
 Dye Woods — Logwood,21269545,1,1899
@@ -129,6 +128,7 @@ Zinc — Ore Of,3349694,1,1892
 Hats Or Bonnets — Of Felt,2346884,1,1888
 Paper — Printed Or Coated,1485868,1,1894
 Tobacco — Other Sorts,1163809,1,1899
+Whalefins,591849,1,1881
 "Shot, Large And Small",91790,1,1896
 "Milk And Cream, Fresh Or Preserved, Other Than Condensed Milk",58713,1,1894
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",12207,1,1893

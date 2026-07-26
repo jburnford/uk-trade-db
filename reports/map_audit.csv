@@ -850,16 +850,11 @@ NOVALUE,0,"Arms And Ammunition — Rockets And Other Combustibles Of War, Andamm
 NOVALUE,0,"Arms And Ammunition — Rockets And Other Combustibles Of War, &C., And Ammunition, Unenumerated",0
 NOVALUE,0,Apparel And Stores,0
 NOVALUE,0,Apparel And Slops,0
+ANCHOR-over,4.451,"Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1355538
 ANCHOR-over,2.017,Collodium,4517460
 ANCHOR-over,1.868,"Kiln-Dried, Roasted, Or Ground",12855
 ANCHOR-over,1.683,Wine — White,77056561
 ANCHOR-over,1.363,Saltpetre (Nitrate Of Potash),8862101
-ANCHOR-under,0.485,"Varnished, Japanned Or Enamelled",4272643
-ANCHOR-under,0.226,"Ivory — Teeth, Elephants', Sea Cow, And Sea Horse",364764
-ANCHOR-under,0.166,"Skins, Furs, And Pelts — Sheep, Undressed",18458529
-ANCHOR-under,0.06,Woollen Yarn,162387
-ANCHOR-under,0.036,Hides — Raw,917765
-ANCHOR-under,0.024,"Flax, Dressed Or Undressed",57412975
 MONO,36631940,Diamonds,36631940
 MONO,1567972,"Animals, Living — British North America",1567972
 MONO,518420,Flax And Hemp — To United States Of America,518420
@@ -912,6 +907,11 @@ MONO,2517,"Tobacco — Red, In Bottles : Sparkling : Other Sorts",2517
 MONO,1064,Chicory — Champagne : Burgundy,1064
 MONO,1056,Silk Manufactures — To Australasia,1056
 MONO,476,Cork — Manufactured,476
+ANCHOR-under,0.374,"Varnished, Japanned Or Enamelled",4272643
+ANCHOR-under,0.226,"Ivory — Teeth, Elephants', Sea Cow, And Sea Horse",364764
+ANCHOR-under,0.166,"Skins, Furs, And Pelts — Sheep, Undressed",18458529
+ANCHOR-under,0.06,Woollen Yarn,162387
+ANCHOR-under,0.036,Hides — Raw,917765
 RESID,5991391,Copper,5991391
 RESID,2608319,Whalebone (Whalefins) — Whale Fisheries,2608319
 RESID,962654,Iron — Leather Manufacturers,962654

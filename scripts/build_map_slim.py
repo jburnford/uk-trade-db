@@ -233,6 +233,23 @@ quantity_as_value = []   # national VALUE lines that are really the quantity
 quality = []             # (commodity, [flag,...]) for the audit report
 unit_alias = []          # origin/anchor unit labels that measure the same thing
 unit_mismatch = []       # ...and those that do not, so the anchor is dropped
+unit_era = []            # a printed unit CHANGE mid-series, converted (below)
+
+# Definitional conversions between printed units. Only these: an exact,
+# by-definition factor is arithmetic, anything else would be an estimate.
+UNIT_FACTOR = {('Cwt', 'Ton'): 20, ('Lb', 'Cwt'): 112, ('Lb', 'Ton'): 2240,
+               ('Pairs', 'Dozen Pairs'): 12, ('Oz Troy', 'Lb'): 12}
+
+
+def unit_factor(frm, to):
+    """Multiplier taking a quantity in `frm` to one in `to`, or None."""
+    if frm == to:
+        return 1.0
+    if (frm, to) in UNIT_FACTOR:
+        return 1.0 / UNIT_FACTOR[(frm, to)]
+    if (to, frm) in UNIT_FACTOR:
+        return float(UNIT_FACTOR[(to, frm)])
+    return None
 reparse_dropped = []     # one printed row read twice under two spellings
 twin_origins = []        # ...and read twice under two DIFFERENT places (logged)
 gap_log = []             # years inside the origin span with no origin table
@@ -250,6 +267,33 @@ for n in wl:
             if u != '?':
                 ucnt[u] += len(s)
     dom = ucnt.most_common(1)[0][0] if ucnt else '?'
+    # ---- a printed unit CHANGE mid-series ----------------------------------
+    # The volumes re-denominate a line and go on printing it: jute moves from
+    # hundredweights to tons in the 1887 volume, flax and hemp the other way in
+    # 1893, boots and gloves from pairs to dozen pairs in 1878. The quantity
+    # axis takes only the DOMINANT unit, so the other era's cells were silently
+    # dropped -- jute showed fifteen years of value (GBP2.5-4.5M a year) with no
+    # tonnage at all, and its 1868-86 anchor went with them.
+    #
+    # Converting is arithmetic, not estimation: twenty hundredweight ARE a ton.
+    # But it is only applied to years the dominant unit does not reach, so a
+    # year holding both units -- which means a garbled header rather than a
+    # regime change -- is left exactly as it was and logged. That guard is what
+    # keeps this from double-counting the overlap (jute's 1883-86 Ton cells sit
+    # inside the Cwt era and come to 922 tons against a 5.9M cwt year).
+    dom_years = set()
+    for c, byu in e['c'].items():
+        if c == '§TOTAL' or '(' in c:
+            continue
+        for cell in byu.get(dom, ()):
+            if cell[1]:
+                dom_years.add(cell[0])
+    conv = {}                       # unit -> factor, for foreign-unit years
+    if dom != '?':
+        for u in ucnt:
+            f = unit_factor(u, dom)
+            if u != dom and f:
+                conv[u] = f
     # ---- Tier-1 anchor quantity per year (authoritative national total) ----
     # The anchor must be ONE unit. The old code summed every §TOTAL unit
     # whenever the origins carried no unit, which added a value series to a
@@ -324,6 +368,95 @@ for n in wl:
             unit_mismatch.append((n, dom, au, round(med, 2)))
     else:
         t1 = {}
+    # ...and the national line changes unit in the same volume the country
+    # tables do, so the anchor needs the same treatment: jute's 1868-86 total
+    # is printed in hundredweights and was being thrown away with them, which
+    # left the recovered origin years unanchored and still unmeasurable. Fill
+    # only years the dominant unit does not already print - a year with two
+    # readings keeps the one in its own unit.
+    #
+    # The two sides have to be guarded the SAME way or the fix invents a
+    # defect: jute 1883 holds 922 junk tons beside 7.4M hundredweights, so the
+    # origin side (rightly) declines to convert it, and an anchor filled from
+    # the hundredweight line would have made a year that merely had no anchor
+    # read 0.0025 of one. A year printing both units is left wholly alone.
+    mixed = {y for y in dom_years
+             if any(cell[0] == y and cell[1]
+                    for c2, byu2 in e['c'].items()
+                    if c2 != '§TOTAL' and '(' not in c2
+                    for u2 in conv for cell in byu2.get(u2, ()))}
+    #
+    # And the label is not evidence. 'Metal — Unenumerated, Unwrought' prints
+    # 2,699 under a "Cwt" header for 1892 beside 2,469 under a "Ton" header for
+    # 1896, with origins of 2,878 tons: the header is an OCR error and the
+    # figures were always tons, so dividing by twenty invents a 21x
+    # over-count out of a commodity that had no flag at all. Decide by the
+    # numbers -- take whichever reading, converted or as printed, the origin
+    # tables of those same years actually support, and if neither does, leave
+    # the year unanchored rather than mis-scale it.
+    if t1 and dom != '?':
+        t1, added = dict(t1), []
+        oq = collections.Counter()
+        for c2, byu2 in e['c'].items():
+            if c2 == '§TOTAL' or '(' in c2:
+                continue
+            for u2, ser2 in byu2.items():
+                fo = 1.0 if u2 == dom else conv.get(u2)
+                for cell in ser2:
+                    if cell[1] and fo:
+                        oq[cell[0]] += cell[1] * fo
+        for u, ser in t1_by_u.items():
+            f = unit_factor(u, dom) if u not in ('?', 'Value') else None
+            if u == dom or not f or f == 1.0:
+                continue
+            # Decided PER YEAR, because an era header outlives the change it
+            # marks: coffee's "Lbs" national line runs 127-192 million for
+            # 1866-72 and then prints 1,637,523 for 1873, which is already
+            # hundredweights under a stale header. One verdict for the whole
+            # unit gets that year wrong by a factor of 112 whichever way it
+            # falls. Years with no origin table of their own follow the
+            # majority verdict of the years that have one.
+            fill = [y for y, q in ser.items()
+                    if y not in t1 and q and y not in mixed]
+            verdict, votes = {}, collections.Counter()
+            for y in fill:
+                if not oq.get(y):
+                    continue
+                rc, rr = oq[y] / (ser[y] * f), oq[y] / ser[y]
+                pick = f if abs(rc - 1) < abs(rr - 1) else 1.0
+                if abs((rc if pick != 1.0 else rr) - 1) <= 0.25:
+                    verdict[y] = pick
+                    votes[pick] += 1
+            if not votes:
+                # keep this out of unit_reconciliation.csv, which is about
+                # origin-vs-anchor labels; this is an era anchor with no
+                # origin table in any of its years to judge it by
+                unit_era.append((n, dom, f'anchor {u} (REJECTED, nothing to '
+                                 f'judge it by)', '', 0))
+                continue
+            default = votes.most_common(1)[0][0]
+            for y in fill:
+                t1[y] = ser[y] * verdict.get(y, default)
+            added.extend(fill)
+            for pick, tag in ((f, f'/{1/f:g}'),
+                              (1.0, f'label only, figures already {dom}')):
+                ys = sorted(y for y in fill if verdict.get(y, default) == pick)
+                if ys:
+                    unit_era.append((n, dom, f'anchor {u} ({tag})',
+                                     ';'.join(str(y) for y in ys), len(ys)))
+    if conv:
+        recovered = sorted(y for y in set().union(
+            *[{cell[0] for c2, byu2 in e['c'].items()
+               if c2 != '§TOTAL' and '(' not in c2
+               for cell in byu2.get(u2, ()) if cell[1]} for u2 in conv])
+            if y not in dom_years)
+        if recovered:
+            unit_era.append((n, dom, '+'.join(sorted(conv)),
+                             ';'.join(str(y) for y in recovered), len(recovered)))
+            unit_note = ((unit_note + '; ') if unit_note else '') + (
+                f'the printed unit changes mid-series - '
+                f'{", ".join(sorted(conv))} converted to {dom} for '
+                f'{min(recovered)}-{max(recovered)}')
     # ---- aggregate to (label, year) -> [value, qty(dom unit), bestRank] ----
     # label-variant duplicates are canonicalised (Chili -> Chile) so the same
     # place is never summed under two spellings.
@@ -374,6 +507,8 @@ for n in wl:
                 cell[0] += v
                 if u == dom:
                     cell[1] += q
+                elif u in conv and y not in dom_years:
+                    cell[1] += q * conv[u]
                 cell[2] = min(cell[2], r)
     # ---- parent<->child de-duplication (the coast/subtotal double-count) ----
     # A printed origin table often carries BOTH a parent total ('United States
@@ -781,6 +916,13 @@ with open('reports/unit_reconciliation.csv', 'w', newline='') as f:
                 + [r + ('not comparable, anchor dropped',) for r in unit_mismatch])
 print(f'unit labels reconciled: {len(unit_alias)} same-unit, '
       f'{len(unit_mismatch)} incomparable -> reports/unit_reconciliation.csv')
+with open('reports/unit_era_changes.csv', 'w', newline='') as f:
+    w = csv.writer(f)
+    w.writerow(['commodity', 'unit_shown', 'converted_from', 'years', 'n_years'])
+    w.writerows(sorted(unit_era, key=lambda r: (r[0], r[2])))
+print(f'printed unit changes converted: {len(unit_era)} series '
+      f'({sum(r[4] for r in unit_era)} year-cells) '
+      f'-> reports/unit_era_changes.csv')
 print(f'over-cap value cells dropped: {len(value_dropped)} '
       f'({len({r[0] for r in value_dropped})} commodities) -> reports/value_cap_cells.csv')
 with open('reports/reparsed_origin_cells.csv', 'w', newline='') as f:

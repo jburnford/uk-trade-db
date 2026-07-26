@@ -90,12 +90,13 @@ two tables list the same origins in the same year — and they do — the
 
 ## Found while checking, not repaired
 
-**`Jute` reads exactly twice its anchor for thirteen consecutive years.** The
-Tons series 1887–99 runs 1.9922, 1.9978, 1.9969, 1.9993, 1.9980, 1.9914, 1.9983,
-1.9959, 1.9987, 1.9949, 1.9922, 1.9967, 1.7712. A ratio that sits on 2.00 for
-thirteen years is a duplicated block or a parent counted beside its children, not
-a measurement error, and it is the single largest unexplained pattern this pass
-turned up.
+**`Jute` reads exactly twice its anchor for thirteen consecutive years — in the
+payload.** The Tons series 1887–99 runs 1.9922 … 1.9993. *(Resolved the same
+day: it is `British East Indies` 337,303 counted beside its own drill-down
+`Bengal` 336,728, and the map's parent/child de-duplication already removes it —
+`map_slim` closes at 0.9982–1.0000 for those years. The 2.00 is a payload-level
+artefact `reconcile_baseline.py` sees and the shipped map does not. Jute's real
+defect was the unit change; see `reports/unit_change_findings.md`.)*
 
 **`Cured, Sardines` 1895 carries the same foreign body as 1894** — an anchor of
 1,082,588 against origins of 140,187 — and this report cannot see it, because
