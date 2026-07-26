@@ -146,3 +146,79 @@ The `ANIMALS, LIVING` parse fuses the Channel Islands into Other British
 Possessions — 1894's 153 is 117 + 36, 1895's 1,685 is 1,554 + 131 — so where
 both parses survive the fold the Channel Islands is counted twice. Worth 131–140
 head a year, plus an Australasian sub-entry pair in 1895.
+
+---
+
+# The four cow tables were already recovered; the 1881 gap is one cell (2026-07-26)
+
+## The queued item is stale — strike it
+
+"1876, 1878, 1881, 1882 — `Cows` has no origin table at all" was true when
+written and is not true now. All four tables are in the payload and the family
+closes with all three children present in every one of those years:
+
+```
+1876  271,576 v 271,576   1.0000     1878  253,432 v 253,462   0.9999
+1881  316,374 v 319,374   0.9906     1882  343,690 v 343,699   1.0000
+```
+
+They were recovered as a side effect of session 9's oxen fold. What the parser
+had done is worth recording, because it is a class: **it lost the
+`ANIMALS, LIVING` group head in as_1876/78/81/82 and promoted the section's
+first article to group**, so `country_obs` carries `article_group='Cows'` with a
+null article (the cow table itself) and `Calves`, `Horses`, `Sheep and Lambs`,
+`Swine`, `Unenumerated` hanging beneath it as though they were sub-sorts of
+cows. Two of those escaped into the payload as commodities of their own and are
+still there: **`Cows — Horses` (GBP2.4M, 1876/78/81/82) and `Cows — Swine`
+(GBP0.5M)**. They are the horse and swine tables of those four years wearing the
+wrong head — a curation lead, not adjudicated here.
+
+The predicted residuals were 58,520 / 29,384 / 34,056 / 45,052. The tables
+actually read 58,520 / 29,354 / 31,056 / 45,043 — 1876 matching the prediction
+to the digit.
+
+## 1881 is short by exactly 3,000, and it is one cell in the oxen block
+
+Not cows. `ANIMALS LIVING|Oxen and Bulls` in as_1881, seq 5–16:
+
+```
+  countries sum   248,635
+  printed TOTAL   251,635        <- 3,000 more than its own rows
+  251,635 + 36,683 calves + 31,056 cows = 319,374 = the parent's T1, EXACTLY
+```
+
+The parent total is printed identically by as_1881 through as_1885, so 251,635
+is confirmed twice over and the payload's 248,635 is 3,000 short.
+
+**It is a misread quantity, not a dropped row**, and the value column proves it:
+the same eleven countries sum to **5,475,177**, the block's printed value total,
+to the digit. A missing country would take value with it.
+
+Both engines were consulted and neither settles which cell. They agree on every
+quantity and on both totals, differing only at France (2,499 Chandra / 2,199
+Infinity) — a 300 difference that cannot make 3,000.
+
+Unit price narrows it to three. With the value column trustworthy, the block's
+prices run GBP18.65–24.83, and adding 3,000 head to each candidate gives:
+
+```
+  United States          GBP22.86    plausible
+  British North America  GBP20.41    plausible
+  Denmark                GBP19.87    plausible
+  Portugal / Germany     GBP17.40 / 17.85   marginal
+  Sweden / Spain         GBP15.26 / 15.80   below the cluster
+  France / Holland / Norway / Other   GBP11.28 and below — ruled out
+```
+
+**A page-image candidate**: as_1881, the Oxen and Bulls import table, one of the
+United States / British North America / Denmark rows. Three candidates is not a
+repair, and guessing between them is exactly the coincidence this project
+refuses.
+
+## Settled in passing
+
+**Infinity's United States value for 1881 oxen is wrong.** It reads 2,100,386
+against Chandra's 2,400,386, and only Chandra's closes the block's printed value
+total. Chandra's France quantity (2,499) is also the more plausible of the two on
+price — GBP24.83 against GBP28.22 for a block topping out at GBP24.83 — but the
+value column cannot settle that one, so it stays open.
