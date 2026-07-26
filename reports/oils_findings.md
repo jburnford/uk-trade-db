@@ -1006,3 +1006,95 @@ plus:
    against one value of 816,399.
 4. `Oil — Chemical, Essential, Or Perfumed` 1874 at 0.780 and
    `Oil Seed Cake — Linseed Cake` 1899 at 0.961.
+
+## Sixth pass: the vote itself, and the instruments' own queue
+
+### `ver[0]` was deciding which printing to believe
+
+Coco-nut oil 1881 is printed 248,412 cwt in as_1881, as_1883, as_1884 and
+as_1885 and 218,412 in as_1882, and the origin table sums to 248,412
+exactly. It shipped at 218,412 — the commodity read 1.137 for the year and
+`anchor_disagreement.py` flagged it on the first run.
+
+The cause was in the vote. Tier B took `ver[0]`, the first cell in list
+order, whenever there were verified readings without a verified majority.
+"Verified" means the two OCR engines agreed on that printing, which says
+nothing about whether the printing is right, so two internally consistent
+volumes can disagree and the tiebreak was **nothing at all**. Among verified
+readings it now takes the one the corpus supports most.
+
+**224 of 51,268 consensus rows change**, and the largest are a class this
+session had been patching downstream — a value line that is really the
+quantity line. Wool 1888's "value" was 634,943,685, the pounds of wool, and
+is now GBP25,849,918; tobacco unmanufactured 1888 46,679,898 -> GBP1,464,557;
+woollen yarn 1884 -> GBP1,881,295; pepper 1888 -> GBP917,800. All four were in
+`reports/quantity_as_value.csv`, which drops from 68 anchors to 56. Fixing it
+in the vote beats suppressing it in the map. Coco-nut oil 1881 goes to 1.000
+with no override needed.
+
+### Eight anchors the country tables settle
+
+`reports/anchor_disagreements.csv` listed 20 years where the origin sum lands
+on a LOSING reading. Applied the eight where it lands **exactly** and the two
+readings are **one digit apart** — the class this corpus produces:
+
+| year | line | vote | printed elsewhere | origins |
+|---|---|---|---|---|
+| 1884 | silk, raw | 4,322,702 | **4,522,702** | 4,522,702 |
+| 1880 | yeast, dried | 268,123 | **208,123** | 208,123 |
+| 1874 | yeast, dried | 163,811 | **153,811** | 153,811 |
+| 1899 | bottles | 1,206,959 | **1,266,959** | 1,266,959 |
+| 1872 | gutta percha, raw | 41,597 | **44,597** | 44,597 |
+| 1897 | brimstone | 449,028 | **419,028** | 419,028 |
+| 1898 | moss litter | 89,449 | **80,449** | 80,449 |
+| 1898 | snuff | 6,502 | **6,902** | 6,902 |
+
+All eight close after the override. Left alone: four cotton-yarn years and
+jute 1886, where the two candidates differ by 2-20x rather than a digit — a
+different line, not a misread one — and three where the origins land near but
+not on the loser (tobacco 1894, cured sardines 1894, paper hangings 1890).
+
+Note what this queue is: the vote fix above CAUSED two of these (yeast dried
+1874 and 1880 changed hands), and the instrument caught them on the next run.
+That is the loop working.
+
+### Bengal is not foreign to indigo
+
+The profile-outlier suppression asks whether an origin looks like it belongs
+to a commodity, and it exists for years with no anchor. Where there was one
+it still fired, and the origin most likely to look unfamiliar is the one that
+dominates a single year: **Bengal was being suppressed from Indigo 1882**
+(60,888 tons of a printed 95,272) and **United States Of Colombia from
+Peruvian bark 1881** (70,944 of 125,358). The archetypal source of each. The
+cell is now kept whenever dropping it moves the year away from its printed
+total. Indigo closes in all eleven of its years, Peruvian bark in eight of
+ten, and 167 suppressions still stand.
+
+### The mixed export blocks, closed by their own arithmetic
+
+The fifth pass left these deliberately: one lost heading over the import,
+export and re-export tables, so rejecting the block would take the import
+table with it. It only would if the import table were not parsed elsewhere,
+and it usually is — butter 1880's primary parse closes on its printed
+2,326,305 cwt. **A gap-filler with no gap to fill can only be contributing
+the export rows.** Gated on the primary block summing EXACTLY to the import
+national line, which makes it self-validating. Rejected cells 3,306 ->
+4,385; zero years went from exact to not-exact.
+
+### One thing tried and reverted
+
+A row that equals the SUM OF ITS SIBLINGS is a Total row whatever it is
+called, and that would catch the ones the exact anchor test just misses — the
+1872 nuts-and-kernels block ends with 'West Coast of Africa' 27,818 tons
+against a printed 27,848, 0.1% away and therefore not caught, while its eight
+sub-entries come to 27,577 and the commodity reads 1.75x its own total.
+Implemented, measured, **reverted**: it cost two exact years (Jute 1894 and
+1895) for one gained, because dropping a cell changes what the parent/child
+pass sees afterwards and its exhaustive choice flips. The defect is real and
+still open; the rule as written is not the way to fix it.
+
+### Where the family and the corpus stand
+
+    fats and oils   quantity 74%, value 75%, BOTH 55% of 446 years
+    shipped map     quantity 64.3%, BOTH 50.4% of 3,791 years
+                    (from 60.8% / 47.3% at the start of the fifth pass)

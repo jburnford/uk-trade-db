@@ -81,7 +81,7 @@ Closure cannot see these: relabelling preserves the sum.
 | as_1887 | 1887 | OIL \| Animal | United States of America | q | 115,844 | 165,844 | no |
 | as_1874 | 1874 | OIL \| Chemical, Essential, or Perfumed | Ceylon | q | 68,069 | 38,069 | no |
 
-## Anchors the volumes disagree about (712, of which 533 by more than 0.5% or with an origin-sum verdict; 1 where the origin sum backs a losing reading)
+## Anchors the volumes disagree about (712, of which 533 by more than 0.5% or with an origin-sum verdict; 0 where the origin sum backs a losing reading)
 
 - 1896 `animals living | butter` (quantity): vote 3,037,718, spread 92.0% — 3,037,718 [8: as_1896/ch,as_1896/inf,as_1897/ch,as_1898/ch,as_1899/ch,tn_1899/ch,tn_1899/inf,tn_1901/inf] | 24
 - 1893 `animals living | butter` (quantity): vote 2,327,474, spread 23.39% — 2,327,474 [8: as_1893/ch,as_1894/ch,as_1895/ch,as_1896/ch,as_1896/inf,as_1897/ch,tn_1895/ch,tn_1895/inf] | 2,3
