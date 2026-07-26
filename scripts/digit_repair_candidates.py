@@ -23,6 +23,15 @@ Runs on both columns: a quantity short by a digit and a value short by a
 digit are the same defect in different columns, and value_closure.py says
 the value column is the one nobody has been testing.
 
+**A block closing is not the same as the commodity-year closing.** Three of
+fourteen repairs applied from this report made their commodity-year WORSE
+even though each closed its own printed segment exactly: margarine 1898's
+block is 9,000 cwt short and the year was already summing to its national
+total, because another source supplies those 9,000. Both cannot be right,
+and the block arithmetic alone cannot say which. So after applying a batch,
+re-measure per commodity-year and keep only what did not regress — the
+anchor outranks the segment, here as everywhere else in this pipeline.
+
     python3 scripts/digit_repair_candidates.py [--family oil,tallow]
 
   -> reports/digit_repair_candidates.csv
@@ -144,6 +153,47 @@ def main():
                 rates = sorted(m['v'] / m['q'] for m in members
                                if m['q'] and m['v'])
                 rate = rates[len(rates) // 2] if rates else 0
+
+                # ---- peer-swap: the other engine's reading closes it ------
+                # Stronger than any hypothesis about a digit, and not
+                # restricted to a one-digit difference: the delta is absorbed
+                # by swapping in a number that is actually printed on the
+                # page in the other key. Linseed cake is full of these — six
+                # of its seven years have both engines a few units apart in
+                # the foreign segment, and in 1895 Infinity closes both
+                # segments to the digit where Chandra is 30 short.
+                peer = 'infinity' if eng == 'chandra' else 'chandra'
+                for m in members:
+                    for pq, pv in other.get((peer, vol, y, akey(a),
+                                             m['country']), ()):
+                        cand = pq if col == 'q' else pv
+                        if abs(cand - m[col]) < 0.5 or cand <= 0:
+                            continue
+                        if abs(s - m[col] + cand - printed) > 0.5:
+                            continue
+                        oq, ov = (cand, m['v']) if col == 'q' else (m['q'], cand)
+                        pb = (m['v'] / m['q']) if m['q'] and m['v'] else 0
+                        pa = (ov / oq) if oq and ov else 0
+                        out.append({
+                            'shipped_as_read': (y, round(m['q']), round(m['v']))
+                            in shipped,
+                            'total_may_be_the_error': False,
+                            'score': 5, 'column': col, 'engine': eng,
+                            'volume': vol, 'year': y, 'group': g, 'article': a,
+                            'country': m['country'], 'unit': m['unit'],
+                            'reads': round(m[col]), 'should_be': round(cand),
+                            'q_read': round(m['q']), 'v_read': round(m['v']),
+                            'q_fixed': round(oq), 'v_fixed': round(ov),
+                            'delta': round(cand - m[col]), 'digit': 'peer-swap',
+                            'n_members': len(members),
+                            'printed_total': round(printed),
+                            'other_engine_agrees': True,
+                            'price_improves': bool(rate and pb and pa and
+                                                   abs(pa - rate) < abs(pb - rate)),
+                            'price_before': round(pb, 2),
+                            'price_after': round(pa, 2),
+                            'block_rate': round(rate, 2),
+                        })
                 for m in members:
                     if not m[col]:
                         continue
