@@ -992,7 +992,68 @@ def main():
                     del c[parent]
         return n
 
+
+    # ---- one printed table whose rows landed under several unit labels. The
+    # year's cells are all in the SAME measure and only the labels differ, so
+    # the raw sum across unit keys is the printed national total EXACTLY -
+    # which is the proof, because genuinely mixed measures cannot do that (a
+    # Ton figure is a twentieth of its Cwt equivalent; adding them and landing
+    # on the total to the digit does not happen by chance). `Metal - Wrought Or
+    # Manufactured` 1874 is the specimen: Cwt 119,515 + unitless 872,745 + Ton
+    # 61,759 = 1,054,019, the printed figure, while the year reads 0.11 because
+    # only the Cwt eighth is counted. `Jute` 1883 is the same shape and worse -
+    # 116 against a printed 7,385,028.
+    #
+    # heal_units cannot see this: its magnitude test compares a country's
+    # minority unit against that country's OWN majority, and here the whole
+    # year is split, so no country has a majority to fold toward.
+    #
+    # EXACT equality only, never "close". A near miss is noise plus a
+    # coincidence, and this pass rewrites units - the most expensive thing to
+    # get wrong. Measured on the corpus: 14 commodity-years qualify, 5 more
+    # come within 0.1% and are deliberately left alone.
+    def heal_split_year_units(store):
+        n = 0
+        for s in store.values():
+            c = s['c']
+            t1 = c.get(TK)
+            if not t1:
+                continue
+            unit = max(t1, key=lambda u: len(t1[u]))
+            anch = {cell[0]: cell[1] for cell in t1[unit] if cell[1]}
+            per_year = {}
+            for cty, byu in c.items():
+                if cty == TK or '(' in cty:
+                    continue
+                for u, cells in byu.items():
+                    for cell in cells:
+                        if cell[1]:
+                            per_year.setdefault(cell[0], []).append((cty, u, cell))
+            for y, items in per_year.items():
+                t = anch.get(y)
+                if not t or len({u for _, u, _ in items}) < 2:
+                    continue
+                in_unit = sum(cell[1] for _, u, cell in items if u == unit)
+                total = sum(cell[1] for _, _, cell in items)
+                if in_unit >= t or round(total) != round(t):
+                    continue
+                moves = [(cty, u, cell) for cty, u, cell in items if u != unit]
+                # a country that already holds an anchor-unit cell for this
+                # year would collide: two printed rows, not one mislabelled
+                # one. Abandon the whole year rather than merge them.
+                held = {cty for cty, u, _ in items if u == unit}
+                if any(cty in held for cty, _, _ in moves):
+                    continue
+                for cty, u, cell in moves:
+                    c[cty][u] = [x for x in c[cty][u] if x is not cell]
+                    if not c[cty][u]:
+                        del c[cty][u]
+                    c[cty].setdefault(unit, []).append(cell)
+                    n += 1
+        return n
+
     n_agg = drop_aggregate_beside_members(comms)
+    n_split = heal_split_year_units(comms)
 
     for s in comms.values():                     # better rank first per year
         for units in s['c'].values():
@@ -1240,6 +1301,7 @@ def main():
     # cells under a label that carries an anchor can the year's arithmetic see
     # them. Same guard, so re-running it cannot make a year worse.
     n_agg += drop_aggregate_beside_members(payload)
+    n_split += heal_split_year_units(payload)
     n_tunton += fold_tun_ton(payload)
     n_heal2 = heal_by_anchor(payload)
     if n_heal2:
@@ -1276,6 +1338,7 @@ def main():
           f'(sticky repaired: {n_fixed:,}; fuzzy-merged: {n_fuzzy}; '
           f"unit-healed: {n_healed:,}; coast-rollup: {n_coast:,}; "
           f"coast-sibling folds: {n_sib:,}; aggregate-beside-members: {n_agg:,}; "
+          f"split-year units: {n_split:,}; "
           f"Tun/Ton: {n_tunton:,}; "
           f'deduped: {n_dedup:,})  '
           f'MB: {len(js) / 1e6:.2f}  -> {out}')

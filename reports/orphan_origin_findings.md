@@ -700,3 +700,78 @@ written for, in a different shape.
 - `Metal — Unenumerated, Wrought Or Manufactured` is a **different line** and was
   left alone: its Ton values for the same years run 364-687 against totals in the
   hundreds of thousands.
+
+---
+
+# Round 44 — one table, several unit labels
+
+Round 43 found `Metal — Wrought Or Manufactured` 1874 reading 0.11 with nothing
+missing: its cells were 119,515 under `Cwt`, 872,745 with no unit and 61,759
+under `Ton`, and the three summed to the printed 1,054,019 exactly. This round
+asks how often that happens.
+
+## The measurement
+
+Of **4,337 commodity-years that have both origin cells and a printed total**,
+the anchor-unit sum misses while the **raw sum across every unit key hits**:
+
+- **14 exactly to the digit**
+- 5 more within 0.1% — **deliberately left alone**
+
+Small, but the test is a proof rather than a heuristic. Genuinely mixed measures
+cannot land on the printed total by chance: a Ton figure is a twentieth of its
+Cwt equivalent, so adding them and hitting the total to the digit does not
+happen. Equality *is* the evidence that all the numbers were in one measure and
+only the labels differed.
+
+`heal_units` is blind to it by construction — its magnitude test compares a
+country's minority unit against **that country's own** majority, and here the
+whole year is split, so no country has a majority to fold toward.
+
+## The pass
+
+`heal_split_year_units` in `build_viz_payload`, run in both places the
+aggregate pass runs. It relabels a year's non-anchor-unit cells to the anchor
+unit **only when the cross-unit sum equals the printed total exactly**, only
+when more than one unit is present, and only when the anchor-unit sum is short.
+A country that already holds an anchor-unit cell for that year would be two
+printed rows rather than one mislabelled one, so the whole year is abandoned
+rather than merged.
+
+**Exact only, never "close".** This pass rewrites units, which is the most
+expensive thing to get wrong; the five near misses are noise plus a coincidence
+and are not worth the risk.
+
+## Result
+
+137 cells relabelled. Full corpus ratio diff: **19 commodity-years changed, 19
+closer, 0 further.**
+
+| | before | after |
+|---|---|---|
+| `Jute` 1883 | **0.0000** (116 against a printed 7,385,028) | **1.0000** |
+| `Metal — Wrought Or Manufactured` 1874 | 0.1134 | **1.0000** |
+| `Watches` 1876, 1878, 1882 | 0.0000 | **1.0000** |
+| `Drugs, Unenumerated` 1872, 1873, 1875, 1877 | 0.0000 | **1.0000** |
+| `Straw` 1888 | 0.7509 | **1.0000** |
+| `Dye Woods — Unenumerated` 1872-74 | 0.92-0.95 | **1.0000** |
+
+```
+exact01  2,678 -> 2,694      nodata  5,830 -> 5,820
+within 0.1%   27.1% of commodity-years / 47.8% GBP
+within 5%     36.2% of commodity-years / 65.5% GBP
+```
+
+`Jute` 1883 is the one to notice: a **7,385,028 cwt** year that read as
+essentially empty, restored to the digit, on a commodity this project has
+already spent two sessions on.
+
+## Recorded: the pass exposes duplicates for the dedup to take
+
+Four `Drugs, Unenumerated` years land near but not on 1.0 — 1876 at 0.86, 1878
+at 0.98, 1884 at 1.01 — although they qualified on exact equality. Relabelling
+the units makes two copies of one row visibly the same row, and
+`drop_shifted_duplicates`, which runs later, then removes one. The year no
+longer sums to its total because it was summing a duplicate before. Every one of
+them still moved closer, so the interaction is left as it is and noted rather
+than tuned.
