@@ -1503,3 +1503,60 @@ outside the repair's years entirely; the knock-on runs through the payload's
 own passes, which see different inputs (`coast-rollup` 2,424 -> 2,427). Three
 quarters of one per cent on one year, against five years rescued from 68× to
 131×, and recorded rather than chased.
+
+---
+
+# Round 56 — `Collodium`: diagnosed, repaired, reverted
+
+Round 55's logwood pattern holds here too. **`as_1897` carries 381 rows under a
+`COLLODIUM` head** (seq 26380-26760) for a commodity whose entire world trade is
+**953 to 1,942 gallons a year**. From seq 26404 the figures are Germany 86,297
+and Holland 170,342; the payload years read **655× to 1,349×**.
+
+**The real table is the first nineteen rows**, and it is unmistakable:
+
+```
+26380-26384  Germany                  1,595 |   999 |   947 | 1,310 | 1,560
+26385-26389  Other Foreign Countries     44 |     6 |    11 |     6 |     9
+26390-26394  TOTAL   (foreign)        1,042 | 1,005 |   958 | 1,316 | 1,575
+26395-26396  New Zealand / Other British Possessions
+26397-26398  TOTAL   (British)
+26399-26403  TOTAL   (grand)          1,042 | 1,270 |   953 | 1,319 | 1,575
+                        Tier 1:       1,942 | 1,270 |   953 | 1,819 | 1,575
+```
+
+**1894, 1895 and 1897 are the Tier-1 figures to the digit.** 1893's grand total
+reads 1,042 where Tier 1 says 1,942, and 1896's 1,319 where Tier 1 says 1,819 —
+one 0-for-9 and one 3-for-8, on one side or the other.
+
+## The repair was applied and then reverted
+
+A `group_repairs` row superseding 1893-97 and re-admitting seq 26380-26403
+produced **7 commodity-years closer and 7 further**, because the repaired rows
+did not land on `Collodium` at all. They landed on **`Collodion`** — a second
+payload label for the same commodity, spelled the other way — which already had
+origins, so the years **double-counted**: 1895 came out at **2.0105**, exactly
+twice the 1.0052 the arithmetic predicts.
+
+`Collodium` went to nodata in every year and `Collodion` appeared carrying the
+data. That is the round-53 label-split class again, this time defeating a repair
+rather than a vote.
+
+Reverted. The full diff against the pre-repair payload shows **zero
+commodity-years different** — a clean revert, verified rather than assumed.
+
+## What is queued, with everything needed to finish it
+
+- The block is glue and **the real table is `as_1897` seq 26380-26403**.
+- The repair cannot be applied until the **`Collodium` / `Collodion` split is
+  resolved**, because `new_group`'s signature routes to the wrong one. Resolving
+  it is a curation `fold`, and it must come first.
+- `Oil-Seed Cake — Of Other Sorts` is the same shape and unexamined:
+  **`as_1898` seq 15565-16056, 355 rows** under one head, plus 90 more in Bushels
+  and 47 in Cwts. Its payload years read 1 of 5 within 5%.
+
+## Net for this round
+
+No baseline change from the collodium work; iteration 25's logwood gain stands.
+The deliverable is a located real table, a diagnosed blocker, and a verified
+revert.
