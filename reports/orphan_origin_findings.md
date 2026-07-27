@@ -504,3 +504,64 @@ within 5%     35.6% of commodity-years / 65.5% GBP
 - `Sago And Sago Flour — From British East Indies` holds only unitless cells and
   its 1888 (423,311 against 426,346) would overlap the `Rosin` fold.
 - Gaps left: 1866-71, 1893, 1895, 1896.
+
+---
+
+# Round 41 — the de-headed anchor: three labels reunited with their own countries
+
+A shape the queue kept surfacing and the earlier rounds had not named. An
+abstract row loses its group head, so the payload mints a commodity from the
+article alone — `Manufactures Of`, `Metals — Manufactures`,
+`Manufactures Of India And China`. Each has **a full run of printed national
+years and not one country cell**. The country data is under a label that kept
+its head and has no anchor. They are two halves of one line.
+
+The fold therefore runs **in the opposite direction to rounds 34-40**: the
+anchor-only label is the *source*, so the surviving name is the one that says
+what the commodity is.
+
+| anchor-only label | T1 years | reunited with | exact |
+|---|---|---|---|
+| `Manufactures Of` (Lb) | 35, 1866-1900 | `Caoutchouc — Manufactures Of` (43 countries) | **8 in a row, 1874-81**, plus 6 more |
+| `Metals — Manufactures` (Cwt) | 16, 1878-93 | `Zinc — Manufactures, Unenumerated` | **9 of 12** |
+| `Manufactures Of India And China` (Pieces) | 16, 1866-81 | `Cotton Manufactures — Piece Goods Of India And China` | **9 of 10** |
+
+The zinc naming was settled on the printed heads rather than on preference:
+`country_year_final` carries `article_group` **ZINC** with `Manufactures,
+Unenumerated` and three spelling variants across 1872-1899, 144 rows. The
+`Metals` form appears only on the de-headed abstract label.
+
+Full corpus ratio diff: **49 commodity-years changed, all three inside the
+targets, and nothing else in the corpus moved.**
+
+```
+exact01  2,632 -> 2,670      nodata  5,894 -> 5,845
+within 0.1%   26.9% of commodity-years / 47.5% GBP
+within 5%     36.0% of commodity-years / 65.6% GBP
+```
+
+## The break the caoutchouc fold exposes
+
+1872-91 closes — eight consecutive years to the digit and six more inside 0.06%.
+Then the **anchor** jumps and the origin side does not:
+
+```
+1891   T1 3,180,198   origins 3,180,195
+1892   T1 9,055,694   origins 3,420,706     0.38
+...
+1898   T1 12,497,946  origins 5,569,993     0.45
+1899   T1  5,065,320  origins 5,005,520     0.99
+1900   T1 13,550,183  origins       —
+```
+
+1892-98 now read 0.34-0.45 and 1899 closes again. That is not the origin table
+failing: it is the **printed national line changing scope for seven years**, and
+it was invisible while the two halves were apart. Seven commodity-years moved
+from `nodata` to `under`, which is the reconciliation doing its job — a
+measured bad year beats an unmeasured one.
+
+## Queued, not folded
+
+`Zinc — Manufactures` (GBP1.7M, 6 countries) and `Metals — Manufactures,
+Unenumerated` (anchor-only, GBP35k) are further fragments of the zinc line and
+need their own year checks before either is moved.
