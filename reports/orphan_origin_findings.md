@@ -1560,3 +1560,73 @@ commodity-years different** — a clean revert, verified rather than assumed.
 No baseline change from the collodium work; iteration 25's logwood gain stands.
 The deliverable is a located real table, a diagnosed blocker, and a verified
 revert.
+
+---
+
+# Round 57 — the queue entry was wrong, and the next table is located
+
+## The queued `Collodium` / `Collodion` fold does not exist to be made
+
+Round 56 queued "fold `Collodium` into `Collodion` first". Checking the payload:
+**there is no `Collodion` entry.** The labels present are `Collodium`
+(GBP4.5M, T1 1893-1900, 23 countries) and three
+`Collodion — Confectionery…` labels, which are a *different article* under a
+stale COLLODION head — the reverse-glue class, not a spelling of this commodity.
+
+`Collodion` appears **only when the repair runs**, which means the repair creates
+the bucket rather than joining one. So the blocker is not a fold; it is whatever
+makes the re-admitted rows land in a new bucket, and that is still unexplained.
+
+**A queue entry written from an inference, not a check.** Re-validating it cost
+one query and would have cost an hour of wrong work.
+
+## What I could check about the routing, and what I could not
+
+`integrate_sources` keys a **consensus** row as `sig(article)` falling back to
+`sig(group + article)`, and keys a **repair** row as `sig(group + article)`
+falling back to `sig(article)` — deliberately, per the comment there: *"the true
+commodity is human-attested: sig from group+article, NOT the article-first
+convention"*. **For a non-empty article the two conventions give different keys**,
+so `supersede` + re-admit can move a commodity's data to a different payload
+label. That is a real hazard for any articled commodity.
+
+**It does not explain `Collodium`**, whose article is empty — both paths then
+reduce to `sig(group)`. Stated rather than assumed, because assuming it would
+have been a tidy and wrong answer.
+
+## `Oil-Seed Cake — Of Other Sorts`: the real table is located
+
+`as_1898` carries **355 Tons rows** under `OIL-SEED CAKE | Of other sorts`
+(seq 15565-16056), plus 47 in Cwts and 90 in Bushels inside the same span — the
+Bushel cells alone sum to **3.0-3.4 million** against a Ton line of 5,744-17,119.
+
+**The real table is seq 15565-15647:**
+
+```
+15565-15601  Russia, Germany, Holland, Belgium, France, Cyprus,
+             United States, Other Foreign Countries
+15602-15606  TOTAL (foreign)   6,331 | 4,852 | 4,388 | 5,336 |  8,572
+15607-15642  British possessions and their TOTAL
+15643-15647  TOTAL (grand)     9,483 | 6,070 | 5,744 | 7,078 | 11,729
+                  Tier 1:      9,483 | 6,070 | 5,744 | 7,078
+```
+
+**All four grand totals that Tier 1 covers match to the digit.** Everything from
+15648 is glue.
+
+**Not applied.** The article is non-empty and the payload holds several
+`… Of Other Sorts` labels (`Seeds — Unenumerated, Other Sorts`,
+`Oil — Of Other Sorts`, `Seeds — Of Other Sorts`, `Seed Of Other Sorts`), so this
+is precisely the case where the two signature conventions can diverge. After
+round 56, applying it without first confirming which payload label the repair
+lands on would be repeating a known mistake.
+
+The repair to apply once that is confirmed:
+`as_1898 / OIL-SEED CAKE / Of other sorts / seq 15565-15647 / supersede
+1894;1895;1896;1897;1898 / Tons`.
+
+## Net
+
+No baseline change. The deliverables are a corrected queue entry, a located
+table with four digit-exact totals, and a named routing hazard that is checked
+rather than guessed.
