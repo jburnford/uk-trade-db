@@ -1630,3 +1630,65 @@ The repair to apply once that is confirmed:
 No baseline change. The deliverables are a corrected queue entry, a located
 table with four digit-exact totals, and a named routing hazard that is checked
 rather than guessed.
+
+---
+
+# Round 58 — `Oil-Seed Cake — Of Other Sorts`, and the hazard that wasn't
+
+Round 57 located the table and declined to apply it, on the grounds that a
+non-empty article plus several `… Of Other Sorts` labels was where the two
+signature conventions could diverge. Checking it directly:
+
+```
+step-1 consensus key   sig('Of other sorts')                  -> cake, oil, seed
+step-6 repair key      sig('OIL-SEED CAKE Of other sorts')    -> cake, oil, seed
+```
+
+**The same key.** `V.sig` drops `other` and `sorts` as generic vocabulary, so the
+article-first convention falls through to the group anyway. The caution was
+right to raise and wrong in this instance — and it cost one command to settle,
+which is the correct price for it.
+
+## Applied
+
+`as_1898 / OIL-SEED CAKE / Of other sorts / seq 15565-15647 / supersede
+1894-1898 / Tons`. **No new payload label appeared** — the check round 56 said to
+make — and the full diff is four commodity-years, **4 closer, 0 further**:
+
+| year | before | after |
+|---|---|---|
+| 1894 | 3.075 | **1.0218** |
+| 1895 | 6.496 | **1.0089** |
+| 1896 | 7.198 | 1.0416 |
+| 1897 | 9.493 | **0.9987** |
+
+```
+exact01  2,747      over  256 -> 252      within5  924 -> 928
+within 0.1%  48.0% GBP        within 5%  66.0% GBP
+```
+
+`over` falls by four and `within5` gains four; 1897 lands inside 0.1% but the
+count is unchanged because a year elsewhere moved the other way in the same
+rebuild's downstream passes (`coast-rollup` 2,427 -> 2,417).
+
+## The pattern these three rounds establish
+
+Logwood, collodium and oil-seed cake are one defect wearing three commodities:
+**a single late volume absorbs a whole section of itself under one commodity's
+heading**, and the payload then reads that commodity at 3× to 1,349× its printed
+total. In each case the real table is a short, identifiable run at the *head* of
+the block, and its printed grand totals match Tier 1 to the digit:
+
+| commodity | volume | glued rows | real table | totals matching T1 |
+|---|---|---|---|---|
+| `Dye Woods — Logwood` | as_1898 | 621 | as_1897 5849-5912 | 1894 exact, 1893 exact |
+| `Collodium` | as_1897 | 381 | as_1897 26380-26403 | 1894, 1895, 1897 exact |
+| `Oil-Seed Cake — Of Other Sorts` | as_1898 | 355 | as_1898 15565-15647 | **all four** exact |
+
+Two of the three are repaired. **Collodium remains blocked**, and the reason is
+still unexplained: its rows land in a bucket the payload names `Collodion`, which
+does not otherwise exist.
+
+**Worth a scan of its own**: how many other commodities have a single volume
+contributing an order of magnitude more rows than every other volume? That is
+the signature, and it is cheap to compute.
