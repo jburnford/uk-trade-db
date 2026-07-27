@@ -1358,3 +1358,72 @@ Of the 30 commodities in `reports/oversized_country_cells.csv`, the median
   `Leather, Undressed` (15, 77), `Madder…` (15, 61). **Removal does not rescue
   the year, because the whole label is glue.** Those want `drop`, not cell
   surgery — and `Madder` is also inside the deferred era-spelling decision.
+
+---
+
+# Round 54 — the classification was wrong, and nothing was applied
+
+Round 53 sorted the oversized-cell commodities by the **median `rest/T1` after
+removing the cell** and called the high ones chimeras. Reading them shows that
+statistic conflates three different things, so the label was wrong for most.
+
+## What they actually are
+
+| | commodity | T1 yrs | within 5% | >2× | no origin in anchor unit |
+|---|---|---|---|---|---|
+| good, few bad years | `Cotton` | 35 | **26** | 0 | 7 |
+| | `Coffee — Raw` | 27 | **24** | 2 | 1 |
+| | `Fruit — Raisins` | 27 | **23** | 0 | 4 |
+| | `Paper — Hangings` | 29 | **21** | 1 | 6 |
+| | `Dye Woods — Logwood` | 33 | **20** | 5 | 6 |
+| | `Caoutchouc` | 35 | **15** | 0 | 7 |
+| genuinely broken | `Collodium` | 8 | 1 | 6 | 1 |
+| | `Oil-Seed Cake — Of Other Sorts` | 5 | 1 | 4 | 0 |
+| no origins in the anchor unit at all | `Leather, Undressed` | 8 | 0 | 0 | **8** |
+| | `Shells Of All Kinds` | 11 | 0 | 0 | **11** |
+| | `Slates` | 7 | 0 | 0 | **7** |
+
+Most of these are **sound commodities with a handful of glued years**, not
+chimeras. `Cotton` (GBP65.8M) closes in 26 of 35 years; `Coffee — Raw` (GBP278M)
+in 24 of 27. Dropping any of them would have been a serious mistake, and the
+median statistic that suggested it should not be used for this again.
+
+## A hypothesis raised and refuted in the same round
+
+`Leather — Dressed` showed a median origin/anchor ratio of **exactly 112.0** —
+the pounds-to-hundredweight factor — which looked like a whole class: anchors in
+Cwt, origins in Lb, never converted. A corpus scan for **every** anchor/origin
+pair separated by a clean unit factor (112, 20, 2240, and their inverses),
+requiring two or more years agreeing within 5%, found **nothing**.
+
+`Leather — Dressed` has **one** T1 year. The 112.0 was a single data point
+wearing the shape of a law. Recorded so it is not raised again.
+
+## `Dye Woods — Logwood`, characterised but not repaired
+
+1893 closes **exactly**: British West India Islands 27,064 + British Honduras
+12,667 + Mexico 7,507 + Hayti 3,402 + Argentine 752 + United States 302 + Other
+Foreign 226 + France 222 + Germany 158 = **52,300**, the printed total. That is
+the real geography of a Central American dyewood.
+
+1894-98 carry **32 to 39 countries** on a European and Mediterranean profile —
+Belgium 2,954,843, Russia 2,496,038, Denmark 2,019,503, Canada, Egypt, Spain,
+Portugal, Morocco, Sweden, Italy, Austrian Territories, Gibraltar — against
+printed totals of 39,297 to 68,457.
+
+**29 countries appear only in those five years** and account for **4,318,823 of
+1894's 4,693,306, or 92%**. But removing them still leaves the year at 5.5× its
+total, because the countries that *do* belong are inflated too (British West
+India Islands 33,713 in 1894 against 27,064 in the year that closes). **The block
+is thoroughly glued, not garnished**, so `drop-country` cannot clean it and
+**nothing was applied**. It needs a source-level `group_repairs` range, which is
+outside what the payload can express.
+
+A half-cleaned block that still reads 5.5× is worse than one plainly flagged, so
+it is queued whole.
+
+## Nothing changed
+
+No curation rows, no code, no baseline movement. The deliverables are the
+corrected taxonomy above, the refuted unit-factor hypothesis, and a logwood block
+described precisely enough for a source-level repair to start from.
