@@ -2681,7 +2681,6 @@ HAMS,,spain,Cwts,import,1895,173.0,1920.0,consensus,A,C,1,3
 HAMS,,canada,Cwts,import,1895,81707.0,186141.0,consensus,A,A,1,1
 HAMS,,belgium,Cwts,import,1897,338.0,670.0,consensus,A,A,1,1
 HAMS,,spain,Cwts,import,1897,203.0,1793.0,consensus,A,C,1,3
-HAMS,,canada,Cwts,import,1897,119133.0,269272.0,consensus,A,C,1,3
 HAMS,,other british possessions,Cwts,import,1897,17.0,40.0,consensus,A,A,1,1
 HATS OR BONNETS,Of Felt,germany,Number,import,1895,4862.0,861.0,consensus,A,A,1,1
 HATS OR BONNETS,Of Felt,germany,Number,import,1896,4668.0,854.0,consensus,A,A,1,1
@@ -56109,7 +56108,6 @@ HAMS,,denmark,Cwts,import,1893,7270.0,23161.0,consensus,B,B,2,2
 HAMS,,germany,Cwts,import,1893,1446.0,4844.0,consensus,B,B,2,2
 HAMS,,belgium,Cwts,import,1893,261.0,657.0,consensus,B,B,2,2
 HAMS,,spain,Cwts,import,1893,148.0,992.0,consensus,B,B,2,2
-HAMS,,united states of america,Cwts,import,1893,930624.0,2718075.0,consensus,B,B,2,2
 HAMS,,canada,Cwts,import,1893,57750.0,172148.0,consensus,B,C,2,3
 HAMS,,other british possessions,Cwts,import,1893,7.0,29.0,consensus,B,B,2,2
 HAMS,,denmark,Cwts,import,1894,1785.0,5638.0,consensus,B,B,2,2
@@ -56125,7 +56123,6 @@ HAMS,,newfoundland,Cwts,import,1895,250.0,630.0,consensus,B,B,2,2
 HAMS,,other british possessions,Cwts,import,1895,22.0,60.0,consensus,B,B,2,2
 HAMS,,denmark,Cwts,import,1897,933.0,2603.0,consensus,B,C,2,3
 HAMS,,germany,Cwts,import,1897,1287.0,4731.0,consensus,B,B,2,2
-HAMS,,united states of america,Cwts,import,1897,1606725.0,3421654.0,consensus,B,C,2,3
 HATS OR BONNETS,Of Straw,philippine and ladrone islands,Lbs,import,1893,2767.0,526.0,consensus,B,B,2,2
 HATS OR BONNETS,Of Straw,china,Lbs,import,1893,25.0,4.0,consensus,B,B,2,2
 HATS OR BONNETS,Of Straw,japan,Lbs,import,1893,50.0,4.0,consensus,B,C,2,3
@@ -82349,6 +82346,9 @@ HAMS,,United States of America,Cwts,import,1898,1851520.0,3651414.0,human,A,A,1,
 HAMS,,Denmark,Cwts,import,1898,908.0,2488.0,human,A,A,1,1
 BACON,,Canada,Cwts,import,1897,290283.0,523195.0,human,A,A,1,1
 BACON,,United States of America,Cwts,import,1898,4087389.0,6438239.0,human,A,A,1,1
+HAMS,,United States of America,Cwts,import,1893,920261.0,2686643.0,human,A,A,1,1
+HAMS,,United States of America,Cwts,import,1897,1603533.0,3411559.0,human,A,B,1,2
+HAMS,,Canada,Cwts,import,1897,119133.0,260272.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2

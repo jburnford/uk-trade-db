@@ -480,3 +480,97 @@ figure being **3,005,097** (`9` for `0`, `3` for `5`). So the gap is one cell
 of 3,223, or one dropped row, among seven. **A page-image candidate** — not
 guessed here. Note the block prints no Norway line in 1893 while the neighbouring
 export block does, which is where a dropped row would most likely hide.
+
+---
+
+# Round 33 — `Hams`: the same lost subtotal label, and a value column that proved it
+
+`Hams` 1893 read **1.0097** and 1897 **1.0018**. Both are the defect session 10
+found in `Bacon`: in `as_1897`'s five-year comparative tables the printed row
+**`Total from Foreign Countries`** loses its label and the parser hands it the
+stale `United States of America` from two rows above. One printed row is five
+consecutive `row_seq` (9338-9342 here), so the defect spans 1893-97 — but only
+1893 and 1897 were still showing it, because other volumes had already supplied
+the right US cell for 1894-96.
+
+```
+" United States of America:
+    On the Atlantic          920,261   1,075,270   1,203,157   1,235,976   1,603,533
+" Other Foreign Countries        538         403         277         331         281
+    Total from Foreign Ctrs  930,624   1,079,189   1,207,500   1,290,111   1,606,725   <- parsed as "United States of America"
+```
+
+The map was therefore adding the foreign **total** to the foreign countries.
+
+## 1893 — the value column closes at every level
+
+The quantity column of this block has internal OCR noise, but the value column
+does not, and it settles the structure outright:
+
+```
+foreign values 23,161 + 4,844 + 657 + 992 + 2,686,643 + 1,778 = 2,718,075
+               = the mislabelled row's OWN value          -> that row IS the subtotal
+British values 172,148 + 29                               =   172,177  = printed
+grand          2,718,075 + 172,177                        = 2,890,252  = printed
+```
+
+So the US figure is the `On the Atlantic` line, **920,261 / 2,686,643**.
+
+## 1897 — a volume that prints the same table without the coast split
+
+`as_1899` reprints the block with no `On the Atlantic` sub-entry and gives the
+US line plainly as **1,603,533**, to the digit the same as `as_1897`'s coast
+cell. Subtraction agrees: the grand TOTAL 1,725,875 (identical in both volumes,
+and the T1 anchor) minus the printed British total 119,150 (= 119,133 + 17,
+exact in both) is 1,606,725 — the foreign total exactly.
+
+## And the 1897 value column: Canada = 260,272, not 269,272
+
+Each volume corrupts one half of the value column, so of the four possible
+pairings exactly one closes on the grand value total the two volumes agree on:
+
+```
+                        as_1897        as_1899
+foreign value total   3,421,654      3,421,454
+British value total     269,312        260,312     (= Canada + Other B.P. 40, exact in both)
+
+3,421,654 + 260,312 = 3,681,966  = the printed grand value total   <- the only pairing that closes
+3,421,654 + 269,312 = 3,690,966
+3,421,454 + 269,312 = 3,690,766
+3,421,454 + 260,312 = 3,681,766
+```
+
+Canada = 260,312 − 40 = **260,272**. This is the same `0 -> 9` corruption in
+`as_1897`'s 1897 column that put 299,282 on bacon's Canada in round 32. The
+quantity 119,133 is agreed by both volumes and unchanged, so the payload's
+quantity ratios do not move — verified: 0 changed.
+
+## Where the family stands now
+
+| year | 1892 | 1893 | 1894 | 1895 | 1896 | 1897 | 1898 | 1899 |
+|---|---|---|---|---|---|---|---|---|
+| `Bacon` | 1.0000 | 0.9990 | 0.9998 | 1.0001 | 1.0002 | 1.0000 | 1.0000 | 1.0000 |
+| `Hams`  | 1.0000 | **0.9993** | 1.0002 | 1.0002 | 1.0000 | **0.9999** | 1.0000 | 0.9999 |
+
+**`Hams` now closes within 0.1% in every printed year.** Baseline 39.4% ->
+**39.5%** of GBP within 0.1%; `exact01` 2,249 -> 2,251. Three repairs, and the
+full before/after ratio diff moved exactly the two cells predicted.
+
+## Still open, with the evidence
+
+- **`Hams` 1893, 730 cwt short.** `as_1897` is the only volume that prints it
+  and `country_obs_inf` has no rows for the block, so nothing can vote. The
+  grand TOTAL 988,411 minus the exact British total 57,757 implies a foreign
+  total of **930,654**, but the mislabelled row reads 930,624 (a tens-digit
+  misread) and the six foreign members sum to 929,924. One cell of 730, or a
+  dropped row. Page-image candidate.
+- **`Hams` 1897, 150 cwt short.** `as_1899`'s reading of the same block is 60
+  short. The volumes disagree on Denmark (933 v 953) and Germany (1,287 v
+  1,357) and no combination of the two readings closes either total, so this is
+  not decidable from the parses. Page-image candidate.
+- **`Bacon` 1893, 3,223 cwt short** — round 32, still the only bacon year open.
+- The `HAMS` group in `as_1898`/`as_1899` is a **glue block**: `row_seq`
+  6938-7963 carries a dozen unrelated commodities (Malta, Philippine Islands,
+  wool-shaped Australasian sub-entries, `Northern Ports`/`Southern Ports`
+  grain rows) under the HAMS head. The real hams table is at 9360-9410. Not
+  touched here; it is a group_repairs job of its own.
