@@ -392,3 +392,91 @@ Baseline: GBP within 0.1% **38.3% -> 39.0%**; `exact01` 2,244 -> 2,247.
   here but it is riding in the import payload's group.
 - Country-column garbage seen in passing: `Animals, Living` carries an origin
   called `Clocks And Parts Thereof` (1899, 572,576). Known class, not this item.
+
+---
+
+# Round 32 — the 1897 and 1898 residuals, both closed on a printed total
+
+Round 31 left `Bacon` over by 9,044 cwt in 1897 and short by exactly 30,000 in
+1898. Both were single cells, and in both the arbiter was a printed total the
+disagreeing volumes had already agreed on.
+
+## Canada 1897 = 290,283 (was 299,282)
+
+Three volumes print it three ways — `as_1897` 299,282, `as_1899` 299,283,
+`as_1898` 290,283 — and only `as_1898` closes at **both** printed levels:
+
+```
+British half  290,283 + 565 (Newfoundland) + 88 (Other Brit. Poss.) = 290,936
+              = as_1898's printed Total from British Possessions
+grand         4,713,979 + 290,936 = 5,004,915
+              = the TOTAL printed by as_1898 AND as_1899, and the T1 anchor
+```
+
+The foreign total 4,713,979 is identical in all three volumes, so the British
+half is pinned by subtraction alone. The two rejected readings each fail their
+own arithmetic: `as_1899`'s 299,283 + 653 = 299,936 contradicts the 5,004,915 it
+prints on the next line (it would need 5,013,915), and `as_1897`'s
+299,282 + 653 = 299,935 misses its own printed 299,926 by 9 and its grand by
+50,010. The same `0 -> 9` corruption hits **both** the Canada cell and the
+British subtotal in that one column of `as_1897` and of `as_1899` — the reason
+two volumes agree on the wrong answer is that they made the same misread, not
+that they are independent witnesses.
+
+The value needs no repair: 523,195 is unanimous, and `as_1897`'s value column
+closes exactly on it (523,195 + 1,205 = 524,400).
+
+## United States 1898 = 4,087,389 (was 4,057,389)
+
+1898 was short by a suspiciously round **30,000**, and that is the whole
+difference between the two readings of the US cell: `as_1898` gives 4,057,389,
+`as_1899` gives 4,087,389. The printed *Total from Foreign Countries* is
+5,175,404 in **both** volumes, and closes to the digit on only one of them:
+
+```
+10,072 + 40,456 + 1,017,520 + 17,481 + 4,087,389 + 2,486 = 5,175,404
+5,175,404 + 535,918 = 5,711,322 = the printed TOTAL = T1
+```
+
+The same shared total arbitrates the other disagreement in that column in the
+opposite direction: `as_1899` reads Russia as 10,972, which would overshoot by
+900, so Russia stays `as_1898`'s 10,072. Each volume carries exactly one
+quantity error, and neither is systematically better — the printed total is.
+Values are untouched: `as_1898`'s value column already closes exactly
+(19,751 + 118,152 + 2,701,112 + 44,926 + 6,438,239 + 3,792 = 9,325,972), which
+also identifies `as_1899`'s Russia value 10,751 as that volume's second error.
+
+Both repairs are `manual_rows.csv` rows with `replace=1`. A full before/after
+diff of every commodity-year ratio in the payload changed **one cell each**.
+
+## Where `Bacon` stands now
+
+| year | 1892 | 1893 | 1894 | 1895 | 1896 | 1897 | 1898 | 1899 |
+|---|---|---|---|---|---|---|---|---|
+| ratio | 1.0000 | 0.9990 | 0.9998 | 1.0001 | 1.0002 | **1.0000** | **1.0000** | 1.0000 |
+
+1898 is exact to the digit (5,711,322 = 5,711,322). Baseline across rounds 31
+and 32: GBP within 0.1% **38.3% -> 39.4%**, `exact01` 2,244 -> 2,249.
+
+## Still open — `Bacon` 1893, short 3,223
+
+The only year left, and the only year no second volume prints: `as_1897` is the
+sole source and `country_obs_inf` has **no** 1893 bacon rows at all, so there is
+nothing to vote against. The arithmetic is nevertheless tight:
+
+```
+printed TOTAL              3,198,887
+printed British total    -   193,790     (Canada 193,772 + Other B.P. 17 = 193,789, off 1)
+                          ----------
+implied foreign total      3,005,097
+seven parsed foreign rows  3,001,874     (16,823 + 62,320 + 711,551 + 9,742
+                          ----------      + 21,650 + 2,177,293 + 2,495)
+short                          3,223
+```
+
+`as_1897`'s own printed *Total from Foreign Countries* for 1893 reads
+**3,935,097** — corrupt, and corrupt in a way that is consistent with the true
+figure being **3,005,097** (`9` for `0`, `3` for `5`). So the gap is one cell
+of 3,223, or one dropped row, among seven. **A page-image candidate** — not
+guessed here. Note the block prints no Norway line in 1893 while the neighbouring
+export block does, which is where a dropped row would most likely hide.

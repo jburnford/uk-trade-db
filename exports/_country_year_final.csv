@@ -54348,7 +54348,6 @@ BACON,,northern parts,Cwts,import,1896,19001.0,35421.0,consensus,B,C,2,3
 BACON,,germany,Cwts,import,1896,512.0,997.0,consensus,B,C,2,3
 BACON,,northern parts,Cwts,import,1897,27713.0,59953.0,consensus,B,C,2,3
 BACON,,germany,Cwts,import,1897,45.0,99.0,consensus,B,C,2,3
-BACON,,canada,Cwts,import,1897,299282.0,523195.0,consensus,B,A,2,1
 "BEADS, OF ALL SORTS",,western coast of africa,Lbs,import,1893,7350.0,1405.0,consensus,B,C,2,3
 "BEADS, OF ALL SORTS",,western coast of africa,Lbs,import,1894,2836.0,202.0,consensus,B,A,2,1
 "BEADS, OF ALL SORTS",,holland,Lbs,import,1895,245962.0,15495.0,consensus,B,A,2,1
@@ -60560,7 +60559,6 @@ BACON,,other foreign countries,Cwts,import,1894,633.0,1622.0,consensus,B,B,2,2
 BACON,,newfoundland,Cwts,import,1896,250.0,374.0,consensus,B,A,2,1
 BACON,,other foreign countries,Cwts,import,1897,449.0,745.0,consensus,B,A,2,1
 BACON,,russia,Cwts,import,1898,10072.0,19751.0,consensus,B,B,2,2
-BACON,,united states of america,Cwts,import,1898,4057389.0,6438239.0,consensus,B,A,2,1
 "BEADS, OF ALL SORTS",,western coast of africa,Lbs,import,1898,2959.0,496.0,consensus,B,C,2,3
 PORK,Salted,australasia,Cwts,import,1896,50.0,45.0,consensus,B,B,2,2
 PORK,Salted,australasia,Cwts,import,1897,551.0,695.0,consensus,B,B,2,2
@@ -82349,6 +82347,8 @@ BACON,,United States of America,Cwts,import,1894,2561203.0,,human,A,B,1,2
 BACON,,United States of America,Cwts,import,1897,3592635.0,,human,A,B,1,2
 HAMS,,United States of America,Cwts,import,1898,1851520.0,3651414.0,human,A,A,1,1
 HAMS,,Denmark,Cwts,import,1898,908.0,2488.0,human,A,A,1,1
+BACON,,Canada,Cwts,import,1897,290283.0,523195.0,human,A,A,1,1
+BACON,,United States of America,Cwts,import,1898,4087389.0,6438239.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
