@@ -1073,3 +1073,62 @@ label is not the only thing wrong with those two: if the countries and the
 printed total agreed, they would agree more than once. Relabelling their anchors
 would have made them *look* scored while measuring nothing. They stay in the
 queue, needing a reason for the disagreement rather than a unit.
+
+---
+
+# Round 50 — a wrong unit is out by a factor, not by two per cent
+
+Round 49's guard required **two years agreeing to the digit** before it would
+give an unitless anchor its origins' unit. That refused `Ore Of (Including
+Chrome)` (GBP24.6M), which agrees with its own printed totals like this:
+
+```
+1893  1.0005    1894  1.0244    1895  0.9877    1896  1.0042    1897  1.0031
+```
+
+Never to the digit, and never far away either. Nothing but the same measure
+produces that: **a wrong unit is out by a FACTOR — twenty, for Ton against Cwt —
+not by two per cent.**
+
+## The second path
+
+`unit_the_anchor` now accepts a series on either of two kinds of evidence:
+
+- **two years exact to the digit** (identity), or
+- **every overlapping year within 5%, and at least three of them**
+  (proportionality).
+
+The second is not a weakening. It demands *all* the years hold, where the first
+demands only two, and it is refused the moment a single year strays.
+
+## It still refuses `Ivory — Vegetable`, and that is the test
+
+`Ivory — Vegetable` (GBP21.2M) has **1899 matching to the digit** — 17,188
+against 17,188 — while 1894-98 run:
+
+```
+1894  11.3x    1895  31.1x    1896   9.4x    1897  21.4x    1898  29.5x
+```
+
+One exact year and five wild ones, with no consistent ratio. That is not a
+missing unit label: **its printed totals for 1894-98 are not the total of these
+countries at all**, which is a different defect and one a unit cannot repair.
+Both paths refuse it, and it stays queued as an unexplained series rather than
+being made to look scored.
+
+## Result
+
+49 anchor cells relabelled (was 29). Full corpus ratio diff: **13 commodity-years
+changed, 13 closer, 0 further.**
+
+| commodity | years | |
+|---|---|---|
+| `Ore Of (Including Chrome)` | 5 | 1893 inside 0.1%, the rest inside 5% |
+| `Manures — Bones For Manure (Whether Burnt Or Not)` | 5 | 1896, 1897, 1899 **exact**; 1898 0.9995 |
+| `Saumur` | 3 | 1896 **exact**; 1893 0.9999, 1894 0.9992 |
+
+```
+exact01  2,737 -> 2,745      nodata  5,763 -> 5,755
+within 0.1%   27.6% of commodity-years / 47.9% GBP
+within 5%     36.9% of commodity-years / 65.9% GBP
+```

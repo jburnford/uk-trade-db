@@ -1096,7 +1096,23 @@ def main():
             best = max(org, key=lambda u: len(org[u]))
             agree = sum(1 for y, q in anch.items()
                         if round(org[best].get(y, 0)) == round(q))
-            if agree < 2:
+            # Second path, for a series that agrees CONSISTENTLY without ever
+            # agreeing exactly. 'Ore Of (Including Chrome)' reads 1.0005,
+            # 1.0244, 0.9877, 1.0042 and 1.0031 against its own printed totals -
+            # never to the digit, so the exact test refuses it, and yet nothing
+            # but the same measure produces that. A wrong unit is out by a
+            # FACTOR (twenty, for Ton against Cwt), not by two per cent.
+            # Requires EVERY overlapping year to hold, and at least three of
+            # them: 'Ivory - Vegetable' is refused by this too, because its
+            # 1899 matches to the digit while 1894-98 run 9x to 31x with no
+            # consistent ratio at all - which says its printed total for those
+            # years is not the total of these countries, a different defect
+            # that a unit label cannot fix.
+            both = [(q, org[best].get(y, 0)) for y, q in anch.items()
+                    if org[best].get(y)]
+            near = (len(both) >= 3
+                    and all(abs(v - q) <= 0.05 * q for q, v in both))
+            if agree < 2 and not near:
                 continue
             have = {cell[0] for cell in t1.get(best, ())}
             move = [cell for cell in t1['?'] if cell[0] not in have]
