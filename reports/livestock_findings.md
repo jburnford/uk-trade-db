@@ -222,3 +222,97 @@ against Chandra's 2,400,386, and only Chandra's closes the block's printed value
 total. Chandra's France quantity (2,499) is also the more plausible of the two on
 price — GBP24.83 against GBP28.22 for a block topping out at GBP24.83 — but the
 value column cannot settle that one, so it stays open.
+
+---
+
+# Round 34 — the living-horses and living-swine origin tables, found under three group heads
+
+`Animals, Living — Horses` carried a printed T1 line for **every year 1866-1891**
+and origin data for exactly **one** of them (1880). `Animals, Living — Swine` was
+the same story before 1880. The missing tables were not missing at all — they
+were sitting under two other group heads.
+
+## The head-drift
+
+The printed section heading is `ANIMALS, LIVING :`. The parser captured it as:
+
+| head captured | years | payload label |
+|---|---|---|
+| `ANIMALS` | 1872-75, 1877, 1879 | `Animals — Horses`, `Animals — Swine` |
+| `COWS` | 1876, 1878, 1881, 1882 | `Cows — Horses`, `Cows — Swine` |
+| `ANIMALS LIVING` | 1880 | the target, already correct |
+
+`COWS` is not a stray string: it is the tail of the **preceding article**,
+`Oxen, Bulls, Cows, and Calves`. The head drifted onto the rows below it.
+
+The three sets of years are **perfectly complementary** — no year appears under
+two heads, and 1880, the one year the target already had, appears under none of
+the others. That pattern is itself the signature: each printed year-table went to
+whichever head the parser was holding at the time.
+
+## The proof is the anchor, year by year
+
+Neither orphan carries a T1 line of its own; the target holds T1 for all of these
+years, so there is **no anchor contest** — the only question is whether the
+origin tables belong to it, and the printed national totals answer it:
+
+| year | source | origin sum | target T1 | |
+|---|---|---|---|---|
+| 1872 | `Animals — Horses` | 12,618 | 12,618 | **exact** |
+| 1873 | `Animals — Horses` | 17,822 | 17,822 | **exact** |
+| 1874 | `Animals — Horses` | 12,033 | 12,033 | **exact** |
+| 1875 | `Animals — Horses` | 25,727 | 25,757 | −30 |
+| 1876 | `Cows — Horses` | 41,148 | 41,148 | **exact** |
+| 1877 | `Animals — Horses` | 30,524 | 30,524 | **exact** |
+| 1878 | `Cows — Horses` | 26,521 | 26,521 | **exact** |
+| 1879 | `Animals — Horses` | 15,246 | 15,246 | **exact** |
+| 1881 | `Cows — Horses` | 9,950 | 9,950 | **exact** |
+| 1882 | `Cows — Horses` | 8,824 | 8,827 | −3 |
+
+Swine, same volumes and the same drift:
+
+| year | source | origin sum | target T1 | |
+|---|---|---|---|---|
+| 1876 | `Cows — Swine` | 43,558 | 43,558 | **exact** |
+| 1877 | `Animals — Swine` | 20,034 | 20,031 | +3 |
+| 1878 | `Cows — Swine` | 55,911 | 55,911 | **exact** |
+| 1879 | `Animals — Swine` | 52,366 | 52,366 | **exact** |
+| 1881 | `Cows — Swine` | 24,283 | 24,283 | **exact** |
+
+**Eleven exact digit matches out of fifteen checkable years**, and the four that
+miss are off by 30, 3, 3 and 0 — single-cell OCR noise, not a mis-assignment.
+
+## The fix
+
+Four `fold` actions in `reference/commodity_curation.csv` — payload level, no
+vote, no database, no parser change. Units are `Number` on both sides of all four
+folds and the year sets are disjoint, so nothing merges and nothing doubles
+(verified before applying: zero overlapping years in every fold).
+
+Full before/after diff of every commodity-year ratio in the payload: **15 cells
+changed, all of them from "no origin data" to a ratio**, and nothing else moved.
+
+```
+exact01  2,251 -> 2,265      nodata  6,025 -> 6,010
+within 0.1%  22.7% -> 22.8% of commodity-years   (GBP-weighted flat at 39.5%)
+within 5%    30.6% -> 30.8%
+```
+
+The GBP weight does not move because these are small commodities — GBP6.5M of
+horses and GBP2.5M of swine against a GBP-billions corpus. What moves is
+coverage: a commodity that published a national line for 26 years and showed
+origins for one now shows them for eleven.
+
+## Still open in this family
+
+- **`Animals, Living — Horses` 1866-71 and 1883-91** still have no origin data.
+  The 1883-87 tables exist under `Animals Living — Horses, Mares, Geldings,
+  Colts, And Foals` (four spelling variants of one label, GBP1.05M, no T1) —
+  that is a **wording change mid-series**, so it is the deferred
+  "which label carries Tier 1" decision, not a fold to make alone.
+- **`Horses` (1892-96, T1 20,994-40,677) continues `Animals, Living — Horses`
+  (T1 ends 1891 at 21,672)** without a break in the level. Same deferred
+  decision; note its unit reads `Cwt`, which cannot be right for live horses.
+- `Animals — Swine` 1872-75 (16,100 / 80,978 / 115,389 / 72,170) was folded on
+  the strength of the years that close, but **no T1 exists for swine before
+  1876 on any label** — those four years are unverifiable and stay that way.
