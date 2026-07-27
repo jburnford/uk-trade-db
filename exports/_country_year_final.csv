@@ -108483,10 +108483,6 @@ SALTPETRE (NITRATE OF POTASH),Clover and Grass,British East Indies : Straits Set
 SALTPETRE (NITRATE OF POTASH),Clover and Grass,British East Indies : British West India Islands,Cwt,import,1897,151.0,726.0,subentry,C,C,3,3
 SALTPETRE (NITRATE OF POTASH),Clover and Grass,British East Indies : Bombay,Quarters,import,1897,4512.0,7365.0,subentry,C,C,3,3
 SALTPETRE (NITRATE OF POTASH),Clover and Grass,British East Indies : Pengal,Quarters,import,1897,425354.0,511473.0,subentry,C,C,3,3
-SALTPETRE (NITRATE OF POTASH),Rape,United States of America : On the Pacific,Cwts,import,1893,3923.0,4747.0,subentry,C,C,3,3
-SALTPETRE (NITRATE OF POTASH),Rape,United States of America : On the Pacific,Cwts,import,1894,10882.0,7881.0,subentry,C,C,3,3
-SALTPETRE (NITRATE OF POTASH),Rape,United States of America : On the Pacific,Cwts,import,1895,80.0,12.0,subentry,C,C,3,3
-SALTPETRE (NITRATE OF POTASH),Rape,British East Indies : Straits Settlements,Cwts,import,1895,1.0,10.0,subentry,C,C,3,3
 SHELLS OF ALL KINDS,Raw,United States of America : Other Foreign Countries,,import,1893,5608.0,2758.0,subentry,C,C,3,3
 SHELLS OF ALL KINDS,Raw,British East Indies : Bengal,,import,1893,322694.0,207620.0,subentry,C,C,3,3
 SHELLS OF ALL KINDS,Raw,British East Indies : Ceylon,,import,1893,900.0,780.0,subentry,C,C,3,3
@@ -115392,6 +115388,70 @@ SALTPETRE (NITRATE OF POTASH),,British East Indies,Cwts,import,1895,84822.0,7475
 SALTPETRE (NITRATE OF POTASH),,British East Indies,Cwts,import,1896,210544.0,155479.0,groupfix,C,C,3,3
 SALTPETRE (NITRATE OF POTASH),,British East Indies,Cwts,import,1897,236730.0,159940.0,groupfix,C,C,3,3
 SALTPETRE (NITRATE OF POTASH),,British East Indies,Cwts,import,1898,148064.0,99947.0,groupfix,C,C,3,3
+RAPE,,Russia : Northern Ports,Quarters,import,1893,1387.0,1482.0,groupfix,C,C,3,3
+RAPE,,Russia : Northern Ports,Quarters,import,1894,4155.0,3549.0,groupfix,C,C,3,3
+RAPE,,Russia : Northern Ports,Quarters,import,1895,155.0,177.0,groupfix,C,C,3,3
+RAPE,,Russia : Northern Ports,Quarters,import,1896,250.0,204.0,groupfix,C,C,3,3
+RAPE,,Russia : Northern Ports,Quarters,import,1897,30.0,80.0,groupfix,C,C,3,3
+RAPE,,Russia : Southern Ports,Quarters,import,1893,111430.0,110333.0,groupfix,C,C,3,3
+RAPE,,Russia : Southern Ports,Quarters,import,1894,175105.0,153790.0,groupfix,C,C,3,3
+RAPE,,Russia : Southern Ports,Quarters,import,1895,250022.0,210112.0,groupfix,C,C,3,3
+RAPE,,Russia : Southern Ports,Quarters,import,1896,110178.0,94451.0,groupfix,C,C,3,3
+RAPE,,Russia : Southern Ports,Quarters,import,1897,61105.0,68982.0,groupfix,C,C,3,3
+RAPE,,Germany,Quarters,import,1893,1651.0,3414.0,groupfix,C,C,3,3
+RAPE,,Germany,Quarters,import,1894,7014.0,12391.0,groupfix,C,C,3,3
+RAPE,,Germany,Quarters,import,1895,11491.0,17502.0,groupfix,C,C,3,3
+RAPE,,Germany,Quarters,import,1896,10350.0,17006.0,groupfix,C,C,3,3
+RAPE,,Germany,Quarters,import,1897,2030.0,4226.0,groupfix,C,C,3,3
+RAPE,,Holland,Quarters,import,1893,1833.0,3854.0,groupfix,C,C,3,3
+RAPE,,Holland,Quarters,import,1894,1469.0,3419.0,groupfix,C,C,3,3
+RAPE,,Holland,Quarters,import,1895,1357.0,2504.0,groupfix,C,C,3,3
+RAPE,,Holland,Quarters,import,1896,758.0,1405.0,groupfix,C,C,3,3
+RAPE,,Holland,Quarters,import,1897,1913.0,4036.0,groupfix,C,C,3,3
+RAPE,,Belgium,Quarters,import,1895,3253.0,4682.0,groupfix,C,C,3,3
+RAPE,,Belgium,Quarters,import,1897,5350.0,6576.0,groupfix,C,C,3,3
+RAPE,,France,Quarters,import,1893,332.0,530.0,groupfix,C,C,3,3
+RAPE,,France,Quarters,import,1894,1487.0,2476.0,groupfix,C,C,3,3
+RAPE,,France,Quarters,import,1895,2322.0,3375.0,groupfix,C,C,3,3
+RAPE,,France,Quarters,import,1896,680.0,1145.0,groupfix,C,C,3,3
+RAPE,,France,Quarters,import,1897,434.0,631.0,groupfix,C,C,3,3
+RAPE,,Greece,Quarters,import,1896,750.0,1400.0,groupfix,C,C,3,3
+RAPE,,Roumania,Quarters,import,1893,17838.0,17898.0,groupfix,C,C,3,3
+RAPE,,Roumania,Quarters,import,1894,29044.0,26982.0,groupfix,C,C,3,3
+RAPE,,Roumania,Quarters,import,1895,1804.0,1283.0,groupfix,C,C,3,3
+RAPE,,Roumania,Quarters,import,1896,20970.0,20238.0,groupfix,C,C,3,3
+RAPE,,Roumania,Quarters,import,1897,47520.0,51750.0,groupfix,C,C,3,3
+RAPE,,Japan,Quarters,import,1893,735.0,1400.0,groupfix,C,C,3,3
+RAPE,,Argentine Republic,Quarters,import,1893,1479.0,2067.0,groupfix,C,C,3,3
+RAPE,,Argentine Republic,Quarters,import,1895,25.0,30.0,groupfix,C,C,3,3
+RAPE,,Argentine Republic,Quarters,import,1896,755.0,1020.0,groupfix,C,C,3,3
+RAPE,,Argentine Republic,Quarters,import,1897,670.0,587.0,groupfix,C,C,3,3
+RAPE,,Other Foreign Countries,Quarters,import,1893,45.0,90.0,groupfix,C,C,3,3
+RAPE,,Other Foreign Countries,Quarters,import,1894,119.0,234.0,groupfix,C,C,3,3
+RAPE,,Other Foreign Countries,Quarters,import,1895,25.0,60.0,groupfix,C,C,3,3
+RAPE,,Other Foreign Countries,Quarters,import,1897,110.0,24.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Bombay,Quarters,import,1893,20042.0,24102.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Bombay,Quarters,import,1894,41820.0,56417.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Bombay,Quarters,import,1895,44708.0,63106.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Bombay,Quarters,import,1896,15211.0,25219.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Bombay,Quarters,import,1897,18574.0,34800.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Madras,Quarters,import,1893,17815.0,33746.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Madras,Quarters,import,1894,12483.0,19596.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Madras,Quarters,import,1895,1000.0,1797.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Madras,Quarters,import,1896,12529.0,20760.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Bengal,Quarters,import,1893,77678.0,143963.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Bengal,Quarters,import,1894,24550.0,39835.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Bengal,Quarters,import,1895,2210.0,2420.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Bengal,Quarters,import,1896,7269.0,12679.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Bengal,Quarters,import,1897,47479.0,85536.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Ceylon,Quarters,import,1893,270.0,473.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Other British Possessions,Quarters,import,1893,25.0,72.0,groupfix,C,C,3,3
+RAPE,,British East Indies : Other British Possessions,Quarters,import,1897,17.0,41.0,groupfix,C,C,3,3
+RAPE,,British East Indies,Quarters,import,1893,115830.0,202356.0,groupfix,C,C,3,3
+RAPE,,British East Indies,Quarters,import,1894,78853.0,115848.0,groupfix,C,C,3,3
+RAPE,,British East Indies,Quarters,import,1895,48038.0,67323.0,groupfix,C,C,3,3
+RAPE,,British East Indies,Quarters,import,1896,35009.0,58658.0,groupfix,C,C,3,3
+RAPE,,British East Indies,Quarters,import,1897,66070.0,120727.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3

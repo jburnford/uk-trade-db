@@ -93,3 +93,58 @@ straddle any row whose label is a spelling variant rather than a duplicate.
   (GBP 23.4M) are still the seeds section**, misfiled under the saltpetre head.
   Superseding `article=''` does not touch them; they need their own relabel to
   the real seeds commodities. Unworked.
+
+---
+
+# The seeds glue under the saltpetre head — iteration 39, 2026-07-27
+
+The `as_1897` `SALTPETRE (Nitrate of Potash)` head carries two articles that are
+not saltpetre at all: `Rape` (seq 18476-18981) and `Clover and Grass`
+(seq 18185-18475). Neither is one commodity. **The `Rape` article alone is SIX
+origin tables concatenated**, ~99 rows per year, with the five years
+**interleaved by `row_seq`** — the same layout trap as the as_1899 comparative
+table above.
+
+Segmenting on the printed `TOTAL` rows and matching each year's grand total
+against the consensus quantity lines identifies five of the six:
+
+| block | seq range | unit | true commodity | years closing |
+|---|---|---|---|---|
+| **A** | 18476-18549 | Quarters | **Rape** | 4 of 5 — **APPLIED** |
+| B | 18550-18627 | Quarters | `Seeds \| Garden, unenumerated` (Lbs) | 4 of 5 |
+| C | 18628-18681 | Quarters | **unidentified** | 0 |
+| D | 18682-18705 | Bushels | `Tares and Lentils` | **5 of 5** |
+| E | 18706-18828 | Bushels | `Seeds, Unenumerated, for expressing Oil therefrom` | **5 of 5** |
+| F | 18829-18981 | Cwts | `Seeds \| Other sorts` | **5 of 5** |
+
+## A — applied
+
+```
+1893  252,560 = T1        1896  179,730 = T1
+1894  299,046 vs T1 299,016   (one digit, not chased)
+1895  325,393 = T1        1897  185,232 = T1
+```
+
+The payload commodity **`Rape`** carries Tier-1 Quarters for 1866-68 and
+1892-1900 and had **no origin data at all**, so the relabel displaces nothing.
+One `group_repairs` row, `new_group=RAPE`, `new_article` empty, **no
+`supersede_years`** — superseding would drop sub-blocks B-F before they are
+worked. Ratios after: 1893 **1.0000**, 1894 0.9941, 1895 0.9784, 1896 **0.9998**,
+1897 **1.0000**. Whole-payload ratio-class diff: five new cells, nothing else
+moved. `exact01` **2,757 → 2,760**.
+
+**The trap A avoided**: relabelling to `SEEDS | Rape` would have gained nothing —
+that commodity's Tier-1 stops at **1891**. `Rape` alone is the label carrying the
+1892-1900 national line. Check the target commodity's T1 coverage *and* its
+existing origins before relabelling any of B-F.
+
+## Still open here
+
+- **B, D, E and F are fully specified above** and each has multi-year exact
+  closure. They are the next work, one at a time, each with its target checked.
+- **Sub-block C is unidentified** — grand totals 447,476 / 450,082 / 473,430 /
+  236,394 / 240,547 Quarters match no consensus quantity line in any year.
+- **Rape 1894 (0.9941) and 1895 (0.9784)**: the country sum falls short of the
+  printed grand total, which itself equals T1. Unexamined.
+- **The entire `Clover and Grass` article run (seq 18185-18475, GBP 23.4M) is
+  untouched** and is presumably segmented the same way.
