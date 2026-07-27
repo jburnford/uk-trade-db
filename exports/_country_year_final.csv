@@ -10798,7 +10798,6 @@ OIL,Olive,tripoli and tunis,Tuns,import,1875,2260.0,90100.0,consensus,B,B,2,2
 OIL,Olive,morocco,Tuns,import,1875,1075.0,42125.0,consensus,B,B,2,2
 OIL,Olive,malta,Tuns,import,1875,570.0,23158.0,consensus,B,B,2,2
 OIL,Olive,other countries,Tuns,import,1875,494.0,20497.0,consensus,B,B,2,2
-OIL,Palm,west coast of africa foreign,Cwts,import,1875,904562.0,1508299.0,consensus,B,B,2,2
 OIL,"Seed Oil, of all Kinds",germany,Tuns,import,1875,10324.0,330342.0,consensus,B,B,2,2
 OIL,"Seed Oil, of all Kinds",holland,Tuns,import,1875,3791.0,140785.0,consensus,B,B,2,2
 OIL,"Seed Oil, of all Kinds",belgium,Tuns,import,1875,819.0,30311.0,consensus,B,B,2,2
@@ -81477,12 +81476,6 @@ NUTS AND KERNELS,Commonly used for expressing Oil therefrom,West Coast of Africa
 NUTS AND KERNELS,Commonly used for expressing Oil therefrom,West Coast of Africa (Foreign) : British West Africa,Tons,import,1875,2744.0,34561.0,subentry,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing Oil therefrom,West Coast of Africa (Foreign) : The Gold Coast,Tons,import,1875,13732.0,200503.0,subentry,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing Oil therefrom,West Coast of Africa (Foreign) : Australia,Tons,import,1875,2788.0,39929.0,subentry,B,B,2,2
-OIL,Palm,West Coast of Africa (Foreign) : Fer. ando Po,Cwts,import,1875,6822.0,11019.0,subentry,B,B,2,2
-OIL,Palm,West Coast of Africa (Foreign) : Portuguese Possessions,Cwts,import,1875,4307.0,6978.0,subentry,B,B,2,2
-OIL,Palm,West Coast of Africa (Foreign) : Not particularly designated,Cwts,import,1875,735736.0,1225831.0,subentry,B,C,2,3
-OIL,Palm,West Coast of Africa (Foreign) : British West Africa,Cwts,import,1875,21638.0,34134.0,subentry,B,B,2,2
-OIL,Palm,West Coast of Africa (Foreign) : The Gold Coast,Cwts,import,1875,123166.0,207897.0,subentry,B,B,2,2
-OIL,Palm,West Coast of Africa (Foreign) : Other Countries,Cwts,import,1875,12893.0,22437.0,subentry,B,B,2,2
 SUGAR,Unrefined of all Kinds,British India : Madras,Cwts,import,1875,379437.0,281617.0,subentry,B,B,2,2
 CORN AND GRAIN,Barley,Russia : Northern Ports,Cwts,import,1876,6797.0,2775.0,subentry,B,B,2,2
 NUTS AND KERNELS,Commonly used for expressing Oil therefrom,West Coast of Africa (Foreign) : Portuguese Possessions,Tons,import,1876,218.0,3245.0,subentry,B,B,2,2
@@ -115205,6 +115198,12 @@ COFFEE,Raw,British East Indies : British West India Islands,Cwts.,import,1897,20
 COFFEE,Raw,British East Indies : British West India Islands,Cwts.,import,1898,19598.0,92379.0,groupfix,C,C,3,3
 COFFEE,Raw,British East Indies : British West India Islands,Cwts.,import,1899,21187.0,75071.0,groupfix,C,C,3,3
 COFFEE,Raw,British East Indies : Other British Possessions,Cwts.,import,1897,1455.0,4070.0,groupfix,C,C,3,3
+OIL,Palm,West Coast of Africa (Foreign) : Fer. ando Po,Cwts.,import,1875,6822.0,11019.0,groupfix,C,C,3,3
+OIL,Palm,West Coast of Africa (Foreign) : Portuguese Possessions,Cwts.,import,1875,4307.0,6978.0,groupfix,C,C,3,3
+OIL,Palm,West Coast of Africa (Foreign) : Not particularly designated,Cwts.,import,1875,735736.0,1225831.0,groupfix,C,C,3,3
+OIL,Palm,West Coast of Africa (Foreign) : British West Africa,Cwts.,import,1875,21638.0,34134.0,groupfix,C,C,3,3
+OIL,Palm,West Coast of Africa (Foreign) : The Gold Coast,Cwts.,import,1875,123166.0,207897.0,groupfix,C,C,3,3
+OIL,Palm,West Coast of Africa (Foreign) : Other Countries,Cwts.,import,1875,12893.0,22437.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3

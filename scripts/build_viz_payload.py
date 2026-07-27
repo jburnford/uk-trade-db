@@ -79,7 +79,18 @@ def fold_country(c):
     parent = None
     if ' : ' in c:                          # sub-entry: remember the parent
         parent, c = (x.strip() for x in c.split(' : ', 1))
-    c = c.strip('()').strip()               # '(Straits Settlements)'
+    # A label WHOLLY wrapped in brackets is the parenthesised variant of a
+    # country ('(Straits Settlements)'). A TRAILING bracketed qualifier is
+    # not: 'Gold Coast (including Lagos)'. strip('()') ate only the closing
+    # bracket of the second kind, leaving 'Gold Coast (including Lagos' —
+    # and an unbalanced '(' makes every consumer treat the cell as a
+    # drill-down and drop it (palm oil 1885-90 lost its largest origin that
+    # way, four years running). V.cnorm already removes the brackets on the
+    # consensus path; this makes the raw-label paths agree with it.
+    if c.startswith('(') and c.endswith(')'):
+        c = c[1:-1].strip()
+    else:
+        c = c.replace('(', ' ').replace(')', ' ').strip()
     c = re.sub(r'(\w)- (\w)', r'\1\2', c)   # 'In- dian' hyphenation breaks
     c = re.sub(r'\s*-\s*Other\s.*$', '', c)  # 'X-Other British...' composites
     c = re.sub(r'\s+', ' ', c)
