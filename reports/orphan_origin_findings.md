@@ -1267,3 +1267,94 @@ bad cell had contributed.
 **It was the full before/after diff that caught this, not the baseline** — the
 headline numbers barely moved while two of the corpus's larger commodities were
 being zeroed.
+
+---
+
+# Round 53 — a label split hid a vote majority
+
+## The twin
+
+Round 51 removed a glued East Indies series from `Ivory — Vegetable`. **The same
+printed table is also under a second label**, `Vegetable`, wearing its sub-entry
+name: `Bengal` **336,723 / 389,939 / 338,233 / 334,636 / 360,702** cwt for
+1894-98, where the other label carried the aggregate `British East Indies`. One
+table, two labels, two levels.
+
+**A fix applied to one label may need applying to its twin.** Dropped; that
+label falls from **GBP20,765,554 to GBP16,657**, which is all it ever legitimately
+held.
+
+## The finding: the vote never saw its own majority
+
+Round 52 could not explain `Ivory — Vegetable` 1896 because "three volumes agree
+on 39,129". They do not. The readings are split across **two spellings of the
+article**:
+
+```
+under 'Vegetable Ivory'   as_1898  39,129    tn_1899  39,129    as_1899  30,129
+under 'Vegetable'         as_1897  30,129    tn_1901  30,129
+```
+
+Within the first row the vote is 2-1 for 39,129 and it wins. **Across both
+spellings it is three volumes to two for 30,129** — and the consensus keys on the
+article string, so neither row ever saw the other's ballots. A cousin of
+[[vote-tiebreak-lone-reprint]], and a mechanism worth its own name: **a label
+split hides a vote majority.**
+
+The origin arithmetic settles it without needing the ballots at all. With the
+glued series gone, 1896's countries sum to **30,385**:
+
+```
+30,385 / 30,129 = 1.0085          30,385 / 39,129 = 0.7765
+neighbours:  1894 1.058   1895 1.052   1897 1.023   1898 1.078
+```
+
+1.0085 belongs to that series; 0.7765 does not. **39,129 is a 3-for-9 misread of
+the ten-thousands digit**, and round 52's open item closes.
+
+Applied through `reference/manual_t1.csv` — the sanctioned override, whose 18
+existing rows are precisely this class.
+
+## The re-vote was clean, which is the safety result
+
+`reconcile.py` rebuilds the Tier-1 vote for the **whole corpus** (51,268
+series-years, 2m38s). The full before/after diff:
+
+- **exactly one commodity-year changed** — `Ivory — Vegetable` 1896, T1 39,129 ->
+  30,129;
+- **exactly one `v` changed** — `Vegetable`, from the twin's dropped cells.
+
+Nothing else moved, so the `consensus` table was in sync and the re-run
+introduced no drift. That is worth stating because it is the thing that could
+have gone wrong.
+
+```
+exact01 unchanged at 2,746        within 5%  65.9% -> 66.0% GBP
+nodata GBP-weight 24.5% -> 24.4%
+```
+
+Those tenths are **weight leaving the nodata bucket again**, not years improving —
+GBP20.7M of phantom left `Vegetable`. Said plainly for the third time because it
+is the easiest number in this project to misread.
+
+## Still not scorable, and now for a stated reason
+
+`Ivory — Vegetable`'s anchor is now correct and the commodity **still cannot be
+scored**: `unit_the_anchor`'s identity path needs two exact years and has one
+(1899), and its proportionality path needs every year within 5% and gets 1894 at
+1.058 and 1898 at 1.078. The anchor being right is worth having anyway — anyone
+reading the series now gets the true figure.
+
+## The oversized-cell survey, classified
+
+Of the 30 commodities in `reports/oversized_country_cells.csv`, the median
+`rest/T1` after removing the oversized cell separates two kinds:
+
+- **single-cell cases** — `Vegetable` 0.01, `Silk — Raw` 0.92,
+  `Skins, Furs, And Pelts — Seal` 0.92, `Isinglass` 1.00, `Horns And Hoofs` 1.00,
+  `Yarn` 1.95. All now handled or one step away.
+- **chimeras** — `Collodium` (28 cells, median 871), `Slates` (19, 368),
+  `Oil-Seed Cake — Of Other Sorts` (16, 331), `Dye Woods — Logwood` (16, 79),
+  `Leather, Undressed` (15, 77), `Madder…` (15, 61). **Removal does not rescue
+  the year, because the whole label is glue.** Those want `drop`, not cell
+  surgery — and `Madder` is also inside the deferred era-spelling decision.
