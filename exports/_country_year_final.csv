@@ -5901,10 +5901,6 @@ CANDLES,Other Kinds,germany,Cwts,import,1872,2423.0,8813.0,consensus,B,B,2,2
 CANDLES,Other Kinds,holland,Cwts,import,1872,1129.0,3007.0,consensus,B,B,2,2
 CANDLES,Other Kinds,belgium,Cwts,import,1872,1872.0,6309.0,consensus,B,B,2,2
 CANDLES,Other Kinds,other countries,Cwts,import,1872,466.0,1720.0,consensus,B,C,2,3
-CAOUTCHOUC,,germany,Cwts,import,1872,1786.0,16853.0,consensus,B,B,2,2
-CAOUTCHOUC,,holland,Cwts,import,1872,4397.0,31935.0,consensus,B,C,2,3
-CAOUTCHOUC,,france,Cwts,import,1872,2113.0,22268.0,consensus,B,B,2,2
-CAOUTCHOUC,,portugal,Cwts,import,1872,2263.0,22520.0,consensus,B,B,2,2
 CAOUTCHOUC,Manufactures of,germany,Lbs,import,1872,345965.0,40278.0,consensus,B,C,2,3
 CAOUTCHOUC,Manufactures of,holland,Lbs,import,1872,54503.0,4819.0,consensus,B,C,2,3
 CAOUTCHOUC,Manufactures of,france,Lbs,import,1872,271271.0,31169.0,consensus,B,C,2,3
@@ -71961,17 +71957,6 @@ VARNISH CONTAINING ALCOHOL,VINEGAR,british possessions in south africa,Gallons,i
 VARNISH CONTAINING ALCOHOL,VINEGAR,british india,Gallons,import,1872,2523.0,1648.0,consensus,C,C,3,3
 VARNISH CONTAINING ALCOHOL,VINEGAR,australia,Gallons,import,1872,14783.0,3917.0,consensus,C,C,3,3
 "ARMS, AMMUNITION, AND MILITARY STORES",Percussion Caps,all countries,Number,import,1872,35652466.0,4016.0,consensus,C,B,3,2
-CAOUTCHOUC,West Coast of Africa,portuguese possessions,,import,1872,876.0,7385.0,consensus,C,C,3,3
-CAOUTCHOUC,West Coast of Africa,not particularly designated,,import,1872,13259.0,161359.0,consensus,C,C,3,3
-CAOUTCHOUC,West Coast of Africa,united states of america,,import,1872,4614.0,49638.0,consensus,C,C,3,3
-CAOUTCHOUC,West Coast of Africa,central america,,import,1872,5310.0,40493.0,consensus,C,C,3,3
-CAOUTCHOUC,West Coast of Africa,new granada,,import,1872,7668.0,74997.0,consensus,C,C,3,3
-CAOUTCHOUC,West Coast of Africa,ecuador,,import,1872,3412.0,30499.0,consensus,C,C,3,3
-CAOUTCHOUC,West Coast of Africa,brazil,,import,1872,68143.0,960602.0,consensus,C,C,3,3
-CAOUTCHOUC,West Coast of Africa,mauritius,,import,1872,10438.0,112155.0,consensus,C,C,3,3
-CAOUTCHOUC,West Coast of Africa,british india bengal and burmah,,import,1872,13855.0,116926.0,consensus,C,C,3,3
-CAOUTCHOUC,West Coast of Africa,straits settlements,,import,1872,15296.0,140798.0,consensus,C,C,3,3
-CAOUTCHOUC,West Coast of Africa,other countries,,import,1872,3689.0,34631.0,consensus,C,C,3,3
 CHEMICAL MANUFACTURES AND PRODUCTS,"COALS, CULM, or CINDERS",belgium,,import,1872,4294.0,4845.0,consensus,C,C,3,3
 CHEMICAL MANUFACTURES AND PRODUCTS,"COALS, CULM, or CINDERS",france,,import,1872,835.0,1155.0,consensus,C,C,3,3
 CHEMICAL MANUFACTURES AND PRODUCTS,"COALS, CULM, or CINDERS",other countries,,import,1872,639.0,762.0,consensus,C,C,3,3
@@ -114798,6 +114783,21 @@ WINE,White,Other Foreign Countries,Gallons,import,1893,9121.0,1698.0,groupfix,C,
 WINE,White,British Possessions in South Africa,Gallons,import,1893,5802.0,1956.0,groupfix,C,C,3,3
 WINE,White,Australasia,Gallons,import,1893,56638.0,10610.0,groupfix,C,C,3,3
 WINE,White,Other British Possessions,Gallons,import,1893,5569.0,1569.0,groupfix,C,C,3,3
+CAOUTCHOUC,,Germany,Cwts.,import,1872,1786.0,16853.0,groupfix,C,C,3,3
+CAOUTCHOUC,,Holland,Cwts.,import,1872,4397.0,31335.0,groupfix,C,C,3,3
+CAOUTCHOUC,,France,Cwts.,import,1872,2113.0,22268.0,groupfix,C,C,3,3
+CAOUTCHOUC,,Portugal,Cwts.,import,1872,2263.0,22520.0,groupfix,C,C,3,3
+CAOUTCHOUC,,West Coast of Africa,Cwts.,import,1872,876.0,7385.0,groupfix,C,C,3,3
+CAOUTCHOUC,,Portuguese Possessions,Cwts.,import,1872,13259.0,101359.0,groupfix,C,C,3,3
+CAOUTCHOUC,,Not particularly designated,Cwts.,import,1872,4614.0,49636.0,groupfix,C,C,3,3
+CAOUTCHOUC,,United States of America,Cwts.,import,1872,5310.0,40293.0,groupfix,C,C,3,3
+CAOUTCHOUC,,Central America,Cwts.,import,1872,7668.0,74997.0,groupfix,C,C,3,3
+CAOUTCHOUC,,New Granada,Cwts.,import,1872,3412.0,30199.0,groupfix,C,C,3,3
+CAOUTCHOUC,,Ecuador,Cwts.,import,1872,68143.0,960602.0,groupfix,C,C,3,3
+CAOUTCHOUC,,Brazil,Cwts.,import,1872,10439.0,112155.0,groupfix,C,C,3,3
+CAOUTCHOUC,,Mauritius,Cwts.,import,1872,13855.0,116926.0,groupfix,C,C,3,3
+CAOUTCHOUC,,British India: Bengal and Burmah,Cwts.,import,1872,15296.0,140798.0,groupfix,C,C,3,3
+CAOUTCHOUC,,Straits Settlements,Cwts.,import,1872,3689.0,34631.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
