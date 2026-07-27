@@ -1871,3 +1871,64 @@ check what it dropped before applying it, not after.**
 
 `Potatoes` 1893 (0.769) and 1894 (0.856) — locate the missing countries, either
 in `as_1897`'s block beyond 17552 or in the superseded second pair.
+
+---
+
+# Round 62 — `Collodium` closes, and the fifth pair only existed once the others were gone
+
+Three rounds failed on this commodity. It takes **five** supersede rows.
+
+Round 61's recipe said: enumerate every `(article_group, article)` pair feeding
+the target and supersede each. For collodion that gave four, all in Gallons:
+
+```
+COLLODIUM | (null)      6,804,759   the 381-row glue block
+COLLODION | (null)          3,849
+COFFEE    | COLLODION       9,338   collodion under a stale COFFEE head
+COFFEE    | COLLODIEN       1,270   an OCR variant of the same
+                                    (printed total for 1893-97: 7,559)
+```
+
+Superseding all four and re-admitting `as_1897` 26380-26403 left the years at
+**93× to 182×**. Something was still feeding it — and it was not in the
+enumeration, because it could not be:
+
+```
+CARDS, PLAYING | COLLODION | Gallons | infonly   34 rows, 931,183 gallons
+```
+
+An **Infinity-engine copy of the same glue block** under a stale `CARDS, PLAYING`
+head. The gap-fill only admits rows for commodity-years absent from consensus, so
+while consensus held the COLLODIUM rows this copy was **blocked and invisible**.
+Superseding them opened the door and it walked in.
+
+**This is the supersede-then-hijack the anomaly workflow already warns about,
+reproduced from the other direction — and it sharpens round 61's recipe:
+enumerating the feeding pairs beforehand is not sufficient, because a pair
+blocked by the very rows you are about to drop will not appear until you drop
+them. The enumeration has to be repeated after each supersede.**
+
+## Result
+
+Five supersede rows plus the re-admission. The commodity's years go from
+**655×-1,349×** to:
+
+| 1893 | 1894 | 1895 | 1896 | 1897 | 1898 |
+|---|---|---|---|---|---|
+| 0.8440 | 0.9528 | **1.0052** | 0.7251 | **0.9962** | **1.0000** |
+
+exactly the figures round 56 predicted from the printed table. The label also
+settles on **`Collodion`** — the spelling the Tier-1 series carries — and
+`Collodium` empties.
+
+```
+over  247 -> 242      within5  931 -> 934      within 5%  37.0% -> 37.1%
+GBP   Collodium 4,517,460 -> 0    Collodion 0 -> 7,726
+```
+
+**GBP4.5M of glue gone from a line whose real trade is under GBP8,000.**
+
+The remaining 1893 (0.844) and 1896 (0.725) are the two single-digit misreads
+identified in round 56: 1893's Germany reads 1,595 against its own printed
+foreign total of 1,042, and 1896's printed grand is 1,319 where Tier 1 says
+1,819.
