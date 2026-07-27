@@ -1053,7 +1053,66 @@ def main():
         return n
 
     n_agg = drop_aggregate_beside_members(comms)
+
+    # ---- the anchor that lost its unit. `Bark - For Tanners' Or Dyers' Use`
+    # prints a Tier-1 series with NO unit on it while its own country cells are
+    # Cwt, so reconcile_baseline compares an unitless total against an unitless
+    # origin sum of zero and the commodity scores nothing in any year - even
+    # where the countries already sum to the printed figure exactly. Measured:
+    # 15 commodities, 105 commodity-years, 16 of them already agreeing to the
+    # digit behind the missing label.
+    #
+    # The origins' unit is real information (it was printed on the column); the
+    # anchor's is what went missing. So the anchor takes the origins' unit -
+    # never the reverse. Guarded by agreement: at least TWO years must already
+    # match to the digit, the same refusal of single coincidences the orphan
+    # matcher uses. A commodity whose countries do not agree with its own total
+    # in two separate years has something else wrong with it and is left alone.
+    def unit_the_anchor(store):
+        n = 0
+        for s in store.values():
+            c = s['c']
+            t1 = c.get(TK)
+            if not t1 or '?' not in t1:
+                continue
+            if max(t1, key=lambda u: len(t1[u])) != '?':
+                continue
+            anch = {cell[0]: cell[1] for cell in t1['?'] if cell[1]}
+            if not anch:
+                continue
+            org = {}
+            for cty, byu in c.items():
+                if cty == TK or '(' in cty:
+                    continue
+                for u, cells in byu.items():
+                    if u == '?':
+                        continue
+                    d = org.setdefault(u, {})
+                    for cell in cells:
+                        if cell[1]:
+                            d[cell[0]] = d.get(cell[0], 0) + cell[1]
+            if not org:
+                continue
+            best = max(org, key=lambda u: len(org[u]))
+            agree = sum(1 for y, q in anch.items()
+                        if round(org[best].get(y, 0)) == round(q))
+            if agree < 2:
+                continue
+            have = {cell[0] for cell in t1.get(best, ())}
+            move = [cell for cell in t1['?'] if cell[0] not in have]
+            if not move:
+                continue
+            t1.setdefault(best, []).extend(move)
+            rest = [cell for cell in t1['?'] if cell[0] in have]
+            if rest:
+                t1['?'] = rest
+            else:
+                del t1['?']
+            n += len(move)
+        return n
+
     n_split = heal_split_year_units(comms)
+    n_unit = unit_the_anchor(comms)
 
     for s in comms.values():                     # better rank first per year
         for units in s['c'].values():
@@ -1353,6 +1412,7 @@ def main():
     # them. Same guard, so re-running it cannot make a year worse.
     n_agg += drop_aggregate_beside_members(payload)
     n_split += heal_split_year_units(payload)
+    n_unit += unit_the_anchor(payload)
     n_tunton += fold_tun_ton(payload)
     n_heal2 = heal_by_anchor(payload)
     if n_heal2:
@@ -1389,7 +1449,7 @@ def main():
           f'(sticky repaired: {n_fixed:,}; fuzzy-merged: {n_fuzzy}; '
           f"unit-healed: {n_healed:,}; coast-rollup: {n_coast:,}; "
           f"coast-sibling folds: {n_sib:,}; aggregate-beside-members: {n_agg:,}; "
-          f"split-year units: {n_split:,}; "
+          f"split-year units: {n_split:,}; anchor-units restored: {n_unit:,}; "
           f"Tun/Ton: {n_tunton:,}; "
           f'deduped: {n_dedup:,})  '
           f'MB: {len(js) / 1e6:.2f}  -> {out}')

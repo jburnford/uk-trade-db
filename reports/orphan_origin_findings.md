@@ -1020,3 +1020,56 @@ exact01  2,713 -> 2,722      nodata  5,795 -> 5,785
 within 0.1%   27.4% of commodity-years / 47.8% GBP
 within 5%     36.6% of commodity-years / 65.6% GBP
 ```
+
+---
+
+# Round 49 — the anchor that lost its unit
+
+Round 48 folded four exact years into `Bark — For Tanners' Or Dyers' Use` and
+watched them change nothing, because that commodity's **Tier-1 series carries no
+unit** while its country cells are `Cwt`. `reconcile_baseline` compares the
+unitless total against an unitless origin sum of zero, so the commodity scores
+nothing in any year — even where the countries already sum to the printed figure
+exactly.
+
+## The pass
+
+`unit_the_anchor`, run in both the places the other anchor-guarded passes run.
+**The origins' unit is real information — it was printed on the column — and the
+anchor's is what went missing, so the anchor takes the origins' unit, never the
+reverse.**
+
+Guarded by agreement: **at least two years must already match to the digit**
+before the label is moved, the same refusal of single coincidences the orphan
+matcher uses. A commodity whose countries do not agree with its own printed total
+in two separate years has something else wrong with it and is left alone.
+
+## Result
+
+29 anchor cells relabelled, across **three** commodities. Full corpus ratio diff:
+**22 commodity-years changed, 22 closer, 0 further, and 15 now inside 0.1%.**
+
+| commodity | years recovered |
+|---|---|
+| `Bark — For Tanners' Or Dyers' Use` | 10 |
+| `Manures — Unenumerated` | 9 |
+| `Manures — Nitrate Of Soda (Cubic Nitre)` | 3 |
+
+```
+exact01  2,722 -> 2,737      nodata  5,785 -> 5,763
+within 0.1%   27.5% of commodity-years / 47.9% GBP
+within 5%     36.8% of commodity-years / 65.7% GBP
+```
+
+## What the guard refused, and why that is the right answer
+
+Twelve of the fifteen candidates were **left alone**, including the two largest
+in the class — `Ivory — Vegetable` (GBP21.2M, 6 unitless T1 years against 16
+years of Cwt origins, **one** agreement) and `Ore Of (Including Chrome)`
+(GBP24.6M, **none**).
+
+One agreement is exactly the coincidence this project refuses. A missing unit
+label is not the only thing wrong with those two: if the countries and the
+printed total agreed, they would agree more than once. Relabelling their anchors
+would have made them *look* scored while measuring nothing. They stay in the
+queue, needing a reason for the disagreement rather than a unit.
