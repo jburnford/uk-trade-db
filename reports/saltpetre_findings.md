@@ -148,3 +148,69 @@ existing origins before relabelling any of B-F.
   printed grand total, which itself equals T1. Unexamined.
 - **The entire `Clover and Grass` article run (seq 18185-18475, GBP 23.4M) is
   untouched** and is presumably segmented the same way.
+
+## Iteration 40 — the other four sub-blocks, measured. **None can be applied.**
+
+Iteration 39 left B, D, E and F as "the next work, one at a time". Working F
+forced a pre-check of the other three, and the queue entry was wrong. Recorded
+here so none of it is re-tried.
+
+### F — `Seeds | Other sorts`: applied, measured, **reverted**
+
+`exact01`, `over` and `nodata` were **all unchanged**. Two independent reasons:
+
+1. The target commodity's Tier-1 series is **entirely under unit `Value`** — 30
+   entries, of which 1868-1892 are £ values and **1893-1897 are cwt quantities
+   mis-healed into the Value bucket** (816,471 / 585,804 / 827,001 / 478,135 /
+   548,415). The relabelled cells arrive as `Cwt` and never meet it. This is the
+   same value/quantity confusion as `reports/value_only_origins_findings.md`,
+   reached from the other direction.
+2. Even ignoring units, **the cells do not close.** Country sums 727,559 /
+   559,772 / 923,308 / 490,058 / 565,018 against T1 816,471 / 585,804 / 827,001
+   / 478,135 / 548,415 — ratios 0.891 / 0.955 / 1.116 / 1.025 / 1.030. The
+   block's *grand total* matches T1, but its foreign components **overshoot
+   their own printed subtotal by 9,091 in 1897** (549,985 vs 540,894). A grand
+   total that matches is not the same as a block that closes.
+
+The label choice was right, at least: the relabel merged `Seeds — Of Other
+Sorts` into a new `Seeds — Other Sorts` on the same signature.
+
+### B — `Seeds | Garden, unenumerated`: the origins are already there
+
+`Garden, Unenumerated` reads **0.960 / 1.004 / 0.999 / 0.999 / 0.996 / 0.995 /
+1.000** for 1893-1899. Relabelling B would double them.
+
+### D — `Tares and Lentils`: already over-counted
+
+50 countries already, and the target years are **already over**: 1894 1.029,
+1895 1.121, 1896 1.123, **1897 1.700, 1898 1.895, 1899 1.623** — against ~1.000
+through 1893. Adding D makes it worse. **The over-count itself is a new,
+untraced defect.**
+
+### E — the only candidate, blocked on a unit-label question
+
+`Unenumerated, For Expressing Oil Therefrom` has T1 in **Bushel** for 1883-84
+and 1891-1900, **zero countries**, and the block's grand totals equal T1 in all
+five years: 143,488 / 131,743 / 97,544 / 101,177 / 209,736. It is the clean case
+Rape was.
+
+**But the units disagree.** The block's own unit column reads `Quarters`, and so
+does the article name — it is literally `Unenumerated, for expressing Oil
+therefrom - Quarters`, the unit caption absorbed into the label — while the T1
+series for those years is filed under `Bushel`. `new_unit=Bushels` would
+reconcile but aligns the origins to a label that looks wrong; `Quarters` is
+truthful but leaves the cells invisible. The T1 series itself steps **1890
+Quarter 125,475 → 1891 Bushel 94,426 with no factor-of-8 jump**, so this is a
+label flip, not a real mid-series unit change.
+
+Deciding it means correcting a Tier-1 unit, so it is queued rather than guessed.
+
+## Revised "still open" for this run
+
+- **E**, once the Quarters/Bushel label question is settled.
+- **Sub-block C** remains unidentified.
+- **`Tares And Lentils` 1897-1899 over-count** (1.700 / 1.895 / 1.623) — new,
+  unrelated to this run, source not traced.
+- The `Clover and Grass` article run (seq 18185-18475, GBP 23.4M) is still
+  untouched — and after the above, **check each target's existing origins and
+  T1 unit BEFORE assuming a sub-block is workable.**
