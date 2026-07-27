@@ -955,3 +955,68 @@ exact01  2,700 -> 2,713      nodata  5,810 -> 5,795
 within 0.1%   27.3% of commodity-years / 47.8% GBP
 within 5%     36.5% of commodity-years / 65.6% GBP
 ```
+
+---
+
+# Round 48 — `Books`, `Bark`, and the magnitude tell earning its keep
+
+## `Books`
+
+31 printed Cwt years, origins for 1872-84, 1886 and 1887 only. Two labels supply
+the gap and neither is the obvious one:
+
+- **`Beef — Books, Bound Or Unbound, Including Maps And Charts`** — the book
+  table under a stale BEEF head — holds 1888, 1889, 1891, 1893, 1894, 1895, all
+  gaps, **four exact** (1888 30,350; 1889 33,310; 1891 33,052; 1895 47,095) with
+  1893 −3 and 1894 +5.
+- **`Books, Bound Or Unbound, Including Maps And Charts`** — the same table under
+  its own head — **scoped** to 1885, 1890, 1892, 1896, the four remaining gaps.
+  1885 22,309, 1890 32,268 and 1892 29,522 are exact; 1896 is 44,182 against
+  43,851. Its other years would collide with the target's own cells, and 1895 is
+  left to the fold above, which reads it identically.
+
+**Not folded, and this is round 47's caution paying for itself**:
+`Books, Bound And Unbound, In- Cluding Maps And Charts` looks like a third copy
+of the same title — the hyphen break in "In- Cluding" is the sort of OCR damage
+that usually means a variant — but its values are **2,789,501 against a printed
+32,529, eighty-six times over**. It is a different commodity wearing this one's
+name. The tell was magnitude, not the label.
+
+## `Bark — For Tanners' Or Dyers' Use`
+
+`Bark — For Tanners' Or Dyers' Use, Unenumerated` holds 1872-75 — **all four
+exact** (476,323; 467,515; 324,703; 471,900) and disjoint from the target's
+1876-81. Folded.
+
+**It changes no ratio, which was predicted before applying it**: the target's
+Tier-1 cells carry **no unit at all** while its country cells are `Cwt`, so
+`reconcile_baseline` compares the unitless anchor against a unitless origin sum
+of zero. The fold is right; the scoring cannot see it.
+
+### That class, measured
+
+**15 commodities have a unitless Tier-1 series and origins in a real unit — 105
+commodity-years, of which 16 already match the printed total to the digit.**
+
+| commodity | T1 | origins | exact | GBP |
+|---|---|---|---|---|
+| `Bark — For Tanners' Or Dyers' Use` | 14y `?` | 10y Cwt | 6 | 2.1M |
+| `Manures — Unenumerated` | 12y `?` | 25y Ton | 5 | 7.6M |
+| `Manures — Nitrate Of Soda (Cubic Nitre)` | 3y `?` | 6y Ton | 2 | 5.8M |
+| `Ivory — Vegetable` | 6y `?` | 16y Cwt | 1 | 21.2M |
+| `Ore Of (Including Chrome)` | 5y `?` | 6y Ton | 0 | 24.6M |
+
+Sixteen exact matches are sitting behind a missing unit label on the **anchor**
+side. Queued — the repair is to give the T1 series the unit its own origins use,
+guarded (as ever) by the years that already agree.
+
+## Result
+
+Ten commodity-years changed, **10 closer, 0 further**, every one from "no origin
+data"; **nine land inside 0.1%**.
+
+```
+exact01  2,713 -> 2,722      nodata  5,795 -> 5,785
+within 0.1%   27.4% of commodity-years / 47.8% GBP
+within 5%     36.6% of commodity-years / 65.6% GBP
+```
