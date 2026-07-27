@@ -1157,7 +1157,13 @@ def main():
     # (WASTE->WHITE was homing Cotton-Waste Bombay cells into Wine-White)
     FALSE_PAIRS = {frozenset(p) for p in (
         ('WASTE', 'WHITE'), ('WHALE', 'WHITE'), ('BEADS', 'BEANS'),
-        ('CANDY', 'CARDS'), ('PLAIN', 'PLATE'), ('SHEEP', 'SHEET'))}
+        ('CANDY', 'CARDS'), ('PLAIN', 'PLATE'), ('SHEEP', 'SHEET'),
+        # HORNS->HORSE homed the infinity engine's 1874 hops block (misfiled
+        # under 'HIDES ... | Horns') into Horse Hair: 1874 ran 6.79x T1.
+        ('HORNS', 'HORSE'),
+        # STAVES->SLATES buried the whole Slates origin series inside Staves;
+        # split out, Slates 1895/1898 close EXACTLY on their own printed T1.
+        ('STAVES', 'SLATES'))}
 
     def fuzzy_same(s1, s2):
         if len(s1) != len(s2):
