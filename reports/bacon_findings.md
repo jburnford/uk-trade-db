@@ -298,3 +298,97 @@ a tie) and so was copper 1888 (a lone as_1891 reading winning a tie). Three
 defects in one session with one cause. **A vote that weighted the contemporary
 volume, or simply broke ties toward engine agreement, would have caught all
 three.** That is a reconcile-level change and is not made here.
+
+---
+
+# Round 31 — `Northern Parts` was Russia all along
+
+## The defect
+
+`country_year_final` carried a country called **`northern parts`** on `BACON`
+for 1893-97, beside a `russia` cell in 1894-97 whose figures were the same
+line. The map summed both, so Russian bacon was counted twice in four years,
+and 1893's Russia origin was invisible because it was wearing the wrong name.
+
+## What the page says
+
+`as_1897`'s printed import table (the 1893-97 comparative block) reads:
+
+```
+BACON :
+From Russia :        Cwts. Cwts. Cwts. Cwts. Cwts.   £  £  £  £  £
+  Northern Parts     16,823  9,902  12,054  19,001  27,713 | 43,947 21,536 23,924 35,421 59,953
+  " Sweden           62,320 72,541  96,385  76,317  48,579 | ...
+```
+
+The parent row `From Russia :` carries the **unit labels**, not blanks, so the
+parser's colon-parent rule did not fire and the sub-entry lost its parent.
+`Northern Parts` is an OCR misread of `Northern Ports`, and because Russia's
+only sub-entry in this table is that one line, **the Northern Ports figure IS
+Russia's whole bacon line** — which is exactly why `as_1898` and `as_1899`
+print the same numbers under a plain `From Russia`.
+
+## Three independent proofs that it is Russia
+
+1. **Position.** In `as_1897` the row is the FIRST foreign country of the block
+   (seq 947-951), the slot `as_1898` (seq 939-942) and `as_1899` (seq 920-922)
+   give to `Russia`; `as_1897` has no Russia row anywhere in that block.
+2. **Digits.** 1896 `19,001 / 35,421` and 1897 `27,713 / 59,953` are identical
+   to `as_1898`'s and `as_1899`'s Russia cells to the digit.
+3. **Closure.** `as_1897`'s own printed *Total from Foreign Countries* closes
+   EXACTLY with the row counted as one of the seven foreign origins:
+   - 1896: `19,001 + 76,317 + 1,222,114 + 512 + 22,651 + 2,751,518 + 399
+     = 4,092,512` = printed total. (`as_1896` closes the same year on its own
+     six-country list to the same total, with Russia 19,001.)
+   - 1897: the same sum is 300 short only because `as_1897` misreads Sweden as
+     `48,579`; `as_1898` prints `48,879`, and `4,713,979` is then exact.
+   - 1895: `as_1898`'s country values with **Russia = 13,954** sum to
+     `3,792,945`, which is `as_1897`'s printed foreign total to the digit —
+     so `as_1897`'s `12,054` is the misread, not `as_1898`'s figure.
+
+## The fix
+
+`fold_country` in `scripts/build_viz_payload.py` — the port-split regex now
+accepts `parts?` as well as `ports?`. `Northern Parts` folds to
+`Russia (Northern Ports)`, and every downstream consumer already treats a
+parenthesised cell as drill-down detail inside its parent (`reconcile_baseline`
+and the map both exclude `(` cells from the origin sum), so:
+
+- 1894-97: the duplicate stops being summed — Russia's parent cell stands alone;
+- 1893: no parent Russia cell exists, so the coastal roll-up **synthesises** one
+  at 16,823 and the Russia series runs unbroken 1891-99.
+
+No vote, taxonomy or database change. The string occurs in **exactly 5 cells
+corpus-wide** (`country_obs`, `country_rescored`, `country_consensus` and
+`country_year_final` all agree: BACON, `as_1897`, 1893-97; there is no
+`Southern Parts` anywhere), and a full before/after diff of every
+commodity-year ratio in the payload changed **4 cells, all Bacon**:
+
+| year | before | after |
+|---|---|---|
+| 1894 | 1.0025 | **0.9998** |
+| 1895 | 1.0030 | **1.0001** |
+| 1896 | 1.0043 | **1.0002** |
+| 1897 | 1.0073 | 1.0018 |
+
+Baseline: GBP within 0.1% **38.3% -> 39.0%**; `exact01` 2,244 -> 2,247.
+
+## What it left behind, with evidence
+
+- **`Bacon` 1897 residual is Canada.** After the fold the year is over by
+  **9,044** cwt. `as_1897` prints Canada 1897 as `299,282`; `as_1898` prints
+  `290,283` — a difference of **8,999**. `as_1898`'s British half closes
+  exactly (`290,283 + 565 + 88 = 290,936` = its printed British total) while
+  `as_1897`'s does not (`299,282 + 653 = 299,935` against a printed `299,926`).
+  Note also that `as_1897`'s British-possessions total for 1897 is `299,926`
+  where `as_1898` prints `290,936`: the same `0 -> 9` corruption runs down that
+  whole column in `as_1897`. This confirms the already-queued repair
+  **Canada 1897 = 290,283**, and predicts it closes 1897 to `1.0000` (residual
+  45 cwt).
+- **`Bacon` 1893 stays 0.9990**, short 3,224 cwt, untouched by this fix.
+- **`Bacon` 1898 stays 0.9947.**
+- The first `BACON` block in `as_1897`/`as_1898`/`as_1899` (`To Russia :
+  Northern Ports`, small figures) is the **export** table; it is out of scope
+  here but it is riding in the import payload's group.
+- Country-column garbage seen in passing: `Animals, Living` carries an origin
+  called `Clocks And Parts Thereof` (1899, 572,576). Known class, not this item.

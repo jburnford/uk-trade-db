@@ -104,8 +104,16 @@ def fold_country(c):
     # with NO parent-Russia row. Bare forms are Russia in practice (the only
     # origin printed port-split in these tables); 'Ports in Northern Africa'
     # never matches — the pattern is fully anchored.
-    m = re.match(r'^(?:russia[,:\s]+)?(northern|southern)\s+ports?(?:\s+of)?$',
-                 c, re.I)
+    # 'Parts' is an OCR misread of 'Ports': as_1897 prints bacon's Russian
+    # line as 'From Russia : / Northern Parts' (the parent row carries the
+    # unit labels, so the parser dropped the colon parent) and as_1898/99
+    # print the SAME figures as plain 'Russia' — 19,001/35,421 in 1896 and
+    # 27,713/59,953 in 1897, to the digit. Without the fold it survives as a
+    # phantom country that double-counts Russia. The string appears in
+    # exactly 5 cells corpus-wide (BACON, as_1897, 1893-97); 'watches and
+    # parts thereof' never matches — the pattern is fully anchored.
+    m = re.match(r'^(?:russia[,:\s]+)?(northern|southern)\s+'
+                 r'(?:ports?|parts?)(?:\s+of)?$', c, re.I)
     if m:
         p = _parent_norm(parent) if parent else 'Russia'
         return f'{p} ({m.group(1).title()} Ports)'
