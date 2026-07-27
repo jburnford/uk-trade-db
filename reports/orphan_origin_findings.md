@@ -642,3 +642,61 @@ anchor for the first time**, so its years can be checked at all.
 `Logwood` was left alone — its counterpart `Bark — Logwood` agrees in exactly
 one year (1899, 33,429), and one agreement is the coincidence the matcher's
 two-year minimum exists to refuse.
+
+---
+
+# Round 43 — `Metal — Wrought Or Manufactured`, and a year split three ways
+
+The largest unworked pair in the queue, and another de-headed anchor.
+`Iron And Steel, Wrought Or Manufactured` carries printed Cwt totals for
+1866-79 and **not one country cell**; `Metal — Wrought Or Manufactured` carries
+15 countries and **GBP12.8M** with no anchor.
+
+**Five years match to the digit**: 1872 **781,966**, 1873 **614,358**,
+1875 **1,159,762**, 1876 **1,390,225**, 1878 **2,109,885**.
+
+The name goes to the METAL side on the printed heads, not on preference —
+`country_year_final` carries `article_group` **METAL** with `Wrought or
+Manufactured` in Cwts 1872-78, Tons 1882-95 and `Tons. Cwts` 1884-94, while
+`Iron And Steel` appears only on the abstract label.
+
+Seven commodity-years changed, all inside that commodity, nothing else moved.
+
+```
+exact01  2,673 -> 2,678      nodata  5,837 -> 5,830
+within 0.1%   27.0% of commodity-years / 47.5% GBP
+within 5%     36.1% of commodity-years / 65.5% GBP
+```
+
+## 1874 is split across three unit keys, and the three sum exactly
+
+```
+Cwt       119,515
+unitless  872,745
+Ton        61,759
+          --------
+        1,054,019   = the printed total for 1874, to the digit
+```
+
+The year reads **0.1134** because only the Cwt eighth is counted. This is not a
+data defect at all — every figure is present and correct — it is one printed
+table whose rows landed under three different unit labels. `heal_units` cannot
+fix it: its per-country magnitude test compares a country's minority unit
+against the same country's majority, and here the *whole year* is split, so no
+country has a majority to fold toward. Same blind spot the Tun/Ton fold was
+written for, in a different shape.
+
+**A queued repair with the arithmetic already done**, not a guess.
+
+## Also recorded
+
+- **1877 reads 1,783,921 against a printed 1,683,921** — a leading-digit misread
+  of exactly 100,000 in one country cell. Only one volume prints the year, so
+  which cell is not decidable here; it is a `digit_repair_candidates` entry.
+- The source's **Ton cells for 1882-95 have no anchor at all**: the printed line
+  re-denominates from Cwt to Ton around 1882 while the abstract's total series
+  stops at 1879. That is the [[mid-series-unit-change]] class, and it means this
+  commodity's later two-thirds still cannot be checked against anything.
+- `Metal — Unenumerated, Wrought Or Manufactured` is a **different line** and was
+  left alone: its Ton values for the same years run 364-687 against totals in the
+  hundreds of thousands.
