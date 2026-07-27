@@ -289,3 +289,62 @@ clean five-year block for it. It is the next item.
   and 1897 short **905** (258,732 vs 259,637) — individual country rows the
   parser dropped from an otherwise exact block.
 - **Tares 1894 at 1.029** is untouched; its source is as_1898 / as_1894.
+
+## T2 applied — `Unenumerated, For Expressing Oil Therefrom`, and an Infinity phantom
+
+Re-admitting **seq 18479-18603** (18478 is the previous block's last grand
+`TOTAL`, 18604 starts the fourth) into a commodity that had **zero origin
+countries**:
+
+```
+1895  1.0000      1898  0.9998
+1896  1.0000      1899  0.9998
+1897  0.9857   (206,736 against 209,736 — short exactly 3,000)
+```
+
+`exact01` **2,763 → 2,767**, `nodata` 5,755 → **5,750**. Five cells move and
+nothing else.
+
+**Check the signature with `V.sig` before applying.** `new_group` carries the
+whole label with an **empty article**, because
+`V.sig('UNENUMERATED, FOR EXPRESSING OIL THEREFROM')` is
+`{expressing, oil, therefrom}` — the payload commodity's own signature
+(`UNENUMERATED` and `FOR` are stopwords) — while
+`V.sig('SEEDS Unenumerated, for expressing Oil therefrom')` is
+`{expressing, oil, seed, therefrom}`, a different commodity. One cheap check
+prevents landing the block on the wrong series.
+
+### The second half: an Infinity phantom held two years hostage
+
+The first attempt closed 1895, 1896 and 1899 exactly but left **1897 at 0.7487
+and 1898 at 0.7216**, with only the *British* half admitted — six rows each.
+
+`COTTON | Unenumerated, for expressing Oil therefrom`, `source='infonly'`, is
+**the Infinity engine's copy of the same printed table, in Quarters**. It
+already held the foreign-half `(asig, country, year)` keys for 1897 and 1898,
+and the gap-fill sources are admitted at **step 2, before step 6's group
+repairs** — so `seen_added` locked the repaired rows out. (`repaired_cells`
+exists to block exactly this case and did not fire here; worth understanding,
+not chased.)
+
+The fix is a **supersede-only row with `seq_start = seq_end = 0`**, which selects
+nothing and exists purely to drop the phantom — the same shape as the as_1897
+`CHINA, OR PORCELAIN` flour phantom already in `group_repairs.csv`. Only 1897
+and 1898 are superseded; 1882, 1883 and 1899 under that label are left alone.
+
+```
+1897  0.7487 -> 0.9857        1898  0.7216 -> 0.9998
+```
+
+**Generalisation: when a group repair lands only part of a block, look for the
+other engine's copy under its own stale group.** It is admitted earlier and wins
+on `seen_added`, and the symptom is a clean split — one printed half arrives,
+the other does not.
+
+### Still open
+
+- **1897 short by exactly 3,000** (206,736 vs 209,736) — a digit-shaped gap in
+  one cell of an otherwise exact block. Page-image candidate; not guessable.
+- **T3, seq 18604-18754** — still blocked on the `Seeds | Other sorts` Tier-1
+  being filed under unit `Value`.
+- **T0, seq 14419-14443** — still unidentified.
