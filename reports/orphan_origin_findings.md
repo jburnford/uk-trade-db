@@ -1932,3 +1932,62 @@ The remaining 1893 (0.844) and 1896 (0.725) are the two single-digit misreads
 identified in round 56: 1893's Germany reads 1,595 against its own printed
 foreign total of 1,042, and 1896's printed grand is 1,319 where Tier 1 says
 1,819.
+
+---
+
+# Round 63 — `Metal — Leaf, Not Gold`, and a shadow that goes dark
+
+`as_1898` carries **629 rows** under `METAL | Leaf, not Gold` against a median of
+five — 126×, the third-highest in the outlier scan. **The real table is seq
+13733-13761**, and its printed grand TOTALs are
+
+```
+147,818 | 186,727 | 180,985 | 124,027 | 109,940
+```
+
+**the Tier-1 figures for 1894-98 to the digit.** (The foreign TOTALs above them
+differ only in 1894, by the 48 of the single British row between.)
+
+Three sources carried the glue into 1894-97: `METAL | Leaf, not Gold` as
+consensus (3,124,430 packets), the *same pair* via sub-entry recovery
+(1,367,215), and `BEEF | Leaf, not Gold` (624,354) — against a printed total of
+639,557 for the four years. Two supersede rows cover them (a pair's sub-entry
+copy is dropped by the same key), plus the re-admission.
+
+**Re-enumerating after the supersede — round 62's step 3 — showed no hijack**:
+only the 15 re-admitted `groupfix` rows remained.
+
+## Result
+
+```
+Metal — Leaf, Not Gold   1894  5.035 -> 0.9963      GBP 11,276,969 -> 451,719
+                         1895 11.410 -> 0.9997
+                         1896  1.030 -> 1.0000
+                         1897 10.060 -> 0.9274
+```
+
+**GBP10.8M of glue gone**, and three of four years land inside 0.4%.
+
+## The three years that went the other way, and why they are kept
+
+`Leaf, Not Gold` — the **de-headed shadow** of the same commodity — held 1894,
+1895 and 1897 at 0.99-1.00 and now holds nothing. The supersede is keyed on
+`(group, article, year)` and removed the glue from **both** labels, while the
+re-admission restored only the headed one.
+
+That is the right end state and not a loss of information: the shadow's years
+were a **duplicate** of the main label's, and the main label now carries the data
+correctly where before it read 5× to 11×. It is the same duplicate-shadow
+question round 42 raised and left for a decision — 57 such shadows, ~520
+commodity-years — and this is one more instance of it, arrived at from a
+different direction.
+
+```
+over  242 -> 239      nodata  5,756 -> 5,759      within 0.1%  48.0% -> 48.1% GBP
+```
+
+## Residual
+
+**1897 reads 0.9274 — exactly 9,000 packets short** (115,027 against a printed
+124,027). A round number that size is a single misread cell or a misread total,
+not accumulated noise. Queued, not guessed.
