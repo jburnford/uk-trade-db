@@ -1,0 +1,946 @@
+volume,article_group,article,seq_start,seq_end,obs_source,target_sig,selected,admitted,drop_null_qty,drop_subtotal,drop_bad_subentry,drop_no_sig,drop_consensus_holds_triple,drop_already_added
+as_1874,TEA,Unmanufactured,218,238,ch,tobacco+unmanufactured,21,19,1,1,0,0,0,0
+as_1878,SPIRITS,Unmanufactured,132,146,ch,tobacco+unmanufactured,15,13,1,1,0,0,0,0
+as_1880,COFFEE,"Rum Shrub, Liqueurs and Cordials, of and from       British Possessions",136,149,ch,tobacco+unmanufactured,14,10,2,2,0,0,0,0
+as_1883,SPIRITS,Not tested for ascertaining strength,270,296,ch,tobacco+unmanufactured,27,25,1,1,0,0,0,0
+as_1884,SPIRITS,Rum,221,241,ch,tobacco+unmanufactured,21,19,1,1,0,0,0,0
+as_1887,SPIRITS,Rum,170,188,ch,tobacco+unmanufactured,19,15,1,3,0,0,0,0
+as_1888,SPIRITS,Unmanufactured,187,208,ch,tobacco+unmanufactured,22,18,1,3,0,0,0,0
+as_1890,SPIRITS,"Unenumerated, not Sweetened or Mixed",229,250,ch,tobacco+unmanufactured,22,18,1,3,0,0,0,0
+as_1872,Meal and Flour,"COTTON RAW, and WASTE OF",448,470,ch,cotton+raw,23,22,0,1,0,0,0,0
+as_1874,Meal and Flour,Raw,409,432,ch,cotton+raw,24,23,0,1,0,0,0,0
+as_1899,CORDAGE,Raw,4285,4429,ch,cotton+raw,145,97,0,15,0,0,33,0
+as_1883,COTTON,Raw,665,688,ch,cotton+raw,23,23,0,0,0,0,0,0
+as_1882,HORN,,907,915,ch,hops,9,8,0,1,0,0,0,0
+as_1884,GLASS,,1013,1018,ch,gall,6,5,0,1,0,0,0,0
+as_1892,GLASS,,2030,2042,ch,isinglas,13,11,0,2,0,0,0,0
+as_1875,"FLOWERS, ARTIFICIAL","Raw, not otherwise described",564,569,ch,gall,6,4,0,1,0,0,0,1
+as_1897,CORDAGE,Oats,3611,3724,ch,corn+grain+oats,114,92,0,15,0,0,7,0
+as_1897,CORDAGE,Oats,3725,3784,ch,corn+grain+rye,60,41,0,10,0,0,9,0
+as_1899,HATS OR BONNETS,Of Other Materials,9559,9640,ch,hay,82,31,0,15,0,0,36,0
+as_1899,HATS OR BONNETS,Of Other Materials,9641,9782,ch,bonnet+hats+material,142,126,1,15,0,0,0,0
+as_1899,HATS OR BONNETS,Of Other Materials,9505,9558,ch,bonnet+hats+material,54,6,0,15,0,0,0,33
+as_1898,"COPPER, ORE OF",Raw,4337,4482,ch,cotton+raw,146,8,0,15,0,0,52,71
+as_1872,"CHICORY, Raw or Kiln-dried",Roasted or Ground,43,63,ch,coffee+raw,21,19,1,1,0,0,0,0
+as_1872,"CHICORY, Raw or Kiln-dried",Roasted or Ground,24,35,ch,cocoa,12,11,0,1,0,0,0,0
+as_1873,"CARDS, PLAYING",Roasted or Ground,47,68,ch,coffee+raw,22,20,1,1,0,0,0,0
+as_1873,"CARDS, PLAYING",Roasted or Ground,26,39,ch,cocoa,14,13,0,1,0,0,0,0
+as_1890,CHICORY,"Cocoa or Chocolate, ground, prepared or in any way manufactured",34,61,ch,coffee+raw,28,25,1,2,0,0,0,0
+as_1891,COCOA,West Africa,74,95,ch,coffee+raw,22,19,1,2,0,0,0,0
+as_1892,COCOA,India,71,97,ch,coffee+raw,27,24,1,2,0,0,0,0
+as_1877,WOOD and TIMBER,Sheep and Lambs',1978,2002,ch,lamb+sheep+wool,25,24,0,1,0,0,0,0
+as_1891,WOOL,Sheep or Lambs',3794,3794,ch,lamb+sheep+wool,1,1,0,0,0,0,0,0
+as_1891,WOOL,Sheep or Lambs',3795,3795,ch,lamb+sheep+wool,1,1,0,0,0,0,0,0
+as_1891,WOOL,Sheep or Lambs',3796,3796,ch,lamb+sheep+wool,1,1,0,0,0,0,0,0
+as_1891,WOOL,Sheep or Lambs',3797,3797,ch,lamb+sheep+wool,1,1,0,0,0,0,0,0
+as_1891,WOOL,Sheep or Lambs',3798,3798,ch,lamb+sheep+wool,1,1,0,0,0,0,0,0
+as_1874,TEA,Unmanufactured,264,278,ch,red+wine,15,14,0,1,0,0,0,0
+as_1874,TEA,Unmanufactured,279,294,ch,white+wine,16,15,0,1,0,0,0,0
+as_1874,TEA,Unmanufactured,295,310,ch,total+wine,16,15,0,1,0,0,0,0
+as_1874,WINE,Red,0,0,ch,red+wine,0,0,0,0,0,0,0,0
+as_1874,WINE,White,0,0,ch,white+wine,0,0,0,0,0,0,0,0
+as_1874,WINE,Total of all kinds,0,0,ch,total+wine,0,0,0,0,0,0,0,0
+as_1883,SPIRITS,Snuff,352,372,ch,red+wine,21,20,0,1,0,0,0,0
+as_1883,SPIRITS,Snuff,373,393,ch,white+wine,21,20,0,1,0,0,0,0
+as_1883,SPIRITS,Snuff,394,414,ch,total+wine,21,20,0,1,0,0,0,0
+as_1892,WINE,Red: Total of,430,457,ch,red+wine,28,26,0,2,0,0,0,0
+as_1892,WINE,White: Total of,458,485,ch,white+wine,28,26,0,2,0,0,0,0
+as_1892,WINE,White: Total of all Kinds,486,513,ch,total+wine,28,26,0,2,0,0,0,0
+as_1893,Corn and Grain,Oats,607,625,inf,corn+grain+oats,19,3,0,2,0,0,0,14
+as_1897,CORDAGE,Wheatmeal or Flour,4098,4198,ch,flour+meal+wheat,101,78,0,15,0,0,8,0
+as_1873,LARD,,974,978,ch,lard,4,3,0,1,0,0,0,0
+as_1877,LARD,,1041,1044,ch,lard,3,2,0,1,0,0,0,0
+as_1897,CORDAGE,Peas,3785,3863,ch,corn+grain+pea,79,58,0,15,0,0,6,0
+as_1897,CORDAGE,Beans (not Kidney or French),3864,3969,ch,bean+corn+grain,106,71,0,15,0,0,20,0
+as_1897,CORDAGE,Maize or Indian Corn,3970,4053,ch,corn+grain+indian+maize,84,61,0,15,0,0,8,0
+as_1897,CORDAGE,Buckwheat,4054,4097,ch,buckwheat+corn+grain,44,24,0,14,0,0,6,0
+as_1897,CORDAGE,Oatmeal and Groats,4199,4230,ch,flour+groat+meal+oat,32,20,0,10,0,0,2,0
+as_1897,CORDAGE,Maize or Indian Cornmeal,4231,4255,ch,corn+flour+indian+maize+meal,25,14,0,10,0,0,1,0
+as_1897,CORDAGE,"Meal, not otherwise enumerated or described",4256,4359,ch,described+enumerated+flour+meal,104,89,0,15,0,0,0,0
+as_1899,CORDAGE,Oats,3565,3670,ch,corn+grain+oats,106,44,0,15,0,0,0,47
+as_1899,CORDAGE,Rye,3671,3721,ch,corn+grain+rye,51,24,0,15,0,0,0,12
+as_1899,CORDAGE,Peas,3722,3808,ch,corn+grain+pea,87,38,0,15,0,0,0,34
+as_1899,CORDAGE,Beans (not Kidney or French),3809,3907,ch,bean+corn+grain,99,33,0,15,0,0,0,51
+as_1899,CORDAGE,Maize or Indian Corn,3908,3988,ch,corn+grain+indian+maize,81,34,0,15,0,0,0,32
+as_1899,CORDAGE,Buckwheat,3989,4031,ch,buckwheat+corn+grain,43,19,0,14,0,0,0,10
+as_1899,CORDAGE,Wheatmeal or Flour,4032,4137,ch,flour+meal+wheat,106,48,0,15,0,0,0,43
+as_1899,CORDAGE,Oatmeal and Groats,4138,4170,ch,flour+groat+meal+oat,33,12,0,15,0,0,0,6
+as_1899,CORDAGE,Maize or Indian Cornmeal,4171,4195,ch,corn+flour+indian+maize+meal,25,7,0,15,0,0,0,3
+as_1899,CORDAGE,"Meal, not otherwise enumerated or described",4196,4284,ch,described+enumerated+flour+meal,89,33,0,15,0,0,0,41
+as_1897,"CHINA, OR PORCELAIN, AND EARTHENWARE",Wheatmeal or Flour,0,0,ch,flour+meal+wheat,0,0,0,0,0,0,0,0
+as_1874,BUTTER,,171,178,inf,butter,8,8,0,0,0,0,0,0
+as_1875,CAOUTCHOUC,,204,206,inf,caoutchouc,3,3,0,0,0,0,0,0
+as_1875,CAOUTCHOUC,,207,221,inf,caoutchouc,14,13,0,1,0,0,0,0
+as_1887,CAOUTCHOUK,East Africa,314,339,ch,caoutchouc,26,23,0,3,0,0,0,0
+as_1889,CAOUTCHOUK,East Africa,339,356,ch,caoutchouc,18,15,0,3,0,0,0,0
+as_1890,CAOUTCHOUQ,East Africa,329,345,ch,caoutchouc,17,14,0,3,0,0,0,0
+as_1891,CAOUTCHOUCC,West Africa,324,347,ch,caoutchouc,24,21,0,3,0,0,0,0
+as_1874,COFFEE,,51,69,ch,coffee,19,19,0,0,0,0,0,0
+as_1874,COFFEE,,70,70,ch,coffee,1,1,0,0,0,0,0,0
+as_1874,COFFEE,,71,71,ch,coffee,1,1,0,0,0,0,0,0
+as_1874,COFFEE,,72,72,ch,coffee,1,1,0,0,0,0,0,0
+as_1874,COFFEE,,73,73,ch,coffee,1,1,0,0,0,0,0,0
+as_1874,COFFEE,,74,74,ch,coffee,1,1,0,0,0,0,0,0
+as_1874,COFFEE,,75,75,ch,coffee,1,1,0,0,0,0,0,0
+as_1874,COFFEE,,76,76,ch,coffee,1,1,0,0,0,0,0,0
+as_1898,"COPPER, ORE OF",Beans (not Kidney or French),0,0,ch,bean+corn+grain,0,0,0,0,0,0,0,0
+as_1898,"COPPER, ORE OF",Peas,0,0,ch,corn+grain+pea,0,0,0,0,0,0,0,0
+as_1898,"COPPER, ORE OF",Oatmeal and Groats,0,0,ch,flour+groat+meal+oat,0,0,0,0,0,0,0,0
+as_1898,"COPPER, ORE OF",Maize or Indian Cornmeal,0,0,ch,corn+flour+indian+maize+meal,0,0,0,0,0,0,0,0
+as_1898,"COPPER, ORE OF","Meal, not otherwise enumerated or described",0,0,ch,described+enumerated+flour+meal,0,0,0,0,0,0,0,0
+as_1898,"COPPER, ORE OF","Cables (not of Iron), Twine, and Cable Yarn",0,0,ch,cable+cordage+twine+yarn,0,0,0,0,0,0,0,0
+as_1886,COTTON,Raw,648,661,inf,cotton+raw,14,14,0,0,0,0,0,0
+as_1886,COTTON,Raw,720,720,ch,cotton+raw,1,1,0,0,0,0,0,0
+as_1886,COTTON,Raw,721,729,ch,cotton+raw,9,9,0,0,0,0,0,0
+as_1879,TEA,,0,0,ch,tea,0,0,0,0,0,0,0,0
+as_1883,COFFEE,West Coast of Africa,84,84,ch,coffee,1,1,0,0,0,0,0,0
+as_1883,COFFEE,West Coast of Africa,85,86,ch,coffee,2,2,0,0,0,0,0,0
+as_1883,COFFEE,West Coast of Africa,88,89,ch,coffee,2,2,0,0,0,0,0,0
+as_1883,COFFEE,West Coast of Africa,90,90,ch,coffee,1,1,0,0,0,0,0,0
+as_1883,COFFEE,West Coast of Africa,92,92,ch,coffee,1,1,0,0,0,0,0,0
+as_1883,COFFEE,West Coast of Africa,93,93,ch,coffee,1,1,0,0,0,0,0,0
+as_1883,COFFEE,West Coast of Africa,94,105,ch,coffee,12,12,0,0,0,0,0,0
+as_1882,COFFEE,,0,0,ch,coffee,0,0,0,0,0,0,0,0
+as_1885,Corn and Grain,Wheat,536,553,ch,corn+grain+wheat,17,17,0,0,0,0,0,0
+as_1885,Corn and Grain,Wheat,555,563,ch,corn+grain+wheat,9,9,0,0,0,0,0,0
+as_1885,"CORN, GRAIN, MEAL, and FLOUR",Wheat,0,0,ch,corn+grain+wheat,0,0,0,0,0,0,0,0
+as_1895,"CORN, GRAIN, MEAL, and FLOUR","Corn, Wheat",554,565,ch,corn+grain+wheat,12,12,0,0,0,0,0,0
+as_1895,"CORN, GRAIN, MEAL, and FLOUR","Corn, Wheat",567,573,ch,corn+grain+wheat,7,7,0,0,0,0,0,0
+as_1883,SPIRITS,Not tested for ascertaining strength,252,268,ch,tea,17,12,0,0,0,0,0,5
+as_1884,SPIRITS,Rum,207,219,ch,tea,13,11,0,0,0,0,0,2
+as_1884,TEA,British India,0,0,ch,tea,0,0,0,0,0,0,0,0
+as_1876,FRUIT,Unmanufactured,174,189,ch,tobacco+unmanufactured,16,16,0,0,0,0,0,0
+as_1877,SPIRITS,Unmanufactured,147,159,ch,tobacco+unmanufactured,13,13,0,0,0,0,0,0
+as_1881,TOBACCO,,0,0,ch,tobacco+unmanufactured,0,0,0,0,0,0,0,0
+as_1874,ISINGLASS,,922,923,ch,jute,2,2,0,0,0,0,0,0
+as_1874,JUTE,,0,0,ch,jute,0,0,0,0,0,0,0,0
+as_1876,FRUIT,"Perfumed Spirits (including Water Cologne) : Unenumerated, including Shrub",164,171,ch,tea,8,8,0,0,0,0,0,0
+as_1876,FRUIT,"Perfumed Spirits (including Water Cologne) : Unenumerated, including Shrub",172,172,ch,tea,1,1,0,0,0,0,0,0
+as_1877,SPIRITS,"Unenumerated, including Shrub",139,144,ch,tea,6,6,0,0,0,0,0,0
+as_1876,TEA,,0,0,ch,tea,0,0,0,0,0,0,0,0
+as_1885,SPIRITS,Brandy,190,197,ch,tea,8,1,0,1,0,0,0,6
+as_1885,SPIRITS,British Indies,198,206,ch,tea,9,9,0,0,0,0,0,0
+as_1886,SPIRITS,Brandy,145,161,ch,tea,17,10,0,1,0,0,0,6
+as_1888,SPIRITS,Rum,166,174,ch,tea,9,9,0,0,0,0,0,0
+as_1888,SPIRITS,Rum,176,184,ch,tea,9,9,0,0,0,0,0,0
+as_1890,SPIRITS,"Unenumerated, not Sweetened or Mixed",209,217,ch,tea,9,1,0,0,0,0,0,8
+as_1890,SPIRITS,"Unenumerated, not Sweetened or Mixed",219,226,ch,tea,8,8,0,0,0,0,0,0
+as_1881,SUGAR,TEA,0,0,ch,tea,0,0,0,0,0,0,0,0
+as_1878,SPIRITS,"Unenumerated, including Shrub",124,130,ch,tea,7,7,0,0,0,0,0,0
+as_1873,CAOUTCHouc,West Coast of Africa (Foreign),218,229,ch,caoutchouc,12,12,0,0,0,0,0,0
+as_1873,CAOUTCHouc,,214,217,ch,caoutchouc,4,4,0,0,0,0,0,0
+as_1873,CAOUTCHOUC,,0,0,ch,caoutchouc,0,0,0,0,0,0,0,0
+as_1889,COCOA,"Cocoa or Chocolate, ground, prepared or in any way manufactured",67,81,ch,coffee,15,15,0,0,0,0,0,0
+as_1889,COCOA,"Cocoa or Chocolate, ground, prepared or in any way manufactured",83,85,ch,coffee,3,3,0,0,0,0,0,0
+as_1889,COCOA,"Cocoa or Chocolate, ground, prepared or in any way manufactured",87,92,ch,coffee,6,6,0,0,0,0,0,0
+as_1887,COFFEE,,0,0,ch,coffee,0,0,0,0,0,0,0,0
+as_1893,Corn and Grain,Barley,583,604,inf,barley+corn+grain,22,21,0,1,0,0,0,0
+as_1876,FRUIT,Raisins,132,135,ch,brandy+spirit,4,4,0,0,0,0,0,0
+as_1880,COFFEE,,95,98,ch,brandy+spirit,4,4,0,0,0,0,0,0
+as_1881,COFFEE,,80,83,ch,brandy+spirit,4,4,0,0,0,0,0,0
+as_1884,SPIRITS,Rum,166,166,ch,brandy+spirit,1,1,0,0,0,0,0,0
+as_1884,SPIRITS,Rum,167,167,ch,brandy+spirit,1,1,0,0,0,0,0,0
+as_1884,SPIRITS,Rum,168,168,ch,brandy+spirit,1,1,0,0,0,0,0,0
+as_1887,SPIRITS,Rum,87,87,ch,brandy+spirit,1,1,0,0,0,0,0,0
+as_1887,SPIRITS,Rum,88,88,ch,brandy+spirit,1,1,0,0,0,0,0,0
+as_1887,SPIRITS,Rum,89,89,ch,brandy+spirit,1,1,0,0,0,0,0,0
+as_1874,SPIRITS,Brandy,0,0,ch,brandy+spirit,0,0,0,0,0,0,0,0
+as_1886,COFFEE,,0,0,ch,coffee,0,0,0,0,0,0,0,0
+as_1890,Cotton,Flax or Linseed,2905,2912,ch,flax+linseed+seed,8,8,0,0,0,0,0,0
+as_1890,Cotton,Flax or Linseed,2914,2920,ch,flax+linseed+seed,7,7,0,0,0,0,0,0
+as_1892,SEEDS,,3215,3225,ch,flax+linseed+seed,11,11,0,0,0,0,0,0
+as_1892,SEEDS,,3227,3231,ch,flax+linseed+seed,5,5,0,0,0,0,0,0
+as_1889,WINE,"White, in Bottles, Sparkling : Other Sorts",449,475,ch,red+wine,27,24,0,3,0,0,0,0
+as_1889,WINE,"White, in Bottles, Sparkling : Other Sorts",476,502,ch,white+wine,27,24,0,3,0,0,0,0
+as_1889,WINE,"White, in Bottles, Sparkling : Other Sorts",440,445,ch,bottle+sparkling+white+wine,6,3,0,3,0,0,0,0
+as_1889,CHICORY,"White, in Bottles, Sparkling : Other Sorts",0,0,ch,white+wine,0,0,0,0,0,0,0,0
+as_1890,WINE,"White, in Bottles, Sparkling. : Other Sorts",397,423,ch,red+wine,27,24,0,3,0,0,0,0
+as_1890,WINE,"White, in Bottles, Sparkling. : Other Sorts",424,450,ch,white+wine,27,24,0,3,0,0,0,0
+as_1890,WINE,"White, in Bottles, Sparkling. : Other Sorts",388,393,ch,bottle+sparkling+white+wine,6,3,0,3,0,0,0,0
+as_1891,WINE,Red: Total of,452,480,ch,red+wine,29,26,0,3,0,0,0,0
+as_1891,WINE,White: Total of,481,509,ch,white+wine,29,26,0,3,0,0,0,0
+as_1891,TOBACCO,"White, in Bottles, Sparkling : Other Sorts",0,0,ch,white+wine,0,0,0,0,0,0,0,0
+as_1893,WINE,Red: Total of,455,483,ch,red+wine,29,26,0,3,0,0,0,0
+as_1893,TOBACCO,Red: Total of,0,0,ch,red+wine,0,0,0,0,0,0,0,0
+as_1893,TOBACCO,White: Total of,0,0,ch,white+wine,0,0,0,0,0,0,0,0
+as_1893,TOBACCO,"White, in Bottles, Still : Champagne",0,0,ch,white+wine,0,0,0,0,0,0,0,0
+as_1893,TOBACCO,"Red, in Casks",0,0,ch,red+wine,0,0,0,0,0,0,0,0
+as_1893,TOBACCO,"White, in Casks",0,0,ch,white+wine,0,0,0,0,0,0,0,0
+as_1893,TOBACCO,"Red, in Bottles : Still",0,0,ch,red+wine,0,0,0,0,0,0,0,0
+as_1893,TOBACCO,"White, in Bottles : Still",0,0,ch,white+wine,0,0,0,0,0,0,0,0
+as_1885,SUGAR,Refined; Total of,2847,2847,inf,refined+sugar+total,1,1,0,0,0,0,0,0
+as_1885,SUGAR,Refined; Total of,2849,2858,inf,refined+sugar+total,10,7,0,3,0,0,0,0
+as_1884,SUGAR,Refined; Total of,2416,2426,ch,refined+sugar+total,11,10,0,1,0,0,0,0
+as_1885,SUGAR,Refined; Total of,0,0,ch,refined+sugar+total,0,0,0,0,0,0,0,0
+as_1885,MUSICAL INSTRUMENTS,"MUTTON, FRESH",1790,1793,inf,fresh+mutton,4,4,0,0,0,0,0,0
+as_1873,Cotton,,1500,1510,ch,cotton+flax+linseed,11,11,0,0,0,0,0,0
+as_1875,Cotton,,1285,1294,ch,cotton+flax+linseed,10,10,0,0,0,0,0,0
+as_1880,Corn and Grain,Wheat,340,347,ch,corn+grain+wheat,8,8,0,0,0,0,0,0
+as_1880,Corn and Grain,Wheat,348,348,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1880,Corn and Grain,Wheat,349,349,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1880,Corn and Grain,Wheat,350,350,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1880,Corn and Grain,Wheat,351,351,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1882,Corn and Grain,Wheat,318,319,ch,corn+grain+wheat,2,2,0,0,0,0,0,0
+as_1882,Corn and Grain,Wheat,321,326,ch,corn+grain+wheat,6,6,0,0,0,0,0,0
+as_1882,Corn and Grain,Wheat,328,328,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1882,Corn and Grain,Wheat,329,329,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1882,Corn and Grain,Wheat,330,330,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1882,Corn and Grain,Wheat,332,332,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1876,SILK MANUFACTURES,Seal,0,0,ch,furs+pelt+seal+skin,0,0,0,0,0,0,0,0
+as_1876,"SKINS, FURS, AND PEELTS",Seal,1477,1477,inf,furs+pelt+seal+skin,1,1,0,0,0,0,0,0
+as_1876,"SKINS, FURS, AND PEELTS",Seal,1479,1483,inf,furs+pelt+seal+skin,5,5,0,0,0,0,0,0
+as_1881,"SKINS, FURS, AND PELTS",Seal,0,0,ch,furs+pelt+seal+skin,0,0,0,0,0,0,0,0
+as_1883,"SKINS, FURS, and PELTS","Seal, Undressed",2886,2902,ch,furs+pelt+seal+skin,17,17,0,0,0,0,0,0
+as_1886,"SKINS, FURS, and PELTS",Whale Fisheries,2892,2898,ch,furs+pelt+seal+skin,7,6,0,1,0,0,0,0
+as_1897,Cotton,"Furs, Seal Skins",17923,18050,inf,furs+pelt+seal+skin,128,82,0,15,0,0,31,0
+as_1899,Cotton,"Furs, Seal Skins",20199,20307,inf,furs+pelt+seal+skin,109,40,0,15,0,0,13,41
+as_1876,"SKINS, FURS, AND PELTS",Seal,0,0,ch,furs+pelt+seal+skin,0,0,0,0,0,0,0,0
+as_1879,Cotton,Flax and Linseed,1402,1406,ch,cotton+flax+linseed,5,5,0,0,0,0,0,0
+as_1879,Cotton,Flax and Linseed,1407,1407,ch,cotton+flax+linseed,1,1,0,0,0,0,0,0
+as_1879,Cotton,Flax and Linseed,1408,1408,ch,cotton+flax+linseed,1,1,0,0,0,0,0,0
+as_1873,"CARDS, PLAYING",Roasted or Ground,72,72,ch,currant+fruit,1,1,0,0,0,0,0,0
+as_1873,"CARDS, PLAYING",Roasted or Ground,73,75,ch,currant+fruit,3,3,0,0,0,0,0,0
+as_1873,FRUIT,Currants,0,0,ch,currant+fruit,0,0,0,0,0,0,0,0
+as_1877,FRUIT,Curants,64,65,ch,currant+fruit,2,2,0,0,0,0,0,0
+as_1877,FRUIT,Currants,0,0,ch,currant+fruit,0,0,0,0,0,0,0,0
+as_1878,COFFEE,,56,56,ch,currant+fruit,1,1,0,0,0,0,0,0
+as_1878,COFFEE,,57,57,ch,currant+fruit,1,1,0,0,0,0,0,0
+as_1872,FRUIT,Currants,0,0,ch,currant+fruit,0,0,0,0,0,0,0,0
+as_1874,FRUIT,Currants,0,0,ch,currant+fruit,0,0,0,0,0,0,0,0
+as_1880,FRUIT,Currants,0,0,ch,currant+fruit,0,0,0,0,0,0,0,0
+as_1881,FRUIT,Currants,0,0,ch,currant+fruit,0,0,0,0,0,0,0,0
+as_1882,FRUIT,Currants,0,0,ch,currant+fruit,0,0,0,0,0,0,0,0
+as_1882,FLAX,Currants,0,0,ch,currant+fruit,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",Currants,0,0,ch,currant+fruit,0,0,0,0,0,0,0,0
+as_1886,RICE,,2602,2610,ch,rice,9,9,0,0,0,0,0,0
+as_1886,RICE,,2612,2619,ch,rice,8,8,0,0,0,0,0,0
+as_1888,RICE,,2809,2819,ch,rice,11,11,0,0,0,0,0,0
+as_1888,RICE,,2821,2821,ch,rice,1,1,0,0,0,0,0,0
+as_1888,RICE,,2822,2828,ch,rice,6,6,0,0,0,0,0,0
+as_1888,RICE,,2829,2829,ch,rice,1,1,0,0,0,0,0,0
+as_1890,RICE,,2820,2831,ch,rice,12,12,0,0,0,0,0,0
+as_1890,RICE,,2833,2833,ch,rice,1,1,0,0,0,0,0,0
+as_1890,RICE,,2834,2840,ch,rice,6,6,0,0,0,0,0,0
+as_1890,RICE,,2841,2841,ch,rice,1,1,0,0,0,0,0,0
+as_1891,RICE,,2831,2842,ch,rice,12,12,0,0,0,0,0,0
+as_1891,RICE,,2844,2850,ch,rice,7,7,0,0,0,0,0,0
+as_1893,RICE,,2923,2935,ch,rice,13,13,0,0,0,0,0,0
+as_1893,RICE,,2937,2941,ch,rice,5,5,0,0,0,0,0,0
+as_1886,"RAGS, and other Materials for making Paper",RICE,0,0,ch,rice,0,0,0,0,0,0,0,0
+as_1890,"RAGS, WOOLLEN, applicable to other uses than Manure",RICE,0,0,ch,rice,0,0,0,0,0,0,0,0
+as_1882,WOOL,For Weaving,1870,1873,inf,weaving+woollen+yarn,4,4,0,0,0,0,0,0
+as_1893,WOOLLEN YARN,"For Weaving, Mixed or not with Silk",0,0,ch,weaving+woollen+yarn,0,0,0,0,0,0,0,0
+as_1896,WOOLLEN YARN,"For Weaving, Mixed or not with Silk",0,0,ch,weaving+woollen+yarn,0,0,0,0,0,0,0,0
+as_1896,WOOLLEN YARN,For Weaving,0,0,ch,weaving+woollen+yarn,0,0,0,0,0,0,0,0
+as_1880,EGGS,,0,0,ch,eggs,0,0,0,0,0,0,0,0
+as_1882,EGGS,,0,0,ch,eggs,0,0,0,0,0,0,0,0
+as_1889,"COALS, CULM, and CINDERS",,430,430,inf,cinder+coal+culm,1,1,0,0,0,0,0,0
+as_1879,SPIRITS,Perfumed Spirits (including Water Cologne),0,0,ch,perfumed+spirit,0,0,0,0,0,0,0,0
+as_1880,SPIRITS,Perfumed Spirits and Cologne Water,0,0,ch,cologne+perfumed+spirit+water,0,0,0,0,0,0,0,0
+as_1881,SPIRITS,"Perfumed Spirits, and Cologne Water",0,0,ch,cologne+perfumed+spirit+water,0,0,0,0,0,0,0,0
+as_1882,SPIRITS,Perfumed,0,0,ch,perfumed+spirit,0,0,0,0,0,0,0,0
+as_1883,OIL SEED CAKE,,0,0,ch,cake+oil+seed,0,0,0,0,0,0,0,0
+as_1890,SPIRITS,Perfumed,0,0,ch,perfumed+spirit,0,0,0,0,0,0,0,0
+as_1882,"LEATHER, Undressed",Gloves,1074,1079,ch,glove+leather+manufacture,6,6,0,0,0,0,0,0
+as_1882,"LEATHER, Undressed",Boots and Shoes : Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1882,MANUFACTURES,Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1883,IRON,Boots and Shoes : Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1883,"LEATHER, Undressed",MANUFACTURES : Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1883,LEATHER MANUFACTURES,Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1884,"LEATHER, Undressed",Gloves,1428,1428,ch,glove+leather+manufacture,1,1,0,0,0,0,0,0
+as_1884,"LEATHER, Undressed",Gloves,1430,1433,ch,glove+leather+manufacture,4,4,0,0,0,0,0,0
+as_1884,"LEATHER, Undressed",Boots and Shoes : Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1884,MANUFACTURES,Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1884,LEATHER MANUFACTURES,Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1885,"LEATHER, Undressed",Gloves,1794,1799,ch,glove+leather+manufacture,6,6,0,0,0,0,0,0
+as_1885,LEATHER MANUFACTURES—,Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1874,LEATHER MANUFACTURES,Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1889,CHICORY,Perfumed,243,250,inf,perfumed+spirit,8,7,0,1,0,0,0,0
+as_1889,SPIRITS,Perfumed,0,0,ch,perfumed+spirit,0,0,0,0,0,0,0,0
+as_1883,GUM,"Lac, Seed, Shell, Stick, and Dye",1046,1051,inf,dye+gum+lac+seed+shell+stick,6,6,0,0,0,0,0,0
+as_1891,SUGAR,"In Blocks, Ingots, Bars, or Slabs",3311,3323,inf,bars+block+ingot+slab+tin,13,12,0,1,0,0,0,0
+as_1891,TIN,"In Blocks, Ingots, Bars, or Slabs",0,0,ch,bars+block+ingot+slab+tin,0,0,0,0,0,0,0,0
+as_1874,COFFEE,,101,106,ch,rum+spirit,6,6,0,0,0,0,0,0
+as_1876,FRUIT,Raisins,124,125,ch,rum+spirit,2,2,0,0,0,0,0,0
+as_1876,FRUIT,Raisins,127,129,ch,rum+spirit,3,3,0,0,0,0,0,0
+as_1879,FRUIT,Raisins,34,39,ch,rum+spirit,6,6,0,0,0,0,0,0
+as_1880,COFFEE,,87,92,ch,rum+spirit,6,6,0,0,0,0,0,0
+as_1881,COFFEE,,77,77,ch,rum+spirit,1,1,0,0,0,0,0,0
+as_1879,SPIRITS,Rum,0,0,ch,rum+spirit,0,0,0,0,0,0,0,0
+as_1888,WAX,Hewn : Fir,3247,3256,inf,fir+hewn+timber+wood,10,9,0,1,0,0,0,0
+as_1888,WAX,Hewn : Fir : Oak,3258,3265,inf,fir+hewn+oak+timber+wood,8,7,0,1,0,0,0,0
+as_1887,FRUIT,Oranges and Lemon,1188,1205,ch,fruit+lemon+orange,18,15,0,3,0,0,0,0
+as_1887,FRUIT,Oranges and Lemons,0,0,ch,fruit+lemon+orange,0,0,0,0,0,0,0,0
+as_1875,FRUIT,Oranges and Lemons,0,0,ch,fruit+lemon+orange,0,0,0,0,0,0,0,0
+as_1897,FLAX,Oranges,0,0,ch,fruit+orange,0,0,0,0,0,0,0,0
+as_1882,"LEATHER, Undressed",Dressed,1052,1060,ch,dressed+leather,9,8,0,1,0,0,0,0
+as_1884,"LEATHER, Undressed",Dressed,1403,1414,ch,dressed+leather,12,11,0,1,0,0,0,0
+as_1885,"LEATHER, Undressed",Dressed,1759,1772,ch,dressed+leather,14,11,0,3,0,0,0,0
+as_1887,"LEATHER, Undressed",Dressed,1808,1822,ch,dressed+leather,15,12,0,3,0,0,0,0
+as_1883,"LEATHER, Undressed",Dressed,0,0,ch,dressed+leather,0,0,0,0,0,0,0,0
+as_1882,LEATHER,Dressed,0,0,ch,dressed+leather,0,0,0,0,0,0,0,0
+as_1872,"CHICORY, Raw or Kiln-dried",Raisins,77,83,ch,fruit+raisin,7,6,0,1,0,0,0,0
+as_1872,"CARDS, PLAYING",Raisins,0,0,ch,fruit+raisin,0,0,0,0,0,0,0,0
+as_1873,"CARDS, PLAYING",Raisins,92,96,ch,fruit+raisin,5,4,0,1,0,0,0,0
+as_1878,COFFEE,,71,74,ch,fruit+raisin,4,4,0,0,0,0,0,0
+as_1893,FRUIT,,155,158,ch,fruit+raisin,4,4,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",Raisins,26538,26538,inf,fruit+raisin,1,1,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",Raisins,26543,26543,inf,fruit+raisin,1,1,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",Raisins,26548,26548,inf,fruit+raisin,1,1,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",Raisins,26552,26552,inf,fruit+raisin,1,1,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",Raisins,26557,26557,inf,fruit+raisin,1,1,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",Raisins,26562,26562,inf,fruit+raisin,1,1,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",Raisins,26567,26567,inf,fruit+raisin,1,1,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",Raisins,26572,26572,inf,fruit+raisin,1,0,0,1,0,0,0,0
+as_1899,"CARDS, PLAYING",Raisins,26576,26576,inf,fruit+raisin,1,0,0,1,0,0,0,0
+as_1899,"CARDS, PLAYING",Raisins,26581,26581,inf,fruit+raisin,1,0,0,1,0,0,0,0
+as_1893,COCOA,Raisins,0,0,ch,fruit+raisin,0,0,0,0,0,0,0,0
+as_1893,FRUIT,Raisins,0,0,ch,fruit+raisin,0,0,0,0,0,0,0,0
+as_1889,COCOA,,0,0,ch,cocoa,0,0,0,0,0,0,0,0
+as_1885,Cotton,Flax or Linseed,2400,2417,inf,cotton+flax+linseed,18,17,0,1,0,0,0,0
+as_1885,SEEDS,Flax or Linseed,0,0,ch,cotton+flax+linseed,0,0,0,0,0,0,0,0
+as_1885,OIL,Palm,0,0,ch,oil+palm,0,0,0,0,0,0,0,0
+as_1885,Fish,Palm,0,0,ch,oil+palm,0,0,0,0,0,0,0,0
+as_1884,GIL,Palm,1692,1693,ch,oil+palm,2,2,0,0,0,0,0,0
+as_1884,GIL,Palm,1694,1694,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1884,GIL,Palm,1695,1695,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1884,GIL,Palm,1696,1696,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1884,GIL,Palm,1700,1701,ch,oil+palm,2,2,0,0,0,0,0,0
+as_1884,OIL,Palm,0,0,ch,oil+palm,0,0,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15088,15088,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15093,15093,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15098,15098,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15103,15103,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15108,15108,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15113,15113,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15118,15118,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15123,15123,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15126,15126,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15131,15131,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15137,15137,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15147,15147,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15152,15152,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15157,15157,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15162,15162,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15167,15167,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,OIL,Palm,0,0,ch,oil+palm,0,0,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,0,0,ch,oil+palm,0,0,0,0,0,0,0,0
+as_1897,Beef,Palm,0,0,ch,oil+palm,0,0,0,0,0,0,0,0
+as_1898,METAL,Palm,0,0,ch,oil+palm,0,0,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15010,15010,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15015,15015,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15020,15020,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15025,15025,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15030,15030,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15035,15035,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15039,15039,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15044,15044,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15046,15046,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15051,15051,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15058,15058,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15068,15068,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15073,15073,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,NUTS AND KERNELS,Coco-nut,15078,15078,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15090,15090,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15095,15095,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15100,15100,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15105,15105,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15110,15110,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15115,15115,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15120,15120,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15125,15125,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15128,15128,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15133,15133,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15139,15139,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15149,15149,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15154,15154,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15159,15159,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15164,15164,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,NUTS AND KERNELS,Coco-nut,15168,15168,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1899,OIL,Palm,0,0,ch,oil+palm,0,0,0,0,0,0,0,0
+as_1897,Beef,Palm,0,0,ch,oil+palm,0,0,0,0,0,0,0,0
+as_1898,METAL,Palm,0,0,ch,oil+palm,0,0,0,0,0,0,0,0
+as_1873,COTTON MANUFACTURES,"Piece Goods, Plain",660,704,ch,cotton+good+manufacture+piece+plain,45,45,0,0,0,0,0,0
+as_1873,COTTON MANUFACTURES,"Piece Goods, Plain",705,705,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1873,COTTON MANUFACTURES,"Piece Goods, Plain",706,706,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1875,COTTON MANUFACTURES,"Piece Goods, Plain",534,583,ch,cotton+good+manufacture+piece+plain,50,50,0,0,0,0,0,0
+as_1875,COTTON MANUFACTURES,"Piece Goods, Plain",584,584,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",564,572,ch,cotton+good+manufacture+piece+plain,9,9,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",573,573,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",574,574,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",575,575,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",576,576,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",577,577,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",578,578,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",579,579,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",580,580,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",581,581,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",582,582,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",583,583,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",584,584,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",585,585,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",586,586,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",587,587,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",588,588,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",589,589,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",590,590,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",591,591,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",592,592,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",593,593,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",594,594,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",595,595,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",596,596,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",597,597,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",598,598,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",599,599,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",600,600,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",601,601,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",602,602,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",603,603,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",604,604,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",605,605,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",606,606,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",607,607,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",608,608,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",609,609,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Plain",610,610,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1878,COTTON MANUFACTURES,"Piece Goods, Plain",601,650,ch,cotton+good+manufacture+piece+plain,50,50,0,0,0,0,0,0
+as_1878,COTTON MANUFACTURES,"Piece Goods, Plain",651,651,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1880,COTTON MANUFACTURES,"Piece Goods, Plain",693,744,ch,cotton+good+manufacture+piece+plain,52,52,0,0,0,0,0,0
+as_1880,COTTON MANUFACTURES,"Piece Goods, Plain",745,745,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",584,620,ch,cotton+good+manufacture+piece+plain,37,37,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",621,621,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",622,622,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",623,623,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",624,624,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",625,625,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",626,626,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",627,627,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",628,628,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",629,629,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",630,630,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",631,631,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",632,632,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",633,633,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",634,634,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",635,635,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",636,636,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",637,637,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",638,638,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",639,639,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Plain",640,640,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Plain",873,893,ch,cotton+good+manufacture+piece+plain,21,21,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Plain",898,901,ch,cotton+good+manufacture+piece+plain,4,4,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Plain",903,904,ch,cotton+good+manufacture+piece+plain,2,2,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Plain",906,936,ch,cotton+good+manufacture+piece+plain,31,30,0,1,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Plain",894,894,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Plain",895,895,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Plain",896,896,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Plain",897,897,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Plain",902,902,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Plain",905,905,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1872,COTTON MANUFACTURES,"Piece Goods, Plain",619,665,ch,cotton+good+manufacture+piece+plain,47,47,0,0,0,0,0,0
+as_1872,COTTON MANUFACTURES,"Piece Goods, Plain",618,618,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1876,COTTON MANUFACTURES,"Piece Goods, Plain",478,529,ch,cotton+good+manufacture+piece+plain,52,52,0,0,0,0,0,0
+as_1876,COTTON MANUFACTURES,"Piece Goods, Plain",530,530,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Plain",703,731,ch,cotton+good+manufacture+piece+plain,29,29,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Plain",732,732,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Plain",733,756,ch,cotton+good+manufacture+piece+plain,24,24,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Plain",961,986,ch,cotton+good+manufacture+piece+plain,26,26,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Plain",987,987,ch,cotton+good+manufacture+piece+plain,1,1,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Plain",988,1027,ch,cotton+good+manufacture+piece+plain,40,39,0,1,0,0,0,0
+as_1886,COTTON MANUFACTURES,"Piece Goods, Plain",0,0,ch,cotton+good+manufacture+piece+plain,0,0,0,0,0,0,0,0
+as_1872,SUGAR,Refined and Candy,0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1872,"SKINS, FURS AND PELTS","Tanned, Tawed, or Dressed",0,0,ch,dressed+furs+pelt+skin+tanned+tawed,0,0,0,0,0,0,0,0
+as_1873,"SPIRITS, BRITISH and IRISH",,2375,2386,ch,british+irish+spirit,12,11,0,1,0,0,0,0
+as_1873,GLASS,Common Bottles,1036,1057,ch,bottle+common+glas,22,21,0,1,0,0,0,0
+as_1873,GLASS,"Flint, Plain, Cut, or Ornamented (including Bottles and Phials of Flint Glass)",1011,1035,ch,cut+flint+glas+ornamented+plain,25,24,0,1,0,0,0,0
+as_1874,LINEN and JUTE MANUFACTURES,Jute-Manufactures,1632,1659,ch,jute+linen+manufacture,28,27,0,1,0,0,0,0
+as_1874,SUGAR,Molasses,0,0,ch,molasse+sugar,0,0,0,0,0,0,0,0
+as_1874,SPIRITS,"Perfumed, in Bond",0,0,ch,bond+perfumed+spirit,0,0,0,0,0,0,0,0
+as_1874,SUGAR,"Refined, and Candy",0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1874,SPIRITS,SUCCADES AND CONFECTIONERY (including Fruits and Vegetables preserved in Sugar),0,0,ch,confectionery+spirit+succade,0,0,0,0,0,0,0,0
+as_1874,SPIRITS,"Spirits, Sweetened or Mixed, Unenumerated, including Shrub",0,0,ch,including+mixed+shrub+spirit+sweetened,0,0,0,0,0,0,0,0
+as_1875,PICTURES,,1723,1732,ch,picture,10,9,0,1,0,0,0,0
+as_1875,"SPIRITS, BRITISH and IRISH",,1939,1949,ch,british+irish+spirit,11,10,0,1,0,0,0,0
+as_1876,PICTURES,,1630,1638,ch,picture,9,8,0,1,0,0,0,0
+as_1876,"COALS, CINDERS, &c.",Coals,382,417,ch,c+cinder+coal,36,35,0,1,0,0,0,0
+as_1876,"COALS, CINDERS, &c.",Coke and Cinders,418,426,ch,c+cinder+coal+coke,9,8,0,1,0,0,0,0
+as_1876,"COALS, CINDERS, &c.","Fuel, Manufactured",427,436,ch,c+cinder+coal+fuel+manufactured,10,9,0,1,0,0,0,0
+as_1876,COTTON MANUFACTURES,"Piece Goods, Printed",531,580,ch,cotton+good+manufacture+piece+printed,50,49,0,1,0,0,0,0
+as_1876,COTTON MANUFACTURES,"Piece Goods, Printed (Contd)",0,0,ch,cotton+good+manufacture+piece+printed,0,0,0,0,0,0,0,0
+as_1876,"SKINS, FURS, AND PELTS","Tanned, Tawed, or Dressed",0,0,ch,dressed+furs+pelt+skin+tanned+tawed,0,0,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",660,680,ch,cotton+good+manufacture+material+mixed+piece+predominating,21,20,0,1,0,0,0,0
+as_1877,COTTON,"Piece Goods of Other Countries, other than Muslins",0,0,ch,cotton+countrie+good+muslin+piece,0,0,0,0,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Printed",611,659,ch,cotton+good+manufacture+piece+printed,49,48,0,1,0,0,0,0
+as_1877,COTTON MANUFACTURES,"Piece Goods, Printed (Contd)",0,0,ch,cotton+good+manufacture+piece+printed,0,0,0,0,0,0,0,0
+as_1878,SOAP,,2010,2023,ch,soap,14,13,0,1,0,0,0,0
+as_1878,"SPIRITS, BRITISH and IRISH",,2024,2034,ch,british+irish+spirit,11,10,0,1,0,0,0,0
+as_1878,SKINS and FURS,"Foreign, Dressed in the United Kingdom",2004,2009,ch,dressed+foreign+furs+kingdom+skin+united,6,5,0,1,0,0,0,0
+as_1878,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",705,725,ch,cotton+good+manufacture+material+mixed+piece+predominating,21,20,0,1,0,0,0,0
+as_1878,COTTON MANUFACTURES,"Piece Goods, Printed",650,653,inf,cotton+good+manufacture+piece+printed,4,4,0,0,0,0,0,0
+as_1878,COTTON MANUFACTURES,"Piece Goods, Printed",655,658,inf,cotton+good+manufacture+piece+printed,4,4,0,0,0,0,0,0
+as_1878,COTTON MANUFACTURES,"Piece Goods, Printed",660,680,inf,cotton+good+manufacture+piece+printed,21,21,0,0,0,0,0,0
+as_1878,COTTON MANUFACTURES,"Piece Goods, Printed",682,700,inf,cotton+good+manufacture+piece+printed,19,19,0,0,0,0,0,0
+as_1878,COTTON MANUFACTURES,"Piece Goods, Printed (Contd)",0,0,ch,cotton+good+manufacture+piece+printed,0,0,0,0,0,0,0,0
+as_1879,"ARMS, AMMUNITION, and MILITARY STORES",Fowling Pieces,148,158,ch,ammunition+arms+fowling+military+piece+store,11,10,0,1,0,0,0,0
+as_1880,"ARMS, AMMUNITION, and MILITARY STORES",Cannon and Mortars,149,154,ch,ammunition+arms+cannon+military+mortar+store,6,5,0,1,0,0,0,0
+as_1880,"ARMS, AMMUNITION, and MILITARY STORES",Fowling Pieces,171,181,ch,ammunition+arms+fowling+military+piece+store,11,10,0,1,0,0,0,0
+as_1880,PAPER,"Pasteboard, Millboard, &c. (including Playing Cards)",2055,2062,ch,c+millboard+paper+pasteboard,8,7,0,1,0,0,0,0
+as_1880,COTTON MANUFACTURES,"Piece Goods, Printed",768,781,inf,cotton+good+manufacture+piece+printed,14,14,0,0,0,0,0,0
+as_1880,COTTON MANUFACTURES,"Piece Goods, Printed",783,804,inf,cotton+good+manufacture+piece+printed,22,22,0,0,0,0,0,0
+as_1880,COTTON MANUFACTURES,"Piece Goods, Printed",806,807,inf,cotton+good+manufacture+piece+printed,2,2,0,0,0,0,0,0
+as_1880,COTTON MANUFACTURES,"Piece Goods, Printed",810,821,inf,cotton+good+manufacture+piece+printed,12,12,0,0,0,0,0,0
+as_1880,PAPER,"Unenumerated, and Articles of Paper (except Papier Maché)",2063,2076,ch,article+paper,14,13,0,1,0,0,0,0
+as_1880,PAPER,"Writing or Printing, and Envelopes",2035,2045,ch,envelope+paper+printing+writing,11,10,0,1,0,0,0,0
+as_1881,"ARMS, AMMUNITION, and MILITARY STORES",Cannon and Mortars,139,144,ch,ammunition+arms+cannon+military+mortar+store,6,5,0,1,0,0,0,0
+as_1881,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",2551,2573,inf,carpet+manufacture+rugs+woollen+worsted,23,22,0,1,0,0,0,0
+as_1881,WOOLLEN and WORSTED MANUFACTURES,Flannels,2540,2550,inf,flannel+manufacture+woollen+worsted,11,10,0,1,0,0,0,0
+as_1881,"SKINS, FURS, AND PELTS","Goat and Kid, Undressed",0,0,ch,furs+goat+kid+pelt+skin+undressed,0,0,0,0,0,0,0,0
+as_1881,"ARMS, AMMUNITION, and MILITARY STORES",Gunpowder,89,106,ch,ammunition+arms+gunpowder+military+store,18,17,0,1,0,0,0,0
+as_1881,"ARMS, AND AMMUNITION",Gunpowder,0,0,ch,ammunition+arms+gunpowder,0,0,0,0,0,0,0,0
+as_1881,HIDES,"Not Tanned, &c., Wet",0,0,ch,c+hide+tanned+wet,0,0,0,0,0,0,0,0
+as_1881,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",744,769,ch,cotton+good+manufacture+material+mixed+piece+predominating,26,25,0,1,0,0,0,0
+as_1881,WOOLLEN and WORSTED MANUFACTURES,"Rugs, Coverlets, or Wrappers",2811,2823,ch,coverlet+manufacture+rugs+woollen+worsted+wrapper,13,12,0,1,0,0,0,0
+as_1881,WOOLLEN and WORSTED MANUFACTURES,Shawls,2797,2810,ch,manufacture+shawl+woollen+worsted,14,13,0,1,0,0,0,0
+as_1882,"SKINS, FURS, AND PELTS","Goat, Undressed",0,0,ch,furs+goat+pelt+skin+undressed,0,0,0,0,0,0,0,0
+as_1883,BISCUIT and BREAD,,225,239,ch,biscuit+bread,15,14,0,1,0,0,0,0
+as_1885,LINEN MANUFACTURES,Sail Cloth and Sails,2277,2291,ch,cloth+linen+manufacture+sail,15,12,0,3,0,0,0,0
+as_1887,CEMENT,,527,561,ch,cement,35,32,0,3,0,0,0,0
+as_1887,"HIDES, RAW",,1723,1732,ch,hide+raw,10,8,0,2,0,0,0,0
+as_1887,PAPER,"Writing or Printing, and En- velopes",3080,3114,ch,envelope+paper+printing+writing,35,32,0,3,0,0,0,0
+as_1887,PAPER,"Writing or Printing, and En-velopes",0,0,ch,en+paper+printing+velope+writing,0,0,0,0,0,0,0,0
+as_1888,"BAGS and SACKS, Empty",,288,326,ch,bags+empty+sack,39,35,0,3,0,0,0,1
+as_1888,"ARMS, AMMUNITION, AND MILITARY STORES","BAGS and SACKS, Empty",0,0,ch,ammunition+arms+bags+empty+military+sack+store,0,0,0,0,0,0,0,0
+as_1888,WOOLLEN AND WORSTED MANUFACTURES,Shawls,4537,4558,ch,manufacture+shawl+woollen+worsted,22,19,0,3,0,0,0,0
+as_1888,SILK,"Thrown, Twist or Yarn",3732,3741,ch,silk+thrown+twist+yarn,10,8,0,2,0,0,0,0
+as_1873,COTTON YARN and TWIST,,637,659,ch,cotton+twist+yarn,23,22,0,1,0,0,0,0
+as_1874,LINEN and JUTE MANUFACTURES,Thread for Sewing,1604,1615,ch,jute+linen+manufacture+sewing+thread,12,12,0,0,0,0,0,0
+as_1876,LEATHER,"Tanned, Unwrought",1268,1275,ch,leather+tanned+unwrought,8,8,0,0,0,0,0,0
+as_1877,PAINTERS' COLOURS and MATERIALS,"Writing or Printing, and Envelopes",1595,1605,ch,colour+envelope+material+painter+printing+writing,11,10,0,1,0,0,0,0
+as_1878,SEEDS,"Unenumerated, other Sorts",1479,1487,ch,seed,9,8,0,1,0,0,0,0
+as_1878,OIL,Seed,0,0,ch,oil+seed,0,0,0,0,0,0,0,0
+as_1878,PICTURES,,1823,1830,ch,picture,8,7,0,1,0,0,0,0
+as_1878,WOOL,"Other Sorts, including Foreign, dressed in the United Kingdom, and Flocks and Ragwool",2277,2282,ch,dressed+flock+foreign+including+kingdom+ragwool+united+wool,6,5,0,1,0,0,0,0
+as_1878,WOOLLEN and WORSTED YARN,Worsted Yarn (Combed),2288,2296,ch,woollen+worsted+yarn,9,8,0,1,0,0,0,0
+as_1878,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffels, &c., Plain, all Wool",0,0,ch,broad+c+cloth+coating+duffel+manufacture+plain+wool+woollen+worsted,0,0,0,0,0,0,0,0
+as_1879,"COALS, CINDERS, &c.",Coals,419,437,ch,c+cinder+coal,19,18,0,1,0,0,0,0
+as_1879,"COALS, CINDERS, &c.",Coke and Cinders,438,445,ch,c+cinder+coal+coke,8,7,0,1,0,0,0,0
+as_1879,IRON,"Old, for Re-manufacture",1070,1080,ch,iron+manufacture+old+re,11,10,0,1,0,0,0,0
+as_1881,"ARMS, AMMUNITION, and MILITARY STORES",Fowling Pieces,155,165,ch,ammunition+arms+fowling+military+piece+store,11,10,0,1,0,0,0,0
+as_1882,LEATHER,"Tanned, Unwrought",0,0,ch,leather+tanned+unwrought,0,0,0,0,0,0,0,0
+as_1882,WOOLLEN and WORSTED MANUFACTURES,Shawls,2766,2777,ch,manufacture+shawl+woollen+worsted,12,11,0,1,0,0,0,0
+as_1883,Meal and Flour,COTTON TWIST and YARN,553,583,ch,cotton+twist+yarn,31,30,0,1,0,0,0,0
+as_1883,COTTON TWIST AND YARN,,0,0,ch,cotton+twist+yarn,0,0,0,0,0,0,0,0
+as_1884,PAPER,"Writing or Printing, and Envelopes",2243,2258,ch,envelope+paper+printing+writing,16,15,0,1,0,0,0,0
+as_1885,SILK MANUFACTURES,Broad Stuffs,3057,3070,ch,broad+manufacture+silk+stuff,14,11,0,3,0,0,0,0
+as_1875,COTTON MANUFACTURES,"Piece Goods, Printed",585,606,ch,cotton+good+manufacture+piece+printed,22,22,0,0,0,0,0,0
+as_1875,COTTON MANUFACTURES,"Piece Goods, Printed",608,632,ch,cotton+good+manufacture+piece+printed,24,24,0,0,0,0,0,0
+as_1875,COTTON MANUFACTURES,"Piece Goods, Printed",632,632,ch,cotton+good+manufacture+piece+printed,1,0,0,0,0,0,0,1
+as_1875,COTTON MANUFACTURES,"Piece Goods, Printed (Contd)",0,0,ch,cotton+good+manufacture+piece+printed,0,0,0,0,0,0,0,0
+as_1897,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3218,3283,ch,cork+unmanufactured,66,25,0,15,0,0,26,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3167,3168,ch,cork+unmanufactured,2,2,0,0,0,0,0,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3172,3173,ch,cork+unmanufactured,2,2,0,0,0,0,0,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3177,3178,ch,cork+unmanufactured,2,2,0,0,0,0,0,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3182,3183,ch,cork+unmanufactured,2,2,0,0,0,0,0,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3187,3188,ch,cork+unmanufactured,2,2,0,0,0,0,0,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3192,3193,ch,cork+unmanufactured,2,2,0,0,0,0,0,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3197,3198,ch,cork+unmanufactured,2,2,0,0,0,0,0,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3202,3203,ch,cork+unmanufactured,2,2,0,0,0,0,0,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3207,3208,ch,cork+unmanufactured,2,2,0,0,0,0,0,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3217,3218,ch,cork+unmanufactured,2,2,0,0,0,0,0,0
+as_1899,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",3219,3220,ch,cork+unmanufactured,2,1,1,0,0,0,0,0
+as_1898,"COPPER, ORE OF","Cables (not of Iron), Twine, and Cable Yarn",0,0,ch,cable+copper+ore+twine+yarn,0,0,0,0,0,0,0,0
+as_1897,"CHINA, OR PORCELAIN, AND EARTHENWARE","Cables (not of Iron), Twine, and Cable Yarn",0,0,ch,cable+china+earthenware+porcelain+twine+yarn,0,0,0,0,0,0,0,0
+as_1898,"CHINA, OR PORCELAIN, AND EARTHENWARE","Cables (not of Iron), Twine, and Cable Yarn",0,0,ch,cable+china+earthenware+porcelain+twine+yarn,0,0,0,0,0,0,0,0
+as_1899,CHEESE,"Cables (not of Iron), Twine, and Cable Yarn",0,0,ch,cable+cheese+twine+yarn,0,0,0,0,0,0,0,0
+as_1898,"CORDAGE CABLES (not of iron), Twine, and Cable Yarn",,0,0,ch,cable+cordage+twine+yarn,0,0,0,0,0,0,0,0
+as_1895,CORDAGE. CABLES (not of Iron). TWINE. and CABLE YARN,,0,0,ch,cable+cordage+twine+yarn,0,0,0,0,0,0,0,0
+as_1893,WOOD and TIMBER,"Hewn, Unenumerated",3837,3849,ch,hewn+timber+wood,13,10,0,3,0,0,0,0
+as_1893,WOOD and TIMBER,"Hewn, Unenumerated",3850,3853,ch,fir+sawn+timber+wood,4,4,0,0,0,0,0,0
+as_1893,WOOD and TIMBER,"Hewn, Unenumerated",3855,3861,ch,fir+sawn+timber+wood,7,4,0,3,0,0,0,0
+as_1897,TIN,"Hewn, Unenumerated",0,0,ch,hewn+tin,0,0,0,0,0,0,0,0
+as_1886,Malt,"Piece Goods, Printed",974,1040,inf,cotton+good+manufacture+piece+printed,67,64,0,3,0,0,0,0
+as_1886,COTTON MANUFACTURES,"Piece Goods, Printed (Contd)",0,0,ch,cotton+good+manufacture+piece+printed,0,0,0,0,0,0,0,0
+as_1885,LINEN YARN,"Plain, Unbleached or Bleached",2087,2128,inf,bleached+linen+manufacture+plain+unbleached,42,39,0,3,0,0,0,0
+as_1885,LINEN MANUFACTURES,"Plain, Unbleached or Bleached",0,0,ch,bleached+linen+manufacture+plain+unbleached,0,0,0,0,0,0,0,0
+as_1874,IRON,Pig,1283,1302,inf,iron+pig,20,19,0,1,0,0,0,0
+as_1874,IRON,"Old, for Re-manufacture",1273,1282,inf,iron+manufacture+old+re,10,9,0,1,0,0,0,0
+as_1875,SKINS and FURS,SOAP,1843,1857,inf,soap,15,14,0,1,0,0,0,0
+as_1875,SOAP,,0,0,ch,soap,0,0,0,0,0,0,0,0
+as_1873,COTTON YARN and TWIST,,577,600,inf,cotton+twist+yarn,24,3,0,1,0,0,0,20
+as_1882,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",2508,2529,inf,carpet+manufacture+rugs+woollen+worsted,22,21,0,1,0,0,0,0
+as_1882,WOOLLEN and WORSTED MANUFACTURES,Shawls,2546,2557,inf,manufacture+shawl+woollen+worsted,12,0,0,1,0,0,0,11
+as_1882,WOOLLEN and WORSTED MANUFACTURES,"Rugs, Coverlets, or Wrappers",2558,2570,inf,coverlet+manufacture+rugs+woollen+worsted+wrapper,13,12,0,1,0,0,0,0
+as_1884,BLEACHING MATERIALS,,247,259,inf,bleaching+material,13,12,0,1,0,0,0,0
+as_1884,BISCUIT and BREAD,,231,244,ch,biscuit+bread,14,14,0,0,0,0,0,0
+as_1881,COTTON MANUFACTURES,"Piece Goods, Printed",711,724,ch,cotton+good+manufacture+piece+printed,14,14,0,0,0,0,0,0
+as_1881,COTTON MANUFACTURES,"Piece Goods, Printed",726,740,ch,cotton+good+manufacture+piece+printed,15,15,0,0,0,0,0,0
+as_1881,COTTON MANUFACTURES,"Piece Goods, Printed",741,741,ch,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1881,COTTON MANUFACTURES,"Piece Goods, Printed",742,742,ch,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1881,COTTON MANUFACTURES,"Piece Goods, Printed (Contd)",0,0,ch,cotton+good+manufacture+piece+printed,0,0,0,0,0,0,0,0
+as_1881,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,107,109,ch,ammunition+arms+caps+military+percussion+store,3,3,0,0,0,0,0,0
+as_1881,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,111,119,ch,ammunition+arms+caps+military+percussion+store,9,9,0,0,0,0,0,0
+as_1881,"ARMS, AND AMMUNITION",Percussion Caps,0,0,ch,ammunition+arms+caps+percussion,0,0,0,0,0,0,0,0
+as_1879,"COALS, CINDERS, &c.","Fuel, Manufactured",446,450,ch,c+cinder+coal+fuel+manufactured,5,5,0,0,0,0,0,0
+as_1879,"COALS, CINDERS, &c.","Fuel, Manufactured",451,451,ch,c+cinder+coal+fuel+manufactured,1,1,0,0,0,0,0,0
+as_1876,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",686,702,inf,cotton+good+manufacture+material+mixed+piece+predominating,17,17,0,0,0,0,0,0
+as_1876,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",703,703,inf,cotton+good+manufacture+material+mixed+piece+predominating,1,1,0,0,0,0,0,0
+as_1877,PICTURES,,1584,1590,inf,picture,7,7,0,0,0,0,0,0
+as_1877,PICTURES,,1591,1591,inf,picture,1,1,0,0,0,0,0,0
+as_1882,LINEN MANUFACTURES,Sail Cloth and Sails,1746,1759,ch,cloth+linen+manufacture+sail,14,13,0,1,0,0,0,0
+as_1884,COTTON MANUFACTURES,"Piece Goods, Printed",736,738,inf,cotton+good+manufacture+piece+printed,3,3,0,0,0,0,0,0
+as_1884,COTTON MANUFACTURES,"Piece Goods, Printed",740,755,inf,cotton+good+manufacture+piece+printed,16,16,0,0,0,0,0,0
+as_1884,COTTON MANUFACTURES,"Piece Goods, Printed",757,765,inf,cotton+good+manufacture+piece+printed,9,9,0,0,0,0,0,0
+as_1884,COTTON MANUFACTURES,"Piece Goods, Printed",767,783,inf,cotton+good+manufacture+piece+printed,17,17,0,0,0,0,0,0
+as_1884,COTTON MANUFACTURES,"Piece Goods, Printed",785,788,inf,cotton+good+manufacture+piece+printed,4,4,0,0,0,0,0,0
+as_1884,COTTON MANUFACTURES,"Piece Goods, Printed",790,791,inf,cotton+good+manufacture+piece+printed,2,2,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",948,966,inf,cotton+good+manufacture+piece+printed,19,19,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",967,968,inf,cotton+good+manufacture+piece+printed,2,2,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",969,969,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",970,970,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",971,971,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",972,972,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",973,976,inf,cotton+good+manufacture+piece+printed,4,4,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",977,977,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",978,988,inf,cotton+good+manufacture+piece+printed,11,11,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",990,995,inf,cotton+good+manufacture+piece+printed,6,6,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",997,997,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",999,999,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",1000,1000,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",1001,1007,inf,cotton+good+manufacture+piece+printed,7,7,0,0,0,0,0,0
+as_1887,COTTON MANUFACTURES,"Piece Goods, Printed",1009,1011,inf,cotton+good+manufacture+piece+printed,3,3,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",500,502,inf,cotton+good+manufacture+piece+printed,3,3,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",504,504,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",507,508,inf,cotton+good+manufacture+piece+printed,2,2,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",510,511,inf,cotton+good+manufacture+piece+printed,2,2,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",513,513,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",515,517,inf,cotton+good+manufacture+piece+printed,3,3,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",519,520,inf,cotton+good+manufacture+piece+printed,2,2,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",523,524,inf,cotton+good+manufacture+piece+printed,2,2,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",526,526,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",528,533,inf,cotton+good+manufacture+piece+printed,6,6,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",535,538,inf,cotton+good+manufacture+piece+printed,4,4,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",541,544,inf,cotton+good+manufacture+piece+printed,4,4,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",547,547,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1882,COTTON MANUFACTURES,"Piece Goods, Printed",549,553,inf,cotton+good+manufacture+piece+printed,5,5,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Printed",725,743,inf,cotton+good+manufacture+piece+printed,19,19,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Printed",744,745,inf,cotton+good+manufacture+piece+printed,2,2,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Printed",746,746,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Printed",748,748,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1883,COTTON MANUFACTURES,"Piece Goods, Printed",750,751,inf,cotton+good+manufacture+piece+printed,2,2,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",875,878,inf,cotton+good+manufacture+piece+printed,4,4,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",880,882,inf,cotton+good+manufacture+piece+printed,3,3,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",884,893,inf,cotton+good+manufacture+piece+printed,10,10,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",894,902,inf,cotton+good+manufacture+piece+printed,8,8,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",902,903,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",903,906,inf,cotton+good+manufacture+piece+printed,3,3,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",907,910,inf,cotton+good+manufacture+piece+printed,3,3,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",911,912,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",914,915,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",917,924,inf,cotton+good+manufacture+piece+printed,8,8,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",925,925,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",926,926,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",927,927,inf,cotton+good+manufacture+piece+printed,1,1,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed",928,937,inf,cotton+good+manufacture+piece+printed,10,10,0,0,0,0,0,0
+as_1885,COTTON MANUFACTURES,"Piece Goods, Printed (Contd)",0,0,ch,cotton+good+manufacture+piece+printed,0,0,0,0,0,0,0,0
+as_1883,BLEACHING MATERIALS,,240,249,ch,bleaching+material,10,10,0,0,0,0,0,0
+as_1883,"CORDAGE, CABLES, ROPES, and TWINE of HEMP or like MATERIAL",,513,516,ch,cable+cordage+hemp+like+material+rope+twine,4,4,0,0,0,0,0,0
+as_1883,"CORDAGE, CABLES, ROPES, and TWINE of HEMP or like MATERIAL",,518,529,ch,cable+cordage+hemp+like+material+rope+twine,12,12,0,0,0,0,0,0
+as_1883,PICTURES,,2212,2218,ch,picture,7,7,0,0,0,0,0,0
+as_1894,LINEN YARN,,3734,3750,ch,linen+yarn,17,12,0,0,0,0,5,0
+as_1894,LINEN YARN,,3752,3754,ch,linen+yarn,3,3,0,0,0,0,0,0
+as_1879,"ARMS, AMMUNITION, and MILITARY STORES",Cannon and Mortars,127,132,ch,ammunition+arms+cannon+military+mortar+store,6,6,0,0,0,0,0,0
+as_1881,"ARMS, AMMUNITION, and MILITARY STORES",Muskets,145,149,ch,ammunition+arms+military+musket+store,5,5,0,0,0,0,0,0
+as_1876,WOOD and TIMBER,Oak,1888,1893,ch,oak+timber+wood,6,6,0,0,0,0,0,0
+as_1887,SALT (Rock and White),,3363,3373,ch,salt,11,11,0,0,0,0,0,0
+as_1887,SALT (Rock and White),,3375,3381,ch,salt,7,7,0,0,0,0,0,0
+as_1887,SADDLERY AND HARNESS,SALT (Rock and White),0,0,ch,harnes+saddlery+salt,0,0,0,0,0,0,0,0
+as_1888,LEATHER,"Tanned, Unwrought",2710,2719,ch,leather+tanned+unwrought,10,10,0,0,0,0,0,0
+as_1888,LEATHER,"Tanned, Unwrought",2721,2729,ch,leather+tanned+unwrought,9,9,0,0,0,0,0,0
+as_1888,"ARMS, AMMUNITION, and MILITARY STORES",Cannon and Mortars,231,235,ch,ammunition+arms+cannon+military+mortar+store,5,5,0,0,0,0,0,0
+as_1888,"ARMS, AMMUNITION, AND MILITARY STORES",Cannon and Mortars,238,242,ch,ammunition+arms+cannon+military+mortar+store,5,5,0,0,0,0,0,0
+as_1888,"ARMS, AMMUNITION, AND MILITARYSTORES",Cannon and Mortars (Contd),0,0,ch,ammunition+arms+cannon+militarystore+mortar,0,0,0,0,0,0,0,0
+as_1876,LEATHER,"Wrought, other Articles, Unenumerated",1286,1295,ch,article+leather+wrought,10,10,0,0,0,0,0,0
+as_1879,"ARMS, AMMUNITION, and MILITARY STORES",Rifles,0,0,ch,ammunition+arms+military+rifle+store,0,0,0,0,0,0,0,0
+as_1879,COTTON MANUFACTURES,"Piece Goods, Printed",589,619,ch,cotton+good+manufacture+piece+printed,31,31,0,0,0,0,0,0
+as_1879,COTTON MANUFACTURES,"Piece Goods, Printed (Contd)",0,0,ch,cotton+good+manufacture+piece+printed,0,0,0,0,0,0,0,0
+as_1880,"ARMS, AMMUNITION, and MILITARY STORES",Rifles,0,0,ch,ammunition+arms+military+rifle+store,0,0,0,0,0,0,0,0
+as_1881,"ARMS, AMMUNITION, and MILITARY STORES",Rifles,0,0,ch,ammunition+arms+military+rifle+store,0,0,0,0,0,0,0,0
+as_1882,WOOLLEN AND WORSTED MANUFACTURES,"YARN, ALPACA, MOHAIR, and other Sorts Un-enumerated",0,0,ch,alpaca+enumerated+manufacture+mohair+un+woollen+worsted+yarn,0,0,0,0,0,0,0,0
+as_1874,"HIDES, RAW",,0,0,ch,hide+raw,0,0,0,0,0,0,0,0
+as_1898,METAL,"MILK, condensed",0,0,ch,condensed+metal+milk,0,0,0,0,0,0,0,0
+as_1897,"CHINA, OR PORCELAIN, AND EARTHENWARE",Maize or Indian Corn,0,0,ch,china+corn+earthenware+indian+maize+porcelain,0,0,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15025,15025,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15035,15035,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15040,15040,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15045,15045,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15053,15053,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15059,15059,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15064,15064,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15067,15067,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15077,15077,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15082,15082,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15092,15092,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15097,15097,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15031,15031,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15036,15036,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15041,15041,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15046,15046,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15054,15054,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15060,15060,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15065,15065,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15068,15068,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15078,15078,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15083,15083,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15088,15088,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15098,15098,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15027,15027,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15032,15032,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15037,15037,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15042,15042,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15050,15050,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15055,15055,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15061,15061,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15069,15069,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15079,15079,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15084,15084,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15094,15094,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15099,15099,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15033,15033,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15070,15070,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15080,15080,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15085,15085,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15090,15090,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1897,NUTS AND KERNELS,Palm,15100,15100,ch,oil+palm,1,1,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",,0,0,ch,card+playing,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",Roasted or Ground,0,0,ch,card+ground+playing+roasted,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",COFFEE: „ Raw,0,0,ch,card+coffee+playing+raw,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",COFFEE: „ RAW,0,0,ch,card+coffee+playing+raw,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",Raw,0,0,ch,card+playing+raw,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",Raw or Kiln dried,0,0,ch,card+dried+kiln+playing+raw,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING","Red, Total of",0,0,ch,card+playing+red+total,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING","Red, in Bottles : Sparkling : Burgundy",0,0,ch,bottle+burgundy+card+playing+red+sparkling,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING","Red, in Bottles : Sparkling : Other Sorts",0,0,ch,bottle+card+playing+red+sparkling,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",Saumur : Burgundy,0,0,ch,burgundy+card+playing+saumur,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",Saumur : Hock,0,0,ch,card+hock+playing+saumur,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",Saumur : Moselle,0,0,ch,card+moselle+playing+saumur,0,0,0,0,0,0,0,0
+as_1898,COCOA,,0,0,ch,cocoa,0,0,0,0,0,0,0,0
+as_1898,CHLOROFORM,COCO A,0,0,ch,chloroform+coco,0,0,0,0,0,0,0,0
+as_1898,CHICORY,,0,0,ch,chicory,0,0,0,0,0,0,0,0
+as_1898,CHICORY,Raw or Kiln dried,0,0,ch,chicory+dried+kiln+raw,0,0,0,0,0,0,0,0
+as_1898,CHICORY,Roasted or Ground,0,0,ch,chicory+ground+roasted,0,0,0,0,0,0,0,0
+as_1898,CHICORY,"Cocoa or Chocolate, ground, prepared or   in any way manufactured",0,0,ch,any+chicory+chocolate+cocoa+ground+manufactured+prepared+way,0,0,0,0,0,0,0,0
+as_1898,CHICORY,"Cocoa or Chocolate, ground, prepared or in any way manufactured",0,0,ch,any+chicory+chocolate+cocoa+ground+manufactured+prepared+way,0,0,0,0,0,0,0,0
+as_1898,CHICORY,"Cocoa or Chocolate, in the manufacture of which Spirit has been used",0,0,ch,been+chicory+chocolate+cocoa+has+manufacture+spirit+which,0,0,0,0,0,0,0,0
+as_1897,"CARDS, PLAYING",,25749,25777,ch,card+playing,29,29,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",,25355,25383,ch,card+playing,29,5,0,0,0,0,6,18
+as_1891,COCOA,,36,51,ch,cocoa,16,16,0,0,0,0,0,0
+as_1891,COCOA,,53,54,ch,cocoa,2,2,0,0,0,0,0,0
+as_1891,COCOA,,55,55,ch,cocoa,1,1,0,0,0,0,0,0
+as_1891,COCOA,,56,56,ch,cocoa,1,1,0,0,0,0,0,0
+as_1891,COCOA,,57,57,ch,cocoa,1,1,0,0,0,0,0,0
+as_1892,COCOA,,33,44,ch,cocoa,12,12,0,0,0,0,0,0
+as_1892,COCOA,,46,47,ch,cocoa,2,2,0,0,0,0,0,0
+as_1892,COCOA,,48,48,ch,cocoa,1,1,0,0,0,0,0,0
+as_1892,COCOA,,49,49,ch,cocoa,1,1,0,0,0,0,0,0
+as_1892,COCOA,,50,50,ch,cocoa,1,1,0,0,0,0,0,0
+as_1893,COCOA,,39,49,ch,cocoa,11,11,0,0,0,0,0,0
+as_1893,COCOA,,51,52,ch,cocoa,2,2,0,0,0,0,0,0
+as_1893,COCOA,,53,54,ch,cocoa,2,2,0,0,0,0,0,0
+as_1893,COCOA,,55,55,ch,cocoa,1,1,0,0,0,0,0,0
+as_1893,COCOA,,56,56,ch,cocoa,1,1,0,0,0,0,0,0
+as_1896,COCOA,,42,52,ch,cocoa,11,11,0,0,0,0,0,0
+as_1896,COCOA,,54,56,ch,cocoa,3,3,0,0,0,0,0,0
+as_1896,COCOA,,57,57,ch,cocoa,1,1,0,0,0,0,0,0
+as_1896,COCOA,,58,58,ch,cocoa,1,1,0,0,0,0,0,0
+as_1896,COCOA,,59,59,ch,cocoa,1,1,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",Other Sorts,0,0,ch,card+playing,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",Other sorts,0,0,ch,card+playing,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",Plums (French) and Prunellocs,0,0,ch,fruit+plum+prunelloe,0,0,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",Plums (French) and Prunelloes,0,0,ch,fruit+plum+prunelloe,0,0,0,0,0,0,0,0
+as_1897,LEAD,Gloves,0,0,ch,glove+lead,0,0,0,0,0,0,0,0
+as_1897,LEATHER,Gloves,0,0,ch,glove+leather,0,0,0,0,0,0,0,0
+as_1897,LEATHER MANUFACTURES,Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1897,IRON,Gloves,0,0,ch,glove+iron,0,0,0,0,0,0,0,0
+as_1898,LEATHER MANUFACTURES,.. Gloves,0,0,ch,glove+leather+manufacture,0,0,0,0,0,0,0,0
+as_1888,SPIRITS,Brandy,0,0,ch,brandy+spirit,0,0,0,0,0,0,0,0
+as_1888,SPIRITS,Not tested for ascertaining strength,0,0,ch,ascertaining+spirit+strength+tested,0,0,0,0,0,0,0,0
+as_1888,SPIRITS,Rum,0,0,ch,rum+spirit,0,0,0,0,0,0,0,0
+as_1888,SPIRITS,Perfumed,0,0,ch,perfumed+spirit,0,0,0,0,0,0,0,0
+as_1888,SPIRITS,British Indies,0,0,ch,british+indie+spirit,0,0,0,0,0,0,0,0
+as_1897,SPIRITS,Rum,0,0,ch,rum+spirit,0,0,0,0,0,0,0,0
+as_1897,"CARDS, PLAYING",Rum,0,0,ch,card+playing+rum,0,0,0,0,0,0,0,0
+as_1897,FRUIT,Rum,0,0,ch,fruit+rum,0,0,0,0,0,0,0,0
+as_1875,SUGAR,Refined and Candy,0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1877,SUGAR,Refined and Candy,0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1877,SUGAR,"Refined, and Candy",0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1878,SUGAR,"Refined, and Candy",0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1880,SUGAR,Refined and Candy,0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1881,SUGAR,Refined and Candy,0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1883,SUGAR,Refined and Candy,0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1884,SUGAR,Refined and Candy,0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1885,SUGAR,Refined and Candy,0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1886,SUGAR,.. Refined and Candy,0,0,ch,candy+refined+sugar,0,0,0,0,0,0,0,0
+as_1887,SUGAR,Cane and Other Sorts,2725,2745,inf,cane+sugar,21,20,0,1,0,0,0,0
+as_1887,SUGAR,"Cane, and Other Sorts",2718,2724,inf,cane+sugar,7,7,0,0,0,0,0,0
+as_1887,SUGAR,"Unrefined : Beetroot : Cane, and Other Sorts",0,0,ch,cane+sugar,0,0,0,0,0,0,0,0
+as_1888,"SUGAR, Refined","Unrefined : Cane, and Other Sorts",3377,3396,ch,cane+sugar+unrefined,20,20,0,0,0,0,0,0
+as_1891,SUGAR,"Unrefined: Cane, and Other Sorts",3373,3390,ch,cane+sugar+unrefined,18,18,0,0,0,0,0,0
+as_1891,SUGAR,"Unrefined: Cane, and Other Sorts",3392,3398,ch,cane+sugar+unrefined,7,7,0,0,0,0,0,0
+as_1891,SUGAR,"Unrefined: Cane, and Other Sorts",3399,3399,ch,cane+sugar+unrefined,1,1,0,0,0,0,0,0
+as_1891,SUGAR,"Unrefined: Cane, and Other Sorts",3400,3400,ch,cane+sugar+unrefined,1,1,0,0,0,0,0,0
+as_1891,SUGAR,"Unrefined : Cane, and Other Sorts",0,0,ch,cane+sugar+unrefined,0,0,0,0,0,0,0,0
+as_1890,SUGAR,"Unrefined: Cane, and Other Sorts",3425,3450,ch,cane+sugar+unrefined,26,25,0,1,0,0,0,0
+as_1890,SUGAR,"Unrefined : Cane, and Other Sorts",0,0,ch,cane+sugar+unrefined,0,0,0,0,0,0,0,0
+as_1883,SUGAR,Unrefined; Beetroot,0,0,ch,beetroot+sugar+unrefined,0,0,0,0,0,0,0,0
+as_1883,SUGAR,East Coast of Africa,2865,2887,inf,cane+sugar,23,23,0,0,0,0,0,0
+as_1883,SUGAR,East Coast of Africa : Total of,0,0,ch,africa+coast+east+sugar+total,0,0,0,0,0,0,0,0
+as_1883,SUGAR,East Coast of Africa,2861,2863,inf,cane+sugar,3,3,0,0,0,0,0,0
+as_1880,SUGAR,"Cane, and other Sorts",0,0,ch,cane+sugar,0,0,0,0,0,0,0,0
+as_1880,SUGAR,"Unrefined, Beetroot",0,0,ch,beetroot+sugar+unrefined,0,0,0,0,0,0,0,0
+as_1881,SUGAR,"Cane, and other Sorts",0,0,ch,cane+sugar,0,0,0,0,0,0,0,0
+as_1881,SUGAR,"Unrefined, Beetroot",0,0,ch,beetroot+sugar+unrefined,0,0,0,0,0,0,0,0
+as_1873,SUGAR,2nd Class,263,285,ch,sugar+unrefined,23,23,0,0,0,0,0,0
+as_1873,UNREFINED,2nd Class,0,0,ch,2nd+clas+unrefined,0,0,0,0,0,0,0,0
+as_1873,UNREFINED,1st Class,0,0,ch,1st+clas+unrefined,0,0,0,0,0,0,0,0
+as_1873,SUGAR—,3rd Class,0,0,ch,3rd+clas+sugar,0,0,0,0,0,0,0,0
+as_1873,SUGAR—,4th Class,0,0,ch,4th+clas+sugar,0,0,0,0,0,0,0,0
+as_1873,SUGAR,1st Class,0,0,ch,1st+clas+sugar,0,0,0,0,0,0,0,0
+as_1873,SUGAR,2nd Class,0,0,ch,2nd+clas+sugar,0,0,0,0,0,0,0,0
+as_1873,SUGAR—,Total Unrefined of all Kinds,0,0,ch,sugar+total+unrefined,0,0,0,0,0,0,0,0
+as_1873,SUGAR,Total Unrefined of all Kinds—(Contd),0,0,ch,sugar+total+unrefined,0,0,0,0,0,0,0,0
+as_1894,NUTS AND KERNELS,India,2353,2364,ch,commonly+expressing+kernel+nuts+oil+therefrom,12,11,0,1,0,0,0,0
+as_1894,NUTS AND KERNELS,East Coast of Africa,2365,2376,ch,commonly+expressing+kernel+nuts+oil+therefrom,12,10,0,2,0,0,0,0
+as_1886,NUTS AND KERNELS,India,2101,2107,ch,commonly+expressing+kernel+nuts+oil+therefrom,7,6,0,1,0,0,0,0
+as_1886,NUTS AND KERNELS,Commonly used for expressing oil therefrom,2108,2108,ch,commonly+expressing+kernel+nuts+oil+therefrom,1,1,0,0,0,0,0,0
+as_1891,NUTS AND KERNELS,West Africa,2265,2274,ch,commonly+expressing+kernel+nuts+oil+therefrom,10,10,0,0,0,0,0,0
+as_1897,BACON,,982,986,ch,,5,0,0,5,0,0,0,0
+as_1897,DYE WOODS,Logwood,5849,5912,ch,dye+logwood+wood,64,49,0,15,0,0,0,0
+as_1898,OIL-SEED CAKE,Of other sorts,15565,15647,ch,cake+oil+seed,83,49,0,15,0,0,13,6
+as_1898,PAPER,Hangings,16072,16081,ch,hanging+paper,10,7,0,3,0,0,0,0
+as_1897,POTATOES,,17479,17552,ch,potatoe,74,59,0,15,0,0,0,0
+as_1897,PORK,POTATOES,0,0,ch,pork+potatoe,0,0,0,0,0,0,0,0
+as_1897,COLLODIUM,,26380,26403,ch,collodium,24,12,0,12,0,0,0,0
+as_1897,COLLODION,,0,0,ch,collodion,0,0,0,0,0,0,0,0
+as_1897,COFFEE,COLLODION,0,0,ch,coffee+collodion,0,0,0,0,0,0,0,0
+as_1897,COFFEE,COLLODIEN,0,0,ch,coffee+collodien,0,0,0,0,0,0,0,0
+as_1897,"CARDS, PLAYING",COLLODION,0,0,ch,card+collodion+playing,0,0,0,0,0,0,0,0
+as_1898,METAL,"Leaf, not Gold",13733,13761,ch,gold+leaf+metal,29,18,0,11,0,0,0,0
+as_1898,BEEF,"Leaf, not Gold",0,0,ch,beef+gold+leaf,0,0,0,0,0,0,0,0
+as_1893,SALTPETRE (Nitrate of Potash),,2958,2966,ch,saltpetre,9,3,0,2,0,0,0,4
+as_1894,SALTPETRE (Nitrate of Potash),,2993,3001,ch,saltpetre,9,3,0,2,0,0,0,4
+as_1895,SALTPETRE (Nitrate of Potash),,2897,2905,ch,saltpetre,9,5,0,3,0,0,0,1
+as_1896,SALTPETRE (Nitrate of Potash),,2961,2970,ch,saltpetre,10,6,0,3,0,0,0,1
+as_1899,SALTPETRE (Nitrate of Potash),,17831,17863,ch,saltpetre,33,19,0,5,0,0,4,5
+as_1899,SALTPETRE (Nitrate of Potash),,17865,17873,ch,saltpetre,9,4,0,4,0,0,1,0
+as_1897,SALTPETRE (Nitrate of Potash),Rape,18476,18549,ch,rape,74,64,0,10,0,0,0,0
+as_1899,Cotton,Tares and Lentils,18404,18478,ch,lentil+tare,75,60,0,15,0,0,0,0
+as_1899,Cotton,Tares and Lentils,18479,18603,ch,expressing+oil+therefrom,125,110,0,15,0,0,0,0
+as_1898,COTTON,"Unenumerated, for expressing Oil therefrom",0,0,ch,expressing+oil+therefrom,0,0,0,0,0,0,0,0
+as_1876,WINE,Total of all Kinds,253,269,ch,total+wine,17,16,0,1,0,0,0,0
+as_1877,WINE,Total of all Kinds,226,242,ch,total+wine,17,16,0,1,0,0,0,0
+as_1881,WINE,Total of all Kinds,178,194,ch,total+wine,17,16,0,1,0,0,0,0
+as_1882,WINE,Total of all Kinds,144,160,ch,total+wine,17,16,0,1,0,0,0,0
+as_1899,WOOD AND TIMBER,"Sawn or Split, planed or dressed,     Fir",22853,22954,ch,dressed+fir+planed+sawn+split+timber+wood,102,45,0,15,0,0,42,0
+as_1898,WOOD AND TIMBER,"Sawn or Split, planed or dressed, Fir",0,0,ch,dressed+fir+planed+sawn+split+timber+wood,0,0,0,0,0,0,0,0
+as_1897,COTTON,Raw,0,0,ch,cotton+raw,0,0,0,0,0,0,0,0
+as_1883,Meal and Flour,Wheat Meal or Flour,626,641,ch,flour+meal+wheat,16,16,0,0,0,0,0,0
+as_1885,Meal and Flour,Wheat Meal or Flour,671,679,ch,flour+meal+wheat,9,9,0,0,0,0,0,0
+as_1885,Meal and Flour,Wheat Meal or Flour,681,686,ch,flour+meal+wheat,6,4,0,2,0,0,0,0
+as_1886,Meal and Flour,Wheat Meal or Flour,664,669,ch,flour+meal+wheat,6,6,0,0,0,0,0,0
+as_1886,Meal and Flour,Wheat Meal or Flour,670,670,ch,flour+meal+wheat,1,1,0,0,0,0,0,0
+as_1886,Meal and Flour,Wheat Meal or Flour,671,671,ch,flour+meal+wheat,1,1,0,0,0,0,0,0
+as_1886,Meal and Flour,Wheat Meal or Flour,672,672,ch,flour+meal+wheat,1,1,0,0,0,0,0,0
+as_1886,Meal and Flour,Wheat Meal or Flour,673,678,ch,flour+meal+wheat,6,5,0,1,0,0,0,0
+as_1887,Meal and Flour,Wheat Meal or Flour,659,666,ch,flour+meal+wheat,8,8,0,0,0,0,0,0
+as_1887,Meal and Flour,Wheat Meal or Flour,667,667,ch,flour+meal+wheat,1,1,0,0,0,0,0,0
+as_1887,Meal and Flour,Wheat Meal or Flour,668,668,ch,flour+meal+wheat,1,1,0,0,0,0,0,0
+as_1887,Meal and Flour,Wheat Meal or Flour,669,669,ch,flour+meal+wheat,1,1,0,0,0,0,0,0
+as_1887,Meal and Flour,Wheat Meal or Flour,670,676,ch,flour+meal+wheat,7,5,0,2,0,0,0,0
+as_1889,Meal and Flour,Wheat Meal or Flour,675,685,ch,flour+meal+wheat,11,11,0,0,0,0,0,0
+as_1889,Meal and Flour,Wheat Meal or Flour,687,691,ch,flour+meal+wheat,5,3,0,2,0,0,0,0
+as_1883,"CORN, GRAIN, MEAL, AND FLOUR",Wheat Meal or Flour,0,0,ch,flour+meal+wheat,0,0,0,0,0,0,0,0
+as_1885,"CORN, GRAIN, MEAL, and FLOUR",Wheat Meal or Flour,0,0,ch,flour+meal+wheat,0,0,0,0,0,0,0,0
+as_1889,Corn and Grain,Wheat Meal or Flour,0,0,ch,flour+meal+wheat,0,0,0,0,0,0,0,0
+as_1897,CORDAGE,Oats,0,0,ch,corn+grain+oats,0,0,0,0,0,0,0,0
+as_1895,"CORN, GRAIN, MEAL, AND FLOUR",Oats,0,0,ch,corn+grain+oats,0,0,0,0,0,0,0,0
+as_1895,"CORN, GRAIN, MEAL AND FLOUR",Oats,0,0,ch,corn+grain+oats,0,0,0,0,0,0,0,0
+as_1897,"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,0,0,ch,corn+grain+oats,0,0,0,0,0,0,0,0
+as_1899,CHEESE,Oats,0,0,ch,corn+grain+oats,0,0,0,0,0,0,0,0
+as_1873,"TEETH, Elephants, Sea Cow, and Sea Horse",,1503,1505,inf,cow+elephant+horse+sea+teeth,3,3,0,0,0,0,0,0
+as_1873,"TEETH, Elephants, Sea Cow, and Sea Horse","West Coast of Africa, Foreign",1506,1514,inf,cow+elephant+horse+sea+teeth,9,8,0,1,0,0,0,0
+as_1873,TAR,"TEETH, Elephants, Sea Cow, and Sea Horse",0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1873,TEETH,"Elephants', Sea Cow, and Sea Horse",0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1874,"TEETH, Elephants, Sea Cow, and Sea Horse",,1538,1542,inf,cow+elephant+horse+sea+teeth,5,5,0,0,0,0,0,0
+as_1874,"TEETH, Elephants, Sea Cow, and Sea Horse","West Coast of Africa, Foreign",1543,1551,inf,cow+elephant+horse+sea+teeth,9,8,0,1,0,0,0,0
+as_1874,TAR,"TEETH, Elephants, Sea Cow, and Sea Horse",0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1874,TEETH,"Elephants', Sea Cow, and Sea Horse",0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1875,"TEETH, Elephants', Sea Cow, and Sea Horse",,1558,1561,inf,cow+elephant+horse+sea+teeth,4,4,0,0,0,0,0,0
+as_1875,"TEETH, Elephants', Sea Cow, and Sea Horse","West Coast of Africa, Foreign",1562,1572,inf,cow+elephant+horse+sea+teeth,11,10,0,1,0,0,0,0
+as_1875,TAR,"TEETH, Elephants', Sea Cow, and Sea Horse",0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1875,TEETH,"Elephants', Sea Cow, and Sea Horse",0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1878,TAR,"TEETH, Elephants', Sea Cow, and Sea Horse",1712,1722,ch,cow+elephant+horse+sea+teeth,11,11,0,0,0,0,0,0
+as_1878,TAR,"TEETH, Elephants', Sea Cow, and Sea Horse",1723,1723,ch,cow+elephant+horse+sea+teeth,1,1,0,0,0,0,0,0
+as_1878,"TEETH, Elephants', Sea Cow, and Sea Horse",,0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1878,"TEETH, Elephants', Sea Cow, and Sea Horse","West Coast of Africa, Foreign",0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1878,TEETH,"Elephants', Sea Cow, and Sea Horse",0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1880,"TEETH, Elephants', Sea Cow, and Sea Horse",,1551,1563,inf,cow+elephant+horse+sea+teeth,13,12,0,1,0,0,0,0
+as_1880,TAR,"TEETH, Elephants', Sea Cow, and Sea Horse",0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1880,TEETH,"Elephants, Sea Cow, and Sea Horse",0,0,ch,cow+elephant+horse+sea+teeth,0,0,0,0,0,0,0,0
+as_1881,TAR,"TEETH, Elephants', Sea Cow, and Sea Horse",1583,1583,ch,cow+elephant+horse+sea+teeth,1,1,0,0,0,0,0,0
+as_1881,TAR,"TEETH, Elephants', Sea Cow, and Sea Horse",1585,1590,ch,cow+elephant+horse+sea+teeth,6,6,0,0,0,0,0,0
+as_1899,IVORY,"Teeth, Elephants', Sea-cow, Sea-horse, or Sea-morse",11505,11566,ch,cow+elephant+horse+morse+sea+teeth,62,62,0,0,0,0,0,0
+as_1899,IVORY,Eastern Coast of Africa,11567,11670,ch,cow+elephant+horse+morse+sea+teeth,104,89,0,15,0,0,0,0
+as_1897,IVORY,"Teeth, Elephants', Sea-cow, Sea-horse, or Sea-morse",11413,11470,ch,cow+elephant+horse+morse+sea+teeth,58,22,0,0,0,0,0,36
+as_1897,IVORY,Eastern Coast of Africa,11471,11570,ch,cow+elephant+horse+morse+sea+teeth,100,42,1,10,0,0,0,47
+as_1893,IVORY,"Teeth, Elephants', Sea Cow, Sea Horse, or Sea Morse",0,0,ch,cow+elephant+horse+morse+sea+teeth,0,0,0,0,0,0,0,0
+as_1893,IVORY,"Teeth, Elephants'. Sea Cow, Sea   Horse, or Sea Morse",0,0,ch,cow+elephant+horse+morse+sea+teeth,0,0,0,0,0,0,0,0
+as_1890,Corn and Grain,Wheat,551,576,ch,corn+grain+wheat,26,23,0,3,0,0,0,0
+as_1890,Corn and Grain,Wheat,551,551,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1890,Corn and Grain,Wheat,570,570,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1890,Corn and Grain,Wheat,571,571,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1890,Corn and Grain,Wheat,572,572,ch,corn+grain+wheat,1,1,0,0,0,0,0,0
+as_1890,COPPER,Wheat,0,0,ch,corn+grain+wheat,0,0,0,0,0,0,0,0
+as_1880,COFFEE,,29,33,ch,coffee,5,5,0,0,0,0,0,0
+as_1880,COFFEE,,34,34,ch,coffee,1,1,0,0,0,0,0,0
+as_1880,COFFEE,,35,54,ch,coffee,20,19,0,1,0,0,0,0
+as_1880,COCOA,COFFEE,0,0,ch,coffee,0,0,0,0,0,0,0,0
+as_1899,COFFEE,Raw,25770,25918,ch,coffee+raw,149,56,0,5,0,0,88,0
+as_1897,COFFEE,,0,0,ch,coffee+raw,0,0,0,0,0,0,0,0
+as_1897,"CARDS, PLAYING",COFFEE: „ Raw,0,0,ch,coffee+raw,0,0,0,0,0,0,0,0
+as_1898,"CARDS, PLAYING",COFFEE: „ RAW,0,0,ch,coffee+raw,0,0,0,0,0,0,0,0
+as_1875,OIL,Palm,1076,1081,ch,oil+palm,6,6,0,0,0,0,0,0
+as_1899,SUGAR,"Glucose, Solid or Liquid",21683,21728,ch,glucose+liquid+solid+sugar,46,32,0,14,0,0,0,0
+as_1898,SUGAR,"Glucose, Solid or Liquid",21469,21510,inf,glucose+liquid+solid+sugar,42,5,0,13,0,0,0,24
+as_1895,"STATIONERY, other than Paper",Glucose (Solid or Liquid),0,0,ch,glucose+liquid+solid+sugar,0,0,0,0,0,0,0,0
+as_1897,Beef,Glucose (solid or liquid),0,0,ch,glucose+liquid+solid+sugar,0,0,0,0,0,0,0,0
+as_1898,SPICES,Glucose (solid or liquid),0,0,ch,glucose+liquid+solid+sugar,0,0,0,0,0,0,0,0
+as_1897,SPONGE,Glucose (solid or liquid),0,0,ch,glucose+liquid+solid+sugar,0,0,0,0,0,0,0,0
+as_1898,SILK,Glucose (solid or liquid),0,0,ch,glucose+liquid+solid+sugar,0,0,0,0,0,0,0,0
+as_1899,"Unrefined, Beetroot",Glucose (solid or liquid),0,0,ch,glucose+liquid+solid+sugar,0,0,0,0,0,0,0,0
+as_1897,CAOUTCHouc,,1768,1827,ch,caoutchouc,60,60,0,0,0,0,0,0
+as_1897,CAOUTCHouc,Eastern Coast of Africa,1828,2002,ch,caoutchouc,175,158,2,15,0,0,0,0
+as_1899,CAOUTCHOUC,,1721,1790,inf,caoutchouc,70,33,0,0,0,0,0,37
+as_1899,CAOUTCHOUC,Eastern Coast of Africa,1791,1968,inf,caoutchouc,178,84,0,15,0,0,0,79
+as_1898,CAOUTCHOUCC,,0,0,ch,caoutchouc,0,0,0,0,0,0,0,0
+as_1895,CAOUTCHOUIC,,0,0,ch,caoutchouc,0,0,0,0,0,0,0,0
+as_1896,CAOUTCHOUQ,,0,0,ch,caoutchouc,0,0,0,0,0,0,0,0
+as_1894,CAOUTCHOUUC,,0,0,ch,caoutchouc,0,0,0,0,0,0,0,0
+as_1893,CAOUTCHOUC,West Coast of Africa,0,0,ch,caoutchouc,0,0,0,0,0,0,0,0
+as_1893,CAOUTCHOUC,East Coast of Africa,0,0,ch,caoutchouc,0,0,0,0,0,0,0,0
+as_1897,CAOUTCHOUC,Eastern Coast of Africa,0,0,ch,caoutchouc,0,0,0,0,0,0,0,0
+as_1898,TEA,,26923,27051,ch,tea,129,114,0,15,0,0,0,0
+as_1898,SPIRITS,TEA,0,0,ch,tea,0,0,0,0,0,0,0,0
+as_1897,"CARDS, PLAYING",TEA,0,0,ch,tea,0,0,0,0,0,0,0,0
+as_1899,"CARDS, PLAYING",TEA,0,0,ch,tea,0,0,0,0,0,0,0,0
+as_1896,TEA,Other Sorts,0,0,ch,tea,0,0,0,0,0,0,0,0
+as_1899,EGGS,"Cured or salted, unenumerated",6869,6935,inf,cured+fish+salted,67,67,0,0,0,0,0,0
+as_1899,EGGS,"Cured or salted, unenumerated",6941,6981,inf,cured+fish+salted,41,31,0,10,0,0,0,0
+as_1898,FISH (including Turtle),"Cured or salted, unenumerated",0,0,ch,cured+fish+salted,0,0,0,0,0,0,0,0
+as_1898,FISH (including Turtle),"Cured or Salted, unenumerated",0,0,ch,cured+fish+salted,0,0,0,0,0,0,0,0
+as_1897,FEATHERS AND DOWN,"Cured or salted, unenumerated",0,0,ch,cured+fish+salted,0,0,0,0,0,0,0,0
+as_1897,Bark,"Cured or salted, unenumerated",0,0,ch,cured+fish+salted,0,0,0,0,0,0,0,0
+as_1893,WINE,"White, in Casks",363,380,ch,white+wine,18,14,0,4,0,0,0,0
+as_1872,CAOUTCHOUC,,198,212,inf,caoutchouc,15,15,0,0,0,0,0,0
+as_1872,CAOUTCHOUC,West Coast of Africa,0,0,ch,caoutchouc,0,0,0,0,0,0,0,0

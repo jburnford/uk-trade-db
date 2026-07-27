@@ -567,8 +567,15 @@ def main():
     #    country_obs (country_rescored drops rows, so seq ranges only align
     #    there). Tier C: single printing, no independent check survives.
     n_groupfix = 0
+    # ---- why-rejected accounting. A group_repairs block that is
+    # arithmetically right can still deliver NOTHING to the payload, and
+    # nothing said which gate ate it: session 11 lost caoutchouc 1885/1887
+    # and flax 1872 that way, three years across two iterations, each time
+    # guessing. Count every row's disposition per repair and write it out.
+    gf_audit = []
     if grepairs:
         for gr in grepairs:
+            why = Counter()
             # obs_source='inf': pull the segment from the OTHER engine —
             # used when the primary's copy is label-slipped beyond repair
             # (as_1893 oats lost its leading 'Russia' label so every
@@ -595,8 +602,10 @@ def main():
             if (gr.get('label_shift') or '').strip() == '1':
                 fixed_rows = [(fixed_rows[i + 1][0],) + fixed_rows[i][1:]
                               for i in range(len(fixed_rows) - 1)]
+            why['selected'] = len(fixed_rows)
             fixed_rows = [r for r in fixed_rows
                           if r[3] is not None and r[3] > 0]
+            why['drop_null_qty'] = why['selected'] - len(fixed_rows)
             new_grp, new_art = gr['new_group'].upper(), gr['new_article']
             # the true commodity is human-attested: sig from group+article,
             # NOT the article-first convention (a bare 'Unmanufactured' sig
@@ -613,6 +622,7 @@ def main():
                     ctry = mrun.group(1).strip()
                 c = V.cnorm(ctry)
                 if is_subtotal(c):
+                    why['drop_subtotal'] += 1
                     continue
                 # ' : ' sub-entries stay, with their literal 'Parent : Sub'
                 # label (same contract as source='subentry': validators skip
@@ -622,6 +632,7 @@ def main():
                 if ' : ' in (ctry or ''):
                     parent, sub = (s.strip() for s in ctry.split(':', 1))
                     if not sub or re.search(r'\d', sub) or len(sub) > 60:
+                        why['drop_bad_subentry'] += 1
                         continue
                     # key sub-entries by parent+sub, not the cnorm-folded
                     # parent alone: cnorm('Russia : Northern Ports') is
@@ -630,9 +641,14 @@ def main():
                     # oats) — parent and sub-detail must coexist, same
                     # contract as step 4
                     c = f'{V.cnorm(parent)} :: {V.cnorm(sub)}'
-                if not asig or (asig, c, int(y)) in consensus_triples_ga:
+                if not asig:
+                    why['drop_no_sig'] += 1
+                    continue
+                if (asig, c, int(y)) in consensus_triples_ga:
+                    why['drop_consensus_holds_triple'] += 1
                     continue
                 if (asig, c, int(y)) in seen_added:
+                    why['drop_already_added'] += 1
                     continue
                 seen_added.add((asig, c, int(y)))
                 # strip_values=1: the block's quantity column is proven
@@ -651,6 +667,17 @@ def main():
                     'year': int(y), 'src': 'groupfix',
                     'q_tier': 'C', 'v_tier': 'C'})
                 n_groupfix += 1
+                why['admitted'] += 1
+            gf_audit.append({
+                'volume': gr['volume'], 'article_group': gr['article_group'],
+                'article': gr.get('article') or '',
+                'seq_start': gr['seq_start'], 'seq_end': gr['seq_end'],
+                'obs_source': (gr.get('obs_source') or '').strip() or 'ch',
+                'target_sig': '+'.join(asig) if asig else '',
+                **{k: why.get(k, 0) for k in (
+                    'selected', 'admitted', 'drop_null_qty', 'drop_subtotal',
+                    'drop_bad_subentry', 'drop_no_sig',
+                    'drop_consensus_holds_triple', 'drop_already_added')}})
 
     # 6b) manual rows (reference/manual_rows.csv): page-attested hand-keyed
     #    data for tables NO parse carries (as_1892 wheat: printed p.53 was
@@ -754,6 +781,23 @@ def main():
     print(f'  colonial sub-entries recovered: {n_sub:,}')
     print(f'  flow-repaired rows: {n_flowfix:,}')
     print(f'  group-repaired rows: {n_groupfix:,}')
+    if gf_audit:
+        af = BASE / 'reports' / 'groupfix_rejects.csv'
+        with open(af, 'w', newline='') as fh:
+            w = csv.DictWriter(fh, fieldnames=list(gf_audit[0].keys()))
+            w.writeheader()
+            w.writerows(gf_audit)
+        dead = [a for a in gf_audit
+                if a['seq_start'] != '0' and a['admitted'] == 0]
+        print(f'  groupfix audit -> {af}  '
+              f'({len(dead)} non-supersede repairs admitted NOTHING)')
+        for a in dead[:10]:
+            top = max(((k, v) for k, v in a.items()
+                       if k.startswith('drop_') and v),
+                      key=lambda kv: kv[1], default=('(no rows selected)', 0))
+            print(f"      {a['volume']} {a['article_group'][:22]}|"
+                  f"{a['article'][:22]} sel={a['selected']} -> {top[0]}")
+
     print(f'  manual (hand-keyed) rows: {n_manual:,}')
     print(f'  superseded consensus rows dropped: {n_sup:,}')
     print(f'  group-alias relabels: {n_alias:,}')
