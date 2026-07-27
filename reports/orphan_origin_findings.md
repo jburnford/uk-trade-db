@@ -565,3 +565,80 @@ measured bad year beats an unmeasured one.
 `Zinc — Manufactures` (GBP1.7M, 6 countries) and `Metals — Manufactures,
 Unenumerated` (anchor-only, GBP35k) are further fragments of the zinc line and
 need their own year checks before either is moved.
+
+---
+
+# Round 42 — the de-headed anchors, measured — and a bound on what is left
+
+Round 41 named the shape. This round asks how much of the corpus it accounts
+for, with `scripts/deheaded_anchor_match.py`.
+
+## The class
+
+**381 labels carry printed national totals and not one country cell, between
+them 3,263 commodity-years — 56% of every remaining "no origin data" year.**
+They are not a long tail. They are the largest single block left.
+
+The relationship is structural, so the tool looks for it structurally: a
+candidate is any commodity whose name ends with `— <the shadow's name>`, which
+is de-heading run backwards. It does not require the numbers to agree, because a
+reunion is worth making even where the origin table is incomplete.
+
+## The negative result, which is the useful part
+
+**Only 39 of the 381 shadows have a structural counterpart at all**, and most of
+those are useless: the commonest de-headed articles are `Unenumerated`,
+`Of Other Sorts` and `Raw`, and each matches five to a dozen commodities:
+
+```
+Of Other Sorts (35y)  ->  Beer And Ale — / Bark — / Zinc — / Metal — / Oil — Of Other Sorts
+Unenumerated   (35y)  ->  Woollen Yarn — / Beads — / Bark — / Paper — / Slates — ...
+```
+
+That is not an accident of the tool. **Those articles lost their identity
+precisely because the article alone never carried one** — which means the bulk
+of these 3,263 commodity-years cannot be recovered by name, and the numeric
+matcher (`orphan_origin_match.py`) is the only instrument that can reach them.
+Round 41's three all came from there, not from here.
+
+So this bounds the remaining `nodata`: over half of it is de-headed anchors, and
+most of those need a value-based proof, one commodity at a time.
+
+## The other half of the class, and a warning about the headline number
+
+57 of the rows are **duplicates** rather than reunions — the counterpart has its
+own anchor, so the same printed line reached the payload twice and the shadow is
+a phantom publishing a national total it cannot substantiate. `Oil — Animal` and
+its shadow `Animal` (33 years) are the clearest.
+
+**Folding those away would remove ~520 commodity-years from
+`reconcile_baseline`'s denominator.** Every percentage would rise without one
+number improving. That is a real cleanup and it should happen — but it changes
+the measurement universe, so it is **queued for a decision, not taken here**, and
+whoever takes it must report the before/after denominator alongside the rates.
+The tool prints that figure so it cannot pass silently.
+
+## What was folded: `Mahogany`
+
+The one candidate the structural test resolves with more than a single year's
+evidence. `Mahogany` holds printed totals for 17 years (1866-70, 1885-96) and no
+countries; `Wood And Timber — Mahogany` holds **44 countries and GBP21.2M** and
+no anchor. Three years match to the digit — 1889 **39,859**, 1890 **39,842**,
+1891 **48,021** — and 1895 is 34,732 against 34,818.
+
+Folded, and **not clean, which is the honest result**: 1893 and 1894 read 1.09
+and 1.11, 1896 reads 0.87, and 1866-70, 1886-88 and 1892 have no origin table on
+either half. Eight commodity-years changed, all inside
+`Wood And Timber — Mahogany`, and nothing else moved.
+
+```
+exact01  2,670 -> 2,673      nodata  5,845 -> 5,837
+denominator unchanged at 9,935 commodity-years
+```
+
+The gain that does not show in the counts: **a GBP21.2M commodity has a printed
+anchor for the first time**, so its years can be checked at all.
+
+`Logwood` was left alone — its counterpart `Bark — Logwood` agrees in exactly
+one year (1899, 33,429), and one agreement is the coincidence the matcher's
+two-year minimum exists to refuse.
