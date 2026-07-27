@@ -124,3 +124,85 @@ already demonstrated:
    four different targets** (Valonia, Safflower, Sumach, Shumach). That is one
    group head that swallowed a whole section, so the sensible unit of work is
    the section, not one pair.
+
+---
+
+# Round 36 — `Valonia`, scattered across six labels that tile the years
+
+`Valonia` — acorn cups, a tanning material — published a national line for **all
+35 years 1866-1900** and carried origin data for **two** of them. The tables were
+never lost. They were sitting under **eight** labels the parser minted from stale
+section heads, and **six of them tile the years without a single overlap**:
+
+| years | label the parser gave it | Ton sum vs printed T1 |
+|---|---|---|
+| 1872, 1873, 1881 | `Toys — Valonia` | 32,481 / 28,977 / 26,795 — all **exact** |
+| 1874, 1876, 1877, 1879 | `Turpentine (Rough) — Valonia` | 26,336 / 29,989 / 34,217 **exact**; 1876 below |
+| 1880 | `Tin — Valonia` | 33,773 — **exact** |
+| 1882 | `Drugs — Valonia` | 35,604 — **exact** |
+| 1883-1894 | `Dye Stuffs, And Substances Used In Tanning — Valonia` | **twelve consecutive years, every one exact** |
+| 1895-1898 | `Bark — Valonia` | 1895 and 1897 **exact**; 1896 −22, 1898 −30 |
+
+1875 and 1878 — the two years the target already had — appear under none of
+them. Six labels, twenty-five years, no collision: the parser was simply
+holding whatever head it last saw when each year's table came round.
+
+**1876 is the detail worth keeping.** `Turpentine (Rough) — Valonia`'s Ton cells
+sum to 34,886 against a printed 34,923, thirty-seven short — and the same label
+holds one cell that lost its unit, of exactly **37**. The fold's magnitude guard
+rescued it and the year closes to the digit.
+
+## Result
+
+Six `fold` rows in `reference/commodity_curation.csv`. The full before/after diff
+of every commodity-year ratio in the payload changed **25 cells, every one inside
+`Valonia` and every one from "no origin data" to a ratio** — and **twenty-three
+of them land at exactly 1.0000**:
+
+```
+exact01  2,284 -> 2,308      nodata  5,982 -> 5,957
+within 0.1%  23.0% -> 23.2% of commodity-years   (GBP-weighted flat at 39.5%)
+within 5%    31.1% -> 31.3%
+```
+
+`Valonia` goes from 2 origin-years to **27**, and from 5 countries to 12.
+
+## Deliberately not folded
+
+Two labels also carry Valonia Ton cells and both would double-count:
+
+- **`Copper, Ore Of — Valonia`** — Ton 1894-98, overlapping the Dye Stuffs and
+  Bark folds. It reads **1898 exactly** where the folded `Bark` is 30 short, and
+  1897 exactly too; but 1896 is 5,018 out. A per-year improvement worth 30 tons,
+  needing a cell replace rather than a fold.
+- **`Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing
+  — Valonia`** — its Ton cells give 1899 as **24,306 against a printed 24,336**,
+  and 1899 is a year *no clean source covers*. But the same label holds **34
+  countries of Cwt cells** that are a different article entirely (275,597 against
+  a 35,605-ton line), and the `years` scope cannot filter by unit — folding even
+  one year of it would import that block into Valonia's map. Left alone.
+
+## Still open on this line
+
+`Valonia` gaps remaining: **1866-1871, 1899, 1900** — eight of thirty-five. 1899
+is reachable if the Cwt block above is split off first; the six early years and
+1900 have no candidate on any label.
+
+## The section, not the pair
+
+The dye-stuffs section is one head that swallowed many articles, and Valonia was
+only its most tractable line. The same shape is waiting on:
+
+| target | T1 years | origin years | gaps | orphans seen |
+|---|---|---|---|---|
+| `Safflower` | 33 | 4 | 29 | `Dye Stuffs…— Safflower`, `Rosin — Safflower`, `Copper, Ore Of — Safflower`, `Rags…— Safflower`, `Drugs — Safflower` |
+| `Shumach` | 27 | 2 | 25 | `Dye Stuffs…— Shumach` (21y, Ton), `Bark — Sumach`, `Copper, Ore Of — Sumach`, `Cotton — Shumach` |
+| `Indigo` | 35 | 11 | 24 | `Dye Stuffs…— Indigo` (12y, GBP34.4M) |
+| `Cutch And Gambier` | 35 | 18 | 17 | `Cutch`, `Gambier`, `Bark — Catch And Gambier`, `Cotton Manufactures — Cutch` |
+
+**A caution before touching sumach.** Its anchor is itself split across four era
+spellings — `Shumach` (27 T1 years), `Sumach` (12), `Shumash` (5) and
+`Dyeing Or Tanning Stuffs — Shunach` (5). Folding orphans into one of them is
+safe; folding the *anchor carriers* into each other is the deferred
+"which label carries Tier 1" decision and must not be done alone. The same
+warning applies to the madder cluster, which has six anchor-bearing spellings.
