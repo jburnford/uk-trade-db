@@ -2313,16 +2313,6 @@ COPPER,"Unwrought, in bars, blocks or slabs, cakes or ingots",british east indie
 "COPPER, ORE OF",Part Wrought,holland,Tons,import,1897,3.0,142.0,consensus,A,A,1,1
 "COPPER, ORE OF",Part Wrought,belgium,Tons,import,1897,14.0,936.0,consensus,A,A,1,1
 "COPPER, ORE OF",Part Wrought,france,Tons,import,1897,5.0,270.0,consensus,A,A,1,1
-CORDAGE,Oats,denmark,Cwts,import,1895,4100.0,1110.0,consensus,A,A,1,1
-CORDAGE,Oats,holland,Cwts,import,1895,278350.0,76779.0,consensus,A,B,1,2
-CORDAGE,Oats,france,Cwts,import,1895,9850.0,2132.0,consensus,A,A,1,1
-CORDAGE,Oats,roumania,Cwts,import,1895,43200.0,9478.0,consensus,A,A,1,1
-CORDAGE,Oats,turkey european,Cwts,import,1895,71900.0,15419.0,consensus,A,A,1,1
-CORDAGE,Oats,asiatic,Cwts,import,1895,354260.0,78683.0,consensus,A,A,1,1
-CORDAGE,Oats,cyprus,Cwts,import,1895,34750.0,7620.0,consensus,A,A,1,1
-CORDAGE,Oats,argentine republic,Cwts,import,1895,96760.0,22335.0,consensus,A,A,1,1
-CORDAGE,Oats,victoria,Cwts,import,1895,53700.0,15259.0,consensus,A,C,1,3
-CORDAGE,Oats,other british possessions,Cwts,import,1895,1100.0,257.0,consensus,A,A,1,1
 CORDAGE,Oats,southern ports,Cwts,import,1896,184500.0,41330.0,consensus,A,A,1,1
 CORDAGE,Oats,sweden,Cwts,import,1896,806400.0,222823.0,consensus,A,A,1,1
 CORDAGE,Oats,germany,Cwts,import,1896,426200.0,108803.0,consensus,A,B,1,2
@@ -2333,16 +2323,6 @@ CORDAGE,Oats,turkey european,Cwts,import,1896,53000.0,13656.0,consensus,A,A,1,1
 CORDAGE,Oats,asiatic,Cwts,import,1896,372800.0,82595.0,consensus,A,C,1,3
 CORDAGE,Oats,cyprus,Cwts,import,1896,7540.0,1535.0,consensus,A,C,1,3
 CORDAGE,Oats,new zealand,Cwts,import,1896,79000.0,31339.0,consensus,A,C,1,3
-CORDAGE,Oats,northern ports,Cwts,import,1897,5379480.0,1425705.0,consensus,A,A,1,1
-CORDAGE,Oats,southern ports,Cwts,import,1897,84000.0,21150.0,consensus,A,A,1,1
-CORDAGE,Oats,sweden,Cwts,import,1897,172500.0,51400.0,consensus,A,B,1,2
-CORDAGE,Oats,denmark,Cwts,import,1897,15780.0,4564.0,consensus,A,C,1,3
-CORDAGE,Oats,germany,Cwts,import,1897,234060.0,67652.0,consensus,A,A,1,1
-CORDAGE,Oats,holland,Cwts,import,1897,207600.0,63271.0,consensus,A,A,1,1
-CORDAGE,Oats,turkey european,Cwts,import,1897,61500.0,13907.0,consensus,A,A,1,1
-CORDAGE,Oats,asiatic,Cwts,import,1897,70900.0,16711.0,consensus,A,A,1,1
-CORDAGE,Oats,cyprus,Cwts,import,1897,5900.0,1231.0,consensus,A,C,1,3
-CORDAGE,Oats,canada,Cwts,import,1897,1754750.0,443893.0,consensus,A,A,1,1
 DIAMONDS,,cape of good hope,Carats,import,1895,3607750.0,4754025.0,consensus,A,B,1,2
 DIAMONDS,,cape of good hope,Carats,import,1897,3472916.0,4435260.0,consensus,A,B,1,2
 DRUGS,"Bark, Peruvian",germany,,import,1895,593.0,2775.0,consensus,A,A,1,1
@@ -50474,8 +50454,6 @@ COFFEE,Manufactured,other british possessions,Lbs,import,1895,17750.0,1040.0,con
 "CORN, GRAIN, MEAL, AND FLOUR",Barley,chile,Cwts,import,1895,980400.0,321809.0,consensus,B,B,2,2
 "CORN, GRAIN, MEAL, AND FLOUR",Barley,argentine republic,Cwts,import,1895,57660.0,13318.0,consensus,B,B,2,2
 "CORN, GRAIN, MEAL, AND FLOUR",Barley,other foreign countries,Cwts,import,1895,8660.0,2290.0,consensus,B,B,2,2
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,russia,,import,1895,12122560.0,2813434.0,consensus,B,C,2,3
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,australasia,,import,1895,327070.0,105683.0,consensus,B,B,2,2
 "CORN, GRAIN, MEAL, AND FLOUR",Rye,russia,Cwts,import,1895,688900.0,150505.0,consensus,B,B,2,2
 "CORN, GRAIN, MEAL, AND FLOUR",Rye,germany,Cwts,import,1895,23360.0,5947.0,consensus,B,C,2,3
 "CORN, GRAIN, MEAL, AND FLOUR",Rye,roumania,Cwts,import,1895,225700.0,46913.0,consensus,B,B,2,2
@@ -54152,15 +54130,6 @@ CORDAGE,Oats,victoria,Cwts,import,1894,955.0,345.0,consensus,B,B,2,2
 CORDAGE,Oats,new zealand,Cwts,import,1894,393460.0,132585.0,consensus,B,B,2,2
 CORDAGE,Oats,canada,Cwts,import,1894,89931.0,25238.0,consensus,B,B,2,2
 CORDAGE,Oats,united states of america,Cwts,import,1894,982054.0,208095.0,consensus,B,C,2,3
-CORDAGE,Oats,northern ports,Cwts,import,1895,11756669.0,2763851.0,consensus,B,A,2,1
-CORDAGE,Oats,sweden,Cwts,import,1895,1139870.0,312777.0,consensus,B,A,2,1
-CORDAGE,Oats,norway,Cwts,import,1895,110.0,54.0,consensus,B,B,2,2
-CORDAGE,Oats,germany,Cwts,import,1895,748649.0,178873.0,consensus,B,A,2,1
-CORDAGE,Oats,belgium,Cwts,import,1895,1090.0,130.0,consensus,B,C,2,3
-CORDAGE,Oats,other foreign countries,Cwts,import,1895,6000.0,1565.0,consensus,B,B,2,2
-CORDAGE,Oats,new zealand,Cwts,import,1895,252600.0,36418.0,consensus,B,C,2,3
-CORDAGE,Oats,canada,Cwts,import,1895,3250.0,936.0,consensus,B,A,2,1
-CORDAGE,Oats,united states of america,Cwts,import,1895,917220.0,205557.0,consensus,B,C,2,3
 CORDAGE,Oats,northern ports,Cwts,import,1896,10038309.0,2405258.0,consensus,B,C,2,3
 CORDAGE,Oats,norway,Cwts,import,1896,520.0,158.0,consensus,B,B,2,2
 CORDAGE,Oats,denmark,Cwts,import,1896,7160.0,1903.0,consensus,B,A,2,1
@@ -54168,10 +54137,6 @@ CORDAGE,Oats,argentine republic,Cwts,import,1896,14909.0,3513.0,consensus,B,B,2,
 CORDAGE,Oats,other foreign countries,Cwts,import,1896,760.0,175.0,consensus,B,B,2,2
 CORDAGE,Oats,canada,Cwts,import,1896,781709.0,188115.0,consensus,B,B,2,2
 CORDAGE,Oats,united states of america,Cwts,import,1896,863540.0,206333.0,consensus,B,C,2,3
-CORDAGE,Oats,norway,Cwts,import,1897,100.0,40.0,consensus,B,B,2,2
-CORDAGE,Oats,france,Cwts,import,1897,140.0,33.0,consensus,B,A,2,1
-CORDAGE,Oats,roumania,Cwts,import,1897,18500.0,4520.0,consensus,B,A,2,1
-CORDAGE,Oats,united states of america,Cwts,import,1897,814249.0,202363.0,consensus,B,C,2,3
 COTTON,Raw,northern ports,Cwts,import,1893,202.0,434.0,consensus,B,C,2,3
 COTTON,Raw,italy,Cwts,import,1893,21.0,45.0,consensus,B,C,2,3
 COTTON,Raw,turkey asiatic,Cwts,import,1893,8969.0,21145.0,consensus,B,C,2,3
@@ -65964,10 +65929,7 @@ COPPER,"Unwrought, in bars, blocks or slabs, cakes or ingots",other british poss
 "COPPER, ORE OF",Part Wrought,united states of america,Tons,import,1899,350.0,25234.0,consensus,B,C,2,3
 "COPPER, ORE OF",Part Wrought,chile,Tons,import,1899,1.0,4.0,consensus,B,B,2,2
 "COPPER, ORE OF",Part Wrought,other foreign countries,Tons,import,1899,4.0,336.0,consensus,B,B,2,2
-CORDAGE,Oats,chile,Cwts,import,1895,400.0,120.0,consensus,B,B,2,2
 CORDAGE,Oats,chile,Cwts,import,1896,15400.0,3670.0,consensus,B,B,2,2
-CORDAGE,Oats,chile,Cwts,import,1897,1800.0,596.0,consensus,B,B,2,2
-CORDAGE,Oats,other foreign countries,Cwts,import,1897,100.0,40.0,consensus,B,B,2,2
 CORDAGE,Rye,northern ports,Cwts,import,1895,34100.0,8217.0,consensus,B,B,2,2
 CORDAGE,Rye,southern ports,Cwts,import,1895,654500.0,142288.0,consensus,B,B,2,2
 CORDAGE,Rye,germany,Cwts,import,1895,23360.0,5947.0,consensus,B,B,2,2
@@ -76078,13 +76040,6 @@ WINE,Other Sorts,italy,Gallons,import,1895,439.0,218.0,consensus,C,C,3,3
 WINE,Red: Total of,australasia,Gallons,import,1895,586131.0,97409.0,consensus,C,C,3,3
 WINE,White : Total of,australasia,Gallons,import,1895,54579.0,13417.0,consensus,C,C,3,3
 CAOUTCHOUC,,west coast of africa,Cwts,import,1895,103596.0,885959.0,consensus,C,C,3,3
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,sweden,,import,1895,748640.0,178873.0,consensus,C,C,3,3
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,germany,,import,1895,278350.0,76779.0,consensus,C,C,3,3
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,holland,,import,1895,43200.0,9478.0,consensus,C,C,3,3
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,roumania,,import,1895,460910.0,101722.0,consensus,C,C,3,3
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,turkey,,import,1895,297800.0,67261.0,consensus,C,C,3,3
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,united states of america,,import,1895,96760.0,22335.0,consensus,C,C,3,3
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,argentine republic,,import,1895,22150.0,5120.0,consensus,C,C,3,3
 "DYE STUFFS (OTHER THAN DYE WOODS), AND SUBSTANCES USED IN TANNING OR DYEING",Unenumerated,other foreign countries,Cwts,import,1895,2499.0,2305.0,consensus,C,B,3,2
 "DYE STUFFS (OTHER THAN DYE WOODS), AND SUBSTANCES USED IN TANNING OR DYEING",Unenumerated,cape of good hope,Cwts,import,1895,530.0,1153.0,consensus,C,B,3,2
 DYE WOODS,,siam,,import,1895,166.0,1364.0,consensus,C,C,3,3
@@ -76533,10 +76488,6 @@ CHEESE,,new zealand,Cwts,import,1895,74894.0,178238.0,consensus,C,C,3,3
 "COPPER, ORE OF",Regulus and Precipitate,turkey asiatic,Tons,import,1896,124.0,1240.0,consensus,C,A,3,1
 COPPER,"Unwrought, in bars, blocks or slabs, cakes or ingots",south australia,Tons,import,1895,730.0,33586.0,consensus,C,A,3,1
 CORDAGE,Oats,northern ports,Cwts,import,1893,7557146.0,2304038.0,consensus,C,C,3,3
-CORDAGE,Oats,southern ports,Cwts,import,1895,265900.0,70583.0,consensus,C,A,3,1
-CORDAGE,Oats,south australia,Cwts,import,1895,9329.0,2785.0,consensus,C,A,3,1
-CORDAGE,Oats,victoria,Cwts,import,1897,1109.0,239.0,consensus,C,C,3,3
-CORDAGE,Oats,new zealand,Cwts,import,1897,26109.0,9907.0,consensus,C,A,3,1
 COTTON,Raw,aden and dependencies,Cwts,import,1893,409.0,727.0,consensus,C,C,3,3
 COTTON,Raw,bombay,Cwts,import,1893,233673.0,489807.0,consensus,C,C,3,3
 COTTON,Raw,madras,Cwts,import,1893,255607.0,496096.0,consensus,C,C,3,3
@@ -83281,10 +83232,6 @@ CAOUTCHOUC,,West Africa : German,,import,1895,1488.0,11334.0,subentry,B,B,2,2
 CAOUTCHOUC,,West Africa : Not particularly design-   nated,,import,1895,132.0,1281.0,subentry,B,B,2,2
 CAOUTCHOUC,,East Coast of Africa : Portuguese,,import,1895,1810.0,16908.0,subentry,B,B,2,2
 COPPER,"Unwrought, in bars, blocks or   slabs, cakes or ingots",Australasia : Other British Possessions,Tons,import,1895,76.0,3453.0,subentry,B,B,2,2
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,Australasia : South Australia,,import,1895,9320.0,2785.0,subentry,B,B,2,2
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,Australasia : Victoria,,import,1895,53700.0,15289.0,subentry,B,B,2,2
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,Australasia : New Zealand,,import,1895,259600.0,86416.0,subentry,B,B,2,2
-"CORN, GRAIN, MEAL, AND FLOUR",Oats,Australasia : Other British Possessions,,import,1895,4450.0,1193.0,subentry,B,B,2,2
 "CORN, GRAIN, MEAL, AND FLOUR",Rye,Australasia : New Zealand,Cwts,import,1895,100.0,17.0,subentry,B,B,2,2
 "CORN, GRAIN, MEAL, AND FLOUR",Beans (not Kidney or French),Australasia : Victoria,Cwts,import,1895,30.0,20.0,subentry,B,B,2,2
 "CORN, GRAIN, MEAL, AND FLOUR",Beans (not Kidney or French),Australasia : New Zealand,Cwts,import,1895,89490.0,30280.0,subentry,B,B,2,2
@@ -89894,23 +89841,6 @@ BEEF,Eastern Coast of Africa,Other British Possessions,,import,1898,61.0,640.0,i
 "CHINA, OR PORCELAIN, AND EARTHENWARE",Barley,Other Foreign Countries,Cwts,import,1898,26200.0,67.0,infonly,C,C,3,3
 "CHINA, OR PORCELAIN, AND EARTHENWARE",Barley,Canada,Cwts,import,1898,156860.0,415.0,infonly,C,C,3,3
 "CHINA, OR PORCELAIN, AND EARTHENWARE",Barley,Other British Possessions,Cwts,import,1898,2400.0,5.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Russia : Northern Ports,Cwts,import,1898,3240920.0,973333.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Sweden,Cwts,import,1898,233180.0,86637.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Denmark,Cwts,import,1898,14550.0,4816.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Germany,Cwts,import,1898,269400.0,105554.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Holland,Cwts,import,1898,159070.0,52957.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,France,Cwts,import,1898,13720.0,4161.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Roumania,Cwts,import,1898,190200.0,51500.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,"Turkey, European",Cwts,import,1898,149020.0,49320.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Asiatic,Cwts,import,1898,126900.0,32795.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Cyprus,Cwts,import,1898,290.0,55.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,United States of America,Cwts,import,1898,3421220.0,2290263.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Argentine Republic,Cwts,import,1898,2600.0,810.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Other Foreign Countries,Cwts,import,1898,2770.0,705.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Australasia : Victoria,Cwts,import,1898,4400.0,1560.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Australasia : New Zealand,Cwts,import,1898,12220.0,4722.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Canada,Cwts,import,1898,2473250.0,702232.0,infonly,C,C,3,3
-"CHINA, OR PORCELAIN, AND EARTHENWARE",Oats,Other British Possessions,Cwts,import,1898,5400.0,1340.0,infonly,C,C,3,3
 "CHINA, OR PORCELAIN, AND EARTHENWARE",Rye,Russia : Northern Ports,Cwts,import,1898,22000.0,6201.0,infonly,C,C,3,3
 "CHINA, OR PORCELAIN, AND EARTHENWARE",Rye,Germany,Cwts,import,1898,11100.0,2853.0,infonly,C,C,3,3
 "CHINA, OR PORCELAIN, AND EARTHENWARE",Rye,Roumania,Cwts,import,1898,74100.0,18239.0,infonly,C,C,3,3
