@@ -214,3 +214,78 @@ Deciding it means correcting a Tier-1 unit, so it is queued rather than guessed.
 - The `Clover and Grass` article run (seq 18185-18475, GBP 23.4M) is still
   untouched — and after the above, **check each target's existing origins and
   T1 unit BEFORE assuming a sub-block is workable.**
+
+---
+
+# The same seeds run, a second time — `Cotton | Tares and Lentils` in as_1899
+
+Iteration 40 flagged `Tares And Lentils` as over-counted without tracing it.
+Iteration 41 traced it, and it is the seeds run again, under a different volume
+and a different stale label.
+
+**The as_1899 `Cotton | Tares and Lentils` label spans FOUR consecutive origin
+tables** — 74-78 rows per year, five years interleaved by `row_seq` — and the
+consensus voted the whole run in. The affected cells sat in
+`country_year_final` as `article_group='COTTON'`, `source='consensus'`.
+
+Segmenting on the printed `TOTAL` rows gives four grand totals per year:
+
+| block | grand TOTAL seq | 1895 | 1896 | 1897 | 1898 | 1899 |
+|---|---|---|---|---|---|---|
+| T0 | 14439-14443 | 17,082 | 22,293 | 38,985 | 33,253 | 37,878 |
+| **T1blk** | 18474-18478 | **623,690** | **394,028** | **259,637** | **345,769** | **414,399** |
+| T2 | 18599-18603 | 97,514 | 101,177 | 209,736 | 171,715 | 194,195 |
+| T3 | 18750-18754 | 827,001 | 478,135 | 548,415 | 701,031 | 643,939 |
+
+**T1blk's five grand totals are the `Tares and Lentils` Tier-1 figures for
+1895-1899, every one exact.**
+
+## Applied
+
+Supersede 1895-1899 for `(Cotton, Tares and Lentils)` and re-admit **seq
+18404-18478** only — 18404 is 1895's first `Russia` row, 18478 the last grand
+`TOTAL`, and 18479 starts T2. Superseding all five years also drops the
+as_1895 / as_1896 / as_1898 readings, which is intended: this one block covers
+every year and closes on each.
+
+```
+1895  1.1208 -> 0.9985      1898  1.8954 -> 1.0000
+1896  1.1228 -> 0.9999      1899  1.6231 -> 0.9999
+1897  1.6996 -> 0.9965
+```
+
+`exact01` **2,760 → 2,763**, `over` 230 → **225**. The whole-payload
+ratio-class diff moves exactly those five cells.
+
+Two label details, both previously-earned rules:
+
+- `new_group='TARES AND LENTILS'` with an **empty article** keeps the signature
+  `{TARES,LENTILS}`. `SEEDS | Tares and Lentils` would have created a different
+  commodity — the same trap Rape avoided.
+- `article_group` is written **`Cotton`**, the way `country_obs` spells it;
+  `supersede` upper-cases it to match `COTTON` in the final table.
+
+## This settles the Quarters/Bushel question left open by iteration 40
+
+**T2 is `Unenumerated, For Expressing Oil Therefrom`** — its Tier-1 Bushel
+series carries **209,736 for 1897** and **194,195 for 1899**, both of which are
+T2's grand totals — and **as_1899 prints the whole block in Bushels.** So the
+Tier-1 `Bushel` label is right and the `Quarters` caption absorbed into the
+as_1897 article name was the outlier. No Tier-1 unit needs correcting.
+
+That commodity still has **zero countries**, and T2 (**seq 18479-18603**) is a
+clean five-year block for it. It is the next item.
+
+## Still open here
+
+- **T2 → `Unenumerated, For Expressing Oil Therefrom`, seq 18479-18603** —
+  fully specified, zero-country target, unit question settled.
+- **T3, seq 18604-18754** — grand totals match the `Seeds | Other sorts` series,
+  which iteration 40 proved does not reconcile because its Tier-1 is filed under
+  unit `Value`. Do not work it until that is fixed.
+- **T0, seq 14419-14443** — a small table (17,082-38,985) matching a second
+  `tares%` series in the consensus. Unidentified.
+- **Residual shortfalls inside T1blk**: 1895 short **930** (622,760 vs 623,690)
+  and 1897 short **905** (258,732 vs 259,637) — individual country rows the
+  parser dropped from an otherwise exact block.
+- **Tares 1894 at 1.029** is untouched; its source is as_1898 / as_1894.
