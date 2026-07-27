@@ -897,3 +897,61 @@ Garancine, And Munjeet` sits beside `Madder`, `Madder — Root`, `Madder —
 Garancine` and `Madder — Munjeet`, all anchored, which makes it the deferred
 "which label carries Tier 1" question as well as this one. It should not be
 attempted until that decision is made.
+
+---
+
+# Round 47 — `Imitation Lard` and `Quicksilver`
+
+Two more off the queue, one of each shape.
+
+## `Imitation Lard` — a de-headed anchor
+
+Printed Cwt totals for 1893-1900 and **not one country cell**, beside
+`Lard — Imitation Lard (Including All Kinds Of Artificial Or Imitation Lard)`
+with five countries, GBP1.0M and no anchor. **Six years to the digit**: 1893
+83,754, 1894 47,974, 1895 48,444, 1896 39,663, 1898 84,454, 1899 78,281.
+
+Folded so the surviving name keeps the group.
+
+**Recorded**: 1897 reads **30,988 against a printed 39,988** — the
+ten-thousands digit 0 for 9, the same misread class that put 299,282 on bacon's
+Canada in round 32. The year now shows 0.7749 instead of nothing, which is what
+makes it visible. 1891 and 1892 have origins but no anchor on either label; 1900
+has the anchor and no origins.
+
+## `Quicksilver` — orphans that tile 1872-79
+
+`Quicksilver` has 35 printed years and 28 countries, but its own origins start in
+**1880**. Two labels fill the gap and, once again, the pair is complementary:
+
+- `Quicksilver (Metallic)` holds 1872 and **1874-79** — four exact (1875
+  3,195,786; 1876 2,843,918; 1877 3,593,961; 1878 3,232,618), with 1872 +710,
+  1874 −3,000, 1879 −300.
+- `Plumbago — Quicksilver, Metallic` holds **1873 alone, 2,391,704** — the
+  printed total for 1873 exactly, and the one year the other misses.
+
+**Not folded**, and worth knowing why: five further labels carry a `Quicksilver`
+head — `Quicksilver, Metallic — Linens And Cotton Rags`, `Quicksilver,
+(Metallic) — Woollen…`, `— In The Husk`, `— Rags, Woollen…`,
+`Quicksilver — Woollen, Applicable To Other Uses Than Manure…`. Their values are
+16,259 Ton, 24,827 Ton, 16,601 Quarter, 26,420 unitless against a line running in
+the millions of pounds. **These are the reverse of the usual glue: quicksilver's
+own head stuck to the articles that follow it**, so they are other commodities
+wearing this one's name. Folding any of them would be the mistake this whole
+report exists to avoid.
+
+`Pyrites Of Iron Or Copper Or Sulphur Ore — Quicksilver, Metallic` reads 1872 as
+**2,734,104** against the printed 2,734,094, ten better than the folded label's
+2,734,804 — but it overlaps 1872, so taking it needs a cell replace rather than
+a fold. Queued.
+
+## Result
+
+Fifteen commodity-years changed, **15 closer, 0 further**, every one from "no
+origin data" to a ratio; **thirteen land inside 0.1%**.
+
+```
+exact01  2,700 -> 2,713      nodata  5,810 -> 5,795
+within 0.1%   27.3% of commodity-years / 47.8% GBP
+within 5%     36.5% of commodity-years / 65.6% GBP
+```
