@@ -1991,3 +1991,57 @@ over  242 -> 239      nodata  5,756 -> 5,759      within 0.1%  48.0% -> 48.1% GB
 **1897 reads 0.9274 — exactly 9,000 packets short** (115,027 against a printed
 124,027). A round number that size is a single misread cell or a misread total,
 not accumulated noise. Queued, not guessed.
+
+---
+
+# Round 64 — screening the outliers, and where `Saltpetre`'s real tables actually are
+
+## Most of the big blocks do not reach the payload
+
+Screening all 31 volume-row outliers against the payload's own ratios: **most are
+already fine**. `Paper — Hangings` 21 of 29 years ok, `Dye Woods — Logwood` 24 of
+33, `Potatoes` 26 of 35, `Lead — Pig And Sheet` 24 of 30, `Spirits — Brandy` 23
+of 31, `Tobacco — Unmanufactured` 19 of 19 — no year above 2×. A volume can
+absorb hundreds of rows under a heading without the payload's anchored years
+ever seeing them.
+
+**That is worth knowing before working the list top-down by row count.** The two
+signals to combine are the outlier scan (where glue exists) and the payload
+ratios (where it lands). Only these have blown years:
+
+```
+Saltpetre (Nitrate Of Potash)   8 T1 years, 1 ok, ratios to 17.6x   <- worked below
+Horse                          30 T1 years, 22 ok, 1874 at 6.8x
+```
+
+and a handful with zero exact years but nothing blown (`Toys`, `Slates`,
+`Pork, Salted And Fresh`, `Hemp, Dressed…`), which is a different problem.
+
+## `Saltpetre (Nitrate Of Potash)` — diagnosed, not repaired
+
+The `SALTPETRE (NITRATE OF POTASH)` head has absorbed **a whole seeds section**:
+its articles include `Rape` (14,812,573 quarters) and `Clover and Grass`
+(5,052,279 quarters) beside the saltpetre itself.
+
+**The correct tables exist, in the single-year volumes**, and they match Tier 1
+to the digit:
+
+```
+as_1893 seq 2966   1893   242,568   = T1
+as_1894 seq 3001   1894   289,363   = T1
+as_1895 seq 2905   1895   228,477   = T1
+as_1896 seq 2970   1896   340,750   = T1
+```
+
+The five-year comparative volumes (`as_1897` 18076+, `as_1898` 13701+) carry the
+glue, and the payload sums both.
+
+**Why the standing recipe does not fit.** `supersede_years` is
+**volume-agnostic**: superseding `(SALTPETRE…, '', 1894)` drops the *good*
+`as_1894` reading along with the glue. Every previous case had one good block to
+re-admit; here the good blocks are **one per volume, four different volumes**, so
+it needs four repair rows, each superseding its year and re-admitting that year's
+own volume — not the single row the earlier cases took.
+
+Fully specified and queued rather than half-done: the seq anchors above are the
+grand-TOTAL rows, so each block's extent still has to be read off around them.
