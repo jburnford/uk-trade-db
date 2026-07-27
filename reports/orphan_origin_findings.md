@@ -1819,3 +1819,55 @@ feeding pair, which is why they were clean; the two that misbehaved did not.
 17479-17552. Same for `Collodium` once its second pair is identified.
 
 No baseline change this round.
+
+---
+
+# Round 61 — `Potatoes` closes with the corrected recipe
+
+Round 60 found that a payload commodity can be fed by more than one
+`(article_group, article)` pair while `supersede_years` is keyed on one. Applying
+that:
+
+- `as_1897 / POTATOES / '' / 17479-17552 / supersede 1893-97` — re-admits the
+  real table;
+- `as_1897 / PORK / POTATOES / 0-0 / supersede 1893-97` — a **supersede-only**
+  row, seq range deliberately matching nothing, existing purely to drop the
+  second pair's consensus readings.
+
+**5 commodity-years changed, 5 closer, 0 further, no new label:**
+
+| year | before | after |
+|---|---|---|
+| 1893 | 2.493 | 0.7690 |
+| 1894 | 1.670 | 0.8557 |
+| 1895 | 1.846 | 0.9727 |
+| 1896 | 2.653 | **1.0013** |
+| 1897 | 1.844 | 0.9737 |
+
+```
+over  251 -> 247      within5  929 -> 931      under  252 -> 254
+GBP `Potatoes`  52,385,848 -> 39,851,037
+```
+
+Five years move from 1.7-2.7× to 0.77-1.00. `exact01` does not move — 1896 lands
+at 1.0013, thirteen ten-thousandths outside the band — which is round 59's point
+about the metric again.
+
+## The residual, and a process note
+
+The years now **undershoot** rather than double, so the re-admitted block is not
+the whole printed total: 1893 is 23% short and 1894 14%, while 1895-97 are within
+3%. Either `as_1897`'s block omits countries the printed table had, or the
+superseded `PORK | POTATOES` copy carried rows the block lacks.
+
+**A check run too late nearly produced a wrong conclusion.** Querying
+`PORK | POTATOES` for 1893-97 *after* the supersede returns nothing, which looks
+like "that row did nothing" — but the supersede had already removed them, and
+`country_year_final` is the output, not the input. The rows it does show are 1878
+and 1899 only, the years outside the supersede. **When a repair drops rows,
+check what it dropped before applying it, not after.**
+
+## Queued
+
+`Potatoes` 1893 (0.769) and 1894 (0.856) — locate the missing countries, either
+in `as_1897`'s block beyond 17552 or in the superseded second pair.
