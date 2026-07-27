@@ -1427,3 +1427,79 @@ it is queued whole.
 No curation rows, no code, no baseline movement. The deliverables are the
 corrected taxonomy above, the refuted unit-factor hypothesis, and a logwood block
 described precisely enough for a source-level repair to start from.
+
+---
+
+# Round 55 — `Dye Woods — Logwood`: the glue was one volume
+
+Round 54 characterised the 1894-98 block and declined to repair it at payload
+level. The source level makes it simple.
+
+## What the volumes hold
+
+`as_1898` carries **621 rows** under a stale `DYE WOODS | Logwood` head across
+`row_seq` 4504-6282 — about **105 "countries" a year summing to 11.8-14.1
+million tons** against printed totals of 39,297 to 76,075. **172× to 358×.** A
+whole section of the volume absorbed under one commodity's heading. Every other
+volume has 4 to 27 rows.
+
+`as_1897`'s own logwood block (`row_seq` 5849-5912) is correct and closes:
+
+```
+1894  Germany 562 + France 62 + Spain 450 + US:Atlantic 219
+      + US:Danish West Indies 378 + US:Hayti 8,893 + Mexico 9,915
+      + Other Foreign 145                     = 20,624   printed foreign TOTAL
+      British West India Islands 33,713 + British Honduras 14,120
+                                              = 47,833   printed British TOTAL
+                                              = 68,457   printed GRAND  — EXACT
+1895 −3      1896 −900      1897 +60      1893 52,300 — EXACT
+```
+
+## The repair
+
+One `group_repairs` row: supersede the consensus readings for **1893-1898** and
+re-admit `as_1897`'s block in their place.
+
+| year | before | after |
+|---|---|---|
+| 1894 | 68.6× | **1.0000** |
+| 1895 | 109.9× | **0.9999** |
+| 1896 | 93.1× | 0.9882 |
+| 1897 | 131.5× | **1.0015** |
+| 1898 | 134.5× | **nodata** |
+
+**1898 exists only in the glued block**, so it becomes an honest gap rather than
+a measured 134× — a deliberate trade, and the reason `over` falls by five while
+`exact01` rises by only one.
+
+```
+exact01  2,746 -> 2,747      over  261 -> 256      within 5%  36.9% -> 37.0%
+GBP: `Dye Woods — Logwood` 21,269,545 -> 9,145,775
+```
+
+## 1893 had to be superseded too, and finding out why is the lesson
+
+The first attempt superseded only 1894-98 and **1893 went from exactly 1.0000 to
+1.0650** — a year that was already right, broken by a repair aimed elsewhere.
+
+`as_1897`'s block is a five-year comparative table, so each printed row is five
+consecutive `row_seq` and 1893's cells are **interleaved** with the rest; the
+seq range cannot exclude them. Step 6 skips a repaired cell only when consensus
+already holds that (sig, country, year) — and the repair carries sub-entries
+under their literal `Parent : Sub` labels, which consensus stores folded, so
+1893's sub-entry rows were admitted a second time.
+
+Superseding 1893 as well fixes it, and is safe because `as_1897`'s 1893 sums to
+**52,300, the printed total exactly**.
+
+**The rule: when a repair block spans years you are not superseding, its
+sub-entry rows can double-count into them. Supersede the whole span the block
+covers, or check every year it touches.**
+
+## Left standing
+
+`Dye Woods — Logwood` **1883 reads 1.0074**, up from exactly 1.0000. It is
+outside the repair's years entirely; the knock-on runs through the payload's
+own passes, which see different inputs (`coast-rollup` 2,424 -> 2,427). Three
+quarters of one per cent on one year, against five years rescued from 68× to
+131×, and recorded rather than chased.
