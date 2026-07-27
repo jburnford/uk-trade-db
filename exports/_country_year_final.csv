@@ -45576,20 +45576,6 @@ WINE,"Red, in Casks",british possessions in south africa,Gallons,import,1893,758
 WINE,"Red, in Casks",australasia,Gallons,import,1893,496328.0,83513.0,consensus,B,B,2,2
 WINE,"Red, in Casks",canada,Gallons,import,1893,4756.0,2557.0,consensus,B,B,2,2
 WINE,"Red, in Casks",other british possessions,Gallons,import,1893,3107.0,1050.0,consensus,B,B,2,2
-WINE,"White, in Casks",germany,Gallons,import,1893,116796.0,15304.0,consensus,B,B,2,2
-WINE,"White, in Casks",holland,Gallons,import,1893,138096.0,39583.0,consensus,B,B,2,2
-WINE,"White, in Casks",belgium,Gallons,import,1893,7110.0,2801.0,consensus,B,B,2,2
-WINE,"White, in Casks",france,Gallons,import,1893,102597.0,21393.0,consensus,B,B,2,2
-WINE,"White, in Casks",portugal,Gallons,import,1893,13929.0,4294.0,consensus,B,B,2,2
-WINE,"White, in Casks",madeira,Gallons,import,1893,69016.0,24544.0,consensus,B,B,2,2
-WINE,"White, in Casks",spain,Gallons,import,1893,2002499.0,542949.0,consensus,B,B,2,2
-WINE,"White, in Casks",canary islands,Gallons,import,1893,14966.0,2421.0,consensus,B,B,2,2
-WINE,"White, in Casks",italy,Gallons,import,1893,259813.0,51167.0,consensus,B,B,2,2
-WINE,"White, in Casks",united states of america,Gallons,import,1893,9561.0,1588.0,consensus,B,B,2,2
-WINE,"White, in Casks",other foreign countries,Gallons,import,1893,9121.0,1698.0,consensus,B,B,2,2
-WINE,"White, in Casks",british possessions in south africa,Gallons,import,1893,5802.0,1956.0,consensus,B,B,2,2
-WINE,"White, in Casks",australasia,Gallons,import,1893,56638.0,10610.0,consensus,B,B,2,2
-WINE,"White, in Casks",other british possessions,Gallons,import,1893,5569.0,1569.0,consensus,B,B,2,2
 WINE,"Red, in Bottles : Still",germany,Gallons,import,1893,3673.0,1875.0,consensus,B,B,2,2
 WINE,"Red, in Bottles : Still",holland,Gallons,import,1893,17959.0,10415.0,consensus,B,B,2,2
 WINE,"Red, in Bottles : Still",belgium,Gallons,import,1893,3583.0,2211.0,consensus,B,B,2,2
@@ -45627,6 +45613,21 @@ TOBACCO,Hock,other foreign countries,Gallons,import,1893,1317.0,1104.0,consensus
 TOBACCO,Moselle,holland,Gallons,import,1893,35455.0,32559.0,consensus,B,B,2,2
 TOBACCO,Moselle,france,Gallons,import,1893,2728.0,1279.0,consensus,B,B,2,2
 TOBACCO,Moselle,other foreign countries,Gallons,import,1893,2025.0,1187.0,consensus,B,B,2,2
+WINE,White: Total of,germany,Gallons,import,1893,125707.0,19797.0,consensus,B,B,2,2
+WINE,White: Total of,holland,Gallons,import,1893,407013.0,237719.0,consensus,B,B,2,2
+WINE,White: Total of,belgium,Gallons,import,1893,16763.0,9845.0,consensus,B,B,2,2
+WINE,White: Total of,france,Gallons,import,1893,1715397.0,2081257.0,consensus,B,B,2,2
+WINE,White: Total of,portugal,Gallons,import,1893,15061.0,4809.0,consensus,B,B,2,2
+WINE,White: Total of,madeira,Gallons,import,1893,69795.0,25221.0,consensus,B,B,2,2
+WINE,White: Total of,spain,Gallons,import,1893,2005677.0,544659.0,consensus,B,B,2,2
+WINE,White: Total of,canary islands,Gallons,import,1893,15040.0,2462.0,consensus,B,B,2,2
+WINE,White: Total of,italy,Gallons,import,1893,265296.0,56413.0,consensus,B,B,2,2
+WINE,White: Total of,austrian territories,Gallons,import,1893,3709.0,483.0,consensus,B,B,2,2
+WINE,White: Total of,greece,Gallons,import,1893,870.0,321.0,consensus,B,B,2,2
+WINE,White: Total of,turkey,Gallons,import,1893,2314.0,411.0,consensus,B,B,2,2
+WINE,White: Total of,algeria,Gallons,import,1893,631.0,210.0,consensus,B,B,2,2
+WINE,White: Total of,united states of america,Gallons,import,1893,11411.0,3466.0,consensus,B,B,2,2
+WINE,White: Total of,other foreign countries,Gallons,import,1893,3231.0,1307.0,consensus,B,B,2,2
 WINE,Total of all Kinds,germany,Gallons,import,1893,405673.0,52321.0,consensus,B,B,2,2
 WINE,Total of all Kinds,holland,Gallons,import,1893,439593.0,254356.0,consensus,B,B,2,2
 WINE,Total of all Kinds,belgium,Gallons,import,1893,43528.0,16108.0,consensus,B,B,2,2
@@ -88580,6 +88581,20 @@ WOOLLEN YARN,"GOODS, being either in part or wholly manufactured, unenumerated",
 "CARDS, PLAYING",Perfumed,Other Foreign Countries,Gallons,import,1897,31.0,125.0,infonly,C,C,3,3
 "CARDS, PLAYING",Perfumed,Channel Islands,Gallons,import,1897,1127.0,1955.0,infonly,C,C,3,3
 "CARDS, PLAYING",Perfumed,Other British Possessions,Gallons,import,1897,192.0,240.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",Germany,Gallons,import,1893,116796.0,15304.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",Holland,Gallons,import,1893,138006.0,30583.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",Belgium,Gallons,import,1893,7110.0,2501.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",France,Gallons,import,1893,102597.0,21303.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",Portugal,Gallons,import,1893,13929.0,4294.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",Madeira,Gallons,import,1893,69016.0,24544.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",Spain,Gallons,import,1893,2002490.0,542049.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",Canary Islands,Gallons,import,1893,14960.0,2421.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",Italy,Gallons,import,1893,259913.0,54107.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",United States of America: On the Atlantic,Gallons,import,1893,2574.0,608.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",On the Pacific,Gallons,import,1893,7287.0,980.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",Other Foreign Countries,Gallons,import,1893,9121.0,1608.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",British Possessions in South Africa,Gallons,import,1893,5802.0,1056.0,infonly,C,C,3,3
+"CARDS, PLAYING","White, in Casks",Australasia,Gallons,import,1893,68009.0,14165.0,infonly,C,C,3,3
 BEEF,Eastern Coast of Africa,Nicaragua,,import,1894,678.0,7825.0,infonly,C,C,3,3
 BEEF,Eastern Coast of Africa,Ecuador,,import,1894,184.0,2401.0,infonly,C,C,3,3
 BEEF,Eastern Coast of Africa,Western Coast of Africa : The Gold Coast,,import,1894,22006.0,179341.0,infonly,C,C,3,3
@@ -109949,32 +109964,6 @@ WINE,Red,Australasia : New South Wales,Gallons,import,1893,16489.0,3518.0,groupf
 WINE,Red,Australasia : Other Colonies,Gallons,import,1893,520.0,185.0,groupfix,C,C,3,3
 WINE,Red,British North America,Gallons,import,1893,4781.0,2568.0,groupfix,C,C,3,3
 WINE,Red,Other British Possessions,Gallons,import,1893,77.0,34.0,groupfix,C,C,3,3
-WINE,White,Germany,Gallons,import,1893,125707.0,19797.0,groupfix,C,C,3,3
-WINE,White,Holland,Gallons,import,1893,407013.0,237719.0,groupfix,C,C,3,3
-WINE,White,Belgium,Gallons,import,1893,16763.0,9845.0,groupfix,C,C,3,3
-WINE,White,France,Gallons,import,1893,1715397.0,2081257.0,groupfix,C,C,3,3
-WINE,White,Portugal,Gallons,import,1893,15061.0,4809.0,groupfix,C,C,3,3
-WINE,White,Madeira,Gallons,import,1893,69795.0,25221.0,groupfix,C,C,3,3
-WINE,White,Spain,Gallons,import,1893,2005677.0,544659.0,groupfix,C,C,3,3
-WINE,White,Canary Islands,Gallons,import,1893,15040.0,2462.0,groupfix,C,C,3,3
-WINE,White,Italy,Gallons,import,1893,265296.0,56413.0,groupfix,C,C,3,3
-WINE,White,Austrian Territories,Gallons,import,1893,3709.0,483.0,groupfix,C,C,3,3
-WINE,White,Greece,Gallons,import,1893,870.0,321.0,groupfix,C,C,3,3
-WINE,White,Turkey,Gallons,import,1893,2314.0,411.0,groupfix,C,C,3,3
-WINE,White,Algeria,Gallons,import,1893,631.0,210.0,groupfix,C,C,3,3
-WINE,White,United States of America,Gallons,import,1893,11411.0,3466.0,groupfix,C,C,3,3
-WINE,White,Other Foreign Countries,Gallons,import,1893,3231.0,1307.0,groupfix,C,C,3,3
-WINE,White,Channel Islands,Gallons,import,1893,3207.0,747.0,groupfix,C,C,3,3
-WINE,White,Gibraltar,Gallons,import,1893,989.0,401.0,groupfix,C,C,3,3
-WINE,White,Malta,Gallons,import,1893,1839.0,821.0,groupfix,C,C,3,3
-WINE,White,British Possessions in South Africa,Gallons,import,1893,6679.0,2430.0,groupfix,C,C,3,3
-WINE,White,British East Indies,Gallons,import,1893,1193.0,1048.0,groupfix,C,C,3,3
-WINE,White,Australasia : South Australia,Gallons,import,1893,19831.0,3450.0,groupfix,C,C,3,3
-WINE,White,Australasia : Victoria,Gallons,import,1893,31501.0,5927.0,groupfix,C,C,3,3
-WINE,White,Australasia : New South Wales,Gallons,import,1893,7096.0,2732.0,groupfix,C,C,3,3
-WINE,White,Australasia : Other Colonies,Gallons,import,1893,557.0,539.0,groupfix,C,C,3,3
-WINE,White,British North America,Gallons,import,1893,161.0,131.0,groupfix,C,C,3,3
-WINE,White,Other British Possessions,Gallons,import,1893,203.0,182.0,groupfix,C,C,3,3
 SUGAR,Refined : Total of,Russia,Cwts.,import,1885,231365.0,207008.0,groupfix,C,C,3,3
 SUGAR,Refined : Total of,Holland,Cwts.,import,1885,1268522.0,1165899.0,groupfix,C,C,3,3
 SUGAR,Refined : Total of,Belgium,Cwts.,import,1885,74057.0,75181.0,groupfix,C,C,3,3
@@ -114795,6 +114784,20 @@ FISH (INCLUDING TURTLE),"Cured or Salted, unenumerated",Other British Possession
 FISH (INCLUDING TURTLE),"Cured or Salted, unenumerated",Other British Possessions,Cwts.,import,1897,465.0,1524.0,groupfix,C,C,3,3
 FISH (INCLUDING TURTLE),"Cured or Salted, unenumerated",Other British Possessions,Cwts.,import,1898,163.0,1422.0,groupfix,C,C,3,3
 FISH (INCLUDING TURTLE),"Cured or Salted, unenumerated",Other British Possessions,Cwts.,import,1899,283.0,1411.0,groupfix,C,C,3,3
+WINE,White,Germany,Gallons,import,1893,116796.0,15304.0,groupfix,C,C,3,3
+WINE,White,Holland,Gallons,import,1893,138096.0,39583.0,groupfix,C,C,3,3
+WINE,White,Belgium,Gallons,import,1893,7110.0,2801.0,groupfix,C,C,3,3
+WINE,White,France,Gallons,import,1893,102597.0,21393.0,groupfix,C,C,3,3
+WINE,White,Portugal,Gallons,import,1893,13929.0,4294.0,groupfix,C,C,3,3
+WINE,White,Madeira,Gallons,import,1893,69016.0,24544.0,groupfix,C,C,3,3
+WINE,White,Spain,Gallons,import,1893,2002499.0,542949.0,groupfix,C,C,3,3
+WINE,White,Canary Islands,Gallons,import,1893,14966.0,2421.0,groupfix,C,C,3,3
+WINE,White,Italy,Gallons,import,1893,259813.0,51167.0,groupfix,C,C,3,3
+WINE,White,United States of America,Gallons,import,1893,9561.0,1588.0,groupfix,C,C,3,3
+WINE,White,Other Foreign Countries,Gallons,import,1893,9121.0,1698.0,groupfix,C,C,3,3
+WINE,White,British Possessions in South Africa,Gallons,import,1893,5802.0,1956.0,groupfix,C,C,3,3
+WINE,White,Australasia,Gallons,import,1893,56638.0,10610.0,groupfix,C,C,3,3
+WINE,White,Other British Possessions,Gallons,import,1893,5569.0,1569.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
