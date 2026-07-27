@@ -206,3 +206,82 @@ spellings — `Shumach` (27 T1 years), `Sumach` (12), `Shumash` (5) and
 safe; folding the *anchor carriers* into each other is the deferred
 "which label carries Tier 1" decision and must not be done alone. The same
 warning applies to the madder cluster, which has six anchor-bearing spellings.
+
+---
+
+# Round 37 — `Safflower`, and a lesson about what "no origin data" means
+
+`Safflower` (a dye plant) published a Tier-1 line for **33 years 1866-1899** and
+read as having **no origin data at all**. Five stale-head labels hold its tables:
+
+| years taken | label | |
+|---|---|---|
+| 1872, 1873, 1875-1879, 1881 | `Rosin — Safflower` | **eight, all exact** |
+| 1880 | `Rags And Other Materials For Making Paper — Safflower` | **exact** |
+| 1882 | `Drugs — Safflower` | 1,278 v 1,298 |
+| 1883, 1884, 1887-1892 | `Dye Stuffs, And Substances Used In Tanning — Safflower` | **eight, all exact** |
+| 1885 | (same label) | 639 v 715 — only source, reads short |
+| 1895, 1897, 1899 | `Dye Stuffs (Other Than Dye Woods)… — Safflower` | **three, all exact** |
+| 1896 | `Copper, Ore Of — Safflower` | 535 v 536 |
+
+**Twenty years exact to the digit.** Six folds, four of them `years`-scoped.
+
+## Three years scoped out because they read exactly double
+
+`Dye Stuffs… — Safflower` gives 1893 as **64 against a printed 32** and 1894 as
+**802 against 401**; `Dye Stuffs (Other Than Dye Woods)… — Safflower` gives 1896
+as **1,072 against 536**. Exactly 2.000 in all three. Those labels have each
+country twice for those years, and half of a doubled cell is not something a fold
+can take — so 1893 and 1894 stay gaps, and 1896 was taken from `Copper, Ore Of —
+Safflower` instead, which reads it 535 against 536.
+
+`Rosin — Safflower` 1874 was scoped out for the opposite reason: its Cwt cells
+give **166** against a printed 13,791 and it also holds one unattached cell of
+18,625. Neither is the year.
+
+## The lesson: "no origin data" can mean "no data in the anchor's unit"
+
+`Safflower` did not have zero origin cells. It had **eleven cells that had lost
+their printed unit** — 1872, 1873, 1874 and 1876 — and every consumer that keys
+on the anchor's unit was blind to them, including `reconcile_baseline`, this
+report's own matcher, and the map.
+
+Folding changed that for 1874. With 1874 scoped out of the `Rosin` fold, the
+target had no Cwt cell for the year, so the payload's unit-healing pass was free
+to relabel the four unitless cells — and 1874 went from `nodata` to **0.4066**:
+
+```
+Belgium 941 + France 2,505 + Holland 1,393 + Other Countries 769 = 5,608
+printed total                                                    13,791
+                                                                 -------
+missing                                                           8,183
+```
+
+1873's table, which closes exactly, is **British India 9,495 + Egypt 335 + Other
+Countries 246**. 1874's surfaced cells contain no British India at all. **The
+missing 8,183 cwt is a lost British India row** — a specific, checkable claim
+rather than a shrug. (1872, 1873 and 1876 kept their unitless cells because the
+folds supplied Cwt cells for the same countries, so healing had nowhere to put
+them; those years close exactly on the folded data and the '?' copies are
+excluded, as they should be.)
+
+So this round's diff has **two years going from "no data" to "visibly
+incomplete"** — 1874 at 0.41 and 1885 at 0.93. That is the reconciliation working:
+an unmeasured year is worse than a measured bad one.
+
+## Result
+
+```
+exact01  2,308 -> 2,328      nodata  5,957 -> 5,933
+under      244 ->   246      within5    803 ->   805
+within 0.1%  23.2% -> 23.4% of commodity-years   (GBP-weighted flat at 39.5%)
+within 5%    31.3% -> 31.5%
+```
+
+Full corpus ratio diff: **24 cells changed, every one inside `Safflower`, every
+one from "no origin data"**. `Safflower` goes from 0 origin-years to 24 and from
+5 countries to 15.
+
+Gaps left: **1866-1871** (no candidate on any label), **1886** (none), **1893 and
+1894** (only the doubled label). And the queued repair above: **1874's missing
+British India row, 8,183 cwt.**
