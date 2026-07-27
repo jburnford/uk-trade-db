@@ -775,3 +775,62 @@ the units makes two copies of one row visibly the same row, and
 longer sums to its total because it was summing a duplicate before. Every one of
 them still moved closer, so the interaction is left as it is and noted rather
 than tuned.
+
+---
+
+# Round 45 — a combined line whose halves were parsed apart
+
+`Cutch And Gambier` is not a de-headed anchor and not an orphan. It is a
+**combined printed line** — "cutch and gambier" — and its origin table is
+**two tables**: gambier ships from the Straits Settlements, cutch from British
+India. The parser gave each its own commodity, so the anchored label had no
+origins at all before 1882 while both halves sat unanchored.
+
+Summed, they are the printed total:
+
+```
+1873  22,514 + 6,998 = 29,512      1877  25,354 + 6,664 = 32,018
+1875  23,074 + 5,771 = 28,845      1879  21,357 + 4,277 = 25,634
+1876  21,759 + 4,805 = 26,564      1880  26,413 + 5,694 = 32,107
+```
+
+**Six years to the digit.** Neither half alone comes close — gambier is 70-85%
+of the line and cutch the rest — so this is a third distinct shape, after the
+stale head (rounds 34-40) and the de-headed anchor (rounds 41-43).
+
+## The mechanism gap, measured rather than glossed
+
+A `fold` merges cells by (country, unit, year) **with the target winning**, which
+is right for a duplicate and wrong for a constituent. Both halves carry an
+`Other Countries` row (and `Straits Settlements` in 1873), so the second fold's
+copy is dropped rather than added, and the reunited years land **7 to 539 tons
+short** instead of exact. Gambier is folded first because its `Other Countries`
+is the larger reading in five of the six years.
+
+**The curation vocabulary has no way to say "these constituents ADD."** That is
+a real limitation and this is the first case that needed it. Recorded as a tool
+gap, not worked around.
+
+## Result
+
+Ten commodity-years changed, all inside `Cutch And Gambier`, **10 closer, 0
+further** — every one from "no origin data" to a ratio:
+
+```
+1872 0.9846   1873 0.9913   1874 1.0106   1875 0.9998   1876 0.9958
+1877 0.9993   1878 0.9973   1879 0.9980   1880 0.9832   1881 0.8421
+```
+
+Two land inside 0.1% and seven inside 5%, against six that would have been exact
+had the constituent cells been added rather than merged. That is the cost of the
+gap, stated in full.
+
+```
+exact01  2,694 -> 2,696      nodata  5,820 -> 5,810
+within 0.1%   27.1% of commodity-years / 47.8% GBP
+within 5%     36.3% of commodity-years / 65.6% GBP
+```
+
+`Bark — Catch And Gambier` was left alone: its one year, 1892 at **25,200**, is
+exactly the printed total, but 1892 is a year the target already carries, so
+folding it could only collide.
