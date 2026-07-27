@@ -38367,28 +38367,6 @@ COFFEE,Manufactured,spain,Lbs,import,1890,1627542.0,108258.0,consensus,B,B,2,2
 COFFEE,Manufactured,other foreign countries,Lbs,import,1890,43031.0,3094.0,consensus,B,B,2,2
 COFFEE,Manufactured,gibraltar,Lbs,import,1890,376931.0,21685.0,consensus,B,B,2,2
 COFFEE,Manufactured,other british possessions,Lbs,import,1890,660.0,47.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,russia,,import,1890,2416585.0,968735.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,southern ports,,import,1890,16972440.0,6512802.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,denmark,,import,1890,55156.0,21608.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,germany,,import,1890,1100846.0,437621.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,bulgaria,,import,1890,351165.0,128935.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,roumania,,import,1890,4653735.0,1815770.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,turkey,,import,1890,903514.0,311475.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,egypt,,import,1890,425455.0,142852.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,persia,,import,1890,49563.0,17765.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,on the atlantic,,import,1890,6427253.0,2571551.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,on the pacific,,import,1890,10773810.0,4323256.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,uruguay,,import,1890,87816.0,29381.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,argentine republic,,import,1890,2810317.0,1050829.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,other foreign countries,,import,1890,82174.0,32037.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,bombay and scinde,,import,1890,7872976.0,2995433.0,consensus,B,C,2,3
-CORN AND GRAIN,Wheat,bengal,,import,1890,1236606.0,464853.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,madras,,import,1890,2000.0,785.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,south australia,,import,1890,1072392.0,453489.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,victoria,,import,1890,223078.0,93895.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,new zealand,,import,1890,1738992.0,713507.0,consensus,B,C,2,3
-CORN AND GRAIN,Wheat,canada,,import,1890,1128349.0,463080.0,consensus,B,B,2,2
-CORN AND GRAIN,Wheat,other british possessions,,import,1890,23438.0,9551.0,consensus,B,B,2,2
 CORN AND GRAIN,Barley,southern ports,Cwts,import,1890,8042065.0,2154380.0,consensus,B,B,2,2
 CORN AND GRAIN,Barley,sweden,Cwts,import,1890,61772.0,22863.0,consensus,B,B,2,2
 CORN AND GRAIN,Barley,denmark,Cwts,import,1890,301120.0,118330.0,consensus,B,B,2,2
@@ -82035,7 +82013,6 @@ CAOUTCHOUC,,East Africa : Portuguese,,import,1890,2895.0,30377.0,subentry,B,C,2,
 CAOUTCHOUC,,East Africa : Native States,,import,1890,7263.0,69409.0,subentry,B,B,2,2
 CAOUTCHOUC,,East Africa : West Africa Settlements,,import,1890,15636.0,130513.0,subentry,B,C,2,3
 CAOUTCHOUC,,East Africa : Africa,,import,1890,374.0,3818.0,subentry,B,B,2,2
-CORN AND GRAIN,Wheat,United States of America : United States of Columbia,,import,1890,66520.0,24634.0,subentry,B,B,2,2
 CORN AND GRAIN,Barley,Russia : Northern Ports,Cwts,import,1890,212502.0,66493.0,subentry,B,B,2,2
 CORN AND GRAIN,Barley,Australasia : New Zealand,Cwts,import,1890,71636.0,31794.0,subentry,B,B,2,2
 CORN AND GRAIN,Oats,Australasia : New Zealand,Cwts,import,1890,187830.0,70139.0,subentry,B,B,2,2
@@ -104658,6 +104635,15 @@ COTTON MANUFACTURES,,Atlantic,,import,1889,87400.0,4651.0,twoup,C,C,3,3
 FLAX AND HEMP,To United States of America,Atlantic,,import,1889,33178.0,184959.0,twoup,C,C,3,3
 SILK MANUFACTURES,To United States of America,Mexico,,import,1889,65756.0,4140.0,twoup,C,C,3,3
 SILK MANUFACTURES,To United States of America,Brazil,,import,1889,99359.0,7083.0,twoup,C,C,3,3
+"CORN, GRAIN, MEAL AND FLOUR",Wheat,Russia: Northern Ports,,import,1890,2416585.0,968735.0,twoup,C,C,3,3
+"CORN, GRAIN, MEAL AND FLOUR",Wheat,Southern Ports,,import,1890,16972440.0,6512802.0,twoup,C,C,3,3
+"CORN, GRAIN, MEAL AND FLOUR",Wheat,Denmark,,import,1890,55156.0,21608.0,twoup,C,C,3,3
+"CORN, GRAIN, MEAL AND FLOUR",Wheat,Germany,,import,1890,1100846.0,437621.0,twoup,C,C,3,3
+"CORN, GRAIN, MEAL AND FLOUR",Wheat,Bulgaria,,import,1890,351165.0,128935.0,twoup,C,C,3,3
+"CORN, GRAIN, MEAL AND FLOUR",Wheat,Roumania,,import,1890,4653735.0,1815770.0,twoup,C,C,3,3
+"CORN, GRAIN, MEAL AND FLOUR",Wheat,Turkey,,import,1890,903514.0,311475.0,twoup,C,C,3,3
+"CORN, GRAIN, MEAL AND FLOUR",Wheat,Egypt,,import,1890,425455.0,142852.0,twoup,C,C,3,3
+"CORN, GRAIN, MEAL AND FLOUR",Wheat,Persia,,import,1890,49563.0,17765.0,twoup,C,C,3,3
 "CORN, GRAIN, MEAL AND FLOUR",United States of America,On the Atlantic,,import,1890,6427253.0,2571551.0,twoup,C,C,3,3
 "CORN, GRAIN, MEAL AND FLOUR",United States of America,On the Pacific,,import,1890,10773810.0,4323256.0,twoup,C,C,3,3
 "CORN, GRAIN, MEAL AND FLOUR",United States of America,United States of Columbia,,import,1890,66520.0,24634.0,twoup,C,C,3,3
@@ -115218,6 +115204,32 @@ TEETH,"Elephants', Sea Cow, and Sea Horse",British East Indies,Cwts,import,1881,
 "TEETH, ELEPHANTS', SEA-COW, SEA-HORSE, OR SEA-MORSE",,British East Indies : Straits Settlements,Cwts.,import,1894,9.0,402.0,groupfix,C,C,3,3
 "TEETH, ELEPHANTS', SEA-COW, SEA-HORSE, OR SEA-MORSE",,British East Indies : Other British Possessions,Cwts.,import,1893,7.0,150.0,groupfix,C,C,3,3
 "TEETH, ELEPHANTS', SEA-COW, SEA-HORSE, OR SEA-MORSE",,British East Indies : Other British Possessions,Cwts.,import,1894,21.0,608.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Russia: Northern Ports,Cwts.,import,1890,2416585.0,968735.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Southern Ports,Cwts.,import,1890,16972440.0,6512802.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Denmark,Cwts.,import,1890,55156.0,21608.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Germany,Cwts.,import,1890,1100846.0,437621.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Bulgaria,Cwts.,import,1890,351165.0,128935.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Roumania,Cwts.,import,1890,4653735.0,1815770.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Turkey,Cwts.,import,1890,903514.0,311475.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Egypt,Cwts.,import,1890,425455.0,142852.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Persia,Cwts.,import,1890,49563.0,17765.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,United States of America : On the Atlantic,Cwts.,import,1890,6427253.0,2571551.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,United States of America : On the Pacific,Cwts.,import,1890,10773810.0,4323256.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,United States of America : United States of Columbia,Cwts.,import,1890,66520.0,24634.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Uruguay,Cwts.,import,1890,87816.0,29381.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Argentine Republic,Cwts.,import,1890,2810317.0,1050829.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Other Foreign Countries,Cwts.,import,1890,82174.0,32037.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,British East Indies : Bombay and Scinde,Cwts.,import,1890,7872976.0,2995433.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,British East Indies : Bengal,Cwts.,import,1890,1236606.0,464853.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,British East Indies : Madras,Cwts.,import,1890,2000.0,785.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,British East Indies : South Australia,Cwts.,import,1890,1072392.0,453489.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,British East Indies : Victoria,Cwts.,import,1890,223078.0,93895.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,British East Indies : New Zealand,Cwts.,import,1890,1738992.0,713507.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,British North America,Cwts.,import,1890,1128349.0,463080.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Other British Possessions,Cwts.,import,1890,23438.0,9551.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Australasia : South Australia,Cwts.,import,1890,1072392.0,453489.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Australasia : Victoria,Cwts.,import,1890,223078.0,93895.0,groupfix,C,C,3,3
+CORN AND GRAIN,Wheat,Australasia : New Zealand,Cwts.,import,1890,1738992.0,713507.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
