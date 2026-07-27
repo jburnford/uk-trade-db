@@ -107,3 +107,11 @@ quantity. That is squarely the "changes the vote — stop and ask" case.
 4. Re-run the detector battery — the 254 blocks that do **not** close are the
    new work this exposes, and some will be glue of the kind rounds 26-36 have
    been clearing.
+
+## Decision, 2026-07-27
+
+**Queued for Fable, Monday 2026-07-27.** The user declined to take the change in
+this session: the blast radius (~64k new rows, every downstream consumer, the
+254 non-closing blocks it would surface) is too wide for the defect loop, and
+Fable's review is the right place for it. `integrate_sources.py:221` stays as
+it is. The loop continues on defects that do not touch the vote.
