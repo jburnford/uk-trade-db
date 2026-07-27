@@ -447,3 +447,60 @@ immediate candidates, and the 88 clean pairs still in
 that looked unusable because the source read ~2× may now be a clean fold.
 
 The nine regressions named in round 38 are unchanged by this round.
+
+---
+
+# Round 40 — the matcher learns to see through the doubled aggregate, and `Sago`
+
+Round 39 ended with a note: an orphan reading ~1.9× is now foldable, so the
+queue should be re-read. But the matcher itself could not see those pairs — its
+join is on the value, and a doubled value matches nothing.
+
+## Instrument change
+
+`orphan_origin_match.py` now offers every source **twice**: as parsed, and with
+the regional aggregate's cell removed wherever its members are present in the
+same year — the same `AGGREGATES` table the payload pass uses. Matches found
+that way are tagged `exact*` / `near*` and counted in a new
+`n_via_aggregate_drop` column, so a reader can always tell which proof is which.
+
+Clean candidate pairs went **88 → 107**.
+
+## `Sago`
+
+`Sago` printed a Tier-1 line for 31 years 1866-1896 and carried **no origin data
+at all**. Three stale-head labels hold the tables, and their years are disjoint:
+
+| years | label | |
+|---|---|---|
+| 1872 | `Rags And Other Materials For Making Paper — Sago And Sago Flour` | 298,418 **exact** |
+| 1873, 1877-79, 1881-84, and 1874/76/90 | `Sago And Sago Flour` | seven exact as parsed |
+| 1875, 1880, 1885-89, 1891-92, 1894 | `Rosin — Sago And Sago Flour` | three exact as parsed, seven via the aggregate drop |
+
+Two details are worth keeping. **1883**: the label's Cwt cells give 332,021 and
+it also holds an unattached cell of **1,314** — together 333,335, the printed
+total exactly, the same unitless-cell rescue as Valonia 1876 and Safflower 1874.
+**1885**: `Rosin — Sago And Sago Flour` reads **728,614 against a printed
+364,307**, and closes to the digit once `British East Indies` is dropped from
+beside its own presidencies.
+
+Three folds. Full corpus ratio diff: **22 commodity-years changed, all inside
+`Sago`, all from "no origin data", 22 closer and 0 further — and twenty of them
+land at exactly 1.0000** (1876 is 1.0003, 1892 is 0.9999).
+
+```
+exact01  2,610 -> 2,632      nodata  5,916 -> 5,894
+within 0.1%   26.5% of commodity-years / 47.5% GBP
+within 5%     35.6% of commodity-years / 65.5% GBP
+```
+
+`Sago` goes from 0 origin-years to **22** and from 1 country to **21**.
+
+## Left alone
+
+- **`Sago, And Flour Or Meal Thereof`** carries its own T1 for 1893-99, exactly
+  where `Sago`'s ends (1896). That is a **wording change mid-series** — the
+  deferred "which label carries Tier 1" decision — not a fold to make alone.
+- `Sago And Sago Flour — From British East Indies` holds only unitless cells and
+  its 1888 (423,311 against 426,346) would overlap the `Rosin` fold.
+- Gaps left: 1866-71, 1893, 1895, 1896.

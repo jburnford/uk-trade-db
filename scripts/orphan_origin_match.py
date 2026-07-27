@@ -41,8 +41,24 @@ MIN_VALUE = 100        # tiny totals collide by chance (many commodities print 1
 NEAR = 0.001           # 0.1%, the reconcile_baseline "exact" band
 
 
+# a regional aggregate printed BESIDE its own members doubles the region, and
+# an ORPHAN cannot be caught at it because it has no printed total of its own
+# (round 38). Such a source reads ~1.9x its true target and the value-join below
+# would never see it. So each source is offered TWICE: as parsed, and with the
+# aggregate cell removed wherever its members are present in the same year.
+AGGREGATES = {
+    'British East Indies': ('Bengal', 'Bengal And Burmah', 'Bombay', 'Madras',
+                            'Ceylon', 'Burmah', 'Straits Settlements',
+                            'Other British East Indian Possessions'),
+    'British Possessions In South Africa': ('Cape Of Good Hope', 'Natal'),
+    'Australasia': ('New South Wales', 'Victoria', 'Queensland',
+                    'South Australia', 'Western Australia', 'Tasmania',
+                    'New Zealand'),
+}
+
+
 def series(entry):
-    """(t1 by year, origin sum by year, unit) for one payload commodity."""
+    """(t1 by year, origin sum by year, aggregate-adjusted sum, unit)."""
     c = entry.get('c') or {}
     t1 = c.get('§TOTAL')
     unit = None
@@ -60,15 +76,31 @@ def series(entry):
             for r in cells:
                 if r[1]:
                     origin[r[0]] += r[1]
-    return t1y, dict(origin), unit
+    adj = dict(origin)
+    for parent, members in AGGREGATES.items():
+        if parent not in c:
+            continue
+        kid_years = set()
+        for m in members:
+            for u, cells in (c.get(m) or {}).items():
+                if unit and u != unit:
+                    continue
+                kid_years.update(r[0] for r in cells if r[1])
+        for u, cells in c[parent].items():
+            if unit and u != unit:
+                continue
+            for r in cells:
+                if r[1] and r[0] in kid_years and adj.get(r[0]):
+                    adj[r[0]] -= r[1]
+    return t1y, dict(origin), adj, unit
 
 
 def main(payload_path, out_path):
     payload = json.load(open(payload_path))
-    t1s, origins, units = {}, {}, {}
+    t1s, origins, adjs, units = {}, {}, {}, {}
     for name, entry in payload.items():
-        t1y, org, unit = series(entry)
-        t1s[name], origins[name], units[name] = t1y, org, unit
+        t1y, org, adj, unit = series(entry)
+        t1s[name], origins[name], adjs[name], units[name] = t1y, org, adj, unit
 
     # gaps: a printed national line with no origin table under this label
     gaps = defaultdict(dict)                 # target -> {year: t1}
@@ -83,23 +115,26 @@ def main(payload_path, out_path):
     # join every other label's origin sums onto those gaps, on the value
     pairs = defaultdict(list)                # (source, target) -> [(y, src, t1, kind)]
     for src, org in origins.items():
-        for y, v in org.items():
-            if not v or v < MIN_VALUE:
-                continue
-            for tgt, q in by_year.get(y, ()):
-                if tgt == src:
+        adj = adjs[src]
+        for y, v0 in org.items():
+            for v, tag in ((v0, ''), (adj.get(y, v0), '*')):
+                if not v or v < MIN_VALUE or (tag and v == v0):
                     continue
-                if round(v) == round(q):
-                    kind = 'exact'
-                elif abs(v - q) / q <= NEAR:
-                    kind = 'near'
-                else:
-                    continue
-                pairs[(src, tgt)].append((y, v, q, kind))
+                for tgt, q in by_year.get(y, ()):
+                    if tgt == src:
+                        continue
+                    if round(v) == round(q):
+                        kind = 'exact' + tag
+                    elif abs(v - q) / q <= NEAR:
+                        kind = 'near' + tag
+                    else:
+                        continue
+                    pairs[(src, tgt)].append((y, v, q, kind))
 
     rows = []
     for (src, tgt), hits in pairs.items():
-        n_exact = sum(1 for h in hits if h[3] == 'exact')
+        n_exact = sum(1 for h in hits if h[3].startswith('exact'))
+        n_adj = sum(1 for h in hits if h[3].endswith('*'))
         if len(hits) < MIN_YEARS or not n_exact:
             continue
         # a source whose OWN anchor already covers these years is a rival
@@ -110,6 +145,7 @@ def main(payload_path, out_path):
         rows.append({
             'source': src, 'target': tgt,
             'n_exact': n_exact, 'n_near': len(hits) - n_exact,
+            'n_via_aggregate_drop': n_adj,
             'years': ';'.join(str(h[0]) for h in hits),
             'source_has_own_t1': int(src_anchored),
             'overlap_years': ';'.join(str(y) for y in overlap),
@@ -118,7 +154,8 @@ def main(payload_path, out_path):
             'target_gap_years': len(gaps[tgt]),
             'source_gbp': round(payload[src].get('v') or 0),
             'target_gbp': round(payload[tgt].get('v') or 0),
-            'detail': ';'.join(f'{y}:{round(v)}v{round(q)}' for y, v, q, _ in hits),
+            'detail': ';'.join(f'{y}:{round(v)}v{round(q)}{k[-1] if k.endswith("*") else ""}'
+                               for y, v, q, k in hits),
         })
     rows.sort(key=lambda r: (-r['n_exact'], -r['n_near'], -r['source_gbp']))
 
