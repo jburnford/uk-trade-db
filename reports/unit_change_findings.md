@@ -101,3 +101,63 @@ unit normalisation already lived; `exports/viz_payload.json` deliberately keeps
 the printed units apart, so `reconcile_baseline.py` still cannot score these
 years. Moving the conversion upstream would change the baseline's universe and
 is a larger decision.
+
+---
+
+# Jute 1899: the anchor was wrong, not the origins (2026-07-26)
+
+After the unit-era conversion, jute closed 0.98–1.00 in every year 1872–1898 and
+**0.8952 in 1899** — 256,784 tons of origins against an anchor of 286,839. A
+series that closes for twenty-seven consecutive years and misses by 10% in the
+twenty-eighth has a locatable defect, and it turned out to be in the anchor.
+
+## The country block is right and says 256,839
+
+`as_1899`'s jute block closes at both of its levels:
+
+```
+  foreign   4,527 + 354 + 185 + 121 + 295 + 90 + 55  =   5,627   = its printed foreign TOTAL
+            (the value column too: 51,010, exactly)
+  BEI       75 + 575 + 250,429 + 115 + 18            = 251,212   = the printed BEI row
+                                    5,627 + 251,212  = 256,839
+```
+
+The 1898 block in the same volume has the identical shape and closes at all
+three levels against its own anchor — `1,190 + 360,947 = 362,137` = T1 — so
+there is no third segment in 1899 either, and nothing is missing.
+
+## Both wrong figures are one digit away from 256,839
+
+```
+  256,839   the block's components
+  258,839   the block's printed grand TOTAL      6 -> 8
+  286,839   the abstract, and the anchor         5 -> 8
+```
+
+Two independent single-digit misreadings of the same number. For 286,839 to be
+correct instead, the British East Indies row **and all five of its children**
+would have to be wrong by a consistent 30,000 — six printed figures failing
+together in one direction.
+
+`tn_1901` printing 286,839 as well is not independent confirmation; the later
+volumes copy the earlier ones, which is exactly why the standing rule is that
+closure outranks print-majority. The 5/8 confusion is this corpus's commonest
+digit error — lard 1885, flax 1899, butterine 1886, margarine 1899 and oxen 1899
+were all the same pair.
+
+Fixed in `reference/manual_t1.csv`. **Jute 1899 0.8952 → 0.9997, and no jute
+year is now off by more than 2% anywhere in 1872–1899.**
+
+## Two corrections to earlier notes
+
+**The queued item was right and my re-validation was wrong.** In iteration 6 of
+this session I re-checked jute against the **payload**, which keeps British East
+Indies beside its own drill-down Bengal by design, and read 1.7712 for 1899 and
+1.0000 for 1883. Both are artifacts of that double count. Jute — like the other
+eleven unit-converted commodities — must be judged on `map_slim`'s own `t1`,
+never the payload anchor. That is the fourth trap in the E&H notes and it caught
+me even having written it down.
+
+**`reconcile_baseline` cannot score this fix**, for the same structural reason it
+could not score copper 1888: jute's payload view double-counts, so it sits in the
+`over` bucket either way. The corpus baseline is unchanged at 38.3% / 55.9%.
