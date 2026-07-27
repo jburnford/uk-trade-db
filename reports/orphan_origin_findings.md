@@ -1132,3 +1132,76 @@ exact01  2,737 -> 2,745      nodata  5,763 -> 5,755
 within 0.1%   27.6% of commodity-years / 47.9% GBP
 within 5%     36.9% of commodity-years / 65.9% GBP
 ```
+
+---
+
+# Round 51 — `Ivory — Vegetable`: one glued cell, five years, GBP20.8M
+
+Round 50 refused to give this commodity's anchor a unit and said why: its 1899
+matched to the digit while 1894-98 ran 9× to 31× with no consistent ratio, so
+something other than a unit label was wrong. This round found it.
+
+Vegetable ivory is corozo (tagua) nut, and it comes from **Colombia and
+Ecuador**. The commodity carries a `British East Indies` row in every year
+1894-98:
+
+| year | printed total | that one row | everything else | else / total |
+|---|---|---|---|---|
+| 1894 | 33,076 | **337,303** | 34,985 | 1.058 |
+| 1895 | 12,988 | **390,694** | 13,661 | 1.052 |
+| 1896 | 39,129 | **338,684** | 30,385 | 0.777 |
+| 1897 | 16,412 | **334,833** | 16,784 | 1.023 |
+| 1898 | 12,716 | **360,947** | 13,709 | 1.078 |
+| 1899 | 17,188 | *(none)* | 17,188 | **1.0000** |
+
+**1899 is what identifies it**: the one year with no such row is already exact.
+The rest is a stable ~350,000 cwt East Indies series — steady enough to be some
+other printed line's real data — sitting in a commodity whose entire world trade
+is twelve to thirty-nine thousand.
+
+## A third curation verb: `drop-country`
+
+```
+drop-country,<country>   this country's cells are not this commodity's.
+```
+
+Anchor-guarded like everything else here: a cell is removed only where the
+commodity prints a total for that year **and removing it brings the year
+closer**. A mis-aimed rule therefore removes nothing, and a country that really
+belongs is kept by the arithmetic rather than by trust. It takes the optional
+`years` scope, and `v` — the size the map ranks by — follows the cells out, so a
+commodity cannot go on advertising trade it no longer holds.
+
+One wrinkle worth recording: the guard falls back to matching the anchor **by
+year alone** when the commodity's own anchor has lost its unit label. That is
+exactly the state a glued cell leaves it in — `unit_the_anchor` refuses to label
+a series whose years disagree, and they disagree *because* of the glued cell.
+The closer-to-the-total test still has to hold.
+
+## Result
+
+Five cells dropped. **1,762,461 cwt** and **GBP20,775,334** of phantom trade
+leave the commodity: `Ivory — Vegetable` goes from **GBP21,172,464 to
+GBP397,130**, which is the size a corozo-nut line should be.
+
+**No commodity-year ratio changed, and that was predicted.** The commodity still
+cannot be scored: its anchor is still unitless, because 1896 (0.777) breaks the
+proportionality path and only 1899 is exact, so the identity path is one year
+short. The fix here is real and the reconciliation still cannot see it.
+
+```
+within 0.1%   47.9% -> 48.0% GBP        within 5%   65.9% -> 66.0% GBP
+nodata GBP-weight  24.6% -> 24.5%       exact01 unchanged at 2,745
+```
+
+**Those two tenths are weight leaving, not years improving** — GBP20.8M of
+phantom value was sitting in the `nodata` bucket and is now gone. Stated
+plainly because it is the same trap as the duplicate-shadow denominator: a
+percentage can rise without one number getting better.
+
+## Still open
+
+**`Ivory — Vegetable` 1896 reads 0.777** on the cleaned data — 30,385 against a
+printed 39,129, about 8,700 cwt short — while its four neighbours sit at
+1.02-1.08. One more year explained and this commodity's anchor earns its unit
+and six years become scorable.

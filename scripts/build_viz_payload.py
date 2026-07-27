@@ -1239,6 +1239,7 @@ def main():
     cur_f = BASE / 'reference' / 'commodity_curation.csv'
     n_cur = 0
     n_comb = 0
+    n_drop = 0
     if cur_f.exists():
         for r in csv.DictReader(open(cur_f)):
             name, act, tgt = r['commodity'], r['action'], (r.get('target') or '').strip()
@@ -1264,6 +1265,67 @@ def main():
                         yrs.add(int(part))
             if act == 'drop':
                 del payload[name]; n_cur += 1
+            elif act == 'drop-country' and tgt:
+                # One country's cells are not this commodity's at all. 'Ivory -
+                # Vegetable' (corozo nuts, from Colombia and Ecuador) carries a
+                # 'british east indies' row of 335,000-391,000 cwt in every year
+                # 1894-98 against printed totals of 12,000-39,000; drop it and
+                # the years go from 10x-31x to 1.02-1.08, and 1899 - the one
+                # year with no such row - is already exact. A stable ~350,000
+                # cwt East Indies series that belongs to some other line.
+                # Anchor-guarded like every other pass here: a cell goes only
+                # where the commodity prints a total for that (unit, year) AND
+                # removing it brings the year CLOSER. So a mis-aimed rule
+                # removes nothing, and a country that really belongs is kept by
+                # the arithmetic rather than by trust.
+                ent = payload[name]
+                c = ent['c']
+                if tgt in c:
+                    # anch_y is the fallback for a commodity whose own anchor
+                    # has lost its unit label - which is exactly the state a
+                    # glued cell leaves it in, since unit_the_anchor refuses to
+                    # label a series whose years do not agree, and they do not
+                    # agree BECAUSE of the glued cell. Comparing the numbers
+                    # across a missing label is what unit_the_anchor does too;
+                    # the closer-to-the-total guard still has to hold.
+                    anch, anch_y, seen = {}, {}, {}
+                    for u, cells in (c.get(TK) or {}).items():
+                        for cell in cells:
+                            if cell[1]:
+                                anch[(u, cell[0])] = cell[1]
+                                anch_y[cell[0]] = cell[1]
+                    for cty2, byu2 in c.items():
+                        if cty2 == TK or '(' in cty2:
+                            continue
+                        for u, cells in byu2.items():
+                            for cell in cells:
+                                seen[(u, cell[0])] = seen.get(
+                                    (u, cell[0]), 0) + cell[1]
+                    for u, cells in list(c[tgt].items()):
+                        keep = []
+                        for cell in cells:
+                            k = (u, cell[0])
+                            t1v = anch.get(k) or anch_y.get(cell[0])
+                            tot = seen.get(k)
+                            if (yrs is not None and cell[0] not in yrs) or (
+                                    not t1v or tot is None) or (
+                                    abs(tot - cell[1] - t1v) >= abs(tot - t1v)):
+                                keep.append(cell)
+                                continue
+                            seen[k] = tot - cell[1]
+                            # 'v' is the size the map ranks and reports by, so
+                            # a dropped cell has to leave it too - otherwise
+                            # this commodity keeps advertising trade it no
+                            # longer holds.
+                            if len(cell) > 3:
+                                ent['v'] = max(0.0, (ent.get('v') or 0) - cell[3])
+                            n_drop += 1
+                        if keep:
+                            c[tgt][u] = keep
+                        else:
+                            del c[tgt][u]
+                    if not c[tgt]:
+                        del c[tgt]
             elif act in ('fold', 'rename', 'combine') and tgt:
                 src = payload.pop(name); n_cur += 1
                 if yrs is not None:
@@ -1406,7 +1468,8 @@ def main():
                         src.get('v', 0) * kept_v / src_v if src_v else 0)
         if n_cur:
             print(f'  curation: {n_cur} commodities dropped/folded/renamed'
-                  + (f'; {n_comb} constituent cells added' if n_comb else ''))
+                  + (f'; {n_comb} constituent cells added' if n_comb else '')
+                  + (f'; {n_drop} misfiled country cells dropped' if n_drop else ''))
     # A fold brings in countries the target has no labelled cell for, so the
     # per-country unit tests inside the fold cannot reach them and they arrive
     # unit-less - invisible to the quantity axis. Only the ANCHOR pass is safe
