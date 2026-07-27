@@ -1692,3 +1692,69 @@ does not otherwise exist.
 **Worth a scan of its own**: how many other commodities have a single volume
 contributing an order of magnitude more rows than every other volume? That is
 the signature, and it is cheap to compute.
+
+---
+
+# Round 59 — a detector for the class, and `Paper — Hangings`
+
+## The detector
+
+Rounds 55-58 repaired the same defect three times, so it is worth looking for
+rather than stumbling on. `scripts/volume_row_outliers.py` compares, per
+`(article_group, article)`, the busiest volume's row count against the median of
+the others. A printed origin table is 4-30 rows in a single-year volume and
+30-90 in a five-year comparative one; ten times the median with a hundred rows
+or more is not a bigger table.
+
+**2,670 commodities scanned; 31 outliers.** The three already repaired are in it,
+which is the sanity check. The rest, worst first:
+
+| article_group | article | volume | rows | median | ratio |
+|---|---|---|---|---|---|
+| `NUTS AND KERNELS` | Eastern Coast of Africa | as_1897 | 1,352 | 65 | 21× |
+| `PAPER` | Hangings | as_1898 | **1,065** | 6 | **177×** |
+| `METAL` | Leaf, not Gold | as_1898 | 629 | 5 | 126× |
+| `POTATOES` | | as_1897 | 492 | 12 | 41× |
+| `LEAD` | Pig and Sheet | as_1897 | 482 | 9 | 54× |
+| `PAPER` | Strawboard and Millboard | as_1899 | 361 | 12 | 30× |
+| `Cotton` | Tares and Lentils | as_1899 | 351 | 5 | 70× |
+
+The output is a **queue, not a verdict** — each still needs its real table
+located and checked against Tier 1.
+
+## `Paper — Hangings`
+
+Clean 1872-93 — every year between 0.98 and 1.00, most **exactly 1.000** — and
+90.7× in 1894, the only glued year its Tier-1 series reaches.
+
+**The real table is the first ten rows**, seq 16072-16081, in unit `wts` (a
+truncated `Cwts`): Germany 643, Holland 585, Belgium 744, France 3,300, Japan
+2,848, United States 1,244, Other Foreign 156, then the printed foreign TOTAL
+9,050 and the grand 9,066, against a Tier-1 figure of **9,060**. From 16082 the
+unit becomes `Cwts` and the figures are Russia 107,358, Sweden 237,775, Norway
+208,138 — a different commodity, and a clean boundary.
+
+Superseded 1894-98, re-admitted the real table. **One commodity-year changed,
+closer, none further; no new payload label.** 1895-98 have no Tier-1 line at all,
+so their 2.3-3.2 **million** cwt of "origins" were pure glue and simply go.
+
+```
+Paper — Hangings   1894  90.66 -> 1.0508
+GBP                      18,361,595 -> 1,245,404
+```
+
+## The metric registered none of it, and that is worth saying
+
+`exact01`, `within5`, `over`, `under`, `nodata` are **all unchanged**. 1.0508 is
+5.08% from its total — eight hundredths of a percentage point outside the 5%
+band — so a year that was **ninety times its printed total** stays in the same
+bucket it was in before.
+
+**GBP17.1M of glue left the corpus and the headline moved by nothing.** The
+baseline is a coverage measure, not a correctness measure, and a repair can be
+large and true and invisible to it. Recorded because the temptation in a loop
+like this one is to chase the number rather than the data.
+
+The residual is one misread cell: the seven countries sum to 9,520 against a
+printed 9,066, so something is ~454 too big. Not decidable from the parses, not
+guessed.
