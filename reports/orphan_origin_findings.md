@@ -1205,3 +1205,65 @@ percentage can rise without one number getting better.
 printed 39,129, about 8,700 cwt short — while its four neighbours sit at
 1.02-1.08. One more year explained and this commodity's anchor earns its unit
 and six years become scorable.
+
+---
+
+# Round 52 — the item did not close, and the generalisation did
+
+## `Ivory — Vegetable` 1896: not closed
+
+Round 51 left one year at 0.777 and asked what was wrong with it. The answer is
+that **nothing identifiable is**. The anchor is sound: `import / quantity /
+Vegetable Ivory` is carried by **three volumes agreeing** (`as_1898`, `as_1899`,
+`tn_1899`) at 39,129, tier B. So the origin side really is ~8,744 cwt short, and
+the country list for 1896 is the *longest* of the three years (twelve entries
+against 1897's eight), so it is not an obviously dropped row.
+
+The four neighbouring years run **1.058, 1.052, 1.023, 1.078** — consistently a
+few per cent *over* — so 1896 is the odd one in a series that is otherwise
+slightly heavy. Nothing in the parses pins it and guessing a digit is refused.
+**Re-queued with that evidence.** Note also that even with 1896 explained the
+commodity would still not be scorable: `unit_the_anchor`'s 5% band fails on 1898
+(1.078) and 1894 (1.058) as well.
+
+## The generalisation: oversized country cells
+
+Round 51's repair — one country cell far larger than the whole commodity — is
+worth looking for everywhere. `reports/oversized_country_cells.csv` lists every
+country cell **at least five times its own commodity's printed total**:
+
+**197 cells across 30 commodities.** Most of the labels are not places at all but
+article strings absorbed into the country column — `Prunes From France Other`,
+`Plums French And Prunelo`, `Whale Fisheries Northern Other Cou`,
+`Bombay And Scinde Bengal And Burma`.
+
+Only **five** are cells whose removal lands the year within half a factor of its
+printed total, and four were applied (the fifth, `Tobacco — Burgundy` / France,
+lands at 0.74 on a label that is itself junk — "Burgundy" is a wine):
+
+| commodity | the cell | year | after |
+|---|---|---|---|
+| `Silk — Raw` | **84,778,433,506** against a printed 6,445,213 | 1873 | 13,150× → **0.9196** |
+| `Skins, Furs, And Pelts — Seal` | 502,306,368 against 713,632 | 1884 | 704× → **0.9207** |
+| `Horns And Hoofs` | 342,009 against 5,745 | 1889 | 60.5× → **0.9998** |
+| `Isinglass` | 4,253,700 against 4,098 | 1874 | — |
+
+Three commodity-years changed, **3 closer, 0 further**. `exact01` 2,745 -> 2,746.
+
+## A bug in round 51's own bookkeeping, caught by the diff
+
+Making `v` follow the dropped cells looked right and was wrong. `v` is
+accumulated as a sum of **min(cell_value, 50,000,000)** — the same cap the
+commodity roll-up applies — and the garbage cells being removed carry garbage
+*values* as well as garbage quantities. Subtracting the raw figure drove
+`Silk — Raw` from **GBP127.6M to zero** and `Skins, Furs, And Pelts — Seal` from
+**GBP63.4M to zero**: two large, real commodities erased from the map by a
+repair aimed at one bad row.
+
+The subtraction is now capped the same way `v` was built. Silk keeps GBP77.6M,
+the seal skins GBP13.4M, and the fifty million each loses is exactly what the
+bad cell had contributed.
+
+**It was the full before/after diff that caught this, not the baseline** — the
+headline numbers barely moved while two of the corpus's larger commodities were
+being zeroed.

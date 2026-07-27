@@ -1318,7 +1318,16 @@ def main():
                             # this commodity keeps advertising trade it no
                             # longer holds.
                             if len(cell) > 3:
-                                ent['v'] = max(0.0, (ent.get('v') or 0) - cell[3])
+                                # 'v' was accumulated as a sum of
+                                # min(cell_value, 50,000,000) - the same cap the
+                                # commodity roll-up applies - so a cell has to
+                                # leave it capped the same way. Subtracting the
+                                # raw figure zeroed `Silk - Raw` (GBP127.6M) and
+                                # `Skins, Furs, And Pelts - Seal` (GBP63.4M) the
+                                # first time this ran, because the garbage cell
+                                # being removed carried a garbage VALUE too.
+                                ent['v'] = max(0.0, (ent.get('v') or 0)
+                                               - min(cell[3], 50_000_000))
                             n_drop += 1
                         if keep:
                             c[tgt][u] = keep
