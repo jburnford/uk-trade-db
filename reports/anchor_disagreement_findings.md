@@ -110,3 +110,59 @@ single Gallon cell of 33–46 million a year.
 **`Gum — Arabic` loses half its origin table in 1874, 1876, 1885, 1887 and
 1897–99** (ratios 0.48, 0.53, 0.62, 0.57, 0.31, 0.60, 0.59) while closing to
 1.0000 in eleven other years.
+
+---
+
+# A second anchor screen, for the anchors the first one cannot see (2026-07-26)
+
+`anchor_disagreement.py` reports a series-year where the printings disagree and
+the payload's origins close on a losing candidate. That is a strong test and it
+has a blind spot: **it needs origins.** The anchors most likely to be wrong are
+the ones nothing else checks, and `Copper, Ore And Regulus` 1888 — 3,562,071
+tons between 169,511 and 250,567, wrong by a factor of fifteen — belongs to a
+commodity with **no origin table in any year**. It sat in `reconcile_baseline`'s
+`nodata` bucket and was found by hand.
+
+`scripts/anchor_magnitude.py` screens the Tier-1 series against itself:
+
+- **QTY** — the year against a robust median of its neighbours (a ±3 window, so
+  a trend does not fire; a median, so one bad year cannot define its own baseline).
+- **PRICE** — implied unit price against the series' own price history. The
+  strong signal, because quantity and value are separate columns on the page and
+  rarely fail together. Copper 1888 implies GBP1.40/ton against GBP15.83.
+- **SIB** — the same commodity under another printed label, same unit, carrying a
+  different figure. Where it fires it usually supplies the answer.
+
+Two signals required, or PRICE alone if it is off by 8x. **Four candidates from
+2,183 series.** `--selftest` replays copper 1888 from its pre-correction figures
+and asserts all three signals still fire, so a later tuning change cannot
+silently break it.
+
+## What it found
+
+| commodity | year | voted | neighbours | signals |
+|---|---|---|---|---|
+| `Skins and Furs — Unenumerated` | 1893 | 43,295,494 | 8.1M / 10.3M / 9.6M | QP |
+| `— Unenumerated` | 1889 | 814,593 | 183,484 | QP |
+| `— " " Of Other Materials, tr…` | 1900 | 129,926 | 1,707,589 | QP |
+| `— Manufactures` | 1886 | 308,990 | 355,112 | P (price 0.031) |
+
+`Skins and Furs — Unenumerated` 1893 is the clearest. Its **value** behaves
+normally across 1893–96 (GBP1.15M / 0.81M / 1.12M / 1.06M) while the quantity
+jumps to 43.3M against 8–10M, so the implied price collapses to GBP0.027 a skin
+against GBP0.10 either side. Only `as_1897` prints the year, tier C, so no
+cross-volume vote could ever have caught it. **Page-image candidate.**
+
+## The false positive that improved the screen
+
+The first run flagged `Oil — Train or Blubber, and Sperm` 1886 at 0.033 of its
+neighbours with a price ratio of 59. It is not a defect: the line is printed in
+**Tons to 1886 and Cwts from 1887**, and the screen was keying series on
+(group, article) alone, so 1886's tonnage was being judged against a neighbour
+median made of hundredweights. The unit is now part of the series key — and the
+sibling test requires a matching unit too, since a sibling denominated
+differently is not comparable. That change split 1,581 series into 2,183 and
+removed three of the five original candidates as artifacts.
+
+The detector's own first finding was the class it exists to find, applied to
+itself.
