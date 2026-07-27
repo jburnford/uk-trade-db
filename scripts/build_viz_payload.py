@@ -1163,6 +1163,7 @@ def main():
     #   rename,<target> — display-name fix / era-label unification
     cur_f = BASE / 'reference' / 'commodity_curation.csv'
     n_cur = 0
+    n_comb = 0
     if cur_f.exists():
         for r in csv.DictReader(open(cur_f)):
             name, act, tgt = r['commodity'], r['action'], (r.get('target') or '').strip()
@@ -1188,7 +1189,7 @@ def main():
                         yrs.add(int(part))
             if act == 'drop':
                 del payload[name]; n_cur += 1
-            elif act in ('fold', 'rename') and tgt:
+            elif act in ('fold', 'rename', 'combine') and tgt:
                 src = payload.pop(name); n_cur += 1
                 if yrs is not None:
                     src = {**src, 'c': {c: {u: [x for x in cells if x[0] in yrs]
@@ -1217,6 +1218,20 @@ def main():
                     # to the cell value kept. A fully disjoint fold keeps all
                     # of it, which is what every fold adjudicated so far does.
                     src_v = kept_v = 0.0
+                    adding = act == 'combine'
+                    danch, dseen = {}, {}
+                    if adding:
+                        for u, cells in (dst['c'].get(TK) or {}).items():
+                            for cell in cells:
+                                if cell[1]:
+                                    danch[(u, cell[0])] = cell[1]
+                        for cty2, byu2 in dst['c'].items():
+                            if cty2 == TK or '(' in cty2:
+                                continue
+                            for u, cells in byu2.items():
+                                for cell in cells:
+                                    dseen[(u, cell[0])] = dseen.get(
+                                        (u, cell[0]), 0) + cell[1]
                     for ctry, byu in src['c'].items():
                         dbyu = dst['c'].setdefault(ctry, {})
                         # A source cell that lost its printed unit belongs to
@@ -1271,8 +1286,43 @@ def main():
                                 else:
                                     byu.pop('?')
                         for u, series in byu.items():
-                            have = {row[0] for row in dbyu.get(u, [])}
-                            new = [row for row in series if row[0] not in have]
+                            idx = {row[0]: row for row in dbyu.get(u, [])}
+                            new = [row for row in series if row[0] not in idx]
+                            # 'combine': the source is a CONSTITUENT of the
+                            # target, not a copy of it - 'Cutch And Gambier' is
+                            # one printed line whose origin table is two, and a
+                            # plain fold drops the second half's Other
+                            # Countries row instead of adding it. Where both
+                            # sides hold the same (country, unit, year), ADD.
+                            # Anchor-guarded exactly like the other passes:
+                            # only where the target prints a total for that
+                            # (unit, year) AND adding brings the year closer to
+                            # it. With no printed total to check against,
+                            # 'combine' behaves as 'fold' - so it can turn a
+                            # duplicate into a double count only if a human
+                            # writes the action AND the arithmetic agrees.
+                            if adding and ctry != TK:
+                                for row in series:
+                                    hit = idx.get(row[0])
+                                    if hit is None:
+                                        continue
+                                    t1v = danch.get((u, row[0]))
+                                    tot = dseen.get((u, row[0]))
+                                    if not t1v or tot is None:
+                                        continue
+                                    if abs(tot + row[1] - t1v) >= abs(tot - t1v):
+                                        continue
+                                    hit[1] += row[1]
+                                    hit[2] = max(hit[2], row[2])
+                                    if len(hit) > 3 and len(row) > 3:
+                                        hit[3] += row[3]
+                                    dseen[(u, row[0])] = tot + row[1]
+                                    kept_v += row[3] if len(row) > 3 else 0
+                                    n_comb += 1
+                            for row in new:
+                                if ctry != TK:
+                                    dseen[(u, row[0])] = dseen.get(
+                                        (u, row[0]), 0) + row[1]
                             if ctry != '§TOTAL':
                                 src_v += sum(row[3] for row in series)
                                 kept_v += sum(row[3] for row in new)
@@ -1280,7 +1330,8 @@ def main():
                     dst['v'] = dst.get('v', 0) + (
                         src.get('v', 0) * kept_v / src_v if src_v else 0)
         if n_cur:
-            print(f'  curation: {n_cur} commodities dropped/folded/renamed')
+            print(f'  curation: {n_cur} commodities dropped/folded/renamed'
+                  + (f'; {n_comb} constituent cells added' if n_comb else ''))
     # A fold brings in countries the target has no labelled cell for, so the
     # per-country unit tests inside the fold cannot reach them and they arrive
     # unit-less - invisible to the quantity axis. Only the ANCHOR pass is safe

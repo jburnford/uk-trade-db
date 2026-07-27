@@ -834,3 +834,66 @@ within 5%     36.3% of commodity-years / 65.6% GBP
 `Bark — Catch And Gambier` was left alone: its one year, 1892 at **25,200**, is
 exactly the printed total, but 1892 is a year the target already carries, so
 folding it could only collide.
+
+---
+
+# Round 46 — `combine`: a curation action for constituents
+
+Round 45 proved `Cutch And Gambier` is one printed line whose origin table is
+two, and then could not apply the proof: a `fold` merges cells by (country,
+unit, year) **with the target winning**, so the second half's `Other Countries`
+row was dropped rather than added and six digit-exact years landed 7 to 539 tons
+short.
+
+## The action
+
+A third curation verb beside `drop` / `fold` / `rename`:
+
+```
+combine,<target>   the source is a CONSTITUENT of the target, not a copy.
+                   Where both sides hold the same (country, unit, year), ADD.
+```
+
+It is **anchor-guarded like every other pass in this file**: a colliding cell is
+added only where the target prints a total for that (unit, year) **and adding
+brings the year closer to it**. With no printed total to check against,
+`combine` behaves exactly as `fold`. So it can only turn a duplicate into a
+double count if a human writes the action *and* the arithmetic agrees — the same
+two-key discipline the group repairs use.
+
+## Result
+
+Eleven constituent cells added. The six years round 45 proved now land where the
+proof said they would:
+
+| year | as `fold` | as `combine` |
+|---|---|---|
+| 1872 | 0.9846 | **0.9989** |
+| 1873 | 0.9913 | **1.0000** |
+| 1875 | 0.9998 | **1.0000** |
+| 1876 | 0.9958 | **1.0000** |
+| 1877 | 0.9993 | **1.0000** |
+| 1879 | 0.9980 | **1.0000** |
+| 1880 | 0.9832 | **1.0000** |
+| 1881 | 0.8421 | 0.8534 |
+
+```
+exact01  2,696 -> 2,700
+within 0.1%   27.2% of commodity-years / 47.8% GBP
+within 5%     36.3% of commodity-years / 65.6% GBP
+```
+
+Nine commodity-years changed, eight closer and **one further**: 1874 goes
+1.0106 to 1.0137. The guard fired correctly on the state it saw — adding the
+cell did move the year toward its total at that moment — and a later pass then
+shifted the sum. Three thousandths against six exact years is the trade, and it
+is recorded rather than tuned.
+
+## Where else this applies
+
+`combine` is now available for any printed "A and B" line whose halves were
+parsed apart. The dye-stuffs section has more of them — `Madder, Madder Root,
+Garancine, And Munjeet` sits beside `Madder`, `Madder — Root`, `Madder —
+Garancine` and `Madder — Munjeet`, all anchored, which makes it the deferred
+"which label carries Tier 1" question as well as this one. It should not be
+attempted until that decision is made.
