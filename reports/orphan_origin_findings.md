@@ -378,3 +378,72 @@ moves after curation, or the fold and the clean-up happen in one place. That is
 a restructuring, not a one-line move, and it is not made here.
 
 Same blockage, same fix, for every dye-stuffs orphan whose ratio sits near 1.9.
+
+---
+
+# Round 39 — the pass runs twice, and `Indigo` closes
+
+Round 38 ended with a blockage stated precisely: the aggregate-beside-members
+pass is **anchor-guarded**, an orphan has no anchor, so the pass could never
+reach the doubled India sitting inside the dye-stuffs orphans. The repair had to
+be **fold first, clean after** — and the curation folds run *after* the pass.
+
+## The fix
+
+The pass is now a function, `drop_aggregate_beside_members(store)`, called twice:
+once where it was, and **again after the curation folds**, on `payload` instead
+of `comms`. It sits beside `fold_tun_ton(payload)`, which is re-run there for the
+same reason, and under the same licence the comment there already states: only a
+pass whose test is *the year's own arithmetic against its printed total* is safe
+to re-run after a fold. This one qualifies — it moves a cell only when doing so
+brings the year closer to that total, so a fold that duplicates (and therefore
+overshoots) is left alone.
+
+The refactor on its own was verified behaviour-preserving: 710 drops before, 710
+after. The second call then fires **166 more times**, on cells that earlier folds
+had already brought in:
+
+```
+                  after round 38    second call
+exact01                  2,547         2,598
+over                       327           260
+within 0.1%      25.6% / 45.4%   26.1% / 47.4% GBP
+within 5%        34.5% / 63.7%   35.2% / 65.4% GBP
+```
+
+Full corpus ratio diff for the second call alone: **125 commodity-years changed,
+125 closer, 0 further.**
+
+## `Indigo`
+
+With the ordering fixed, the two orphans fold. Their years (1883-94 and 1895-99)
+are disjoint from the target's own (1872-82), and the doubling is cleaned by the
+pass on the way through:
+
+| | before | after |
+|---|---|---|
+| 1885 | 176,591 against a printed 94,314 (**1.87×**) | **94,314 — exact** |
+| origin years | 11 | **28** |
+| of which exact to the digit | 11 | **22** |
+
+The six that are not exact are 1883 (−30), 1886 (−295), 1887 (+500), 1890 (+97),
+1893 (−33), 1895 (+132), 1896 (+126) and 1899 (−30) — every one inside 0.65%.
+
+Fold diff: 17 commodity-years changed, **17 closer, 0 further**.
+
+```
+exact01  2,598 -> 2,610      nodata  5,933 -> 5,916
+within 0.1%   26.3% of commodity-years / 47.5% GBP
+within 5%     35.3% of commodity-years / 65.5% GBP
+```
+
+## What this unblocks
+
+Every orphan whose ratio sits near 1.9× is now foldable — the arithmetic that
+proves it belongs is the same arithmetic that cleans it. `Cutch And Gambier`
+(35 T1 years, 18 with origins) and the rest of the dye-stuffs section are the
+immediate candidates, and the 88 clean pairs still in
+`reports/orphan_origin_matches.csv` should be re-read with this in mind: a pair
+that looked unusable because the source read ~2× may now be a clean fold.
+
+The nine regressions named in round 38 are unchanged by this round.

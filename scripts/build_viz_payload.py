@@ -940,50 +940,59 @@ def main():
                         'South Australia', 'Western Australia', 'Tasmania',
                         'New Zealand'),
     }
-    n_agg = 0
-    for s in comms.values():
-        c = s['c']
-        anch = {}
-        for u, cells in (c.get(TK) or {}).items():
-            for cell in cells:
-                if cell[1]:
-                    anch[(u, cell[0])] = cell[1]
-        if not anch:
-            continue
-        seen = {}
-        for cty, byu in c.items():
-            if cty == TK or '(' in cty:
-                continue
-            for u, cells in byu.items():
+    # Run TWICE: once here, and again after the curation folds, because the
+    # pass is anchor-guarded and an ORPHAN has no anchor. `Dye Stuffs, And
+    # Substances Used In Tanning — Indigo` reads 1.9x its true total for this
+    # exact reason and cannot be cleaned until a fold has put its cells under
+    # a label that carries a printed one.
+    def drop_aggregate_beside_members(store):
+        n = 0
+        for s in store.values():
+            c = s['c']
+            anch = {}
+            for u, cells in (c.get(TK) or {}).items():
                 for cell in cells:
-                    seen[(u, cell[0])] = seen.get((u, cell[0]), 0) + cell[1]
-        for parent, members in AGGREGATES.items():
-            if parent not in c:
+                    if cell[1]:
+                        anch[(u, cell[0])] = cell[1]
+            if not anch:
                 continue
-            kid = {}
-            for m in members:
-                for u, cells in (c.get(m) or {}).items():
+            seen = {}
+            for cty, byu in c.items():
+                if cty == TK or '(' in cty:
+                    continue
+                for u, cells in byu.items():
                     for cell in cells:
-                        kid[(u, cell[0])] = kid.get((u, cell[0]), 0) + cell[1]
-            for u, cells in list(c[parent].items()):
-                keep = []
-                for cell in cells:
-                    k = (u, cell[0])
-                    t1, tot = anch.get(k), seen.get(k)
-                    if not kid.get(k) or not t1 or not tot:
-                        keep.append(cell)
-                        continue
-                    if abs(tot - cell[1] - t1) < abs(tot - t1):
-                        seen[k] = tot - cell[1]
-                        n_agg += 1
+                        seen[(u, cell[0])] = seen.get((u, cell[0]), 0) + cell[1]
+            for parent, members in AGGREGATES.items():
+                if parent not in c:
+                    continue
+                kid = {}
+                for m in members:
+                    for u, cells in (c.get(m) or {}).items():
+                        for cell in cells:
+                            kid[(u, cell[0])] = kid.get((u, cell[0]), 0) + cell[1]
+                for u, cells in list(c[parent].items()):
+                    keep = []
+                    for cell in cells:
+                        k = (u, cell[0])
+                        t1, tot = anch.get(k), seen.get(k)
+                        if not kid.get(k) or not t1 or not tot:
+                            keep.append(cell)
+                            continue
+                        if abs(tot - cell[1] - t1) < abs(tot - t1):
+                            seen[k] = tot - cell[1]
+                            n += 1
+                        else:
+                            keep.append(cell)
+                    if keep:
+                        c[parent][u] = keep
                     else:
-                        keep.append(cell)
-                if keep:
-                    c[parent][u] = keep
-                else:
-                    del c[parent][u]
-            if not c[parent]:
-                del c[parent]
+                        del c[parent][u]
+                if not c[parent]:
+                    del c[parent]
+        return n
+
+    n_agg = drop_aggregate_beside_members(comms)
 
     for s in comms.values():                     # better rank first per year
         for units in s['c'].values():
@@ -1220,6 +1229,17 @@ def main():
     # left alone. Re-running the whole of heal_units was tried and reverted -
     # its per-country magnitude tests have no such guard and doubled the years
     # a fold's two halves both covered.
+    #
+    # The aggregate-beside-members pass has to run again here for the same
+    # reason and with the same licence. It is anchor-guarded, so it cannot
+    # touch an ORPHAN - an orphan has no printed total of its own - and the
+    # dye-stuffs orphans are exactly where the doubled India sits: `Dye Stuffs,
+    # And Substances Used In Tanning - Indigo` reads 1.87-1.94x its target's
+    # printed total in every year 1885-94 because `British East Indies` is in
+    # it beside Bengal, Madras and Bombay. Only after a fold has put those
+    # cells under a label that carries an anchor can the year's arithmetic see
+    # them. Same guard, so re-running it cannot make a year worse.
+    n_agg += drop_aggregate_beside_members(payload)
     n_tunton += fold_tun_ton(payload)
     n_heal2 = heal_by_anchor(payload)
     if n_heal2:
