@@ -285,3 +285,96 @@ one from "no origin data"**. `Safflower` goes from 0 origin-years to 24 and from
 Gaps left: **1866-1871** (no candidate on any label), **1886** (none), **1893 and
 1894** (only the doubled label). And the queued repair above: **1874's missing
 British India row, 8,183 cwt.**
+
+---
+
+# Round 38 — `Indigo` did not close, and finding out why was worth more
+
+## The item that failed
+
+`Indigo` has a Tier-1 line for 35 years and origin data for eleven (1872-82).
+Its orphan, `Dye Stuffs, And Substances Used In Tanning — Indigo` (GBP34.4M),
+matches the printed total in 1883 (−30) and **1884 exactly** — and then reads
+**1.87 to 1.94 times** the printed total in every year 1885-1894. Its late twin,
+`Dye Stuffs (Other Than Dye Woods)… — Indigo`, does the same for 1895-99.
+
+A ratio pinned near 1.9 for fifteen straight years is not noise. Comparing the
+two years either side of the break says what it is:
+
+```
+1884 (closes exactly)   Bengal And Burmah 66,654 + Bombay 1,181 + Madras 25,096
+                        + eight others  = 104,423 = printed total.  No parent row.
+
+1885 (reads 1.87)       Bengal 64,629 + Madras 17,648 + Bombay 134 + Ceylon 1,561
+                        AND ALSO  'British East Indies'  83,979  <- their total
+                        sum 176,591 against a printed 94,314
+```
+
+`British East Indies` is the **printed aggregate of the presidencies**, and where
+the parser loses the sub-entry colon its members arrive as plain countries, so
+India is counted twice. Drop the parent and 1885 is
+`92,612 + 1,702 (unitless) = 94,314` — **the printed total to the digit**.
+
+## The class, measured
+
+That shape is not Indigo's alone. Counting commodity-years where an aggregate
+shares a year with one of its own members **and a printed total exists**:
+
+| aggregate | checkable years | dropping it moves closer | further | within 0.1% before → after |
+|---|---|---|---|---|
+| `British East Indies` | 302 | **290** | 12 | 5 → 115 |
+| `Australasia` | 378 | **335** | 43 | 13 → 122 |
+| `British Possessions In South Africa` | 159 | **137** | 22 | 5 → 22 |
+
+## The fix
+
+A new pass in `build_viz_payload`, modelled on the coast-sibling fold directly
+above it and carrying the same guard: **drop the aggregate's cell only where
+doing so brings that year closer to its own printed national total.** A parent
+that is really an unenumerated residual beside named members overshoots when
+removed, so the guard leaves it; a year with no printed total is never touched.
+The "further" columns above therefore never fire — they describe the population,
+not the rule.
+
+**Ordering matters and cost a measurement to find.** Placed before
+`heal_units`, the pass deleted parent cells and thereby *freed* the (country,
+year) slot, letting a unitless cell for the same country heal into it — the
+Safflower-1874 mechanism from round 37, running backwards. Moved to **after**
+`heal_units`, that interaction is gone and the result is strictly better.
+
+```
+                       before      after
+exact01                 2,328      2,547        (+219)
+over                      623        327        (-296)
+within 0.1%   23.4% / 39.5% GBP   25.6% / 45.4% GBP
+within 5%     31.5% / 55.9% GBP   34.5% / 63.7% GBP
+```
+
+710 aggregate cells dropped. Full corpus ratio diff: **530 commodity-years
+changed, 521 closer to their anchor, 9 further.**
+
+### The nine, named
+
+`Honey` 1894 (1.0048 → 0.9590), `Oats` 1893/1897/1898, `Tallow And Stearine`
+1897, `Teeth, Elephants'…` 1895 (0.9361 → 0.8501), `Tow` 1896/1897, and
+`Wool — Sheep Or Lambs'` 1896 (1.7818 → 1.9931). Eight of them were already
+*under* their anchor and lost a little more; the guard saw a different sum at
+its own point in the pipeline than the passes that run later (`fold_tun_ton`,
+`drop_shifted_duplicates` and the curation folds all follow it). Wool 1896 is
+the odd one — its sum went *up*, which this pass cannot do directly, so it is a
+knock-on in the dedup pass. All nine are recorded rather than tuned away.
+
+## Why `Indigo` still did not close
+
+The pass is anchor-guarded, so it can only fire on a commodity that has its own
+printed total — and an orphan, by definition, has none. `Dye Stuffs… — Indigo`
+still reads 1.9× and still cannot be folded.
+
+**The repair is knowable and is queued with its ordering requirement**: fold the
+orphan into `Indigo` *first*, so its cells sit under a label that has an anchor,
+then let the aggregate pass clean them. Today the curation folds run **after**
+this pass, so the folded cells arrive too late to be cleaned. Either the pass
+moves after curation, or the fold and the clean-up happen in one place. That is
+a restructuring, not a one-line move, and it is not made here.
+
+Same blockage, same fix, for every dye-stuffs orphan whose ratio sits near 1.9.

@@ -913,6 +913,78 @@ def main():
         return n_healed
 
     n_healed = heal_units(comms)
+
+    # ---- the regional aggregate printed BESIDE its own members. The mirror
+    # image of the roll-up above: 'British East Indies' is the printed total of
+    # the presidencies, and where the parser loses the sub-entry colon the
+    # members come through as plain countries, so the year counts India twice.
+    # Indigo 1885 is the clean specimen — Bengal 64,629 + Madras 17,648 +
+    # Bombay 134 + Ceylon 1,561 = 83,972 against a 'British East Indies' cell
+    # of 83,979, and the year sums to 176,591 against a printed 94,314. Drop
+    # the parent and it is 94,314 to the digit. Measured over the corpus: of
+    # 302 commodity-years where the parent shares a year with a member and a
+    # printed total exists, dropping the parent moves 290 CLOSER and 12
+    # further, and years landing within 0.1% go from 5 to 116.
+    # Told apart the only way that cannot guess — the same rule as the coast
+    # fold above: drop the parent ONLY where doing so brings the year closer to
+    # its own printed national total. A parent that really is an unenumerated
+    # residual beside named members overshoots when removed and is left alone,
+    # and a year with no printed total is never touched.
+    AGGREGATES = {
+        'British East Indies': ('Bengal', 'Bengal And Burmah', 'Bombay',
+                                'Madras', 'Ceylon', 'Burmah',
+                                'Straits Settlements',
+                                'Other British East Indian Possessions'),
+        'British Possessions In South Africa': ('Cape Of Good Hope', 'Natal'),
+        'Australasia': ('New South Wales', 'Victoria', 'Queensland',
+                        'South Australia', 'Western Australia', 'Tasmania',
+                        'New Zealand'),
+    }
+    n_agg = 0
+    for s in comms.values():
+        c = s['c']
+        anch = {}
+        for u, cells in (c.get(TK) or {}).items():
+            for cell in cells:
+                if cell[1]:
+                    anch[(u, cell[0])] = cell[1]
+        if not anch:
+            continue
+        seen = {}
+        for cty, byu in c.items():
+            if cty == TK or '(' in cty:
+                continue
+            for u, cells in byu.items():
+                for cell in cells:
+                    seen[(u, cell[0])] = seen.get((u, cell[0]), 0) + cell[1]
+        for parent, members in AGGREGATES.items():
+            if parent not in c:
+                continue
+            kid = {}
+            for m in members:
+                for u, cells in (c.get(m) or {}).items():
+                    for cell in cells:
+                        kid[(u, cell[0])] = kid.get((u, cell[0]), 0) + cell[1]
+            for u, cells in list(c[parent].items()):
+                keep = []
+                for cell in cells:
+                    k = (u, cell[0])
+                    t1, tot = anch.get(k), seen.get(k)
+                    if not kid.get(k) or not t1 or not tot:
+                        keep.append(cell)
+                        continue
+                    if abs(tot - cell[1] - t1) < abs(tot - t1):
+                        seen[k] = tot - cell[1]
+                        n_agg += 1
+                    else:
+                        keep.append(cell)
+                if keep:
+                    c[parent][u] = keep
+                else:
+                    del c[parent][u]
+            if not c[parent]:
+                del c[parent]
+
     for s in comms.values():                     # better rank first per year
         for units in s['c'].values():
             for cells in units.values():
@@ -1183,7 +1255,8 @@ def main():
     print(f'commodities: {len(payload)}  T1 cells: {n_tot:,} '
           f'(sticky repaired: {n_fixed:,}; fuzzy-merged: {n_fuzzy}; '
           f"unit-healed: {n_healed:,}; coast-rollup: {n_coast:,}; "
-          f"coast-sibling folds: {n_sib:,}; Tun/Ton: {n_tunton:,}; "
+          f"coast-sibling folds: {n_sib:,}; aggregate-beside-members: {n_agg:,}; "
+          f"Tun/Ton: {n_tunton:,}; "
           f'deduped: {n_dedup:,})  '
           f'MB: {len(js) / 1e6:.2f}  -> {out}')
 
