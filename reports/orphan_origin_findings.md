@@ -2045,3 +2045,63 @@ own volume — not the single row the earlier cases took.
 
 Fully specified and queued rather than half-done: the seq anchors above are the
 grand-TOTAL rows, so each block's extent still has to be read off around them.
+
+---
+
+# Round 65 — `Saltpetre`, four volumes, and a casing mismatch that deletes rather than replaces
+
+## The repair
+
+Four rows, one per year, each superseding its own year and re-admitting that
+year's own single-year volume — the shape round 64 said this case needed, because
+`supersede_years` is volume-agnostic and the good blocks live in four different
+volumes.
+
+Each block is nine or ten rows and closes exactly:
+
+```
+as_1893 2958-2966   Germany 71,062 + Holland 25,834 + Belgium 12,662 + France 180
+                    = 109,738;  British East Indies 132,830 (= Bombay and Scinde
+                    501 + Bengal 132,329);  total 242,568 = T1
+as_1894 2993-3001   156,304 + 133,059 = 289,363 = T1
+as_1895 2897-2905   143,655 +  84,822 = 228,477 = T1
+as_1896 2961-2970   130,206 + 210,544 = 340,750 = T1
+```
+
+Result: **1893 6.14 -> 1.0000, 1894 12.20 -> 1.0000, 1895 14.96 -> 1.0011,
+1896 7.20 -> 1.0000.** Three exact.
+
+```
+exact01  2,747 -> 2,750      over  239 -> 235      within 0.1%  27.6% -> 27.7%
+```
+
+1897 and 1898 are untouched — the five-year volumes are all they have — and moved
+a little (12.73 -> 12.74, 17.64 -> 17.91) through the downstream passes.
+
+## The mistake worth more than the repair
+
+The first attempt **deleted saltpetre 1893-96 entirely** and produced an empty
+re-enumeration. The cause:
+
+```
+country_obs         article_group = 'SALTPETRE (Nitrate of Potash)'   (as printed)
+country_year_final  article_group = 'SALTPETRE (NITRATE OF POTASH)'   (integrate upper-cases it)
+```
+
+I wrote the repair rows from what `country_year_final` showed. **`supersede`
+upper-cases before comparing, so it matched and dropped the rows. The
+re-admission queries `country_obs` with the literal string, so it matched nothing
+and admitted none.** The two halves of one repair disagree about case, and the
+failure mode is not "nothing happens" — it is **deletion without replacement**.
+
+**RULE: a `group_repairs` `article_group`/`article` must be copied from
+`country_obs`, exactly as that table spells it. Never from
+`country_year_final`.** Round 62's step 3 caught it — the re-enumeration came
+back empty, which is what "the re-admission did not fire" looks like — so that
+step now earns its place twice over.
+
+## Still open
+
+`Saltpetre` 1897 (12.7×), 1898 (17.9×), 1899 and 1900: no single-year volume
+covers them, so there is no clean block to re-admit. They need the five-year
+blocks read directly.
