@@ -1758,3 +1758,64 @@ like this one is to chase the number rather than the data.
 The residual is one misread cell: the seven countries sum to 9,520 against a
 printed 9,066, so something is ~454 too big. Not decidable from the parses, not
 guessed.
+
+---
+
+# Round 60 — why two repairs misbehaved: a commodity can have more than one key
+
+## The attempt
+
+`Potatoes` (GBP52.4M) is the outlier scan's fourth entry — `as_1897` with 492
+rows against a median of 12 — and has the familiar profile: every year 1872-92
+and 1898-99 at 1.00, and 1893-97 at 2.49 / 1.67 / 1.85 / 2.65 / 1.84.
+
+**The real table is seq 17479-17552** and it is internally consistent: the
+foreign TOTALs (17523-27) plus the British TOTALs (17543-47) give the grand
+TOTALs (17548-52) exactly in four of five years, the countries are Norway,
+Germany, Holland, Belgium, France, Portugal and Spain, and **1895's grand total
+is the Tier-1 figure to the digit**.
+
+Superseding 1893-97 and re-admitting it should have put all five years near 1.00.
+It did not: **4 closer, 2 further**, with 1894 going from 1.67 to **2.0386** and
+the rest still sitting near 2. Reverted — the full diff against the pre-repair
+payload shows **zero commodity-years different**.
+
+## The cause, which also explains round 56
+
+A payload commodity can be fed by **more than one `(article_group, article)`
+pair**, and `supersede_years` is keyed on **one pair only**:
+
+```
+POTATOES | (null)                    395 rows   1872-1898
+PORK     | POTATOES                   23 rows   1878-1899
+POTATOES | POULTRY and GAME…          75 rows   1872-1885
+```
+
+Superseding `POTATOES | ''` leaves `PORK | POTATOES` untouched, so its rows
+survive and are added to the re-admitted table. Hence the persistent ~2×.
+
+**This is very likely round 56's `Collodium` too** — its repaired rows appeared
+under a bucket named `Collodion`, which is what a second feeding pair looks like
+from the outside.
+
+## The recipe, corrected
+
+Before writing a `supersede` repair:
+
+1. Enumerate **every** `(article_group, article)` pair whose rows reach the
+   target payload commodity — `country_year_final` grouped by those two columns,
+   matched on the commodity's own vocabulary, not just the obvious pair.
+2. Supersede **each** of them for the affected years.
+3. Then re-admit the one real block.
+
+Two of the three repairs that worked (logwood, oil-seed cake) had a single
+feeding pair, which is why they were clean; the two that misbehaved did not.
+**That distinction was invisible until now and is the reason both failed.**
+
+## Queued
+
+`Potatoes` is ready to retry with the corrected recipe: supersede
+`POTATOES | ''` **and** `PORK | POTATOES` for 1893-97, re-admit `as_1897`
+17479-17552. Same for `Collodium` once its second pair is identified.
+
+No baseline change this round.
