@@ -867,6 +867,15 @@ def main():
                 dmed = median(domvals)
                 for u in [x for x in units if x != dom]:
                     cells = units[u]
+                    if 'Value' in (u, dom):
+                        # 'Value' is a MEASURE, not a unit: a GBP figure can
+                        # sit within 3x of a quantity (any commodity priced
+                        # near GBP1/unit), so the magnitude folds here would
+                        # merge the two axes. Only the anchor-guarded
+                        # heal_by_anchor may move '?' cells into a Value
+                        # series — it demands the year's own arithmetic
+                        # improve against the printed total.
+                        continue
                     if u == '?':
                         # whole-bucket fold first (a growing series' early '?'
                         # cells sit far below the global median but share its

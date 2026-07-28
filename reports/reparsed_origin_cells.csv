@@ -30,7 +30,6 @@ class,commodity,year,origin,twin_origin,qty,value
 "same place, dropped",Wool — Goats' Wool Or Hair,1894,Aden,,48221,1835
 "same place, dropped",Wet,1894,Turkey,,715,1673
 "same place, dropped",Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1895,Turkey,,109,1461
-"same place, dropped","Animals, Living — Muskets, Rifles, Carbines, Fowling Pieces, Or Guns Of Any Other Sorts, Not Enumerated; And Parts Thereof, And Pistols",1896,United States Of America,,60,927
 "same place, dropped","Wood And Timber — Unenumerated (Not Being Ash, Beech, Birch, Elm, Oak, Or Wainscot)",1898,Spanish West India Islands,,132,820
 "same place, dropped","Zinc — Goods, Not Being Either In Part Or Wholly Manufactured, Unenumerated",1899,Turkey,,638,697
 "same place, dropped","Zinc — Goods, Not Being Either In Part Or Wholly Manufactured, Unenumerated",1898,Turkey,,513,607
@@ -65,6 +64,7 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept",Zinc — Ore Of,1894,Tunis,Tunisia,1148,3722
 "two places, kept","Cured Or Salted, Unenumerated",1893,Cape Of Good Hope,From Cape Of Good Hope,2462,3669
 "two places, kept","Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1895,British East Indies,Other British Possessions,76,3453
+"two places, kept",Woollen Manufactures — Unenumerated,1887,United States Of America,Other Foreign Countries,3138,3138
 "two places, kept",Wax,1895,Bombay,British East Indies Bombay,443,2855
 "two places, kept",Maize Or Indian Corn,1897,Other British Possessions,Natal,15200,2708
 "two places, kept",Oil-Seed Cake — Cotton Cake,1896,From Burmah,British East Indies,420,2570
@@ -105,6 +105,7 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept",Oleo-Margarine,1895,Other Foreign Countries,Belgium,120,154
 "two places, kept","Cheese — Imitation Cheese (Including Lard Cheese, And All Kinds Of Artificial Or Imitation Cheese)",1894,United States Of America,Other Foreign Countries,118,148
 "two places, kept","Buttons And Studs, Not Of Metal",1896,Other Foreign Countries,Italy,2690,130
+"two places, kept",Hair — Unenumerated,1885,British East Indies,Australasia,119,119
 "two places, kept",Cows,1895,Other Foreign Countries,Norway,16,106
 "two places, kept","Cheese — Imitation Cheese (Including Lard Cheese, And All Kinds Of Artificial Or Imitation Cheese)",1895,United States Of America,Other Foreign Countries,68,106
 "two places, kept",Oleo-Margarine,1896,Other Foreign Countries,Egypt,105,105

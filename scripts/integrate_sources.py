@@ -218,7 +218,20 @@ def main():
         c = V.cnorm(ctry)
         if not asig or is_subtotal(c) or ' : ' in (ctry or ''):
             continue
-        if not q or float(q) <= 0:
+        # Value-only origin tables: the volumes print a good many origin
+        # tables with NO quantity column at all (Toys, Watches, Lace, Silk
+        # Manufactures...) where the only figure per country is GBP value.
+        # The voter keeps those cells with real v_tiers; this quantity guard
+        # used to discard every one of them, which left the 56 commodities
+        # whose Tier-1 line is a Value series (GBP71.3M) at nodata forever.
+        # Admit them under the literal unit 'Value' with the GBP figure in
+        # the quantity slot — the SAME convention the abstract's Tier-1
+        # Value series already uses — so downstream consumers reconcile
+        # them against the Value anchor and never mistake them for
+        # quantities. 246 of the 586 value-only blocks with a T1 value
+        # anchor close exactly (reports/value_only_origins_findings.md).
+        valonly = not q or float(q) <= 0
+        if valonly and not (v and float(v) > 0):
             continue
         consensus_commod.add((asig, int(y)))
         consensus_triples.add((asig, c, int(y)))
@@ -230,6 +243,12 @@ def main():
             n_sup += 1
             continue           # cell replaced by a page-adjudicated manual row
         consensus_triples_ga.add((ga, c, int(y)))
+        if valonly:
+            out_rows.append({'group': (grp or '').upper(), 'article': a,
+                'country': ctry, 'unit': 'Value', 'qty': float(v),
+                'value': float(v), 'year': int(y), 'src': 'consensus',
+                'q_tier': vt or 'C', 'v_tier': vt or 'C'})
+            continue
         out_rows.append({'group': (grp or '').upper(), 'article': a, 'country': ctry,
             'unit': unit or '', 'qty': float(q), 'value': float(v) if v else None,
             'year': int(y), 'src': 'consensus',

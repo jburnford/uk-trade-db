@@ -78,7 +78,7 @@ Umbrellas And Parasols,1872,United States Of America (Atlantic & Pacific),?,4593
 "Skins And Furs — Foreign, Dressed In The United Kingdom",1878,Germany,?,2251113,0,foreign to this commodity
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Other Foreign Countries,?,1657113,0,foreign to this commodity
 Cavendish Or Negrohead,1884,British West India Islands,Lb,1243720,0,foreign to this commodity
-"Silk Manufactures — Velvet, Plain Or Figured",1884,Holland,?,851919,0,foreign to this commodity
+"Silk Manufactures — Velvet, Plain Or Figured",1884,Holland,Value,851919,0,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Germany,Load,440768,0,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Russia,Load,277021,0,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Norway,Load,219987,0,foreign to this commodity
@@ -105,7 +105,6 @@ Whalebone (Whalefins) — Whale Fisheries,1888,France,Load,34736,0,foreign to th
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,San Salvador,Lb,23448,81037,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1872,Turkey Proper,?,22590,0,foreign to this commodity
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,Germany,Number,22424,0,foreign to this commodity
-Plated And Gilt Wares,1885,British East Indies,?,21368,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Aden,Lb,17548,81037,foreign to this commodity
 "Kiln-Dried, Roasted, Or Ground",1891,Channel Islands,Lb,16471,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Nicaragua,Lb,16004,81037,foreign to this commodity
@@ -113,9 +112,8 @@ Plated And Gilt Wares,1885,British East Indies,?,21368,0,foreign to this commodi
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,British West India Islands,Lb,14603,81037,foreign to this commodity
 "Kiln-Dried, Roasted, Or Ground",1891,Chile,Lb,11358,0,foreign to this commodity
 Wood And Timber — Teak,1873,Sweden,Load,10487,0,foreign to this commodity
-"Specimens, Illustrative Of Naturalscience",1881,All Countries,?,10271,0,foreign to this commodity
+"Specimens, Illustrative Of Naturalscience",1881,All Countries,Value,10271,0,foreign to this commodity
 "Fish, Fresh And Cured — Cod And Ling",1881,Australasia,?,9565,0,foreign to this commodity
-"Pictures, Drawings, And Photographs",1881,Australasia,?,9431,0,foreign to this commodity
 Gunpowder,1881,Brazil,Cwt,8709,0,foreign to this commodity
 Wood And Timber — Teak,1873,Russia,Load,8349,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,Argentine Republic,?,7139,0,foreign to this commodity
@@ -123,7 +121,6 @@ Wood And Timber — Teak,1873,Norway,Load,7103,0,foreign to this commodity
 Wood And Timber — Teak,1873,United States Of America,Load,6670,0,foreign to this commodity
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,France,Number,6517,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1881,Argentine Republic,?,6376,0,foreign to this commodity
-"Silk Manufactures — Velvet, Plain Or Figured",1881,Australasia,?,6004,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,United States Of America (Pacific),?,5831,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,United States Of America,?,5831,0,foreign to this commodity
 "Gunstocks In The Rough, Of Wood",1880,All Countries,Cwt,4707,0,foreign to this commodity
@@ -187,6 +184,7 @@ At Certain Ports,1894,Russia,?,253,0,foreign to this commodity
 Petroleum,1899,Glass Manufactures Bottles,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Lac,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Hams,Gallon,0,0,foreign to this commodity
+Petroleum,1899,Hemp,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Hops,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Illuminating,Gallon,0,0,foreign to this commodity
 Petroleum,1899,Plants,Gallon,0,0,foreign to this commodity

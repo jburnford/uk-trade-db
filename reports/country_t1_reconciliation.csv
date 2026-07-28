@@ -1,6 +1,9 @@
 commodity,year,kind,ratio,t1_qty,country_sum,cluster_gbp
 Nuts And Kernels — Coco-Nut,1875,missing/short,0.0,219158,0,24006360
 Nuts And Kernels — Coco-Nut,1877,missing/short,0.0,195115,0,24006360
+Painters' Colours And Pigments,1872,missing/short,0.0,526666,0,18276576
+Painters' Colours And Pigments,1873,missing/short,0.0,548327,0,18276576
+Painters' Colours And Pigments,1895,missing/short,0.0,873911,0,18276576
 Bristles,1874,missing/short,0.354,2664374,943648,12682886
 "Thrown, Dyed Or Not Dyed",1899,missing/short,0.0,317786,0,9672480
 Beans (Not Kidney Or French),1893,missing/short,0.187,3946985,738050,6253596
@@ -54,15 +57,16 @@ Strawboard Or Millboard,1896,missing/short,0.0,1208397,0,517161
 Strawboard Or Millboard,1897,missing/short,0.0,1482062,0,517161
 Strawboard Or Millboard,1898,missing/short,0.0,1737814,0,517161
 Strawboard Or Millboard,1899,missing/short,0.0,1774880,0,517161
-Cotton — Raw,1872,overcount,2.121,55637572,118013740,17699843541
-Cotton — Raw,1873,overcount,2.157,44244331,95441441,17699843541
-Cotton — Raw,1884,overcount,55.061,56400323,3105466615,17699843541
-Cotton — Raw,1885,overcount,118.755,65913827,7827567822,17699843541
-Cotton — Raw,1893,overcount,2.041,76784942,156727448,17699843541
-Cotton — Raw,1895,overcount,2.12,81749955,173312048,17699843541
-Cotton — Raw,1897,overcount,2.187,62740180,137194311,17699843541
-Cotton — Raw,1898,overcount,1.976,75859352,149910860,17699843541
-Cotton — Raw,1899,overcount,2.541,66636078,169323245,17699843541
+Cotton — Raw,1872,overcount,2.207,55637572,122768653,18869281357
+Cotton — Raw,1873,overcount,2.134,44244331,94399737,18869281357
+Cotton — Raw,1882,overcount,1.929,64240749,123941381,18869281357
+Cotton — Raw,1884,overcount,55.057,56400323,3105251191,18869281357
+Cotton — Raw,1885,overcount,118.743,65913827,7826827958,18869281357
+Cotton — Raw,1893,overcount,2.075,76784942,159336159,18869281357
+Cotton — Raw,1895,overcount,2.175,81749955,177831047,18869281357
+Cotton — Raw,1897,overcount,2.24,62740180,140530355,18869281357
+Cotton — Raw,1898,overcount,1.968,75859352,149277881,18869281357
+Cotton — Raw,1899,overcount,2.551,66636078,170013875,18869281357
 Caoutchouc,1885,overcount,4.411,180141,794517,115550258
 Nuts And Kernels — Coco-Nut,1894,overcount,5.312,299131,1589028,24006360
 Nuts And Kernels — Coco-Nut,1895,overcount,9.02,285016,2570780,24006360
