@@ -1,6 +1,7 @@
 commodity,year,kind,ratio,t1_qty,country_sum,cluster_gbp
 Nuts And Kernels — Coco-Nut,1875,missing/short,0.0,219158,0,24006360
 Nuts And Kernels — Coco-Nut,1877,missing/short,0.0,195115,0,24006360
+Toys,1880,missing/short,0.129,577397,74389,21681549
 Painters' Colours And Pigments,1872,missing/short,0.0,526666,0,18276576
 Painters' Colours And Pigments,1873,missing/short,0.0,548327,0,18276576
 Painters' Colours And Pigments,1895,missing/short,0.0,873911,0,18276576
@@ -14,6 +15,8 @@ Cochineal (Including Granilla And Dust),1890,missing/short,0.0,7808,0,5321057
 Parcel Post (Goods Free Of Duty),1892,missing/short,0.0,464792,0,4857967
 Parcel Post (Goods Free Of Duty),1898,missing/short,0.0,986290,0,4857967
 Parcel Post (Goods Free Of Duty),1899,missing/short,0.0,970165,0,4857967
+"Staves, Of All Dimensions",1892,missing/short,0.0,136063,0,3565733
+"Staves, Of All Dimensions",1893,missing/short,0.0,131708,0,3565733
 Alkali,1879,missing/short,0.589,73014,42984,2605400
 "Manufactured, Of All Kinds",1890,missing/short,0.0,3678846,0,1941082
 "Manufactured, Of All Kinds",1891,missing/short,0.0,3497408,0,1941082
@@ -32,6 +35,16 @@ Peas,1894,missing/short,0.0,2272623,0,1711200
 Peas,1895,missing/short,0.0,2422851,0,1711200
 Peas,1896,missing/short,0.0,3018657,0,1711200
 Peas,1899,missing/short,0.0,2752950,0,1711200
+"Oil :Train Or Blubber, And Spermaceti",1872,missing/short,0.0,18719,0,1613147
+"Oil :Train Or Blubber, And Spermaceti",1873,missing/short,0.0,17886,0,1613147
+"Oil :Train Or Blubber, And Spermaceti",1874,missing/short,0.0,17051,0,1613147
+"Oil :Train Or Blubber, And Spermaceti",1875,missing/short,0.0,19359,0,1613147
+"Oil :Train Or Blubber, And Spermaceti",1876,missing/short,0.0,16684,0,1613147
+"Oil :Train Or Blubber, And Spermaceti",1877,missing/short,0.0,19365,0,1613147
+"Oil :Train Or Blubber, And Spermaceti",1878,missing/short,0.0,20656,0,1613147
+"Oil :Train Or Blubber, And Spermaceti",1879,missing/short,0.0,20196,0,1613147
+"Oil :Train Or Blubber, And Spermaceti",1880,missing/short,0.0,15231,0,1613147
+"Oil :Train Or Blubber, And Spermaceti",1881,missing/short,0.0,18030,0,1613147
 "Of Europe, &Amp;C.",1872,missing/short,0.0,1431082,0,1251842
 "Of Europe, &Amp;C.",1873,missing/short,0.0,1505957,0,1251842
 "Of Europe, &Amp;C.",1874,missing/short,0.0,1439544,0,1251842
@@ -57,16 +70,15 @@ Strawboard Or Millboard,1896,missing/short,0.0,1208397,0,517161
 Strawboard Or Millboard,1897,missing/short,0.0,1482062,0,517161
 Strawboard Or Millboard,1898,missing/short,0.0,1737814,0,517161
 Strawboard Or Millboard,1899,missing/short,0.0,1774880,0,517161
-Cotton — Raw,1872,overcount,2.207,55637572,122768653,18918375263
-Cotton — Raw,1873,overcount,2.134,44244331,94399737,18918375263
-Cotton — Raw,1882,overcount,1.929,64240749,123941381,18918375263
-Cotton — Raw,1884,overcount,55.057,56400323,3105251191,18918375263
-Cotton — Raw,1885,overcount,118.743,65913827,7826827958,18918375263
-Cotton — Raw,1893,overcount,1.98,76784942,152008168,18918375263
-Cotton — Raw,1895,overcount,2.175,81749955,177831047,18918375263
-Cotton — Raw,1897,overcount,2.24,62740180,140530355,18918375263
-Cotton — Raw,1898,overcount,1.968,75859352,149277881,18918375263
-Cotton — Raw,1899,overcount,2.551,66636078,170013875,18918375263
+Cotton — Raw,1872,overcount,2.095,55637572,116578473,18627799457
+Cotton — Raw,1873,overcount,2.085,44244331,92235610,18627799457
+Cotton — Raw,1884,overcount,55.038,56400323,3104156764,18627799457
+Cotton — Raw,1885,overcount,118.737,65913827,7826410207,18627799457
+Cotton — Raw,1893,overcount,1.925,76784942,147849235,18627799457
+Cotton — Raw,1895,overcount,2.108,81749955,172346509,18627799457
+Cotton — Raw,1897,overcount,2.186,62740180,137134302,18627799457
+Cotton — Raw,1898,overcount,1.959,75859352,148585777,18627799457
+Cotton — Raw,1899,overcount,2.517,66636078,167705830,18627799457
 Caoutchouc,1885,overcount,4.411,180141,794517,115550258
 Nuts And Kernels — Coco-Nut,1894,overcount,5.312,299131,1589028,24006360
 Nuts And Kernels — Coco-Nut,1895,overcount,9.02,285016,2570780,24006360

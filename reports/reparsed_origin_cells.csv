@@ -3,7 +3,7 @@ class,commodity,year,origin,twin_origin,qty,value
 "same place, dropped","Cured Or Salted, Unenumerated",1896,Canada,,236421,619296
 "same place, dropped","Sugar — Unrefined, Total",1894,Mauritius,,266679,154568
 "same place, dropped","Sugar — Unrefined : Cane, And Other Sorts",1894,Mauritius,,266679,154568
-"same place, dropped",Fruit — Figs And Fig Cake,1893,Turkey,,101847,149438
+"same place, dropped",Fruit — Figs,1893,Turkey,,101847,149438
 "same place, dropped",Caoutchouc,1883,East Coast Of Africa,,7664,109663
 "same place, dropped","Sugar — Unrefined, Total",1895,Spanish West India Islands,,167906,96319
 "same place, dropped",Wood And Timber — Mahogany,1894,The Gold Coast,,7131,62713
@@ -16,6 +16,7 @@ class,commodity,year,origin,twin_origin,qty,value
 "same place, dropped","Sugar — Unrefined, Total",1896,Mauritius,,34657,16731
 "same place, dropped","Sugar — Unrefined : Cane, And Other Sorts",1896,Mauritius,,34657,16731
 "same place, dropped",Oats,1896,Turkey,,53000,13656
+"same place, dropped",Wood And Timber — Mahogany,1897,Spanish West India Islands,,1456,12646
 "same place, dropped","Sugar — Unrefined, Total",1896,Spanish West India Islands,,20160,11386
 "same place, dropped","Sugar — Unrefined, Total",1897,Spanish West India Islands,,21320,11046
 "same place, dropped",Jute,1895,Aden,,583,9222
@@ -59,6 +60,8 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept",Coffee — Raw,1894,Western Africa (Foreign,"West Africa, Foreign",3606,12910
 "two places, kept",Oil — Palm,1896,French,French Possessions,13026,12415
 "two places, kept",Dye Woods — Unenumerated,1893,West Africa Not Particu Larly Designated,Not Particularly Designated,690,7926
+"two places, kept",Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,1886,Spanish West India Islands,Hayti And St Domingo,812,7675
+"two places, kept",Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,1886,Central America,Other Foreign Countries,720,6357
 "two places, kept",Wax,1896,Gambia,Western Coast Of Africa Gambia,803,5219
 "two places, kept",Wax,1895,Gambia,Western Coast Of Africa Gambia,807,5181
 "two places, kept",Wax,1894,Gambia,Western Coast Of Africa Gambia,724,4653
@@ -95,12 +98,13 @@ class,commodity,year,origin,twin_origin,qty,value
 "two places, kept","Lac, Seed, Shell, Stick, And Dye",1895,Australasia,Other British Possessions,165,425
 "two places, kept","Cheese — Imitation Cheese (Including Lard Cheese, And All Kinds Of Artificial Or Imitation Cheese)",1896,United States Of America,Other Foreign Countries,218,364
 "two places, kept","Cheese — Imitation Cheese (Including Lard Cheese, And All Kinds Of Artificial Or Imitation Cheese)",1896,Other Foreign Countries,Holland,218,364
+"two places, kept",Woollen Yarn — For Fancy Purposes,1894,France,Other Foreign Countries,2716,342
 "two places, kept",Oxen And Bulls,1893,Other Foreign Countries,Norway,34,340
 "two places, kept",Oxen And Bulls,1896,Other British Possessions,Queensland,32,320
 "two places, kept","Sugar — Unrefined : Cane, And Other Sorts",1896,Belgium,Other Foreign Countries,478,285
 "two places, kept","Meat — Salted Or Fresh, Not Otherwise Described",1896,Other British Possessions,Newfoundland,181,272
 "two places, kept",Seeds — Rape,1897,Other Foreign Countries,United States Of America,110,264
-"two places, kept",Saltpetre (Nitrate Of Potash),1895,Other Foreign Countries,France,250,255
+"two places, kept",Saltpetre,1895,France,Other Foreign Countries,250,255
 "two places, kept","Skins, Furs, And Pelts — Seal",1897,Other Foreign Countries,Denmark,1100,252
 "two places, kept",Wood And Timber — Teak,1896,Victoria,Other British Possessions,20,250
 "two places, kept","Sago, And Flour Or Meal Thereof",1897,United States Of America,Other Foreign Countries,1001,250

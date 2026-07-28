@@ -1,4 +1,38 @@
 commodity,year,origin,unit,qty,anchor,x_anchor
+"Cotton Manufactures — Piece Goods, Plain",1886,Bengal And Burmah,Yard,997121800,33861432,29.4
+"Cotton Manufactures — Piece Goods, Plain",1887,Bengal And Burmah,Yard,903663400,53135774,17.0
+"Cotton Manufactures — Piece Goods, Plain",1885,Bengal And Burmah,Yard,810977000,44700765,18.1
+"Cotton Manufactures — Piece Goods, Plain",1886,Bombay,Yard,608538800,33861432,18.0
+"Cotton Manufactures — Piece Goods, Plain",1887,Bombay,Yard,504048500,53135774,9.5
+"Cotton Manufactures — Piece Goods, Plain",1885,Bombay,Yard,456511900,44700765,10.2
+"Cotton Manufactures — Piece Goods, Plain",1887,China,Yard,366650400,53135774,6.9
+"Cotton Manufactures — Piece Goods, Plain",1886,China,Yard,309588200,33861432,9.1
+"Cotton Manufactures — Piece Goods, Plain",1885,China,Yard,296175200,44700765,6.6
+"Cotton Manufactures — Piece Goods, Plain",1885,Turkey,Yard,223455100,44700765,5.0
+"Cotton Manufactures — Piece Goods, Plain",1886,Turkey,Yard,215895700,33861432,6.4
+"Cotton Manufactures — Piece Goods, Plain",1887,Turkey,Yard,198535900,53135774,3.7
+"Cotton Manufactures — Piece Goods, Plain",1885,Hong Kong,Yard,165129600,44700765,3.7
+"Cotton Manufactures — Piece Goods, Plain",1887,Egypt,Yard,140140600,53135774,2.6
+"Cotton Manufactures — Piece Goods, Plain",1885,Egypt,Yard,128018800,44700765,2.9
+"Cotton Manufactures — Piece Goods, Plain",1886,Egypt,Yard,125124400,33861432,3.7
+"Cotton Manufactures — Piece Goods, Plain",1887,Straits Settlements,Yard,123114200,53135774,2.3
+"Cotton Manufactures — Piece Goods, Plain",1887,Hong Kong,Yard,114666400,53135774,2.2
+"Cotton Manufactures — Piece Goods, Plain",1886,Brazil,Yard,112307700,33861432,3.3
+"Cotton Manufactures — Piece Goods, Plain",1885,Straits Settlements,Yard,108118300,44700765,2.4
+"Cotton Manufactures — Piece Goods, Plain",1886,Madras,Yard,106397400,33861432,3.1
+"Cotton Manufactures — Piece Goods, Plain",1886,Hong Kong,Yard,98766700,33861432,2.9
+"Cotton Manufactures — Piece Goods, Plain",1887,Brazil,Yard,94718800,53135774,1.8
+"Cotton Manufactures — Piece Goods, Plain",1886,Straits Settlements,Yard,90766200,33861432,2.7
+"Cotton Manufactures — Piece Goods, Plain",1885,Brazil,Yard,90686100,44700765,2.0
+"Cotton Manufactures — Piece Goods, Plain",1887,Madras,Yard,86808900,53135774,1.6
+"Cotton Manufactures — Piece Goods, Plain",1887,Italy,Yard,84215500,53135774,1.6
+"Cotton Manufactures — Piece Goods, Plain",1885,Madras,Yard,71882200,44700765,1.6
+"Cotton Manufactures — Piece Goods, Plain",1886,Italy,Yard,64483800,33861432,1.9
+"Cotton Manufactures — Piece Goods, Plain",1885,Italy,Yard,63546600,44700765,1.4
+"Cotton Manufactures — Piece Goods, Plain",1886,Argentine Republic,Yard,58061900,33861432,1.7
+"Cotton Manufactures — Piece Goods, Plain",1886,Belgium,Yard,49775200,33861432,1.5
+"Cotton Manufactures — Piece Goods, Plain",1886,Portugal,Yard,44508700,33861432,1.3
+"Cotton Manufactures — Piece Goods, Plain",1886,Foreign West Indies,Yard,41598900,33861432,1.2
 Feathers And Down — Ornamental,1889,British East Indies,Lb,8793614,796537,11.0
 Yarn,1889,Germany,Lb,7910652,3422121,2.3
 Yarn,1882,Germany,Lb,7455607,1408069,5.3
@@ -29,6 +63,7 @@ Feathers And Down — Ornamental,1889,British Possessions In South Africa,Lb,148
 "Varnished, Japanned Or Enamelled",1893,United States Of America,Lb,205054,3993,51.4
 "Varnished, Japanned Or Enamelled",1895,United States Of America,Lb,203110,4210,48.2
 "Varnished, Japanned Or Enamelled",1896,Holland,Lb,196381,4295,45.7
+Oil — Seed,1879,United States Of America,Ton,178876,15805,11.3
 "Varnished, Japanned Or Enamelled",1893,Holland,Lb,176628,3993,44.2
 "Varnished, Japanned Or Enamelled",1894,Holland,Lb,165536,3210,51.6
 "Madder, Madder Root, Garancine, And Munjeet",1885,Madras,Cwt,164553,24721,6.7
@@ -68,7 +103,6 @@ Galls,1896,Turkey,Cwt,30728,23807,1.3
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1896,Madagascar,Cwt,11580,6444,1.8
 "Varnished, Japanned Or Enamelled",1894,France,Lb,9520,3210,3.0
 "Varnished, Japanned Or Enamelled",1896,Other Foreign Countries,Lb,5198,4295,1.2
-"Unenumerated, Not Sweetened Or Mixed",1883,United States Of America Other Countries,Proof Gallon,1395602183,0,foreign to this commodity
 Umbrellas And Parasols,1872,United States Of America (Atlantic & Pacific),?,45939100,0,foreign to this commodity
 "Skins, Furs, And Pelts — Goat, Undressed",1884,British India,Number,2414005,0,foreign to this commodity
 "Skins And Furs — Foreign, Dressed In The United Kingdom",1878,Germany,?,2251113,0,foreign to this commodity
@@ -80,7 +114,6 @@ Whalebone (Whalefins) — Whale Fisheries,1888,Russia,Load,277021,0,foreign to t
 Whalebone (Whalefins) — Whale Fisheries,1888,Norway,Load,219987,0,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,Sweden,Load,205014,0,foreign to this commodity
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Belgium,?,166866,0,foreign to this commodity
-Saltpetre (Nitrate Of Potash),1882,British India,Cwt,163862,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,United States Of America,Lb,113942,81037,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Brazil,Lb,102199,81037,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Madras,Lb,82400,81037,foreign to this commodity
@@ -177,16 +210,6 @@ At Certain Ports,1894,Russia,?,253,0,foreign to this commodity
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,Belgium,Number,47,0,foreign to this commodity
 "Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,British East Indies,Number,46,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Japan,?,24,0,foreign to this commodity
-Petroleum,1899,Glass Manufactures Bottles,Gallon,0,0,foreign to this commodity
-Petroleum,1899,Lac,Gallon,0,0,foreign to this commodity
-Petroleum,1899,Hams,Gallon,0,0,foreign to this commodity
-Petroleum,1899,Hemp,Gallon,0,0,foreign to this commodity
-Petroleum,1899,Hops,Gallon,0,0,foreign to this commodity
-Petroleum,1899,Illuminating,Gallon,0,0,foreign to this commodity
-Petroleum,1899,Plants,Gallon,0,0,foreign to this commodity
-Petroleum,1899,Pork Salted,Gallon,0,0,foreign to this commodity
-Petroleum,1899,Poultry And Game Alive Or Dead,Gallon,0,0,foreign to this commodity
-Petroleum,1899,Prints,Gallon,0,0,foreign to this commodity
 "Flowers, Artificial — Raw, Not Otherwise Described",1875,China,Bushel,0,0,foreign to this commodity
 "Buttons And Studs, Not Of Metal",1880,All Countries,Gross,0,0,foreign to this commodity
 China And Porcelain Ware,1882,Australasia,Cwt,0,0,foreign to this commodity

@@ -1,4 +1,6 @@
 commodity,year,naive,gold_q,pipe_q,q_bucket,q_story,gold_v,pipe_v,v_bucket,v_story
+Tallow And Stearine,1866,1,1322477.0,1322477,exact01,equal,3008807.0,,nopipe,
+Tallow And Stearine,1867,1,1105458.0,1105458,exact01,equal,2419594.0,,nopipe,
 Tallow And Stearine,1868,1,1237348.0,1247064,within5,4_digits,2961319.0,2996258,within5,5_digits
 Tallow And Stearine,1869,1,1225789.0,1232144,within5,5_digits,2770285.0,2792570,within5,5_digits
 Tallow And Stearine,1870,1,1523298.0,1530893,within5,4_digits,3292215.0,3318566,within5,6_digits

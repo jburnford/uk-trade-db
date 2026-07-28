@@ -26,7 +26,7 @@ import csv
 import json
 import re
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import duckdb
@@ -1505,6 +1505,224 @@ def main():
             print(f'  curation: {n_cur} commodities dropped/folded/renamed'
                   + (f'; {n_comb} constituent cells added' if n_comb else '')
                   + (f'; {n_drop} misfiled country cells dropped' if n_drop else ''))
+    # ---- era-wording fold: one printed line, re-worded mid-series, is ONE
+    # commodity. The abstract re-words lines ('For Fancy purposes' -> 'For
+    # Fancy Purposes, including Berlin Wool and Zephyr Yarn' in 1893; 'Sago'
+    # -> 'Sago, And Flour Or Meal Thereof' in 1893) and the country tables
+    # follow, so one line becomes two or three payload commodities, each
+    # carrying a fragment of the T1 span and a fragment of the origins —
+    # and a changeover year printed under BOTH wordings is counted TWICE
+    # (woollen yarn's fancy line read 1,320,619 under each name in 1893).
+    # Discriminator ported from scripts/sibling_identity.py merge_era_variants
+    # (validated session-10 iteration 4: 71 merges, 9 families stable), all
+    # conditions necessary:
+    #   * same head and same modal unit;
+    #   * one article's vocabulary a PROPER SUBSET of the other's (disjoint
+    #     vocabularies are siblings, not eras);
+    #   * origin spans SUCCEED one another rather than nest;
+    #   * where the spans overlap, both names carry the SAME figure within
+    #     1% (disagreement refutes — 'Fruit — Oranges' vs '— Oranges and
+    #     Lemons' diverge in 1893; silence does not refute);
+    #   * no third label completes the superset's vocabulary (union parent,
+    #     not an era — the guard that spared 'Fruit — Oranges').
+    # Payload-grade additions, each refusing a known trap: a total label
+    # never merges with a non-total (the sugar trap); an exclusion label
+    # ('other than...') only merges with another exclusion label; and a
+    # GROUPLESS pair must be a literal prefix re-wording ('Watches' ->
+    # 'Watches, And Parts Thereof') because the headless bucket spans the
+    # whole corpus and subset-of-vocabulary alone is too weak there.
+    # The surviving key is the wording with more attested years; on an
+    # overlap year the LATER era's cell wins (counted once) — that is the
+    # era that continues, and the 1% agreement guard makes the choice
+    # near-neutral numerically. T1 (§TOTAL) merges under the same rule, so
+    # the anchor and the origins reunite on one key.
+    # Differs from sibling_identity's FILLER: OTHER/SORTS/KINDS/ALL are
+    # LOAD-BEARING here. That instrument analyses families; this pass merges
+    # SHIPPED series, and 'Other Sorts' is what distinguishes a residual
+    # sub-sort from its named siblings — with those words as noise,
+    # 'Sparkling : Other Sorts' reads as an era-rewording of 'Sparkling :
+    # Champagne' and two disjoint printed lines become one.
+    _EW_FILLER = {'AND', 'OR', 'OF', 'THE', 'IN', 'FOR', 'NOT', 'TOTAL',
+                  'UNENUMERATED', 'INCLUDING', 'VIZ', 'EXCEPT', 'THAN',
+                  'BY', 'ANY', 'FROM', 'TO', 'ON', 'AS', 'WITH'}
+    _EW_TOTAL = {'TOTAL', 'TOTALS'}
+
+    def _ew_toks(s):
+        return {t.upper() for t in re.split(r'[^A-Za-z0-9]+', s or '')
+                if len(t) > 1}
+
+    def _ew_head(n):
+        return n.split(' — ')[0].strip() if ' — ' in n else ''
+
+    def _ew_article(n):
+        return n.split(' — ')[-1].strip()
+
+    def _ew_vocab(n):
+        return _ew_toks(_ew_article(n)) - _EW_FILLER
+
+    def _ew_is_total(n):
+        t = _ew_toks(_ew_article(n))
+        if t & _EW_TOTAL:
+            return True
+        for k in (('ALL', 'KINDS'), ('ALL', 'SORTS'), ('EVERY', 'SORT')):
+            if set(k) <= t:
+                rest = (t - {'ALL', 'KINDS', 'SORTS', 'EVERY', 'SORT'}
+                        - _EW_FILLER)
+                if rest <= _ew_toks(_ew_head(n)):
+                    return True
+        return False
+
+    def _ew_is_exclusion(n):
+        return re.search(r'\b(other than|except|not being|excluding)\b',
+                         n, re.I) is not None
+
+    def _ew_norm(s):
+        return re.sub(r'\s+', ' ',
+                      re.sub(r'[^a-z0-9]+', ' ', (s or '').lower())).strip()
+
+    def _ew_series(entry):
+        c = entry.get('c') or {}
+        ucnt = Counter()
+        for u, rows in (c.get(TK) or {}).items():
+            ucnt[u] += len([r for r in rows if r[1]])
+        if not ucnt:
+            for cty, byu in c.items():
+                if cty == TK:
+                    continue
+                for u, rows in byu.items():
+                    ucnt[u] += len([r for r in rows if r[1]])
+        if not ucnt:
+            return None, {}, {}
+        unit = max(ucnt, key=ucnt.get)
+        t1 = {r[0]: r[1] for r in (c.get(TK) or {}).get(unit, ()) if r[1]}
+        orig = Counter()
+        for cty, byu in c.items():
+            if cty == TK or '(' in cty:
+                continue
+            for r in byu.get(unit, ()):
+                if r[1]:
+                    orig[r[0]] += r[1]
+        return unit, t1, dict(orig)
+
+    def fold_era_wordings(payload):
+        ser = {}
+        for n, e in payload.items():
+            u, t1, orig = _ew_series(e)
+            if u:
+                ser[n] = (u, t1, orig)
+
+        def _yrs(n):
+            _, t1, o = ser[n]
+            return set(t1) | set(o)
+
+        def _completes_union(a, b, bucket):
+            va, vb = _ew_vocab(a), _ew_vocab(b)
+            for c3 in bucket:
+                if c3 in (a, b) or c3 not in ser:
+                    continue
+                vc = _ew_vocab(c3)
+                if vc and not (vc & va) and (va | vc) == vb:
+                    return True
+            return False
+
+        def era_pair(a, b, bucket):
+            ua, t1a, oa = ser[a]
+            ub, t1b, ob = ser[b]
+            if ua != ub:
+                return None
+            if _ew_is_total(a) != _ew_is_total(b):
+                return None
+            if _ew_is_exclusion(a) != _ew_is_exclusion(b):
+                return None
+            va, vb = _ew_vocab(a), _ew_vocab(b)
+            if not va or not vb or not (va < vb or vb < va):
+                return None
+            if not _ew_head(a):
+                # groupless: demand a literal prefix re-wording
+                sa, sb = _ew_norm(_ew_article(a)), _ew_norm(_ew_article(b))
+                short, long_ = (sa, sb) if len(sa) < len(sb) else (sb, sa)
+                if not long_.startswith(short + ' '):
+                    return None
+            if (_completes_union(a, b, bucket)
+                    or _completes_union(b, a, bucket)):
+                return None
+            ya, yb = _yrs(a), _yrs(b)
+            if not ya or not yb:
+                return None
+            sa2 = set(oa) if (oa and ob) else ya
+            sb2 = set(ob) if (oa and ob) else yb
+            if not ((min(sa2) < min(sb2) and max(sa2) < max(sb2))
+                    or (min(sb2) < min(sa2) and max(sb2) < max(sa2))):
+                return None
+            for y in ya & yb:
+                for x, z in ((oa.get(y, 0), ob.get(y, 0)),
+                             (t1a.get(y, 0), t1b.get(y, 0))):
+                    if x and z:
+                        if abs(x - z) > 0.01 * max(x, z):
+                            return None
+                        break
+            canon = a if len(ya) >= len(yb) else b
+            other = b if canon == a else a
+            return canon, other, max(_yrs(other)) > max(_yrs(canon))
+
+        def fold_pair(canon, other, other_is_later):
+            dst, src = payload[canon], payload.pop(other)
+            for ctry, byu in src['c'].items():
+                dbyu = dst['c'].setdefault(ctry, {})
+                for u, rows in byu.items():
+                    idx = {row[0]: i for i, row in enumerate(dbyu.get(u, []))}
+                    for row in rows:
+                        if row[0] in idx:
+                            if other_is_later:      # later era's cell wins,
+                                old = dbyu[u][idx[row[0]]]   # counted once
+                                dbyu[u][idx[row[0]]] = row
+                                if ctry != TK and len(row) > 3 and len(old) > 3:
+                                    dst['v'] = max(0.0, dst.get('v', 0)
+                                                   - min(old[3], 50_000_000)
+                                                   + min(row[3], 50_000_000))
+                            continue
+                        dbyu.setdefault(u, []).append(row)
+                        if ctry != TK and len(row) > 3:
+                            dst['v'] = dst.get('v', 0) + min(row[3], 50_000_000)
+            u2, t12, o2 = _ew_series(dst)
+            ser[canon] = (u2, t12, o2)
+
+        buckets = defaultdict(list)
+        for n in ser:
+            buckets[(ser[n][0], _ew_head(n))].append(n)
+        merges = []
+        for names in buckets.values():
+            if len(names) < 2:
+                continue
+            changed = True
+            while changed:
+                changed = False
+                live = sorted(n for n in names if n in ser and n in payload)
+                for i, a in enumerate(live):
+                    for b in live[i + 1:]:
+                        pair = era_pair(a, b, live)
+                        if not pair:
+                            continue
+                        canon, other, later = pair
+                        merges.append((canon, other,
+                                       ser[canon][0], _ew_head(canon) or '(groupless)'))
+                        fold_pair(canon, other, later)
+                        changed = True
+                        break
+                    if changed:
+                        break
+        if merges:
+            with open(BASE / 'reports' / 'era_wording_folds.csv', 'w',
+                      newline='') as f:
+                w = csv.writer(f)
+                w.writerow(['kept', 'folded_in', 'unit', 'head'])
+                w.writerows(sorted(merges))
+            print(f'  era-wording folds: {len(merges)} '
+                  f'-> reports/era_wording_folds.csv')
+        return len(merges)
+
+    n_era = fold_era_wordings(payload)
+
     # A fold brings in countries the target has no labelled cell for, so the
     # per-country unit tests inside the fold cannot reach them and they arrive
     # unit-less - invisible to the quantity axis. Only the ANCHOR pass is safe
@@ -1564,7 +1782,7 @@ def main():
           f"unit-healed: {n_healed:,}; coast-rollup: {n_coast:,}; "
           f"coast-sibling folds: {n_sib:,}; aggregate-beside-members: {n_agg:,}; "
           f"split-year units: {n_split:,}; anchor-units restored: {n_unit:,}; "
-          f"Tun/Ton: {n_tunton:,}; "
+          f"Tun/Ton: {n_tunton:,}; era folds: {n_era}; "
           f'deduped: {n_dedup:,})  '
           f'MB: {len(js) / 1e6:.2f}  -> {out}')
 
