@@ -24357,13 +24357,13 @@ Fruit — Currants,1895,Holland,223,140,1,1
 Fruit — Currants,1895,Other Foreign Countries,1203,1015,1,0
 Fruit — Currants,1895,Turkey,5567,3995,1,1
 Fruit — Currants,1896,Greece,983609,744953,1,1
-Fruit — Currants,1896,Holland,0,40,1,1
+Fruit — Currants,1896,Holland,46,40,1,1
 Fruit — Currants,1896,Other Foreign Countries,1317,1151,1,0
 Fruit — Currants,1896,Turkey,1658,1630,1,1
 Fruit — Currants,1897,Greece,1126478,1043646,1,1
 Fruit — Currants,1897,Holland,5507,6073,1,1
 Fruit — Currants,1897,Other Foreign Countries,1258,661,1,0
-Fruit — Currants,1897,Russia South,0,11992,1,0
+Fruit — Currants,1897,Russia South,14513,11992,1,0
 Fruit — Currants,1897,Turkey,5386,4852,1,1
 Fruit — Currants,1898,Greece,1231271,1074878,1,1
 Fruit — Currants,1898,Holland,3945,3142,1,1
@@ -36447,7 +36447,6 @@ Leather Manufactures — Gloves,1895,France,747998,779755,1,1
 Leather Manufactures — Gloves,1895,Germany,30570,27934,1,1
 Leather Manufactures — Gloves,1895,Holland,887512,942102,1,1
 Leather Manufactures — Gloves,1895,Other Foreign Countries,15,14,1,0
-Leather Manufactures — Gloves,1896,Australasia,41,53,0,1
 Leather Manufactures — Gloves,1896,Belgium,402973,431814,1,1
 Leather Manufactures — Gloves,1896,Denmark,2497,2516,1,1
 Leather Manufactures — Gloves,1896,France,857638,902608,1,1
@@ -44921,8 +44920,8 @@ Oil — Animal,1897,Germany,605,807,1,1
 Oil — Animal,1897,Holland,376,628,1,1
 Oil — Animal,1897,Other British Possessions,50,105,1,0
 Oil — Animal,1897,Other Foreign Countries,410,399,1,0
-Oil — Animal,1897,United States Of America,49254,63534,0,1
-Oil — Animal,1897,United States Of America (Atlantic),49254,63534,1,1
+Oil — Animal,1897,United States Of America,49254,63534,1,1
+Oil — Animal,1897,United States Of America (Atlantic),49254,63534,0,1
 Oil — Animal,1898,Argentine Republic,1018,1415,1,1
 Oil — Animal,1898,Australasia,18,21,1,1
 Oil — Animal,1898,Belgium,644,605,1,1
@@ -46909,7 +46908,7 @@ Oil — Seed,1893,United States Of America,4280,89850,1,1
 Oil — Seed,1894,Belgium,7037,170600,1,1
 Oil — Seed,1894,Bengal,263,5165,1,1
 Oil — Seed,1894,Bombay,168,3954,1,1
-Oil — Seed,1894,British East Indies,431,9119,0,1
+Oil — Seed,1894,British East Indies,431,9119,1,1
 Oil — Seed,1894,France,7637,163442,1,1
 Oil — Seed,1894,Germany,6959,157705,1,1
 Oil — Seed,1894,Holland,2571,63640,1,1
@@ -69488,7 +69487,6 @@ Telegraphic Wires And Apparatus — Other Kinds Of Manufactured Tobacco,1884,Oth
 "Tin — In Blocks, Ingots, Bars, Or Slabs",1895,Tasmania,326,1137,1,1
 "Tin — In Blocks, Ingots, Bars, Or Slabs",1895,United States Of America,660,1815,1,1
 "Tin — In Blocks, Ingots, Bars, Or Slabs",1895,Victoria,29010,93169,1,1
-"Tin — In Blocks, Ingots, Bars, Or Slabs",1896,Australasia,84292,257408,0,1
 "Tin — In Blocks, Ingots, Bars, Or Slabs",1896,Bombay,33600,101105,1,1
 "Tin — In Blocks, Ingots, Bars, Or Slabs",1896,Chile,22496,61964,1,1
 "Tin — In Blocks, Ingots, Bars, Or Slabs",1896,France,4313,12324,1,1
@@ -80794,7 +80792,7 @@ Woollen Yarn — For Weaving,1895,Russia,21,498,1,1
 Woollen Yarn — For Weaving,1895,Sweden,386,7040,1,1
 Woollen Yarn — For Weaving,1895,Turkey,419,4149,1,1
 Woollen Yarn — For Weaving,1895,United States Of America,491,7576,1,1
-Woollen Yarn — For Weaving,1895,United States Of America (Atlantic),1340,250,0,1
+Woollen Yarn — For Weaving,1895,United States Of America (Atlantic),1340,250,1,1
 Woollen Yarn — For Weaving,1896,Belgium,12524771,1107418,1,1
 Woollen Yarn — For Weaving,1896,France,3963842,555127,1,1
 Woollen Yarn — For Weaving,1896,Germany,2015592,141536,1,1

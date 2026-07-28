@@ -1,104 +1,117 @@
 shadow,shadow_t1_years,shadow_unit,shadow_gbp,counterpart,kind,counterpart_gbp,counterpart_countries,overlap_years,exact,near,unit_agrees
-Animal,33,Cwt,60152,Oil — Animal,duplicate,4535726,19,28,18,3,1
+Animal,33,Cwt,60152,Oil — Animal,duplicate,4539049,19,28,18,3,1
+Seed,35,Ton,396126,Oil — Seed,duplicate,15560564,25,25,15,1,1
 Currants,30,Cwt,1586042,Fruit — Currants,duplicate,38775142,28,24,14,7,1
-Seed,20,Ton,396126,Oil — Seed,duplicate,13929275,23,16,9,1,1
-Gloves,23,Dozen Pairs,1219989,Leather Manufactures — Gloves,duplicate,49899470,17,22,8,13,1
-Raisins,25,Cwt,1033510,Fruit — Raisins,duplicate,39405611,57,19,6,8,1
-Arabic,17,Cwt,200083,Gum — Arabic,duplicate,4926901,44,11,5,1,1
+Unenumerated,26,Value,66414,Leather Manufactures — Unenumerated,duplicate,6088471,12,18,10,0,1
+Gloves,21,Dozen Pairs,1219989,Leather Manufactures — Gloves,duplicate,49899470,17,20,8,11,1
+Raisins,25,Cwt,1033510,Fruit — Raisins,duplicate,39405608,57,19,6,8,1
+Arabic,17,Cwt,200083,Gum — Arabic,duplicate,4926169,44,11,5,1,1
+Logwood,17,Ton,363083,Dye Woods — Logwood,duplicate,9121043,28,10,5,1,1
 Unmanufactured,11,Ton,2501526,Cork — Unmanufactured,duplicate,5178257,15,9,5,1,1
-Raw,31,Lb,4727126,Silk — Raw,duplicate,127642923,32,26,4,0,1
-Logwood,17,Ton,363083,Dye Woods — Logwood,duplicate,21269545,54,11,4,0,1
+Raw,31,Lb,4727126,Silk — Raw,duplicate,77642923,32,26,4,0,1
 Ginger,9,Cwt,175435,Spices — Ginger,duplicate,2293290,22,5,4,1,1
-Rape,12,Quarter,307348,Seeds — Rape,duplicate,23137134,30,8,2,0,1
-Stuffs,5,Yard,5111544,Woollen Manufactures — Stuffs,duplicate,81404071,17,4,2,1,1
+For Weaving,7,Lb,1511924,Woollen Yarn — For Weaving,duplicate,46668828,20,7,2,3,1
+Stuffs,5,Yard,5111544,Woollen Manufactures — Stuffs,duplicate,81404071,18,4,2,1,1
 Swine,2,Number,668,"Animals, Living — Swine",duplicate,2478736,13,2,2,0,1
 Geneva,14,Proof Gallon,61252,Spirits — Geneva,duplicate,708164,8,5,1,4,1
-Pepper,12,Lb,301942,Spices — Pepper,duplicate,13745201,46,5,1,1,1
+Pepper,12,Lb,301942,Spices — Pepper,duplicate,13745201,47,5,1,1,1
 Brandy,10,Proof Gallon,1261800,Spirits — Brandy,duplicate,38702285,35,7,1,0,1
 "In Blocks, Ingots, Bars, Or Slabs",8,Cwt,2743814,"Tin — In Blocks, Ingots, Bars, Or Slabs",duplicate,41132729,35,4,1,2,1
 Cinnamon,7,Lb,136066,Spices — Cinnamon,duplicate,2026282,25,4,1,0,1
-For Weaving,7,Lb,1511924,Woollen Yarn — For Weaving,duplicate,35942005,10,1,1,0,1
-Of Other Sorts,35,Cwt,309099,Oil-Seed Cake — Of Other Sorts,duplicate,3847110,49,5,0,0,0
-Unenumerated,35,Value,66414,Dye Woods — Unenumerated,duplicate,3908895,59,0,0,0,0
-Unenumerated,35,Value,66414,Manures — Unenumerated,duplicate,7610945,33,0,0,0,0
-Unenumerated,35,Value,66414,Spices — Unenumerated,duplicate,7806665,41,0,0,0,0
-Unenumerated,35,Value,66414,Wood And Timber — Unenumerated,duplicate,9295072,59,0,0,0,0
-Unenumerated,35,Value,66414,Gum — Unenumerated,duplicate,8109280,61,0,0,0,0
-Unenumerated,35,Value,66414,Dye Woods: Logwood — Unenumerated,duplicate,244196,19,0,0,0,1
-Unenumerated,35,Value,66414,Glass — Unenumerated,duplicate,833701,10,0,0,0,0
-Unenumerated,35,Value,66414,Leather Manufactures — Unenumerated,duplicate,613492,11,0,0,0,1
-Unenumerated,35,Value,66414,Skins And Furs — Unenumerated,duplicate,1149207,5,0,0,0,0
-Olive,35,Ton,1559183,Oil — Olive,duplicate,24606515,24,0,0,0,0
+Of Other Sorts,35,Cwt,309099,Oil-Seed Cake — Of Other Sorts,duplicate,395699,20,0,0,0,0
+Olive,35,Ton,1559183,Oil — Olive,duplicate,24606535,24,0,0,0,0
 Olive,35,Ton,1559183,Nuts And Kernels — Olive,duplicate,3037841,10,0,0,0,0
-Raw,31,Lb,4727126,Cotton — Raw,duplicate,1270928688,75,0,0,0,0
+Seed,35,Ton,396126,Nuts And Kernels — Seed,duplicate,6754277,26,7,0,0,1
+Raw,31,Lb,4727126,Cotton — Raw,duplicate,1200324459,76,0,0,0,0
 Raw,31,Lb,4727126,Cherries — Raw,duplicate,2560640,7,0,0,0,0
 Raw,31,Lb,4727126,Grapes — Raw,duplicate,8287404,15,0,0,0,0
 Raw,31,Lb,4727126,Onions — Raw,duplicate,15346577,24,0,0,0,0
 Raw,31,Lb,4727126,Plums — Raw,duplicate,5386396,8,0,0,0,0
-Raw,31,Lb,4727126,Coffee — Raw,duplicate,278144573,115,2,0,0,0
+Raw,31,Lb,4727126,Coffee — Raw,duplicate,173798834,110,2,0,0,0
 Raw,31,Lb,4727126,Gutta Percha — Raw,duplicate,3478078,8,0,0,0,0
 Raw,31,Lb,4727126,Pears — Raw,duplicate,2257186,9,0,0,0,0
 Raw,31,Lb,4727126,Hides — Raw,duplicate,917765,13,0,0,0,0
 Raw,31,Lb,4727126,Apples — Raw,duplicate,6709080,15,0,0,0,0
-"Manufactures, Unenumerated",24,Value,86211,"Zinc — Manufactures, Unenumerated",duplicate,9076353,10,0,0,0,0
-Seed,20,Ton,396126,Nuts And Kernels — Seed,duplicate,6703371,24,7,0,0,1
-"Cow, Ox, Bull, Or Elk",18,?,218396,"Hair — Cow, Ox, Bull, Or Elk",duplicate,3557884,27,0,0,0,0
+Unenumerated,26,Value,66414,Dye Woods — Unenumerated,duplicate,3908895,59,0,0,0,0
+Unenumerated,26,Value,66414,Drugs — Unenumerated,duplicate,8931775,50,13,0,0,1
+Unenumerated,26,Value,66414,Manures — Unenumerated,duplicate,7610945,33,0,0,0,0
+Unenumerated,26,Value,66414,Spices — Unenumerated,duplicate,7806665,41,0,0,0,0
+Unenumerated,26,Value,66414,Wood And Timber — Unenumerated,duplicate,9295072,62,0,0,0,0
+Unenumerated,26,Value,66414,Gum — Unenumerated,duplicate,8109280,61,0,0,0,0
+Unenumerated,26,Value,66414,Dye Woods: Logwood — Unenumerated,duplicate,244196,19,0,0,0,1
+Unenumerated,26,Value,66414,Glass — Unenumerated,duplicate,833701,10,0,0,0,0
+Unenumerated,26,Value,66414,Skins And Furs — Unenumerated,duplicate,1149207,5,0,0,0,0
+"Manufactures, Unenumerated",24,Value,86211,"Zinc — Manufactures, Unenumerated",duplicate,9098476,10,0,0,0,0
+"Cow, Ox, Bull, Or Elk",18,?,218396,"Hair — Cow, Ox, Bull, Or Elk",duplicate,3577481,27,0,0,0,0
 Rum,12,Proof Gallon,344446,Spirits — Rum,duplicate,15066488,51,6,0,1,1
-"Unenumerated, For Expressing Oil Therefrom",12,Bushel,164083,"Seeds — Unenumerated, For Expressing Oil Therefrom",duplicate,7265593,44,0,0,0,0
-Unmanufactured,11,Ton,2501526,Tobacco — Unmanufactured,duplicate,68464531,65,0,0,0,0
-Wheat,9,Cwt,18760505,Corn And Grain — Wheat,duplicate,651233249,51,5,0,1,1
-Ornamental,9,Lb,250631,Feathers And Down — Ornamental,duplicate,20403420,37,7,0,0,1
-Pig And Sheet,9,Ton,1976436,Lead — Pig And Sheet,duplicate,72358755,55,8,0,1,1
-Fresh,8,Cwt,4413148,Beef — Fresh,duplicate,24773321,7,8,0,0,1
-"Chemical, Essential, Or Perfumed",7,Cwt,0,"Oil — Chemical, Essential, Or Perfumed",duplicate,12616462,46,0,0,0,0
-Horses,5,Cwt,921490,"Animals, Living — Horses",duplicate,6454541,11,0,0,0,0
+Unmanufactured,11,Ton,2501526,Tobacco — Unmanufactured,duplicate,68474291,65,0,0,0,0
+Wheat,9,Cwt,18760505,Corn And Grain — Wheat,duplicate,662851703,51,5,0,1,1
+Ornamental,9,Lb,250631,Feathers And Down — Ornamental,duplicate,26722449,37,7,0,0,1
+Pig And Sheet,9,Ton,1976436,Lead — Pig And Sheet,duplicate,72466926,55,8,0,1,1
+Fresh,8,Cwt,4413148,Beef — Fresh,duplicate,53307583,18,8,0,0,1
+"Chemical, Essential, Or Perfumed",7,Cwt,0,"Oil — Chemical, Essential, Or Perfumed",duplicate,13403523,49,0,0,0,0
+Wrought Or Manufactured,6,Ton,301953,Metal — Wrought Or Manufactured,duplicate,13206406,15,3,0,0,0
+Horses,5,Cwt,921490,"Animals, Living — Horses",duplicate,6514473,12,0,0,0,0
 Clover And Grass,4,?,855524,Seeds — Clover And Grass,duplicate,19794910,23,0,0,0,0
-"Alpaca, Vicuña, And Llama",4,Lb,364175,"Wool — Alpaca, Vicuña, And Llama",duplicate,7819550,13,3,0,3,1
+"Alpaca, Vicuña, And Llama",4,Lb,364175,"Wool — Alpaca, Vicuña, And Llama",duplicate,7819850,13,3,0,3,1
 For Beds,1,Cwt,0,Feathers — For Beds,duplicate,1875738,15,0,0,0,1
 For Beds,1,Cwt,0,Feathers And Down — For Beds,duplicate,356314,13,0,0,0,1
-Mahogany,17,Ton,332732,Wood And Timber — Mahogany,reunion,21182198,44,8,3,0,1
-Logwood,17,Ton,363083,Bark — Logwood,reunion,10080,8,1,1,0,1
+Unenumerated,26,Value,66414,"Leather, Undressed — Unenumerated",reunion,756531,10,3,2,1,1
+Logwood,17,Ton,363083,Bark — Logwood,reunion,1888138,12,6,1,1,1
+Dyes Obtained From Coal Tar,14,Value,415716,"Dye Stuffs, And Substances Used In Tanning — Dyes Obtained From Coal Tar",reunion,668955,8,2,1,0,1
 Rum,12,Proof Gallon,344446,Cocoa — Rum,reunion,423390,14,1,1,0,1
 Unmanufactured,11,Ton,2501526,"Cordage, Twine, And Cable Yarn — Unmanufactured",reunion,178777,3,1,1,0,1
 Unmanufactured,11,Ton,2501526,Conk — Unmanufactured,reunion,389725,8,1,1,0,1
 Ginger,9,Cwt,175435,Lates — Ginger,reunion,844974,14,5,1,0,1
-Of Other Sorts,35,Cwt,309099,Beer And Ale — Of Other Sorts,reunion,1605219,14,0,0,0,1
-Of Other Sorts,35,Cwt,309099,Bark — Of Other Sorts,reunion,190535,10,10,0,0,1
+Of Other Sorts,35,Cwt,309099,Beer And Ale — Of Other Sorts,reunion,1605858,14,0,0,0,1
+Of Other Sorts,35,Cwt,309099,Bark — Of Other Sorts,reunion,614912,16,11,0,0,1
 Of Other Sorts,35,Cwt,309099,Zinc — Of Other Sorts,reunion,402557,7,0,0,0,1
 Of Other Sorts,35,Cwt,309099,Metal — Of Other Sorts,reunion,121926,16,0,0,0,1
-Of Other Sorts,35,Cwt,309099,Oil — Of Other Sorts,reunion,1164536,31,2,0,0,1
-Unenumerated,35,Value,66414,Woollen Yarn — Unenumerated,reunion,857958,29,0,0,0,1
-Unenumerated,35,Value,66414,Beads — Unenumerated,reunion,52026,2,0,0,0,1
-Unenumerated,35,Value,66414,Bark — Unenumerated,reunion,3033,1,0,0,0,1
-Unenumerated,35,Value,66414,"Dye Stuffs, And Substances Used In Tanning — Unenumerated",reunion,4033508,39,0,0,0,1
-Unenumerated,35,Value,66414,Paper — Unenumerated,reunion,12538868,25,0,0,0,1
-Unenumerated,35,Value,66414,Woollen Manufactures — Unenumerated,reunion,1070181,30,0,0,0,1
-Unenumerated,35,Value,66414,"Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Unenumerated",reunion,1227023,33,0,0,0,1
-Unenumerated,35,Value,66414,"Horns, Tips And Pieces Of Horns And Hoofs — Unenumerated",reunion,13947232,15,0,0,0,1
-Unenumerated,35,Value,66414,Slates — Unenumerated,reunion,206926,5,0,0,0,1
-Unenumerated,35,Value,66414,Corn And Grain — Unenumerated,reunion,343457,21,0,0,0,1
-Unenumerated,35,Value,66414,Guar — Unenumerated,reunion,330170,15,0,0,0,1
-Unenumerated,35,Value,66414,Cotton Manufactures — Unenumerated,reunion,12316296,28,0,0,0,1
-Unenumerated,35,Value,66414,Metal — Unenumerated,reunion,501539,10,0,0,0,1
-Unenumerated,35,Value,66414,Leather — Unenumerated,reunion,831978,14,0,0,0,1
-Unenumerated,35,Value,66414,Flax — Unenumerated,reunion,859830,10,0,0,0,1
-Unenumerated,35,Value,66414,"Wine, British Made — Unenumerated",reunion,0,12,0,0,0,1
-Unenumerated,35,Value,66414,Hair — Unenumerated,reunion,0,12,0,0,0,1
-Unenumerated,35,Value,66414,"Fish, Fresh And Cured — Unenumerated",reunion,0,8,0,0,0,1
-Unenumerated,35,Value,66414,Painters' Colours And Materials — Unenumerated,reunion,0,32,0,0,0,1
-Unenumerated,35,Value,66414,Copper — Unenumerated,reunion,2183141,21,0,0,0,1
-Unenumerated,35,Value,66414,Extracts — Unenumerated,reunion,0,4,0,0,0,1
-Unenumerated,35,Value,66414,Animals Living — Unenumerated,reunion,24266,15,0,0,0,1
-Unenumerated,35,Value,66414,Pilchards — Unenumerated,reunion,0,4,0,0,0,1
-Unenumerated,35,Value,66414,Implements And Tools — Unenumerated,reunion,0,28,0,0,0,1
-Unenumerated,35,Value,66414,Silk Manufactures — Unenumerated,reunion,0,20,0,0,0,1
-Unenumerated,35,Value,66414,Spirits — Unenumerated,reunion,99492,12,0,0,0,1
-Unenumerated,35,Value,66414,Sawn — Unenumerated,reunion,14491,2,0,0,0,1
-Unenumerated,35,Value,66414,Hail — Unenumerated,reunion,0,2,0,0,0,1
+Of Other Sorts,35,Cwt,309099,Oil — Of Other Sorts,reunion,633362,29,1,0,0,1
 Olive,35,Ton,1559183,Metal — Olive,reunion,607203,10,0,0,0,1
-Raw,31,Lb,4727126,Shells Of All Kinds — Raw,reunion,7789447,15,0,0,0,1
+Raw,31,Lb,4727126,Shells Of All Kinds — Raw,reunion,7955092,15,0,0,0,1
+Unenumerated,26,Value,66414,Cotton Manufactures — Unenumerated,reunion,36096276,31,18,0,0,1
+Unenumerated,26,Value,66414,Woollen Yarn — Unenumerated,reunion,3813266,30,12,0,0,1
+Unenumerated,26,Value,66414,Animals — Unenumerated,reunion,104417,1,6,0,0,1
+Unenumerated,26,Value,66414,Beads — Unenumerated,reunion,52026,2,0,0,0,1
+Unenumerated,26,Value,66414,Oil — Unenumerated,reunion,3541812,27,18,0,0,1
+Unenumerated,26,Value,66414,Embroidery And Needlework — Unenumerated,reunion,142138,7,6,0,0,1
+Unenumerated,26,Value,66414,Hair — Unenumerated,reunion,4962644,21,15,0,0,1
+Unenumerated,26,Value,66414,Horse — Unenumerated,reunion,1067738,10,4,0,0,1
+Unenumerated,26,Value,66414,Woollen Manufactures — Unenumerated,reunion,62272976,31,17,0,0,1
+Unenumerated,26,Value,66414,"Flowers, Artificial — Unenumerated",reunion,255786,7,1,0,0,1
+Unenumerated,26,Value,66414,Bark — Unenumerated,reunion,3033,1,0,0,0,1
+Unenumerated,26,Value,66414,"Animals, Living — Unenumerated",reunion,559622,23,10,0,0,1
+Unenumerated,26,Value,66414,"Dye Stuffs, And Substances Used In Tanning — Unenumerated",reunion,4033508,39,0,0,0,1
+Unenumerated,26,Value,66414,"Nitre, Cubic (Nitrate Of Soda) — Unenumerated",reunion,141720,6,1,0,0,1
+Unenumerated,26,Value,66414,Paper — Unenumerated,reunion,14009953,25,4,0,0,1
+Unenumerated,26,Value,66414,Cows — Unenumerated,reunion,91231,9,4,0,0,1
+Unenumerated,26,Value,66414,Silk Manufactures — Unenumerated,reunion,25474717,22,7,0,0,1
+Unenumerated,26,Value,66414,Corn And Grain — Unenumerated,reunion,1905369,24,1,0,0,1
+Unenumerated,26,Value,66414,Hats Or Bonnets — Unenumerated,reunion,310871,8,0,0,0,1
+Unenumerated,26,Value,66414,Silk — Unenumerated,reunion,5989816,14,0,0,0,1
+Unenumerated,26,Value,66414,"Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Unenumerated",reunion,1227023,33,0,0,0,1
+Unenumerated,26,Value,66414,"Horns, Tips And Pieces Of Horns And Hoofs — Unenumerated",reunion,13947232,15,0,0,0,1
+Unenumerated,26,Value,66414,Slates — Unenumerated,reunion,206926,5,0,0,0,1
+Unenumerated,26,Value,66414,Guar — Unenumerated,reunion,330170,15,0,0,0,1
+Unenumerated,26,Value,66414,Fish — Unenumerated,reunion,202205,7,1,0,0,1
+Unenumerated,26,Value,66414,Ammunition — Unenumerated,reunion,220741,12,2,0,0,1
+Unenumerated,26,Value,66414,Eggs — Unenumerated,reunion,3042663,17,2,0,0,1
+Unenumerated,26,Value,66414,Metal — Unenumerated,reunion,501539,10,0,0,0,1
+Unenumerated,26,Value,66414,Leather — Unenumerated,reunion,831978,14,0,0,0,1
+Unenumerated,26,Value,66414,Flax — Unenumerated,reunion,859830,10,0,0,0,1
+Unenumerated,26,Value,66414,"Wine, British Made — Unenumerated",reunion,0,14,0,0,0,1
+Unenumerated,26,Value,66414,"Fish, Fresh And Cured — Unenumerated",reunion,0,8,0,0,0,1
+Unenumerated,26,Value,66414,Painters' Colours And Materials — Unenumerated,reunion,0,32,0,0,0,1
+Unenumerated,26,Value,66414,Copper — Unenumerated,reunion,2183141,21,0,0,0,1
+Unenumerated,26,Value,66414,Extracts — Unenumerated,reunion,0,4,0,0,0,1
+Unenumerated,26,Value,66414,Pilchards — Unenumerated,reunion,0,4,0,0,0,1
+Unenumerated,26,Value,66414,Implements And Tools — Unenumerated,reunion,0,28,0,0,0,1
+Unenumerated,26,Value,66414,Spirits — Unenumerated,reunion,99492,12,0,0,0,1
+Unenumerated,26,Value,66414,Sawn — Unenumerated,reunion,14491,2,0,0,0,1
+Unenumerated,26,Value,66414,Hail — Unenumerated,reunion,0,2,0,0,0,1
 "Manufactures, Unenumerated",24,Value,86211,"Lead — Manufactures, Unenumerated",reunion,337972,12,0,0,0,1
-"Manufactures, Unenumerated",24,Value,86211,"Glass — Manufactures, Unenumerated",reunion,32390988,13,0,0,0,1
+"Manufactures, Unenumerated",24,Value,86211,"Glass — Manufactures, Unenumerated",reunion,32264593,13,0,0,0,1
 "Manufactures, Unenumerated",24,Value,86211,"Zino — Manufactures, Unenumerated",reunion,762578,4,0,0,0,1
 "Manufactures, Unenumerated",24,Value,86211,"Flint — Manufactures, Unenumerated",reunion,1744451,6,0,0,0,1
 Arabic,17,Cwt,200083,Glass — Arabic,reunion,18293,3,0,0,0,1
@@ -111,12 +124,15 @@ Myrobalans,13,Cwt,179007,Corn And Grain — Myrobalans,reunion,200914,4,0,0,0,1
 Myrobalans,13,Cwt,179007,"Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Myrobalans",reunion,1549854,6,5,0,0,1
 Myrobalans,13,Cwt,179007,"Copper, Ore Of — Myrobalans",reunion,1535309,5,5,0,0,1
 Myrobalans,13,Cwt,179007,Dye Stuffs — Myrobalans,reunion,8147,2,0,0,0,1
-Beef,13,Cwt,1164491,Meat — Beef,reunion,9386544,20,7,0,0,1
-Rape,12,Quarter,307348,Saltpetre (Nitrate Of Potash) — Rape,reunion,2275558,46,5,0,0,1
-Pepper,12,Lb,301942,Slates — Pepper,reunion,2494516,24,7,0,0,1
+Beef,13,Cwt,1164491,Meat — Beef,reunion,9420092,20,7,0,0,1
+Pepper,12,Lb,301942,Slates — Pepper,reunion,2494521,24,7,0,0,1
 Pepper,12,Lb,301942,"Skins, Furs, And Pelts — Pepper",reunion,1364884,14,0,0,0,1
 Pepper,12,Lb,301942,"Skins, And Furs — Pepper",reunion,69753,14,2,0,0,1
-Rum,12,Proof Gallon,344446,Fruit — Rum,reunion,2027406,22,5,0,3,1
+Rum,12,Proof Gallon,344446,Fruit — Rum,reunion,2027545,22,5,0,3,1
+Unmanufactured,11,Ton,2501526,Zinc — Unmanufactured,reunion,17792799,66,0,0,0,1
+Unmanufactured,11,Ton,2501526,"Ore, Unenumerated — Unmanufactured",reunion,186416,5,0,0,0,1
+Unmanufactured,11,Ton,2501526,Woollen Manufactures — Unmanufactured,reunion,1182543,30,0,0,0,1
+Unmanufactured,11,Ton,2501526,Painters Colours — Unmanufactured,reunion,178724,4,0,0,0,1
 Unmanufactured,11,Ton,2501526,Tea — Unmanufactured,reunion,4448922,36,0,0,0,1
 Brandy,10,Proof Gallon,1261800,Fruit — Brandy,reunion,2469378,14,2,0,0,1
 Brandy,10,Proof Gallon,1261800,"Cards, Playing — Brandy",reunion,1138897,16,1,0,1,1
@@ -124,14 +140,13 @@ Ginger,9,Cwt,175435,Cotton — Ginger,reunion,134071,13,1,0,1,1
 Wheat,9,Cwt,18760505,"China, Or Porcelain, And Earthenware — Wheat",reunion,58336343,31,3,0,0,1
 Wheat,9,Cwt,18760505,Cheese — Wheat,reunion,20374219,25,1,0,0,1
 Ornamental,9,Lb,250631,Eggs — Ornamental,reunion,639278,8,1,0,0,1
-Fresh,8,Cwt,4413148,Fish — Fresh,reunion,72531991,29,8,0,0,1
+Fresh,8,Cwt,4413148,Fish — Fresh,reunion,55827510,29,6,0,0,1
 Fresh,8,Cwt,4413148,Beads Of All Sorts — Fresh,reunion,1799581,6,3,0,0,1
 "In Blocks, Ingots, Bars, Or Slabs",8,Cwt,2743814,"Slates — In Blocks, Ingots, Bars, Or Slabs",reunion,12062484,22,6,0,0,1
 "In Blocks, Ingots, Bars, Or Slabs",8,Cwt,2743814,"Sugar — In Blocks, Ingots, Bars, Or Slabs",reunion,11154125,18,0,0,0,1
 Cinnamon,7,Lb,136066,Lates — Cinnamon,reunion,482098,11,2,0,0,1
 Cinnamon,7,Lb,136066,Cotton — Cinnamon,reunion,79433,3,0,0,0,1
-Wrought Or Manufactured,6,Ton,301953,Metal — Wrought Or Manufactured,reunion,12834643,15,3,0,0,1
-Stuffs,5,Yard,5111544,Woollen Yarn — Stuffs,reunion,52141123,6,5,0,2,1
+Stuffs,5,Yard,5111544,Woollen Yarn — Stuffs,reunion,52151823,6,5,0,2,1
 Clover And Grass,4,?,855524,Saltpetre (Nitrate Of Potash) — Clover And Grass,reunion,23381116,37,0,0,0,1
 "Alpaca, Vicuña, And Llama",4,Lb,364175,"Woollen Manufactures — Alpaca, Vicuña, And Llama",reunion,242468,3,0,0,0,1
 For Beds,1,Cwt,0,Wood — For Beds,reunion,456127,13,0,0,0,1
