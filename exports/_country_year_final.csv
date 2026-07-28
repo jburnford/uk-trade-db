@@ -99419,6 +99419,8 @@ NUTS AND KERNELS,Whale Fisheries,newfoundland,,import,1899,5449.0,94477.0,human,
 "ANIMALS, LIVING",Oxen and Bulls,Argentine Republic,Number,import,1899,85359.0,1392543.0,human,B,B,2,2
 TEETH,"Elephants', Sea Cow, and Sea Horse","West Coast of Africa, Foreign : Portuguese Possessions",Cwts,import,1881,1243.0,46640.0,human,B,B,2,2
 TEETH,"Elephants', Sea Cow, and Sea Horse",Not particularly designated,Cwts,import,1881,698.0,28629.0,human,B,B,2,2
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Other Foreign Countries,Proof Gallons,import,1887,6527.0,1385.0,human,B,B,2,2
+SPIRITS,Geneva,Other Foreign Countries,Proof Gallons,import,1887,792.0,180.0,human,B,B,2,2
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
@@ -126763,6 +126765,25 @@ ANIMALS LIVING,Sheep and Lambs,Germany,No.,import,1887,501701.0,867673.0,groupfi
 ANIMALS LIVING,Sheep and Lambs,Holland,No.,import,1887,5345.0,8489.0,groupfix,C,C,3,3
 ANIMALS LIVING,Sheep and Lambs,Belgium,No.,import,1887,2.0,5.0,groupfix,C,C,3,3
 ANIMALS LIVING,Sheep and Lambs,France,No.,import,1887,1027.0,2040.0,groupfix,C,C,3,3
+SPIRITS,Geneva,Holland,Proof Gallons,import,1876,318967.0,55875.0,groupfix,C,C,3,3
+SPIRITS,Geneva,Other Countries,Proof Gallons,import,1876,7401.0,2001.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Russia,Proof Gallons,import,1876,119065.0,6005.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Germany,Proof Gallons,import,1876,1768594.0,139672.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Holland,Proof Gallons,import,1876,45587.0,4271.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Belgium,Proof Gallons,import,1876,237080.0,18811.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",France,Proof Gallons,import,1876,145519.0,13767.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Other Countries,Proof Gallons,import,1876,8560.0,1705.0,groupfix,C,C,3,3
+SPIRITS,Geneva,Holland,Proof Gallons,import,1887,258948.0,46118.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Russia,Proof Gallons,import,1887,95054.0,4013.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Sweden,Proof Gallons,import,1887,42562.0,2515.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Denmark,Proof Gallons,import,1887,156669.0,10217.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Germany,Proof Gallons,import,1887,1814191.0,101521.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Holland,Proof Gallons,import,1887,113678.0,6416.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",France,Proof Gallons,import,1887,4300.0,2826.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",United States of America,Proof Gallons,import,1887,104238.0,8532.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",British Possessions in South Africa,Proof Gallons,import,1887,861.0,191.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Australasia,Proof Gallons,import,1887,1317.0,342.0,groupfix,C,C,3,3
+SPIRITS,"Unenumerated, not Sweetened or Mixed",Other British Possessions,Proof Gallons,import,1887,681.0,278.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
