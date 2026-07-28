@@ -213,3 +213,94 @@ Full per-cell diff: **4 commodity-years changed, 0 regressions.**
   members fall short of its printed subtotal by exactly the value of a bare
   unlabelled number pair later in the same block. It fires three times on this
   single page and is certainly not confined to it.
+
+---
+
+## Sweep 5 (2026-07-28) — clearing the as_1887 Rum glue leak
+
+**Item**: Rum 1887's over-count (reading 1.0358), queued by sweep 4 as needing
+a live decision. The user asked for a recommendation and it was taken.
+
+### What the seven stray cells actually were
+
+Rum 1887 read 6,589,972 against T1 6,362,070 while the block's own members
+close perfectly (foreign 287,143 + British 6,074,927). The excess was seven
+`manual_rows` cells still filed as Rum:
+
+    sweden 95,054 + holland 79,120 + denmark 42,562 + other foreign
+    countries 4,989 + russia 2,879 + austrian territories 2,168 +
+    channel islands 1,130  =  227,902 exactly
+
+They came from a **bulk page-transcription batch** — `as_1887 SPIRITS|Rum` is
+a contiguous run of 24 `manual_rows` with empty note fields, one of the largest
+such clusters in the file (empty notes are not themselves a smell: 50% of
+`manual_rows` have none, and they cluster into transcription batches). Whoever
+keyed it walked down the printed column and inherited the sticky `Rum` article
+label straight through the segment breaks. The **numbers are good; the label is
+wrong**.
+
+That is what made deletion the right call rather than a new supersede
+mechanism. Six of the seven were checked one at a time and are **exact
+duplicates already present under a correct label**:
+
+| figure | now filed as | source |
+|---|---|---|
+| 95,054 | Unenumerated, not Sweetened or Mixed — Russia | groupfix |
+| 42,562 | Unenumerated, not Sweetened or Mixed — Sweden | groupfix |
+| 79,120 | Brandy — Germany | groupfix |
+| 2,879 | Unenumerated, Sweetened or Mixed (Tested) — Russia | twoup |
+| 2,168 | Unenumerated, Sweetened or Mixed (Tested) — Austrian Territories | twoup |
+| 1,130 | Perfumed — Channel Islands | twoup |
+
+Deleting them discards no transcription work — the same printed cells enter
+under correct labels. Keeping them was double-counting, not caution.
+
+### The seventh forced the queued Brandy item
+
+`other foreign countries` 4,989 existed **only** under Rum. By the slip sweep 4
+named, it is Brandy's **Spain** row, so removing it without relabelling would
+have made Brandy worse. Both were done together:
+
+- seq 90 -> `Brandy`, `new_country=Spain` (completes the seq 87-89 repairs,
+  which had left seq 90 "as printed" because the slip direction was not yet
+  known).
+- The orphan 3,204/£1,122 at raw lines 45409-45410 -> `manual_rows` as Brandy's
+  true Other Foreign Countries. Not guessed: the four labelled members total
+  2,820,773 / 1,314,877 against printed foreign TOTALs of 2,823,977 /
+  1,315,999, so both columns demand exactly 3,204 and 1,122.
+- seq 92-94 -> `Brandy`: the British half (1,005 + 520 + 606 = printed 2,131,
+  values 455+366+404 = 1,225) had never been relabelled out of the glue and was
+  **absent from `country_year_final` entirely**.
+
+### Result
+
+| commodity-year | before | after |
+|---|---|---|
+| Spirits — Rum 1887 | 1.0358 | **1.0000** |
+| Spirits — Brandy 1887 | 0.9963 | **1.0000** |
+
+Corpus: 9,634 commodity-years, exact01 3,119 -> **3,121**, GBP within 0.1%
+**50.9%**, within 5% 68.0%. Two commodity-years changed, **0 regressions**.
+
+**The deletion was self-verifying**, which is why it was safe: 6,589,972 −
+227,902 = 6,362,070, so Rum had to land on the anchor to the digit or the
+diagnosis was wrong. It did.
+
+### Convention amended
+
+`reference/*.csv` are append-only **except** rows proven to be duplicate
+transcriptions under a superseded label, which may be removed in a commit that
+cites the closure proving it. Recorded here and in the plan memory's guardrails
+so the next session finds a rule covering the deletion rather than an
+unexplained one.
+
+### Still open on this page
+
+- **Five Gallons-unit strays remain** under `as_1887 SPIRITS|Rum` (`madeira`
+  1,606, `gibraltar` 918, `canary islands` 721, `foreign countries` 434,
+  `british possessions` 14). They do not affect the Rum ratio — different unit,
+  excluded from the T1 comparison — and unlike the seven they have **not** been
+  traced to a correct label, so they may be the sole carrier of their figures.
+  Trace before touching; do not blind-delete.
+- `as_1888` still carries the same glue unbroken from seq 91 to 186, invisible
+  to `find_bracketed_gaps`.

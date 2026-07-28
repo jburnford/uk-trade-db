@@ -99357,10 +99357,6 @@ SPIRITS,Rum,australasia,Proof Gallons,import,1887,25583.0,1828.0,human,B,C,2,3
 SPIRITS,Rum,british west india islands,Proof Gallons,import,1887,2750958.0,299131.0,human,B,C,2,3
 SPIRITS,Rum,british guiana,Proof Gallons,import,1887,3231517.0,182766.0,human,B,C,2,3
 SPIRITS,Rum,other british possessions,Proof Gallons,import,1887,3694.0,437.0,human,B,C,2,3
-SPIRITS,Rum,holland,Proof Gallons,import,1887,79120.0,13183.0,human,B,C,2,3
-SPIRITS,Rum,denmark,Proof Gallons,import,1887,42562.0,2515.0,human,B,C,2,3
-SPIRITS,Rum,russia,Proof Gallons,import,1887,2879.0,3070.0,human,B,C,2,3
-SPIRITS,Rum,austrian territories,Proof Gallons,import,1887,2168.0,4264.0,human,B,C,2,3
 SPIRITS,Rum,germany,Proof Gallons,import,1888,59858.0,3820.0,human,B,C,2,3
 SPIRITS,Rum,spanish west india islands,Proof Gallons,import,1888,55902.0,4004.0,human,B,C,2,3
 SPIRITS,Rum,dutch guiana,Proof Gallons,import,1888,37147.0,3013.0,human,B,C,2,3
@@ -99421,6 +99417,7 @@ TEETH,"Elephants', Sea Cow, and Sea Horse","West Coast of Africa, Foreign : Port
 TEETH,"Elephants', Sea Cow, and Sea Horse",Not particularly designated,Cwts,import,1881,698.0,28629.0,human,B,B,2,2
 SPIRITS,"Unenumerated, not Sweetened or Mixed",Other Foreign Countries,Proof Gallons,import,1887,6527.0,1385.0,human,B,B,2,2
 SPIRITS,Geneva,Other Foreign Countries,Proof Gallons,import,1887,792.0,180.0,human,B,B,2,2
+SPIRITS,Brandy,Other Foreign Countries,Proof Gallons,import,1887,3204.0,1122.0,human,B,B,2,2
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
@@ -126784,6 +126781,10 @@ SPIRITS,"Unenumerated, not Sweetened or Mixed",United States of America,Proof Ga
 SPIRITS,"Unenumerated, not Sweetened or Mixed",British Possessions in South Africa,Proof Gallons,import,1887,861.0,191.0,groupfix,C,C,3,3
 SPIRITS,"Unenumerated, not Sweetened or Mixed",Australasia,Proof Gallons,import,1887,1317.0,342.0,groupfix,C,C,3,3
 SPIRITS,"Unenumerated, not Sweetened or Mixed",Other British Possessions,Proof Gallons,import,1887,681.0,278.0,groupfix,C,C,3,3
+SPIRITS,Brandy,Spain,Proof Gallons,import,1887,4989.0,1996.0,groupfix,C,C,3,3
+SPIRITS,Brandy,British Possessions in South Africa,Proof Gallons,import,1887,1005.0,455.0,groupfix,C,C,3,3
+SPIRITS,Brandy,Australasia,Proof Gallons,import,1887,520.0,366.0,groupfix,C,C,3,3
+SPIRITS,Brandy,Other British Possessions,Proof Gallons,import,1887,606.0,404.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
@@ -126833,9 +126834,6 @@ SPIRITS,Rum,belgium,Proof Gallons,import,1884,4003.0,1476.0,human,C,C,3,3
 SPIRITS,Rum,denmark,Proof Gallons,import,1884,1558.0,1922.0,human,C,C,3,3
 SPIRITS,Rum,danish west india islands,Proof Gallons,import,1887,43690.0,2049.0,human,C,C,3,3
 SPIRITS,Rum,other foreign counties,Proof Gallons,import,1887,4451.0,378.0,human,C,C,3,3
-SPIRITS,Rum,other foreign countries,Proof Gallons,import,1887,4989.0,1996.0,human,C,C,3,3
-SPIRITS,Rum,sweden,Proof Gallons,import,1887,95054.0,4013.0,human,C,C,3,3
-SPIRITS,Rum,channel islands,Proof Gallons,import,1887,1130.0,1796.0,human,C,C,3,3
 SPIRITS,Rum,foreign countries,Gallons,import,1887,434.0,532.0,human,C,C,3,3
 SPIRITS,Rum,british possessions,Gallons,import,1887,14.0,20.0,human,C,C,3,3
 SPIRITS,Rum,madeira,Gallons,import,1887,1606.0,421.0,human,C,C,3,3
