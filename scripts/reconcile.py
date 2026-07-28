@@ -220,6 +220,11 @@ def main():
         volumes VARCHAR)''')
     tiers = Counter()
     review = []
+
+    def _volyear(vol):
+        m = re.search(r'(\d{4})', vol or '')
+        return int(m.group(1)) if m else 9999
+
     for (flow, meas, g, a, y), obs in series.items():
         ver = [v for st, v, *_ in obs if st == 'verified']
         allv = [v for st, v, *_ in obs]
@@ -227,8 +232,37 @@ def main():
         vols = ','.join(sorted({o[5] for o in obs}))
         vc = Counter(ver)
         ac = Counter(allv)
+
+        # Tie-break, in order: corpus support; ENGINE AGREEMENT (a volume
+        # whose two OCR engines read the same figure is a stronger witness
+        # than an unverified reading — two volumes may be compositor copies
+        # of each other, two engines cannot be); the CONTEMPORARY volume
+        # over a late reprint (the 1893+ five-year comparative reprints are
+        # cramped re-settings and demonstrably misread more: bacon 1893-97,
+        # copper 1888, hams 1898 were each a lone late reprint winning a
+        # tie against the contemporary printing); then the larger figure,
+        # for determinism only (a folded-in zero must not win). Before
+        # this, ties fell to Counter insertion order — i.e. to nothing.
+        def support(x):
+            return (ac[x], vc[x],
+                    -min(abs(_volyear(o[5]) - y) for o in obs if o[1] == x),
+                    x)
+
         if ver and vc.most_common(1)[0][1] >= 2:
-            tier, val = 'A', vc.most_common(1)[0][0]
+            # tier A stays led by the VERIFIED count, as before. Among
+            # EQUALLY-verified readings the contemporary volume decides
+            # BEFORE total copy-count: the late five-year reprints are
+            # compositor copies of each other, and counting them re-makes
+            # the copy-propagation mistake — jute 1885's Cwt reading is
+            # verified in as_1885+as_1886 while the three 1887+ reprints
+            # re-denominate the same figure in Tons, and copy-count would
+            # take the Tons reading on a 3-2 "majority" of one re-setting.
+            tier, val = 'A', max(set(ver),
+                                 key=lambda x: (
+                                     vc[x],
+                                     -min(abs(_volyear(o[5]) - y)
+                                          for o in obs if o[1] == x),
+                                     ac[x], x))
         elif len(ver) == 1 or (ac and ac.most_common(1)[0][1] >= 2):
             tier = 'B'
             # Two volumes can each be internally verified — both engines
@@ -239,10 +273,10 @@ def main():
             # 248,412 exactly, and the year shipped at 218,412 because
             # as_1882's cell happened to come first. Among verified readings,
             # take the one the corpus supports most overall.
-            val = (max(set(ver), key=lambda x: (ac[x], ver.count(x)))
-                   if ver else ac.most_common(1)[0][0])
+            val = (max(set(ver), key=support)
+                   if ver else max(set(allv), key=support))
         else:
-            tier, val = 'C', ac.most_common(1)[0][0]
+            tier, val = 'C', max(set(allv), key=support)
             review.append((flow, meas, grp, art, y,
                            '|'.join(f'{v:,.0f}' for v in set(allv))))
         # ---- page-adjudicated Tier-1 override (reference/manual_t1.csv).

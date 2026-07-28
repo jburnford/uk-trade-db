@@ -277,15 +277,37 @@ def main():
         n_volumes INTEGER, n_agree_value INTEGER,
         q_tier VARCHAR, v_tier VARCHAR, volumes VARCHAR)""")
 
-    def vote(readings, field, ok_field):
+    def _volyear(vol):
+        m = _re.search(r'(\d{4})', vol or '')
+        return int(m.group(1)) if m else 9999
+
+    def vote(readings, field, ok_field, yr):
         """-> (value, tier, n_agree). Rounds to nearest int for the tally so
         1,234.0 vs 1234 agree."""
         vals = [round(r[field]) for r in readings if r[field] is not None]
         if not vals:
             return None, 'C', 0
         tally = Counter(vals)
-        val, n = tally.most_common(1)[0]
-        n_vols = len({r['vol'] for r in readings if r[field] is not None})
+        n = max(tally.values())
+        cands = [x for x, c in tally.items() if c == n]
+        if len(cands) == 1:
+            val = cands[0]
+        else:
+            # A tie used to fall to Counter insertion order — i.e. to
+            # nothing — which is how a lone late-reprint reading beat a
+            # verified contemporary one (hams 1898: as_1899's unverified
+            # 1,551,520 over as_1898's engine-agreed 1,851,520). Break
+            # ties toward: (1) a verified/engine-agreed reading over an
+            # unverified one; (2) the CONTEMPORARY volume over a late
+            # reprint (the five-year comparative re-settings misread
+            # more); (3) the larger figure, for determinism only.
+            def support(x):
+                rs = [r for r in readings
+                      if r[field] is not None and round(r[field]) == x]
+                return (any(r[ok_field] for r in rs),
+                        -min(abs(_volyear(r['vol']) - yr) for r in rs),
+                        x)
+            val = max(cands, key=support)
         if n >= 2:
             return float(val), 'A', n
         # single reading: lean on its per-cell verification
@@ -297,8 +319,8 @@ def main():
     promo_v = same_v = 0
     for key, readings in buckets.items():
         flow, duty, ga, nc, nu, yr = key
-        qv, qt, qn = vote(readings, 'q', 'q_ok')
-        vv, vt, vn = vote(readings, 'v', 'v_ok')
+        qv, qt, qn = vote(readings, 'q', 'q_ok', yr)
+        vv, vt, vn = vote(readings, 'v', 'v_ok', yr)
         rep = readings[0]
         vols = ','.join(sorted({r['vol'] for r in readings}))
         ins.append([flow, duty, rep['grp'], rep['art'], nc,

@@ -17,7 +17,7 @@ Iron — Ore Of,34634503,9,1876 1877 1878 1879 1880 1881 1894 1895 1896
 "Animals, Living — Horses",6454541,9,1883 1884 1885 1886 1887 1888 1889 1890 1891
 "Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",2854074,9,1873 1874 1875 1881 1882 1884 1885 1886 1887
 Metal — Wrought Or Manufactured,13206406,8,1872 1873 1874 1875 1876 1877 1878 1879
-"China, Or Porcelain, And Earthenware",10946141,8,1878 1879 1880 1881 1883 1884 1885 1891
+"China, Or Porcelain, And Earthenware",10975607,8,1878 1879 1880 1881 1883 1884 1885 1891
 Phosphate Of Lime And Rock,5375181,8,1886 1887 1888 1889 1890 1891 1892 1899
 "Rags, And Other Materials For Making Paper — Rags, Woollen, Applicable To Other Uses Than Manure",4130429,8,1872 1873 1874 1875 1876 1877 1878 1879
 Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,3520530,8,1872 1873 1874 1875 1882 1883 1884 1885
@@ -37,7 +37,7 @@ Gutta Percha,13473102,5,1876 1877 1878 1880 1881
 Books,6394170,5,1882 1883 1884 1886 1887
 "Madder, Madder Root, Garancine, And Munjeet",3638655,5,1878 1879 1880 1881 1891
 Spices — Ginger,2293290,5,1878 1879 1880 1881 1886
-Candles Of All Sorts,1776017,5,1878 1879 1880 1881 1884
+Candles Of All Sorts,1775993,5,1878 1879 1880 1881 1884
 "Perfumery, And Articles Used In The Manufacture Thereof",1414281,5,1893 1894 1895 1896 1897
 "Meal, Unenumerated",1112669,5,1895 1896 1897 1898 1899
 "Methylic Alcohol, Not Purified So As To Be Potable",699130,5,1894 1896 1897 1898 1899
@@ -49,17 +49,17 @@ Wine — Red,56297450,4,1894 1895 1896 1897
 "Coals, Cinders, &C — Coals And Culm",37480356,4,1894 1897 1898 1899
 Woollen Yarn — For Weaving,35942005,4,1896 1897 1898 1899
 Cocoa,21383185,4,1879 1882 1883 1884
-Wood And Timber — Mahogany,21182198,4,1886 1887 1888 1892
+Wood And Timber — Mahogany,21181998,4,1886 1887 1888 1892
 "Skins, Furs, And Pelts — Sheep, Undressed",18458529,4,1896 1897 1898 1899
 Metals And Ores — Pig,12588498,4,1896 1897 1898 1899
 "Drugs — Bark, Peruvian",12443774,4,1878 1879 1880 1881
-Boots And Shoes,10969396,4,1887 1888 1889 1890
-"Zinc — Manufactures, Unenumerated",9076353,4,1879 1884 1891 1892
+Boots And Shoes,10969456,4,1887 1888 1889 1890
+"Zinc — Manufactures, Unenumerated",9098476,4,1879 1884 1891 1892
 Horns And Hoofs,3468465,4,1893 1894 1895 1896
 Horns And Hoofs Of Cattle,2316666,4,1878 1879 1880 1881
 Spices — Cinnamon,2026282,4,1886 1897 1898 1899
 Whalebone (Whalefins),1765707,4,1878 1879 1880 1881
-Beads Of All Sorts,1688968,4,1878 1879 1880 1881
+Beads Of All Sorts,1688009,4,1878 1879 1880 1881
 Waste Of,1116485,4,1896 1897 1898 1899
 "Plums, French, And Pruneloes",619064,4,1894 1897 1898 1899
 Metals And Ores — Puddled,63721,4,1896 1897 1898 1899
@@ -73,14 +73,14 @@ Onions — Raw,15346577,3,1872 1877 1879
 Other Than Muslins,13892433,3,1897 1898 1899
 Spices — Pepper,13745201,3,1889 1890 1891
 Oil — Fish : Train Or Blubber,9064845,3,1897 1898 1899
-"Wool — Alpaca, Vicuña, And Llama",7819550,3,1873 1874 1892
+"Wool — Alpaca, Vicuña, And Llama",7819850,3,1873 1874 1892
 Spices — Unenumerated,7806665,3,1873 1889 1890
 Manures — Unenumerated,7610945,3,1897 1898 1899
 Sago,7561005,3,1893 1895 1896
 Rags And Other Materials For Making Paper — Linen And Cotton,6627064,3,1873 1874 1875
 Cork — Unmanufactured,5178257,3,1880 1882 1892
 Parcel Post (Goods Free Of Duty),4298039,3,1892 1898 1899
-"Varnished, Japanned Or Enamelled",4272651,3,1895 1896 1899
+"Varnished, Japanned Or Enamelled",4272321,3,1895 1896 1899
 Dye Woods — Unenumerated,3908895,3,1891 1898 1899
 Tar,2917953,3,1888 1898 1899
 Tin — Ore Of,1915742,3,1897 1898 1899
@@ -91,32 +91,32 @@ Chloral Hydrate,79024,3,1897 1898 1899
 Chloroform,9528,3,1897 1898 1899
 Sulphuric,8136,3,1897 1898 1899
 Ether — Acetic,886,3,1897 1898 1899
-"Sugar — Unrefined, Total",395692969,2,1872 1874
+"Sugar — Unrefined, Total",395688379,2,1872 1874
 Woollen Manufactures — Stuffs,81404071,2,1898 1899
 Fruit — Oranges And Lemons,31479506,2,1893 1894
-Yarn,20557225,2,1872 1873
-"Skins : Goat, Undressed",12908040,2,1891 1892
+Yarn,20557525,2,1872 1873
+"Skins : Goat, Undressed",12909746,2,1891 1892
 Paper-Making Materials — Pulp Of Wood,12073331,2,1898 1899
 Dye Woods — Logwood,9121043,2,1898 1899
-Kowrie,9001187,2,1875 1876
+Kowrie,9031187,2,1875 1876
 Oil — Coco-Nut,8204058,2,1875 1885
 Yeast,7335383,2,1885 1886
 Cochineal (Including Granilla And Dust),5321057,2,1889 1890
 Sugar — Molasses,5182584,2,1874 1885
 Woollen Yarn — For Fancy Purposes,4458294,2,1895 1897
-Fruit — Figs And Fig Cake,3536988,2,1885 1891
+Fruit — Figs And Fig Cake,3537087,2,1885 1891
 Pitch,776644,2,1878 1885
 Husks And Shells,60480,2,1898 1899
 "Iron — Manufactures Of Iron Or Steel, Unenumerated",52591705,1,1892
-"Animals, Living — Sheep And Lambs",44506596,1,1887
-Wool — Goats' Wool Or Hair,26884110,1,1896
+"Animals, Living — Sheep And Lambs",44506592,1,1887
+Wool — Goats' Wool Or Hair,26883564,1,1896
 "Lac, Seed, Shell, Stick, And Dye",23761989,1,1885
 Linen Yarn,14379683,1,1872
 Fruit — Oranges,13618984,1,1892
+Valonia,12717868,1,1899
 "Milk, Condensed",12684110,1,1887
-Valonia,12657868,1,1899
 Caoutchouc — Manufactures Of,10361298,1,1882
-"Thrown, Dyed Or Not Dyed",9672480,1,1899
+"Thrown, Dyed Or Not Dyed",9673930,1,1899
 "Yeast, Dried",8155790,1,1887
 Gum — Unenumerated,8109280,1,1872
 Almonds,6768178,1,1899
@@ -124,10 +124,10 @@ Almonds,6768178,1,1899
 Manures — Bones For Manure,6117896,1,1895
 Ice,5358655,1,1889
 "Staves, Of All Dimensions",3565733,1,1893
-Zinc — Ore Of,3351673,1,1892
+Zinc — Ore Of,3350903,1,1892
 Hats Or Bonnets — Of Felt,2346884,1,1888
 Paper — Printed Or Coated,1485868,1,1894
-Tobacco — Other Sorts,1163809,1,1899
+Tobacco — Other Sorts,1163744,1,1899
 Safflower,731248,1,1886
 Whalefins,591849,1,1881
 "Shot, Large And Small",91790,1,1896
