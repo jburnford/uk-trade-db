@@ -1,20 +1,16 @@
 commodity,year,kind,ratio,t1_qty,country_sum,cluster_gbp
-Oil — Palm,1878,missing/short,0.553,670797,370797,111901676
+Nuts And Kernels — Coco-Nut,1875,missing/short,0.0,219158,0,24006360
+Nuts And Kernels — Coco-Nut,1877,missing/short,0.0,195115,0,24006360
 Bristles,1874,missing/short,0.354,2664374,943648,12682886
 "Thrown, Dyed Or Not Dyed",1899,missing/short,0.0,317786,0,9672480
-Beans (Not Kidney Or French),1893,missing/short,0.187,3946985,738050,8114668
-Beans (Not Kidney Or French),1894,missing/short,0.191,5259895,1003451,8114668
+Beans (Not Kidney Or French),1893,missing/short,0.187,3946985,738050,6253596
+Beans (Not Kidney Or French),1894,missing/short,0.191,5259895,1003451,6253596
 Ice,1889,missing/short,0.0,342473,0,5358655
 Cochineal (Including Granilla And Dust),1889,missing/short,0.0,8186,0,5321057
 Cochineal (Including Granilla And Dust),1890,missing/short,0.0,7808,0,5321057
 Parcel Post (Goods Free Of Duty),1892,missing/short,0.0,464792,0,4857967
 Parcel Post (Goods Free Of Duty),1898,missing/short,0.0,986290,0,4857967
 Parcel Post (Goods Free Of Duty),1899,missing/short,0.0,970165,0,4857967
-"Staves, Of All Dimensions",1893,missing/short,0.0,131708,0,3565733
-Candles Of All Sorts,1878,missing/short,0.0,118147,0,3057168
-Candles Of All Sorts,1879,missing/short,0.0,120995,0,3057168
-Candles Of All Sorts,1880,missing/short,0.0,132433,0,3057168
-Candles Of All Sorts,1881,missing/short,0.0,156244,0,3057168
 Alkali,1879,missing/short,0.589,73014,42984,2605420
 "Manufactured, Of All Kinds",1890,missing/short,0.0,3678846,0,1941082
 "Manufactured, Of All Kinds",1891,missing/short,0.0,3497408,0,1941082
@@ -23,11 +19,16 @@ Alkali,1879,missing/short,0.589,73014,42984,2605420
 "Manufactured, Of All Kinds",1894,missing/short,0.0,3811402,0,1941082
 "Manufactured, Of All Kinds",1895,missing/short,0.0,4240770,0,1941082
 "Manufactured, Of All Kinds",1896,missing/short,0.0,5037198,0,1941082
-Peas,1893,missing/short,0.0,2302443,0,1936743
-Peas,1894,missing/short,0.0,2272623,0,1936743
-Peas,1895,missing/short,0.0,2422851,0,1936743
-Peas,1896,missing/short,0.0,3018657,0,1936743
-Peas,1899,missing/short,0.567,2752950,1561445,1936743
+Candles Of All Sorts,1878,missing/short,0.0,118147,0,1776037
+Candles Of All Sorts,1879,missing/short,0.0,120995,0,1776037
+Candles Of All Sorts,1880,missing/short,0.0,132433,0,1776037
+Candles Of All Sorts,1881,missing/short,0.0,156244,0,1776037
+Candles Of All Sorts,1884,missing/short,0.0,90979,0,1776037
+Peas,1893,missing/short,0.0,2302443,0,1711200
+Peas,1894,missing/short,0.0,2272623,0,1711200
+Peas,1895,missing/short,0.0,2422851,0,1711200
+Peas,1896,missing/short,0.0,3018657,0,1711200
+Peas,1899,missing/short,0.0,2752950,0,1711200
 "Of Europe, &Amp;C.",1872,missing/short,0.0,1431082,0,1251842
 "Of Europe, &Amp;C.",1873,missing/short,0.0,1505957,0,1251842
 "Of Europe, &Amp;C.",1874,missing/short,0.0,1439544,0,1251842
@@ -46,33 +47,28 @@ Peas,1899,missing/short,0.567,2752950,1561445,1936743
 "Lac-Dye, Seedlac, Shellac, And Sticklac",1897,missing/short,0.0,177597,0,776217
 "Lac-Dye, Seedlac, Shellac, And Sticklac",1898,missing/short,0.0,96678,0,776217
 "Lac-Dye, Seedlac, Shellac, And Sticklac",1899,missing/short,0.0,108758,0,776217
+Safflower,1874,missing/short,0.407,13791,5608,731248
+Safflower,1886,missing/short,0.0,1394,0,731248
+Safflower,1894,missing/short,0.0,401,0,731248
 Strawboard Or Millboard,1896,missing/short,0.0,1208397,0,517161
 Strawboard Or Millboard,1897,missing/short,0.0,1482062,0,517161
 Strawboard Or Millboard,1898,missing/short,0.0,1737814,0,517161
 Strawboard Or Millboard,1899,missing/short,0.0,1774880,0,517161
-Cotton — Raw,1873,overcount,2.162,44244331,95650674,18668265784
-Cotton — Raw,1880,overcount,7.039,67638008,476072040,18668265784
-Cotton — Raw,1881,overcount,2.238,57890874,129578215,18668265784
-Cotton — Raw,1884,overcount,55.063,56400323,3105574983,18668265784
-Cotton — Raw,1885,overcount,118.833,65913827,7832727598,18668265784
-Cotton — Raw,1893,overcount,2.104,76784942,161560466,18668265784
-Cotton — Raw,1895,overcount,2.234,81749955,182605429,18668265784
-Cotton — Raw,1897,overcount,2.36,62740180,148096037,18668265784
-Cotton — Raw,1898,overcount,1.909,75859352,144791652,18668265784
-Cotton — Raw,1899,overcount,2.39,66636078,159265390,18668265784
-Wine — Total Of All Kinds,1876,overcount,13.325,19950723,265848319,597496362
-Wine — Total Of All Kinds,1877,overcount,14.298,19568807,279796857,597496362
-Wine — Total Of All Kinds,1881,overcount,20.084,16297033,327306921,597496362
-Wine — Total Of All Kinds,1882,overcount,22.704,15715813,356808231,597496362
-Oil — Palm,1875,overcount,2.0,904562,1809124,111901676
-Glucose (Solid Or Liquid),1895,overcount,3.894,1315866,5124087,18926846
-Glucose (Solid Or Liquid),1896,overcount,2.853,1539127,4391240,18926846
-Glucose (Solid Or Liquid),1897,overcount,2.84,1610115,4572159,18926846
-Glucose (Solid Or Liquid),1898,overcount,2.245,1887046,4235800,18926846
-Glucose (Solid Or Liquid),1899,overcount,2.359,1825609,4307185,18926846
-Collodium,1893,overcount,734.21,1942,1425836,4517460
-Collodium,1894,overcount,1194.064,1270,1516461,4517460
-Collodium,1895,overcount,1349.393,953,1285972,4517460
-Collodium,1896,overcount,655.455,1819,1192272,4517460
-Collodium,1897,overcount,877.945,1575,1382763,4517460
-Collodium,1899,overcount,2.782,307,854,4517460
+Cotton — Raw,1872,overcount,2.121,55637572,118013740,17699843541
+Cotton — Raw,1873,overcount,2.157,44244331,95441441,17699843541
+Cotton — Raw,1884,overcount,55.061,56400323,3105466615,17699843541
+Cotton — Raw,1885,overcount,118.755,65913827,7827567822,17699843541
+Cotton — Raw,1893,overcount,2.041,76784942,156727448,17699843541
+Cotton — Raw,1895,overcount,2.12,81749955,173312048,17699843541
+Cotton — Raw,1897,overcount,2.187,62740180,137194311,17699843541
+Cotton — Raw,1898,overcount,1.976,75859352,149910860,17699843541
+Cotton — Raw,1899,overcount,2.541,66636078,169323245,17699843541
+Caoutchouc,1885,overcount,4.411,180141,794517,115550258
+Nuts And Kernels — Coco-Nut,1894,overcount,5.312,299131,1589028,24006360
+Nuts And Kernels — Coco-Nut,1895,overcount,9.02,285016,2570780,24006360
+Nuts And Kernels — Coco-Nut,1896,overcount,9.191,219198,2014655,24006360
+Nuts And Kernels — Coco-Nut,1897,overcount,8.039,242731,1951205,24006360
+Nuts And Kernels — Coco-Nut,1898,overcount,6.355,307101,1951613,24006360
+Nuts And Kernels — Coco-Nut,1899,overcount,2.977,458297,1364514,24006360
+Peas,1897,overcount,2.001,2820135,5643139,1711200
+Peas,1898,overcount,2.026,2179192,4414683,1711200
