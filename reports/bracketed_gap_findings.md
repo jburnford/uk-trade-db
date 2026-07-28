@@ -304,3 +304,88 @@ unexplained one.
   Trace before touching; do not blind-delete.
 - `as_1888` still carries the same glue unbroken from seq 91 to 186, invisible
   to `find_bracketed_gaps`.
+
+---
+
+## Sweep 6 (2026-07-28) — china/porcelain 1883-85
+
+**Item**: `China, Or Porcelain, And Earthenware` 1883-85, GBP 1,447,644 —
+the last fully-diagnosed entry in the *Diagnosed, NOT fixed* list above.
+
+### The tables
+
+All three are glued under CHEMICAL labels, exactly as diagnosed. The printed
+head **`CHINA or PORCELAIN, AND EARTHENWARE.`** is visible in the as_1883 raw
+at line 23502: it sits in the left column of a **two-up page** whose right
+column is an unrelated table (Mexico / Peru / Bolivia / Chile), which is why
+the sticky label never advanced.
+
+- **1885** (`as_1885` seq 374-387) — the cleanest. Both columns close on
+  **all three** printed totals: foreign 144,529 / £503,854, British 2,301 /
+  £14,642, grand **146,830 = the Tier-A T1**. Range starts at 374 so the
+  chicory line's own tail TOTAL at seq 373 (28/£74) stays out.
+- **1884** — taken from **Infinity**, because the two engines split the two
+  columns between them. Chandra (= the raw md, lines 23342-23432) reads
+  British East Indies **176** and Japan value **25,294** and closes *neither*
+  column (143,554 vs 143,556; 547,600 vs 550,600). Infinity reads **178** and
+  **28,294** and its quantity column closes **exactly** on 143,556 = printed
+  TOTAL = the Tier-A T1 across five volumes. 6->8 and 5->8 are this corpus's
+  standard broken-glyph confusions. Infinity's value column is over by £1
+  (France 141,329 where the column demands Chandra's 141,328) — the one cell
+  where Chandra is right, left alone rather than replaced.
+- **1883** (`as_1883` seq 364-376) — **value column closes EXACTLY** at
+  £603,410, so all twelve members are present and their values are right.
+  Quantity sums 146,441 against a printed 146,471: **short 30, unresolved.**
+  Both engines read the same digits, no member row is missing, and no price
+  test picks the culprit (Australasia's £17.74/cwt is the only outlier and
+  +30 does not fix it). Left as printed rather than guessed. Ratio 0.99980 —
+  inside the 0.1% band, but it is a residue, not a closure. **Page-image
+  candidate.**
+
+### A stale two-up cell was sitting on 1884
+
+After the repairs, 1884 read **1.041** — 149,451 against 143,556. The excess
+was `Other Countries` **6,896** (value £17,940, unit NULL, q_tier C), a two-up
+gap-fill cell under the *target* label that beat the repair's own Other
+Countries row at `drop_already_added`. 6,896 − 1,001 = **5,895 exactly**. The
+printed table says 1,001 and the column closes on 143,556 with it and nothing
+else, so closure outranked the two-up reading; cleared with a supersede-only
+row scoped to 1884.
+
+### Method note — the repair that "worked" and moved nothing
+
+Worth recording because it cost a full rebuild cycle. The first pass targeted
+group `CHEESE` / article `CHINA or PORCELAIN and EARTHEN- WARE`, chosen by
+matching the incumbent 1886/1889 rows and confirmed by
+`article_group_authority` (0.82 plurality). It was **wrong**: that pair is a
+*duplicate* label feeding a separate payload commodity,
+`Cheese — China Or Porcelain And Earthen- Ware`, which carries **no T1**. The
+groupfix audit reported `admitted 12 / 11 / 11`, `country_year_final` showed
+the blocks landing with 1884 and 1885 summing to their anchors exactly — and
+the corpus baseline **did not move by a single cell**. The payload keys this
+commodity on the **group** (`CHINA OR PORCELAIN AND EARTHENWARE`, article
+NULL — the 1886/1887/1888 pattern), not the article.
+
+**Instrument gap 4**: flag any group repair whose admitted rows land in a
+payload commodity with no `§TOTAL`. That is a silent failure — every
+intermediate signal says success — and only a per-commodity-year payload diff
+catches it. `country_year_final` being right is not evidence the repair worked.
+
+### Result
+
+| commodity-year | before | after |
+|---|---|---|
+| China, Or Porcelain, And Earthenware 1883 | 0.0534 | 0.9998 (residue: 30 cwt) |
+| China, Or Porcelain, And Earthenware 1884 | 0.0480 | **1.0000** |
+| China, Or Porcelain, And Earthenware 1885 | 0.0000 | **1.0000** |
+
+Corpus: 9,634 commodity-years, exact01 3,121 -> **3,124**, GBP within 0.1%
+**50.9%**, within 5% 68.0%. Three commodity-years changed, **0 regressions**.
+
+### Still open on this commodity
+
+**1880 and 1881 are also holes** (both 0.0000) and were *not* in the campaign
+list. 1881's T1 is contested — `as_1882`/`as_1883` print 134,487 (tier A) but
+`as_1884`/`as_1885` print 131,487 (tier B), a 3,000 split of exactly the kind
+the 1884 Japan cell showed. Worth taking next; the same CHEMICAL glue is the
+obvious first place to look.
