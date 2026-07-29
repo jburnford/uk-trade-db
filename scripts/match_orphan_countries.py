@@ -44,6 +44,19 @@ BASE = Path('/home/jic823/uk_trade_db')
 TK = '§TOTAL'
 MIN_EXACT = 2
 MIN_QTY = 1000
+# Digit equality was the original bar, and it was very slightly too strict:
+# farinaceous substances 1885 reads 802,967 against a printed 802,970 - three
+# pounds in eight hundred thousand, 0.0004% - and was rejected, which cost the
+# whole pairing its second agreeing year and hid a GBP9.7M six-year hole.
+# So agreement is now |diff| <= max(1, TOL * anchor). At TOL = 0.0002 a random
+# pair agrees in one year about once in 5,000 and in TWO independent years
+# about once in 25 million; across ~900,000 pairs that is well under one
+# expected false positive, so the coincidence guard still holds.
+TOL = 0.0002
+
+
+def agrees(got, want):
+    return abs(got - want) <= max(1.0, TOL * abs(want))
 
 
 def main(payload_path, out_path):
@@ -76,7 +89,7 @@ def main(payload_path, out_path):
             if hname == oname or u not in per:
                 continue
             ex = [y for y in t1y if y in per[u] and y not in have
-                  and round(per[u][y]) == round(t1y[y]) and t1y[y] >= MIN_QTY]
+                  and agrees(per[u][y], t1y[y]) and t1y[y] >= MIN_QTY]
             if len(ex) >= MIN_EXACT:
                 gains = [y for y in t1y if y in per[u] and y not in have]
                 hits.append((len(ex), len(gains), hname, ex, sorted(gains)))

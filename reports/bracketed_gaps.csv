@@ -1,23 +1,25 @@
 commodity,unit,gap_start,gap_end,n_years,kind,ratios,missing_qty,gbp_at_stake,commodity_gbp
 "Sugar — Unrefined, Total",Cwt,1874,1874,1,collapse,0.00,14129112,17041927,395688379
 Caoutchouc — Manufactures Of,Lb,1892,1898,7,collapse,0.38 0.35 0.34 0.39 0.38 0.38 0.45,45871395,11834386,10361298
-Wood And Timber — Mahogany,Ton,1886,1888,3,hole,0.00 0.00 0.00,129241,9658250,21181998
-Wood And Timber — Mahogany,Ton,1892,1892,1,hole,0.00,56315,4208450,21181998
+Farinaceous Substances And Manufactures Thereof,Value,1882,1887,6,hole,0.00 0.00 0.00 0.00 0.00 0.00,4802466,9680839,15210567
+Wood And Timber — Mahogany,Ton,1892,1892,1,hole,0.00,56315,3383295,21865641
 Feathers And Down — Ornamental,Lb,1890,1890,1,collapse,0.16,679659,3325932,26728978
-"Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",Value,1894,1894,1,collapse,0.31,1693691,3270923,45737697
-"Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",Value,1888,1888,1,hole,0.00,1495972,2889080,45737697
+"Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",Value,1894,1894,1,collapse,0.31,1693691,3092280,48764992
+Wood And Timber — Mahogany,Ton,1886,1886,1,hole,0.00,48732,2927723,21865641
 Feathers And Down — Ornamental,Lb,1883,1883,1,collapse,0.10,578316,2830007,26728978
 Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,Ton,1882,1885,4,hole,0.00 0.00 0.00 0.00,205525,2328933,4142674
-"Rags, Woollen, Applicable To Other Uses Than Manure, Torn Up Or Not",Ton,1873,1875,3,hole,0.00 0.00 0.00,75823,1577720,15208996
 "Chemical Manufactures And Products, Unenumerated",Value,1892,1892,1,hole,0.00,1502294,1543582,26038420
+Fruit — Unenumerated : Raw,Bushel,1882,1882,1,hole,0.00,2614056,1533742,31472242
+Brass And Bronze Manufactures,Cwt,1893,1895,3,hole,0.00 0.00 0.00,73171,1467897,1120277
 Sugar — Glucose,Cwt,1895,1895,1,hole,0.00,1315866,1455264,13287627
 "Wood And Timber — House Frames, Fittings, And Joiners' Work",Value,1892,1892,1,hole,0.00,675138,1447173,12369711
-"Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",Value,1879,1879,1,hole,0.00,724515,1399212,45737697
+"Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",Value,1879,1879,1,hole,0.00,724515,1322793,48764992
+Fruit — Unenumerated : Raw,Bushel,1875,1875,1,collapse,0.06,2098118,1231026,31472242
 "Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",Ton,1881,1882,2,collapse,0.00 0.09,99407,1189152,2854074
 "Stones, Marble, And Slate : Rough, Hewn Or Manufactured : (Other Than Works Of Art)",Ton,1893,1893,1,hole,0.00,546219,1162182,8639675
 Pyrites Of Iron Or Copper,Ton,1873,1873,1,hole,0.00,520347,1075904,29237854
+Farinaceous Substances And Manufactures Thereof,Value,1879,1879,1,hole,0.00,530355,1069093,15210567
 Toys,Value,1880,1880,1,collapse,0.12,509237,1035199,21415410
-"Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",Value,1876,1876,1,hole,0.00,499775,965185,45737697
 Cocoa,Lb,1879,1879,1,hole,0.00,26155788,875452,23817997
 Spices — Pepper,Lb,1891,1891,1,hole,0.00,34794260,868308,14798833
 "Stones, Marble, And Slate : Rough, Hewn Or Manufactured : (Other Than Works Of Art)",Ton,1889,1889,1,hole,0.00,399122,849206,8639675
@@ -37,6 +39,7 @@ Saltpetre,Cwt,1878,1879,2,collapse,0.00 0.08,559294,623809,8507377
 Fruit — Figs,Cwt,1880,1882,3,collapse,0.11 0.07 0.00,278620,608324,4511950
 Cocoa Nut,Cwt,1876,1876,1,hole,0.00,199431,531678,1104442
 "Cordage, Twine, And Cable Yarn",Value,1888,1888,1,hole,0.00,459138,522848,10038667
+Sumach,Ton,1890,1892,3,hole,0.00 0.00 0.00,35366,513980,966136
 Sago,Cwt,1893,1893,1,hole,0.00,611506,512954,7561005
 Sugar — Glucose,Cwt,1885,1885,1,hole,0.00,460524,509310,13287627
 Boots And Shoes,Dozen Pairs,1883,1883,1,collapse,0.13,107278,480553,10969456
@@ -56,30 +59,27 @@ Onions — Raw,Bushel,1877,1877,1,hole,0.00,1964234,322929,15346577
 Onions — Raw,Bushel,1879,1879,1,hole,0.00,1895370,311608,15346577
 "Cordage, Twine, And Cable Yarn",Value,1885,1885,1,collapse,0.42,260337,296461,10038667
 "Meat — Salted Or Fresh, Not Otherwise Described",Cwt,1880,1880,1,collapse,0.39,90520,286198,10411979
-"Plums, French, And Pruneloes",Cwt,1894,1894,1,hole,0.00,36866,278662,619064
 Bristles,Lb,1874,1874,1,collapse,0.35,1720726,265642,12614284
 "Madder, Madder Root, Garancine, And Munjeet",Cwt,1891,1891,1,hole,0.00,11477,263938,3638655
 Spices — Unenumerated,Lb,1873,1873,1,hole,0.00,6601393,255632,8638811
-"Chicory, Raw Or Kiln-Dried",Cwt,1889,1892,4,hole,0.00 0.00 0.00 0.00,453741,252780,1122333
 "Leather, Undressed — Unenumerated",Value,1883,1883,1,hole,0.00,247778,247757,756531
 Fruit — Figs,Cwt,1885,1885,1,hole,0.00,113162,247072,4511950
 Tar,Barrel,1880,1881,2,collapse,0.20 0.21,225282,217954,2917953
 Candles Of All Sorts,Cwt,1884,1884,1,hole,0.00,90979,214585,1775993
 Spices — Ginger,Cwt,1886,1886,1,collapse,0.04,74307,211000,2293290
+Sumach,Ton,1897,1897,1,hole,0.00,14166,205877,966136
 Saumur,Gallon,1895,1895,1,hole,0.00,153848,199200,525409
-Cork — Unmanufactured,Ton,1892,1892,1,hole,0.00,12522,193276,5178257
-"Chicory, Raw Or Kiln-Dried",Cwt,1874,1876,3,hole,0.00 0.00 0.00,343897,191586,1122333
+Sumach,Ton,1894,1894,1,hole,0.00,12616,183350,966136
 Cochineal (Including Granilla And Dust),Cwt,1889,1890,2,hole,0.00 0.00,15994,170775,5321057
 Whalefins,Cwt,1873,1873,1,hole,0.00,3544,155729,591849
-Cork — Unmanufactured,Ton,1882,1882,1,hole,0.00,9683,149456,5178257
 Spirits — Geneva,Proof Gallon,1879,1881,3,hole,0.00 0.00 0.00,772744,136754,812338
 Sugar — Molasses,Cwt,1885,1885,1,hole,0.00,392875,136069,5182584
 Fruit — Almonds,Cwt,1875,1875,1,collapse,0.35,40519,135636,8799146
-"Chicory, Raw Or Kiln-Dried",Cwt,1883,1884,2,hole,0.00 0.00,235425,131156,1122333
 Hats Or Bonnets — Of Felt,Number,1888,1888,1,hole,0.00,670315,127425,2346884
 Gum — Arabic,Cwt,1874,1874,1,collapse,0.48,32990,125276,4926169
+"Chicory, Raw Or Kiln-Dried",Cwt,1874,1875,2,hole,0.00 0.00,227842,123553,1529117
 Safflower,Cwt,1874,1874,1,collapse,0.41,8183,121265,731248
-Cork — Unmanufactured,Ton,1880,1880,1,hole,0.00,7765,119852,5178257
+Cork — Unmanufactured,Ton,1880,1880,1,hole,0.00,7765,120872,5567982
 Tar,Barrel,1888,1888,1,hole,0.00,121884,117919,2917953
 Sugar — Molasses,Cwt,1874,1874,1,hole,0.00,338552,117254,5182584
 Spices — Cinnamon,Lb,1886,1886,1,collapse,0.03,1707596,111301,2026282
@@ -88,10 +88,7 @@ Spirits — Geneva,Proof Gallon,1884,1885,2,collapse,0.00 0.01,574328,101640,812
 Feathers — For Beds,Cwt,1874,1874,1,hole,0.00,21607,97256,1875738
 Fruit — Figs,Cwt,1878,1878,1,collapse,0.36,43247,94423,4511950
 Whalebone (Whalefins),Cwt,1884,1884,1,collapse,0.46,2380,88274,1878965
-"Chicory, Raw Or Kiln-Dried",Cwt,1879,1879,1,hole,0.00,120682,67232,1122333
-Pitch,Cwt,1883,1883,1,hole,0.00,93161,34369,776644
-Pitch,Cwt,1878,1878,1,hole,0.00,80918,29852,776644
-Pitch,Cwt,1885,1885,1,hole,0.00,70449,25990,776644
+"Chicory, Raw Or Kiln-Dried",Cwt,1879,1879,1,hole,0.00,120682,65443,1529117
 Safflower,Cwt,1886,1886,1,hole,0.00,1394,20658,731248
 Safflower,Cwt,1893,1894,2,hole,0.00 0.00,433,6417,731248
 Snuff,Lb,1896,1896,1,collapse,0.38,88,5596,1388816

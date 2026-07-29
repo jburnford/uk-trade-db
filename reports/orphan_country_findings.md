@@ -93,3 +93,63 @@ And silver ore's own remaining defects: **1879 at 0.987** (the fold's 1879
 cells sum 715,215 against 724,515), **1884 at 1.101** (over — a duplicate
 admission), and **1894 at 0.306**, whose missing three-quarters is not in any
 of the nodes examined here.
+
+---
+
+## Update, iteration 19 — the agreement bar was a hair too strict
+
+Refreshing all three instruments on the post-fold payload left the matchers
+looking exhausted: 2 resolved shadows, 6 resolved orphans. Then the refreshed
+bracketed-gap screen put a **£9.7M six-year hole** at rank 3 —
+`Farinaceous Substances And Manufactures Thereof`, 1882-1887 — that neither
+matcher had reported.
+
+**It was the rounding.** Both matchers counted a year as agreeing only on digit
+equality, `round(a) == round(b)`. Farinaceous 1885 reads **802,967 against a
+printed 802,970** — three pounds in eight hundred thousand, **0.0004%** — so
+that year did not count, the pairing dropped to one agreeing year, and a
+six-year hole stayed invisible.
+
+Agreement is now `|diff| <= max(1, TOL × anchor)` with **TOL = 0.0002**. The
+coincidence guard still holds comfortably: a random pair agrees in one year
+about once in 5,000 and in **two independent years about once in 25 million**;
+across ~900,000 pairs that is well under one expected false positive.
+
+Effect of the retune alone: **orphan matches 6 → 15 resolved, shadow matches
+2 → 8.**
+
+## Sixteen folds
+
+The farinaceous family is the clearest instance of the underlying defect yet
+seen: **the same printed wording split by where the OCR broke the hyphen** —
+`Manufac- Tures`, `Manu- Factures`, `Manufacturesthereof` — each variant
+becoming its own payload commodity holding a few years' countries and no
+anchor, while the anchor sat in the properly-spelled node with those years
+empty. Three folds recover it:
+
+| year | after | |
+|---|---|---|
+| 1883 | 785,998 = 785,998 | EXACT |
+| 1884 | 778,899 vs 783,407 | 0.9942 |
+| 1885 | 802,967 vs 802,970 | EXACT |
+| 1886 | 809,855 = 809,855 | EXACT |
+| 1887 | 867,296 vs 867,291 | EXACT |
+
+Others worth naming: `Copper, Ore Of — Opium` → `Opium` (a stale COPPER head
+over the opium tables); three separate stale heads over the same gin line
+(`Cards, Playing — Geneva`, `Fruit — Geneva`, and **`Spirits — Genève`**, an
+accent variant) all folding into `Spirits — Geneva`; `China, Or Porcelain, And
+Earthenware — Meal…` → `Meal, Unenumerated`; `Woollen Yarn — Stuffs` →
+`Woollen Manufactures — Stuffs`.
+
+**Two skipped on a signal worth recording.** `Brass, Bronze, And Metal Bronzed
+Or Lacquered…` and `Of Wool… : Cloths` each appeared in **both** matchers'
+output, in opposite roles — each claiming to be the anchor-holder for the
+other. That can only mean both nodes hold anchors *and* countries in different
+years, which is a different defect from the one these folds address. Left
+alone. **A pair appearing in both directions is a warning, not a
+confirmation.**
+
+Baseline 9,610 c-y (−14, duplicate anchors again): exact01 3,334 → **3,366**
+(35.0%), within 5% 45.6% → **46.1%**, GBP within 0.1% **51.4%**, within 5%
+**68.2%**. Zero true regressions.
