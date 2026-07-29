@@ -193,3 +193,14 @@ another, and no §TOTAL anchor anywhere in the family.
 existing population rather than assuming exports are unparsed. If the phase-0
 count is large, the campaign is closer to a de-misfiling and validation job
 than to a fresh extraction job, which would change the 15–25 session estimate.
+
+---
+
+## Phase 0 measurement — DONE 2026-07-28
+
+See `reports/export_leakage_findings.md`. The misfiled-export population is
+**451 blocks / 4,692 rows** (twoup tags import; both primary engines carry the
+article only as export_uk), dominated by COTTON MANUFACTURES piece goods, then
+woollen and linen. Firm floor reaching `country_year_final`: **~2,510 rows /
+GBP283M** via the twoup source. Found by the user spotting Broad Cloths,
+Coatings, Duffs in the import payload. Still awaiting go/no-go.
