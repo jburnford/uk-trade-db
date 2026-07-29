@@ -20,16 +20,13 @@ supersede), sheep 1887 (garbled continuation head), iron ore 1894 (era head).
 
 ## Diagnosed, NOT fixed — evidence gathered, ready to work
 
-- **Sardines 1895 ANCHOR SLIP** (read 0.13): the payload T1 1,082,588 is the
-  `FISH | Cured or Salted, unenumerated` 1895 total to the digit (printed
-  as_1895/as_1897/as_1898). Sardines' true 1895 reading (~140k cwt by series
-  shape) needs the abstract vote dump for the sardines label across volumes,
-  then a manual_t1 row. Same class as boots 1887-90.
-  **RE-TEST THIS FIRST — it rests on the reasoning sweep 4 retracted.** Check
-  the abstract_obs per-volume readings for the sardines label before assuming
-  the anchor is wrong, and check the unit of the colliding `FISH | Cured or
-  Salted` rows: if a sardines-unit block is sitting under that label, this is
-  a glue block and not an anchor slip at all.
+- ~~**Sardines 1895 ANCHOR SLIP**~~ **FIXED in sweep 8 — and the re-test was
+  worth demanding.** It is neither an anchor slip in the "the anchor is a
+  different series" sense nor a glue block: it is the same *foreign body*
+  already adjudicated for 1894 — the abstract's sardines line borrows the
+  figures of the line printed immediately below it. `Cured, Sardines`
+  1895: 1,082,588 -> **140,178**, origins 140,187, EXACT. See "Sweep 8" at
+  the foot of this file.
 - ~~**Spirits `Unenumerated, Not Sweetened` 1876 + 1887 ANCHOR SLIPS**~~
   **FIXED in sweep 4 — and the diagnosis was backwards.** The anchors are
   solid Tier-A totals; the collisions meant the spirits *tables* are misfiled
@@ -465,3 +462,86 @@ Earthenware itself carries duplicate shadows with no anchor to arbitrate them
 (1880: 53,635 under `EARTHWARE, NOT BEING...` vs 51,846 under `DYE WOODS`;
 1881: 72,516 under `COTTON MANUFACTURES` vs 5,948 under `DYE WOODS`). Without
 a T1 there is nothing to verify a consolidation against, so they are left.
+
+---
+
+## Sweep 8 (2026-07-29) — sardines 1895 is a foreign body, not an anchor slip
+
+**Item worked**: `Cured, Sardines` 1895, read 0.13 (origins 140,187 against an
+anchor of 1,082,588), GBP 4,738,884 — the top *workable* row of the refreshed
+`reports/bracketed_gaps.csv` (the three ranked above it are the known-dead
+sugar 1874 / caoutchouc 1892-98 / mahogany 1886-88).
+
+### The re-test was worth demanding, and both hypotheses in the queue were wrong
+
+The queued diagnosis offered two readings — "anchor slip" (the sardines anchor
+is really some other series' total) or "glue block" (a sardines-unit table
+filed under the `FISH | Cured or Salted` label). **Neither.** The anchor is the
+sardines line's own cell in the abstract, and it has simply been read off the
+row below.
+
+`Fish — Cured or Salted, unenumerated` runs
+
+    1893      1894      1895      1896      1897      1898      1899
+  916,366   925,244  1,082,588 1,060,813 1,165,664 1,200,723 1,003,397
+
+— a smooth, independently anchored series. **1,082,588 is its 1895 figure**,
+and 925,244 (the value already overridden out of sardines 1894) is its 1894
+figure. Same neighbour, two consecutive years.
+
+### The Infinity abstract parse of this table is shifted a row
+
+Visible directly in `infinity_obs`:
+
+| volume | what Infinity puts on the SARDINES label |
+|---|---|
+| `as_1897` | 916,366 (1893) · 925,244 (1894) · 1,082,588 (1895) — all three are the unenumerated line |
+| `tn_1899` | 1,060,813 (1896) · 1,165,664 (1897) · 1,200,723 (1898) — same |
+| `as_1899` | **140,178** (1895) — correct |
+
+The Chandra parse is right in the contemporary volume and in `as_1899`, and
+wrong only in `as_1898` for 1894 and 1895.
+
+### Why the vote lost, and the tie-break that would have saved it
+
+1895 readings: **140,178** from `as_1897`/ch, `as_1899`/ch and `as_1899`/inf —
+against **1,082,588** from `as_1897`/inf, `as_1898`/ch, `as_1898`/inf,
+`tn_1899`/ch and `tn_1899`/inf. **`tn_1899` is `as_1898` reprinted**, so the
+5-3 majority is really one volume plus one Infinity row-shift counted five
+times, beating the contemporary volume. Textbook
+[[vote-tiebreak-lone-reprint]] — except here the reprint is not lone, it is
+*duplicated*, which is worse.
+
+### Five independent supports for 140,178
+
+1. `as_1897` — the **contemporary** volume — reads it in Chandra.
+2. `as_1899` reads it in **both** engines.
+3. The origin table sums to **140,187**, nine cwt (0.006%) above it.
+4. **Unit price.** £427,113 (the value column, unanimous across every volume)
+   ÷ 140,178 = **£3.05/cwt**, against £3.64 / £3.25 / £2.95 / £2.88 in 1893,
+   1894, 1896 and 1897. With 1,082,588 the price would be £0.39/cwt.
+5. Series shape: 125,292 / 105,116 / **140,178** / 175,723 / 197,747 /
+   239,273 / 217,220.
+
+### Result
+
+One `manual_t1` row. `reconcile.py` re-run against a `consensus_bak` snapshot
+changed **exactly one row in each direction** (29 of 29 override rules applied),
+proving the corpus-wide re-vote was otherwise faithful.
+
+`Cured, Sardines` 1895 **under -> EXACT** (140,187 against 140,178). Baseline
+9,634 c-y: exact01 3,132 -> **3,133** (32.5%), GBP 50.9% / 68.2% within 5%.
+One commodity-year changed, **0 regressions**.
+
+### Found in passing, not worked
+
+- The sardines origin rows are triplicated across three label variants —
+  `FEATHERS AND DOWN | Cured, Sardines`, `FISH (INCLUDING TURTLE) | Cured,
+  Sardines` and `FISH (INCLUDING TURTLE) | Sardines`. The payload folds the
+  first two but leaves **`Fish (Including Turtle) — Sardines` (£426,739) as a
+  separate duplicate-shadow node** carrying a subset of the same countries.
+  Belongs with the 44 weak duplicate shadows already queued.
+- `FEATHERS AND DOWN` as the group on a sardines table is another sticky-group
+  instance; harmless here only because the article carries the sig.
+- `Cured or Salted, unenumerated` 1893 is tier C on `as_1897` alone, because
+  the Infinity copy of that volume spent its 1893 cell on the sardines label.

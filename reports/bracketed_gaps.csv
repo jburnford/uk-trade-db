@@ -2,8 +2,6 @@ commodity,unit,gap_start,gap_end,n_years,kind,ratios,missing_qty,gbp_at_stake,co
 "Sugar — Unrefined, Total",Cwt,1874,1874,1,collapse,0.00,14129112,17041927,395688379
 Caoutchouc — Manufactures Of,Lb,1892,1898,7,collapse,0.38 0.35 0.34 0.39 0.38 0.38 0.45,45871395,11834386,10361298
 Wood And Timber — Mahogany,Ton,1886,1888,3,hole,0.00 0.00 0.00,129241,9658250,21181998
-"Unenumerated, Not Sweetened",Proof Gallon,1887,1887,1,hole,0.00,2340078,5747709,73152228
-"Unenumerated, Not Sweetened",Proof Gallon,1876,1876,1,hole,0.00,2324405,5709213,73152228
 "Cured, Sardines",Cwt,1895,1895,1,collapse,0.13,942401,4738884,5332149
 Wood And Timber — Mahogany,Ton,1892,1892,1,hole,0.00,56315,4208450,21181998
 Feathers And Down — Ornamental,Lb,1883,1883,1,collapse,0.10,578316,3312355,26722449
@@ -14,7 +12,6 @@ Drugs — Unenumerated,Value,1879,1881,3,hole,0.00 0.00 0.00,2208526,2328720,893
 "Rags, Woollen, Applicable To Other Uses Than Manure, Torn Up Or Not",Ton,1873,1875,3,hole,0.00 0.00 0.00,75823,1577720,15208996
 "Chemical Manufactures And Products, Unenumerated",Value,1892,1892,1,hole,0.00,1502294,1543582,26038420
 Sugar — Glucose,Cwt,1895,1895,1,hole,0.00,1315866,1455264,13287627
-"China, Or Porcelain, And Earthenware",Cwt,1883,1885,3,collapse,0.05 0.05 0.00,422134,1447644,10975607
 "Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",Ton,1881,1882,2,collapse,0.00 0.09,99407,1189152,2854074
 "Stones, Marble, And Slate : Rough, Hewn Or Manufactured : (Other Than Works Of Art)",Ton,1893,1893,1,hole,0.00,546219,1162182,8639675
 Pyrites Of Iron Or Copper,Ton,1873,1873,1,hole,0.00,520347,1075904,29237854
@@ -24,9 +21,9 @@ Cocoa,Lb,1879,1879,1,hole,0.00,26155788,875452,23817997
 "Stones, Marble, And Slate : Rough, Hewn Or Manufactured : (Other Than Works Of Art)",Ton,1889,1889,1,hole,0.00,399122,849206,8639675
 Leather Manufactures — Unenumerated,Value,1882,1884,3,collapse,0.00 0.07 0.09,750932,831823,6088471
 "Zinc — Manufactures, Unenumerated",Cwt,1884,1884,1,hole,0.00,401603,823881,9098476
-"China, Or Porcelain, And Earthenware",Cwt,1891,1891,1,hole,0.00,208633,715475,10975607
 Opium,Lb,1877,1877,1,hole,0.00,607362,695803,3169329
 Books,Cwt,1882,1884,3,collapse,0.10 0.09 0.08,52869,678231,6394170
+"China, Or Porcelain, And Earthenware",Cwt,1891,1891,1,hole,0.00,208633,662836,11556016
 "Wool — Alpaca, Vicuña, And Llama",Lb,1873,1874,2,hole,0.00 0.00,8722904,654837,7819850
 Books,Cwt,1886,1887,2,collapse,0.02 0.04,50184,643786,6394170
 Cocoa,Lb,1882,1882,1,hole,0.00,19101646,639345,23817997
@@ -69,7 +66,7 @@ Cochineal (Including Granilla And Dust),Cwt,1889,1890,2,hole,0.00 0.00,15994,170
 Whalefins,Cwt,1873,1873,1,hole,0.00,3544,155729,591849
 Cork — Unmanufactured,Ton,1882,1882,1,hole,0.00,9683,149456,5178257
 Fruit — Figs,Cwt,1878,1878,1,collapse,0.36,43247,142375,4511950
-Spirits — Geneva,Proof Gallon,1879,1881,3,hole,0.00 0.00 0.00,772744,136668,708164
+Spirits — Geneva,Proof Gallon,1879,1881,3,hole,0.00 0.00 0.00,772744,136754,812338
 Sugar — Molasses,Cwt,1885,1885,1,hole,0.00,392875,136069,5182584
 Fruit — Almonds,Cwt,1875,1875,1,collapse,0.35,40519,135636,8799146
 "Chicory, Raw Or Kiln-Dried",Cwt,1883,1884,2,hole,0.00 0.00,235425,131156,1122333
@@ -79,14 +76,12 @@ Safflower,Cwt,1874,1874,1,collapse,0.41,8183,121265,731248
 Cork — Unmanufactured,Ton,1880,1880,1,hole,0.00,7765,119852,5178257
 Tar,Barrel,1888,1888,1,hole,0.00,121884,117919,2917953
 Sugar — Molasses,Cwt,1874,1874,1,hole,0.00,338552,117254,5182584
-Whalebone (Whalefins),Cwt,1884,1884,1,collapse,0.46,2380,116713,1765707
 Spices — Cinnamon,Lb,1886,1886,1,collapse,0.03,1707596,111301,2026282
 Embroidery And Needlework,Value,1883,1883,1,collapse,0.16,94354,109185,6235005
-Spirits — Geneva,Proof Gallon,1884,1885,2,collapse,0.00 0.01,574328,101576,708164
+Spirits — Geneva,Proof Gallon,1884,1885,2,collapse,0.00 0.01,574328,101640,812338
 Feathers — For Beds,Cwt,1874,1874,1,hole,0.00,21607,97256,1875738
+Whalebone (Whalefins),Cwt,1884,1884,1,collapse,0.46,2380,88274,1878965
 "Chicory, Raw Or Kiln-Dried",Cwt,1879,1879,1,hole,0.00,120682,67232,1122333
-Spirits — Geneva,Proof Gallon,1876,1876,1,hole,0.00,326368,57722,708164
-Spirits — Geneva,Proof Gallon,1887,1887,1,hole,0.00,259776,45944,708164
 Pitch,Cwt,1883,1883,1,hole,0.00,93161,34369,776644
 Pitch,Cwt,1878,1878,1,hole,0.00,80918,29852,776644
 Pitch,Cwt,1885,1885,1,hole,0.00,70449,25990,776644
