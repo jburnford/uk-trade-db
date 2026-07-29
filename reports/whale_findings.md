@@ -130,3 +130,100 @@ subset of the evidence. Related: [[vote-tiebreak-lone-reprint]].
 
 Item 3 is the only one that is unambiguously in scope for `/next-defect`;
 items 1 and 2 change taxonomy or the vote and are the user's call.
+
+---
+
+## Repair 1 (2026-07-28) — the baleen half of finding 2
+
+Worked at the user's request ("queue whalefisheries for next iteration").
+**Baleen only.** The oil half is deliberately deferred — see below.
+
+### What was wrong
+
+In each of as_1886 through as_1890 the whalebone origin table is printed as
+one run, but the parser promoted the sub-head `Whale Fisheries:` to the
+ARTICLE partway down. Everything from the fishery row onward split off under
+a phantom article, so the year reconciled on only its head rows and read
+0.86-0.92. The fishery row itself lost its identity too: country `Northern`
+rather than `Whale Fisheries, Northern`.
+
+Fix: strip the phantom article (restoring NULL, matching the head rows) and
+restore the fishery row's country. Ten `group_repairs` rows — one per volume
+for the fishery row with `new_country`, one for the remainder.
+
+### The arithmetic
+
+| year | foreign members = printed | British = printed | grand | vs T1 |
+|---|---|---|---|---|
+| 1886 | 5,382 ✓ | 136 ✓ | 5,518 | see below |
+| 1887 | 3,951 ✓ (values 126,679 ✓) | 191 ✓ | 4,142 | **exact** |
+| 1888 | 4,181 vs **4,176** | 130 ✓ | 4,311 | 1.0012 |
+| 1889 | 4,393 ✓ (values 176,114 ✓) | 76 ✓ | 4,469 | **exact** |
+| 1890 | 4,714 ✓ | 280 ✓ | 4,994 | **exact** |
+
+**1888** is five over on quantity while its **value column closes exactly**
+(144,807). Both engines read the same digits and no price test picks the
+culprit — Denmark 258 and Germany 258 are suspiciously equal but nothing
+confirms it. Left as printed rather than guessed. Page-image candidate.
+
+**Range discipline**: the as_1888 repair stops at seq 3615. Seq 3616-3636 is a
+**WOOD AND TIMBER `Hewn: Fir`** table glued under the same phantom article —
+310,522 Loads of it. Relabelling that range as whalebone would have been a
+catastrophe. as_1889 has the same wood table at seq 3570+, but there it wears
+its own article and was never at risk.
+
+### 1886: closure outranks print-majority
+
+The 1886 anchor is split **four ways** — 5,618 (as_1886, as_1890), 5,518
+(as_1889), 5,513 (as_1887) — and the cross-volume vote took 5,618 on a 2-1-1
+count, tier C. The origin block closes **three** printed totals at 5,518, and
+as_1889 prints that figure independently. A 5->6 misread copied into two
+printings outvotes the truth; arithmetic does not.
+
+Adjudicated in `reference/manual_t1.csv` (1886 -> 5,518, tier A), the same
+shape as the Oil Seed Cake 1890 precedent already in that file. **Note this is
+an anchor override, not a group repair — flagged for the user to veto.**
+
+`manual_t1` is consumed by `reconcile.py`, not `integrate_sources.py`, so the
+vote had to be rebuilt. Before doing that the database was copied aside and
+`consensus` snapshotted; the re-run changed **exactly one row in each
+direction** — 5,618/tier C out, 5,518/tier A in — confirming the re-vote was
+otherwise a faithful reproduction.
+
+### Result
+
+| commodity-year | before | after |
+|---|---|---|
+| Whalebone (Whalefins) 1886 | 0.8841 | **1.0000** |
+| Whalebone (Whalefins) 1887 | 0.8776 | **1.0000** |
+| Whalebone (Whalefins) 1888 | 0.9201 | 1.0012 |
+| Whalebone (Whalefins) 1889 | 0.9060 | **1.0000** |
+| Whalebone (Whalefins) 1890 | 0.8562 | **1.0000** |
+
+Corpus: 9,634 commodity-years, exact01 3,124 -> **3,128**, GBP within 0.1%
+**50.9%**, within 5% 68.0%. Five commodity-years changed, **0 regressions**.
+
+### Why the oil half was deferred
+
+Two reasons, both real:
+
+1. **The target label is a taxonomy decision.** The correctly-labelled oil
+   rows carry article NULL under group `OIL`, whose signature collides with
+   every other oil line in the corpus. Relabelling the phantom rows to match
+   them would merge whale oil into that collision; giving them a proper
+   article name is a taxonomy call, which this loop does not make alone.
+2. **Relabelling alone would not close them.** The oil T1 is the COMBINED
+   line and the origin tables are the two siblings (finding 1), so the years
+   would still read nodata afterwards.
+
+The as_1886 oil arithmetic is nevertheless already proved and waiting:
+`Fish: Train or Blubber` foreign 6,358 + 185 + 214 + 1,068 + 464 + 375 =
+printed 8,664 exactly (values 175,244 exactly), British 245 + 5,545 + 112 =
+5,902 exactly, grand 14,566; `Spermaceti, or Head Matter` grand 1,268; and
+**14,566 + 1,268 = 15,834 = the combined T1 exactly**. One caution for whoever
+takes it: seq 2121's country is `Fish : Train or Blubber` — the run-in head
+swallowed the first origin's name, and the 6,358 belongs to a country the
+parse has lost. Needs the page.
+
+The `as_1897/98/99 NUTS AND KERNELS | Whale Fisheries` blocks (47/47/45 rows,
+1893-1899) remain the largest single loss in this family and are untouched.
