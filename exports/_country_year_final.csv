@@ -51549,21 +51549,6 @@ IRON,"Sewing Machines, and Parts thereof",other british possessions,Value,import
 IRON,"Girders, Beams and Pillars",holland,Tons,import,1892,24255.0,160225.0,consensus,B,B,2,2
 IRON,"Girders, Beams and Pillars",belgium,Tons,import,1892,49695.0,337697.0,consensus,B,B,2,2
 IRON,"Girders, Beams and Pillars",united states of america,Tons,import,1892,636.0,4652.0,consensus,B,B,2,2
-IRON AND STEEL.,Manufactures of Iron and Steel,russia,,import,1892,16113.0,11485.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,sweden,,import,1892,539587.0,378166.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,norway,,import,1892,69887.0,63962.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,denmark,,import,1892,6503.0,19938.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,germany,,import,1892,235429.0,296523.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,holland,,import,1892,1228259.0,841310.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,belgium,,import,1892,587405.0,380670.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,france,,import,1892,68532.0,146373.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,austrian territories,,import,1892,1031.0,19292.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,united states of america,,import,1892,123092.0,357241.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,other foreign countries,,import,1892,1995.0,3571.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,british east indies,,import,1892,359.0,517.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,australasia,,import,1892,828.0,2455.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,newfoundland,,import,1892,20.0,14.0,consensus,B,C,2,3
-IRON AND STEEL.,Manufactures of Iron and Steel,other british possessions,,import,1892,862.0,1101.0,consensus,B,C,2,3
 IVORY,"Teeth, Elephants', Sea Cow, Sea Horse, or Sea Morsé",germany,Cwts,import,1892,803.0,40527.0,consensus,B,B,2,2
 IVORY,"Teeth, Elephants', Sea Cow, Sea Horse, or Sea Morsé",holland,Cwts,import,1892,1353.0,59145.0,consensus,B,B,2,2
 IVORY,"Teeth, Elephants', Sea Cow, Sea Horse, or Sea Morsé",belgium,Cwts,import,1892,1247.0,57161.0,consensus,B,B,2,2
@@ -94038,6 +94023,7 @@ BACON,,United States of America,Cwts,import,1898,4087389.0,6438239.0,human,A,A,1
 HAMS,,United States of America,Cwts,import,1893,920261.0,2686643.0,human,A,A,1,1
 HAMS,,United States of America,Cwts,import,1897,1603533.0,3411559.0,human,A,B,1,2
 HAMS,,Canada,Cwts,import,1897,119133.0,260272.0,human,A,A,1,1
+IRON AND STEEL,Unenumerated,Norway,Cwts,import,1892,60887.0,63962.0,human,A,A,1,1
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2
@@ -117410,7 +117396,6 @@ COTTON,Raw,British East Indies : Bengal,Cwts,import,1892,84461.0,154534.0,subent
 FRUIT,"Grapes, Raw",British Possessions in South Africa : Cape of Good Hope,Bushels,import,1892,1368.0,1403.0,subentry,C,C,3,3
 FRUIT,"Grapes, Raw",British Possessions in South Africa : Other British Possessions,Bushels,import,1892,302.0,186.0,subentry,C,C,3,3
 "HIDES, RAW, AND PIECES THEREOF",Wet,Australasia : Queensland,Cwts,import,1892,18162.0,30282.0,subentry,C,B,3,2
-IRON AND STEEL.,Manufactures of Iron and Steel,British North America : Canada,,import,1892,4703.0,10397.0,subentry,C,C,3,3
 IVORY,"Teeth, Elephants', &c",East Coast of Africa : The Protectorates of Zanzibar and Pemba,Cwts,import,1892,2989.0,122721.0,subentry,C,C,3,3
 MANURES,Bones for Manure,British East Indies : Burmah,Tons,import,1892,218.0,1010.0,subentry,C,B,3,2
 METAL,Unenumerated : Unwrought,British East Indies : Straits Settlements,Tons,import,1892,192.0,7708.0,subentry,C,B,3,2
@@ -126836,6 +126821,21 @@ CIDER AND PERRY,,United States of America : Other Foreign Countries,Gallons,impo
 "COAL, CULM, AND CINDERS",,Australasia : New South Wales,Tons,import,1896,6300.0,18212.0,groupfix,C,C,3,3
 "COAL, CULM, AND CINDERS",,Australasia : Other British Possessions,Tons,import,1896,3.0,6.0,groupfix,C,C,3,3
 "COAL, CULM, AND CINDERS",,Australasia,Tons,import,1893,7685.0,30260.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Russia,Cwts,import,1892,16113.0,11485.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Sweden,Cwts,import,1892,539587.0,378166.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Denmark,Cwts,import,1892,6503.0,19938.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Germany,Cwts,import,1892,235429.0,296523.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Holland,Cwts,import,1892,1228259.0,841310.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Belgium,Cwts,import,1892,587405.0,380670.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,France,Cwts,import,1892,68532.0,146373.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Austrian Territories,Cwts,import,1892,1031.0,19292.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,United States of America,Cwts,import,1892,123092.0,357241.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Other Foreign Countries,Cwts,import,1892,1995.0,3571.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,British East Indies,Cwts,import,1892,359.0,517.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Australasia,Cwts,import,1892,828.0,2455.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Canada,Cwts,import,1892,4703.0,10397.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Newfoundland,Cwts,import,1892,20.0,14.0,groupfix,C,C,3,3
+IRON AND STEEL,Unenumerated,Other British Possessions,Cwts,import,1892,862.0,1101.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
