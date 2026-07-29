@@ -121,3 +121,38 @@ beside `Bengal` recorded in the anchor-disagreement report).
 
 Baseline unchanged this iteration: 9,634 c-y, exact01 **3,144** (32.6%),
 GBP 51.0% / 68.1%. Zero commodity-years changed by the narrowing.
+
+---
+
+## Update, iteration 16 — 1889 decoded and closed
+
+The `Lbs. ozs` decode was run with the uniqueness-counting solver built for
+`Tons. Cwts` (`scripts/decode_tons_cwts.py`), adapted to a **carry of 16**
+ounces to the pound.
+
+**`as_1889` decodes uniquely and closes twice over.** The thirteen members sum
+— with the carry — to **796,537 lb 4 oz**, which is both the block's own
+printed grand total and the **Tier-1 for 1889 (796,537 lb)** to the digit. So
+the decode has the same double confirmation the 1893/94 `Tons. Cwts` blocks
+had: its own printed total *and* the national anchor.
+
+    British East Indies   8,793,614  ->  87,936 lb 14 oz
+    France                2,283,838  -> 228,383 lb  8 oz
+    United States         2,237,278  -> 223,727 lb  8 oz
+    South Africa          1,481,670  -> 148,167 lb  0 oz
+    …thirteen rows, one closing combination
+
+**`Feathers And Down — Ornamental` 1889: `over` at 20.09× → EXACT** (796,538
+against 796,537). Thirteen `manual_rows`, tier A.
+
+**`as_1890`, `as_1891` and `as_1892` do not decode and were left alone.**
+1891's grand reads 71,457,511 and 1892's 8,532,562; no combination of member
+readings closes on any reading of their printed totals. 1892 is the frustrating
+one — its *totals* decode perfectly (569,690 + 283,566 = 853,256 lb 2 oz = T1
+exactly, shown in the original write-up above) but its **members** fall 31
+short of the printed foreign total, so something else is wrong in the block as
+well. Guessing past that is exactly what the uniqueness guard exists to
+prevent.
+
+The era-split fold of the de-headed `Ornamental` anchor is still queued behind
+the remaining three years.

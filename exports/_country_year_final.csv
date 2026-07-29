@@ -86014,19 +86014,6 @@ DRUGS,Unenumerated and Medicinal   preparations,australasia,Value,import,1889,10
 "DYE STUFFS, AND SUBSTANCES USED IN TANNING",Cutch and Gambier,burmah,Tons,import,1889,7532.0,188258.0,consensus,C,B,3,2
 "DYE STUFFS, AND SUBSTANCES USED IN TANNING",Extracts,other british possessions,Value,import,1889,3369.0,3369.0,consensus,C,C,3,3
 "FARINACEOUS SUBSTANCES, AND MANUFACTURES THEREOF, UNENUMERATED",,austrian territories,Value,import,1889,18367.0,18367.0,consensus,C,C,3,3
-FEATHERS,Ornamental,germany,Lbs. oz,import,1889,65742.0,3481.0,consensus,C,B,3,2
-FEATHERS,Ornamental,holland,Lbs. oz,import,1889,817750.0,43469.0,consensus,C,B,3,2
-FEATHERS,Ornamental,belgium,Lbs. oz,import,1889,19860.0,4734.0,consensus,C,B,3,2
-FEATHERS,Ornamental,france,Lbs. oz,import,1889,2283838.0,301112.0,consensus,C,B,3,2
-FEATHERS,Ornamental,united states of america,Lbs. oz,import,1889,2237278.0,7347.0,consensus,C,B,3,2
-FEATHERS,Ornamental,brazil,Lbs. oz,import,1889,10290.0,2556.0,consensus,C,B,3,2
-FEATHERS,Ornamental,other foreign countries,Lbs. oz,import,1889,105987.0,5903.0,consensus,C,B,3,2
-FEATHERS,Ornamental,south africa,Lbs. oz,import,1889,1481670.0,404588.0,consensus,C,B,3,2
-FEATHERS,Ornamental,aden,Lbs. oz,import,1889,30120.0,1350.0,consensus,C,B,3,2
-FEATHERS,Ornamental,british east indies,Lbs. oz,import,1889,8793614.0,45517.0,consensus,C,B,3,2
-FEATHERS,Ornamental,australasia,Lbs. oz,import,1889,134313.0,1392.0,consensus,C,B,3,2
-FEATHERS,Ornamental,british west india islands,Lbs. oz,import,1889,14040.0,697.0,consensus,C,B,3,2
-FEATHERS,Ornamental,other british possessions,Lbs. oz,import,1889,6000.0,861.0,consensus,C,B,3,2
 FISH,"Cured or Salted, unenumerated",mauritius,Cwts,import,1889,87.0,650.0,consensus,C,C,3,3
 FISH,"Cured or Salted, unenumerated",british east indies,Cwts,import,1889,198.0,642.0,consensus,C,C,3,3
 FISH,"Cured or Salted, unenumerated",australasia,Cwts,import,1889,242.0,790.0,consensus,C,C,3,3
@@ -93998,6 +93985,19 @@ METAL,Wrought or Manufactured,Belgium,Tons,import,1894,132.35,12678.0,human,A,B,
 METAL,Wrought or Manufactured,France,Tons,import,1894,558.8,61946.0,human,A,B,1,2
 METAL,Wrought or Manufactured,United States of America,Tons,import,1894,205.6,26262.0,human,A,B,1,2
 METAL,Wrought or Manufactured,Other Foreign Countries,Tons,import,1894,10.95,1120.0,human,A,B,1,2
+FEATHERS,Ornamental,Germany,Lbs,import,1889,6574.12,3481.0,human,A,B,1,2
+FEATHERS,Ornamental,Holland,Lbs,import,1889,81775.0,43469.0,human,A,B,1,2
+FEATHERS,Ornamental,Belgium,Lbs,import,1889,1986.0,4734.0,human,A,B,1,2
+FEATHERS,Ornamental,France,Lbs,import,1889,228384.0,301112.0,human,A,B,1,2
+FEATHERS,Ornamental,United States of America,Lbs,import,1889,223728.0,7347.0,human,A,B,1,2
+FEATHERS,Ornamental,Brazil,Lbs,import,1889,1029.0,2556.0,human,A,B,1,2
+FEATHERS,Ornamental,Other Foreign Countries,Lbs,import,1889,10598.4,5903.0,human,A,B,1,2
+FEATHERS,Ornamental,South Africa,Lbs,import,1889,148167.0,404588.0,human,A,B,1,2
+FEATHERS,Ornamental,Aden,Lbs,import,1889,3012.0,1350.0,human,A,B,1,2
+FEATHERS,Ornamental,British East Indies,Lbs,import,1889,87936.9,45517.0,human,A,B,1,2
+FEATHERS,Ornamental,Australasia,Lbs,import,1889,1343.81,1392.0,human,A,B,1,2
+FEATHERS,Ornamental,British West India Islands,Lbs,import,1889,1404.0,697.0,human,A,B,1,2
+FEATHERS,Ornamental,Other British Possessions,Lbs,import,1889,600.0,861.0,human,A,B,1,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Holland,Cwts,import,1872,6123.0,4370.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Belgium,Cwts,import,1872,94539.0,64282.0,infonly,B,B,2,2
 "CARDS, PLAYING","CURCORY, Raw or Kiln-dried",Other Countries,Cwts,import,1872,842.0,614.0,infonly,B,B,2,2

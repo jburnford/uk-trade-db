@@ -108,3 +108,33 @@ appearing or disappearing; not one previously-good commodity-year got worse.
 
 Baseline 9,627 c-y: exact01 **3,255** (33.8%), within 5% **44.6%**,
 GBP-weighted 50.8% / 67.7%.
+
+---
+
+## Update, iteration 16 — the seam is worked out
+
+Re-running the matcher on the post-fold payload (the 19 folds changed the
+candidate set, so the residual list had to be recomputed) leaves **5 resolved
+shadows, not the 14 estimated** — most of the estimate was absorbed by folds
+already applied.
+
+**Two taken**, both clean:
+
+- `Chicory And Coffee, Roasted Or Ground Mixed` → `Coffee And Chicory, Mixed`
+  (3 exact years) — the same printed line with the ingredients named in the
+  other order.
+- `Dried` → `Fruit — Unenumerated, Dried` (2 exact, gains 8) — a bare `Dried`
+  shadow that the arithmetic resolves out of the whole payload. It also rippled:
+  the payload's era-fold pass then closed **`Yeast, Dried` 1887** (nodata →
+  EXACT, 284,962 = 284,962), which nothing in this iteration targeted.
+
+**Three deliberately not taken.** Their targets are themselves sticky-group
+artefacts — `China, Or Porcelain, And Earthenware — Fresh (Not Of British
+Taking) : Herrings`, `Horns, Tips And Pieces Of Horns And Hoofs — Manufactures
+Of Iron Or Steel: Girders…`, `Flowers, Artificial — Nuts, Principally Used As
+Fruit`. Uniting an anchor with its countries *inside* an artefact node makes
+the artefact look substantiated, which is worse than leaving both halves
+visibly broken. They want the group repair first.
+
+Denominator 9,627 → **9,624** (−3), again genuine duplicate anchors.
+exact01 3,255 → **3,260** from the folds, → **3,261** with the feathers decode.
