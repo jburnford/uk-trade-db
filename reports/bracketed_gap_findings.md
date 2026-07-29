@@ -76,12 +76,27 @@ anchor. Folded, they close **to the digit**: 1887 37,650 = 37,650 and 1888
 42,859 = 42,859. Found by `scripts/match_orphan_countries.py`, which matches a
 country-only node to the commodity holding its anchor by arithmetic alone.
 
-1886 and 1892 are still open, so the entry is not withdrawn entirely — but
-"no table on either half" was checked by hunting the *printed total* through
-`country_obs`, and that hunt cannot see a table whose rows are present but
-filed under a sub-label the payload keeps separate. **Any "known-dead" verdict
-reached by a printed-total hunt alone should be re-tested against the two
-arithmetic matchers before it is trusted again.**
+**FULLY RETRACTED 2026-07-29, iteration 21 — all four years now close to the
+digit.** 1886 and 1892 fell too, and neither was a lost table either:
+
+- **1892** (48,732 → sorry, 56,315 Tons) is an **import table filed as
+  `export_uk`** — the same `as_1892` flow-misclassification family as the
+  `ZINC'd)` block repaired in iteration 10, in the same volume. Foreign members
+  sum to the printed 37,122, British to 19,193, grand **56,315 = Tier-1**. The
+  country list settles it independently: Mexico 18,184, British West Indies
+  14,331, Spanish West India Islands, Hayti and St. Domingo, Honduras, the
+  Republic of Colombia — a mahogany **source** list, not a destination list.
+- **1886** is filed under the **earlier era wording** `Furniture and
+  Hardwoods: Mahogany`, which the payload keeps as a separate commodity. The
+  block is complete and closes on its own: 34,255 + 14,477 = **48,732 =
+  Tier-1**.
+
+So of the three "known-dead" verdicts, mahogany was wrong in **every one of its
+four years**, and the two survivors (sugar 1874, caoutchouc 1892-98) were
+re-tested against every node in the payload and hold. **The lesson stands and
+is now evidenced: "no table on either half" reached by a printed-total hunt
+cannot see a table filed under a sub-label, an earlier era wording, or the
+wrong flow. Re-test before trusting.**
 
 ## Instrument gaps worth building (from the gutta percha post-mortem)
 

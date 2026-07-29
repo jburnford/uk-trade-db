@@ -35135,14 +35135,6 @@ WOOD AND TIMBER,Staves,austrian territories,Loads,import,1886,2999.0,21144.0,con
 WOOD AND TIMBER,Staves,united states of america,Loads,import,1886,20204.0,123030.0,consensus,B,B,2,2
 WOOD AND TIMBER,Staves,other foreign countries,Loads,import,1886,75.0,515.0,consensus,B,B,2,2
 WOOD AND TIMBER,Staves,canada,Loads,import,1886,2791.0,15755.0,consensus,B,B,2,2
-FURNITURE AND HARDWOODS,Mahogany,united states of america,Tons,import,1886,987.0,7360.0,consensus,B,C,2,3
-FURNITURE AND HARDWOODS,Mahogany,spanish west india islands,Tons,import,1886,2226.0,15663.0,consensus,B,C,2,3
-FURNITURE AND HARDWOODS,Mahogany,hayti and st domingo,Tons,import,1886,812.0,7675.0,consensus,B,C,2,3
-FURNITURE AND HARDWOODS,Mahogany,mexico,Tons,import,1886,27851.0,234763.0,consensus,B,C,2,3
-FURNITURE AND HARDWOODS,Mahogany,central america,Tons,import,1886,1659.0,16233.0,consensus,B,C,2,3
-FURNITURE AND HARDWOODS,Mahogany,other foreign countries,Tons,import,1886,720.0,6357.0,consensus,B,C,2,3
-FURNITURE AND HARDWOODS,Mahogany,canada,Tons,import,1886,13.0,103.0,consensus,B,B,2,2
-FURNITURE AND HARDWOODS,Mahogany,british west indies,Tons,import,1886,14456.0,114621.0,consensus,B,B,2,2
 FURNITURE AND HARDWOODS,Mahogany : Unenumerated,russia,Tons,import,1886,2867.0,30442.0,consensus,B,B,2,2
 FURNITURE AND HARDWOODS,Mahogany : Unenumerated,germany,Tons,import,1886,1369.0,11817.0,consensus,B,B,2,2
 FURNITURE AND HARDWOODS,Mahogany : Unenumerated,holland,Tons,import,1886,302.0,5457.0,consensus,B,B,2,2
@@ -95198,7 +95190,6 @@ WOOD AND TIMBER,Hewn : Teak,British East Indies : Burmah,Loads,import,1886,29370
 WOOD AND TIMBER,Hewn : Teak,British East Indies : Straits Settlements,Loads,import,1886,21.0,223.0,subentry,B,B,2,2
 WOOD AND TIMBER,Hewn : Teak,British East Indies : Ceylon,Loads,import,1886,97.0,650.0,subentry,B,B,2,2
 WOOD AND TIMBER,Staves,British East Indies : (Burmah),Loads,import,1886,2.0,12.0,subentry,B,B,2,2
-FURNITURE AND HARDWOODS,Mahogany,British East Indies : (Bengal),Tons,import,1886,8.0,160.0,subentry,B,B,2,2
 WOOL,Sheep or Lambs',Australasia : West Australia,Lbs,import,1886,5786218.0,210465.0,subentry,B,B,2,2
 WOOL,Sheep or Lambs',Australasia : South Australia,Lbs,import,1886,48207321.0,1723081.0,subentry,B,B,2,2
 WOOL,Sheep or Lambs',Australasia : Victoria,Lbs,import,1886,93889887.0,4047388.0,subentry,B,B,2,2
@@ -126847,6 +126838,30 @@ PARAFFINE,,British East Indies,Cwts,import,1893,22727.0,28816.0,groupfix,C,C,3,3
 FEATHERS AND DOWN,Ornamental,Australasia,Lbs,import,1895,2872.0,2578.0,groupfix,C,C,3,3
 FEATHERS AND DOWN,Ornamental,British West India Islands,Lbs,import,1895,1491.0,2470.0,groupfix,C,C,3,3
 FEATHERS AND DOWN,Ornamental,Other British Possessions,Lbs,import,1895,2532.0,1481.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Germany,Tons,import,1892,1677.0,12026.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,France,Tons,import,1892,1988.0,18762.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,French Possessions in West-       ern Africa,Tons,import,1892,1871.0,16692.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,United States of America,Tons,import,1892,1919.0,19995.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Spanish West India Islands,Tons,import,1892,3988.0,27317.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Hayti and St. Domingo,Tons,import,1892,2289.0,20225.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Mexico,Tons,import,1892,18184.0,170299.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Honduras (not British),Tons,import,1892,1460.0,12410.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,The Republic of Colombia,Tons,import,1892,2908.0,24639.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Brazil,Tons,import,1892,341.0,3200.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Other Foreign Countries,Tons,import,1892,497.0,3945.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,the Gold Coast Colony,Tons,import,1892,3937.0,36246.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,British East Indies,Tons,import,1892,878.0,6071.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,British West Indies,Tons,import,1892,14331.0,129025.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Other British Possessions,Tons,import,1892,47.0,451.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,United States of America,Tons,import,1886,987.0,7360.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Spanish West India Islands,Tons,import,1886,2226.0,15663.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Hayti and St. Domingo,Tons,import,1886,812.0,7675.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Mexico,Tons,import,1886,27851.0,234763.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Central America,Tons,import,1886,1659.0,16233.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,Other Foreign Countries,Tons,import,1886,720.0,6357.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,British North America,Tons,import,1886,13.0,103.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,British West Indies,Tons,import,1886,14456.0,114621.0,groupfix,C,C,3,3
+WOOD AND TIMBER,Mahogany,British East Indies : (Bengal),Tons,import,1886,8.0,160.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
