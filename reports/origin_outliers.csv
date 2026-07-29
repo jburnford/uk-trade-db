@@ -1,4 +1,5 @@
 commodity,year,origin,unit,qty,anchor,x_anchor
+"Unenumerated, Not Sweetened",1883,United States Of America Other Countries,Proof Gallon,1395602183,1261196,1106.6
 "Cotton Manufactures — Piece Goods, Plain",1886,Bengal And Burmah,Yard,997121800,33861432,29.4
 "Cotton Manufactures — Piece Goods, Plain",1887,Bengal And Burmah,Yard,903663400,53135774,17.0
 "Cotton Manufactures — Piece Goods, Plain",1885,Bengal And Burmah,Yard,810977000,44700765,18.1
@@ -12,6 +13,7 @@ commodity,year,origin,unit,qty,anchor,x_anchor
 "Cotton Manufactures — Piece Goods, Plain",1886,Turkey,Yard,215895700,33861432,6.4
 "Cotton Manufactures — Piece Goods, Plain",1887,Turkey,Yard,198535900,53135774,3.7
 "Cotton Manufactures — Piece Goods, Plain",1885,Hong Kong,Yard,165129600,44700765,3.7
+"Unenumerated, Not Sweetened",1882,China,Proof Gallon,153527372,1235049,124.3
 "Cotton Manufactures — Piece Goods, Plain",1887,Egypt,Yard,140140600,53135774,2.6
 "Cotton Manufactures — Piece Goods, Plain",1885,Egypt,Yard,128018800,44700765,2.9
 "Cotton Manufactures — Piece Goods, Plain",1886,Egypt,Yard,125124400,33861432,3.7
@@ -30,26 +32,60 @@ commodity,year,origin,unit,qty,anchor,x_anchor
 "Cotton Manufactures — Piece Goods, Plain",1886,Italy,Yard,64483800,33861432,1.9
 "Cotton Manufactures — Piece Goods, Plain",1885,Italy,Yard,63546600,44700765,1.4
 "Cotton Manufactures — Piece Goods, Plain",1886,Argentine Republic,Yard,58061900,33861432,1.7
+"Unenumerated, Not Sweetened",1882,Bengal,Proof Gallon,52745945,1235049,42.7
 "Cotton Manufactures — Piece Goods, Plain",1886,Belgium,Yard,49775200,33861432,1.5
 "Cotton Manufactures — Piece Goods, Plain",1886,Portugal,Yard,44508700,33861432,1.3
 "Cotton Manufactures — Piece Goods, Plain",1886,Foreign West Indies,Yard,41598900,33861432,1.2
-Feathers And Down — Ornamental,1889,British East Indies,Lb,8793614,796537,11.0
+"Fruit — Unenumerated, Dried",1899,Straits Settlements,Cwt,22164747,462575,47.9
+"Fruit — Unenumerated, Dried",1899,United States Of America (Pacific),Cwt,14641782,462575,31.7
+"Fruit — Unenumerated, Dried",1898,United States Of America (Pacific),Cwt,12055572,287451,41.9
+"Fruit — Unenumerated, Dried",1896,Straits Settlements,Cwt,11535110,309456,37.3
+"Fruit — Unenumerated, Dried",1896,United States Of America (Pacific),Cwt,11409456,309456,36.9
+"Fruit — Unenumerated, Dried",1898,Straits Settlements,Cwt,11267394,287451,39.2
+"Fruit — Unenumerated, Dried",1897,United States Of America (Pacific),Cwt,10099540,526344,19.2
+"Fruit — Unenumerated, Dried",1897,Straits Settlements,Cwt,8623416,526344,16.4
+"Fruit — Unenumerated, Dried",1899,United States Of America (Atlantic),Cwt,8269935,462575,17.9
+"Fruit — Unenumerated, Dried",1898,Spain,Cwt,8109048,287451,28.2
 Yarn,1889,Germany,Lb,7910652,3422121,2.3
 Yarn,1882,Germany,Lb,7455607,1408069,5.3
+"Fruit — Unenumerated, Dried",1899,Spain,Cwt,7441875,462575,16.1
 Yarn,1899,Bombay,Lb,7437522,4694074,1.6
 Yarn,1886,Germany,Lb,7416741,3948886,1.9
+"Fruit — Unenumerated, Dried",1897,Spain,Cwt,7345145,526344,14.0
+"Fruit — Unenumerated, Dried",1896,Spain,Cwt,7210913,309456,23.3
 Yarn,1887,Germany,Lb,6978561,2556642,2.7
 Yarn,1897,Bombay,Lb,6727790,4884952,1.4
 Yarn,1884,Germany,Lb,6530353,2534462,2.6
+"Fruit — Unenumerated, Dried",1895,United States Of America (Pacific),Cwt,6142459,325664,18.9
 Yarn,1898,Bombay,Lb,6006850,3968861,1.5
-Feathers And Down — Ornamental,1889,France,Lb,2283838,796537,2.9
-Feathers And Down — Ornamental,1889,United States Of America,Lb,2237278,796537,2.8
+"Fruit — Unenumerated, Dried",1897,United States Of America (Atlantic),Cwt,5951198,526344,11.3
+"Fruit — Unenumerated, Dried",1895,Straits Settlements,Cwt,4534384,325664,13.9
+"Fruit — Unenumerated, Dried",1898,United States Of America (Atlantic),Cwt,4238890,287451,14.7
+"Fruit — Unenumerated, Dried",1896,United States Of America (Atlantic),Cwt,3762762,309456,12.2
+"Fruit — Unenumerated, Dried",1895,United States Of America (Atlantic),Cwt,3638238,325664,11.2
+"Fruit — Unenumerated, Dried",1895,Spain,Cwt,2850044,325664,8.8
+"Fruit — Unenumerated, Dried",1897,Greece,Cwt,2174202,526344,4.1
 "Mutton, Fresh",1892,Chile,Cwt,2069441,1699966,1.2
-Feathers And Down — Ornamental,1889,British Possessions In South Africa,Lb,1481670,796537,1.9
+"Unenumerated, Not Sweetened",1882,Java,Proof Gallon,1762325,1235049,1.4
+"Fruit — Unenumerated, Dried",1898,Greece,Cwt,1531890,287451,5.3
+"Unenumerated, Not Sweetened",1882,Turkey,Proof Gallon,1422386,1235049,1.2
+"Fruit — Unenumerated, Dried",1899,Greece,Cwt,1405410,462575,3.0
+"Fruit — Unenumerated, Dried",1896,Greece,Cwt,1062938,309456,3.4
+"Fruit — Unenumerated, Dried",1895,Australasia,Cwt,971968,325664,3.0
+"Fruit — Unenumerated, Dried",1899,Russia,Cwt,812322,462575,1.8
+"Fruit — Unenumerated, Dried",1895,Greece,Cwt,764458,325664,2.3
 "Madder, Madder Root, Garancine, And Munjeet",1894,Bombay,Cwt,760541,8744,87.0
+"Fruit — Unenumerated, Dried",1899,Portugal,Cwt,670580,462575,1.4
+Spirits — Geneva,1872,Germany,Proof Gallon,620901,305166,2.0
+Spirits — Geneva,1872,France,Proof Gallon,596408,305166,2.0
+"Fruit — Unenumerated, Dried",1898,Portugal,Cwt,588940,287451,2.0
+"Fruit — Unenumerated, Dried",1896,Portugal,Cwt,492326,309456,1.6
+"Fruit — Unenumerated, Dried",1896,Turkey,Cwt,485834,309456,1.6
 "Madder, Madder Root, Garancine, And Munjeet",1895,Bombay,Cwt,458359,6054,75.7
 "Madder, Madder Root, Garancine, And Munjeet",1896,Bombay,Cwt,448996,5217,86.1
+"Fruit — Unenumerated, Dried",1895,Russia,Cwt,433578,325664,1.3
 "Varnished, Japanned Or Enamelled",1899,United States Of America,Lb,416080,8228,50.6
+"Fruit — Unenumerated, Dried",1895,Austrian Territories,Cwt,412340,325664,1.3
 "Madder, Madder Root, Garancine, And Munjeet",1893,Bombay,Cwt,343979,7006,49.1
 "Varnished, Japanned Or Enamelled",1899,Holland,Lb,326816,8228,39.7
 "Varnished, Japanned Or Enamelled",1897,United States Of America,Lb,319760,8131,39.3
@@ -63,7 +99,6 @@ Feathers And Down — Ornamental,1889,British Possessions In South Africa,Lb,148
 "Varnished, Japanned Or Enamelled",1893,United States Of America,Lb,205054,3993,51.4
 "Varnished, Japanned Or Enamelled",1895,United States Of America,Lb,203110,4210,48.2
 "Varnished, Japanned Or Enamelled",1896,Holland,Lb,196381,4295,45.7
-Oil — Seed,1879,United States Of America,Ton,178876,15805,11.3
 "Varnished, Japanned Or Enamelled",1893,Holland,Lb,176628,3993,44.2
 "Varnished, Japanned Or Enamelled",1894,Holland,Lb,165536,3210,51.6
 "Madder, Madder Root, Garancine, And Munjeet",1885,Madras,Cwt,164553,24721,6.7
@@ -72,6 +107,8 @@ Oil — Seed,1879,United States Of America,Ton,178876,15805,11.3
 "Madder, Madder Root, Garancine, And Munjeet",1895,Madras,Cwt,135742,6054,22.4
 "Varnished, Japanned Or Enamelled",1898,Belgium,Lb,131040,6882,19.0
 "Varnished, Japanned Or Enamelled",1899,Belgium,Lb,98000,8228,11.9
+Metal — Wrought Or Manufactured,1892,Holland,Ton,97310,2230,43.6
+Metal — Wrought Or Manufactured,1890,Holland,Ton,95417,1818,52.5
 "Madder, Madder Root, Garancine, And Munjeet",1895,Bengal,Cwt,92514,6054,15.3
 "Madder, Madder Root, Garancine, And Munjeet",1894,Bengal,Cwt,92165,8744,10.5
 Dye Woods — Logwood,1890,British West India Islands,Ton,80713,63519,1.3
@@ -79,6 +116,7 @@ Dye Woods — Logwood,1890,British West India Islands,Ton,80713,63519,1.3
 "Varnished, Japanned Or Enamelled",1899,Germany,Lb,66752,8228,8.1
 "Madder, Madder Root, Garancine, And Munjeet",1897,Madras,Cwt,63995,3793,16.9
 "Varnished, Japanned Or Enamelled",1897,Belgium,Lb,60144,8131,7.4
+Metal — Wrought Or Manufactured,1892,France,Ton,57219,2230,25.7
 "Madder, Madder Root, Garancine, And Munjeet",1893,Madras,Cwt,55731,7006,8.0
 "Madder, Madder Root, Garancine, And Munjeet",1896,Madras,Cwt,51809,5217,9.9
 "Madder, Madder Root, Garancine, And Munjeet",1893,Bengal,Cwt,45954,7006,6.6
@@ -91,20 +129,32 @@ Galls,1895,Turkey,Cwt,33631,26248,1.3
 "Varnished, Japanned Or Enamelled",1893,Canada,Lb,33524,3993,8.4
 Galls,1896,Turkey,Cwt,30728,23807,1.3
 "Varnished, Japanned Or Enamelled",1893,France,Lb,30020,3993,7.5
+Metal — Wrought Or Manufactured,1890,France,Ton,27410,1818,15.1
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1896,United States Of America,Cwt,25300,6444,3.9
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1896,Ceylon,Cwt,24220,6444,3.8
 "Varnished, Japanned Or Enamelled",1894,Canada,Lb,23856,3210,7.4
+Metal — Wrought Or Manufactured,1892,United States Of America,Ton,21518,2230,9.6
 "Madder, Madder Root, Garancine, And Munjeet",1896,Bengal,Cwt,21340,5217,4.1
 "Varnished, Japanned Or Enamelled",1898,Canada,Lb,21280,6882,3.1
 "Varnished, Japanned Or Enamelled",1896,Canada,Lb,19785,4295,4.6
 "Varnished, Japanned Or Enamelled",1899,Canada,Lb,13664,8228,1.7
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1895,Bengal,Cwt,13080,9601,1.4
 "Varnished, Japanned Or Enamelled",1895,Canada,Lb,12910,4210,3.1
+Metal — Wrought Or Manufactured,1886,Holland,Ton,12451,2004,6.2
+Metal — Wrought Or Manufactured,1890,United States Of America,Ton,12011,1818,6.6
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1896,Madagascar,Cwt,11580,6444,1.8
+Metal — Wrought Or Manufactured,1886,United States Of America,Ton,10515,2004,5.2
 "Varnished, Japanned Or Enamelled",1894,France,Lb,9520,3210,3.0
+Metal — Wrought Or Manufactured,1885,Holland,Ton,8631,1919,4.5
+Metal — Wrought Or Manufactured,1892,Belgium,Ton,8310,2230,3.7
+Metal — Wrought Or Manufactured,1885,United States Of America,Ton,7918,1919,4.1
 "Varnished, Japanned Or Enamelled",1896,Other Foreign Countries,Lb,5198,4295,1.2
+Metal — Wrought Or Manufactured,1885,Mexico,Ton,4390,1919,2.3
+Metal — Wrought Or Manufactured,1890,Germany,Ton,3443,1818,1.9
+Metal — Wrought Or Manufactured,1892,Germany,Ton,3383,2230,1.5
+Metal — Wrought Or Manufactured,1885,France,Ton,3090,1919,1.6
+Metal — Wrought Or Manufactured,1886,France,Ton,2409,2004,1.2
 Umbrellas And Parasols,1872,United States Of America (Atlantic & Pacific),?,45939100,0,foreign to this commodity
-"Skins, Furs, And Pelts — Goat, Undressed",1884,British India,Number,2414005,0,foreign to this commodity
 "Skins And Furs — Foreign, Dressed In The United Kingdom",1878,Germany,?,2251113,0,foreign to this commodity
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Other Foreign Countries,?,1657113,0,foreign to this commodity
 Cavendish Or Negrohead,1884,British West India Islands,Lb,1243720,0,foreign to this commodity
@@ -118,7 +168,6 @@ Whalebone (Whalefins) — Whale Fisheries,1888,Sweden,Load,205014,0,foreign to t
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Brazil,Lb,102199,81037,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Madras,Lb,82400,81037,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Guatemala,Lb,72569,81037,foreign to this commodity
-"Flowers, Artificial — Raw, Not Otherwise Described",1875,Turkey,Bushel,71157,0,foreign to this commodity
 Cavendish Or Negrohead,1884,British North America United States Of America,Lb,61910,0,foreign to this commodity
 Wood And Timber — Teak,1873,Canada,Load,61599,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Bombay,Lb,60123,81037,foreign to this commodity
@@ -133,11 +182,9 @@ Whalebone (Whalefins) — Whale Fisheries,1888,France,Load,34736,0,foreign to th
 "Ore, Unenumerated",1891,Native Islands In The Indian Seas Not Borneo,Ton,26323,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,San Salvador,Lb,23448,81037,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1872,Turkey Proper,?,22590,0,foreign to this commodity
-"Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,Germany,Number,22424,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Aden,Lb,17548,81037,foreign to this commodity
 "Kiln-Dried, Roasted, Or Ground",1891,Channel Islands,Lb,16471,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Nicaragua,Lb,16004,81037,foreign to this commodity
-"Flowers, Artificial — Raw, Not Otherwise Described",1875,Bombay,Bushel,15860,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,British West India Islands,Lb,14603,81037,foreign to this commodity
 "Kiln-Dried, Roasted, Or Ground",1891,Chile,Lb,11358,0,foreign to this commodity
 Wood And Timber — Teak,1873,Sweden,Load,10487,0,foreign to this commodity
@@ -148,18 +195,14 @@ Wood And Timber — Teak,1873,Russia,Load,8349,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,Argentine Republic,?,7139,0,foreign to this commodity
 Wood And Timber — Teak,1873,Norway,Load,7103,0,foreign to this commodity
 Wood And Timber — Teak,1873,United States Of America,Load,6670,0,foreign to this commodity
-"Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,France,Number,6517,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1881,Argentine Republic,?,6376,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,United States Of America (Pacific),?,5831,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Shot Of Iron, Including Shells",1880,United States Of America,?,5831,0,foreign to this commodity
 "Gunstocks In The Rough, Of Wood",1880,All Countries,Cwt,4707,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Straits Settlements,Lb,4513,81037,foreign to this commodity
-"Flowers, Artificial — Raw, Not Otherwise Described",1875,Persia,Bushel,4303,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Mexico,Lb,3595,81037,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Revolvers",1886,British Possessions,?,3570,0,foreign to this commodity
 Gunpowder,1881,Greece,Cwt,3532,0,foreign to this commodity
-"Flowers, Artificial — Raw, Not Otherwise Described",1875,Gibraltar,Bushel,3526,0,foreign to this commodity
-"Flowers, Artificial — Raw, Not Otherwise Described",1875,Egypt,Bushel,3020,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1880,Belgium,?,2802,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Parts Of Fire-Arms",1880,United States Of America (Pacific),?,2782,0,foreign to this commodity
 Gunpowder,1881,United States Of Colombia,Cwt,2312,0,foreign to this commodity
@@ -175,12 +218,12 @@ Gunpowder,1881,British Possessions In South Africa,Cwt,1486,0,foreign to this co
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Chile,Lb,1300,81037,foreign to this commodity
 Wood And Timber — Teak,1873,British Guiana,Load,1267,0,foreign to this commodity
 Gunpowder,1881,Bombay,Cwt,1146,0,foreign to this commodity
+"Fruit — Plums, Dried Or Preserved",1883,Turkey,Cwt,1024,0,foreign to this commodity
 Gunpowder,1881,Straits Settlements,Cwt,974,0,foreign to this commodity
 "Cocoa Or Chocolate, In The Manufacture Of Which Spirit Has Been Used",1895,Other British Possessions,Lb,965,81037,foreign to this commodity
 Whalebone (Whalefins) — Whale Fisheries,1888,United States Of America,Load,694,0,foreign to this commodity
 "Kiln-Dried, Roasted, Or Ground",1891,Other British Possessions,Lb,683,0,foreign to this commodity
 At Certain Ports,1894,Portugal,?,591,0,foreign to this commodity
-"Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,Spain,Number,415,0,foreign to this commodity
 At Certain Ports,1894,Islands,?,306,0,foreign to this commodity
 At Certain Ports,1894,Africa,?,305,0,foreign to this commodity
 At Certain Ports,1894,Fernande Po,?,305,0,foreign to this commodity
@@ -207,10 +250,7 @@ At Certain Ports,1894,Russia,?,253,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Mexico,?,104,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,New Zealand,?,54,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Hong Kong,?,50,0,foreign to this commodity
-"Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,Belgium,Number,47,0,foreign to this commodity
-"Skins, And Furs — Skins In Any Way Dressed (Not Leather)",1898,British East Indies,Number,46,0,foreign to this commodity
 "Carriages, Carts, &C — Railway Waggons, Trucks, &C. (Not Of Iron)For Ballast, Minerals, Or Merchandize",1872,Japan,?,24,0,foreign to this commodity
-"Flowers, Artificial — Raw, Not Otherwise Described",1875,China,Bushel,0,0,foreign to this commodity
 "Buttons And Studs, Not Of Metal",1880,All Countries,Gross,0,0,foreign to this commodity
 China And Porcelain Ware,1882,Australasia,Cwt,0,0,foreign to this commodity
 "Cotton Manufactures — Dye Stuffs, Unenumerated",1872,Egypt,Cwt,0,0,foreign to this commodity
@@ -226,12 +266,12 @@ Cavendish Or Negrohead,1873,Australia,Lb,0,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Cannon And Mortars",1879,Sweden And Norway,Number,0,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Cannon And Mortars",1879,Morocco,Number,0,0,foreign to this commodity
 "Arms, Ammunition, And Military Stores — Cannon And Mortars",1879,Australia,Number,0,0,foreign to this commodity
+"Plums, French, And Pruneloes",1886,British Possessions,Cwt,0,0,foreign to this commodity
 "Metal — Old (Other Than Iron Or Copper), Fit Only For Re-Manufacture",1880,Italy,Ton,0,0,foreign to this commodity
 "Metal — Old (Other Than Iron Or Copper), Fit Only For Re-Manufacture",1880,Canada,Ton,0,0,foreign to this commodity
 "Brass, Bronze, And Metal, Bronze And Lacquered",1883,Italy,Cwt,0,0,foreign to this commodity
 "Brass, Bronze, And Metal, Bronze And Lacquered",1883,Greece,Cwt,0,0,foreign to this commodity
 "Brass, Bronze, And Metal, Bronze And Lacquered",1884,Spain,Cwt,0,0,foreign to this commodity
-"Plums, French, And Pruneloes",1886,British Possessions,Cwt,0,0,foreign to this commodity
 "Metal — Leaf, Not Gold",1877,All Countries,Packets,0,0,foreign to this commodity
 Cotton Manufactures — Muslins,1872,United States Of America,Yard,0,0,foreign to this commodity
 Cotton Manufactures — Muslins,1881,All Countries,Yard,0,0,foreign to this commodity

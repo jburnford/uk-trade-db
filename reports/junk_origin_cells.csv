@@ -1,44 +1,25 @@
 commodity,year,origin,value,qty
 Wool — Sheep Or Lambs',1899,Sheep Or Lambs,17811360,0
-Petroleum,1899,Lubricating,12280660,0
 Copper,1899,Cork Manufactured Lbs,4901055,0
 Wool — Sheep Or Lambs',1898,Sheep Or Lambs,1244694,0
-Petroleum,1899,Hides Raw,1131392,0
-Petroleum,1899,Rice,1110909,0
-Petroleum,1899,Of All Other Kinds,1025463,0
-Petroleum,1899,Potatoes,928191,0
-Petroleum,1899,Gutta Percha,914394,0
-Petroleum,1899,Rabbits Dead,570033,0
-Petroleum,1899,Raisins,557653,0
 Whalebone (Whalefins) — Whale Fisheries,1888,Fir,493655,310522
 Wool — Sheep Or Lambs',1899,Goats Wool Or Hair Mohair,436345,0
-Petroleum,1899,Quicksilver,414753,0
 Copper,1899,Cork Manufactured,353076,0
-Petroleum,1899,Plumbago,351590,0
-Petroleum,1899,Gum Kowrie,316220,0
 Iron — Leather Manufacturers,1899,Boots And Shoes,238958,650561
-Petroleum,1899,Fresh,230817,0
-Petroleum,1899,Hay,220454,0
 Iron — Leather Manufacturers,1899,Gloves,199728,2002090
-Petroleum,1899,Ice,134528,0
-Petroleum,1899,Pyrites Of Iron Or Copper,105448,0
 Iron — Leather Manufacturers,1899,Manufactures,101139,414854
-Petroleum,1899,Rosin,87539,0
-Petroleum,1899,Pyrites Of Iron Or Copper Tons,73960,0
 Copper,1899,Ore Of,71480,0
 Copper,1899,Unwrought,33418,0
-Petroleum,1899,Pork Salted Cts,32323,0
 Wool — Sheep Or Lambs',1898,Of All Other Kinds Ccts,31781,0
-Petroleum,1899,Pork Salted Cuts,25601,0
 Whalebone (Whalefins) — Whale Fisheries,1888,Oak,25078,5347
 Wool — Sheep Or Lambs',1898,Glass Manufactures Bottles Gross,22687,0
-Petroleum,1899,Plumbago Tons,13199,0
 Wine — Total Of All Kinds,1897,Burgundy,11291,0
 Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,1886,Mahogany,7360,987
 Wool — Sheep Or Lambs',1899,Rice,6856,0
 Wool — Sheep Or Lambs',1898,Rice,6414,0
 Wool — Sheep Or Lambs',1898,Rosin,4972,0
 Copper,1899,Regulus And Precipitate,4634,0
+Copper — Piece Goods Of Other Countries,1874,Muslins,3965,2028
 Iron — Leather Manufacturers,1899,Manganese Ore Of,3914,585421
 Wool — Sheep Or Lambs',1899,Rosin,3650,0
 Copper,1899,Ore Of Tons,3405,0
@@ -47,6 +28,7 @@ Wool — Sheep Or Lambs',1898,Ice Tons,2970,0
 "Wine — In Bottles, Still",1898,White,2533,5231
 Wool — Sheep Or Lambs',1898,Manufactures Of Cuts,2378,0
 "Wine — In Bottles, Still",1896,White,2258,4766
+Cotton Manufactures — Piece Goods Of Other Countries,1872,Muslins,2143,3113
 Wool — Sheep Or Lambs',1899,Manufactures Of Cts,1693,0
 "Wine — In Bottles, Still",1894,White,1549,3590
 "Wine — In Bottles, Still",1897,White,1523,3138
@@ -57,8 +39,6 @@ Wool — Sheep Or Lambs',1899,Zinc Crude Tons,29,0
 Wool — Sheep Or Lambs',1898,Zinc Crude Tons,12,0
 Wool — Sheep Or Lambs',1898,Raisins,6,0
 Wool — Sheep Or Lambs',1899,Raisins,4,0
-Wool — Sheep Or Lambs',1898,Yeast,0,0
-Wool — Sheep Or Lambs',1899,Yeast,0,0
 Wool — Sheep Or Lambs',1899,Rabbits Dead,0,0
 Wool — Sheep Or Lambs',1898,Yeast Cuts,0,0
 Wool — Sheep Or Lambs',1898,Hides Raw Ccts,0,0
@@ -69,7 +49,6 @@ Wine — Total Of All Kinds,1898,Saumur,0,0
 Wine — Total Of All Kinds,1898,Hock,0,0
 Coffee — Raw,1898,"Kiln Dried, Roasted, Or Ground",0,0
 Coffee — Raw,1899,"Kiln Dried, Roasted, Or Ground",0,0
-Petroleum,1899,Illuminating Gallons,0,0
+Articles Subject To Duty,1886,"Articles From Each Country - - - Distinguishing The Total Quantities And Value Of Each Article Imported From Foreign Countries And British Possessions, The Quantities Entered For Home Consumption, And The Gross Amount Of Duty Received",0,91
 England And Wales,1872,Rye,0,17159
 Ireland,1896,Cork,0,1149432
-Articles Subject To Duty,1886,"Articles From Each Country - - - Distinguishing The Total Quantities And Value Of Each Article Imported From Foreign Countries And British Possessions, The Quantities Entered For Home Consumption, And The Gross Amount Of Duty Received",0,91
