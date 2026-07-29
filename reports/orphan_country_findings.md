@@ -153,3 +153,41 @@ confirmation.**
 Baseline 9,610 c-y (−14, duplicate anchors again): exact01 3,334 → **3,366**
 (35.0%), within 5% 45.6% → **46.1%**, GBP within 0.1% **51.4%**, within 5%
 **68.2%**. Zero true regressions.
+
+---
+
+## Update, iteration 26 — six folds, and folds cascade
+
+Six taken, all unscoped per the iteration-24 rule:
+
+| source | → host | evidence |
+|---|---|---|
+| `Nuts And Kernels — Other Sorts, Unenumerated (Not Fruit)` | `… (Not Used As Fruit)` | 3 exact |
+| `Boots And Shoes` | `Leather Manufactures — Boots And Shoes` | 2 exact |
+| `Feathers And Down — For Beds` | `Feathers — For Beds` | 2 exact |
+| `Linen And Cotton Rags` | `Rags And Other Materials For Making Paper — Linen And Cotton` | 2 exact |
+| `Nuts And Kernels — Other Sorts, Unenumerated (Not Used As Fruit)` | `Nuts And Kernels — Of Other Sorts` | 3 exact |
+| `Silk Manufactures — Of Countries Out Of Europe` | `Manufactures — Of Countries Out Of Europe` | 2 exact |
+
+The boots pair is worth noting: `reports/bracketed_gap_findings.md` has carried
+*"Boots 1886: anchor sits under the `Leather Manufactures` label-key split …
+a headless-vs-headed era pair the fold pass cannot see"* since the campaign
+began. **The arithmetic matcher sees it.**
+
+**FOLDS CASCADE — and this is the reusable finding.** The first Nuts And
+Kernels fold merged `(Not Fruit)` into `(Not Used As Fruit)`; the enlarged node
+then matched a **third** wording of the same line, `Nuts And Kernels — Of Other
+Sorts`, which had not been reported before the fold. So **re-run the matcher
+within an iteration, not only between iterations** — each merge can expose the
+next link in a chain.
+
+exact01 3,472 → **3,483**, nodata 4,490 → **4,448**, within 5% 47.6% →
+**47.9%**, GBP 51.6% → **51.7%** / 68.4% → **68.5%**. Denominator 9,553 →
+9,524 (−29, duplicate anchors). Zero true regressions.
+
+Nine resolved matches remain, all previously reasoned about and declined:
+generic hosts (`Gum — Unenumerated` → `Of Other Sorts`), wrong direction
+(`Wood And Timber — Mahogany`), the bidirectional brass warning, the copper
+pair that breaks `fold_era_wordings`, and four whose host is a sticky-group
+artefact or whose pairing is semantically implausible (`Seeds — Rape` →
+`Hemp`).
