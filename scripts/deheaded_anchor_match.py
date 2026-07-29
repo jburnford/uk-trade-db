@@ -76,6 +76,16 @@ def main(payload_path, out_path):
                     for r in cells:
                         if r[1]:
                             org[r[0]] = org.get(r[0], 0) + r[1]
+            # ERA SPLIT: the two ANCHORS are disjoint in years, so the shadow
+            # is not a duplicate of the counterpart's series - it is its later
+            # (or earlier) era, de-headed. Folding COMPLETES a series instead of
+            # removing a phantom, and it is the only one of the three kinds that
+            # both adds measured years AND leaves the denominator alone. Three
+            # commodities found by hand in one session sat in this blind spot
+            # (drugs unenumerated, feathers ornamental, metal wrought), every one
+            # of them mis-filed as 'duplicate' because the test was merely
+            # 'does the counterpart have an anchor'.
+            anchor_overlap = sorted(set(t1y) & set(ct1))
             both = sorted(set(t1y) & set(org))
             exact = sum(1 for y in both if round(org[y]) == t1y[y])
             near = sum(1 for y in both
@@ -87,14 +97,18 @@ def main(payload_path, out_path):
                 'shadow_unit': unit or '?',
                 'shadow_gbp': round(payload[name].get('v') or 0),
                 'counterpart': cand,
-                'kind': 'duplicate' if ct1 else 'reunion',
+                'kind': ('reunion' if not ct1
+                         else 'era-split' if not anchor_overlap
+                         else 'duplicate'),
+                'anchor_overlap_years': len(anchor_overlap),
+                'gains_years': len([y for y in t1y if y in org]),
                 'counterpart_gbp': round(payload[cand].get('v') or 0),
                 'counterpart_countries': len(cctys),
                 'overlap_years': len(both),
                 'exact': exact, 'near': near,
                 'unit_agrees': int(bool(unit) and (cunit == unit or not cunit)),
             })
-    rows.sort(key=lambda r: (r['kind'], -r['exact'], -r['shadow_t1_years']))
+    rows.sort(key=lambda r: (r['kind'], -r['gains_years'], -r['exact']))
 
     with open(out_path, 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else ['shadow'])
@@ -103,18 +117,24 @@ def main(payload_path, out_path):
 
     matched = {r['shadow'] for r in rows}
     reunion = [r for r in rows if r['kind'] == 'reunion']
+    era = [r for r in rows if r['kind'] == 'era-split']
     dup = [r for r in rows if r['kind'] == 'duplicate']
     dup_years = sum(prof[s][0] and len(prof[s][0]) for s in {r['shadow'] for r in dup})
     print(f'anchor-only labels: {len(shadows)}   holding '
           f'{sum(len(p[0]) for p in shadows.values()):,} commodity-years')
     print(f'  with a structural counterpart: {len(matched)}')
     print(f'  REUNION rows (counterpart has no anchor):   {len(reunion)}')
-    print(f'  DUPLICATE rows (counterpart has an anchor): {len(dup)}')
+    print(f'  ERA-SPLIT rows (anchors DISJOINT - fold completes a series): {len(era)}')
+    print(f'  DUPLICATE rows (anchors overlap):           {len(dup)}')
     print(f'  -- folding every DUPLICATE would remove ~{dup_years:,} '
           f'commodity-years from reconcile_baseline\'s DENOMINATOR.')
     print(f'     Report that separately: a smaller denominator raises every')
     print(f'     percentage without one number getting better.')
     print(f'-> {out_path}')
+    for r in era[:20]:
+        print(f"  era-split  gains {r['gains_years']:>2}y  "
+              f"{r['shadow'][:32]:<34} + {r['counterpart'][:42]:<44} "
+              f"unit_agrees={r['unit_agrees']}")
     for r in reunion[:20]:
         print(f"  reunion  {r['exact']:>2}e/{r['near']:>2}n  "
               f"{r['shadow'][:34]:<36} + {r['counterpart'][:44]:<46} "
