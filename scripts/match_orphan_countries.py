@@ -74,8 +74,23 @@ def main(payload_path, out_path):
                 for r in cells:
                     if r[1]:
                         per[u][r[0]] += r[1]
-        if ctys and not t1:
-            orphans[name] = per
+        # ANY node with countries is a source. Requiring the source to have no
+        # anchor AT ALL (the original rule) missed a whole population: a node
+        # can hold an anchor for one era and countries for another, with the
+        # other era's anchor in a differently-named node. Staves is the proof -
+        # `Wood And Timber — Staves` held countries plus Tier-1 for 1890-91
+        # while `Staves, Of All Dimensions` held Tier-1 for 1892-94, and the
+        # first node's own sums for 1892 and 1893 WERE the second's anchors.
+        # The per-year test below (source must not anchor the matched year)
+        # is what keeps this safe.
+        if ctys:
+            own_t1 = {}
+            if t1:
+                for u, cells in t1.items():
+                    for r in cells:
+                        if r[1]:
+                            own_t1[(u, r[0])] = r[1]
+            orphans[name] = (per, own_t1)
         if t1:
             u = max(t1, key=lambda x: len(t1[x]))
             t1y = {r[0]: r[1] for r in t1[u] if r[1]}
@@ -83,15 +98,20 @@ def main(payload_path, out_path):
                 hosts[name] = (u, t1y, {y for y in per.get(u, {}) if per[u][y]})
 
     rows, res, amb = [], 0, 0
-    for oname, per in orphans.items():
+    for oname, (per, own_t1) in orphans.items():
         hits = []
         for hname, (u, t1y, have) in hosts.items():
             if hname == oname or u not in per:
                 continue
+            # the source must NOT anchor the matched year itself - otherwise
+            # the two nodes disagree about that year rather than completing
+            # each other, and folding would be a duplicate merge
             ex = [y for y in t1y if y in per[u] and y not in have
+                  and (u, y) not in own_t1
                   and agrees(per[u][y], t1y[y]) and t1y[y] >= MIN_QTY]
             if len(ex) >= MIN_EXACT:
-                gains = [y for y in t1y if y in per[u] and y not in have]
+                gains = [y for y in t1y if y in per[u] and y not in have
+                         and (u, y) not in own_t1]
                 hits.append((len(ex), len(gains), hname, ex, sorted(gains)))
         if not hits:
             continue
@@ -103,26 +123,29 @@ def main(payload_path, out_path):
         for n_ex, n_g, hname, ex, gains in hits[:3]:
             rows.append({
                 'orphan': oname, 'host': hname, 'kind': kind,
+                'source_kind': 'orphan' if not own_t1 else 'era-split',
                 'exact_years': n_ex, 'gains_years': n_g,
                 'years': ';'.join(map(str, sorted(ex)[:8])),
                 'safe_scope': ';'.join(map(str, gains)),
                 'orphan_gbp': round(payload[oname].get('v') or 0)})
     rows.sort(key=lambda r: (r['kind'], -r['exact_years'], -r['gains_years']))
 
-    cols = ['orphan', 'host', 'kind', 'exact_years', 'gains_years', 'years',
-            'safe_scope', 'orphan_gbp']
+    cols = ['orphan', 'host', 'kind', 'source_kind', 'exact_years',
+            'gains_years', 'years', 'safe_scope', 'orphan_gbp']
     with open(out_path, 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         w.writerows(rows)
-    print(f'country-only orphans: {len(orphans)}   anchor-holding hosts: {len(hosts)}')
+    n_era = len({r['orphan'] for r in rows if r['source_kind'] == 'era-split'})
+    print(f'country-bearing sources: {len(orphans)}   anchor-holding hosts: {len(hosts)}')
+    print(f'  of the matches, sources that ALSO hold an anchor elsewhere: {n_era}')
     print(f'  RESOLVED: {res}   AMBIGUOUS: {amb}')
     print(f'  bar: >= {MIN_EXACT} years to the digit, each >= {MIN_QTY:,}')
     print(f'  `safe_scope` is the years the host LACKS - use it as the fold\'s year scope')
     print(f'-> {out_path}')
     for r in [x for x in rows if x['kind'] == 'resolved'][:20]:
-        print(f"  {r['exact_years']}e gains {r['gains_years']:>2}y  "
-              f"{r['orphan'][:42]:<44} -> {r['host'][:38]}")
+        print(f"  {r['exact_years']}e gains {r['gains_years']:>2}y "
+              f"[{r['source_kind'][:9]:9}] {r['orphan'][:38]:<40} -> {r['host'][:34]}")
 
 
 if __name__ == '__main__':

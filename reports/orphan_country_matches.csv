@@ -1,11 +1,31 @@
-orphan,host,kind,exact_years,gains_years,years,safe_scope,orphan_gbp
-Onions — Opium,Opium,ambiguous,2,4,1879;1881,1877;1879;1880;1881,2047121
-Onions — Opium,Drugs — Opium,ambiguous,2,3,1879;1881,1879;1880;1881,2047121
-"Beads Of All Sorts — Brass, Bronze, And Metal Bronzed Or Lacquered, Manufactures Of, Unenumerated","Brass, Bronze, And Metal Bronzed Or Lacquered, }Manufactures Of",ambiguous,2,2,1893;1894,1893;1894,591901
-"Beads Of All Sorts — Brass, Bronze, And Metal Bronzed Or Lacquered, Manufactures Of, Unenumerated",Brass And Bronze Manufactures,ambiguous,2,2,1893;1894,1893;1894,591901
-"Brass, Bronze, And Metal Bronzed Or Lacquered, Manufactures Of, Not Otherwise Enumerated","Brass, Bronze, And Metal Bronzed Or Lacquered, }Manufactures Of",resolved,3,5,1895;1896;1898,1895;1896;1897;1898;1899,996198
-"Nuts And Kernels — Other Sorts, Unenumerated (Not Fruit)","Nuts And Kernels — Other Sorts, Unenumerated (Not Used As Fruit)",resolved,3,4,1872;1873;1876,1872;1873;1874;1876,3997625
-"Copper — Manufactures Of, Unenumerated","Copper — Manufactures Of, Unenumerated,   Including Copper Coin",resolved,2,9,1872;1873,1872;1873;1874;1888;1889;1892;1893;1894;1895,847677
-"Wood And Timber — Hewn, Unenumerated",Wood And Timber — Unenumerated,resolved,2,5,1895;1898,1894;1895;1897;1898;1899,5933408
-"Cards, Playing — Transparent In The Manufacture Of Which Spirit Has Been Used","Soap, Transparent, In The Manufacture Of Which Spirit Has Been Used",resolved,2,3,1898;1899,1896;1898;1899,3421
-"China, Or Porcelain, And Earthenware — Fresh (Not Of British Taking) : Herrings","Fish : Fresh, Herrings",resolved,2,2,1895;1896,1895;1896,238954
+orphan,host,kind,source_kind,exact_years,gains_years,years,safe_scope,orphan_gbp
+"Beads Of All Sorts — Brass, Bronze, And Metal Bronzed Or Lacquered, Manufactures Of, Unenumerated","Brass, Bronze, And Metal Bronzed Or Lacquered, }Manufactures Of",ambiguous,orphan,2,2,1893;1894,1893;1894,591901
+"Beads Of All Sorts — Brass, Bronze, And Metal Bronzed Or Lacquered, Manufactures Of, Unenumerated",Brass And Bronze Manufactures,ambiguous,orphan,2,2,1893;1894,1893;1894,591901
+Hats Or Bonnets — Of Straw,Straw,resolved,era-split,13,18,1873;1875;1876;1877;1878;1879;1880;1881,1872;1873;1875;1876;1877;1878;1879;1880;1881;1882;1883;1884;1885;1886;1887;1889;1890;1891,2097102
+"Thrown, Dyed Or Not Dyed",Silk — Thrown,resolved,era-split,12,13,1880;1881;1882;1883;1884;1885;1886;1887,1880;1881;1882;1883;1884;1885;1886;1887;1888;1889;1890;1891;1892,9673930
+"Dye Stuffs, And Substances Used In Tanning — Shumach",Shumach,resolved,era-split,11,14,1872;1873;1875;1876;1878;1879;1880;1881,1872;1873;1875;1876;1878;1879;1880;1881;1882;1883;1884;1885;1891;1892,3712197
+"Skins, Furs, And Pelts — Goat, Undressed","Skins And Furs — Goat, Undressed",resolved,era-split,11,13,1878;1879;1880;1881;1883;1884;1886;1887,1878;1879;1880;1881;1883;1884;1885;1886;1887;1888;1889;1890;1891,12821014
+"Bar, Angle, Bolt And Rod",Iron — In Bars,resolved,era-split,6,9,1883;1884;1887;1888;1889;1890,1882;1883;1884;1885;1886;1887;1888;1889;1890,15787295
+"Skins, Furs, And Pelts — Sheep, Undressed","Skins — Sheep And Lamb, Undressed",resolved,era-split,5,13,1884;1885;1887;1888;1889,1880;1882;1883;1884;1885;1886;1887;1888;1889;1890;1891;1892;1893,18458529
+"Straw Platting, For Making Hats Or Bonnets",Straw Platting For Hats Or Bonnets,resolved,era-split,5,7,1886;1888;1890;1891;1892,1886;1887;1888;1889;1890;1891;1892,10785553
+"Meat — Salted Or Fresh, Not Otherwise Described","Meat, Salted Or Fresh",resolved,era-split,5,6,1873;1874;1875;1876;1877,1872;1873;1874;1875;1876;1877,10411979
+Oil — Seed,"Seed, Of All Kinds",resolved,era-split,5,6,1872;1873;1874;1875;1877,1872;1873;1874;1875;1876;1877,15560564
+Gum — Unenumerated,Of Other Sorts,resolved,era-split,4,10,1877;1889;1890;1896,1877;1888;1889;1890;1891;1892;1893;1894;1895;1896,8109280
+Wood And Timber — Mahogany,Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,resolved,era-split,4,6,1872;1873;1882;1884,1872;1873;1874;1882;1883;1884,22769879
+"Dye Stuffs, And Substances Used In Tanning — Shumach",Dyeing Or Tanning Stuffs — Shunach,resolved,era-split,4,5,1879;1880;1881;1883,1879;1880;1881;1882;1883,3712197
+"Ammunition — Shot, Large And Small","Shot, Large And Small",resolved,era-split,4,4,1895;1897;1898;1899,1895;1897;1898;1899,55022
+"Bar, Angle, Bolt And Rod","Unwrought, Part Wrought, And Old",resolved,era-split,4,4,1887;1888;1889;1890,1887;1888;1889;1890,15787295
+"Brass, Bronze, And Metal Bronzed Or Lacquered, Manufactures Of, Not Otherwise Enumerated","Brass, Bronze, And Metal Bronzed Or Lacquered, }Manufactures Of",resolved,orphan,3,5,1895;1896;1898,1895;1896;1897;1898;1899,996198
+Hats Or Bonnets — Of Felt,Of Felt,resolved,era-split,3,4,1896;1897;1898,1896;1897;1898;1899,2346884
+"Nuts And Kernels — Other Sorts, Unenumerated (Not Fruit)","Nuts And Kernels — Other Sorts, Unenumerated (Not Used As Fruit)",resolved,orphan,3,4,1872;1873;1876,1872;1873;1874;1876,3997625
+Apples — Raw,"Fruit — Apples, Raw",resolved,era-split,3,4,1888;1890;1891,1888;1889;1890;1891,6709080
+"Dye Stuffs, And Substances Used In Tanning — Shumach",Sumach,resolved,era-split,3,3,1891;1892;1894,1891;1892;1894,3712197
+"Copper — Manufactures Of, Unenumerated","Copper — Manufactures Of, Unenumerated,   Including Copper Coin",resolved,orphan,2,9,1872;1873,1872;1873;1874;1888;1889;1892;1893;1894;1895,847677
+"Wood And Timber — Hewn, Unenumerated",Wood And Timber — Unenumerated,resolved,orphan,2,5,1895;1898,1894;1895;1897;1898;1899,5933408
+Seeds — Rape,Hemp,resolved,era-split,2,4,1892;1893,1892;1893;1894;1895,23225324
+"Cards, Playing — Transparent In The Manufacture Of Which Spirit Has Been Used","Soap, Transparent, In The Manufacture Of Which Spirit Has Been Used",resolved,orphan,2,3,1898;1899,1896;1898;1899,3421
+Boots And Shoes,Leather Manufactures — Boots And Shoes,resolved,era-split,2,3,1876;1886,1876;1877;1886,10969456
+Silk Manufactures — Of Countries Out Of Europe,Manufactures — Of Countries Out Of Europe,resolved,era-split,2,2,1880;1881,1880;1881,2509051
+Feathers And Down — For Beds,Feathers — For Beds,resolved,era-split,2,2,1891;1892,1891;1892,356314
+"China, Or Porcelain, And Earthenware — Fresh (Not Of British Taking) : Herrings","Fish : Fresh, Herrings",resolved,orphan,2,2,1895;1896,1895;1896,238954
+Linen And Cotton Rags,Rags And Other Materials For Making Paper — Linen And Cotton,resolved,era-split,2,2,1874;1875,1874;1875,1176334
