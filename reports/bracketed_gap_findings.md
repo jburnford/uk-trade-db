@@ -389,3 +389,79 @@ list. 1881's T1 is contested — `as_1882`/`as_1883` print 134,487 (tier A) but
 `as_1884`/`as_1885` print 131,487 (tier B), a 3,000 split of exactly the kind
 the 1884 Japan cell showed. Worth taking next; the same CHEMICAL glue is the
 obvious first place to look.
+
+---
+
+## Sweep 7 (2026-07-28) — china/porcelain 1880-81: the "holes" were a sibling parent
+
+**Item**: `China, Or Porcelain, And Earthenware` 1880 and 1881, flagged at the
+end of sweep 6 as unlisted holes (both 0.0000).
+
+### They are not holes
+
+The abstract for 1878-1881 prints **two** lines where later years print one:
+
+- `China or Porcelain Ware` — its own Tier-A series, 1876-1881
+- `China or Porcelain and Earthenware` — the COMBINED line, 1878 onward
+
+and the origin section prints two matching tables, `CHINA or PORCELAIN WARE`
+and `EARTHENWARE, not being China or Porcelain Ware`. **There is no separate
+earthenware anchor anywhere in the corpus.** So the combined line is a parent
+whose children are separately filed, and it reads nodata because nothing sums
+its two children — the [[sibling-identity-check]] class again, one year after
+the same structure was found in whale oil.
+
+The identity closes to the digit in both years:
+
+| year | china ware | earthenware | sum | combined T1 |
+|---|---|---|---|---|
+| 1880 | 54,562 | 53,695 | **108,257** | 108,257 |
+| 1881 | 61,971 | 72,516 | **134,487** | 134,487 |
+
+**Merging them into the parent commodity is not possible mechanically.** Both
+children list the same countries (Germany, Holland, Belgium, France, Other
+Countries), so relabelling both into one commodity collides on
+`(sig, country, year)` and the second table would be silently dropped at
+`drop_already_added` — losing data, not gaining it. Closing these years needs
+the country rows *summed* before admission, which is a modelling change and
+the user's call, not loop work.
+
+Also note `China or Porcelain Ware` 1880 was **already exact** (54,569 against
+its own 54,562 anchor) — the sweep-6 note calling 1880 a hole was reading the
+parent's ratio, not the child's.
+
+### What was fixable: one row
+
+`China And Porcelain Ware` **1881: 0.9352 -> 1.0000**. `as_1881` seq 173 carries
+4,013/£21,404 under the label `TOTAL`, so `is_subtotal` dropped it. It is not
+the total — it is the block's last member, `Other Countries`. Proved three
+independent ways:
+
+1. The line's own Tier-A anchor is 61,971 and the six labelled members sum to
+   57,958. 61,971 − 57,958 = **4,013** exactly.
+2. The raw (as_1881 md lines 22556-22621) shows the printed head
+   `CHINA or PORCELAIN WARE:` followed by seven country labels ending in
+   `Other Countries`, on a **two-up page whose right column is a Tons table**.
+   The intruding column header displaced the first row's figures and orphaned
+   the last pair — the same mechanism as the as_1887 spirits page (sweep 4).
+3. The sibling identity above.
+
+Series shape confirms the direction: the alternative pairing would put China
+at 19,763 cwt (4,594 in 1880, 3,902 in 1883) and Germany at 4,013 (10,565 in
+1880) — both implausible.
+
+Corpus: exact01 3,128 -> **3,129**, GBP within 0.1% **50.9%**. One
+commodity-year changed, **0 regressions**.
+
+### Found in passing, not worked
+
+`CHINA, OR PORCELAIN, AND EARTHENWARE` is a **sticky group** in 1893-1899,
+carrying Barley, Wheat, Peas, Buckwheat, Oatmeal and Groats, Maize, Rye,
+Wheatmeal, Herrings, Manufactured tobacco and Cotton Waste — tens of millions
+of cwt filed under a china heading. That is a large separate defect and a
+better target than anything left in this family.
+
+Earthenware itself carries duplicate shadows with no anchor to arbitrate them
+(1880: 53,635 under `EARTHWARE, NOT BEING...` vs 51,846 under `DYE WOODS`;
+1881: 72,516 under `COTTON MANUFACTURES` vs 5,948 under `DYE WOODS`). Without
+a T1 there is nothing to verify a consolidation against, so they are left.
