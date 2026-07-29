@@ -66,8 +66,22 @@ supersede), sheep 1887 (garbled continuation head), iron ore 1894 (era head).
 ## Known-and-queued items the screen keeps re-finding (do not re-diagnose)
 
 Sugar Unrefined 1874 (no block in either engine), Caoutchouc — Manufactures
-Of 1892-98 (printed anchor scope change, session-11 iteration 11), Mahogany
-1886-88/1892 (no table on either half, iteration 12).
+Of 1892-98 (printed anchor scope change, session-11 iteration 11), ~~Mahogany
+1886-88/1892 (no table on either half, iteration 12)~~.
+
+**MAHOGANY IS RETRACTED (2026-07-29, iteration 18).** The tables for **1887 and
+1888 were there all along**, sitting in a payload node called `Wood And Timber
+— Furniture And Hardwoods : Mahogany` — a sub-label, holding countries and no
+anchor. Folded, they close **to the digit**: 1887 37,650 = 37,650 and 1888
+42,859 = 42,859. Found by `scripts/match_orphan_countries.py`, which matches a
+country-only node to the commodity holding its anchor by arithmetic alone.
+
+1886 and 1892 are still open, so the entry is not withdrawn entirely — but
+"no table on either half" was checked by hunting the *printed total* through
+`country_obs`, and that hunt cannot see a table whose rows are present but
+filed under a sub-label the payload keeps separate. **Any "known-dead" verdict
+reached by a printed-total hunt alone should be re-tested against the two
+arithmetic matchers before it is trusted again.**
 
 ## Instrument gaps worth building (from the gutta percha post-mortem)
 
