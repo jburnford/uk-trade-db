@@ -208,6 +208,42 @@ def main():
                           AND upper(coalesce(country_raw,'')) NOT LIKE 'TOTAL%'
                         """, [vol, grp, bl[3], bl[4], bl[5]]).fetchone()[0] or 0
                 combined = members(parent) + members(b)
+
+                # SECTION PROOF — the test that actually matters, and the one
+                # every hand adjudication in this class has used. Concatenate
+                # the parent block and the phantom block in row order and walk
+                # them: each printed TOTAL should equal either the members
+                # since the previous TOTAL (a section subtotal) or the members
+                # from the start (the grand total). If they all reconcile, the
+                # concatenation is right — and this needs NO anchor, so unlike
+                # the Tier-1 column it still works on a PARTIAL swallow, where
+                # the phantom took only part of a table and parent + phantom
+                # therefore does NOT equal Tier-1. 80 of the 102 candidates are
+                # in exactly that state.
+                seq_rows = con.execute(f"""
+                    SELECT country_raw, quantity FROM {tbl}
+                    WHERE volume = ? AND article_group = ?
+                      AND ((article IS NOT DISTINCT FROM ?
+                            AND row_seq BETWEEN ? AND ?)
+                        OR (article IS NOT DISTINCT FROM ?
+                            AND row_seq BETWEEN ? AND ?))
+                    ORDER BY row_seq""",
+                    [vol, grp, parent[3], parent[4], parent[5],
+                     b[3], b[4], b[5]]).fetchall()
+                run_sec = run_all = 0.0
+                n_tot = n_ok = 0
+                for cty, q in seq_rows:
+                    if (cty or '').strip().upper().startswith('TOTAL'):
+                        if q is None:
+                            continue
+                        n_tot += 1
+                        if (abs(run_sec - q) <= max(5.0, TOL * q)
+                                or abs(run_all - q) <= max(5.0, TOL * q)):
+                            n_ok += 1
+                        run_sec = 0.0
+                    else:
+                        run_sec += q or 0
+                        run_all += q or 0
                 # Tier-1 is looked up by SIGNATURE, not by string equality.
                 # The first cut matched article_group literally and found a
                 # Tier-1 for exactly zero of 102 candidates, because
@@ -244,11 +280,22 @@ def main():
                     # exactly one false positive (as_1893 HEMP | Australia),
                     # whose cells consensus was already filing correctly:
                     # selected 4, admitted 0, drop_consensus_holds_triple 2.
+                    'sections': f'{n_ok}/{n_tot}' if n_tot else '',
+                    'sections_all_ok': 'YES' if n_tot >= 2 and n_ok == n_tot
+                                       else '',
                     'live': ('YES' if (ratio and abs(ratio - 1) <= TOL
                                        and pay_ratio is not None
                                        and pay_ratio < 0.95) else '')})
 
-    rows.sort(key=lambda r: (r['live'] != 'YES', r['closes'] != 'YES',
+    # rank by the SECTION proof and by whether the payload still falls short;
+    # the Tier-1 closure column is kept but is no longer the primary sort,
+    # since it cannot see a partial swallow at all.
+    def _pay(r):
+        try:
+            return float(r['payload_now'])
+        except (TypeError, ValueError):
+            return 9.0
+    rows.sort(key=lambda r: (r['sections_all_ok'] != 'YES', _pay(r),
                              -r['n_rows']))
     out = BASE / 'reports' / 'phantom_region_articles.csv'
     with open(out, 'w', newline='') as f:
@@ -261,12 +308,17 @@ def main():
     print(f'place labels: {len(places):,}   candidates: {len(rows)}   '
           f'closing on the parent Tier-1: {n_close}   '
           f'LIVE (closing AND the payload still reads < 0.95): {n_live}')
+    n_sec = sum(1 for r in rows if r['sections_all_ok'] == 'YES')
+    n_sec_live = sum(1 for r in rows if r['sections_all_ok'] == 'YES'
+                     and _pay(r) < 0.95)
+    print(f'  every printed subtotal reconciles: {n_sec}   '
+          f'...and the payload still reads < 0.95: {n_sec_live}')
     print(f'-> {out}')
     for r in rows[:20]:
         print(f"  [{r['closes'] or '  '}] {r['engine']:3} {r['volume']} "
               f"{r['group'][:22]:<22} | {r['phantom_article'][:26]:<26} "
               f"-> {str(r['parent_article'])[:22]:<22} {r['n_rows']:>3}r "
-              f"{r['ratio']}  payload_now={r['payload_now'] or '-'}")
+              f"sec {r['sections'] or '-':>5}  payload_now={r['payload_now'] or '-'}")
 
 
 if __name__ == '__main__':

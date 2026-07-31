@@ -256,3 +256,66 @@ completes, rather than the parent's grand Tier-1.
 
 That is the next instrument, and it is where the rest of this defect class
 lives.
+
+---
+
+## The section-subtotal test, and the class is now essentially clean
+
+**exact01 3,499 → 3,500, denominator unchanged at 9,518, zero regressions.**
+
+### The test that should have been first
+
+Concatenate the parent block and the phantom block in row order and walk them:
+**every printed TOTAL should equal either the members since the previous TOTAL
+(a section subtotal) or the members from the start (the grand total).**
+
+This is the evidence every hand adjudication in this class already used —
+feathers, tin, hides — and it has one decisive property the Tier-1 column
+lacks: **it needs no anchor**, so it still works on a **partial swallow**,
+where the phantom took only part of a table and `parent + phantom` therefore
+does *not* equal Tier-1.
+
+| test | blocks proven |
+|---|---|
+| parent + phantom == Tier-1 | 22 |
+| **every printed subtotal reconciles** | **34** |
+
+The extra 12 are exactly the partial swallows — including `as_1896 FEATHERS AND
+DOWN | East Coast of Africa`, which the Tier-1 column never flagged and which
+I had to find by hand two iterations ago.
+
+### What it found: one repair, and then the bottom of the seam
+
+Of 102 candidates, **only two** had a parent the payload still reads short.
+
+**`SPICES | East Coast of Africa` → `Pepper`, as_1894** — the payload read
+**0.05**. Three-level closure to the digit: foreign members **966,640** = the
+printed foreign TOTAL; Sierra Leone 331,856 and Niger Protectorate 288,040 left
+under `Pepper` plus the phantom's Zanzibar, Bombay, Madras, Straits, Other BEI
+and Other BP = **28,246,364** = the printed British East Indies subtotal;
+966,640 + 28,246,364 = **29,213,004** = the printed grand TOTAL.
+
+```
+Spices — Pepper  1894  ('under', 1586536, 29213004) -> ('exact01', 29213004, 29213004)
+```
+
+**`IVORY | West Africa` + `East Africa` → `Teeth, Elephants'…`, as_1888** —
+payload 0.00, and **it does not close**. Two phantoms in a row here, not one:
+`West Africa` (2 rows) then `East Africa` (5 rows). All members together give
+**5,708** against a printed TOTAL of **5,648** — off by 60, about 1%. The
+relabel is probably right and one member is misread, but there is a single
+printed total and nothing to arbitrate against. **Queued, not applied.**
+
+### The class is worked out
+
+- **34 blocks** have every printed subtotal reconciling; **all but the pepper
+  one were already repaired** in the payload.
+- **50 of the 102 candidates have no payload ratio at all** — their parent
+  carries no Tier-1, so nothing about them is measurable in either direction.
+- **2 had a real shortfall**; one is now exact, one is queued with its numbers.
+
+So the phantom-region-article seam has given up what it has: tin (2 years),
+hides (3 years), pepper (1 year), on top of the two feathers blocks found by
+hand that started it. The instrument stays, and it is now the right shape —
+**section proof first, Tier-1 closure second, payload ratio as the liveness
+filter** — for re-running after any future parse change.
