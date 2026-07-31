@@ -36,6 +36,9 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import match_declines as MD
+
 BASE = Path('/home/jic823/uk_trade_db')
 TK = '§TOTAL'
 MIN_EXACT = 2          # years that must agree to the digit
@@ -56,6 +59,8 @@ def agrees(got, want):
 
 
 def main(payload_path, out_path):
+    _dec_pairs, _dec_blanket = MD.load_declines()
+    n_declined = [0]
     payload = json.load(open(payload_path))
 
     shadows, cands = {}, {}
@@ -100,6 +105,12 @@ def main(payload_path, out_path):
             if any((unit, y) in own for y in ex):
                 continue
             gains = [y for y in t1y if y in per[unit] and (unit, y) not in own]
+            # adjudicated declines are filtered BEFORE the uniqueness test
+            # below, so a declined candidate cannot make a resolvable pair
+            # read ambiguous (see scripts/match_declines.py)
+            if MD.declined(sname, cname, _dec_pairs, _dec_blanket):
+                n_declined[0] += 1
+                continue
             hits.append((len(ex), len(gains), cname, ex))
         if not hits:
             continue

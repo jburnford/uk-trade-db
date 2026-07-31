@@ -40,6 +40,9 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import match_declines as MD
+
 BASE = Path('/home/jic823/uk_trade_db')
 TK = '§TOTAL'
 MIN_EXACT = 2
@@ -60,6 +63,8 @@ def agrees(got, want):
 
 
 def main(payload_path, out_path):
+    _dec_pairs, _dec_blanket = MD.load_declines()
+    n_declined = [0]
     payload = json.load(open(payload_path))
     orphans, hosts = {}, {}
     for name, e in payload.items():
@@ -110,6 +115,13 @@ def main(payload_path, out_path):
                   and (u, y) not in own_t1
                   and agrees(per[u][y], t1y[y]) and t1y[y] >= MIN_QTY]
             if len(ex) >= MIN_EXACT:
+                # an adjudicated decline is filtered HERE, before the
+                # uniqueness test below — a declined candidate still occupies
+                # a slot in "exactly one candidate clears the bar", so leaving
+                # it in can make an otherwise-resolvable pair read ambiguous
+                if MD.declined(oname, hname, _dec_pairs, _dec_blanket):
+                    n_declined[0] += 1
+                    continue
                 gains = [y for y in t1y if y in per[u] and y not in have
                          and (u, y) not in own_t1]
                 hits.append((len(ex), len(gains), hname, ex, sorted(gains)))
@@ -139,7 +151,8 @@ def main(payload_path, out_path):
     n_era = len({r['orphan'] for r in rows if r['source_kind'] == 'era-split'})
     print(f'country-bearing sources: {len(orphans)}   anchor-holding hosts: {len(hosts)}')
     print(f'  of the matches, sources that ALSO hold an anchor elsewhere: {n_era}')
-    print(f'  RESOLVED: {res}   AMBIGUOUS: {amb}')
+    print(f'  RESOLVED: {res}   AMBIGUOUS: {amb}'
+          f'   (adjudicated declines filtered: {n_declined[0]})')
     print(f'  bar: >= {MIN_EXACT} years to the digit, each >= {MIN_QTY:,}')
     print(f'  `safe_scope` is the years the host LACKS - use it as the fold\'s year scope')
     print(f'-> {out_path}')
