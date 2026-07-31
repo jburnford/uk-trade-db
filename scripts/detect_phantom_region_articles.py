@@ -140,6 +140,32 @@ def main():
         if k[0] and k not in t1_by_sig:
             t1_by_sig[k] = v
 
+    # per (signature, year) closure as the payload currently stands
+    payload_ratio = {}
+    pp = BASE / 'exports' / 'viz_payload.json'
+    if pp.exists():
+        import json as _j
+        for nm, e in _j.load(open(pp)).items():
+            cc = e.get('c') or {}
+            tt = cc.get('§TOTAL')
+            if not tt:
+                continue
+            uu = max(tt, key=lambda x: len(tt[x]))
+            ty = {r[0]: r[1] for r in tt[uu] if r[1]}
+            if not ty:
+                continue
+            ss = defaultdict(float)
+            for cty, byu in cc.items():
+                if cty == '§TOTAL' or '(' in cty:
+                    continue
+                for r in byu.get(uu, []):
+                    if r[1]:
+                        ss[r[0]] += r[1]
+            sg = V.sig(nm.replace(' — ', ' ').replace(' : ', ' '))
+            for y, tv in ty.items():
+                if sg and tv:
+                    payload_ratio.setdefault((sg, y), ss.get(y, 0) / tv)
+
     rows = []
     for tbl, eng in (('country_obs', 'ch'), ('country_obs_inf', 'inf')):
         blocks = con.execute(f"""
@@ -189,6 +215,16 @@ def main():
                 # 'Feathers'. Same reconciliation the pipeline itself uses.
                 t1 = t1_by_sig.get((V.sig(f'{grp} {parent[3]}')
                                     or V.sig(parent[3]), year))
+                # What the PAYLOAD already reads for this parent-year. Without
+                # it the closure column is unusable as a ranking: a block that
+                # has already been repaired still satisfies
+                # parent + phantom == Tier-1, so OIL | West Africa -> Palm sat
+                # at the top of the list as 13 blocks at ratio 1.0000 while
+                # Oil - Palm was reading 1.00 in the payload. country_obs is
+                # the INPUT to the repair pipeline, not its output, so a screen
+                # over it is blind to every repair already applied.
+                pay_ratio = payload_ratio.get(
+                    (V.sig(f'{grp} {parent[3]}') or V.sig(parent[3]), year))
                 ratio = (combined / t1) if (t1 and combined) else None
                 rows.append({
                     'engine': eng, 'volume': vol, 'group': grp,
@@ -197,9 +233,23 @@ def main():
                     'n_rows': b[6], 'parent_plus_phantom': round(combined),
                     'parent_t1': round(t1) if t1 else '',
                     'ratio': f'{ratio:.4f}' if ratio else '',
-                    'closes': 'YES' if ratio and abs(ratio - 1) <= TOL else ''})
+                    'closes': 'YES' if ratio and abs(ratio - 1) <= TOL else '',
+                    'payload_now': (f'{pay_ratio:.2f}' if pay_ratio is not None
+                                    else ''),
+                    # 'live' means: closes AND the payload demonstrably still
+                    # falls short. A MISSING payload ratio is not evidence the
+                    # work is undone — it usually means the parent has no
+                    # Tier-1 in the payload at all, so the metric could not see
+                    # a repair even if one landed. Treating None as live gave
+                    # exactly one false positive (as_1893 HEMP | Australia),
+                    # whose cells consensus was already filing correctly:
+                    # selected 4, admitted 0, drop_consensus_holds_triple 2.
+                    'live': ('YES' if (ratio and abs(ratio - 1) <= TOL
+                                       and pay_ratio is not None
+                                       and pay_ratio < 0.95) else '')})
 
-    rows.sort(key=lambda r: (r['closes'] != 'YES', -r['n_rows']))
+    rows.sort(key=lambda r: (r['live'] != 'YES', r['closes'] != 'YES',
+                             -r['n_rows']))
     out = BASE / 'reports' / 'phantom_region_articles.csv'
     with open(out, 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else
@@ -207,14 +257,16 @@ def main():
         w.writeheader()
         w.writerows(rows)
     n_close = sum(1 for r in rows if r['closes'] == 'YES')
+    n_live = sum(1 for r in rows if r['live'] == 'YES')
     print(f'place labels: {len(places):,}   candidates: {len(rows)}   '
-          f'closing on the parent Tier-1: {n_close}')
+          f'closing on the parent Tier-1: {n_close}   '
+          f'LIVE (closing AND the payload still reads < 0.95): {n_live}')
     print(f'-> {out}')
     for r in rows[:20]:
         print(f"  [{r['closes'] or '  '}] {r['engine']:3} {r['volume']} "
               f"{r['group'][:22]:<22} | {r['phantom_article'][:26]:<26} "
               f"-> {str(r['parent_article'])[:22]:<22} {r['n_rows']:>3}r "
-              f"{r['ratio']}")
+              f"{r['ratio']}  payload_now={r['payload_now'] or '-'}")
 
 
 if __name__ == '__main__':

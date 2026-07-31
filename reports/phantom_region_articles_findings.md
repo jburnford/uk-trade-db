@@ -194,3 +194,65 @@ recording that **hand sums over `country_obs` and payload sums will not always
 agree**, because the payload has passed through de-dup and the raw table has
 not. Same lesson as the screen's blindness to repairs already applied, from
 the other side.
+
+---
+
+## The payload-ratio column, and the closing seam is exhausted
+
+**No data change; baseline unchanged at exact01 3,499 / 9,518.**
+
+Two columns added, `payload_now` and `live`, and the list re-sorted by them.
+`live` means *closes on the parent Tier-1 **and** the payload demonstrably
+still falls short*.
+
+| | |
+|---|---|
+| candidates | 102 |
+| closing on the parent Tier-1 | 22 |
+| **live** | **0** |
+
+All 22 are already repaired: 13 are `OIL | West Africa → Palm`, which was fixed
+long before this screen existed, 4 are the tin blocks and 6 the hides blocks
+taken off this screen in the last two iterations. **The closing seam is
+exhausted.**
+
+### One false positive, and it was mine
+
+The first cut of the `live` rule treated a *missing* payload ratio as live,
+which surfaced exactly one candidate: `HEMP | Australia → Dressed or
+Undressed` (as_1893). Its arithmetic is impeccable — foreign members 69,224 =
+the printed foreign TOTAL, British members including the phantom's New Zealand
+1,537 and Other British Possessions 5 = 9,109 = the printed British TOTAL, and
+69,224 + 9,109 = 78,333 = the printed grand TOTAL, all to the digit — and it is
+**Chandra-only**, Infinity having parsed the block whole.
+
+I wrote the repair. It admitted nothing:
+
+```
+as_1893 HEMP|Australia  selected 4  admitted 0
+                        drop_subtotal 2  drop_consensus_holds_triple 2
+```
+
+`country_year_final` already holds `HEMP | Dressed or Undressed | new zealand
+1,537` with `source = consensus`. **The upstream vote was already filing those
+rows correctly**; the repair was redundant and has been backed out rather than
+left as inert clutter.
+
+The reason the payload ratio was missing is the reason the metric would never
+have shown it either: the hemp family is fragmented across **thirty-plus**
+payload nodes and `Hemp — Dressed Or Undressed` carries no Tier-1 at all. So
+the rule is now: **absence of a payload ratio is not evidence that work is
+undone.** Usually it means the parent has no Tier-1 in the payload, and a
+repair there would be invisible whether or not it was needed.
+
+### Where the remaining value is
+
+**Not in the closing column.** 80 of the 102 candidates do *not* close, and
+that is exactly what a **partial swallow** looks like — the as_1896 hides block
+and the as_1896 feathers block both took part of a table rather than a clean
+section, and neither would satisfy `parent + phantom == Tier-1`. Those need a
+different test: the phantom's own printed subtotal against the *section* it
+completes, rather than the parent's grand Tier-1.
+
+That is the next instrument, and it is where the rest of this defect class
+lives.
