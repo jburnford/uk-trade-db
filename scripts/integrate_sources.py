@@ -622,8 +622,17 @@ def main():
                 fixed_rows = [(fixed_rows[i + 1][0],) + fixed_rows[i][1:]
                               for i in range(len(fixed_rows) - 1)]
             why['selected'] = len(fixed_rows)
+            # A VALUE-ONLY printed table has no quantity column at all
+            # (silver ore 1879, china/porcelain as_1897-98, clocks 1893-97),
+            # so a quantity-only guard discarded every row of it — the
+            # as_1879 silver-ore repair read 'selected 10, admitted 0,
+            # drop_null_qty 10' in BOTH engines while its block's printed
+            # TOTAL matched Tier-1 to the digit. Keep a row that carries a
+            # value instead; step 1 already admits exactly these cells under
+            # the literal unit 'Value' and this mirrors it.
             fixed_rows = [r for r in fixed_rows
-                          if r[3] is not None and r[3] > 0]
+                          if (r[3] is not None and r[3] > 0)
+                          or (r[4] is not None and r[4] > 0)]
             why['drop_null_qty'] = why['selected'] - len(fixed_rows)
             new_grp, new_art = gr['new_group'].upper(), gr['new_article']
             # the true commodity is human-attested: sig from group+article,
@@ -677,6 +686,21 @@ def main():
                 # BOTH engines while the qtys bracket cleanly). Admit the
                 # quantities, drop the values.
                 strip = (gr.get('strip_values') or '').strip() == '1'
+                # value-only row: GBP figure in the quantity slot under the
+                # literal unit 'Value', the same convention step 1 uses, so
+                # it reconciles against the Value anchor and is never
+                # mistaken for a quantity. strip_values cannot apply — the
+                # value is the only figure there is.
+                valonly = not (q is not None and float(q) > 0)
+                if valonly:
+                    out_rows.append({
+                        'group': new_grp, 'article': new_art,
+                        'country': ctry, 'unit': 'Value', 'qty': float(v),
+                        'value': float(v), 'year': int(y), 'src': 'groupfix',
+                        'q_tier': 'C', 'v_tier': 'C'})
+                    n_groupfix += 1
+                    why['admitted'] += 1
+                    continue
                 out_rows.append({
                     'group': new_grp, 'article': new_art,
                     'country': ctry,

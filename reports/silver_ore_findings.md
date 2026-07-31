@@ -90,3 +90,51 @@ Untangling which volume each 1894 cell came from is a real piece of work and
 the starting evidence. Note that 1884 also reads **1.1009**, an overcount in
 the same commodity, and is probably the same pollution seen from the other
 side.
+
+---
+
+## Resolved the same session — the guard was changed, with permission
+
+The user approved changing the predicate. Two edits to
+`scripts/integrate_sources.py` step 6:
+
+```python
+fixed_rows = [r for r in fixed_rows
+              if (r[3] is not None and r[3] > 0)
+              or (r[4] is not None and r[4] > 0)]
+```
+
+and, at row construction, a value-only branch that mirrors **exactly** what
+step 1 has done all along — the GBP figure in the quantity slot under the
+literal unit `'Value'`, so it reconciles against the Value anchor and can
+never be mistaken for a quantity. `strip_values` cannot apply on that path:
+the value is the only figure there is. The previous code would have crashed on
+`float(q)` with a null quantity, which is presumably why the guard was written
+that way in the first place.
+
+### Effect, measured
+
+| | before | after |
+|---|---|---|
+| cells lost to `drop_null_qty` | 234 | **14** |
+| repairs admitting nothing because of it | 5 | **0** |
+| `as_1879 SILK MANUFACTURES` (ch) | sel 10, adm 0 | **sel 10, adm 9** |
+| `as_1879 SILK MANUFACTURES` (inf) | sel 10, adm 0 | sel 10, adm 0 — correctly deduped as `already_added` |
+| `as_1897/98 CHINA, OR PORCELAIN` | 0 admitted | 24, 10, 10, 22, 10, 14 |
+
+**exact01 3,486 unchanged, within5 1,081 → 1,082, nodata 4,441 → 4,440.**
+
+**Exactly one commodity-year changed in the whole corpus:**
+
+```
+Silver, Ore Of…  1879   ('nodata', 0, 724515) -> ('within5', 715215, 724515)
+```
+
+Zero regressions. That the china/porcelain blocks now admit 90 rows and move
+no bucket is worth stating plainly: those rows land in years that were already
+measured or that remain `nodata` for other reasons. **The guard was not the
+only thing wrong with them** — unblocking it was necessary, not sufficient.
+
+The 9,300 residual in 1879 stands: one member row is missing from both
+parses, so the year sits at **0.9872** and not at exact. It is honest
+measurement where there was none.
