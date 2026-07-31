@@ -1,7 +1,7 @@
 commodity,unit,gap_start,gap_end,n_years,kind,ratios,missing_qty,gbp_at_stake,commodity_gbp
 "Sugar — Unrefined, Total",Cwt,1874,1874,1,collapse,0.00,14129112,17041927,395688379
 Caoutchouc — Manufactures Of,Lb,1892,1898,7,collapse,0.38 0.35 0.34 0.39 0.38 0.38 0.45,45871395,11834386,10361298
-"Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",Value,1894,1894,1,collapse,0.31,1693691,3092280,48764992
+"Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",Value,1894,1894,1,collapse,0.31,1693691,3054769,49480207
 Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,Ton,1882,1885,4,hole,0.00 0.00 0.00 0.00,205525,2321045,4128642
 Feathers And Down — Ornamental,Lb,1890,1890,1,collapse,0.16,679659,2103144,27909059
 Opium,Lb,1880,1882,3,hole,0.00 0.00 0.00,1672144,1718447,11729502
@@ -11,7 +11,6 @@ Farinaceous Substances And Manufactures Thereof,Value,1882,1882,1,hole,0.00,7529
 Brass And Bronze Manufactures,Cwt,1893,1895,3,hole,0.00 0.00 0.00,73171,1467897,1120277
 Sugar — Glucose,Cwt,1895,1895,1,hole,0.00,1315866,1455264,13287627
 "Wood And Timber — House Frames, Fittings, And Joiners' Work",Value,1892,1892,1,hole,0.00,675138,1447173,12369711
-"Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",Value,1879,1879,1,hole,0.00,724515,1322793,48764992
 "Skins — Sheep And Lamb, Undressed",Number,1881,1881,1,hole,0.00,6475264,1284193,26155200
 Fruit — Unenumerated : Raw,Bushel,1882,1882,1,hole,0.00,2614056,1268678,31472242
 "Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",Ton,1881,1882,2,collapse,0.00 0.09,99407,1189152,2854074
@@ -81,7 +80,7 @@ Gum — Arabic,Cwt,1874,1874,1,collapse,0.48,32990,125276,4926169
 "Chicory, Raw Or Kiln-Dried",Cwt,1874,1875,2,hole,0.00 0.00,227842,123553,1529117
 Safflower,Cwt,1874,1874,1,collapse,0.41,8183,121265,731248
 Spirits — Geneva,Proof Gallon,1884,1885,2,collapse,0.00 0.01,574328,121060,1349870
-Cork — Unmanufactured,Ton,1880,1880,1,hole,0.00,7765,120872,5567982
+Cork — Unmanufactured,Ton,1880,1880,1,hole,0.00,7765,120872,5567988
 Tar,Barrel,1888,1888,1,hole,0.00,121884,117919,2917953
 Sugar — Molasses,Cwt,1874,1874,1,hole,0.00,338552,117254,5182584
 Straw,Lb,1874,1874,1,hole,0.00,317152,112978,3616445
