@@ -1,10 +1,9 @@
 commodity,unit,gap_start,gap_end,n_years,kind,ratios,missing_qty,gbp_at_stake,commodity_gbp
 "Sugar — Unrefined, Total",Cwt,1874,1874,1,collapse,0.00,14129112,17041927,395688379
 Caoutchouc — Manufactures Of,Lb,1892,1898,7,collapse,0.38 0.35 0.34 0.39 0.38 0.38 0.45,45871395,11834386,10361298
-Feathers And Down — Ornamental,Lb,1890,1890,1,collapse,0.16,679659,3325932,26728978
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver",Value,1894,1894,1,collapse,0.31,1693691,3092280,48764992
-Feathers And Down — Ornamental,Lb,1883,1883,1,collapse,0.10,578316,2830007,26728978
 Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,Ton,1882,1885,4,hole,0.00 0.00 0.00 0.00,205525,2321045,4128642
+Feathers And Down — Ornamental,Lb,1890,1890,1,collapse,0.16,679659,2103144,27909059
 Opium,Lb,1880,1882,3,hole,0.00 0.00 0.00,1672144,1718447,11729502
 Nuts And Kernels — Of Other Sorts,Value,1875,1875,1,hole,0.00,584525,1582745,5475155
 "Chemical Manufactures And Products, Unenumerated",Value,1892,1892,1,hole,0.00,1502294,1543582,26038420
