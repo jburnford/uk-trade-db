@@ -274,3 +274,108 @@ columns run together — and no country data at all. It contributes 18 `nodata`
 commodity-years to the denominator for free. A fused *T1* under a phantom
 article is a class the fused-quantity decoders do not look at, and this is a
 clean specimen of it.
+
+---
+
+# The fused artifact as a Rosetta stone, and a phantom region article in two volumes
+
+Worked 2026-07-31 (`/next-defect`, resumed). **exact01 3,485 → 3,486,
+nodata 4,448 → 4,441, denominator unchanged at 9,524, zero regressions.**
+The +1 understates it: **nine commodity-years stopped being invisible.**
+
+## Starting point: the junk node queued last time
+
+`Feathers: For Beds Cwts. Ornamental` held 18 T1 years of impossible
+quantities (`22437296000`) and no countries. The name is a two-column table
+header read as one article: the row label, the first sub-sort **For Beds**,
+its unit **Cwts.**, and the second sub-sort **Ornamental** — with the two
+numeric columns fused into one number.
+
+Split it as `<For Beds Cwts> ‖ <Ornamental Lbs>` and **15 of the 18 years
+reproduce BOTH independently-known anchors to the digit** (1875 = 22,437 ‖
+296,000; 1881 = 26,636 ‖ 342,774; 1885 = 29,059 ‖ 751,261; …). That is a
+validation set of 30 numbers, so the decode is not a guess.
+
+The three that do not fit are the informative ones:
+
+- **1877** decodes to 301,878 where the real anchor says 304,378. The real
+  anchor wins: the origin cells sum to 304,378 exactly. The fused cell is
+  the misread — **so the artifact is not authoritative, only corroborating.**
+- **1892, 1893, 1894** decode to Ornamental 853,256 / 873,194 / 916,123 —
+  years the `Feathers — Ornamental` series does **not** carry.
+
+## What that unlocked: a de-headed anchor the arithmetic could not find
+
+Those three figures are Tier-**A** anchors sitting in a group-less node
+called simply **`Ornamental`**, which holds T1 for **1892-1900 and zero
+countries** — while `Feathers And Down — Ornamental` holds the countries for
+those years and no anchor. A textbook shadow.
+
+**`match_shadow_anchors` was right to decline it.** Its bar is ≥2 years
+agreeing within 0.02%, and the sums do not agree — 0.70, 0.57, 0.52 … The
+origin tables were *truncated*, so no arithmetic test could ever have paired
+these two nodes. The fused artifact identifies them **structurally instead**:
+the header proves the Ornamental column belongs to FEATHERS, and its
+1892/93/94 tails are exactly this node's anchors.
+
+**That is the transferable result — a parse artifact used as evidence rather
+than deleted.** A fused two-column header is a statement about which two
+printed series sat side by side, and it survives in volumes where both
+columns are otherwise lost.
+
+## Why the sums were low: a phantom region article, twice
+
+Folding alone would only have made the shortfall visible. The cause turned
+out to be the **phantom-region-article** class — a printed region heading
+absorbed as the ARTICLE name, hiding whole table segments:
+
+**`as_1895`, heading `British Possessions in South Africa`** → the entire
+British half (seq 1090-1099) became a phantom commodity `FEATHERS AND DOWN |
+South Africa`. Proof: its members 479,560 **+ Malta 5,046**, the one row left
+stranded in the real block at seq 1089, = **484,606 = the printed British
+subtotal to the digit**; and 509,357 + 484,606 = **993,963 = the printed
+grand total to the digit**.
+
+**`as_1896`, heading `East Coast of Africa`** → seq 1084-1100, and this one
+swallowed **the tail of the foreign section as well as all of the British
+half**. Proof: foreign members across both labels 665,186 against a printed
+665,181; British members **501,331 = the printed British subtotal exactly**;
+665,181 + 501,331 = **1,166,512 = the printed grand total AND the Tier-1
+anchor**, both to the digit.
+
+Both relabelled with `group_repairs`.
+
+## Result
+
+| year | before | after |
+|---|---|---|
+| 1892 | invisible | over (48×) — fused `Lbs. ozs` cells, separate defect |
+| 1893 | invisible | under 0.70 |
+| 1894 | invisible | under 0.57 |
+| 1895 | invisible | **within5, 0.24%** |
+| 1896 | invisible | **exact01 — 1,166,647 vs 1,166,512** |
+| 1897 | invisible | under 0.52 |
+| 1898 | invisible | under 0.50 |
+| 1899, 1900 | invisible | nodata (no origin table parsed) |
+
+**Every transition is `nodata` → measured.** Nothing moved to a worse
+bucket. The corpus count moves by +1 because only 1896 closes, but seven
+years that the metric could not see are now under test — and the four
+`under` years are now *visible* work rather than silent absence.
+
+## Queued: as_1897 and as_1898 are a different animal
+
+Both volumes carry a `FEATHERS AND DOWN | Eastern Coast of Africa` phantom
+too, and the row counts (269 and 129) looked like the same fix at first.
+They are not. In `as_1897` that article name spans **seq 1828 to 24254** —
+the whole volume — with single country labels repeating 51, 112 and 117
+times. This is not a block whose heading was absorbed; it is a **sticky
+article at volume scale**, and relabelling the range would corrupt hundreds
+of unrelated commodities. It needs its own diagnosis and a per-block range,
+not a range repair. 1897 and 1898 are the two largest remaining `under`
+years of this commodity, so it is worth doing properly.
+
+Also still open: 1895's foreign members sit 30,000 below their printed
+subtotal (one cell misread, no third source to arbitrate), which is what
+keeps that year at 0.24% instead of exact; and 1892's `Lbs. ozs` cells are
+still fused.
