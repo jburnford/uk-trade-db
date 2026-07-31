@@ -152,3 +152,45 @@ block. Six repair rows if all three hold.
 Also on the list and unchecked: `HEMP | … → Dressed or Undressed` (as_1893,
 1 block) — note `Hemp` itself reads 0.00 for 1893-95, so there may be more
 there than the one flagged block.
+
+---
+
+## Hides: three years off the same screen
+
+**exact01 3,498 → 3,499, within5 1,082 → 1,084, denominator unchanged at
+9,518, zero regressions.**
+
+`HIDES, Raw, and Pieces thereof | East Coast of Africa` (hyphenated
+`East-Coast` in as_1896) sits between the `Dry` block and the `Wet` block in
+all three volumes — it is the tail of the Dry table, and the payload read
+**1894: 0.62, 1895: 0.20, 1896: 0.16**.
+
+| year | proof | before → after |
+|---|---|---|
+| 1894 | foreign members left under `Dry` sum **112,912 = the printed foreign TOTAL to the digit**; all members **419,210** against a printed grand **419,205** | under 258,363 → **exact01 419,210** |
+| 1895 | the heading swallowed the **tail of the foreign section as well** — foreign across both labels **139,877 = the printed foreign TOTAL exactly**; all members 491,544 vs printed 491,547 | under 100,232 → **within5 (0.19%)** |
+| 1896 | relabel structurally certain, **but the year does not close** | under 59,028 → **within5 (0.81%)** |
+
+### as_1896 is admitted as an honest partial, and here is why
+
+Its printed subtotals **do not agree with each other**: foreign 115,102 +
+British 250,961 = 366,063, but the printed grand says **369,063**. The members
+give foreign 118,102, British 247,961, grand 366,063. So a single 3,000
+discrepancy sits somewhere in the printed column, with no third source to
+arbitrate it.
+
+The relabel is still right — those rows are plainly the continuation of the
+Dry table and moving them invents nothing — so the year is admitted at 0.81%
+rather than held back. **Moving rows to their correct label is a different act
+from guessing a digit**, and only the second is forbidden. Recorded so the
+0.81% is not later mistaken for a repair that failed.
+
+### Note on the 1895 arithmetic
+
+My hand computation said 491,544 and the payload sums 490,632. The difference
+is the payload's own de-duplication of two `British Possessions in South
+Africa` rows in that block — the repair is unaffected, but it is worth
+recording that **hand sums over `country_obs` and payload sums will not always
+agree**, because the payload has passed through de-dup and the raw table has
+not. Same lesson as the screen's blindness to repairs already applied, from
+the other side.
