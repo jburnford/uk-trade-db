@@ -84,3 +84,71 @@ That is still the useful half — it turns "search 16 volumes by hand" into
 "adjudicate 66 named blocks" — but the column that would rank them by proof is
 the obvious next piece of work, and nothing here should be folded on the
 strength of the ranking alone.
+
+---
+
+## The closure column, bridged — and the first repair off the screen
+
+Same day, next iteration. **exact01 3,496 → 3,498, denominator unchanged at
+9,518, zero regressions.**
+
+### Fixing the lookup
+
+The Tier-1 lookup now keys on **signature**, not on the literal
+`article_group` string, using the same `validate_gold.sig` the pipeline uses.
+The literal match had found a Tier-1 for **zero of 102** candidates, because
+`country_obs` says `FEATHERS AND DOWN` where `consensus` says `Feathers`.
+
+With that bridged: **22 of the 102 candidate rows close on the parent's
+Tier-1.**
+
+### A second limitation, found immediately — and it matters more than the first
+
+`OIL | West Africa → Palm` dominates the closing list: **13 blocks across
+seven volumes, both engines, every one at ratio 1.0000.** It is also
+**already fixed** — `Oil — Palm` reads 1.00 in the payload for every one of
+those years, because the existing machinery already admits those rows.
+
+**The screen's arithmetic cannot tell "this block is misfiled" from "this
+block was misfiled and is already repaired."** Both produce
+`parent + phantom = Tier-1`. Ranking by that column alone sends you straight
+to work that is already done. The column that would fix it is the parent's
+**current payload ratio**, and until it exists every candidate must be checked
+against the payload before being worked.
+
+That is a general hazard for any screen built on the raw tables: `country_obs`
+is the input to the repair pipeline, not its output, so a screen over it is
+blind to every repair already applied.
+
+### The real find: tin ore
+
+`Tin — Ore Of` read **1895: 0.10, 1896: 0.11** — and those are exactly the two
+volumes the screen flags. The heading `East Coast of Africa` had swallowed
+everything but the first two or three origins.
+
+Both close **at three levels, to the digit**:
+
+| | as_1895 | as_1896 |
+|---|---|---|
+| foreign members (incl. the ones stranded under `Ore of`) | **4,553** = printed foreign TOTAL | **4,751** = printed foreign TOTAL |
+| British members | **152** = printed British TOTAL | **121** = printed British TOTAL |
+| grand | **4,705** = printed grand TOTAL | **4,872** = printed grand TOTAL |
+
+Four `group_repairs` rows (both engines, both volumes). Result:
+
+```
+Tin — Ore Of  1895  ('under', 478, 4705) -> ('exact01', 4705, 4705)
+Tin — Ore Of  1896  ('under', 535, 4872) -> ('exact01', 4872, 4872)
+```
+
+### Queued next, with its numbers
+
+**`HIDES, Raw, and Pieces | East Coast of Africa` → `Dry`.** The payload reads
+**1894: 0.62, 1895: 0.20, 1896: 0.16**, and the screen closes as_1894 (16 rows,
+both engines) and as_1895 (32 rows). as_1896 (29 rows) does *not* close, so it
+needs its own look — probably the same partial-swallow as the as_1896 feathers
+block. Six repair rows if all three hold.
+
+Also on the list and unchecked: `HEMP | … → Dressed or Undressed` (as_1893,
+1 block) — note `Hemp` itself reads 0.00 for 1893-95, so there may be more
+there than the one flagged block.

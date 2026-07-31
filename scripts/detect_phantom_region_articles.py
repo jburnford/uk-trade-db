@@ -40,6 +40,9 @@ from collections import defaultdict
 from pathlib import Path
 
 import duckdb
+import sys
+sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parent))
+import validate_gold as V
 
 BASE = Path('/home/jic823/uk_trade_db')
 MIN_COMMODS = 5      # distinct commodities using the label as a country
@@ -127,6 +130,16 @@ def main():
             GROUP BY 1""").fetchall():
         grp_articles[g] = n
 
+    # Tier-1 keyed by (signature, year), best tier first.
+    t1_by_sig = {}
+    for g, a, y, v, t in con.execute("""
+            SELECT article_group, article, year, value, tier FROM consensus
+            WHERE flow = 'import' AND measure = 'quantity'
+            ORDER BY CASE tier WHEN 'A' THEN 0 WHEN 'B' THEN 1 ELSE 2 END""").fetchall():
+        k = (V.sig(f'{g or ""} {a or ""}') or V.sig(a or ''), y)
+        if k[0] and k not in t1_by_sig:
+            t1_by_sig[k] = v
+
     rows = []
     for tbl, eng in (('country_obs', 'ch'), ('country_obs_inf', 'inf')):
         blocks = con.execute(f"""
@@ -169,14 +182,13 @@ def main():
                           AND upper(coalesce(country_raw,'')) NOT LIKE 'TOTAL%'
                         """, [vol, grp, bl[3], bl[4], bl[5]]).fetchone()[0] or 0
                 combined = members(parent) + members(b)
-                t1 = con.execute("""
-                    SELECT value FROM consensus WHERE flow = 'import'
-                      AND measure = 'quantity' AND article_group = ?
-                      AND article IS NOT DISTINCT FROM ? AND year = ?
-                    ORDER BY CASE tier WHEN 'A' THEN 0 WHEN 'B' THEN 1
-                             ELSE 2 END LIMIT 1""",
-                    [grp, parent[3], year]).fetchone()
-                t1 = t1[0] if t1 else None
+                # Tier-1 is looked up by SIGNATURE, not by string equality.
+                # The first cut matched article_group literally and found a
+                # Tier-1 for exactly zero of 102 candidates, because
+                # country_obs says 'FEATHERS AND DOWN' where consensus says
+                # 'Feathers'. Same reconciliation the pipeline itself uses.
+                t1 = t1_by_sig.get((V.sig(f'{grp} {parent[3]}')
+                                    or V.sig(parent[3]), year))
                 ratio = (combined / t1) if (t1 and combined) else None
                 rows.append({
                     'engine': eng, 'volume': vol, 'group': grp,
