@@ -74,8 +74,10 @@ def main():
     for tbl in ('country_obs', 'country_obs_inf'):
         blocks = defaultdict(list)
         for vol, fl, g, a, ctry, unit, y, q in con.execute(
-                f"""SELECT volume, flow, article_group, article, country_raw, unit, year, quantity
-                    FROM {tbl} WHERE flow <> 'import' AND quantity > 0""").fetchall():
+                f"""SELECT volume, flow, article_group, article, country_raw, unit, year,
+                           coalesce(quantity, value)
+                    FROM {tbl} WHERE flow <> 'import'
+                      AND coalesce(quantity, value) > 0""").fetchall():
             blocks[(vol, fl, g or '', a or '', unit or '', int(y))].append((ctry or '', float(q)))
         for (vol, fl, g, a, unit, y), cells in blocks.items():
             tots = [q for c, q in cells if c.strip().upper().startswith('TOTAL')]
@@ -86,11 +88,24 @@ def main():
             if not sig:
                 continue
             anchor = t1.get((sig, y))
+            key = (sig, y)
             if not anchor:
-                continue
+                # The export-side label routinely carries EXTRA tokens - the
+                # as_1892 house-frames block reads "House Frames, Fittings,
+                # Joiners' and Cabinet Work" against an import commodity of
+                # "House Frames, Fittings, and Joiners' Work" - so exact
+                # signature equality can never pair them. Fall back to an
+                # import signature that is a strict SUBSET of the block's,
+                # requiring >= 3 tokens so short generic names cannot collide.
+                cand = [(k2, v) for (k2, y2), v in t1.items()
+                        if y2 == y and len(k2) >= 3 and set(k2) < set(sig)]
+                if len(cand) != 1:
+                    continue
+                key = (cand[0][0], y)
+                anchor = cand[0][1]
             if abs(grand - anchor[0]) > TOL * anchor[0]:
                 continue
-            have = got.get((sig, y), 0.0)
+            have = got.get(key, 0.0)
             if have >= 0.9 * anchor[0]:
                 continue                      # that year is already accounted for
             names = [c for c, q in cells if not c.strip().upper().startswith('TOTAL')]
