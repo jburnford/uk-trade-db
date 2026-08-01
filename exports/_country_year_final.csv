@@ -87081,7 +87081,6 @@ SILK MANUFACTURES,"Ribbons, of other Kinds",british east indies,Value,import,189
 "SKINS, FURS, AND PELTS","Sheep, Undressed",madagascar,,import,1894,22120.0,1709.0,consensus,C,C,3,3
 "SKINS, FURS, AND PELTS","Sheep, Undressed",united states of america,,import,1894,37533.0,2189.0,consensus,C,C,3,3
 "SKINS, FURS, AND PELTS","Sheep, Undressed",chile,,import,1894,30452.0,4250.0,consensus,C,C,3,3
-"SKINS, FURS, AND PELTS","Sheep, Undressed",brazil,,import,1894,72890.0,1165.0,consensus,C,C,3,3
 "SKINS, FURS, AND PELTS","Sheep, Undressed",uruguay,,import,1894,40548.0,4337.0,consensus,C,C,3,3
 "SKINS, FURS, AND PELTS","Sheep, Undressed",argentine republic,,import,1894,981103.0,124690.0,consensus,C,C,3,3
 "SKINS, FURS, AND PELTS",Furs,russia,,import,1894,89411.0,2850.0,consensus,C,C,3,3
@@ -99335,6 +99334,7 @@ FEATHERS,Ornamental,Australasia,Lbs. oz,import,1890,1651.0,3095.0,human,B,B,2,2
 "SKINS, FURS, AND PELTS","Sheep, Undressed",British Possessions in South Africa,Number,import,1881,2146354.0,274501.0,human,B,B,2,2
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia,Number,import,1881,1163771.0,156600.0,human,B,B,2,2
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Other Countries,Number,import,1881,868152.0,94997.0,human,B,B,2,2
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Brazil,Number,import,1894,12820.0,1165.0,human,B,B,2,2
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
@@ -118811,16 +118811,6 @@ COTTON,,British East Indies : Straits Settlements,Cwts,import,1898,1.0,5.0,suben
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,British East Indies : Madras,Number,import,1894,166500.0,11086.0,subentry,C,B,3,2
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,British East Indies : Bombay,Number,import,1896,56820.0,4178.0,subentry,C,B,3,2
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,British East Indies : Bengal,Number,import,1898,5999016.0,466925.0,subentry,C,B,3,2
-"SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER","Skins, Sheep, undressed",Russia : Northern Ports,,import,1894,94106.0,12491.0,subentry,C,C,3,3
-"SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER","Skins, Sheep, undressed",Russia : Southern Ports,,import,1894,131308.0,14685.0,subentry,C,C,3,3
-"SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER","Skins, Sheep, undressed",Russia : Northern Ports,,import,1895,157204.0,16277.0,subentry,C,C,3,3
-"SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER","Skins, Sheep, undressed",Russia : Southern Ports,,import,1895,187045.0,17388.0,subentry,C,C,3,3
-"SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER","Skins, Sheep, undressed",Russia : Northern Ports,,import,1896,122200.0,12302.0,subentry,C,C,3,3
-"SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER","Skins, Sheep, undressed",Russia : Southern Ports,,import,1896,48440.0,5034.0,subentry,C,C,3,3
-"SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER","Skins, Sheep, undressed",Russia : Northern Ports,,import,1897,134330.0,15767.0,subentry,C,C,3,3
-"SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER","Skins, Sheep, undressed",Russia : Southern Ports,,import,1897,108090.0,9910.0,subentry,C,C,3,3
-"SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER","Skins, Sheep, undressed",Russia : Northern Ports,,import,1898,198960.0,22979.0,subentry,C,C,3,3
-"SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER","Skins, Sheep, undressed",Russia : Southern Ports,,import,1898,38700.0,4590.0,subentry,C,C,3,3
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,Australasia : New Zealand,,import,1895,3154939.0,211403.0,subentry,C,B,3,2
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,Australasia : Falkland Islands,,import,1895,38960.0,5232.0,subentry,C,B,3,2
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,Australasia : New Zealand,,import,1896,2999972.0,172248.0,subentry,C,B,3,2
@@ -127235,6 +127225,28 @@ WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Other Countri
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Other British Possessions,,import,1897,8838.0,1249.0,groupfix,C,C,3,3
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Other British Possessions,,import,1898,5967.0,741.0,groupfix,C,C,3,3
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Other British Possessions,,import,1899,8000.0,1085.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Northern Ports,,import,1894,94106.0,12491.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Southern Ports,,import,1894,131308.0,14685.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed","Turkey, European",,import,1894,25360.0,2065.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Asiatic,,import,1894,168301.0,9479.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Egypt,,import,1894,2450.0,213.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Morocco,,import,1894,2414.0,174.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Portuguese Possessions,,import,1894,4680.0,468.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",China,,import,1894,3820.0,720.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Other Foreign Countries,,import,1894,12634.0,1017.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Cape of Good Hope,,import,1894,4140671.0,416174.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Natal,,import,1894,143463.0,15016.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Aden and Dependencies,,import,1894,1035554.0,56623.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",British East Indies,,import,1894,10470.0,1059.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : West Australia,,import,1894,79111.0,10784.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : South Australia,,import,1894,929329.0,141623.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Victoria,,import,1894,993367.0,122584.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New South Wales,,import,1894,1313368.0,146130.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Queensland,,import,1894,205015.0,30210.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Tasmania,,import,1894,55651.0,6932.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New Zealand,,import,1894,2571839.0,180184.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Falkland Islands,,import,1894,81506.0,11775.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Other British Possessions,,import,1894,5812.0,872.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
