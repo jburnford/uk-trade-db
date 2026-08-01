@@ -1,7 +1,6 @@
 commodity,unit,gap_start,gap_end,n_years,kind,ratios,missing_qty,gbp_at_stake,commodity_gbp,dup_years,dup_by,all_dup
 "Sugar — Unrefined, Total",Cwt,1874,1874,1,collapse,0.00,14129112,17041927,395688379,,,
 Caoutchouc — Manufactures Of,Lb,1892,1898,7,collapse,0.38 0.35 0.34 0.39 0.38 0.38 0.45,45871395,11834386,10361298,,,
-Fruit — Unenumerated : Raw,Bushel,1875,1875,1,collapse,0.06,2098118,1010242,32887494,,,
 Cocoa,Lb,1879,1879,1,hole,0.00,26155788,875452,23817997,,,
 Spices — Pepper,Lb,1891,1891,1,hole,0.00,34794260,863057,15433955,,,
 Leather Manufactures — Unenumerated,Value,1882,1884,3,collapse,0.00 0.07 0.09,750932,831823,6088471,1882;1884,"Leather, Undressed — Unenumerated",
