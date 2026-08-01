@@ -110453,12 +110453,6 @@ SILK MANUFACTURES,"Broad Stuffs, Silk or Satin",British Possessions in South Afr
 SILK MANUFACTURES,"Broad Stuffs, Silk or Satin",Australia,,import,1880,30216.0,,twoup,C,C,3,3
 SILK MANUFACTURES,"Broad Stuffs, Silk or Satin",Other Countries,,import,1880,7417.0,,twoup,C,C,3,3
 SUGAR,Glucose,Other Countries,,import,1880,770.0,807.0,twoup,C,C,3,3
-TOYS,,United States of America,,import,1880,15071.0,,twoup,C,C,3,3
-TOYS,,British Possessions in South Africa,,import,1880,4480.0,,twoup,C,C,3,3
-TOYS,,British India,,import,1880,16135.0,,twoup,C,C,3,3
-TOYS,,Straits Settlements,,import,1880,1684.0,,twoup,C,C,3,3
-TOYS,,Australia,,import,1880,23067.0,,twoup,C,C,3,3
-TOYS,,Other Countries,,import,1880,7723.0,,twoup,C,C,3,3
 WOOD AND TIMBER,Teak,Germany,,import,1880,794.0,12031.0,twoup,C,C,3,3
 WOOD AND TIMBER,Teak,Other Countries,,import,1880,608.0,7911.0,twoup,C,C,3,3
 WOOD AND TIMBER,Fir,Channel Islands,,import,1880,782.0,2655.0,twoup,C,C,3,3
@@ -127247,6 +127241,12 @@ WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Other Countri
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New Zealand,,import,1894,2571839.0,180184.0,groupfix,C,C,3,3
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Falkland Islands,,import,1894,81506.0,11775.0,groupfix,C,C,3,3
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Other British Possessions,,import,1894,5812.0,872.0,groupfix,C,C,3,3
+TOYS,,Germany,Value,import,1880,106419.0,106419.0,groupfix,C,C,3,3
+TOYS,,Holland,Value,import,1880,329563.0,329563.0,groupfix,C,C,3,3
+TOYS,,Belgium,Value,import,1880,51612.0,51612.0,groupfix,C,C,3,3
+TOYS,,France,Value,import,1880,79505.0,79505.0,groupfix,C,C,3,3
+TOYS,,United States of America,Value,import,1880,9668.0,9668.0,groupfix,C,C,3,3
+TOYS,,Other Countries,Value,import,1880,630.0,630.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
