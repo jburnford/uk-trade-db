@@ -11705,8 +11705,6 @@ FLAX,Tow or Codilla of,germany,,import,1875,8040.0,14886.0,consensus,B,B,2,2
 FLAX,Tow or Codilla of,holland,,import,1875,16542.0,27843.0,consensus,B,B,2,2
 FLAX,Tow or Codilla of,belgium,,import,1875,47564.0,50984.0,consensus,B,B,2,2
 FLAX,Tow or Codilla of,other countries,,import,1875,1371.0,1764.0,consensus,B,B,2,2
-"FLOWERS, ARTIFICIAL","Raw, not otherwise described",france,Bushels,import,1875,6381.0,8395.0,consensus,B,C,2,3
-"FLOWERS, ARTIFICIAL","Raw, not otherwise described",other countries,Bushels,import,1875,18047.0,9308.0,consensus,B,C,2,3
 GAMBIER,,straits settlements,Tons,import,1875,22299.0,573523.0,consensus,B,B,2,2
 GAMBIER,,other countries,Tons,import,1875,775.0,27582.0,consensus,B,B,2,2
 GLASS,"Window Glass (not being Plate Glass), and German Sheet Glass, including Shades and Cylinders",belgium,Cwts,import,1875,559297.0,457025.0,consensus,B,B,2,2
@@ -83193,12 +83191,6 @@ COTTON,Raw,australia,Cwts,import,1875,30075.0,76826.0,consensus,C,C,3,3
 "FLOWERS, ARTIFICIAL",,belgium,Value,import,1875,2689.0,2689.0,consensus,C,C,3,3
 "FLOWERS, ARTIFICIAL",,france,Value,import,1875,14753.0,14753.0,consensus,C,C,3,3
 "FLOWERS, ARTIFICIAL",,other countries,Value,import,1875,493210.0,493210.0,consensus,C,C,3,3
-"FLOWERS, ARTIFICIAL","Raw, not otherwise described",turkey,Bushels,import,1875,71157.0,31221.0,consensus,C,C,3,3
-"FLOWERS, ARTIFICIAL","Raw, not otherwise described",egypt,Bushels,import,1875,3020.0,3928.0,consensus,C,C,3,3
-"FLOWERS, ARTIFICIAL","Raw, not otherwise described",persia,Bushels,import,1875,4303.0,4005.0,consensus,C,C,3,3
-"FLOWERS, ARTIFICIAL","Raw, not otherwise described",bombay,Bushels,import,1875,15860.0,4492.0,consensus,C,C,3,3
-"FLOWERS, ARTIFICIAL","Raw, not otherwise described",gibraltar,Bushels,import,1875,3526.0,6263.0,consensus,C,C,3,3
-"FLOWERS, ARTIFICIAL","Raw, not otherwise described",china,Cwts,import,1875,13714.0,29732.0,consensus,C,C,3,3
 GLASS,"Plate, whether Silvered or not",italy,Cwts,import,1875,287.0,4649.0,consensus,C,C,3,3
 GUM,"Lac, Seed, Shell, Stick, and Dye",bengal and burmah,,import,1875,80798.0,773967.0,consensus,C,C,3,3
 GUM,"Lac, Seed, Shell, Stick, and Dye",straits settlements,,import,1875,4097.0,20238.0,consensus,C,C,3,3
@@ -99335,6 +99327,16 @@ FEATHERS,Ornamental,Australasia,Lbs. oz,import,1890,1651.0,3095.0,human,B,B,2,2
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia,Number,import,1881,1163771.0,156600.0,human,B,B,2,2
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Other Countries,Number,import,1881,868152.0,94997.0,human,B,B,2,2
 "SKINS, FURS, AND PELTS","Sheep, Undressed",Brazil,Number,import,1894,12820.0,1165.0,human,B,B,2,2
+FRUIT,Unenumerated : Raw,Germany,Bushels,import,1875,146493.0,49988.0,human,B,B,2,2
+FRUIT,Unenumerated : Raw,Holland,Bushels,import,1875,199865.0,110504.0,human,B,B,2,2
+FRUIT,Unenumerated : Raw,Belgium,Bushels,import,1875,703777.0,160548.0,human,B,B,2,2
+FRUIT,Unenumerated : Raw,France,Bushels,import,1875,581170.0,271278.0,human,B,B,2,2
+FRUIT,Unenumerated : Raw,"Portugal, Azores, and Madeira",Bushels,import,1875,151391.0,98425.0,human,B,B,2,2
+FRUIT,Unenumerated : Raw,Spain and Canary Islands,Bushels,import,1875,199650.0,163701.0,human,B,B,2,2
+FRUIT,Unenumerated : Raw,United States of America,Bushels,import,1875,164160.0,85874.0,human,B,B,2,2
+FRUIT,Unenumerated : Raw,British North America,Bushels,import,1875,44450.0,23343.0,human,B,B,2,2
+FRUIT,Unenumerated : Raw,British West India Islands,Bushels,import,1875,20546.0,17088.0,human,B,B,2,2
+FRUIT,Unenumerated : Raw,Other Countries,Bushels,import,1875,8910.0,5499.0,human,B,B,2,2
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
@@ -127247,6 +127249,13 @@ TOYS,,Belgium,Value,import,1880,51612.0,51612.0,groupfix,C,C,3,3
 TOYS,,France,Value,import,1880,79505.0,79505.0,groupfix,C,C,3,3
 TOYS,,United States of America,Value,import,1880,9668.0,9668.0,groupfix,C,C,3,3
 TOYS,,Other Countries,Value,import,1880,630.0,630.0,groupfix,C,C,3,3
+FRUIT,"Dried, not otherwise described",France,Bushels,import,1875,6381.0,8395.0,groupfix,C,C,3,3
+FRUIT,"Dried, not otherwise described",Turkey,Bushels,import,1875,71157.0,31221.0,groupfix,C,C,3,3
+FRUIT,"Dried, not otherwise described",Egypt,Bushels,import,1875,3020.0,3928.0,groupfix,C,C,3,3
+FRUIT,"Dried, not otherwise described",Persia,Bushels,import,1875,4303.0,4005.0,groupfix,C,C,3,3
+FRUIT,"Dried, not otherwise described",Bombay,Bushels,import,1875,15860.0,4492.0,groupfix,C,C,3,3
+FRUIT,"Dried, not otherwise described",Gibraltar,Bushels,import,1875,3526.0,6263.0,groupfix,C,C,3,3
+FRUIT,"Dried, not otherwise described",Other Countries,Bushels,import,1875,18047.0,9308.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
