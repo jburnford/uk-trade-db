@@ -69,3 +69,86 @@ reference file as dead weight, and `commodity_curation` **`drop-country`**
 **Rule: match the tool to the cell's SOURCE, not to its shape.** A row-level
 label fix only helps if the row reaches the payload through the path that fix
 lives in.
+
+---
+
+## RETRACTED 2026-08-01 — 1875 was recoverable, and it closes exactly
+
+Re-tested in `/loop /next-defect`. **The "NOT RECOVERABLE / page-image job"
+verdict above is wrong.** `Nuts And Kernels — Of Other Sorts` 1875 went from
+`nodata` to **exactly 1.000000** — 584,525 of a Tier-1 of 584,525.
+
+**exact01 3,544 → 3,545, nodata 4,343 → 4,342, denominator unchanged at 9,497.
+One commodity-year changed in the whole corpus; zero regressions.**
+
+### Why the first pass missed it
+
+**It looked at the parse, not at the raw text.** Everything it reported about
+`country_obs` and `country_obs_inf` was accurate — neither engine's *parse* has
+an `Of other Sorts` block — but both engines' **OCR** transcribe the table in
+full.
+
+The import country section prints, under `NUTS and KERNELS`, the line:
+
+```
+„ Other Sorts. See FRUIT.
+```
+
+**A printed cross-reference.** The origin table is filed in the FRUIT section
+as `„ Nuts, principally used as Fruit :`, value-only (the quantity column is a
+literal `-`):
+
+| Belgium | France | Spain | Italy | New Granada | Ecuador | Brazil | BWI Islands | British Guiana | Other |
+|---|---|---|---|---|---|---|---|---|---|
+| 18,330 | 128,284 | 214,253 | 12,322 | 26,843 | 18,446 | 67,402 | 41,312 | 8,227 | 49,106 |
+
+**They sum to 584,525 — the block's own printed Total and the Tier-1 anchor, to
+the digit.** Chandra and Infinity transcribe all ten figures and the Total
+identically.
+
+The `584,525` the first pass found "sitting there ... the Tier-1 itself, not an
+origin table" was **this block's printed Total**, and the bare-TOTAL column
+beside it (182,345 / 584,525 / 1,341,704 …) is the Almonds / Nuts /
+Oranges-and-Lemons totals of the same page.
+
+**Why no parser saw it:** the as_1875 FRUIT page uses a four-cell-per-side
+layout with an **empty indent cell before every country**, so both table
+extractors collapsed it — Chandra emits only `Raw, not otherwise described`
+blocks under the stale `FLOWERS, ARTIFICIAL` head, Infinity a run-in list of
+country labels with no numbers followed by that column of bare Totals.
+
+### The second half of the fix, and a trap worth naming
+
+Ten `manual_rows` under `FLOWERS, ARTIFICIAL | Nuts, principally used as Fruit`
+— the stale head the **sibling years already arrive under** (1872/73/74/76 all
+do), per the [[payload-node-string-keying]] rule.
+
+They landed in `country_year_final` and **the payload did not move at all.**
+
+`commodity_curation.csv` folds that node into this commodity, and the fold row
+was **year-scoped `1872;1873;1874;1876`** — the scope the orphan matcher wrote
+when it adjudicated the pair, listing only the years that *had country data at
+the time*. **1875 was excluded, so the fold silently discarded exactly the
+cells the repair had just recovered.**
+
+**RULE: a year-scoped curation fold is a filter on future data, not just a
+record of past evidence. After recovering a year, check every fold on the path
+from the label you wrote to the node you are aiming at, and widen the scope.**
+The failure is silent in both directions — the rows are present and correct in
+`country_year_final`, and the metric does not move.
+
+### Result
+
+| year | ratio |
+|---|---|
+| 1872 | 0.999931 |
+| 1873 | 1.000000 |
+| 1874 | 0.993460 |
+| **1875** | **1.000000** |
+| 1876 | 0.999943 |
+
+The commodity's early era is now complete. **1874 at 0.9935** (546,863 of
+550,463, 3,600 short) is the only remaining gap in it, and the two findings
+recorded in the original pass — the `West Coast of Africa (Foreign)` subtotal
+masquerading as a country, and `new_country` being unable to suppress a
+consensus cell — both still stand.
