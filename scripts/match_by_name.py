@@ -23,15 +23,34 @@ arithmetic is the confirmation**, so one agreeing year is enough:
     source not anchoring it;
   * exactly one host clearing the bar.
 
-Generic articles are the danger — 'Unenumerated' and 'Raw' name no commodity
-and would match everything — so a signature-only match is required to be
-non-empty, and the string-equality path is what admits the generic ones, since
-identical generic articles under *different* groups still have to pass the
-arithmetic and the uniqueness test.
+A SHARED MODIFIER IS NOT A NAME RELATION, and no signature test catches that.
+The first cut of this tool proposed `Pork — Salted` -> `Beef — Salted`: the
+shared article is an adjective, not a commodity. Requiring a non-empty
+signature does NOT exclude it — 'Unenumerated' and 'Raw' are all-filler and
+drop out for free, but 'Salted', 'Dry', 'Rough' and 'Undressed' have perfectly
+good signatures.
 
-Hand-adjudication is still required. The 2026-07-31 single-year run accepted 16
-of 22 and declined 6, a 27% false-positive rate on arithmetic alone; every
-decline is in reference/match_declines.csv with its reason.
+The guard that does work is a different question entirely:
+
+  **DOES THE SOURCE CARRY A TIER-1 OF ITS OWN?**
+
+A source that anchors years of its own is a REAL PRINTED LINE, not glue — glue
+has no anchor because it never appeared as a printed heading. Pork salted *is*
+a real commodity, which is exactly why it has one. On the 2026-07-31 run this
+separates the set cleanly: all 8 pairs accepted by hand carry no anchor, and 6
+of the 8 declined do. Anchored sources are still reported, under
+kind='anchored-source', because the era-split population is genuine — but they
+are never 'resolved' and must not be folded on this tool's say-so.
+
+Two things the tool still cannot judge, both requiring a human:
+
+  * DIRECTION. It has no notion of which of two names is the damaged one. The
+    same run proposed five folds INTO a de-headed host ('Wood And Timber — Fir'
+    -> 'Sawn — Fir', GBP63.8M on one agreeing year), which cements the bad label.
+  * generic articles reached by the string path ('Unenumerated' against
+    'Unenumerated').
+
+Every decline is in reference/match_declines.csv with its reason.
 
 Usage: python3 scripts/match_by_name.py [payload.json] [out.csv]
    ->  reports/name_matches.csv
@@ -126,13 +145,30 @@ def main(payload_path, out_path):
                 gains = [y for y in ty if y in per[u] and y not in have
                          and (u, y) not in own]
                 hits.append((len(ex), len(gains), hn, ex, sorted(gains), rel))
+        # DOES THE SOURCE CARRY A TIER-1 OF ITS OWN? This turned out to be the
+        # discriminator the name test was missing, and it is a much better one
+        # than trying to decide whether an article is a commodity noun or a
+        # modifier. A source that anchors years of its own is a REAL PRINTED
+        # LINE, not glue -- glue has no anchor because it never appeared as a
+        # printed heading. On the 2026-07-31 run it separates the set exactly:
+        # all 8 folds I accepted by hand have no anchor, and 6 of the 8 I
+        # declined do, including Pork - Salted -> Beef - Salted, the shared
+        # modifier case that no signature guard could catch (pork salted IS a
+        # real printed commodity, which is precisely why it has an anchor).
+        # Anchored sources are still reported, under their own kind, because
+        # the era-split population found in iteration 23 lives there and is
+        # genuine -- but they are never 'resolved' and must not be folded on
+        # this tool's say-so.
         if not hits:
             continue
         hits.sort(reverse=True)
-        kind = 'resolved' if len(hits) == 1 else 'ambiguous'
+        anchored = bool(own)
+        kind = ('anchored-source' if anchored else
+                ('resolved' if len(hits) == 1 else 'ambiguous'))
         for n_ex, n_g, hn, ex, gains, rel in hits[:3]:
             rows.append({
                 'source': sn, 'host': hn, 'kind': kind, 'relation': rel,
+                'src_anchored': 'YES' if anchored else '',
                 'exact_years': n_ex, 'gains_years': n_g,
                 'years': ';'.join(map(str, sorted(ex)[:8])),
                 'safe_scope': ';'.join(map(str, gains)),
@@ -144,8 +180,10 @@ def main(payload_path, out_path):
         w.writerows(rows)
     res = len({r['source'] for r in rows if r['kind'] == 'resolved'})
     amb = len({r['source'] for r in rows if r['kind'] == 'ambiguous'})
+    anc = len({r['source'] for r in rows if r['kind'] == 'anchored-source'})
     print(f'sources with countries: {len(srcs)}   hosts: {len(hosts)}')
     print(f'  RESOLVED: {res}   AMBIGUOUS: {amb}   '
+          f'ANCHORED-SOURCE (a real printed line, not glue): {anc}   '
           f'(adjudicated declines filtered: {n_dec})')
     print(f'  bar: NAME RELATION required, then >= 1 year to the digit '
           f'(>= {MIN_QTY:,})')

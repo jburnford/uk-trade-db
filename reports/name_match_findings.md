@@ -78,3 +78,63 @@ through.
 **The matcher has no notion of which name is the damaged one.** It ranks by
 size and reports a relation; direction is still a human judgement, and this run
 proposed five wrong-direction folds out of sixteen.
+
+---
+
+## The guard that works: does the source carry an anchor of its own?
+
+**exact01 3,526 → 3,528, denominator unchanged at 9,515, zero true
+regressions.**
+
+The previous section left the name test with a hole it could not plug: a shared
+**modifier** (`Pork — Salted` → `Beef — Salted`) passes every signature test,
+because `Salted` has a perfectly good signature. Trying to classify articles as
+commodity nouns versus adjectives is the obvious fix and a bad one — it needs a
+lexicon the corpus does not have.
+
+The right question turned out not to be about the article at all:
+
+> **Does the source carry a Tier-1 of its own?**
+
+A source that anchors years of its own is a **real printed line, not glue**.
+Glue has no anchor because it never appeared as a printed heading. *Pork
+salted* is a genuine commodity — which is precisely why it has one.
+
+Tested against the hand adjudication of the previous run, it separates the set
+almost exactly:
+
+| | source anchors its own years | no anchor |
+|---|---|---|
+| **8 folds I accepted** | 0 | **8** |
+| **8 pairs I declined** | **6** | 2 |
+
+It catches `Seeds — Rape`, `Wood And Timber — Staves`, `Oil — Coco-Nut`,
+`Leather Manufactures — Unenumerated`, `Metal — Leaf, Not Gold` and — the one
+that mattered — **`Pork — Salted`**, with **no false rejections** among the
+accepted set.
+
+Anchored sources are still reported, under `kind='anchored-source'`, because
+the era-split population found in iteration 23 lives there and is genuine. They
+are simply never `resolved`.
+
+### What it still cannot do
+
+The two declines it misses are both **direction** problems: `Wood And Timber —
+Fir` → `Sawn — Fir` and `Wood And Timber — Mahogany : Unenumerated`. Neither
+source has an anchor, so the guard passes them; both would fold a properly
+headed source into a de-headed fragment. **The tool has no notion of which of
+two names is the damaged one, and that remains a human judgement.**
+
+### Result
+
+With the guard in place the list drops from 16 to **2 resolved**, both further
+glue nodes under stale heads already folded last iteration, and both landing
+exact:
+
+```
+Cordage, Twine, And Cable Yarn  1874  nodata -> exact01  552,665
+Dyes Obtained From Coal Tar     1883  nodata -> exact01  386,623
+```
+
+The script's docstring has been corrected — it previously claimed the
+non-empty-signature rule made the sig path safe, which this run disproved.

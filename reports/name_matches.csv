@@ -1,19 +1,5 @@
-source,host,kind,relation,exact_years,gains_years,years,safe_scope,source_gbp
-Cloucharouc — Manufactures Of,Caoutchouc — Manufactures Of,ambiguous,sig,1,1,1882,1882,154924
-Cloucharouc — Manufactures Of,"Animals, Living — Manufactures Of",ambiguous,sig,1,1,1882,1882,154924
-Wood And Timber — Fir,Sawn — Fir,resolved,sig,1,1,1895,1895,63788709
-Seeds — Rape,Rape,resolved,sig,1,3,1892,1892;1898;1899,23225324
-Wood And Timber — Staves,Staves,resolved,sig,1,1,1892,1892,17864172
-Pork — Salted,Beef — Salted,resolved,sig,1,1,1892,1892,11475964
-Oil — Coco-Nut,Coco Nut,resolved,sig,1,3,1896,1894;1895;1896,8204058
-Leather Manufactures — Unenumerated,"Leather, Undressed — Unenumerated",resolved,string,1,1,1877,1877,6088471
-Wood And Timber — Mahogany : Unenumerated,Furniture Woods And Hardwoods — Unenumerated,resolved,string,1,4,1890,1885;1890;1891;1893,3454820
-Fruit — Rum,Spirits — Rum,resolved,sig,1,2,1899,1898;1899,2027545
-Bark — Logwood,Dye Woods — Logwood,resolved,sig,1,2,1899,1898;1899,1888138
-"Copper — Cordage, Cables (Not Of Iron). Twine And Cable Yarn","Cordage, Twine, And Cable Yarn",resolved,sig,1,2,1874,1874;1895,1196774
-Lates — Ginger,Spices — Ginger,resolved,sig,1,2,1898,1897;1898,844974
-"Dye Stuffs, And Substances Used In Tanning — Dyes Obtained From Coal Tar",Dyes Obtained From Coal Tar,resolved,sig,1,2,1883,1883;1887,668955
-Paper — Wood Pulp Boards,Wood Pulp Board,resolved,sig,1,2,1898,1898;1899,611867
-"Beads Of All Sorts — Brass, Bronze, And Metal Bronzed Or Lacquered, Manufactures Of, Unenumerated","Brass, Bronze, And Metal Bronzed Or Lacquered, }Manufactures Of",resolved,sig,2,2,1893;1894,1893;1894,591901
-"Feathers And Down — For Beds, In Beds Or Otherwise",Feathers — For Beds,resolved,sig,1,5,1897,1894;1895;1896;1897;1898,561378
-"Metal — Leaf, Not Gold","Leaf, Not Gold",resolved,sig,1,2,1899,1898;1899,513223
+source,host,kind,relation,src_anchored,exact_years,gains_years,years,safe_scope,source_gbp
+Cloucharouc — Manufactures Of,Caoutchouc — Manufactures Of,ambiguous,sig,,1,1,1882,1882,154924
+Cloucharouc — Manufactures Of,"Animals, Living — Manufactures Of",ambiguous,sig,,1,1,1882,1882,154924
+"Copper — Cordage, Twine, And Cable Yarn","Cordage, Twine, And Cable Yarn",resolved,sig,,1,1,1874,1874,552665
+"Dye Stuffs, And Substances Used In Tanning — Dyes Obtained From Coal Tar (Ami- Line)",Dyes Obtained From Coal Tar,resolved,sig,,1,1,1883,1883,386623
