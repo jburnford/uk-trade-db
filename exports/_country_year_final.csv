@@ -84094,7 +84094,6 @@ SEEDS,Silk or Satin,holland,Value,import,1882,226800.0,226800.0,consensus,C,C,3,
 "SKINS, FURS, AND PELTS","Sheep, Undressed",france,,import,1882,1068235.0,116413.0,consensus,C,B,3,2
 "SKINS, FURS, AND PELTS","Sheep, Undressed",argentine republic,,import,1882,1139555.0,220293.0,consensus,C,C,3,3
 "SKINS, FURS, AND PELTS","Sheep, Undressed",aden,,import,1882,318585.0,19992.0,consensus,C,C,3,3
-"SKINS, FURS, AND PELTS","Sheep, Undressed",british east indies,,import,1882,925991.0,13807.0,consensus,C,B,3,2
 "SKINS, FURS, AND PELTS","Sheep, Undressed",other countries,,import,1882,216999.0,24481.0,consensus,C,C,3,3
 "SKINS, FURS, AND PELTS","In any way dressed, not leather",other countries,,import,1882,18025.0,2776.0,consensus,C,C,3,3
 "SKINS, FURS, AND PELTS",Undressed,holland,,import,1882,10891.0,3850.0,consensus,C,B,3,2
@@ -98533,14 +98532,6 @@ SILK,Raw,British East Indies : Ceylon,,import,1899,1000.0,600.0,subentry,B,B,2,2
 "SKINS, AND FURS","Skins, Goat, undressed",British East Indies : Bengal,Number,import,1899,8144650.0,663902.0,subentry,B,C,2,3
 "SKINS, AND FURS","Skins, Goat, undressed",British East Indies : Burmah,Number,import,1899,10340.0,1463.0,subentry,B,C,2,3
 "SKINS, AND FURS","Skins, Goat, undressed",British East Indies : Straits Settlements,Number,import,1899,63735.0,5220.0,subentry,B,B,2,2
-"SKINS, AND FURS","Skins, Sheep, undressed",Russia : Northern Ports,Number,import,1895,157204.0,16277.0,subentry,B,C,2,3
-"SKINS, AND FURS","Skins, Sheep, undressed",Russia : Southern Ports,Number,import,1895,187045.0,17388.0,subentry,B,B,2,2
-"SKINS, AND FURS","Skins, Sheep, undressed",Russia : Northern Ports,Number,import,1896,122200.0,12302.0,subentry,B,B,2,2
-"SKINS, AND FURS","Skins, Sheep, undressed",Russia : Southern Ports,Number,import,1896,48440.0,5034.0,subentry,B,B,2,2
-"SKINS, AND FURS","Skins, Sheep, undressed",Russia : Northern Ports,Number,import,1897,134330.0,15767.0,subentry,B,B,2,2
-"SKINS, AND FURS","Skins, Sheep, undressed",Russia : Southern Ports,Number,import,1897,108000.0,9910.0,subentry,B,C,2,3
-"SKINS, AND FURS","Skins, Sheep, undressed",Russia : Southern Ports,Number,import,1898,38700.0,4503.0,subentry,B,B,2,2
-"SKINS, AND FURS","Skins, Sheep, undressed",Russia : Southern Ports,Number,import,1899,1240.0,93.0,subentry,B,B,2,2
 "SKINS, AND FURS",,Australasia : West Australia,,import,1895,124870.0,16536.0,subentry,B,C,2,3
 "SKINS, AND FURS",,Australasia : South Australia,,import,1895,847520.0,117161.0,subentry,B,C,2,3
 "SKINS, AND FURS",,Australasia : Victoria,,import,1895,821963.0,98367.0,subentry,B,B,2,2
@@ -119341,8 +119332,6 @@ SILK,Raw,British East Indies : Hong Kong,,import,1899,33530.0,20010.0,subentry,C
 "SKINS, AND FURS","Skins, Goat, undressed",British East Indies : Bengal,Number,import,1898,5999016.0,480935.0,subentry,C,C,3,3
 "SKINS, AND FURS","Skins, Goat, undressed",British East Indies : Other British Possessions,Number,import,1898,11508.0,859.0,subentry,C,B,3,2
 "SKINS, AND FURS","Skins, Goat, undressed",British East Indies : Other British Possessions,Number,import,1899,68673.0,3178.0,subentry,C,C,3,3
-"SKINS, AND FURS","Skins, Sheep, undressed",Russia : Northern Ports,Number,import,1898,109060.0,22970.0,subentry,C,C,3,3
-"SKINS, AND FURS","Skins, Sheep, undressed",Russia : Northern Ports,Number,import,1899,259060.0,25411.0,subentry,C,B,3,2
 "SKINS, AND FURS",,Australasia : New Zealand,,import,1895,3154939.0,211403.0,subentry,C,B,3,2
 "SKINS, AND FURS",,Australasia : West Australia,,import,1897,90970.0,9445.0,subentry,C,B,3,2
 "SKINS, AND FURS",,Australasia : New South Wales,,import,1897,518150.0,59867.0,subentry,C,B,3,2
@@ -127089,6 +127078,163 @@ WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Brazil,Tons,i
 WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",British North America,Tons,import,1881,3633.0,28467.0,groupfix,C,C,3,3
 WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",British West Indies,Tons,import,1881,3810.0,25017.0,groupfix,C,C,3,3
 WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Other Countries,Tons,import,1881,7039.0,56914.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Northern Ports,Number,import,1895,157204.0,16277.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Northern Ports,Number,import,1896,122200.0,12302.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Northern Ports,Number,import,1897,134330.0,15767.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Northern Ports,Number,import,1898,109060.0,22970.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Northern Ports,Number,import,1899,259060.0,25411.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Southern Ports,Number,import,1895,187045.0,17388.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Southern Ports,Number,import,1896,48440.0,5034.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Southern Ports,Number,import,1897,108000.0,9910.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Southern Ports,Number,import,1898,38700.0,4503.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Russia : Southern Ports,Number,import,1899,1240.0,93.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Denmark,Number,import,1896,78846.0,7159.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Denmark,Number,import,1897,65633.0,7310.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Denmark,Number,import,1898,77054.0,7770.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Denmark,Number,import,1899,66113.0,7903.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Germany,Number,import,1896,118420.0,13631.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Germany,Number,import,1897,390831.0,34116.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Germany,Number,import,1898,218948.0,20736.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Germany,Number,import,1899,302778.0,27499.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Holland,Number,import,1896,51166.0,7733.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Holland,Number,import,1897,130903.0,15185.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Holland,Number,import,1898,123894.0,13647.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Holland,Number,import,1899,81957.0,10250.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Belgium,Number,import,1896,25550.0,2292.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Belgium,Number,import,1897,41334.0,5171.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Belgium,Number,import,1898,36927.0,2074.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Belgium,Number,import,1899,21060.0,2625.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",France,Number,import,1896,56050.0,5496.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",France,Number,import,1897,92410.0,9112.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",France,Number,import,1898,207172.0,10340.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",France,Number,import,1899,703223.0,72396.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Spain,Number,import,1896,182660.0,20711.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Spain,Number,import,1897,175558.0,21202.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Spain,Number,import,1898,259502.0,25943.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Spain,Number,import,1899,415377.0,34081.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed","Turkey, European",Number,import,1895,31885.0,2760.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed","Turkey, European",Number,import,1896,20380.0,2300.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed","Turkey, European",Number,import,1897,9105.0,1171.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed","Turkey, European",Number,import,1898,650.0,38.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed","Turkey, European",Number,import,1899,8275.0,715.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Asiatic,Number,import,1895,106130.0,5923.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Asiatic,Number,import,1896,188700.0,15334.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Asiatic,Number,import,1897,206660.0,20153.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Asiatic,Number,import,1898,246180.0,21823.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Asiatic,Number,import,1899,144260.0,14882.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Egypt,Number,import,1895,5220.0,356.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Egypt,Number,import,1896,71190.0,5244.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Egypt,Number,import,1897,115433.0,9331.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Egypt,Number,import,1898,65160.0,3700.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Egypt,Number,import,1899,36420.0,1790.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Morocco,Number,import,1895,14590.0,990.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Morocco,Number,import,1896,18140.0,1056.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Morocco,Number,import,1897,23450.0,1375.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Morocco,Number,import,1898,65890.0,4005.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Morocco,Number,import,1899,33830.0,2450.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Portuguese Possessions,,import,1895,11800.0,1180.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Portuguese Possessions,,import,1896,230480.0,20881.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Portuguese Possessions,,import,1897,202390.0,24986.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Portuguese Possessions,,import,1898,17226.0,1244.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Madagascar,,import,1896,16550.0,1002.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Madagascar,,import,1897,11110.0,955.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Persia,,import,1896,9000.0,1650.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Persia,,import,1897,40890.0,6700.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Persia,,import,1898,31500.0,4700.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Persia,,import,1899,22210.0,3705.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",China,,import,1896,31140.0,6612.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",China,,import,1897,18440.0,2547.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",China,,import,1898,10740.0,1916.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",China,,import,1899,20530.0,1802.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",United States of America,,import,1896,84261.0,6063.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",United States of America,,import,1897,42488.0,2240.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",United States of America,,import,1898,8548.0,892.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",United States of America,,import,1899,7306.0,598.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Chile,,import,1896,70600.0,7649.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Chile,,import,1897,82631.0,6270.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Chile,,import,1898,119047.0,15023.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Chile,,import,1899,138207.0,14684.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Brazil,,import,1895,12400.0,712.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Brazil,,import,1897,438.0,7.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Brazil,,import,1898,187400.0,25338.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Brazil,,import,1899,105800.0,10470.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Uruguay,,import,1896,93338.0,9900.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Uruguay,,import,1897,43305.0,5694.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Uruguay,,import,1898,123594.0,13030.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Uruguay,,import,1899,20216.0,2279.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Argentine Republic,,import,1896,606314.0,101626.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Argentine Republic,,import,1897,1375813.0,194424.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Argentine Republic,,import,1898,1321813.0,198399.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Argentine Republic,,import,1899,2047830.0,270234.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Other Foreign Countries,,import,1896,38197.0,3156.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Other Foreign Countries,,import,1897,42065.0,4045.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Other Foreign Countries,,import,1898,68455.0,4304.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Other Foreign Countries,,import,1899,82297.0,6231.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Cape of Good Hope,,import,1895,5254210.0,478982.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Cape of Good Hope,,import,1896,4168192.0,411847.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Cape of Good Hope,,import,1897,3766053.0,355837.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Cape of Good Hope,,import,1898,3617973.0,348645.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Cape of Good Hope,,import,1899,2685575.0,325547.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Natal,,import,1895,265476.0,23327.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Natal,,import,1896,243720.0,17238.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Natal,,import,1897,149168.0,14058.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Natal,,import,1898,459223.0,38542.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Natal,,import,1899,409343.0,54397.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Aden and Dependencies,,import,1895,952680.0,47568.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Aden and Dependencies,,import,1896,610200.0,35183.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Aden and Dependencies,,import,1897,608258.0,36770.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Aden and Dependencies,,import,1898,557750.0,31753.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Aden and Dependencies,,import,1899,486520.0,31360.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",British East Indies,,import,1895,84450.0,8598.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",British East Indies,,import,1896,70730.0,7298.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",British East Indies,,import,1897,148980.0,9560.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",British East Indies,,import,1898,236055.0,14475.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",British East Indies,,import,1899,226214.0,17832.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : West Australia,,import,1895,124870.0,16536.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : West Australia,,import,1896,114775.0,12524.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : West Australia,,import,1897,90970.0,9445.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : West Australia,,import,1898,142575.0,16279.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : West Australia,,import,1899,257940.0,37558.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : South Australia,,import,1895,847520.0,117161.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : South Australia,,import,1896,1061035.0,120013.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : South Australia,,import,1897,1071200.0,108262.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : South Australia,,import,1898,970980.0,130103.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : South Australia,,import,1899,686999.0,95967.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Victoria,,import,1895,821963.0,98367.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Victoria,,import,1896,681242.0,73605.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Victoria,,import,1897,754240.0,73498.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Victoria,,import,1898,670538.0,74750.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Victoria,,import,1899,593780.0,63587.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New South Wales,,import,1895,1101320.0,112853.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New South Wales,,import,1896,673263.0,59679.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New South Wales,,import,1897,518150.0,59867.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New South Wales,,import,1898,419610.0,45465.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New South Wales,,import,1899,639857.0,66376.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Queensland,,import,1895,425360.0,53791.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Queensland,,import,1896,489815.0,48718.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Queensland,,import,1897,173290.0,11020.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Queensland,,import,1898,57450.0,6511.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Queensland,,import,1899,13210.0,1664.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Tasmania,,import,1895,30780.0,4117.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Tasmania,,import,1896,15855.0,2101.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Tasmania,,import,1897,27020.0,3258.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Tasmania,,import,1898,37320.0,4452.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Tasmania,,import,1899,31078.0,3709.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New Zealand,,import,1895,3154939.0,211403.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New Zealand,,import,1896,2990972.0,172248.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New Zealand,,import,1897,3711542.0,217654.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New Zealand,,import,1898,4422341.0,277055.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : New Zealand,,import,1899,4459896.0,287954.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Falkland Islands,,import,1895,38960.0,5232.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Falkland Islands,,import,1896,35850.0,6700.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Falkland Islands,,import,1897,91380.0,10300.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Falkland Islands,,import,1898,27630.0,3287.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Falkland Islands,,import,1899,67525.0,8963.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Other British Possessions,,import,1895,5545.0,748.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Other British Possessions,,import,1896,3458.0,544.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Other British Possessions,,import,1897,8838.0,1249.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Other British Possessions,,import,1898,5967.0,741.0,groupfix,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",Australasia : Other British Possessions,,import,1899,8000.0,1085.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
@@ -127167,3 +127313,4 @@ TEETH,"Elephants', Sea Cow, and Sea Horse",Other Countries,Cwts,import,1881,3912
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,Australasia : Victoria,Value,import,1894,89689.0,89689.0,human,C,C,3,3
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,Australasia : New South Wales,Value,import,1894,854210.0,854210.0,human,C,C,3,3
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,Australasia : Queensland,Value,import,1894,13457.0,13457.0,human,C,C,3,3
+"SKINS, FURS, AND PELTS","Sheep, Undressed",British East Indies,Number,import,1882,225291.0,13807.0,human,C,B,3,2
