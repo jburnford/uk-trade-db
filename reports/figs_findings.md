@@ -83,3 +83,45 @@ three years closed.
 1866-1871 `nodata`; 1872 (0.155), 1873 (0.103), 1874 (0.323) and 1878 (0.357)
 all show the export-leakage signature; 1885 and 1891 `nodata`; **1893 reads
 1.9018**, nearly double.
+
+---
+
+## 1872, 1873, 1874, 1878 — the same two defects, and the method transfers cleanly
+
+Same day, the continuation this report queued. **All four years went from `under`
+to exactly 1.000000.**
+
+**exact01 3,559 → 3,563 (+4), under 280 → 276, denominator held at 9,497. Four
+commodity-years changed; zero regressions.**
+
+Every one of the four was occupied **solely** by two-up rows naming **United
+States of America, Australia, British North America and Belgium** — Britain
+re-exporting figs to America and the colonies, not importing them from there.
+Superseded, as in 1880-82.
+
+The import tables are again in the **duty tables**, and **all four quantity
+columns close on the Tier-1 to the digit**:
+
+| year | members | Tier-1 |
+|---|---|---|
+| 1872 | 18,258 + 10,015 + 10,024 + 91,721 + 11,829 | **141,847** |
+| 1873 | 21,232 + 16,492 + 80,410 + 2,213 | **120,347** |
+| 1874 | 7,394 + 1,757 + 63,214 + 1,803 | **74,168** |
+| 1878 | 62,720 + 4,523 | **67,243** |
+
+1873 and 1878 close on their printed **value** totals as well (220,413 and
+139,293); 1874's values are 270 short of a printed 149,059.
+
+One normalisation worth recording: **`as_1872` prints `Asiatic Turkey` where
+every other year prints `Turkey, Asiatic`.** Written as the latter so the series
+stays one country rather than forking into two.
+
+**The denominator was checked and held at 9,497** — the guard added after the
+`Figs and Fig Cake` mishap above.
+
+### Where this commodity now stands
+
+Exact in 1872-1884 and 1886-1890 and 1894-1898. Still open: **1866-1871
+`nodata`** (six years with a Tier-1 and no origin table located), **1885 and 1891
+`nodata`**, **1893 reads 1.9018** (nearly double), and 1883/1896 sit just under
+at 0.976/0.973.

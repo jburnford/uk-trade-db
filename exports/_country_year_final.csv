@@ -99355,6 +99355,21 @@ FRUIT,Figs,Portugal,Cwts,import,1882,6912.0,5407.0,human,B,B,2,2
 FRUIT,Figs,Spain,Cwts,import,1882,6018.0,6378.0,human,B,B,2,2
 FRUIT,Figs,"Turkey, Asiatic",Cwts,import,1882,59067.0,151442.0,human,B,B,2,2
 FRUIT,Figs,Other Countries,Cwts,import,1882,1581.0,2453.0,human,B,B,2,2
+FRUIT,Figs,Portugal,Cwts,import,1872,18258.0,20723.0,human,B,B,2,2
+FRUIT,Figs,Spain,Cwts,import,1872,10015.0,12061.0,human,B,B,2,2
+FRUIT,Figs,Austrian Territories,Cwts,import,1872,10024.0,11236.0,human,B,B,2,2
+FRUIT,Figs,"Turkey, Asiatic",Cwts,import,1872,91721.0,172306.0,human,B,B,2,2
+FRUIT,Figs,Other Countries,Cwts,import,1872,11829.0,15245.0,human,B,B,2,2
+FRUIT,Figs,Portugal,Cwts,import,1873,21232.0,20331.0,human,B,B,2,2
+FRUIT,Figs,Spain,Cwts,import,1873,16492.0,20125.0,human,B,B,2,2
+FRUIT,Figs,"Turkey, Asiatic",Cwts,import,1873,80410.0,177384.0,human,B,B,2,2
+FRUIT,Figs,Other Countries,Cwts,import,1873,2213.0,2573.0,human,B,B,2,2
+FRUIT,Figs,Portugal,Cwts,import,1874,7394.0,7530.0,human,B,B,2,2
+FRUIT,Figs,Spain,Cwts,import,1874,1757.0,1544.0,human,B,B,2,2
+FRUIT,Figs,"Turkey, Asiatic",Cwts,import,1874,63214.0,136658.0,human,B,B,2,2
+FRUIT,Figs,Other Countries,Cwts,import,1874,1803.0,3057.0,human,B,B,2,2
+FRUIT,Figs,"Turkey, Asiatic",Cwts,import,1878,62720.0,133726.0,human,B,B,2,2
+FRUIT,Figs,Other Countries,Cwts,import,1878,4523.0,5567.0,human,B,B,2,2
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
@@ -105775,11 +105790,6 @@ EXTRACTS,"FARINACEOUS SUBSTANCES, and Manufacturesthereof, Unenumerated",Holland
 EXTRACTS,"FARINACEOUS SUBSTANCES, and Manufacturesthereof, Unenumerated",France,,import,1872,8536.0,,twoup,C,C,3,3
 EXTRACTS,"FARINACEOUS SUBSTANCES, and Manufacturesthereof, Unenumerated",Australia,,import,1872,4817.0,,twoup,C,C,3,3
 EXTRACTS,"FARINACEOUS SUBSTANCES, and Manufacturesthereof, Unenumerated",Other Countries,,import,1872,10808.0,,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,Belgium,,import,1872,1307.0,2298.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,United States of America,,import,1872,12626.0,24171.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,Australia,,import,1872,2321.0,5313.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,British North America,,import,1872,1735.0,3687.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,Other Countries,,import,1872,3996.0,6328.0,twoup,C,C,3,3
 GLASS,"Window and German Sheet, including Shades and Cylinders",British India,,import,1872,11593.0,7349.0,twoup,C,C,3,3
 GLASS,"Window and German Sheet, including Shades and Cylinders",Australia,,import,1872,6496.0,5640.0,twoup,C,C,3,3
 GLASS,"Window and German Sheet, including Shades and Cylinders",Other Countries,,import,1872,11029.0,12828.0,twoup,C,C,3,3
@@ -106233,10 +106243,6 @@ CAOUTCHOUC,,Other Countries,,import,1873,528.0,5522.0,twoup,C,C,3,3
 CHICORY,Raw or Kiln dried and roasted in Bond,Australia,,import,1873,3561.0,5184.0,twoup,C,C,3,3
 CHICORY,Raw or Kiln dried and roasted in Bond,British North America,,import,1873,1013.0,1410.0,twoup,C,C,3,3
 CHICORY,Raw or Kiln dried and roasted in Bond,Other Countries,,import,1873,1272.0,1319.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,United States of America,,import,1873,2327.0,3401.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,Australia,,import,1873,3071.0,6517.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,British North America,,import,1873,2016.0,4199.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,Other Countries,,import,1873,5012.0,7809.0,twoup,C,C,3,3
 FRUIT,"Dried, Unenumerated",Holland,,import,1873,7230.0,3742.0,twoup,C,C,3,3
 FRUIT,"Dried, Unenumerated",United States of America,,import,1873,5745.0,2635.0,twoup,C,C,3,3
 FRUIT,"Dried, Unenumerated",Other Countries,,import,1873,8302.0,4266.0,twoup,C,C,3,3
@@ -106860,10 +106866,6 @@ CHICORY,Raw or Kiln dried and roasted in Bond,British Possessions in South Afric
 CHICORY,Raw or Kiln dried and roasted in Bond,Australia,,import,1874,3685.0,4834.0,twoup,C,C,3,3
 CHICORY,Raw or Kiln dried and roasted in Bond,British North America,,import,1874,1746.0,2342.0,twoup,C,C,3,3
 CHICORY,Raw or Kiln dried and roasted in Bond,Other Countries,,import,1874,1267.0,1597.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,United States of America,,import,1874,15092.0,29726.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,Australia,,import,1874,2959.0,6220.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,British North America,,import,1874,1700.0,3498.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,Other Countries,,import,1874,4199.0,6392.0,twoup,C,C,3,3
 FRUIT,"Dried, Unenumerated",United States of America,,import,1874,8047.0,2229.0,twoup,C,C,3,3
 FRUIT,"Dried, Unenumerated",Australia,,import,1874,5536.0,2969.0,twoup,C,C,3,3
 FRUIT,"Dried, Unenumerated",Other Countries,,import,1874,11950.0,4734.0,twoup,C,C,3,3
@@ -109284,10 +109286,6 @@ FRUIT,Curraunts,British Possessions in South Africa,,import,1878,4726.0,6615.0,t
 FRUIT,Curraunts,Australia,,import,1878,75415.0,92106.0,twoup,C,C,3,3
 FRUIT,Curraunts,British North America,,import,1878,16979.0,12942.0,twoup,C,C,3,3
 FRUIT,Curraunts,Other Countries,,import,1878,9081.0,10644.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,United States of America,,import,1878,12485.0,23885.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,Australia,,import,1878,2970.0,5312.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,British North America,,import,1878,1512.0,3174.0,twoup,C,C,3,3
-FRUIT,Figs and Fig Cake,Other Countries,,import,1878,7029.0,5510.0,twoup,C,C,3,3
 GUTTA PERCHA,,Other Countries,,import,1878,1859.0,9021.0,twoup,C,C,3,3
 HIDES,"Not Tanned, &c., Dry",Sweden,,import,1878,3776.0,12703.0,twoup,C,C,3,3
 HIDES,"Not Tanned, &c., Dry",Germany,,import,1878,146157.0,461748.0,twoup,C,C,3,3
