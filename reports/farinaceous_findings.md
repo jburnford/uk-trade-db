@@ -87,3 +87,49 @@ Queued: unifying the two spellings needs the alias to move the anchor too, or
 `build_viz_payload` to key on the signature rather than the string. Both are
 code changes and neither was attempted. `Farinaceous` **1879** is a second hole
 in the same commodity and was not examined.
+
+---
+
+## Resolved next iteration: the blocker was a suffix
+
+**exact01 3,531 → 3,532, denominator unchanged at 9,515, zero regressions.**
+
+```
+Farinaceous… 1879  ('nodata', 0, 530355) -> ('exact01', 530355, 530355)
+Farinaceous… 1882  ('nodata', 0, 752945) -> ('within5', 726864, 752945)
+```
+
+### What was actually wrong
+
+Not the hyphen after all — or rather, not only. The clean target used last
+iteration was `FARINACEOUS SUBSTANCES AND MANUFACTURES THEREOF**, UNENUMERATED**`.
+That trailing suffix keys a **different payload node**,
+`Farinaceous Substances And Manufactures Thereof, Unenumerated`, which carries
+no Tier-1 — and one already existed, holding a stray 1883 row. The repair was
+landing in it correctly and invisibly.
+
+Dropping the suffix — `FARINACEOUS SUBSTANCES AND MANUFACTURES THEREOF` —
+satisfies `V.sig` in `integrate_sources` **and** normalises to the
+anchor-bearing node in `build_viz_payload`. Both repairs then land.
+
+**The lesson is narrower and more useful than "the two stages disagree":
+they disagree about the SUFFIX, not just the hyphen.** When a repair is
+admitted but invisible, enumerate the payload nodes whose names share the
+target's stem before theorising — the cells are usually sitting in a sibling
+one token away.
+
+### 1879, found the same way
+
+`as_1879` has the identical run-together shape: the real embroidery table at
+seq 563-567, a one-line extracts entry at 568, then the farinaceous origin
+table at 569-577 under `EMBROIDERY and NEEDLEWORK | EXTRACTS`. Its eight
+members —
+
+`169,097 + 39,001 + 38,950 + 34,743 + 50,989 + 115,096 + 39,621 + 42,858`
+
+— sum **530,355 = the block's printed TOTAL and the Tier-1, both to the
+digit**, identically in both engines. **exact01.**
+
+So the commodity's two holes are now one closed year and one at 0.965, the
+latter still short by the 26,081 member whose country label neither engine
+kept.
