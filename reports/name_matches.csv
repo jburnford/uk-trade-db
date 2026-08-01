@@ -1,5 +1,7 @@
 source,host,kind,relation,src_anchored,exact_years,gains_years,years,safe_scope,source_gbp
 Cloucharouc — Manufactures Of,Caoutchouc — Manufactures Of,ambiguous,sig,,1,1,1882,1882,154924
 Cloucharouc — Manufactures Of,"Animals, Living — Manufactures Of",ambiguous,sig,,1,1,1882,1882,154924
-"Copper — Cordage, Twine, And Cable Yarn","Cordage, Twine, And Cable Yarn",resolved,sig,,1,1,1874,1874,552665
-"Dye Stuffs, And Substances Used In Tanning — Dyes Obtained From Coal Tar (Ami- Line)",Dyes Obtained From Coal Tar,resolved,sig,,1,1,1883,1883,386623
+Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,For Expressing Oil Therefrom,anchored-source,sig-subset,YES,1,1,1881,1881,19454025
+"Soap, Transparent, In The Manufacture Of Which Spirit Has Been Used",Fruit — Transparent In The Manufacture Of Which Spirit Has Been Used,anchored-source,sig-subset,YES,1,1,1893,1893,33967
+"Skins, And Furs — Skins In Any Way Dressed (Not Leather)","Skins, Furs, And Pelts — In Any Way Dressed (Not Leather)",anchored-source,sig-subset,YES,1,2,1898,1897;1898,12207
+"Stones, Marble, Rough Hewn, Or Manufactured (Other Than Works Of Art)","Stones, Rough, Hewn, Or Manufactured (Other Thanworks Of Art)",resolved,sig-subset,,1,5,1897,1895;1896;1897;1898;1899,4599683

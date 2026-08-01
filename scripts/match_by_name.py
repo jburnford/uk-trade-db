@@ -98,6 +98,17 @@ def related(sname, hname):
     # the host may BE the article, with no group prefix at all
     if ss and ss == V.sig(hname):
         return 'host-is-article'
+    # A FUSED PREFIX defeats equality. 'Onions — Raw · Opium' held the 1880-81
+    # opium origin tables, and its tail signs as ('opium','raw') against the
+    # host's ('opium'), so no equality test could see it - it had to be found
+    # by hand off the bracketed-gap ranking. So also accept the host's
+    # signature being a strict SUBSET of the source's, which is what fusion
+    # looks like. Guarded two ways, because subset matching is much looser:
+    # the host signature must carry at least two tokens (a single-token host
+    # like 'Rum' or 'Fir' would otherwise match every article containing that
+    # word), and the source-anchor test downstream still has to pass.
+    if ss and hs and len(hs) >= 2 and set(hs) < set(ss):
+        return 'sig-subset'
     return ''
 
 
