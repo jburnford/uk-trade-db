@@ -19,6 +19,11 @@ Usage: python3 scripts/find_bracketed_gaps.py exports/viz_payload.json
 """
 import csv
 import json
+from collections import defaultdict
+import sys as _sys
+from pathlib import Path as _P
+_sys.path.insert(0, str(_P(__file__).resolve().parent))
+import match_by_name as MB
 import sys
 from pathlib import Path
 
@@ -26,8 +31,42 @@ BASE = Path('/home/jic823/uk_trade_db')
 TK = '§TOTAL'
 
 
+def _closing_index(p):
+    """(year, rounded anchor) -> nodes whose countries close that year.
+
+    A ranked "gap" is often ILLUSORY: the year already closes under a SIBLING
+    LABEL carrying the same anchor, because one printed line reached the
+    payload as two commodities. Brass, stones and pyrites were three
+    consecutive items of exactly that shape, each worth 0 or -1 to the corpus
+    count. This screen looks at one node at a time and cannot see it, so the
+    check is bolted on here.
+    """
+    idx = defaultdict(set)
+    for name, entry in p.items():
+        c = entry.get('c') or {}
+        t1 = c.get(TK)
+        if not t1:
+            continue
+        unit = max(t1, key=lambda u: len(t1[u]))
+        ty = {r[0]: r[1] for r in t1[unit] if r[1]}
+        cs = defaultdict(float)
+        for cty, byu in c.items():
+            if cty == TK or '(' in cty:
+                continue
+            for uu, cells in byu.items():
+                for r in cells:
+                    if r[1]:
+                        cs[r[0]] += r[1]
+        for y, a in ty.items():
+            if cs.get(y) and abs(cs[y] - a) <= 0.05 * a:
+                idx[(y, round(a))].add(name)
+    return idx
+
+
 def main(path):
     p = json.load(open(path))
+    closing = _closing_index(p)
+    anchors = {}
     rows = []
     for name, entry in p.items():
         c = entry.get('c') or {}
@@ -41,6 +80,7 @@ def main(path):
         med = sorted(vals)[len(vals) // 2]
         t1y = {r[0]: r[1] for r in t1[unit]
                if r[1] and not (med and r[1] > 30 * med)}
+        anchors[name] = t1y
         csum = {}
         for cty, byu in c.items():
             if cty == TK or '(' in cty:
@@ -87,15 +127,39 @@ def main(path):
                     'commodity_gbp': round(entry.get('v') or 0),
                 })
             i = j + 1
-    rows.sort(key=lambda r: -r['gbp_at_stake'])
+    # Flag gap-years already closed by a NAME-RELATED sibling on the same
+    # anchor. The name guard is essential: 'Manganese, Ore Of' 1891 and
+    # 'Manures - Phosphate Of Lime And Rock' share an anchor value that year
+    # and are entirely unrelated commodities, so anchor agreement ALONE is
+    # coincidence-grade evidence - the same lesson the single-year matcher
+    # taught.
+    for r in rows:
+        t1y = anchors[r['commodity']]
+        dup, by = [], set()
+        for y in range(r['gap_start'], r['gap_end'] + 1):
+            a = t1y.get(y)
+            if not a:
+                continue
+            for o in closing.get((y, round(a)), ()):
+                if o != r['commodity'] and MB.related(o, r['commodity']):
+                    dup.append(y)
+                    by.add(o)
+                    break
+        r['dup_years'] = ';'.join(map(str, dup))
+        r['dup_by'] = '; '.join(sorted(by))[:120]
+        r['all_dup'] = 'YES' if dup and len(dup) == r['n_years'] else ''
+    rows.sort(key=lambda r: (r['all_dup'] == 'YES', -r['gbp_at_stake']))
     out = BASE / 'reports' / 'bracketed_gaps.csv'
     with open(out, 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader()
         w.writerows(rows)
+    n_dup = sum(1 for r in rows if r['all_dup'] == 'YES')
     print(f'{len(rows)} bracketed gaps in '
           f'{len({r["commodity"] for r in rows})} commodities -> {out}')
-    for r in rows[:25]:
+    print(f'  of these, {n_dup} are ILLUSORY - every gap-year already closes '
+          f'under a name-related sibling on the same anchor (sorted last)')
+    for r in [x for x in rows if x['all_dup'] != 'YES'][:25]:
         print(f'  £{r["gbp_at_stake"]:>10,}  {r["commodity"][:44]:44} '
               f'{r["gap_start"]}-{r["gap_end"]} ({r["n_years"]}y {r["kind"]}) '
               f'ratios {r["ratios"][:40]}')
