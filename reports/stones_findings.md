@@ -101,3 +101,48 @@ nodes have the split and 366 of them produce nothing, which says the unlabelled
 bucket is usually either empty in the matched years or attached to a commodity
 with no partner to find. Worth having in the tool permanently; not worth
 expecting more from.
+
+---
+
+## The era-split merge: a −1 that buys a continuous series
+
+Next iteration. **exact01 3,543 → 3,542 (−1), denominator 9,511 → 9,504 (−7),
+zero true regressions.**
+
+The two nodes are copies of one printed line, with **identical anchors wherever
+both carry a year** — 1893 546,219, 1894 585,476, 1895 574,884, 1896 673,206,
+1897 740,497, 1898 869,782, 1899 891,173.
+
+| | anchors | closes |
+|---|---|---|
+| `Stones, Marble, And Slate : Rough, Hewn Or Manufactured : (Other Than Works Of Art)` | 1885-1900 | 1886-1894 |
+| `Stones, Rough, Hewn, Or Manufactured (Other Thanworks Of Art)` | 1893-1899 | 1895-1899 |
+
+Folded into the first — it has the fuller anchor range and eight closing years
+the other lacks — **scoped to 1896-1899**, because both hold 1895 country cells
+(571,884 and 574,578) and an unscoped fold would double that year to 1,146,462.
+
+### The result, and the honest cost
+
+The surviving node now runs **1885-1900 continuously**, with every year
+measured except 1900:
+
+**10 exact01, 5 within5, 1 nodata**, where before there were two nodes, 23
+anchor-years, and 1893/1894 counted twice.
+
+But the corpus count **falls by one**, and the reason is worth stating: **the
+source's 1895 was the better copy**. It closed on the anchor (574,578) where
+the target reads 0.995 (571,884). Scoping the fold to 1896-1899 discards it, so
+a genuine `exact01` is given up to gain 1897 and to stop double-counting
+1893/1894.
+
+Including 1895 in the scope would not have saved it — both nodes hold cells
+there, so the merge would double the year instead. **Keeping the better of two
+overlapping copies is not something a year-scoped fold can express**; it would
+need cell-level surgery, and 0.995 is not worth that.
+
+So: **−1 exact01, −7 denominator, one commodity where there were two, and a
+sixteen-year series with a single hole.** Recorded as de-duplication, not as a
+gain.
+
+Seven `Stones` nodes still remain, six of them anchorless.
