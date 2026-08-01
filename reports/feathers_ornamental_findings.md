@@ -379,3 +379,76 @@ Also still open: 1895's foreign members sit 30,000 below their printed
 subtotal (one cell misread, no third source to arbitrate), which is what
 keeps that year at 0.24% instead of exact; and 1892's `Lbs. ozs` cells are
 still fused.
+
+---
+
+## 1890 — closed 2026-08-01: a fractional ounce eats the six biggest rows
+
+Worked in `/loop /next-defect` (bracketed-gap rank 3 after silver ore came off
+it). **exact01 3,543 → 3,544, denominator unchanged at 9,497, within 5% 48.9% →
+49.0%. Exactly one commodity-year changed in the whole corpus and it changed in
+the right direction; zero regressions.** The year went from **0.1554 (125,007 of
+a Tier-1 of 804,666 Lb) to 0.9999975**.
+
+**This is neither a missing table nor a label defect** — the two failure modes
+every other year of this commodity turned out to be. The as_1890 origin table is
+complete and *identical in both engines* (Chandra seq 1091-1108, Infinity seq
+1000-1017). What breaks it is the printed unit.
+
+The quantity column is headed **`Lbs. oz.`**, and six of the fifteen members
+print a fractional ounce as a superscript:
+
+```
+„ France - - - -    317,995<sup>1</sup>/<sub>8</sub>     377,683
+„ British Possessions in
+    South Africa    248,902<sup>1</sup>/<sub>8</sub>     551,396
+```
+
+(Chandra renders the same marks `/10`, Infinity `/8` — the denominator is a
+guess in both, which is itself a sign the mark is sub-unit noise.) **The parser
+drops the whole quantity on exactly those six rows.** They then fall through
+`integrate_sources`' value-only branch and land under the literal unit `Value`
+with the GBP figure in the quantity slot — present, correctly valued, and
+invisible to the Lb anchor.
+
+**The six are the biggest rows in the table**: France 317,995, British
+Possessions in South Africa 248,902, British East Indies 101,367, Belgium 4,884,
+Tripoli 4,858, Australasia 1,651 — **679,657 Lb of the 804,666**. The nine that
+survived are the nine printed without a fraction.
+
+### The arithmetic
+
+| | members | printed |
+|---|---|---|
+| Foreign (9) | 448,258 | 448,259 |
+| British (6) | 356,406 | 356,407 |
+| printed subtotals | **448,259 + 356,407 = 804,666** | grand TOTAL 804,666 **= Tier-1 to the digit** |
+
+Each half is 1 Lb short of its printed subtotal — the dropped fractional ounces,
+rounded. Restored, the year reads **804,664 / 804,666**.
+
+The **value** column corroborates independently and settles an engine
+disagreement on the way: foreign 455,225 + British 601,432 = **1,056,657 = the
+printed grand value exactly**, so Chandra's British value total is right and
+Infinity's 601,482 is wrong.
+
+### Scope of the parser defect, measured
+
+**Nine rows, all in `as_1890 FEATHERS | Ornamental`, and nowhere else in the
+corpus.** `as_1889` has 16 `Lbs. oz` rows, `as_1891` 18 and `as_1892` 19, and
+not one of them has a null quantity. So this is a single-block repair, not a
+class, and it does not justify touching the parser. Fixed with six
+`manual_rows` `replace=1` cells, tier B — both engines print every digit
+identically and the block closes on its printed grand total.
+
+**`as_1892`'s `Lbs. ozs` FUSION defect is a different animal and is untouched**
+— that year still reads 48.8×.
+
+### The commodity now
+
+exact 1872-73, 1875-85, 1889, **1890**, 1891, 1895-96. Still broken, in rank
+order: **1892 at 48.8× (fused cells)**, 1887 at 0.2664, 1897 at 0.521, 1898 at
+0.5023, 1894 at 0.5734, 1886 at 0.6212, 1893 at 0.7031, 1874 at 0.8792, 1888 at
+1.1582, and 1868-71 / 1899-1900 `nodata`. The 1897/1898 pair is still blocked
+behind the volume-scale sticky `Eastern Coast of Africa` article described
+above.

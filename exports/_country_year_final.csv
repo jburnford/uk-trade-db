@@ -44809,17 +44809,11 @@ FEATHERS,For Beds,hong kong,Cwts,import,1890,772.0,1714.0,consensus,B,B,2,2
 FEATHERS,For Beds,other british possessions,Cwts,import,1890,222.0,875.0,consensus,B,B,2,2
 FEATHERS,Ornamental,germany,Lbs. oz,import,1890,8567.0,4414.0,consensus,B,B,2,2
 FEATHERS,Ornamental,holland,Lbs. oz,import,1890,77440.0,43888.0,consensus,B,B,2,2
-FEATHERS,Ornamental,belgium,Value,import,1890,6341.0,6341.0,consensus,B,B,2,2
-FEATHERS,Ornamental,france,Value,import,1890,377683.0,377683.0,consensus,B,B,2,2
-FEATHERS,Ornamental,tripoli,Value,import,1890,5910.0,5910.0,consensus,B,B,2,2
 FEATHERS,Ornamental,morocco,Lbs. oz,import,1890,1466.0,2035.0,consensus,B,B,2,2
 FEATHERS,Ornamental,united states of america,Lbs. oz,import,1890,16465.0,2146.0,consensus,B,B,2,2
 FEATHERS,Ornamental,brazil,Lbs. oz,import,1890,3254.0,6716.0,consensus,B,B,2,2
 FEATHERS,Ornamental,other foreign countries,Lbs. oz,import,1890,13329.0,6592.0,consensus,B,B,2,2
-FEATHERS,Ornamental,south africa,Value,import,1890,551396.0,551396.0,consensus,B,B,2,2
 FEATHERS,Ornamental,aden,Lbs. oz,import,1890,2637.0,2340.0,consensus,B,B,2,2
-FEATHERS,Ornamental,british east indies,Value,import,1890,41347.0,41347.0,consensus,B,B,2,2
-FEATHERS,Ornamental,australasia,Value,import,1890,3095.0,3095.0,consensus,B,B,2,2
 FEATHERS,Ornamental,british west india islands,Lbs. oz,import,1890,1003.0,2544.0,consensus,B,B,2,2
 FEATHERS,Ornamental,other british possessions,Lbs. oz,import,1890,846.0,710.0,consensus,B,B,2,2
 FISH,Herrings,sweden,Cwts,import,1890,408647.0,66815.0,consensus,B,B,2,2
@@ -99326,6 +99320,12 @@ FEATHERS,Ornamental,Australasia,Lbs,import,1885,2549.0,1672.0,human,B,A,2,1
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,Australasia : South Australia,Value,import,1894,235848.0,235848.0,human,B,B,2,2
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,Australasia : Tasmania,Value,import,1894,44573.0,44573.0,human,B,B,2,2
 "SILVER, ORE OF, OR ORE OF WHICH THE GREATER PART IN VALUE IS SILVER",,Australasia : New Zealand,Value,import,1894,8205.0,8205.0,human,B,B,2,2
+FEATHERS,Ornamental,France,Lbs. oz,import,1890,317995.0,377683.0,human,B,B,2,2
+FEATHERS,Ornamental,South Africa,Lbs. oz,import,1890,248902.0,551396.0,human,B,B,2,2
+FEATHERS,Ornamental,British East Indies,Lbs. oz,import,1890,101367.0,41347.0,human,B,B,2,2
+FEATHERS,Ornamental,Belgium,Lbs. oz,import,1890,4884.0,6341.0,human,B,B,2,2
+FEATHERS,Ornamental,Tripoli,Lbs. oz,import,1890,4858.0,5910.0,human,B,B,2,2
+FEATHERS,Ornamental,Australasia,Lbs. oz,import,1890,1651.0,3095.0,human,B,B,2,2
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
