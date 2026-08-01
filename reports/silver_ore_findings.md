@@ -138,3 +138,121 @@ only thing wrong with them** — unblocking it was necessary, not sufficient.
 The 9,300 residual in 1879 stands: one member row is missing from both
 parses, so the year sits at **0.9872** and not at exact. It is honest
 measurement where there was none.
+
+---
+
+## 1894 — closed 2026-08-01, and the queued diagnosis was wrong
+
+Worked in `/loop /next-defect`. **exact01 3,542 → 3,543, denominator unchanged
+at 9,497, GBP within 5% 68.7% → 68.8%. Exactly one commodity-year changed in
+the whole corpus and it changed in the right direction; zero regressions.**
+
+`Silver, Ore Of…` 1894 went from **0.3059 (746,264 of a T1 of 2,439,955) to
+0.999988** — the last broken year in the series apart from 1884's 1.1009.
+
+### The queued diagnosis is retracted
+
+The note above said the 1894 table was "elsewhere", that as_1894's own block was
+"only the European section", and that "some other volume's silver-ore table is
+being read into 1894". All three are wrong:
+
+- **as_1894 seq 1880-1886 is a `reexport` block**, not an import section. It is
+  genuinely silver ore — the alphabetical run SILK < SILVER < SKINS holds in
+  as_1894 and again in as_1897 — but a re-export table can never close an
+  import anchor. (as_1897 prints the same 1894 column, Germany 67,988 /
+  Holland 7,460 / TOTAL 365,377, under a **stale** `Manufactures of Silk…
+  unenumerated` article that runs on for ~80 rows and swallows the SKINS Goat
+  Undressed table at seq 14566+ as well.)
+- **Nothing foreign was read into 1894.** The 15 `Value` cells that made up the
+  746,264 are the correct silver-ore figures; they were simply 15 of 27.
+
+### The table was never missing, and it closes
+
+`as_1898 | import | SILVER, Ore of… | article NULL | unit NULL`, **seq
+19517-19652**, is the whole value-only 1894-98 comparative. Its 1894 column
+closes on both printed subtotals:
+
+| | members | printed |
+|---|---|---|
+| Foreign (17) | **1,173,955** | **1,173,955** — to the digit |
+| British (10) | 1,265,970 | 1,266,000 — **−30** |
+| Foreign + British printed | **2,439,955** | grand TOTAL **2,439,955 = Tier-1 to the digit** |
+
+1895 closes the other way round — British members sum **771,407 exactly**,
+foreign 974,938 against a printed 975,037 (−99), printed halves 1,746,444 = T1
+exactly. (1896-98 carry real OCR noise, +810 / −180 / −21,774, and have no T1.)
+
+The **−30 is one member digit and is not guessable.** Infinity's copy of the
+block drops New South Wales and Queensland outright and reads Victoria 55,276
+for 89,689, so it cannot arbitrate the British column; it does confirm the other
+ten British and all seventeen foreign figures digit-for-digit (its only other
+divergence is Republic of Colombia 99,018 for 99,918, and 99,918 is the reading
+that closes the foreign column exactly).
+
+### Why it never reached the payload — a collision class not previously named
+
+The same stale `SILVER, Ore of…` head also covers the **SKINS, FURS AND PELTS |
+Sheep, Undressed** comparative at seq 19832-20013, whose second half sits under
+the **phantom region article `Eastern Coast of Africa`**. (as_1894 seq 3316
+labels those same figures correctly, which is how the block is identified.)
+
+`repair_country_as_article.py` **NULLs a phantom region article by design** —
+"the GROUP is the commodity; the article is a country context". That is right
+when the group *is* the commodity. Here the group is a stale head covering seven
+tables, so nulling the article drops the sheep-skin block into the **same
+(group, article=NULL) bucket as the genuine value-only silver table**, and
+`vote_country_years` then reads the two as two volume-readings of one cell and
+merges them field by field. The proof is in `country_year_final`:
+
+```
+united states of america | unit None | 1894 | quantity 37,533 | value 62,092 | n_volumes 2
+                                              ^ sheep skins, seq 19909   ^ silver ore, seq 19563
+```
+
+Twelve of the 27 members were fused or outvoted this way — USA, Chile 357,485,
+Argentine Republic, Other Foreign, Cape, Natal, South Australia, Victoria, New
+South Wales 854,210, Queensland, Tasmania, New Zealand — and **every one of them
+is a country the sheep-skin table also names.** The fifteen that survived are
+exactly the fifteen the sheep-skin table does not name.
+
+**The general statement, worth carrying:** unfiling a phantom region article is
+safe only when the group's NULL-article bucket holds nothing else. Under a stale
+multi-table head it is a merge of two unrelated tables, and the loser is
+silently overwritten rather than flagged.
+
+### The fix, and the one that was measured and rejected
+
+Twelve `manual_rows` cells with `replace=1` (as_1898, unit `Value`, the printed
+figures), tiered B where both engines agree and C for Victoria / New South
+Wales / Queensland where only Chandra carries the reading.
+
+**A `group_repairs` supersede of the label's 1894 was tried first and costs −12
+exact01 corpus-wide.** It is a textbook [[payload-node-string-keying]] failure:
+as_1895 spells the same group **without the comma** (`SILVER ORE, or Ore of
+which…`), the two spellings share one signature and the payload picks the
+display name by plurality, and superseding removed 48 comma-spelled rows —
+flipping 274:242 to 226:242. `commodity_curation.csv` line 612 folds the
+anchor-only shadow `Silver Ore` into the **comma** name *by name*, so the
+commodity split into a GBP 36.97M anchorless node and a GBP 3.80M node holding
+the Tier-1. The twelve cell replacements are spelling-neutral by construction —
+twelve comma rows out, twelve comma rows in — and leave the node at GBP 49.9M
+and 70 countries under its own name.
+
+**Cost, stated plainly:** the twelve replaced cells also carried the sheep-skin
+*quantities* (USA 37,533 Number, Cape 4,140,671 …). Those leave with them. They
+were misfiled sheep skins wearing a silver head in a node with no anchor of its
+own, so nothing measurable is lost, but the Eastern-Coast half of that chimera
+is now shorter than it was.
+
+### Still open in this commodity
+
+- **1884 reads 1.1009** (1,199,768 against 1,089,768) — an overcount of exactly
+  110,000, and the only remaining broken year.
+- **1879 stays at 0.9872**; one member row is lost from both parses (see above).
+- **1895 at 1.0098** is an overcount of 17,057 and is *not* worth a supersede,
+  for the reason measured above; as_1895 prints the year independently.
+- The stale `SILVER, Ore of…` head in as_1898 still covers six further tables
+  (`Skins, Sheep, undressed`, `Skins, Unenumerated, undressed`, `Manufactures of
+  Skins and Furs`, `Dutch Possessions in the Indian Seas`, and two unlabelled),
+  each of which is a chimera node in the payload. Re-heading them to SKINS AND
+  FURS is a taxonomy change and was deliberately not attempted here.
