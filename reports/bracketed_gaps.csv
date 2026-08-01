@@ -1,7 +1,6 @@
 commodity,unit,gap_start,gap_end,n_years,kind,ratios,missing_qty,gbp_at_stake,commodity_gbp,dup_years,dup_by,all_dup
 "Sugar — Unrefined, Total",Cwt,1874,1874,1,collapse,0.00,14129112,17041927,395688379,,,
 Caoutchouc — Manufactures Of,Lb,1892,1898,7,collapse,0.38 0.35 0.34 0.39 0.38 0.38 0.45,45871395,11834386,10361298,,,
-"Manganese, Ore Of",Ton,1891,1891,1,collapse,0.38,158536,603119,6478761,,,
 "Wood And Timber — Furniture, Hardwoods, And Veneers : Unenumerated",Ton,1882,1882,1,collapse,0.09,47841,542683,3709450,,,
 Cocoa Nut,Cwt,1876,1876,1,hole,0.00,199431,531678,1104442,,,
 "Cordage, Twine, And Cable Yarn",Value,1888,1888,1,hole,0.00,459138,515078,11235441,,,

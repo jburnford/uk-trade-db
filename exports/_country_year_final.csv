@@ -99370,6 +99370,7 @@ FRUIT,Figs,"Turkey, Asiatic",Cwts,import,1874,63214.0,136658.0,human,B,B,2,2
 FRUIT,Figs,Other Countries,Cwts,import,1874,1803.0,3057.0,human,B,B,2,2
 FRUIT,Figs,"Turkey, Asiatic",Cwts,import,1878,62720.0,133726.0,human,B,B,2,2
 FRUIT,Figs,Other Countries,Cwts,import,1878,4523.0,5567.0,human,B,B,2,2
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Other Countries,Tons,import,1882,4446.0,37541.0,human,B,B,2,2
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
@@ -127315,6 +127316,20 @@ LEATHER MANUFACTURES,Unenumerated,British Possessions in South Africa,Value,impo
 LEATHER MANUFACTURES,Unenumerated,British North America,Value,import,1883,198.0,198.0,groupfix,C,C,3,3
 LEATHER MANUFACTURES,Unenumerated,United States of America,Value,import,1883,931.0,931.0,groupfix,C,C,3,3
 LEATHER MANUFACTURES,Unenumerated,Other Countries,Value,import,1883,19388.0,19388.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Russia,,import,1882,2698.0,33595.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",France,,import,1882,1423.0,26023.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Italy,,import,1882,1977.0,14211.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Turkey,,import,1882,4353.0,45093.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",West Coast of Africa not particularly designated,,import,1882,1458.0,10754.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",United States of America,,import,1882,19509.0,172079.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Hayti and St. Domingo,,import,1882,1422.0,11025.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Mexico,,import,1882,1009.0,10228.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Central America,,import,1882,1018.0,8801.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",Brazil,,import,1882,1710.0,21208.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",British North America,,import,1882,3290.0,19840.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",British West India Islands,,import,1882,2096.0,16085.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",British Honduras,,import,1882,1193.0,9655.0,groupfix,C,C,3,3
+WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",British Guiana,,import,1882,5168.0,26613.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
