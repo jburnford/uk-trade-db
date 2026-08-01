@@ -58,3 +58,46 @@ also reads 0.00 for **1896-1900**, where the sibling `Stones, Rough, Hewn, Or
 Manufactured (Other Thanworks Of Art)` closes 1895-1899 — the two are era-split
 copies of one series and a merge is the obvious next step, but both carry
 anchors for 1893-1895 and the overlap needs scoping care.
+
+---
+
+## The union fix, generalised — and it yields exactly one more pair
+
+Next iteration. **exact01 3,541 → 3,543 (+2), within5 1,104 → 1,105,
+denominator unchanged at 9,511, zero regressions.**
+
+`match_orphan_countries` now **unions the unlabelled unit buckets** when
+comparing an orphan's cells to a host's anchor: `per[unit] + per['?'] +
+per['']`. Only `?` and `''` are ever added — unioning two *real* units would be
+summing tons with numbers.
+
+**367 payload nodes carry both a real unit and an unlabelled bucket**, so the
+population at risk is large. The yield is not:
+
+> **One new resolved pair.**
+
+`Onions` → `Onions — Raw`. The de-headed era form holds origin tables for 1872,
+1877 and 1879 with no anchor; the full name holds anchors 1866-1900 and has no
+cells at all in those years. On `Bushel` alone neither year clears; on the
+union both close **to the digit**:
+
+| year | Bushel | unlabelled | total | anchor | |
+|---|---|---|---|---|---|
+| 1872 | 707,788 | 151,243 | **859,031** | 859,031 | **exact** |
+| 1877 | 1,908,253 | 55,981 | **1,964,234** | 1,964,234 | **exact** |
+| 1879 | 1,862,370 | — | 1,862,370 | 1,895,370 | 0.983 |
+
+Country lists overlap throughout. Scoped to those three years; the source's
+stray 1882 cell (3,259) is left out because the host already closes 1882.
+
+### Honest accounting of the fix
+
+The stones pair that motivated this was found **by hand**, not by the fixed
+tool — it was already folded before the change. So the change's actual return
+is the onions pair alone: **+2 exact01 and +1 within5**.
+
+That is a real return on a small, correct change, but **it is not a seam**. 367
+nodes have the split and 366 of them produce nothing, which says the unlabelled
+bucket is usually either empty in the matched years or attached to a commodity
+with no partner to find. Worth having in the tool permanently; not worth
+expecting more from.

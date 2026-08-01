@@ -111,9 +111,22 @@ def main(payload_path, out_path):
             # the source must NOT anchor the matched year itself - otherwise
             # the two nodes disagree about that year rather than completing
             # each other, and folding would be a duplicate merge
-            ex = [y for y in t1y if y in per[u] and y not in have
-                  and (u, y) not in own_t1
-                  and agrees(per[u][y], t1y[y]) and t1y[y] >= MIN_QTY]
+            # UNION THE UNLABELLED BUCKETS. Summing strictly per unit hid a
+            # three-year match in the stones family: those cells are split
+            # between 'Ton' and a '?' bucket - cells whose printed unit was
+            # never captured - so on Ton alone only one year cleared and the
+            # bar is two. 367 nodes carry both a real unit and an unlabelled
+            # one. Only '?' and '' are ever added: unioning two REAL units
+            # would be summing tons with numbers.
+            def _sum(y):
+                v = per[u].get(y, 0.0)
+                for uu in ('?', ''):
+                    if uu != u and uu in per:
+                        v += per[uu].get(y, 0.0)
+                return v
+            ex = [y for y in t1y if y not in have
+                  and (u, y) not in own_t1 and _sum(y)
+                  and agrees(_sum(y), t1y[y]) and t1y[y] >= MIN_QTY]
             if len(ex) >= MIN_EXACT:
                 # an adjudicated decline is filtered HERE, before the
                 # uniqueness test below — a declined candidate still occupies
@@ -122,8 +135,8 @@ def main(payload_path, out_path):
                 if MD.declined(oname, hname, _dec_pairs, _dec_blanket):
                     n_declined[0] += 1
                     continue
-                gains = [y for y in t1y if y in per[u] and y not in have
-                         and (u, y) not in own_t1]
+                gains = [y for y in t1y if y not in have
+                         and (u, y) not in own_t1 and _sum(y)]
                 hits.append((len(ex), len(gains), hname, ex, sorted(gains)))
         if not hits:
             continue
