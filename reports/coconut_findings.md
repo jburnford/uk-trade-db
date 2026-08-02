@@ -70,3 +70,35 @@ the oil node also holds origins, so the fold cannot double-count.**
 
 Fold `Coco Nut` and `Cocoa Nut` into `Oil — Coco-Nut`, unscoped, and replace the
 line-18 decline with a note recording the correct direction.
+
+---
+
+## Applied 2026-08-02, user-approved
+
+The unscoped fold was approved and applied. **Every number matched the
+prediction.**
+
+**exact01 3,563 → 3,565 (+2), within 5% 1,112 → 1,113, nodata 4,330 → 4,298,
+denominator 9,497 → 9,468 (−29). Zero regressions — no cell moved to a worse
+bucket.**
+
+The two exact closes predicted above both landed:
+
+- `Oil — Coco-Nut` **1875**: `nodata` → **219,158 / 219,158 = 1.000000**
+- `Oil — Coco-Nut` **1885**: `nodata` → **185,496 / 185,496 = 1.000000**
+
+The bookkeeping, since the headline `+2` is a net of three movements:
+
+| | |
+|---|---|
+| cells leaving the shadows | **43** (33 `Coco Nut`, 10 `Cocoa Nut`) — 40 `nodata`, **3 `exact01`** |
+| cells appearing in `Oil — Coco-Nut` | **14** — 1877, 1895, 1896 `exact01`, 1894 `within5`, 8 `nodata` |
+| net exact01 | −3 (shadows' own closes, which moved) + 2 (1875, 1885) + 3 (1877, 1895, 1896) = **+2** |
+
+**Both shadow nodes are gone.** `reference/match_declines.csv` line 18 is
+annotated in place: the decline remains correct in the direction it was written,
+and the note records that the reverse fold is the right one and has been applied.
+
+**The denominator fell by exactly the predicted 29** — the point of predicting it
+beforehand was that a −29 headline move should be recognised as de-duplication
+rather than investigated as damage.
