@@ -54724,10 +54724,6 @@ ROSIN,,france,Cwts,import,1893,106618.0,38650.0,consensus,B,B,2,2
 ROSIN,,united states of america,Cwts,import,1893,1445959.0,351540.0,consensus,B,B,2,2
 ROSIN,,other foreign countries,Cwts,import,1893,1356.0,611.0,consensus,B,B,2,2
 ROSIN,,canada,Cwts,import,1893,16240.0,3451.0,consensus,B,A,2,1
-SAGO AND FLOUR AND MEAL THEREOF,,austrian territories,Cwts,import,1893,3900.0,1980.0,consensus,B,B,2,2
-SAGO AND FLOUR AND MEAL THEREOF,,china,Cwts,import,1893,2638.0,1035.0,consensus,B,B,2,2
-SAGO AND FLOUR AND MEAL THEREOF,,other foreign countries,Cwts,import,1893,125.0,73.0,consensus,B,C,2,3
-SAGO AND FLOUR AND MEAL THEREOF,,british east indies,Cwts,import,1893,604843.0,270103.0,consensus,B,C,2,3
 "SAUCES AND CONDIMENTS, UNENUMERATED",,russia,,import,1893,2362580.0,2880.0,consensus,B,B,2,2
 "SAUCES AND CONDIMENTS, UNENUMERATED",,germany,,import,1893,184129.0,2993.0,consensus,B,C,2,3
 "SAUCES AND CONDIMENTS, UNENUMERATED",,france,,import,1893,150456.0,2887.0,consensus,B,B,2,2
@@ -92258,7 +92254,6 @@ IVORY,,British East Indies : Bombay,,import,1893,1157.0,58635.0,subentry,A,B,1,2
 IVORY,,British East Indies : Madras,,import,1893,5.0,220.0,subentry,A,A,1,1
 IVORY,,British East Indies : Bengal,,import,1893,72.0,3545.0,subentry,A,A,1,1
 PLUMBAGO,,British East Indies : Other British Possessions,Tons,import,1893,8.0,222.0,subentry,A,A,1,1
-SAGO AND FLOUR AND MEAL THEREOF,,British East Indies : Bombay,Cwts,import,1893,2520.0,1070.0,subentry,A,A,1,1
 SPIRITS,Brandy,Australasia : Victoria,Proof Gallons,import,1894,25106.0,7769.0,subentry,A,A,1,1
 TOBACCO,"Red, in Casks",Australasia : South Australia,Gallons,import,1894,176585.0,27787.0,subentry,A,A,1,1
 TOBACCO,"Red, in Casks",Australasia : New South Wales,Gallons,import,1894,20125.0,3397.0,subentry,A,B,1,2
@@ -96033,7 +96028,6 @@ PLATE OF SILVER,,Australasia : Other British Possessions,Ozs. Troy,import,1893,5
 PLUMBAGO,,British East Indies : Madras,Tons,import,1893,949.0,10048.0,subentry,B,B,2,2
 PLUMBAGO,,British East Indies : Ceylon,Tons,import,1893,5793.0,96823.0,subentry,B,B,2,2
 PLUMBAGO,,British East Indies : Other British East Indian Possessions,Tons,import,1893,98.0,1058.0,subentry,B,B,2,2
-SAGO AND FLOUR AND MEAL THEREOF,,British East Indies : Straits Settlements,Cwts,import,1893,602323.0,269033.0,subentry,B,B,2,2
 "SAUCES AND CONDIMENTS, UNENUMERATED",,British East Indies : Bombay,,import,1893,402697.0,6066.0,subentry,B,B,2,2
 "SAUCES AND CONDIMENTS, UNENUMERATED",,British East Indies : Madras,,import,1893,163653.0,4401.0,subentry,B,B,2,2
 "SAUCES AND CONDIMENTS, UNENUMERATED",,British East Indies : Bengal,,import,1893,154037.0,4440.0,subentry,B,B,2,2
@@ -118285,6 +118279,9 @@ ROSIN,,United States of America : On the Atlantic,Cwts,import,1894,1450431.0,315
 ROSIN,,United States of America : On the Atlantic,Cwts,import,1895,1265670.0,226432.0,subentry,C,C,3,3
 ROSIN,,United States of America : On the Atlantic,Cwts,import,1896,1500205.0,400720.0,subentry,C,C,3,3
 ROSIN,,United States of America : On the Atlantic,Cwts,import,1897,1632155.0,494558.0,subentry,C,C,3,3
+"SAGO, AND FLOUR OR MEAL THEREOF",,United States of America : Other Foreign Countries,Cwts,import,1893,125.0,73.0,subentry,C,C,3,3
+"SAGO, AND FLOUR OR MEAL THEREOF",,British East Indies : Bombay,Cwts,import,1893,2520.0,1070.0,subentry,C,C,3,3
+"SAGO, AND FLOUR OR MEAL THEREOF",,British East Indies : Straits Settlements,Cwts,import,1893,62223.0,270003.0,subentry,C,C,3,3
 "SAGO, AND FLOUR OR MEAL THEREOF",,British East Indies : Straits Settlements,Cwts,import,1894,670726.0,220201.0,subentry,C,C,3,3
 "SAGO, AND FLOUR OR MEAL THEREOF",,British East Indies : Other British Possessions,Cwts,import,1894,519.0,215.0,subentry,C,C,3,3
 "SAGO, AND FLOUR OR MEAL THEREOF",,United States of America : On the Pacific,Cwts,import,1895,1005.0,500.0,subentry,C,C,3,3
@@ -127339,6 +127336,11 @@ WOOD AND TIMBER,"Furniture, Hardwoods, and Veneers : Unenumerated",British Guian
 "CORDAGE, TWINE, AND CABLE YARN",,Other Foreign Countries,Value,import,1888,6763.0,6763.0,groupfix,C,C,3,3
 "CORDAGE, TWINE, AND CABLE YARN",,British East Indies,Value,import,1888,179710.0,179710.0,groupfix,C,C,3,3
 "CORDAGE, TWINE, AND CABLE YARN",,Other British Possessions,Value,import,1888,1103.0,1103.0,groupfix,C,C,3,3
+SAGO AND SAGO FLOUR,,Austrian Territories,Cwts,import,1893,3900.0,1980.0,groupfix,C,C,3,3
+SAGO AND SAGO FLOUR,,China,Cwts,import,1893,2638.0,1035.0,groupfix,C,C,3,3
+SAGO AND SAGO FLOUR,,Other Foreign Countries,Cwts,import,1893,125.0,73.0,groupfix,C,C,3,3
+SAGO AND SAGO FLOUR,,British East Indies : Bombay,Cwts,import,1893,2520.0,1070.0,groupfix,C,C,3,3
+SAGO AND SAGO FLOUR,,British East Indies : Straits Settlements,Cwts,import,1893,602323.0,269033.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
