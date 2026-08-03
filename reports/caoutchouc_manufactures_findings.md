@@ -48,12 +48,65 @@ This needs no anchor override. Both series are present and tier A:
 
 `reconcile._sig` separates them — `('manufactures',)` vs `('manufactured',)` —
 and so does `build_viz_payload.sig_of`. They are nevertheless **merged into one
-node before curation runs**: a curation row `Manufactured → fold → Cork —
-Manufactured` is a **no-op**, because no `Manufactured` node exists to fold. The
-merge is `fold_era_wordings` treating `Manufactured` and `Manufactures Of` as two
-era spellings of a single printed line. They are not: they are two different
-commodities that happen to share a qualifier, both de-headed by the same abstract
-layout (`Cork :` and `Caoutchouc:` are group heads on their own rows).
+`comms` entry before the payload is emitted**, which is why a curation row
+`Manufactured → fold → Cork — Manufactured` is a **no-op**: no `Manufactured`
+node exists by the time curation runs.
+
+## The mechanism: the fuzzy OCR-variant merge
+
+*(A first guess blamed `fold_era_wordings`. That was wrong, and worth recording
+as a warning: `era_pair` requires one article vocabulary to be a strict subset of
+the other, and `{MANUFACTURED}` versus `{MANUFACTURES}` is neither, so it can
+never pair them. It also buckets by group head, and these two sit in different
+buckets. Instrumenting the build settled it in one run where three rounds of
+reading the code had not.)*
+
+The culprit is the **fuzzy signature merge** — the pass that unifies OCR-mangled
+tokens, `{ALPACA,LLAMA,VICUNA,WOOL} == {ALPACA,LLAMA,VLONNA,WOOL}`. It merges two
+signatures of equal token count when every token pairs within edit distance 2.
+`MANUFACTURED` and `MANUFACTURES` are **edit distance 1**, both single-token
+signatures — so they merged.
+
+Both reach that pass as bare one-token articles for the same reason: `Cork :` and
+`Caoutchouc:` are abstract **group heads printed on their own rows**, so both
+lines arrive de-headed. The merged entry's plurality label is `Manufactures Of`
+(35 against `Manufactured`'s 9), so curation row 543's fold to Caoutchouc
+**carried Cork's cells in with it**.
+
+The file already carries a `FALSE_PAIRS` set for exactly this failure —
+WASTE/WHITE, HORNS/HORSE, STAVES/SLATES, each a pair of distinct real words the
+edit-distance net wrongly conflated. `('MANUFACTURED', 'MANUFACTURES')` is the
+same class and was added to it.
+
+## Result
+
+Seven Caoutchouc cells improved, **four to the digit**, and nothing else in the
+corpus moved — the full per-cell diff shows exactly seven class changes, all
+gains, zero regressions:
+
+```
+1892  under -> within5  0.99187      1896  under -> exact01  1.00000
+1893  under -> within5  1.00269      1897  under -> within5  1.04949
+1894  under -> exact01  1.00000      1898  under -> exact01  1.00000
+1895  under -> exact01  1.00000
+```
+
+Splitting the signature left Cork's anchors in a de-headed `Manufactured` node,
+which a curation row folds to `Cork — Manufactured` — its own other half, on the
+de-headed-pair test: the spans are contiguous and non-overlapping (grouped label
+1890-91, de-headed 1892-1900) and Cork's origin sums reproduce the recovered
+anchors in five years, **1893 and 1895 to the digit**, none worse than 0.6%. That
+adds nine Cork cells: 2 exact01, 3 within5, and 4 (1897-1900) still `nodata`
+because no origin table has been recovered for those years.
+
+**Baseline: exact01 3,580 → 3,586; denominator 9,464 → 9,473; `under` 273 → 266.**
+
+## Still open
+
+- **Caoutchouc 1897 reads 1.0495** — 225,230 Lbs over a printed 4,551,285. The
+  only year of the seven that does not close; not yet diagnosed.
+- **Cork — Manufactured 1897-1900** have anchors but no origins.
+- The 1892 residual (28,021 short) and 1893's (8,648 over) are small but real.
 
 ## Both commodities are damaged, and the fix is one fix
 
@@ -95,11 +148,3 @@ row written under `CAOUTCHOUC` silently failed to bind against a source row
 grouped `CAOUTCHOUIC`. This commodity is the known five-spelling case. Same rule
 as `supersede`: name the spelling **the source row carries**, not the one the
 node displays.
-
-## Blocked, pending a decision
-
-There is **no reference-file lever** that separates the two anchor series: the
-curation fold is a no-op, and a `manual_t1` override keyed `('manufactured',)`
-would reach only Cork's series and would write Caoutchouc's numbers into it.
-Resolving this means changing how `fold_era_wordings` buckets these two labels —
-a node-assembly change, escalated rather than taken alone.

@@ -1183,7 +1183,17 @@ def main():
         ('HORNS', 'HORSE'),
         # STAVES->SLATES buried the whole Slates origin series inside Staves;
         # split out, Slates 1895/1898 close EXACTLY on their own printed T1.
-        ('STAVES', 'SLATES'))}
+        ('STAVES', 'SLATES'),
+        # MANUFACTURED->MANUFACTURES put CORK's national line inside
+        # CAOUTCHOUC. Both reach here as bare one-token articles because
+        # 'Cork :' and 'Caoutchouc:' are abstract group heads printed on
+        # their own rows, and at edit distance 1 the two merged. The merged
+        # entry's plurality label is 'Manufactures Of', so the curation fold
+        # to Caoutchouc carried Cork's cells in with it and Caoutchouc's
+        # Tier-1 for 1892-98 became Cork's series verbatim (9,055,694 where
+        # the page prints 3,448,727 for 1892). Split out, four Caoutchouc
+        # years close to the digit and Cork gets its post-1891 anchor back.
+        ('MANUFACTURED', 'MANUFACTURES'))}
 
     def fuzzy_same(s1, s2):
         if len(s1) != len(s2):
