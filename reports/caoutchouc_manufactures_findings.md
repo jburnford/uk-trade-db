@@ -78,36 +78,6 @@ WASTE/WHITE, HORNS/HORSE, STAVES/SLATES, each a pair of distinct real words the
 edit-distance net wrongly conflated. `('MANUFACTURED', 'MANUFACTURES')` is the
 same class and was added to it.
 
-## Result
-
-Seven Caoutchouc cells improved, **four to the digit**, and nothing else in the
-corpus moved — the full per-cell diff shows exactly seven class changes, all
-gains, zero regressions:
-
-```
-1892  under -> within5  0.99187      1896  under -> exact01  1.00000
-1893  under -> within5  1.00269      1897  under -> within5  1.04949
-1894  under -> exact01  1.00000      1898  under -> exact01  1.00000
-1895  under -> exact01  1.00000
-```
-
-Splitting the signature left Cork's anchors in a de-headed `Manufactured` node,
-which a curation row folds to `Cork — Manufactured` — its own other half, on the
-de-headed-pair test: the spans are contiguous and non-overlapping (grouped label
-1890-91, de-headed 1892-1900) and Cork's origin sums reproduce the recovered
-anchors in five years, **1893 and 1895 to the digit**, none worse than 0.6%. That
-adds nine Cork cells: 2 exact01, 3 within5, and 4 (1897-1900) still `nodata`
-because no origin table has been recovered for those years.
-
-**Baseline: exact01 3,580 → 3,586; denominator 9,464 → 9,473; `under` 273 → 266.**
-
-## Still open
-
-- **Caoutchouc 1897 reads 1.0495** — 225,230 Lbs over a printed 4,551,285. The
-  only year of the seven that does not close; not yet diagnosed.
-- **Cork — Manufactured 1897-1900** have anchors but no origins.
-- The 1892 residual (28,021 short) and 1893's (8,648 over) are small but real.
-
 ## Both commodities are damaged, and the fix is one fix
 
 `Cork — Manufactured` has origins for 1892-96 — **9,106,294 / 9,293,789 /
@@ -148,3 +118,33 @@ row written under `CAOUTCHOUC` silently failed to bind against a source row
 grouped `CAOUTCHOUIC`. This commodity is the known five-spelling case. Same rule
 as `supersede`: name the spelling **the source row carries**, not the one the
 node displays.
+
+## Result
+
+Seven Caoutchouc cells improved, **four to the digit**, and nothing else in the
+corpus moved — the full per-cell diff shows exactly seven class changes, all
+gains, zero regressions:
+
+```
+1892  under -> within5  0.99187      1896  under -> exact01  1.00000
+1893  under -> within5  1.00269      1897  under -> within5  1.04949
+1894  under -> exact01  1.00000      1898  under -> exact01  1.00000
+1895  under -> exact01  1.00000
+```
+
+Splitting the signature left Cork's anchors in a de-headed `Manufactured` node,
+which a curation row folds to `Cork — Manufactured` — its own other half, on the
+de-headed-pair test: the spans are contiguous and non-overlapping (grouped label
+1890-91, de-headed 1892-1900) and Cork's origin sums reproduce the recovered
+anchors in five years, **1893 and 1895 to the digit**, none worse than 0.6%. That
+adds nine Cork cells: 2 exact01, 3 within5, and 4 (1897-1900) still `nodata`
+because no origin table has been recovered for those years.
+
+**Baseline: exact01 3,580 → 3,586; denominator 9,464 → 9,473; `under` 273 → 266.**
+
+## Still open
+
+- **Caoutchouc 1897 reads 1.0495** — 225,230 Lbs over a printed 4,551,285. The
+  only year of the seven that does not close; not yet diagnosed.
+- **Cork — Manufactured 1897-1900** have anchors but no origins.
+- The 1892 residual (28,021 short) and 1893's (8,648 over) are small but real.
