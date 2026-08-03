@@ -1313,6 +1313,67 @@ def main():
                 if len(best) != len(cells):
                     units[u] = [best[y] for y in sorted(best)]
 
+    # ---- kindred twins: ONE place printed under two names, same figure ----
+    # The dedupe above keys on the country STRING, so it cannot see
+    # 'Hayti And St Domingo' beside 'Hayti And St. Domingo', or 'Tunis' beside
+    # 'Tunisia', or 'Mauritius' beside 'Mauritius And Dependencies'. Both cells
+    # carry the SAME figure — they are one printed line read or restated twice —
+    # and the year then counts that origin twice.
+    #
+    # reference/country_standardize.csv already maps most of these, but it is
+    # consumed by countrykey.py and widen_country_year.py, not here; applying
+    # the whole crosswalk would rename every country in the payload and, worse,
+    # its `summed_subregion` rows would fold sub-regions into parents and change
+    # real totals. So this is deliberately the narrowest rule that fixes the
+    # double count and nothing else:
+    #
+    #   drop a cell only when another cell in the SAME commodity, unit and year
+    #   holds an IDENTICAL non-zero figure AND its name is a prefix of, or is
+    #   prefixed by, this one once punctuation and spacing are ignored.
+    #
+    # Identical figures are what makes it safe: two genuinely distinct origins
+    # do not report the same quantity to the digit under kindred names. Keeps
+    # the shorter name (the printed head; the longer is the restatement).
+    # 33 instances across 13 name pairs when this was written — see
+    # reports/redundant_country_findings.md.
+    def _ckey(s):
+        return re.sub(r'[^a-z]', '', (s or '').lower())
+
+    n_twin = 0
+    for s in comms.values():
+        byname = {cty: {u: {c[0]: c[1] for c in cells}
+                        for u, cells in units.items()}
+                  for cty, units in s['c'].items() if cty != TK}
+        for cty in sorted(byname, key=lambda x: (-len(x), x)):
+            for u, yq in list(byname[cty].items()):
+                doomed = set()
+                for y, q in yq.items():
+                    if not q:
+                        continue
+                    for other, ounits in byname.items():
+                        if other == cty or '(' in other or '(' in cty:
+                            continue
+                        if ounits.get(u, {}).get(y) != q:
+                            continue
+                        ka, kb = _ckey(cty), _ckey(other)
+                        if ka == kb or not (ka.startswith(kb)
+                                            or kb.startswith(ka)):
+                            continue
+                        if len(cty) > len(other):      # keep the shorter name
+                            doomed.add(y)
+                        break
+                if doomed:
+                    keep = [c for c in s['c'][cty][u] if c[0] not in doomed]
+                    n_twin += len(s['c'][cty][u]) - len(keep)
+                    byname[cty][u] = {y: q for y, q in yq.items()
+                                      if y not in doomed}
+                    if keep:
+                        s['c'][cty][u] = keep
+                    else:
+                        del s['c'][cty][u]
+        for cty in [k for k, v in s['c'].items() if k != TK and not v]:
+            del s['c'][cty]
+
     # ---- emit: display label = most common printed rendering ----
     payload = {}
     for sig, s in comms.items():
