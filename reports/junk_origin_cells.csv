@@ -1,20 +1,38 @@
 commodity,year,origin,value,qty
 Wool — Sheep Or Lambs',1899,Sheep Or Lambs,17811360,0
+"Corn — Hides, Untanned",1870,Tanned Tawed Curried Or Dressed Lbs,11551774,11556345
+Oil — Provisions,1870,Red - - - - - Gallons,7799027,9276459
+Oil — Provisions,1870,Rum - - - - - Gallons,6920356,7942965
 Copper,1899,Cork Manufactured Lbs,4901055,0
+Oil — Provisions,1870,First Class - - - - - Cuts,2057098,3737531
+Corn — Fruits,1870,Lemons And Oranges Bushels,1784499,1933421
 Wool — Sheep Or Lambs',1898,Sheep Or Lambs,1244694,0
+Corn — Fruits,1870,Hemp Cuts,879405,1108839
+Corn — Fruits,1870,Currants,813183,813763
+Wine — Total Of All Kinds,1870,White,685596,832950
+"Corn — Hides, Untanned",1870,Wet,659302,670941
+"Corn — Hides, Untanned",1870,Dry,523197,528109
 Whalebone (Whalefins) — Whale Fisheries,1888,Fir,493655,310522
+Wine — Total Of All Kinds,1870,Red Gallons,466917,561720
 Wool — Sheep Or Lambs',1899,Goats Wool Or Hair Mohair,436345,0
 Copper,1899,Cork Manufactured,353076,0
+Corn — Fruits,1870,Raisins Cuts,316258,365418
 Iron — Leather Manufacturers,1899,Boots And Shoes,238958,650561
+Corn — Fruits,1870,Guano Tons,233575,280311
 Iron — Leather Manufacturers,1899,Gloves,199728,2002090
+Corn — Dyes And Dyeing Stuffs,1870,Madder And Madder Root Including Munjeet,161452,173318
 Iron — Leather Manufacturers,1899,Manufactures,101139,414854
+Corn — Dyes And Dyeing Stuffs,1870,Indigo,79158,79255
 Copper,1899,Ore Of,71480,0
+Corn — Dyes And Dyeing Stuffs,1870,Cochineal Cuts,36672,36672
 Copper,1899,Unwrought,33418,0
 Wool — Sheep Or Lambs',1898,Of All Other Kinds Ccts,31781,0
+"Corn — Hides, Untanned",1870,Mahogany Tons,30093,32732
 Whalebone (Whalefins) — Whale Fisheries,1888,Oak,25078,5347
 Wool — Sheep Or Lambs',1898,Glass Manufactures Bottles Gross,22687,0
+Oil — Provisions,1870,Pepper - - - - - Lbs,21182,21282
+"Spirits — Sugar, Unrefined",1870,Tea Lbs,19217,54913
 Wine — Total Of All Kinds,1897,Burgundy,11291,0
-Wood And Timber — Furniture Hardwoods And Veneers : Mahogany,1886,Mahogany,7360,987
 Wool — Sheep Or Lambs',1899,Rice,6856,0
 Wool — Sheep Or Lambs',1898,Rice,6414,0
 Wool — Sheep Or Lambs',1898,Rosin,4972,0
@@ -23,32 +41,101 @@ Copper — Piece Goods Of Other Countries,1874,Muslins,3965,2028
 Iron — Leather Manufacturers,1899,Manganese Ore Of,3914,585421
 Wool — Sheep Or Lambs',1899,Rosin,3650,0
 Copper,1899,Ore Of Tons,3405,0
+"Spirits — Sugar, Unrefined",1870,First Class Cuts,3399,61915
 Wool — Sheep Or Lambs',1898,Ice Tons,2970,0
 "Wine — In Bottles, Still",1895,White,2817,5038
 "Wine — In Bottles, Still",1898,White,2533,5231
 Wool — Sheep Or Lambs',1898,Manufactures Of Cuts,2378,0
 "Wine — In Bottles, Still",1896,White,2258,4766
 Cotton Manufactures — Piece Goods Of Other Countries,1872,Muslins,2143,3113
+"Wine — In Bottles, Still",1900,White,1856,2763
 Wool — Sheep Or Lambs',1899,Manufactures Of Cts,1693,0
 "Wine — In Bottles, Still",1894,White,1549,3590
+"Spirits — Sugar, Unrefined",1870,Molasses,1533,119525
 "Wine — In Bottles, Still",1897,White,1523,3138
 Iron — Leather Manufacturers,1899,Linen Yarn,1110,1011961
 "Wine — In Bottles, Still",1899,White,996,2158
 Wool — Sheep Or Lambs',1898,Hay Tons,188,0
 Wool — Sheep Or Lambs',1899,Zinc Crude Tons,29,0
+"Spirits — Sugar, Unrefined",1870,First Class Cwts,20,20
 Wool — Sheep Or Lambs',1898,Zinc Crude Tons,12,0
 Wool — Sheep Or Lambs',1898,Raisins,6,0
 Wool — Sheep Or Lambs',1899,Raisins,4,0
+Wine — Red,1870,Beer Mum Barrels,2,5
 Wool — Sheep Or Lambs',1899,Rabbits Dead,0,0
 Wool — Sheep Or Lambs',1898,Yeast Cuts,0,0
 Wool — Sheep Or Lambs',1898,Hides Raw Ccts,0,0
 Wool — Sheep Or Lambs',1899,Yeast Cts,0,0
 Wine — Total Of All Kinds,1898,Burgundy,0,0
-Wine — Total Of All Kinds,1897,Other Sorts,0,0
 Wine — Total Of All Kinds,1898,Saumur,0,0
 Wine — Total Of All Kinds,1898,Hock,0,0
 Coffee — Raw,1898,"Kiln Dried, Roasted, Or Ground",0,0
 Coffee — Raw,1899,"Kiln Dried, Roasted, Or Ground",0,0
+Wine — Red,1870,Aloes Lbs,0,701573
+Wine — Red,1870,Alum Cwts,0,15197
+Wine — Red,1870,Ammunition Shot Of Iron Cwts,0,4450
+Wine — Red,1870,Lead,0,273
+Wine — Red,1870,Anatto Roll Cwts,0,773
+Wine — Red,1870,Balsam Capivi Lbs,0,174004
+Wine — Red,1870,Unenumerated Cwts,0,17452
+Wine — Red,1870,Bark Cascarilla Cwts,0,12261
+Wine — Red,1870,Barytes Sulphate Of Tons,0,2037
+Wine — Red,1870,Bass Or Bast Ropes Twines Cwts,0,284
+Wine — Red,1870,Beads Coral Lbs,0,958
+Wine — Red,1870,Berries Juniper Cwts,0,3561
+Wine — Red,1870,Brass Old Fit Only To Be Re Cwts,0,875
+Wine — Red,1870,Of Other Sorts,0,162120
+Wine — Red,1870,Brooms And Brushes Cwts,0,2036
+Wine — Red,1870,Bronze Manufactures Cwts,0,2036
+Wine — Red,1870,Bulrushes Loads,0,605
+Wine — Red,1870,Gamboge Cuts,0,449
+Wine — Red,1870,Gelatine Tons,0,763
+Wine — Red,1870,Gentian Tons,0,55
+Wine — Red,1870,Glue Cuts,0,14402
+Wine — Red,1870,Clippings Or Waste Of Tons,0,15591
+Wine — Red,1870,Gold Ore Of Tons,0,2
+Wine — Red,1870,Grains Guinea And Of Pa Radise Cuts,0,2276
+Wine — Red,1870,Senegal,0,8675
+Wine — Red,1870,Gunpowder,0,1187
+Wine — Red,1870,Of Silk,0,2896
+Wine — Red,1870,Honey Cuts,0,16687
+Wine — Red,1870,For Printing Cuts,0,787
+Wine — Red,1870,Indian Lbs,0,2600
+Wine — Red,1870,Ipecacuanha Lbs,0,62952
+Wine — Red,1870,Rough Castings Cuts,0,3242
+Wine — Red,1870,Bloom Tons,0,3818
+Wine — Red,1870,Julap Lbs,0,169951
+Wine — Red,1870,Japanned Or Lacquered Ware Cuts,0,306
+Wine — Red,1870,Juice Of Lemons Limes And Oranges Gallons,0,269746
+Wine — Red,1870,Jute Yarn Waste Of Lbs,0,218440
+Wine — Red,1870,Acetate Of Cuts,0,5028
+Wine — Red,1870,Litharge Tons,0,225
+Wine — Red,1870,Manufactures Of Unenumerated Cuts,0,3978
+Wine — Red,1870,Leaves Of Roses Lbs,0,8382
+Wine — Red,1870,Liquorice Powder Cuts,0,17
+Wine — Red,1870,Root,0,1345
+Wine — Red,1870,Quassia Cuts,0,12970
+Wine — Red,1870,Rice Dust And Meal Cuts,0,1150
+Wine — Red,1870,Salt Tons,0,23820
+Wine — Red,1870,Sarsaparilla Lbs,0,345907
+Wine — Red,1870,Scaleboards Cuts,0,102
+Wine — Red,1870,Croton Qrs,0,38
+Wine — Red,1870,Cummin Cuts,0,2385
+Wine — Red,1870,Garden Lbs,0,288679
+Wine — Red,1870,Lentils Bushels,0,6227
+Wine — Red,1870,Lucerne Cuts,0,327
+Wine — Red,1870,Millet,0,74635
+Wine — Red,1870,Sesamum Qrs,0,4676
+Wine — Red,1870,Trefoil Cuts,0,8261
+Wine — Red,1870,Unenumerated Not,0,14727
+Wine — Red,1870,Seneka Root Lbs,0,10647
+Wine — Red,1870,Camels' - - - - - Lbs,0,155921
+Wine — Red,1870,Of Chip - - - - - Lbs,0,102
+Wine — Red,1870,Sheet - - - - - Tons,0,238
+Wine — Red,1870,Red - - - - - Tons,0,125
+Corn — Dyes And Dyeing Stuffs,1870,Indigo Cuts,0,10
 Articles Subject To Duty,1886,"Articles From Each Country - - - Distinguishing The Total Quantities And Value Of Each Article Imported From Foreign Countries And British Possessions, The Quantities Entered For Home Consumption, And The Gross Amount Of Duty Received",0,91
-England And Wales,1872,Rye,0,17159
 Ireland,1896,Cork,0,1149432
+England And Wales,1872,Rye,0,17159
+"Skins, Furs, And Pelts — Millstones",1870,Burr Stones Rough Tons,0,2278
+"Skins, Furs, And Pelts — Millstones",1870,Hewn,0,462

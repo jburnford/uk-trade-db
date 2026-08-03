@@ -49,6 +49,9 @@ blob = json.dumps(slim, ensure_ascii=False, separators=(',', ':'))
 blob = blob.replace('<', '\\u003c')
 
 tmpl = Path('reference/trade_origins_map.template.html').read_text()
+# the commodity count is quoted in the page's own prose - keep it honest,
+# it read 1,235 for four weeks after the whitelist had moved on
+tmpl = tmpl.replace('__NCOMM__', f"{len(slim['commodities']):,}")
 html = tmpl.replace('/*__DATA__*/', blob)
 out = Path('exports/trade_origins_map.html')
 out.write_text(html)

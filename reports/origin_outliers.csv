@@ -36,6 +36,7 @@ commodity,year,origin,unit,qty,anchor,x_anchor
 "Cotton Manufactures — Piece Goods, Plain",1886,Belgium,Yard,49775200,33861432,1.5
 "Cotton Manufactures — Piece Goods, Plain",1886,Portugal,Yard,44508700,33861432,1.3
 "Cotton Manufactures — Piece Goods, Plain",1886,Foreign West Indies,Yard,41598900,33861432,1.2
+Feathers And Down — Ornamental,1892,France,Lb,31066813,853256,36.4
 "Fruit — Unenumerated, Dried",1899,Straits Settlements,Cwt,22164747,462575,47.9
 "Fruit — Unenumerated, Dried",1899,United States Of America (Pacific),Cwt,14641782,462575,31.7
 "Fruit — Unenumerated, Dried",1898,United States Of America (Pacific),Cwt,12055572,287451,41.9
@@ -59,101 +60,90 @@ Yarn,1884,Germany,Lb,6530353,2534462,2.6
 "Fruit — Unenumerated, Dried",1895,United States Of America (Pacific),Cwt,6142459,325664,18.9
 Yarn,1898,Bombay,Lb,6006850,3968861,1.5
 "Fruit — Unenumerated, Dried",1897,United States Of America (Atlantic),Cwt,5951198,526344,11.3
+Feathers And Down — Ornamental,1892,British East Indies,Lb,5721614,853256,6.7
 "Fruit — Unenumerated, Dried",1895,Straits Settlements,Cwt,4534384,325664,13.9
 "Fruit — Unenumerated, Dried",1898,United States Of America (Atlantic),Cwt,4238890,287451,14.7
 "Fruit — Unenumerated, Dried",1896,United States Of America (Atlantic),Cwt,3762762,309456,12.2
 "Fruit — Unenumerated, Dried",1895,United States Of America (Atlantic),Cwt,3638238,325664,11.2
 "Fruit — Unenumerated, Dried",1895,Spain,Cwt,2850044,325664,8.8
+Rosin,1900,Hong Kong,Cwt,2301910,1801571,1.3
+Feathers And Down — Ornamental,1892,British Possessions In South Africa,Lb,2220718,853256,2.6
 "Fruit — Unenumerated, Dried",1897,Greece,Cwt,2174202,526344,4.1
 "Mutton, Fresh",1892,Chile,Cwt,2069441,1699966,1.2
+Metal — Wrought Or Manufactured,1895,Holland,Cwt,1986220,2617,759.0
+Metal — Wrought Or Manufactured,1892,Holland,Cwt,1946200,44600,43.6
+Metal — Wrought Or Manufactured,1890,Holland,Cwt,1908340,36360,52.5
 "Unenumerated, Not Sweetened",1882,Java,Proof Gallon,1762325,1235049,1.4
+Feathers And Down — Ornamental,1892,Holland,Lb,1570810,853256,1.8
 "Fruit — Unenumerated, Dried",1898,Greece,Cwt,1531890,287451,5.3
 "Unenumerated, Not Sweetened",1882,Turkey,Proof Gallon,1422386,1235049,1.2
 "Fruit — Unenumerated, Dried",1899,Greece,Cwt,1405410,462575,3.0
+Metal — Wrought Or Manufactured,1895,Germany,Cwt,1300320,2617,496.9
+Metal — Wrought Or Manufactured,1892,France,Cwt,1144380,44600,25.7
+Metal — Wrought Or Manufactured,1895,France,Cwt,1098320,2617,419.7
 "Fruit — Unenumerated, Dried",1896,Greece,Cwt,1062938,309456,3.4
 "Fruit — Unenumerated, Dried",1895,Australasia,Cwt,971968,325664,3.0
 "Fruit — Unenumerated, Dried",1899,Russia,Cwt,812322,462575,1.8
 "Fruit — Unenumerated, Dried",1895,Greece,Cwt,764458,325664,2.3
 "Madder, Madder Root, Garancine, And Munjeet",1894,Bombay,Cwt,760541,8744,87.0
+Cotton,1900,Bengal,Ton,744944,406478,1.8
 "Fruit — Unenumerated, Dried",1899,Portugal,Cwt,670580,462575,1.4
 Spirits — Geneva,1872,Germany,Proof Gallon,620901,305166,2.0
 Spirits — Geneva,1872,France,Proof Gallon,596408,305166,2.0
 "Fruit — Unenumerated, Dried",1898,Portugal,Cwt,588940,287451,2.0
+Metal — Wrought Or Manufactured,1890,France,Cwt,548200,36360,15.1
+Metal — Wrought Or Manufactured,1895,United States Of America,Cwt,504320,2617,192.7
 "Fruit — Unenumerated, Dried",1896,Portugal,Cwt,492326,309456,1.6
-"Fruit — Unenumerated, Dried",1896,Turkey,Cwt,485834,309456,1.6
 "Madder, Madder Root, Garancine, And Munjeet",1895,Bombay,Cwt,458359,6054,75.7
 "Madder, Madder Root, Garancine, And Munjeet",1896,Bombay,Cwt,448996,5217,86.1
 "Fruit — Unenumerated, Dried",1895,Russia,Cwt,433578,325664,1.3
-"Varnished, Japanned Or Enamelled",1899,United States Of America,Lb,416080,8228,50.6
+Metal — Wrought Or Manufactured,1892,United States Of America,Cwt,430360,44600,9.6
 "Fruit — Unenumerated, Dried",1895,Austrian Territories,Cwt,412340,325664,1.3
 "Madder, Madder Root, Garancine, And Munjeet",1893,Bombay,Cwt,343979,7006,49.1
-"Varnished, Japanned Or Enamelled",1899,Holland,Lb,326816,8228,39.7
-"Varnished, Japanned Or Enamelled",1897,United States Of America,Lb,319760,8131,39.3
-"Varnished, Japanned Or Enamelled",1898,United States Of America,Lb,313040,6882,45.5
-"Varnished, Japanned Or Enamelled",1897,Germany,Lb,287168,8131,35.3
 "Madder, Madder Root, Garancine, And Munjeet",1897,Bombay,Cwt,270329,3793,71.3
-"Varnished, Japanned Or Enamelled",1898,Holland,Lb,264320,6882,38.4
-"Varnished, Japanned Or Enamelled",1896,United States Of America,Lb,259659,4295,60.5
-"Varnished, Japanned Or Enamelled",1897,Holland,Lb,234864,8131,28.9
-"Varnished, Japanned Or Enamelled",1895,Holland,Lb,219701,4210,52.2
-"Varnished, Japanned Or Enamelled",1893,United States Of America,Lb,205054,3993,51.4
-"Varnished, Japanned Or Enamelled",1895,United States Of America,Lb,203110,4210,48.2
-"Varnished, Japanned Or Enamelled",1896,Holland,Lb,196381,4295,45.7
-"Varnished, Japanned Or Enamelled",1893,Holland,Lb,176628,3993,44.2
-"Varnished, Japanned Or Enamelled",1894,Holland,Lb,165536,3210,51.6
+"Copper, Ore Of",1900,Holland,Ton,251750,100753,2.5
+Metal — Wrought Or Manufactured,1886,Holland,Cwt,249020,40080,6.2
+Metal — Wrought Or Manufactured,1895,Belgium,Cwt,248320,2617,94.9
+Metal — Wrought Or Manufactured,1890,United States Of America,Cwt,240220,36360,6.6
+Metal — Wrought Or Manufactured,1886,United States Of America,Cwt,210300,40080,5.2
+Metal — Wrought Or Manufactured,1885,Holland,Cwt,172620,38380,4.5
+Metal — Wrought Or Manufactured,1892,Belgium,Cwt,166200,44600,3.7
 "Madder, Madder Root, Garancine, And Munjeet",1885,Madras,Cwt,164553,24721,6.7
-"Varnished, Japanned Or Enamelled",1894,United States Of America,Lb,162400,3210,50.6
+Metal — Wrought Or Manufactured,1885,United States Of America,Cwt,158360,38380,4.1
+"Copper, Ore Of",1900,Algeria,Ton,141024,100753,1.4
 "Madder, Madder Root, Garancine, And Munjeet",1894,Madras,Cwt,136507,8744,15.6
 "Madder, Madder Root, Garancine, And Munjeet",1895,Madras,Cwt,135742,6054,22.4
-"Varnished, Japanned Or Enamelled",1898,Belgium,Lb,131040,6882,19.0
-"Varnished, Japanned Or Enamelled",1899,Belgium,Lb,98000,8228,11.9
-Metal — Wrought Or Manufactured,1892,Holland,Ton,97310,2230,43.6
-Metal — Wrought Or Manufactured,1890,Holland,Ton,95417,1818,52.5
 "Madder, Madder Root, Garancine, And Munjeet",1895,Bengal,Cwt,92514,6054,15.3
 "Madder, Madder Root, Garancine, And Munjeet",1894,Bengal,Cwt,92165,8744,10.5
+Metal — Wrought Or Manufactured,1885,Mexico,Cwt,87800,38380,2.3
 Dye Woods — Logwood,1890,British West India Islands,Ton,80713,63519,1.3
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1895,British East Indies,Cwt,72360,9601,7.5
-"Varnished, Japanned Or Enamelled",1899,Germany,Lb,66752,8228,8.1
+Metal — Wrought Or Manufactured,1890,Germany,Cwt,68860,36360,1.9
+Metal — Wrought Or Manufactured,1892,Germany,Cwt,67660,44600,1.5
 "Madder, Madder Root, Garancine, And Munjeet",1897,Madras,Cwt,63995,3793,16.9
-"Varnished, Japanned Or Enamelled",1897,Belgium,Lb,60144,8131,7.4
-Metal — Wrought Or Manufactured,1892,France,Ton,57219,2230,25.7
+Metal — Wrought Or Manufactured,1885,France,Cwt,61800,38380,1.6
+"Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1900,Ceylon,Cwt,60300,6484,9.3
+Hock,1900,Holland,Gallon,60135,51531,1.2
 "Madder, Madder Root, Garancine, And Munjeet",1893,Madras,Cwt,55731,7006,8.0
+Paper — Other Paper-Making Materials,1900,Burmah,Ton,51917,20113,2.6
 "Madder, Madder Root, Garancine, And Munjeet",1896,Madras,Cwt,51809,5217,9.9
+Metal — Wrought Or Manufactured,1886,France,Cwt,48180,40080,1.2
 "Madder, Madder Root, Garancine, And Munjeet",1893,Bengal,Cwt,45954,7006,6.6
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1895,Ceylon,Cwt,42380,9601,4.4
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1896,Mexico,Cwt,39100,6444,6.1
 "Madder, Madder Root, Garancine, And Munjeet",1897,Bengal,Cwt,36462,3793,9.6
-"Varnished, Japanned Or Enamelled",1898,Germany,Lb,35840,6882,5.2
-"Varnished, Japanned Or Enamelled",1895,Other Foreign Countries,Lb,35796,4210,8.5
-Galls,1895,Turkey,Cwt,33631,26248,1.3
-"Varnished, Japanned Or Enamelled",1893,Canada,Lb,33524,3993,8.4
-Galls,1896,Turkey,Cwt,30728,23807,1.3
-"Varnished, Japanned Or Enamelled",1893,France,Lb,30020,3993,7.5
-Metal — Wrought Or Manufactured,1890,France,Ton,27410,1818,15.1
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1896,United States Of America,Cwt,25300,6444,3.9
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1896,Ceylon,Cwt,24220,6444,3.8
-"Varnished, Japanned Or Enamelled",1894,Canada,Lb,23856,3210,7.4
-Metal — Wrought Or Manufactured,1892,United States Of America,Ton,21518,2230,9.6
 "Madder, Madder Root, Garancine, And Munjeet",1896,Bengal,Cwt,21340,5217,4.1
-"Varnished, Japanned Or Enamelled",1898,Canada,Lb,21280,6882,3.1
-"Varnished, Japanned Or Enamelled",1896,Canada,Lb,19785,4295,4.6
-"Varnished, Japanned Or Enamelled",1899,Canada,Lb,13664,8228,1.7
+Cochineal (Including Granilla And Dust),1900,Bengal,Cwt,21213,2907,7.3
+Furniture And Hardwoods — Boxwood,1870,Mexico,Ton,15585,4212,3.7
+"Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1900,Mauritius,Cwt,13700,6484,2.1
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1895,Bengal,Cwt,13080,9601,1.4
-"Varnished, Japanned Or Enamelled",1895,Canada,Lb,12910,4210,3.1
-Metal — Wrought Or Manufactured,1886,Holland,Ton,12451,2004,6.2
-Metal — Wrought Or Manufactured,1890,United States Of America,Ton,12011,1818,6.6
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1896,Madagascar,Cwt,11580,6444,1.8
-Metal — Wrought Or Manufactured,1886,United States Of America,Ton,10515,2004,5.2
-"Varnished, Japanned Or Enamelled",1894,France,Lb,9520,3210,3.0
-Metal — Wrought Or Manufactured,1885,Holland,Ton,8631,1919,4.5
-Metal — Wrought Or Manufactured,1892,Belgium,Ton,8310,2230,3.7
-Metal — Wrought Or Manufactured,1885,United States Of America,Ton,7918,1919,4.1
-"Varnished, Japanned Or Enamelled",1896,Other Foreign Countries,Lb,5198,4295,1.2
-Metal — Wrought Or Manufactured,1885,Mexico,Ton,4390,1919,2.3
-Metal — Wrought Or Manufactured,1890,Germany,Ton,3443,1818,1.9
-Metal — Wrought Or Manufactured,1892,Germany,Ton,3383,2230,1.5
-Metal — Wrought Or Manufactured,1885,France,Ton,3090,1919,1.6
-Metal — Wrought Or Manufactured,1886,France,Ton,2409,2004,1.2
+"Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1900,Bombay,Cwt,9840,6484,1.5
+"Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",1900,France,Cwt,8160,6484,1.3
+Furniture And Hardwoods — Boxwood,1870,Central America,Ton,6871,4212,1.6
+Cochineal (Including Granilla And Dust),1900,Madras,Cwt,4205,2907,1.4
 Umbrellas And Parasols,1872,United States Of America (Atlantic & Pacific),?,45939100,0,foreign to this commodity
 "Skins And Furs — Foreign, Dressed In The United Kingdom",1878,Germany,?,2251113,0,foreign to this commodity
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)",1885,Other Foreign Countries,?,1657113,0,foreign to this commodity

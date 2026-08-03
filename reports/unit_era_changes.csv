@@ -1,32 +1,34 @@
 commodity,unit_shown,converted_from,years,n_years
 Caoutchouc — Manufactures Of,Lb,"anchor Cwt (REJECTED, nothing to judge it by)",,0
-Coco Nut,Cwt,"anchor Lb (REJECTED, nothing to judge it by)",,0
 Coffee — Raw,Cwt,Lb,1872,1
 Coffee — Raw,Cwt,anchor Lb (/112),1866;1867;1868;1869;1870;1871;1872,7
 Coffee — Raw,Cwt,"anchor Lb (label only, figures already Cwt)",1873,1
+"Dye Stuffs (Other Than Dye Woods), And Substances Used In Tanning Or Dyeing — Valonia",Cwt,Ton,1900,1
 "Flax, Dressed Or Undressed",Cwt,Ton,1893;1894;1895;1896;1897,5
 "Flax, Dressed Or Undressed",Cwt,anchor Ton (/0.05),1893;1894;1895;1896;1897;1900,6
 Gunpowder,Cwt,Lb,1881,1
 "Hats Or Bonnets — Unenumerated Vegetable Sub- Stances, Applicable To The Same Uses As Hemp Or Flax",Ton,Cwt,1884;1885;1890;1891;1892,5
-Hemp — Dressed Or Undressed,Cwt,Ton,1894;1895,2
+Hemp — Dressed Or Undressed,Cwt,Ton,1894;1895;1900,3
 Hemp — Dressed Or Undressed,Cwt,anchor Ton (/0.05),1894;1895;1898;1899;1900,5
 "Hemp — Tow, Or Codilla Of",Cwt,Ton,1893;1894;1895,3
-"Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",Cwt,Ton,1893;1894;1895;1896,4
+"Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",Cwt,Ton,1893;1894;1895;1896;1900,5
 "Hemp — Unenumerated Vegetable Substances, Applicable To The Same Uses As Flax Or Hemp",Cwt,"anchor Ton (REJECTED, nothing to judge it by)",,0
 "Hemp, Dressed And Undressed, And Tow",Cwt,"anchor Lb (REJECTED, nothing to judge it by)",,0
 "Hemp, Dressed And Undressed, And Tow",Cwt,"anchor Ton (REJECTED, nothing to judge it by)",,0
-Jute,Ton,Cwt,1872;1873;1874;1875;1876;1877;1878;1879;1880;1881;1882;1883;1884;1885;1886,15
+Jute,Ton,Cwt,1870;1872;1873;1874;1875;1876;1877;1878;1879;1880;1881;1882;1883;1884;1885;1886,16
 Jute,Ton,anchor Cwt (/20),1868;1869;1870;1871;1872;1873;1874;1875;1876;1877;1878;1879;1880;1881;1882;1883;1884;1885;1886,19
 Leather Manufactures — Boots And Shoes,Dozen Pairs,anchor Pairs (/12),1868;1869;1870;1871;1872;1873;1874;1875,8
+Leather Manufactures — Gloves,Dozen Pairs,Pairs,1870,1
 Leather Manufactures — Gloves,Dozen Pairs,anchor Pairs (/12),1866;1867;1868;1869;1870;1871;1872;1873;1874;1875;1876,11
 Leather Manufactures — Gloves,Dozen Pairs,"anchor Pairs (label only, figures already Dozen Pairs)",1877,1
+Leather — Dressed,Lb,Cwt,1900,1
 "Madder, Madder Root, Garancine, And Munjeet",Cwt,"anchor Ton (label only, figures already Cwt)",1898,1
 Manures — Guano,Ton,"anchor Cwt (label only, figures already Ton)",1891,1
-"Metal — Unenumerated, Unwrought",Ton,"anchor Cwt (label only, figures already Ton)",1892;1893;1894;1895,4
-Metal — Wrought Or Manufactured,Ton,Cwt,1872;1873;1874;1875;1876;1877;1878,7
-Metal — Wrought Or Manufactured,Ton,anchor Cwt (/20),1866;1867;1868;1869;1870;1871;1872;1873;1874;1875;1876;1877;1878;1879;1895,15
+Metal — Wrought Or Manufactured,Cwt,Ton,1882;1884;1885;1886;1887;1888;1889;1890;1892;1893;1894;1895,12
+Metal — Wrought Or Manufactured,Cwt,anchor Ton (/0.05),1884;1885;1886;1887;1888;1889;1890;1891;1892;1893;1894,11
 "Nitre, Cubic (Nitrate Of Soda)",Cwt,Ton,1893;1895;1898,3
 "Nitre, Cubic (Nitrate Of Soda)",Cwt,anchor Ton (/0.05),1893;1894;1895;1896;1900,5
+Oil — Coco-Nut,Cwt,"anchor Lb (REJECTED, nothing to judge it by)",,0
 Oil — Palm,Cwt,"anchor Ton (REJECTED, nothing to judge it by)",,0
 "Ore, Unenumerated",Ton,Cwt,1894,1
 "Ore, Unenumerated",Ton,anchor Cwt (/20),1894,1
@@ -39,7 +41,7 @@ Saltpetre,Cwt,"anchor Lb (REJECTED, nothing to judge it by)",,0
 "Stones, Marble, And Slate : Rough, Hewn Or Manufactured : (Other Than Works Of Art)",Ton,"anchor Lb (REJECTED, nothing to judge it by)",,0
 Straw,Lb,"anchor Ton (REJECTED, nothing to judge it by)",,0
 Straw Platting For Hats Or Bonnets,Lb,"anchor Ton (REJECTED, nothing to judge it by)",,0
-"Varnished, Japanned Or Enamelled",Lb,Cwt,1894;1897;1898;1899,4
-"Varnished, Japanned Or Enamelled",Lb,"anchor Cwt (REJECTED, nothing to judge it by)",,0
+"Sugar — Unrefined, Total",Cwt,Ton,1870,1
+"Varnished, Japanned Or Enamelled",Lb,Cwt,1894;1897;1898;1899;1900,5
 Whalefins,Cwt,Ton,1873,1
 Whalefins,Cwt,"anchor Ton (REJECTED, nothing to judge it by)",,0
