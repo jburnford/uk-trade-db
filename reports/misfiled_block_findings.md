@@ -98,11 +98,39 @@ The two remaining regressions are mild and left in place with their cause known:
 `Cork — Manufactured` 1895 (0.9906) and `Teeth, Elephants'…` 1879 (0.9708), both
 `exact01` to `within5`.
 
+## The `years` column (next round)
+
+`group_repairs.csv` gained a **`years`** column and `integrate_sources.py` filters
+the selected rows by it. Empty means every year in the range, so all 1,090
+pre-existing rows behave exactly as before — verified as a no-op rebuild before
+anything was written.
+
+That removes the structural limit above. `Corn And Grain — Wheat` is the proof:
+unscoped it gained 1899 and destroyed 1895 (1.33) and 1896 (1.68), and the repair
+had to be abandoned. Scoped to `1897;1899` it recovers **1897 (0.9977), 1898
+(0.9881) and 1899 (0.9995) with no effect on 1895-96 at all.**
+
+21 further blocks were written year-scoped. Two whose commodity still netted
+negative were dropped on measurement (`Caoutchouc — Manufactures Of`,
+`Fruit — Raisins`) — the per-commodity check stays necessary, because re-homing a
+block also removes rows from the *host* it was wrongly attached to, and that host
+may have been relying on them.
+
+**18 better, 2 worse. exact01 3,770 → 3,774; GBP within 0.1% 53.9% → 54.1%.**
+
+Recovered: `Corn And Grain — Wheat` 1897-99, `Nuts And Kernels — Seed` 1884/1887,
+`Tin — In Blocks, Ingots, Bars, Or Slabs` 1899 and 1886, `Skins, And Furs — Skins,
+Unenumerated, Undressed` 1893, `Manures — Unenumerated` 1897/1898,
+`Gum — Unenumerated` 1872, `Oil — Coco-Nut` 1898.
+
+Two regressions left with their cause known: `Oil — Coco-Nut` 1881 (1.0451) and
+1878 (1.1301).
+
 ## Still open
 
-- **Roughly 100 of the 140 confirmed targets are untouched.** Only the tightest
-  (within 0.2%) were written this round; the rest sit in the 0.2-2% band and want
-  the same treatment with per-commodity measurement.
-- The interleaved-year double count is a structural limit of `group_repairs.csv`.
-  A `years` column on that file would let the remaining blocks be repaired without
-  the collateral damage that forced five to be dropped.
+- The reachable payload-nodata pool has fallen from 960 to **451**, and only 28
+  of those now have a closing block — the two-sided test has largely been worked
+  out for the tight band. What remains in that pool needs a different instrument.
+- The per-commodity net check cannot be skipped: a repair moves rows *out* of a
+  host as well as *into* a target, and the host's own arithmetic can depend on
+  them.

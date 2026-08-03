@@ -613,6 +613,19 @@ def main():
                 [gr['volume'], gr['flow'], gr['article_group'],
                  gr['article'] or None,
                  int(gr['seq_start']), int(gr['seq_end'])]).fetchall()
+            # years=1897;1899 — take only those years out of the block.
+            # The 1893+ five-year comparative layout INTERLEAVES its years
+            # across one seq span (as_1899 CHEESE/Wheat runs 3360-3479 for
+            # 1895 and 3357-3484 for 1897), so a seq range can never isolate a
+            # year, and re-homing the whole block adds a SECOND COPY to every
+            # year the target already holds — Corn And Grain | Wheat gained
+            # 1899 and lost 1895 to 1.33 and 1896 to 1.68. Five repairs had to
+            # be dropped outright for that. Empty means every year in the
+            # range, which is how all 1,090 pre-existing rows behave.
+            yrsel = {int(t) for t in re.split(r'[;,]', gr.get('years') or '')
+                     if t.strip()}
+            if yrsel:
+                fixed_rows = [r for r in fixed_rows if r[2] in yrsel]
             # label_shift=1: a row-slipped block — every quantity belongs to
             # the label ONE ROW DOWN (as_1883 cotton: 'British North America'
             # carries the US's 11,066,166). Re-pair label(i+1) with
