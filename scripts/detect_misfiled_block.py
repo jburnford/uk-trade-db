@@ -73,7 +73,12 @@ def main():
     # database keeps the stale group; the payload fixes it. Same trap recorded
     # for detect_column_crossing.py and detect_lost_vote.py in
     # reports/lost_vote_findings.md: a DB-level screen measures something the
-    # baseline does not. Run scripts/misfiled_from_payload.py instead.
+    # baseline does not.
+    #
+    # The list below is therefore NOT the target list — every candidate must be
+    # confirmed against exports/viz_payload.json before anything is written.
+    # Doing that leaves 140 of 960 reachable payload-nodata commodity-years
+    # (reports/misfiled_block_findings.md), and those ARE real.
     orphans = con.execute("""
         WITH q AS (
             SELECT lower(trim(article)) AS art, ukey(unit) AS uk, year,
