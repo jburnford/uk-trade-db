@@ -1,0 +1,36 @@
+side,article,group,unit,year,n_countries,qty_ratio,val_ratio,qty_sum,qty_t1,val_sum,val_t1,gbp_missing,q_tier,v_tier
+value-intact/qty-short,raw,Cotton,LB,1893,7,0.1797,1.0,2272929,12649822,1463981,1463981,1200932,B,C
+value-intact/qty-short,raw,Cotton,LB,1894,8,0.09,1.0001,1436631,15965326,938295,938205,853781,A,C
+value-intact/qty-short,phosphate of lime and rock,,TON,1888,12,0.615,1.0,257886,419293,544919,544919,209767,B,A
+value-intact/qty-short,phosphate of lime and rock,,TON,1887,14,0.6868,0.9951,283415,412676,611088,614088,192349,B,B
+value-intact/qty-short,yarn,,LB,1874,5,0.3359,0.9978,1521187,4528512,150892,151222,100425,B,A
+value-intact/qty-short,unenumerated,Furniture and Hardwoods,TON,1877,8,0.4449,1.0,16513,37120,119877,119877,66549,A,B
+qty-intact/value-short,manufactures,,VALUE,1893,6,0.9959,0.0347,358355,359829,358355,10314970,42254,A,B
+qty-intact/value-short,manufactures,Metals,CWT,1893,5,0.9991,0.0385,368498,368843,397397,10314970,9648,C,B
+qty-intact/value-short,unenumerated,Spices,LB,1889,16,1.011,0.5395,12981185,12839900,439449,814593,8963,A,B
+qty-intact/value-short,unenumerated,Furniture woods and Hardwoods,TON,1890,15,1.0093,0.1438,83290,82519,124171,863534,8068,A,A
+qty-intact/value-short,raw,Silk,LB,1882,8,0.9981,0.7442,3370561,3377119,2786936,3744681,7272,A,A
+qty-intact/value-short,manufactures,,VALUE,1894,7,0.9993,0.0419,407175,407448,407175,9728036,6518,A,A
+qty-intact/value-short,manufactures of,,LB,1892,7,0.9919,0.5964,3420706,3448727,404909,678927,5516,A,A
+qty-intact/value-short,unenumerated,Spices,LB,1884,12,1.0056,0.4425,15522571,15436430,347974,786306,4388,A,A
+qty-intact/value-short,other sorts,,LB,1893,14,1.0104,0.4695,453539,448877,141784,301960,3136,C,C
+qty-intact/value-short,raw,Silk,LB,1883,12,0.9992,0.6772,3175993,3178593,2575125,3802862,3111,A,A
+qty-intact/value-short,unenumerated,Spices,LB,1886,14,1.0029,0.468,13871598,13830979,313568,669979,1968,B,B
+qty-intact/value-short,unenumerated,Spices,LB,1883,21,1.0013,0.4482,18402204,18378581,503758,1123874,1445,A,A
+qty-intact/value-short,unenumerated,Spices,LB,1878,11,1.0014,0.6383,11006218,10991211,391591,613492,838,A,A
+qty-intact/value-short,unmanufactured,Cork,TON,1883,7,0.9997,0.1043,11776,11779,187181,1794966,457,B,A
+qty-intact/value-short,manufactures of,,LB,1894,10,1.0,0.6853,3202372,3202377,442327,645456,1,A,A
+qty-intact/value-short,manufactures of,,LB,1891,8,1.0,0.5552,3180195,3180198,362381,652665,1,A,A
+qty-intact/value-short,unmanufactured,Cork,TON,1891,8,1.0,0.0954,13258,13258,204020,2139257,0,B,A
+qty-intact/value-short,unmanufactured,Cork,TON,1885,9,1.0,0.0874,12601,12601,227960,2609535,0,B,A
+qty-intact/value-short,unmanufactured,Cork,TON,1879,5,1.0,0.1414,6461,6461,164782,1165488,0,A,B
+qty-intact/value-short,tares and lentils,Seeds,BUSH,1883,8,1.0,0.7645,667462,667462,97411,127411,0,A,A
+qty-intact/value-short,unmanufactured,Cork,TON,1884,6,1.0,0.1166,11406,11406,204773,1756251,0,B,A
+qty-intact/value-short,unmanufactured,Cork,TON,1881,2,1.0,0.128,7941,7941,176049,1375225,0,A,A
+qty-intact/value-short,manufactures of,,LB,1890,7,1.0,0.6296,3563469,3563469,360623,572825,0,A,A
+qty-intact/value-short,unmanufactured,Cork,TON,1878,5,1.0,0.0803,7017,7017,200867,2501526,0,A,C
+qty-intact/value-short,unmanufactured,Cork,TON,1880,3,1.0,0.1023,7765,7765,178777,1746919,0,A,A
+qty-intact/value-short,cinnamon,Spices,LB,1884,3,1.0,0.0698,1967744,1967744,6003,86003,0,A,A
+qty-intact/value-short,yarn,,LB,1883,5,1.0,0.1104,1569937,1569937,48224,436835,0,A,B
+qty-intact/value-short,unmanufactured,Cork,TON,1892,7,1.0,0.0869,12522,12522,187924,2162651,0,B,A
+qty-intact/value-short,unmanufactured,Cork,TON,1882,4,1.0,0.1751,9683,9683,201801,1152549,0,A,A
