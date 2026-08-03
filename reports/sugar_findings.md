@@ -418,3 +418,102 @@ strictly stronger than an anchor where both exist, because it constrains two
 series at once and says which one is short — and it is the only check available
 at all to the sub-sorts before 1893, which have no anchor of their own. That is
 the case for `scripts/sibling_identity.py` in the corpus-wide plan.
+
+---
+
+## Unrefined, Total 1874 — the largest gap on the board, and it was not dead
+
+`Sugar — Unrefined, Total` 1874 read **0.0000** against a Tier-1 of
+**14,130,041 Cwt** — GBP 17.0M, the top of the bracketed-gap ranking by a factor
+of fifteen, with 1873 (0.9977) and 1875 (0.9998) closing on either side.
+
+It had been **twice recorded as dead**: `bracketed_gap_findings.md` lists it
+under "known-and-queued, do not re-diagnose" as *no block in either engine*, and
+`opium_findings.md` records a re-test in which **zero** payload nodes summed
+within 2% of the anchor that year. Both verdicts are wrong, and the reason they
+held is worth more than the cell.
+
+### The table is on the duty pages, and it is split across a page break
+
+The origin table is not in the main import sequence at all — it is on the
+**duty** pages, the six-column layout (`ARTICLES AND COUNTRIES | QUANTITIES |
+VALUE | ENTERED FOR HOME CONSUMPTION | GROSS AMOUNT | RATE`). It runs across a
+page boundary, and **the two halves fail for two entirely different reasons**:
+
+- **Page 1** — 18 foreign origins, 9,913,239 Cwt, under the head
+  `" Unrefined of all Kinds:` — is **parsed by neither engine**. Its rows carry
+  the duty-class breakdown glued into columns 4-5
+  (`1st Class. 256,594 | 36,352`, `2nd. Class. 1,033,726 | 137,839`, …): the
+  duty-page two-up class.
+- **Page 2** — 9 British origins, 3,616,142 Cwt — **is** parsed, correctly, under
+  the continuation label `Total Unrefined of all Kinds—(Cont^d)`. Curation row
+  365 renames it to `Sugar — Total Unrefined Of All Kinds` and **row 491 then
+  drops that node outright.**
+
+So half the table was invisible to the parser and the other half was discarded
+downstream. That is precisely why the "scan every payload node" re-test came
+back empty: **the missing half was never in any node, and the present half had
+already been dropped from the payload before the scan ran.** A node scan cannot
+see either failure mode. This is the third retraction of a "dead" verdict
+(after Mahogany), and all three were reached by hunting the printed total
+through assembled data rather than through the page.
+
+`sugar_review_scope.md` had in fact flagged the right object — *"`Sugar — Total
+Unrefined Of All Kinds` (1873-74, noanchor) is almost certainly the era label of
+`Sugar — Unrefined, Total`"* — but as a **taxonomy** item, so it sat behind the
+deferred sugar-unification decision. It needed no taxonomy change at all: the
+rows go in under `SUGAR | Unrefined of all Kinds`, the same label 1873 and
+1875-80 already use, which curation row 411 already folds to the right node.
+
+### British West India Islands: Infinity's reading, on two independent proofs
+
+The engines disagree on four cells, and one of them matters enormously —
+Chandra reads BWII **2,028,508**, Infinity **2,628,508**.
+
+1. **Closure.** With Chandra's figure the 27 members sum to 13,529,381,
+   **600,660** short of the printed Total. With Infinity's they sum to
+   14,129,381 — short by **660**. The difference between the two readings is
+   exactly 600,000.
+2. **Series.** The same origin runs 2,730,793 (1873), 3,532,426 (1875),
+   2,607,413 (1876), 2,352,072 (1877), 2,620,739 (1878). 2,628,508 sits inside
+   that band; 2,028,508 would be a lone 26% dip between 2.73M and 3.53M.
+
+Every other cell takes Chandra, and two of those are settled by their own column
+totals rather than by preference: Chandra's Portugal **34,511** leaves 660 short
+where Infinity's 31,511 leaves 3,660; and Chandra's Java **value** 1,209,610
+leaves the value column 53,299 short where Infinity's 1,909,610 overshoots by
+646,701.
+
+### A stray cell that wins a fold merge
+
+The first write landed 26 of 27 rows. `Other Countries` stalled the year at
+14,098,873 — exactly 31,437 short, plus 929. A **stray consensus cell under the
+bare article `Unrefined`** (929 Cwt / GBP 7,063, a price of GBP 7.6 per cwt where
+every real origin on the page prices at GBP 1.0-1.4) folds into the same node, and
+a `commodity_curation` fold **merges by (country, unit, year) with the TARGET
+winning** — so the stray silently displaced the printed figure. Fixed with a
+`replace=1` row that drops the stray at source.
+
+**This is a new mode of the payload-node-keying class**: a manual row can land
+in the right node, under the right country, and still be discarded — not by a
+name mismatch but by *arrival order into a fold*. The symptom is diagnostic: a
+shortfall equal to exactly one written row, minus whatever junk sits in its
+place.
+
+**Result: 14,129,381 / 14,130,041 = 0.99995 — exact01.**
+
+### Still open
+
+- **The 660 (quantity) and the 53,299 (value)** are queued, not guessed. They are
+  **independent**: 660 Cwt of sugar is worth about GBP 760, not GBP 53,299, so no
+  single missing or misread row explains both. The value column's most suspect
+  cell is **Straits Settlements, 30,032 on 92,210 Cwt = GBP 0.33/cwt**, against
+  GBP 1.0-1.4 for every other origin — but there is more than one digit that would
+  close it, so it stays open.
+- Curation row 491's `drop` of `Sugar — Total Unrefined Of All Kinds` is now
+  harmless (its 9 rows are duplicated by the manual rows) but it is still a
+  **live drop of real printed data** and should be revisited when the deferred
+  sugar taxonomy item is taken up.
+- **The duty pages are a whole unswept source.** This table was found only by
+  reading them. Worth a screen: Tier-1 anchors whose commodity has no origin
+  data in a year where the duty pages carry a matching printed Total.

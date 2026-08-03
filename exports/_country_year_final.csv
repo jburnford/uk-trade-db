@@ -10576,7 +10576,6 @@ PARAFFINE,"PERFUMERY, Unenumerated",egypt,,import,1874,336.0,3600.0,consensus,B,
 PARAFFINE,"PERFUMERY, Unenumerated",china,,import,1874,600.0,13152.0,consensus,B,C,2,3
 PARAFFINE,"PERFUMERY, Unenumerated",other countries,,import,1874,91596.0,12974.0,consensus,B,C,2,3
 SUGAR,Unrefined,united states of america,,import,1874,1634.0,23978.0,consensus,B,B,2,2
-SUGAR,Unrefined,other countries,,import,1874,929.0,7063.0,consensus,B,B,2,2
 PETROLEUM,Refined,united states of america,,import,1874,20787685.0,958961.0,consensus,B,B,2,2
 PETROLEUM,Refined,other countries,,import,1874,29800.0,3416.0,consensus,B,B,2,2
 PICKLES AND VEGETABLES PRESERVED IN SALT,,holland,Value,import,1874,43752.0,43752.0,consensus,B,B,2,2
@@ -127482,3 +127481,31 @@ DRUGS,Unenumerated,Chili,Value,import,1874,23131.0,23131.0,human,C,C,3,3
 DRUGS,Unenumerated,Brazil,Value,import,1874,19254.0,19254.0,human,C,C,3,3
 DRUGS,Unenumerated,British East Indies,Value,import,1874,163304.0,163304.0,human,C,C,3,3
 DRUGS,Unenumerated,Other Countries,Value,import,1874,60492.0,60492.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Germany,Cwts.,import,1874,582049.0,695703.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Holland,Cwts.,import,1874,76998.0,85797.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Belgium,Cwts.,import,1874,791765.0,962552.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,France,Cwts.,import,1874,1046617.0,1296224.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Portugal and Azores,Cwts.,import,1874,34511.0,40656.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Egypt,Cwts.,import,1874,242016.0,245754.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Bourbon (Re-Union),Cwts.,import,1874,23508.0,28502.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Java,Cwts.,import,1874,954820.0,1209610.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Philippine Islands,Cwts.,import,1874,789030.0,681039.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Spanish West India Islands,Cwts.,import,1874,2197501.0,2591035.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,French West India Islands,Cwts.,import,1874,68523.0,88248.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Dutch Guiana,Cwts.,import,1874,98883.0,117249.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Central America,Cwts.,import,1874,45013.0,47357.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,New Granada,Cwts.,import,1874,16151.0,16874.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Peru,Cwts.,import,1874,472783.0,512112.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Brazil,Cwts.,import,1874,1749870.0,1742242.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,British Possessions in South Africa,Cwts.,import,1874,17139.0,17523.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Mauritius,Cwts.,import,1874,706062.0,833808.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,British India: Bombay and Scinde,Cwts.,import,1874,503.0,927.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Madras,Cwts.,import,1874,157160.0,129217.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Bengal and Burmah,Cwts.,import,1874,118816.0,123806.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Straits Settlements,Cwts.,import,1874,92210.0,30032.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Australia: Victoria,Cwts.,import,1874,55167.0,46150.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,British West India Islands,Cwts.,import,1874,2628508.0,2791544.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,British Guiana,Cwts.,import,1874,1109528.0,1396041.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,British Honduras,Cwts.,import,1874,22813.0,21662.0,human,C,C,3,3
+SUGAR,Unrefined of all Kinds,Other Countries,Cwts.,import,1874,31437.0,32654.0,human,C,C,3,3
+SUGAR,Unrefined,Other Countries,Cwts.,import,1874,31437.0,32654.0,human,C,C,3,3
