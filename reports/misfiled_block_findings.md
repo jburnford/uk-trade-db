@@ -46,17 +46,63 @@ name. `Corn And Grain — Wheat` gives `CORN AND GRAIN`. That is what makes this
 different from the two attempts in `reports/late_era_group_staleness.md`, both of
 which derived the group from labels and both of which regressed.
 
-## What did not work, and what is needed
+## Why the first attempt was inert, and the fix
 
-46 `group_repairs.csv` rows were generated for the tightest cases (within 0.2%)
-and applied. **They were inert** — `Corn And Grain — Wheat` 1897-99 and
-`Nuts And Kernels — Coco-Nut` 1883-87 still read `nodata`, and the baseline moved
-by −1. The rows were reverted rather than left in place asserting a fix that did
-not happen.
+46 `group_repairs.csv` rows were written for the tightest cases and changed
+nothing. Reading the application code in `integrate_sources.py` settled it — two
+separate keying mistakes:
 
-`new_group` did not bind. The keying is the open question: the `article_group`
-written must presumably match the source row exactly (a null group is not `''`),
-`obs_source` distinguishes the two engines, and it is not yet established whether
-`new_group` alone re-homes a row or whether the article must move with it.
-**Settling that is the whole of the next round**, and the 140-row target list is
-already computed and waiting.
+```sql
+WHERE volume = ? AND flow = ? AND article_group = ?
+  AND article IS NOT DISTINCT FROM ? AND row_seq BETWEEN ? AND ?
+```
+
+1. `article_group` is matched by **equality**, so the literal source string is
+   required — a `coalesce(article_group,'')` never matches. (No block in this
+   corpus has a NULL group, so nothing is lost to that.)
+2. The real one: the destination signature is
+   `V.sig(f"{new_grp} {new_art}")`. **Leaving `new_article` blank produces a
+   signature with no article tokens at all** — `CORN AND GRAIN` instead of
+   `CORN AND GRAIN WHEAT` — so it matches no commodity. `new_group` alone does
+   not re-home a row; the article has to travel with it.
+
+With both corrected, 38 distinct blocks were written (one row per block, not per
+year — the five-year layout interleaves the years across one seq span).
+
+## The double-count that the seq range cannot avoid
+
+Because the years interleave, a seq range selects **every** year in the block. For
+a commodity that already has data in some of those years, the repair adds a second
+copy: `Corn And Grain — Wheat` gained 1899 but drove 1895 to 1.33 and 1896 to 1.68.
+There is no year field in `group_repairs.csv` and no seq range that isolates a
+year, so the only honest control is to measure per commodity and drop the repairs
+that do not pay. Five were dropped on that basis — Wheat, `Manures —
+Unenumerated`, `Teeth, Elephants'…`, `Caoutchouc — Manufactures Of`,
+`Oil — Coco-Nut`.
+
+## Result
+
+**35 cells better, 2 worse.**
+
+```
+exact01          3,741 -> 3,770   (+29)
+                 39.3% -> 39.6%
+GBP within 0.1%  53.6% -> 53.9%
+```
+
+Whole years recovered from `nodata`: `Cork — Manufactured` 1897/1899,
+`Oil — Palm` 1870, `Nuts And Kernels — Coco-Nut` 1883/1886/1887,
+`Nuts And Kernels — Seed` 1885/1886, and 25 more.
+
+The two remaining regressions are mild and left in place with their cause known:
+`Cork — Manufactured` 1895 (0.9906) and `Teeth, Elephants'…` 1879 (0.9708), both
+`exact01` to `within5`.
+
+## Still open
+
+- **Roughly 100 of the 140 confirmed targets are untouched.** Only the tightest
+  (within 0.2%) were written this round; the rest sit in the 0.2-2% band and want
+  the same treatment with per-commodity measurement.
+- The interleaved-year double count is a structural limit of `group_repairs.csv`.
+  A `years` column on that file would let the remaining blocks be repaired without
+  the collateral damage that forced five to be dropped.

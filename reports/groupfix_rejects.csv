@@ -1056,3 +1056,36 @@ as_1888,"CORDAGE, TWINE, and CABLE YARN",,352,361,inf,cable+cordage+twine+yarn,1
 as_1893,SAGO and Flour and Meal thereof,,2950,2952,ch,flour+sago,3,3,0,0,0,0,0,0
 as_1893,SAGO and Flour and Meal thereof,,2954,2955,ch,flour+sago,2,2,0,0,0,0,0,0
 as_1887,SPICES,Unenumerated,3092,3096,ch,spice,5,5,0,0,0,0,0,0
+as_1899,CHEESE,Manufactured,3307,3344,inf,cork+manufactured,38,33,0,5,0,0,0,0
+tn_1871,METAL,Palm,1124,1131,inf,oil+palm,8,8,0,0,0,0,0,0
+as_1883,OIL,Coco-nut,2100,2107,ch,coco+kernel+nut+nuts,8,8,0,0,0,0,0,0
+as_1886,OIL,Coco-Nut,2164,2172,ch,coco+kernel+nut+nuts,9,8,0,1,0,0,0,0
+as_1887,OIL,Coco-Nut,2170,2177,ch,coco+kernel+nut+nuts,8,7,0,1,0,0,0,0
+as_1885,Fish,Seed,2145,2153,ch,kernel+nuts+seed,9,8,0,1,0,0,0,0
+as_1886,OIL,Seed,1930,1938,inf,kernel+nuts+seed,9,8,0,1,0,0,0,0
+tn_1901,FRUIT (not liable to duty),Oranges,6941,7042,ch,fruit+orange,20,5,0,1,0,0,14,0
+as_1898,LATES,"In Blocks, Ingots, Bars, or Slabs",22283,22348,ch,bars+block+ingot+slab+tin,66,47,0,5,0,0,14,0
+tn_1871,Hemp,Rape,1646,1655,ch,rape+seed,10,10,0,0,0,0,0,0
+tn_1901,"FLOWERS, ARTIFICIAL","Unenumerated, Dried",7361,7437,inf,dried+fruit,17,16,0,1,0,0,0,0
+as_1883,OIL,Olive,2109,2121,ch,kernel+nuts+olive,13,13,0,0,0,0,0,0
+as_1884,GIL,Olive,1679,1690,ch,kernel+nuts+olive,12,12,0,0,0,0,0,0
+as_1885,Fish,Olive,2118,2129,ch,kernel+nuts+olive,12,11,0,1,0,0,0,0
+as_1886,OIL,Olive,2175,2189,ch,kernel+nuts+olive,15,14,0,1,0,0,0,0
+as_1887,OIL,Olive,2180,2191,ch,kernel+nuts+olive,12,11,0,1,0,0,0,0
+as_1883,OIL,Palm,2123,2134,ch,kernel+nuts+palm,12,12,0,0,0,0,0,0
+as_1884,GIL,Palm,1692,1701,ch,kernel+nuts+palm,10,10,0,0,0,0,0,0
+tn_1901,NUTS AND KERNELS,Turpentine,16723,16743,inf,oil+turpentine,5,5,0,0,0,0,0,0
+as_1893,OIL,Fish: Train or Blubber,2395,2409,ch,blubber+fish+oils+train,15,14,0,1,0,0,0,0
+as_1897,MEAT,Mutton,13535,13586,ch,by+mutton+preserved+salting,52,47,0,5,0,0,0,0
+as_1899,MEAT,Mutton,13658,13707,ch,by+mutton+preserved+salting,50,21,0,5,0,0,0,24
+as_1898,MEAT,Mutton,13576,13620,ch,by+mutton+preserved+salting,45,0,0,5,0,0,0,40
+as_1880,"CORDAGE, TWINE, and CABLE YARN",Unmanufactured,330,332,ch,cork+unmanufactured,3,3,0,0,0,0,0,0
+tn_1871,IRON,Unwrought,1021,1023,ch,steel+unwrought,3,3,0,0,0,0,0,0
+as_1899,IRON,Vegetable,11792,11823,inf,ivory+vegetable,32,0,0,5,0,0,27,0
+as_1891,"RAGS, and other MATERIALS for MAKING PAPER",Linen and Cotton Rags,2770,2780,ch,cotton+linen+making+material+paper+rags,11,0,0,1,0,0,10,0
+as_1892,"RAGS, and other MATERIALS for MAKING PAPER",Linen and Cotton Rags,3070,3081,ch,cotton+linen+making+material+paper+rags,12,0,0,1,0,0,11,0
+as_1899,OIL,Linen and Cotton Rags,16415,16492,inf,cotton+linen+making+material+paper+rags,78,56,0,5,0,0,17,0
+as_1893,WINE,Moselle,439,441,ch,moselle+tobacco,3,0,0,0,0,0,3,0
+as_1879,TAR,"TEETH, Elephants', Sea Cow, and Sea Horse",1676,1687,ch,cow+elephant+horse+ivory+sea+teeth,12,12,0,0,0,0,0,0
+as_1880,TAR,"TEETH, Elephants', Sea Cow, and Sea Horse",1624,1635,ch,cow+elephant+horse+ivory+sea+teeth,12,12,0,0,0,0,0,0
+as_1899,GOLD,Leaves of,8371,8381,ch,leave+metal+ores,11,11,0,0,0,0,0,0

@@ -101144,11 +101144,6 @@ BEEF,"Metal, Unenumerated, Unwrought : Unenumerated, Wrought or Manufactured",Fr
 BEEF,"Metal, Unenumerated, Unwrought : Unenumerated, Wrought or Manufactured",Japan,Tons Cwts,import,1900,153.0,1281.0,infonly,B,B,2,2
 BEEF,"Metal, Unenumerated, Unwrought : Unenumerated, Wrought or Manufactured",United States of America,Tons Cwts,import,1900,6644.0,24262.0,infonly,B,B,2,2
 BEEF,"Metal, Unenumerated, Unwrought : Unenumerated, Wrought or Manufactured",Other Foreign Countries,Tons Cwts,import,1900,243.0,1929.0,infonly,B,B,2,2
-NUTS AND KERNELS,Turpentine,Russia,Cwts,import,1900,27260.0,25016.0,infonly,B,B,2,2
-NUTS AND KERNELS,Turpentine,Belgium,Cwts,import,1900,250.0,350.0,infonly,B,B,2,2
-NUTS AND KERNELS,Turpentine,France,Cwts,import,1900,7305.0,15102.0,infonly,B,B,2,2
-NUTS AND KERNELS,Turpentine,United States of America,Cwts,import,1900,558226.0,933808.0,infonly,B,B,2,2
-NUTS AND KERNELS,Turpentine,Other Foreign Countries,Cwts,import,1900,2430.0,4007.0,infonly,B,B,2,2
 PAPER,"PLAITING, OF STRAW AND OTHER MATERIALS, for making hats or bonnets",Germany,Lbs,import,1900,227503.0,14917.0,infonly,B,C,2,3
 PAPER,"PLAITING, OF STRAW AND OTHER MATERIALS, for making hats or bonnets",Holland,Lbs,import,1900,2700.0,570.0,infonly,B,C,2,3
 PAPER,"PLAITING, OF STRAW AND OTHER MATERIALS, for making hats or bonnets",Belgium,Lbs,import,1900,1211032.0,100212.0,infonly,B,C,2,3
@@ -101225,7 +101220,6 @@ RICE,,British India : Bombay and Scinde,Cwts,import,1878,128216.0,75104.0,subent
 SUGAR,Unrefined of all Kinds,British India : Madras,Cwts,import,1878,234955.0,186091.0,subentry,B,B,2,2
 SILK,Knubs or Husks and Waste,British India : Bengal and Burmah,Cwts,import,1879,3427.0,29165.0,subentry,B,B,2,2
 SUGAR,Unrefined of all Kinds,British India : Madras,Cwts,import,1879,150484.0,112411.0,subentry,B,B,2,2
-TAR,"TEETH, Elephants', Sea Cow, and Sea Horse","West Coast of Africa, Foreign : Portuguese Possessions",Cwts,import,1879,275.0,11613.0,subentry,B,B,2,2
 OIL,Coco-nut,British India : Bombay and Scinde,,import,1880,6310.0,11226.0,subentry,B,B,2,2
 "SKINS, FURS, AND PELTS","Goat, Undressed",British India : Bombay and Scinde,Number,import,1881,55714.0,6298.0,subentry,B,B,2,2
 WOOL,Sheep and Lambs',British India : Bombay and Scinde,,import,1881,22188089.0,831515.0,subentry,B,B,2,2
@@ -103267,8 +103261,6 @@ MEAT,Beef,United States of America : On the Atlantic,,import,1894,205455.0,42912
 MEAT,Beef,United States of America : On the Atlantic,,import,1895,253261.0,544255.0,subentry,B,B,2,2
 MEAT,Beef,United States of America : On the Pacific,,import,1896,50.0,125.0,subentry,B,B,2,2
 MEAT,Beef,United States of America : On the Atlantic,,import,1897,152423.0,326331.0,subentry,B,B,2,2
-MEAT,Mutton,United States of America : On the Atlantic,Cwts,import,1894,3434.0,7834.0,subentry,B,C,2,3
-MEAT,Mutton,United States of America : On the Atlantic,Cwts,import,1896,3556.0,6278.0,subentry,B,B,2,2
 MEAT,Other Sorts,United States of America : On the Atlantic,Cwts,import,1894,68334.0,260290.0,subentry,B,B,2,2
 MEAT,Other Sorts,United States of America : On the Atlantic,Cwts,import,1895,81429.0,259054.0,subentry,B,C,2,3
 MEAT,Other Sorts,United States of America : On the Pacific,Cwts,import,1895,60.0,175.0,subentry,B,B,2,2
@@ -105036,9 +105028,6 @@ FRUIT (NOT LIABLE TO DUTY),"Other Nuts, used as Fruit",British East Indies : Cey
 FRUIT (NOT LIABLE TO DUTY),"Other Nuts, used as Fruit",British East Indies : British West India Islands,Nuts,import,1900,111322.0,23702.0,subentry,B,B,2,2
 FRUIT (NOT LIABLE TO DUTY),"Other Nuts, used as Fruit",British East Indies : British Honduras,Nuts,import,1900,30.0,10.0,subentry,B,B,2,2
 FRUIT (NOT LIABLE TO DUTY),"Other Nuts, used as Fruit",British East Indies : Other British Possessions,Nuts,import,1900,407.0,200.0,subentry,B,B,2,2
-FRUIT (NOT LIABLE TO DUTY),Oranges,Australasia : West Australia,Bushels,import,1900,6.0,0.0,subentry,B,C,2,3
-FRUIT (NOT LIABLE TO DUTY),Oranges,Australasia : South Australia,Bushels,import,1900,1234.0,1102.0,subentry,B,C,2,3
-FRUIT (NOT LIABLE TO DUTY),Oranges,Australasia : New South Wales,Bushels,import,1900,270.0,262.0,subentry,B,C,2,3
 GUM,Arabic,Western Coast of Africa : Niger Protectorate,,import,1900,1650.0,3312.0,subentry,B,B,2,2
 GUM,,British East Indies : Madras,,import,1900,434.0,501.0,subentry,B,B,2,2
 GUM,,British East Indies : Bengal,,import,1900,1078.0,1222.0,subentry,B,B,2,2
@@ -110567,13 +110556,6 @@ ASPHALT OR BITUMEN,,Italy,Tons,import,1899,8404.0,19104.0,infonly,C,C,3,3
 ASPHALT OR BITUMEN,,United States of America,Tons,import,1899,258.0,1023.0,infonly,C,C,3,3
 ASPHALT OR BITUMEN,,Other Foreign Countries,Tons,import,1899,303.0,2384.0,infonly,C,C,3,3
 ASPHALT OR BITUMEN,,British West India Islands,Tons,import,1899,14257.0,42080.0,infonly,C,C,3,3
-CHEESE,Manufactured,Germany,Lbs,import,1899,118851.0,3214.0,infonly,C,C,3,3
-CHEESE,Manufactured,France,Lbs,import,1899,4492558.0,281836.0,infonly,C,C,3,3
-CHEESE,Manufactured,Portugal,Lbs,import,1899,5897702.0,314739.0,infonly,C,C,3,3
-CHEESE,Manufactured,Spain,Lbs,import,1899,1375465.0,81529.0,infonly,C,C,3,3
-CHEESE,Manufactured,Other Foreign Countries,Lbs,import,1899,203123.0,12702.0,infonly,C,C,3,3
-CHEESE,Manufactured,Gibraltar,Lbs,import,1899,203352.0,11131.0,infonly,C,C,3,3
-CHEESE,Manufactured,Other British Possessions,Lbs,import,1899,2780.0,60.0,infonly,C,C,3,3
 CHEESE,Wheat,Russia : Northern Ports,Cwts,import,1899,311800.0,100971.0,infonly,C,C,3,3
 CHEESE,Wheat,Germany,Cwts,import,1899,466030.0,152104.0,infonly,C,C,3,3
 CHEESE,Wheat,Holland,Cwts,import,1899,4900.0,1695.0,infonly,C,C,3,3
@@ -111089,21 +111071,6 @@ OIL,Wood Pulp Boards,Austrian Territories,Cwts,import,1899,2208.0,1859.0,infonly
 OIL,Wood Pulp Boards,United States of America,Cwts,import,1899,41052.0,20032.0,infonly,C,C,3,3
 OIL,Wood Pulp Boards,Other Foreign Countries,Cwts,import,1899,1000.0,350.0,infonly,C,C,3,3
 OIL,Wood Pulp Boards,Canada,Cwts,import,1899,46244.0,21772.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Norway,Tons,import,1899,40.0,471.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Denmark,Tons,import,1899,26.0,365.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Germany,Tons,import,1899,1781.0,23573.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Holland,Tons,import,1899,2303.0,21800.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Belgium,Tons,import,1899,4208.0,32061.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,France,Tons,import,1899,6116.0,55334.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Italy,Tons,import,1899,711.0,9551.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,"Turkey, European",Tons,import,1899,97.0,437.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Asiatic,Tons,import,1899,690.0,2734.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Egypt,Tons,import,1899,2950.0,12231.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,United States of America,Tons,import,1899,793.0,8595.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Other Foreign Countries,Tons,import,1899,210.0,2377.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Channel Islands,Tons,import,1899,169.0,1493.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Australasia,Tons,import,1899,200.0,2225.0,infonly,C,C,3,3
-OIL,Linen and Cotton Rags,Other British Possessions,Tons,import,1899,114.0,796.0,infonly,C,C,3,3
 OIL,Pulp of Wood—Chemical,Russia,,import,1899,236.0,2317.0,infonly,C,C,3,3
 OIL,Pulp of Wood—Chemical,Sweden,,import,1899,82870.0,657941.0,infonly,C,C,3,3
 OIL,Pulp of Wood—Chemical,Norway,,import,1899,85362.0,567642.0,infonly,C,C,3,3
@@ -111979,14 +111946,6 @@ LEATHER MANUFACTURES,"Cambric and French Lawns, including Bordered Handkerchiefs
 LEATHER MANUFACTURES,"Cambric and French Lawns, including Bordered Handkerchiefs",Other Parts,Square Yards,import,1870,280.0,47.0,infonly,C,C,3,3
 LEATHER MANUFACTURES,"Cambric and French Lawns, including Bordered Handkerchiefs",Russia,Square Yards,import,1870,41500.0,2075.0,infonly,C,C,3,3
 LEATHER MANUFACTURES,"Cambric and French Lawns, including Bordered Handkerchiefs",Hamburg,Square Yards,import,1870,20014.0,1001.0,infonly,C,C,3,3
-METAL,Palm,France,Cwts,import,1870,14546.0,11510.0,infonly,C,C,3,3
-METAL,Palm,Portugal,Cwts,import,1870,7416.0,1164.0,infonly,C,C,3,3
-METAL,Palm,Fernando Po,Cwts,import,1870,11029.0,1163.0,infonly,C,C,3,3
-METAL,Palm,Portuguese Possessions in Western Africa,Cwts,import,1870,22026.0,1162.0,infonly,C,C,3,3
-METAL,Palm,"Western Coast of Africa, not particularly designated",Cwts,import,1870,711509.0,1166.0,infonly,C,C,3,3
-METAL,Palm,Sierra Leone,Cwts,import,1870,10882.0,1164.0,infonly,C,C,3,3
-METAL,Palm,British Possessions on the Gold Coast,Cwts,import,1870,77512.0,1167.0,infonly,C,C,3,3
-METAL,Palm,Other Parts,Cwts,import,1870,13320.0,1169.0,infonly,C,C,3,3
 SPICES,"Marble, in Rough Blocks or Slabs",Italy: Genoa,,import,1870,2749.0,7100.0,infonly,C,C,3,3
 SPICES,"Marble, in Rough Blocks or Slabs",Tuscany,,import,1870,12083.0,7100.0,infonly,C,C,3,3
 SPICES,TAPIOCA,Brazil,,import,1870,6839.0,1174.0,infonly,C,C,3,3
@@ -112207,22 +112166,6 @@ EGGS,Fresh (not of British taking) Herrings,Other British Possessions,Cwts,impor
 FLAX,"FLOORCLOTH, LINOLEUM, AND KAMPTULICON",Germany,,import,1900,350.0,5461.0,infonly,C,B,3,2
 FLAX,"FLOORCLOTH, LINOLEUM, AND KAMPTULICON",Belgium,,import,1900,2105070.0,111607.0,infonly,C,B,3,2
 FLAX,"FLOORCLOTH, LINOLEUM, AND KAMPTULICON",Other Foreign Countries,,import,1900,60048.0,2623.0,infonly,C,B,3,2
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",Germany,Cwts,import,1900,333.0,631.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",Belgium,Cwts,import,1900,24.0,10.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",France,Cwts,import,1900,12017.0,23410.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",Italy,Cwts,import,1900,1078.0,1433.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried","Turkey, Asiatic",Cwts,import,1900,550144.0,311802.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",Egypt,Cwts,import,1900,8731.0,12100.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",Morocco,Cwts,import,1900,660.0,1040.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",Persia,Cwts,import,1900,7330.0,2881.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",United States of America,Cwts,import,1900,32204.0,57117.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",Other Foreign Countries,Cwts,import,1900,1054.0,1024.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",Gibraltar,Cwts,import,1900,1100.0,4240.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",British East Indies : Bombay,Cwts,import,1900,16537.0,7818.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",British East Indies : Madras,Cwts,import,1900,192.0,83.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",British East Indies : Bengal,Cwts,import,1900,70.0,30.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",Canada,Cwts,import,1900,1000.0,2146.0,infonly,C,C,3,3
-"FLOWERS, ARTIFICIAL","Unenumerated, Dried",Other British Possessions,Cwts,import,1900,937.0,1471.0,infonly,C,C,3,3
 "FLOWERS, ARTIFICIAL","Preserved without Sugar, other than Dried",Russia,Lbs,import,1900,1407.0,1050.0,infonly,C,C,3,3
 "FLOWERS, ARTIFICIAL","Preserved without Sugar, other than Dried",Sweden,Lbs,import,1900,1003.0,555.0,infonly,C,C,3,3
 "FLOWERS, ARTIFICIAL","Preserved without Sugar, other than Dried",Belgium,Lbs,import,1900,3017.0,3740.0,infonly,C,C,3,3
@@ -125980,10 +125923,6 @@ LEAD,Uneenumerated,United States of America : On the Atlantic,Tons,import,1897,2
 LEAD,Uneenumerated,United States of America : On the Atlantic,Tons,import,1896,250.0,2708.0,subentry,C,B,3,2
 MEAT,Beef,United States of America : On the Atlantic,,import,1896,269704.0,439161.0,subentry,C,B,3,2
 MEAT,Beef,United States of America : On the Pacific,,import,1897,185.0,282.0,subentry,C,B,3,2
-MEAT,Mutton,United States of America : On the Pacific,Cwts,import,1894,102.0,300.0,subentry,C,B,3,2
-MEAT,Mutton,United States of America : On the Atlantic,Cwts,import,1895,5260.0,10705.0,subentry,C,B,3,2
-MEAT,Mutton,United States of America : On the Pacific,Cwts,import,1896,80.0,125.0,subentry,C,B,3,2
-MEAT,Mutton,United States of America : On the Atlantic,Cwts,import,1897,3746.0,7220.0,subentry,C,C,3,3
 METAL,"Unenumerated, Old, fit only to be Re-manufactured—cont.",United States of America : On the Atlantic,Tons,import,1893,5770.0,10745.0,subentry,C,B,3,2
 METAL,"Unenumerated, Old, fit only to be Re-manufactured—cont.",Australasia : New South Wales,Tons,import,1893,197995.0,353500.0,subentry,C,B,3,2
 METAL,"Unenumerated, Old, fit only to be Re-manufactured—cont.",Australasia : Queensland,Tons,import,1893,57006.0,112293.0,subentry,C,C,3,3
@@ -127273,8 +127212,6 @@ EGGS,,British East Indies : Straits Settlements,,import,1900,2392.0,2094.0,suben
 FISH (INCLUDING TURTLE),"Cured or salted, other Sorts",United States of America : Or the Atlantic,Cwts,import,1900,97179.0,274437.0,subentry,C,B,3,2
 FISH (INCLUDING TURTLE),"Cured or salted, other Sorts",United States of America : On the Pacific,Cwts,import,1900,186482.0,355969.0,subentry,C,B,3,2
 FISH (INCLUDING TURTLE),"Cured or salted, other Sorts",Canada : On the Atlantic,Cwts,import,1900,97200.0,327448.0,subentry,C,C,3,3
-FRUIT (NOT LIABLE TO DUTY),Oranges,Australasia : British West India Islands,Bushels,import,1900,7390.0,10517.0,subentry,C,B,3,2
-FRUIT (NOT LIABLE TO DUTY),Oranges,Australasia : Other British Possessions,Bushels,import,1900,175.0,182.0,subentry,C,B,3,2
 FRUIT (NOT LIABLE TO DUTY),"Unenumerated, Raw",British East Indies : Bombay,Bushels,import,1900,16537.0,7818.0,subentry,C,C,3,3
 FRUIT (NOT LIABLE TO DUTY),"Unenumerated, Raw",British East Indies : Madras,Bushels,import,1900,192.0,83.0,subentry,C,C,3,3
 FRUIT (NOT LIABLE TO DUTY),"Unenumerated, Raw",British East Indies : Bengal,Bushels,import,1900,79.0,30.0,subentry,C,C,3,3
@@ -135367,6 +135304,431 @@ SPICES,Unenumerated,British East Indies,Lbs,import,1887,3576920.0,203195.0,group
 SPICES,Unenumerated,Hong Kong,Lbs,import,1887,2992000.0,28598.0,groupfix,C,C,3,3
 SPICES,Unenumerated,British West India Islands,Lbs,import,1887,4503341.0,57329.0,groupfix,C,C,3,3
 SPICES,Unenumerated,Other British Possessions,Lbs,import,1887,26578.0,595.0,groupfix,C,C,3,3
+CORK,Manufactured,Germany,Lbs,import,1897,126832.0,3907.0,groupfix,C,C,3,3
+CORK,Manufactured,Germany,Lbs,import,1898,51365.0,2573.0,groupfix,C,C,3,3
+CORK,Manufactured,Germany,Lbs,import,1899,118851.0,3214.0,groupfix,C,C,3,3
+CORK,Manufactured,France,Lbs,import,1895,3579634.0,230176.0,groupfix,C,C,3,3
+CORK,Manufactured,France,Lbs,import,1896,4214059.0,262110.0,groupfix,C,C,3,3
+CORK,Manufactured,France,Lbs,import,1897,4715687.0,270201.0,groupfix,C,C,3,3
+CORK,Manufactured,France,Lbs,import,1898,4160562.0,272077.0,groupfix,C,C,3,3
+CORK,Manufactured,France,Lbs,import,1899,4492558.0,281836.0,groupfix,C,C,3,3
+CORK,Manufactured,Portugal,Lbs,import,1895,4656403.0,237810.0,groupfix,C,C,3,3
+CORK,Manufactured,Portugal,Lbs,import,1896,5045785.0,261586.0,groupfix,C,C,3,3
+CORK,Manufactured,Portugal,Lbs,import,1897,5503500.0,270738.0,groupfix,C,C,3,3
+CORK,Manufactured,Portugal,Lbs,import,1898,5050750.0,297889.0,groupfix,C,C,3,3
+CORK,Manufactured,Portugal,Lbs,import,1899,5897702.0,314739.0,groupfix,C,C,3,3
+CORK,Manufactured,Spain,Lbs,import,1895,1426426.0,85260.0,groupfix,C,C,3,3
+CORK,Manufactured,Spain,Lbs,import,1896,1651470.0,96871.0,groupfix,C,C,3,3
+CORK,Manufactured,Spain,Lbs,import,1897,1843912.0,101938.0,groupfix,C,C,3,3
+CORK,Manufactured,Spain,Lbs,import,1898,1779060.0,100020.0,groupfix,C,C,3,3
+CORK,Manufactured,Spain,Lbs,import,1899,1375465.0,81529.0,groupfix,C,C,3,3
+CORK,Manufactured,Other Foreign Countries,Lbs,import,1895,126564.0,5629.0,groupfix,C,C,3,3
+CORK,Manufactured,Other Foreign Countries,Lbs,import,1896,119721.0,7433.0,groupfix,C,C,3,3
+CORK,Manufactured,Other Foreign Countries,Lbs,import,1897,157701.0,9230.0,groupfix,C,C,3,3
+CORK,Manufactured,Other Foreign Countries,Lbs,import,1898,159452.0,8160.0,groupfix,C,C,3,3
+CORK,Manufactured,Other Foreign Countries,Lbs,import,1899,203123.0,12702.0,groupfix,C,C,3,3
+CORK,Manufactured,Gibraltar,Lbs,import,1895,216655.0,14651.0,groupfix,C,C,3,3
+CORK,Manufactured,Gibraltar,Lbs,import,1896,181368.0,9979.0,groupfix,C,C,3,3
+CORK,Manufactured,Gibraltar,Lbs,import,1897,257026.0,15505.0,groupfix,C,C,3,3
+CORK,Manufactured,Gibraltar,Lbs,import,1898,310320.0,13834.0,groupfix,C,C,3,3
+CORK,Manufactured,Gibraltar,Lbs,import,1899,203352.0,11131.0,groupfix,C,C,3,3
+CORK,Manufactured,Other British Possessions,Lbs,import,1895,17750.0,1010.0,groupfix,C,C,3,3
+CORK,Manufactured,Other British Possessions,Lbs,import,1896,21230.0,1478.0,groupfix,C,C,3,3
+CORK,Manufactured,Other British Possessions,Lbs,import,1897,80.0,10.0,groupfix,C,C,3,3
+CORK,Manufactured,Other British Possessions,Lbs,import,1898,50425.0,1465.0,groupfix,C,C,3,3
+CORK,Manufactured,Other British Possessions,Lbs,import,1899,2780.0,60.0,groupfix,C,C,3,3
+OIL,Palm,France,Cwts,import,1870,14546.0,11510.0,groupfix,C,C,3,3
+OIL,Palm,Portugal,Cwts,import,1870,7416.0,1164.0,groupfix,C,C,3,3
+OIL,Palm,Fernando Po,Cwts,import,1870,11029.0,1163.0,groupfix,C,C,3,3
+OIL,Palm,Portuguese Possessions in Western Africa,Cwts,import,1870,22026.0,1162.0,groupfix,C,C,3,3
+OIL,Palm,"Western Coast of Africa, not particularly designated",Cwts,import,1870,711509.0,1166.0,groupfix,C,C,3,3
+OIL,Palm,Sierra Leone,Cwts,import,1870,10882.0,1164.0,groupfix,C,C,3,3
+OIL,Palm,British Possessions on the Gold Coast,Cwts,import,1870,77512.0,1167.0,groupfix,C,C,3,3
+OIL,Palm,Other Parts,Cwts,import,1870,13320.0,1169.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Germany,Cwts,import,1883,118.0,172.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Holland,Cwts,import,1883,615.0,1032.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,France,Cwts,import,1883,1591.0,2917.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Mauritius,Cwts,import,1883,5888.0,10448.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,British India: Bombay,Cwts,import,1883,9.0,16.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Madras,Cwts,import,1883,80854.0,150274.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Ceylon,Cwts,import,1883,120776.0,199107.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Australasia: New Zealand,Cwts,import,1883,1023.0,1750.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Holland,Cwts,import,1886,2064.0,2613.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Belgium,Cwts,import,1886,1269.0,2020.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,France,Cwts,import,1886,4584.0,6750.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,China,Cwts,import,1886,787.0,1043.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Other Foreign Countries,Cwts,import,1886,69.0,90.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Mauritius,Cwts,import,1886,9767.0,12989.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,British East Indies,Cwts,import,1886,138187.0,188778.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Australasia,Cwts,import,1886,48.0,63.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,France,Cwts,import,1887,3158.0,3848.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Austrian Territories,Cwts,import,1887,725.0,1359.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,China,Cwts,import,1887,2587.0,3046.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Other Foreign Countries,Cwts,import,1887,574.0,731.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Mauritius,Cwts,import,1887,10475.0,14088.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,British East Indies,Cwts,import,1887,163265.0,225134.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Coco-Nut,Australasia,Cwts,import,1887,8.0,12.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,Germany,Tuns,import,1885,4762.0,128086.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,Holland,Tuns,import,1885,1098.0,30512.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,Belgium,Tuns,import,1885,1989.0,58817.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,France,Tuns,import,1885,3318.0,103681.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,United States of America,Tuns,import,1885,1525.0,39980.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,Other Foreign Countries,Tuns,import,1885,161.0,4457.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,British East Indies,Tuns,import,1885,81.0,2417.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,Australasia,Tuns,import,1885,6.0,180.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,Germany,Tuns,import,1886,4262.0,108324.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,Holland,Tuns,import,1886,2269.0,56816.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,Belgium,Tuns,import,1886,2396.0,62427.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,France,Tuns,import,1886,2452.0,73802.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,United States of America,Tuns,import,1886,4702.0,87977.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,Other Foreign Countries,Tuns,import,1886,109.0,2871.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,British East Indies,Tuns,import,1886,120.0,3742.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Seed,British North America,Tuns,import,1886,5.0,167.0,groupfix,C,C,3,3
+FRUIT,Oranges,Australasia : West Australia,Bushels,import,1900,6.0,0.0,groupfix,C,C,3,3
+FRUIT,Oranges,Australasia : South Australia,Bushels,import,1900,1234.0,1102.0,groupfix,C,C,3,3
+FRUIT,Oranges,Australasia : New South Wales,Bushels,import,1900,270.0,262.0,groupfix,C,C,3,3
+FRUIT,Oranges,Australasia : British West India Islands,Bushels,import,1900,7390.0,10517.0,groupfix,C,C,3,3
+FRUIT,Oranges,Australasia : Other British Possessions,Bushels,import,1900,175.0,182.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Germany,Cwts,import,1897,2316.0,6716.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Germany,Cwts,import,1898,2697.0,8905.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Holland,Cwts,import,1897,4412.0,14402.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Holland,Cwts,import,1898,4193.0,15118.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",France,Cwts,import,1897,2813.0,8397.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",France,Cwts,import,1898,2318.0,7250.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Japan,Cwts,import,1894,500.0,1800.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Japan,Cwts,import,1898,1.0,4.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",United States of America,Cwts,import,1897,1.0,4.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Chile,Cwts,import,1897,31170.0,81367.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Chile,Cwts,import,1898,19638.0,57358.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Other Foreign Countries,Cwts,import,1897,42.0,115.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Other Foreign Countries,Cwts,import,1898,101.0,352.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Bombay,Cwts,import,1894,31304.0,103029.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Bombay,Cwts,import,1895,30600.0,98346.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Bombay,Cwts,import,1896,33600.0,101105.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Bombay,Cwts,import,1897,32360.0,93710.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Bombay,Cwts,import,1898,14900.0,47381.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Bengal,Cwts,import,1894,1000.0,3450.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Straits Settlements,Cwts,import,1894,608249.0,2116516.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Straits Settlements,Cwts,import,1895,681300.0,2168393.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Straits Settlements,Cwts,import,1896,614555.0,1831523.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Straits Settlements,Cwts,import,1897,399090.0,1217178.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",British East Indies : Straits Settlements,Cwts,import,1898,319229.0,1100126.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Victoria,Cwts,import,1894,32857.0,114703.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Victoria,Cwts,import,1895,20010.0,93169.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Victoria,Cwts,import,1896,30640.0,92572.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Victoria,Cwts,import,1897,29501.0,91376.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Victoria,Cwts,import,1898,24804.0,88060.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : New South Wales,Cwts,import,1894,70554.0,249985.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : New South Wales,Cwts,import,1895,46740.0,143959.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : New South Wales,Cwts,import,1896,45530.0,140136.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : New South Wales,Cwts,import,1897,29026.0,90307.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : New South Wales,Cwts,import,1898,14093.0,48598.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Queensland,Cwts,import,1894,6227.0,21260.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Queensland,Cwts,import,1895,8238.0,26205.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Queensland,Cwts,import,1896,6982.0,21270.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Queensland,Cwts,import,1897,4800.0,14571.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Queensland,Cwts,import,1898,3820.0,12589.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Tasmania,Cwts,import,1894,1344.0,4609.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Tasmania,Cwts,import,1895,326.0,1137.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Tasmania,Cwts,import,1896,1140.0,2430.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Tasmania,Cwts,import,1897,185.0,555.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Tasmania,Cwts,import,1898,600.0,2174.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : New Zealand,Cwts,import,1895,13.0,39.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Other British Possessions,Cwts,import,1894,145.0,521.0,groupfix,C,C,3,3
+TIN,"In Blocks, Ingots, Bars, Or Slabs",Australasia : Other British Possessions,Cwts,import,1898,494.0,1636.0,groupfix,C,C,3,3
+SEEDS,Rape,Russia,Quarters,import,1870,46178.0,213.0,groupfix,C,C,3,3
+SEEDS,Rape,Prussia,Quarters,import,1870,32334.0,357.0,groupfix,C,C,3,3
+SEEDS,Rape,Hamburg,Quarters,import,1870,3595.0,341.0,groupfix,C,C,3,3
+SEEDS,Rape,France,Quarters,import,1870,5971.0,356.0,groupfix,C,C,3,3
+SEEDS,Rape,Turkey Proper,Quarters,import,1870,4827.0,3100.0,groupfix,C,C,3,3
+SEEDS,Rape,Wallachia and Moldavia,Quarters,import,1870,31956.0,354.0,groupfix,C,C,3,3
+SEEDS,Rape,British India: Bombay and Sinde,Quarters,import,1870,36136.0,3610.0,groupfix,C,C,3,3
+SEEDS,Rape,Madras,Quarters,import,1870,6507.0,364.0,groupfix,C,C,3,3
+SEEDS,Rape,Bengal and Pegu,Quarters,import,1870,382872.0,349.0,groupfix,C,C,3,3
+SEEDS,Rape,Other Parts,Quarters,import,1870,731.0,340.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",Germany,Cwts,import,1900,333.0,631.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",Belgium,Cwts,import,1900,24.0,10.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",France,Cwts,import,1900,12017.0,23410.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",Italy,Cwts,import,1900,1078.0,1433.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried","Turkey, Asiatic",Cwts,import,1900,550144.0,311802.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",Egypt,Cwts,import,1900,8731.0,12100.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",Morocco,Cwts,import,1900,660.0,1040.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",Persia,Cwts,import,1900,7330.0,2881.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",United States of America,Cwts,import,1900,32204.0,57117.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",Other Foreign Countries,Cwts,import,1900,1054.0,1024.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",Gibraltar,Cwts,import,1900,1100.0,4240.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",British East Indies : Bombay,Cwts,import,1900,16537.0,7818.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",British East Indies : Madras,Cwts,import,1900,192.0,83.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",British East Indies : Bengal,Cwts,import,1900,70.0,30.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",Canada,Cwts,import,1900,1000.0,2146.0,groupfix,C,C,3,3
+FRUIT,"Unenumerated, Dried",Other British Possessions,Cwts,import,1900,937.0,1471.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Belgium,Tuns,import,1883,23.0,912.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,France,Tuns,import,1883,359.0,14953.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Portugal,Tuns,import,1883,58.0,2114.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Spain,Tuns,import,1883,5575.0,204421.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Italy,Tuns,import,1883,12934.0,537686.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Austrian Territories,Tuns,import,1883,222.0,8617.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Malta,Tuns,import,1883,585.0,19492.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Greece,Tuns,import,1883,1117.0,41822.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Turkey,Tuns,import,1883,7491.0,273347.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Egypt,Tuns,import,1883,217.0,8254.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Tunis,Tuns,import,1883,1939.0,69102.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Algeria,Tuns,import,1883,501.0,16957.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Other Countries,Tuns,import,1883,32.0,1198.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Belgium,Tuns,import,1884,57.0,2370.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,France,Tuns,import,1884,194.0,10559.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Portugal,Tuns,import,1884,155.0,6068.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Spain,Tuns,import,1884,2522.0,100345.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Italy,Tuns,import,1884,8769.0,383507.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Austria,Tuns,import,1884,150.0,5970.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Malta,Tuns,import,1884,808.0,31314.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Greece,Tuns,import,1884,215.0,8492.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Turkey,Tuns,import,1884,2207.0,86592.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Egypt,Tuns,import,1884,191.0,7161.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Tunis,Tuns,import,1884,1886.0,71567.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Other Countries,Tuns,import,1884,59.0,2019.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,France,Tuns,import,1885,274.0,14267.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Portugal,Tuns,import,1885,567.0,21988.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Spain,Tuns,import,1885,9568.0,371541.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Italy,Tuns,import,1885,6907.0,312447.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Austrian Territories,Tuns,import,1885,99.0,4276.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Greece,Tuns,import,1885,185.0,8131.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Turkey,Tuns,import,1885,3336.0,128687.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Tunis,Tuns,import,1885,1197.0,46744.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Morocco,Tuns,import,1885,1969.0,69206.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Other Foreign Countries,Tuns,import,1885,82.0,3229.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Malta,Tuns,import,1885,25.0,838.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Germany,Tuns,import,1886,146.0,5101.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,France,Tuns,import,1886,238.0,11797.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Portugal,Tuns,import,1886,56.0,2252.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Spain,Tuns,import,1886,1754.0,64846.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Italy,Tuns,import,1886,11900.0,481188.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Austrian Territories,Tuns,import,1886,219.0,8662.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Greece,Tuns,import,1886,546.0,20493.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Turkey,Tuns,import,1886,1256.0,43586.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Tunis,Tuns,import,1886,817.0,29434.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Algeria,Tuns,import,1886,225.0,5106.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Morocco,Tuns,import,1886,3428.0,115739.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Other Foreign Countries,Tuns,import,1886,58.0,2324.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Malta,Tuns,import,1886,20.0,652.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Other British Possessions,Tuns,import,1886,1.0,65.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,France,Tuns,import,1887,245.0,12763.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Spain,Tuns,import,1887,879.0,31956.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Italy,Tuns,import,1887,10994.0,423386.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Austrian Territories,Tuns,import,1887,679.0,24621.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Greece,Tuns,import,1887,347.0,11991.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Turkey,Tuns,import,1887,5653.0,187338.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Tunis,Tuns,import,1887,936.0,33598.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Morocco,Tuns,import,1887,902.0,28865.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Other Foreign Countries,Tuns,import,1887,86.0,3244.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Gibraltar,Tuns,import,1887,9.0,241.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Olive,Malta,Tuns,import,1887,9.0,345.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Germany,Cwts,import,1883,28936.0,44684.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Belgium,Cwts,import,1883,446.0,696.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,France,Cwts,import,1883,5126.0,8534.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Portugal,Cwts,import,1883,2320.0,3930.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,French Possessions in Western Africa,Cwts,import,1883,7645.0,13467.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,West Africa Settlements,Cwts,import,1883,9438.0,17327.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,The Gold Coast,Cwts,import,1883,163453.0,299069.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,West Africa: Portuguese Possessions,Cwts,import,1883,2556.0,4708.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Not particularly designated,Cwts,import,1883,522360.0,910741.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,United States of America,Cwts,import,1883,5092.0,8564.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Brazil,Cwts,import,1883,1101.0,1899.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Other Countries,Cwts,import,1883,949.0,1940.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Germany,,import,1884,11127.0,17817.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Holland,,import,1884,2575.0,3987.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,West Africa: French,,import,1884,10083.0,16441.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,British: West Africa Settle- ments,,import,1884,10196.0,17006.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,The Gold Coast,,import,1884,340346.0,575196.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Fernando Po,,import,1884,4697.0,6875.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Portuguese,,import,1884,761.0,1369.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Not designated,,import,1884,454205.0,737359.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,United States of America,,import,1884,6023.0,9864.0,groupfix,C,C,3,3
+NUTS AND KERNELS,Palm,Other Countries,,import,1884,1506.0,2836.0,groupfix,C,C,3,3
+OIL,Turpentine,Russia,Cwts,import,1900,27260.0,25016.0,groupfix,C,C,3,3
+OIL,Turpentine,Belgium,Cwts,import,1900,250.0,350.0,groupfix,C,C,3,3
+OIL,Turpentine,France,Cwts,import,1900,7305.0,15102.0,groupfix,C,C,3,3
+OIL,Turpentine,United States of America,Cwts,import,1900,558226.0,933808.0,groupfix,C,C,3,3
+OIL,Turpentine,Other Foreign Countries,Cwts,import,1900,2430.0,4007.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Russia,Tuns,import,1893,486.0,8610.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Sweden,Tuns,import,1893,265.0,3901.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Norway,Tuns,import,1893,7617.0,145082.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Denmark,Tuns,import,1893,1873.0,30644.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Germany,Tuns,import,1893,1991.0,32447.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Japan,Tuns,import,1893,423.0,6071.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",United States of America,Tuns,import,1893,86.0,2225.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber","Whale Fisheries, Northern",Tuns,import,1893,466.0,7512.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Southern,Tuns,import,1893,505.0,8440.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Other Foreign Countries,Tuns,import,1893,222.0,4133.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Canada,Tuns,import,1893,103.0,2200.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Newfoundland,Tuns,import,1893,5114.0,108154.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",British West India Islands,Tuns,import,1893,169.0,3003.0,groupfix,C,C,3,3
+OILS,"Fish, Train Or Blubber",Other British Possessions,Tuns,import,1893,17.0,264.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America : On the Atlantic,Cwts,import,1893,2014.0,4579.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America : On the Atlantic,Cwts,import,1894,3434.0,7834.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America : On the Atlantic,Cwts,import,1895,5260.0,10705.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America : On the Atlantic,Cwts,import,1896,3556.0,6278.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America : On the Atlantic,Cwts,import,1897,3746.0,7220.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America : On the Pacific,Cwts,import,1894,102.0,300.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America : On the Pacific,Cwts,import,1896,80.0,125.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Argentine Republic,Cwts,import,1893,2266.0,4301.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Argentine Republic,Cwts,import,1894,1317.0,2313.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Argentine Republic,Cwts,import,1895,1876.0,2722.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Argentine Republic,Cwts,import,1896,2414.0,3813.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Argentine Republic,Cwts,import,1897,3811.0,4996.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Other Foreign Countries,Cwts,import,1893,54.0,165.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Other Foreign Countries,Cwts,import,1894,78.0,144.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Other Foreign Countries,Cwts,import,1895,367.0,562.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Other Foreign Countries,Cwts,import,1896,501.0,686.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Other Foreign Countries,Cwts,import,1897,176.0,526.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : South Australia,Cwts,import,1894,97.0,164.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : South Australia,Cwts,import,1895,1117.0,1913.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : South Australia,Cwts,import,1896,1158.0,1880.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : South Australia,Cwts,import,1897,1753.0,2679.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Victoria,Cwts,import,1893,360.0,624.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Victoria,Cwts,import,1894,1115.0,1555.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Victoria,Cwts,import,1895,3404.0,5275.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Victoria,Cwts,import,1896,5798.0,9779.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Victoria,Cwts,import,1897,6551.0,10541.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New South Wales,Cwts,import,1893,63323.0,115611.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New South Wales,Cwts,import,1894,80961.0,137174.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New South Wales,Cwts,import,1895,143401.0,249327.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New South Wales,Cwts,import,1896,65144.0,110732.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New South Wales,Cwts,import,1897,44450.0,77656.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Queensland,Cwts,import,1893,5445.0,9320.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Queensland,Cwts,import,1894,12182.0,20482.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Queensland,Cwts,import,1895,18571.0,29720.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Queensland,Cwts,import,1896,23216.0,57751.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Queensland,Cwts,import,1897,9057.0,14244.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New Zealand,Cwts,import,1893,9012.0,17203.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New Zealand,Cwts,import,1894,12264.0,23028.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New Zealand,Cwts,import,1895,25339.0,40043.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New Zealand,Cwts,import,1896,19754.0,23682.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New Zealand,Cwts,import,1897,28125.0,41315.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Canada,Cwts,import,1893,1406.0,2779.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Canada,Cwts,import,1894,1258.0,2622.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Canada,Cwts,import,1895,602.0,1557.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Canada,Cwts,import,1896,330.0,2086.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Canada,Cwts,import,1897,1016.0,1620.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Other British Possessions,Cwts,import,1893,2.0,5.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America,Cwts,import,1895,5200.0,10705.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America,Cwts,import,1896,3636.0,6403.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America,Cwts,import,1897,3746.0,7220.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America,Cwts,import,1898,788.0,1891.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,United States of America,Cwts,import,1899,1707.0,3685.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Argentine Republic,Cwts,import,1898,2286.0,3372.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Argentine Republic,Cwts,import,1899,560.0,1162.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Other Foreign Countries,Cwts,import,1898,12.0,19.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Other Foreign Countries,Cwts,import,1899,201.0,307.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Victoria,Cwts,import,1898,4223.0,6520.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Victoria,Cwts,import,1899,3144.0,5774.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New South Wales,Cwts,import,1898,66433.0,113812.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New South Wales,Cwts,import,1899,48230.0,88623.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Queensland,Cwts,import,1898,3735.0,5466.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : Queensland,Cwts,import,1899,6343.0,9745.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New Zealand,Cwts,import,1898,39060.0,61272.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Australasia : New Zealand,Cwts,import,1899,24051.0,42455.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Canada,Cwts,import,1898,1777.0,2785.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Canada,Cwts,import,1899,1708.0,3138.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Other British Possessions,Cwts,import,1895,444.0,893.0,groupfix,C,C,3,3
+PRESERVED OTHERWISE THAN BY SALTING,Mutton,Other British Possessions,Cwts,import,1897,307.0,510.0,groupfix,C,C,3,3
+CORK,Unmanufactured,Portugal,Tons,import,1880,6741.0,153717.0,groupfix,C,C,3,3
+CORK,Unmanufactured,Algeria,Tons,import,1880,636.0,15935.0,groupfix,C,C,3,3
+CORK,Unmanufactured,Other Countries,Tons,import,1880,388.0,9125.0,groupfix,C,C,3,3
+STEEL,Unwrought,Sweden,,import,1870,4061.0,56902.0,groupfix,C,C,3,3
+STEEL,Unwrought,Holland,,import,1870,3327.0,46869.0,groupfix,C,C,3,3
+STEEL,Unwrought,Other Parts,,import,1870,682.0,9597.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Norway,Tons,import,1897,85.0,763.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Norway,Tons,import,1898,43.0,423.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Norway,Tons,import,1899,40.0,471.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Denmark,Tons,import,1896,101.0,1243.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Denmark,Tons,import,1897,64.0,1013.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Denmark,Tons,import,1898,47.0,764.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Denmark,Tons,import,1899,26.0,365.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Germany,Tons,import,1897,2467.0,31550.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Germany,Tons,import,1898,1906.0,26742.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Germany,Tons,import,1899,1781.0,23573.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Holland,Tons,import,1897,3911.0,45255.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Holland,Tons,import,1898,2796.0,33988.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Holland,Tons,import,1899,2303.0,21800.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Belgium,Tons,import,1897,5244.0,51905.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Belgium,Tons,import,1898,3418.0,30884.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Belgium,Tons,import,1899,4208.0,32061.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,France,Tons,import,1897,8254.0,84055.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,France,Tons,import,1898,6496.0,64784.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,France,Tons,import,1899,6116.0,55334.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Italy,Tons,import,1897,430.0,6355.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Italy,Tons,import,1898,735.0,8108.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Italy,Tons,import,1899,711.0,9551.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,"Turkey, European",Tons,import,1895,222.0,850.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,"Turkey, European",Tons,import,1896,241.0,1029.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,"Turkey, European",Tons,import,1897,219.0,1114.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,"Turkey, European",Tons,import,1898,191.0,655.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,"Turkey, European",Tons,import,1899,97.0,437.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Asiatic,Tons,import,1895,453.0,1776.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Asiatic,Tons,import,1896,315.0,1430.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Asiatic,Tons,import,1897,650.0,3052.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Asiatic,Tons,import,1898,593.0,2547.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Asiatic,Tons,import,1899,690.0,2734.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Egypt,Tons,import,1897,2840.0,12697.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Egypt,Tons,import,1898,3145.0,14231.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Egypt,Tons,import,1899,2950.0,12231.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,United States of America,Tons,import,1897,307.0,3555.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,United States of America,Tons,import,1898,410.0,3951.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,United States of America,Tons,import,1899,793.0,8595.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Other Foreign Countries,Tons,import,1897,288.0,2810.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Other Foreign Countries,Tons,import,1898,236.0,2131.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Other Foreign Countries,Tons,import,1899,210.0,2377.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Channel Islands,Tons,import,1895,204.0,1701.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Channel Islands,Tons,import,1896,197.0,1022.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Channel Islands,Tons,import,1897,310.0,1990.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Channel Islands,Tons,import,1898,251.0,1881.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Channel Islands,Tons,import,1899,169.0,1493.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Australasia,Tons,import,1895,181.0,1488.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Australasia,Tons,import,1896,235.0,2122.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Australasia,Tons,import,1897,226.0,3186.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Australasia,Tons,import,1898,184.0,1926.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Australasia,Tons,import,1899,200.0,2225.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Other British Possessions,Tons,import,1895,94.0,615.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Other British Possessions,Tons,import,1896,150.0,1142.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Other British Possessions,Tons,import,1897,38.0,331.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Other British Possessions,Tons,import,1898,103.0,788.0,groupfix,C,C,3,3
+PAPER-MAKING MATERIALS,Linen And Cotton Rags,Other British Possessions,Tons,import,1899,114.0,796.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Holland,Cwts,import,1879,580.0,23876.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Egypt,Cwts,import,1879,685.0,37530.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse","West Coast of Africa, Foreign : Portuguese Possessions",Cwts,import,1879,275.0,11613.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Not particularly designated,Cwts,import,1879,1801.0,69798.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",East Coast of Africa : Native States,Cwts,import,1879,650.0,32511.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Malta,Cwts,import,1879,648.0,26203.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",British West Africa,Cwts,import,1879,85.0,3337.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",British Possessions in South Africa,Cwts,import,1879,1367.0,62772.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Aden,Cwts,import,1879,440.0,21505.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",British India : Bombay and Scinde,Cwts,import,1879,1737.0,79065.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Bengal and Burmah,Cwts,import,1879,55.0,2625.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Other Countries,Cwts,import,1879,1091.0,36092.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Holland,Cyts,import,1880,431.0,17694.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",France,Cyts,import,1880,612.0,26270.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Egypt,Cyts,import,1880,2003.0,74850.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Portuguese Possessions in Western Africa,Cyts,import,1880,361.0,13701.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse","West Coast of Africa, not particularly designated",Cyts,import,1880,2310.0,85006.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",East Coast of Africa: Native States,Cyts,import,1880,1099.0,46997.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Malta,Cyts,import,1880,411.0,15205.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",British West Africa,Cyts,import,1880,162.0,5776.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",British Possessions in South Africa,Cyts,import,1880,1114.0,47494.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Aden,Cyts,import,1880,693.0,32615.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",British East Indies,Cyts,import,1880,2972.0,134028.0,groupfix,C,C,3,3
+IVORY,"Teeth, Elephants', Sea Cow, And Sea Horse",Other Countries,Cyts,import,1880,1267.0,54828.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,Holland,,import,1899,25000.0,50.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,Belgium,,import,1895,61175000.0,118624.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,Belgium,,import,1896,66374300.0,129660.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,Belgium,,import,1897,64858000.0,126485.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,Belgium,,import,1898,60553000.0,118312.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,Belgium,,import,1899,44942000.0,89172.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,France,,import,1895,4306500.0,8256.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,France,,import,1896,3394226.0,7738.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,France,,import,1897,2955000.0,5996.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,France,,import,1898,3103700.0,6344.0,groupfix,C,C,3,3
+METALS AND ORES,Leaves Of,France,,import,1899,4141570.0,8064.0,groupfix,C,C,3,3
 COCOA,,Germany,Lbs.,import,1899,2812002.0,84530.0,human,C,C,3,3
 COCOA,,Holland,Lbs.,import,1899,706059.0,24823.0,human,C,C,3,3
 COCOA,,Belgium,Lbs.,import,1899,381683.0,13432.0,human,C,C,3,3
