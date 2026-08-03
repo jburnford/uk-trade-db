@@ -1,0 +1,313 @@
+ratio,article,anchor_group,filed_under,unit,year,volume,engine,block_sum,t1,n_rows,seq_start,seq_end
+0.9996,tea,,FRUIT,LB,1900,tn_1901,country_obs_inf,298780145,298900200,22,27661,27773
+1.0,tea,,SPIRITS,LB,1897,as_1898,country_obs_inf,266800408,266800411,23,26199,26313
+0.99989,tea,,SPIRITS,LB,1896,as_1898,country_obs_inf,265365122,265394122,23,26198,26312
+1.0,tea,,SPIRITS,LB,1895,as_1898,country_obs_inf,255360128,255360128,23,26197,26311
+1.0,tea,,SPIRITS,LB,1894,as_1898,country_obs_inf,244310500,244310500,23,26196,26310
+0.99987,petroleum,,PAPER,GAL,1894,as_1894,country_obs_inf,162980982,163002262,7,2691,2697
+0.99999,petroleum,,PAPER-MAKING MATERIALS,GAL,1893,as_1893,country_obs_inf,155124492,155125667,6,2742,2747
+1.0,petroleum,,PARAFFINE,GAL,1888,as_1888,country_obs_inf,94401285,94401285,8,2280,2288
+0.99999,petroleum,,"PERFUMERY, AND ARTICLES USED IN THE MANUFACTURE THEREOF",GAL,1885,as_1885,country_obs_inf,73872990,73873641,8,2089,2097
+1.00176,petroleum,,"PERFUMERY, AND ARTICLES USED IN THE MANUFACTURE THEREOF",GAL,1886,as_1886,country_obs_inf,71251266,71125736,7,2112,2118
+1.0,petroleum,,PAPER,GAL,1883,as_1883,country_obs_inf,70526966,70526996,10,2027,2036
+0.99982,slates,,COTTON,NUM,1898,as_1899,country_obs_inf,59294929,59305435,5,20520,20540
+0.98232,slates,,COTTON,NUM,1897,as_1899,country_obs_inf,50350089,51256139,5,20519,20539
+1.0,slates,,SKINS AND FURS,NUM,1896,as_1896,country_obs_inf,37752567,37752567,6,3339,3345
+0.99563,wheatmeal or flour,,CORDAGE,CWT,1893,as_1897,country_obs,20318968,20408168,19,4098,4184
+0.99921,wheatmeal or flour,,"CHINA, OR PORCELAIN, AND EARTHENWARE",CWT,1894,as_1898,country_obs_inf,19119476,19134605,19,3916,4005
+0.99839,for weaving,,WOOLLEN YARN,LB,1896,as_1896,country_obs,18658650,18688650,5,4036,4040
+1.0,"straw platting, for making hats or bonnets",,"STATIONERY, OTHER THAN PAPER",LB,1896,as_1896,country_obs_inf,11669802,11669802,10,3464,3474
+1.00202,potatoes,,"PLATINA, WROUGHT AND UNWROUGHT",CWT,1880,as_1880,country_obs_inf,9774214,9754514,10,1151,1160
+0.99679,potatoes,,PORK,CWT,1879,as_1879,country_obs_inf,9327119,9357179,10,1004,1013
+0.98779,potatoes,"Vegetables, Raw",SUGAR,CWT,1900,tn_1901,country_obs_inf,8802171,8910962,13,22692,22757
+1.0,rice,,"RAGS, WOOLLEN, APPLICABLE TO OTHER USES THAN MANURE, TORN UP OR NOT",CWT,1881,as_1881,country_obs_inf,8500062,8500062,8,952,959
+1.0,rice,,"RAGS, WOOLLEN, APPLICABLE TO OTHER USES THAN MANURE, TORN UP OR NOT",CWT,1882,as_1882,country_obs_inf,8260175,8260175,8,1336,1343
+1.0,potatoes,,PORK,CWT,1877,as_1877,country_obs_inf,7964850,7964840,10,1176,1185
+0.99664,rice,,RAGS AND OTHER MATERIALS FOR MAKING PAPER,CWT,1879,as_1879,country_obs_inf,6834306,6857330,10,1073,1082
+0.9941,rice,,"RAGS, WOOLLEN, APPLICABLE TO OTHER USES THAN MANURE, TORN UP OR NOT",CWT,1878,as_1878,country_obs_inf,6073005,6109020,5,1352,1356
+0.99949,jute,,IVORY,CWT,1882,as_1882,country_obs_inf,5934842,5937842,2,863,864
+1.0,linen yarn,,"LEATHER, UNDRESSED",LB,1885,as_1885,country_obs_inf,5892022,5892025,4,1574,1577
+0.99999,bacon,Meat (except Poultry and Game),ASPHALT OR BITUMEN,CWT,1899,as_1899,country_obs_inf,5804553,5804583,9,916,960
+1.0,jute,,IVORY,CWT,1885,as_1885,country_obs_inf,5713472,5713475,7,1430,1437
+0.99469,bacon,Meat (except Poultry and Game),"ANIMALS, LIVING",CWT,1898,as_1898,country_obs_inf,5681022,5711322,8,771,814
+1.0,jute,,IVORY,CWT,1886,as_1886,country_obs_inf,5349109,5349109,8,1499,1507
+0.99999,bacon,Meat (except Poultry and Game),"ANIMALS, LIVING",CWT,1897,as_1898,country_obs_inf,5004885,5004915,9,770,813
+1.00112,jute,,IRON,CWT,1881,as_1881,country_obs_inf,4934333,4928805,5,563,567
+1.0,jute,,IRON AND STEEL,CWT,1879,as_1879,country_obs_inf,4759363,4759363,2,700,701
+1.0,quicksilver,,PYRITES OF IRON OR COPPER,LB,1891,as_1891,country_obs_inf,4707804,4707804,4,2613,2616
+1.0,jute,,ISINGLASS,CWT,1880,as_1880,country_obs_inf,4638896,4638896,2,854,855
+1.0,quicksilver,,PYRITES OF IRON OR COPPER,LB,1887,as_1887,country_obs_inf,4590907,4590907,7,2148,2155
+1.0,bacon,,"ANIMALS, LIVING",CWT,1896,as_1898,country_obs_inf,4549526,4549526,9,769,812
+0.99999,rice,,PYRITES OF IRON OR COPPER,CWT,1896,as_1896,country_obs_inf,4531488,4531518,15,2894,2909
+1.0,"buttons and studs, not of metal",,BACON AND HAMS,GROSS,1888,as_1888,country_obs_inf,4320199,4320199,5,287,291
+0.99604,"buttons and studs, not of metal",,BEEF,GROSS,1891,as_1891,country_obs_inf,4186061,4202700,4,305,308
+0.98942,quicksilver,,PYRITES OF IRON OR COPPER,LB,1881,as_1881,country_obs_inf,4151887,4196301,4,916,919
+1.0,jute,,IRON AND STEEL,CWT,1872,as_1872,country_obs_inf,4041018,4041018,2,795,796
+0.9962,potatoes,,PORK,CWT,1881,as_1881,country_obs_inf,4019348,4034673,6,887,892
+0.99844,potatoes,,PORK,CWT,1897,as_1899,country_obs_inf,3915106,3921205,13,17505,17570
+1.00001,quicksilver,,PYRITES OF IRON OR COPPER,LB,1894,as_1894,country_obs_inf,3843841,3843791,5,2863,2867
+1.0,"buttons and studs, not of metal",,BEEF,GROSS,1892,as_1892,country_obs_inf,3817432,3817432,7,316,323
+0.99919,potatoes,,PORK,CWT,1895,as_1895,country_obs_inf,3755126,3758156,12,2776,2788
+0.99112,quicksilver,,PYRITES OF IRON OR COPPER,LB,1880,as_1880,country_obs_inf,3682526,3715526,8,1184,1191
+1.0,jute,,IRON AND STEEL,CWT,1877,as_1877,country_obs_inf,3649877,3649877,2,796,797
+1.0,"buttons and studs, not of metal",,BEEF,GROSS,1896,as_1896,country_obs_inf,3596917,3596917,6,284,289
+0.99999,"buttons and studs, not of metal",,BEEF,GROSS,1895,as_1895,country_obs_inf,3580503,3580533,6,295,300
+0.99992,quicksilver,,PYRITES OF IRON OR COPPER,LB,1896,as_1896,country_obs_inf,3536628,3536928,6,2877,2882
+1.0,jute,,IRON AND STEEL,CWT,1875,as_1875,country_obs_inf,3416617,3416617,2,751,752
+1.0,linen yarn,,LEATHER MANUFACTURES,LB,1876,as_1876,country_obs_inf,3414205,3414205,2,893,894
+1.0,"buttons and studs, not of metal",,BACON AND HAMS,GROSS,1894,as_1894,country_obs_inf,3203058,3203058,5,289,293
+0.99809,potatoes,,PORK,CWT,1891,as_1891,country_obs_inf,3186743,3192836,12,2559,2571
+1.0,butter,,BEEF,CWT,1896,as_1896,country_obs_inf,3037718,3037718,19,253,272
+1.0,peas,,CORDAGE,CWT,1896,as_1899,country_obs,3018657,3018657,14,3723,3794
+0.99967,"cocoa or chocolate, ground, prepared or in any way manufactured",,CHLOROFORM,LB,1895,as_1895,country_obs,2976836,2977813,6,69,74
+0.99796,"mutton, fresh",Meat (except Poultry and Game),METAL,CWT,1896,as_1896,country_obs_inf,2889256,2895158,10,2299,2309
+1.0,bristles,,BEEF,LB,1887,as_1887,country_obs_inf,2892073,2892073,10,242,252
+1.0,bristles,,BACON AND HAMS,LB,1888,as_1888,country_obs_inf,2840674,2840674,12,240,252
+1.0,butter,,BEEF,CWT,1895,as_1895,country_obs_inf,2825662,2825662,20,264,284
+0.99998,potatoes,,PORK,CWT,1887,as_1887,country_obs_inf,2763297,2763357,10,2090,2100
+0.99673,peas,,CORDAGE,CWT,1899,as_1899,country_obs,2743950,2752950,15,3726,3797
+1.0,"cocoa or chocolate, ground, prepared or in any way manufactured",,CHICORY,LB,1894,as_1894,country_obs,2720367,2720357,7,64,71
+1.00018,potatoes,,PORK,CWT,1894,as_1894,country_obs_inf,2704303,2703803,11,2812,2823
+1.0,"cocoa or chocolate, ground, prepared or in any way manufactured",,COCOA,LB,1893,as_1893,country_obs_inf,2660418,2660421,7,26,33
+1.00019,butter,,BACON AND HAMS,CWT,1894,as_1894,country_obs_inf,2575335,2574835,19,257,276
+0.99587,bristles,,BEEF,LB,1878,as_1878,country_obs_inf,2492006,2502343,8,184,191
+1.0005,peas,,"COPPER, ORE OF",CWT,1895,as_1898,country_obs,2424073,2422851,14,3771,3832
+1.00025,peas,,CORDAGE,CWT,1893,as_1897,country_obs,2303022,2302443,12,3785,3848
+0.99057,peas,,"COPPER, ORE OF",CWT,1894,as_1898,country_obs,2251193,2272623,12,3770,3831
+1.00009,potatoes,,PORK,CWT,1896,as_1896,country_obs_inf,2244827,2244627,10,2818,2828
+1.0,lard,,IRON,CWT,1899,as_1899,country_obs_inf,2188049,2188049,9,12059,12104
+1.0,butter,,BEEF,CWT,1892,as_1892,country_obs_inf,2183009,2183009,18,286,304
+0.99946,tallow and stearine,,SUGAR,CWT,1895,as_1897,country_obs_inf,2174638,2175822,24,19735,19851
+1.0,bristles,,BEEF,LB,1880,as_1880,country_obs_inf,2164736,2164736,7,171,177
+0.9986,butter,,BEEF,CWT,1891,as_1891,country_obs_inf,2132607,2135607,18,274,292
+0.99915,lard,,IRON,CWT,1898,as_1899,country_obs_inf,2105071,2106871,8,12058,12101
+1.00005,hams,,GUM,CWT,1899,as_1899,country_obs_inf,1978721,1978626,8,9477,9517
+0.99985,hams,,GUM,CWT,1898,as_1898,country_obs_inf,1971996,1972299,8,9082,9123
+1.0,tallow and stearine,,SUGAR,CWT,1894,as_1894,country_obs_inf,1837587,1837587,19,3408,3427
+1.0,butter,,BEEF,CWT,1878,as_1878,country_obs_inf,1796517,1796517,11,193,203
+0.99992,"perfumery, and articles used in the manufacture thereof, except perfumed spirits",,OIL,LB,1895,as_1899,country_obs_inf,1751426,1751564,17,16762,16842
+1.0,lard,,JUTE,CWT,1895,as_1895,country_obs_inf,1742688,1742688,8,1871,1879
+1.0,lard,,IVORY,CWT,1897,as_1898,country_obs_inf,1740468,1740468,9,11421,11465
+0.99995,lard,,IVORY,CWT,1896,as_1898,country_obs_inf,1739373,1739463,10,11416,11464
+1.0,rosin,,PORK,CWT,1899,as_1899,country_obs_inf,1708627,1708630,5,18026,18045
+1.0,sponge,,SPICES,LB,1893,as_1893,country_obs_inf,1695186,1695186,10,3464,3476
+0.99821,butter,,BACON AND HAMS,CWT,1888,as_1888,country_obs_inf,1668433,1671433,15,255,270
+1.0,rosin,,PORK,,1898,as_1899,country_obs_inf,1662359,1662359,3,18025,18038
+1.0,rosin,,PYRITES OF IRON OR COPPER,CWT,1896,as_1896,country_obs_inf,1655371,1655374,4,2912,2915
+1.0,"perfumery, and articles used in the manufacture thereof, except perfumed spirits",,PAPER,LB,1894,as_1894,country_obs_inf,1643063,1643063,12,2676,2688
+1.0,rosin,,PORK,CWT,1897,as_1899,country_obs_inf,1640745,1640745,3,18024,18037
+1.0,sponge,,SPICES,LB,1896,as_1896,country_obs_inf,1545632,1545632,10,3416,3426
+1.0,tallow and stearine,,STATIONERY OTHER THAN PAPER,CWT,1873,as_1873,country_obs_inf,1527321,1527321,10,1486,1495
+1.0,rosin,,"ESPARTO, AND OTHER VEGETABLE FIBRES",CWT,1884,as_1884,country_obs_inf,1475955,1475955,3,1728,1730
+1.0,hams,,HAIR,CWT,1896,as_1896,country_obs_inf,1459412,1459412,8,1550,1558
+1.0,sponge,,SPICES,LB,1892,as_1892,country_obs_inf,1435119,1435119,9,3123,3132
+1.0,rosin,,PORK,CWT,1895,as_1899,country_obs_inf,1427569,1427569,4,18022,18035
+0.99999,lard,,IVORY,CWT,1894,as_1898,country_obs_inf,1400507,1400516,10,11414,11462
+0.99774,tallow and stearine,,STATIONERY OTHER THAN PAPER,CWT,1872,as_1872,country_obs_inf,1325444,1328444,9,1517,1525
+1.0,rosin,,"RAGS, AND OTHER MATERIALS, FOR MAKING PAPER",CWT,1885,as_1885,country_obs_inf,1322354,1322354,6,2339,2345
+0.99902,rosin,,"RAGS, AND OTHER MATERIALS FOR MAKING PAPER",CTS,1888,as_1888,country_obs_inf,1309147,1310425,3,2544,2547
+1.0,margarine,,BEEF,CWT,1892,as_1892,country_obs_inf,1305350,1305350,7,307,314
+1.0,lard,,IVORY,CWT,1890,as_1890,country_obs_inf,1273236,1273236,6,1722,1728
+0.99997,lard,,IVORY,CWT,1892,as_1892,country_obs_inf,1239015,1239051,8,1768,1776
+0.99757,margarine,,BEEF,CWT,1891,as_1891,country_obs_inf,1232430,1235430,8,295,303
+0.99974,lard,,IVORY,CTS,1889,as_1889,country_obs_inf,1192340,1192654,6,1632,1638
+1.0,tallow and stearine,,SUGAR,CWT,1879,as_1879,country_obs_inf,1174907,1174907,10,1372,1381
+1.0,rosin,,"RAGS, AND OTHER MATERIALS FOR MAKING PAPER",CWT,1886,as_1886,country_obs_inf,1168555,1168555,4,2362,2366
+0.99598,"perfumery, and articles used in the manufacture thereof, except perfumed spirits",,OIL,LB,1898,as_1899,country_obs_inf,1163193,1167893,17,16765,16845
+0.99848,lard,,"LACE, AND ARTICLES THEREOF",CWT,1893,as_1893,country_obs_inf,1116408,1118106,7,1940,1947
+0.99541,"perfumery, and articles used in the manufacture thereof, except perfumed spirits",,OIL,LB,1896,as_1899,country_obs_inf,1105468,1110561,17,16763,16843
+1.0,margarine,,BACON AND HAMS,CWT,1894,as_1894,country_obs_inf,1109325,1109325,8,279,287
+1.0,"perfumery, and articles used in the manufacture thereof, except perfumed spirits",,OIL,LB,1897,as_1899,country_obs_inf,1097120,1097120,16,16764,16844
+1.0,rosin,,"RAGS, AND OTHER MATERIALS FOR MAKING PAPER",CWT,1887,as_1887,country_obs_inf,1086121,1086121,3,2250,2253
+1.0,rosin,,RAGS AND OTHER MATERIALS FOR MAKING PAPER,CWT,1880,as_1880,country_obs_inf,1083402,1083402,2,1230,1231
+0.98603,margarine,,BACON AND HAMS,CWT,1890,as_1890,country_obs_inf,1064772,1079856,7,269,276
+1.0,paraffine,,OIL,CWT,1899,as_1899,country_obs_inf,1077003,1077003,5,16726,16751
+1.0,lard,,IVORY,CWT,1891,as_1891,country_obs_inf,1051284,1051284,7,1804,1811
+1.0,rosin,,PYRITES OF IRON OR COPPER,CWT,1875,as_1875,country_obs_inf,1026076,1026076,3,1215,1217
+1.0,brimstone,,BEEF,CWT,1872,as_1872,country_obs_inf,1001021,1001021,3,165,167
+1.0,rosin,,PYRITES OF IRON OR COPPER OR SULPHUR,CWT,1873,as_1873,country_obs_inf,955789,955789,3,1243,1245
+0.9999,paraffine,,OIL,CWT,1898,as_1899,country_obs_inf,946843,946933,5,16725,16749
+1.0,lard,,ISINGLASS,CWT,1880,as_1880,country_obs_inf,927512,927512,4,868,871
+1.0,brimstone,,BEEF,CWT,1873,as_1873,country_obs_inf,913673,913673,3,175,177
+1.0,lard,,IVORY,CWT,1887,as_1887,country_obs_inf,907634,907634,7,1387,1394
+1.0,lard,,IVORY,CWT,1886,as_1886,country_obs_inf,895463,895463,5,1522,1527
+1.00006,tallow and stearine,,SUGAR,CWT,1887,as_1887,country_obs_inf,895176,895121,16,2796,2812
+1.0,brimstone,,BEEF,CWT,1878,as_1878,country_obs_inf,874959,874959,3,180,182
+1.0,lard,,IVORY,CWT,1885,as_1885,country_obs_inf,871210,871210,6,1451,1457
+1.0,lard,,IRON,CWT,1881,as_1881,country_obs_inf,854322,854322,4,579,582
+1.00007,lard,,LACE AND ARTICLES THEREOF,CWT,1883,as_1883,country_obs_inf,853598,853541,9,1463,1471
+0.99962,"mutton, fresh",,METAL,CWT,1887,as_1887,country_obs_inf,782814,783114,10,1734,1744
+0.99225,paraffine,,OIL,CWT,1897,as_1899,country_obs_inf,768161,774161,6,16724,16748
+1.0,brimstone,,BACON AND HAMS,CWT,1888,as_1888,country_obs_inf,773480,773480,6,233,238
+1.00002,potatoes,,PAPER,CWT,1870,tn_1871,country_obs_inf,771873,771854,5,1288,1292
+1.0,lard,,LACE AND ARTICLES THEREOF,CWT,1884,as_1884,country_obs_inf,699827,699827,5,1052,1056
+1.0,clocks,,CHEESE,NUM,1877,as_1877,country_obs,687271,687271,6,270,275
+1.0,brimstone,,BEEF,CWT,1887,as_1887,country_obs_inf,661158,661158,4,237,240
+1.00048,tares and lentils,,COTTON,BUSH,1895,as_1898,country_obs,623990,623690,13,18519,18583
+1.0,paraffine,,PAPER,CWT,1894,as_1894,country_obs_inf,618051,618051,5,2668,2673
+1.0,cider and perry,,"CHINA OR PORCELAIN, AND EARTHENWARE",GAL,1895,as_1895,country_obs_inf,603190,603190,4,403,407
+1.0,clocks,,CHEESE,NUM,1876,as_1876,country_obs,601029,601029,6,264,269
+1.0,"mutton, fresh",,MUSICAL INSTRUMENTS,CWT,1885,as_1885,country_obs_inf,572868,572868,10,1783,1793
+0.99847,brimstone,,BACON AND HAMS,,1890,as_1890,country_obs_inf,567773,568641,3,232,234
+1.0,lard,,JUTE,CWT,1876,as_1876,country_obs_inf,562174,562174,4,849,852
+1.0,brimstone,,BEEF,CWT,1892,as_1892,country_obs_inf,521589,521589,2,267,268
+0.99994,brimstone,,BEEF,CWT,1895,as_1895,country_obs_inf,498356,498386,2,247,248
+1.0,brimstone,,BACON AND HAMS,CWT,1894,as_1894,country_obs_inf,467925,467925,2,238,239
+0.99999,"preserved, otherwise than by salting",,"MEAT, UNENUMERATED",CWT,1884,as_1884,country_obs_inf,450984,450990,18,1249,1266
+0.99967,brimstone,,ALKALI,,1900,tn_1901,country_obs_inf,450511,450661,2,1953,1958
+1.0,brimstone,,BEEF,,1891,as_1891,country_obs_inf,428478,428478,2,255,256
+1.0,tares and lentils,,COTTON,BUSH,1896,as_1896,country_obs,394028,394028,10,3060,3070
+1.0,watches,,TIN,NUM,1882,as_1882,country_obs_inf,385506,385506,4,1726,1729
+1.0,lard,,ISINGLASS,CWT,1874,as_1874,country_obs_inf,374328,374328,4,829,832
+0.99846,"milk, condensed",,METAL,CTS,1889,as_1889,country_obs_inf,339367,339892,6,1899,1904
+0.99906,paraffine,,PAPER,CTS,1887,as_1887,country_obs_inf,326803,327110,3,1965,1968
+1.0,cider and perry,,"CHINA OR PORCELAIN, AND EARTHENWARE",GAL,1896,as_1896,country_obs_inf,321016,321016,4,398,402
+1.0,saltpetre,,RAGS AND OTHER MATERIALS FOR MAKING PAPER,CWT,1872,as_1872,country_obs_inf,307034,307034,7,1273,1279
+0.99989,jute,,ICE,TON,1900,tn_1901,country_obs_inf,280888,280919,11,10440,10492
+1.01646,bark,Dyeing or Tanning Stuffs,DRUGS,CWT,1882,as_1882,country_obs,276625,272145,5,510,514
+1.0,"other plate, whether silvered or not",,GLASS,,1896,as_1897,country_obs,258822,258822,5,8187,8206
+1.0,hops,,"HIDES. RAW, AND PIECES THEREOF",CWT,1884,as_1884,country_obs_inf,256777,256777,9,928,936
+0.99986,oil seed cake,Oil,OIL,TON,1881,as_1881,country_obs_inf,221070,221100,6,812,817
+1.0,tar,,STATIONERY OTHER THAN PAPER,BARREL,1873,as_1873,country_obs_inf,215330,215330,5,1497,1501
+1.0,yeast,,WOOLLEN YARN,CWT,1894,as_1898,country_obs_inf,213153,213153,7,24255,24290
+0.99846,"yeast, dried",,WOOLLEN MANUFACTURES,CWT,1879,as_1879,country_obs_inf,194426,194726,5,1520,1524
+1.0,yeast,,WOOLLEN YARN,CWT,1895,as_1898,country_obs_inf,192579,192579,6,24256,24286
+0.99989,tar,,STATIONERY OTHER THAN PAPER,BARREL,1872,as_1872,country_obs_inf,189271,189291,5,1527,1531
+1.0,hops,,HONEY,CWT,1894,as_1894,country_obs_inf,189155,189155,8,1635,1643
+1.0,"esparto, and other vegetable fibres",Paper-making materials,PAPER AND PASTEBOARD,TON,1896,as_1896,country_obs_inf,187278,187278,6,2650,2656
+1.0,"esparto, and other vegetable fibres",Paper-making materials,PAPER-MAKING MATERIALS,TON,1893,as_1893,country_obs_inf,185450,185450,5,2685,2689
+1.0,oil seed cake,,OIL,TON,1875,as_1875,country_obs_inf,180379,180379,10,1015,1024
+0.99983,"platinum, wrought or unwrought","""    Manufactures of Iron and Steel",OIL,OZSTRO,1899,as_1899,country_obs_inf,173722,173752,4,17293,17311
+0.99747,vinegar,,SUGAR,GAL,1898,as_1899,country_obs_inf,173199,173639,5,22517,22537
+0.99997,oleo-margarine,,METAL,CWT,1898,as_1898,country_obs_inf,173615,173621,5,15282,15310
+0.9926,tar,,SUGAR,BARREL,1885,as_1885,country_obs_inf,171883,173164,8,2971,2979
+0.98243,yeast,,WOOLLEN YARN,CWT,1896,as_1899,country_obs_inf,169457,172487,6,24733,24763
+1.0,"yeast, dried",,WOOLLEN MANUFACTURES,CWT,1876,as_1876,country_obs_inf,165492,165492,3,1891,1893
+1.0,oil seed cake,,OIL,TON,1877,as_1877,country_obs_inf,163606,163606,8,1055,1062
+1.0,"yeast, dried",,WOOLLEN MANUFACTURES,CWT,1875,as_1875,country_obs_inf,162525,162525,3,1766,1768
+1.0,"unenumerated, for expressing oil therefrom",Seeds,SEEDS,QTR,1886,as_1886,country_obs_inf,161742,161742,8,2466,2474
+0.99994,yeast,,WOOLLEN YARN,CWT,1897,as_1899,country_obs_inf,159587,159596,6,24734,24764
+1.0,"yeast, dried",,WOOLLEN MANUFACTURES,CWT,1874,as_1874,country_obs_inf,153811,153811,4,1649,1652
+1.0,"unenumerated, for expressing oil therefrom",Seeds,COTTON,QTR,1885,as_1885,country_obs_inf,151488,151488,13,2455,2468
+0.99364,oleo-margarine,,METAL,CWT,1897,as_1898,country_obs_inf,148423,149373,6,15281,15314
+1.0,hops,,HAIR,CWT,1881,as_1881,country_obs_inf,147559,147559,6,485,490
+1.0,tar,,SUGAR,BARREL,1879,as_1879,country_obs_inf,140507,140507,3,1383,1385
+1.0,tar,,SUGAR,BARREL,1887,as_1887,country_obs_inf,135714,135714,9,2815,2824
+1.0,madder,Dyeing or Tanning Stuffs,LEATHER MANUFACTURES,CWT,1872,as_1872,country_obs_inf,134207,134207,5,869,873
+1.0,"yeast, dried",,WOOLLEN MANUFACTURES,CWT,1870,tn_1871,country_obs_inf,128641,128641,5,2172,2176
+1.0,hops,,"HIDES, NOT TANNED, TAWED, CURRIED, OR IN ANY WAY DRESSED",CWT,1870,tn_1871,country_obs_inf,127853,127853,8,756,763
+0.99951,tar,,SUGAR,BARREL,1895,as_1897,country_obs_inf,121531,121591,5,19866,19891
+0.99925,oleo-margarine,,METAL,CWT,1896,as_1898,country_obs_inf,120297,120387,7,15280,15313
+0.99518,hay,,HATS OR BONNETS,TON,1895,as_1895,country_obs_inf,118243,118816,11,1525,1536
+1.0,rabbits,,PYRITES OF IRON OR COPPER,CWT,1887,as_1887,country_obs_inf,117168,117168,6,2157,2163
+1.0,tar,,SUGAR,BARREL,1896,as_1897,country_obs_inf,115939,115939,6,19867,19894
+1.0,tar,,SUGAR,BARREL,1894,as_1897,country_obs_inf,111640,111640,5,19865,19890
+0.99997,"platinum, wrought or unwrought",,OIL,OZSTRO,1898,as_1899,country_obs_inf,108954,108957,4,17292,17310
+1.0,rabbits,,PYRITES OF IRON OR COPPER,CWT,1894,as_1894,country_obs_inf,108476,108476,5,2869,2874
+1.0,pitch,,PAPER,CWT,1894,as_1894,country_obs_inf,107237,107237,8,2724,2732
+0.9991,oleo-margarine,,METAL,CWT,1895,as_1898,country_obs_inf,103696,103789,7,15279,15312
+1.0,rabbits,,PYRITES OF IRON OR COPPER,CWT,1891,as_1891,country_obs_inf,103685,103685,5,2618,2623
+0.99997,"copper, ore of",,CONFECTIONERY,TON,1895,as_1895,country_obs_inf,99754,99757,15,433,448
+1.0,pitch,Pitch and Tar,"PERFUMERY, AND ARTICLES USED IN THE MANUFACTURE THEREOF",CWT,1886,as_1886,country_obs_inf,97969,97969,8,2145,2153
+1.0,oleo-margarine,,METAL,CWT,1894,as_1898,country_obs_inf,96974,96974,7,15278,15311
+1.0,"flax, dressed or undressed",,"FARINACEOUS SUBSTANCES AND MANUFACTURES THEREOF, UNENUMERATED",TON,1895,as_1895,country_obs_inf,87844,87844,7,1151,1157
+1.0,"copper, ore of",,"COALS, CULM, AND CINDERS",TON,1896,as_1896,country_obs_inf,87335,87335,16,432,448
+1.0,oleo-margarine,,OIL,CWT,1893,as_1893,country_obs_inf,86621,86621,5,2575,2580
+1.0,pitch,,PAPER,CWT,1877,as_1877,country_obs_inf,81558,81558,2,1148,1149
+1.0,pitch,Pitch and Tar,PAPER,CWT,1887,as_1887,country_obs_inf,76744,76744,6,2019,2025
+1.0,"flax, dressed or undressed",,"FARINACEOUS SUBSTANCES AND MANUFACTURES THEREOF, UNENUMERATED",TON,1896,as_1896,country_obs_inf,76099,76099,9,1161,1170
+0.99469,"platinum, wrought or unwrought",,PLATE,OZSTRO,1897,as_1897,country_obs_inf,72179,72564,4,14834,14848
+0.98757,"manganese, ore of",,MALT,TON,1888,as_1888,country_obs_inf,71192,72088,10,1736,1746
+1.0,gutta percha,,GUM,CWT,1890,as_1890,country_obs_inf,70176,70176,9,1314,1323
+1.00003,pitch,Pitch and Tar,PARAFFINE,CWT,1888,as_1888,country_obs_inf,69065,69063,6,2316,2321
+0.99484,gutta percha,,GUM,CWT,1883,as_1883,country_obs_inf,63471,63800,5,1082,1086
+0.98959,gutta percha,,GUM,,1898,as_1898,country_obs_inf,62580,63238,16,8627,8716
+0.99818,"flax, dressed or undressed",,FARINACEOUS SUBSTANCES,TON,1893,as_1893,country_obs_inf,62107,62220,7,1207,1213
+1.00103,hay,,HATS OR BONNETS,TON,1892,as_1892,country_obs_inf,61300,61237,10,1415,1425
+1.0,gutta percha,,GUM,CWT,1891,as_1891,country_obs_inf,60911,60911,12,1398,1410
+0.99711,"platinum, wrought or unwrought",,OIL,OZSTRO,1895,as_1899,country_obs_inf,60354,60529,4,17294,17307
+1.0,pitch,,PAPER,CWT,1879,as_1879,country_obs_inf,57188,57188,2,977,978
+0.98472,"platinum, wrought or unwrought",,OIL,OZSTRO,1896,as_1899,country_obs_inf,55342,56201,4,17295,17308
+1.0,gutta percha,,GUM,CWT,1895,as_1895,country_obs_inf,48077,48077,8,1442,1450
+1.0,gutta percha,,GUM,CTS,1889,as_1889,country_obs_inf,47832,47832,7,1235,1242
+1.0,"manganese, ore of",,MALT,TON,1885,as_1885,country_obs_inf,47581,47581,12,1603,1615
+0.99234,gutta percha,,GUM,CWT,1894,as_1898,country_obs_inf,46388,46746,17,8623,8712
+0.98041,"brass, bronze, and metal bronzed or lacquered, manufactures of",Metals and Ores,BEEF,CWT,1900,tn_1901,country_obs_inf,45049,45949,8,12698,12738
+1.0,"pictures and drawings, by hand",,PAPER,NUM,1887,as_1887,country_obs_inf,44855,44855,13,2003,2016
+1.0,"pictures and drawings, by hand",,PAPER,NUM,1889,as_1889,country_obs_inf,43935,43935,11,2301,2312
+0.99792,gutta percha,,GUM,CWT,1896,as_1898,country_obs_inf,43714,43805,15,8625,8714
+1.00023,wax,,TIN,CWT,1873,as_1873,country_obs_inf,42699,42689,13,1549,1561
+0.99747,gutta percha,,GUM,CTS,1897,as_1898,country_obs_inf,41337,41442,17,8626,8715
+1.01262,galls,,"FLOWERS, ARTIFICIAL",CWT,1890,as_1890,country_obs_inf,40105,39605,9,1208,1217
+1.00758,"pictures and drawings, by hand",,"PERFUMERY, AND ARTICLES USED IN THE MANUFACTURE THEREOF",NUM,1886,as_1886,country_obs_inf,39878,39578,10,2132,2142
+1.0,galls,,FRUIT,CWT,1883,as_1883,country_obs_inf,39552,39552,8,981,988
+0.99923,wax,,TIN,CWT,1894,as_1894,country_obs_inf,38943,38973,18,3526,3544
+0.99992,galls,,FRUIT,CWT,1891,as_1891,country_obs_inf,38514,38517,7,1292,1299
+1.01567,wax,,TIN,CWT,1885,as_1885,country_obs_inf,38895,38295,19,3064,3083
+1.0,"pictures and drawings, by hand",,PARAFFINE,NUM,1888,as_1888,country_obs_inf,38230,38230,11,2302,2313
+0.99947,madder,Dyeing or Tanning Stuffs,LEATHER MANUFACTURES,CWT,1870,tn_1871,country_obs_inf,37800,37820,4,935,938
+1.0,galls,,FRUIT,CWT,1898,as_1899,country_obs_inf,36140,36140,7,8203,8242
+1.0,liquorice,,LEATHER MANUFACTURES,CWT,1896,as_1896,country_obs_inf,35252,35252,5,2038,2042
+0.99486,liquorice,,LEATHER MANUFACTURES,CTS,1888,as_1888,country_obs_inf,34652,34831,6,1729,1734
+0.99536,liquorice,,LINEN,CWT,1899,as_1899,country_obs_inf,34539,34700,6,12939,12963
+1.0,"gutta percha, raw",,GUM,CWT,1870,tn_1871,country_obs_inf,34514,34514,6,627,632
+1.0,ultramarine,,TIN,CWT,1870,tn_1871,country_obs_inf,34427,34427,6,1880,1885
+1.0,"pictures and drawings, by hand",,PAPER-MAKING MATERIALS,NUM,1893,as_1893,country_obs_inf,33550,33550,9,2760,2769
+1.0,galls,,"FLOWERS, ARTIFICIAL",CWT,1878,as_1878,country_obs_inf,31478,31478,4,708,711
+1.0,"pictures and drawings, by hand",,"PERFUMERY, AND ARTICLES USED IN THE MANUFACTURE THEREOF",NUM,1885,as_1885,country_obs_inf,31338,31338,14,2110,2124
+1.0,galls,,FRUIT,CWT,1892,as_1892,country_obs_inf,31249,31249,8,1223,1231
+0.99808,liquorice,,LEATHER MANUFACTURES,CWT,1895,as_1895,country_obs_inf,31113,31173,5,2026,2030
+0.99517,liquorice,,LEATHER,CWT,1900,tn_1901,country_obs_inf,30919,31069,6,11308,11333
+1.00161,"pictures and drawings, by hand",,PAPER,NUM,1894,as_1894,country_obs_inf,31062,31012,10,2711,2721
+1.00023,wax,,"SKINS, FURS, AND PELTS",CWT,1881,as_1881,country_obs_inf,30963,30956,8,1110,1117
+0.99786,liquorice,,LINEN,CWT,1897,as_1899,country_obs_inf,29426,29489,6,12937,12961
+1.0,grease,,GLASS,CWT,1870,tn_1871,country_obs_inf,29165,29165,4,586,589
+0.99895,valonia,Dyeing or Tanning Stuffs,TURPENTINE (ROUGH),TON,1878,as_1878,country_obs,28647,28677,3,1742,1744
+1.0,liquorice,,LINEN,CWT,1881,as_1881,country_obs_inf,28288,28288,4,634,637
+1.0,liquorice,,LEATHER MANUFACTURES,CWT,1872,as_1872,country_obs_inf,28000,28000,5,863,867
+0.98104,liquorice,,LINEN,CWT,1883,as_1883,country_obs_inf,27430,27960,7,1609,1615
+1.0,wax,,TIN,CWT,1887,as_1887,country_obs_inf,26488,26488,18,2908,2926
+0.99852,cutch and gambier,Dyeing or Tanning Stuffs,BARK,TON,1885,as_1885,country_obs_inf,26273,26312,7,770,777
+1.0,galls,,FRUIT,CWT,1895,as_1899,country_obs_inf,26248,26248,8,8200,8239
+1.0,galls,,FRUIT,CWT,1899,as_1899,country_obs_inf,26163,26163,8,8204,8244
+1.00004,madder,Dyeing or Tanning Stuffs,LEATHER MANUFACTURES,CWT,1876,as_1876,country_obs_inf,25571,25570,3,910,912
+1.0,galls,,FRUIT,CWT,1894,as_1894,country_obs_inf,24761,24761,7,1270,1277
+1.0,galls,,FRUIT,CWT,1897,as_1899,country_obs_inf,24453,24453,9,8202,8243
+0.99869,valonia,Dyeing or Tanning Stuffs,TURPENTINE (ROUGH),TON,1875,as_1875,country_obs,24402,24434,3,1618,1620
+0.99876,gutta percha,,GUM,CWT,1887,as_1887,country_obs_inf,24103,24133,6,1005,1011
+1.0,liquorice,,"LEATHER, UNDRESSED",CWT,1885,as_1885,country_obs_inf,23825,23825,6,1591,1597
+1.0,galls,,FRUIT,CWT,1896,as_1896,country_obs_inf,23807,23807,7,1358,1365
+0.99369,galls,,"FLOWERS, ARTIFICIAL",CWT,1900,tn_1901,country_obs_inf,23611,23761,8,7694,7732
+1.0,"manganese, ore of",,MALT,TON,1883,as_1883,country_obs_inf,22362,22362,14,1623,1636
+1.0,liquorice,,LEATHER MANUFACTURES,CWT,1876,as_1876,country_obs_inf,21921,21921,4,905,908
+1.0,"candles, of all sorts",,BEEF,CWT,1895,as_1899,country_obs_inf,21388,21388,6,1680,1705
+1.0,books,,BEEF,CWT,1878,as_1878,country_obs_inf,14755,14755,6,167,172
+1.0,"candles, of all sorts",,BEEF,CWT,1898,as_1899,country_obs_inf,13877,13877,6,1683,1708
+1.0,plumbago,,"PLANTS, SHRUBS, TREES, AND FLOWER ROOTS",TON,1896,as_1896,country_obs_inf,13643,13643,6,2790,2796
+1.0,madder,Dyeing or Tanning Stuffs,LINEN,CWT,1881,as_1881,country_obs_inf,12493,12493,3,639,641
+1.0,plumbago,,"PLANTS, SHRUBS, TREES, AND FLOWER ROOTS",TON,1895,as_1895,country_obs_inf,10360,10360,7,2748,2755
+1.0,plumbago,,PAPER,TON,1883,as_1883,country_obs_inf,10067,10067,9,2107,2115
+1.01277,"coals, culm, cinders, and shale",,CLOCKS,TON,1900,tn_1901,country_obs_inf,10076,9949,9,2362,2404
+1.0152,plumbago,,PAPER,TON,1887,as_1887,country_obs_inf,8148,8026,4,2063,2067
+1.0,plumbago,,PAPER,TON,1881,as_1881,country_obs_inf,7947,7947,4,873,876
+1.0,plumbago,,"PLATINA, WROUGHT AND UNWROUGHT",TON,1880,as_1880,country_obs_inf,7803,7803,4,1136,1139
+1.0,isinglass,,IRON,CWT,1881,as_1881,country_obs_inf,7273,7273,7,523,529
+1.01584,isinglass,,IRON,CWT,1882,as_1882,country_obs_inf,6478,6377,5,838,842
+1.0,plumbago,,"PLATINA, WROUGHT AND UNWROUGHT",TON,1878,as_1878,country_obs_inf,6056,6056,4,1269,1272
+1.0,isinglass,,IRON MANUFACTURES,CWT,1886,as_1886,country_obs_inf,5952,5952,7,1458,1465
+1.0,horns and hoofs,,HORS,TON,1880,as_1880,country_obs_inf,5763,5763,13,782,794
+1.0,plumbago,,"PLATINA, WROUGHT AND UNWROUGHT",TON,1879,as_1879,country_obs_inf,5610,5610,4,989,992
+0.99982,horns and hoofs,,HONEY,TON,1887,as_1887,country_obs_inf,5516,5517,14,1215,1229
+1.0,isinglass,,IRON AND STEEL,CWT,1879,as_1879,country_obs_inf,5446,5446,6,693,698
+1.0,isinglass,,IRON AND STEEL,CWT,1877,as_1877,country_obs_inf,5386,5386,6,789,794
+1.0,plumbago,,"PLATINA, WROUGHT AND UNWROUGHT",TON,1877,as_1877,country_obs_inf,5279,5279,4,1160,1163
+0.98727,horns and hoofs,,HAIR,TON,1881,as_1881,country_obs_inf,4885,4948,12,492,503
+1.0,isinglass,,IRON AND STEEL,CWT,1875,as_1875,country_obs_inf,4504,4504,5,745,749
+1.00283,isinglass,,IRON AND STEEL,CWT,1870,tn_1871,country_obs_inf,3540,3530,8,840,847
+0.99714,"unenumerated, unwrought",,METAL,TON,1894,as_1898,country_obs_inf,3141,3150,14,13322,13383
+1.0,turmeric,,TIN,TON,1870,tn_1871,country_obs_inf,2245,2245,5,1869,1873
+1.0,collodion,,COFFEE,GAL,1893,as_1893,country_obs,1942,1942,1,115,115
+1.0,collodion,,COFFEE,GAL,1897,as_1898,country_obs,1575,1575,2,26014,26019
+1.0,safflower,Dyeing or Tanning Stuffs,"DYE STUFFS, AND SUBSTANCES USED IN TANNING",CWT,1886,as_1886,country_obs_inf,1394,1394,1,797,797
+1.0,collodion,,COFFEE,GAL,1894,as_1898,country_obs,1270,1270,3,26011,26025
+1.00525,collodion,,COFFEE,GAL,1895,as_1898,country_obs,958,953,2,26012,26017
