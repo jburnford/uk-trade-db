@@ -1,6 +1,5 @@
 commodity,year,dropped_country,kept_country,qty,value
 "Flax, Dressed Or Undressed",1896,Russia,Russia,57095,1592081
-Hemp — Dressed Or Undressed,1893,Philippine And Ladrone Islands,Philippine Islands,36403,970166
 "Iron — Old, For Re-Manufacture",1880,United States Of America,United States Of America (Atlantic),197653,946172
 Butter,1896,United States Of America (Atlantic),United States Of America,141553,617525
 Wood And Timber — Teak,1884,Bombay,Bengal And Burmah,35498,514447
@@ -15,7 +14,7 @@ Nuts And Kernels — Seed,1895,United States Of America (Atlantic),United States
 Mares,1896,United States Of America (Atlantic),United States Of America,7692,225714
 "Zinc — Crude, In Cakes",1897,United States Of America (Atlantic),United States Of America,13207,211757
 Corn And Grain — Pease,1893,Chile,United States Of America (Atlantic),515325,170567
-Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1887,?,West Africa Settlements,14203,141174
+Nuts And Kernels — For Expressing Oil Therefrom,1887,?,West Africa Settlements,14203,141174
 "Zinc — Crude, In Cakes",1896,United States Of America (Atlantic),United States Of America,7949,133625
 Butter,1894,United States Of America (Atlantic),United States Of America,29996,125947
 Hay,1895,United States Of America (Atlantic),United States Of America,36176,122358
@@ -31,7 +30,8 @@ Myrabolams,1874,Bombay,Bombay,130465,85791
 Wood And Timber — Teak,1884,Burmah,Siam,4784,70318
 "Zinc — Crude, In Cakes",1893,United States Of America (Atlantic),United States Of America,4307,64117
 "Sugar — Unrefined : Cane, And Other Sorts",1884,British Possessions In Southafrica,British Possessions In South Africa,70922,61989
-Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1885,Islands In The Pacific Ex-Cept Fiji,Islands In The Pacific Ex Cept Fiji,3482,57567
+Metals And Ores — Pig,1877,United States Of America (Atlantic),United States Of America,2898,58942
+Nuts And Kernels — For Expressing Oil Therefrom,1885,Islands In The Pacific Ex-Cept Fiji,Islands In The Pacific Ex Cept Fiji,3482,57567
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1896,Australasia,South Australia,1180,55234
 Phosphate Of Lime And Rock,1893,France,France,34866,55036
 Tar,1897,Russia (Northern Ports),Russia,87595,53524
@@ -53,7 +53,6 @@ Wood And Timber — Mahogany,1895,French Possessions,Western Africa,3603,31476
 "Animals, Living — Stallions",1893,United States Of America (Atlantic),United States Of America,59,27185
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,Bombay,Bombay,651,25985
 "Copper — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots",1894,"Turkey, Asiatic",Turkey Asiatic,653,24467
-Hemp — Dressed Or Undressed,1893,Mauritius And Dependencies,Mauritius,975,23571
 Dye Woods — Unenumerated,1875,West Coast Of Africa Not Particularly Designated,West Coast Of Africa Not Particularly Designated,3555,23071
 Dye Woods — Unenumerated,1875,British East Indies,British East Indies,2572,22956
 Wood And Timber — Oak,1876,France,France,4854,22807
@@ -67,7 +66,7 @@ Hay,1896,United States Of America (Atlantic),United States Of America,5939,20477
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1895,Spain,Spain,175420,19437
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1894,France,France,172700,19064
 "Buttons And Studs, Not Of Metal",1882,France,France,224962,18675
-Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1885,British Possessions In Southafrica,British Possessions In South Africa,1403,18592
+Nuts And Kernels — For Expressing Oil Therefrom,1885,British Possessions In Southafrica,British Possessions In South Africa,1403,18592
 "Flax, Dressed Or Undressed",1892,Australasia,New Zealand,17443,18583
 Phosphate Of Lime And Rock,1893,Dutch West India Islands,Dutch West India Islands,5636,18471
 Wood And Timber — Mahogany,1896,Cuba And Porto Rico,Spanish West India Islands,2083,17460
@@ -85,13 +84,13 @@ Dye Woods — Unenumerated,1875,New Granada,New Granada,1823,14447
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,New South Wales,New South Wales,599,14315
 Wood And Timber — Teak,1877,Straits Settlements,Straits Settlements,1108,14292
 Wood And Timber — Teak,1879,Other Countries,Other Countries,1637,14215
-Hemp — Dressed Or Undressed,1896,Mauritius And Dependencies,Mauritius,767,13908
 Horns And Hoofs,1892,Cape Of Good Hope,Cape Of Good Hope,253,13095
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1894,Holland,Holland,153531,13055
+Wood And Timber — Mahogany,1897,Cuba And Porto Rico,Spanish West India Islands,1456,12646
 Yarn,1896,British East Indies,Bengal,1276913,12060
 Phosphate Of Lime And Rock,1893,British West India Islands,British West India Islands,7690,12005
 Horns And Hoofs,1892,New South Wales,New South Wales,501,11519
-Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1887,British Possessions In Southafrica,British Possessions In South Africa,851,11104
+Nuts And Kernels — For Expressing Oil Therefrom,1887,British Possessions In Southafrica,British Possessions In South Africa,851,11104
 Dye Woods — Unenumerated,1876,Central America,Central America,2009,10723
 Hemp — Dressed Or Undressed,1894,Strait Settlements,Straits Settlements,454,10712
 Dye Woods — Unenumerated,1875,Venezuela,Venezuela,1366,10430
@@ -111,6 +110,7 @@ Wood And Timber — Teak,1893,Siam,Siam,857,8856
 "Iron — Old, For Re-Manufacture",1878,United States Of America,United States Of America (Atlantic),1888,8548
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1895,Holland,Holland,62759,8329
 Rosin,1883,Belgium,France,16242,8082
+Metals And Ores — Pig,1882,United States Of America (Atlantic),United States Of America,542,7907
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1896,Holland,Holland,54166,7733
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1897,Denmark,Denmark,65633,7319
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1896,Denmark,Denmark,78846,7159
@@ -142,7 +142,7 @@ Plate Of Silver,1882,United States Of America (Atlantic),United States Of Americ
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,Victoria,Victoria,215,4901
 "Horns, Tips, And Pieces Of Horn, And Hoofs",1895,Argentine Republic,Argentine Republic,395,4832
 Glass — Common Bottles,1882,United States Of America,United States Of America (Pacific),10910,4813
-Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,1885,"Dutch Possessions In Theindian Seas, Other Thanjava",Dutch Possessions In The Indian Seas Other Than Java,291,4700
+Nuts And Kernels — For Expressing Oil Therefrom,1885,"Dutch Possessions In Theindian Seas, Other Thanjava",Dutch Possessions In The Indian Seas Other Than Java,291,4700
 Wood And Timber — Teak,1883,Holland,Holland,323,4564
 Myrabolams,1874,Bengal And Behar,Bengal And Be Mah,7930,4385
 Hemp — Dressed Or Undressed,1895,Strait Settlements,Straits Settlements,141,4290
@@ -162,7 +162,6 @@ Tar,1897,United States Of America (Atlantic),United States Of America,6603,3123
 Wax,1896,Zanzibar And Pemba,Eastern Coast Of Africa Zanzibar And Pemba,504,2895
 Rosin,1883,South Australia,Canada,8775,2768
 Oil — Palm,1896,Portuguese,Portuguese Possessions,3050,2740
-Margarine,1895,United States Of America (Atlantic),United States Of America,1203,2635
 Horns And Hoofs,1892,Queensland,Queensland,111,2622
 Wood And Timber — Teak,1883,British Possessions In South Africa,British Possessions In South Africa,152,2390
 "Nuts And Kernels — Fish, Sperm Or Head-Matter",1899,Victoria,Australasia,78,2330
@@ -240,7 +239,6 @@ Wood And Timber — Teak,1874,Other Countries,Other Countries,38,460
 Horns And Hoofs,1892,Burmah,Burmah,10,422
 Bones For Manure (Whether Burnt Or Not),1897,United States Of America (Atlantic),United States Of America,80,419
 Wood And Timber — Teak,1878,Straits Settlements,Straits Settlements,64,400
-Margarine,1896,United States Of America (Atlantic),United States Of America,239,370
 "Silver, Ore Of, Or Ore Of Which The Greater Part In Value Is Silver — Skins, Sheep, Undressed",1895,Egypt,Egypt,5220,356
 Fruit — Almonds,1898,Asiatic,Asiatic,161,345
 Woollen Yarn — For Fancy Purposes,1894,France,Other Foreign Countries,2716,342

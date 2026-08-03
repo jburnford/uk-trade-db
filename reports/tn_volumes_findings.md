@@ -64,16 +64,58 @@ Their origin-table density matches the volumes that are parsed. `tn_1901` is
   **second independent witness** for 1894 and 1894-98 — which matters directly,
   since rank 1 requires the same figure printed in two volumes and agreeing.
 
-## Not done — escalated
+## Done, and what it took
 
-Adding volumes to the country corpus **changes the vote** for every year they
-touch, so this is not a change to make unilaterally. Recorded here and put to the
-user.
+User authorised all four annual volumes. Parsing them naively **regressed the
+corpus**, and the two failures are worth recording because neither was obvious.
 
-Two risks worth stating before anyone runs it:
-1. The five-year comparative layout in `tn_1899`/`tn_1901` is the `feed_multiyear`
-   shape the parser handles for `as_1897-99`, but it has never been exercised on
-   these files.
-2. `tn_1901`'s 1896-99 columns overlap years already parsed from `as_*`. Where
-   they agree the rank improves; where they disagree the vote moves, and some
-   currently-exact cells could shift.
+**1. Overlapping years are destructive, not merely noisy.** `tn_1899` and
+`tn_1901` print five years per row, so admitting their full span delivered the
+same (commodity, country, year) twice with different provenance and the pipeline
+neither deduped nor arbitrated it. `Cotton — Raw` 1895 double-counted to **1.79x**
+its printed total and 1887 **lost all 23 of its cells**. Corpus-wide that run was
+438 cells better, 233 worse, **180 previously-exact cells broken**, and
+GBP-weighted agreement fell 51.9% -> 46.5%. The tn_ volumes are therefore admitted
+only for years outside the `as_*` span, i.e. **1870 and 1900** (`keep_row`).
+
+**2. Pass 1's vocabulary is corpus-wide, so a new volume re-parses the old ones.**
+With the year restriction in place `Cotton — Raw` was *still* broken across
+1880-1895 — years no tn row could reach. The cause is that pass 1 seeds a shared
+group/sub vocabulary that drives pass 2's header classification for **every**
+volume. Adding the tn volumes to that seed moved 93 payload cells the wrong way
+and broke 69 exact ones. Seeding the vocabulary from `as_*` only fixes it: the tn
+volumes are still parsed in pass 2, against the vocabulary the corpus already had.
+
+With both fixes, **zero pre-existing volumes change a single row** in either
+engine — the addition is arithmetically additive.
+
+## Result
+
+```
+                      before        after
+commodity-years        9,473        9,509
+exact01                3,589        3,704     (+115)
+                       37.9%        39.0%
+GBP within 0.1%        51.9%        51.9%
+GBP within 5%          68.9%        71.6%     (+2.7)
+nodata                 4,286        4,044     (-242)
+```
+
+Per-cell: **281 better, 19 worse**, 214 new cells (65 exact01), 178 gone.
+Chandra gains 32,015 rows, Infinity 30,808 — all in 1870 and 1900.
+
+Biggest single gains are the whole of **1900**, which had no origin data at all:
+Maize, Cotton Raw, Fir, Wool, Oxen, Wheat and Sugar all move off `nodata`.
+
+## Still open
+
+- **19 regressions, of which 16 were exact.** The material ones are `Wool — Sheep
+  Or Lambs'` **1893-96**, which move to `within5` at ~1.02 — a 2% over-count once
+  the second witness is admitted — and `Linen Yarn` 1873/1891/1893, which fall to
+  `nodata`. Both need a look; neither is large enough to outweigh +115.
+- **1866-1869 remain unreachable.** `tn_1871` is a single-year annual for 1870;
+  its country tables do not carry the four preceding years, so ~450 gap cells in
+  1866-69 still have no origin table in the corpus.
+- `tn_1895` and `tn_1899` contribute nothing under the year restriction (their
+  years are inside the `as_*` span). Admitting them as a genuine second witness
+  needs the overlap arbitration that failure 1 showed is missing.

@@ -14,7 +14,8 @@ import duckdb
 
 sys.path.insert(0, str(Path(__file__).parent))
 from parse_abstract import BASE
-from parse_country import build_vocab, bulk_insert, parse_volume_countries
+from parse_country import (build_vocab, bulk_insert, parse_volume_countries,
+                           volume_year, wanted_volume)
 from parse_infinity import pseudo_md
 
 
@@ -31,13 +32,16 @@ def main():
     vols = []
     all_seeds = []
     for vdir in sorted((BASE / 'raw_infinity').iterdir()):
-        if not vdir.name.startswith('as_') or (wanted and vdir.name not in wanted):
+        # same volume set and year convention as parse_country.py: the four
+        # tn_ ANNUAL statements carry country tables and are named for their
+        # publication year, one after the year they report.
+        if not wanted_volume(vdir.name) or (wanted and vdir.name not in wanted):
             continue
         rjs = list(vdir.rglob('result.json'))
         if not rjs:
             continue
         volume = vdir.name
-        year = int(volume[-4:])
+        year = volume_year(volume)
         md = pseudo_md(str(rjs[0]))
         with tempfile.NamedTemporaryFile('w', suffix='.md',
                                          delete=False) as tf:
@@ -49,7 +53,11 @@ def main():
                        if o[5] and o[5] != 'TOTAL' and ' : ' not in o[5])
         names = frozenset(n for n, c in freq.items() if c >= 4)
         vols.append((tmp, volume, year, names))
-        all_seeds.extend(seed)
+        # seed the corpus-wide vocabulary from `as_*` only — see the matching
+        # comment in parse_country.py: a new volume in pass 1 re-parses every
+        # other volume through the shared header classifier.
+        if volume.startswith('as_'):
+            all_seeds.extend(seed)
     group_vocab, sub_vocab = build_vocab(all_seeds)
     print(f'vocabulary: {len(group_vocab)} group names, '
           f'{len(sub_vocab)} sub-article names\n')

@@ -616,6 +616,38 @@ def is_year_column_table(piece, rows):
     return False
 
 
+# ---- which volumes carry country tables, and what year they are FOR -------
+# `tn_*` used to be skipped wholesale as "monthly volumes". That is true of
+# exactly two of the six. Their own title pages say so:
+#     tn_1872  "For each Month during the Year 1872"          -> monthly
+#     tn_1900  "For each Month during the Year 1900"          -> monthly
+#     tn_1871  "ANNUAL STATEMENT ... IN THE YEAR 1870"        -> annual, 1870
+#     tn_1895  "ANNUAL STATEMENT ... FOR THE YEAR 1894"       -> annual, 1894
+#     tn_1899  "ANNUAL STATEMENT ... 1898, COMPARED WITH THE FOUR PRECEDING"
+#     tn_1901  "ANNUAL STATEMENT ... 1900 COMPARED WITH THE FOUR PRECEDING
+#               YEARS. VOLUME I. (Abstract and Detailed Tables ...)"
+# The four annuals were already trusted as Tier-1 sources (parse_abstract
+# reads them); only the country side excluded them, which left 1870 and 1900
+# with no origin data at all — 1,121 of the 1,789 real gap cells.
+# See reports/tn_volumes_findings.md.
+MONTHLY = {'tn_1872', 'tn_1900'}
+
+
+def wanted_volume(name):
+    return (name.startswith('as_')
+            or (name.startswith('tn_') and name not in MONTHLY))
+
+
+def volume_year(volume):
+    """Data year of a volume. `as_1899` publishes 1899; the Trade-and-
+    Navigation annuals are named for their PUBLICATION year and report the
+    year before (`tn_1899` carries 1898 — consensus already dates it that
+    way). Multi-year comparative tables override this from their own printed
+    year sub-header via year_header(); this is the single-year fallback."""
+    y = int(volume[-4:])
+    return y - 1 if volume.startswith('tn_') else y
+
+
 def year_header(rows):
     """Late-era country tables (as_1897-99) carry a year sub-header row
     ('1893. 1894. 1895. 1896. 1897.' x2, for QUANTITIES then VALUE).
@@ -758,11 +790,36 @@ COLS = ('volume', 'flow', 'duty', 'article_group', 'article', 'country_raw',
         'row_seq')
 
 
+# The `as_*` annuals publish country tables for 1872-1899. The tn_ annuals
+# are admitted ONLY for years outside that span, i.e. 1870 and 1900.
+#
+# Admitting their overlapping years as well was tried (2026-08-03) and is
+# DESTRUCTIVE, not merely noisy. tn_1899 and tn_1901 print five years per row,
+# so the same (commodity, country, year) arrives twice with different
+# provenance, and the pipeline neither dedupes nor arbitrates it: `Cotton — Raw`
+# 1895 double-counted to 1.79x its printed total and 1887 lost all 23 of its
+# cells outright. Across the corpus that run was 438 cells better, 233 worse,
+# 180 previously-exact cells broken, and GBP-weighted agreement fell 51.9% ->
+# 46.5%. Restricted to the non-overlapping years the same volumes are purely
+# additive — no existing cell can move. See reports/tn_volumes_findings.md.
+AS_SPAN = (1872, 1899)
+
+
+def keep_row(volume, year):
+    if not volume.startswith('tn_'):
+        return True
+    return not (AS_SPAN[0] <= (year or 0) <= AS_SPAN[1])
+
+
 def bulk_insert(con, table, rows):
     """Append parsed rows in one shot. executemany binds row by row (~2s per
     thousand here — over ten minutes for a corpus pass), so hand DuckDB an
     Arrow-backed frame and let it scan that instead."""
     import pandas as pd
+    yi, vi = COLS.index('year'), COLS.index('volume')
+    rows = [r for r in rows if keep_row(r[vi], r[yi])]
+    if not rows:
+        return
     df = pd.DataFrame(rows, columns=COLS)      # noqa: F841 - read by DuckDB
     con.execute(f'INSERT INTO {table} SELECT * FROM df')
 
@@ -776,7 +833,7 @@ def main():
         unit VARCHAR, year INTEGER, quantity DOUBLE, value DOUBLE,
         consumption DOUBLE, duty_received DOUBLE, row_seq INTEGER)''')
     raws = sys.argv[1:] or sorted(
-        str(p) for p in (BASE / 'raw').iterdir() if p.name.startswith('as_'))
+        str(p) for p in (BASE / 'raw').iterdir() if wanted_volume(p.name))
     # pass 1 over ALL volumes: harvest country names (per volume) and the
     # corpus-wide group/sub vocabulary for pass 2's header classification
     vols = []
@@ -787,14 +844,23 @@ def main():
         if not mds:
             continue
         volume = rd.name
-        year = int(volume[-4:])
+        year = volume_year(volume)
         seed = []
         parse_volume_countries(mds[0], volume, year, seed)
         freq = Counter(o[5].casefold() for o in seed
                        if o[5] and o[5] != 'TOTAL' and ' : ' not in o[5])
         names = frozenset(n for n, c in freq.items() if c >= 4)
         vols.append((mds[0], volume, year, names))
-        all_seeds.extend(seed)
+        # The vocabulary is CORPUS-WIDE and drives pass 2's header
+        # classification for every volume, so seeding it from a newly added
+        # volume silently re-parses all the others. Admitting the tn_ annuals
+        # here moved 93 payload cells the wrong way and broke 69 that had been
+        # exact — `Cotton — Raw` lost eight years outright — while the tn rows
+        # themselves were confined to 1870 and 1900 and could not have touched
+        # them. Seed from the `as_*` volumes only: the tn_ volumes are still
+        # parsed in pass 2, against the same vocabulary the corpus already had.
+        if volume.startswith('as_'):
+            all_seeds.extend(seed)
     group_vocab, sub_vocab = build_vocab(all_seeds)
     print(f'vocabulary: {len(group_vocab)} group names, '
           f'{len(sub_vocab)} sub-article names\n')

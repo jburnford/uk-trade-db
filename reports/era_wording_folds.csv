@@ -1,4 +1,5 @@
 kept,folded_in,unit,head
+"Ammunition — Rockets And Other Combustibles For Purposes Of War, Explosives, Percussion Caps, And Ammunition Not Otherwise Enumerated Or Described","Ammunition — Rockets And Other Combustibles For Purposes Of War, Explosives, Percussion Caps, And Ammunition Unenumerated",Value,Ammunition
 "Animals, Living — Horses","Animals, Living — Horses : Geldings",Number,"Animals, Living"
 "Arms And Ammunition — Muskets, Rifles, Carbines, Fowling-Pieces,Or Guns Of Any Other Sort, Not Enumerated,And Pistols","Arms And Ammunition — Muskets, Rifles, Carbines, Fowling-Pieces, Or Guns Of Any Other Sort, Not Enumerated, And Parts Thereof And Pistols",?,Arms And Ammunition
 "Arms, Ammunition, And Military Stores — Cannon And Mortars, Of Brass, Not Mounted Nor Accompanied With Carriages","Arms, Ammunition, And Military Stores — Cannon And Mortars, Of Brass, Not Mounted Or Accompanied With Carriages",Cwt,"Arms, Ammunition, And Military Stores"
@@ -10,6 +11,7 @@ Asphalt Or Bitumen,"Asphalt, Or Bitumen Judaicum",Ton,(groupless)
 Bark,"Bark, For Tanning",Cwt,(groupless)
 Bark,Bark: For Tanning Or Dyeing,Cwt,(groupless)
 Bark — Of Other Sorts,Bark — Other Sorts Of Fresh Fish,Cwt,Bark
+Baskets,Baskets And Basketware,Value,(groupless)
 Beef — Fresh,Beef — Fresh Or Slightly Salted,Cwt,Beef
 Beer And Ale — Spruce,Beer And Ale — Malt And Spruce,Barrel,Beer And Ale
 Caoutchouc — West Africa,Caoutchouc — West Coast Of Africa (Foreign),?,Caoutchouc
@@ -20,34 +22,42 @@ Caoutchouc — West Africa,Caoutchouc — West Coast Of Africa (Foreign),?,Caout
                     (Including Copper Coin. To 
                     March)",Value,Copper
 "Copper — Old, Fit Only To Be Re-Manufactured",Copper — Old,Ton,Copper
+"Copper, Ore Of — Manufactures Of, Unenumerated","Copper, Ore Of — Manufactures Of, Unenumerated, Including Copper Plates Engraved And Copper Coin",Value,"Copper, Ore Of"
+"Copper, Ore Of — Unwrought, In Bars, Blocks Or Slabs, Cakes Or Ingots","Copper, Ore Of — Regulus And Precipitate : Unwrought, In Bars, Blocks, Slabs, Cakes, And Ingots",Ton,"Copper, Ore Of"
+Corn And Grain — From Russia,Corn And Grain — Barley: From Russia,?,Corn And Grain
 Cotton Manufactures — Cotton Predominating,Cotton Manufactures — Piece Goods Of Mixed Materials : Cotton Predominating : To United States Of America,?,Cotton Manufactures
 "Cotton Manufactures — Dye Stuffs, Unenumerated","Cotton Manufactures — Dye Stuffs, And Substances Used In Tanning; Unenumerated",Cwt,Cotton Manufactures
 "Cotton Manufactures — Piece Goods Of Mixed Materials, Cotton Predominating",Cotton Manufactures — Cotton Predominating,?,Cotton Manufactures
 "Cotton Manufactures — Piece Goods, Plain",Cotton Manufactures — Piece Goods,Yard,Cotton Manufactures
 Cotton Manufactures — To United States Of America,Cotton Manufactures — To United States,?,Cotton Manufactures
 Cotton — Broken Up Or To Be Broken Up,"Cotton — Ships, Foreign, Wrecked, Broken Up, Or To Be Broken Up",Value,Cotton
+"Cotton — Furs, Unenumerated","Cotton — Furs, Seal Skins",Number,Cotton
+"Cotton — Manufactures Of Skins And Furs, Including Rugs","Cotton — Manufactures Of Skins And Furs, Including Skin Rugs",Value,Cotton
 Cotton — Other Kinds Of,"Cotton — Manufactures, Ribbons, Other Kinds",Value,Cotton
 "Cotton — Piece Goods Of Other Countries, Other Than Muslins",Cotton — Piece Goods Other Than Muslins,?,Cotton
 "Dyeing Or Tanning Stuffs — Madder, Madder Root, Garanoine, And Munjeet",Dyeing Or Tanning Stuffs — Madder Root And Munjeet,Cwt,Dyeing Or Tanning Stuffs
+"Eggs — For Beds, In Beds Or Otherwise",Eggs — In Beds Or For Beds,Cwt,Eggs
 "Embroidery And Needlework — Extracts, Of Other Sorts, Un- Enumerated",Embroidery And Needlework — Extracts,Value,Embroidery And Needlework
 Fish,"Fish, Of All Sorts",Cwt,(groupless)
 Fish — Fresh (Not Of British Taking),"Fish — Fresh (Not Of British Taking), Other Sorts",Cwt,Fish
 Fruit — Almonds,Fruit — Almonds Of All Kinds,Cwt,Fruit
+Fruit — Almonds,"Fruit — Almonds, Bitter",Cwt,Fruit
 Fruit — Figs,Fruit — Figs And Fig Cake,Cwt,Fruit
 "Fruit — Plums, Dried Or Preserved","Fruit — Plums, Dried Or Preserved, Not Otherwise Described",Cwt,Fruit
-Furniture And Hardwoods: Boxwood,Furniture And Hardwoods,Ton,(groupless)
+"Glass — Flint, Plain, Cut, Or Ornamented (Including Bottles And Other Manufactures Of Flint Glass)","Glass — Flint Glass, Plain, Including Bottles",?,Glass
 "Glass — Plate, Rough Or Silvered (Including Looking Glasses Or Mirrors)","Glass — Plate, Rough Or Silvered",?,Glass
 "Glass, Of All Kinds",Glass,Cwt,(groupless)
 Hats Or Bonnets,Hats,?,(groupless)
+Hats Or Bonnets — Tow Or Codilla Of,Hats Or Bonnets — Tow Or Codilla Of Hemp,Cwt,Hats Or Bonnets
 Hemp — Dressed Or Undressed,Hemp — Dressed,Cwt,Hemp
 Horse,Horse Hair,Cwt,(groupless)
 Iron,Iron And Steel,?,(groupless)
-"Iron — Old Broken, And Old Cast Iron And Steel",Iron — Old Broken Iron And Steel,Ton,Iron
+"Iron — Bars, Unwrought",Iron — Unwrought,?,Iron
 Iron — Ore Of,Iron — Ore Of (Including Chrome),Ton,Iron
 "Iron — Sewing Machines, And Parts Thereof",Iron — Sewing Machines,Value,Iron
-Ivory,"Ivory : Teeth, Elephants', Sea-Cows', Or Walrus' ” Vegetable",?,(groupless)
 "Ivory — Teeth, Elephants', Sea Cow, And Sea Horse","Ivory — Teeth, Elephants', Sea Cow, Sea Horse, Or Sea Morsé",Cwt,Ivory
 Ivory — West Africa,Ivory — West Coast Of Africa,?,Ivory
+Jewellery,"Jewellery, Not Otherwise Enumerated",Value,(groupless)
 Lace,"Lace, Of All Kinds",Value,(groupless)
 Linen — Manufactures,"Linen — Manufactures, Including Man- Ufactures Of Linen Mixed With Cotton",Value,Linen
 Machinery And Mill Work — Steam Engines Or Parts Of Steam Engines: Agricultural,Machinery And Mill Work — Agricultural,?,Machinery And Mill Work
@@ -57,34 +67,38 @@ Manures — Bones For Manure,"Manures — Bones Of Animals, And Fish For Manure 
 "Meat, Unenumerated — Meat, Unenumeratedpreserved, Otherwise Than By Salting","Meat, Unenumerated — Salting",Cwt,"Meat, Unenumerated"
 "Metal — Unenumerated, Old, Fit Only To Be Re-Manufactured","Metal — Wrought Or Manufactured : Old, Fit Only To Be Re-Manufactured",Ton,Metal
 Nuts And Kernels — .. West Africa,Nuts And Kernels — From West Coast Of Africa,?,Nuts And Kernels
+Nuts And Kernels — For Expressing Oil Therefrom,Nuts And Kernels — Commonly Used For Expressing Oil Therefrom,Ton,Nuts And Kernels
 Nuts And Kernels — From West Coast Of Africa (Foreign),Nuts And Kernels — From West Africa,?,Nuts And Kernels
 Oil — Fish : Train Or Blubber,Oil — Train Or Blubber,Tun,Oil
-"Oil — Fish: Sperm, Or Head Matter","Oil — Fish, Train, Or Blubber : Sperm, Or Head Matter",Tun,Oil
+"Oil — Fish: Sperm, Or Head Matter","Oil — Fish, Train, Blubber, Sperm, Or Head Matter",Tun,Oil
 "Oil — Fish: Sperm, Or Head Matter","Oil — Sperm, Or Head Matter",Tun,Oil
 Oil — Spermaceti Or Head Matter,"Oil — Fish: Spermaceti, Or Head Matter",Tun,Oil
+Oleo-Margarine,"Oleo-Margarine, Or Oleo-Oil",Cwt,(groupless)
 "Onions — One, Unenumerated","Onions — Raw · One, Unenumerated",?,Onions
 "Paraffine — Perfumery, And Articles Used Inthe Manufacture Thereof","Paraffine — Perfumery, And Articles Used Inthe Manufacture Thereof, Exceptperfumed Spirits",?,Paraffine
 Petroleum,"Petroleum, Illuminating",Gallon,(groupless)
-Pictures,"Pictures, Oil Paintings",Number,(groupless)
 Pitch,Pitch And Tar :Pitch,Cwt,(groupless)
-Plate Of Silver,Plate,Oz Troy,(groupless)
 "Pork, Salted And Fresh",Pork,Cwt,(groupless)
 Poultry And Game,"Poultry And Game (Alive Or Dead), Including Rabbits",Value,(groupless)
 Poultry And Game,Poultry And Game (Including Rabbits),Value,(groupless)
 Poultry And Game,"Poultry And Game, Alive Or Dead",Value,(groupless)
-Pyrites Of Iron Or Copper,Pyrites Of Iron Or Copper Or Sulphur Ore,Ton,(groupless)
+Pyrites Of Iron Or Copper,"Pyrites Of Iron Or Copper, Or Sulphur Ore",Ton,(groupless)
 Saltpetre,Saltpetre (Nitrate Of Potash),Cwt,(groupless)
 "Sauces Or Condiments, Unenumerated","Sauces Or Condiments, Unenumerated (Including Table Salt)",Lb,(groupless)
+Seeds — Clover And Grass,Seeds — Clover,Cwt,Seeds
 "Silk Manufactures — Broad Stuffs : Silk Or Satin : Velvet, Plain Or Figured","Silk Manufactures — Silk Or Satin : Velvet, Plain Or Figured",Value,Silk Manufactures
+"Silk Manufactures — Handkerchiefs, Scarfs, And Shawls","Silk Manufactures — China Crape Shawls, Scarfs, Handkerchiefs, And Pieces",?,Silk Manufactures
 "Silk Manufactures — Silver, Ore Of, Or Ore Of Which The Greater Partof The Value Is Silver",Silk Manufactures — In Value Is Silver,?,Silk Manufactures
 "Silk Manufactures — Velvet, Plain Or Figured","Silk Manufactures — Broad Stuffs : Silk Or Satin : Velvet, Plain Or Figured",Value,Silk Manufactures
-Silk — Manufactures,"Silk — Manufactures, Broad Stuffs, Velvet, Plain Or Figured, Wholly Of Silk",Value,Silk
+Silk — Manufactures,"Silk — Manufactures Of Silk Or Of Silk Mixed With Other Materials, Unenumerated",Value,Silk
+Silk — Manufactures,"Silk — Manufactures Of Silk, Unenumerated, Mixed Or Not With Other Materials",Value,Silk
+"Silk — Manufactures, Broad Stuffs, Velvet, Plain Or Figured, Wholly Of Silk","Silk — Velvet, Plain Or Figured",Value,Silk
 "Skins, Furs, And Pelts — Furs","Skins, Furs, And Pelts — Unenumerated, Being Furs",Number,"Skins, Furs, And Pelts"
 "Skins, Furs, And Pelts — Goat And Kid, Tanned, Tawed, Or Dressed","Skins, Furs, And Pelts — Goat, Tanned, Tawed, Or Dressed",Number,"Skins, Furs, And Pelts"
-"Skins, Furs, And Pelts — Sheep And Lamb, Tanned, Tawed, Or Dressed","Skins, Furs, And Pelts — Sheep, Tanned, Tawed, Or Dressed",Number,"Skins, Furs, And Pelts"
+"Skins, Furs, And Pelts — Tanned, Tawed, Or Dressed","Skins, Furs, And Pelts — Kid, Tanned, Tawed, Or Dressed",?,"Skins, Furs, And Pelts"
 "Skins, Furs, And Pelts — Unenumerated : Undressed","Skins, Furs, And Pelts — Goat And Kid, Undressed",Number,"Skins, Furs, And Pelts"
 "Skins, Furs, And Pelts — Unenumerated, Not Being Furs, Dressed And Undressed","Skins, Furs, And Pelts — Unenumerated, Not Being Furs, Undressed",Number,"Skins, Furs, And Pelts"
-Slates,"Slates, For Roofing Purposes",Number,(groupless)
+Slates,Slates For Roofing Purposes,Number,(groupless)
 "Spirits — Not Tested, For Ascertaining The Strength","Spirits — Liqueurs, Cordials, &C., Not Tested, For Ascertaining The Strength",Gallon,Spirits
 Succades,Succades (Including All Fruits And Vegetables Preserved In Sugar),Cwt,(groupless)
 Succades,Succades (Including Fruits And Vegetables Pre- Served In Sugar),Cwt,(groupless)
@@ -95,9 +109,9 @@ Tallow And Stearine,Tallow,Cwt,(groupless)
 Tea — British Indies,Tea — From British East Indies,?,Tea
 "Tobacco — Manufactured, In Bond","Tobacco — Cavendish, Manufactured, In Bond",?,Tobacco
 Tobacco — Other Sorts,Tobacco — Other Sorts (Including Cigarettes),Lb,Tobacco
+Toys,Toys And Games,Value,(groupless)
 Toys — Not Containing Spirit,"Toys — Varnish, Not Containing Spirit",Value,Toys
 "Unenumerated, Not Sweetened","Unenumerated, Not Sweetened Or Mixed",Proof Gallon,(groupless)
-Waste Of,Waste Of (Raw And Yarn),Lb,(groupless)
 Watches,"Watches, And Parts Thereof",Value,(groupless)
 Wax,Wax (Including Ozokerit And Earth Wax),Cwt,(groupless)
 Whalebone,Whalebone (Including Finners),Cwt,(groupless)
@@ -105,9 +119,10 @@ Wine — White,"Wine — White, In Bottles : Sparkling : Burgundy",Gallon,Wine
 Wood And Timber — Furniture And Hardwoods,Wood And Timber — Furniture Woods And Hardwoods : Unenumerated,Ton,Wood And Timber
 Wood And Timber — Furniture And Hardwoods,"Wood And Timber — Furniture, Hardwoods, And Veneers",Ton,Wood And Timber
 "Wood And Timber — House Frames, Fittings, And Joiners' Work","Wood And Timber — House Frames, Fittings, Joiners' And Cabinet Work",Value,Wood And Timber
-Wood And Timber — Mahogany,Wood And Timber — Furniture Woods: Mahogany,Ton,Wood And Timber
+"Wood And Timber — House Frames, Fittings, And Joiners' Work","Wood And Timber — Manufactures Of: House Frames,   Fittings, Joiners' And Cabinet   Work",Value,Wood And Timber
+Wood And Timber — Mahogany : Unenumerated,Wood And Timber — Furniture Woods: Mahogany,Ton,Wood And Timber
 Wood And Timber — Sawn Or Split,"Wood And Timber — Sawn Or Split, Planed Or Dressed, Fir",Load,Wood And Timber
-"Wool — Other Sorts, Including Foreign, Dressed In The United Kingdom, And Flocks And Ragwool",Wool — Other Sorts,?,Wool
+Wood And Timber — Staves,"Wood And Timber — Staves, Of All Dimensions",Load,Wood And Timber
 Woollen Yarn,"Woollen, Yarn, Of All Kinds",Lb,(groupless)
 Woollen Yarn — For Fancy Purposes,"Woollen Yarn — For Fancy Purposes, Including Berlin Wool And Zephyr Yarn",Lb,Woollen Yarn
 Woollen Yarn — For Weaving,"Woollen Yarn — For Weaving, Mixed Or Not With Silk",Lb,Woollen Yarn
