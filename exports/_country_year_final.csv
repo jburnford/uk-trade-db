@@ -58480,7 +58480,6 @@ DRUGS,Opium,united states of america,Lbs,import,1895,890.0,410.0,consensus,B,B,2
 "DYE STUFFS (OTHER THAN DYE WOODS), AND SUBSTANCES USED IN TANNING OR DYEING",Bark,other foreign countries,Cwts,import,1895,425.0,340.0,consensus,B,B,2,2
 "DYE STUFFS (OTHER THAN DYE WOODS), AND SUBSTANCES USED IN TANNING OR DYEING",Bark,natal,Cwts,import,1895,86276.0,41751.0,consensus,B,B,2,2
 "DYE STUFFS (OTHER THAN DYE WOODS), AND SUBSTANCES USED IN TANNING OR DYEING",Bark,australasia,Cwts,import,1895,182929.0,88098.0,consensus,B,B,2,2
-"DYE STUFFS, AND SUBSTANCES USED IN TANNING",Cutch and Gambier,other foreign countries,Tons,import,1895,127.0,2622.0,consensus,B,B,2,2
 "DYE STUFFS, AND SUBSTANCES USED IN TANNING",Aniline,germany,Value,import,1895,47315.0,47315.0,consensus,B,B,2,2
 "DYE STUFFS, AND SUBSTANCES USED IN TANNING",Aniline,holland,Value,import,1895,272685.0,272685.0,consensus,B,B,2,2
 "DYE STUFFS, AND SUBSTANCES USED IN TANNING",Aniline,belgium,Value,import,1895,53750.0,53750.0,consensus,B,B,2,2
@@ -59042,7 +59041,6 @@ MANURES,Guano,belgium,Tons,import,1895,243.0,2468.0,consensus,B,A,2,1
 MANURES,Guano,spanish west indies,Tons,import,1895,1400.0,4200.0,consensus,B,B,2,2
 MANURES,Guano,peru,Tons,import,1895,29560.0,260901.0,consensus,B,A,2,1
 MANURES,Guano,other foreign countries,Tons,import,1895,120.0,701.0,consensus,B,B,2,2
-MANURES,Guano,other british possessions,Tons,import,1895,1078.0,2666.0,consensus,B,B,2,2
 MANURES,Phosphate of Lime and Rock,holland,,import,1895,4762.0,6034.0,consensus,B,B,2,2
 MANURES,Phosphate of Lime and Rock,belgium,,import,1895,68894.0,102535.0,consensus,B,B,2,2
 MANURES,Phosphate of Lime and Rock,france,,import,1895,33569.0,57691.0,consensus,B,B,2,2
@@ -66120,7 +66118,6 @@ PLATE,"Of Silver, gilt or ungilt",australasia,Ozs. troy,import,1894,110.0,100.0,
 PLATE,"Of Silver, gilt or ungilt",other british possessions,Ozs. troy,import,1894,1289.0,741.0,consensus,B,B,2,2
 PLATE,"Of Silver, gilt or ungilt",australasia,Ozs. troy,import,1895,195.0,35.0,consensus,B,B,2,2
 PLATE,"Of Silver, gilt or ungilt",france,Ozs. troy,import,1896,9593.0,3540.0,consensus,B,A,2,1
-PLATE,"Of Silver, gilt or ungilt",british east indies,Ozs. troy,import,1897,1239.0,254.0,consensus,B,A,2,1
 PLATED AND GILT WARE,,france,Value,import,1895,1526.0,1526.0,consensus,B,B,2,2
 PLATED AND GILT WARE,,united states of america,Value,import,1895,2149.0,2149.0,consensus,B,B,2,2
 PLATED AND GILT WARE,,france,Value,import,1897,2102.0,2102.0,consensus,B,B,2,2
@@ -78416,7 +78413,6 @@ MEAT,Other Sorts,other british possessions,Cwts,import,1899,11.0,41.0,consensus,
 METAL,"Leaf, not Gold",germany,Packets,import,1899,36075.0,10782.0,consensus,B,C,2,3
 METAL,"Leaf, not Gold",holland,Packets,import,1899,75010.0,12523.0,consensus,B,C,2,3
 METAL,"Leaf, not Gold",belgium,Packets,import,1899,6664.0,342.0,consensus,B,C,2,3
-METAL,"Unenumerated, Unwrought",germany,Tons,import,1895,197.0,19239.0,consensus,B,B,2,2
 METAL,"Unenumerated, Unwrought",belgium,Tons,import,1895,79.0,11106.0,consensus,B,B,2,2
 METAL,"Unenumerated, Unwrought",france,Tons,import,1895,284.0,5983.0,consensus,B,C,2,3
 METAL,"Unenumerated, Unwrought",japan,Tons,import,1895,40.0,727.0,consensus,B,B,2,2
@@ -106019,6 +106015,10 @@ JUTE,Boots and Shoes,Australasia: New South Wales,Dozen Pairs,import,1883,29.0,1
 JUTE,Boots and Shoes,British North America,Dozen Pairs,import,1883,3080.0,6706.0,human,B,B,2,2
 JUTE,Boots and Shoes,United States of America,Dozen Pairs,import,1883,331.0,1400.0,human,B,B,2,2
 JUTE,Boots and Shoes,Other Countries,Dozen Pairs,import,1883,77.0,213.0,human,B,B,2,2
+METAL,"Unenumerated, Unwrought",Germany,Tons,import,1895,107.0,,human,B,B,2,2
+MANURES,Guano,Other British Possessions,Tons,import,1895,795.0,,human,B,B,2,2
+"DYE STUFFS, AND SUBSTANCES USED IN TANNING",Cutch and Gambier,Other Foreign Countries,Tons,import,1895,96.0,,human,B,B,2,2
+PLATE,"Of Silver, gilt or ungilt",British East Indies,Ozs. troy,import,1897,1320.0,,human,B,B,2,2
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
