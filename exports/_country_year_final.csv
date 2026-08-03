@@ -26131,23 +26131,9 @@ LACE AND ARTICLES THEREOF,"Varnished, Japanned, or Enamelled",france,,import,188
 LACE AND ARTICLES THEREOF,"Varnished, Japanned, or Enamelled",turkey,,import,1883,190.0,50.0,consensus,B,B,2,2
 LACE AND ARTICLES THEREOF,"Varnished, Japanned, or Enamelled",canada,,import,1883,6868.0,1151.0,consensus,B,B,2,2
 LACE AND ARTICLES THEREOF,"Varnished, Japanned, or Enamelled",united states of america,,import,1883,83387.0,19377.0,consensus,B,B,2,2
-JUTE,Boots and Shoes,holland,,import,1883,2100.0,10113.0,consensus,B,C,2,3
-JUTE,Boots and Shoes,belgium,,import,1883,78.0,85585.0,consensus,B,C,2,3
-JUTE,Boots and Shoes,channel islands,,import,1883,1.0,81253.0,consensus,B,C,2,3
-JUTE,Boots and Shoes,france,,import,1883,2393.0,2327.0,consensus,B,C,2,3
-JUTE,Boots and Shoes,turkey,,import,1883,6355.0,233038.0,consensus,B,C,2,3
-JUTE,Boots and Shoes,australasia new south wales,,import,1883,30.0,119.0,consensus,B,C,2,3
-JUTE,Boots and Shoes,canada,,import,1883,3911.0,100.0,consensus,B,C,2,3
-JUTE,Boots and Shoes,united states of america,,import,1883,912.0,6706.0,consensus,B,C,2,3
 JUTE,Boots and Shoes : Unenumerated,norway,Value,import,1883,108.0,108.0,consensus,B,B,2,2
 JUTE,Boots and Shoes : Unenumerated,denmark,Value,import,1883,109.0,109.0,consensus,B,B,2,2
-JUTE,Boots and Shoes : Unenumerated,germany,Value,import,1883,236.0,236.0,consensus,B,B,2,2
-JUTE,Boots and Shoes : Unenumerated,holland,Value,import,1883,22705.0,22705.0,consensus,B,B,2,2
-JUTE,Boots and Shoes : Unenumerated,belgium,Value,import,1883,119162.0,119162.0,consensus,B,B,2,2
 JUTE,Boots and Shoes : Unenumerated,british possessions in south africa,Value,import,1883,48308.0,48308.0,consensus,B,B,2,2
-JUTE,Boots and Shoes : Unenumerated,canada,Value,import,1883,198.0,198.0,consensus,B,B,2,2
-JUTE,Boots and Shoes : Unenumerated,united states of america,Value,import,1883,931.0,931.0,consensus,B,B,2,2
-JUTE,Boots and Shoes : Unenumerated,other countries,Value,import,1883,19388.0,19388.0,consensus,B,B,2,2
 LINEN,YARN,norway,,import,1883,112.0,8.0,consensus,B,B,2,2
 LINEN,YARN,holland,,import,1883,600.0,30.0,consensus,B,B,2,2
 LINEN,YARN,belgium,,import,1883,5223321.0,276030.0,consensus,B,B,2,2
@@ -84282,8 +84268,6 @@ LEAD,Dressed,canada,,import,1883,779321.0,57326.0,consensus,C,C,3,3
 LEAD,Dressed,united states of america,,import,1883,7858956.0,533419.0,consensus,C,C,3,3
 LEAD,Dressed,other countries,,import,1883,5183.0,513.0,consensus,C,C,3,3
 LACE AND ARTICLES THEREOF,"Varnished, Japanned, or Enamelled",russia,,import,1883,11088.0,9725.0,consensus,C,B,3,2
-JUTE,Boots and Shoes,other countries,Value,import,1883,1400.0,1400.0,consensus,C,C,3,3
-JUTE,Boots and Shoes : Unenumerated,france,Value,import,1883,35762.0,35762.0,consensus,C,C,3,3
 LINEN,YARN,germany,,import,1883,92658.0,1724.0,consensus,C,B,3,2
 MANURES,Unenumerated,sweden,,import,1883,60.0,323.0,consensus,C,C,3,3
 MANURES,Unenumerated,norway,,import,1883,13.0,68.0,consensus,C,C,3,3
@@ -99411,6 +99395,15 @@ DRUGS,Opium,Other Foreign Countries,Lbs,import,1890,5834.0,3315.0,human,B,C,2,3
 DRUGS,Opium,British East Indies,Lbs,import,1890,9223.0,4992.0,human,B,C,2,3
 DRUGS,Opium,Other British Possessions,Lbs,import,1890,725.0,438.0,human,B,C,2,3
 CAOUTCHOUC,Manufactures of,Germany,Lbs,import,1898,2010560.0,,human,B,B,2,2
+JUTE,Boots and Shoes,Germany,Dozen Pairs,import,1883,3766.0,10113.0,human,B,B,2,2
+JUTE,Boots and Shoes,Holland,Dozen Pairs,import,1883,23321.0,85585.0,human,B,B,2,2
+JUTE,Boots and Shoes,Belgium,Dozen Pairs,import,1883,38203.0,81253.0,human,B,B,2,2
+JUTE,Boots and Shoes,Channel Islands,Dozen Pairs,import,1883,161.0,2327.0,human,B,B,2,2
+JUTE,Boots and Shoes,Turkey,Dozen Pairs,import,1883,250.0,119.0,human,B,B,2,2
+JUTE,Boots and Shoes,Australasia: New South Wales,Dozen Pairs,import,1883,29.0,100.0,human,B,B,2,2
+JUTE,Boots and Shoes,British North America,Dozen Pairs,import,1883,3080.0,6706.0,human,B,B,2,2
+JUTE,Boots and Shoes,United States of America,Dozen Pairs,import,1883,331.0,1400.0,human,B,B,2,2
+JUTE,Boots and Shoes,Other Countries,Dozen Pairs,import,1883,77.0,213.0,human,B,B,2,2
 "CARDS, PLAYING",Geneva,Holland,Proof Gallons,import,1872,299805.0,55027.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Other Countries,Proof Gallons,import,1872,5861.0,1358.0,infonly,C,C,3,3
 "CARDS, PLAYING",Geneva,Germany,Proof Gallons,import,1872,620901.0,55746.0,infonly,C,C,3,3
@@ -127509,3 +127502,4 @@ SUGAR,Unrefined of all Kinds,British Guiana,Cwts.,import,1874,1109528.0,1396041.
 SUGAR,Unrefined of all Kinds,British Honduras,Cwts.,import,1874,22813.0,21662.0,human,C,C,3,3
 SUGAR,Unrefined of all Kinds,Other Countries,Cwts.,import,1874,31437.0,32654.0,human,C,C,3,3
 SUGAR,Unrefined,Other Countries,Cwts.,import,1874,31437.0,32654.0,human,C,C,3,3
+JUTE,Boots and Shoes,France,Dozen Pairs,import,1883,53840.0,233038.0,human,C,B,3,2
