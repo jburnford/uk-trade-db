@@ -1228,6 +1228,60 @@ def main():
                 if fuzzy_same(s1, s2):
                     merged_into[s2] = s1
     n_fuzzy = len(merged_into)
+
+    # ---- report every fuzzy merge, and FLAG the ones that cannot be OCR ----
+    # MANUFACTURED/MANUFACTURES (Cork's national line inside Caoutchouc) was
+    # the fourth false pair found one commodity at a time. The discriminator
+    # that would have caught all four without reading a page: a genuine OCR
+    # variant is the SAME PRINTED LINE read two ways, so where both spellings
+    # carry a Tier-1 figure for the same year and unit the two figures must
+    # AGREE. Two different commodities disagree — Cork printed 9,055,694 for
+    # 1892 where Caoutchouc printed 3,448,727. Report-only: nothing here
+    # changes what merges. Conflicts are candidates for FALSE_PAIRS, to be
+    # adjudicated against the page, not applied automatically.
+    def _t1_by_unit(sig):
+        out = {}
+        for u, rows in (comms[sig]['c'].get(TK) or {}).items():
+            for r in rows:
+                if r[1]:
+                    out.setdefault((u, r[0]), r[1])
+        return out
+
+    fuzzy_rows = []
+    for src, dst in merged_into.items():
+        a, b = _t1_by_unit(dst), _t1_by_unit(src)
+        shared = sorted(set(a) & set(b))
+        bad = [(u, y, a[(u, y)], b[(u, y)]) for u, y in shared
+               if max(a[(u, y)], b[(u, y)])
+               and abs(a[(u, y)] - b[(u, y)])
+               > 0.01 * max(a[(u, y)], b[(u, y)])]
+        diff = sorted(set(dst) ^ set(src))
+        worst = max(bad, key=lambda r: abs(r[2] - r[3]) / max(r[2], r[3]),
+                    default=None)
+        fuzzy_rows.append({
+            'conflict_years': len(bad),
+            'shared_years': len(shared),
+            'kept': comms[dst]['labels'].most_common(1)[0][0],
+            'merged_in': comms[src]['labels'].most_common(1)[0][0],
+            'differing_tokens': ' / '.join(diff),
+            'worst_unit': worst[0] if worst else '',
+            'worst_year': worst[1] if worst else '',
+            'kept_t1': f'{worst[2]:,.0f}' if worst else '',
+            'merged_t1': f'{worst[3]:,.0f}' if worst else '',
+            'kept_gbp': round(comms[dst]['v']),
+            'merged_gbp': round(comms[src]['v'])})
+    fuzzy_rows.sort(key=lambda r: (-r['conflict_years'],
+                                   -(r['kept_gbp'] + r['merged_gbp'])))
+    with open(BASE / 'reports' / 'fuzzy_merges.csv', 'w', newline='') as f:
+        w = csv.DictWriter(f, fieldnames=list(fuzzy_rows[0])) \
+            if fuzzy_rows else None
+        if w:
+            w.writeheader()
+            w.writerows(fuzzy_rows)
+    n_conf = sum(1 for r in fuzzy_rows if r['conflict_years'])
+    print(f'  fuzzy merges: {n_fuzzy} ({n_conf} with Tier-1 CONFLICTS) '
+          f'-> reports/fuzzy_merges.csv')
+
     for src, dst in merged_into.items():
         d, s = comms[dst], comms.pop(src)
         d['v'] += s['v']
