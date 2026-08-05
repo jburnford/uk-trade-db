@@ -6,6 +6,7 @@ Tallow And Stearine,pipeline,1895,New South Wales,New South Wales,colony,New Sou
 Tallow And Stearine,pipeline,1894,New South Wales,New South Wales,colony,New South Wales,matched,853559.0,1099507.0
 Tallow And Stearine,gold,1872,Australia,Australia,colony,Australia,matched,505023.0,1041992.0
 Tallow And Stearine,pipeline,1872,Australia,Australia,colony,Australia,matched,505023.0,1041992.0
+Tallow And Stearine,gold,1870,Australia,Australia,colony,Australia,matched,490695.0,1022924.0
 Tallow And Stearine,gold,1881,Australasia,Australasia,country,Australasia,matched,598770.0,1021384.0
 Tallow And Stearine,pipeline,1881,Australasia,Australasia,country,Australasia,matched,598770.0,1021384.0
 Tallow And Stearine,gold,1873,United States of America,United States Of America,country,United States Of America,matched,493138.0,1012102.0
@@ -36,8 +37,11 @@ Tallow And Stearine,gold,1890,Australasia,Australasia,country,Australasia,matche
 Tallow And Stearine,pipeline,1890,Australasia,Australasia,country,Australasia,matched,591387.0,720833.0
 Tallow And Stearine,gold,1890,United States of America,United States Of America,country,United States Of America,matched,588221.0,717383.0
 Tallow And Stearine,pipeline,1890,United States Of America,United States Of America,country,United States Of America,matched,588221.0,717383.0
+Tallow And Stearine,pipeline,1900,United States Of America,United States Of America,country,United States Of America,matched,505628.0,702136.0
+Tallow And Stearine,gold,1900,United States of America Atlantic Ports,United States Of America (Atlantic),port,United States Of America,rolled_up,508923.0,700531.0
 Tallow And Stearine,gold,1872,United States of America,United States Of America,country,United States Of America,matched,328061.0,698918.0
 Tallow And Stearine,pipeline,1872,United States Of America,United States Of America,country,United States Of America,matched,328061.0,698918.0
+Tallow And Stearine,gold,1870,Argentine Confederation ,Argentine Confederation,country,Argentine Confederation,matched,304560.0,673260.0
 Tallow And Stearine,gold,1883,United States of America,United States Of America,country,United States Of America,matched,336353.0,671325.0
 Tallow And Stearine,pipeline,1883,United States Of America,United States Of America,country,United States Of America,matched,336353.0,671325.0
 Tallow And Stearine,gold,1897,New South Wales,New South Wales,colony,New South Wales,matched,695473.0,661202.0
@@ -63,6 +67,7 @@ Tallow And Stearine,pipeline,1873,Australia,Australia,colony,Australia,matched,2
 Tallow And Stearine,gold,1882,United States of America,United States Of America,country,United States Of America,matched,291975.0,571748.0
 Tallow And Stearine,pipeline,1882,United States Of America,United States Of America,country,United States Of America,matched,291975.0,571748.0
 Tallow And Stearine,gold,1898,Australasia New South Wales,New South Wales,colony,New South Wales,matched,503966.0,566676.0
+Tallow And Stearine,gold,1900,Australasia New South Wales,New South Wales,colony,New South Wales,matched,436519.0,565436.0
 Tallow And Stearine,gold,1889,Australasia,Australasia,country,Australasia,matched,431169.0,551072.0
 Tallow And Stearine,pipeline,1889,Australasia,Australasia,country,Australasia,matched,431169.0,551072.0
 Tallow And Stearine,gold,1876,Australia,Australia,colony,Australia,matched,267932.0,546762.0
@@ -73,6 +78,7 @@ Tallow And Stearine,gold,1898,United States of America Atlantic Ports,United Sta
 Tallow And Stearine,pipeline,1898,United States Of America (Atlantic),United States Of America (Atlantic),port,United States Of America (Atlantic),matched,571959.0,538243.0
 Tallow And Stearine,gold,1889,United States of America,United States Of America,country,United States Of America,matched,420880.0,535958.0
 Tallow And Stearine,pipeline,1889,United States Of America,United States Of America,country,United States Of America,matched,420880.0,535958.0
+Tallow And Stearine,gold,1870,Russia,Russia,country,Russia,matched,242541.0,535859.0
 Tallow And Stearine,gold,1874,Australia,Australia,colony,Australia,matched,281771.0,533915.0
 Tallow And Stearine,pipeline,1874,Australia,Australia,colony,Australia,matched,281771.0,533915.0
 Tallow And Stearine,gold,1875,Australia,Australia,colony,Australia,matched,270498.0,523695.0
@@ -80,8 +86,11 @@ Tallow And Stearine,pipeline,1875,Australia,Australia,colony,Australia,matched,2
 Tallow And Stearine,gold,1877,Australia,Australia,colony,Australia,matched,256636.0,515732.0
 Tallow And Stearine,pipeline,1877,Australia,Australia,colony,Australia,matched,256636.0,515732.0
 Tallow And Stearine,pipeline,1898,New South Wales,New South Wales,colony,New South Wales,matched,503066.0,506676.0
+Tallow And Stearine,pipeline,1900,New South Wales,New South Wales,colony,New South Wales,matched,430510.0,505436.0
 Tallow And Stearine,gold,1872,Argentine Republic,Argentina,country,Argentina,matched,227120.0,504052.0
 Tallow And Stearine,pipeline,1872,Argentine Republic,Argentina,country,Argentina,matched,227120.0,504052.0
+Tallow And Stearine,gold,1900,New Zealand,New Zealand,colony,New Zealand,matched,361928.0,485110.0
+Tallow And Stearine,pipeline,1900,New Zealand,New Zealand,colony,New Zealand,matched,361028.0,485110.0
 Tallow And Stearine,gold,1887,Australasia,Australasia,country,Australasia,matched,415920.0,479342.0
 Tallow And Stearine,pipeline,1887,Australasia,Australasia,country,Australasia,matched,415920.0,479342.0
 Tallow And Stearine,gold,1877,Argentine Republic,Argentina,country,Argentina,matched,219195.0,464396.0
@@ -111,6 +120,7 @@ Rosin,pipeline,1891,United States Of America,United States Of America,country,Un
 Tallow And Stearine,gold,1884,Australasia New South Wales,New South Wales,colony,New South Wales,matched,204282.0,380542.0
 Tallow And Stearine,gold,1887,United States of America,United States Of America,country,United States Of America,matched,329669.0,377197.0
 Tallow And Stearine,pipeline,1887,United States Of America,United States Of America,country,United States Of America,matched,329669.0,377197.0
+Tallow And Stearine,gold,1870,United States North Atlantic Ports,United States Of America (Atlantic),port,United States Of America (Atlantic),matched,170536.0,375137.0
 Tallow And Stearine,gold,1883,New South Wales,New South Wales,colony,New South Wales,matched,182399.0,362137.0
 Tallow And Stearine,pipeline,1883,New South Wales,New South Wales,colony,New South Wales,matched,182399.0,362137.0
 Tallow And Stearine,pipeline,1884,Wales,New South Wales,colony,New South Wales,matched,204282.0,360542.0
@@ -120,6 +130,7 @@ Tallow And Stearine,gold,1899,New Zealand,New Zealand,colony,Australasia,rolled_
 Tallow And Stearine,pipeline,1899,New Zealand,New Zealand,colony,Australasia,rolled_up,292765.0,353986.0
 Rosin,gold,1881,United States of America,United States Of America,country,United States Of America,matched,1117384.0,343382.0
 Rosin,pipeline,1881,United States Of America,United States Of America,country,United States Of America,matched,1117384.0,343382.0
+Tallow And Stearine,gold,1870,Uruguay,Uruguay,country,Uruguay,matched,146217.0,322830.0
 Tallow And Stearine,gold,1898,New Zealand,New Zealand,colony,New Zealand,matched,305245.0,321480.0
 Tallow And Stearine,pipeline,1898,New Zealand,New Zealand,colony,New Zealand,matched,305245.0,321450.0
 Tallow And Stearine,gold,1895,New Zealand,New Zealand,colony,New Zealand,matched,265823.0,316429.0
@@ -142,6 +153,9 @@ Tallow And Stearine,gold,1882,Argentine Republic,Argentina,country,Argentina,mat
 Tallow And Stearine,pipeline,1882,Argentine Republic,Argentina,country,Argentina,matched,127130.0,278446.0
 Tallow And Stearine,gold,1883,New Zealand,New Zealand,colony,New Zealand,matched,137997.0,271623.0
 Tallow And Stearine,pipeline,1883,New Zealand,New Zealand,colony,New Zealand,matched,137997.0,271623.0
+Tallow And Stearine,gold,1900,Australasia Victoria,Victoria,colony,Victoria,matched,208804.0,270091.0
+Tallow And Stearine,pipeline,1900,Victoria,Victoria,colony,Victoria,matched,203804.0,270091.0
+Tallow And Stearine,gold,1900,Queensland,Queensland,colony,Queensland,matched,205402.0,261667.0
 Tallow And Stearine,gold,1894,Australasia Victoria,Victoria,colony,Victoria,matched,207344.0,257196.0
 Tallow And Stearine,pipeline,1894,Victoria,Victoria,colony,Victoria,matched,207344.0,257196.0
 Tallow And Stearine,gold,1884,New Zealand,New Zealand,colony,New Zealand,matched,137930.0,255970.0
@@ -157,10 +171,12 @@ Tallow And Stearine,pipeline,1896,Queensland,Queensland,colony,Queensland,matche
 Tallow And Stearine,gold,1874,Uruguay,Uruguay,country,Uruguay,matched,120429.0,244397.0
 Tallow And Stearine,gold,1875,Argentine Republic,Argentina,country,Argentina,matched,110978.0,239505.0
 Tallow And Stearine,pipeline,1875,Argentine Republic,Argentina,country,Argentina,matched,110978.0,239505.0
+Tallow And Stearine,gold,1900,Argentine Republic,Argentina,country,Argentina,matched,178269.0,239288.0
 Tallow And Stearine,gold,1882,Uruguay,Uruguay,country,Uruguay,matched,110672.0,232017.0
 Tallow And Stearine,pipeline,1882,Uruguay,Uruguay,country,Uruguay,matched,110672.0,232017.0
 Tallow And Stearine,gold,1897,United States of America Atlantic Ports,United States Of America (Atlantic),port,United States Of America,rolled_up,200602.0,231024.0
 Tallow And Stearine,pipeline,1897,United States Of America (Atlantic),United States Of America (Atlantic),port,United States Of America,rolled_up,260602.0,231021.0
+Tallow And Stearine,pipeline,1900,Argentine Republic,Argentina,country,Argentina,matched,178260.0,230288.0
 Tallow And Stearine,gold,1872,Uruguay,Uruguay,country,Uruguay,matched,104562.0,228824.0
 Tallow And Stearine,pipeline,1872,Uruguay,Uruguay,country,Uruguay,matched,104562.0,228824.0
 Tallow And Stearine,gold,1895,Queensland,Queensland,colony,Queensland,matched,188715.0,227354.0
@@ -180,6 +196,7 @@ Tallow And Stearine,gold,1896,Australasia Victoria,Victoria,colony,Victoria,matc
 Tallow And Stearine,pipeline,1896,Victoria,Victoria,colony,Victoria,matched,200879.0,208600.0
 Tallow And Stearine,gold,1885,New Zealand,New Zealand,colony,New Zealand,matched,137958.0,206667.0
 Tallow And Stearine,pipeline,1885,New Zealand,New Zealand,colony,New Zealand,matched,137958.0,206667.0
+Tallow And Stearine,pipeline,1900,Queensland,Queensland,colony,Queensland,matched,205402.0,204667.0
 Tallow And Stearine,gold,1884,Australasia Victoria,Victoria,colony,Victoria,matched,109167.0,204433.0
 Tallow And Stearine,pipeline,1884,Victoria,Victoria,colony,Victoria,matched,109167.0,204423.0
 Tallow And Stearine,gold,1893,Australasia Victoria,Victoria,colony,Victoria,matched,148659.0,201664.0
@@ -205,6 +222,7 @@ Tallow And Stearine,pipeline,1874,Russia,Russia,country,Russia,matched,81704.0,1
 Tallow And Stearine,pipeline,1899,Chile,Chile,country,Chile,unmatched_other_side_lacks_it,3078.0,181009.0
 Tallow And Stearine,gold,1898,Argentine Republic,Argentina,country,Argentina,matched,64087.0,178452.0
 Tallow And Stearine,pipeline,1898,Argentine Republic,Argentina,country,Argentina,matched,164037.0,178402.0
+Tallow And Stearine,gold,1870,France,France,country,France,matched,82687.0,173401.0
 Tallow And Stearine,gold,1885,Argentine Republic,Argentina,country,Argentina,matched,107278.0,169888.0
 Tallow And Stearine,pipeline,1885,Argentine Republic,Argentina,country,Argentina,matched,107278.0,169888.0
 Tallow And Stearine,gold,1899,Queensland,Queensland,colony,Australasia,rolled_up,146478.0,167505.0
@@ -289,6 +307,8 @@ Tallow And Stearine,gold,1891,Argentine Republic,Argentina,country,Argentina,mat
 Tallow And Stearine,pipeline,1891,Argentine Republic,Argentina,country,Argentina,matched,65202.0,92160.0
 Tallow And Stearine,gold,1894,Argentine Republic,Argentina,country,Argentina,matched,69129.0,91265.0
 Tallow And Stearine,pipeline,1894,Argentine Republic,Argentina,country,Argentina,matched,69129.0,91265.0
+Tallow And Stearine,gold,1900,France,France,country,France,matched,55903.0,90795.0
+Tallow And Stearine,pipeline,1900,France,France,country,France,matched,55003.0,90795.0
 Tallow And Stearine,gold,1882,Russia,Russia,country,Russia,matched,33497.0,87705.0
 Tallow And Stearine,pipeline,1882,Russia,Russia,country,Russia,matched,33497.0,87705.0
 Tallow And Stearine,gold,1888,France,France,country,France,matched,57442.0,85050.0
@@ -311,6 +331,8 @@ Tallow And Stearine,gold,1886,France,France,country,France,matched,45213.0,75914
 Tallow And Stearine,pipeline,1886,France,France,country,France,matched,45213.0,75914.0
 Tallow And Stearine,gold,1895,France,France,country,France,matched,46360.0,72101.0
 Tallow And Stearine,pipeline,1895,France,France,country,France,matched,46360.0,72101.0
+Tallow And Stearine,gold,1900,Belgium,Belgium,country,Belgium,matched,44472.0,71445.0
+Tallow And Stearine,pipeline,1900,Belgium,Belgium,country,Belgium,matched,44472.0,71415.0
 Tallow And Stearine,gold,1888,Uruguay,Uruguay,country,Uruguay,matched,55062.0,70991.0
 Tallow And Stearine,pipeline,1888,Uruguay,Uruguay,country,Uruguay,matched,55062.0,70991.0
 Tallow And Stearine,gold,1892,France,France,country,France,matched,43994.0,69260.0
@@ -365,6 +387,7 @@ Tallow And Stearine,gold,1874,Other Countries,§RESIDUAL,residual,§RESIDUAL,res
 Tallow And Stearine,pipeline,1874,Other Countries,§RESIDUAL,residual,§RESIDUAL,residual_bucket,22095.0,51316.0
 Tallow And Stearine,gold,1880,Russia,Russia,country,Russia,matched,25505.0,51115.0
 Tallow And Stearine,pipeline,1880,Russia,Russia,country,Russia,matched,25505.0,51115.0
+Tallow And Stearine,gold,1870,Brazil,Brazil,country,Brazil,matched,22836.0,50972.0
 Tallow And Stearine,pipeline,1892,Belgium,Belgium,country,Belgium,matched,32201.0,50475.0
 Tallow And Stearine,gold,1898,Belgium,Belgium,country,Belgium,matched,38882.0,49297.0
 Tallow And Stearine,pipeline,1898,Belgium,Belgium,country,Belgium,matched,33832.0,49297.0
@@ -384,6 +407,7 @@ Tallow And Stearine,gold,1894,Belgium,Belgium,country,Belgium,matched,32016.0,46
 Tallow And Stearine,pipeline,1894,Belgium,Belgium,country,Belgium,matched,32016.0,46575.0
 Tallow And Stearine,gold,1889,Belgium,Belgium,country,Belgium,matched,28509.0,45967.0
 Tallow And Stearine,pipeline,1889,Belgium,Belgium,country,Belgium,matched,28509.0,45967.0
+Tallow And Stearine,gold,1870,United States South Atlantic Ports,United States Of America (Atlantic),port,United States Of America (Atlantic),matched,20769.0,45808.0
 Tallow And Stearine,gold,1895,Belgium,Belgium,country,Belgium,matched,30406.0,45533.0
 Tallow And Stearine,pipeline,1895,Belgium,Belgium,country,Belgium,matched,30406.0,45533.0
 Tallow And Stearine,pipeline,1898,Uruguay,Uruguay,country,Uruguay,matched,42117.0,44644.0
@@ -424,6 +448,7 @@ Tallow And Stearine,pipeline,1897,Uruguay,Uruguay,country,Uruguay,matched,36113.
 Tallow And Stearine,gold,1897,Uruguay,Uruguay,country,Uruguay,matched,36113.0,35234.0
 Tallow And Stearine,gold,1895,Uruguay,Uruguay,country,Uruguay,matched,30651.0,35204.0
 Tallow And Stearine,pipeline,1895,Uruguay,Uruguay,country,Uruguay,matched,30651.0,35204.0
+Tallow And Stearine,gold,1870,Belgium,Belgium,country,Belgium,matched,16264.0,35088.0
 Tallow And Stearine,gold,1894,South Australia,South Australia,colony,South Australia,matched,29098.0,35047.0
 Tallow And Stearine,pipeline,1894,South Australia,South Australia,colony,South Australia,matched,29098.0,35047.0
 Tallow And Stearine,gold,1899,Holland,Netherlands,country,Netherlands,matched,23447.0,34676.0
@@ -431,6 +456,8 @@ Tallow And Stearine,gold,1877,Other Countries,§RESIDUAL,residual,§RESIDUAL,res
 Tallow And Stearine,pipeline,1877,Other Countries,§RESIDUAL,residual,§RESIDUAL,residual_bucket,16452.0,34339.0
 Tallow And Stearine,pipeline,1899,Holland,Netherlands,country,Netherlands,matched,23447.0,34076.0
 Tallow And Stearine,pipeline,1897,Belgium,Belgium,country,Belgium,matched,31031.0,33967.0
+Tallow And Stearine,gold,1900,Holland,Netherlands,country,Netherlands,matched,20730.0,32957.0
+Tallow And Stearine,pipeline,1900,Holland,Netherlands,country,Netherlands,matched,20730.0,32957.0
 Tallow And Stearine,gold,1899,Canada,Canada,country,Canada,matched,27345.0,32447.0
 Tallow And Stearine,pipeline,1899,Canada,Canada,country,Canada,matched,27345.0,32447.0
 Tallow And Stearine,gold,1885,Queensland,Queensland,colony,Queensland,matched,20997.0,31142.0
@@ -444,6 +471,7 @@ Tallow And Stearine,gold,1883,Holland,Netherlands,country,Netherlands,matched,12
 Tallow And Stearine,pipeline,1883,Holland,Netherlands,country,Netherlands,matched,12301.0,30097.0
 Tallow And Stearine,gold,1891,Holland,Netherlands,country,Netherlands,matched,18088.0,30043.0
 Tallow And Stearine,pipeline,1891,Holland,Netherlands,country,Netherlands,matched,18088.0,30043.0
+Tallow And Stearine,gold,1870,Other Parts,§RESIDUAL,residual,§RESIDUAL,residual_bucket,13588.0,29935.0
 Tallow And Stearine,gold,1874,France,France,country,France,matched,13792.0,29854.0
 Tallow And Stearine,pipeline,1874,France,France,country,France,matched,13792.0,29854.0
 Tallow And Stearine,gold,1872,Other Countries,§RESIDUAL,residual,§RESIDUAL,residual_bucket,13748.0,29667.0
@@ -458,6 +486,8 @@ Tallow And Stearine,gold,1884,Russia,Russia,country,Russia,matched,14724.0,29038
 Tallow And Stearine,pipeline,1884,Russia,Russia,country,Russia,matched,14724.0,29038.0
 Tallow And Stearine,gold,1883,South Australia,South Australia,colony,South Australia,matched,14561.0,28690.0
 Tallow And Stearine,pipeline,1883,South Australia,South Australia,colony,South Australia,matched,14561.0,28690.0
+Tallow And Stearine,gold,1900,Canada,Canada,country,Canada,matched,22555.0,28489.0
+Tallow And Stearine,pipeline,1900,Germany,Germany,country,Germany,matched,27842.0,28489.0
 Tallow And Stearine,gold,1885,Holland,Netherlands,country,Netherlands,matched,13970.0,28092.0
 Tallow And Stearine,pipeline,1885,Holland,Netherlands,country,Netherlands,matched,13970.0,28092.0
 Tallow And Stearine,gold,1887,Belgium,Belgium,country,Belgium,matched,17231.0,28087.0
@@ -466,6 +496,8 @@ Tallow And Stearine,gold,1887,Argentine Republic,Argentina,country,Argentina,mat
 Tallow And Stearine,pipeline,1887,Argentine Republic,Argentina,country,Argentina,matched,22002.0,27822.0
 Tallow And Stearine,gold,1888,Holland,Netherlands,country,Netherlands,matched,17432.0,27712.0
 Tallow And Stearine,pipeline,1888,Holland,Netherlands,country,Netherlands,matched,17432.0,27712.0
+Tallow And Stearine,gold,1900,Uruguay,Uruguay,country,Uruguay,matched,21230.0,27708.0
+Tallow And Stearine,pipeline,1900,Uruguay,Uruguay,country,Uruguay,matched,21230.0,27708.0
 Tallow And Stearine,gold,1877,France,France,country,France,matched,10553.0,27697.0
 Tallow And Stearine,pipeline,1877,France,France,country,France,matched,10553.0,27697.0
 Tallow And Stearine,gold,1882,Holland,Netherlands,country,Netherlands,matched,12028.0,27401.0
@@ -478,6 +510,7 @@ Tallow And Stearine,gold,1884,Queensland,Queensland,colony,Queensland,matched,14
 Tallow And Stearine,pipeline,1884,Queensland,Queensland,colony,Queensland,matched,14506.0,26802.0
 Tallow And Stearine,gold,1895,Holland,Netherlands,country,Netherlands,matched,15644.0,26662.0
 Tallow And Stearine,pipeline,1895,Holland,Netherlands,country,Netherlands,matched,15644.0,26662.0
+Tallow And Stearine,gold,1900,Germany,Germany,country,Germany,matched,27842.0,26489.0
 Tallow And Stearine,gold,1876,France,France,country,France,matched,10218.0,26203.0
 Tallow And Stearine,pipeline,1876,France,France,country,France,matched,10218.0,26203.0
 Tallow And Stearine,gold,1896,Holland,Netherlands,country,Netherlands,matched,16249.0,26169.0
@@ -496,6 +529,7 @@ Tallow And Stearine,gold,1894,Holland,Netherlands,country,Netherlands,matched,14
 Tallow And Stearine,pipeline,1894,Holland,Netherlands,country,Netherlands,matched,14851.0,23746.0
 Tallow And Stearine,gold,1873,British North America,Canada,country,Canada,matched,11957.0,23517.0
 Tallow And Stearine,pipeline,1873,Canada,Canada,country,Canada,matched,11957.0,23517.0
+Tallow And Stearine,pipeline,1900,Canada,Canada,country,Canada,matched,22555.0,23459.0
 Tallow And Stearine,gold,1889,Germany,Germany,country,Germany,matched,20772.0,23176.0
 Tallow And Stearine,pipeline,1889,Germany,Germany,country,Germany,matched,20772.0,23176.0
 Tallow And Stearine,gold,1873,Other Countries,§RESIDUAL,residual,§RESIDUAL,residual_bucket,10400.0,22523.0
@@ -579,6 +613,7 @@ Tallow And Stearine,pipeline,1884,Falkland Islands,Falkland Islands,country,Falk
 Tallow And Stearine,pipeline,1899,Peru,Peru,country,Peru,unmatched_other_side_lacks_it,220.0,13210.0
 Tallow And Stearine,gold,1883,Falkland Islands,Falkland Islands,country,Falkland Islands,matched,6277.0,12818.0
 Tallow And Stearine,gold,1897,Germany,Germany,country,Germany,matched,14587.0,12751.0
+Tallow And Stearine,gold,1870,United States Pacific Ports,United States Of America (Pacific),port,United States Of America (Pacific),unmatched_other_side_lacks_it,5850.0,12724.0
 Tallow And Stearine,gold,1886,British North America,Canada,country,Canada,matched,10888.0,12698.0
 Tallow And Stearine,pipeline,1886,Canada,Canada,country,Canada,matched,10888.0,12698.0
 Tallow And Stearine,gold,1874,British North America,Canada,country,Canada,matched,6432.0,12644.0
@@ -591,6 +626,7 @@ Rosin,gold,1891,France,France,country,France,matched,38692.0,12540.0
 Rosin,pipeline,1891,France,France,country,France,matched,38692.0,12540.0
 Tallow And Stearine,gold,1885,Russia,Russia,country,Russia,matched,7172.0,12509.0
 Tallow And Stearine,pipeline,1885,Russia,Russia,country,Russia,matched,7172.0,12509.0
+Tallow And Stearine,gold,1870,British India Bengal and Pegu,British India Bengal And Pegu,country,British India Bengal And Pegu,unmatched_other_side_lacks_it,5864.0,12490.0
 Tallow And Stearine,gold,1888,Germany,Germany,country,Germany,matched,16529.0,12290.0
 Tallow And Stearine,pipeline,1888,Germany,Germany,country,Germany,matched,16529.0,12290.0
 Tallow And Stearine,gold,1876,Mexico,Mexico,country,Mexico,matched,6040.0,12052.0
@@ -651,6 +687,7 @@ Tallow And Stearine,gold,1896,British East Indies,British East Indies,country,Br
 Tallow And Stearine,pipeline,1896,British East Indies,British East Indies,country,British East Indies,matched,7235.0,8901.0
 Tallow And Stearine,gold,1889,United States of Colombia,United States Of Colombia,country,United States Of Colombia,matched,6600.0,8740.0
 Tallow And Stearine,pipeline,1889,United States Of Colombia,United States Of Colombia,country,United States Of Colombia,matched,6600.0,8740.0
+Tallow And Stearine,pipeline,1900,China,China,country,China,matched,6011.0,8681.0
 Tallow And Stearine,gold,1877,Holland,Netherlands,country,Netherlands,matched,2891.0,8607.0
 Tallow And Stearine,pipeline,1877,Holland,Netherlands,country,Netherlands,matched,2891.0,8607.0
 Tallow And Stearine,gold,1891,Russia,Russia,country,Russia,matched,4518.0,8588.0
@@ -667,6 +704,7 @@ Tallow And Stearine,gold,1874,Holland,Netherlands,country,Netherlands,matched,24
 Tallow And Stearine,pipeline,1874,Holland,Netherlands,country,Netherlands,matched,2463.0,8407.0
 Tallow And Stearine,gold,1887,Russia,Russia,country,Russia,matched,6532.0,8310.0
 Tallow And Stearine,pipeline,1887,Russia,Russia,country,Russia,matched,6532.0,8310.0
+Tallow And Stearine,gold,1900,China,China,country,China,matched,6011.0,8081.0
 Tallow And Stearine,gold,1896,Germany,Germany,country,Germany,matched,7586.0,7894.0
 Tallow And Stearine,pipeline,1896,Germany,Germany,country,Germany,matched,7586.0,7894.0
 Tallow And Stearine,gold,1888,British East Indies,British East Indies,country,British East Indies,matched,5870.0,7483.0
@@ -697,6 +735,8 @@ Tallow And Stearine,pipeline,1891,Falkland Islands,Falkland Islands,country,Falk
 Tallow And Stearine,gold,1895,Falkland Islands,Falkland Islands,country,Falkland Islands,matched,4806.0,6300.0
 Tallow And Stearine,pipeline,1895,Falkland Islands,Falkland Islands,country,Falkland Islands,matched,4806.0,6300.0
 Tallow And Stearine,pipeline,1899,Australasia,Australasia,country,Australasia,matched,96.0,6197.0
+Tallow And Stearine,gold,1900,Falkland Islands,Falkland Islands,country,Falkland Islands,matched,5515.0,6121.0
+Tallow And Stearine,pipeline,1900,Falkland Islands,Falkland Islands,country,Falkland Islands,matched,5516.0,6121.0
 Tallow And Stearine,gold,1885,Falkland Islands,Falkland Islands,country,Falkland Islands,matched,3989.0,6089.0
 Tallow And Stearine,pipeline,1885,Falkland Islands,Falkland Islands,country,Falkland Islands,matched,3989.0,6089.0
 Rosin,gold,1881,Other Countries,§RESIDUAL,residual,§RESIDUAL,residual_bucket,14059.0,6060.0
@@ -736,6 +776,10 @@ Tallow And Stearine,gold,1896,Turkey,Turkey,country,Turkey,matched,3010.0,4800.0
 Tallow And Stearine,pipeline,1896,Turkey,Turkey,country,Turkey,matched,3010.0,4800.0
 Tallow And Stearine,gold,1899,British East Indies,British East Indies,country,British East Indies,matched,4236.0,4761.0
 Tallow And Stearine,pipeline,1899,British East Indies,British East Indies,country,British East Indies,matched,4236.0,4701.0
+Tallow And Stearine,gold,1900,British East Indies,British East Indies,country,British East Indies,matched,3399.0,4671.0
+Tallow And Stearine,pipeline,1900,British East Indies,British East Indies,country,British East Indies,matched,3399.0,4671.0
+Tallow And Stearine,gold,1900,South Australia,South Australia,colony,South Australia,matched,3569.0,4614.0
+Tallow And Stearine,pipeline,1900,South Australia,South Australia,colony,South Australia,matched,3569.0,4614.0
 Tallow And Stearine,gold,1898,Other Foreign Countries ,§RESIDUAL,residual,§RESIDUAL,residual_bucket,4087.0,4405.0
 Tallow And Stearine,pipeline,1898,Other Foreign Countries,§RESIDUAL,residual,§RESIDUAL,residual_bucket,4087.0,4405.0
 Tallow And Stearine,gold,1887,Falkland Islands,Falkland Islands,country,Falkland Islands,matched,3893.0,4356.0
@@ -749,6 +793,8 @@ Tallow And Stearine,pipeline,1897,Straits Settlements,Straits Settlements,colony
 Tallow And Stearine,gold,1897,Other Foreign Countries ,§RESIDUAL,residual,§RESIDUAL,residual_bucket,3506.0,3790.0
 Tallow And Stearine,gold,1885,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,2558.0,3769.0
 Tallow And Stearine,pipeline,1885,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,2558.0,3769.0
+Tallow And Stearine,gold,1900,Other Foreign Countries ,§RESIDUAL,residual,§RESIDUAL,residual_bucket,2936.0,3733.0
+Tallow And Stearine,pipeline,1900,Other Foreign Countries,§RESIDUAL,residual,§RESIDUAL,residual_bucket,2036.0,3733.0
 Tallow And Stearine,gold,1887,British East Indies,British East Indies,country,British East Indies,matched,2856.0,3729.0
 Tallow And Stearine,pipeline,1887,British East Indies,British East Indies,country,British East Indies,matched,2856.0,3729.0
 Tallow And Stearine,gold,1891,British North America,Canada,country,Canada,matched,2799.0,3706.0
@@ -783,6 +829,7 @@ Tallow And Stearine,pipeline,1894,British East Indies,British East Indies,countr
 Tallow And Stearine,pipeline,1899,Channel Islands,Channel Islands,country,Channel Islands,unmatched_other_side_lacks_it,6402.0,2210.0
 Tallow And Stearine,gold,1895,Other Foreign Countries ,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1638.0,2149.0
 Tallow And Stearine,pipeline,1895,Other Foreign Countries,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1638.0,2149.0
+Tallow And Stearine,pipeline,1870,France,France,country,France,matched,82687.0,2111.0
 Tallow And Stearine,pipeline,1898,Channel Islands,Channel Islands,country,Channel Islands,unmatched_other_side_lacks_it,6354.0,2022.0
 Tallow And Stearine,gold,1891,Tasmania,Tasmania,colony,Tasmania,matched,1572.0,1959.0
 Tallow And Stearine,pipeline,1891,Tasmania,Tasmania,colony,Tasmania,matched,1572.0,1959.0
@@ -799,6 +846,7 @@ Tallow And Stearine,pipeline,1897,Channel Islands,Channel Islands,country,Channe
 Tallow And Stearine,pipeline,1898,Portuguese Possessions In Western Africa,Portuguese Possessions In Western Africa,country,Portuguese Possessions In Western Africa,unmatched_other_side_lacks_it,74.0,1731.0
 Rosin,gold,1896,Other Foreign Countries ,§RESIDUAL,residual,§RESIDUAL,residual_bucket,4854.0,1696.0
 Rosin,pipeline,1896,Other Foreign Countries,§RESIDUAL,residual,§RESIDUAL,residual_bucket,4854.0,1696.0
+Tallow And Stearine,gold,1900,United States of America Pacific Ports,United States Of America (Pacific),port,United States Of America,rolled_up,1705.0,1695.0
 Tallow And Stearine,gold,1889,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1532.0,1682.0
 Tallow And Stearine,pipeline,1889,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1532.0,1682.0
 Tallow And Stearine,gold,1896,Other Foreign Countries ,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1795.0,1680.0
@@ -814,13 +862,19 @@ Tallow And Stearine,pipeline,1883,British Possessions In South Africa,British Po
 Tallow And Stearine,pipeline,1883,Peru,Peru,country,Peru,matched,800.0,1500.0
 Tallow And Stearine,gold,1887,Channel Islands,Channel Islands,country,Channel Islands,matched,1320.0,1452.0
 Tallow And Stearine,pipeline,1887,Channel Islands,Channel Islands,country,Channel Islands,matched,1320.0,1452.0
+Tallow And Stearine,gold,1870,British India Bombay and Scinde,British India Bombay And Scinde,country,British India Bombay And Scinde,unmatched_other_side_lacks_it,681.0,1372.0
 Tallow And Stearine,pipeline,1892,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1162.0,1358.0
 Tallow And Stearine,gold,1892,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1162.0,1356.0
 Tallow And Stearine,gold,1894,British North America,Canada,country,Canada,matched,1357.0,1344.0
 Tallow And Stearine,pipeline,1894,Canada,Canada,country,Canada,matched,1357.0,1344.0
+Tallow And Stearine,gold,1900,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1887.0,1305.0
+Tallow And Stearine,pipeline,1900,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1387.0,1305.0
 Tallow And Stearine,gold,1890,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1012.0,1204.0
 Tallow And Stearine,pipeline,1890,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1012.0,1204.0
+Tallow And Stearine,pipeline,1870,Madras,Madras,colony,Madras,unmatched_other_side_lacks_it,210.0,1196.0
 Tallow And Stearine,pipeline,1897,China,China,country,China,matched,10072.0,1195.0
+Tallow And Stearine,gold,1900,Chile,Chile,country,Chile,matched,1063.0,1155.0
+Tallow And Stearine,pipeline,1900,Chile,Chile,country,Chile,matched,1063.0,1155.0
 Tallow And Stearine,gold,1898,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1244.0,1127.0
 Tallow And Stearine,pipeline,1898,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,1244.0,1127.0
 Tallow And Stearine,gold,1897,Chile,Chile,country,Chile,matched,1316.0,1120.0
@@ -880,6 +934,7 @@ Tallow And Stearine,gold,1889,British Possessions in South Africa ,British Posse
 Tallow And Stearine,pipeline,1889,British Possessions In South Africa,British Possessions In South Africa,country,British Possessions In South Africa,matched,387.0,445.0
 Rosin,gold,1886,British North America,Canada,country,Canada,matched,1404.0,428.0
 Rosin,pipeline,1886,Canada,Canada,country,Canada,matched,1404.0,428.0
+Tallow And Stearine,gold,1870,British India Madras,British India Madras,country,British India Madras,unmatched_other_side_lacks_it,210.0,415.0
 Tallow And Stearine,gold,1899,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,379.0,405.0
 Tallow And Stearine,pipeline,1899,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,379.0,405.0
 Tallow And Stearine,gold,1883,Channel Islands,Channel Islands,country,Channel Islands,matched,262.0,397.0
@@ -891,13 +946,26 @@ Tallow And Stearine,gold,1896,Other British Possessions,§RESIDUAL,residual,§RE
 Tallow And Stearine,pipeline,1896,Other British Possessions,§RESIDUAL,residual,§RESIDUAL,residual_bucket,369.0,354.0
 Tallow And Stearine,gold,1886,West Australia,Western Australia,colony,Western Australia,matched,203.0,280.0
 Tallow And Stearine,pipeline,1886,Western Australia,Western Australia,colony,Western Australia,matched,203.0,280.0
-Tallow And Stearine,gold,1898,Turkey European,Turkey,country,Turkey,matched,200.0,270.0
-Tallow And Stearine,pipeline,1898,Turkey,Turkey,country,Turkey,matched,200.0,270.0
+Tallow And Stearine,gold,1898,Turkey European,Turkey,country,Turkey,unmatched_other_side_lacks_it,200.0,270.0
 Tallow And Stearine,gold,1885,Tasmania,Tasmania,colony,Tasmania,matched,125.0,250.0
 Tallow And Stearine,pipeline,1885,Tasmania,Tasmania,colony,Tasmania,matched,125.0,250.0
+Tallow And Stearine,pipeline,1870,Brazil,Brazil,country,Brazil,matched,22836.0,248.0
+Tallow And Stearine,pipeline,1870,Argentine Confederation,Argentine Confederation,country,Argentine Confederation,matched,304560.0,243.0
+Tallow And Stearine,pipeline,1870,Russia,Russia,country,Russia,matched,242541.0,242.0
+Tallow And Stearine,pipeline,1870,Uruguay,Uruguay,country,Uruguay,matched,146217.0,242.0
+Tallow And Stearine,pipeline,1870,South Atlantic Ports,South Atlantic Ports,country,South Atlantic Ports,unmatched_other_side_lacks_it,20769.0,241.0
 Tallow And Stearine,pipeline,1897,Portuguese Possessions In Western Africa,Portuguese Possessions In Western Africa,country,Portuguese Possessions In Western Africa,unmatched_other_side_lacks_it,27.0,241.0
+Tallow And Stearine,pipeline,1870,United States North Atlantic Ports,United States Of America (Atlantic),port,United States Of America (Atlantic),matched,170536.0,240.0
+Tallow And Stearine,pipeline,1870,Ports,Ports,country,Ports,unmatched_other_side_lacks_it,5850.0,236.0
+Tallow And Stearine,pipeline,1870,Ports (Pacific),Ports Pacific,country,Ports Pacific,unmatched_other_side_lacks_it,5850.0,236.0
 Tallow And Stearine,gold,1883,West Australia,Western Australia,colony,Western Australia,matched,117.0,234.0
 Tallow And Stearine,pipeline,1883,Australasia West Australia,Western Australia,colony,Western Australia,matched,117.0,234.0
+Tallow And Stearine,pipeline,1870,Belgium,Belgium,country,Belgium,matched,16264.0,232.0
+Tallow And Stearine,gold,1900,Russia,Russia,country,Russia,matched,163.0,228.0
+Tallow And Stearine,pipeline,1900,Russia,Russia,country,Russia,matched,103.0,228.0
+Tallow And Stearine,pipeline,1870,Bengal And Pegu,Bengal And Pegu,country,Bengal And Pegu,unmatched_other_side_lacks_it,5864.0,227.0
+Tallow And Stearine,pipeline,1870,Australia,Australia,colony,Australia,matched,490695.0,218.0
+Tallow And Stearine,pipeline,1870,Bombay And Sind,Bombay And Sind,country,Bombay And Sind,unmatched_other_side_lacks_it,681.0,204.0
 Rosin,gold,1891,Other Foreign Countries ,§RESIDUAL,residual,§RESIDUAL,residual_bucket,441.0,183.0
 Rosin,pipeline,1891,Other Foreign Countries,§RESIDUAL,residual,§RESIDUAL,residual_bucket,441.0,183.0
 Tallow And Stearine,pipeline,1897,Russia (Northern Ports),Russia (Northern Ports),port,Russia (Northern Ports),unmatched_other_side_lacks_it,200.0,159.0
@@ -912,4 +980,6 @@ Tallow And Stearine,gold,1898,Russia,Russia,country,Russia,matched,11.0,15.0
 Tallow And Stearine,pipeline,1898,Russia,Russia,country,Russia,matched,11.0,15.0
 Tallow And Stearine,pipeline,1888,Newfoundland And Coast Of Labrador,Newfoundland,colony,Canada,rolled_up,0.0,10.0
 Tallow And Stearine,pipeline,1897,Turkey,Turkey,country,Turkey,unmatched_other_side_lacks_it,30.0,8.0
+Tallow And Stearine,gold,1900,Turkey European,Turkey,country,Turkey,matched,6.0,8.0
+Tallow And Stearine,pipeline,1900,Turkey,Turkey,country,Turkey,matched,6.0,8.0
 Tallow And Stearine,gold,1898,British East Indies,British East Indies,country,British East Indies,matched,1692.0,0.0

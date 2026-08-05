@@ -49,6 +49,34 @@ def is_colonial(c):
     return any(k in c for k in _COLONIAL)
 
 
+def load_group_overrides():
+    """article-sig -> adjudicated canonical group
+    (reference/group_authority_overrides.csv).
+
+    NOT the same thing as reference/article_group_authority.csv. That file is a
+    plurality VOTE over OCR readings, and vote_country_years applies it to the
+    consensus path only. Applying the whole vote here as well was measured and
+    rejected: it would re-group 1,228 of the 8,025 gap-fill rows, and the vote
+    is wrong often enough ('Furs, Rabbit Skins' -> Cotton, 'Manganese, Ore of'
+    -> LEATHER MANUFACTURES) that it would corrupt groups the Infinity parse
+    had right.
+
+    The overrides are human adjudications with the abstract's own group line as
+    evidence, so they DO apply everywhere — otherwise a commodity is healed on
+    the consensus path and left misfiled on the gap-fill one, which is exactly
+    how the sawn-timber section ended up split between 'Wood And Timber - Sawn,
+    Unenumerated' and 'Sugar - Sawn Or Split, Planed Or Dressed, Unenumerated'.
+    """
+    ov = BASE / 'reference' / 'group_authority_overrides.csv'
+    out = {}
+    if ov.exists():
+        for r in csv.DictReader(open(ov)):
+            s = V.sig(r['article'])
+            if s:
+                out[s] = r['canonical_group'].upper()
+    return out
+
+
 def load_csv(path, src):
     # pass 1: which (asig, year) blocks already carry colonial / foreign DETAIL,
     # so we know whether a leaked "Total from Possessions/Foreign" subtotal is a
@@ -796,6 +824,20 @@ def main():
     # Sort best-verified first (stable, consensus already precedes gap-fill)
     # so the surviving duplicate carries the strongest tier.
     RANK = {'A': 1, 'B': 2, 'C': 3}
+    # ---- adjudicated group overrides, applied to EVERY source path ----------
+    # vote_country_years already applied them to the consensus rows; this
+    # catches the gap-fill, sub-entry, two-up and manual paths, which carry
+    # whatever stale column-top group their parse had. Deliberately placed
+    # BEFORE the dedup below, whose key includes the group: a SUGAR-headed and
+    # a WOOD-headed reading of the same printed cell are the same cell, and
+    # only collapse once both carry the adjudicated group.
+    gov = load_group_overrides()
+    n_gov = 0
+    for r in out_rows:
+        can = gov.get(V.sig((r['article'] or '').strip()))
+        if can and can != (r['group'] or '').upper():
+            r['group'] = can
+            n_gov += 1
     out_rows.sort(key=lambda r: (r['src'] != 'consensus',
                                  RANK.get(r['q_tier'], 3)))
     dedup, seen = [], set()
@@ -837,6 +879,7 @@ def main():
     print(f'  colonial sub-entries recovered: {n_sub:,}')
     print(f'  flow-repaired rows: {n_flowfix:,}')
     print(f'  group-repaired rows: {n_groupfix:,}')
+    print(f'  adjudicated group overrides applied: {n_gov:,}')
     if gf_audit:
         af = BASE / 'reports' / 'groupfix_rejects.csv'
         with open(af, 'w', newline='') as fh:

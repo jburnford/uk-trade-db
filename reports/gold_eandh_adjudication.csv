@@ -1,11 +1,22 @@
 commodity,year,country,column,gold,pipeline,shape,other_column_agrees,verdict,evidence
 Tallow And Stearine,1894,New South Wales,v,1099.0,1099507.0,magnitude,1,gold_year_unreliable,"the gold's own v column does not close this year (1,216,365 vs World 2,344,773), so this cell cannot be adjudicated against it"
+Tallow And Stearine,1870,Australia,v,1022924.0,218.0,magnitude,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
+Tallow And Stearine,1870,Argentine Confederation,v,673260.0,243.0,magnitude,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
+Tallow And Stearine,1870,Russia,v,535859.0,242.0,magnitude,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
+Tallow And Stearine,1870,United States Of America (Atlantic),v,420945.0,240.0,magnitude,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
+Tallow And Stearine,1870,Uruguay,v,322830.0,242.0,magnitude,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
+Tallow And Stearine,1870,France,v,173401.0,2111.0,magnitude,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1898,Argentina,q,64087.0,164037.0,magnitude,1,gold_error,"gold's country rows reconcile with our Tier-1 anchor only with our reading (2,021,941 = 2,021,941); the gold's own World row (2,621,941) is wrong too"
 Tallow And Stearine,1897,United States Of America,q,211533.0,277241.0,aggregate[2g+3p],0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1897,Argentina,q,167625.0,107025.0,2_digits,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1898,New South Wales,v,566676.0,506676.0,one_digit[1] 6->0,0,gold_error,"gold's own country rows close on its own World row only with our reading (2,064,686 = 2,066,433)"
+Tallow And Stearine,1900,New South Wales,v,565436.0,505436.0,one_digit[1] 6->0,0,gold_year_unreliable,"the gold's own v column does not close this year (2,831,617 vs World 2,835,217), so this cell cannot be adjudicated against it"
+Tallow And Stearine,1900,Queensland,v,261667.0,204667.0,2_digits,1,gold_year_unreliable,"the gold's own v column does not close this year (2,831,617 vs World 2,835,217), so this cell cannot be adjudicated against it"
+Tallow And Stearine,1870,Brazil,v,50972.0,248.0,magnitude,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
+Tallow And Stearine,1870,Belgium,v,35088.0,232.0,magnitude,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1874,Uruguay,v,244397.0,214397.0,one_digit[1] 4->1,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1894,Germany,v,13393.0,43393.0,one_digit[0] 1->4,1,gold_year_unreliable,"the gold's own v column does not close this year (1,216,365 vs World 2,344,773), so this cell cannot be adjudicated against it"
+Tallow And Stearine,1870,United States Of America (Atlantic),q,191305.0,170536.0,5_digits,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1884,New South Wales,v,380542.0,360542.0,one_digit[1] 8->6,1,gold_year_unreliable,"the gold's own v column does not close this year (2,111,020 vs World 2,106,020), so this cell cannot be adjudicated against it"
 Tallow And Stearine,1892,Belgium,v,30475.0,50475.0,one_digit[0] 3->5,1,gold_error,"gold's own country rows close on its own World row only with our reading (1,747,966 = 1,747,968)"
 Tallow And Stearine,1897,China,v,11825.0,1195.0,magnitude,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
@@ -14,15 +25,20 @@ Tallow And Stearine,1898,Canada,v,19023.0,10023.0,one_digit[1] 9->0,1,gold_year_
 Tallow And Stearine,1897,British East Indies,q,8243.0,207.0,magnitude,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1897,British East Indies,v,9293.0,3819.0,4_digits,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1898,Belgium,q,38882.0,33832.0,2_digits,1,gold_year_unreliable,"the gold's own q column does not close this year (1,921,991 vs World 2,621,941), so this cell cannot be adjudicated against it"
+Tallow And Stearine,1900,Canada,v,28489.0,23459.0,2_digits,1,gold_year_unreliable,"the gold's own v column does not close this year (2,831,617 vs World 2,835,217), so this cell cannot be adjudicated against it"
 Tallow And Stearine,1897,§RESIDUAL,v,5616.0,2183.0,4_digits,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1880,Belgium,q,34742.0,31742.0,one_digit[1] 4->1,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1897,Belgium,v,35997.0,33967.0,2_digits,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
+Tallow And Stearine,1900,Germany,v,26489.0,28489.0,one_digit[1] 6->8,1,gold_error,"gold's own country rows close on its own World row only with our reading (2,833,617 = 2,835,217)"
 Tallow And Stearine,1899,British East Indies,v,4761.0,6571.0,aggregate[1g+2p],0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1898,British East Indies,q,1692.0,123.0,magnitude,0,gold_year_unreliable,"the gold's own q column does not close this year (1,921,991 vs World 2,621,941), so this cell cannot be adjudicated against it"
+Tallow And Stearine,1900,§RESIDUAL,q,4823.0,3423.0,2_digits,1,gold_year_unreliable,"the gold's own q column does not close this year (2,118,831 vs World 2,177,991), so this cell cannot be adjudicated against it"
 Tallow And Stearine,1897,Chile,v,1120.0,112.0,magnitude,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1883,Russia,q,6171.0,5171.0,one_digit[0] 6->5,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1897,China,q,10672.0,10072.0,one_digit[2] 6->0,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
+Tallow And Stearine,1900,China,v,8081.0,8681.0,one_digit[1] 0->6,1,gold_year_unreliable,"the gold's own v column does not close this year (2,831,617 vs World 2,835,217), so this cell cannot be adjudicated against it"
 Tallow And Stearine,1886,South Australia,v,9307.0,9807.0,one_digit[1] 3->8,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1897,Chile,q,1316.0,1810.0,2_digits,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1883,Peru,v,1800.0,1500.0,one_digit[1] 8->5,1,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
 Tallow And Stearine,1897,§RESIDUAL,q,5624.0,5325.0,2_digits,0,pipeline_error,gold's own country rows already close on its own World row with the gold's reading
+Tallow And Stearine,1900,Russia,q,163.0,103.0,one_digit[1] 6->0,1,gold_year_unreliable,"the gold's own q column does not close this year (2,118,831 vs World 2,177,991), so this cell cannot be adjudicated against it"

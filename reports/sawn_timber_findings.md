@@ -1,5 +1,26 @@
 # Sawn timber: the missing component found, and why `combine` cannot apply it
 
+> **SUPERSEDED 2026-08-05 — see `reports/sawn_timber_fixed.md`.** The component
+> identified here is now applied: +16 exact01, 20 commodity-years better, 0
+> worse, fifteen years closing to the digit. Two conclusions below are wrong and
+> worth knowing why:
+>
+> * "`combine` merges the source's label counter and renames the node" — it does
+>   not. Curation runs on the emitted payload, which no longer carries label
+>   counters. The rename was **pass order**: at the curation point the anchor
+>   (`Wood And Timber — Sawn Or Split`, GBP272K, no origins) and the origins
+>   (`... Planed Or Dressed, Fir`, GBP314M) are still two nodes, and
+>   `fold_era_wordings` is what later makes them one. Combining into the
+>   anchor-only half is what split the node and left cells at 0.03. Deferring the
+>   combine to after that fold (new `combine-late` action) applies it cleanly.
+> * "the fix needs an addition no current instrument does" — the instrument was
+>   `combine` all along, plus a year scope that stops deleting the years it did
+>   not take.
+>
+> The root cause was a label defect one layer up: a row of
+> `reference/article_group_authority.csv` giving a timber article the group
+> SUGAR, because a systematic OCR failure outvoted the correct readings.
+
 Reopened after the user asked why `Sawn — Fir` has no good data despite earlier
 timber work. **The cause is identified and proved. The fix is not yet made** — the
 one instrument that looked right is harmful, and was reverted.

@@ -73,7 +73,7 @@ Bleaching Materials,1881,1585500,CWTS (Hundredweights),scope (0.15x),Rags and ot
 Bones (except Whalefins),1871,7979,Tons,scope (0.36x),Whalefins
 Bones (except Whalefins),1876,10519,Tons,scope (0.17x),Whalefins
 Bones (except Whalefins),1881,6297,Tons,scope (0.33x),Whalebone (Whalefins)
-Bones (except Whalefins),1886,9496,Tons,off (0.59x),Whalebone (Whalefins)
+Bones (except Whalefins),1886,9496,Tons,off (0.58x),Whalebone (Whalefins)
 Bones except Whalebone for Manufacturing,1866,7438,Tons,scope (10.80x),Bones of all Kinds (except Whalefins)
 Bones for manure,1866,72878,Tons,off (1.10x),Bones of all Kinds (except Whalefins)
 Bones for manure,1871,92878,Tons,off (1.09x),Bones of all Kinds (except Whalefins)
@@ -156,7 +156,7 @@ Copper Ore,1871,46335,Tons,off (0.71x),"Unwrought, part Wrought, and Old Copper"
 Copper Ore,1876,74979,Tons,off (1.37x),"Copper, Ore and Regulus"
 Copper Ore,1881,102805,Tons,off (1.43x),"Copper, Ore and Regulus"
 Copper Ore,1886,84887,Tons,off (0.86x),"Manganese, Ore of"
-Copper Ore,1891,88990,Tons,off (0.52x),"— Unwrought, Part Wrought, and Old Copper"
+Copper Ore,1891,88990,Tons,off (1.14x),"Manganese, Ore of"
 Copper Part Wrought,1866,10063,Tons,scope (2.15x),""" Unwrought, and part Wrought, Old Copper, Copper } in Plates for Coin, Coin, and Copper Sheets - """
 Copper Part Wrought,1891,2935,Tons,off (0.74x),"Metal not otherwise Enumerated, Wrought"
 Copper Regulus (and Precipitate from 1886 onward),1866,34887,Tons,off (0.62x),""" Unwrought, and part Wrought, Old Copper, Copper } in Plates for Coin, Coin, and Copper Sheets - """
@@ -185,7 +185,6 @@ Cotton Rags,1866,6262,Tons,scope (3.90x),Rags and other materials for making Pap
 Cotton Waste,1876,1905316,Lbs. (Pounds),off (0.92x),"Cotton "" of Europe, &amp;c."
 Cotton Waste,1891,19382521,Lbs. (Pounds),off (0.92x),Cotton Raw
 Cotton Yarn,1886,8125556,Lbs. (Pounds),off (1.53x),Linen Yarn
-Cotton Yarn,1891,9435187,Lbs. (Pounds),off (1.71x),"Woollen, Yarn - - - - -"
 "Cotton Yarn, and Waste of",1871,1671962,Lbs. (Pounds),off (0.85x),"Cotton "" of Europe, &amp;c."
 Cows,1866,17626,Number,scope (13.49x),"Oxen, Bulls, Cows, and Calves"
 Cows,1871,73339,Number,scope (2.98x),"Animals, Living Oxen, Bulls, Cows, and Calves"
@@ -386,6 +385,7 @@ Iron and Steel Old Broken,1891,13073,Tons,off (0.65x),"Steel, Unwrought"
 Jalap,1866,125896,Lbs. (Pounds),no-name-match,
 Jute Yarn,1866,2005461,Lbs. (Pounds),off (0.81x),"Jute, Raw"
 Jute Yarn,1896,3034611,Lbs. (Pounds),off (1.92x),Yarn
+Jute Yarn and Waste of Jute,1891,3021391,Lbs. (Pounds),scope (3.12x),Yarn
 Lard,1871,177568,CWTS (Hundredweights),scope (2.69x),Lard
 Lead Manufactures Unenumerated,1871,6347,CWTS (Hundredweights),scope (4.92x),"Manufactures, unenumerated"
 Lead Manufactures Unenumerated,1876,6722,CWTS (Hundredweights),scope (3.01x),"Manufactures, unenumerated"
@@ -397,7 +397,7 @@ Lead Ore,1871,20860,Tons,off (0.72x),Silver Ore
 Lead Ore,1876,12532,Tons,off (0.71x),"Manganese, Ore of"
 Lead Ore,1881,15228,Tons,off (1.23x),"Manganese, Ore of"
 Lead Ore,1886,34563,Tons,scope (2.12x),"Manganese, Ore of"
-Lead Ore,1891,20560,Tons,scope (8.26x),"Lead, Pig and Sheet"
+Lead Ore,1891,20560,Tons,scope (4.93x),"Manganese, Ore of"
 Leather Dressed,1886,18853250,Lbs. (Pounds),scope (4.13x),Leather
 Leather Dressed,1891,29986120,Lbs. (Pounds),scope (3.62x),Leather
 Leather Dressed,1896,39485980,Lbs. (Pounds),scope (3.53x),Leather
@@ -432,7 +432,6 @@ Maize or Indian Corn Meal,1881,25137,CWTS (Hundredweights),scope (9.52x),"Corn, 
 Maize or Indian Corn Meal,1886,10065,CWTS (Hundredweights),scope (46.49x),"Corn, Grain, and Meal Other kinds of Meal and Flour"
 Maize or Indian Corn Meal,1891,55700,CWTS (Hundredweights),scope (11.64x),"Corn, Grain, and Meal Other kinds of Meal and Flour"
 Malt,1886,5037,Qrs. (Quarters),no-name-match,
-Manganese Ore,1891,101449,Tons,scope (2.09x),"Copper, Ore and Regulus"
 Manufactures of Bronze or of Metal Bronzed or Lacquered,1866,3241,CWTS (Hundredweights),scope (25.92x),Manufactures of India and China
 Manure Unenumerated,1871,80264,Tons,scope (0.30x),"Rags and other materials for making Paper Woollen, applicable to other uses than Manure"
 Manure Unenumerated,1876,204707,Tons,scope (0.14x),"Rags and other materials for making Paper Woollen, applicable to other uses than Manure"
@@ -516,7 +515,7 @@ Ore Unenumerated,1871,9608,Tons,off (1.56x),Silver Ore
 Ore Unenumerated,1876,13481,Tons,off (0.66x),"Manganese, Ore of"
 Ore Unenumerated,1881,7888,Tons,scope (2.38x),"Manganese, Ore of"
 Ore Unenumerated,1886,15071,Tons,scope (4.87x),"Manganese, Ore of"
-Ore Unenumerated,1891,47704,Tons,scope (4.45x),"Copper, Ore and Regulus"
+Ore Unenumerated,1891,47704,Tons,scope (2.13x),"Manganese, Ore of"
 Other Materials and Pulp of Rags and of Wood for Making Paper,1881,45550,Tons,off (0.77x),"Rags, Woollen, applicable to other uses than Manure"
 Other Materials and Pulp of Rags and of Wood for Making Paper,1886,117663,Tons,off (1.11x),Wood and Timber Staves
 Other Vegetable Substances of the Nature and Quality of Undressed Hemp Except Coir and Flax,1866,2756,CWTS (Hundredweights),scope (7.21x),Glucose (Liquid) or Vegetable Syrup
@@ -789,7 +788,7 @@ Swords Cutlasses Matchets Bayonets,1886,2364,CWTS (Hundredweights),no-name-match
 Tamarinds,1866,1095341,Lbs. (Pounds),no-name-match,
 Tapioca,1866,17840,CWTS (Hundredweights),no-name-match,
 Tar,1866,218297,Barrels,scope (0.32x),Pitch and Tar: Pitch
-Tin Ore,1891,2332,Tons,scope (91.05x),"Copper, Ore and Regulus"
+Tin Ore,1891,2332,Tons,scope (43.50x),"Manganese, Ore of"
 Tobacco Manufactured Cavendish or Negrohead,1866,1630215,Lbs. (Pounds),off (1.95x),"Manufactured, Cigars and Snuff"
 Tobacco Manufactured Cavendish or Negrohead,1871,2498208,Lbs. (Pounds),off (1.54x),Tobacco Manufactured Cigars and Snuff
 Tobacco Manufactured Cavendish or Negrohead,1876,2065963,Lbs. (Pounds),off (0.67x),"Iron and Steel, Wrought or Manufactured"
@@ -891,7 +890,6 @@ Wood and Timber Dye Woods Sapan Wood,1866,2591,Tons,off (1.96x),Walnut Wood
 "Wood and Timber Fir - Sawn or Split, Planed or Dressed",1876,3759775,Loads,off (1.10x),Wood and Timber Sawn or Split
 "Wood and Timber Fir - Sawn or Split, Planed or Dressed",1881,3335736,Loads,off (1.10x),Wood and Timber Sawn or Split
 "Wood and Timber Fir - Sawn or Split, Planed or Dressed",1886,3554769,Loads,off (1.06x),Wood and Timber Sawn or Split
-Wood and Timber Furniture Woods Hardwoods and Veneers Unenumerated,1871,24421,Tons,off (0.88x),Furniture and Hardwoods Unenumerated
 Wood and Timber Hardwoods Ebony,1866,1922,Tons,scope (2.17x),Furniture and Hardwoods: Boxwood
 Wood and Timber Hewn Fir (Other than Pit Wood or Pit Props as of 1901),1866,1231455,Loads,off (1.21x),"Wood and Timber:Not Sawn or Split, including Teak"
 Wood and Timber Hewn Fir (Other than Pit Wood or Pit Props as of 1901),1871,1453571,Loads,off (1.14x),Wood and Timber Hewn
@@ -945,7 +943,7 @@ Woollen Yarn For Fancy Purposes,1871,464058,Lbs. (Pounds),scope (6.89x),Yarn
 Woollen Yarn For Fancy Purposes,1876,841878,Lbs. (Pounds),scope (2.03x),Yarn and Waste of
 Woollen Yarn For Fancy Purposes,1881,663922,Lbs. (Pounds),scope (3.49x),Yarn and Waste of
 Woollen Yarn For Fancy Purposes,1886,1420393,Lbs. (Pounds),scope (2.78x),Yarn
-Woollen Yarn For Fancy Purposes,1891,1308854,Lbs. (Pounds),scope (2.31x),Yarn
+Woollen Yarn For Fancy Purposes,1891,1308854,Lbs. (Pounds),scope (7.21x),Yarn
 Woollen Yarn For Weaving,1876,12909902,Lbs. (Pounds),off (1.09x),Woollen Yarn
 Woollen Yarn For Weaving,1881,10068329,Lbs. (Pounds),off (1.07x),"Woollen, Yarn"
 Woollen Yarn For Weaving,1886,18620957,Lbs. (Pounds),off (1.08x),Woollen Yarn
@@ -953,7 +951,7 @@ Woollen Yarn For other Purposes including Berlin Wool and Zephyr Yarn,1866,28736
 Woollen Yarn Unenumerated,1886,40619,None,off (0.75x),"Rags, Woollen, applicable to other uses than Manure"
 Woollen Yarn Unenumerated,1891,117243,None,scope (0.32x),"Rags, Woollen, applicable to other uses than Manure"
 Woollen Yarn Unenumerated,1896,49430,None,off (0.74x),"Woollen Rags, applicable to other uses than Manure"
-Woollen Yarn for Weaving Mixed or not with Silk,1891,14712167,Lbs. (Pounds),off (1.10x),"Woollen, Yarn - - - - -"
+Woollen Yarn for Weaving Mixed or not with Silk,1891,14712167,Lbs. (Pounds),off (1.10x),"Woollen, Yarn, of all kinds"
 Zinc Crude in Cakes,1866,21368,Tons,off (1.37x),Spelter or Zinc
 Zinc Manufactured,1891,403163,CWTS (Hundredweights),off (1.06x),"Stones, Marble, hewn or manufactured"
 Zinc Manufactured,1896,420068,CWTS (Hundredweights),off (1.60x),"Stones, Slabs, and Marble, rough hewn, or manufactured (other than Works of Art)"

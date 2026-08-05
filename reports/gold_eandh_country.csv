@@ -1,4 +1,12 @@
 commodity,year,naive,country,n_gold_rows,n_pipe_rows,gold_q,pipe_q,q_bucket,q_story,gold_v,pipe_v,v_bucket,v_story
+Tallow And Stearine,1870,1,Argentine Confederation,1,1,304560.0,304560.0,exact01,equal,673260.0,243.0,off,magnitude
+Tallow And Stearine,1870,1,Australia,1,1,490695.0,490695.0,exact01,equal,1022924.0,218.0,off,magnitude
+Tallow And Stearine,1870,1,Belgium,1,1,16264.0,16264.0,exact01,equal,35088.0,232.0,off,magnitude
+Tallow And Stearine,1870,1,Brazil,1,1,22836.0,22836.0,exact01,equal,50972.0,248.0,off,magnitude
+Tallow And Stearine,1870,1,France,1,1,82687.0,82687.0,exact01,equal,173401.0,2111.0,off,magnitude
+Tallow And Stearine,1870,1,Russia,1,1,242541.0,242541.0,exact01,equal,535859.0,242.0,off,magnitude
+Tallow And Stearine,1870,1,United States Of America (Atlantic),1,1,191305.0,170536.0,off,5_digits,420945.0,240.0,off,magnitude
+Tallow And Stearine,1870,1,Uruguay,1,1,146217.0,146217.0,exact01,equal,322830.0,242.0,off,magnitude
 Tallow And Stearine,1872,1,Argentina,1,1,227120.0,227120.0,exact01,equal,504052.0,504052.0,exact01,equal
 Tallow And Stearine,1872,1,Australia,1,1,505023.0,505023.0,exact01,equal,1041992.0,1041992.0,exact01,equal
 Tallow And Stearine,1872,1,Brazil,1,1,11066.0,11066.0,exact01,equal,24149.0,24149.0,exact01,equal
@@ -390,7 +398,6 @@ Tallow And Stearine,1898,1,New South Wales,1,1,503966.0,503066.0,within5,one_dig
 Tallow And Stearine,1898,1,New Zealand,1,1,305245.0,305245.0,exact01,equal,321480.0,321450.0,exact01,one_digit[4] 8->5
 Tallow And Stearine,1898,1,Queensland,1,1,118642.0,118642.0,exact01,equal,123387.0,123387.0,exact01,equal
 Tallow And Stearine,1898,1,Russia,1,1,11.0,11.0,exact01,equal,15.0,15.0,exact01,equal
-Tallow And Stearine,1898,1,Turkey,1,1,200.0,200.0,exact01,equal,270.0,270.0,exact01,equal
 Tallow And Stearine,1898,1,United States Of America (Atlantic),1,1,571959.0,571959.0,exact01,equal,538243.0,538243.0,exact01,equal
 Tallow And Stearine,1898,1,Uruguay,1,1,42117.0,42117.0,exact01,equal,44614.0,44644.0,exact01,one_digit[3] 1->4
 Tallow And Stearine,1898,1,Victoria,1,1,132268.0,132268.0,exact01,equal,135298.0,135298.0,exact01,equal
@@ -408,6 +415,26 @@ Tallow And Stearine,1899,1,Netherlands,1,1,23447.0,23447.0,exact01,equal,34676.0
 Tallow And Stearine,1899,1,United States Of America,2,1,557191.0,539636.0,within5,aggregate[2g+1p],600128.0,610026.0,within5,aggregate[2g+1p]
 Tallow And Stearine,1899,1,Uruguay,1,1,10000.0,10000.0,exact01,equal,11165.0,11163.0,exact01,one_digit[4] 5->3
 Tallow And Stearine,1899,1,§RESIDUAL,1,1,5310.0,5220.0,within5,2_digits,5906.0,5806.0,within5,one_digit[1] 9->8
+Tallow And Stearine,1900,1,Argentina,1,1,178269.0,178260.0,exact01,one_digit[5] 9->0,239288.0,230288.0,within5,one_digit[2] 9->0
+Tallow And Stearine,1900,1,Belgium,1,1,44472.0,44472.0,exact01,equal,71445.0,71415.0,exact01,one_digit[3] 4->1
+Tallow And Stearine,1900,1,British East Indies,1,1,3399.0,3399.0,exact01,equal,4671.0,4671.0,exact01,equal
+Tallow And Stearine,1900,1,Canada,1,1,22555.0,22555.0,exact01,equal,28489.0,23459.0,off,2_digits
+Tallow And Stearine,1900,1,Chile,1,1,1063.0,1063.0,exact01,equal,1155.0,1155.0,exact01,equal
+Tallow And Stearine,1900,1,China,1,1,6011.0,6011.0,exact01,equal,8081.0,8681.0,off,one_digit[1] 0->6
+Tallow And Stearine,1900,1,Falkland Islands,1,1,5515.0,5516.0,exact01,one_digit[3] 5->6,6121.0,6121.0,exact01,equal
+Tallow And Stearine,1900,1,France,1,1,55903.0,55003.0,within5,one_digit[2] 9->0,90795.0,90795.0,exact01,equal
+Tallow And Stearine,1900,1,Germany,1,1,27842.0,27842.0,exact01,equal,26489.0,28489.0,off,one_digit[1] 6->8
+Tallow And Stearine,1900,1,Netherlands,1,1,20730.0,20730.0,exact01,equal,32957.0,32957.0,exact01,equal
+Tallow And Stearine,1900,1,New South Wales,1,1,436519.0,430510.0,within5,2_digits,565436.0,505436.0,off,one_digit[1] 6->0
+Tallow And Stearine,1900,1,New Zealand,1,1,361928.0,361028.0,within5,one_digit[3] 9->0,485110.0,485110.0,exact01,equal
+Tallow And Stearine,1900,1,Queensland,1,1,205402.0,205402.0,exact01,equal,261667.0,204667.0,off,2_digits
+Tallow And Stearine,1900,1,Russia,1,1,163.0,103.0,off,one_digit[1] 6->0,228.0,228.0,exact01,equal
+Tallow And Stearine,1900,1,South Australia,1,1,3569.0,3569.0,exact01,equal,4614.0,4614.0,exact01,equal
+Tallow And Stearine,1900,1,Turkey,1,1,6.0,6.0,exact01,equal,8.0,8.0,exact01,equal
+Tallow And Stearine,1900,1,United States Of America,2,1,510628.0,505628.0,within5,aggregate[2g+1p],702226.0,702136.0,exact01,aggregate[2g+1p]
+Tallow And Stearine,1900,1,Uruguay,1,1,21230.0,21230.0,exact01,equal,27708.0,27708.0,exact01,equal
+Tallow And Stearine,1900,1,Victoria,1,1,208804.0,203804.0,within5,one_digit[2] 8->3,270091.0,270091.0,exact01,equal
+Tallow And Stearine,1900,1,§RESIDUAL,1,1,4823.0,3423.0,off,2_digits,5038.0,5038.0,exact01,equal
 Rosin,1876,0,France,1,1,13851.0,13851.0,exact01,equal,6738.0,6738.0,exact01,equal
 Rosin,1876,0,United States Of America,1,1,966109.0,966109.0,exact01,equal,306234.0,306234.0,exact01,equal
 Rosin,1876,0,§RESIDUAL,1,1,67.0,67.0,exact01,equal,35.0,35.0,exact01,equal

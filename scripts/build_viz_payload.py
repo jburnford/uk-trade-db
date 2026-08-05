@@ -1391,245 +1391,288 @@ def main():
     n_cur = 0
     n_comb = 0
     n_drop = 0
-    if cur_f.exists():
-        for r in csv.DictReader(open(cur_f)):
-            name, act, tgt = r['commodity'], r['action'], (r.get('target') or '').strip()
-            if name not in payload:
-                continue
-            # Optional 'years' scope ("1886-1892", or ';'-separated): a
-            # de-headed label can be the only carrier of some years and pure
-            # glue in others. 'Oil' holds palm oil's 1886-92 West African
-            # origins, which nothing else has, and ALSO 1897-99 cells whose
-            # 'countries' are commodity names (Petroleum Gallons, Potatoes,
-            # Paper-Making Materials) that inflated palm's 1898 origin value
-            # ninefold. Folding the whole label buys the good years at the
-            # price of the bad ones; scoping takes only what it came for.
-            yrs = None
-            if (r.get('years') or '').strip():
-                yrs = set()
-                for part in re.split(r'[;,]', r['years']):
-                    part = part.strip()
-                    if '-' in part:
-                        a, b = part.split('-', 1)
-                        yrs.update(range(int(a), int(b) + 1))
-                    elif part:
-                        yrs.add(int(part))
-            if act == 'drop':
-                del payload[name]; n_cur += 1
-            elif act == 'drop-country' and tgt:
-                # One country's cells are not this commodity's at all. 'Ivory -
-                # Vegetable' (corozo nuts, from Colombia and Ecuador) carries a
-                # 'british east indies' row of 335,000-391,000 cwt in every year
-                # 1894-98 against printed totals of 12,000-39,000; drop it and
-                # the years go from 10x-31x to 1.02-1.08, and 1899 - the one
-                # year with no such row - is already exact. A stable ~350,000
-                # cwt East Indies series that belongs to some other line.
-                # Anchor-guarded like every other pass here: a cell goes only
-                # where the commodity prints a total for that (unit, year) AND
-                # removing it brings the year CLOSER. So a mis-aimed rule
-                # removes nothing, and a country that really belongs is kept by
-                # the arithmetic rather than by trust.
-                ent = payload[name]
-                c = ent['c']
-                if tgt in c:
-                    # anch_y is the fallback for a commodity whose own anchor
-                    # has lost its unit label - which is exactly the state a
-                    # glued cell leaves it in, since unit_the_anchor refuses to
-                    # label a series whose years do not agree, and they do not
-                    # agree BECAUSE of the glued cell. Comparing the numbers
-                    # across a missing label is what unit_the_anchor does too;
-                    # the closer-to-the-total guard still has to hold.
-                    anch, anch_y, seen = {}, {}, {}
-                    for u, cells in (c.get(TK) or {}).items():
-                        for cell in cells:
-                            if cell[1]:
-                                anch[(u, cell[0])] = cell[1]
-                                anch_y[cell[0]] = cell[1]
-                    for cty2, byu2 in c.items():
-                        if cty2 == TK or '(' in cty2:
-                            continue
-                        for u, cells in byu2.items():
-                            for cell in cells:
-                                seen[(u, cell[0])] = seen.get(
-                                    (u, cell[0]), 0) + cell[1]
-                    for u, cells in list(c[tgt].items()):
-                        keep = []
-                        for cell in cells:
-                            k = (u, cell[0])
-                            t1v = anch.get(k) or anch_y.get(cell[0])
-                            tot = seen.get(k)
-                            if (yrs is not None and cell[0] not in yrs) or (
-                                    not t1v or tot is None) or (
-                                    abs(tot - cell[1] - t1v) >= abs(tot - t1v)):
-                                keep.append(cell)
-                                continue
-                            seen[k] = tot - cell[1]
-                            # 'v' is the size the map ranks and reports by, so
-                            # a dropped cell has to leave it too - otherwise
-                            # this commodity keeps advertising trade it no
-                            # longer holds.
-                            if len(cell) > 3:
-                                # 'v' was accumulated as a sum of
-                                # min(cell_value, 50,000,000) - the same cap the
-                                # commodity roll-up applies - so a cell has to
-                                # leave it capped the same way. Subtracting the
-                                # raw figure zeroed `Silk - Raw` (GBP127.6M) and
-                                # `Skins, Furs, And Pelts - Seal` (GBP63.4M) the
-                                # first time this ran, because the garbage cell
-                                # being removed carried a garbage VALUE too.
-                                ent['v'] = max(0.0, (ent.get('v') or 0)
-                                               - min(cell[3], 50_000_000))
-                            n_drop += 1
-                        if keep:
-                            c[tgt][u] = keep
-                        else:
-                            del c[tgt][u]
-                    if not c[tgt]:
-                        del c[tgt]
-            elif act in ('fold', 'rename', 'combine') and tgt:
-                src = payload.pop(name); n_cur += 1
-                if yrs is not None:
-                    src = {**src, 'c': {c: {u: [x for x in cells if x[0] in yrs]
-                                            for u, cells in byu.items()}
-                                        for c, byu in (src.get('c') or {}).items()}}
-                    src['c'] = {c: {u: v for u, v in byu.items() if v}
-                                for c, byu in src['c'].items()}
-                    src['c'] = {c: byu for c, byu in src['c'].items() if byu}
-                if tgt not in payload:
-                    payload[tgt] = src
-                else:
-                    dst = payload[tgt]
-                    # Cells merge by (country, unit, YEAR) with the target
-                    # winning, so a source year the target already has adds
-                    # nothing. 'v' - the size the map ranks and reports by -
-                    # must follow the cells rather than being added whole:
-                    #   * a source carrying only §TOTAL (an era label that
-                    #     published the national line and no origin table)
-                    #     contributes no trade at all. It MEASURES trade the
-                    #     target already counts, so adding its value would
-                    #     inflate the commodity by its own anchor.
-                    #   * a source overlapping the target's years contributes
-                    #     only the years actually taken.
-                    # 'v' is an accumulated sort key rather than the exact sum
-                    # of surviving cells, so it is carried over in proportion
-                    # to the cell value kept. A fully disjoint fold keeps all
-                    # of it, which is what every fold adjudicated so far does.
-                    src_v = kept_v = 0.0
-                    adding = act == 'combine'
-                    danch, dseen = {}, {}
-                    if adding:
-                        for u, cells in (dst['c'].get(TK) or {}).items():
+    cur_rows = list(csv.DictReader(open(cur_f))) if cur_f.exists() else []
+    # 'combine-late' is a combine DEFERRED until after the era-wording fold.
+    # Some targets are not whole yet at this point: the sawn-timber anchor
+    # ('Wood And Timber — Sawn Or Split', the printed section total) and its
+    # origins ('... Planed Or Dressed, Fir') are still two payload nodes here
+    # and only become one in fold_era_wordings. Combining into the anchor-only
+    # half puts the constituent where the origins are not, and the era pass
+    # then refuses the merge - the node split, kept 3 of its 32 anchor years
+    # and the rest read 0.03. Deferring is safe for the same reason re-running
+    # the anchor passes down there is safe: a combine only moves a cell when
+    # the year's own printed total says the cell brings it CLOSER.
+    LATE = 'combine-late'
+
+    def apply_curation(rows):
+        nonlocal n_cur, n_comb, n_drop
+        for r in rows:
+                name, act, tgt = r['commodity'], r['action'], (r.get('target') or '').strip()
+                if name not in payload:
+                    continue
+                # Optional 'years' scope ("1886-1892", or ';'-separated): a
+                # de-headed label can be the only carrier of some years and pure
+                # glue in others. 'Oil' holds palm oil's 1886-92 West African
+                # origins, which nothing else has, and ALSO 1897-99 cells whose
+                # 'countries' are commodity names (Petroleum Gallons, Potatoes,
+                # Paper-Making Materials) that inflated palm's 1898 origin value
+                # ninefold. Folding the whole label buys the good years at the
+                # price of the bad ones; scoping takes only what it came for.
+                yrs = None
+                if (r.get('years') or '').strip():
+                    yrs = set()
+                    for part in re.split(r'[;,]', r['years']):
+                        part = part.strip()
+                        if '-' in part:
+                            a, b = part.split('-', 1)
+                            yrs.update(range(int(a), int(b) + 1))
+                        elif part:
+                            yrs.add(int(part))
+                if act == 'drop':
+                    del payload[name]; n_cur += 1
+                elif act == 'drop-country' and tgt:
+                    # One country's cells are not this commodity's at all. 'Ivory -
+                    # Vegetable' (corozo nuts, from Colombia and Ecuador) carries a
+                    # 'british east indies' row of 335,000-391,000 cwt in every year
+                    # 1894-98 against printed totals of 12,000-39,000; drop it and
+                    # the years go from 10x-31x to 1.02-1.08, and 1899 - the one
+                    # year with no such row - is already exact. A stable ~350,000
+                    # cwt East Indies series that belongs to some other line.
+                    # Anchor-guarded like every other pass here: a cell goes only
+                    # where the commodity prints a total for that (unit, year) AND
+                    # removing it brings the year CLOSER. So a mis-aimed rule
+                    # removes nothing, and a country that really belongs is kept by
+                    # the arithmetic rather than by trust.
+                    ent = payload[name]
+                    c = ent['c']
+                    if tgt in c:
+                        # anch_y is the fallback for a commodity whose own anchor
+                        # has lost its unit label - which is exactly the state a
+                        # glued cell leaves it in, since unit_the_anchor refuses to
+                        # label a series whose years do not agree, and they do not
+                        # agree BECAUSE of the glued cell. Comparing the numbers
+                        # across a missing label is what unit_the_anchor does too;
+                        # the closer-to-the-total guard still has to hold.
+                        anch, anch_y, seen = {}, {}, {}
+                        for u, cells in (c.get(TK) or {}).items():
                             for cell in cells:
                                 if cell[1]:
-                                    danch[(u, cell[0])] = cell[1]
-                        for cty2, byu2 in dst['c'].items():
+                                    anch[(u, cell[0])] = cell[1]
+                                    anch_y[cell[0]] = cell[1]
+                        for cty2, byu2 in c.items():
                             if cty2 == TK or '(' in cty2:
                                 continue
                             for u, cells in byu2.items():
                                 for cell in cells:
-                                    dseen[(u, cell[0])] = dseen.get(
+                                    seen[(u, cell[0])] = seen.get(
                                         (u, cell[0]), 0) + cell[1]
-                    for ctry, byu in src['c'].items():
-                        dbyu = dst['c'].setdefault(ctry, {})
-                        # A source cell that lost its printed unit belongs to
-                        # whatever unit the TARGET uses for this country, and
-                        # has to be relabelled BEFORE the year check rather
-                        # than after it. Otherwise it slides past under the
-                        # '?' key and becomes a second copy of a row the
-                        # target already holds - which is what folding the
-                        # de-headed label 'Wool' into "Wool - Sheep Or Lambs'"
-                        # did: its 1896 cells are digit-identical to the
-                        # target's (New South Wales 163,717,080 either way)
-                        # and were added again, while its 1897-99 cells, the
-                        # only copy of the colonial wool for those years, were
-                        # invisible to the quantity axis. Same magnitude guard
-                        # heal_units uses: three times either way, or the two
-                        # are not the same measure and the cells stay '?'.
-                        lab = {u: cs for u, cs in dbyu.items() if u != '?'}
-                        if '?' in byu and lab:
-                            dt = max(lab, key=lambda u: len(lab[u]))
-                            dv = sorted(c[1] for c in lab[dt] if c[1] > 0)
-                            sv = sorted(c[1] for c in byu['?'] if c[1] > 0)
-                            dm = dv[len(dv) // 2] if dv else 0
-                            sm = sv[len(sv) // 2] if sv else 0
-                            move = []
-                            if dm and sm and dm / 3 < sm < dm * 3:
-                                move = byu['?']          # whole bucket agrees
-                            elif dm:
-                                # ...or rescue cell by cell against the
-                                # NEAREST labelled year, as heal_units does.
-                                # A span median is the wrong yardstick for a
-                                # growing series: Australasia's wool runs from
-                                # 1872, so the target's median sits far below
-                                # its 1897 cell and the bucket test rejects a
-                                # cell that is 1.3x the neighbouring year.
-                                near = {}
-                                for c in lab[dt]:
-                                    near.setdefault(c[0], c[1])
-                                def _ref(y0):
-                                    for dy in range(4):
-                                        for yy in (y0 - dy, y0 + dy):
-                                            if near.get(yy):
-                                                return near[yy]
-                                    return dm
-                                move = [c for c in byu['?'] if c[1] > 0
-                                        and _ref(c[0]) / 3 < c[1] < _ref(c[0]) * 3]
-                            if move:
-                                byu = dict(byu)
-                                rest = [c for c in byu['?'] if c not in move]
-                                byu[dt] = byu.get(dt, []) + move
-                                if rest:
-                                    byu['?'] = rest
-                                else:
-                                    byu.pop('?')
-                        for u, series in byu.items():
-                            idx = {row[0]: row for row in dbyu.get(u, [])}
-                            new = [row for row in series if row[0] not in idx]
-                            # 'combine': the source is a CONSTITUENT of the
-                            # target, not a copy of it - 'Cutch And Gambier' is
-                            # one printed line whose origin table is two, and a
-                            # plain fold drops the second half's Other
-                            # Countries row instead of adding it. Where both
-                            # sides hold the same (country, unit, year), ADD.
-                            # Anchor-guarded exactly like the other passes:
-                            # only where the target prints a total for that
-                            # (unit, year) AND adding brings the year closer to
-                            # it. With no printed total to check against,
-                            # 'combine' behaves as 'fold' - so it can turn a
-                            # duplicate into a double count only if a human
-                            # writes the action AND the arithmetic agrees.
-                            if adding and ctry != TK:
-                                for row in series:
-                                    hit = idx.get(row[0])
-                                    if hit is None:
-                                        continue
-                                    t1v = danch.get((u, row[0]))
-                                    tot = dseen.get((u, row[0]))
-                                    if not t1v or tot is None:
-                                        continue
-                                    if abs(tot + row[1] - t1v) >= abs(tot - t1v):
-                                        continue
-                                    hit[1] += row[1]
-                                    hit[2] = max(hit[2], row[2])
-                                    if len(hit) > 3 and len(row) > 3:
-                                        hit[3] += row[3]
-                                    dseen[(u, row[0])] = tot + row[1]
-                                    kept_v += row[3] if len(row) > 3 else 0
-                                    n_comb += 1
-                            for row in new:
-                                if ctry != TK:
-                                    dseen[(u, row[0])] = dseen.get(
-                                        (u, row[0]), 0) + row[1]
-                            if ctry != '§TOTAL':
-                                src_v += sum(row[3] for row in series)
-                                kept_v += sum(row[3] for row in new)
-                            dbyu.setdefault(u, []).extend(new)
-                    dst['v'] = dst.get('v', 0) + (
-                        src.get('v', 0) * kept_v / src_v if src_v else 0)
-        if n_cur:
-            print(f'  curation: {n_cur} commodities dropped/folded/renamed'
-                  + (f'; {n_comb} constituent cells added' if n_comb else '')
-                  + (f'; {n_drop} misfiled country cells dropped' if n_drop else ''))
+                        for u, cells in list(c[tgt].items()):
+                            keep = []
+                            for cell in cells:
+                                k = (u, cell[0])
+                                t1v = anch.get(k) or anch_y.get(cell[0])
+                                tot = seen.get(k)
+                                if (yrs is not None and cell[0] not in yrs) or (
+                                        not t1v or tot is None) or (
+                                        abs(tot - cell[1] - t1v) >= abs(tot - t1v)):
+                                    keep.append(cell)
+                                    continue
+                                seen[k] = tot - cell[1]
+                                # 'v' is the size the map ranks and reports by, so
+                                # a dropped cell has to leave it too - otherwise
+                                # this commodity keeps advertising trade it no
+                                # longer holds.
+                                if len(cell) > 3:
+                                    # 'v' was accumulated as a sum of
+                                    # min(cell_value, 50,000,000) - the same cap the
+                                    # commodity roll-up applies - so a cell has to
+                                    # leave it capped the same way. Subtracting the
+                                    # raw figure zeroed `Silk - Raw` (GBP127.6M) and
+                                    # `Skins, Furs, And Pelts - Seal` (GBP63.4M) the
+                                    # first time this ran, because the garbage cell
+                                    # being removed carried a garbage VALUE too.
+                                    ent['v'] = max(0.0, (ent.get('v') or 0)
+                                                   - min(cell[3], 50_000_000))
+                                n_drop += 1
+                            if keep:
+                                c[tgt][u] = keep
+                            else:
+                                del c[tgt][u]
+                        if not c[tgt]:
+                            del c[tgt]
+                elif act in ('fold', 'rename', 'combine', LATE) and tgt:
+                    src = payload.pop(name); n_cur += 1
+                    if yrs is not None:
+                        def _scope(keep):
+                            d = {c: {u: [x for x in cells if (x[0] in yrs) == keep]
+                                     for u, cells in byu.items()}
+                                 for c, byu in (src.get('c') or {}).items()}
+                            d = {c: {u: v for u, v in byu.items() if v}
+                                 for c, byu in d.items()}
+                            return {c: byu for c, byu in d.items() if byu}
+                        rest = _scope(False)
+                        src = {**src, 'c': _scope(True)}
+                        # A year-scoped 'combine' says "in THESE years the source is
+                        # a constituent of the target" — it does not say the other
+                        # years are junk. fold/rename do mean that (the label itself
+                        # is wrong, in every year), so they keep dropping the
+                        # remainder; combine puts it back under the original name.
+                        # Without this the sawn-timber sub-sort's 1898-1900 origins
+                        # — real trade, just measured against a fir-only anchor and
+                        # so deliberately out of scope — were deleted outright.
+                        if act in ('combine', LATE) and rest:
+                            # 'v' is the sort/size key the map ranks by, so it has
+                            # to follow the cells rather than being duplicated on
+                            # both halves.
+                            def _val(d):
+                                return sum(x[3] for byu in d.values()
+                                           for cells in byu.values()
+                                           for x in cells if len(x) > 3)
+                            vk, vr = _val(src['c']), _val(rest)
+                            v0 = src.get('v', 0) or 0
+                            if vk + vr:
+                                src = {**src, 'v': v0 * vk / (vk + vr)}
+                                payload[name] = {'v': v0 * vr / (vk + vr), 'c': rest}
+                            else:
+                                payload[name] = {'v': 0, 'c': rest}
+                            n_cur -= 1
+                    if tgt not in payload:
+                        payload[tgt] = src
+                    else:
+                        dst = payload[tgt]
+                        # Cells merge by (country, unit, YEAR) with the target
+                        # winning, so a source year the target already has adds
+                        # nothing. 'v' - the size the map ranks and reports by -
+                        # must follow the cells rather than being added whole:
+                        #   * a source carrying only §TOTAL (an era label that
+                        #     published the national line and no origin table)
+                        #     contributes no trade at all. It MEASURES trade the
+                        #     target already counts, so adding its value would
+                        #     inflate the commodity by its own anchor.
+                        #   * a source overlapping the target's years contributes
+                        #     only the years actually taken.
+                        # 'v' is an accumulated sort key rather than the exact sum
+                        # of surviving cells, so it is carried over in proportion
+                        # to the cell value kept. A fully disjoint fold keeps all
+                        # of it, which is what every fold adjudicated so far does.
+                        src_v = kept_v = 0.0
+                        adding = act in ('combine', LATE)
+                        danch, dseen = {}, {}
+                        if adding:
+                            for u, cells in (dst['c'].get(TK) or {}).items():
+                                for cell in cells:
+                                    if cell[1]:
+                                        danch[(u, cell[0])] = cell[1]
+                            for cty2, byu2 in dst['c'].items():
+                                if cty2 == TK or '(' in cty2:
+                                    continue
+                                for u, cells in byu2.items():
+                                    for cell in cells:
+                                        dseen[(u, cell[0])] = dseen.get(
+                                            (u, cell[0]), 0) + cell[1]
+                        for ctry, byu in src['c'].items():
+                            dbyu = dst['c'].setdefault(ctry, {})
+                            # A source cell that lost its printed unit belongs to
+                            # whatever unit the TARGET uses for this country, and
+                            # has to be relabelled BEFORE the year check rather
+                            # than after it. Otherwise it slides past under the
+                            # '?' key and becomes a second copy of a row the
+                            # target already holds - which is what folding the
+                            # de-headed label 'Wool' into "Wool - Sheep Or Lambs'"
+                            # did: its 1896 cells are digit-identical to the
+                            # target's (New South Wales 163,717,080 either way)
+                            # and were added again, while its 1897-99 cells, the
+                            # only copy of the colonial wool for those years, were
+                            # invisible to the quantity axis. Same magnitude guard
+                            # heal_units uses: three times either way, or the two
+                            # are not the same measure and the cells stay '?'.
+                            lab = {u: cs for u, cs in dbyu.items() if u != '?'}
+                            if '?' in byu and lab:
+                                dt = max(lab, key=lambda u: len(lab[u]))
+                                dv = sorted(c[1] for c in lab[dt] if c[1] > 0)
+                                sv = sorted(c[1] for c in byu['?'] if c[1] > 0)
+                                dm = dv[len(dv) // 2] if dv else 0
+                                sm = sv[len(sv) // 2] if sv else 0
+                                move = []
+                                if dm and sm and dm / 3 < sm < dm * 3:
+                                    move = byu['?']          # whole bucket agrees
+                                elif dm:
+                                    # ...or rescue cell by cell against the
+                                    # NEAREST labelled year, as heal_units does.
+                                    # A span median is the wrong yardstick for a
+                                    # growing series: Australasia's wool runs from
+                                    # 1872, so the target's median sits far below
+                                    # its 1897 cell and the bucket test rejects a
+                                    # cell that is 1.3x the neighbouring year.
+                                    near = {}
+                                    for c in lab[dt]:
+                                        near.setdefault(c[0], c[1])
+                                    def _ref(y0):
+                                        for dy in range(4):
+                                            for yy in (y0 - dy, y0 + dy):
+                                                if near.get(yy):
+                                                    return near[yy]
+                                        return dm
+                                    move = [c for c in byu['?'] if c[1] > 0
+                                            and _ref(c[0]) / 3 < c[1] < _ref(c[0]) * 3]
+                                if move:
+                                    byu = dict(byu)
+                                    rest = [c for c in byu['?'] if c not in move]
+                                    byu[dt] = byu.get(dt, []) + move
+                                    if rest:
+                                        byu['?'] = rest
+                                    else:
+                                        byu.pop('?')
+                            for u, series in byu.items():
+                                idx = {row[0]: row for row in dbyu.get(u, [])}
+                                new = [row for row in series if row[0] not in idx]
+                                # 'combine': the source is a CONSTITUENT of the
+                                # target, not a copy of it - 'Cutch And Gambier' is
+                                # one printed line whose origin table is two, and a
+                                # plain fold drops the second half's Other
+                                # Countries row instead of adding it. Where both
+                                # sides hold the same (country, unit, year), ADD.
+                                # Anchor-guarded exactly like the other passes:
+                                # only where the target prints a total for that
+                                # (unit, year) AND adding brings the year closer to
+                                # it. With no printed total to check against,
+                                # 'combine' behaves as 'fold' - so it can turn a
+                                # duplicate into a double count only if a human
+                                # writes the action AND the arithmetic agrees.
+                                if adding and ctry != TK:
+                                    for row in series:
+                                        hit = idx.get(row[0])
+                                        if hit is None:
+                                            continue
+                                        t1v = danch.get((u, row[0]))
+                                        tot = dseen.get((u, row[0]))
+                                        if not t1v or tot is None:
+                                            continue
+                                        if abs(tot + row[1] - t1v) >= abs(tot - t1v):
+                                            continue
+                                        hit[1] += row[1]
+                                        hit[2] = max(hit[2], row[2])
+                                        if len(hit) > 3 and len(row) > 3:
+                                            hit[3] += row[3]
+                                        dseen[(u, row[0])] = tot + row[1]
+                                        kept_v += row[3] if len(row) > 3 else 0
+                                        n_comb += 1
+                                for row in new:
+                                    if ctry != TK:
+                                        dseen[(u, row[0])] = dseen.get(
+                                            (u, row[0]), 0) + row[1]
+                                if ctry != '§TOTAL':
+                                    src_v += sum(row[3] for row in series)
+                                    kept_v += sum(row[3] for row in new)
+                                dbyu.setdefault(u, []).extend(new)
+                        dst['v'] = dst.get('v', 0) + (
+                            src.get('v', 0) * kept_v / src_v if src_v else 0)
+
+    apply_curation([r for r in cur_rows if r['action'] != LATE])
+    if n_cur:
+        print(f'  curation: {n_cur} commodities dropped/folded/renamed'
+              + (f'; {n_comb} constituent cells added' if n_comb else '')
+              + (f'; {n_drop} misfiled country cells dropped' if n_drop else ''))
     # ---- era-wording fold: one printed line, re-worded mid-series, is ONE
     # commodity. The abstract re-words lines ('For Fancy purposes' -> 'For
     # Fancy Purposes, including Berlin Wool and Zephyr Yarn' in 1893; 'Sago'
@@ -1847,6 +1890,14 @@ def main():
         return len(merges)
 
     n_era = fold_era_wordings(payload)
+
+    # deferred combines — see LATE above. Run here, where a target that the era
+    # pass has just reunited with its own anchor is finally one node.
+    n_cur0, n_comb0 = n_cur, n_comb
+    apply_curation([r for r in cur_rows if r['action'] == LATE])
+    if n_cur > n_cur0 or n_comb > n_comb0:
+        print(f'  late curation (post era-fold): {n_cur - n_cur0} combined; '
+              f'{n_comb - n_comb0} constituent cells added')
 
     # A fold brings in countries the target has no labelled cell for, so the
     # per-country unit tests inside the fold cannot reach them and they arrive

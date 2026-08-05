@@ -178,7 +178,16 @@ def load_group_authority():
     state scatters one commodity across bogus groups (Raisins under CARDS
     PLAYING; wine articles under TEA); keying and labelling by the canonical
     group merges those readings back onto one commodity. Low-confidence
-    (<50% plurality, flag=REVIEW) rows are not applied."""
+    (<50% plurality, flag=REVIEW) rows are not applied.
+
+    reference/group_authority_overrides.csv wins over the vote. The vote is a
+    plurality of OCR readings, so it loses whenever the STALE group is the one
+    printed more often — 'Staves, of all Dimensions' reads SUGAR in 100% of its
+    138 rows because every volume that carries it lost the same column-top
+    heading. The abstract prints the group itself ('Wood and Timber | Staves,
+    of all dimensions'), which is evidence the row-count vote never sees.
+    Overrides are applied REGARDLESS of the vote's flag, so they also promote
+    an article the vote left at REVIEW."""
     import csv
     import validate_gold as V
     auth = {}
@@ -186,6 +195,11 @@ def load_group_authority():
     if f.exists():
         for r in csv.DictReader(open(f)):
             if r['flag'] != 'REVIEW' and V.sig(r['article']):
+                auth[V.sig(r['article'])] = r['canonical_group']
+    ov = BASE / 'reference' / 'group_authority_overrides.csv'
+    if ov.exists():
+        for r in csv.DictReader(open(ov)):
+            if V.sig(r['article']):
                 auth[V.sig(r['article'])] = r['canonical_group']
     return auth
 
