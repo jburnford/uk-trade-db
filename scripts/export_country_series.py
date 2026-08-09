@@ -63,8 +63,13 @@ def load(con, tbl, flow):
         from "{tbl}" where flow = ?
         order by volume, ag, art, unit, seq
     """, [flow]).fetchall()
+    fix = load_repairs()
     b = collections.defaultdict(list)
     for vol, yr, ag, art, unit, sq, ctry, val, qt in rows:
+        if val is not None:
+            nv = fix.get((vol, ag, art, ctry, round(val)))
+            if nv is not None:
+                val = nv
         b[(vol, yr, ag, art, unit)].append((sq, ctry, val, qt))
     return b
 
@@ -83,6 +88,24 @@ def section_verdicts(rws):
             for s in seqs:
                 out[s] = v
             members, seqs = [], []
+    return out
+
+
+def load_repairs(path='reference/export_cell_repairs.csv'):
+    """Provenance-safe overlay of scripts/repair_fused_cells.py corrections.
+
+    Keyed on the BAD value as well as the coordinates, so a correction can only
+    ever replace the exact number it was derived from. If the parse changes
+    upstream the key stops matching and the repair drops out rather than
+    silently overwriting a different figure.
+    """
+    import csv as _csv, os as _os
+    out = {}
+    if not _os.path.exists(path):
+        return out
+    for r in _csv.DictReader(open(path)):
+        out[(r['volume'], r['article_group'], r['article'], r['country_raw'],
+             round(float(r['old_value'])))] = float(r['new_value'])
     return out
 
 

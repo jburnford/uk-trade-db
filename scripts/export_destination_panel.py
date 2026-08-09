@@ -49,6 +49,24 @@ def verdict(members, printed):
     return 'exact01' if d <= 0.001 else ('within5' if d <= 0.05 else 'off')
 
 
+def load_repairs(path='reference/export_cell_repairs.csv'):
+    """Provenance-safe overlay of scripts/repair_fused_cells.py corrections.
+
+    Keyed on the BAD value as well as the coordinates, so a correction can only
+    ever replace the exact number it was derived from. If the parse changes
+    upstream the key stops matching and the repair drops out rather than
+    silently overwriting a different figure.
+    """
+    import csv as _csv, os as _os
+    out = {}
+    if not _os.path.exists(path):
+        return out
+    for r in _csv.DictReader(open(path)):
+        out[(r['volume'], r['article_group'], r['article'], r['country_raw'],
+             round(float(r['old_value'])))] = float(r['new_value'])
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--db', default='db/uk_trade.duckdb')
@@ -67,8 +85,14 @@ def main():
         order by volume, ag, art, unit, row_seq
     """, [a.flow]).fetchall()
 
+    fix = load_repairs()
+    n_fixed = 0
     blocks = collections.defaultdict(list)
     for vol, yr, ag, art, unit, sq, ctry, val in rows:
+        if val is not None:
+            nv = fix.get((vol, ag, art, ctry, round(val)))
+            if nv is not None:
+                val, n_fixed = nv, n_fixed + 1
         blocks[(vol, yr, ag, art, unit)].append((ctry, val))
     own = {}
     for (vol, yr, *_) in blocks:
@@ -161,6 +185,7 @@ def main():
           f'destinations={len(panel)}   rows={len(recs):,}')
     print(f'excluded as unresolved labels: {dropped[1]:,} cells, '
           f'GBP {dropped[0]:,.0f}')
+    print(f'fused-cell repairs applied: {n_fixed}')
     print(f'\ntop {a.top} destinations by MEDIAN annual value')
     print(f'{"destination":>34} {"median/yr":>14} {"years":>6} {"proven%":>8}')
     for d in top:
