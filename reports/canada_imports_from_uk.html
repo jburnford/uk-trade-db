@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canadian imports from the United Kingdom, 1870–1900</title>
+<style>
+  .viz-root{
+    color-scheme: light;
+    --surface-1:#fcfcfb; --surface-2:#f4f4f1;
+    --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#78776f;
+    --rule:#e4e3de; --grid:#ecebe6;
+    --series-1:#2a78d6; --context:#b8b7b0;
+    --c1:#86b6ef; --c2:#5598e7; --c3:#2a78d6; --c4:#184f95;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:where(:not([data-theme="light"])) .viz-root{
+      color-scheme: dark;
+      --surface-1:#1a1a19; --surface-2:#232322;
+      --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8e8d84;
+      --rule:#343431; --grid:#2b2b29;
+      --series-1:#3987e5; --context:#5c5b55;
+      --c1:#cde2fb; --c2:#86b6ef; --c3:#3987e5; --c4:#184f95;
+    }
+  }
+  :root[data-theme="dark"] .viz-root{
+    color-scheme: dark;
+    --surface-1:#1a1a19; --surface-2:#232322;
+    --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8e8d84;
+    --rule:#343431; --grid:#2b2b29;
+    --series-1:#3987e5; --context:#5c5b55;
+    --c1:#cde2fb; --c2:#86b6ef; --c3:#3987e5; --c4:#184f95;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--surface-1)}
+  .viz-root{background:var(--surface-1);color:var(--text-primary);
+    font:14px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:32px 28px 48px;max-width:1080px;margin:0 auto}
+  h1{font-size:22px;line-height:1.25;margin:0 0 6px;font-weight:600;letter-spacing:-.01em}
+  .sub{color:var(--text-secondary);margin:0 0 4px;max-width:74ch}
+  .src{color:var(--text-muted);font-size:12px;margin:0 0 26px}
+  h2{font-size:15px;font-weight:600;margin:34px 0 2px}
+  .cap{color:var(--text-secondary);font-size:13px;margin:0 0 14px;max-width:78ch}
+  .fig{background:var(--surface-1);border:1px solid var(--rule);border-radius:10px;padding:16px 14px 10px;position:relative}
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .axis line,.axis path{stroke:var(--rule);stroke-width:1;shape-rendering:crispEdges}
+  .grid line{stroke:var(--grid);stroke-width:1;shape-rendering:crispEdges}
+  .tick{fill:var(--text-muted);font-size:11px}
+  .alab{fill:var(--text-secondary);font-size:11px}
+  .lgd{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin:12px 2px 2px;font-size:12px;color:var(--text-secondary)}
+  .lgd .it{display:flex;gap:7px;align-items:center}
+  .sw{width:14px;height:3px;border-radius:2px;display:inline-block}
+  .swb{width:13px;height:13px;border-radius:3px;display:inline-block}
+  .tip{position:absolute;pointer-events:none;opacity:0;transition:opacity .09s;
+    background:var(--surface-1);border:1px solid var(--rule);border-radius:8px;
+    padding:9px 11px;font-size:12px;color:var(--text-primary);
+    box-shadow:0 4px 16px rgba(0,0,0,.13);min-width:186px;z-index:5}
+  .tip b{font-size:13px}
+  .tip .r{display:flex;justify-content:space-between;gap:14px;margin-top:3px;color:var(--text-secondary)}
+  .tip .r span:last-child{color:var(--text-primary);font-variant-numeric:tabular-nums}
+  .notes{margin-top:34px;border-top:1px solid var(--rule);padding-top:18px}
+  .notes h3{font-size:13px;margin:0 0 10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-secondary)}
+  .notes li{color:var(--text-secondary);margin-bottom:7px;max-width:88ch}
+  .notes b{color:var(--text-primary);font-weight:600}
+  button.tg{font:inherit;font-size:12px;background:var(--surface-2);color:var(--text-secondary);
+    border:1px solid var(--rule);border-radius:7px;padding:5px 11px;cursor:pointer;margin-top:20px}
+  table{border-collapse:collapse;font-size:12px;margin-top:12px;width:100%}
+  th,td{text-align:right;padding:4px 8px;border-bottom:1px solid var(--grid);font-variant-numeric:tabular-nums}
+  th:first-child,td:first-child{text-align:left}
+  th{color:var(--text-secondary);font-weight:600}
+  caption{text-align:left;color:var(--text-secondary);font-size:12px;padding-bottom:6px}
+</style></head>
+<body><div class="viz-root">
+
+<h1>Canadian imports from the United Kingdom, 1870–1900</h1>
+<p class="sub">Declared value of British produce exported to Canada, recovered from the UK <i>Annual Statement of Trade</i>.
+Shading under the axis shows how much of each year’s value is corroborated by the printed page’s own arithmetic —
+the darker the band, the more of that year is proven.</p>
+<p class="src">Source: UK Annual Statement of Trade, 1870–1900 · “British North America” to 1896, “Canada” + “Newfoundland” from 1897 · own-year witnesses only</p>
+
+<h2>Value of imports from the UK</h2>
+<p class="cap">The 1881–82 peak coincides with Canadian Pacific Railway construction; the long decline bottoms in 1895–98 before the turn-of-century recovery.</p>
+<div class="fig" id="f1"><svg id="s1" viewBox="0 0 940 430" role="img"
+  aria-label="Line chart of UK exports to Canada 1870 to 1900, peaking at 12.2 million pounds in 1881 and falling to 5.1 million by 1897."></svg>
+  <div class="tip" id="t1"></div></div>
+<div class="lgd">
+  <span class="it"><span class="sw" style="background:var(--series-1)"></span>Canada</span>
+  <span class="it" style="margin-left:6px;color:var(--text-muted)">Corroborated share of year’s value:</span>
+  <span class="it"><span class="swb" style="background:var(--c1)"></span>under 25%</span>
+  <span class="it"><span class="swb" style="background:var(--c2)"></span>25–50%</span>
+  <span class="it"><span class="swb" style="background:var(--c3)"></span>50–75%</span>
+  <span class="it"><span class="swb" style="background:var(--c4)"></span>75%+</span>
+</div>
+
+<h2>Canada against comparable destinations</h2>
+<p class="cap">Indexed to 1872 = 100 so destinations of very different size share one axis. Canada is the only one of these five that ends the century below where it started.</p>
+<div class="fig" id="f2"><svg id="s2" viewBox="0 0 940 400" role="img"
+  aria-label="Indexed line chart comparing UK exports to Canada against Australasia, Germany, France and the Netherlands, 1872 to 1900."></svg>
+  <div class="tip" id="t2"></div></div>
+<div class="lgd">
+  <span class="it"><span class="sw" style="background:var(--series-1)"></span>Canada</span>
+  <span class="it"><span class="sw" style="background:var(--context)"></span>Australasia, Germany, France, Netherlands (context)</span>
+</div>
+
+<button class="tg" id="tgl">Show data table</button>
+<div id="tbl" hidden></div>
+
+<div class="notes">
+<h3>How to read this / what is not certain</h3>
+<ul>
+<li><b>1871 is a genuine hole</b>, not a dip — no volume covering that year exists in the corpus. The line is broken rather than interpolated.</li>
+<li><b>1897–1900 is weakly corroborated (4–17%).</b> Those four years are the only ones with no single-year volume, and their figures come from wide comparative tables whose right-hand column loses digits at the page edge. The values are accurate to roughly 2.7% at the median — <b>good enough for the trend, not for precise levels.</b></li>
+<li><b>1874 was repaired.</b> One OCR cell fused two printed columns and read £45.27&nbsp;bn; corrected from the raw text to £94,110, putting 1874 at £8.83M — where its neighbours predict.</li>
+<li><b>Article coverage varies by year</b> (93–206 commodities; shown in the tooltip). Part of a fall can be a fall in what the parser recovered, so read the count alongside the value.</li>
+<li><b>The United States and British East Indies are excluded</b> from the comparison: they still carry uncorrected fused-digit cells (US 1872/73/76/80, BEI 1874). The four shown are clean.</li>
+<li>“Corroborated” means the cell sits inside a printed section whose members sum exactly to the subtotal the compositor printed beside them. There is no external gold set for exports; the page proves itself.</li>
+</ul>
+</div>
+</div>
+
+<script>
+const D = {"years":[1870,1871,1872,1873,1874,1875,1876,1877,1878,1879,1880,1881,1882,1883,1884,1885,1886,1887,1888,1889,1890,1891,1892,1893,1894,1895,1896,1897,1898,1899,1900],"series":{"Canada":{"v":[9295991,null,9461577,9750868,8831151,9512759,8102263,10021029,8674428,6914611,8729319,12205572,10594198,8550496,8733476,6754604,7166107,7756627,7353228,8037220,7115565,6889509,7399166,6642937,5965623,5281725,5578545,5063097,5312570,6677571,7652853],"p":[46.8,null,55.2,24.4,49.3,71.4,41.2,60.8,43.0,32.1,26.9,53.1,43.8,60.2,45.6,83.0,78.0,72.2,83.5,93.2,89.4,89.6,67.7,75.5,79.8,74.6,77.6,4.0,4.5,13.6,16.5],"a":[206,null,129,114,114,101,93,96,106,96,107,118,112,110,112,115,121,131,138,145,151,152,162,160,157,149,153,96,116,133,162]},"Australasia":{"v":[11627412,null,12956596,14864479,15937487,17741197,14970079,22413544,17772193,12829767,12358472,20395012,18642195,21251537,22489783,25902823,28754045,21147053,26443772,23338716,23081967,25141350,62419228,15798368,16364294,17581311,22338441,16809061,17327760,18656210,23615767],"p":[48.2,null,54.0,37.5,60.1,71.5,60.2,68.4,67.6,57.7,42.6,70.9,60.9,76.0,55.8,71.7,50.8,66.1,74.3,86.2,86.2,81.6,18.4,69.0,73.5,71.8,68.3,3.1,2.6,5.3,8.4],"a":[223,null,137,130,129,124,122,128,137,128,124,132,134,133,137,143,135,145,151,158,170,167,180,180,177,189,190,98,119,140,169]},"Germany":{"v":[null,null,29755261,25664905,19689435,22917424,19371292,19889184,20505170,46878568,14861399,16512977,17472134,18543840,17998488,15500364,13887451,15237891,15928465,17732741,19078285,15454445,21145735,17251486,17329410,20287592,21741311,19361784,19615575,24941228,26737487],"p":[null,null,51.2,39.9,60.4,79.7,50.2,71.0,56.2,16.3,37.6,46.1,60.6,60.0,70.3,64.0,73.4,77.9,85.2,93.0,91.0,84.1,58.4,84.3,72.5,80.2,73.1,15.2,21.9,20.9,6.5],"a":[null,null,125,119,125,115,113,115,124,121,119,116,123,127,128,126,134,139,143,150,166,163,197,173,180,182,181,149,150,162,179]},"France":{"v":[25050648,null,17700006,17112857,12718206,15871384,14959641,17172232,17334840,20763428,15335061,18739257,15885018,17147981,16047996,14011626,12340583,13086486,14835523,14490471,16379632,14972121,23562233,12945655,12926362,13630790,13687993,12542608,12290710,14960245,17957321],"p":[74.5,null,34.1,40.1,69.5,83.0,45.5,67.8,49.2,31.4,31.0,39.7,53.3,63.1,64.9,74.6,69.9,74.8,71.2,90.2,90.5,84.4,40.3,83.5,66.3,68.8,75.6,3.1,13.4,12.0,8.5],"a":[281,null,119,119,113,115,105,111,132,126,126,131,134,131,136,131,128,129,145,143,154,155,186,166,170,173,168,142,143,155,164]},"Netherlands":{"v":[17769297,null,13899857,15123254,10352465,12835818,11291915,9786518,10221100,42591137,9234949,9100578,8711648,9325082,10218461,8332343,8194027,7846257,8325730,9060111,10060793,7721534,14119643,9051382,8600606,7243356,7920239,7966304,7573843,9180970,10805712],"p":[50.0,null,37.2,32.9,60.5,66.4,45.2,74.7,59.4,7.9,42.2,35.5,67.0,48.8,67.8,79.7,55.0,84.8,79.1,91.5,91.4,86.3,55.1,85.7,54.7,78.4,67.2,4.5,25.0,9.4,7.9],"a":[234,null,112,105,101,91,89,85,99,103,100,106,109,106,111,101,105,109,124,126,140,143,171,159,149,149,153,128,135,144,155]}}};
+const YRS = D.years, S = D.series;
+const fmtM = v => '£' + (v/1e6).toFixed(2) + 'M';
+const band = p => p==null ? null : (p<25?0:p<50?1:p<75?2:3);
+const CV = ['var(--c1)','var(--c2)','var(--c3)','var(--c4)'];
+const NS='http://www.w3.org/2000/svg';
+const el=(n,a={})=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);return e;};
+
+function niceTicks(lo,hi,n){
+  const raw=(hi-lo)/n, mag=Math.pow(10,Math.floor(Math.log10(raw)));
+  const step=[1,2,2.5,5,10].map(m=>m*mag).find(s=>s>=raw)||10*mag;
+  const out=[]; for(let v=Math.ceil(lo/step)*step; v<=hi+1e-9; v+=step) out.push(v);
+  return out;
+}
+// segments split on nulls so a missing year is a gap, never a join
+function segs(vals){
+  const out=[]; let cur=[];
+  vals.forEach((v,i)=>{ if(v==null){ if(cur.length)out.push(cur); cur=[]; } else cur.push(i); });
+  if(cur.length)out.push(cur); return out;
+}
+
+function chart1(){
+  const svg=document.getElementById('s1'); svg.textContent='';
+  const W=940,H=430,M={t:14,r:64,b:74,l:64}, iw=W-M.l-M.r, ih=H-M.t-M.b;
+  const strip=22, plotH=ih-strip-16;
+  const v=S.Canada.v, p=S.Canada.p, a=S.Canada.a;
+  const hi=Math.max(...v.filter(x=>x!=null))*1.08;
+  const x=i=>M.l+ (YRS.length===1?0: i*(iw/(YRS.length-1)));
+  const y=val=>M.t+plotH-(val/hi)*plotH;
+  const g=el('g'); svg.appendChild(g);
+
+  const gg=el('g',{class:'grid'});
+  niceTicks(0,hi,5).forEach(t=>{
+    gg.appendChild(el('line',{x1:M.l,x2:M.l+iw,y1:y(t),y2:y(t)}));
+    const lb=el('text',{x:M.l-10,y:y(t)+4,class:'tick','text-anchor':'end'});
+    lb.textContent='£'+(t/1e6).toFixed(0)+'M'; gg.appendChild(lb);
+  });
+  g.appendChild(gg);
+
+  const ax=el('g',{class:'axis'});
+  ax.appendChild(el('line',{x1:M.l,x2:M.l+iw,y1:M.t+plotH,y2:M.t+plotH}));
+  g.appendChild(ax);
+  YRS.forEach((yr,i)=>{ if(yr%5!==0) return;
+    const t=el('text',{x:x(i),y:M.t+plotH+strip+30,class:'tick','text-anchor':'middle'});
+    t.textContent=yr; g.appendChild(t); });
+
+  // corroboration strip, one cell per year, directly under the axis
+  const cw=iw/(YRS.length-1)*0.74;
+  YRS.forEach((yr,i)=>{
+    const b=band(p[i]);
+    if(b==null){ return; }
+    g.appendChild(el('rect',{x:x(i)-cw/2,y:M.t+plotH+10,width:cw,height:strip,
+      rx:3,fill:CV[b]}));
+  });
+  const sl=el('text',{x:M.l-10,y:M.t+plotH+10+strip/2+4,class:'alab','text-anchor':'end'});
+  sl.textContent='proven'; g.appendChild(sl);
+
+  segs(v).forEach(seg=>{
+    const d=seg.map((i,k)=>(k?'L':'M')+x(i)+' '+y(v[i])).join(' ');
+    g.appendChild(el('path',{d,fill:'none',stroke:'var(--series-1)','stroke-width':2,
+      'stroke-linejoin':'round','stroke-linecap':'round'}));
+  });
+  // endpoint + peak markers only — never a number on every point
+  const pk=v.indexOf(Math.max(...v.filter(x=>x!=null)));
+  [[pk,'above'],[v.length-1,'right']].forEach(([i,pos])=>{
+    g.appendChild(el('circle',{cx:x(i),cy:y(v[i]),r:4.5,fill:'var(--series-1)',
+      stroke:'var(--surface-1)','stroke-width':2}));
+    const t=el('text',{class:'alab',fill:'var(--text-primary)','font-weight':600,
+      x: pos==='right'? x(i)+10 : x(i), y: pos==='right'? y(v[i])+4 : y(v[i])-12,
+      'text-anchor': pos==='right'?'start':'middle'});
+    t.textContent=fmtM(v[i]); g.appendChild(t);
+  });
+  const gapx=x(1);
+  const gl=el('text',{x:gapx,y:M.t+16,class:'alab','text-anchor':'middle'});
+  gl.textContent='no volume'; g.appendChild(gl);
+  g.appendChild(el('line',{x1:gapx,x2:gapx,y1:M.t+22,y2:M.t+plotH,
+    stroke:'var(--rule)','stroke-width':1}));
+
+  hover(svg,'t1','f1',x,YRS,i=>{
+    if(v[i]==null) return ['<b>'+YRS[i]+'</b>','<div class="r"><span>No volume in corpus</span><span>—</span></div>'].join('');
+    return '<b>'+YRS[i]+'</b>'
+      +'<div class="r"><span>Value</span><span>'+fmtM(v[i])+'</span></div>'
+      +'<div class="r"><span>Corroborated</span><span>'+p[i].toFixed(0)+'%</span></div>'
+      +'<div class="r"><span>Commodities</span><span>'+a[i]+'</span></div>';
+  }, i=>v[i]==null?null:y(v[i]), M.t, M.t+plotH);
+}
+
+function chart2(){
+  const svg=document.getElementById('s2'); svg.textContent='';
+  const W=940,H=400,M={t:16,r:118,b:44,l:56}, iw=W-M.l-M.r, ih=H-M.t-M.b;
+  const base=2; // 1872
+  const names=Object.keys(S);
+  const idx={}; names.forEach(n=>{ const b=S[n].v[base];
+    idx[n]=S[n].v.map(x=>x==null||b==null?null:x/b*100); });
+  const all=[].concat(...names.map(n=>idx[n].filter(x=>x!=null)));
+  const lo=Math.min(...all)*0.94, hi=Math.max(...all)*1.04;
+  const x=i=>M.l+i*(iw/(YRS.length-1));
+  const y=v=>M.t+ih-((v-lo)/(hi-lo))*ih;
+  const g=el('g'); svg.appendChild(g);
+
+  const gg=el('g',{class:'grid'});
+  niceTicks(lo,hi,5).forEach(t=>{
+    gg.appendChild(el('line',{x1:M.l,x2:M.l+iw,y1:y(t),y2:y(t)}));
+    const lb=el('text',{x:M.l-10,y:y(t)+4,class:'tick','text-anchor':'end'});
+    lb.textContent=t.toFixed(0); gg.appendChild(lb); });
+  g.appendChild(gg);
+  // the 100 baseline reads as the reference, so give it a touch more weight
+  g.appendChild(el('line',{x1:M.l,x2:M.l+iw,y1:y(100),y2:y(100),
+    stroke:'var(--text-muted)','stroke-width':1}));
+  const bl=el('text',{x:M.l+4,y:y(100)-6,class:'alab'}); bl.textContent='1872 = 100';
+  g.appendChild(bl);
+
+  YRS.forEach((yr,i)=>{ if(yr%5!==0) return;
+    const t=el('text',{x:x(i),y:M.t+ih+24,class:'tick','text-anchor':'middle'});
+    t.textContent=yr; g.appendChild(t); });
+
+  names.filter(n=>n!=='Canada').forEach(n=>{
+    segs(idx[n]).forEach(seg=>{
+      const d=seg.map((i,k)=>(k?'L':'M')+x(i)+' '+y(idx[n][i])).join(' ');
+      g.appendChild(el('path',{d,fill:'none',stroke:'var(--context)','stroke-width':1.5}));
+    });
+  });
+  segs(idx.Canada).forEach(seg=>{
+    const d=seg.map((i,k)=>(k?'L':'M')+x(i)+' '+y(idx.Canada[i])).join(' ');
+    g.appendChild(el('path',{d,fill:'none',stroke:'var(--series-1)','stroke-width':2.4,
+      'stroke-linejoin':'round'}));
+  });
+  const li=YRS.length-1;
+  g.appendChild(el('circle',{cx:x(li),cy:y(idx.Canada[li]),r:4.5,fill:'var(--series-1)',
+    stroke:'var(--surface-1)','stroke-width':2}));
+
+  // De-collide the endpoint labels. Four of these five land within 17px of one
+  // another at 1900, so placing each at its own series height overlaps them into
+  // an unreadable stack. Push them apart to a 14px minimum, keep the original
+  // order, and run a leader line back to the true endpoint so the label still
+  // points at its series.
+  const lab=names.map(n=>({n,y0:y(idx[n][li]),ty:y(idx[n][li]),
+                           on:n==='Canada'})).sort((a,b)=>a.y0-b.y0);
+  const MIN=14;
+  for(let i=1;i<lab.length;i++)
+    if(lab[i].ty-lab[i-1].ty<MIN) lab[i].ty=lab[i-1].ty+MIN;
+  const over=lab[lab.length-1].ty-(M.t+ih);
+  if(over>0) lab.forEach(l=>l.ty-=over);           // keep the stack inside the plot
+  for(let i=lab.length-2;i>=0;i--)
+    if(lab[i+1].ty-lab[i].ty<MIN) lab[i].ty=lab[i+1].ty-MIN;
+
+  lab.forEach(l=>{
+    if(Math.abs(l.ty-l.y0)>1.5)
+      g.appendChild(el('path',{d:'M'+(x(li)+3)+' '+l.y0+'L'+(x(li)+7)+' '+l.ty,
+        fill:'none',stroke: l.on?'var(--series-1)':'var(--context)','stroke-width':1}));
+    const t=el('text',{x:x(li)+11,y:l.ty+4,class:'alab'});
+    if(l.on){ t.setAttribute('fill','var(--series-1)'); t.setAttribute('font-weight',600); }
+    t.textContent=l.n; g.appendChild(t);
+  });
+
+  hover(svg,'t2','f2',x,YRS,i=>{
+    let h='<b>'+YRS[i]+'</b>';
+    names.forEach(n=>{ if(idx[n][i]!=null)
+      h+='<div class="r"><span>'+n+'</span><span>'+idx[n][i].toFixed(0)+'</span></div>'; });
+    return h;
+  }, i=>idx.Canada[i]==null?null:y(idx.Canada[i]), M.t, M.t+ih);
+}
+
+function hover(svg,tipId,figId,x,yrs,fmt,yAt,top,bot){
+  const tip=document.getElementById(tipId), fig=document.getElementById(figId);
+  const g=el('g'); svg.appendChild(g);
+  const cross=el('line',{y1:top,y2:bot,stroke:'var(--text-muted)','stroke-width':1,opacity:0});
+  g.appendChild(cross);
+  const dot=el('circle',{r:5,fill:'none',stroke:'var(--series-1)','stroke-width':2,opacity:0});
+  g.appendChild(dot);
+  const hit=el('rect',{x:0,y:0,width:940,height:bot+40,fill:'transparent'});
+  g.appendChild(hit);
+  hit.addEventListener('mousemove',ev=>{
+    const r=svg.getBoundingClientRect(), sx=(ev.clientX-r.left)*(940/r.width);
+    let bi=0,bd=1e9;
+    yrs.forEach((_,i)=>{const d=Math.abs(x(i)-sx); if(d<bd){bd=d;bi=i;}});
+    cross.setAttribute('x1',x(bi)); cross.setAttribute('x2',x(bi));
+    cross.setAttribute('opacity',.5);
+    const yy=yAt(bi);
+    if(yy!=null){ dot.setAttribute('cx',x(bi)); dot.setAttribute('cy',yy); dot.setAttribute('opacity',1); }
+    else dot.setAttribute('opacity',0);
+    tip.innerHTML=fmt(bi); tip.style.opacity=1;
+    const fr=fig.getBoundingClientRect();
+    let lx=(x(bi)/940)*fr.width+14;
+    if(lx>fr.width-210) lx-=228;
+    tip.style.left=lx+'px';
+    tip.style.top=Math.max(8,(yy==null?top:yy)/ (svg.viewBox.baseVal.height) * fr.height - 10)+'px';
+  });
+  hit.addEventListener('mouseleave',()=>{tip.style.opacity=0;cross.setAttribute('opacity',0);dot.setAttribute('opacity',0);});
+}
+
+function table(){
+  const n=Object.keys(S);
+  let h='<table><caption>UK exports to Canada, with corroboration and commodity coverage. “—” = no volume in the corpus.</caption><thead><tr><th>Year</th><th>Value (£)</th><th>Corroborated</th><th>Commodities</th></tr></thead><tbody>';
+  YRS.forEach((yr,i)=>{ const v=S.Canada.v[i];
+    h+='<tr><td>'+yr+'</td><td>'+(v==null?'—':v.toLocaleString())+'</td><td>'+
+      (v==null?'—':S.Canada.p[i].toFixed(0)+'%')+'</td><td>'+(v==null?'—':S.Canada.a[i])+'</td></tr>'; });
+  return h+'</tbody></table>';
+}
+
+chart1(); chart2();
+document.getElementById('tgl').addEventListener('click',e=>{
+  const t=document.getElementById('tbl');
+  if(t.hidden){ t.innerHTML=table(); t.hidden=false; e.target.textContent='Hide data table'; }
+  else { t.hidden=true; e.target.textContent='Show data table'; }
+});
+</script></body></html>
