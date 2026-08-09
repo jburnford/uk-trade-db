@@ -226,6 +226,46 @@ different destination list and sane values (BNA £166,188 on 1,447,020 yards =
 **Not repaired.** obs and inf disagree on which destinations belong to the
 article, so the block needs the page image to settle — Phase 3 work.
 
+## The destination vocabulary gap
+
+`countrykey.py` already canonicalises the import-side country vocabulary, and
+it already knows the two facts the Canada series needs: **`British North
+America` resolves to `Canada`, and `Newfoundland` is declared a child of
+`Canada`.** So the 1897 vocabulary change rolls up correctly through the
+existing gazetteer — no bespoke splice is needed, and the earlier note in this
+report about splicing by hand can be dropped.
+
+Export destination labels measured against that gazetteer
+(`scripts/export_destination_gap.py`, `reports/export_destination_gap.csv`):
+
+| | labels | cells | value |
+|---|---:|---:|---:|
+| resolved to a declared node | 250 | **77.2%** | 73.1% |
+| unresolved (id invented by titlecasing) | 1,321 | 22.8% | 26.9% |
+
+An invented id has no ancestors, so it cannot roll up: those cells are silently
+dropped from any cross-destination comparison, or double-counted beside their
+parent. The unresolved set falls into four classes:
+
+1. **Real destinations simply absent from the gazetteer** — `Spain and Canaries`
+   (1,410 cells), `British West India Islands and British Guiana` (1,351),
+   `Turkey : Asiatic` (1,316), `Foreign West Indies` (712), `Portugal, Azores,
+   and Madeira` (522). Straight crosswalk additions.
+2. **Sub-splits needing a parent edge** — `British India : Bombay and Scinde`
+   (690), `British India : Bengal and Burmah` (565), `Pacific` (779),
+   `United States of America : On the Atlantic` (714).
+3. **Fused two-line labels** — `United States : Atlantic Pacific`,
+   `British India: Bombay and Scinde Madras`, `British Possessions in South
+   Africa Mauritius`. Same row-fusion class as the impossible cells; these need
+   the splitter, not a crosswalk row.
+4. **Column headers ingested as destinations** — bare years (`1894`…`1898`) and
+   strings like `Piece Goods . . . . . Yards`. **Only 296 cells corpus-wide,
+   290 of them in as_1897–99.** Real, but far too small to account for the
+   1897–1900 deviation; it is not the missing mechanism.
+
+Classes 1 and 2 are cheap data edits to `reference/gold_country_crosswalk.csv`
+and are the precondition for any destination-vs-destination comparison.
+
 ## Instruments added
 
 - `scripts/reconcile_exports.py` — the campaign metric. Section-aware in-block
