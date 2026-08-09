@@ -276,6 +276,11 @@ and are the precondition for any destination-vs-destination comparison.
   printed-section corroboration.
 - `scripts/detect_impossible_cells.py` — cells contradicting their own printed
   subtotal.
+- `scripts/export_destination_gap.py` — destination labels the gazetteer cannot
+  resolve, ranked. The resolution test must ask whether the canonical *id* is a
+  declared node, not whether the *label* is an alias key; the latter scores
+  `United States of America`, `Australasia` and `Madras` unresolved and
+  overstates the gap by 12 points of cell coverage.
 
 ## Next
 
