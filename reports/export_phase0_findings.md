@@ -120,7 +120,53 @@ Diagnosis of the mechanism is **incomplete**. Two candidates were tested:
 - *The metric is miscounting comparative layouts.* Ruled out — the walker was
   hand-traced on the alkali block and its section boundaries are right.
 
-What drives the remaining bulk of the 1897–1900 deviation is **not yet known**.
+### RESOLVED: malformed comma groups at the page edge
+
+Found in the raw OCR, which is where this should have been looked for first.
+A comma-grouped figure must have three digits after every comma. `39,94` is not
+a printing that exists — it is `39,940` with a digit lost at the page edge. The
+parser strips commas before converting, so it reads 3,994: an order of magnitude
+too small, silently.
+
+as_1897 ALKALI, Germany, the five printed values 1893–97:
+
+```
+49,133   42,492   22,249   34,577   39,94        <- raw OCR
+                                     3,994       <- parsed
+as_1898 and as_1899 both print       40,904
+```
+
+Rate of malformed groups per volume:
+
+| volume | rate | count | share in LAST numeric column |
+|---|---:|---:|---:|
+| every single-year volume, 1872–1896 | 0.00–0.05% | 3–42 | mixed |
+| **as_1897** | **0.33%** | 729 | **92.0%** |
+| **as_1898** | **0.39%** | 870 | **95.1%** |
+| **as_1899** | 0.09% | 199 | 95.0% |
+
+A 10–40x jump confined to the comparative volumes, overwhelmingly in the
+rightmost column. Those volumes print ten numeric columns — five quantity and
+five value, one per year — so the last column sits at the page edge and loses
+digits.
+
+Chain confirmed end to end: **719 of as_1897's 729 malformed raw cells (98.6%)
+appear in `country_obs` as the mis-parsed number** (as_1898 96.4%, as_1899
+98.5%).
+
+This also dissolves the paradox that a volume's OWN year closes worse than the
+years it reprints (as_1897: 8.2% own against 21.0% comparative). The own year is
+the rightmost column. It is a column-position effect and has nothing to do with
+reprinting — which is why "prefer the own-year witness" was the wrong rule.
+
+**Repair path is cross-witness, not arithmetic.** For 1893–96 and for 1897–98 a
+later volume carries the same year in a non-edge column, and the later witnesses
+agree with each other. **1899 and 1900 have no later witness in the corpus and
+cannot be repaired this way** — for those two years the malformed cells are
+detectable but not correctable, and should be nulled rather than trusted.
+
+Instrument: `scripts/detect_malformed_numbers.py` →
+`reports/malformed_numbers.csv` (3,102 rows).
 
 ### The trap in the obvious fix
 
