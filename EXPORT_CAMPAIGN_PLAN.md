@@ -204,3 +204,33 @@ article only as export_uk), dominated by COTTON MANUFACTURES piece goods, then
 woollen and linen. Firm floor reaching `country_year_final`: **~2,510 rows /
 GBP283M** via the twoup source. Found by the user spotting Broad Cloths,
 Coatings, Duffs in the import payload. Still awaiting go/no-go.
+
+---
+
+## Phase 0 measurement round 2 — 2026-08-09
+
+Full results in `reports/export_phase0_findings.md`. Measurement only; nothing
+repaired. Three corrections to the plan above, all measured:
+
+1. **"Without clean T1 anchors nothing downstream is provable" is wrong.** The
+   export country tables carry a three-level printed anchor in the block itself
+   (members → section subtotal → grand total). 84% of blocks have one, no label
+   join is needed, and it is denser than the import Tier-1. Metric:
+   `scripts/reconcile_exports.py`.
+
+2. **Phase 1 (recover a second engine) is largely unnecessary.** `country_obs_inf`
+   holds 189,480 clean export cells at 76.3% cross-engine agreement, against
+   85.7% for imports. The round-19 run-on-string diagnosis no longer holds.
+
+3. **Re-exports are the cleanest flow, not the hardest** — 53.3% exact vs 45.9%
+   for exports and 39.9% for the finished import payload. Consider promoting
+   phase 4 ahead of the export tail.
+
+Baseline (member sections, value, obs engine): exports **45.9% exact / 69.7%
+within 5%**; re-exports **53.3% / 71.3%**. Both already exceed the curated
+import dataset. The 1893 regime break appears in both flows and is the largest
+single target.
+
+On gold: not needed as the primary instrument. A destination cell inside a
+section that sums exactly to its printed subtotal is corroborated by the
+compositor. Gold would calibrate, not prove.
