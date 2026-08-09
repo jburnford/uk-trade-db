@@ -266,6 +266,47 @@ parent. The unresolved set falls into four classes:
 Classes 1 and 2 are cheap data edits to `reference/gold_country_crosswalk.csv`
 and are the precondition for any destination-vs-destination comparison.
 
+## The comparative destination panel
+
+`scripts/export_destination_panel.py` puts Canada on one axis with its peers,
+own-year witnesses only, canonicalised and rolled to root through
+`countrykey.py`. 81 destinations, 1,665 destination-years.
+Median annual value, and the share of value the printed page proves:
+
+| destination | median GBP/yr |
+|---|---:|
+| British East Indies | 30.5M |
+| United States of America | 24.0M |
+| Australasia | 19.5M |
+| Germany | 19.4M |
+| France | 15.2M |
+| Netherlands | 9.2M |
+| **Canada** | **7.7M** |
+
+Three defects had to be fixed before the panel meant anything, and each one
+produced a plausible-looking wrong series first:
+
+1. **Cells outside a closed section were dropped**, so a destination-year showed
+   only its anchored part — Canada 1897 read 1.61M against a printed 5.06M.
+   Unanchored members belong in the series; they just cannot be proven.
+2. **Ranking by total value sorts by corruption.** One fused-digit cell puts a
+   destination in the GBP billions (1874 alone reads GBP42,523M for the United
+   States). Ranking is on the median annual value.
+3. **The ancestor-drop rule deleted real data.** The gazetteer declares
+   Newfoundland a child of Canada, but the 1897-1900 tables print them as
+   sibling destinations, so dropping any node that is an ancestor of another
+   deleted Canada's own cells. A parent is now dropped only when its value
+   actually matches the sum of the children present beside it (within 5%) --
+   which is what a genuine parent-plus-breakdown double count looks like.
+
+Cross-check: after fix 3 the panel's Canada series (5.06 / 5.31 / 6.68 / 7.65M
+for 1897-1900) reproduces `export_country_series.py`'s independent
+Canada + Newfoundland sums exactly. Two separately written scripts agreeing on
+the same printed figures is the strongest check available without a gold set.
+
+**11,021 cells / GBP 33.5bn are excluded** as unresolved labels and reported as
+such rather than allowed to pose as destinations.
+
 ## Instruments added
 
 - `scripts/reconcile_exports.py` — the campaign metric. Section-aware in-block

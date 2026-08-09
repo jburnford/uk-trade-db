@@ -38,3 +38,54 @@ other parts,§RESIDUAL,,residual,printed residual bucket
 unenumerated,§RESIDUAL,,residual,printed residual bucket
 british possessions,§RESIDUAL,,residual,"unqualified residual bucket; too coarse to place"
 northern ports,§DROP,,junk,"orphan port fragment with no country attached"
+british east indies hong kong,Hong Kong,China,colony,export tables print Hong Kong under the British East Indies heading; the glued-split guard correctly refuses it because Hong Kong is declared a child of China
+british east indies british burmah,Burmah,British East Indies,colony,export wording
+british east indies other possessions,British East Indies (Other),British East Indies,residual,export residual line
+malta and gozo,Malta,,country,export wording for Malta
+spain and canaries,Spain,,country,one printed destination covering both; Canary Islands is a separate line in other years and rolls up to Spain
+canary islands,Canary Islands,Spain,colony,separate export line in the years Spain and Canaries is not used
+british west india islands and british guiana,British West Indies And Guiana,,aggregate,export wording
+turkey asiatic,Turkey (Asiatic),Turkey,colony,export-side split of Turkey alongside the existing Turkey Proper
+turkey cyprus,Cyprus,Turkey,colony,printed under the Turkey heading in the export tables
+united states atlantic,United States Of America (Atlantic),United States Of America,port,export wording
+united states atlantic pacific,United States Of America (Atlantic & Pacific),United States Of America,port,two printed lines fused by the parser; the combined node already exists
+united states of america on the atlantic,United States Of America (Atlantic),United States Of America,port,export wording
+united states of america on the pacific,United States Of America (Pacific),United States Of America,port,export wording
+united states of america foreign west indies,Foreign West Indies,,aggregate,printed under the America section heading but the destination is the Foreign West Indies
+united states of america spanish west india islands,Spanish West Indies,,country,printed under the America section heading
+united states of america hayti and st domingo,Haiti & Santo Domingo,,country,printed under the America section heading
+mauritius and dependencies,Mauritius,,country,export wording
+australasia fiji islands,Fiji Islands,Australasia,colony,export wording
+australasia other colonies,Australasia (Other Colonies),Australasia,residual,export residual line within Australasia
+british india bombay and scinde,Bombay,British East Indies,colony,export wording
+british india bombay and seinde,Bombay,British East Indies,colony,OCR variant of Scinde
+british india bengal and burmah,Bengal And Burmah,British East Indies,colony,export wording
+british india straits settlements,Straits Settlements,British East Indies,colony,export wording
+british india madras,Madras,British East Indies,colony,export wording
+aden and dependencies,Aden,British East Indies,colony,export destination absent from the import gazetteer
+denmark including iceland and greenland,Denmark,,country,export wording
+portugal azores and madeira,Portugal,,country,covers both the comma and no-comma printings
+portuguese possessions,Portuguese Possessions,,aggregate,export residual line
+east africa portuguese possessions,Portuguese Possessions In Eastern Africa,,country,export wording
+china exclusive of hong kong,China,,country,export wording; Hong Kong is printed separately
+united states of colombia new granada,United States Of Colombia,,country,export wording
+foreign west indies,Foreign West Indies,,aggregate,export destination absent from the import gazetteer
+western africa foreign,Western Africa (Foreign),,aggregate,export destination absent from the import gazetteer
+western africa british,Western Africa (British),,aggregate,export destination absent from the import gazetteer
+islands in the pacific,Islands In The Pacific,,aggregate,export destination absent from the import gazetteer
+french possessions,French Possessions,,aggregate,export residual line
+other territories under british influence,Other British possessions,,residual,export residual line
+not particularly designated,§RESIDUAL,,residual,export residual line
+sierra leone,Sierra Leone,,country,export destination absent from the import gazetteer
+lagos,Lagos,,country,export destination absent from the import gazetteer
+gambia,Gambia,,country,export destination absent from the import gazetteer
+st helena,St. Helena,,country,export destination absent from the import gazetteer
+congo free state,Congo Free State,,country,export destination absent from the import gazetteer
+zanzibar and pemba,Zanzibar,,country,export destination absent from the import gazetteer
+ecuador,Ecuador,,country,export destination absent from the import gazetteer
+guatemala,Guatemala,,country,export destination absent from the import gazetteer
+san salvador,San Salvador,,country,export destination absent from the import gazetteer
+bulgaria,Bulgaria,,country,export destination absent from the import gazetteer
+algeria,Algeria,,country,export destination absent from the import gazetteer
+tunis,Tunis,,country,export destination absent from the import gazetteer
+persia,Persia,,country,export destination absent from the import gazetteer
