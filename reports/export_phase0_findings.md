@@ -88,6 +88,40 @@ the mechanism already recorded anecdotally as the lone-reprint tie-break
 **The real break is at 1897**, and it is confined to the four years for which
 no single-year volume exists (1897–1900).
 
+### What the 1897–1900 error actually is: near, not wrong
+
+The exact-closure bar makes 1897–1900 look destroyed. It is not. Measured on
+member-section deviation across all witnesses:
+
+| flow | era | ≤0.1% | ≤1% | ≤2% | ≤5% | **median dev** |
+|---|---|---:|---:|---:|---:|---:|
+| export | 1870–1896 | 53.4% | 64.3% | 68.1% | 73.4% | **0.04%** |
+| export | 1897–1900 | 18.8% | 38.4% | 46.4% | 56.5% | **2.69%** |
+| import | 1870–1896 | 67.2% | 75.9% | 78.7% | 82.0% | **0.00%** |
+| import | 1897–1900 | 42.4% | 57.9% | 63.9% | 71.2% | **0.33%** |
+
+The regime change is from *exact* to *approximate*, not from right to wrong.
+A median section in 1897–1900 is off by 2.7% (exports) or 0.33% (imports).
+**That supports trend and direction-of-change analysis; it does not support
+precise level claims or small year-on-year differences.** Earlier drafts of
+this report called those years unusable — too harsh.
+
+Diagnosis of the mechanism is **incomplete**. Two candidates were tested:
+
+- *Own-year value column collapses.* True in `as_1897 ALKALI`, where the
+  Foreign section closes at **−71.6%** while British Possessions in the same
+  column closes at −1.39%, and where `as_1898` and `as_1899` agree exactly on
+  values `as_1897` reads ~10x too small (Germany 40,904 against 3,994).
+  **But not general** — a within-block test of implied unit price (own-year
+  column against the other columns of the same block, no cross-volume join)
+  gives a median ratio of 0.96–1.01, with only 3–10% of blocks below 0.5.
+  So value-collapse is a real class covering roughly 5–10% of blocks, not the
+  dominant mode.
+- *The metric is miscounting comparative layouts.* Ruled out — the walker was
+  hand-traced on the alkali block and its section boundaries are right.
+
+What drives the remaining bulk of the 1897–1900 deviation is **not yet known**.
+
 ### The trap in the obvious fix
 
 Do not implement "prefer the own-year witness". For 1897 and 1898 the ordering
@@ -164,8 +198,10 @@ own-year), corroborated share = tier A+B+C by value:
 
 The shape is historically right — high early 1870s, an 1881–82 peak during CPR
 construction, long decline to a mid-1890s trough, recovery from 1899. **1885–96
-is the trustworthy window** (71–86% corroborated). 1897–1900 carries plausible
-values on almost no proof and should not be used unrepaired.
+is the trustworthy window** (71–86% corroborated). 1897–1900 fails the exact
+bar, but the median section there is off by only ~2.7% — usable for trend and
+direction, not for precise levels or small year-on-year differences. See the
+1897–1900 section above.
 
 ## The catastrophic tail
 
