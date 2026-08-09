@@ -46,24 +46,62 @@ own printed subtotal), value measure:
 
 | flow | engine | sections | exact (≤0.1%) | within 5% |
 |---|---|---:|---:|---:|
-| export_uk | obs | 15,288 | **45.9%** | 69.7% |
+| export_uk | obs | 15,288 | 45.9% | 69.7% |
+| export_uk | obs, **own-year witnesses only** | 9,699 | **59.2%** | **77.1%** |
 | export_uk | inf | 14,691 | 38.9% | 65.6% |
-| reexport | obs | 19,365 | **53.3%** | 71.3% |
+| reexport | obs | 19,365 | 53.3% | 71.3% |
 
 For comparison the curated import payload stands at 39.9% exact / 52.7% within
 5%. **Both unprocessed flows already close better than the finished import
 dataset**, because the anchor is denser and sits in the same block.
 
-Export closure by era (obs, member sections):
+## There is no 1893 break — in either flow
 
-| era | exact |
-|---|---:|
-| 1870–1892 | 49–83% |
-| 1893–1896 | 36–41% |
-| 1897–1900 | 17–22% |
+The first pass of this metric pooled every witness and showed exports falling
+from ~65% exact before 1893 to ~38% after. That collapse is an artifact of
+pooling. Split by witness role — a volume is the own-year witness for its
+maximum year, every other year it carries is a comparative reprint:
 
-The same regime break the imports show at 1893, and sharper. It is one defect
-class affecting both flows — the highest-value structural target in the corpus.
+| year | own-year exact | comparative exact |
+|---|---:|---:|
+| 1893 | 73.1% | 11.3% |
+| 1894 | 67.7% | 20.6% |
+| 1895 | 75.1% | 25.7% |
+| 1896 | 72.4% | 24.8% |
+| **1897** | **8.2%** | 21.0% |
+| **1898** | **16.4%** | 28.0% |
+| 1899 | 18.2% | — |
+| 1900 | 19.0% | — |
+
+The own-year volumes `as_1893`–`as_1896` close at 67–75%, indistinguishable
+from the 1880s. The same test on **imports** gives 77.5 / 66.9 / 77.9 / 81.0%
+own-year against 33.6 / 44.5 / 45.9 / 48.5% comparative.
+
+So the 1893 break that the import balanced panel shows is the **vote being
+poisoned by comparative reprints that are half as accurate as the contemporary
+volume**. `integrate_sources.py` line 564 tallies a plain unweighted majority
+(`Counter(round(r['q']) for r in readings)`) with no volume provenance, so two
+reprints from `as_1898`/`as_1899` outvote the contemporary `as_1895`. This is
+the mechanism already recorded anecdotally as the lone-reprint tie-break
+(bacon 1893/94/97, copper 1888, hams 1898) — now measured at corpus scale.
+
+**The real break is at 1897**, and it is confined to the four years for which
+no single-year volume exists (1897–1900).
+
+### The trap in the obvious fix
+
+Do not implement "prefer the own-year witness". For 1897 and 1898 the ordering
+**inverts** — the comparative reprints close better than the contemporary
+volume (1897: 21.0% comp against 8.2% own). What degrades is a column position
+in the five-year comparative layout, not reprinting as such, and a volume's own
+year sits in the worst position. The witness must be chosen per year on
+measured closure.
+
+Sizing the import-side prize was attempted and **abandoned as unreliable**: the
+exact-string join between `country_obs` and `country_year_final` matched only
+1,853 rows, so its 9% disagreement rate measures the join, not the data. Any
+change to the vote needs the payload snapshot and per-cell diff, not a DB-level
+count.
 
 ## Two plan premises corrected
 
@@ -165,8 +203,14 @@ article, so the block needs the page image to settle — Phase 3 work.
 
 ## Next
 
-1. **The 1893 break**, in both flows. One class, the largest payoff available.
-2. **Row-fusion repair.** The class is identified and the section arithmetic
+1. **The 1897–1900 block**, in both flows. Four years, no clean single-year
+   volume, and the contemporary column is the worst-parsed one. This is the
+   real structural target and it is where the Canada series dies (4–27%
+   corroborated against 71–86% for 1885–96).
+2. **Witness selection in the vote**, import side. The provenance blindness is
+   proven; the remedy is not "prefer own-year" but a per-year measured choice.
+   Requires payload snapshot + `diff_payload_cells.py`, never a DB-level count.
+3. **Row-fusion repair.** The class is identified and the section arithmetic
    supplies the target sum; needs a splitter plus page adjudication.
-3. **Promote re-exports** ahead of the export tail on the measured numbers.
-4. Only then the per-block queue campaign the plan describes.
+4. **Promote re-exports** ahead of the export tail on the measured numbers.
+5. Only then the per-block queue campaign the plan describes.

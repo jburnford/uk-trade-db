@@ -234,3 +234,22 @@ single target.
 On gold: not needed as the primary instrument. A destination cell inside a
 section that sums exactly to its printed subtotal is corroborated by the
 compositor. Gold would calibrate, not prove.
+
+### Correction, same day: there is no 1893 break
+
+The first phase-0 pass reported a 1893 regime break in both flows and named it
+the top target. That was an artifact of pooling witnesses. Split by role, the
+own-year volumes as_1893-96 close at 67-75% (exports) and 67-81% (imports) —
+indistinguishable from the 1880s — while the comparative reprints of those same
+years close at 11-26% and 34-49%.
+
+The break is at **1897**, confined to the four years with no single-year volume.
+
+Consequence for the import side: `integrate_sources.py:564` votes an unweighted
+majority with no volume provenance, so comparative reprints half as accurate as
+the contemporary volume can outvote it. That is the lone-reprint tie-break,
+measured at scale. **The fix is not "prefer own-year"** — for 1897/98 the
+ordering inverts and the reprint is better. Choose per year on measured closure.
+
+Export baseline restated on own-year witnesses only: **59.2% exact / 77.1%
+within 5%**.

@@ -21,6 +21,19 @@ block — a block with 6 or 9 TOTAL rows is two or three tables run together.
 This script splits on the rollup pattern rather than assuming one table per
 block, so fused blocks are still scored.
 
+WITNESS ROLE MATTERS AND IS REPORTED SEPARATELY. The 1897-99 volumes reprint
+up to five years each as comparatives. For 1893-96 those reprints close at
+roughly half the rate of the contemporary volume (1895: 75.1% own-year against
+25.7% reprint), so pooling them manufactures a spurious quality collapse at
+1893. There is no 1893 break in either flow; there is a real one at 1897.
+
+Do NOT turn that into a blanket "prefer the own-year witness" rule. For 1897
+and 1898 the ordering inverts -- the comparative reprints close better than the
+contemporary volume (1897: 21.0% comp against 8.2% own). What degrades is a
+particular column position in the five-year comparative layout, not reprinting
+as such, and the volume's own year sits in the worst position. Choose the
+witness per year on measured closure, not on role.
+
 Usage:
     python3 scripts/reconcile_exports.py [--flow export_uk] [--engine obs]
                                          [--measure value] [--db db/uk_trade.duckdb]
@@ -123,9 +136,16 @@ def main():
     for vol, yr, ag, art, unit, seq, ctry, amt in rows:
         blocks[(vol, yr, ag, art, unit)].append((seq, ctry, amt))
 
+    # a volume is the own-year witness for its maximum year; every other year
+    # it carries is a comparative reprint
+    own_year = {}
+    for (vol, yr, *_) in blocks:
+        own_year[vol] = max(own_year.get(vol, 0), yr)
+
     sec = collections.Counter()
     rol = collections.Counter()
     by_year = collections.defaultdict(collections.Counter)
+    by_role = collections.defaultdict(collections.Counter)
     n_blocks = len(blocks)
     n_anchored = 0
     n_tables = 0
@@ -134,6 +154,7 @@ def main():
 
     for (vol, yr, ag, art, unit), rws in blocks.items():
         anchored = False
+        role = 'own' if own_year.get(vol) == yr else 'comp'
         # re-walk carrying labels so we can attribute cells to their section
         members, labels, pending = [], [], []
         for _, label, amt in rws:
@@ -148,6 +169,7 @@ def main():
                     b = bucket(d)
                     sec[b] += 1
                     by_year[yr][b] += 1
+                    by_role[(role, yr)][b] += 1
                     anchored = True
                     if a.country_report:
                         for lb in labels:
@@ -181,15 +203,30 @@ def main():
     for b in ('exact01', 'within5', 'mod', 'gross'):
         print(f'  {b:8s}: {rol[b]:6,}  ({100*rol[b]/nr:5.1f}%)')
 
+    own_tot = collections.Counter()
+    for (role, _y), cc in by_role.items():
+        if role == 'own':
+            own_tot.update(cc)
+    no = sum(own_tot.values()) or 1
     print()
-    print('member-section closure by year')
-    print(f'{"yr":>4} {"sections":>8} {"exact01":>8} {"pct":>6} {"w5 pct":>7}')
+    print(f'OWN-YEAR WITNESSES ONLY  n={no:,}   exact01 '
+          f'{100*own_tot["exact01"]/no:.1f}%   within 5% '
+          f'{100*(own_tot["exact01"]+own_tot["within5"])/no:.1f}%')
+    print('  (this is the number to quote; the pooled figure above is dragged '
+          'down by comparative reprints)')
+
+    print()
+    print('member-section closure by year and witness role')
+    print(f'{"yr":>4} | {"own n":>6} {"exact":>7} {"w5":>7} | '
+          f'{"comp n":>7} {"exact":>7} {"w5":>7}')
     for y in sorted(by_year):
-        r = by_year[y]
-        n = sum(r.values()) or 1
-        w5 = r['exact01'] + r['within5']
-        print(f'{y:>4} {n:>8} {r["exact01"]:>8} {100*r["exact01"]/n:>5.1f}% '
-              f'{100*w5/n:>6.1f}%')
+        o, c = by_role[('own', y)], by_role[('comp', y)]
+        n_o, n_c = sum(o.values()), sum(c.values())
+        po = (f'{100*o["exact01"]/n_o:>6.1f}% {100*(o["exact01"]+o["within5"])/n_o:>6.1f}%'
+              if n_o else f'{"-":>7} {"-":>7}')
+        pc = (f'{100*c["exact01"]/n_c:>6.1f}% {100*(c["exact01"]+c["within5"])/n_c:>6.1f}%'
+              if n_c else f'{"-":>7} {"-":>7}')
+        print(f'{y:>4} | {n_o:>6} {po} | {n_c:>7} {pc}')
 
     if a.country_report:
         print()
