@@ -1,0 +1,1781 @@
+flow,raw_group,canonical,method,rows,volumes,y0,y1,variants_in_family
+import,"VEGETABLES, raw, unenumerated","VEGETABLES, raw, unenumerated",identity,188,2,1894,1899,7
+import,"VEGETABLES, Raw : Unenumerated","VEGETABLES, raw, unenumerated",case,128,7,1886,1893,7
+import,"VEGETABLES, Raw, Unenumerated","VEGETABLES, raw, unenumerated",case,74,3,1894,1896,7
+import,"VEGETABLES, Raw: Unenumerated","VEGETABLES, raw, unenumerated",case,19,1,1892,1892,7
+import,"VEGETABLES, Raw; Unenumerated","VEGETABLES, raw, unenumerated",case,19,2,1882,1884,7
+import,"VEGETABLES, Raw ; Unenumerated","VEGETABLES, raw, unenumerated",case,16,1,1885,1885,7
+import,VEGETABLES. Raw : Unenumerated,"VEGETABLES, raw, unenumerated",case,14,1,1886,1886,7
+import,"ART, WORKS of, other than PICTURES","ART, WORKS of, other than PICTURES",identity,92,9,1887,1896,6
+import,"ART, WORKS OF, other than PICTURES","ART, WORKS of, other than PICTURES",case,74,8,1874,1885,6
+import,"ART, WORKS of, other than Pictures","ART, WORKS of, other than PICTURES",case,13,1,1900,1900,6
+import,"Art, Works of, other than PICTURES","ART, WORKS of, other than PICTURES",case,12,2,1873,1879,6
+import,"ART WORKS of, other than PICTURES","ART, WORKS of, other than PICTURES",case,11,1,1886,1886,6
+import,"ART. WORKS of, other than PICTURES","ART, WORKS of, other than PICTURES",case,9,1,1895,1895,6
+export_uk,"BAGS AND SACKS, EMPTY","BAGS AND SACKS, EMPTY",identity,1419,3,1893,1900,6
+export_uk,"BAGS and SACKS, Empty","BAGS AND SACKS, EMPTY",case,369,13,1872,1892,6
+export_uk,"BAGS AND SACKS, Empty","BAGS AND SACKS, EMPTY",case,157,4,1893,1896,6
+export_uk,"Bags and Sacks, Empty","BAGS AND SACKS, EMPTY",case,136,6,1876,1885,6
+export_uk,Bags and Sacks Empty,"BAGS AND SACKS, EMPTY",case,34,2,1886,1887,6
+export_uk,"Bags and SACKS, Empty","BAGS AND SACKS, EMPTY",case,16,1,1877,1877,6
+reexport,"FISH, Fresh (not of British Taking)","FISH, Fresh (not of British Taking)",identity,185,7,1887,1894,6
+reexport,"FISH, FRESH (not of British taking)","FISH, Fresh (not of British Taking)",case,149,10,1873,1885,6
+reexport,"FISH, Fresh (not of British taking)","FISH, Fresh (not of British Taking)",case,108,3,1872,1896,6
+reexport,"Fish, Fresh (not of British Taking)","FISH, Fresh (not of British Taking)",case,45,1,1893,1893,6
+reexport,"Fish, Fresh (not of British taking)","FISH, Fresh (not of British Taking)",case,43,2,1883,1884,6
+reexport,"FISH, FRESH (not of British Taking)","FISH, Fresh (not of British Taking)",case,27,1,1886,1886,6
+import,"RAGS, and other MATERIALS for MAKING PAPER","RAGS, and other MATERIALS for MAKING PAPER",identity,267,5,1888,1892,6
+import,RAGS and other Materials for making Paper,"RAGS, and other MATERIALS for MAKING PAPER",case,151,6,1872,1880,6
+import,"RAGS, and other Materials, for making Paper","RAGS, and other MATERIALS for MAKING PAPER",case,136,4,1881,1884,6
+import,"RAGS, and other Materials for making Paper","RAGS, and other MATERIALS for MAKING PAPER",case,103,3,1886,1888,6
+import,RAGS and other MATERIALS for MAKING PAPER,"RAGS, and other MATERIALS for MAKING PAPER",case,49,2,1886,1887,6
+import,Rags and other Materials for making Paper,"RAGS, and other MATERIALS for MAKING PAPER",case,44,1,1870,1870,6
+import,"BRASS, BRONZE, and METAL, Bronzed or Lacquered, Manufactures of, unenumerated","BRASS, BRONZE, and METAL, Bronzed or Lacquered, Manufactures of, unenumerated",identity,34,3,1886,1892,5
+import,"BRASS, BRONZE, and METAL Bronzed or Lacquered, Manufactures of, Un- enumerated","BRASS, BRONZE, and METAL, Bronzed or Lacquered, Manufactures of, unenumerated",dehyphen,25,2,1883,1884,5
+import,"BRASS, BRONZE, and METAL Bronzed or Lacquered, Manufactures of, unenumerated","BRASS, BRONZE, and METAL, Bronzed or Lacquered, Manufactures of, unenumerated",case,24,2,1890,1896,5
+import,"BRASS, BRONZE, and METAL. Bronzed or Lacquered, Manufactures of, Un- enumerated","BRASS, BRONZE, and METAL, Bronzed or Lacquered, Manufactures of, unenumerated",dehyphen,13,1,1885,1885,5
+import,"BRASS, BRONZE, and METAL. Bronzed or Lacquered, Manufactures of, Unenumerated","BRASS, BRONZE, and METAL, Bronzed or Lacquered, Manufactures of, unenumerated",case,6,1,1882,1882,5
+import,"Books, bound or unbound, including MAPS and CHARTS","Books, bound or unbound, including MAPS and CHARTS",identity,37,3,1883,1885,5
+import,"BOOKS, Bound or Unbound, including MAPS and CHARTS","Books, bound or unbound, including MAPS and CHARTS",case,25,2,1887,1892,5
+import,"Books Bound or Unbound, including MAPS and CHARTS","Books, bound or unbound, including MAPS and CHARTS",case,13,1,1886,1886,5
+import,"Books, Bound or Unbound, including MAPS and CHARTS","Books, bound or unbound, including MAPS and CHARTS",case,13,1,1890,1890,5
+import,"BOOKS, bound or unbound, including MAPS and CHARTS","Books, bound or unbound, including MAPS and CHARTS",case,8,1,1882,1882,5
+export_uk,"FURNITURE (Household), Cabinet and Upholstery Wares","FURNITURE (Household), Cabinet and Upholstery Wares",identity,4450,4,1893,1900,5
+export_uk,"FURNITURE (Household), CABINET, and UPHOLSTERY WARES","FURNITURE (Household), Cabinet and Upholstery Wares",case,358,10,1886,1896,5
+export_uk,"FURNITURE (Household), CABINET and UP- HOLSTERY WARES","FURNITURE (Household), Cabinet and Upholstery Wares",dehyphen,115,7,1876,1882,5
+export_uk,"FURNITURE (Household), CABINET and UPHOLSTERY WARES","FURNITURE (Household), Cabinet and Upholstery Wares",case,58,3,1883,1885,5
+export_uk,"FURNITURE, (Household) CABINET, and UPHOLSTERY WARES","FURNITURE (Household), Cabinet and Upholstery Wares",case,9,1,1883,1883,5
+export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work","HABERDASHERY and MILLINERY, including Embroidery and Needlework",dehyphen,875,1,1894,1898,5
+export_uk,"HABERDASHERY and MILLINERY, including Em- broidery and Needlework","HABERDASHERY and MILLINERY, including Embroidery and Needlework",dehyphen,224,5,1875,1881,5
+export_uk,"HABERDASHERY AND MILLINERY, including EMBROIDERY AND NEEDLE- WORK","HABERDASHERY and MILLINERY, including Embroidery and Needlework",dehyphen,90,3,1892,1896,5
+export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needlework","HABERDASHERY and MILLINERY, including Embroidery and Needlework",identity,75,2,1874,1878,5
+export_uk,"HABERDASHERY AND MILLINERY, including EMBROIDERY AND NEEDLE- WORK,","HABERDASHERY and MILLINERY, including Embroidery and Needlework",dehyphen,45,1,1893,1893,5
+export_uk,"HARDWARES AND CUTLERY, Un- enumerated","HARDWARES AND CUTLERY, Unenumerated",dehyphen,1724,6,1891,1897,5
+export_uk,"HARDWARES and CUTLERY, Unenumerated","HARDWARES AND CUTLERY, Unenumerated",case,363,9,1873,1884,5
+export_uk,"HARDWARES AND CUTLERY, un- enumerated","HARDWARES AND CUTLERY, Unenumerated",dehyphen,229,4,1886,1890,5
+export_uk,"HARDWARES AND CUTLERY, Un- 
+enumerated","HARDWARES AND CUTLERY, Unenumerated",dehyphen,63,1,1896,1896,5
+export_uk,HARDWARES AND CUTLERY. Un- enumerated,"HARDWARES AND CUTLERY, Unenumerated",dehyphen,46,1,1893,1893,5
+import,"MEAT, Unenumerated","MEAT, Unenumerated",identity,309,8,1880,1894,5
+import,"MEAT, unenumerated","MEAT, Unenumerated",case,221,6,1886,1891,5
+import,MEAT. Unenumerated,"MEAT, Unenumerated",case,31,1,1892,1892,5
+import,"MEAT, UNENUMERATED","MEAT, Unenumerated",case,12,1,1886,1886,5
+import,"Meat, Unenumerated","MEAT, Unenumerated",case,1,1,1878,1878,5
+export_uk,"TIN, Unwrought","TIN, Unwrought",identity,418,22,1872,1896,5
+export_uk,"TIN, unwrought","TIN, Unwrought",case,43,3,1875,1890,5
+export_uk,"TIN, UNWROUGHT","TIN, Unwrought",case,33,1,1900,1900,5
+export_uk,TIN. Unwrought,"TIN, Unwrought",case,15,1,1893,1893,5
+export_uk,"Tin, Unwrought","TIN, Unwrought",case,9,1,1894,1894,5
+reexport,"ART, WORKS OF, OTHER THAN PICTURES","ART, WORKS OF, OTHER THAN PICTURES",identity,40,12,1872,1893,4
+reexport,"ART, WORKS OF, OTHER THAN PIC- TURES","ART, WORKS OF, OTHER THAN PICTURES",dehyphen,38,7,1885,1895,4
+reexport,"ART. WORKS OF, OTHER THAN PIC- TURES","ART, WORKS OF, OTHER THAN PICTURES",dehyphen,13,2,1894,1896,4
+reexport,ART. WORKS OF OTHER THAN PIC- TURES,"ART, WORKS OF, OTHER THAN PICTURES",dehyphen,6,1,1891,1891,4
+import,"BUTTONS AND STUDS, not of Metal","BUTTONS AND STUDS, not of Metal",identity,123,4,1893,1900,4
+import,"BUTTONS AND STUDS, NOT OF METAL","BUTTONS AND STUDS, not of Metal",case,79,11,1886,1896,4
+import,"BUTTONS and STuds, not of Metal","BUTTONS AND STUDS, not of Metal",case,13,2,1883,1884,4
+import,"BUTTONS and STUDS, not of Metal","BUTTONS AND STUDS, not of Metal",case,5,1,1879,1879,4
+export_uk,"CAOUTCHouc, Manufactures of","CAOUTCHouc, Manufactures of",identity,283,8,1883,1896,4
+export_uk,CAOUTCHouc. Manufactures of,"CAOUTCHouc, Manufactures of",case,77,2,1892,1895,4
+export_uk,"CAOUTCHouc, MANUFACTURES OF","CAOUTCHouc, Manufactures of",case,25,1,1882,1882,4
+export_uk,"Caoutchouc, Manufactures of","CAOUTCHouc, Manufactures of",case,24,1,1884,1884,4
+reexport,"CHINA OR PORCELAIN, AND EARTHENWARE","CHINA OR PORCELAIN, AND EARTHENWARE",identity,105,2,1893,1898,4
+reexport,CHINA or PORCELAIN and EARTHEN- WARE,"CHINA OR PORCELAIN, AND EARTHENWARE",dehyphen,16,2,1886,1887,4
+reexport,CHINA OR PORCELAIN AND EARTHENWARE,"CHINA OR PORCELAIN, AND EARTHENWARE",case,11,2,1884,1885,4
+reexport,CHINA OR PORCELAIN AND EARTHEN- WARE,"CHINA OR PORCELAIN, AND EARTHENWARE",dehyphen,4,1,1883,1883,4
+export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material","CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",identity,4389,4,1893,1900,4
+export_uk,"CORDAGE, CABLES, ROPES, and TWINE of HEMP, or like MATERIAL","CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",case,350,10,1886,1896,4
+export_uk,"CORDAGE, CABLES, ROPES, and TWINE of HEMP or like MATERIAL","CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",case,59,3,1883,1885,4
+export_uk,"CORDAGE, CABLES, ROPES and TWINE of HEMP or like MATERIAL","CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",case,19,1,1882,1882,4
+reexport,"CORDAGE, TWINE, AND CABLE YARN","CORDAGE, TWINE, AND CABLE YARN",identity,181,17,1873,1895,4
+reexport,"CORDAGE, TWINE, and CABLE YARN","CORDAGE, TWINE, AND CABLE YARN",case,50,5,1872,1890,4
+reexport,"CORDAGE, TWINE, AND CABLE-YARN","CORDAGE, TWINE, AND CABLE YARN",case,21,2,1881,1896,4
+reexport,"CORDAGE, TWINE and CABLE YARN","CORDAGE, TWINE, AND CABLE YARN",case,10,1,1886,1886,4
+export_uk,"COTTON, YARN, AND TWIST","COTTON, YARN, AND TWIST",identity,1097,3,1893,1900,4
+export_uk,COTTON YARN AND TWIST,"COTTON, YARN, AND TWIST",case,575,8,1889,1896,4
+export_uk,"COTTON, YARN AND TWIST","COTTON, YARN, AND TWIST",case,571,2,1893,1898,4
+export_uk,COTTON YARN and TWIST,"COTTON, YARN, AND TWIST",case,70,3,1873,1876,4
+import,"DYE STUFFS, and Substances used in Tanning","DYE STUFFS, and Substances used in Tanning",identity,1157,9,1884,1894,4
+import,"Dye Stuffs, and Substances used in Tanning","DYE STUFFS, and Substances used in Tanning",case,125,1,1885,1885,4
+import,"DYE STUFFS, and Substances used in 
+          Tanning","DYE STUFFS, and Substances used in Tanning",dehyphen,124,1,1890,1890,4
+import,"Dye STUFFS, and Substances used in Tanning","DYE STUFFS, and Substances used in Tanning",case,90,1,1883,1883,4
+import,"FARINACEOUS SUBSTANCES and Manu- factures thereof, unenumerated","FARINACEOUS SUBSTANCES and Manufactures thereof, unenumerated",dehyphen,58,3,1886,1896,4
+import,"FARINACEOUS SUBSTANCES, and Manufactures thereof, unenumerated","FARINACEOUS SUBSTANCES and Manufactures thereof, unenumerated",case,47,3,1888,1890,4
+import,"FARINACEOUS SUBSTANCES and Manufac- tures thereof, Unenumerated","FARINACEOUS SUBSTANCES and Manufactures thereof, unenumerated",dehyphen,33,2,1884,1885,4
+import,"FARINACEOUS SUBSTANCES and Manufactures thereof, Unenumerated","FARINACEOUS SUBSTANCES and Manufactures thereof, unenumerated",case,18,2,1880,1881,4
+reexport,"FARINACEOUS SUBSTANCES, and Manufactures thereof, Unenumerated","FARINACEOUS SUBSTANCES, and Manufactures thereof, Unenumerated",identity,93,11,1872,1882,4
+reexport,"FARINACEOUS SUBSTANCES, and Manufactures thereof, unenum- erated","FARINACEOUS SUBSTANCES, and Manufactures thereof, Unenumerated",dehyphen,65,5,1887,1894,4
+reexport,"FARINACEOUS SUBSTANCES, and Manufactures thereof, unenumerated","FARINACEOUS SUBSTANCES, and Manufactures thereof, Unenumerated",case,28,2,1889,1892,4
+reexport,"FARINACEOUS SUBSTANCES, and Manufactures thereof, unenume- rated","FARINACEOUS SUBSTANCES, and Manufactures thereof, Unenumerated",dehyphen,14,1,1891,1891,4
+import,IRON and STEEL,IRON and STEEL,identity,251,6,1870,1894,4
+import,IRON and STEEL.,IRON and STEEL,case,53,2,1892,1893,4
+import,Iron and Steel,IRON and STEEL,case,48,5,1875,1879,4
+import,Iron and STEEL,IRON and STEEL,case,10,1,1874,1874,4
+reexport,"MEAT, Unenumerated","MEAT, Unenumerated",identity,588,12,1885,1898,4
+reexport,"MEAT, UNENUMERATED","MEAT, Unenumerated",case,10,1,1884,1884,4
+reexport,MEAT. Unenumerated,"MEAT, Unenumerated",case,4,1,1886,1886,4
+reexport,"Meat, unenumerated","MEAT, Unenumerated",case,3,1,1895,1895,4
+export_uk,"MUSICAL INSTRUMENTS, AND PARTS THEREOF","MUSICAL INSTRUMENTS, AND PARTS THEREOF",identity,278,3,1893,1900,4
+export_uk,"MUSICAL INSTRUMENTS, and parts thereof","MUSICAL INSTRUMENTS, AND PARTS THEREOF",case,271,11,1886,1896,4
+export_uk,"MUSICAL INSTRUMENTS, and Parts thereof","MUSICAL INSTRUMENTS, AND PARTS THEREOF",case,189,12,1872,1885,4
+export_uk,MUSICAL INSTRUMENTS; and Parts thereof,"MUSICAL INSTRUMENTS, AND PARTS THEREOF",case,10,1,1878,1878,4
+import,"NAPHTHA, WOOD, not potable","NAPHTHA, WOOD, not potable",identity,34,5,1887,1891,4
+import,"NAPHTHA, Wood ; not potable","NAPHTHA, WOOD, not potable",case,18,3,1883,1885,4
+import,"NAPHTHA, Wood; not potable","NAPHTHA, WOOD, not potable",case,4,1,1882,1882,4
+import,"NAPHTHA WOOD, not potable","NAPHTHA, WOOD, not potable",case,4,1,1886,1886,4
+import,"NITRE, CUBIC (NITRATE OF SODA)","NITRE, CUBIC (NITRATE OF SODA)",identity,21,3,1883,1885,4
+import,"NITRE, CUBIC (Nitrate of Soda)","NITRE, CUBIC (NITRATE OF SODA)",case,10,2,1881,1882,4
+import,NITRE CUBIC (NITRATE OF SODA),"NITRE, CUBIC (NITRATE OF SODA)",case,8,1,1886,1886,4
+import,"NITRE, Cubic (nitrate of Soda)","NITRE, CUBIC (NITRATE OF SODA)",case,5,1,1880,1880,4
+import,OIL-SEED CAKE,OIL-SEED CAKE,identity,693,2,1894,1900,4
+import,OIL SEED CAKE,OIL-SEED CAKE,case,461,19,1870,1896,4
+import,Oil SEED CAKE,OIL-SEED CAKE,case,43,2,1875,1876,4
+import,OIL SEED-CAKE,OIL-SEED CAKE,case,22,1,1894,1894,4
+import,"PICKLES and VEGETABLES, preserved in Salt or Vinegar","PICKLES and VEGETABLES, preserved in Salt or Vinegar",identity,94,9,1888,1896,4
+import,"PICKLES and VEGETABLES, Pre- served in Salt or Vinegar","PICKLES and VEGETABLES, preserved in Salt or Vinegar",dehyphen,50,1,1895,1899,4
+import,"PICKLES and Vegetables, preserved in Salt or Vinegar","PICKLES and VEGETABLES, preserved in Salt or Vinegar",case,26,4,1882,1885,4
+import,"PICKLES, and VEGETABLES, preserved in Salt or Vinegar","PICKLES and VEGETABLES, preserved in Salt or Vinegar",case,19,2,1886,1887,4
+export_uk,"PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY","PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY",identity,156,4,1883,1892,4
+export_uk,"PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS and CONFECTIONERY","PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY",case,76,2,1886,1887,4
+export_uk,"PICKLES, VINEGAR, SAUCES, CONDI- MENTS, PRESERVED FRUITS, and CONFECTIONERY","PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY",dehyphen,70,2,1890,1896,4
+export_uk,"PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRE- SERVED FRUITS, and CONFECTIONERY","PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY",dehyphen,31,1,1882,1882,4
+import,"PLANTS, SHRUBS, TREES, and FLOWER ROOTS","PLANTS, SHRUBS, TREES, and FLOWER ROOTS",identity,278,22,1872,1896,4
+import,"PLANTS, SHRUBS, TREES, AND FLOWER ROOTS","PLANTS, SHRUBS, TREES, and FLOWER ROOTS",case,81,1,1895,1899,4
+import,"PLANTS, SHRUBS, TREES and FLOWER ROOTS","PLANTS, SHRUBS, TREES, and FLOWER ROOTS",case,20,1,1886,1886,4
+import,"PLANTS, SHRUBS, TREES, and Flower Roots","PLANTS, SHRUBS, TREES, and FLOWER ROOTS",case,6,1,1881,1881,4
+reexport,"PLATE, OF GOLD","PLATE, OF GOLD",identity,41,19,1877,1896,4
+reexport,PLATE of Gold,"PLATE, OF GOLD",case,9,1,1900,1900,4
+reexport,PLATE OF GOLD,"PLATE, OF GOLD",case,3,1,1886,1886,4
+reexport,PLATE of GOLD,"PLATE, OF GOLD",case,1,1,1872,1872,4
+reexport,RAGS and other Materials used for making Paper,RAGS and other Materials used for making Paper,identity,246,17,1872,1892,4
+reexport,"RAGS, and other Materials used for making paper",RAGS and other Materials used for making Paper,case,33,2,1886,1887,4
+reexport,RAGS AND OTHER MATERIALS used for making Paper,RAGS and other Materials used for making Paper,case,17,1,1894,1894,4
+reexport,Rags and other Materials used for making Paper,RAGS and other Materials used for making Paper,case,10,1,1883,1883,4
+import,SALTPETRE (Nitrate of Potash),SALTPETRE (Nitrate of Potash),identity,1316,14,1886,1899,4
+import,SALTPETRE (NITRATE OF POTASH),SALTPETRE (Nitrate of Potash),case,67,10,1873,1885,4
+import,Saltpetre (Nitrate of Potash),SALTPETRE (Nitrate of Potash),case,41,1,1900,1900,4
+import,SALTPETRE. (NITRATE OF POTASH),SALTPETRE (Nitrate of Potash),case,5,1,1882,1882,4
+reexport,"SKINS, FURS, AND PELTS","SKINS, FURS, AND PELTS",identity,711,18,1873,1896,4
+reexport,"SKINS, FURS, and PELTS","SKINS, FURS, AND PELTS",case,338,8,1886,1896,4
+reexport,"SKINS, FURS and PELTS","SKINS, FURS, AND PELTS",case,89,4,1893,1896,4
+reexport,"SKINS, FURS AND PELTS","SKINS, FURS, AND PELTS",case,35,1,1872,1872,4
+import,"STONES, MARBLE, and SLATE : 
+          Rough, Hewn or Manufactured : 
+          (Other than Works of Art)","STONES, MARBLE, and SLATE : Rough, Hewn or Manufactured : (Other than Works of Art)",dehyphen,25,1,1892,1892,4
+import,"STONES, MARBLE, and SLATE, Rough, Hewn or Manufactured (Other than Works of Art)","STONES, MARBLE, and SLATE : Rough, Hewn or Manufactured : (Other than Works of Art)",case,24,1,1895,1895,4
+import,"STONES, MARBLE, and SLATE; Rough, Hewn or Manufactured; other than Works of Art","STONES, MARBLE, and SLATE : Rough, Hewn or Manufactured : (Other than Works of Art)",case,14,1,1884,1884,4
+import,"STONES, MARBLE, and SLATE, Rough, Hewn or Manufactured, other than Works of Art","STONES, MARBLE, and SLATE : Rough, Hewn or Manufactured : (Other than Works of Art)",case,9,1,1882,1882,4
+export_uk,"TOBACCO AND SNUFF, MANUFACTURED IN THE UNITED KINGDOM","TOBACCO AND SNUFF, MANUFACTURED IN THE UNITED KINGDOM",identity,1168,3,1894,1900,4
+export_uk,TOBACCO and SNUFF Manufactured in the United Kingdom,"TOBACCO AND SNUFF, MANUFACTURED IN THE UNITED KINGDOM",case,197,14,1872,1885,4
+export_uk,"TOBACCO and SNUFF, Manufactured in the United Kingdom","TOBACCO AND SNUFF, MANUFACTURED IN THE UNITED KINGDOM",case,169,8,1889,1896,4
+export_uk,"TOBACCO AND SNUFF, Manufactured in the United Kingdom","TOBACCO AND SNUFF, MANUFACTURED IN THE UNITED KINGDOM",case,24,2,1886,1887,4
+reexport,"ZINC, Ore of","ZINC, Ore of",identity,384,7,1887,1893,4
+reexport,ZINC: Ore of,"ZINC, Ore of",case,137,1,1895,1899,4
+reexport,ZINC. Ore of,"ZINC, Ore of",case,65,1,1896,1896,4
+reexport,ZINC Ore of,"ZINC, Ore of",case,60,1,1894,1894,4
+import,"ANIMALS, LIVING","ANIMALS, LIVING",identity,1640,10,1888,1899,3
+import,ANIMALS LIVING,"ANIMALS, LIVING",case,421,8,1880,1887,3
+import,"Animals, Living","ANIMALS, LIVING",case,243,4,1870,1899,3
+export_uk,"ANIMALS, Living","ANIMALS, Living",identity,2905,4,1893,1900,3
+export_uk,"ANIMALS, LIVING","ANIMALS, Living",case,1066,25,1872,1896,3
+export_uk,ANIMALS. LIVING,"ANIMALS, Living",case,40,1,1894,1894,3
+import,ARMS AND AMMUNITION,ARMS AND AMMUNITION,identity,461,10,1886,1895,3
+import,"ARMS, and AMMUNITION",ARMS AND AMMUNITION,case,113,4,1880,1884,3
+import,ARMS and AMMUNITION,ARMS AND AMMUNITION,case,44,1,1885,1885,3
+export_uk,BISCUIT AND BREAD,BISCUIT AND BREAD,identity,1185,6,1893,1899,3
+export_uk,BISCUIT and BREAD,BISCUIT AND BREAD,case,368,17,1870,1892,3
+export_uk,Biscuit and Bread,BISCUIT AND BREAD,case,27,2,1880,1882,3
+import,"BOOKS, Bound and Unbound, in- cluding Maps and Charts","BOOKS, Bound and Unbound, including Maps and Charts",dehyphen,470,2,1893,1898,3
+import,"BOOKS, Bound and Unbound, including Maps and Charts","BOOKS, Bound and Unbound, including Maps and Charts",identity,65,1,1895,1899,3
+import,"Books, Bound and Unbound, including MAPS and CHARTS","BOOKS, Bound and Unbound, including Maps and Charts",case,12,1,1896,1896,3
+reexport,"BRASS, BRONZE, and METAL BRONZED or LACQUERED","BRASS, BRONZE, and METAL BRONZED or LACQUERED",identity,14,3,1882,1884,3
+reexport,"BRASS, BRONZE, AND METAL BRONZED OR LACQUERED","BRASS, BRONZE, and METAL BRONZED or LACQUERED",case,8,2,1880,1881,3
+reexport,"BRASS, BRONZE, AND METAL, BRONZED OR LACQUERED","BRASS, BRONZE, and METAL BRONZED or LACQUERED",case,6,4,1872,1877,3
+export_uk,"Books, Printed","Books, Printed",identity,379,16,1872,1895,3
+export_uk,"BOOKS, Printed","Books, Printed",case,293,9,1873,1896,3
+export_uk,Books. Printed,"Books, Printed",case,14,1,1895,1895,3
+reexport,"CARDS, PLAYING","CARDS, PLAYING",identity,42,20,1872,1895,3
+reexport,CARDS PLAYING,"CARDS, PLAYING",case,3,1,1890,1890,3
+reexport,CARDS. PLAYING,"CARDS, PLAYING",case,3,1,1892,1892,3
+reexport,CHEMICAL MANUFACTURES AND PRODUCTS,CHEMICAL MANUFACTURES AND PRODUCTS,identity,297,23,1873,1896,3
+reexport,CHEMICAL MANUFACTURES AND PRO- DUCTS,CHEMICAL MANUFACTURES AND PRODUCTS,dehyphen,10,1,1883,1883,3
+reexport,CHEMICAL MANUFACTURES and PRODUCTS,CHEMICAL MANUFACTURES AND PRODUCTS,case,9,1,1872,1872,3
+import,"CHINA, OR PORCELAIN, AND EARTHENWARE","CHINA, OR PORCELAIN, AND EARTHENWARE",identity,392,3,1893,1899,3
+import,"CHINA or PORCELAIN, and EARTHEN- WARE","CHINA, OR PORCELAIN, AND EARTHENWARE",dehyphen,36,3,1888,1893,3
+import,"CHINA or PORCELAIN, AND EARTHENWARE","CHINA, OR PORCELAIN, AND EARTHENWARE",case,8,1,1882,1882,3
+export_uk,"CLAY, Unmanufactured","CLAY, Unmanufactured",identity,351,10,1886,1896,3
+export_uk,"CLAY, unmanufactured","CLAY, Unmanufactured",case,189,6,1877,1885,3
+export_uk,CLAY unmanufactured,"CLAY, Unmanufactured",case,125,3,1872,1875,3
+reexport,"CLOCKS, and parts thereof","CLOCKS, and parts thereof",identity,163,3,1893,1898,3
+reexport,"CLOCKS, and Parts thereof","CLOCKS, and parts thereof",case,49,7,1887,1896,3
+reexport,CLOCKS and Parts thereof,"CLOCKS, and parts thereof",case,20,3,1890,1892,3
+export_uk,COPPER,COPPER,identity,5786,26,1870,1900,3
+export_uk,"COPPER,",COPPER,case,94,2,1886,1887,3
+export_uk,Copper,COPPER,case,62,1,1884,1884,3
+import,"COPPER, ORE OF","COPPER, ORE OF",identity,4353,3,1893,1899,3
+import,"COPPER, Ore of","COPPER, ORE OF",case,455,11,1886,1896,3
+import,"Copper, Ore of","COPPER, ORE OF",case,307,1,1900,1900,3
+reexport,"CORN ; Grain, Meal, and Flour","CORN ; Grain, Meal, and Flour",identity,858,2,1894,1899,3
+reexport,"CORN; Grain, Meal, and Flour","CORN ; Grain, Meal, and Flour",case,504,1,1893,1897,3
+reexport,"CORN : Grain, Meal, and Flour","CORN ; Grain, Meal, and Flour",case,82,1,1893,1897,3
+import,DRUGS,DRUGS,identity,1781,17,1882,1900,3
+import,Drugs,DRUGS,case,62,1,1885,1885,3
+import,DRUGS.,DRUGS,case,34,1,1888,1888,3
+import,"EXTRACTS, of other Sorts than Dye-Stuffs, Unenumerated","EXTRACTS, of other Sorts than Dye-Stuffs, Unenumerated",identity,13,1,1882,1882,3
+import,"EXTRACTS, of other Sorts than Dye Stuffs, Unenumerated","EXTRACTS, of other Sorts than Dye-Stuffs, Unenumerated",case,12,2,1883,1884,3
+import,"EXTRACTS, of other Sorts. than Dye Stuffs, Unenumerated","EXTRACTS, of other Sorts than Dye-Stuffs, Unenumerated",case,7,1,1885,1885,3
+import,"EXTRACTS, of other Sorts, un- enumerated","EXTRACTS, of other Sorts, unenumerated",dehyphen,33,4,1886,1896,3
+import,"EXTRACTS, of other Sorts, unenumerated","EXTRACTS, of other Sorts, unenumerated",identity,29,4,1888,1892,3
+import,"EXTRACTS of other Sorts, Unenumerated","EXTRACTS, of other Sorts, unenumerated",case,7,2,1880,1881,3
+export_uk,"FISH, FRESH AND CURED","FISH, FRESH AND CURED",identity,1285,15,1886,1900,3
+export_uk,"FISH, FRESH and CURED","FISH, FRESH AND CURED",case,930,17,1873,1900,3
+export_uk,"Fish, Fresh and Cured","FISH, FRESH AND CURED",case,25,1,1872,1872,3
+export_uk,"GREASE, TALLOW, and ANIMAL FAT","GREASE, TALLOW, and ANIMAL FAT",identity,736,4,1893,1900,3
+export_uk,"GREASE, TALLOW, AND ANIMAL FAT","GREASE, TALLOW, and ANIMAL FAT",case,105,3,1892,1896,3
+export_uk,"GREASE, TALLOW and ANIMAL FAT","GREASE, TALLOW, and ANIMAL FAT",case,26,2,1882,1884,3
+import,HATS OR BONNETS,HATS OR BONNETS,identity,1264,12,1886,1899,3
+import,HATS or BONNETS,HATS OR BONNETS,case,190,14,1870,1885,3
+import,Hats or BONNETS,HATS OR BONNETS,case,29,1,1874,1874,3
+import,"HIDES, Raw, and Pieces thereof","HIDES, Raw, and Pieces thereof",identity,711,11,1882,1896,3
+import,HIDES. Raw. and Pieces thereof,"HIDES, Raw, and Pieces thereof",case,143,2,1887,1895,3
+import,"HIDES. Raw, and Pieces thereof","HIDES, Raw, and Pieces thereof",case,56,1,1884,1884,3
+reexport,HORNS AND HOOFS,HORNS AND HOOFS,identity,59,10,1875,1896,3
+reexport,Horns and Hoofs,HORNS AND HOOFS,case,22,4,1872,1885,3
+reexport,HORNS AND HOOFs,HORNS AND HOOFS,case,6,1,1878,1878,3
+import,Horns and Hoofs,Horns and Hoofs,identity,81,5,1880,1887,3
+import,HORNS and HOOFS,Horns and Hoofs,case,40,2,1886,1889,3
+import,HORNS and HOOFs,Horns and Hoofs,case,39,2,1888,1891,3
+export_uk,IMPLEMENTS AND TOOLS,IMPLEMENTS AND TOOLS,identity,22601,14,1887,1900,3
+export_uk,IMPLEMENTS and Tools,IMPLEMENTS AND TOOLS,case,354,10,1872,1888,3
+export_uk,IMPLEMENTS and TOOLS,IMPLEMENTS AND TOOLS,case,227,7,1875,1889,3
+export_uk,IRON,IRON,identity,7629,19,1870,1890,3
+export_uk,Iron,IRON,case,4374,10,1876,1896,3
+export_uk,"IRON,",IRON,case,173,3,1888,1890,3
+import,LEATHER MANUFACTURES,LEATHER MANUFACTURES,identity,805,24,1870,1900,3
+import,Leather Manufactures,LEATHER MANUFACTURES,case,115,2,1898,1899,3
+import,LEATHER Manufactures,LEATHER MANUFACTURES,case,20,1,1886,1886,3
+import,"MANGANESE, ORE of","MANGANESE, ORE of",identity,77,5,1886,1896,3
+import,MANGANESE ORE of,"MANGANESE, ORE of",case,59,4,1887,1892,3
+import,"MANGANESE, Ore of","MANGANESE, ORE of",case,51,4,1882,1885,3
+export_uk,MEAL and FLOUR,MEAL and FLOUR,identity,928,18,1870,1896,3
+export_uk,MeAL and FLOUR,MEAL and FLOUR,case,41,1,1872,1872,3
+export_uk,Meal and Flour,MEAL and FLOUR,case,40,1,1883,1883,3
+export_uk,"METALS, Unenumerated and Manufactures thereof","METALS, Unenumerated and Manufactures thereof",identity,106,4,1885,1893,3
+export_uk,"METALS, Unenumerated and Manu- factures thereof","METALS, Unenumerated and Manufactures thereof",dehyphen,72,3,1887,1890,3
+export_uk,"METALS, Unenumerated, and Manufactures thereof","METALS, Unenumerated and Manufactures thereof",case,34,1,1896,1896,3
+import,MOSS LITTER,MOSS LITTER,identity,61,8,1889,1900,3
+import,Moss LITTER,MOSS LITTER,case,5,1,1891,1891,3
+import,MOSS/LITTER,MOSS LITTER,case,4,1,1896,1896,3
+import,"MUTTON, FRESH","MUTTON, FRESH",identity,171,12,1885,1896,3
+import,"MUTTON, Fresh","MUTTON, FRESH",case,85,1,1895,1899,3
+import,"Mutton, Fresh","MUTTON, FRESH",case,69,4,1882,1900,3
+reexport,"MUTTON, Fresh","MUTTON, Fresh",identity,37,13,1884,1896,3
+reexport,"MUTTON, FRESH","MUTTON, Fresh",case,25,1,1894,1898,3
+reexport,"Mutton, Fresh","MUTTON, Fresh",case,5,1,1900,1900,3
+import,NUTS AND KERNELS,NUTS AND KERNELS,identity,5719,15,1886,1900,3
+import,NUTS and KERNELS,NUTS AND KERNELS,case,144,13,1872,1885,3
+import,Nuts and KERNELS,NUTS AND KERNELS,case,7,1,1877,1877,3
+export_uk,"OIL, OTHER THAN ESSENTIAL, OR MEDICINAL","OIL, OTHER THAN ESSENTIAL, OR MEDICINAL",identity,1946,3,1893,1900,3
+export_uk,"OIL, other than Essential or Medicinal","OIL, OTHER THAN ESSENTIAL, OR MEDICINAL",case,1447,20,1872,1896,3
+export_uk,"Oil, other than Essential or Medicinal","OIL, OTHER THAN ESSENTIAL, OR MEDICINAL",case,189,4,1873,1882,3
+reexport,OIL-SEED CAKE,OIL-SEED CAKE,identity,85,13,1883,1896,3
+reexport,OIL SEED CAKE,OIL-SEED CAKE,case,51,9,1872,1882,3
+reexport,OIL SEED-CAKE,OIL-SEED CAKE,case,1,1,1878,1878,3
+import,"ONIONS, Raw","ONIONS, Raw",identity,248,16,1880,1896,3
+reexport,"ONIONS, Raw","ONIONS, Raw",identity,134,11,1887,1898,3
+import,"ONIONS, raw","ONIONS, Raw",case,87,1,1895,1899,3
+import,"Onions, Raw","ONIONS, Raw",case,15,1,1894,1894,3
+reexport,"ONIONS, RAW","ONIONS, Raw",case,5,1,1885,1885,3
+reexport,ONIONS. Raw,"ONIONS, Raw",case,5,1,1886,1886,3
+export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",identity,4381,3,1893,1900,3
+export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",dehyphen,1596,1,1894,1898,3
+export_uk,"PAINTERS' COLOURS and MATERIALS, Unenumerated","PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",case,413,10,1885,1895,3
+reexport,"PAINTERS' Colours and Pigments, Unenumerated","PAINTERS' Colours and Pigments, Unenumerated",identity,180,2,1894,1899,3
+reexport,"PAINTERS' COLOURS AND PIGMENTS, Unenumerated","PAINTERS' Colours and Pigments, Unenumerated",case,176,19,1874,1895,3
+reexport,"PAINTERS’ COLOURS AND PIGMENTS, Unenumerated","PAINTERS' Colours and Pigments, Unenumerated",case,9,1,1873,1873,3
+reexport,"PLATE, OF SILVER, GILT OR UNGILT","PLATE, OF SILVER, GILT OR UNGILT",identity,12,4,1887,1893,3
+reexport,"PLATE, OF SILVER GILT OR UNGILT","PLATE, OF SILVER, GILT OR UNGILT",case,6,4,1882,1885,3
+reexport,PLATE OF SILVER GILT OR UNGILT,"PLATE, OF SILVER, GILT OR UNGILT",case,3,1,1886,1886,3
+reexport,"PRINTS, Engravings and Photographs","PRINTS, Engravings and Photographs",identity,294,3,1893,1899,3
+reexport,"PRINTS, ENGRAVINGS, AND PHOTO- GRAPHS","PRINTS, Engravings and Photographs",dehyphen,15,5,1883,1893,3
+reexport,"PRINTS, ENGRAVINGS, AND PHOTOGRAPHS","PRINTS, Engravings and Photographs",case,3,1,1882,1882,3
+import,PYRITES of IRON or COPPER,PYRITES of IRON or COPPER,identity,101,14,1874,1896,3
+import,PYRITES of Iron or Copper,PYRITES of IRON or COPPER,case,30,4,1891,1895,3
+reexport,PYRITES of IRON or COPPER,PYRITES of IRON or COPPER,identity,30,2,1893,1898,3
+reexport,PYRITES OF IRON OR COPPER,PYRITES of IRON or COPPER,case,22,14,1874,1895,3
+import,PYRITES of Iron or COPPER,PYRITES of IRON or COPPER,case,11,2,1875,1880,3
+reexport,PYRITES of Iron or Copper,PYRITES of IRON or COPPER,case,1,1,1879,1879,3
+import,"QUICKSILVER, (Metallic)","QUICKSILVER, (Metallic)",identity,87,2,1874,1875,3
+import,"QUICKSILVER, Metallic","QUICKSILVER, (Metallic)",case,44,2,1870,1873,3
+import,QUICKSILVER (Metallic),"QUICKSILVER, (Metallic)",case,22,4,1876,1879,3
+import,"RAGS, WOOLLEN, applicable to other uses than Manure, torn up or not","RAGS, WOOLLEN, applicable to other uses than Manure, torn up or not",identity,63,6,1877,1884,3
+import,"RAGS, WOOLLEN, applicable to other uses than Manure; torn up or not","RAGS, WOOLLEN, applicable to other uses than Manure, torn up or not",case,10,1,1882,1882,3
+import,"RAGS WOOLLEN: Applicable to other uses than Manure, torn up or not","RAGS, WOOLLEN, applicable to other uses than Manure, torn up or not",case,8,1,1876,1876,3
+import,"SAGO, and flour or meal thereof","SAGO, and flour or meal thereof",identity,100,3,1893,1899,3
+import,SAGO and FLOUR or MEAL thereof,"SAGO, and flour or meal thereof",case,5,1,1896,1896,3
+import,SAGO and Flour or Meal thereof,"SAGO, and flour or meal thereof",case,3,1,1895,1895,3
+export_uk,"SEEDS, of all Sorts","SEEDS, of all Sorts",identity,114,11,1872,1885,3
+export_uk,"SEEDS, of all sorts","SEEDS, of all Sorts",case,107,6,1886,1892,3
+export_uk,"SEEDS, OF ALL SORTS","SEEDS, of all Sorts",case,95,1,1895,1899,3
+import,SHELLS of all kinds,SHELLS of all kinds,identity,2783,14,1886,1900,3
+import,"SHELLS, of all KINDS",SHELLS of all kinds,case,64,3,1883,1885,3
+import,SHELLS of all KINDS,SHELLS of all kinds,case,8,1,1882,1882,3
+reexport,"SHELLS, of all kinds","SHELLS, of all kinds",identity,154,3,1894,1900,3
+reexport,SHELLS of all Kinds,"SHELLS, of all kinds",case,100,14,1883,1896,3
+reexport,Shells of all kinds,"SHELLS, of all kinds",case,6,1,1882,1882,3
+import,"SILVER ORE, or Ore of which the greater part in Value is Silver","SILVER ORE, or Ore of which the greater part in Value is Silver",identity,147,7,1889,1896,3
+import,"SILVER ORE, or ORE of which the greater part in value is Silver","SILVER ORE, or Ore of which the greater part in Value is Silver",case,106,9,1872,1885,3
+import,"SILVER ORE, or Ore of which the greater part in value is Silver","SILVER ORE, or Ore of which the greater part in Value is Silver",case,40,2,1886,1887,3
+reexport,"SILVER, Ore of, or Ore of which the greater part in value is Silver","SILVER, Ore of, or Ore of which the greater part in value is Silver",identity,63,9,1887,1896,3
+reexport,"SILVER, Ore of, or Ore of which the greater part in Value is Silver","SILVER, Ore of, or Ore of which the greater part in value is Silver",case,28,6,1879,1885,3
+reexport,"SILVER. Ore of, or Ore of which the greater part in value is Silver","SILVER, Ore of, or Ore of which the greater part in value is Silver",case,4,1,1886,1886,3
+export_uk,SKINS and FURS,SKINS and FURS,identity,797,24,1872,1896,3
+export_uk,SKINS AND FURS,SKINS and FURS,case,537,2,1870,1899,3
+export_uk,SKINS and Furs,SKINS and FURS,case,19,1,1875,1875,3
+import,"SKINS, AND FURS","SKINS, AND FURS",identity,866,1,1895,1899,3
+import,SKINS and FURS,"SKINS, AND FURS",case,104,1,1896,1896,3
+import,SKINS and FURS.,"SKINS, AND FURS",case,47,1,1896,1896,3
+reexport,SPIRITS,SPIRITS,identity,1760,21,1872,1900,3
+reexport,Spirits,SPIRITS,case,169,5,1874,1899,3
+reexport,SPIRITS.,SPIRITS,case,25,1,1890,1890,3
+export_uk,"SPIRITS, British and Irish","SPIRITS, British and Irish",identity,2118,10,1882,1900,3
+export_uk,"SPIRITS, BRITISH and IRISH","SPIRITS, British and Irish",case,158,9,1870,1881,3
+export_uk,SPIRITS. British and Irish,"SPIRITS, British and Irish",case,29,1,1886,1886,3
+import,"STRAW PLATTING, for making Hats or Bonnets","STRAW PLATTING, for making Hats or Bonnets",identity,125,10,1887,1896,3
+import,"STRAW PLATTING, for making hats or bonnets","STRAW PLATTING, for making Hats or Bonnets",case,75,1,1895,1899,3
+import,"STRAW PLATTING, for Making Hats or Bonnets","STRAW PLATTING, for making Hats or Bonnets",case,11,1,1886,1886,3
+import,SUCCADES (including all Fruits and Vegetables preserved in Sugar),SUCCADES (including all Fruits and Vegetables preserved in Sugar),identity,60,4,1883,1887,3
+import,"SUCCADES, including all Fruits and Vegetables preserved in Sugar",SUCCADES (including all Fruits and Vegetables preserved in Sugar),case,17,1,1895,1895,3
+import,SUCCADES (including all Fruits and Vegetables pre- served in Sugar),SUCCADES (including all Fruits and Vegetables preserved in Sugar),dehyphen,11,2,1881,1882,3
+reexport,TALLOW and STEARINE,TALLOW and STEARINE,identity,683,10,1872,1900,3
+reexport,TALLOW AND STEARINE,TALLOW and STEARINE,case,134,13,1873,1885,3
+reexport,Tallow and Stearine,TALLOW and STEARINE,case,68,5,1886,1891,3
+export_uk,"TELEGRAPHIC WIRES, AND APPARATUS","TELEGRAPHIC WIRES, AND APPARATUS",identity,1574,4,1893,1900,3
+export_uk,TELEGRAPHIC WIRES and APPARATUS,"TELEGRAPHIC WIRES, AND APPARATUS",case,286,11,1886,1896,3
+export_uk,TELEGRAPHIC WIRES AND APPARATUS,"TELEGRAPHIC WIRES, AND APPARATUS",case,237,13,1872,1896,3
+import,"VARNISH, CONTAINING ALCOHOL","VARNISH, CONTAINING ALCOHOL",identity,64,8,1875,1885,3
+import,VARNISH CONTAINING ALCOHOL,"VARNISH, CONTAINING ALCOHOL",case,52,1,1872,1872,3
+import,"VARNISH, Containing Alcohol","VARNISH, CONTAINING ALCOHOL",case,6,4,1888,1891,3
+reexport,"VEGETABLES, Raw, Unenumerated","VEGETABLES, Raw, Unenumerated",identity,115,11,1886,1896,3
+reexport,"VEGETABLES, Raw, unenumerated","VEGETABLES, Raw, Unenumerated",case,100,1,1895,1899,3
+reexport,"VEGETABLES. Raw, unenumerated","VEGETABLES, Raw, Unenumerated",case,20,1,1900,1900,3
+export_uk,WOOD AND TIMBER,WOOD AND TIMBER,identity,13062,4,1893,1900,3
+import,WOOD AND TIMBER,WOOD AND TIMBER,identity,3231,4,1893,1900,3
+import,WOOD and TIMBER,WOOD AND TIMBER,case,2206,22,1872,1896,3
+export_uk,WOOD and TIMBER,WOOD AND TIMBER,case,787,23,1873,1896,3
+import,Wood and Timber,WOOD AND TIMBER,case,421,8,1870,1894,3
+export_uk,Wood and Timber,WOOD AND TIMBER,case,61,2,1872,1883,3
+reexport,WOOD and TIMBER,WOOD and TIMBER,identity,3974,12,1887,1899,3
+reexport,WOOD AND TIMBER,WOOD and TIMBER,case,598,25,1872,1896,3
+reexport,Wood and Timber,WOOD and TIMBER,case,15,1,1886,1886,3
+export_uk,WOOLLEN AND WORSTED MANUFACTURES,WOOLLEN AND WORSTED MANUFACTURES,identity,9820,9,1888,1900,3
+export_uk,WOOLLEN and WORSTED MANUFACTURES,WOOLLEN AND WORSTED MANUFACTURES,case,5153,20,1872,1891,3
+export_uk,Woollen and Worsted Manufactures,WOOLLEN AND WORSTED MANUFACTURES,case,200,3,1897,1899,3
+export_uk,"YARN, ALPACA, MOHAIR, and other SORTS UNENUMERATED","YARN, ALPACA, MOHAIR, and other SORTS UNENUMERATED",identity,20,3,1875,1878,3
+export_uk,"YARN, ALPACA, MOHAIR, and other Sorts Unenumerated","YARN, ALPACA, MOHAIR, and other SORTS UNENUMERATED",case,19,2,1883,1885,3
+export_uk,"YARN, ALPACA, MOHAIR, and other SORTS UNE- NUMERATED","YARN, ALPACA, MOHAIR, and other SORTS UNENUMERATED",dehyphen,19,3,1872,1874,3
+export_uk,ZINC or SPELTER,ZINC or SPELTER,identity,2395,25,1870,1896,3
+export_uk,ZINC OR SPELTER,ZINC or SPELTER,case,120,1,1887,1887,3
+export_uk,ZINC or SPELTER.,ZINC or SPELTER,case,57,1,1878,1878,3
+import,ALKALI,ALKALI,identity,363,29,1870,1899,2
+reexport,ALKALI,ALKALI,identity,95,24,1872,1896,2
+import,Alkali,ALKALI,case,19,1,1900,1900,2
+reexport,Alkali,ALKALI,case,11,1,1900,1900,2
+export_uk,ALL OTHER ARTICLES NOT ENUMERATED AND NOT FALLING UNDER ANY OF THE GENERAL HEADS,ALL OTHER ARTICLES NOT ENUMERATED AND NOT FALLING UNDER ANY OF THE GENERAL HEADS,identity,666,1,1893,1897,2
+export_uk,ALL OTHER ARTICLES NOT ENUMERATED AND NOT FALL- ING UNDER ANY OF THE GENERAL HEADS,ALL OTHER ARTICLES NOT ENUMERATED AND NOT FALLING UNDER ANY OF THE GENERAL HEADS,dehyphen,442,1,1894,1898,2
+import,ANIMALS LIVING'd),ANIMALS LIVING'd),identity,30,1,1887,1887,2
+import,ANIMALS. LIVING'd),ANIMALS LIVING'd),case,29,1,1891,1891,2
+reexport,"ANIMALS, LIVING","ANIMALS, LIVING",identity,138,12,1885,1896,2
+reexport,ANIMALS LIVING,"ANIMALS, LIVING",case,25,5,1886,1890,2
+export_uk,APPAREL AND SLOPS,APPAREL AND SLOPS,identity,2417,15,1886,1900,2
+export_uk,APPAREL and SLOPS,APPAREL AND SLOPS,case,373,12,1870,1885,2
+export_uk,"ARMS, AMMUNITION, and MILITARY STORES","ARMS, AMMUNITION, and MILITARY STORES",identity,1791,19,1870,1890,2
+export_uk,"ARMS, AMMUNITION, AND MILITARY STORES","ARMS, AMMUNITION, and MILITARY STORES",case,1582,11,1886,1896,2
+import,"ARMS, AMMUNITION, and MILITARY STORES","ARMS, AMMUNITION, and MILITARY STORES",identity,66,7,1872,1879,2
+import,"ARMS, AMMUNITION; and MILITARY STORES","ARMS, AMMUNITION, and MILITARY STORES",case,1,1,1878,1878,2
+import,ASPHALT or BITUMEN,ASPHALT or BITUMEN,identity,137,18,1877,1896,2
+import,ASPHALT OR BITUMEN,ASPHALT or BITUMEN,case,8,1,1886,1886,2
+import,BACON AND HAMS,BACON AND HAMS,identity,219,10,1886,1895,2
+import,BACON and HAMS,BACON AND HAMS,case,190,14,1870,1885,2
+import,BEADS OF ALL SORTS,BEADS OF ALL SORTS,identity,405,12,1885,1896,2
+import,"BEADS, of all Sorts",BEADS OF ALL SORTS,case,181,4,1893,1900,2
+export_uk,BEER AND ALE,BEER AND ALE,identity,1075,12,1878,1900,2
+export_uk,BEER and ALE,BEER AND ALE,case,445,15,1870,1887,2
+import,BEER AND ALE,BEER AND ALE,identity,256,10,1872,1900,2
+import,BEER and ALE,BEER AND ALE,case,102,8,1889,1896,2
+reexport,BEER and ALE,BEER and ALE,identity,170,14,1886,1899,2
+reexport,BEER AND ALE,BEER and ALE,case,29,13,1872,1885,2
+export_uk,BLEACHING MATERIALS,BLEACHING MATERIALS,identity,1721,26,1870,1900,2
+export_uk,BLEACHING-MATERIALS,BLEACHING MATERIALS,case,12,1,1878,1878,2
+import,"BONES (except Whalebone) whether burnt or not, or as Animal Charcoal","BONES (except Whalebone) whether burnt or not, or as Animal Charcoal",identity,301,3,1893,1899,2
+import,"BONES (except Whalebone), whether burnt or not, or as Animal Charcoal","BONES (except Whalebone) whether burnt or not, or as Animal Charcoal",case,50,2,1895,1896,2
+reexport,BONES (except Whalefins) applicable to Manufacturing Purposes,BONES (except Whalefins) applicable to Manufacturing Purposes,identity,29,12,1877,1896,2
+reexport,BONES (except Whalefins) applicable to Manu- facturing Purposes,BONES (except Whalefins) applicable to Manufacturing Purposes,dehyphen,3,1,1882,1882,2
+reexport,BOOKS,BOOKS,identity,109,16,1872,1898,2
+import,BOOKS,BOOKS,identity,74,8,1870,1881,2
+import,Books,BOOKS,case,22,2,1877,1880,2
+reexport,Books,BOOKS,case,21,4,1876,1885,2
+reexport,BOOKS (bound or unbound) including Maps and Charts,BOOKS (bound or unbound) including Maps and Charts,identity,15,4,1891,1896,2
+reexport,Books (bound or unbound) including Maps and Charts,BOOKS (bound or unbound) including Maps and Charts,case,3,1,1892,1892,2
+export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance","BRASS, AND MANUFACTURES OF, not being Ordnance",identity,2750,4,1893,1900,2
+export_uk,"BRASS, and Manufactures of, not being Ordnance","BRASS, AND MANUFACTURES OF, not being Ordnance",case,284,7,1889,1896,2
+reexport,"BRASS, BRONZE, and METAL BRONZED or LACQUERED, Manufactures of","BRASS, BRONZE, and METAL BRONZED or LACQUERED, Manufactures of",identity,34,10,1886,1896,2
+reexport,"BRASS, BRONZE, and METAL, BRONZED or LACQUERED Manufactures of","BRASS, BRONZE, and METAL BRONZED or LACQUERED, Manufactures of",case,3,1,1890,1890,2
+reexport,"BRASS, BRONZE, and METAL BRONZED or LACQUERED, Manu- factures of: Unenumerated","BRASS, BRONZE, and METAL BRONZED or LACQUERED, Manufactures of: Unenumerated",dehyphen,115,2,1893,1898,2
+reexport,"BRASS, BRONZE, and METAL BRONZED or LACQUERED, Manufactures of: Unenumerated","BRASS, BRONZE, and METAL BRONZED or LACQUERED, Manufactures of: Unenumerated",identity,60,1,1895,1899,2
+import,"BRASS, BRONZE, and METAL, Bronzed and Lacquered","BRASS, BRONZE, and METAL, Bronzed and Lacquered",identity,20,3,1872,1876,2
+import,"BRASS, BRONZE and METAL, Bronzed and Lacquered","BRASS, BRONZE, and METAL, Bronzed and Lacquered",case,19,3,1877,1879,2
+reexport,BRIMSTONE,BRIMSTONE,identity,400,26,1872,1899,2
+import,BRIMSTONE,BRIMSTONE,identity,199,22,1870,1899,2
+reexport,Brimstone,BRIMSTONE,case,20,1,1900,1900,2
+import,Brimstone,BRIMSTONE,case,8,1,1900,1900,2
+export_uk,BROOMS AND BRUSHES,BROOMS AND BRUSHES,identity,44,1,1900,1900,2
+export_uk,BROOMS and BRUSHES,BROOMS AND BRUSHES,case,15,1,1870,1870,2
+reexport,BUTTER,BUTTER,identity,1192,22,1872,1899,2
+import,BUTTER,BUTTER,identity,887,24,1872,1900,2
+reexport,Butter,BUTTER,case,12,1,1896,1896,2
+import,Butter,BUTTER,case,3,1,1896,1896,2
+reexport,"BUTTONS AND STUDS, not of Metal","BUTTONS AND STUDS, not of Metal",identity,79,19,1872,1899,2
+reexport,"BUTTONS and STUDS, not of Metal","BUTTONS AND STUDS, not of Metal",case,22,5,1886,1890,2
+reexport,CANDLES of all Sorts,CANDLES of all Sorts,identity,133,2,1895,1900,2
+reexport,CANDLES OF ALL SORTS,CANDLES of all Sorts,case,128,13,1882,1896,2
+export_uk,CANDLES of all sorts,CANDLES of all sorts,identity,422,11,1885,1896,2
+export_uk,"CANDLES, of all Sorts",CANDLES of all sorts,case,164,13,1872,1884,2
+import,"CANDLES, of all Sorts","CANDLES, of all Sorts",identity,118,4,1893,1900,2
+import,CANDLES OF ALL SORTS,"CANDLES, of all Sorts",case,73,11,1886,1896,2
+reexport,CAOUTCHOU,CAOUTCHOU,identity,714,3,1894,1900,2
+reexport,CAOUTCHOUÇ,CAOUTCHOU,case,172,1,1893,1897,2
+import,CHEMICAL MANUFACTURES and PRODUCTS,CHEMICAL MANUFACTURES and PRODUCTS,identity,103,3,1872,1887,2
+import,CHEMICAL MANUFACTURES and PRO- DUCTS,CHEMICAL MANUFACTURES and PRODUCTS,dehyphen,60,3,1888,1893,2
+import,"CHEMICAL MANUFACTURES and PRODUCTS, Unenumerated","CHEMICAL MANUFACTURES and PRODUCTS, Unenumerated",identity,87,6,1873,1884,2
+import,CHEMICAL MANUFACTURES and PRODUCTS. Unenumerated,"CHEMICAL MANUFACTURES and PRODUCTS, Unenumerated",case,35,1,1883,1883,2
+export_uk,CHEMICAL PRODUCTS AND PREPARATIONS not specially enumerated,CHEMICAL PRODUCTS AND PREPARATIONS not specially enumerated,identity,2238,3,1894,1900,2
+export_uk,"CHEMICAL PRODUCTS and Preparations, not specially enumerated",CHEMICAL PRODUCTS AND PREPARATIONS not specially enumerated,case,283,6,1890,1895,2
+export_uk,"CHEMICAL PRODUCTS or Preparations, not specially enumerated","CHEMICAL PRODUCTS or Preparations, not specially enumerated",identity,586,17,1872,1889,2
+export_uk,"CHEMICAL PRODUCTS or Preparations, 
+                    not specially enumerated","CHEMICAL PRODUCTS or Preparations, not specially enumerated",dehyphen,27,1,1883,1883,2
+reexport,CHLORAL HYDRATE,CHLORAL HYDRATE,identity,48,24,1873,1896,2
+reexport,Chloral Hydrate,CHLORAL HYDRATE,case,20,1,1872,1872,2
+reexport,CHLOROFORM,CHLOROFORM,identity,57,24,1873,1896,2
+reexport,Chloroform,CHLOROFORM,case,1,1,1872,1872,2
+import,CIDER AND PERRY,CIDER AND PERRY,identity,92,3,1894,1900,2
+import,CIDER and PERRY,CIDER AND PERRY,case,24,4,1893,1896,2
+import,"CLOCKS, and PARTS THEREOF","CLOCKS, and PARTS THEREOF",identity,90,10,1887,1896,2
+import,"CLOCKS, AND PARTS THEREOF","CLOCKS, and PARTS THEREOF",case,81,2,1894,1898,2
+import,"COALS, CULM, and CINDERS","COALS, CULM, and CINDERS",identity,72,14,1879,1896,2
+import,"COALS, CULM and CINDERS","COALS, CULM, and CINDERS",case,5,1,1886,1886,2
+reexport,COCOA,COCOA,identity,407,23,1873,1896,2
+reexport,Cocoa,COCOA,case,26,2,1872,1876,2
+import,"COCOA OR CHOCOLATE, GROUND, PREPARED, OR IN ANY WAY MANUFACTURED","COCOA OR CHOCOLATE, GROUND, PREPARED, OR IN ANY WAY MANUFACTURED",identity,169,4,1893,1900,2
+import,"Cocoa or Chocolate, ground, pre- pared, or in any way manu- factured","COCOA OR CHOCOLATE, GROUND, PREPARED, OR IN ANY WAY MANUFACTURED",dehyphen,7,1,1883,1883,2
+import,COFFEE,COFFEE,identity,1383,18,1874,1900,2
+import,Coffee,COFFEE,case,15,1,1892,1892,2
+reexport,"COFFEE AND CHICORY, Roasted or Ground, Mixed","COFFEE AND CHICORY, Roasted or Ground, Mixed",identity,27,5,1886,1890,2
+reexport,"COFFEE and CHICORY, Roasted or Ground, Mixed","COFFEE AND CHICORY, Roasted or Ground, Mixed",case,4,2,1883,1884,2
+import,COPPER,COPPER,identity,1418,24,1870,1895,2
+import,Copper,COPPER,case,35,1,1899,1899,2
+reexport,"COPPER, Ore of","COPPER, Ore of",identity,679,3,1893,1899,2
+reexport,"Copper, Ore of","COPPER, Ore of",case,454,1,1900,1900,2
+import,"CORDAGE, TWINE, and CABLE YARN","CORDAGE, TWINE, and CABLE YARN",identity,260,21,1872,1894,2
+import,"CORDAGE, TWINE and CABLE YARN","CORDAGE, TWINE, and CABLE YARN",case,18,1,1886,1886,2
+import,CORK,CORK,identity,300,20,1873,1896,2
+import,CORK.,CORK,case,11,1,1892,1892,2
+export_uk,CORN and GRAIN,CORN and GRAIN,identity,911,25,1870,1896,2
+export_uk,Corn and GRAIN,CORN and GRAIN,case,36,2,1880,1885,2
+import,"CORN, GRAIN, MEAL, AND FLOUR","CORN, GRAIN, MEAL, AND FLOUR",identity,225,2,1895,1896,2
+import,"CORN, GRAIN, MEAL, and FLOUR","CORN, GRAIN, MEAL, AND FLOUR",case,85,2,1895,1896,2
+reexport,COTTON,COTTON,identity,1755,25,1872,1900,2
+reexport,Cotton,COTTON,case,1126,23,1872,1900,2
+import,COTTON MANUFACTURES,COTTON MANUFACTURES,identity,1282,28,1870,1900,2
+import,Cotton Manufactures,COTTON MANUFACTURES,case,9,1,1873,1873,2
+export_uk,COTTON MANUFACTURES—con- tinued,COTTON MANUFACTURES—continued,dehyphen,2042,4,1893,1900,2
+export_uk,COTTON MANUFACTURES continued,COTTON MANUFACTURES—continued,case,80,1,1900,1900,2
+export_uk,COTTON TWIST and YARN,COTTON TWIST and YARN,identity,148,4,1877,1886,2
+export_uk,COTTON TWIST AND YARN,COTTON TWIST and YARN,case,77,2,1887,1888,2
+import,"Cannon and Mortars, mounted or accompanied with Carriages","Cannon and Mortars, mounted or accompanied with Carriages",identity,158,7,1873,1880,2
+import,"Cannon and Mortars, mounted or accompanied   with Carriages","Cannon and Mortars, mounted or accompanied with Carriages",dehyphen,22,1,1874,1874,2
+import,Cotton,Cotton,identity,2933,28,1870,1900,2
+import,COTTON,Cotton,case,1303,25,1873,1900,2
+reexport,DRUGS,DRUGS,identity,1340,21,1872,1900,2
+reexport,Drugs,DRUGS,case,436,12,1876,1899,2
+reexport,DYE STUFFS,DYE STUFFS,identity,745,20,1872,1896,2
+reexport,Dye Stuffs,DYE STUFFS,case,8,1,1876,1876,2
+import,DYE STUFFS (Other than Dye Woods) and Substances used in Tan- ning or Dyeing,DYE STUFFS (Other than Dye Woods) and Substances used in Tanning or Dyeing,dehyphen,1446,3,1893,1900,2
+import,"DYE STUFFS (other than Dye Woods), and Substances used in Tanning or Dyeing",DYE STUFFS (Other than Dye Woods) and Substances used in Tanning or Dyeing,case,264,2,1895,1896,2
+reexport,"DYE STUFFS, and Substances used in Tanning","DYE STUFFS, and Substances used in Tanning",identity,181,8,1888,1896,2
+reexport,DYE STUFFS. and Substances used in Tanning,"DYE STUFFS, and Substances used in Tanning",case,26,1,1895,1895,2
+import,DYE WOODS,DYE WOODS,identity,1251,23,1872,1900,2
+reexport,DYE WOODS,DYE WOODS,identity,400,24,1872,1900,2
+import,DYE Woods,DYE WOODS,case,27,1,1885,1885,2
+reexport,Dye Woods,DYE WOODS,case,22,2,1876,1884,2
+import,Dye Stuffs,Dye Stuffs,identity,60,1,1899,1899,2
+import,DYE STUFFS,Dye Stuffs,case,3,1,1870,1870,2
+export_uk,EARTHEN AND CHINA WARE,EARTHEN AND CHINA WARE,identity,2160,13,1886,1900,2
+export_uk,EARTHEN and CHINA WARE,EARTHEN AND CHINA WARE,case,1328,18,1870,1899,2
+import,EGGS,EGGS,identity,655,12,1872,1900,2
+reexport,EGGS,EGGS,identity,464,8,1879,1899,2
+import,Eggs,EGGS,case,214,17,1870,1895,2
+reexport,Eggs,EGGS,case,23,15,1872,1894,2
+export_uk,"ELECTRIC LIGHTING APPARATUS, or parts thereof (except Steam Engines)","ELECTRIC LIGHTING APPARATUS, or parts thereof (except Steam Engines)",identity,572,3,1894,1900,2
+export_uk,"ELECTRIC LIGHTING APPARATUS, OR PARTS THEREOF (EXCEPT STEAM ENGINES)","ELECTRIC LIGHTING APPARATUS, or parts thereof (except Steam Engines)",case,239,10,1886,1896,2
+import,EMBROIDERY and NEEDLEWORK,EMBROIDERY and NEEDLEWORK,identity,355,25,1870,1896,2
+import,EMBROIDERY AND NEEDLE- WORK,EMBROIDERY and NEEDLEWORK,dehyphen,51,1,1895,1899,2
+reexport,"ETHER, Acetic","ETHER, Acetic",identity,58,6,1891,1896,2
+reexport,"ETHER, ACETIC","ETHER, Acetic",case,20,4,1887,1890,2
+reexport,ETHYL (IODIDE OF),ETHYL (IODIDE OF),identity,12,4,1887,1890,2
+reexport,ETHYL-IODIDE OF,ETHYL (IODIDE OF),case,3,1,1893,1893,2
+import,FARINACEOUS SUBSTANCES,FARINACEOUS SUBSTANCES,identity,23,1,1893,1893,2
+import,-FARINACEOUS SUBSTANCES,FARINACEOUS SUBSTANCES,case,20,1,1892,1892,2
+import,FARINACEOUS SUBSTANCES AND MANUFACTURES THEREOF,FARINACEOUS SUBSTANCES AND MANUFACTURES THEREOF,identity,356,1,1895,1899,2
+import,FARINACEOUS SUBSTANCES and Manufactures thereof,FARINACEOUS SUBSTANCES AND MANUFACTURES THEREOF,case,71,6,1872,1878,2
+reexport,FEATHERS AND DOWN,FEATHERS AND DOWN,identity,197,20,1872,1896,2
+reexport,FEATHERS and DOWN,FEATHERS AND DOWN,case,31,5,1886,1890,2
+reexport,FISH,FISH,identity,915,7,1887,1899,2
+import,FISH,FISH,identity,602,22,1870,1894,2
+reexport,Fish,FISH,case,600,11,1886,1896,2
+import,Fish,FISH,case,183,4,1874,1888,2
+import,FLAX,FLAX,identity,1485,14,1870,1899,2
+import,Flax,FLAX,case,65,1,1870,1870,2
+export_uk,FLAX AND HEMP,FLAX AND HEMP,identity,157,13,1886,1900,2
+export_uk,FLAX and HEMP,FLAX AND HEMP,case,98,2,1893,1898,2
+import,"FLAX, Dressed or Undressed","FLAX, Dressed or Undressed",identity,261,13,1882,1896,2
+import,"Flax, Dressed or Undressed","FLAX, Dressed or Undressed",case,15,1,1884,1884,2
+import,"FLOWERS, ARTIFICIAL","FLOWERS, ARTIFICIAL",identity,524,16,1872,1900,2
+import,"FLOWERS, Artificial","FLOWERS, ARTIFICIAL",case,250,11,1886,1896,2
+reexport,"FLOWERS, Artificial","FLOWERS, Artificial",identity,166,15,1886,1900,2
+reexport,"FLOWERS, ARTIFICIAL","FLOWERS, Artificial",case,17,13,1872,1885,2
+reexport,FRUIT,FRUIT,identity,5382,29,1872,1900,2
+import,FRUIT,FRUIT,identity,5232,25,1870,1899,2
+reexport,Fruit,FRUIT,case,702,7,1877,1899,2
+import,Fruit,FRUIT,case,235,4,1874,1899,2
+reexport,FURNITURE AND HARDWOODS,FURNITURE AND HARDWOODS,identity,248,14,1872,1885,2
+reexport,FURNITURE and HARDWOODS,FURNITURE AND HARDWOODS,case,131,6,1886,1895,2
+import,GOLD,GOLD,identity,341,23,1872,1899,2
+import,Gold,GOLD,case,12,1,1870,1870,2
+import,"GOLD : 
+                    „ Leaves of",GOLD : „ Leaves of,dehyphen,10,1,1886,1886,2
+import,"GOLD, LEAVES OF",GOLD : „ Leaves of,case,5,1,1870,1870,2
+reexport,"GOLD, viz.","GOLD, viz.",identity,3,2,1883,1884,2
+reexport,"GOLD, viz","GOLD, viz.",case,2,1,1882,1882,2
+import,"GOODS, Unenumerated, Unmanufactured","GOODS, Unenumerated, Unmanufactured",identity,86,1,1900,1900,2
+import,"Goods, Unenumerated : 
+„ Unmanufactured","GOODS, Unenumerated, Unmanufactured",dehyphen,84,1,1890,1890,2
+export_uk,"GREASE, not otherwise described","GREASE, not otherwise described",identity,110,8,1870,1881,2
+export_uk,"Grease, not otherwise described","GREASE, not otherwise described",case,8,1,1870,1870,2
+import,GUM,GUM,identity,1458,27,1870,1900,2
+import,Gum,GUM,case,12,1,1899,1899,2
+reexport,"GUN STOCKS, in the Rough of Wood","GUN STOCKS, in the Rough of Wood",identity,1,1,1872,1872,2
+reexport,"GUN STOCKS, in the rough of wood","GUN STOCKS, in the Rough of Wood",case,1,1,1878,1878,2
+import,HAIR,HAIR,identity,1258,28,1870,1900,2
+import,Hair,HAIR,case,12,1,1874,1874,2
+reexport,HATS OR BONNETS,HATS OR BONNETS,identity,241,22,1873,1896,2
+reexport,HATS or BONNETS,HATS OR BONNETS,case,141,4,1872,1898,2
+import,HEMP,HEMP,identity,1601,22,1870,1900,2
+import,Hemp,HEMP,case,43,1,1870,1870,2
+export_uk,"HIDES, RAW","HIDES, RAW",identity,201,23,1872,1895,2
+export_uk,"HIDES, Raw","HIDES, RAW",case,162,4,1894,1900,2
+reexport,"HIDES, Raw and Pieces thereof, viz.","HIDES, Raw and Pieces thereof, viz.",identity,129,5,1882,1886,2
+reexport,"HIDES, Raw, and Pieces thereof, viz.","HIDES, Raw and Pieces thereof, viz.",case,24,1,1891,1891,2
+reexport,"HIDES, Raw, and Pieces thereof","HIDES, Raw, and Pieces thereof",identity,97,4,1892,1896,2
+reexport,"HIDES, Raw. and Pieces thereof","HIDES, Raw, and Pieces thereof",case,15,1,1892,1892,2
+reexport,"HIDES, Raw, or Pieces thereof, viz.","HIDES, Raw, or Pieces thereof, viz.",identity,110,4,1888,1895,2
+reexport,"HIDES, Raw or Pieces thereof, viz.","HIDES, Raw, or Pieces thereof, viz.",case,28,1,1887,1887,2
+reexport,HONEY,HONEY,identity,59,10,1886,1895,2
+reexport,Honey,HONEY,case,6,1,1896,1896,2
+export_uk,HOPS,HOPS,identity,560,15,1875,1900,2
+import,HOPS,HOPS,identity,252,11,1870,1900,2
+import,Hops,HOPS,case,161,11,1874,1896,2
+reexport,HOPS,HOPS,identity,78,12,1879,1900,2
+export_uk,Hops,HOPS,case,54,5,1879,1896,2
+reexport,Hops,HOPS,case,9,2,1874,1885,2
+reexport,HORNS AND HOOPS,HORNS AND HOOPS,identity,32,6,1873,1894,2
+reexport,Horns AND HOOPS,HORNS AND HOOPS,case,12,2,1880,1881,2
+import,"HORNS, tips and pieces of Horn and Hoofs","HORNS, tips and pieces of Horn and Hoofs",identity,33,1,1900,1900,2
+import,"Horns, Tips and Pieces of Horn, and HOOFs","HORNS, tips and pieces of Horn and Hoofs",case,25,1,1896,1896,2
+export_uk,HORS,HORS,identity,31,5,1872,1889,2
+export_uk,Hors,HORS,case,13,2,1881,1883,2
+reexport,HORS,HORS,identity,10,2,1873,1886,2
+reexport,Hors,HORS,case,9,2,1882,1895,2
+import,Horns,Horns,identity,91,5,1872,1876,2
+import,HORNS,Horns,case,50,3,1870,1878,2
+import,ICE,ICE,identity,150,22,1872,1900,2
+reexport,ICE,ICE,identity,147,23,1873,1900,2
+reexport,Ice,ICE,case,121,4,1872,1882,2
+import,Ice,ICE,case,10,2,1881,1884,2
+reexport,INK,INK,identity,6,6,1873,1880,2
+reexport,Ink,INK,case,1,1,1874,1874,2
+export_uk,INSTRUMENTS AND APPARATUS,INSTRUMENTS AND APPARATUS,identity,219,6,1891,1896,2
+export_uk,INSTRUMENTS and APPARATUS,INSTRUMENTS AND APPARATUS,case,132,6,1870,1890,2
+export_uk,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC",identity,1321,1,1900,1900,2
+export_uk,"INSTRUMENTS and APPARATUS ; Surgical, Anatomical, and Scientific","INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC",case,12,1,1882,1882,2
+reexport,IRON,IRON,identity,2482,25,1872,1899,2
+import,IRON,IRON,identity,1986,24,1870,1899,2
+import,Iron,IRON,case,111,2,1898,1899,2
+reexport,Iron,IRON,case,39,1,1882,1882,2
+import,IVORY,IVORY,identity,985,18,1882,1900,2
+import,Ivory,IVORY,case,71,3,1888,1893,2
+reexport,"LACE, and Articles thereof","LACE, and Articles thereof",identity,403,19,1872,1900,2
+import,"LACE, and Articles thereof","LACE, and Articles thereof",identity,337,13,1887,1899,2
+reexport,LACE and Articles thereof,"LACE, and Articles thereof",case,50,3,1893,1895,2
+import,LACE and Articles thereof,"LACE, and Articles thereof",case,34,5,1882,1886,2
+export_uk,LINEN MANUFACTURES,LINEN MANUFACTURES,identity,2381,16,1882,1900,2
+export_uk,Linen Manufactures,LINEN MANUFACTURES,case,487,3,1897,1899,2
+import,LINEN WASTE,LINEN WASTE,identity,3,3,1877,1879,2
+import,LINEN Waste,LINEN WASTE,case,1,1,1876,1876,2
+import,LINEN YARN,LINEN YARN,identity,69,9,1873,1887,2
+import,"LINEN, YARN",LINEN YARN,case,14,1,1886,1886,2
+export_uk,LINEN and JUTE MANUFACTURES,LINEN and JUTE MANUFACTURES,identity,964,10,1872,1881,2
+export_uk,LINEN AND JUTE MANUFACTURES,LINEN and JUTE MANUFACTURES,case,31,1,1872,1872,2
+export_uk,"LINEN and JUTE MANUFACTURES: 
+                    Linen Manufactures",LINEN and JUTE MANUFACTURES: Linen Manufactures,dehyphen,149,1,1870,1870,2
+export_uk,"LINEN and JUTE MANUFACTURES : 
+                    Linen Manufactures",LINEN and JUTE MANUFACTURES: Linen Manufactures,dehyphen,35,1,1870,1870,2
+import,LIQUORICE,LIQUORICE,identity,364,26,1872,1900,2
+import,Liquorice,LIQUORICE,case,6,1,1870,1870,2
+export_uk,LUCIFERS AND VESTA MATCHES,LUCIFERS AND VESTA MATCHES,identity,110,9,1886,1894,2
+export_uk,LUCIFERS and VESTA MATCHES,LUCIFERS AND VESTA MATCHES,case,67,6,1882,1896,2
+export_uk,MACHINERY and MILL WORK,MACHINERY and MILL WORK,identity,1229,11,1873,1885,2
+export_uk,MACHINERY and Mill Work,MACHINERY and MILL WORK,case,146,2,1872,1877,2
+export_uk,"MACHINERY and MILL WORK, or parts thereof","MACHINERY and MILL WORK, or parts thereof",identity,2446,11,1886,1896,2
+export_uk,"MACHINERY AND MILL WORK, or parts thereof","MACHINERY and MILL WORK, or parts thereof",case,102,2,1886,1887,2
+reexport,MADDER,MADDER,identity,32,9,1872,1881,2
+reexport,Madder,MADDER,case,4,1,1879,1879,2
+reexport,"MANGANESE, ORE OF","MANGANESE, ORE OF",identity,14,6,1888,1894,2
+reexport,"MANGANESE, Ore of","MANGANESE, ORE OF",case,9,1,1895,1898,2
+import,MANURES,MANURES,identity,1871,28,1870,1900,2
+import,Manures,MANURES,case,46,1,1899,1899,2
+reexport,MAPS AND CHARTS,MAPS AND CHARTS,identity,3,3,1872,1876,2
+reexport,MAPS and CHARTS,MAPS AND CHARTS,case,3,3,1879,1881,2
+export_uk,MARGARINE and all Artificial Butters,MARGARINE and all Artificial Butters,identity,70,9,1888,1896,2
+export_uk,MARGARINE and ALL ARTIFICIAL BUTTERS,MARGARINE and all Artificial Butters,case,64,2,1894,1900,2
+reexport,MEAL AND FLOUR,MEAL AND FLOUR,identity,137,7,1888,1894,2
+reexport,Meal and Flour,MEAL AND FLOUR,case,18,1,1887,1887,2
+export_uk,"MEAT: Beef, Pork, Mutton, Bacon and Hams","MEAT: Beef, Pork, Mutton, Bacon and Hams",identity,120,1,1895,1899,2
+export_uk,"MEAT : Beef, Pork, Mutton, Bacon and Hams","MEAT: Beef, Pork, Mutton, Bacon and Hams",case,120,1,1894,1898,2
+export_uk,"MEAT: viz., Beef, Pork, Bacon and Hams","MEAT: viz., Beef, Pork, Bacon and Hams",identity,105,8,1882,1893,2
+export_uk,"MEAT : viz., Beef, Pork, Bacon and Hams","MEAT: viz., Beef, Pork, Bacon and Hams",case,94,5,1886,1895,2
+export_uk,MEDICINES,MEDICINES,identity,338,13,1872,1884,2
+export_uk,Medicines,MEDICINES,case,80,1,1870,1870,2
+export_uk,"MEDICINES, COMPRISING DRUGS AND MEDICINAL PREPARA- TIONS","MEDICINES, COMPRISING DRUGS AND MEDICINAL PREPARATIONS",dehyphen,1174,3,1894,1900,2
+export_uk,"MEDICINES, comprising Drugs and Medicinal Preparations","MEDICINES, COMPRISING DRUGS AND MEDICINAL PREPARATIONS",case,653,12,1885,1896,2
+export_uk,"METALS AND MANUFACTURES THEREOF, UNENUMERATED","METALS AND MANUFACTURES THEREOF, UNENUMERATED",identity,1141,1,1894,1898,2
+export_uk,"METALS, and Manufactures thereof: Unenumerated","METALS AND MANUFACTURES THEREOF, UNENUMERATED",case,38,3,1882,1884,2
+export_uk,"MILK, CONDENSED","MILK, CONDENSED",identity,267,10,1889,1900,2
+reexport,"MILK, CONDENSED","MILK, CONDENSED",identity,51,4,1891,1896,2
+import,"MILK, CONDENSED","MILK, CONDENSED",identity,43,4,1888,1891,2
+reexport,MILK CONDENSED,"MILK, CONDENSED",case,21,2,1888,1889,2
+import,"MILK, condensed","MILK, CONDENSED",case,19,1,1900,1900,2
+export_uk,MILK. CONDENSED,"MILK, CONDENSED",case,11,1,1891,1891,2
+reexport,"MILK, CONDENSED OR PRESERVED","MILK, CONDENSED OR PRESERVED",identity,13,1,1893,1893,2
+reexport,"MILK, CONDENSED or PRESERVED","MILK, CONDENSED OR PRESERVED",case,13,1,1895,1895,2
+reexport,Myrabolams,Myrabolams,identity,22,1,1882,1882,2
+reexport,MYRABOLAMS,Myrabolams,case,12,7,1872,1881,2
+import,"NITRE, CUBIC","NITRE, CUBIC",identity,67,13,1870,1891,2
+import,"Nitre, Cubic","NITRE, CUBIC",case,36,1,1893,1893,2
+reexport,"NITRE, Cubic","NITRE, Cubic",identity,95,13,1872,1886,2
+reexport,"NITRE, CUBIC","NITRE, Cubic",case,23,2,1891,1892,2
+reexport,NUTS AND KERNELS,NUTS AND KERNELS,identity,233,25,1872,1896,2
+reexport,NUTS and KERNELS,NUTS AND KERNELS,case,125,2,1894,1900,2
+import,OIL,OIL,identity,2442,23,1872,1896,2
+reexport,OIL,OIL,identity,979,21,1872,1896,2
+import,Oil,OIL,case,377,3,1870,1899,2
+reexport,Oil,OIL,case,33,2,1898,1899,2
+import,OLEO-MARGARINE,OLEO-MARGARINE,identity,71,4,1893,1899,2
+import,Oleo-Margarine,OLEO-MARGARINE,case,8,1,1894,1894,2
+import,"ORE, unenumerated","ORE, unenumerated",identity,303,11,1886,1899,2
+import,"ORE, Unenumerated","ORE, unenumerated",case,165,12,1872,1896,2
+import,PAINTERS' COLOURS AND PIGMENTS,PAINTERS' COLOURS AND PIGMENTS,identity,244,19,1876,1896,2
+import,PAINTERS COLOURS AND PIGMENTS,PAINTERS' COLOURS AND PIGMENTS,case,6,1,1874,1874,2
+reexport,PAPER-MAKING MATERIALS,PAPER-MAKING MATERIALS,identity,1145,6,1893,1900,2
+reexport,PAPER MAKING MATERIALS,PAPER-MAKING MATERIALS,case,13,1,1893,1893,2
+import,"PERFUMERY, and Articles used in the Manufacture thereof","PERFUMERY, and Articles used in the Manufacture thereof",identity,91,7,1882,1891,2
+import,PERFUMERY and Articles used in the Manufacture thereof,"PERFUMERY, and Articles used in the Manufacture thereof",case,8,1,1880,1880,2
+export_uk,"PERFUMERY, of all Sorts","PERFUMERY, of all Sorts",identity,201,11,1872,1885,2
+export_uk,PERFUMERY OF ALL SORTS,"PERFUMERY, of all Sorts",case,142,7,1886,1896,2
+import,PETROLEUM,PETROLEUM,identity,207,25,1870,1896,2
+import,Petroleum,PETROLEUM,case,46,1,1899,1899,2
+reexport,"PICKLES AND VEGETABLES, Preserved in Salt","PICKLES AND VEGETABLES, Preserved in Salt",identity,9,9,1873,1881,2
+reexport,"PICKLES and VEGETABLES, Preserved in Salt","PICKLES AND VEGETABLES, Preserved in Salt",case,1,1,1872,1872,2
+export_uk,"PICKLES, VINEGAR, and SAUCES","PICKLES, VINEGAR, and SAUCES",identity,215,9,1873,1881,2
+export_uk,"Pickles, Vinegar, and Sauces","PICKLES, VINEGAR, and SAUCES",case,30,1,1872,1872,2
+import,"PICTURES and DRAWINGS, by HAND","PICTURES and DRAWINGS, by HAND",identity,198,15,1882,1896,2
+import,"PICTURES AND DRAWINGS, by hand","PICTURES and DRAWINGS, by HAND",case,75,1,1895,1899,2
+reexport,"PICTURES, DRAWINGS, AND PHOTOGRAPHS","PICTURES, DRAWINGS, AND PHOTOGRAPHS",identity,38,9,1873,1881,2
+reexport,"PICTURES, DRAWINGS, and PHOTOGRAPHS","PICTURES, DRAWINGS, AND PHOTOGRAPHS",case,4,1,1872,1872,2
+reexport,"PLANTS, SHRUBS, TREES, AND FLOWER ROOTS","PLANTS, SHRUBS, TREES, AND FLOWER ROOTS",identity,64,24,1873,1896,2
+reexport,"PLANTS, SHRUBS, TREES, and FLOWER ROOTS","PLANTS, SHRUBS, TREES, AND FLOWER ROOTS",case,12,1,1900,1900,2
+import,PLATE,PLATE,identity,389,15,1872,1899,2
+import,Plate,PLATE,case,40,1,1900,1900,2
+reexport,"PLATE, OF SILVER","PLATE, OF SILVER",identity,5,5,1877,1881,2
+reexport,"PLATE, of SILVER","PLATE, OF SILVER",case,4,4,1873,1876,2
+import,PLATED and GILT WARE,PLATED and GILT WARE,identity,102,14,1882,1896,2
+import,PLATED AND GILT WARE,PLATED and GILT WARE,case,91,3,1893,1899,2
+import,"PLATINA, Wrought or Unwrought","PLATINA, Wrought or Unwrought",identity,68,13,1882,1895,2
+import,PLATINA. Wrought or Unwrought,"PLATINA, Wrought or Unwrought",case,14,2,1887,1896,2
+import,PLUMBAGO,PLUMBAGO,identity,383,28,1870,1899,2
+import,PLUMBAGO.,PLUMBAGO,case,4,1,1896,1896,2
+import,POTATOES,POTATOES,identity,1204,27,1870,1898,2
+reexport,POTATOES,POTATOES,identity,233,28,1872,1899,2
+import,Potatoes,POTATOES,case,51,1,1900,1900,2
+reexport,Potatoes,POTATOES,case,22,1,1900,1900,2
+reexport,"POULTRY AND GAME, Alive or Dead (including RABBITS)","POULTRY AND GAME, Alive or Dead (including RABBITS)",identity,15,13,1873,1885,2
+reexport,"POULTRY and GAME, Alive or Dead (including RABBITS)","POULTRY AND GAME, Alive or Dead (including RABBITS)",case,1,1,1872,1872,2
+import,"POULTRY and GAME (alive or dead), including Rabbits","POULTRY and GAME (alive or dead), including Rabbits",identity,148,11,1875,1885,2
+import,POULTRY and GAME (alive or dead) including Rabbits,"POULTRY and GAME (alive or dead), including Rabbits",case,20,3,1872,1874,2
+import,"PRECIOUS STONES, unset","PRECIOUS STONES, unset",identity,114,7,1886,1896,2
+import,PRECIOUS STONES (Unset),"PRECIOUS STONES, unset",case,78,13,1872,1884,2
+reexport,PRINTS AND ENGRAVINGS,PRINTS AND ENGRAVINGS,identity,45,9,1873,1881,2
+reexport,PRINTS and ENGRAVINGS,PRINTS AND ENGRAVINGS,case,1,1,1872,1872,2
+import,"PRINTS, ENGRAVINGS and PHOTO- GRAPHS","PRINTS, ENGRAVINGS and PHOTOGRAPHS",dehyphen,61,5,1888,1894,2
+import,"PRINTS, ENGRAVINGS, and PHOTOGRAPHS","PRINTS, ENGRAVINGS and PHOTOGRAPHS",case,6,1,1882,1882,2
+export_uk,"PROVISIONS, UNENUMERATED","PROVISIONS, UNENUMERATED",identity,341,10,1872,1882,2
+export_uk,"PROVISIONS, Unenumerated","PROVISIONS, UNENUMERATED",case,216,6,1884,1892,2
+reexport,RABBITS (dead),RABBITS (dead),identity,268,3,1893,1899,2
+reexport,Rabbits (dead),RABBITS (dead),case,47,1,1900,1900,2
+reexport,RICE,RICE,identity,1027,24,1872,1899,2
+reexport,Rice,RICE,case,41,2,1883,1885,2
+reexport,ROSIN,ROSIN,identity,253,17,1873,1900,2
+reexport,Rosin,ROSIN,case,28,3,1875,1890,2
+import,Rabbits (Dead),Rabbits (Dead),identity,83,1,1900,1900,2
+import,RABBITS (Dead),Rabbits (Dead),case,55,1,1895,1899,2
+export_uk,SADDLERY and HARNESS,SADDLERY and HARNESS,identity,206,12,1877,1892,2
+export_uk,SADDLERY AND HARNESS,SADDLERY and HARNESS,case,71,4,1872,1875,2
+reexport,SAGO AND SAGO FLOUR,SAGO AND SAGO FLOUR,identity,55,11,1873,1896,2
+reexport,SAGO and SAGO FLOUR,SAGO AND SAGO FLOUR,case,4,1,1872,1872,2
+export_uk,SALT (Rock and White),SALT (Rock and White),identity,306,17,1872,1892,2
+export_uk,"SALT, ROCK AND WHITE",SALT (Rock and White),case,134,1,1895,1899,2
+reexport,SALTPETRE (Nitrate of Potash),SALTPETRE (Nitrate of Potash),identity,177,10,1887,1898,2
+reexport,Saltpetre (Nitrate of Potash),SALTPETRE (Nitrate of Potash),case,41,1,1900,1900,2
+export_uk,"SALTPETRE, British Prepared","SALTPETRE, British Prepared",identity,162,16,1872,1892,2
+export_uk,"SALTPETRE, BRITISH PREPARED","SALTPETRE, British Prepared",case,45,1,1895,1899,2
+reexport,SAUCES OR CONDIMENTS,SAUCES OR CONDIMENTS,identity,10,8,1873,1885,2
+reexport,SAUCES or CONDIMENTS,SAUCES OR CONDIMENTS,case,2,2,1872,1882,2
+reexport,"SAUCES or CONDIMENTS, Unenumerated","SAUCES or CONDIMENTS, Unenumerated",identity,900,2,1893,1898,2
+import,"SAUCES or CONDIMENTS, Unenumerated","SAUCES or CONDIMENTS, Unenumerated",identity,179,13,1873,1899,2
+import,"SAUCES or CONDIMENTS, unenumerated","SAUCES or CONDIMENTS, Unenumerated",case,128,10,1872,1896,2
+reexport,"SAUCES OR CONDIMENTS, Unenumerated","SAUCES or CONDIMENTS, Unenumerated",case,24,8,1887,1895,2
+import,SEEDS,SEEDS,identity,1049,28,1870,1900,2
+reexport,SEEDS,SEEDS,identity,432,23,1872,1896,2
+import,Seeds,SEEDS,case,93,7,1870,1899,2
+reexport,Seeds,SEEDS,case,13,2,1898,1899,2
+reexport,SILK,SILK,identity,6231,29,1872,1900,2
+import,SILK,SILK,identity,1627,28,1870,1900,2
+export_uk,SILK,SILK,identity,709,29,1870,1900,2
+import,Silk,SILK,case,72,2,1898,1899,2
+reexport,Silk,SILK,case,35,2,1898,1899,2
+export_uk,Silk,SILK,case,23,3,1897,1899,2
+import,"SKINS, FURS, and PELTS","SKINS, FURS, and PELTS",identity,2372,24,1870,1895,2
+import,"Skins, Furs, and Pelts","SKINS, FURS, and PELTS",case,30,1,1870,1870,2
+import,SPECIMENS illustrative of NATURAL SCIENCE,SPECIMENS illustrative of NATURAL SCIENCE,identity,34,6,1872,1892,2
+import,"SPECIMENS, illustrative of NATURAL SCIENCE",SPECIMENS illustrative of NATURAL SCIENCE,case,11,2,1882,1884,2
+reexport,"SPECIMENS, ILLUSTRATIVE OF NATURAL SCIENCE","SPECIMENS, ILLUSTRATIVE OF NATURAL SCIENCE",identity,21,6,1887,1896,2
+reexport,"SPECIMENS, illustrative of NATURAL SCIENCE","SPECIMENS, ILLUSTRATIVE OF NATURAL SCIENCE",case,6,6,1873,1882,2
+reexport,SPICES,SPICES,identity,1152,23,1872,1896,2
+import,SPICES,SPICES,identity,1098,25,1870,1900,2
+reexport,Spices,SPICES,case,18,2,1898,1899,2
+import,Spices,SPICES,case,2,1,1870,1870,2
+import,SPIRITS,SPIRITS,identity,2621,19,1872,1897,2
+import,Spirits,SPIRITS,case,119,7,1870,1899,2
+reexport,"SPIRITS, not Sweetened","SPIRITS, not Sweetened",identity,792,12,1885,1896,2
+reexport,"Spirits, not Sweetened","SPIRITS, not Sweetened",case,59,1,1884,1884,2
+reexport,SPONGE,SPONGE,identity,1183,15,1883,1900,2
+import,SPONGE,SPONGE,identity,335,16,1870,1900,2
+reexport,Sponge,SPONGE,case,33,3,1882,1895,2
+import,Sponge,SPONGE,case,16,1,1887,1887,2
+import,"STATIONERY, other than PAPER","STATIONERY, other than PAPER",identity,209,14,1881,1896,2
+import,STATIONERY other than PAPER,"STATIONERY, other than PAPER",case,121,9,1872,1880,2
+import,"STATIONERY, other than PAPER, including Ink","STATIONERY, other than PAPER, including Ink",identity,50,1,1895,1899,2
+import,"STATIONERY, other than PAPER, in- cluding Ink","STATIONERY, other than PAPER, including Ink",dehyphen,10,1,1895,1895,2
+export_uk,"STATIONERY, other than Paper","STATIONERY, other than Paper",identity,931,25,1870,1896,2
+export_uk,"STATIONERY, OTHER THAN PAPER","STATIONERY, other than Paper",case,495,2,1895,1900,2
+reexport,"STATIONERY, other than Paper","STATIONERY, other than Paper",identity,179,23,1872,1896,2
+reexport,"Stationery, other than Paper","STATIONERY, other than Paper",case,1,1,1877,1877,2
+export_uk,STONES and SLATES,STONES and SLATES,identity,391,20,1873,1892,2
+export_uk,STONES AND SLATES,STONES and SLATES,case,34,3,1872,1874,2
+import,"STONES, MARBLE, SLATE, and other Sorts of STONE, Rough, Hewn, or Manufactured","STONES, MARBLE, SLATE, and other Sorts of STONE, Rough, Hewn, or Manufactured",identity,25,3,1874,1881,2
+import,"STONES, MARBLE, SLATE, and other Sorts of Stone, Rough, Hewn, or Manufactured","STONES, MARBLE, SLATE, and other Sorts of STONE, Rough, Hewn, or Manufactured",case,10,1,1876,1876,2
+import,"STONES, MARBLE, rough hewn, or manufactured (other than Works of Art)","STONES, MARBLE, rough hewn, or manufactured (other than Works of Art)",identity,135,1,1895,1899,2
+import,"STONES, MARBLE, Rough, Hewn or Manufactured (Other than Works of Art)","STONES, MARBLE, rough hewn, or manufactured (other than Works of Art)",case,18,1,1896,1896,2
+reexport,"STONES, Marble and Slate, Rough Hewn, or Manufactured (other than Works of Art)","STONES, Marble and Slate, Rough Hewn, or Manufactured (other than Works of Art)",identity,51,5,1889,1896,2
+reexport,"STONES. Marble and Slate, Rough Hewn, or Manufactured (other than Works of Art)","STONES, Marble and Slate, Rough Hewn, or Manufactured (other than Works of Art)",case,7,1,1888,1888,2
+reexport,STRAW-PLATTING for making Hats or Bonnets,STRAW-PLATTING for making Hats or Bonnets,identity,71,5,1892,1896,2
+reexport,STRAW PLATTING for making Hats or Bonnets,STRAW-PLATTING for making Hats or Bonnets,case,51,6,1886,1891,2
+reexport,SUCCADES (including Fruits and Vegetables preserved in Sugar),SUCCADES (including Fruits and Vegetables preserved in Sugar),identity,10,2,1883,1886,2
+reexport,SUCCADES (including Fruits and Vegetables pre- served in Sugar),SUCCADES (including Fruits and Vegetables preserved in Sugar),dehyphen,2,2,1877,1878,2
+import,SUGAR,SUGAR,identity,3006,25,1872,1900,2
+export_uk,SUGAR,SUGAR,identity,1026,27,1872,1900,2
+reexport,SUGAR,SUGAR,identity,451,17,1872,1894,2
+import,Sugar,SUGAR,case,55,2,1898,1899,2
+reexport,Sugar,SUGAR,case,27,2,1898,1899,2
+export_uk,Sugar,SUGAR,case,21,3,1897,1899,2
+reexport,"SUGAR, (including Fruits and Vegetables preserved in Sugar)","SUGAR, (including Fruits and Vegetables preserved in Sugar)",identity,4,1,1884,1884,2
+reexport,SUGAR (including Fruits and Vegetables pre- served in Sugar),"SUGAR, (including Fruits and Vegetables preserved in Sugar)",dehyphen,3,1,1876,1876,2
+reexport,"SUGAR, Refined, in Lumps and Loaves","SUGAR, Refined, in Lumps and Loaves",identity,125,3,1883,1885,2
+reexport,"SUGAR, REFINED, in Lumps and Loaves","SUGAR, Refined, in Lumps and Loaves",case,25,1,1886,1886,2
+reexport,SUGAR. Unrefined,SUGAR. Unrefined,identity,22,1,1895,1895,2
+reexport,"SUGAR, Unrefined",SUGAR. Unrefined,case,21,1,1896,1896,2
+reexport,"SUGAR: Refined, or rendered by any process equal thereto, in lumps and loaves","SUGAR: Refined, or rendered by any process equal thereto, in lumps and loaves",identity,292,2,1895,1900,2
+reexport,"SUGAR, Refined, or rendered by any process equal thereto, in Lumps and Loaves","SUGAR: Refined, or rendered by any process equal thereto, in lumps and loaves",case,216,7,1887,1895,2
+import,"TEETH, Elephants', Sea Cow, and Sea Horse","TEETH, Elephants', Sea Cow, and Sea Horse",identity,29,2,1876,1877,2
+import,"TEETH, Elephants, Sea Cow, and Sea Horse","TEETH, Elephants', Sea Cow, and Sea Horse",case,14,1,1874,1874,2
+reexport,TOBACCO,TOBACCO,identity,6932,29,1872,1900,2
+import,TOBACCO,TOBACCO,identity,3488,17,1872,1900,2
+import,Tobacco,TOBACCO,case,113,7,1870,1899,2
+reexport,Tobacco,TOBACCO,case,111,2,1898,1899,2
+reexport,TOYS,TOYS,identity,608,19,1872,1899,2
+import,TOYS,TOYS,identity,513,18,1873,1899,2
+import,Toys,TOYS,case,129,9,1872,1896,2
+reexport,Toys,TOYS,case,57,7,1876,1896,2
+export_uk,UMBRELLAS and PARASOLS,UMBRELLAS and PARASOLS,identity,547,22,1872,1896,2
+export_uk,UMBRELLAS AND PARASOLS,UMBRELLAS and PARASOLS,case,91,3,1886,1888,2
+import,VARNISH: Not containing Alcohol,VARNISH: Not containing Alcohol,identity,4,4,1873,1879,2
+import,VARNISH : Not containing Alcohol,VARNISH: Not containing Alcohol,case,3,3,1874,1877,2
+import,WATCHES,WATCHES,identity,66,13,1872,1885,2
+import,Watches,WATCHES,case,4,1,1873,1873,2
+import,"WATCHES, and Parts thereof","WATCHES, and Parts thereof",identity,109,11,1886,1896,2
+import,"WATCHES, and parts thereof","WATCHES, and Parts thereof",case,78,2,1894,1899,2
+reexport,"WATCHES, and parts thereof","WATCHES, and parts thereof",identity,252,3,1893,1898,2
+reexport,"WATCHES, and Parts thereof","WATCHES, and parts thereof",case,99,10,1887,1896,2
+import,WAX,WAX,identity,965,25,1872,1899,2
+import,Wax,WAX,case,23,2,1873,1878,2
+reexport,WHALEBONE (Whalefins),WHALEBONE (Whalefins),identity,49,8,1887,1896,2
+reexport,"WHALEBONE, Whalefins",WHALEBONE (Whalefins),case,6,1,1894,1894,2
+import,WINE,WINE,identity,2858,17,1873,1900,2
+reexport,WINE,WINE,identity,1517,19,1872,1895,2
+reexport,"WINE,",WINE,case,122,2,1889,1890,2
+import,Wine,WINE,case,6,1,1870,1870,2
+export_uk,"WINE, British Made","WINE, British Made",identity,68,15,1882,1896,2
+export_uk,"WINE, BRITISH MADE","WINE, British Made",case,65,12,1872,1900,2
+import,WOOL,WOOL,identity,2714,20,1870,1899,2
+export_uk,WOOL,WOOL,identity,804,22,1870,1896,2
+reexport,WOOL,WOOL,identity,451,23,1872,1900,2
+import,Wool,WOOL,case,379,10,1872,1899,2
+export_uk,Wool,WOOL,case,102,6,1876,1899,2
+reexport,Wool,WOOL,case,20,2,1879,1881,2
+import,WOOLLEN YARN,WOOLLEN YARN,identity,1244,25,1872,1898,2
+reexport,WOOLLEN YARN,WOOLLEN YARN,identity,867,24,1872,1900,2
+import,WoolLEN YARN,WOOLLEN YARN,case,13,1,1877,1877,2
+reexport,Woollen Yarn,WOOLLEN YARN,case,6,1,1881,1881,2
+export_uk,Wool'd),Wool'd),identity,68,1,1892,1892,2
+export_uk,WOOL'd),Wool'd),case,47,1,1891,1891,2
+import,YEAST,YEAST,identity,207,12,1888,1900,2
+import,"YEAST,",YEAST,case,6,1,1887,1887,2
+import,ZINC,ZINC,identity,3921,25,1870,1899,2
+import,Zinc,ZINC,case,52,2,1898,1899,2
+export_uk,AERATED WATERS,AERATED WATERS,identity,27,1,1900,1900,1
+export_uk,AGRICULTURAL IMPLEMENTS,AGRICULTURAL IMPLEMENTS,identity,25,1,1870,1870,1
+import,ALBUMEN,ALBUMEN,identity,7,1,1870,1870,1
+export_uk,ALKALI,ALKALI,identity,2069,29,1870,1900,1
+reexport,"ALMOND, PASTE OF","ALMOND, PASTE OF",identity,1,1,1872,1872,1
+export_uk,ALUM,ALUM,identity,16,1,1870,1870,1
+import,AMMUNITION,AMMUNITION,identity,2012,5,1893,1900,1
+export_uk,AMMUNITION : Gunpowder,AMMUNITION : Gunpowder,identity,21,1,1900,1900,1
+reexport,AMMUNITION AND ARMS,AMMUNITION AND ARMS,identity,14,1,1876,1876,1
+export_uk,"AMMUNITION, Shot, Large and Small","AMMUNITION, Shot, Large and Small",identity,236,3,1893,1899,1
+import,ANIMALS,ANIMALS,identity,367,9,1870,1879,1
+reexport,ANIMALS,ANIMALS,identity,95,12,1872,1884,1
+export_uk,ANIMALS,ANIMALS,identity,9,1,1878,1878,1
+reexport,ANIMALS LIVING'd.),ANIMALS LIVING'd.),identity,11,1,1891,1891,1
+export_uk,"ANIMALS, LIVING'd)","ANIMALS, LIVING'd)",identity,43,1,1894,1894,1
+reexport,"ANIMALS, LIVING, Oxen and Bulls","ANIMALS, LIVING, Oxen and Bulls",identity,240,2,1895,1900,1
+export_uk,"ANIMALS, LIVING, Oxen and Bulls","ANIMALS, LIVING, Oxen and Bulls",identity,3,2,1893,1897,1
+import,ANTIMONY,ANTIMONY,identity,8,1,1870,1870,1
+export_uk,APPAREL and STOPS,APPAREL and STOPS,identity,57,2,1880,1881,1
+export_uk,APPAREL and STORES,APPAREL and STORES,identity,17,1,1876,1876,1
+import,ARGOL,ARGOL,identity,9,1,1870,1870,1
+import,"ARMNISH, CONTAINING ALCOHOL","ARMNISH, CONTAINING ALCOHOL",identity,1,1,1882,1882,1
+import,ARMS,ARMS,identity,52,3,1870,1900,1
+reexport,ARMS AND AMMUNITION,ARMS AND AMMUNITION,identity,375,19,1877,1896,1
+export_uk,ARMS AND AMMUNITION,ARMS AND AMMUNITION,identity,15,1,1878,1878,1
+export_uk,"ARMS, AMMUNITION, &c.","ARMS, AMMUNITION, &c.",identity,9225,4,1893,1900,1
+reexport,"ARMS, AMMUNITION, AND MILITARY STORES","ARMS, AMMUNITION, AND MILITARY STORES",identity,54,4,1872,1875,1
+export_uk,"ARMS, AMMUNITION, AND MILITARY STORES'd)","ARMS, AMMUNITION, AND MILITARY STORES'd)",identity,93,1,1894,1894,1
+reexport,"ARMS: Swords, Cutlasses, Matchets, and Bayonets","ARMS: Swords, Cutlasses, Matchets, and Bayonets",identity,663,3,1893,1899,1
+import,ARROWROOT,ARROWROOT,identity,4,1,1870,1870,1
+export_uk,"ART, WORKS OF, OTHER THAN PICTURES","ART, WORKS OF, OTHER THAN PICTURES",identity,3,1,1878,1878,1
+import,"ART, WORKS OR, other than PICTURES","ART, WORKS OR, other than PICTURES",identity,6,1,1878,1878,1
+export_uk,ARTICLE,ARTICLE,identity,82,1,1893,1893,1
+import,ARTIFICIAL,ARTIFICIAL,identity,4,1,1890,1890,1
+import,"ASBESTOS, RAW","ASBESTOS, RAW",identity,11,1,1900,1900,1
+export_uk,ASPHALT,ASPHALT,identity,53,1,1870,1870,1
+import,ASPHALT,ASPHALT,identity,18,3,1874,1876,1
+reexport,ASPHALT OR BITUMEN,ASPHALT OR BITUMEN,identity,78,21,1875,1896,1
+export_uk,ASPHALT OR BITUMEN,ASPHALT OR BITUMEN,identity,3,1,1878,1878,1
+reexport,ASPHALT OR BITUMEN JUDAICUM,ASPHALT OR BITUMEN JUDAICUM,identity,12,3,1872,1874,1
+reexport,"ASPHALT OR BITUMEN, Other than Painters' Colours or Drugs","ASPHALT OR BITUMEN, Other than Painters' Colours or Drugs",identity,9,1,1900,1900,1
+import,ASPHALT or BITUMEN (Other than Painters' Colours or Drugs),ASPHALT or BITUMEN (Other than Painters' Colours or Drugs),identity,10,1,1900,1900,1
+import,"ASPHALT, or BITUMEN JUDAICUM","ASPHALT, or BITUMEN JUDAICUM",identity,6,1,1873,1873,1
+import,"ASPHALTUM, or BITUMEN JUDAICUM","ASPHALTUM, or BITUMEN JUDAICUM",identity,5,1,1870,1870,1
+reexport,BACON,BACON,identity,291,3,1893,1899,1
+import,BACON,BACON,identity,188,4,1893,1899,1
+reexport,BACON AND HAMM,BACON AND HAMM,identity,17,1,1882,1882,1
+reexport,BACON AND HAMS,BACON AND HAMS,identity,409,23,1872,1896,1
+export_uk,BACON AND HAMS,BACON AND HAMS,identity,17,1,1878,1878,1
+import,BANK,BANK,identity,28,1,1872,1872,1
+reexport,BANK,BANK,identity,27,2,1872,1877,1
+import,BARK,BARK,identity,275,9,1870,1880,1
+reexport,BARK,BARK,identity,107,7,1873,1881,1
+export_uk,BARK,BARK,identity,13,1,1878,1878,1
+import,BASKETS,BASKETS,identity,7,1,1870,1870,1
+reexport,BASKETS AND BASKETWARE,BASKETS AND BASKETWARE,identity,9,1,1900,1900,1
+import,BASKETS and BASKETWARE,BASKETS and BASKETWARE,identity,10,1,1900,1900,1
+reexport,BEAD TRIMMINGS,BEAD TRIMMINGS,identity,39,1,1900,1900,1
+import,BEAD TRIMMINGS,BEAD TRIMMINGS,identity,5,1,1900,1900,1
+reexport,BEADS,BEADS,identity,71,7,1872,1880,1
+import,BEADS,BEADS,identity,60,9,1872,1884,1
+export_uk,BEADS,BEADS,identity,6,1,1878,1878,1
+reexport,BEADS OF ALL SORTS,BEADS OF ALL SORTS,identity,447,19,1882,1900,1
+import,BEADS of GLASS (including BUGLE),BEADS of GLASS (including BUGLE),identity,7,1,1870,1870,1
+import,BEEF,BEEF,identity,574,17,1870,1899,1
+reexport,BEEF,BEEF,identity,209,22,1872,1896,1
+export_uk,BEEF,BEEF,identity,5,1,1878,1878,1
+export_uk,BEEF and ALE,BEEF and ALE,identity,35,1,1874,1874,1
+export_uk,"BEEF and PORK, Salted (Foreign)","BEEF and PORK, Salted (Foreign)",identity,7,1,1870,1870,1
+reexport,"BEEF, SALTED","BEEF, SALTED",identity,541,3,1893,1899,1
+import,BEER,BEER,identity,32,4,1872,1878,1
+reexport,BEER,BEER,identity,4,1,1883,1883,1
+reexport,"BEER and ALE, MUM and SPRUCE","BEER and ALE, MUM and SPRUCE",identity,5,3,1887,1889,1
+import,BEER'd),BEER'd),identity,3,1,1872,1872,1
+import,"BERRIES, Yellow","BERRIES, Yellow",identity,9,1,1870,1870,1
+export_uk,"BERRIES, Yellow","BERRIES, Yellow",identity,4,1,1870,1870,1
+export_uk,BISQUIT and BREAD,BISQUIT and BREAD,identity,19,1,1885,1885,1
+export_uk,BLACKING AND POLISHES,BLACKING AND POLISHES,identity,48,1,1900,1900,1
+import,BLACKING AND POLISHES,BLACKING AND POLISHES,identity,33,1,1900,1900,1
+reexport,BLIMSTONE,BLIMSTONE,identity,8,1,1887,1887,1
+import,BONES (except Whalebone),BONES (except Whalebone),identity,8,1,1892,1892,1
+reexport,BONES (except Whalebone) applicable to Manufacturing Purposes,BONES (except Whalebone) applicable to Manufacturing Purposes,identity,26,2,1893,1899,1
+import,BONES (except Whalefins),BONES (except Whalefins),identity,153,16,1870,1887,1
+export_uk,BONES (except Whalefins) applicable to Manufacturing Purposes,BONES (except Whalefins) applicable to Manufacturing Purposes,identity,1,1,1878,1878,1
+import,BONES (except Whalefins): Applicable to Manufacturing Purposes,BONES (except Whalefins): Applicable to Manufacturing Purposes,identity,10,1,1890,1890,1
+reexport,"BONES, applicable to Manufacturing Purposes","BONES, applicable to Manufacturing Purposes",identity,4,4,1872,1875,1
+export_uk,BOOKS,BOOKS,identity,1,1,1878,1878,1
+reexport,BOOKS (bound or unbound),BOOKS (bound or unbound),identity,5,1,1895,1895,1
+import,"BOOKS, Printed, Bound and Unbound (including Maps and Charts)","BOOKS, Printed, Bound and Unbound (including Maps and Charts)",identity,13,1,1900,1900,1
+reexport,"BOOKS, Printed, bound and unbound, including Maps and Charts","BOOKS, Printed, bound and unbound, including Maps and Charts",identity,14,1,1900,1900,1
+reexport,"BOOKS, bound and unbound, including Maps and Charts","BOOKS, bound and unbound, including Maps and Charts",identity,75,1,1895,1899,1
+export_uk,BORACIC ACID,BORACIC ACID,identity,5,1,1870,1870,1
+import,BORACIC ACID,BORACIC ACID,identity,3,1,1870,1870,1
+import,BORAX,BORAX,identity,12,2,1870,1899,1
+reexport,BORAX,BORAX,identity,9,2,1898,1899,1
+export_uk,BORAX (Refined in the United Kingdom),BORAX (Refined in the United Kingdom),identity,16,1,1870,1870,1
+import,BRADS,BRADS,identity,6,1,1882,1882,1
+export_uk,BRAN AND POLLARD,BRAN AND POLLARD,identity,14,1,1900,1900,1
+import,BRAN and POLLARD,BRAN and POLLARD,identity,6,1,1870,1870,1
+export_uk,BRASS,BRASS,identity,250,10,1870,1885,1
+export_uk,"BRASS : Manufactures of, not being Ordnance","BRASS : Manufactures of, not being Ordnance",identity,60,2,1886,1888,1
+import,"BRASS MANUFACTURES, Unenumerated","BRASS MANUFACTURES, Unenumerated",identity,6,1,1870,1870,1
+export_uk,"BRASS, BRONZE, AND METAL BRONZED OR LACQUERED","BRASS, BRONZE, AND METAL BRONZED OR LACQUERED",identity,1,1,1878,1878,1
+import,"BRASS, BRONZE, AND METAL Bronzed or Lacquered, Manufactures of, not otherwise enumerated","BRASS, BRONZE, AND METAL Bronzed or Lacquered, Manufactures of, not otherwise enumerated",identity,55,1,1895,1899,1
+import,"BRASS, BRONZE, and METAL, Bronze and Lacquered","BRASS, BRONZE, and METAL, Bronze and Lacquered",identity,6,1,1873,1873,1
+reexport,BREADS,BREADS,identity,8,1,1876,1876,1
+import,BREMTONE,BREMTONE,identity,3,1,1882,1882,1
+export_uk,BRICKS,BRICKS,identity,1645,9,1870,1900,1
+import,BRIINSTONE,BRIINSTONE,identity,4,1,1877,1877,1
+import,BRIKSTONE,BRIKSTONE,identity,5,1,1876,1876,1
+import,BRIMSTON,BRIMSTON,identity,9,1,1883,1883,1
+export_uk,BRIMSTONE,BRIMSTONE,identity,11,2,1870,1878,1
+reexport,BRISTLES,BRISTLES,identity,434,28,1872,1900,1
+import,BRISTLES,BRISTLES,identity,417,26,1872,1900,1
+export_uk,BRISTLES,BRISTLES,identity,3,1,1878,1878,1
+export_uk,BUTTER,BUTTER,identity,562,25,1872,1900,1
+export_uk,BUTTER (British),BUTTER (British),identity,9,1,1870,1870,1
+export_uk,BUTTER (Foreign),BUTTER (Foreign),identity,10,1,1870,1870,1
+import,BUTTER AND BUTTERINE,BUTTER AND BUTTERINE,identity,72,4,1882,1885,1
+reexport,BUTTER AND BUTTERINE,BUTTER AND BUTTERINE,identity,64,4,1882,1885,1
+import,BUTTERINE,BUTTERINE,identity,9,1,1886,1886,1
+reexport,BUTTERINE,BUTTERINE,identity,8,1,1887,1887,1
+import,BUTTERINE (MARGARINE),BUTTERINE (MARGARINE),identity,13,1,1887,1887,1
+export_uk,BUTTON,BUTTON,identity,7,1,1884,1884,1
+export_uk,"BUTTONS AND STUDS, not of Metal","BUTTONS AND STUDS, not of Metal",identity,1,1,1878,1878,1
+import,"BUTTONS and SNAPS, not of Metal","BUTTONS and SNAPS, not of Metal",identity,6,1,1873,1873,1
+import,"BUTTONS and STRAPS, not of Metal","BUTTONS and STRAPS, not of Metal",identity,16,2,1876,1885,1
+import,"BUTTONS and STRWS, not of Metal","BUTTONS and STRWS, not of Metal",identity,17,3,1872,1882,1
+import,"BUTTONS and Struds, not of Metal","BUTTONS and Struds, not of Metal",identity,4,1,1878,1878,1
+import,"Beef, Salted","Beef, Salted",identity,17,1,1900,1900,1
+import,"Brass, Bronze, and Metal Bronzed or Lacquered, Manufactures of","Brass, Bronze, and Metal Bronzed or Lacquered, Manufactures of",identity,11,1,1900,1900,1
+import,"Buttons and Scraps, not of Metal","Buttons and Scraps, not of Metal",identity,6,1,1877,1877,1
+import,CACOSTHENE,CACOSTHENE,identity,26,1,1894,1894,1
+export_uk,CAGUTCHOUC MANUFACTURES,CAGUTCHOUC MANUFACTURES,identity,26,1,1879,1879,1
+export_uk,CALCITRHOUS MANUFACTURES,CALCITRHOUS MANUFACTURES,identity,30,1,1877,1877,1
+export_uk,"CALCIUM, CARBIDE OF","CALCIUM, CARBIDE OF",identity,3,1,1900,1900,1
+export_uk,"CAMPHOR, Refined and Unrefined","CAMPHOR, Refined and Unrefined",identity,6,1,1870,1870,1
+export_uk,CANDLES,CANDLES,identity,520,3,1878,1900,1
+reexport,CANDLES,CANDLES,identity,118,9,1872,1881,1
+import,CANDLES,CANDLES,identity,113,12,1872,1885,1
+export_uk,"CANDLES, Stearine (British)","CANDLES, Stearine (British)",identity,38,1,1870,1870,1
+reexport,"CANES AND STICKS, Unmounted","CANES AND STICKS, Unmounted",identity,11,1,1900,1900,1
+import,"CANES AND STICKS, unmounted","CANES AND STICKS, unmounted",identity,17,1,1900,1900,1
+export_uk,CAOTCHOUK Manufactures of,CAOTCHOUK Manufactures of,identity,39,1,1894,1894,1
+import,CAOUCHEUC,CAOUCHEUC,identity,39,1,1883,1883,1
+import,CAOUTCHOU,CAOUTCHOU,identity,58,1,1900,1900,1
+export_uk,"CAOUTCHOU, MANUFACTURES OF","CAOUTCHOU, MANUFACTURES OF",identity,887,1,1893,1897,1
+import,CAOUTCHOUCC,CAOUTCHOUCC,identity,433,2,1891,1898,1
+reexport,CAOUTCHOUCC,CAOUTCHOUCC,identity,16,1,1885,1885,1
+import,CAOUTCHOUIC,CAOUTCHOUIC,identity,313,1,1895,1899,1
+import,CAOUTCHOUK,CAOUTCHOUK,identity,69,2,1887,1889,1
+reexport,CAOUTCHOUK,CAOUTCHOUK,identity,39,2,1886,1894,1
+export_uk,CAOUTCHOUK,CAOUTCHOUK,identity,10,1,1878,1878,1
+export_uk,CAOUTCHOUO MANUFACTURES,CAOUTCHOUO MANUFACTURES,identity,50,2,1872,1876,1
+import,CAOUTCHOUQ,CAOUTCHOUQ,identity,72,3,1889,1894,1
+reexport,CAOUTCHOUQ,CAOUTCHOUQ,identity,49,3,1882,1893,1
+export_uk,CAOUTCHOUQ MANUFACTURES,CAOUTCHOUQ MANUFACTURES,identity,49,2,1874,1880,1
+export_uk,"CAOUTCHOUQ, MANUFACTURES OF","CAOUTCHOUQ, MANUFACTURES OF",identity,754,2,1895,1900,1
+import,CAOUTCHOUQUE,CAOUTCHOUQUE,identity,23,1,1874,1874,1
+import,CAOUTCHOUUC,CAOUTCHOUUC,identity,26,1,1893,1893,1
+import,CAOUTCHouc,CAOUTCHouc,identity,796,18,1872,1897,1
+reexport,CAOUTCHouc,CAOUTCHouc,identity,204,15,1872,1896,1
+export_uk,CAOUTCHouc,CAOUTCHouc,identity,10,1,1870,1870,1
+export_uk,CAOUTCHouc MANUFACTURES,CAOUTCHouc MANUFACTURES,identity,119,5,1870,1881,1
+import,"CAOUTCHouc, Manufactures of","CAOUTCHouc, Manufactures of",identity,11,1,1886,1886,1
+export_uk,CARDAMOMS,CARDAMOMS,identity,10,1,1870,1870,1
+reexport,CARDS,CARDS,identity,173,3,1893,1899,1
+import,"CARDS, PLAYING","CARDS, PLAYING",identity,1171,18,1872,1900,1
+export_uk,"CARDS, PLAYING","CARDS, PLAYING",identity,1,1,1878,1878,1
+export_uk,CARRIAGES,CARRIAGES,identity,2691,2,1894,1899,1
+export_uk,"CARRIAGES, &c.","CARRIAGES, &c.",identity,817,15,1881,1896,1
+export_uk,"CARRIAGES, &c.'d)","CARRIAGES, &c.'d)",identity,35,1,1894,1894,1
+export_uk,"CARRIAGES, &c.„ Railway Waggons, Trucks, &c. and 
+                    parts thereof for Ballast, Minerals, 
+                    or Merchandise","CARRIAGES, &c.„ Railway Waggons, Trucks, &c. and parts thereof for Ballast, Minerals, or Merchandise",dehyphen,14,1,1883,1883,1
+export_uk,"CARRIAGES, CARTS, &c.","CARRIAGES, CARTS, &c.",identity,197,8,1870,1880,1
+reexport,"CARRIAGES, WAGGONETTES, CARTS, &c. (including those with Motors)","CARRIAGES, WAGGONETTES, CARTS, &c. (including those with Motors)",identity,12,1,1900,1900,1
+import,"CARRIAGES, WAGGONETTES, CARTS, &c. (including those with Motors)","CARRIAGES, WAGGONETTES, CARTS, &c. (including those with Motors)",identity,8,1,1900,1900,1
+export_uk,CEMENT,CEMENT,identity,2285,29,1870,1900,1
+import,CEMENT,CEMENT,identity,8,1,1900,1900,1
+reexport,CEMENT,CEMENT,identity,6,1,1900,1900,1
+export_uk,CEMENT'd),CEMENT'd),identity,22,1,1894,1894,1
+export_uk,CHEESE,CHEESE,identity,2235,27,1872,1900,1
+import,CHEESE,CHEESE,identity,838,28,1870,1900,1
+reexport,CHEESE,CHEESE,identity,548,27,1872,1900,1
+reexport,"CHEESE, Imitation (including Lard Cheese, and all kinds of Artificial or Imitation Cheese)","CHEESE, Imitation (including Lard Cheese, and all kinds of Artificial or Imitation Cheese)",identity,2,2,1895,1895,1
+reexport,"CHEMICAL MANUFACTURES AND PRODUCTS, not enumerated","CHEMICAL MANUFACTURES AND PRODUCTS, not enumerated",identity,275,2,1893,1898,1
+import,"CHEMICAL MANUFACTURES AND PRODUCTS, not enumerated and not chargeable with duty","CHEMICAL MANUFACTURES AND PRODUCTS, not enumerated and not chargeable with duty",identity,261,2,1893,1898,1
+import,"CHEMICAL MANUFACTURES AND PRODUCTS, not enumerated and not chargeable with duty (including Carbide of Calcium)","CHEMICAL MANUFACTURES AND PRODUCTS, not enumerated and not chargeable with duty (including Carbide of Calcium)",identity,79,1,1895,1899,1
+export_uk,"CHEMICAL PRODUCTS and Preparations, not specially unenumerated","CHEMICAL PRODUCTS and Preparations, not specially unenumerated",identity,51,1,1896,1896,1
+import,CHICONY,CHICONY,identity,10,1,1876,1876,1
+reexport,CHICORY,CHICORY,identity,2826,28,1872,1899,1
+import,CHICORY,CHICORY,identity,237,12,1882,1900,1
+reexport,"CHICORY AND COFFEE, Roasted and Ground","CHICORY AND COFFEE, Roasted and Ground",identity,6,1,1896,1896,1
+import,"CHICORY AND COFFEE, Roasted and Ground, mixed","CHICORY AND COFFEE, Roasted and Ground, mixed",identity,5,1,1900,1900,1
+import,"CHICORY AND COFFEE, mixed","CHICORY AND COFFEE, mixed",identity,3,1,1896,1896,1
+import,"CHICORY, Raw or Kiln-dried","CHICORY, Raw or Kiln-dried",identity,76,2,1870,1872,1
+reexport,CHINA OR PORCELAIN WARE,CHINA OR PORCELAIN WARE,identity,51,10,1873,1882,1
+import,CHINA or PORCELAIN WARE,CHINA or PORCELAIN WARE,identity,44,5,1870,1880,1
+reexport,CHINA or PORCELAIN and EARTHEN-WARE,CHINA or PORCELAIN and EARTHEN-WARE,identity,23,3,1894,1896,1
+reexport,CHINA or PORCELAIN or EARTHENWARE,CHINA or PORCELAIN or EARTHENWARE,identity,15,2,1892,1893,1
+import,"CHINA or PORCELAIN, and EARTHEN-WARE","CHINA or PORCELAIN, and EARTHEN-WARE",identity,13,1,1887,1887,1
+import,"CHINAWARE OR PORCELAIN, AND EARTHENWARE","CHINAWARE OR PORCELAIN, AND EARTHENWARE",identity,14,1,1900,1900,1
+reexport,"CHINAWARE OR PORCELAIN, AND EARTHENWARE","CHINAWARE OR PORCELAIN, AND EARTHENWARE",identity,12,1,1900,1900,1
+reexport,CHINESE,CHINESE,identity,7,1,1874,1874,1
+import,CHLORAL HYDRATE,CHLORAL HYDRATE,identity,60,16,1874,1900,1
+import,CHLOROFORM,CHLOROFORM,identity,106,17,1874,1900,1
+reexport,CIDER AND PERRY,CIDER AND PERRY,identity,41,8,1893,1900,1
+export_uk,"CLAY, unmant factured","CLAY, unmant factured",identity,28,1,1880,1880,1
+reexport,CLOCKS,CLOCKS,identity,117,14,1873,1900,1
+import,CLOCKS,CLOCKS,identity,89,10,1870,1900,1
+reexport,"CLOCKS, Complete","CLOCKS, Complete",identity,12,1,1899,1899,1
+reexport,"CLOCKS, Parts thereof","CLOCKS, Parts thereof",identity,4,1,1895,1899,1
+export_uk,"CLOCKS, WATCHES, and parts thereof","CLOCKS, WATCHES, and parts thereof",identity,580,14,1877,1900,1
+import,"CLOCKS, parts thereof","CLOCKS, parts thereof",identity,5,1,1900,1900,1
+import,CLOUCHAROUC,CLOUCHAROUC,identity,25,1,1882,1882,1
+export_uk,"COAL, CINDERS, &c.","COAL, CINDERS, &c.",identity,6259,12,1888,1899,1
+import,"COAL, CULM, AND CINDERS","COAL, CULM, AND CINDERS",identity,98,2,1894,1899,1
+export_uk,"COALS, CINDERS, &c.","COALS, CINDERS, &c.",identity,1266,17,1872,1888,1
+export_uk,"COALS, CINDERS, &c.Products of Coal, Peat, or Shale, including 
+                    Naphtha, Paraffine, and Oil thereof, and 
+                    Petroleum, Pitch, and Tar","COALS, CINDERS, &c.Products of Coal, Peat, or Shale, including Naphtha, Paraffine, and Oil thereof, and Petroleum, Pitch, and Tar",dehyphen,42,1,1872,1872,1
+reexport,"COALS, COAL, AND CINDERS","COALS, COAL, AND CINDERS",identity,1,1,1895,1895,1
+reexport,"COALS, CULM, AND CINDERS","COALS, CULM, AND CINDERS",identity,96,12,1886,1899,1
+reexport,"COALS, CULM, CINDERS AND SHALE","COALS, CULM, CINDERS AND SHALE",identity,81,1,1900,1900,1
+import,"COALS, CULM, CINDERS, AND SHALE","COALS, CULM, CINDERS, AND SHALE",identity,57,1,1900,1900,1
+import,"COALS, CULM, or CINDER","COALS, CULM, or CINDER",identity,1,1,1874,1874,1
+import,"COALS, CULM, or CINDERS","COALS, CULM, or CINDERS",identity,3,1,1873,1873,1
+import,"COALS, GULM. and CINDERS","COALS, GULM. and CINDERS",identity,6,1,1887,1887,1
+import,"COALS, GUM, and CINDERS","COALS, GUM, and CINDERS",identity,5,1,1894,1894,1
+import,COCHINEAL (including Granilia and Dust),COCHINEAL (including Granilia and Dust),identity,7,1,1874,1874,1
+reexport,COCHINEAL (including Granilla and Dust),COCHINEAL (including Granilla and Dust),identity,80,9,1873,1881,1
+import,COCHINEAL (including Granilla and Dust),COCHINEAL (including Granilla and Dust),identity,28,3,1873,1880,1
+import,COCOA,COCOA,identity,1192,17,1870,1900,1
+export_uk,COCOA,COCOA,identity,9,1,1870,1870,1
+import,"COCOA OR CHOCOLATE, IN THE MANUFACTURE OF WHICH SPIRIT HAS BEEN USED","COCOA OR CHOCOLATE, IN THE MANUFACTURE OF WHICH SPIRIT HAS BEEN USED",identity,80,4,1893,1900,1
+export_uk,"COCOA or CHOCOLATE, Ground or Prepared, in Bond","COCOA or CHOCOLATE, Ground or Prepared, in Bond",identity,10,1,1900,1900,1
+reexport,COFFEE,COFFEE,identity,722,27,1872,1900,1
+export_uk,COFFEE,COFFEE,identity,49,1,1870,1870,1
+reexport,COFFEE AND CHICORY,COFFEE AND CHICORY,identity,27,4,1891,1894,1
+reexport,"COFFEE and CHICONY, Roasted or Ground, Mixed","COFFEE and CHICONY, Roasted or Ground, Mixed",identity,3,1,1885,1885,1
+reexport,"COFFEE and CHICORY, Roasted or Ground, Mixed in Bond","COFFEE and CHICORY, Roasted or Ground, Mixed in Bond",identity,13,5,1884,1890,1
+import,"COFFEE and CHICORY, mixed","COFFEE and CHICORY, mixed",identity,6,2,1883,1884,1
+export_uk,"COFFEE, Kiln-dried, Roasted or Ground, in Bond","COFFEE, Kiln-dried, Roasted or Ground, in Bond",identity,9,2,1897,1898,1
+import,"COFFEE, Raw","COFFEE, Raw",identity,32,1,1896,1896,1
+export_uk,"COFFEE, Roasted","COFFEE, Roasted",identity,15,3,1897,1900,1
+import,COIR (Fibre),COIR (Fibre),identity,6,1,1870,1870,1
+reexport,COLLODION,COLLODION,identity,72,18,1872,1900,1
+import,COLLODION,COLLODION,identity,48,8,1883,1900,1
+import,COLLODIUM,COLLODIUM,identity,381,1,1893,1897,1
+reexport,COLLODIUM,COLLODIUM,identity,3,1,1893,1893,1
+reexport,COLLSDION,COLLSDION,identity,3,1,1894,1894,1
+reexport,"COMFITS, DRY","COMFITS, DRY",identity,1,1,1873,1873,1
+reexport,CONFECTIONERY,CONFECTIONERY,identity,329,25,1875,1899,1
+import,CONFECTIONERY,CONFECTIONERY,identity,168,16,1880,1895,1
+import,CONFECTIONERY (not containing any article liable to Duty),CONFECTIONERY (not containing any article liable to Duty),identity,142,3,1894,1899,1
+export_uk,"CONFECTIONERY, JAMS, AND PRESERVED FRUITS","CONFECTIONERY, JAMS, AND PRESERVED FRUITS",identity,52,1,1900,1900,1
+import,"CONFECTIONERY, in the Manufacture of which Spirit has been used","CONFECTIONERY, in the Manufacture of which Spirit has been used",identity,203,7,1893,1900,1
+reexport,"CONFECTIONERY, in the manufacture of which Spirit has been used","CONFECTIONERY, in the manufacture of which Spirit has been used",identity,630,1,1893,1897,1
+reexport,CONK,CONK,identity,54,1,1880,1880,1
+import,CONK,CONK,identity,38,3,1882,1893,1
+reexport,COPPER,COPPER,identity,796,26,1872,1898,1
+import,CORDAGE,CORDAGE,identity,2937,2,1893,1899,1
+reexport,"CORDAGE CABLES (not of iron), Twine, and Cable Yarn","CORDAGE CABLES (not of iron), Twine, and Cable Yarn",identity,178,2,1893,1898,1
+export_uk,"CORDAGE, CABLES, and ROPES of HEMP or like MATERIAL","CORDAGE, CABLES, and ROPES of HEMP or like MATERIAL",identity,160,8,1873,1881,1
+reexport,CORK,CORK,identity,669,25,1872,1898,1
+reexport,CORN,CORN,identity,560,14,1872,1886,1
+reexport,CORN AND GRAIN,CORN AND GRAIN,identity,445,10,1887,1896,1
+import,"CORN, GRAIN, MEAL, FLOUR, viz.","CORN, GRAIN, MEAL, FLOUR, viz.",identity,205,1,1900,1900,1
+export_uk,"CORN, GRAIN, MEAL, and FLOUR","CORN, GRAIN, MEAL, and FLOUR",identity,167,1,1900,1900,1
+reexport,"CORN; Grain, Meal, Flour","CORN; Grain, Meal, Flour",identity,30,1,1900,1900,1
+reexport,"CORN; Grain, Meal, Flour—cont.","CORN; Grain, Meal, Flour—cont.",identity,67,1,1900,1900,1
+reexport,"CORN; Grain, Meal, and Flour—cont.","CORN; Grain, Meal, and Flour—cont.",identity,590,1,1895,1899,1
+export_uk,COTTON MANUFACTURES,COTTON MANUFACTURES,identity,17767,29,1872,1900,1
+reexport,COTTON MANUFACTURES,COTTON MANUFACTURES,identity,1381,4,1893,1900,1
+export_uk,COTTON MANUFACTURE—con- tinued,COTTON MANUFACTURE—continued,dehyphen,1018,1,1894,1898,1
+import,COTTON YARN,COTTON YARN,identity,10,1,1870,1870,1
+import,"COTTON, RAW (or Cotton Wool)","COTTON, RAW (or Cotton Wool)",identity,34,1,1870,1870,1
+export_uk,"CRUCIBLES, PLUMBAGO","CRUCIBLES, PLUMBAGO",identity,30,1,1900,1900,1
+reexport,CURIOS,CURIOS,identity,13,1,1900,1900,1
+import,CURIOS,CURIOS,identity,9,1,1900,1900,1
+reexport,CUTCH,CUTCH,identity,41,5,1872,1879,1
+import,CUTCH,CUTCH,identity,12,4,1873,1878,1
+export_uk,CUTLERY,CUTLERY,identity,287,3,1894,1900,1
+reexport,CUTLERY,CUTLERY,identity,11,1,1900,1900,1
+import,CUTLERY,CUTLERY,identity,4,1,1900,1900,1
+export_uk,"Cannon, Mortars, and Machine Guns","Cannon, Mortars, and Machine Guns",identity,118,1,1893,1897,1
+import,"Cocoa or Chocolate, ground, prepared or in anyway manufactured","Cocoa or Chocolate, ground, prepared or in anyway manufactured",identity,4,1,1881,1881,1
+import,"Cocos or Chocolate, ground, pre- pared, or in any way manu- factured","Cocos or Chocolate, ground, prepared, or in any way manufactured",dehyphen,5,1,1884,1884,1
+import,Corn,Corn,identity,137,2,1870,1899,1
+import,Corn and Grain,Corn and Grain,identity,2434,23,1872,1894,1
+export_uk,Corrnu,Corrnu,identity,60,1,1883,1883,1
+export_uk,Cotton,Cotton,identity,156,5,1892,1896,1
+import,Cows,Cows,identity,174,4,1876,1882,1
+export_uk,"Cycles, and parts thereof","Cycles, and parts thereof",identity,799,1,1893,1897,1
+export_uk,DENTISTS' MATERIALS (except Instruments),DENTISTS' MATERIALS (except Instruments),identity,21,1,1900,1900,1
+import,DIAMONDS,DIAMONDS,identity,14,6,1892,1900,1
+import,"DRUGS"" Unenumerated and Medicinal 
+          preparations","DRUGS"" Unenumerated and Medicinal preparations",dehyphen,34,1,1890,1890,1
+import,"DRUGS, Unenumerated","DRUGS, Unenumerated",identity,50,3,1873,1878,1
+import,DUCTS,DUCTS,identity,18,1,1892,1892,1
+export_uk,DYE STUFF,DYE STUFF,identity,26,1,1885,1885,1
+export_uk,DYE STUFFS,DYE STUFFS,identity,1236,17,1882,1900,1
+reexport,"DYE STUFFS (other than Dye Woods), and Substances used in Tanning and Dyeing, viz.","DYE STUFFS (other than Dye Woods), and Substances used in Tanning and Dyeing, viz.",identity,72,1,1884,1884,1
+reexport,"DYE STUFFS (other than Dye Woods), and Substances used in Tanning or Dyeing","DYE STUFFS (other than Dye Woods), and Substances used in Tanning or Dyeing",identity,2467,4,1893,1900,1
+import,"DYE STUFFS, Unenumerated","DYE STUFFS, Unenumerated",identity,39,3,1873,1878,1
+import,"DYE STUFFS, and Substances used in TanningUnenumerated","DYE STUFFS, and Substances used in TanningUnenumerated",identity,23,1,1883,1883,1
+import,"DYE WOODS: 
+                    Logwood",DYE WOODS: Logwood,dehyphen,29,1,1883,1883,1
+reexport,DYE WOONS,DYE WOONS,identity,11,1,1882,1882,1
+reexport,"Dyeing, viz.","Dyeing, viz.",identity,87,1,1885,1885,1
+export_uk,EARTHEN and CHINAWARE,EARTHEN and CHINAWARE,identity,46,1,1900,1900,1
+import,"EARTHENWARE, not being China or Porcelain Ware","EARTHENWARE, not being China or Porcelain Ware",identity,16,3,1873,1878,1
+reexport,"EARTHENWARE, not being Porcelain or China Ware","EARTHENWARE, not being Porcelain or China Ware",identity,21,9,1872,1881,1
+reexport,EMBROIDERY AND NEEDLEWORK,EMBROIDERY AND NEEDLEWORK,identity,523,23,1872,1899,1
+export_uk,ENGINE PACKING,ENGINE PACKING,identity,38,1,1900,1900,1
+import,"ENVOYS, Unenumerated","ENVOYS, Unenumerated",identity,23,1,1874,1874,1
+reexport,ESSENCE OF SPRUCE,ESSENCE OF SPRUCE,identity,4,4,1872,1884,1
+import,ETHER,ETHER,identity,499,11,1889,1900,1
+reexport,ETHER,ETHER,identity,129,3,1894,1900,1
+import,ETHER (ACETIC),ETHER (ACETIC),identity,13,2,1887,1888,1
+import,ETHER (SULPHURIC),ETHER (SULPHURIC),identity,14,4,1883,1886,1
+reexport,"ETHER, SULPHURIC","ETHER, SULPHURIC",identity,86,16,1872,1888,1
+import,ETHYL,ETHYL,identity,16,2,1894,1899,1
+reexport,"ETHYL, Chloride","ETHYL, Chloride",identity,2,1,1900,1900,1
+import,"ETHYL, Iodide of","ETHYL, Iodide of",identity,2,2,1883,1884,1
+import,EXTRACTS (other than for Tanning or Dyeing),EXTRACTS (other than for Tanning or Dyeing),identity,28,1,1895,1899,1
+reexport,Ecos,Ecos,identity,3,1,1885,1885,1
+import,FABINACEOUS SUBSTANCES and Manufactures thereof,FABINACEOUS SUBSTANCES and Manufactures thereof,identity,11,1,1874,1874,1
+reexport,"FABINACEOUS SUBSTANCES, and Manufactures thereof, unenum- erated","FABINACEOUS SUBSTANCES, and Manufactures thereof, unenumerated",dehyphen,15,1,1896,1896,1
+import,"FAIRNESSWARE, not being China or Porcelain Ware","FAIRNESSWARE, not being China or Porcelain Ware",identity,3,1,1874,1874,1
+reexport,"FAMINACEOUS SUBSTANCES, and Manufactures thereof, unenum- erated","FAMINACEOUS SUBSTANCES, and Manufactures thereof, unenumerated",dehyphen,13,1,1895,1895,1
+reexport,FARINACEOUS SUBSTANCES,FARINACEOUS SUBSTANCES,identity,50,1,1900,1900,1
+import,"FARINACEOUS SUBSTANCES and Manufact- tures thereof, Unenumerated","FARINACEOUS SUBSTANCES and Manufacttures thereof, Unenumerated",dehyphen,15,1,1883,1883,1
+reexport,FARINACEOUS SUBSTANCES—cont.,FARINACEOUS SUBSTANCES—cont.,identity,29,1,1900,1900,1
+import,FATHERS,FATHERS,identity,74,4,1874,1880,1
+import,FEATHERS,FEATHERS,identity,352,15,1872,1890,1
+reexport,FEATHERS,FEATHERS,identity,86,9,1885,1896,1
+import,FEATHERS AND DOWN,FEATHERS AND DOWN,identity,1074,8,1891,1898,1
+reexport,"FEATHERS AND DOWN, in Beds, or for Beds","FEATHERS AND DOWN, in Beds, or for Beds",identity,129,1,1900,1900,1
+import,FISH (including Turtle),FISH (including Turtle),identity,2122,5,1894,1900,1
+export_uk,FISHING TACKLE,FISHING TACKLE,identity,36,1,1900,1900,1
+reexport,FLAX,FLAX,identity,247,25,1872,1896,1
+export_uk,FLAX,FLAX,identity,83,11,1870,1881,1
+export_uk,FLAX & HEMP,FLAX & HEMP,identity,14,4,1882,1885,1
+reexport,"FLAX, Dressed or Undressed","FLAX, Dressed or Undressed",identity,246,3,1893,1899,1
+import,FLINT,FLINT,identity,46,2,1880,1881,1
+import,FLORAL HYDRATE,FLORAL HYDRATE,identity,4,1,1892,1892,1
+reexport,"FLOWERS, Fresh","FLOWERS, Fresh",identity,1,1,1900,1900,1
+export_uk,FRUIT,FRUIT,identity,49,1,1870,1870,1
+import,FRUIT (not liable to duty),FRUIT (not liable to duty),identity,254,1,1900,1900,1
+reexport,"FRUIT AND VEGETABLES, Preserved in Sugar","FRUIT AND VEGETABLES, Preserved in Sugar",identity,12,1,1896,1896,1
+import,FRUIT'd),FRUIT'd),identity,32,1,1888,1888,1
+reexport,"FRUIT, Almonds","FRUIT, Almonds",identity,1467,3,1893,1899,1
+reexport,"FRUIT, Apples, Raw","FRUIT, Apples, Raw",identity,150,1,1900,1900,1
+import,"FRUIT: 
+                    „ Unenumerated: Preserved without Sugar",FRUIT: „ Unenumerated: Preserved without Sugar,dehyphen,16,1,1886,1886,1
+import,FRUITS AND VEGETABLES: Preserved in Sugar,FRUITS AND VEGETABLES: Preserved in Sugar,identity,18,1,1896,1896,1
+reexport,"FRUITS and VEGETABLES, Pre- served in Sugar","FRUITS and VEGETABLES, Preserved in Sugar",dehyphen,85,1,1895,1899,1
+export_uk,FURNITURE (HOUSEHOLD),FURNITURE (HOUSEHOLD),identity,21,1,1870,1870,1
+export_uk,"FURNITURE (Household), CABINET and UP-HOLSTERY WARES","FURNITURE (Household), CABINET and UP-HOLSTERY WARES",identity,62,3,1873,1875,1
+export_uk,FURNITURE and HARDWOODS,FURNITURE and HARDWOODS,identity,14,1,1870,1870,1
+import,Furniture and Hardwoods,Furniture and Hardwoods,identity,269,5,1870,1888,1
+import,GAILS,GAILS,identity,12,1,1888,1888,1
+import,GALIS,GALIS,identity,10,1,1887,1887,1
+reexport,GALIS,GALIS,identity,8,1,1891,1891,1
+reexport,GALLS,GALLS,identity,346,28,1872,1900,1
+import,GALLS,GALLS,identity,331,24,1870,1900,1
+export_uk,GALLS,GALLS,identity,7,1,1870,1870,1
+import,GAMBER,GAMBER,identity,3,1,1874,1874,1
+reexport,GAMBIER,GAMBIER,identity,61,10,1872,1881,1
+import,GAMBIER,GAMBIER,identity,33,10,1870,1881,1
+export_uk,GAMBIER,GAMBIER,identity,9,1,1870,1870,1
+import,GIL,GIL,identity,100,1,1884,1884,1
+import,GLASS,GLASS,identity,3965,28,1870,1900,1
+export_uk,GLASS,GLASS,identity,3088,26,1870,1896,1
+reexport,GLASS,GLASS,identity,492,25,1872,1896,1
+import,"GLASS : 
+                    „ Window and German Sheet, including Shades and Cylinders","GLASS : „ Window and German Sheet, including Shades and Cylinders",dehyphen,16,1,1886,1886,1
+reexport,"GLASS, Window and German Sheet, including Shades and Cyinders","GLASS, Window and German Sheet, including Shades and Cyinders",identity,601,1,1893,1897,1
+reexport,"GLASS, Window and German Sheet, including Shades and Cylinders","GLASS, Window and German Sheet, including Shades and Cylinders",identity,927,3,1894,1900,1
+import,"GLASS: 
+                    „ Manufactures, unenumerated","GLASS: „ Manufactures, unenumerated",dehyphen,13,1,1886,1886,1
+export_uk,GLASS„ Common Bottles,GLASS„ Common Bottles,identity,21,1,1884,1884,1
+reexport,GLUE STOCK AND PIECES FOR MAKING GLUE,GLUE STOCK AND PIECES FOR MAKING GLUE,identity,6,1,1900,1900,1
+import,"GLUE STOCK, AND PIECES FOR MAKING GLUE","GLUE STOCK, AND PIECES FOR MAKING GLUE",identity,20,1,1900,1900,1
+reexport,"GLUE, SIZE, AND GELATINE","GLUE, SIZE, AND GELATINE",identity,13,1,1900,1900,1
+import,"GLUE, SIZE, AND GELATINE","GLUE, SIZE, AND GELATINE",identity,11,1,1900,1900,1
+reexport,GOLD,GOLD,identity,65,12,1885,1896,1
+import,GOLD'd),GOLD'd),identity,11,1,1888,1888,1
+reexport,GOLD'd),GOLD'd),identity,3,1,1893,1893,1
+reexport,"GOLD, LEAVES OF","GOLD, LEAVES OF",identity,10,10,1872,1881,1
+reexport,"GOLD, ORE OF","GOLD, ORE OF",identity,1,1,1879,1879,1
+export_uk,GOODS NOT ENUMERATED AND NOT FALLING UNDER ANY OF THE GENERAL HEADS,GOODS NOT ENUMERATED AND NOT FALLING UNDER ANY OF THE GENERAL HEADS,identity,191,1,1900,1900,1
+reexport,"GOODS UNENUMERATED, Unmanufactured","GOODS UNENUMERATED, Unmanufactured",identity,1709,4,1893,1900,1
+reexport,"GOODS, UNENUMERATED","GOODS, UNENUMERATED",identity,116,5,1872,1877,1
+import,GREASE,GREASE,identity,5,1,1870,1870,1
+reexport,GROCERY,GROCERY,identity,13,1,1889,1889,1
+import,GUAR,GUAR,identity,30,1,1872,1872,1
+reexport,GUM,GUM,identity,894,25,1872,1896,1
+export_uk,GUM,GUM,identity,198,1,1870,1870,1
+import,"GUM : 
+                    „ Arabic",GUM : „ Arabic,dehyphen,7,1,1886,1886,1
+import,GUM'd),GUM'd),identity,27,1,1888,1888,1
+reexport,"GUM, Arabic","GUM, Arabic",identity,269,2,1895,1900,1
+reexport,"GUM, Unenumerated","GUM, Unenumerated",identity,135,2,1895,1900,1
+import,"GUNSTOCKS in the rough, of Wood","GUNSTOCKS in the rough, of Wood",identity,39,11,1870,1881,1
+reexport,GUTCH,GUTCH,identity,7,1,1874,1874,1
+reexport,GUTTA PERCHA,GUTTA PERCHA,identity,405,28,1872,1900,1
+import,GUTTA PERCHA,GUTTA PERCHA,identity,349,26,1873,1900,1
+import,"GUTTA PERCHA, Manufactures of","GUTTA PERCHA, Manufactures of",identity,44,2,1893,1899,1
+import,"GUTTA PERCHA, Raw","GUTTA PERCHA, Raw",identity,16,2,1870,1872,1
+export_uk,Gold,Gold,identity,3253,17,1882,1900,1
+export_uk,"HABERDASHERY and MILLINERY, including Em- brassery and Needlework","HABERDASHERY and MILLINERY, including Embrassery and Needlework",dehyphen,42,1,1873,1873,1
+export_uk,"HABERDASHERY and MILLINERY, including Em- brodery and Needlework","HABERDASHERY and MILLINERY, including Embrodery and Needlework",dehyphen,43,1,1882,1882,1
+export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle-work","HABERDASHERY and MILLINERY, including Embroidery and Needle-work",identity,1464,4,1884,1900,1
+reexport,HAIIR,HAIIR,identity,11,1,1881,1881,1
+reexport,HAIL,HAIL,identity,23,1,1884,1884,1
+reexport,HAIR,HAIR,identity,459,26,1872,1899,1
+import,HAIR MANUFACTURES,HAIR MANUFACTURES,identity,82,11,1870,1895,1
+import,"HAIR, MANUFACTURES OF","HAIR, MANUFACTURES OF",identity,7,1,1896,1896,1
+reexport,"HAIR: Cow, Ox, Bull, or Elk","HAIR: Cow, Ox, Bull, or Elk",identity,1141,4,1893,1900,1
+reexport,HAMS,HAMS,identity,977,2,1894,1899,1
+import,HAMS,HAMS,identity,127,4,1882,1899,1
+export_uk,HATS,HATS,identity,3325,28,1870,1900,1
+export_uk,HATTERS' WARES,HATTERS' WARES,identity,22,1,1900,1900,1
+import,HAY,HAY,identity,170,6,1892,1897,1
+reexport,HAY,HAY,identity,20,5,1892,1898,1
+reexport,HEMP,HEMP,identity,1147,26,1872,1900,1
+export_uk,HEMP,HEMP,identity,57,9,1870,1881,1
+import,HEMP'd),HEMP'd),identity,11,1,1893,1893,1
+import,"HEMP, Dressed or Undressed","HEMP, Dressed or Undressed",identity,181,5,1882,1886,1
+reexport,HIDES,HIDES,identity,338,9,1872,1881,1
+export_uk,HIDES,HIDES,identity,100,2,1870,1874,1
+import,HIDES,HIDES,identity,98,4,1876,1879,1
+import,"HIDES, Raw, and pieces thereof—cont","HIDES, Raw, and pieces thereof—cont",identity,203,1,1895,1899,1
+import,"HIDES, Raw, or Pieces thereof","HIDES, Raw, or Pieces thereof",identity,67,1,1886,1886,1
+import,"HIDES, not Tanned, Tawed, Curried, or in any way Dressed","HIDES, not Tanned, Tawed, Curried, or in any way Dressed",identity,528,11,1870,1881,1
+import,HONEY,HONEY,identity,463,15,1886,1900,1
+import,HORN,HORN,identity,9,1,1882,1882,1
+reexport,HORN AND HOOPS,HORN AND HOOPS,identity,6,1,1890,1890,1
+import,HORNS and HGOFS,HORNS and HGOFS,identity,21,1,1890,1890,1
+import,HORNS and HOOPS,HORNS and HOOPS,identity,42,2,1882,1892,1
+reexport,"HORNS, Tips and pieces of Horn, and Hoofs","HORNS, Tips and pieces of Horn, and Hoofs",identity,9,1,1900,1900,1
+import,"HORNS, tips and pieces of Horns and Hoofs","HORNS, tips and pieces of Horns and Hoofs",identity,2217,3,1893,1899,1
+reexport,Horns,Horns,identity,36,7,1872,1883,1
+import,"Horns, Tips and Pieces thereof, and HOOFs","Horns, Tips and Pieces thereof, and HOOFs",identity,26,1,1894,1894,1
+import,Hors,Hors,identity,28,3,1873,1892,1
+import,Horse,Horse,identity,562,7,1870,1899,1
+reexport,Horse,Horse,identity,37,3,1873,1880,1
+import,ICP,ICP,identity,12,1,1870,1870,1
+import,ICR,ICR,identity,12,1,1878,1878,1
+export_uk,ILATS,ILATS,identity,82,1,1889,1889,1
+export_uk,"ILLDWARRES and CUTLERY, Unenumerated","ILLDWARRES and CUTLERY, Unenumerated",identity,44,1,1880,1880,1
+import,IMPLEMENTS AND TOOLS (including parts thereof),IMPLEMENTS AND TOOLS (including parts thereof),identity,9,1,1900,1900,1
+import,INK,INK,identity,12,8,1873,1881,1
+reexport,INMIGO,INMIGO,identity,10,1,1880,1880,1
+reexport,IRINGLASS,IRINGLASS,identity,8,2,1894,1896,1
+import,IRON (Con.),IRON (Con.),identity,4,1,1879,1879,1
+export_uk,IRON AND STEEL,IRON AND STEEL,identity,752,6,1891,1896,1
+reexport,IRON AND STEEL,IRON AND STEEL,identity,10,1,1896,1896,1
+export_uk,IRON AND STEEL'd),IRON AND STEEL'd),identity,383,2,1893,1894,1
+import,"IRON, Manufactures","IRON, Manufactures",identity,18,1,1888,1888,1
+reexport,IRON: Ore of (including Chrome),IRON: Ore of (including Chrome),identity,753,2,1893,1898,1
+import,ISINGLASS,ISINGLASS,identity,461,27,1870,1900,1
+reexport,ISINGLASS,ISINGLASS,identity,70,19,1872,1900,1
+import,ISK,ISK,identity,1,1,1874,1874,1
+reexport,ISTINGLASS,ISTINGLASS,identity,4,1,1887,1887,1
+reexport,IVORY,IVORY,identity,197,14,1882,1896,1
+reexport,"IVORY, TEETH, Elephants', Sea-cows', or Walrus'","IVORY, TEETH, Elephants', Sea-cows', or Walrus'",identity,13,1,1900,1900,1
+reexport,"IVORY, Vegetable","IVORY, Vegetable",identity,43,3,1893,1900,1
+export_uk,Iron'd),Iron'd),identity,51,1,1893,1893,1
+reexport,"Iron, Ore of","Iron, Ore of",identity,6,1,1894,1894,1
+reexport,"Iron:—Manufactures of Iron or Steel, Unenumerated","Iron:—Manufactures of Iron or Steel, Unenumerated",identity,483,1,1895,1899,1
+export_uk,JEWELLERY,JEWELLERY,identity,36,1,1900,1900,1
+reexport,JEWELLERY,JEWELLERY,identity,11,1,1900,1900,1
+import,JEWELLERY,JEWELLERY,identity,9,1,1900,1900,1
+import,"JEWELLERY, not otherwise enumerated","JEWELLERY, not otherwise enumerated",identity,6,1,1870,1870,1
+reexport,JUICE OF LIMES AND LEMONS,JUICE OF LIMES AND LEMONS,identity,15,9,1877,1889,1
+reexport,"JUICE OF LIMES, LEMONS, &c.","JUICE OF LIMES, LEMONS, &c.",identity,109,4,1893,1897,1
+reexport,"JUICE OF LIMES, LEMONS, &c. (Fortified)","JUICE OF LIMES, LEMONS, &c. (Fortified)",identity,100,1,1895,1899,1
+reexport,JUTE,JUTE,identity,918,25,1872,1900,1
+import,JUTE,JUTE,identity,596,27,1870,1900,1
+export_uk,JUTE MANUFACTURES,JUTE MANUFACTURES,identity,410,11,1883,1900,1
+reexport,JUTE YARN,JUTE YARN,identity,166,2,1895,1900,1
+export_uk,JUTE YARN,JUTE YARN,identity,100,8,1885,1900,1
+export_uk,Jute,Jute,identity,17,1,1870,1870,1
+import,Jute Yarn,Jute Yarn,identity,8,1,1870,1870,1
+reexport,LACQUERED,LACQUERED,identity,2,2,1876,1879,1
+import,LAND,LAND,identity,5,1,1882,1882,1
+reexport,LARD,LARD,identity,585,23,1872,1899,1
+import,LARD,LARD,identity,484,25,1873,1899,1
+import,LATES,LATES,identity,1804,1,1894,1898,1
+export_uk,LEAD,LEAD,identity,13486,27,1870,1900,1
+import,LEAD,LEAD,identity,3445,28,1872,1899,1
+reexport,LEAD,LEAD,identity,313,23,1872,1896,1
+reexport,"LEAD, Ore of","LEAD, Ore of",identity,111,3,1893,1899,1
+reexport,"LEAD, Pig and Sheet","LEAD, Pig and Sheet",identity,273,3,1893,1899,1
+import,"LEAD, WHITE","LEAD, WHITE",identity,5,1,1870,1870,1
+export_uk,LEATHER,LEATHER,identity,1556,25,1870,1896,1
+reexport,LEATHER,LEATHER,identity,1459,18,1882,1899,1
+import,LEATHER,LEATHER,identity,528,11,1886,1900,1
+reexport,LEATHER MANUFACTURES,LEATHER MANUFACTURES,identity,303,23,1872,1896,1
+export_uk,LEATHER'd),LEATHER'd),identity,27,1,1891,1891,1
+reexport,"LEATHER, Undressed","LEATHER, Undressed",identity,337,3,1893,1900,1
+import,"LEATHER, Undressed","LEATHER, Undressed",identity,294,6,1882,1888,1
+reexport,"LEATHER, Unâressed","LEATHER, Unâressed",identity,123,1,1894,1898,1
+import,LIARD,LIARD,identity,6,1,1872,1872,1
+import,LIGUORICE,LIGUORICE,identity,7,1,1892,1892,1
+reexport,LIGUORICE,LIGUORICE,identity,6,1,1895,1895,1
+import,LINEN,LINEN,identity,970,17,1880,1900,1
+reexport,LINEN,LINEN,identity,668,21,1872,1900,1
+export_uk,"LINEN AND JUTE MANUFACTURES: 
+                    » JUTE MANUFACTURES: 
+                    » Bags, empty, for packing Merchandise","LINEN AND JUTE MANUFACTURES: » JUTE MANUFACTURES: » Bags, empty, for packing Merchandise",dehyphen,26,1,1870,1870,1
+import,LINEN MANUFACTURES,LINEN MANUFACTURES,identity,60,8,1870,1879,1
+reexport,LINEN MANUFACTURES,LINEN MANUFACTURES,identity,16,2,1891,1892,1
+export_uk,LINEN MANUFACTURES'd),LINEN MANUFACTURES'd),identity,54,1,1891,1891,1
+export_uk,LINEN YARN,LINEN YARN,identity,190,13,1882,1896,1
+reexport,LINEN YARN,LINEN YARN,identity,41,6,1891,1896,1
+import,LINEN YARN (including Linen Yarn Waste),LINEN YARN (including Linen Yarn Waste),identity,17,2,1870,1872,1
+export_uk,LINEN and JUTE YARN,LINEN and JUTE YARN,identity,165,10,1872,1881,1
+export_uk,"LINEN and JUTE YARN : 
+                    Linen Yarn, of all Sorts","LINEN and JUTE YARN : Linen Yarn, of all Sorts",dehyphen,28,1,1870,1870,1
+reexport,LIQUORICE,LIQUORICE,identity,220,26,1872,1900,1
+reexport,LITCH,LITCH,identity,3,1,1888,1888,1
+reexport,LOCUST BEANS,LOCUST BEANS,identity,12,2,1899,1900,1
+import,LOCUST BEANS,LOCUST BEANS,identity,10,1,1900,1900,1
+export_uk,LUCEFER and VESTA MATCHES,LUCEFER and VESTA MATCHES,identity,16,1,1873,1873,1
+export_uk,LUCIFER and VESTA MATCHES,LUCIFER and VESTA MATCHES,identity,29,3,1874,1877,1
+import,LUCIFERS of Wood,LUCIFERS of Wood,identity,3,1,1870,1870,1
+export_uk,LUOIPER and VESTA MATCHES,LUOIPER and VESTA MATCHES,identity,12,1,1876,1876,1
+import,"Lead, Ore of","Lead, Ore of",identity,307,1,1900,1900,1
+import,MACARONI and VERMICELLI,MACARONI and VERMICELLI,identity,5,1,1870,1870,1
+export_uk,"MACHINERY and MILL WORK: 
+                    » Steam Engines or Parts of Steam Engines, Locomotive","MACHINERY and MILL WORK: » Steam Engines or Parts of Steam Engines, Locomotive",dehyphen,146,1,1870,1870,1
+export_uk,MACHINERY and MILLS WORK,MACHINERY and MILLS WORK,identity,104,1,1880,1880,1
+import,MADDER,MADDER,identity,149,11,1870,1881,1
+import,MAFS and CHARTS,MAFS and CHARTS,identity,1,1,1872,1872,1
+reexport,MAIT,MAIT,identity,1,1,1882,1882,1
+reexport,MALT,MALT,identity,69,17,1877,1900,1
+import,MALT,MALT,identity,53,15,1882,1900,1
+import,MANGANESE ORE,MANGANESE ORE,identity,61,11,1870,1881,1
+reexport,MANGANESE ORE,MANGANESE ORE,identity,25,14,1872,1886,1
+reexport,"MANGANESE, ONE OF","MANGANESE, ONE OF",identity,1,1,1890,1890,1
+import,"MANGANESE, ONE of","MANGANESE, ONE of",identity,15,1,1889,1889,1
+reexport,MANGANESSE ORE,MANGANESSE ORE,identity,1,1,1877,1877,1
+export_uk,MANURE,MANURE,identity,176,4,1893,1896,1
+export_uk,MANURE (including Sulphate of Ammonia and other Chemical Manures),MANURE (including Sulphate of Ammonia and other Chemical Manures),identity,105,5,1883,1892,1
+export_uk,"MANURE, Unenumerated","MANURE, Unenumerated",identity,108,9,1872,1881,1
+reexport,MANURES,MANURES,identity,1285,29,1872,1900,1
+import,MAPS and CHARTS,MAPS and CHARTS,identity,11,9,1873,1881,1
+import,MARGARINE,MARGARINE,identity,72,7,1888,1894,1
+reexport,MARGARINE,MARGARINE,identity,26,3,1894,1896,1
+reexport,MATCHES,MATCHES,identity,453,15,1886,1900,1
+import,MATCHES,MATCHES,identity,150,13,1886,1898,1
+export_uk,MATCHES,MATCHES,identity,62,2,1899,1900,1
+import,"MATCHES, Safety and Other Sorts","MATCHES, Safety and Other Sorts",identity,96,2,1895,1900,1
+export_uk,MATS AND MATTING,MATS AND MATTING,identity,25,1,1900,1900,1
+import,MEAT,MEAT,identity,1314,13,1872,1899,1
+reexport,MEAT,MEAT,identity,87,12,1872,1883,1
+reexport,MEAT (other than Poultry and Game),MEAT (other than Poultry and Game),identity,73,1,1900,1900,1
+export_uk,"MEAT : viz., Beef, Mutton, Pork, Bacon and Hams","MEAT : viz., Beef, Mutton, Pork, Bacon and Hams",identity,25,1,1896,1896,1
+reexport,"MEAT, Preserved, otherwise than by Salting","MEAT, Preserved, otherwise than by Salting",identity,150,1,1895,1899,1
+import,"MEAT, SALTED or FRESH, not otherwise described","MEAT, SALTED or FRESH, not otherwise described",identity,11,1,1870,1870,1
+reexport,"MEAT, Uenumerated","MEAT, Uenumerated",identity,10,1,1886,1886,1
+import,"MEAT, Un enumerated","MEAT, Un enumerated",identity,19,1,1881,1881,1
+export_uk,"MEAT: Beef, Mutton, Pork, Bacon, Hams, &c.","MEAT: Beef, Mutton, Pork, Bacon, Hams, &c.",identity,33,1,1900,1900,1
+import,METAL,METAL,identity,2500,27,1870,1899,1
+reexport,METAL,METAL,identity,336,25,1872,1896,1
+import,"METAL, BELL","METAL, BELL",identity,5,1,1872,1872,1
+import,"METAL, unenumerated","METAL, unenumerated",identity,24,1,1886,1886,1
+reexport,"METAL: Leaf, not Gold","METAL: Leaf, not Gold",identity,752,2,1893,1899,1
+reexport,METALS AND ORES,METALS AND ORES,identity,12,1,1900,1900,1
+import,"METHYLIC ALCOHOL, not potable","METHYLIC ALCOHOL, not potable",identity,12,2,1894,1896,1
+export_uk,"METHYLIC ALCOHOL, not purified so as to be potable","METHYLIC ALCOHOL, not purified so as to be potable",identity,34,5,1892,1896,1
+import,"METHYLIC ALCOHOL, not purified so as to be potable","METHYLIC ALCOHOL, not purified so as to be potable",identity,31,3,1892,1895,1
+reexport,"METHYLIC ALCOHOL, not purified so as to be potable","METHYLIC ALCOHOL, not purified so as to be potable",identity,21,5,1892,1896,1
+import,MICA AND TALC,MICA AND TALC,identity,23,2,1895,1896,1
+export_uk,MICA and TALC,MICA and TALC,identity,6,1,1896,1896,1
+reexport,MICA and TALC,MICA and TALC,identity,6,1,1896,1896,1
+reexport,MILK AND CREAM,MILK AND CREAM,identity,12,2,1897,1900,1
+import,"MILK AND CREAM, FRESH","MILK AND CREAM, FRESH",identity,12,3,1894,1896,1
+import,"MILK AND CREAM, fresh or preserved, other than condensed milk","MILK AND CREAM, fresh or preserved, other than condensed milk",identity,39,1,1895,1899,1
+reexport,"MILK and CREAM, Fresh","MILK and CREAM, Fresh",identity,1,1,1894,1894,1
+import,"MILK, CONDENSED OR PRESERVED","MILK, CONDENSED OR PRESERVED",identity,33,3,1893,1896,1
+reexport,MINERAL WATER,MINERAL WATER,identity,17,1,1900,1900,1
+import,MINERAL WATER,MINERAL WATER,identity,9,1,1900,1900,1
+reexport,MOSS LITTER,MOSS LITTER,identity,43,10,1889,1900,1
+import,MOTHER of PEARL SHELLS,MOTHER of PEARL SHELLS,identity,6,1,1870,1870,1
+reexport,MOULDINGS FOR PICTURE FRAMES AND GILT MOULDINGS,MOULDINGS FOR PICTURE FRAMES AND GILT MOULDINGS,identity,9,1,1900,1900,1
+import,MOULDINGS for Picture Frames and Gilt Mouldings,MOULDINGS for Picture Frames and Gilt Mouldings,identity,7,1,1900,1900,1
+reexport,MUSICAL INSTRUMENTS,MUSICAL INSTRUMENTS,identity,1646,27,1872,1900,1
+import,MUSICAL INSTRUMENTS,MUSICAL INSTRUMENTS,identity,323,28,1870,1900,1
+export_uk,MUSICAL INSTRUMENTS,MUSICAL INSTRUMENTS,identity,52,1,1870,1870,1
+import,MYRABOLAMS,MYRABOLAMS,identity,30,6,1872,1878,1
+import,MYRABOLANS,MYRABOLANS,identity,10,2,1876,1880,1
+reexport,MYRABOLANS,MYRABOLANS,identity,3,1,1880,1880,1
+reexport,MYRBAROLAMS,MYRBAROLAMS,identity,1,1,1873,1873,1
+import,MYRBOLAMS,MYRBOLAMS,identity,5,1,1879,1879,1
+reexport,MYRHABOLAMS,MYRHABOLAMS,identity,1,1,1877,1877,1
+import,Meal and Flour,Meal and Flour,identity,707,20,1872,1894,1
+import,NAPHTHA (Crude),NAPHTHA (Crude),identity,39,11,1870,1881,1
+reexport,NAPHTHA (Crude),NAPHTHA (Crude),identity,14,10,1872,1881,1
+import,"NAPHTHA or METHYLIC ALCOHOL, purified","NAPHTHA or METHYLIC ALCOHOL, purified",identity,1,1,1875,1875,1
+reexport,"NAPHTHA, wood not notable","NAPHTHA, wood not notable",identity,1,1,1882,1882,1
+reexport,"NAPHTHA, wood not potable","NAPHTHA, wood not potable",identity,34,9,1883,1891,1
+export_uk,"NITRE, CUBIC","NITRE, CUBIC",identity,19,1,1870,1870,1
+reexport,"NITRE, Cubic (Nitrate of Soda)","NITRE, Cubic (Nitrate of Soda)",identity,32,3,1887,1890,1
+reexport,"NITRIC, Cubic","NITRIC, Cubic",identity,7,1,1876,1876,1
+import,"NTRE, CUBIC","NTRE, CUBIC",identity,7,1,1889,1889,1
+import,"NUTS and KERNELS, commonly used for expressing Oil","NUTS and KERNELS, commonly used for expressing Oil",identity,10,1,1870,1870,1
+reexport,OF SILVER,OF SILVER,identity,1,1,1872,1872,1
+export_uk,"OIL AND FLOOR CLOTH, IN- CLUDING INDIA RUBBER CLOTH","OIL AND FLOOR CLOTH, INCLUDING INDIA RUBBER CLOTH",dehyphen,373,2,1894,1900,1
+import,"OIL, CASTOR","OIL, CASTOR",identity,78,1,1870,1870,1
+reexport,"OIL, FISH","OIL, FISH",identity,229,4,1882,1885,1
+reexport,OIL-SEED CAKE: Linseed Cake,OIL-SEED CAKE: Linseed Cake,identity,14,1,1900,1900,1
+reexport,OILS,OILS,identity,1923,3,1894,1900,1
+export_uk,OLEG-MARGARINE,OLEG-MARGARINE,identity,5,1,1895,1895,1
+export_uk,OLEO-MARGARINE,OLEO-MARGARINE,identity,92,5,1892,1897,1
+reexport,OLEO-MARGARINE,OLEO-MARGARINE,identity,32,5,1892,1896,1
+reexport,OLEO-MARGARINE OR OLEO OIL,OLEO-MARGARINE OR OLEO OIL,identity,55,1,1900,1900,1
+import,"OLEO-MARGARINE, or OLEO-OIL","OLEO-MARGARINE, or OLEO-OIL",identity,9,1,1900,1900,1
+import,OLJE-MARGARINE,OLJE-MARGARINE,identity,7,1,1892,1892,1
+reexport,ONIONS,ONIONS,identity,68,9,1873,1882,1
+import,ONIONS,ONIONS,identity,45,3,1872,1879,1
+reexport,OPTUM,OPTUM,identity,11,1,1880,1880,1
+reexport,"ORE, Unenumerated","ORE, Unenumerated",identity,171,22,1873,1898,1
+export_uk,Oil,Oil,identity,240,4,1870,1899,1
+import,Other Sorts,Other Sorts,identity,11,1,1896,1896,1
+reexport,Other sorts,Other sorts,identity,558,1,1894,1898,1
+import,PAINTER'S COLOUR AND PIGMENTS,PAINTER'S COLOUR AND PIGMENTS,identity,7,1,1879,1879,1
+import,PAINTERS COLOURS,PAINTERS COLOURS,identity,11,1,1872,1872,1
+import,"PAINTERS' COLOURS AND PIGMENTS, Unenumerated","PAINTERS' COLOURS AND PIGMENTS, Unenumerated",identity,21,1,1900,1900,1
+export_uk,PAINTERS' COLOURS and MATERIALS,PAINTERS' COLOURS and MATERIALS,identity,348,13,1872,1884,1
+export_uk,PAINTERS' COLOURS and MATERIALSUnenumerated,PAINTERS' COLOURS and MATERIALSUnenumerated,identity,44,2,1872,1873,1
+import,PAPER,PAPER,identity,2934,27,1872,1900,1
+export_uk,PAPER,PAPER,identity,2183,23,1870,1896,1
+reexport,PAPER,PAPER,identity,1045,28,1872,1899,1
+import,PAPER AND PASTEBOARD,PAPER AND PASTEBOARD,identity,18,1,1896,1896,1
+reexport,"PAPER, Printed or Coated","PAPER, Printed or Coated",identity,126,2,1895,1900,1
+import,PAPER-MAKING MATERIALS,PAPER-MAKING MATERIALS,identity,193,4,1893,1896,1
+export_uk,"PAPER: 
+                    Writing or Printing, and Envelopes","PAPER: Writing or Printing, and Envelopes",dehyphen,65,2,1872,1873,1
+export_uk,"PAPERPasteboard, Millboard, &c. (including Playing Cards)","PAPERPasteboard, Millboard, &c. (including Playing Cards)",identity,28,1,1873,1873,1
+reexport,PARAFFINE,PARAFFINE,identity,851,27,1872,1899,1
+import,PARAFFINE,PARAFFINE,identity,282,25,1872,1899,1
+export_uk,PARCEL POST,PARCEL POST,identity,333,1,1894,1898,1
+import,PARCEL POST (Goods Free of Duty),PARCEL POST (Goods Free of Duty),identity,53,1,1900,1900,1
+reexport,PERFUMERY,PERFUMERY,identity,76,15,1872,1886,1
+import,"PERFUMERY, Unenumerated","PERFUMERY, Unenumerated",identity,19,3,1872,1879,1
+import,"PERFUMERY, and Articles used in the Manufacture thereof (except Perfuméd Spirits)","PERFUMERY, and Articles used in the Manufacture thereof (except Perfuméd Spirits)",identity,14,1,1896,1896,1
+import,"PERFUMERY, and Articles used in the Manufacture thereof, except Perfumed Spirits","PERFUMERY, and Articles used in the Manufacture thereof, except Perfumed Spirits",identity,125,3,1893,1899,1
+reexport,"PERFUMERY, and Articles used in the manufacture thereof","PERFUMERY, and Articles used in the manufacture thereof",identity,54,7,1887,1893,1
+reexport,"PERFUMERY, and articles used in the manufacture thereof, except perfumed spirits","PERFUMERY, and articles used in the manufacture thereof, except perfumed spirits",identity,65,1,1895,1899,1
+reexport,PETROLEUM,PETROLEUM,identity,220,16,1882,1898,1
+reexport,"PETROLEUM, Illuminating","PETROLEUM, Illuminating",identity,324,1,1895,1899,1
+import,"PETROLEUM, Illuminating","PETROLEUM, Illuminating",identity,10,1,1899,1899,1
+import,"PETROLEUM, Lubricating","PETROLEUM, Lubricating",identity,58,1,1895,1899,1
+reexport,"PETROLEUM, Refined","PETROLEUM, Refined",identity,4,1,1872,1872,1
+export_uk,"PETROLEUM, Unrefined","PETROLEUM, Unrefined",identity,48,1,1870,1870,1
+reexport,"PETROLEUM, Unrefined","PETROLEUM, Unrefined",identity,48,9,1873,1881,1
+reexport,PI-UMBAGO,PI-UMBAGO,identity,4,1,1877,1877,1
+import,PICKLES,PICKLES,identity,4,1,1880,1880,1
+reexport,"PICKLES AND VEGETABLES, Preserved in Salt or Vinegar","PICKLES AND VEGETABLES, Preserved in Salt or Vinegar",identity,44,15,1882,1896,1
+import,PICKLES and VEGETABLES preserved in Salt,PICKLES and VEGETABLES preserved in Salt,identity,40,8,1872,1879,1
+import,PICKLES preserved in Vinegar,PICKLES preserved in Vinegar,identity,1,1,1875,1875,1
+reexport,"PICKLES, Preserved in Vinegar","PICKLES, Preserved in Vinegar",identity,7,7,1872,1881,1
+export_uk,"PICKLES, VINEGAR, SAUCES, CONDI- MENTS, PRESERVED FRUITS, and CONFECTIONERY'd)","PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY'd)",dehyphen,27,1,1893,1893,1
+export_uk,PICTURES,PICTURES,identity,439,26,1870,1896,1
+import,PICTURES,PICTURES,identity,7,1,1870,1870,1
+reexport,"PICTURES AND DRAWINGS, by hand","PICTURES AND DRAWINGS, by hand",identity,109,14,1883,1896,1
+import,"PICTURES, DRAWINGS, and PHOTOGRAPHS","PICTURES, DRAWINGS, and PHOTOGRAPHS",identity,79,10,1872,1881,1
+reexport,"PIRITES of IRON, or COPPER, or SULPHUR ORE","PIRITES of IRON, or COPPER, or SULPHUR ORE",identity,1,1,1872,1872,1
+import,PITCH,PITCH,identity,209,22,1873,1899,1
+reexport,PITCH,PITCH,identity,46,24,1872,1896,1
+import,PITOH,PITOH,identity,10,1,1890,1890,1
+import,PITON,PITON,identity,9,3,1872,1876,1
+import,PIXITES of Iron and Copper or SULPHUR ORE,PIXITES of Iron and Copper or SULPHUR ORE,identity,6,1,1870,1870,1
+import,"PLANTS, SHRUBS, TREES, and FLOWER- ROOTS","PLANTS, SHRUBS, TREES, and FLOWERROOTS",dehyphen,18,1,1891,1891,1
+reexport,"PLANTS, SHRUPS, TREES, and FLOWER ROOTS","PLANTS, SHRUPS, TREES, and FLOWER ROOTS",identity,1,1,1872,1872,1
+export_uk,PLATE,PLATE,identity,459,7,1881,1896,1
+import,PLATE OF GOLD,PLATE OF GOLD,identity,20,6,1891,1896,1
+import,"PLATE OF GOLD (Free from 1st May, 1890)","PLATE OF GOLD (Free from 1st May, 1890)",identity,3,1,1890,1890,1
+import,PLATE OF SILVER,PLATE OF SILVER,identity,53,5,1891,1896,1
+import,"PLATE OF SILVER (Free from 1st May, 1890)","PLATE OF SILVER (Free from 1st May, 1890)",identity,9,1,1890,1890,1
+export_uk,"PLATE, GOLD","PLATE, GOLD",identity,132,10,1872,1881,1
+reexport,PLATED AND GILT WARE,PLATED AND GILT WARE,identity,39,15,1882,1896,1
+import,PLATED and GIFT WARE,PLATED and GIFT WARE,identity,7,1,1888,1888,1
+export_uk,PLATED and GIFT WARES,PLATED and GIFT WARES,identity,12,1,1876,1876,1
+export_uk,PLATED and GILT WARES,PLATED and GILT WARES,identity,360,12,1873,1888,1
+reexport,PLATINA,PLATINA,identity,53,25,1872,1896,1
+import,"PLATINA, Wrought and Unwrought","PLATINA, Wrought and Unwrought",identity,43,10,1872,1881,1
+import,"PLATINUM, wrought or unwrought","PLATINUM, wrought or unwrought",identity,100,3,1893,1899,1
+import,"PLATTING, or other Manufactures to be used in, or proper for making Hats or Bonnets, viz.","PLATTING, or other Manufactures to be used in, or proper for making Hats or Bonnets, viz.",identity,11,1,1870,1870,1
+reexport,PLUMAGE,PLUMAGE,identity,8,1,1893,1893,1
+reexport,PLUMBAGE,PLUMBAGE,identity,4,1,1881,1881,1
+reexport,PLUMBAGO,PLUMBAGO,identity,213,23,1872,1900,1
+export_uk,PLUMBAGO,PLUMBAGO,identity,120,10,1872,1881,1
+import,PORK,PORK,identity,1019,27,1872,1899,1
+import,"PORK, Salted (except Hams)","PORK, Salted (except Hams)",identity,16,1,1870,1870,1
+reexport,"PORK, Salted (not Hams)","PORK, Salted (not Hams)",identity,81,14,1872,1893,1
+import,POTASH,POTASH,identity,5,1,1870,1870,1
+export_uk,POTATOES,POTATOES,identity,842,5,1892,1896,1
+import,POTATUES,POTATUES,identity,8,1,1875,1875,1
+reexport,"POULTRY AND GAME, Alive or Dead","POULTRY AND GAME, Alive or Dead",identity,134,13,1887,1900,1
+import,"POULTRY and GAME, alive or dead","POULTRY and GAME, alive or dead",identity,153,11,1886,1896,1
+import,PRECIOUS STONES,PRECIOUS STONES,identity,16,2,1893,1894,1
+reexport,"PRECIOUS STONES, Unset","PRECIOUS STONES, Unset",identity,308,28,1872,1899,1
+import,"PRECIOUS STONES, uncut","PRECIOUS STONES, uncut",identity,11,1,1890,1890,1
+import,PRINTS and DRAWINGS,PRINTS and DRAWINGS,identity,11,1,1870,1870,1
+import,PRINTS and ENGRAVINGS,PRINTS and ENGRAVINGS,identity,46,10,1872,1881,1
+import,"PRINTS, ENGRAVINGS and PHOTO-GRAPHS","PRINTS, ENGRAVINGS and PHOTO-GRAPHS",identity,20,2,1886,1896,1
+import,"PRINTS, ENGRAVINGS, & PHOTOGRAPHS","PRINTS, ENGRAVINGS, & PHOTOGRAPHS",identity,18,2,1883,1884,1
+reexport,"PRINTS, ENGRAVINGS, AND PHOTO-GRAPHS","PRINTS, ENGRAVINGS, AND PHOTO-GRAPHS",identity,3,1,1892,1892,1
+export_uk,"PRINTS, ENGRAVINGS, DRAWINGS, &c.","PRINTS, ENGRAVINGS, DRAWINGS, &c.",identity,125,13,1872,1891,1
+reexport,PYRITES OF IRON AND COPPER,PYRITES OF IRON AND COPPER,identity,4,4,1882,1885,1
+import,PYRITES of IRON or COPPER or SULPHUR,PYRITES of IRON or COPPER or SULPHUR,identity,5,1,1873,1873,1
+import,PYRITES of IRON or COPPER or SULPHUR ORE,PYRITES of IRON or COPPER or SULPHUR ORE,identity,6,1,1872,1872,1
+reexport,Plate,Plate,identity,46,1,1900,1900,1
+reexport,Pork,Pork,identity,14,1,1900,1900,1
+reexport,QUICKSILVER,QUICKSILVER,identity,620,26,1872,1898,1
+import,QUICKSILVER,QUICKSILVER,identity,145,17,1880,1899,1
+export_uk,QUICKSILVER,QUICKSILVER,identity,99,1,1870,1870,1
+import,"QUIKKSILVER, Metallic","QUIKKSILVER, Metallic",identity,6,1,1872,1872,1
+import,RABBITS,RABBITS,identity,99,11,1886,1896,1
+reexport,RABBITS,RABBITS,identity,6,1,1894,1894,1
+export_uk,RAGS (except Woollen) and other Materials for making Paper,RAGS (except Woollen) and other Materials for making Paper,identity,99,14,1872,1892,1
+import,"RAGS, WOOLLEN, applicable to other uses than Manure","RAGS, WOOLLEN, applicable to other uses than Manure",identity,71,4,1890,1894,1
+reexport,"RAGS, Woollen, applicable to other uses than Manure","RAGS, Woollen, applicable to other uses than Manure",identity,3,1,1893,1893,1
+import,RHUBARB,RHUBARB,identity,5,1,1870,1870,1
+import,RIBBONS,RIBBONS,identity,40,1,1870,1870,1
+import,RICE,RICE,identity,447,23,1870,1899,1
+reexport,ROBIN,ROBIN,identity,8,2,1874,1877,1
+reexport,ROSEN,ROSEN,identity,19,5,1872,1885,1
+import,ROSEN,ROSEN,identity,15,2,1872,1883,1
+import,ROSIN,ROSIN,identity,343,27,1870,1900,1
+import,Rough and in the Husk,Rough and in the Husk,identity,26,3,1870,1873,1
+export_uk,SADDLERY and HANESS,SADDLERY and HANESS,identity,19,1,1880,1880,1
+export_uk,SADDLERY and HARNESS'd),SADDLERY and HARNESS'd),identity,11,1,1892,1892,1
+import,SAGO and Flour and Meal thereof,SAGO and Flour and Meal thereof,identity,8,1,1893,1893,1
+import,SAGO and SAGO FLOUR,SAGO and SAGO FLOUR,identity,48,12,1872,1890,1
+reexport,"SAGO, and Flour or Meal thereof","SAGO, and Flour or Meal thereof",identity,382,3,1893,1899,1
+import,SALT,SALT,identity,42,10,1872,1881,1
+reexport,SALT,SALT,identity,30,9,1872,1881,1
+reexport,SALTPETRE,SALTPETRE,identity,52,10,1872,1885,1
+import,SALTPETRE,SALTPETRE,identity,8,1,1872,1872,1
+import,SALTPETRE (Nitrate of Potash) Cont,SALTPETRE (Nitrate of Potash) Cont,identity,4,1,1887,1887,1
+export_uk,SAPFLOWER,SAPFLOWER,identity,44,1,1870,1870,1
+reexport,SAPFLOWER,SAPFLOWER,identity,23,4,1872,1876,1
+reexport,"SAUCES OR CONDIMENTS, Unnume- rated","SAUCES OR CONDIMENTS, Unnumerated",dehyphen,3,1,1896,1896,1
+import,"SAUCES and CONDIMENTS, unenumerated","SAUCES and CONDIMENTS, unenumerated",identity,15,1,1893,1893,1
+import,"SAVOES or CONDIMENTS, Unenumerated","SAVOES or CONDIMENTS, Unenumerated",identity,5,1,1877,1877,1
+reexport,SAWN,SAWN,identity,14,1,1885,1885,1
+reexport,SECCADES,SECCADES,identity,8,1,1891,1891,1
+export_uk,SEEDS,SEEDS,identity,62,1,1870,1870,1
+import,SHEWMACH,SHEWMACH,identity,8,2,1874,1877,1
+reexport,SHEWMACH,SHEWMACH,identity,1,1,1877,1877,1
+export_uk,SHIPS AND BOATS,SHIPS AND BOATS,identity,163,2,1895,1900,1
+import,"SHIPS, with their Tackle, Apparel, and Furniture","SHIPS, with their Tackle, Apparel, and Furniture",identity,21,6,1872,1878,1
+export_uk,SILK MANUFACTURES,SILK MANUFACTURES,identity,2032,23,1870,1894,1
+reexport,SILK MANUFACTURES,SILK MANUFACTURES,identity,834,22,1872,1896,1
+import,SILK MANUFACTURES,SILK MANUFACTURES,identity,809,23,1870,1894,1
+export_uk,SILK MANUFACTURES'd),SILK MANUFACTURES'd),identity,146,1,1892,1892,1
+export_uk,"SILK MANUFACTURES, WHOLLY OF SILK","SILK MANUFACTURES, WHOLLY OF SILK",identity,2874,4,1893,1900,1
+export_uk,"SILK MANUFACTURES, of Silk only","SILK MANUFACTURES, of Silk only",identity,330,2,1895,1896,1
+import,"SILVER ORE, or ORE the greater part of which in value is Silver","SILVER ORE, or ORE the greater part of which in value is Silver",identity,14,1,1882,1882,1
+import,"SILVER ORE, or Ore of which the greater part is Silver","SILVER ORE, or Ore of which the greater part is Silver",identity,24,1,1888,1888,1
+import,"SILVER, Ore of, or Ore of which the greater part in Value is Silver","SILVER, Ore of, or Ore of which the greater part in Value is Silver",identity,1075,1,1894,1898,1
+reexport,"SKINE, FURS, and PELTS","SKINE, FURS, and PELTS",identity,52,1,1888,1888,1
+reexport,SKINS AND FURS,SKINS AND FURS,identity,179,1,1900,1900,1
+import,"SKINS, FURS, and PEATS","SKINS, FURS, and PEATS",identity,21,1,1889,1889,1
+import,SLATES,SLATES,identity,2311,4,1893,1899,1
+reexport,SLATES,SLATES,identity,13,2,1895,1896,1
+import,SLATES for roofing purposes,SLATES for roofing purposes,identity,7,1,1900,1900,1
+export_uk,SOAP,SOAP,identity,472,16,1875,1896,1
+import,SOAP AND SOAP POWDER,SOAP AND SOAP POWDER,identity,9,1,1900,1900,1
+import,"SPECIMENS illustrative of NATURAL SCIENCE in any Department, not otherwise enumerated","SPECIMENS illustrative of NATURAL SCIENCE in any Department, not otherwise enumerated",identity,11,1,1896,1896,1
+export_uk,SPICES,SPICES,identity,24,1,1870,1870,1
+export_uk,SPIRITS,SPIRITS,identity,398,7,1870,1896,1
+export_uk,"SPIRITS, British and Irish, Methy- lated","SPIRITS, British and Irish, Methylated",dehyphen,15,1,1895,1899,1
+export_uk,"SPIRITS, Foreign, Methylated in the United Kingdom","SPIRITS, Foreign, Methylated in the United Kingdom",identity,8,1,1895,1897,1
+reexport,"SPIRITS, Geneva","SPIRITS, Geneva",identity,1013,2,1893,1899,1
+export_uk,"SPIRITS, Perfumed, in Bond","SPIRITS, Perfumed, in Bond",identity,60,1,1897,1899,1
+reexport,"SPIRITS, Unenumerated","SPIRITS, Unenumerated",identity,1113,1,1893,1897,1
+reexport,SPRITS,SPRITS,identity,26,1,1876,1876,1
+export_uk,"SPRITS, British and Irish","SPRITS, British and Irish",identity,16,1,1884,1884,1
+reexport,"STATIONERY, other than Paper, including Ink","STATIONERY, other than Paper, including Ink",identity,17,1,1900,1900,1
+import,"STONES, MARBLE, and SLATE","STONES, MARBLE, and SLATE",identity,117,5,1888,1893,1
+reexport,"STONES, Marble and Slate, Rough, Hewn, or Manufactured","STONES, Marble and Slate, Rough, Hewn, or Manufactured",identity,33,8,1876,1886,1
+reexport,"STONES, Slabs and Marble, rough, hewn, or manufactured (other than Works of Art)","STONES, Slabs and Marble, rough, hewn, or manufactured (other than Works of Art)",identity,18,1,1900,1900,1
+export_uk,STORES,STORES,identity,25,1,1891,1891,1
+import,STRAW ENVELOPES for BOTTLES,STRAW ENVELOPES for BOTTLES,identity,4,1,1900,1900,1
+reexport,"STRAW ENVELOPES, for Bottles","STRAW ENVELOPES, for Bottles",identity,1,1,1900,1900,1
+reexport,STRAW PLATTING,STRAW PLATTING,identity,79,1,1895,1899,1
+reexport,STRAW for Agricultural Purposes,STRAW for Agricultural Purposes,identity,3,3,1888,1891,1
+import,SUCCADES,SUCCADES,identity,125,7,1888,1894,1
+reexport,SUCCADES,SUCCADES,identity,60,2,1892,1893,1
+import,SUCCADES (including Fruits and Vegetables pre- served in Sugar),SUCCADES (including Fruits and Vegetables preserved in Sugar),dehyphen,12,2,1876,1877,1
+reexport,SUCCADES (including all Fruits and Vegetables preserved in Sugar),SUCCADES (including all Fruits and Vegetables preserved in Sugar),identity,34,5,1887,1895,1
+reexport,SUGAR Refined,SUGAR Refined,identity,30,1,1882,1882,1
+import,SUGAR'd),SUGAR'd),identity,29,1,1893,1893,1
+import,"SUGAR, Refined","SUGAR, Refined",identity,49,1,1888,1888,1
+import,"SUGAR, Unrefined","SUGAR, Unrefined",identity,11,1,1888,1888,1
+import,"SUGAR, Unrefined : Total of","SUGAR, Unrefined : Total of",identity,43,1,1888,1888,1
+reexport,"SUGAR. Refined, or rendered by any process equal thereto, in Lumps and Leaves","SUGAR. Refined, or rendered by any process equal thereto, in Lumps and Leaves",identity,39,1,1888,1888,1
+reexport,SUGARADES,SUGARADES,identity,7,1,1894,1894,1
+reexport,SUGARADES (including Fruits and Vegetables preserved in Sugar),SUGARADES (including Fruits and Vegetables preserved in Sugar),identity,5,1,1885,1885,1
+import,"SUGARRefined, or rendered by any process equal thereto; 
+                    Other Sorts, including Candy","SUGARRefined, or rendered by any process equal thereto; Other Sorts, including Candy",dehyphen,99,1,1883,1883,1
+import,"Silk or Satin, plain","Silk or Satin, plain",identity,22,1,1870,1870,1
+export_uk,Slates,Slates,identity,1146,7,1893,1899,1
+reexport,Stirr,Stirr,identity,30,1,1877,1877,1
+reexport,"Sweetened or Mixed, Unenumerated","Sweetened or Mixed, Unenumerated",identity,10,2,1877,1880,1
+reexport,"Sweetened or Mixed, Un- enumerated (tested)","Sweetened or Mixed, Unenumerated (tested)",dehyphen,14,1,1890,1890,1
+reexport,TAB,TAB,identity,3,1,1896,1896,1
+import,TALLOW and STEARINE,TALLOW and STEARINE,identity,454,26,1872,1900,1
+import,TAN,TAN,identity,15,2,1877,1883,1
+reexport,TAN,TAN,identity,10,2,1874,1890,1
+import,TAR,TAR,identity,266,24,1870,1900,1
+reexport,TAR,TAR,identity,192,21,1875,1900,1
+reexport,TEA,TEA,identity,919,24,1872,1896,1
+import,TEA,TEA,identity,814,14,1872,1900,1
+export_uk,TEA,TEA,identity,32,1,1870,1870,1
+reexport,TEETH,TEETH,identity,49,8,1872,1881,1
+reexport,"TEHPENTINE, Rough","TEHPENTINE, Rough",identity,2,1,1874,1874,1
+export_uk,TELEGRAPH WIRES AND APPARATUS,TELEGRAPH WIRES AND APPARATUS,identity,21,1,1880,1880,1
+reexport,TELETH,TELETH,identity,6,1,1879,1879,1
+import,"THROWN, NOT DYED","THROWN, NOT DYED",identity,5,1,1870,1870,1
+import,TIN,TIN,identity,610,26,1870,1896,1
+reexport,TIN,TIN,identity,297,23,1872,1896,1
+export_uk,TIN,TIN,identity,73,1,1870,1870,1
+reexport,"TIN, Manufactures of, unenumerated","TIN, Manufactures of, unenumerated",identity,6,1,1895,1899,1
+reexport,TIN: Ore of,TIN: Ore of,identity,238,2,1893,1898,1
+reexport,TOTAL,TOTAL,identity,323,1,1893,1897,1
+import,TOYS AND GAMES,TOYS AND GAMES,identity,10,1,1900,1900,1
+reexport,TOYS and GAMES,TOYS and GAMES,identity,18,1,1900,1900,1
+import,TRUFFLES,TRUFFLES,identity,3,1,1870,1870,1
+import,TURMERIC,TURMERIC,identity,11,1,1870,1870,1
+import,TURPENTINE (Rough),TURPENTINE (Rough),identity,30,6,1874,1879,1
+export_uk,"TURPENTINE, OIL or SPIRIT of, and TURPENTINE SUBSTITUTE","TURPENTINE, OIL or SPIRIT of, and TURPENTINE SUBSTITUTE",identity,10,10,1872,1881,1
+reexport,"TURPENTINE, Rough","TURPENTINE, Rough",identity,9,2,1873,1875,1
+reexport,Tea: of British East India,Tea: of British East India,identity,766,1,1895,1899,1
+reexport,Tea: of China,Tea: of China,identity,185,1,1900,1900,1
+export_uk,Tobacco,Tobacco,identity,45,1,1870,1870,1
+import,"Torn up, to be used as Wool","Torn up, to be used as Wool",identity,10,1,1870,1870,1
+reexport,Total of Wine of all kinds,Total of Wine of all kinds,identity,303,1,1895,1899,1
+import,Tram,Tram,identity,16,1,1870,1870,1
+import,ULTRAMARINE,ULTRAMARINE,identity,11,1,1870,1870,1
+reexport,UNIONS,UNIONS,identity,4,2,1883,1884,1
+reexport,"Unmanufactured, Total of","Unmanufactured, Total of",identity,101,1,1893,1897,1
+import,Unrefined,Unrefined,identity,135,1,1872,1872,1
+reexport,"Unrefined, Beetroot","Unrefined, Beetroot",identity,215,1,1895,1899,1
+import,VALUE of ARTICLES imported by PARCEL POST,VALUE of ARTICLES imported by PARCEL POST,identity,5,1,1885,1885,1
+reexport,VARNISH,VARNISH,identity,78,24,1872,1896,1
+import,VARNISH,VARNISH,identity,24,3,1892,1894,1
+import,"VARNISH, not containing Spirit","VARNISH, not containing Spirit",identity,48,2,1894,1900,1
+reexport,"VARNISH, not containing Spirit","VARNISH, not containing Spirit",identity,7,2,1895,1900,1
+import,"VEGETABLES, RAW","VEGETABLES, RAW",identity,17,1,1900,1900,1
+reexport,"VEGETABLES, Raw","VEGETABLES, Raw",identity,12,1,1900,1900,1
+import,"VEGETABLES, Raw ; Uncenumerated","VEGETABLES, Raw ; Uncenumerated",identity,15,1,1883,1883,1
+reexport,"VEGETABLES, Raw, Unenumerated, not preserved in Sugar","VEGETABLES, Raw, Unenumerated, not preserved in Sugar",identity,19,3,1882,1885,1
+import,"VEGETABLES, Unenumerated","VEGETABLES, Unenumerated",identity,60,10,1872,1881,1
+reexport,"VEGETABLES, Unenumerated","VEGETABLES, Unenumerated",identity,42,9,1872,1881,1
+import,VENEERS,VENEERS,identity,3,1,1870,1870,1
+import,VINEGAR,VINEGAR,identity,309,18,1875,1900,1
+reexport,VINEGAR,VINEGAR,identity,95,23,1872,1900,1
+reexport,WATCHES,WATCHES,identity,72,15,1872,1900,1
+reexport,"WATCHES, Complete","WATCHES, Complete",identity,25,1,1899,1899,1
+reexport,WAX,WAX,identity,383,25,1872,1899,1
+reexport,WAX (including Ozokerit and Earth Wax),WAX (including Ozokerit and Earth Wax),identity,14,1,1900,1900,1
+import,"WAX, BEES'","WAX, BEES'",identity,22,1,1870,1870,1
+import,WHALE FINS,WHALE FINS,identity,10,1,1870,1870,1
+import,WHALEBONE,WHALEBONE,identity,300,5,1893,1899,1
+reexport,WHALEBONE,WHALEBONE,identity,112,4,1893,1899,1
+import,WHALEBONE (Whalefins),WHALEBONE (Whalefins),identity,220,13,1882,1894,1
+import,WHALEBONE (including Finners),WHALEBONE (including Finners),identity,18,1,1900,1900,1
+reexport,WHALEBONE (including Finners),WHALEBONE (including Finners),identity,8,1,1900,1900,1
+reexport,WHALEFINS,WHALEFINS,identity,21,11,1872,1885,1
+import,WHALEFINS,WHALEFINS,identity,20,5,1875,1879,1
+reexport,WHALEPINS,WHALEPINS,identity,4,1,1877,1877,1
+import,"WILLOWS and RODS, for Basket-making","WILLOWS and RODS, for Basket-making",identity,7,1,1900,1900,1
+reexport,"WILLOWS and RODS, for Basket-making","WILLOWS and RODS, for Basket-making",identity,6,1,1900,1900,1
+export_uk,WINE,WINE,identity,135,1,1870,1870,1
+reexport,WINE'd),WINE'd),identity,177,2,1891,1893,1
+reexport,"WINE, Red","WINE, Red",identity,735,8,1889,1896,1
+reexport,"WINE, White","WINE, White",identity,1183,8,1889,1896,1
+export_uk,WOOD,WOOD,identity,28,1,1884,1884,1
+export_uk,WOOD and TIMBER'd),WOOD and TIMBER'd),identity,72,2,1891,1892,1
+reexport,WOOD and TIMBER'd),WOOD and TIMBER'd),identity,35,1,1892,1892,1
+reexport,"WOOD and TIMBER, viz.","WOOD and TIMBER, viz.",identity,166,1,1900,1900,1
+import,WOOL'd),WOOL'd),identity,9,1,1894,1894,1
+export_uk,WOOLLEN AND WORSTED MANUFACTURES'd),WOOLLEN AND WORSTED MANUFACTURES'd),identity,358,1,1893,1893,1
+reexport,WOOLLEN MANUFACTURES,WOOLLEN MANUFACTURES,identity,1082,23,1872,1898,1
+import,WOOLLEN MANUFACTURES,WOOLLEN MANUFACTURES,identity,772,24,1870,1896,1
+export_uk,WOOLLEN MANUFACTURES,WOOLLEN MANUFACTURES,identity,40,1,1892,1892,1
+import,"WOOLLEN RAGS, applicable to other uses than Manure","WOOLLEN RAGS, applicable to other uses than Manure",identity,18,1,1896,1896,1
+reexport,"WOOLLEN RAGS, applicable to other uses than manure, torn up or not","WOOLLEN RAGS, applicable to other uses than manure, torn up or not",identity,8,1,1900,1900,1
+export_uk,WOOLLEN YARN,WOOLLEN YARN,identity,18,1,1892,1892,1
+export_uk,WOOLLEN and WORSTED YARN,WOOLLEN and WORSTED YARN,identity,552,11,1870,1881,1
+import,WOOLLEN and WORSTED YARN,WOOLLEN and WORSTED YARN,identity,16,1,1870,1870,1
+export_uk,Watches,Watches,identity,117,1,1870,1870,1
+export_uk,Woollen Yarn (Carded),Woollen Yarn (Carded),identity,531,2,1894,1896,1
+export_uk,"Worsted Stuffs, of Wool mixed with other Materials","Worsted Stuffs, of Wool mixed with other Materials",identity,121,1,1880,1880,1
+export_uk,Worsted Yarn (Combed),Worsted Yarn (Combed),identity,91,2,1876,1888,1
+reexport,YEAST,YEAST,identity,90,12,1887,1900,1
+export_uk,YEAST,YEAST,identity,9,1,1892,1892,1
+reexport,"YEAST, DRIED","YEAST, DRIED",identity,8,6,1873,1886,1
+import,"YEAST, Dried","YEAST, Dried",identity,58,11,1870,1886,1
+import,"YHART, Dried","YHART, Dried",identity,5,1,1877,1877,1
+reexport,ZINC,ZINC,identity,349,11,1872,1897,1
+export_uk,ZINC,ZINC,identity,28,1,1892,1892,1
+reexport,ZINC ORE,ZINC ORE,identity,54,1,1886,1886,1
+export_uk,ZINC'd),ZINC'd),identity,101,1,1892,1892,1
+import,ZINO,ZINO,identity,116,2,1877,1879,1
+reexport,ZINO,ZINO,identity,60,1,1885,1885,1
+reexport,"factures thereof, Unenumerated","factures thereof, Unenumerated",identity,33,3,1883,1885,1

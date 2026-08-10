@@ -1,0 +1,84 @@
+flow,smaller,smaller_rows,larger,larger_rows
+import,animals living d,59,animals living,2304
+import,horns tips and pieces of horn and hoofs,58,horns tips and pieces of horns and hoofs,2217
+import,horns and hoops,42,horns and hoofs,160
+import,metal unenumerated,24,meat unenumerated,574
+import,horns and hgofs,21,horns and hoofs,160
+import,skins furs and peats,21,skins furs and pelts,2402
+import,prints engravings and photo graphs,20,prints engravings and photographs,67
+import,meat un enumerated,19,meat unenumerated,574
+import,plants shrubs trees and flowerroots,18,plants shrubs trees and flower roots,385
+import,buttons and strws not of metal,17,buttons and studs not of metal,220
+import,vegetables raw uncenumerated,15,vegetables raw unenumerated,458
+import,manganese one of,15,manganese ore of,187
+import,farinaceous substances and manufacttures thereof unenumerated,15,farinaceous substances and manufactures thereof unenumerated,156
+import,perfumery and articles used in the manufacture thereof except perfum d spirits,14,perfumery and articles used in the manufacture thereof except perfumed spirits,125
+import,china or porcelain and earthen ware,13,china or porcelain and earthenware,436
+import,precious stones uncut,11,precious stones unset,192
+import,sugar unrefined,11,sugar refined,49
+import,fabinaceous substances and manufactures thereof,11,farinaceous substances and manufactures thereof,427
+import,cochineal including granilia and dust,7,cochineal including granilla and dust,28
+import,plated and gift ware,7,plated and gilt ware,193
+import,olje margarine,7,oleo margarine,79
+import,painter s colour and pigments,7,painters colours and pigments,250
+import,quikksilver metallic,6,quicksilver metallic,153
+import,brass bronze and metal bronze and lacquered,6,brass bronze and metal bronzed and lacquered,39
+import,art works or other than pictures,6,art works of other than pictures,211
+import,coals gulm and cinders,6,coal culm and cinders,98
+import,coals gum and cinders,5,coals culm and cinders,77
+import,savoes or condiments unenumerated,5,sauces or condiments unenumerated,307
+import,cocos or chocolate ground prepared or in any way manufactured,5,cocoa or chocolate ground prepared or in any way manufactured,176
+import,floral hydrate,4,chloral hydrate,60
+import,cocoa or chocolate ground prepared or in anyway manufactured,4,cocoa or chocolate ground prepared or in any way manufactured,176
+import,buttons and struds not of metal,4,buttons and studs not of metal,220
+import,armnish containing alcohol,1,varnish containing alcohol,122
+import,mafs and charts,1,maps and charts,11
+export_uk,coals cinders c,1266,coal cinders c,6259
+export_uk,woollen and worsted manufactures d,358,woollen and worsted manufactures,15173
+export_uk,silk manufactures d,146,silk manufactures,2032
+export_uk,machinery and mills work,104,machinery and mill work,1375
+export_uk,arms ammunition and military stores d,93,arms ammunition and military stores,3373
+export_uk,wood and timber d,72,wood and timber,13910
+export_uk,furniture household cabinet and up holstery wares,62,furniture household cabinet and upholstery wares,4990
+export_uk,apparel and stops,57,apparel and slops,2790
+export_uk,linen manufactures d,54,linen manufactures,2868
+export_uk,chemical products and preparations not specially unenumerated,51,chemical products and preparations not specially enumerated,2521
+export_uk,earthen and chinaware,46,earthen and china ware,3488
+export_uk,painters colours and materialsunenumerated,44,painters colours and materials unenumerated,6390
+export_uk,animals living d,43,animals living,4011
+export_uk,haberdashery and millinery including embrodery and needlework,43,haberdashery and millinery including embroidery and needle work,1464
+export_uk,caotchouk manufactures of,39,caoutchou manufactures of,887
+export_uk,beef and ale,35,beer and ale,1520
+export_uk,lucifer and vesta matches,29,lucifers and vesta matches,177
+export_uk,clay unmant factured,28,clay unmanufactured,665
+export_uk,pickles vinegar sauces condiments preserved fruits and confectionery d,27,pickles vinegar sauces condiments preserved fruits and confectionery,333
+export_uk,cagutchouc manufactures,26,caoutchouc manufactures,119
+export_uk,telegraph wires and apparatus,21,telegraphic wires and apparatus,2097
+export_uk,bisquit and bread,19,biscuit and bread,1580
+export_uk,saddlery and haness,19,saddlery and harness,277
+export_uk,apparel and stores,17,apparel and stops,57
+export_uk,lucefer and vesta matches,16,lucifers and vesta matches,177
+export_uk,sprits british and irish,16,spirits british and irish,2305
+export_uk,plated and gift wares,12,plated and gilt wares,360
+export_uk,saddlery and harness d,11,saddlery and harness,277
+export_uk,oleg margarine,5,oleo margarine,92
+reexport,skine furs and pelts,52,skins furs and pelts,1173
+reexport,sugar refined or rendered by any process equal thereto in lumps and leaves,39,sugar refined or rendered by any process equal thereto in lumps and loaves,508
+reexport,wood and timber d,35,wood and timber,4587
+reexport,china or porcelain and earthen ware,23,china or porcelain and earthenware,136
+reexport,bacon and hamm,17,bacon and hams,409
+reexport,fabinaceous substances and manufactures thereof unenumerated,15,farinaceous substances and manufactures thereof unenumerated,200
+reexport,faminaceous substances and manufactures thereof unenumerated,13,farinaceous substances and manufactures thereof unenumerated,200
+reexport,fruit and vegetables preserved in sugar,12,fruits and vegetables preserved in sugar,85
+reexport,animals living d,11,animals living,163
+reexport,meat uenumerated,10,meat unenumerated,605
+reexport,horn and hoops,6,horns and hoofs,87
+reexport,petroleum refined,4,petroleum unrefined,48
+reexport,sauces or condiments unnumerated,3,sauces or condiments unenumerated,924
+reexport,coffee and chicony roasted or ground mixed,3,coffee and chicory roasted or ground mixed,31
+reexport,prints engravings and photo graphs,3,prints engravings and photographs,312
+reexport,tehpentine rough,2,turpentine rough,9
+reexport,manganesse ore,1,manganese ore,25
+reexport,naphtha wood not notable,1,naphtha wood not potable,34
+reexport,manganese one of,1,manganese ore of,23
+reexport,plants shrups trees and flower roots,1,plants shrubs trees and flower roots,76
