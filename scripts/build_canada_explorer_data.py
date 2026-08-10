@@ -24,6 +24,9 @@ Applies, in this order:
     heading is one commodity rather than up to eight
   * the fused-cell repairs from reference/export_cell_repairs.csv, keyed on the
     bad value so a correction can only replace the number it came from
+  * the section-capture reassignments from reference/group_reassign.csv, which
+    move a captured article back to the group it belongs to (as_1898/99 filed
+    the whole wool section under WOOD AND TIMBER)
 
 Per commodity-year it emits the value, the number of contributing cells, and the
 share of value sitting in a printed section that closes exactly -- the
@@ -45,10 +48,11 @@ CANADA = ('British North America', 'Canada', 'Newfoundland')
 # Defects found but NOT yet repaired, surfaced on the chart so a reader is not
 # quietly misled by a series the project already knows is wrong.
 ISSUES = {
+    # the WOOD/WOOL capture is REPAIRED (reference/group_reassign.csv); what is
+    # left under WOOD in 1899 is phantom-region rows, a different defect
     'WOOD AND TIMBER': [
-        (1898, 1899, 'holds the whole WOOL section: this is woollens, not wood')],
-    'WOOLLEN AND WORSTED MANUFACTURES': [
-        (1898, 1899, 'understated: its rows were captured by WOOD AND TIMBER')],
+        (1898, 1899, 'residual: still holds "West Africa" rows filed as an '
+                     'article name; the wool capture itself is now repaired')],
     'GLASS': [(1886, 1895, 'holds GREASE, TALLOW AND ANIMAL FAT as an article')],
     'COTTON MANUFACTURES': [
         (1882, 1882, 'Thread for Sewing reads GBP605,600 at 20x its usual unit '
@@ -69,6 +73,13 @@ def load_folds(path, flow):
     if not os.path.exists(path):
         return {}
     return {r['raw_group']: r['canonical']
+            for r in csv.DictReader(open(path)) if r['flow'] == flow}
+
+
+def load_reassign(path, flow):
+    if not os.path.exists(path):
+        return {}
+    return {(r['volume'], r['from_group'], r['article']): r['to_group']
             for r in csv.DictReader(open(path)) if r['flow'] == flow}
 
 
@@ -94,8 +105,11 @@ def main():
     blocks = collections.defaultdict(list)
     n_fixed = 0
     folds = {}
+    reassign = {}
+    n_moved = 0
     for flow in flows:
         folds[flow] = load_folds('reference/group_name_folds.csv', flow)
+        reassign[flow] = load_reassign('reference/group_reassign.csv', flow)
         rows = con.execute("""
             select volume, year, coalesce(article_group,'') ag,
                    coalesce(article,'') art, coalesce(unit,'') unit,
@@ -121,7 +135,10 @@ def main():
     for (flow, vol, yr, ag, art, unit), rws in blocks.items():
         if own.get((flow, vol)) != yr:
             continue
-        canon = (folds[flow].get(ag, ag) or '(no group)')
+        tgt = reassign[flow].get((vol, ag, art))
+        if tgt:
+            n_moved += 1
+        canon = (folds[flow].get(tgt or ag, tgt or ag) or '(no group)')
         sect, buf = [], []
         for ctry, val in rws:
             if is_total(ctry):
@@ -171,7 +188,8 @@ def main():
     json.dump(out, open(a.out, 'w'), separators=(',', ':'))
     byflow = collections.Counter(c['flow'] for c in out['commodities'])
     print(f'commodities: {len(out["commodities"]):,}   '
-          f'fused-cell repairs applied: {n_fixed}')
+          f'fused-cell repairs applied: {n_fixed}   '
+          f'capture reassignments applied: {n_moved} blocks')
     for f in flows:
         v = sum(c['total'] for c in out['commodities'] if c['flow'] == f)
         print(f'   {f:>10}: {byflow[f]:>4} commodities, GBP {v:,}')
