@@ -27,6 +27,24 @@ Applies, in this order:
   * the section-capture reassignments from reference/group_reassign.csv, which
     move a captured article back to the group it belongs to (as_1898/99 filed
     the whole wool section under WOOD AND TIMBER)
+  * suppression of printed SUBTOTAL lines ingested as article names -- but only
+    where the components they total are also present (see below)
+
+SUBTOTAL ROWS INGESTED AS ARTICLES
+----------------------------------
+The Statement prints 'Total of all kinds' under a commodity that has sub-sorts,
+and the parser sometimes stores that as the ARTICLE name against a real
+destination. Summing it beside its own components double-counts. Tea re-exported
+to Canada in 1896 read GBP5,042,495 against a steady GBP300-500k for that reason
+-- and the offending row's 'value' was in fact the quantity in Lbs (4,842,458),
+so it was both a duplicate and a column shift.
+
+3,364 such rows exist across the three flows. They are NOT dropped wholesale:
+993 of them are the only reading for their commodity-year-destination, because
+the component lines did not parse, and dropping those would be data loss. A
+subtotal row is suppressed only when at least one non-subtotal row exists for
+the same (volume, year, group, destination). That leaves 2,371 suppressed,
+GBP246.5M of double counting, and keeps the 993 that carry real information.
 
 Per commodity-year it emits the value, the number of contributing cells, and the
 share of value sitting in a printed section that closes exactly -- the
@@ -43,6 +61,8 @@ import argparse, collections, csv, json, os, re
 import duckdb
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
+# an ARTICLE name that is really a printed subtotal line
+SUBTOTAL_ART = re.compile(r'^\s*(total|sum|grand total)\b', re.I)
 CANADA = ('British North America', 'Canada', 'Newfoundland')
 
 # Defects found but NOT yet repaired, surfaced on the chart so a reader is not
@@ -103,10 +123,12 @@ def main():
     flows = [f.strip() for f in a.flows.split(',') if f.strip()]
 
     blocks = collections.defaultdict(list)
+    subtotal_keys, component_keys = {}, set()
     n_fixed = 0
     folds = {}
     reassign = {}
     n_moved = 0
+    n_sub = 0
     for flow in flows:
         folds[flow] = load_folds('reference/group_name_folds.csv', flow)
         reassign[flow] = load_reassign('reference/group_reassign.csv', flow)
@@ -123,6 +145,12 @@ def main():
                 if nv is not None:
                     val, n_fixed = nv, n_fixed + 1
             blocks[(flow, vol, yr, ag, art, unit)].append((ctry, val))
+            if val is not None and ctry and not TOTAL_RE.search(ctry):
+                k = (flow, vol, yr, ag, ctry)
+                if SUBTOTAL_ART.match(art or ''):
+                    subtotal_keys.setdefault(k, []).append((ag, art, unit, ctry))
+                else:
+                    component_keys.add(k)
 
     # own-year is per flow: a volume is primary for the max year it carries
     own = {}
@@ -157,6 +185,10 @@ def main():
             for ctry, val in members:
                 if ctry not in CANADA:
                     continue
+                if (SUBTOTAL_ART.match(art or '')
+                        and (flow, vol, yr, ag, ctry) in component_keys):
+                    n_sub += 1
+                    continue          # its own components are present; skip
                 cell = series[(flow, canon)][yr]
                 cell[0] += val
                 cell[1] += 1
@@ -190,6 +222,7 @@ def main():
     print(f'commodities: {len(out["commodities"]):,}   '
           f'fused-cell repairs applied: {n_fixed}   '
           f'capture reassignments applied: {n_moved} blocks')
+    print(f'   subtotal-as-article rows suppressed: {n_sub}')
     for f in flows:
         v = sum(c['total'] for c in out['commodities'] if c['flow'] == f)
         print(f'   {f:>10}: {byflow[f]:>4} commodities, GBP {v:,}')
