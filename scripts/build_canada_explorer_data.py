@@ -61,6 +61,15 @@ import argparse, collections, csv, json, os, re
 import duckdb
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
+
+# Per-year primary-witness OVERRIDE. A volume's own maximum year sits in the
+# damaged page-edge column of the ten-column comparative layout, so for 1897
+# and 1898 the volume-of-record is the WORST witness: measured closure says
+# as_1899's mid-table reprint columns corroborate roughly 3x more value than
+# the vote-repaired edge columns (Canada 1897: 22.0% of value against 2.1%).
+# Those years are therefore read from as_1899. 1899 has no such refuge: it is
+# as_1899's own edge column, and no later volume reprints it.
+PRIMARY_OVERRIDE = {1897: 'as_1899', 1898: 'as_1899'}
 # an ARTICLE name that is really a printed subtotal line
 SUBTOTAL_ART = re.compile(r'^\s*(total|sum|grand total)\b', re.I)
 CANADA = ('British North America', 'Canada', 'Newfoundland')
@@ -103,12 +112,20 @@ def load_reassign(path, flow):
             for r in csv.DictReader(open(path)) if r['flow'] == flow}
 
 
-def load_repairs(path):
-    if not os.path.exists(path):
-        return {}
-    return {(r['volume'], r['article_group'], r['article'], r['country_raw'],
-             round(float(r['old_value']))): float(r['new_value'])
-            for r in csv.DictReader(open(path))}
+NO_REPAIR = object()
+
+
+def load_repairs(paths):
+    # blank new_value = null-out: malformed cell with no witness, drop it
+    out = {}
+    for path in paths:
+        if not os.path.exists(path):
+            continue
+        for r in csv.DictReader(open(path)):
+            out[(r['volume'], int(r['year']), r['article_group'], r['article'],
+                 r['country_raw'], round(float(r['old_value'])))] = (
+                float(r['new_value']) if r['new_value'] != '' else None)
+    return out
 
 
 def main():
@@ -118,7 +135,9 @@ def main():
     ap.add_argument('--out', default='reports/canada_explorer.json')
     a = ap.parse_args()
 
-    fix = load_repairs('reference/export_cell_repairs.csv')
+    fix = load_repairs(('reference/export_cell_repairs.csv',
+                        'reference/malformed_cell_repairs.csv',
+                        'reference/edge_column_repairs.csv'))
     con = duckdb.connect(a.db, read_only=True)
     flows = [f.strip() for f in a.flows.split(',') if f.strip()]
 
@@ -141,9 +160,9 @@ def main():
         """, [flow]).fetchall()
         for vol, yr, ag, art, unit, sq, ctry, val in rows:
             if val is not None:
-                nv = fix.get((vol, ag, art, ctry, round(val)))
-                if nv is not None:
-                    val, n_fixed = nv, n_fixed + 1
+                nv = fix.get((vol, yr, ag, art, ctry, round(val)), NO_REPAIR)
+                if nv is not NO_REPAIR:
+                    val, n_fixed = nv, n_fixed + 1   # None = null-out
             blocks[(flow, vol, yr, ag, art, unit)].append((ctry, val))
             if val is not None and ctry and not TOTAL_RE.search(ctry):
                 k = (flow, vol, yr, ag, ctry)
@@ -161,7 +180,9 @@ def main():
     series = collections.defaultdict(lambda: collections.defaultdict(
         lambda: [0.0, 0, 0.0]))
     for (flow, vol, yr, ag, art, unit), rws in blocks.items():
-        if own.get((flow, vol)) != yr:
+        primary = (vol == PRIMARY_OVERRIDE[yr] if yr in PRIMARY_OVERRIDE
+                   else own.get((flow, vol)) == yr)
+        if not primary:
             continue
         tgt = reassign[flow].get((vol, ag, art))
         if tgt:
@@ -198,8 +219,13 @@ def main():
     years = list(range(1870, 1901))
     out = {'years': years, 'flows': flows,
            'bad_years': {'1871': 'no volume covers this year',
-                         '1897': 'page-edge digit loss', '1898': 'page-edge digit loss',
-                         '1899': 'page-edge digit loss', '1900': 'page-edge digit loss'},
+                         '1897': 'read from the as_1899 reprint (vote-repaired); '
+                                 '~22% of value page-corroborated',
+                         '1898': 'read from the as_1899 reprint; '
+                                 '~20% of value page-corroborated',
+                         '1899': 'page-edge digit loss, no reprint exists to '
+                                 'repair from',
+                         '1900': 'weakly corroborated (27%)'},
            'commodities': []}
     for (flow, name), byyear in series.items():
         vals = [round(byyear[y][0]) if y in byyear else None for y in years]

@@ -37,6 +37,15 @@ import countrykey
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 
+# Per-year primary-witness OVERRIDE. A volume's own maximum year sits in the
+# damaged page-edge column of the ten-column comparative layout, so for 1897
+# and 1898 the volume-of-record is the WORST witness: measured closure says
+# as_1899's mid-table reprint columns corroborate roughly 3x more value than
+# the vote-repaired edge columns (Canada 1897: 22.0% of value against 2.1%).
+# Those years are therefore read from as_1899. 1899 has no such refuge: it is
+# as_1899's own edge column, and no later volume reprints it.
+PRIMARY_OVERRIDE = {1897: 'as_1899', 1898: 'as_1899'}
+
 
 def is_total(s):
     return bool(s) and bool(TOTAL_RE.search(s))
@@ -49,21 +58,32 @@ def verdict(members, printed):
     return 'exact01' if d <= 0.001 else ('within5' if d <= 0.05 else 'off')
 
 
-def load_repairs(path='reference/export_cell_repairs.csv'):
-    """Provenance-safe overlay of scripts/repair_fused_cells.py corrections.
+REPAIR_FILES = ('reference/export_cell_repairs.csv',
+                'reference/malformed_cell_repairs.csv',
+                'reference/edge_column_repairs.csv')
+NO_REPAIR = object()
+
+
+def load_repairs(paths=REPAIR_FILES):
+    """Provenance-safe overlay of repair_fused_cells.py and
+    repair_malformed_cells.py corrections.
 
     Keyed on the BAD value as well as the coordinates, so a correction can only
     ever replace the exact number it was derived from. If the parse changes
     upstream the key stops matching and the repair drops out rather than
-    silently overwriting a different figure.
+    silently overwriting a different figure. A BLANK new_value is a null-out:
+    the cell is malformed with no witness anywhere and must be dropped, not
+    trusted.
     """
     import csv as _csv, os as _os
     out = {}
-    if not _os.path.exists(path):
-        return out
-    for r in _csv.DictReader(open(path)):
-        out[(r['volume'], r['article_group'], r['article'], r['country_raw'],
-             round(float(r['old_value'])))] = float(r['new_value'])
+    for path in paths:
+        if not _os.path.exists(path):
+            continue
+        for r in _csv.DictReader(open(path)):
+            out[(r['volume'], int(r['year']), r['article_group'], r['article'],
+                 r['country_raw'], round(float(r['old_value'])))] = (
+                float(r['new_value']) if r['new_value'] != '' else None)
     return out
 
 
@@ -90,9 +110,9 @@ def main():
     blocks = collections.defaultdict(list)
     for vol, yr, ag, art, unit, sq, ctry, val in rows:
         if val is not None:
-            nv = fix.get((vol, ag, art, ctry, round(val)))
-            if nv is not None:
-                val, n_fixed = nv, n_fixed + 1
+            nv = fix.get((vol, yr, ag, art, ctry, round(val)), NO_REPAIR)
+            if nv is not NO_REPAIR:
+                val, n_fixed = nv, n_fixed + 1   # None = null-out, dropped
         blocks[(vol, yr, ag, art, unit)].append((ctry, val))
     own = {}
     for (vol, yr, *_) in blocks:
@@ -111,7 +131,9 @@ def main():
     dropped = [0.0, 0]
 
     for (vol, yr, ag, art, unit), rws in blocks.items():
-        if own.get(vol) != yr:
+        primary = (vol == PRIMARY_OVERRIDE[yr] if yr in PRIMARY_OVERRIDE
+                   else own.get(vol) == yr)
+        if not primary:
             continue                      # comparative reprint: not a witness
         sect, buf = [], []
         for ctry, val in rws:

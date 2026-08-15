@@ -1,0 +1,878 @@
+volume,year,flow,article_group,article,country_raw,old_value,new_value,raw_cell,witnesses
+as_1893,1893,import,"COPPER, Ore of",Regulus and Precipitate,France,502.0,5602.0,"5,02","obs:as_1897=5,602"
+as_1897,1897,import,LEAD,Pig and Sheet,Australasia : New South Wales,153.0,70238.0,"1,53","inf:as_1898=70,238; inf:as_1899=70,238; obs:as_1898=70,238; obs:as_1899=70,238"
+as_1897,1897,import,NUTS AND KERNELS,Seed,Germany,5705.0,57005.0,"57,05","obs:as_1899=57,005"
+as_1897,1897,import,NUTS AND KERNELS,Seed,Holland,4955.0,46087.0,"49,55","obs:as_1899=46,087"
+as_1897,1897,import,NUTS AND KERNELS,Seed,Belgium,25852.0,258872.0,"258,52","obs:as_1899=258,872"
+as_1897,1897,import,NUTS AND KERNELS,Seed,France,16995.0,160006.0,"169,95","obs:as_1899=160,006"
+as_1897,1897,import,NUTS AND KERNELS,Seed,British East Indies,453.0,4510.0,"4,53","obs:as_1898=4,510; obs:as_1899=4,510"
+as_1897,1897,import,NUTS AND KERNELS,Turpentine,Russia,743.0,7745.0,"7,43","obs:as_1899=7,745"
+as_1897,1897,import,NUTS AND KERNELS,Turpentine,Belgium,464.0,4094.0,"4,64","obs:as_1899=4,094"
+as_1897,1897,import,NUTS AND KERNELS,Turpentine,United States of America,51418.0,503951.0,"514,18","obs:as_1899=503,951"
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",Italy,7443.0,74454.0,"74,43","obs:as_1899=74,454"
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",China,724.0,7001.0,"7,24","obs:as_1899=7,001"
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",British East Indies : Hong Kong,2086.0,20805.0,"20,86","obs:as_1899=20,805"
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",British West India Islands,423.0,4533.0,"4,23","inf~as_1898=4,583; obs~as_1898=4,533"
+as_1897,1897,import,POTATOES,,Canary Islands,3515.0,35125.0,"35,15","obs:as_1898=35,125"
+as_1897,1897,import,POTATOES,,Malta,1517.0,16473.0,"15,17","obs:as_1898=16,473"
+as_1897,1897,import,SHELLS of all kinds,Dutch Possession in Indian Seas,United States of America : Republic of Colombia,129.0,1200.0,"1,29","obs:as_1898=1,200; obs:as_1899=1,209"
+as_1897,1895,import,SLATES,"Unrefined, Total",Denmark,3339.0,33390.0,"33,39","inf~as_1898=33,390; inf~as_1899=33,390; obs~as_1898=33,390; obs~as_1899=33,390"
+as_1897,1897,import,SLATES,"Unrefined, Total",United States of America : Chile,1123.0,1120.0,"11,23","inf~as_1898=1,120; inf~as_1899=1,120; obs~as_1898=1,120; obs~as_1899=1,120"
+as_1897,1897,import,SLATES,"Unrefined, Total",Uruguay,3524.0,35234.0,"35,24","inf~as_1899=35,234; obs~as_1898=35,234; obs~as_1899=35,234"
+as_1897,1897,import,SLATES,"In Blocks, Ingots, Bars, or Slabs",Holland,1442.0,14402.0,"14,42","inf~as_1898=14,402; obs~as_1898=14,402; obs~as_1899=14,402"
+as_1897,1897,import,SLATES,"In Blocks, Ingots, Bars, or Slabs",British East Indies : Bombay,9579.0,98710.0,"95,79","inf~as_1899=98,710"
+as_1897,1897,import,SLATES,"In Blocks, Ingots, Bars, or Slabs",Australasia : Victoria,9155.0,91376.0,"91,55","inf~as_1898=91,376; obs~as_1899=91,376"
+as_1897,1897,import,SLATES,"In Blocks, Ingots, Bars, or Slabs",Australasia : Queensland,1451.0,14671.0,"14,51","inf~as_1898=14,671; inf~as_1899=14,071; obs~as_1898=14,571; obs~as_1899=14,671"
+as_1897,1897,import,TOYS,,Germany,60122.0,601223.0,"601,22","obs:as_1898=601,223; obs:as_1899=601,223"
+as_1897,1897,import,TOYS,,Holland,21656.0,210536.0,"216,56","obs:as_1898=210,536; obs:as_1899=216,586"
+as_1897,1897,import,TOYS,,Belgium,7362.0,78622.0,"73,62","obs:as_1898=78,622; obs:as_1899=78,622"
+as_1897,1897,import,TOYS,,France,16292.0,162936.0,"162,92","obs:as_1898=162,936"
+as_1897,1897,import,TOYS,,Japan,297.0,2971.0,"2,97","obs:as_1898=2,971"
+as_1897,1897,import,WOOL,"Goats' wool, Mohair","Turkey, European",73903.0,709661.0,"739,03","inf:as_1898=700,601; inf:as_1899=700,661; obs:as_1898=709,661; obs:as_1899=709,661"
+as_1897,1897,import,WOOL,"Goats' wool, Mohair",Asiatic,3254.0,32542.0,"32,54","inf:as_1898=32,542; inf:as_1899=32,512; obs:as_1898=32,542; obs:as_1899=32,542"
+as_1897,1897,import,WOOL,"Goats' wool, Mohair",Other Foreign Countries,528.0,2028.0,"5,28","inf:as_1898=2,028; inf:as_1899=2,028; obs:as_1898=2,028; obs:as_1899=2,028"
+as_1897,1897,import,WOOL,"Goats' wool, Mohair",Cape of Good Hope,57167.0,571061.0,"571,67","inf:as_1898=571,061; inf:as_1899=571,061; obs:as_1898=571,001; obs:as_1899=571,061"
+as_1897,1897,import,WOOL,"Goats' wool, Mohair",Natal,6153.0,63358.0,"61,53","inf:as_1898=3,368; inf:as_1899=63,358; obs:as_1898=63,358; obs:as_1899=63,358"
+as_1897,1896,import,WOOL,Eastern Coast of Africa,Brazil,103.0,1035.0,"1,03","inf:as_1898=1,035; inf:as_1899=1,035; obs:as_1898=1,035; obs:as_1899=1,935"
+as_1897,1897,import,WOOL,Eastern Coast of Africa,Australasia,2047745.0,20423048.0,"20,47745","inf:as_1898=20,423,048; obs:as_1898=20,423,048; obs:as_1899=10,042"
+as_1897,1897,import,TOBACCO,Cigars,Turkey,624.0,4394.0,"6,24","obs:as_1899=4,394"
+as_1897,1897,export_uk,ALKALI,,Germany,3994.0,40904.0,"39,94","inf:as_1899=40,904; obs:as_1898=40,904; obs:as_1899=40,904"
+as_1897,1897,export_uk,ALKALI,,Holland,2552.0,27942.0,"25,52","inf:as_1899=27,942; obs:as_1898=27,942; obs:as_1899=27,942"
+as_1897,1897,export_uk,ALKALI,,Belgium,1332.0,37852.0,"13,32","inf:as_1899=37,852; obs:as_1898=37,552; obs:as_1899=37,852"
+as_1897,1897,export_uk,ALKALI,,Portugal,1205.0,12105.0,"12,05","inf:as_1899=12,105; obs:as_1898=12,105; obs:as_1899=12,105"
+as_1897,1897,export_uk,ALKALI,,Austrian Territories,1925.0,10537.0,"19,25","inf:as_1899=10,537; obs:as_1898=10,537; obs:as_1899=10,537"
+as_1897,1897,export_uk,ALKALI,,Greece,827.0,8927.0,"8,27","inf:as_1899=8,927; obs:as_1898=8,927; obs:as_1899=8,927"
+as_1897,1897,export_uk,ALKALI,,Roumania,824.0,8104.0,"8,24","inf:as_1899=8,104; obs:as_1898=8,104; obs:as_1899=8,104"
+as_1897,1897,export_uk,ALKALI,,Turkey : European,252.0,2537.0,"2,52","inf:as_1899=2,537; obs:as_1898=2,537; obs:as_1899=2,537"
+as_1897,1897,export_uk,ALKALI,,Turkey : Asiatic,740.0,7643.0,"7,40","inf:as_1899=7,643; obs:as_1898=7,643; obs:as_1899=7,643"
+as_1897,1897,export_uk,ALKALI,,Tunis,128.0,1101.0,"1,28","inf:as_1899=1,101; obs:as_1898=1,101; obs:as_1899=1,101"
+as_1897,1897,export_uk,ALKALI,Dutch,"Spanish, Philippine Islands",454.0,4494.0,"4,54","obs~as_1898=4,494; obs~as_1899=4,494"
+as_1897,1897,export_uk,ALKALI,Dutch,Japan,6563.0,68489.0,"65,63","obs~as_1898=68,489; obs~as_1899=68,489"
+as_1897,1897,export_uk,ALKALI,Dutch,United States of America : Spanish West India Islands,319.0,3149.0,"3,19","obs~as_1898=3,149; obs~as_1899=3,149"
+as_1897,1897,export_uk,ALKALI,Dutch,United States of America : Hayti and San Domingo,196.0,1006.0,"1,96","obs~as_1898=1,096; obs~as_1899=1,006"
+as_1897,1897,export_uk,"ANIMALS, Living",Unenumerated,Russia : Northern Ports,153.0,1333.0,"1,53","obs~as_1898=1,333"
+as_1897,1897,export_uk,APPAREL AND SLOPS,,Turkey : Asiatic,462.0,4022.0,"4,62","inf:as_1898=4,022; obs:as_1898=4,622; obs:as_1899=4,022"
+as_1897,1897,export_uk,APPAREL AND SLOPS,,Turkey : Cyprus,279.0,2700.0,"2,79","inf:as_1898=2,700; obs:as_1898=2,700; obs:as_1899=2,709"
+as_1897,1897,export_uk,APPAREL AND SLOPS,,Egypt,5021.0,59321.0,"50,21","inf:as_1898=59,321; obs:as_1898=59,321; obs:as_1899=29,321"
+as_1897,1897,export_uk,APPAREL AND SLOPS,West Africa,French Possessions,374.0,3729.0,"3,74","obs:as_1898=3,729; obs:as_1899=3,729"
+as_1897,1897,export_uk,APPAREL AND SLOPS,West Africa,German Possessions,340.0,5662.0,"3,40","obs:as_1898=5,662; obs:as_1899=5,062"
+as_1897,1897,export_uk,APPAREL AND SLOPS,West Africa,East Africa : Portuguese Possessions,6129.0,62250.0,"61,29","obs:as_1898=62,250; obs:as_1899=62,300"
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Java,354.0,3024.0,"3,54","obs~as_1899=3,024"
+as_1897,1897,export_uk,DYE STUFFS,"Other Sorts, Unenumerated",Turkey : European,1547.0,1897.0,"15,47","obs:as_1898=1,897; obs:as_1899=1,897"
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,Railroad — Rails (Iron and Steel),San Salvador,1764.0,17643.0,"17,64","inf~as_1899=17,043; obs~as_1899=17,643"
+as_1897,1897,export_uk,LEAD,Pig,Brazil,44.0,4192.0,"4,4","obs:as_1898=4,192; obs:as_1899=4,162"
+as_1897,1897,export_uk,LEAD,Unwrought,Channel Islands,492.0,4643.0,"4,92","inf:as_1898=4,643; inf:as_1899=4,043; obs:as_1899=4,643"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Sweden,123.0,1368.0,"1,23","inf:as_1898=1,396; inf:as_1899=1,303; obs:as_1898=1,368; obs:as_1899=1,308"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Denmark (including Iceland and Greenland),131.0,1811.0,"1,31","inf~as_1899=1,811; obs~as_1899=1,811"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Germany,823.0,8581.0,"8,23","inf:as_1898=8,581; inf:as_1899=8,581; obs:as_1898=8,581; obs:as_1899=8,581"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Holland,3723.0,37553.0,"37,23","inf:as_1898=37,553; inf:as_1899=37,553; obs:as_1898=37,553; obs:as_1899=37,553"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Belgium,138.0,10464.0,"1,38","inf:as_1898=10,464; inf:as_1899=10,404; obs:as_1898=10,464; obs:as_1899=10,464"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",France,221.0,22210.0,"2,21","inf:as_1898=22,210; inf:as_1899=22,210; obs:as_1898=22,210; obs:as_1899=22,210"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",East Africa: Portuguese Possessions,1729.0,17230.0,"17,29","inf:as_1898=17,230; inf:as_1899=17,230; obs:as_1898=17,230; obs:as_1899=17,230"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",China,202.0,2636.0,"2,02","inf:as_1898=2,636; inf:as_1899=2,636; obs:as_1898=2,636; obs:as_1899=2,636"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Republic of Colombia,944.0,9434.0,"9,44","inf:as_1898=9,434; inf:as_1899=9,434; obs:as_1898=9,434; obs:as_1899=9,434"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Peru,527.0,5257.0,"5,27","inf:as_1898=5,257; inf:as_1899=5,287; obs:as_1898=5,257; obs:as_1899=5,287"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Chile,2729.0,27160.0,"27,29","inf:as_1898=27,160; inf:as_1899=27,160; obs:as_1898=27,160; obs:as_1899=27,160"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Brazil,11173.0,111973.0,"111,73","inf:as_1898=111,973; inf:as_1899=111,973; obs:as_1898=111,973; obs:as_1899=111,973"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Argentine Republic,1121.0,14311.0,"11,21","inf:as_1898=14,311; inf:as_1899=14,311; obs:as_1898=14,311; obs:as_1899=14,311"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Other Foreign Countries,1471.0,16772.0,"14,71","inf:as_1898=16,772; inf:as_1899=10,772; obs:as_1898=16,772; obs:as_1899=16,772"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Channel Islands,3121.0,41624.0,"31,21","inf:as_1898=41,624; inf:as_1899=41,024; obs:as_1898=41,624; obs:as_1899=41,624"
+as_1897,1897,export_uk,LEAD,"Wrought, Boots and Shoes",Gibraltar,272.0,2599.0,"2,72","inf:as_1898=2,599; inf:as_1899=2,500; obs:as_1898=2,599; obs:as_1899=2,599"
+as_1897,1897,export_uk,"MUSICAL INSTRUMENTS, AND PARTS THEREOF",South Africa,British West India Islands,469.0,4490.0,"4,69","obs~as_1899=4,490"
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Pasteboard, Millboard, Cardboard, and Cards (including Playing Cards)",Australasia,2213.0,22579.0,"22,13","obs:as_1898=22,579; obs:as_1899=22,070"
+as_1897,1895,export_uk,"SILK MANUFACTURES, WHOLLY OF SILK",Broad Stuffs of Silk or Satin,France,21504.0,201301.0,"2,1504","obs:as_1898=201,301; obs:as_1899=201,301"
+as_1897,1897,export_uk,"SILK MANUFACTURES, WHOLLY OF SILK","British, Sheep and Lambs', Undressed, without the Wool",United States of America,22423.0,254571.0,"224,23","obs:as_1898=254,571"
+as_1897,1895,reexport,"FRUIT, Almonds",,Holland,851.0,8317.0,"8,51","obs:as_1898=8,317; obs:as_1899=8,317"
+as_1897,1897,reexport,FRUIT,served in Sugar,Italy,192.0,1462.0,"1,92","obs:as_1898=1,462"
+as_1897,1897,reexport,FRUIT,served in Sugar,United States of America,132.0,1337.0,"1,32","obs:as_1898=1,337"
+as_1897,1897,reexport,FRUIT,served in Sugar,British East Indies,372.0,3072.0,"3,72","obs:as_1898=3,072"
+as_1897,1897,reexport,FRUIT,served in Sugar,Canada,185.0,1465.0,"1,85","obs:as_1898=1,465"
+as_1897,1897,reexport,GALLS,,Germany,2727.0,27217.0,"27,27","obs:as_1898=27,217; obs:as_1899=27,217"
+as_1897,1897,reexport,GALLS,,Belgium,1427.0,18217.0,"14,27","obs:as_1898=18,217; obs:as_1899=18,217"
+as_1897,1897,reexport,GALLS,,United States of America : On the Atlantic,242.0,9442.0,"2,42","obs:as_1898=9,442; obs:as_1899=9,442"
+as_1897,1897,reexport,JUTE,,Sweden,3125.0,21767.0,"31,25","obs:as_1898=21,767"
+as_1897,1897,reexport,JUTE,,Norway,1248.0,12943.0,"12,48","obs:as_1898=12,943"
+as_1897,1897,reexport,JUTE,,Germany,12970.0,129743.0,"129,70","obs:as_1898=129,743"
+as_1897,1897,reexport,JUTE,,Belgium,16112.0,145122.0,"161,12","obs:as_1898=145,122"
+as_1897,1897,reexport,JUTE,,France,52912.0,510400.0,"529,12","obs:as_1898=510,400"
+as_1897,1897,reexport,JUTE,,Spain,6415.0,64145.0,"64,15","obs:as_1898=64,145"
+as_1897,1897,reexport,JUTE,,United States of America : On the Atlantic,8512.0,105103.0,"85,12","obs:as_1898=105,103"
+as_1897,1897,reexport,JUTE,,Mexico,1725.0,17726.0,"17,25","obs:as_1898=17,726"
+as_1897,1897,reexport,JUTE,,Argentine Republic,2273.0,22773.0,"22,73","obs:as_1898=22,773"
+as_1897,1897,reexport,JUTE,,British Possessions,122.0,1416.0,"1,22","obs:as_1898=1,416"
+as_1897,1897,reexport,JUTE,YARN,United States of America : On the Atlantic,122.0,1553.0,"1,22","obs:as_1898=1,553"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Sweden,322.0,3957.0,"3,22","obs:as_1898=3,957"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Germany,417.0,4179.0,"4,17","obs:as_1898=4,179"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Holland,1720.0,17999.0,"17,20","obs:as_1898=17,999"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Canary Islands,112.0,1112.0,"1,12","obs:as_1898=1,112"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Austrian Territories,122.0,1397.0,"1,22","obs:as_1898=1,397"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Greece,122.0,1352.0,"1,22","obs:as_1898=1,352"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Bulgaria,167.0,1673.0,"1,67","obs:as_1898=1,673"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Roumania,1226.0,19396.0,"12,26","obs:as_1898=19,396"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Turkey,6123.0,61363.0,"61,23","obs:as_1898=61,363"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Egypt,552.0,5342.0,"5,52","obs:as_1898=5,342"
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Tunis,722.0,7367.0,"7,22","obs:as_1898=7,367"
+as_1897,1895,reexport,"LEATHER, Undressed",,Austrian Territories,11053.0,116503.0,"110,53","obs:as_1899=116,503"
+as_1897,1897,reexport,"SAUCES or CONDIMENTS, Unenumerated",,Norway,373.0,3778.0,"3,73","obs:as_1898=3,778"
+as_1897,1897,reexport,"SAUCES or CONDIMENTS, Unenumerated",,Portugal,913.0,9176.0,"9,13","obs:as_1898=9,176"
+as_1897,1897,reexport,"SAUCES or CONDIMENTS, Unenumerated",,Spain,432.0,4352.0,"4,32","obs:as_1898=4,352"
+as_1897,1897,reexport,WOOD and TIMBER,Staves of all Dimensions,Madeira,229.0,2389.0,"2,29","inf:as_1899=2,389; obs:as_1898=2,389"
+as_1897,1897,reexport,WOOD and TIMBER,Staves of all Dimensions,Spain,1781.0,17624.0,"17,81","inf:as_1899=17,624; obs:as_1898=17,624; obs:as_1899=17,624"
+as_1897,1897,reexport,WOOD and TIMBER,Mahogany,Russia,195.0,1168.0,"1,95","inf~as_1898=1,168; inf~as_1899=1,409"
+as_1897,1897,reexport,WOOD and TIMBER,Mahogany,United States of America : On the Atlantic,2254.0,32500.0,"22,54","obs:as_1898=32,500"
+as_1897,1897,reexport,WOOD and TIMBER,Mahogany,Malta and Gozo,122.0,1522.0,"1,22","obs:as_1898=1,522; obs:as_1899=1,522"
+as_1897,1897,reexport,WOOD and TIMBER,Mahogany,Cape of Good Hope,113.0,1153.0,"1,13","obs:as_1898=1,153; obs:as_1899=1,153"
+as_1897,1897,reexport,CHICORY,West Africa,Chile,254.0,2500.0,"2,54","inf:as_1898=2,500; inf:as_1899=2,500; obs:as_1898=2,599; obs:as_1899=2,509"
+as_1897,1897,reexport,CHICORY,West Africa,Canada,412.0,2337.0,"4,12","inf:as_1898=2,337; inf:as_1899=2,337; obs:as_1898=2,337; obs:as_1899=2,337"
+as_1897,1897,reexport,CHICORY,East Coast of Africa,Portuguese Possessions,256.0,2661.0,"2,56","inf:as_1898=2,061; obs:as_1898=2,661; obs:as_1899=2,661"
+as_1897,1897,reexport,CHICORY,East Coast of Africa,Natal,608.0,6530.0,"6,08","inf:as_1898=6,530; obs:as_1898=6,530; obs:as_1899=6,530"
+as_1897,1897,reexport,SPIRITS,Rum,Germany,6425.0,64325.0,"64,25","obs:as_1899=64,325"
+as_1897,1897,reexport,SPIRITS,Rum,Holland,1154.0,11874.0,"11,54","obs:as_1899=11,874"
+as_1897,1897,reexport,SPIRITS,Rum,France,703.0,7413.0,"7,03","obs:as_1899=7,413"
+as_1897,1897,reexport,SPIRITS,Rum,Italy,245.0,2465.0,"2,45","obs:as_1899=2,465"
+as_1897,1897,reexport,SPIRITS,East Coast of Africa,Australasia : Victoria,127.0,1367.0,"1,27","obs:as_1899=1,367"
+as_1897,1897,reexport,SPIRITS,East Coast of Africa,Australasia : New South Wales,1631.0,16931.0,"16,31","obs:as_1899=16,931"
+as_1897,1897,reexport,SPIRITS,East Coast of Africa,Australasia : Queensland,212.0,2148.0,"2,12","obs:as_1899=2,148"
+as_1897,1897,reexport,TOBACCO,Total of Wine of all kinds,Holland,1723.0,17376.0,"17,23","inf:as_1899=17,376"
+as_1897,1897,reexport,TOBACCO,Total of Wine of all kinds,Belgium,1718.0,17138.0,"17,18","inf:as_1899=17,138"
+as_1897,1897,import,WOOD AND TIMBER,"Unenumerated (not being ash,     beech, birch, elm, oak, or     wainscot)",Argentine Republic,17253.0,17205.0,"172,53","obs:as_1898=17,205; obs:as_1899=17,205"
+as_1898,1898,import,AMMUNITION,"Swords, Cutlasses, Matchets, Bayonets",Italy,3425.0,31825.0,"34,25","obs~as_1899=31,825"
+as_1898,1898,import,"COPPER, ORE OF",Regulus and Precipitate,Spain,116832.0,1106012.0,"1,168,32","obs:as_1899=1,106,012"
+as_1898,1898,import,"COPPER, ORE OF",Regulus and Precipitate,United States of America,22240.0,202500.0,"222,40","obs:as_1899=202,500"
+as_1898,1898,import,"COPPER, ORE OF",Regulus and Precipitate,Peru,7236.0,72345.0,"72,36","obs:as_1899=72,345"
+as_1898,1898,import,"COPPER, ORE OF",Regulus and Precipitate,Chile,12219.0,122191.0,"122,19","obs:as_1899=122,191"
+as_1898,1898,import,"COPPER, ORE OF",Regulus and Precipitate,Argentine Republic,575.0,5760.0,"5,75","obs:as_1899=5,760"
+as_1898,1898,import,"COPPER, ORE OF",Peas,British East Indies : Bengal,2224.0,32224.0,"22,24","inf~as_1899=32,224; obs~as_1899=32,224"
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Ceylon,127.0,1270.0,"1,27","inf~as_1899=1,270"
+as_1898,1898,import,"COPPER, ORE OF",Valonia,Greece,1774.0,17074.0,"17,74","inf~as_1899=17,074; obs~as_1899=17,074"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",Norway,26225.0,305245.0,"262,25","obs:as_1899=305,245"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",Denmark,9226.0,96908.0,"92,26","obs:as_1899=96,908"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",Holland,544.0,5494.0,"5,44","obs:as_1899=5,494"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",Belgium,264.0,2064.0,"2,64","obs:as_1899=2,064"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",France,1922.0,10032.0,"19,22","obs:as_1899=10,032"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",Portugal,252.0,2842.0,"2,52","obs:as_1899=2,842"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",Spain,154.0,1504.0,"1,54","obs:as_1899=1,504"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",Italy,2239.0,20880.0,"22,39","obs:as_1899=20,880"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",United States of America : On the Atlantic,9422.0,96813.0,"94,22","obs:as_1899=96,813"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",United States of America : On the Pacific,41573.0,418739.0,"415,73","obs:as_1899=418,739"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",United States of America,95024.0,980034.0,"950,24","obs:as_1899=980,034"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",Canada : On the Atlantic,21523.0,215635.0,"215,23","obs:as_1899=215,635"
+as_1898,1898,import,FISH (including Turtle),"Cured or salted, unenumerated",Newfoundland,12025.0,120626.0,"120,25","obs:as_1899=120,626"
+as_1898,1898,import,FISH (including Turtle),Dressed or undressed,Russia,173417.0,1724147.0,"1,734,17","inf~as_1899=1,724,147; obs~as_1899=1,724,147"
+as_1898,1898,import,FISH (including Turtle),Dressed or undressed,France,763.0,7623.0,"7,63","obs~as_1899=7,623"
+as_1898,1898,import,FISH (including Turtle),"Grapes, Raw",Channel Islands,6397.0,68976.0,"63,97","inf~as_1899=68,076; obs~as_1899=68,976"
+as_1898,1898,import,FISH (including Turtle),Lemons,Spain,5044.0,50406.0,"50,44","obs~as_1899=50,406"
+as_1898,1898,import,FISH (including Turtle),"Nuts, used as Fruit",Germany,155.0,1855.0,"1,55","inf~as_1899=1,855"
+as_1898,1898,import,FISH (including Turtle),"Nuts, used as Fruit",Chile,1163.0,11688.0,"11,63","obs~as_1899=11,688"
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Raw",France,11879.0,116679.0,"118,79","inf~as_1899=116,679; obs~as_1899=116,679"
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Raw",Azores,6867.0,68697.0,"68,67","inf~as_1899=68,697; obs~as_1899=68,697"
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Raw",Italy,155.0,1555.0,"1,55","inf~as_1899=1,555; obs~as_1899=1,555"
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Dried","Turkey, Asiatic",13157.0,131757.0,"131,57","inf~as_1899=131,757"
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Dried",Morocco,233.0,2203.0,"2,33","obs~as_1899=2,203"
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Dried",Persia,225.0,2525.0,"2,25","obs~as_1899=2,525"
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Dried",United States of America,5418.0,54158.0,"54,18","inf~as_1899=54,158"
+as_1898,1898,import,GLASS,Arabic,Asiatic,487.0,4207.0,"4,87","inf~as_1899=4,207; obs~as_1899=4,207"
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs","Manufactures of Iron or Steel, unenumerated",Sweden,18009.0,180699.0,"180,09","inf~as_1899=180,609; obs~as_1899=180,699"
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs","Manufactures of Iron or Steel, unenumerated",Italy,331.0,3315.0,"3,31","obs~as_1899=3,315"
+as_1898,1898,import,NUTS AND KERNELS,Commonly used for expressing Oil therefrom,Western Coast of Africa : Portuguese Possessions,132.0,1352.0,"1,32","inf:as_1899=1,382; obs:as_1899=1,352"
+as_1898,1898,import,NUTS AND KERNELS,Commonly used for expressing Oil therefrom,Western Coast of Africa : German Possessions,425.0,4595.0,"4,25","inf:as_1899=4,595; obs:as_1899=4,595"
+as_1898,1898,import,NUTS AND KERNELS,Commonly used for expressing Oil therefrom,Western Coast of Africa : Liberia,224.0,2082.0,"2,24","inf:as_1899=2,082; obs:as_1899=2,082"
+as_1898,1898,import,NUTS AND KERNELS,Dutch Possessions in the Indian Seas,Philippine and Ladrone Islands,1562.0,15620.0,"15,62","inf~as_1899=15,020; obs~as_1899=15,620"
+as_1898,1898,import,NUTS AND KERNELS,Dutch Possessions in the Indian Seas,China,117.0,1170.0,"1,17","inf~as_1899=1,170; obs~as_1899=1,170"
+as_1898,1898,import,NUTS AND KERNELS,Dutch Possessions in the Indian Seas,Western Coast of Africa : Sierra Leone,4725.0,47255.0,"47,25","obs~as_1899=47,255"
+as_1898,1898,import,NUTS AND KERNELS,Dutch Possessions in the Indian Seas,Western Coast of Africa : The Gold Coast,343.0,3454.0,"3,43","obs~as_1899=3,454"
+as_1898,1898,import,NUTS AND KERNELS,Dutch Possessions in the Indian Seas,Western Coast of Africa : Lagos,17223.0,172929.0,"172,23","inf~as_1899=172,329; obs~as_1899=172,929"
+as_1898,1898,import,NUTS AND KERNELS,Eastern Coast of Africa,British East Indies : Madras,3765.0,37058.0,"37,65","obs~as_1899=37,058"
+as_1898,1895,import,POTATOES,,Norway,272.0,5727.0,"2,72","obs:as_1895=5,727"
+as_1898,1894,import,POTATOES,,Holland,4177.0,71560.0,"41,77","obs:as_1894=71,560"
+as_1898,1895,import,POTATOES,,Holland,20322.0,51919.0,"203,22","obs:as_1895=51,919"
+as_1898,1898,export_uk,ALKALI,,Portugal,1368.0,13608.0,"13,68","inf:as_1899=13,608; obs:as_1899=13,608"
+as_1898,1898,export_uk,ALKALI,,Spain,10763.0,107063.0,"107,63","inf:as_1899=107,063; obs:as_1899=107,063"
+as_1898,1898,export_uk,"ARMS, AMMUNITION, &c.","Cannon, Mortars, and Machine Guns",Germany,139.0,3050.0,"1,39","obs:as_1899=3,050"
+as_1898,1898,export_uk,"ARMS, AMMUNITION, &c.","Cannon, Mortars, and Machine Guns",Belgium,13222.0,130121.0,"132,22","obs:as_1899=130,121"
+as_1898,1898,export_uk,"ARMS, AMMUNITION, &c.","Cannon, Mortars, and Machine Guns",Spain,1522.0,15221.0,"15,22","obs:as_1899=15,221"
+as_1898,1898,export_uk,"ARMS, AMMUNITION, &c.","Cannon, Mortars, and Machine Guns",Roumania,647.0,6400.0,"6,47","obs:as_1899=6,400"
+as_1898,1898,export_uk,"ARMS, AMMUNITION, &c.","Cannon, Mortars, and Machine Guns",Egypt,1392.0,13602.0,"13,92","obs:as_1899=13,602"
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,East Africa: Portuguese Possessions,125.0,4249.0,"1,25","obs:as_1899=4,249"
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",Australia,Morocco,2372.0,28700.0,"23,72","obs~as_1899=28,700"
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Cape of Good Hope,3245.0,23098.0,"32,45","obs:as_1899=23,098"
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Natal,2123.0,9531.0,"21,23","obs:as_1899=9,531"
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,Republic of Colombia,164.0,1406.0,"1,64","obs:as_1899=1,406"
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,Peru,122.0,4256.0,"1,22","obs:as_1899=4,256"
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,Chile,1193.0,11995.0,"11,93","obs:as_1899=11,995"
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,Argentine Republic,2121.0,34561.0,"21,21","obs:as_1899=34,561"
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",East Africa,British East Indies : Hong Kong,306.0,3608.0,"3,06","obs:as_1899=3,608"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,British East Indies : Bombay,3335.0,33375.0,"33,35","obs:as_1899=33,375"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,British East Indies : Madras,1453.0,11034.0,"14,53","obs:as_1899=11,034"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,British East Indies : Bengal,2323.0,25343.0,"23,23","obs:as_1899=25,343"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,British East Indies : British-Burmah,975.0,9615.0,"9,75","obs:as_1899=9,615"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,British East Indies : Straits Settlements,1222.0,12515.0,"12,22","obs:as_1899=12,515"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,British East Indies : Ceylon,1793.0,17934.0,"17,93","obs:as_1899=17,934"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,British East Indies : Hong Kong,515.0,8434.0,"5,15","obs:as_1899=8,434"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Australasia : West Australia,1723.0,17005.0,"17,23","obs:as_1899=17,005"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Australasia : South Australia,3221.0,33361.0,"32,21","obs:as_1899=33,361"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Australasia : Victoria,12377.0,133717.0,"123,77","obs:as_1899=133,717"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Australasia : New South Wales,13222.0,133392.0,"132,22","obs:as_1899=133,392"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Australasia : Queensland,257.0,33607.0,"25,7","obs:as_1899=33,607"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Australasia : Tasmania,1459.0,14490.0,"14,59","obs:as_1899=14,490"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Australasia : New Zealand,11553.0,115743.0,"115,53","obs:as_1899=115,743"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Canada,12344.0,133411.0,"123,44","obs:as_1899=133,411"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Newfoundland,925.0,8267.0,"9,25","obs:as_1899=8,267"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,British West India Islands,7961.0,70924.0,"79,61","obs:as_1899=70,924"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Guiana,1493.0,14005.0,"14,93","obs:as_1899=14,005"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Sweden,3312.0,29150.0,"33,12","obs:as_1899=29,150"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Norway,2229.0,22599.0,"22,29","obs:as_1899=22,599"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Denmark,1834.0,18634.0,"18,34","obs:as_1899=18,634"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Germany,12929.0,123539.0,"129,29","obs:as_1899=123,539"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Holland,10662.0,106952.0,"106,62","obs:as_1899=106,952"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Belgium,8422.0,83730.0,"84,22","obs:as_1899=83,730"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,France,5202.0,52062.0,"52,02","obs:as_1899=52,062"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Spain,2237.0,22572.0,"22,37","obs:as_1899=22,572"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Italy,1167.0,11697.0,"11,67","obs:as_1899=11,697"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Austrian Territories,1249.0,12413.0,"12,49","obs:as_1899=12,413"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Greece,452.0,4250.0,"4,52","obs:as_1899=4,250"
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Roumania,456.0,4561.0,"4,56","obs:as_1899=4,561"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",British East Indies : Bengal,343.0,5048.0,"3,43","obs:as_1899=5,048"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",British East Indies : British Burmah,142.0,1402.0,"1,42","obs:as_1899=1,402"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",British East Indies : Straits Settlements,176.0,1700.0,"1,76","obs:as_1899=1,700"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",British East Indies : Hong Kong,532.0,5852.0,"5,32","obs:as_1899=5,852"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Australasia : Victoria,154.0,1074.0,"1,54","obs:as_1899=1,074"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Australasia : New South Wales,167.0,1470.0,"1,67","obs:as_1899=1,470"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Australasia : New Zealand,113.0,1120.0,"1,13","obs:as_1899=1,120"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Spain,1242.0,19482.0,"12,42","obs:as_1899=19,482"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Bulgaria,3158.0,31636.0,"31,58","obs:as_1899=31,636"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Roumania,8513.0,85123.0,"85,13","obs:as_1899=85,123"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",East Africa : Portuguese Possessions,5534.0,55844.0,"55,34","obs:as_1899=55,844"
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Mexico,2454.0,21531.0,"24,54","obs:as_1899=21,531"
+as_1898,1898,export_uk,LEAD,"Steam Engines, Locomotive",Spain,2521.0,23381.0,"25,21","obs:as_1899=23,381"
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",The Gold Coast,211.0,2474.0,"2,11","obs:as_1899=2,474"
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED",West Africa,Bermudas,300.0,3601.0,"3,00","obs:as_1899=3,601"
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED",West Africa,France,723.0,77510.0,"72,3","obs:as_1899=77,510"
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED",West Africa,Other Foreign Countries,1621.0,18981.0,"16,21","obs:as_1899=18,981"
+as_1898,1898,export_uk,Gold,West Africa,Italy,175.0,1738.0,"1,75","inf:as_1899=1,738; obs:as_1899=1,738"
+as_1898,1898,export_uk,Gold,West Africa,East Africa: Portuguese Possessions,289.0,2803.0,"2,89","inf:as_1899=2,803"
+as_1898,1898,export_uk,Slates,,Germany,11614.0,116181.0,"116,14","obs:as_1899=116,181"
+as_1898,1898,export_uk,Slates,"Grindstones, Millstones, and Other Sorts of Stone",Russia,1551.0,15381.0,"15,51","obs:as_1899=15,381"
+as_1898,1898,export_uk,Slates,"Grindstones, Millstones, and Other Sorts of Stone",Sweden,357.0,3976.0,"3,57","obs:as_1899=3,976"
+as_1898,1898,export_uk,Slates,"Grindstones, Millstones, and Other Sorts of Stone",Norway,372.0,3752.0,"3,72","obs:as_1899=3,752"
+as_1898,1898,export_uk,Slates,"Grindstones, Millstones, and Other Sorts of Stone",Holland,317.0,3107.0,"3,17","obs:as_1899=3,107"
+as_1898,1898,export_uk,Slates,"Grindstones, Millstones, and Other Sorts of Stone",Belgium,259.0,2250.0,"2,59","obs:as_1899=2,250"
+as_1898,1898,export_uk,Slates,"Grindstones, Millstones, and Other Sorts of Stone",France,596.0,5906.0,"5,96","obs:as_1899=5,906"
+as_1898,1898,export_uk,Slates,"Grindstones, Millstones, and Other Sorts of Stone",United States of America,3357.0,35975.0,"33,57","obs:as_1899=35,975"
+as_1898,1898,export_uk,Slates,"Grindstones, Millstones, and Other Sorts of Stone",Argentine Republic,157.0,1547.0,"1,57","obs:as_1899=1,547"
+as_1898,1898,export_uk,Slates,"Grindstones, Millstones, and Other Sorts of Stone",Cape of Good Hope,256.0,2306.0,"2,56","obs:as_1899=2,306"
+as_1898,1898,export_uk,Slates,"Grindstones, Millstones, and Other Sorts of Stone",Canada,951.0,9051.0,"9,51","obs:as_1899=9,051"
+as_1898,1898,export_uk,WOOD AND TIMBER,West Africa,East Africa (British),245.0,2487.0,"2,45","inf~as_1899=2,487"
+as_1898,1898,export_uk,WOOD AND TIMBER,West Africa,British East Indies : Ceylon,1155.0,11536.0,"11,55","obs:as_1899=11,536"
+as_1898,1898,export_uk,WOOD AND TIMBER,West Africa,Holland,4345.0,44712.0,"43,45","obs:as_1899=44,712"
+as_1898,1898,export_uk,WOOD AND TIMBER,West Africa,Spain,2019.0,23549.0,"20,19","obs:as_1899=23,549"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Belgium,1250.0,12520.0,"12,50","obs:as_1899=12,520"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",France,1210.0,12149.0,"12,10","obs:as_1899=12,149"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Portugal,249.0,2049.0,"2,49","obs:as_1899=2,049"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Italy,571.0,5711.0,"5,71","obs:as_1899=5,711"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Java,472.0,4272.0,"4,72","obs:as_1899=4,272"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",China,9452.0,94742.0,"94,52","obs:as_1899=94,742"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Japan,937.0,9317.0,"9,37","obs:as_1899=9,317"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",United States of America,6224.0,63214.0,"62,24","obs:as_1899=63,214"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Mexico,205.0,2096.0,"2,05","obs:as_1899=2,096"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Peru,315.0,3145.0,"3,15","obs:as_1899=3,145"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Uruguay,478.0,2706.0,"4,78","obs:as_1899=2,706"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Argentine Republic,585.0,5535.0,"5,85","obs:as_1899=5,535"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Cape of Good Hope,1727.0,17227.0,"17,27","obs:as_1899=17,227"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",British East Indies,1636.0,16586.0,"16,36","obs:as_1899=16,586"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Hong Kong,3524.0,45304.0,"35,24","obs:as_1899=45,304"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Australasia : West Australia,381.0,3081.0,"3,81","obs:as_1899=3,081"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Australasia : South Australia,503.0,5003.0,"5,03","obs:as_1899=5,003"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Australasia : Victoria,4169.0,41569.0,"41,69","obs:as_1899=41,569"
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",Australasia : New Zealand,2821.0,26211.0,"28,21","obs:as_1899=26,211"
+as_1898,1898,reexport,EGGS,,Holland,607.0,6007.0,"6,07","inf:as_1899=6,007"
+as_1898,1898,reexport,EGGS,,Italy,655.0,6808.0,"6,55","inf:as_1899=6,808"
+as_1898,1898,reexport,EGGS,,Other Foreign Countries,269.0,1406.0,"2,69","obs:as_1899=1,406"
+as_1898,1894,reexport,IRON,"Manufactures of Iron or Steel, Unenumerated",Australasia : South Australia,256.0,2502.0,"2,56","inf:as_1897=2,502; obs:as_1897=2,502"
+as_1898,1898,reexport,OILS,"Fish, Train or Blubber",Belgium,33.0,5436.0,"3,3","obs:as_1899=5,436"
+as_1898,1898,reexport,OILS,"Fish, Train or Blubber",France,39.0,5445.0,"3,9","obs:as_1899=5,445"
+as_1898,1898,reexport,TOBACCO,Manufactured : Cigars,Belgium,458.0,4803.0,"4,58","inf:as_1899=4,803; obs:as_1899=4,803"
+as_1899,1898,import,Horse,,Uruguay,172.0,3671.0,"1,72","inf~as_1898=3,671"
+as_1899,1897,export_uk,"ARMS, AMMUNITION, &c.",West Africa,Other Territories under British Influence,241.0,2211.0,"2,41","obs:as_1898=2,211"
+as_1876,1876,reexport,GUTTA PERCHA,,Manufactures of,52.0,,"5,2",
+as_1879,1879,export_uk,"MANURE, Unenumerated",,Spain and Canaries,12188.0,,"121,88",
+as_1883,1883,export_uk,LINEN MANUFACTURES,"Plain, Unbleached or Bleached",Sweden and Norway,1541.0,,"15,41",
+as_1884,1884,import,FRUIT,"Unenumerated, Preserved without     Sugar",Russia,2420.0,,"24,20",
+as_1886,1886,import,SPIRITS,Rum,British Guiana,1743.0,,"174,3",
+as_1889,1889,export_uk,LINEN MANUFACTURES,Thread for Sewing,United States of America : Atlantic,131959.0,,"13,1959",
+as_1891,1891,reexport,IRON,Manufactures of Unenumerated,Chile,6579.0,,"65,79",
+as_1892,1892,reexport,JUTE,,Canada,122.0,,"1,22",
+as_1892,1892,import,COCOA,COLLODION,Foreign Countries,302.0,,"3,02",
+as_1894,1894,import,SEEDS,"Unenumerated, other sorts",British East Indies : Other British Possessions,1119.0,,"11,19",
+as_1895,1895,export_uk,BISCUIT AND BREAD,,British Possessions in South Africa,2952.0,,"29,52",
+as_1896,1896,import,TEA,"White, in Casks",British Possessions in South Africa,1122.0,,"11,22",
+as_1896,1896,reexport,"MEAT, Unenumerated","Preserved, otherwise than by Salting: Beef",Other Foreign Countries,13133.0,,"131,33",
+as_1897,1897,import,LEAD,Pig and Sheet,Canada,5556.0,,"55,56",
+as_1897,1897,import,LEAD,"Manufactures, including manu- factures of linen mixed with cotton",Italy,122.0,,"1,22",
+as_1897,1897,import,NUTS AND KERNELS,Seed,United States of America : On the Atlantic,15156.0,,"151,56",
+as_1897,1897,import,NUTS AND KERNELS,Turpentine,United States of America : On the Atlantic,50396.0,,"503,96",
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",Germany,1577.0,,"15,77",
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",France,4562.0,,"45,62",
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",Austrian Territories,224.0,,"2,24",
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",Japan,422.0,,"4,22",
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",United States of America : On the Atlantic,4203.0,,"42,03",
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",British East Indies : Bombay,124.0,,"1,24",
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",British East Indies : Madras,729.0,,"7,29",
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",British East Indies : Straits Settlements,453.0,,"4,53",
+as_1897,1897,import,NUTS AND KERNELS,"Chemical, Essential or Perfumed",British East Indies : Ceylon,3791.0,,"37,91",
+as_1897,1897,import,POTATOES,,Germany,6736.0,,"67,36",
+as_1897,1897,import,POTATOES,,Holland,1554.0,,"15,54",
+as_1897,1897,import,POTATOES,,Belgium,1922.0,,"19,22",
+as_1897,1897,import,POTATOES,,France,19671.0,,"196,71",
+as_1897,1897,import,POTATOES,,Portugal,228.0,,"2,28",
+as_1897,1897,import,POTATOES,,Spain,112.0,,"1,12",
+as_1897,1897,import,SALTPETRE (Nitrate of Potash),Rape,"Turkey, European",113.0,,"1,13",
+as_1897,1895,import,SHELLS of all kinds,"Manufactures of Silk or of Silk mixed with other Materials, unenumerated",Chile,30477.0,,"3,0477",
+as_1897,1897,import,SHELLS of all kinds,"Manufactures of Silk or of Silk mixed with other Materials, unenumerated",Chile,35507.0,,"3,5507",
+as_1897,1893,import,SHELLS of all kinds,dressed,Canada,19779.0,,"1,9,779",
+as_1897,1893,import,SHELLS of all kinds,dressed,Newfoundland,13940.0,,"1,3940",
+as_1897,1897,import,SLATES,"In Blocks, Ingots, Bars, or Slabs",United States of America : Chile,5125.0,,"51,25",
+as_1897,1897,import,SLATES,"In Blocks, Ingots, Bars, or Slabs",British East Indies : Straits Settlements,121715.0,,"1,217,15",
+as_1897,1897,import,SLATES,"In Blocks, Ingots, Bars, or Slabs",Australasia : New South Wales,9987.0,,"99,87",
+as_1897,1897,import,SPIRITS,Perfumed,Belgium,1262.0,,"12,62",
+as_1897,1897,import,SPIRITS,Perfumed,Belgium,11957.0,,"119,57",
+as_1897,1897,import,SPIRITS,Perfumed,Java,3259.0,,"32,59",
+as_1897,1897,import,SPIRITS,Perfumed,China,5123.0,,"51,23",
+as_1897,1897,import,SPIRITS,Perfumed,British East Indies : Bombay and Scinde,164.0,,"1,64",
+as_1897,1897,import,TOBACCO,Cigars,United States of America,9024.0,,"90,24",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Belgium,720.0,,"7,20",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",France,102159.0,,"1,021,59",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Portugal,114392.0,,"1,143,92",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Spain,33302.0,,"333,02",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Canary Islands,311.0,,"3,11",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Italy,2158.0,,"21,58",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Turkey,152.0,,"1,52",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",United States of America : On the Atlantic,1235.0,,"12,35",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",On the Pacific,971.0,,"9,71",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",South Australia,2492.0,,"24,92",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Victoria,4348.0,,"43,48",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",New South Wales,173.0,,"1,73",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Holland,22951.0,,"229,51",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Belgium,1157.0,,"11,57",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",France,272934.0,,"2,729,34",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Madeira,3751.0,,"37,51",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",Spain,50877.0,,"508,77",
+as_1897,1897,import,TOBACCO,"White, in Bottles, Still : Champagne",On the Pacific,314.0,,"3,14",
+as_1897,1894,export_uk,"COAL, CINDERS, &c.",Dutch,Other Dutch Possessions (except Borneo and New Guinea),16313.0,,"163,13",
+as_1897,1897,import,NUTS AND KERNELS,Eastern Coast of Africa,United States of America : On the Atlantic,14223.0,,"142,23",
+as_1897,1897,export_uk,ALKALI,Dutch,China,102.0,,"1,02",
+as_1897,1897,export_uk,ALKALI,Dutch,United States of America : On the Atlantic,41923.0,,"419,23",
+as_1897,1897,export_uk,ALKALI,Dutch,United States of America : On the Pacific,2483.0,,"24,83",
+as_1897,1897,export_uk,ALKALI,Dutch,Mexico,2328.0,,"23,28",
+as_1897,1897,export_uk,"ANIMALS, Living","Bulls, Oxen, Cows, and Calves",Canada,129.0,,"1,29",
+as_1897,1897,export_uk,"ANIMALS, Living",Unenumerated,Germany,557.0,,"5,57",
+as_1897,1897,export_uk,"ANIMALS, Living",Unenumerated,Belgium,424.0,,"4,24",
+as_1897,1897,export_uk,APPAREL AND SLOPS,West Africa,Compo Free State,312.0,,"3,12",
+as_1897,1897,export_uk,APPAREL AND SLOPS,West Africa,Malaccabar,112.0,,"1,12",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,"Spanish, Philippine Islands",123.0,,"1,23",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,China,1236.0,,"12,36",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Islands in the Pacific,427.0,,"4,27",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,United States of America : On the Atlantic,2313.0,,"23,13",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,United States of America : On the Pacific,123.0,,"1,23",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,United States of America : Danish West India Islands,252.0,,"2,52",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Mexico,625.0,,"6,25",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Guatemala,243.0,,"2,43",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,San Salvador,254.0,,"2,54",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Nicaragua,123.0,,"1,23",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Costa Rica,724.0,,"7,24",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Republic of Colombia,1323.0,,"13,23",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Ecuador,159.0,,"1,59",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Peru,422.0,,"4,22",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Chile,3155.0,,"31,55",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Brazil,2583.0,,"25,83",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Uruguay,370.0,,"3,70",
+as_1897,1897,export_uk,APPAREL AND SLOPS,Dutch,Argentine Republic,1214.0,,"12,14",
+as_1897,1897,export_uk,"Cycles, and parts thereof",,Russia : Northern Ports,20912.0,,"2,0912",
+as_1897,1895,export_uk,EARTHEN AND CHINA WARE,South Africa,Cape of Good Hope,5796.0,,"57,96",
+as_1897,1897,export_uk,EARTHEN AND CHINA WARE,South Africa,Gibraltar,1053.0,,"10,53",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,Cape of Good Hope,312.0,,"3,12",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : Bombay,553.0,,"5,53",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : Bengal,593.0,,"5,93",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : Straits Settlements,273.0,,"2,73",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : Hong Kong,763.0,,"7,63",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,Australasia : Victoria,153.0,,"1,53",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,Australasia : New South Wales,362.0,,"3,62",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,Australasia : New Zealand,255.0,,"2,55",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,Possessions in Indian Seas,United States of America : On the Pacific,259.0,,"2,59",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,Possessions in Indian Seas,Mexico,245.0,,"2,45",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,Possessions in Indian Seas,Brazil,1495.0,,"14,95",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,Possessions in Indian Seas,Argentine Republic,628.0,,"6,28",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,Possessions in Indian Seas,Other Foreign Countries,598.0,,"5,98",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,Cape of Good Hope,5546.0,,"55,46",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,Natal,2199.0,,"21,99",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : Bombay,2779.0,,"27,79",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : Madras,1237.0,,"12,37",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : Bengal,5188.0,,"51,88",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : British Burmah,299.0,,"2,99",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : Straits Settlements,1116.0,,"11,16",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : Ceylon,784.0,,"7,84",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,British East Indies : Hong Kong,926.0,,"9,26",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,Germany,2392.0,,"23,92",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,Holland,268.0,,"2,68",
+as_1897,1897,export_uk,IMPLEMENTS AND TOOLS,South Africa,Brazil,2796.0,,"27,96",
+as_1897,1897,export_uk,LEAD,Pig,Denmark (including Iceland and Greenland),323.0,,"3,23",
+as_1897,1897,export_uk,LEAD,Pig,"Possessions in Indian Seas : But 1, Java",171.0,,"1,71",
+as_1897,1897,export_uk,LEAD,South Africa,Cape of Good Hope,2358.0,,"23,58",
+as_1897,1897,export_uk,LEAD,South Africa,Natal,451.0,,"4,51",
+as_1897,1897,export_uk,LEAD,South Africa,British East Indies : Bombay,1112.0,,"11,12",
+as_1897,1897,export_uk,LEAD,South Africa,British East Indies : Madras,265.0,,"2,65",
+as_1897,1897,export_uk,LEAD,South Africa,British East Indies : Bengal,1225.0,,"12,25",
+as_1897,1897,export_uk,LEAD,South Africa,British East Indies : Hong Kong,112.0,,"1,12",
+as_1897,1897,export_uk,LEAD,South Africa,Australasia : South Australia,211.0,,"2,11",
+as_1897,1897,export_uk,LEAD,South Africa,Australasia : Victoria,2025.0,,"20,25",
+as_1897,1897,export_uk,LEAD,South Africa,Australasia : New South Wales,1136.0,,"11,36",
+as_1897,1897,export_uk,LEAD,South Africa,Australasia : New Zealand,2125.0,,"21,25",
+as_1897,1897,export_uk,LEAD,South Africa,British West India Islands,1223.0,,"12,23",
+as_1897,1897,export_uk,LEAD,South Africa,Guiana,159.0,,"1,59",
+as_1897,1897,export_uk,LEAD,West Africa,The Gold Coast,174.0,,"1,74",
+as_1897,1897,export_uk,LEAD,West Africa,Lagos,119.0,,"1,19",
+as_1897,1897,export_uk,LEAD,South Africa,Austrian Territories,420.0,,"4,20",
+as_1897,1897,export_uk,"MUSICAL INSTRUMENTS, AND PARTS THEREOF",South Africa,Guinea,143.0,,"1,43",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australasia : South Australia,369.0,,"3,69",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australasia : Victoria,2165.0,,"21,65",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australasia : New South Wales,1259.0,,"12,59",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australasia : New Zealand,1412.0,,"14,12",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Canada,122.0,,"1,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Newfoundland,315.0,,"3,15",
+as_1897,1894,reexport,"CORN; Grain, Meal, and Flour",Barley,Cape of Good Hope,17.0,,"1,7",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Pasteboard, Millboard, Cardboard, and Cards (including Playing Cards)",South Africa: Cape of Good Hope,424.0,,"4,24",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Pasteboard, Millboard, Cardboard, and Cards (including Playing Cards)",British East India,352.0,,"3,52",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Russia,224.0,,"2,24",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Sweden,253.0,,"2,53",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Norway,125.0,,"1,25",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Holland,302.0,,"3,02",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Belgium,872.0,,"8,72",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Spain,174.0,,"1,74",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",United States of America,3475.0,,"34,75",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Brazil,226.0,,"2,26",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Argentine Republic,292.0,,"2,92",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Other Foreign Countries,1454.0,,"14,54",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Channel Islands,527.0,,"5,27",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Cape of Good Hope,2514.0,,"25,14",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Natal,723.0,,"7,23",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Sweden,150.0,,"1,50",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Norway,202.0,,"2,02",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Denmark (including Iceland and Greenland),603.0,,"6,03",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Germany,1827.0,,"18,27",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Holland,450.0,,"4,50",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Belgium,759.0,,"7,59",
+as_1897,1893,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Spain,125.0,,"1,25",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Chile,428.0,,"4,28",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Argentine Republic,422.0,,"4,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Other Foreign Countries,2022.0,,"20,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Channel Islands,656.0,,"6,56",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Natal,1127.0,,"11,27",
+as_1897,1893,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australia : Victoria,2122.0,,"21,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australia : Queensland,322.0,,"3,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australia : Tasmania,122.0,,"1,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australia : New Zealand,2222.0,,"22,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Canada,422.0,,"4,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,British West India Islands,222.0,,"2,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,"Spain, Canary Islands",422.0,,"4,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Channel Islands,122.0,,"1,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Gibraltar,422.0,,"4,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Malta and Gozo,722.0,,"7,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Cape of Good Hope,6235.0,,"62,35",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Natal,3132.0,,"31,32",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,East Africa : Other Territories under British Influence,457.0,,"4,57",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Mauritius and Dependencies,332.0,,"3,32",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,British East Indies : British Burma,740.0,,"7,40",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,British East Indies : Straits Settlements,395.0,,"3,95",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,British East Indies : Hong Kong,263.0,,"2,63",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australia : West Australia,1180.0,,"11,80",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australia : South Australia,1855.0,,"18,55",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australia : Victoria,2383.0,,"23,83",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australia : New South Wales,2486.0,,"24,86",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australia : Queensland,1125.0,,"11,25",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Australia : New Zealand,2325.0,,"23,25",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Canada,1400.0,,"14,00",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Newfoundland,242.0,,"2,42",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Bermudas,172.0,,"1,72",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,British West India Islands,1622.0,,"16,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Honduras,173.0,,"1,73",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Guiana,429.0,,"4,29",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Falkland Islands,122.0,,"1,22",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Holland,1242.0,,"12,42",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Belgium,1192.0,,"11,92",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,France,3732.0,,"37,32",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,United States of America,4658.0,,"46,58",
+as_1897,1897,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",South Africa,Other Foreign Countries,825.0,,"8,25",
+as_1897,1897,export_uk,"SILK MANUFACTURES, WHOLLY OF SILK",Bread Stuffs,Canada,1559.0,,"15,59",
+as_1897,1894,export_uk,WOOLLEN AND WORSTED MANUFACTURES,"Woollen Tissues, Light, Broad, mixed with other Materials",Mexico,251.0,,"2,51",
+as_1897,1897,export_uk,Woollen and Worsted Manufactures,,"Flannels and Carpets . . . . . "" """,500.0,,"5,00",
+as_1897,1897,reexport,"GLASS, Window and German Sheet, including Shades and Cyinders","Manufactures, unenumerated",Sweden,1412.0,,"14,12",
+as_1897,1897,reexport,"GLASS, Window and German Sheet, including Shades and Cyinders","Manufactures, unenumerated",Germany,228.0,,"2,28",
+as_1897,1897,reexport,"GLASS, Window and German Sheet, including Shades and Cyinders","Manufactures, unenumerated",Holland,2133.0,,"21,33",
+as_1897,1897,reexport,"GLASS, Window and German Sheet, including Shades and Cyinders","Manufactures, unenumerated",Italy,724.0,,"7,24",
+as_1897,1897,reexport,"GLASS, Window and German Sheet, including Shades and Cyinders","Manufactures, unenumerated",Australasia,277.0,,"2,77",
+as_1897,1897,reexport,"GLASS, Window and German Sheet, including Shades and Cyinders","Manufactures, unenumerated",Sweden,657.0,,"6,57",
+as_1897,1897,reexport,"GLASS, Window and German Sheet, including Shades and Cyinders","Manufactures, unenumerated",Germany,261.0,,"2,61",
+as_1897,1897,reexport,"GLASS, Window and German Sheet, including Shades and Cyinders","Manufactures, unenumerated",Holland,3763.0,,"37,63",
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",United States of America,8703.0,,"87,03",
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Spanish West India Islands,614.0,,"6,14",
+as_1897,1897,reexport,JUTE,"Manufactures of, including Piece Goods, Sacks, and Bags",Danish West India Islands,122.0,,"1,22",
+as_1897,1897,reexport,"SAUCES or CONDIMENTS, Unenumerated",,Holland,2722.0,,"27,22",
+as_1897,1897,reexport,"SAUCES or CONDIMENTS, Unenumerated",,United States of America : On the Atlantic,1968.0,,"19,68",
+as_1897,1897,reexport,WOOD and TIMBER,Mahogany,Holland,1129.0,,"11,29",
+as_1897,1897,reexport,WOOD and TIMBER,Mahogany,Belgium,1213.0,,"12,13",
+as_1897,1897,reexport,WOOD and TIMBER,Unenumerated,Germany,1814.0,,"18,14",
+as_1897,1897,reexport,WOOD and TIMBER,Unenumerated,France,944.0,,"9,44",
+as_1897,1897,reexport,WOOD and TIMBER,Unenumerated,United States of America,2277.0,,"22,77",
+as_1897,1897,reexport,SPIRITS,East Coast of Africa,Portuguese Possessions,154.0,,"1,54",
+as_1897,1897,reexport,SPIRITS,East Coast of Africa,Channel Islands,129.0,,"1,29",
+as_1897,1897,reexport,SPIRITS,East Coast of Africa,Cape of Good Hope,127.0,,"1,27",
+as_1897,1897,reexport,TOBACCO,Negrohead,Russia,358.0,,"3,58",
+as_1897,1897,reexport,TOBACCO,Negrohead,Norway,159.0,,"1,59",
+as_1897,1897,reexport,TOBACCO,Negrohead,Holland,693.0,,"6,93",
+as_1897,1897,reexport,TOBACCO,Negrohead,Belgium,371.0,,"3,71",
+as_1897,1897,reexport,TOBACCO,Negrohead,East Coast of Africa: Portuguese Possessions,312.0,,"3,12",
+as_1897,1897,reexport,TOBACCO,Negrohead,Java,123.0,,"1,23",
+as_1897,1897,reexport,TOBACCO,Negrohead,Japan,203.0,,"2,03",
+as_1897,1897,reexport,TOBACCO,Negrohead,Costa Rica,109.0,,"1,09",
+as_1897,1897,reexport,TOBACCO,Negrohead,Chile,436.0,,"4,36",
+as_1897,1897,reexport,TOBACCO,Negrohead,Brazil,249.0,,"2,49",
+as_1897,1897,reexport,TOBACCO,"White, in Bottles, Sparkling Saumur",Russia,574.0,,"5,74",
+as_1897,1897,reexport,TOBACCO,"White, in Bottles, Sparkling Saumur",Sweden,122.0,,"1,22",
+as_1897,1897,reexport,TOBACCO,"White, in Bottles, Sparkling Saumur",France,115.0,,"1,15",
+as_1897,1897,reexport,TOBACCO,"White, in Bottles, Sparkling Saumur",Egypt,173.0,,"1,73",
+as_1897,1897,reexport,TOBACCO,"White, in Bottles, Sparkling Saumur",East Coast of Africa: Portuguese Possessions,122.0,,"1,22",
+as_1897,1897,reexport,TOBACCO,"White, in Bottles, Sparkling Saumur",China,223.0,,"2,23",
+as_1897,1897,reexport,TOBACCO,"White, in Bottles, Sparkling Saumur",Japan,147.0,,"1,47",
+as_1897,1897,reexport,TOBACCO,"White, in Bottles, Sparkling Saumur",Mexico,132.0,,"1,32",
+as_1897,1897,reexport,TOBACCO,"White, in Bottles, Sparkling Saumur",Republic of Colombia,122.0,,"1,22",
+as_1897,1897,reexport,TOBACCO,"White, in Bottles, Sparkling Saumur",Chile,423.0,,"4,23",
+as_1897,1893,export_uk,CHEESE,South Africa,British East Indies : Madras,21032.0,,"2,1032",
+as_1898,1898,import,"COPPER, ORE OF","Cables (not of Iron), Twine, and Cable Yarn",Tunis,112.0,,"1,12",
+as_1898,1898,import,"COPPER, ORE OF",Peas,Holland,4893.0,,"48,93",
+as_1898,1898,import,"COPPER, ORE OF",Peas,United States of America,17286.0,,"172,86",
+as_1898,1898,import,"COPPER, ORE OF",Peas,Canada,5026.0,,"50,26",
+as_1898,1898,import,"COPPER, ORE OF",Beans (not Kidney or French),Russia : Northern Ports,144.0,,"14,4",
+as_1898,1898,import,"COPPER, ORE OF",Beans (not Kidney or French),Russia : Southern Ports,217.0,,"21,7",
+as_1898,1898,import,"COPPER, ORE OF",Beans (not Kidney or French),Portugal,625.0,,"6,25",
+as_1898,1898,import,"COPPER, ORE OF",Beans (not Kidney or French),Cyprus,632.0,,"6,32",
+as_1898,1898,import,"COPPER, ORE OF",Beans (not Kidney or French),Morocco,557.0,,"5,57",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Bombay,3290.0,,"32,90",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Belgium,765.0,,"7,65",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Germany,4545.0,,"45,45",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Holland,10457.0,,"104,57",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Belgium,32935.0,,"329,35",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,France,3122.0,,"31,22",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,United States of America,23325.0,,"233,25",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Madras,2962.0,,"29,62",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Canada,524.0,,"5,24",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Holland,18127.0,,"181,27",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Belgium,19762.0,,"197,62",
+as_1898,1898,import,"COPPER, ORE OF",Yarn,Other Foreign Countries,2524.0,,"25,24",
+as_1898,1898,import,"COPPER, ORE OF",Sumach,Italy,1272.0,,"12,72",
+as_1898,1898,import,"COPPER, ORE OF",Valonia,Asiatic,2424.0,,"24,24",
+as_1898,1898,import,FISH (including Turtle),Dressed or undressed,Holland,11652.0,,"116,52",
+as_1898,1898,import,FISH (including Turtle),Dressed or undressed,Belgium,79144.0,,"791,44",
+as_1898,1898,import,FISH (including Turtle),"Cherries, Raw",Holland,2054.0,,"20,54",
+as_1898,1898,import,FISH (including Turtle),"Cherries, Raw",France,17622.0,,"176,22",
+as_1898,1898,import,FISH (including Turtle),"Grapes, Raw",Portugal,953.0,,"9,53",
+as_1898,1898,import,FISH (including Turtle),"Grapes, Raw",Spain,37513.0,,"375,13",
+as_1898,1898,import,FISH (including Turtle),Lemons,Germany,491.0,,"4,91",
+as_1898,1898,import,FISH (including Turtle),Lemons,Italy,37313.0,,"373,13",
+as_1898,1898,import,FISH (including Turtle),"Nuts, used as Fruit",Holland,322.0,,"3,22",
+as_1898,1898,import,FISH (including Turtle),"Nuts, used as Fruit",France,13424.0,,"134,24",
+as_1898,1898,import,FISH (including Turtle),"Nuts, used as Fruit",Spain,14940.0,,"149,40",
+as_1898,1898,import,FISH (including Turtle),"Nuts, used as Fruit",Italy,2993.0,,"29,93",
+as_1898,1898,import,FISH (including Turtle),"Nuts, used as Fruit","Turkey, European",754.0,,"7,54",
+as_1898,1898,import,FISH (including Turtle),"Nuts, used as Fruit",Brazil,7735.0,,"77,35",
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Raw",Portugal,629.0,,"6,29",
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Raw",Madeira,3069.0,,"30,69",
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Raw",Spain,14332.0,,"143,32",
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Raw",United States of America,215.0,,"2,15",
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Raw",Channel Islands,2485.0,,"24,85",
+as_1898,1898,import,FISH (including Turtle),"Unenumerated, Dried",Egypt,333.0,,"3,33",
+as_1898,1898,import,GLASS,"Ore of, or Ore of which the greater part in Value is Gold",Australasia : West Australia,1520.0,,"15,20",
+as_1898,1898,import,GLASS,"Ore of, or Ore of which the greater part in Value is Gold",Australasia : South Australia,705.0,,"70,5",
+as_1898,1898,import,GLASS,"Ore of, or Ore of which the greater part in Value is Gold",Australasia : Victoria,922.0,,"9,22",
+as_1898,1898,import,GLASS,"Ore of, or Ore of which the greater part in Value is Gold",Australasia : New South Wales,16518.0,,"165,18",
+as_1898,1898,import,GLASS,Arabic,France,3173.0,,"31,73",
+as_1898,1898,import,GLASS,Arabic,Egypt,1222.0,,"12,22",
+as_1898,1898,import,GLASS,Arabic,Persia,1212.0,,"12,12",
+as_1898,1898,import,GLASS,Arabic,Western Coast of Africa : Niger Protectorate,152.0,,"1,52",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,Aden and Dependencies,923.0,,"9,23",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,British East Indies : Bombay,2273.0,,"22,73",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,British East Indies : Madras,157.0,,"1,57",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,Australasia : South Australia,211.0,,"2,11",
+as_1898,1898,import,GLASS,Australia,Russia : Northern Ports,3632.0,,"36,32",
+as_1898,1898,import,GLASS,Australia,Holland,161.0,,"1,61",
+as_1898,1898,import,GLASS,Australia,China,626.0,,"6,26",
+as_1898,1898,import,GLASS,Australia,United States of America,632.0,,"6,32",
+as_1898,1898,import,GLASS,Australia,Uruguay,127.0,,"1,27",
+as_1898,1898,import,GLASS,Australia,Germany,786.0,,"7,86",
+as_1898,1898,import,GLASS,Australia,Belgium,523.0,,"5,23",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,Uruguay,224.0,,"2,24",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,Western Coast of Africa : Sierra Leone,122.0,,"1,22",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,Western Coast of Africa : Cape of Good Hope,43252.0,,"432,52",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,Western Coast of Africa : Natal,20292.0,,"202,92",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,Aden and Dependencies,151.0,,"1,51",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,British East Indies : Bombay,3355.0,,"33,55",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,British East Indies : Madras,1422.0,,"14,22",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,British East Indies : Bengal,24573.0,,"245,73",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,British East Indies : Burmah,2505.0,,"25,05",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,British East Indies : Straits Settlements,9411.0,,"94,11",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,Australasia : New South Wales,2477.0,,"24,77",
+as_1898,1898,import,GLASS,Eastern Coast of Africa,Australasia : British West India Islands,119.0,,"1,19",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs",Cycles and parts thereof,Germany,1363.0,,"13,63",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs",Cycles and parts thereof,Holland,1279.0,,"12,79",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs",Cycles and parts thereof,Belgium,1325.0,,"13,25",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs",Cycles and parts thereof,France,2731.0,,"27,31",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs",Cycles and parts thereof,United States of America,54365.0,,"543,65",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs",Machinery,Canada,3427.0,,"34,27",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs","Manufactures of Iron or Steel, unenumerated",Germany,48204.0,,"482,04",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs","Manufactures of Iron or Steel, unenumerated",Holland,89625.0,,"896,25",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs","Manufactures of Iron or Steel, unenumerated",Belgium,59361.0,,"593,61",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs","Manufactures of Iron or Steel, unenumerated",France,6009.0,,"60,09",
+as_1898,1898,import,"HORNS, tips and pieces of Horns and Hoofs","Manufactures of Iron or Steel, unenumerated",United States of America,63262.0,,"632,62",
+as_1898,1898,import,NUTS AND KERNELS,Dutch Possessions in the Indian Seas,Islands in the Pacific,1773.0,,"17,73",
+as_1898,1898,import,NUTS AND KERNELS,Dutch Possessions in the Indian Seas,Western Coast of Africa : Gambia,1223.0,,"12,23",
+as_1898,1898,import,NUTS AND KERNELS,Dutch Possessions in the Indian Seas,Western Coast of Africa : Niger Protectorate,7252.0,,"72,52",
+as_1898,1898,import,NUTS AND KERNELS,Eastern Coast of Africa,British East Indies : Straits Settlements,1473.0,,"14,73",
+as_1898,1898,import,NUTS AND KERNELS,Eastern Coast of Africa,British East Indies : Ceylon,5765.0,,"57,65",
+as_1898,1898,import,NUTS AND KERNELS,Eastern Coast of Africa,Australasia : New Zealand,389.0,,"3,89",
+as_1898,1898,import,PAPER,Hangings,Holland,6396.0,,"63,96",
+as_1898,1898,import,PAPER,Hangings,Belgium,8358.0,,"83,58",
+as_1898,1898,import,PAPER,Hangings,France,5124.0,,"51,24",
+as_1898,1898,import,PAPER,Hangings,Japan,1368.0,,"13,68",
+as_1898,1898,import,PAPER,Hangings,United States of America,3193.0,,"31,93",
+as_1898,1898,import,PAPER,Hangings,Sweden,506.0,,"5,06",
+as_1898,1898,import,PAPER,Hangings,Germany,5506.0,,"55,06",
+as_1898,1898,import,PAPER,Hangings,Holland,46300.0,,"463,00",
+as_1898,1898,import,PAPER,Hangings,Austrian Territories,1018.0,,"10,18",
+as_1898,1898,import,PAPER,Hangings,United States of America,5553.0,,"55,53",
+as_1898,1895,import,POTATOES,,Denmark,472.0,,"4,72",
+as_1898,1894,import,POTATOES,,Australasia,872.0,,"8,72",
+as_1898,1898,reexport,"CHINA OR PORCELAIN, AND EARTHENWARE",,Canada,1252.0,,"12,52",
+as_1898,1898,export_uk,"ARMS, AMMUNITION, &c.",East Africa,Chile,1645.0,,"16,45",
+as_1898,1898,export_uk,"ARMS, AMMUNITION, &c.",East Africa,Brazil,2173.0,,"21,73",
+as_1898,1898,export_uk,"ARMS, AMMUNITION, &c.",East Africa,Argentine Republic,1766.0,,"17,66",
+as_1898,1898,export_uk,"ARMS, AMMUNITION, &c.",East Africa,Italy,234.0,,"2,34",
+as_1898,1898,export_uk,"ARMS, AMMUNITION, &c.",East Africa,Egypt,355.0,,"3,55",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,British West India Islands,305.0,,"3,05",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Portugal,1730.0,,"17,30",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Egypt,422.0,,"4,22",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Gibraltar,557.0,,"5,57",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Malta and Gozo,459.0,,"4,59",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,China,2122.0,,"21,22",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Costa Rica,423.0,,"4,23",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Republic of Colombia,324.0,,"3,24",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Chile,418.0,,"4,18",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Brazil,122.0,,"1,22",
+as_1898,1898,export_uk,"BRASS, AND MANUFACTURES OF, not being Ordnance",West Africa,Malta and Gozo,154.0,,"1,54",
+as_1898,1898,export_uk,CARRIAGES,"Railway Carriages for Passengers, and parts thereof",British East Indies : British Burmah,2172.0,,"21,72",
+as_1898,1898,export_uk,CARRIAGES,"Railway Carriages for Passengers, and parts thereof",British East Indies : Straits Settlements,428.0,,"4,28",
+as_1898,1898,export_uk,CARRIAGES,"Railway Carriages for Passengers, and parts thereof",Australasia : Victoria,432.0,,"4,32",
+as_1898,1897,export_uk,CARRIAGES,"Other Sorts, and parts thereof (including Carts)",Rumania,113.0,,"1,13",
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,Brazil,1730.0,,"17,30",
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,The Gold Coast,339.0,,"3,39",
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,Lagos,125.0,,"1,25",
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,Niger Protectorate,141.0,,"1,41",
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,Cape of Good Hope,2404.0,,"24,04",
+as_1898,1898,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,Natal,1197.0,,"11,97",
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Northern Ports,6191.0,,"61,91",
+as_1898,1898,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle- work",West Africa,Southern Ports,1479.0,,"14,79",
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Russia,7923.0,,"79,23",
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Sweden,15419.0,,"154,19",
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Norway,2727.0,,"27,27",
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Denmark,5524.0,,"55,24",
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Italy,1437.0,,"14,37",
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Egypt,14925.0,,"149,25",
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",China,5126.0,,"51,26",
+as_1898,1898,export_uk,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Japan,1325.0,,"13,25",
+as_1898,1898,export_uk,LEAD,East Africa,British East Indies,2430.0,,"24,30",
+as_1898,1898,export_uk,LEAD,Agricultural,Russia : Southern Ports,4889.0,,"48,89",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Holland,192.0,,"1,92",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Spain,143.0,,"1,43",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Brazil,155.0,,"1,55",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Cape of Good Hope,603.0,,"6,03",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Natal,161.0,,"1,61",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Australasia,1503.0,,"15,03",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",British West India Islands,481.0,,"4,81",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Russia,343.0,,"3,43",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Sweden,323.0,,"3,23",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Norway,425.0,,"4,25",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Denmark,1055.0,,"10,55",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Germany,2078.0,,"20,78",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Holland,4367.0,,"43,67",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",France,1555.0,,"15,55",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Portugal,118.0,,"1,18",
+as_1898,1894,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED",West Africa,British West India Islands,1722.0,,"17,22",
+as_1898,1898,export_uk,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED",West Africa,Honduras,151.0,,"1,51",
+as_1898,1898,export_uk,Gold,Silver,Germany,775.0,,"7,75",
+as_1898,1898,export_uk,Gold,Silver,United States of America,724.0,,"7,24",
+as_1898,1898,export_uk,Gold,Silver,Channel Islands,342.0,,"3,42",
+as_1898,1898,export_uk,Gold,Silver,Cape of Good Hope,346.0,,"3,46",
+as_1898,1898,export_uk,WOOD AND TIMBER,West Africa,Cape of Good Hope,2951.0,,"29,51",
+as_1898,1898,export_uk,WOOD AND TIMBER,West Africa,Natal,1249.0,,"12,49",
+as_1898,1898,export_uk,WOOD AND TIMBER,West Africa,British East Indies : Bengal,1555.0,,"15,55",
+as_1898,1898,export_uk,WOOD AND TIMBER,West Africa,British West India Islands,164.0,,"1,64",
+as_1898,1898,export_uk,WOOD AND TIMBER,West Africa,Guiana,199.0,,"1,99",
+as_1898,1898,export_uk,WOOD AND TIMBER,West Africa,Turkey,366.0,,"3,66",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",British East Indies : Bengal,1581.0,,"15,81",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",Australasia : Victoria,877.0,,"8,77",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",Canada,10210.0,,"102,10",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",British West India Islands,230.0,,"2,30",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",Russia,183.0,,"1,83",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",Denmark,128.0,,"1,28",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",Belgium,871.0,,"8,71",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",France,223.0,,"2,23",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",Italy,217.0,,"2,17",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",United States of America,1763.0,,"17,63",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",Argentine Republic,158.0,,"1,58",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",Other Foreign Countries,474.0,,"4,74",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",Cape of Good Hope,518.0,,"5,18",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",British East Indies,340.0,,"3,40",
+as_1898,1898,export_uk,WOOD AND TIMBER,"Worsted Tissues, Coatings, Broad, mixed with other Materials",Canada,1355.0,,"13,55",
+as_1898,1894,export_uk,PARCEL POST,Articles Exported,Germany,132376.0,,"1,32,376",
+as_1898,1895,export_uk,PARCEL POST,Articles Exported,Germany,132102.0,,"1,32,102",
+as_1898,1894,export_uk,PARCEL POST,Articles Exported,France,144155.0,,"1,44,155",
+as_1898,1895,export_uk,PARCEL POST,Articles Exported,France,191190.0,,"1,91,190",
+as_1898,1898,reexport,EGGS,,Cape of Good Hope,172.0,,"1,72",
+as_1898,1897,export_uk,CARRIAGES,"Railway Carriages for Passengers, and parts thereof",Australia : Victoria,394.0,,"3,94",
+as_1898,1898,reexport,EGGS,,Canada,2256.0,,"22,56",
+as_1898,1898,reexport,EGGS,,United States of America : On the Atlantic,2422.0,,"24,22",
+as_1898,1898,reexport,EGGS,,Cape of Good Hope,525.0,,"5,25",
+as_1898,1898,reexport,EGGS,,Canada,546.0,,"5,46",
+as_1898,1898,reexport,EGGS,,United States of America : On the Atlantic,145.0,,"1,45",
+as_1898,1898,reexport,"MUTTON, FRESH",,Channel Islands,225.0,,"2,25",
+as_1898,1898,reexport,NUTS and KERNELS,Commonly used for expressing oil therefrom,Russia,36.0,,"3,6",
+as_1898,1898,reexport,NUTS and KERNELS,Commonly used for expressing oil therefrom,Denmark,47.0,,"4,7",
+as_1898,1898,reexport,NUTS and KERNELS,Commonly used for expressing oil therefrom,Germany,92.0,,"9,2",
+as_1898,1898,reexport,NUTS and KERNELS,Commonly used for expressing oil therefrom,Belgium,52.0,,"5,2",
+as_1898,1898,reexport,NUTS and KERNELS,Commonly used for expressing oil therefrom,Portugal,22.0,,"2,2",
+as_1898,1898,reexport,NUTS and KERNELS,"Other Sorts, unenumerated (not fruit)",United States of America : On the Atlantic,127.0,,"12,7",
+as_1898,1898,reexport,NUTS and KERNELS,"Other Sorts, unenumerated (not fruit)",British Possessions,42.0,,"4,2",
+as_1898,1894,reexport,SILK,Seal Skins,Germany,24428.0,,"2,4428",
+as_1898,1898,reexport,SILK,Cinnamon,Other Foreign Countries,379.0,,"3,79",
+as_1898,1898,reexport,TOBACCO,East Coast of Africa,Australasia : Victoria,1708.0,,"17,08",
+as_1898,1894,export_uk,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",West Africa,United States of America : Hayti and St. Domingo,124.0,,"1,24",
+as_1898,1898,import,ZINC,"Crude, in cakes",Malta,11855.0,,"118,55",
+as_1898,1898,import,"COPPER, ORE OF","Cables (not of Iron), Twine, and Cable Yarn",Belgium,12077.0,,"120,77",
+as_1898,1895,export_uk,"METALS AND MANUFACTURES THEREOF, UNENUMERATED","Other Sorts, Unenumerated—cont.",Brazil,11921.0,,"119,21",
+as_1898,1894,export_uk,LEAD,West Africa,Australasia : New Zealand,9897.0,,"98,97",
+as_1899,1899,import,"ANIMALS, LIVING",Sheep and Lambs,United States of America,18446.0,,"184,46",
+as_1899,1899,import,"ANIMALS, LIVING",Sheep and Lambs,Argentine Republic,50843.0,,"508,43",
+as_1899,1899,import,"ANIMALS, LIVING",Stallions,Holland,731.0,,"7,31",
+as_1899,1899,import,"ANIMALS, LIVING",Stallions,France,2300.0,,"23,00",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Australasia : New South Wales,1722.0,,"17,22",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Australasia : Queensland,456.0,,"4,56",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Australasia : Tasmania,165.0,,"1,65",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Australasia : New Zealand,23146.0,,"231,46",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Canada,150163.0,,"1,501,63",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Sweden,336.0,,"3,36",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Denmark,5562.0,,"55,62",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Germany,7653.0,,"76,53",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Holland,4528.0,,"45,28",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",France,19076.0,,"190,76",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Spain,3973.0,,"39,73",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Austrian Territories,6361.0,,"63,61",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Bulgaria,712.0,,"7,12",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Roumania,35651.0,,"356,51",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn","Turkey, European",6521.0,,"65,21",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Asiatic,89731.0,,"897,31",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Cyprus,1174.0,,"11,74",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Egypt,5953.0,,"59,53",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Tripoli,5462.0,,"54,62",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Tunis,5363.0,,"53,63",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Algeria,5028.0,,"50,28",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",United States of America : On the Atlantic,42319.0,,"423,19",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",United States of America : On the Pacific,14919.0,,"149,19",
+as_1899,1899,import,CORDAGE,"Cables (not of Iron), Twine, and Cable Yarn",Mexico,5355.0,,"53,55",
+as_1899,1899,import,WINE,Total of all Kinds,Madeira,18557.0,,"185,57",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Dutch Possessions in Indian Seas : French Indo-China,355.0,,"3,55",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",China,22975.0,,"229,75",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Japan,19915.0,,"199,15",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Islands in the Pacific,1122.0,,"11,22",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",United States of America : On the Atlantic,6422.0,,"64,22",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",United States of America : Cuba and Porto Rico,15023.0,,"150,23",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",United States of America : French West India Islands,922.0,,"9,22",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",United States of America : Dutch Guiana,322.0,,"3,22",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",United States of America : Hayti and St. Domingo,4469.0,,"44,69",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Mexico,14647.0,,"146,47",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Guatemala,1135.0,,"11,35",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Honduras (not British),572.0,,"5,72",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",San Salvador,4345.0,,"43,45",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Nicaragua,3162.0,,"31,62",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Costa Rica,861.0,,"8,61",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Republic of Colombia,13279.0,,"132,79",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Venezuela,11346.0,,"113,46",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Ecuador,8320.0,,"83,20",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Peru,13128.0,,"131,28",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Chile,17996.0,,"179,96",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Brazil,6228.0,,"62,28",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Uruguay,14925.0,,"149,25",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Argentine Republic,43928.0,,"439,28",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Gibraltar,628.0,,"6,28",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,"Piece Goods, Printed",Malta and Gozo,1121.0,,"11,21",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,West Africa,Gambia,1622.0,,"16,22",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,West Africa,Sierra Leone,7527.0,,"75,27",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,West Africa,The Gold Coast,14034.0,,"140,34",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,West Africa,Lagos,12121.0,,"121,21",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,West Africa,Niger Protectorate,14926.0,,"149,26",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,,Servia,166.0,,"1,66",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,Dutch Possessions in Indian Seas,Philippine Islands,5497.0,,"54,97",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,Dutch Possessions in Indian Seas,United States of America : On the Atlantic,126241.0,,"1,26,241",
+as_1899,1899,export_uk,COTTON MANUFACTURES—con- tinued,Dutch Possessions in Indian Seas,United States of America : Danish West India Islands,246.0,,"2,46",
+as_1899,1899,export_uk,CUTLERY,West Africa,Lagos,267.0,,"2,67",
+as_1899,1899,export_uk,CUTLERY,West Africa,Niger Protectorate,442.0,,"4,42",
+as_1899,1899,export_uk,CUTLERY,South Africa,Natal,1533.0,,"15,33",
+as_1899,1899,export_uk,CUTLERY,South Africa,British East Indies : Madras,234.0,,"2,34",
+as_1899,1899,export_uk,CUTLERY,South Africa,British East Indies : Straits Settlements,650.0,,"6,50",
+as_1899,1899,export_uk,CUTLERY,South Africa,British East Indies : Ceylon,645.0,,"6,45",
+as_1899,1899,export_uk,CUTLERY,South Africa,British East Indies : Hong Kong,246.0,,"2,46",
+as_1899,1899,export_uk,CUTLERY,South Africa,Australasia : West Australia,555.0,,"5,55",
+as_1899,1899,export_uk,CUTLERY,South Africa,Australasia : South Australia,1025.0,,"10,25",
+as_1899,1899,export_uk,CUTLERY,South Africa,Australasia : New South Wales,4012.0,,"40,12",
+as_1899,1899,export_uk,CUTLERY,South Africa,Australasia : Queensland,1353.0,,"13,53",
+as_1899,1899,export_uk,CUTLERY,South Africa,Australasia : New Zealand,2722.0,,"27,22",
+as_1899,1899,export_uk,CUTLERY,South Africa,Canada,6326.0,,"63,26",
+as_1899,1899,export_uk,CUTLERY,South Africa,British West India Islands,129.0,,"1,29",
+as_1899,1899,export_uk,EARTHEN AND CHINA WARE,"Red Pottery and Brown Stone Ware, and Clay Manufactures (except Bricks)",United States of America : On the Atlantic,351.0,,"3,51",
+as_1899,1899,export_uk,EARTHEN AND CHINA WARE,"Red Pottery and Brown Stone Ware, and Clay Manufactures (except Bricks)",United States of America : Cuba and Porto Rico,144.0,,"1,44",
+as_1899,1899,export_uk,EARTHEN AND CHINA WARE,"Red Pottery and Brown Stone Ware, and Clay Manufactures (except Bricks)",Brazil,1063.0,,"10,63",
+as_1899,1899,export_uk,EARTHEN AND CHINA WARE,"Red Pottery and Brown Stone Ware, and Clay Manufactures (except Bricks)",Uruguay,128.0,,"1,28",
+as_1899,1899,export_uk,EARTHEN AND CHINA WARE,"Red Pottery and Brown Stone Ware, and Clay Manufactures (except Bricks)",Argentine Republic,1361.0,,"13,61",
+as_1899,1899,export_uk,EARTHEN AND CHINA WARE,"Red Pottery and Brown Stone Ware, and Clay Manufactures (except Bricks)",Channel Islands,494.0,,"4,94",
+as_1899,1899,export_uk,EARTHEN AND CHINA WARE,"Red Pottery and Brown Stone Ware, and Clay Manufactures (except Bricks)",Malta and Gozo,111.0,,"1,11",
+as_1899,1899,export_uk,EARTHEN AND CHINA WARE,West Africa,Natal,122.0,,"1,22",
+as_1899,1899,export_uk,"HABERDASHERY and MILLINERY, including Embroidery and Needle-work",West Africa,Australasia : Victoria,12163.0,,"121,63",
+as_1899,1899,export_uk,HATS,West Africa,British East Indies : West Australia,651.0,,"6,51",
+as_1899,1899,export_uk,HATS,West Africa,British East Indies : South Australia,623.0,,"6,23",
+as_1899,1899,export_uk,HATS,West Africa,British East Indies : Victoria,1125.0,,"11,25",
+as_1899,1899,export_uk,HATS,West Africa,British East Indies : New South Wales,6065.0,,"60,65",
+as_1899,1899,export_uk,HATS,West Africa,British East Indies : Queensland,1232.0,,"12,32",
+as_1899,1899,export_uk,HATS,West Africa,British East Indies : Tasmania,370.0,,"3,70",
+as_1899,1899,export_uk,HATS,West Africa,Canada,8271.0,,"82,71",
+as_1899,1899,export_uk,HATS,West Africa,Newfoundland,125.0,,"1,25",
+as_1899,1899,export_uk,HATS,West Africa,British West India Islands,1294.0,,"12,94",
+as_1899,1899,export_uk,HATS,West Africa,Denmark,371.0,,"3,71",
+as_1899,1899,export_uk,HATS,West Africa,Holland,322.0,,"3,22",
+as_1899,1899,export_uk,HATS,West Africa,Belgium,1535.0,,"15,35",
+as_1899,1899,export_uk,HATS,West Africa,France,333.0,,"3,33",
+as_1899,1899,export_uk,HATS,West Africa,Hayti and St. Domingo,512.0,,"5,12",
+as_1899,1899,export_uk,HATS,West Africa,Nicaragua,223.0,,"2,23",
+as_1899,1899,export_uk,HATS,West Africa,Venezuela,123.0,,"1,23",
+as_1899,1899,export_uk,HATS,West Africa,Ecuador,117.0,,"1,17",
+as_1899,1899,export_uk,IMPLEMENTS AND TOOLS,"Iron, Old and Scrap for Re-     manufacture",British East Indies,239.0,,"2,39",
+as_1899,1899,export_uk,IMPLEMENTS AND TOOLS,"Iron, Pig",Turkey : European,243.0,,"2,43",
+as_1899,1899,export_uk,IMPLEMENTS AND TOOLS,"Iron, Pig",China,1548.0,,"15,48",
+as_1899,1899,export_uk,IMPLEMENTS AND TOOLS,"Iron, Pig",Japan,6225.0,,"62,25",
+as_1899,1899,export_uk,IMPLEMENTS AND TOOLS,"Iron, Pig",United States of America : On the Atlantic,22722.0,,"227,22",
+as_1899,1899,export_uk,IMPLEMENTS AND TOOLS,"Iron, Pig",United States of America : On the Pacific,915.0,,"9,15",
+as_1899,1896,export_uk,IMPLEMENTS AND TOOLS,West Africa,Niger Protectorate,5371.0,,"53,71",
+tn_1871,1870,export_uk,MEAL and FLOUR,Lace and Patent Net,Other Countries,44502.0,,"4,4502",
+tn_1901,1900,export_uk,LINEN MANUFACTURES,Agricultural,Islands in the Pacific,6223.0,,"62,23",
+tn_1901,1900,export_uk,"ARMS, AMMUNITION, &c.","Muskets, Rifles, and Fowling-pieces",British West Africa : Natal,462.0,,"4,62",
+tn_1901,1900,export_uk,COTTON MANUFACTURES,"Hosiery, of Other Sorts",Mexico,138.0,,"1,38",
+tn_1901,1900,export_uk,"TOBACCO AND SNUFF, MANUFACTURED IN THE UNITED KINGDOM",Other Kinds of Manufactured Tobacco,China,323.0,,"3,23",
+tn_1901,1900,export_uk,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",,Egypt,4660.0,,"46,60",
+tn_1901,1900,reexport,SKINS AND FURS,"Furs, Rabbit Skins : Manufactures of, including     Skin Rugs",France,14345.0,,"143,45",
+tn_1901,1900,reexport,"VEGETABLES. Raw, unenumerated",East Africa,Channel Islands,198.0,,"1,98",

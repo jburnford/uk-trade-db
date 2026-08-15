@@ -111,6 +111,11 @@ def main():
     ap.add_argument('--country-report', action='store_true')
     ap.add_argument('--min-year', type=int, default=0)
     ap.add_argument('--max-year', type=int, default=9999)
+    ap.add_argument('--repairs', action='store_true',
+                    help='apply the cell-repair overlays before scoring. The '
+                         'closure gain is an INDEPENDENT check: repairs come '
+                         'from cross-volume witnesses, never from the printed '
+                         'subtotal the section is scored against')
     a = ap.parse_args()
 
     tbl = ENGINES[a.engine]
@@ -132,9 +137,30 @@ def main():
     if not rows:
         sys.exit(f'no rows for flow={a.flow} in {tbl}')
 
+    fix, no_repair = {}, object()
+    if a.repairs and a.measure == 'value' and a.engine == 'obs':
+        import csv, os
+        for path in ('reference/export_cell_repairs.csv',
+                     'reference/malformed_cell_repairs.csv',
+                     'reference/edge_column_repairs.csv'):
+            if not os.path.exists(path):
+                continue
+            for r in csv.DictReader(open(path)):
+                fix[(r['volume'], int(r['year']), r['article_group'], r['article'],
+                     r['country_raw'], round(float(r['old_value'])))] = (
+                    float(r['new_value']) if r['new_value'] != '' else None)
+        print(f'applying {len(fix)} cell repairs/null-outs')
+
     blocks = collections.defaultdict(list)
+    n_fixed = 0
     for vol, yr, ag, art, unit, seq, ctry, amt in rows:
+        if amt is not None and fix:
+            nv = fix.get((vol, yr, ag, art, ctry, round(amt)), no_repair)
+            if nv is not no_repair:
+                amt, n_fixed = nv, n_fixed + 1
         blocks[(vol, yr, ag, art, unit)].append((seq, ctry, amt))
+    if fix:
+        print(f'cell repairs applied: {n_fixed}')
 
     # a volume is the own-year witness for its maximum year; every other year
     # it carries is a comparative reprint
