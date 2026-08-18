@@ -35,6 +35,13 @@ Applies, in this order:
   * the family table reference/export_group_families.csv: era wordings, OCR
     variants and continuation suffixes of one heading become one commodity
     (IRON + IRON AND STEEL, seven spellings of CAOUTCHOUC, "...'d)" pages)
+  * the fused-section splits from reference/fused_section_splits.csv
+    (build_fused_splits.py): one block holding two or more complete TOTAL
+    hierarchies because a heading was lost with no article marker -- GLASS
+    'GREASE, TALLOW...' holding all of HABERDASHERY 1886-94, BAGS AND SACKS
+    holding BEER AND ALE in as_1897/98, PAPER holding PICKLES 1897-1900 --
+    and the second hierarchy takes the heading the reference volume prints
+    next; keyed on the raw parse and a row_seq range, applied first
   * the phantom-region relabel (scripts/phantom_articles.py): 'West Africa' /
     'East Africa' / 'Dutch Possessions in Indian Seas' as an ARTICLE is a
     printed country sub-heading the parser absorbed; the rows go back to the
@@ -74,7 +81,8 @@ from pathlib import Path
 import duckdb
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from phantom_articles import fix_articles, known_groups, promote_headings
+from phantom_articles import (fix_articles, known_groups, promote_headings,
+                              load_splits, apply_splits)
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 
@@ -98,18 +106,8 @@ CANADA = ('British North America', 'Canada', 'Newfoundland')
 # quietly misled by a series the project already knows is wrong.
 ISSUES = {
     # keys are FAMILY names (after folds and export_group_families.csv)
-    'GREASE, TALLOW AND ANIMAL FAT': [
-        (1886, 1891, 'the HABERDASHERY heading is lost in these volumes and '
-                     'its section is fused into this block: most of this '
-                     'value is haberdashery and millinery'),
-        (1894, 1894, 'same fusion as 1886-91: mostly haberdashery')],
-    'HABERDASHERY AND MILLINERY': [
-        (1886, 1891, 'reads zero: the section is fused into GREASE, TALLOW '
-                     'AND ANIMAL FAT (heading lost)'),
-        (1894, 1894, 'reads zero: fused into GREASE, TALLOW AND ANIMAL FAT')],
-    'GLASS': [(1887, 1887, 'the GREASE and HABERDASHERY sections are fused '
-                           'into "Other Manufactures, Unenumerated" this '
-                           'year; ~GBP0.5M of this is not glass')],
+    # (GREASE / HABERDASHERY 1886-91, 1894 and GLASS 1887 -- the fused
+    # HABERDASHERY section -- were repaired by build_fused_splits.py)
     'TELEGRAPHIC WIRES AND APPARATUS': [
         (1884, 1884, 'GBP1.03M in a single block: not yet checked against '
                      'the printed page'),
@@ -209,7 +207,12 @@ def main():
         # phantom-region relabel (phantom_articles.py): 'West Africa' as an
         # article is an absorbed heading; the row belongs to the article
         # above. Repairs are keyed on the RAW parse: look up, then relabel.
-        fixed = fix_articles(rows, vol=0, flow=1, year=2, group=3, art=4,
+        # fused sections first (build_fused_splits.py): the second TOTAL
+        # hierarchy inside a block takes the heading the reference prints
+        # next -- keyed on the raw parse and a row_seq range
+        split = apply_splits(rows, load_splits(flow=flow), vol=0, flow=1,
+                             year=2, group=3, art=4, seq=6, unit=5)
+        fixed = fix_articles(split, vol=0, flow=1, year=2, group=3, art=4,
                              unit=5, seq=6)
         # then a lost heading stored as the ARTICLE becomes its own group
         # (GLASS holding 'GREASE, TALLOW, AND ANIMAL FAT' 1886-94)

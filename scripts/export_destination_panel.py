@@ -34,7 +34,7 @@ import duckdb
 
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
 import countrykey
-from phantom_articles import fix_articles
+from phantom_articles import fix_articles, load_splits, apply_splits
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 
@@ -112,8 +112,9 @@ def main():
     # phantom-region relabel (phantom_articles.py): 'West Africa' as an
     # article is an absorbed heading; the row belongs to the article above.
     # Repairs are keyed on the RAW parse, so look them up before relabelling.
-    fixed = fix_articles(rows, vol=0, flow=1, year=2, group=3, art=4,
-                         unit=5, seq=6)
+    fixed = fix_articles(apply_splits(rows, load_splits(flow=a.flow), vol=0,
+                                      flow=1, year=2, group=3, art=4, seq=6, unit=5),
+                         vol=0, flow=1, year=2, group=3, art=4, unit=5, seq=6)
 
     fix = load_repairs()
     n_fixed = 0

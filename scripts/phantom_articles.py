@@ -146,3 +146,50 @@ def promote_headings(rows, groups, *, vol, flow, year, group, art):
         else:
             out.append(r)
     return out
+
+
+# ---------------------------------------------------------------------------
+# FUSED SECTIONS (build_fused_splits.py -> reference/fused_section_splits.csv)
+# One block holding two or more complete TOTAL hierarchies because a heading
+# was lost without an article marker: the rows of the second hierarchy take
+# the heading the reference volume prints next. Keyed on the RAW parse and a
+# row_seq range, so apply it to the raw rows BEFORE fix_articles /
+# promote_headings (a repair lookup keyed on the raw label must still be
+# done against the untouched rows).
+
+def load_splits(path='reference/fused_section_splits.csv', flow=None):
+    import csv, os
+    out = {}
+    if not os.path.exists(path):
+        return out
+    for r in csv.DictReader(open(path)):
+        if flow and r['flow'] != flow:
+            continue
+        out.setdefault((r['volume'], r['flow'], int(r['year'])), []).append(
+            (int(r['seq_from']), int(r['seq_to']), r['group'], r['article'],
+             r['to_group'], r['to_article'] or None, r.get('to_unit') or None))
+    return out
+
+
+def apply_splits(rows, splits, *, vol, flow, year, group, art, seq, unit=None):
+    """rows: list of tuples (raw parse). Returns a new list, same order, with
+    rows inside a split range relabelled to (to_group, to_article) and, when
+    a unit column is given, to the segment's one unit (its phantom rows
+    would otherwise stop inheriting the parent's unit and shatter the
+    consumers' unit-keyed blocks)."""
+    if not splits:
+        return list(rows)
+    out = []
+    for r in rows:
+        sp = splits.get((r[vol], r[flow], r[year]))
+        if sp and r[seq] is not None:
+            for a, b, g, ar, tg, ta, tu in sp:
+                if a <= r[seq] <= b and (r[group] or '') == g and (r[art] or '') == ar:
+                    rr = list(r)
+                    rr[group], rr[art] = tg, ta
+                    if unit is not None:
+                        rr[unit] = tu
+                    r = tuple(rr) if isinstance(r, tuple) else rr
+                    break
+        out.append(r)
+    return out

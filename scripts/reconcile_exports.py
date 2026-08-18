@@ -49,7 +49,7 @@ from pathlib import Path
 import duckdb
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from phantom_articles import fix_articles
+from phantom_articles import fix_articles, load_splits, apply_splits
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 ENGINES = {'obs': 'country_obs', 'inf': 'country_obs_inf', 'twoup': 'country_obs_twoup',
@@ -115,6 +115,8 @@ def main():
     ap.add_argument('--engine', default='obs', choices=sorted(ENGINES))
     ap.add_argument('--measure', default='value', choices=['value', 'quantity'])
     ap.add_argument('--country-report', action='store_true')
+    ap.add_argument('--dump', help='write one line per scored member section '
+                    '(vol, year, group, article, total_seq, n, bucket)')
     ap.add_argument('--min-year', type=int, default=0)
     ap.add_argument('--max-year', type=int, default=9999)
     ap.add_argument('--repairs', action='store_true',
@@ -146,11 +148,17 @@ def main():
     # what the export consumers see, and the closure it restores comes from
     # re-uniting members with the printed TOTAL that the absorbed heading
     # had split them from. Repairs are keyed on the RAW article.
-    fixed = (fix_articles(raw, vol=0, flow=1, year=2, group=3, art=4,
-                          unit=5, seq=6) if a.repairs else raw)
-    rows = [(r[0], r[2], r[3], r[4] or '', f[4] or '', f[5] or '', r[6], r[7], r[8])
+    fixed = (fix_articles(apply_splits(raw, load_splits(flow=a.flow), vol=0,
+                                       flow=1, year=2, group=3, art=4, seq=6, unit=5),
+                          vol=0, flow=1, year=2, group=3, art=4, unit=5, seq=6)
+             if a.repairs else raw)
+    # (vol, year, group, raw article, article, unit, seq, country, value):
+    # the group is the relabelled one (a fused-section split moves rows to
+    # another heading) but repairs are looked up on the raw group, so both
+    # are carried
+    rows = [(r[0], r[2], f[3], r[3], r[4] or '', f[4] or '', f[5] or '', r[6], r[7], r[8])
             for r, f in zip(raw, fixed)]
-    rows.sort(key=lambda t: (t[0], t[2], t[4], t[5], t[6] if t[6] is not None else -1))
+    rows.sort(key=lambda t: (t[0], t[2], t[5], t[6], t[7] if t[7] is not None else -1))
 
     fix, no_repair = {}, object()
     if a.repairs and a.measure == 'value' and a.engine == 'obs':
@@ -169,9 +177,9 @@ def main():
 
     blocks = collections.defaultdict(list)
     n_fixed = 0
-    for vol, yr, ag, raw_art, art, unit, seq, ctry, amt in rows:
+    for vol, yr, ag, raw_ag, raw_art, art, unit, seq, ctry, amt in rows:
         if amt is not None and fix:
-            nv = fix.get((vol, yr, ag, raw_art, ctry, round(amt)), no_repair)
+            nv = fix.get((vol, yr, raw_ag, raw_art, ctry, round(amt)), no_repair)
             if nv is not no_repair:
                 amt, n_fixed = nv, n_fixed + 1
         blocks[(vol, yr, ag, art, unit)].append((seq, ctry, amt))
@@ -194,12 +202,13 @@ def main():
     # destination -> counter of cells by the verdict of their enclosing section
     ctry_stat = collections.defaultdict(collections.Counter)
 
+    dump = open(a.dump, 'w') if a.dump else None
     for (vol, yr, ag, art, unit), rws in blocks.items():
         anchored = False
         role = 'own' if own_year.get(vol) == yr else 'comp'
         # re-walk carrying labels so we can attribute cells to their section
         members, labels, pending = [], [], []
-        for _, label, amt in rws:
+        for tseq, label, amt in rws:
             if not is_total(label):
                 if amt is not None:
                     members.append(amt)
@@ -213,6 +222,8 @@ def main():
                     by_year[yr][b] += 1
                     by_role[(role, yr)][b] += 1
                     anchored = True
+                    if dump:
+                        dump.write(f'{vol}\t{yr}\t{ag}\t{art}\t{tseq}\t{len(members)}\t{b}\t{role}\n')
                     if a.country_report:
                         for lb in labels:
                             ctry_stat[lb][b] += 1
