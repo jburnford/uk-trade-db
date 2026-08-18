@@ -12,12 +12,12 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1870,Canada,BLEACHING MATERIALS,,BLEACHING MATERIALS :,3976.0,9691.0,,0,gross,D,tn_1871,1,379
 1870,British North America,BORAX (Refined in the United Kingdom),,Cwts,1973.0,586.0,,0,exact01,B,tn_1871,1,400
 1870,Canada,BRASS,Tubing,Cwts,1360.0,366.0,1360.0,1,exact01,A,tn_1871,1,432
-1870,Canada,BRASS,"Wire of all Sorts, and Manufactures of Wire",Cwts,9081.0,2509.0,1153.0,0,mod,D,tn_1871,1,416
-1870,British North America,BRASS,"Wrought, of all other Sorts, not being Ordnance, and not otherwise described",Cwts,5504.0,698.0,,0,mod,D,tn_1871,1,455
-1870,British North America,BRICKS,,Mille,3137.0,1372.0,,0,exact01,B,tn_1871,1,478
+1870,Canada,BRASS,"Wire of all Sorts, and Manufactures of Wire",Cwts,1153.0,2509.0,1153.0,1,mod,D,tn_1871,1,416
+1870,British North America,BRASS,"Wrought, of all other Sorts, not being Ordnance, and not otherwise described",Cwts,1627.0,698.0,,0,mod,D,tn_1871,1,455
+1870,British North America,BRICKS,,Mille,3137.0,1372.0,,0,within5,D,tn_1871,1,478
 1870,British North America,BRIMSTONE,,,1445.0,2744.0,2501.0,0,gross,D,tn_1871,1,489
 1870,British North America,BROOMS and BRUSHES,,,1462.0,,2501.0,0,mod,D,tn_1871,1,503
-1870,British North America,BUTTER (British),,,24923.0,4778.0,2501.0,0,exact01,D,tn_1871,1,513
+1870,British North America,BUTTER (British),,,24923.0,4778.0,2501.0,0,mod,D,tn_1871,1,513
 1870,British North America,"CANDLES, Stearine (British)",,Lbs,3998.0,106205.0,,0,exact01,B,tn_1871,1,542
 1870,British North America,CAOUTCHouc MANUFACTURES,,,26782.0,,2501.0,0,exact01,D,tn_1871,1,602
 1870,British North America,CEMENT,CHEESE (British),Cwts,2501.0,528.0,,0,exact01,B,tn_1871,1,693
@@ -37,12 +37,12 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1870,British North America,FRUIT,Currants (Foreign),Cwts,20624.0,18198.0,20624.0,1,exact01,A,tn_1871,1,1832
 1870,British North America,FRUIT,Figs (Foreign),Cwts,2408.0,1695.0,2408.0,1,exact01,A,tn_1871,1,1842
 1870,British North America,FRUIT,Raisins (Foreign),Cwts,5603.0,3418.0,5603.0,1,exact01,A,tn_1871,1,1860
-1870,British North America,FURNITURE (HOUSEHOLD),Of Wood and Cabinet Wares,,8631.0,,8651.0,0,within5,D,tn_1871,1,1880
+1870,British North America,FURNITURE (HOUSEHOLD),Of Wood and Cabinet Wares,,8631.0,,8651.0,0,exact01,D,tn_1871,1,1880
 1870,Canada,GLASS,Beads (British),,454.0,96.0,,0,gross,D,tn_1871,1,2024
 1870,British North America,GLASS,Common Bottles,,12523.0,29066.0,,0,exact01,B,tn_1871,1,1965
 1870,British North America,GLASS,"Flint, Cut, Ornamented, or Coloured",,2128.0,368.0,,0,gross,D,tn_1871,1,1991
 1870,British North America,GLASS,"Flint, Plain, including Bottles and Phials of Flint Glass",,11824.0,5889.0,,0,gross,D,tn_1871,1,2014
-1870,British North America,GLASS,Looking-glasses and Mirrors in Frames,,6864.0,33769.0,,0,gross,D,tn_1871,1,1925
+1870,British North America,GLASS,Looking-glasses and Mirrors in Frames,,1004.0,33769.0,,0,gross,D,tn_1871,1,1925
 1870,British North America,GLASS,"Plate, Polished, Silvered and Ornamented",Square Feet,10899.0,99687.0,,0,mod,D,tn_1871,1,1915
 1870,British North America,GLASS,"Window and German Sheet, including Shades and Cylinders, Plain (British)",,10771.0,8833.0,,0,gross,D,tn_1871,1,1941
 1870,British North America,"GREASE, not otherwise described",GUANO,,6200.0,500.0,,0,exact01,B,tn_1871,1,2082
@@ -51,8 +51,8 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1870,British North America,GUM,Haberdashery not specifically described,,732122.0,,,0,within5,D,tn_1871,1,2180
 1870,British North America,GUM,"Hardwares, not specifically described",Cwts,192883.0,47026.0,,0,within5,D,tn_1871,1,2261
 1870,British North America,GUM,"Millinery, of all Sorts, not specifically described",,137608.0,,,0,exact01,B,tn_1871,1,2207
-1870,British North America,HATS,Other Kinds,,1357.0,992.0,525.0,0,mod,D,tn_1871,1,2327
-1870,British North America,HATS,of Felt,,39053.0,24704.0,,0,within5,D,tn_1871,1,2298
+1870,British North America,HATS,Other Kinds,,525.0,992.0,525.0,1,mod,D,tn_1871,1,2327
+1870,British North America,HATS,of Felt,,17207.0,24704.0,,0,mod,D,tn_1871,1,2298
 1870,British North America,HATS,of Silk (Plush or Shag),,2481.0,587.0,2481.0,1,mod,D,tn_1871,1,2307
 1870,British North America,HATS,of Straw,,5514.0,6942.0,5514.0,1,mod,D,tn_1871,1,2318
 1870,British North America,HEMP,Dressed and Undressed (Foreign),,11273.0,5665.0,,0,within5,D,tn_1871,1,2348
@@ -93,8 +93,8 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1870,British North America,LEAD,Rolled-and Sheet,Tons,7033.0,319.0,,0,exact01,B,tn_1871,1,3184
 1870,British North America,LEAD,Shot,Tons,6194.0,269.0,,0,exact01,B,tn_1871,1,3217
 1870,British North America,LEAD,White,,20713.0,15855.0,9298.0,0,exact01,D,tn_1871,1,3267
-1870,British North America,LEATHER,Other Sorts not specifically described,,2454.0,21303.0,,0,exact01,B,tn_1871,1,3339
-1870,Canada,LEATHER,"Tanned, Unwrought",,16246.0,1946.0,,0,within5,D,tn_1871,1,3287
+1870,British North America,LEATHER,Other Sorts not specifically described,,18044.0,21303.0,,0,mod,D,tn_1871,1,3339
+1870,Canada,LEATHER,"Tanned, Unwrought",,42012.0,1946.0,,0,within5,D,tn_1871,1,3287
 1870,British North America,LEATHER,"Wrought, Boots and Shoes",,60646.0,236978.0,,0,within5,D,tn_1871,1,3306
 1870,British North America,LEATHER,"Wrought, Gloves",,15442.0,159919.0,,0,exact01,B,tn_1871,1,3317
 1870,British North America,"LINEN AND JUTE MANUFACTURES: 
@@ -130,9 +130,9 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1870,British North America,MEAL and FLOUR,Counterpanes and Bed Quilts,,9084.0,,1859.0,0,exact01,D,tn_1871,1,1473
 1870,British North America,MEAL and FLOUR,"Fustians, &c., Plain and Coloured",,5082.0,56557.0,5082.0,1,gross,D,tn_1871,1,1368
 1870,Canada,MEAL and FLOUR,Gloves,,5326.0,,,0,exact01,B,tn_1871,1,1439
-1870,British North America,MEAL and FLOUR,"Heavy Cottons, Printed",Yards,330223.0,15541615.0,330223.0,1,within5,C,tn_1871,1,1264
+1870,British North America,MEAL and FLOUR,"Heavy Cottons, Printed",Yards,330223.0,15541615.0,330223.0,1,exact01,A,tn_1871,1,1264
 1870,British North America,MEAL and FLOUR,Lace and Patent Net,,9403.0,,9403.0,1,mod,D,tn_1871,1,1417
-1870,British North America,MEAL and FLOUR,"Light Cottons, Printed",,21747.0,888312.0,,0,mod,D,tn_1871,1,1315
+1870,British North America,MEAL and FLOUR,"Light Cottons, Printed",,26572.0,888312.0,,0,gross,D,tn_1871,1,1315
 1870,British North America,MEAL and FLOUR,Mixed Goods,,49308.0,1662900.0,49305.0,1,gross,D,tn_1871,1,1394
 1870,British North America,MEAL and FLOUR,Stockings and Socks,,12003.0,,,0,exact01,B,tn_1871,1,1432
 1870,British North America,MEAL and FLOUR,Thread for Sewing,,14164.0,104675.0,,0,gross,D,tn_1871,1,1504
@@ -155,7 +155,7 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1870,British North America,PAPER,Writing or Printing (British),Cwts,43078.0,9883.0,,0,none,X,tn_1871,1,3988
 1870,British North America,"PETROLEUM, Unrefined",PICKLES and SAUCES,,32722.0,,,0,within5,D,tn_1871,1,4138
 1870,British North America,PICTURES,,No,1781.0,228.0,605.0,0,within5,D,tn_1871,1,4154
-1870,British North America,PICTURES,"PLATE, Gold and Silver",,4827.0,9485.0,1855.0,0,gross,D,tn_1871,1,4183
+1870,British North America,PICTURES,"PLATE, Gold and Silver",,1855.0,9485.0,1855.0,1,gross,D,tn_1871,1,4183
 1870,British North America,PICTURES,PLATED WARES,,11343.0,,11343.0,1,within5,C,tn_1871,1,4206
 1870,British North America,PICTURES,PRINTING TYPES and MATERIALS,,6272.0,,6272.0,1,exact01,A,tn_1871,1,4251
 1870,British North America,PICTURES,PRINTS and DRAWINGS,,902.0,,902.0,1,none,X,tn_1871,1,4234
@@ -170,7 +170,7 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1870,British North America,SEEDS,Grass (British),Cwts,4500.0,2551.0,,0,gross,D,tn_1871,1,4452
 1870,British North America,SEEDS,"SHEATHING, ROOFING, and BOILER FELT",,895.0,867.0,,0,gross,D,tn_1871,1,4483
 1870,British North America,SILK MANUFACTURES,Broad Piece Goods,Yards,54972.0,211688.0,29064.0,0,exact01,D,tn_1871,1,4564
-1870,British North America,SILK MANUFACTURES,Broad Piece Goods (Mixed),Yards,5220.0,51328.0,7021.0,0,gross,D,tn_1871,1,4662
+1870,British North America,SILK MANUFACTURES,Broad Piece Goods (Mixed),Yards,7021.0,51328.0,7021.0,1,gross,D,tn_1871,1,4662
 1870,British North America,SILK MANUFACTURES,Broad Stuffs,Lbs,3256.0,1252.0,,0,within5,D,tn_1871,1,4729
 1870,British North America,SILK MANUFACTURES,Broad Stuffs,,1960.0,,3256.0,0,exact01,D,tn_1871,1,4746
 1870,British North America,SILK MANUFACTURES,Fancy Silks and Satin,Yards,2007.0,5419.0,2007.0,1,exact01,A,tn_1871,1,4568
@@ -186,10 +186,10 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1870,British North America,SKINS AND FURS,SOAP,Cwts,11895.0,9348.0,11895.0,1,within5,C,tn_1871,1,4848
 1870,British North America,SPICES,Pepper,Lbs,5515.0,252128.0,5515.0,1,exact01,A,tn_1871,1,4888
 1870,British North America,"SPIRITS, BRITISH and IRISH",,Gallons,25180.0,191086.0,,0,exact01,B,tn_1871,1,4901
-1870,British North America,"SPIRITS, BRITISH and IRISH",Brandy,,25073.0,92576.0,,0,gross,D,tn_1871,1,4916
-1870,British North America,"SPIRITS, BRITISH and IRISH",Rum,,36189.0,321978.0,,0,mod,D,tn_1871,1,4935
+1870,British North America,"SPIRITS, BRITISH and IRISH",Brandy,,5181.0,92576.0,,0,mod,D,tn_1871,1,4916
+1870,British North America,"SPIRITS, BRITISH and IRISH",Rum,,7203.0,321978.0,,0,within5,D,tn_1871,1,4935
 1870,British North America,"SPIRITS, BRITISH and IRISH",STARCH,,1631.0,1100.0,1631.0,1,exact01,A,tn_1871,1,4961
-1870,British North America,"STATIONERY, other than Paper",,,81776.0,,40053.0,0,within5,D,tn_1871,1,4992
+1870,British North America,"STATIONERY, other than Paper",,,40053.0,,40053.0,1,mod,D,tn_1871,1,4992
 1870,British North America,"STATIONERY, other than Paper",Of all other Sorts,,4312.0,,,0,within5,D,tn_1871,1,5036
 1870,British North America,"STATIONERY, other than Paper","SUGAR, REFINED and CANDY (British)",Cwts,145318.0,88970.0,,0,exact01,B,tn_1871,1,5057
 1870,British North America,"STATIONERY, other than Paper","SUGAR, REFINED and CANDY (Foreign)",Cwts,1744.0,1084.0,,0,exact01,B,tn_1871,1,5070
@@ -218,7 +218,7 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1870,British North America,WOOLLEN and WORSTED YARN,"Hosiery, Woollen and Worsted: Stockings and Socks, all Wool",Dozen Pairs,6158.0,11037.0,,0,exact01,B,tn_1871,1,5823
 1870,British North America,WOOLLEN and WORSTED YARN,"Hosiery: Under Clothing, Shirts, Drawers, &c., all Wool",Dozen,2498.0,1314.0,,0,within5,D,tn_1871,1,5837
 1870,British North America,WOOLLEN and WORSTED YARN,"Narrow Cloths: Plain, all Wool",Yards,93437.0,677994.0,107927.0,0,gross,D,tn_1871,1,5622
-1870,British North America,WOOLLEN and WORSTED YARN,"Narrow Cloths: Plain, of Wool Mixed with other Materials",,49281.0,490732.0,,0,within5,D,tn_1871,1,5656
+1870,British North America,WOOLLEN and WORSTED YARN,"Narrow Cloths: Plain, of Wool Mixed with other Materials",,94023.0,490732.0,,0,within5,D,tn_1871,1,5656
 1870,British North America,WOOLLEN and WORSTED YARN,"Worsted Stuffs (Combed, not Milled), all Wool",,12863.0,253818.0,,0,within5,D,tn_1871,1,5685
 1870,British North America,WOOLLEN and WORSTED YARN,"Worsted Stuffs (Combed, not Milled), of Wool Mixed with other Materials",,11573.0,296809.0,,0,exact01,B,tn_1871,1,5731
 1870,British North America,Watches,,No,1013.0,192.0,605.0,0,exact01,D,tn_1871,1,746
@@ -229,8 +229,8 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1872,British North America,APPAREL and SLOPS,,,268289.0,,268289.0,1,exact01,A,as_1872,1,55
 1872,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Fowling Pieces,No,3893.0,1522.0,3893.0,1,exact01,A,as_1872,1,138
 1872,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Gunpowder,Lbs,13551.0,516445.0,13551.0,1,exact01,A,as_1872,1,77
-1872,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ordnance Stores, and Ammunition, Unenumerated",,33594.0,,12375.0,0,gross,D,as_1872,1,102
-1872,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,No,3993.0,33372000.0,1569.0,0,gross,D,as_1872,1,89
+1872,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ordnance Stores, and Ammunition, Unenumerated",,12375.0,,12375.0,1,gross,D,as_1872,1,102
+1872,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,No,1569.0,33372000.0,1569.0,1,gross,D,as_1872,1,89
 1872,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Rifles,No,12573.0,3895.0,12573.0,1,exact01,A,as_1872,1,127
 1872,British North America,"BAGS and SACKS, Empty",,Dozens,22124.0,56311.0,,0,exact01,B,as_1872,1,169
 1872,British North America,BEER and ALE,,Barrels,54700.0,11997.0,,0,within5,D,as_1872,1,198
@@ -239,8 +239,8 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1872,British North America,"Books, Printed",,Cwts,81590.0,8961.0,12615.0,0,within5,D,as_1872,1,250
 1872,British North America,"CANDLES, of all Sorts",,Lbs,8493.0,247957.0,8493.0,1,within5,C,as_1872,1,297
 1872,British North America,CAOUTCHOUO MANUFACTURES,,,17795.0,,75222.0,0,within5,D,as_1872,1,321
-1872,Canada,"CARRIAGES, CARTS, &c.","Railway Waggons, Trucks, &c. (not of Iron) for Ballast, Minerals, or Merchandize",No,7200.0,180.0,7200.0,1,within5,C,as_1872,1,349
-1872,British North America,CEMENT,,Cwts,11182.0,89113.0,11298.0,0,gross,D,as_1872,1,365
+1872,Canada,"CARRIAGES, CARTS, &c.","Railway Waggons, Trucks, &c. (not of Iron) for Ballast, Minerals, or Merchandize",No,7200.0,180.0,7200.0,1,exact01,A,as_1872,1,349
+1872,British North America,CEMENT,,Cwts,11298.0,89113.0,11298.0,1,gross,D,as_1872,1,365
 1872,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,27150.0,,75222.0,0,within5,D,as_1872,1,405
 1872,British North America,CLAY unmanufactured,,Tons,2115.0,1577.0,39600.0,0,within5,D,as_1872,1,418
 1872,British North America,CLAY unmanufactured,"CLOCKS, WATCHES, and parts thereof",,3308.0,,,0,exact01,B,as_1872,1,452
@@ -252,14 +252,14 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1872,Canada,"COALS, CINDERS, &c.Products of Coal, Peat, or Shale, including 
                     Naphtha, Paraffine, and Oil thereof, and 
                     Petroleum, Pitch, and Tar",Unenumerated,Cwts,13860.0,2486.0,22126.0,0,within5,D,as_1872,1,558
-1872,British North America,COTTON MANUFACTURES,Lace and Patent Net,,10123.0,,20812.0,0,within5,D,as_1872,1,752
+1872,British North America,COTTON MANUFACTURES,Lace and Patent Net,,20812.0,,20812.0,1,within5,C,as_1872,1,752
 1872,British North America,COTTON MANUFACTURES,"Other Manufactures, Unenumerated",,26756.0,,26756.0,1,exact01,A,as_1872,1,827
 1872,British North America,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",,46998.0,1442742.0,,0,exact01,B,as_1872,1,731
 1872,British North America,COTTON MANUFACTURES,"Piece Goods, Plain",,419100.0,21229528.0,419100.0,1,within5,C,as_1872,1,663
-1872,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",,412673.0,18657293.0,412673.0,1,within5,C,as_1872,1,711
+1872,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",,412673.0,18657293.0,412673.0,1,exact01,A,as_1872,1,711
 1872,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,6135.0,16584.0,,0,exact01,B,as_1872,1,768
 1872,British North America,COTTON MANUFACTURES,Thread for Sewing,,61468.0,282737.0,21214.0,0,within5,D,as_1872,1,799
-1872,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,136646.0,,132501.0,0,gross,D,as_1872,1,876
+1872,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,132501.0,,132501.0,1,gross,D,as_1872,1,876
 1872,British North America,EARTHEN and CHINA WARE,Red Pottery and Brown Stone Ware,,8542.0,,8542.0,1,exact01,A,as_1872,1,848
 1872,British North America,GLASS,Common Bottles,Cwts,29277.0,51060.0,,0,within5,D,as_1872,1,971
 1872,British North America,GLASS,"Flint, Plain, Cut, or Ornamented (including Bottles and Phials of Flint Glass)",Cwts,23662.0,9377.0,,0,exact01,B,as_1872,1,947
@@ -271,11 +271,11 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1872,British North America,HATS,Of Other Sorts,Dozens,5723.0,3974.0,5723.0,1,exact01,A,as_1872,1,1102
 1872,British North America,HATS,Of Straw,Dozens,7533.0,9009.0,7533.0,1,exact01,A,as_1872,1,1094
 1872,British North America,IMPLEMENTS and Tools,Agricultural,,5217.0,,5217.0,1,exact01,A,as_1872,1,1145
-1872,British North America,IMPLEMENTS and Tools,Unenumerated,,2203.0,,2026.0,0,mod,D,as_1872,1,1163
+1872,British North America,IMPLEMENTS and Tools,Unenumerated,,2026.0,,2026.0,1,within5,C,as_1872,1,1163
 1872,British North America,IRON,"Anchors, Grapnels, Chains, and Cables",,84399.0,4189.0,,0,exact01,B,as_1872,1,1396
 1872,British North America,IRON,Bar,Tons,535676.0,45882.0,535676.0,1,exact01,A,as_1872,1,1196
 1872,British North America,IRON,Bolt and Rod,Tons,6737.0,595.0,6737.0,1,exact01,A,as_1872,1,1227
-1872,British North America,IRON,"Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",Tons,210283.0,13530.0,210283.0,1,mod,D,as_1872,1,1479
+1872,British North America,IRON,"Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",Tons,210283.0,13530.0,210283.0,1,exact01,A,as_1872,1,1479
 1872,British North America,IRON,Galvanized (other than Wire or Manufactures of Wire),,30190.0,912.0,,0,exact01,B,as_1872,1,1342
 1872,British North America,IRON,Hoops,,61450.0,4593.0,,0,exact01,B,as_1872,1,1365
 1872,British North America,IRON,"Manufactures of Steel, or of Steel and Iron combined",,18675.0,279.0,,0,within5,D,as_1872,1,1519
@@ -301,13 +301,13 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1872,British North America,LINEN and JUTE MANUFACTURES,"Plain, Unbleached or Bleached",,161265.0,5443111.0,161265.0,1,none,X,as_1872,1,1650
 1872,British North America,LINEN and JUTE MANUFACTURES,Sail Cloth and Sails,,41713.0,702434.0,,0,none,X,as_1872,1,1678
 1872,British North America,LINEN and JUTE MANUFACTURES,Thread for Sewing,,24214.0,226222.0,21214.0,0,none,X,as_1872,1,1693
-1872,British North America,MACHINERY and Mill Work,Not being Steam Engines ; Other descrip- tions,,81925.0,,,0,gross,D,as_1872,1,1832
+1872,British North America,MACHINERY and Mill Work,Not being Steam Engines ; Other descrip- tions,,137183.0,,,0,gross,D,as_1872,1,1832
 1872,British North America,MACHINERY and Mill Work,"Steam Engines or Parts of Steam Engines, Locomotive",,41626.0,,41626.0,1,gross,D,as_1872,1,1771
-1872,British North America,MEDICINES,,,141642.0,,45138.0,0,mod,D,as_1872,1,1870
-1872,British North America,"MUSICAL INSTRUMENTS, and Parts thereof",,,69453.0,,9517.0,0,within5,D,as_1872,1,1887
+1872,British North America,MEDICINES,,,45138.0,,45138.0,1,mod,D,as_1872,1,1870
+1872,British North America,"MUSICAL INSTRUMENTS, and Parts thereof",,,9517.0,,9517.0,1,mod,D,as_1872,1,1887
 1872,British North America,MeAL and FLOUR,Oatmeal,Cwts,1703.0,1912.0,1703.0,1,exact01,A,as_1872,1,586
 1872,Canada,MeAL and FLOUR,Wheat Meal or Flour,Cwts,2094.0,2310.0,2094.0,1,exact01,A,as_1872,1,580
-1872,British North America,"OIL, other than Essential or Medicinal","OIL and FLOOR CLOTH, including India Rubber Cloth",Square Yards,17961.0,159778.0,17961.0,1,within5,C,as_1872,1,1938
+1872,British North America,"OIL, other than Essential or Medicinal","OIL and FLOOR CLOTH, including India Rubber Cloth",Square Yards,17961.0,159778.0,17961.0,1,exact01,A,as_1872,1,1938
 1872,British North America,"OIL, other than Essential or Medicinal",Seed,Gallons,65433.0,439314.0,71920.0,0,mod,D,as_1872,1,1903
 1872,British North America,PAINTERS' COLOURS and MATERIALSUnenumerated,,,114631.0,,75222.0,0,mod,D,as_1872,1,1964
 1872,British North America,"PAPER: 
@@ -323,19 +323,19 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1872,British North America,"Pickles, Vinegar, and Sauces","PAPERPasteboard, Millboard, &c. (including Play- 
                     ing Cards)",Cwts,2490.0,1826.0,,0,exact01,B,as_1872,1,2010
 1872,British North America,"Pickles, Vinegar, and Sauces","Unenumerated, and Articles of Paper (except 
-                    Papier Mâché)",Cwts,12721.0,5434.0,12721.0,1,within5,C,as_1872,1,2029
+                    Papier Mâché)",Cwts,12721.0,5434.0,12721.0,1,exact01,A,as_1872,1,2029
 1872,Canada,RAGS (except Woollen) and other Materials for making Paper,,Tons,18171.0,1242.0,18171.0,1,exact01,A,as_1872,1,2161
 1872,British North America,SADDLERY AND HARNESS,,,5467.0,,5467.0,1,mod,D,as_1872,1,2180
 1872,British North America,SALT (Rock and White),,Tons,39600.0,70885.0,39600.0,1,within5,C,as_1872,1,2197
 1872,British North America,"SALTPETRE, British Prepared",,Cwts,3893.0,2309.0,12615.0,0,exact01,D,as_1872,1,2211
 1872,British North America,"SEEDS, of all Sorts",,Cwts,7022.0,2901.0,12615.0,0,within5,D,as_1872,1,2222
 1872,British North America,SILK MANUFACTURES,Broad Stuffs,Yards,5467.0,41334.0,,0,exact01,B,as_1872,1,2314
-1872,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,42797.0,169566.0,42797.0,1,within5,C,as_1872,1,2248
+1872,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,42797.0,169566.0,42797.0,1,exact01,A,as_1872,1,2248
 1872,Canada,SILK MANUFACTURES,"Handkerchiefs, Scarfs, and Shawls",,8266.0,,8266.0,1,exact01,A,as_1872,1,2264
 1872,Canada,SILK MANUFACTURES,Lace,,9667.0,,7538.0,0,exact01,D,as_1872,1,2286
-1872,Canada,SILK MANUFACTURES,Other Kinds,,1798.0,,4169.0,0,exact01,D,as_1872,1,2322
-1872,Canada,SILK MANUFACTURES,Other Kinds,,4169.0,,4169.0,1,exact01,A,as_1872,1,2323
-1872,British North America,SILK MANUFACTURES,Ribbons of all Kinds,,62833.0,,62833.0,1,within5,C,as_1872,1,2275
+1872,Canada,SILK MANUFACTURES,Other Kinds,,,,4169.0,0,none,X,as_1872,1,2322
+1872,Canada,SILK MANUFACTURES,Other Kinds,,4169.0,,4169.0,1,mod,D,as_1872,1,2323
+1872,British North America,SILK MANUFACTURES,Ribbons of all Kinds,,62833.0,,62833.0,1,exact01,A,as_1872,1,2275
 1872,British North America,SILK MANUFACTURES,Unenumerated,,21334.0,,26357.0,0,exact01,D,as_1872,1,2301
 1872,Canada,SKINS and FURS,"Foreign, Dressed in the United Kingdom",,19792.0,28576.0,19792.0,1,gross,D,as_1872,1,2346
 1872,British North America,SKINS and FURS,SOAP,,10480.0,7842.0,,0,gross,D,as_1872,1,2369
@@ -357,7 +357,7 @@ year,country,article_group,article,unit,value,quantity,value_inf,engines_agree,s
 1872,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths: Coatings, Duffs, &c., of Wool, Mixed with other Materials",Yards,131841.0,1319800.0,,0,within5,D,as_1872,1,2676
 1872,British North America,WOOLLEN and WORSTED MANUFACTURES,"Rugs, Coverlets, or Wrappers",No,3510.0,6819.0,,0,exact01,B,as_1872,1,2814
 1872,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,No,32571.0,69633.0,32571.0,1,exact01,A,as_1872,1,2795
-1872,British North America,WOOLLEN and WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,56068.0,,56068.0,1,within5,C,as_1872,1,2858
+1872,British North America,WOOLLEN and WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,56068.0,,56068.0,1,exact01,A,as_1872,1,2858
 1872,British North America,WOOLLEN and WORSTED MANUFACTURES,"Worsted Stuffs, all Wool",Yards,80052.0,1329079.0,,0,within5,D,as_1872,1,2696
 1872,British North America,WOOLLEN and WORSTED MANUFACTURES,"Worsted Stuffs, of Wool Mixed with other Materials",Yards,339611.0,8562196.0,339611.0,1,exact01,A,as_1872,1,2728
 1872,British North America,Wood and Timber,Staves and Empty Casks,,1791.0,,1791.0,1,exact01,A,as_1872,1,2543
@@ -369,8 +369,8 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1873,British North America,APPAREL and SLOPS,,,1419720.0,,1419720.0,1,gross,D,as_1873,1,55
 1873,British North America,APPAREL and SLOPS,Fowling Pieces,No,3848.0,1839.0,3848.0,1,exact01,A,as_1873,1,133
 1873,British North America,APPAREL and SLOPS,Gunpowder,Lbs,10333.0,371886.0,10333.0,1,exact01,A,as_1873,1,76
-1873,British North America,APPAREL and SLOPS,"Ordnance Stores, and Ammunition, Unenumerated",,18284.0,,10172.0,0,gross,D,as_1873,1,101
-1873,British North America,APPAREL and SLOPS,Percussion Caps,No,2940.0,26891500.0,808.0,0,gross,D,as_1873,1,88
+1873,British North America,APPAREL and SLOPS,"Ordnance Stores, and Ammunition, Unenumerated",,10172.0,,10172.0,1,within5,C,as_1873,1,101
+1873,British North America,APPAREL and SLOPS,Percussion Caps,No,808.0,26891500.0,808.0,1,gross,D,as_1873,1,88
 1873,British North America,APPAREL and SLOPS,Rifles,No,6650.0,2741.0,6660.0,0,exact01,D,as_1873,1,124
 1873,Canada,"BAGS and SACKS, Empty",,,29149.0,79414.0,2927.0,0,exact01,D,as_1873,1,169
 1873,British North America,BEER and ALE,,Barrels,69082.0,15029.0,,0,within5,D,as_1873,1,199
@@ -380,39 +380,39 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1873,British North America,"CANDLES, of all Sorts",,Lbs,8367.0,246738.0,,0,within5,D,as_1873,1,295
 1873,British North America,CAOUTCHouc MANUFACTURES,,,19518.0,,1419720.0,0,exact01,D,as_1873,1,321
 1873,British North America,CEMENT,,Cwts,80973.0,489143.0,76034.0,0,within5,D,as_1873,1,365
-1873,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,26791.0,,26791.0,1,within5,C,as_1873,1,407
+1873,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,26791.0,,26791.0,1,exact01,A,as_1873,1,407
 1873,Canada,CLAY unmanufactured,,,2927.0,2302.0,2927.0,1,exact01,A,as_1873,1,420
 1873,British North America,CLAY unmanufactured,"CLOCKS, WATCHES, and parts thereof",,3827.0,,3827.0,1,exact01,A,as_1873,1,450
 1873,British North America,CLAY unmanufactured,Manufactures thereof,,15544.0,206943.0,15544.0,1,exact01,A,as_1873,1,434
 1873,British North America,"COALS, CINDERS, &c.",Coals,Tons,131964.0,130562.0,131964.0,1,exact01,A,as_1873,1,490
 1873,British North America,"COALS, CINDERS, &c.","Products of Coal, Peat, or Shale, including Naphtha, Paraffine, and Oil thereof, and Petroleum, Pitch, and Tar",,2640.0,,2640.0,1,within5,C,as_1873,1,530
 1873,British North America,COPPER,"Mixed, or Yellow Metal, for Sheathing",,50593.0,11758.0,50593.0,1,gross,D,as_1873,1,556
-1873,British North America,COPPER,Unenumerated,Cwts,9516.0,1788.0,9516.0,1,within5,C,as_1873,1,577
+1873,British North America,COPPER,Unenumerated,Cwts,9516.0,1788.0,9516.0,1,exact01,A,as_1873,1,577
 1873,British North America,"CORDAGE, CABLES, and ROPES of HEMP or like MATERIAL",,,80946.0,32304.0,50946.0,0,gross,D,as_1873,1,601
 1873,British North America,CORN and GRAIN,Malt,Quarters,4196.0,1535.0,,0,mod,D,as_1873,1,614
 1873,British North America,COTTON MANUFACTURES,Hosiery of Other Sorts,,37697.0,,,0,exact01,B,as_1873,1,826
 1873,British North America,COTTON MANUFACTURES,Lace and Patent Net,,11948.0,,,0,within5,D,as_1873,1,791
-1873,British North America,COTTON MANUFACTURES,"Other Manufactures, Unenumerated",,82412.0,,22111.0,0,within5,D,as_1873,1,886
+1873,British North America,COTTON MANUFACTURES,"Other Manufactures, Unenumerated",,22111.0,,22111.0,1,within5,C,as_1873,1,886
 1873,British North America,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",Yards,31826.0,995432.0,,0,exact01,B,as_1873,1,772
 1873,British North America,COTTON MANUFACTURES,"Piece Goods, Plain",,324479.0,17170274.0,,0,mod,D,as_1873,1,704
 1873,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",Yards,561128.0,24248364.0,,0,within5,D,as_1873,1,753
 1873,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,5442.0,12064.0,,0,within5,D,as_1873,1,804
-1873,British North America,COTTON MANUFACTURES,Thread for Sewing,,22930.0,124403.0,25332.0,0,mod,D,as_1873,1,856
-1873,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,210329.0,,118158.0,0,within5,D,as_1873,1,938
+1873,British North America,COTTON MANUFACTURES,Thread for Sewing,,37966.0,124403.0,25332.0,0,within5,D,as_1873,1,856
+1873,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,118158.0,,118158.0,1,within5,C,as_1873,1,938
 1873,British North America,EARTHEN and CHINA WARE,Red Pottery and Brown Stone Ware,,4052.0,,4052.0,1,none,X,as_1873,1,903
-1873,British North America,"FURNITURE (Household), CABINET and UP-HOLSTERY WARES",,,7564.0,,1419720.0,0,exact01,D,as_1873,1,995
+1873,British North America,"FURNITURE (Household), CABINET and UP-HOLSTERY WARES",,,7564.0,,1419720.0,0,within5,D,as_1873,1,995
 1873,British North America,GLASS,,,20093.0,12160.0,1419720.0,0,within5,D,as_1873,1,1068
 1873,British North America,GLASS,Common Bottles,,24262.0,52261.0,20093.0,0,exact01,D,as_1873,1,1054
 1873,British North America,GLASS,"Flint, Plain, Cut, or Ornamented (including Bottles and Phials of Flint Glass)",,22925.0,8151.0,22925.0,1,within5,C,as_1873,1,1032
-1873,British North America,GLASS,"Plate, Rough or Silvered (including Looking Glasses or Mirrors)",,36380.0,202021.0,,0,mod,D,as_1873,1,1008
+1873,British North America,GLASS,"Plate, Rough or Silvered (including Looking Glasses or Mirrors)",,7576.0,202021.0,,0,within5,D,as_1873,1,1008
 1873,British North America,"HABERDASHERY and MILLINERY, including Em- brassery and Needlework",,,1099066.0,,1419720.0,0,within5,D,as_1873,1,1110
-1873,British North America,"HARDWARES and CUTLERY, Unenumerated",,,84421.0,20619.0,213315.0,0,within5,D,as_1873,1,1151
+1873,British North America,"HARDWARES and CUTLERY, Unenumerated",,,213315.0,20619.0,213315.0,1,mod,D,as_1873,1,1151
 1873,British North America,HATS,Bar,Tons,389174.0,39407.0,389174.0,1,exact01,A,as_1873,1,1205
 1873,British North America,HATS,Bolt and Rod,Tons,11706.0,832.0,11706.0,1,exact01,A,as_1873,1,1233
 1873,British North America,HATS,Of Felt,Dozens,29337.0,14824.0,29337.0,1,exact01,A,as_1873,1,1173
 1873,British North America,IRON,"Anchors, Grapnels, Chains, and Cables",Tons,100309.0,4188.0,100309.0,1,exact01,A,as_1873,1,1392
 1873,British North America,IRON,Galvanized (other than Wire or Manufactures     of Wire),Tons,31381.0,871.0,31381.0,1,exact01,A,as_1873,1,1342
-1873,British North America,IRON,Hoops,Tons,46664.0,3153.0,46664.0,1,within5,C,as_1873,1,1362
+1873,British North America,IRON,Hoops,Tons,46664.0,3153.0,46664.0,1,exact01,A,as_1873,1,1362
 1873,British North America,IRON,"Iron: Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",Tons,204496.0,10417.0,,0,gross,D,as_1873,1,1464
 1873,British North America,IRON,"Iron: Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",Tons,85137.0,2663.0,,0,within5,D,as_1873,1,1478
 1873,Canada,IRON,"Iron: Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",Tons,13321.0,405.0,,0,exact01,B,as_1873,1,1487
@@ -431,7 +431,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1873,British North America,LEATHER,"Wrought, other Articles, Unenumerated",Lbs,38872.0,197074.0,,0,within5,D,as_1873,1,1589
 1873,British North America,LINEN and JUTE MANUFACTURES,"Checked, Printed, or Dyed, and Damasks and Diapers",,3623.0,108042.0,3623.0,1,gross,D,as_1873,1,1650
 1873,British North America,LINEN and JUTE MANUFACTURES,Jute Manufactures,,22390.0,970300.0,22390.0,1,mod,D,as_1873,1,1726
-1873,British North America,LINEN and JUTE MANUFACTURES,"Manufactures, Unenumerated",,22527.0,,7414.0,0,mod,D,as_1873,1,1697
+1873,British North America,LINEN and JUTE MANUFACTURES,"Manufactures, Unenumerated",,7414.0,,7414.0,1,mod,D,as_1873,1,1697
 1873,British North America,LINEN and JUTE MANUFACTURES,"Plain, Unbleached or Bleached",Yards,116802.0,3918070.0,116802.0,1,exact01,A,as_1873,1,1638
 1873,British North America,LINEN and JUTE MANUFACTURES,Sail Cloth and Sails,,45205.0,738357.0,45205.0,1,gross,D,as_1873,1,1669
 1873,British North America,LINEN and JUTE MANUFACTURES,Thread for Sewing,,25332.0,215088.0,25332.0,1,within5,C,as_1873,1,1683
@@ -447,7 +447,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1873,British North America,"PAPER: 
                     Writing or Printing, and Envelopes",,Cwts,59806.0,15725.0,59806.0,1,exact01,A,as_1873,1,1985
 1873,British North America,"PAPER: 
-                    Writing or Printing, and Envelopes",Hangings,Cwts,35578.0,13869.0,35578.0,1,within5,C,as_1873,1,1998
+                    Writing or Printing, and Envelopes",Hangings,Cwts,35578.0,13869.0,35578.0,1,exact01,A,as_1873,1,1998
 1873,British North America,"PAPERPasteboard, Millboard, &c. (including Playing Cards)",,Cwts,7085.0,6148.0,76034.0,0,exact01,D,as_1873,1,2008
 1873,British North America,"PAPERPasteboard, Millboard, &c. (including Playing Cards)","Unenumerated, and Articles of Paper (except Papier Mâché)",Cwts,14612.0,4164.0,,0,within5,D,as_1873,1,2025
 1873,British North America,"PERFUMERY, of all Sorts",,,3598.0,,1419720.0,0,exact01,D,as_1873,1,2046
@@ -465,12 +465,12 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1873,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,54845.0,227172.0,,0,exact01,B,as_1873,1,2261
 1873,British North America,SILK MANUFACTURES,Lace,,16037.0,,3558.0,0,gross,D,as_1873,1,2292
 1873,British North America,SILK MANUFACTURES,Ribbons of all Kinds,,33298.0,,33298.0,1,exact01,A,as_1873,1,2284
-1873,British North America,SILK MANUFACTURES,Unenumerated,,43852.0,,79899.0,0,gross,D,as_1873,1,2307
+1873,British North America,SILK MANUFACTURES,Unenumerated,,13392.0,,79899.0,0,gross,D,as_1873,1,2307
 1873,Canada,SKINS and FURS,"Foreign, Dressed in the United Kingdom",,27535.0,36305.0,,0,mod,D,as_1873,1,2347
 1873,British North America,SKINS and FURS,SOAP,,8478.0,6419.0,,0,gross,D,as_1873,1,2370
-1873,Canada,SKINS and FURS,Unenumerated,,13970.0,,2166.0,0,within5,D,as_1873,1,2340
+1873,Canada,SKINS and FURS,Unenumerated,,2166.0,,2166.0,1,mod,D,as_1873,1,2340
 1873,British North America,"SPIRITS, BRITISH and IRISH",,,25258.0,201413.0,1419720.0,0,exact01,D,as_1873,1,2384
-1873,British North America,"STATIONERY, other than Paper",,,135893.0,,37932.0,0,none,X,as_1873,1,2411
+1873,British North America,"STATIONERY, other than Paper",,,37932.0,,37932.0,1,none,X,as_1873,1,2411
 1873,British North America,STONES AND SLATES,"Grindstones, Millstones, and other Sorts of Stone",Tons,8692.0,458.0,8692.0,1,mod,D,as_1873,1,2434
 1873,British North America,SUGAR,Refined and Candy,Cwt,233076.0,152001.0,233076.0,1,within5,C,as_1873,1,2451
 1873,British North America,TELEGRAPHIC WIRES AND APPARATUS,,,31890.0,,31890.0,1,none,X,as_1873,1,2476
@@ -491,8 +491,8 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1873,British North America,ZINC or SPELTER,Manufactured,,266437.0,,,0,within5,D,as_1873,1,2925
 1873,British North America,ZINC or SPELTER,Manufactures of,Cwts,1710.0,952.0,1710.0,1,exact01,A,as_1873,1,2877
 1873,British North America,ZINC or SPELTER,Unmanufactured,,10404.0,,755248.0,0,exact01,D,as_1873,1,2890
-1874,British North America,ALKALI,,Cwts,93273.0,165006.0,93273.0,1,within5,C,as_1874,1,15
-1874,British North America,"ANIMALS, LIVING","Bulls, Oxen, Cows, and Calves",No,4165.0,106.0,4165.0,1,within5,C,as_1874,1,31
+1874,British North America,ALKALI,,Cwts,93273.0,165006.0,93273.0,1,exact01,A,as_1874,1,15
+1874,British North America,"ANIMALS, LIVING","Bulls, Oxen, Cows, and Calves",No,4165.0,106.0,4165.0,1,exact01,A,as_1874,1,31
 1874,British North America,APPAREL and SLOPS,,,294514.0,,234514.0,0,within5,D,as_1874,1,57
 1874,Canada,"ARMS, AMMUNITION, and MILITARY STORES",Cannon and Mortars,,7060.0,192.0,,0,within5,D,as_1874,1,133
 1874,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Fowling Pieces,,3719.0,2011.0,,0,gross,D,as_1874,1,160
@@ -504,19 +504,19 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1874,Canada,"ARMS, AMMUNITION, and MILITARY STORES","Swords, Cutlasses, Bayonets, and Arms of other Sorts, not being Fire-arms",,156955.0,404953.0,,0,within5,D,as_1874,1,195
 1874,British North America,BEEF and ALE,,,557744.0,118418.0,234514.0,0,within5,D,as_1874,1,222
 1874,Canada,BLEACHING MATERIALS,,,7708.0,14544.0,6910.0,0,mod,D,as_1874,1,238
-1874,British North America,BRASS,"Manufactures of, not being Ordnance",,29786.0,3754.0,,0,gross,D,as_1874,1,281
-1874,British North America,"Books, Printed",,,69127.0,7568.0,234514.0,0,exact01,D,as_1874,1,257
-1874,British North America,"CANDLES, of all Sorts",,Lbs,43044.0,1214568.0,8599.0,0,mod,D,as_1874,1,299
-1874,British North America,CAOUTCHOUQ MANUFACTURES,,,62796.0,,234514.0,0,within5,D,as_1874,1,324
-1874,British North America,CEMENT,,Cwts,10526.0,79965.0,8881.0,0,gross,D,as_1874,1,370
+1874,British North America,BRASS,"Manufactures of, not being Ordnance",,3401.0,3754.0,,0,gross,D,as_1874,1,281
+1874,British North America,"Books, Printed",,,69127.0,7568.0,234514.0,0,within5,D,as_1874,1,257
+1874,British North America,"CANDLES, of all Sorts",,Lbs,8599.0,1214568.0,8599.0,1,within5,C,as_1874,1,299
+1874,British North America,CAOUTCHOUQ MANUFACTURES,,,25885.0,,234514.0,0,within5,D,as_1874,1,324
+1874,British North America,CEMENT,,Cwts,8881.0,79965.0,8881.0,1,gross,D,as_1874,1,370
 1874,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,32723.0,,32793.0,0,within5,D,as_1874,1,409
 1874,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated","CLOCKS, WATCHES, and parts thereof",,3470.0,,3470.0,1,exact01,A,as_1874,1,438
 1874,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",Manufactures thereof,Cwts,13420.0,172412.0,13420.0,1,exact01,A,as_1874,1,424
 1874,British North America,"COALS, CINDERS, &c.",Coals,Tons,137531.0,185849.0,,0,exact01,B,as_1874,1,477
 1874,British North America,"COALS, CINDERS, &c.","Products of Coal, Peat, or Shale, including Naphtha, Paraffine, and Oil thereof, and Petroleum, Pitch, and Tar",,1675.0,,1675.0,1,exact01,A,as_1874,1,526
-1874,British North America,COPPER,"Mixed, or Yellow Metal, for Sheathing",Cwts,65087.0,16278.0,65087.0,1,within5,C,as_1874,1,549
+1874,British North America,COPPER,"Mixed, or Yellow Metal, for Sheathing",Cwts,65087.0,16278.0,65087.0,1,exact01,A,as_1874,1,549
 1874,British North America,COPPER,Unenumerated,Cwts,11985.0,2473.0,11985.0,1,exact01,A,as_1874,1,569
-1874,British North America,"CORDAGE, CABLES, and ROPES of HEMP or like MATERIAL",,Cwts,64454.0,18523.0,85356.0,0,mod,D,as_1874,1,592
+1874,British North America,"CORDAGE, CABLES, and ROPES of HEMP or like MATERIAL",,Cwts,85356.0,18523.0,85356.0,1,mod,D,as_1874,1,592
 1874,British North America,CORN and GRAIN,Malt,Quarters,6739.0,2277.0,,0,exact01,B,as_1874,1,609
 1874,British North America,COTTON MANUFACTURES,Lace and Patent Net,,19316.0,,19316.0,1,exact01,A,as_1874,1,722
 1874,British North America,COTTON MANUFACTURES,"Other Manufactures, Unenumerated",,21155.0,,21155.0,1,within5,C,as_1874,1,795
@@ -529,7 +529,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1874,British North America,GLASS,Common Bottles,Cwts,23971.0,48663.0,22195.0,0,exact01,D,as_1874,1,957
 1874,British North America,GLASS,Common Bottles,Cwts,22195.0,14525.0,22195.0,1,within5,C,as_1874,1,972
 1874,British North America,GLASS,"Flint, Plain, Cut, or Ornamented (including Bottles and Phials of Flint Glass)",Cwts,20084.0,7757.0,20084.0,1,exact01,A,as_1874,1,933
-1874,British North America,GLASS,"Plate, Rough or Silvered (including Looking Glasses or Mirrors)",Square Feet,5636.0,36334.0,5636.0,1,within5,C,as_1874,1,917
+1874,British North America,GLASS,"Plate, Rough or Silvered (including Looking Glasses or Mirrors)",Square Feet,5636.0,36334.0,5636.0,1,exact01,A,as_1874,1,917
 1874,British North America,"HABERDASHERY and MILLINERY, including Embroidery and Needlework",,,1044718.0,,1702361.0,0,exact01,D,as_1874,1,1010
 1874,British North America,"HARDWARES and CUTLERY, Unenumerated",,Cwts,266779.0,45368.0,93273.0,0,within5,D,as_1874,1,1052
 1874,British North America,HATS,Of Felt,Dozens,23033.0,14405.0,23033.0,1,exact01,A,as_1874,1,1075
@@ -554,7 +554,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1874,British North America,LEATHER,"Wrought, other Articles, Unenumerated",Lbs,41326.0,152008.0,,0,exact01,B,as_1874,1,1513
 1874,British North America,LINEN and JUTE MANUFACTURES,"Checked, Printed, or Dyed, and Damasks and Diapers",,3061.0,100420.0,3061.0,1,mod,D,as_1874,1,1580
 1874,British North America,LINEN and JUTE MANUFACTURES,Jute-Manufactures,,27903.0,1277510.0,27903.0,1,within5,C,as_1874,1,1656
-1874,British North America,LINEN and JUTE MANUFACTURES,"Manufactures, Unenumerated",,22903.0,,6520.0,0,mod,D,as_1874,1,1628
+1874,British North America,LINEN and JUTE MANUFACTURES,"Manufactures, Unenumerated",,6520.0,,6520.0,1,mod,D,as_1874,1,1628
 1874,British North America,LINEN and JUTE MANUFACTURES,"Plain, Unbleached or Bleached",Yards,156345.0,5674750.0,,0,within5,D,as_1874,1,1567
 1874,British North America,LINEN and JUTE MANUFACTURES,Sail Cloth and Sails,,46188.0,748030.0,46188.0,1,gross,D,as_1874,1,1600
 1874,British North America,LINEN and JUTE MANUFACTURES,Thread for Sewing,,24410.0,222179.0,43050.0,0,none,X,as_1874,1,1614
@@ -575,8 +575,8 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1874,Canada,"PLATE, GOLD",Silver,Ounces,1950.0,3199.0,1980.0,0,exact01,D,as_1874,1,2032
 1874,British North America,PLATED and GILT WARES,,,7339.0,,7339.0,1,exact01,A,as_1874,1,2049
 1874,British North America,PLUMBAGO,,Cwtts,2955.0,1246.0,,0,exact01,B,as_1874,1,2053
-1874,British North America,"PRINTS, ENGRAVINGS, DRAWINGS, &c.",,,2035.0,,2035.0,1,within5,C,as_1874,1,2064
-1874,British North America,"PROVISIONS, UNENUMERATED",,,9353.0,,9353.0,1,within5,C,as_1874,1,2100
+1874,British North America,"PRINTS, ENGRAVINGS, DRAWINGS, &c.",,,2035.0,,2035.0,1,exact01,A,as_1874,1,2064
+1874,British North America,"PROVISIONS, UNENUMERATED",,,9353.0,,9353.0,1,exact01,A,as_1874,1,2100
 1874,Canada,RAGS (except Woollen) and other Materials for making Paper,,Tons,6940.0,453.0,3124.0,0,exact01,D,as_1874,1,2106
 1874,British North America,SADDLERY AND HARNESS,,,6485.0,,6485.0,1,within5,C,as_1874,1,2121
 1874,British North America,SALT (Rock and White),,Tons,39667.0,55429.0,,0,exact01,B,as_1874,1,2137
@@ -604,7 +604,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1874,British North America,WOOLLEN and WORSTED MANUFACTURES,Hosiery,,68368.0,,68368.0,1,exact01,A,as_1874,1,2741
 1874,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths: Coatings, Duffels, &c., of Wool, Mixed with other Materials",Yards,166188.0,1447020.0,,0,exact01,B,as_1874,1,2603
 1874,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths: Coatings, Duffs, &c., Plain, all Wool",,94110.0,711026.0,,0,none,X,as_1874,1,2585
-1874,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,No,40561.0,106389.0,40564.0,1,within5,C,as_1874,1,2717
+1874,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,No,40561.0,106389.0,40564.0,1,exact01,A,as_1874,1,2717
 1874,British North America,WOOLLEN and WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,30083.0,,30083.0,1,exact01,A,as_1874,1,2761
 1874,British North America,WOOLLEN and WORSTED MANUFACTURES,"Worsted Stuffs, all Wool",Yards,55410.0,996660.0,,0,exact01,B,as_1874,1,2620
 1874,British North America,WOOLLEN and WORSTED MANUFACTURES,"Worsted Stuffs, of Wool Mixed with other Materials",Yards,364846.0,9072897.0,,0,exact01,B,as_1874,1,2650
@@ -638,7 +638,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1875,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",,636501.0,28257340.0,,0,exact01,B,as_1875,1,630
 1875,British North America,COTTON MANUFACTURES,Red Pottery and Brown Stone Ware,,6241.0,,6241.0,1,exact01,A,as_1875,1,748
 1875,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,6055.0,19085.0,6055.0,1,exact01,A,as_1875,1,680
-1875,British North America,COTTON MANUFACTURES,Thread for Sewing,,209458.0,1550583.0,62553.0,0,exact01,D,as_1875,1,718
+1875,British North America,COTTON MANUFACTURES,Thread for Sewing,,62553.0,1550583.0,62553.0,1,mod,D,as_1875,1,718
 1875,British North America,"FURNITURE (Household), CABINET and UP-HOLSTERY WARES",,,6605.0,,36980.0,0,exact01,D,as_1875,1,819
 1875,British North America,GLASS,"Other Manufactures, Unenumerated",Cwts,20660.0,13534.0,,0,within5,D,as_1875,1,847
 1875,British North America,GLASS,"Plate, Rough or Silvered (including Looking Glasses or Mirrors)",Square Feet,8646.0,60313.0,,0,exact01,B,as_1875,1,833
@@ -670,24 +670,24 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1875,British North America,LINEN and JUTE MANUFACTURES,"Plain, Unbleached, or Bleached",Yards,196708.0,7485380.0,196708.0,1,exact01,A,as_1875,1,1433
 1875,British North America,LINEN and JUTE MANUFACTURES,Sail Cloth and Sails,Yards,23693.0,361360.0,23693.0,1,exact01,A,as_1875,1,1454
 1875,British North America,LINEN and JUTE MANUFACTURES,Thread for Sewing,Lbs,29912.0,282969.0,29912.0,1,exact01,A,as_1875,1,1465
-1875,British North America,MACHINERY and MILL WORK,Not being Steam Engines; other Descriptions,,36089.0,,36089.0,1,within5,C,as_1875,1,1541
+1875,British North America,MACHINERY and MILL WORK,Not being Steam Engines; other Descriptions,,36089.0,,36089.0,1,exact01,A,as_1875,1,1541
 1875,British North America,MEDICINES,,,40900.0,,36980.0,0,exact01,D,as_1875,1,1572
 1875,British North America,"MUSICAL INSTRUMENTS, and Parts thereof",,,9441.0,,9441.0,1,exact01,A,as_1875,1,1584
 1875,British North America,"OIL, other than Essential or Medicinal","OIL and FLOOR CLOTH, including India Rubber Cloth",,57434.0,616933.0,57434.0,1,gross,D,as_1875,1,1617
 1875,British North America,"OIL, other than Essential or Medicinal",Seed,Gallons,70713.0,629337.0,70713.0,1,exact01,A,as_1875,1,1599
 1875,British North America,PAINTERS' COLOURS and MATERIALS,Unenumerated,-,110830.0,,,0,within5,D,as_1875,1,1642
 1875,British North America,PAPER,Hangings,,38567.0,14209.0,,0,exact01,B,as_1875,1,1663
-1875,British North America,PAPER,"Pasteboard, Millboard, &c. (including Play- ing Cards)",Cwts,4979.0,2767.0,,0,within5,D,as_1875,1,1671
+1875,British North America,PAPER,"Pasteboard, Millboard, &c. (including Play- ing Cards)",Cwts,4979.0,2767.0,,0,exact01,B,as_1875,1,1671
 1875,British North America,PAPER,"Unenumerated, and Articles of Paper (except Papier Maché)",,8697.0,3496.0,,0,exact01,B,as_1875,1,1685
 1875,British North America,PAPER,"Writing or Printing, and Envelopes",Cwts,65602.0,16046.0,65602.0,1,mod,D,as_1875,1,1654
-1875,British North America,"PICKLES, VINEGAR, and SAUCES",,,216666.0,,43829.0,0,mod,D,as_1875,1,1719
-1875,British North America,"PLATE, GOLD",PLATED and GILT WARES,,76919.0,,,0,mod,D,as_1875,1,1747
+1875,British North America,"PICKLES, VINEGAR, and SAUCES",,,43829.0,,43829.0,1,within5,C,as_1875,1,1719
+1875,British North America,"PLATE, GOLD",PLATED and GILT WARES,,7748.0,,,0,mod,D,as_1875,1,1747
 1875,British North America,"PROVISIONS, UNENUMERATED",,,10180.0,,10180.0,1,exact01,A,as_1875,1,1782
 1875,British North America,SADDLERY AND HARNESS,,,7641.0,,7641.0,1,exact01,A,as_1875,1,1802
 1875,British North America,SALT (Rock and White),,Tons,34462.0,57930.0,34462.0,1,exact01,A,as_1875,1,1816
 1875,British North America,"SEEDS, of all Sorts",,Cwts,10603.0,4068.0,10603.0,1,exact01,A,as_1875,1,1832
 1875,Canada,SILK MANUFACTURES,Broad Stuffs,Yards,20694.0,121774.0,,0,exact01,B,as_1875,1,1899
-1875,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,21060.0,230993.0,51060.0,0,mod,D,as_1875,1,1850
+1875,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,51060.0,230993.0,51060.0,1,exact01,A,as_1875,1,1850
 1875,British North America,SILK MANUFACTURES,Lace,,8389.0,,8389.0,1,exact01,A,as_1875,1,1878
 1875,British North America,SILK MANUFACTURES,Ribbons of all Kinds,,21974.0,,21974.0,1,exact01,A,as_1875,1,1869
 1875,British North America,SILK MANUFACTURES,Unenumerated,,7479.0,,7479.0,1,exact01,A,as_1875,1,1889
@@ -702,7 +702,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1875,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",,130944.0,676280.0,,0,exact01,B,as_1875,1,2148
 1875,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad'Cloths, Coatings, Duffels, &c., Plain, all Wool",Yards,638396.0,633190.0,638396.0,1,exact01,A,as_1875,1,2132
 1875,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",Yards,154790.0,1071320.0,154790.0,1,exact01,A,as_1875,1,2263
-1875,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,Yards,68029.0,1356710.0,68029.0,1,within5,C,as_1875,1,2243
+1875,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,Yards,68029.0,1356710.0,68029.0,1,exact01,A,as_1875,1,2243
 1875,British North America,WOOLLEN and WORSTED MANUFACTURES,Hosiery,,60914.0,,60914.0,1,exact01,A,as_1875,1,2297
 1875,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., Plain, all Wool",,144247.0,1094665.0,,0,exact01,B,as_1875,1,2164
 1875,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",,199045.0,1361440.0,,0,exact01,B,as_1875,1,2180
@@ -727,7 +727,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1876,Canada,"Bags and Sacks, Empty",,Dozens,18121.0,64932.0,,0,gross,D,as_1876,1,179
 1876,British North America,"Books, Printed",,Cwts,68102.0,6913.0,55346.0,0,gross,D,as_1876,1,240
 1876,British North America,"CANDLES, of all Sorts",,Lbs,7321.0,231586.0,,0,within5,D,as_1876,1,278
-1876,British North America,CAOUTCHOUO MANUFACTURES,,,56277.0,,233321.0,0,mod,D,as_1876,1,294
+1876,British North America,CAOUTCHOUO MANUFACTURES,,,18180.0,,233321.0,0,exact01,D,as_1876,1,294
 1876,British North America,CEMENT,,Cwts,10952.0,86698.0,55346.0,0,exact01,D,as_1876,1,325
 1876,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,25874.0,,25874.0,1,exact01,A,as_1876,1,358
 1876,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",Manufactures thereof,,12021.0,187721.0,,0,exact01,B,as_1876,1,369
@@ -735,10 +735,10 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1876,British North America,COTTON MANUFACTURES,Hosiery of Other Sorts,,22486.0,,22486.0,1,exact01,A,as_1876,1,636
 1876,British North America,COTTON MANUFACTURES,Lace and Patent Net,,51301.0,,51301.0,1,gross,D,as_1876,1,613
 1876,British North America,COTTON MANUFACTURES,"Other Manufactures, Unenumerated",,24316.0,,24316.0,1,exact01,A,as_1876,1,679
-1876,British North America,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",,5500.0,146900.0,36665.0,0,within5,D,as_1876,1,596
+1876,British North America,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",,5500.0,146900.0,36665.0,0,exact01,D,as_1876,1,596
 1876,British North America,COTTON MANUFACTURES,"Piece Goods, Plain",,178733.0,9623800.0,178733.0,1,gross,D,as_1876,1,528
-1876,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",,474956.0,22989880.0,474956.0,1,within5,C,as_1876,1,577
-1876,British North America,COTTON MANUFACTURES,Thread for Sewing,,69984.0,387819.0,69984.0,1,within5,C,as_1876,1,660
+1876,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",,474956.0,22989880.0,474956.0,1,exact01,A,as_1876,1,577
+1876,British North America,COTTON MANUFACTURES,Thread for Sewing,,69984.0,387819.0,69984.0,1,exact01,A,as_1876,1,660
 1876,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,89841.0,,89841.0,1,exact01,A,as_1876,1,713
 1876,British North America,GLASS,"Flint, Plain, Cut, or Ornamented (including Bottles and Phials of Flint Glass)",Cwts,10700.0,3365.0,,0,exact01,B,as_1876,1,779
 1876,British North America,GLASS,"Other Manufactures, Unenumerated",Cwts,11664.0,7776.0,,0,exact01,B,as_1876,1,791
@@ -759,11 +759,11 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1876,British North America,Iron,Bar,Tons,167875.0,21521.0,167875.0,1,within5,C,as_1876,1,996
 1876,British North America,Iron,Bolt and Rod,Tons,7594.0,886.0,7594.0,1,exact01,A,as_1876,1,1022
 1876,British North America,Iron,"Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",Tons,82050.0,6427.0,,0,exact01,B,as_1876,1,1213
-1876,British North America,Iron,Galvanized (other than Wire or Manufactures     of Wire),Tons,43423.0,1435.0,43423.0,1,within5,C,as_1876,1,1111
+1876,British North America,Iron,Galvanized (other than Wire or Manufactures     of Wire),Tons,43423.0,1435.0,43423.0,1,exact01,A,as_1876,1,1111
 1876,British North America,Iron,Hoops,Tons,23413.0,2785.0,23413.0,1,exact01,A,as_1876,1,1133
 1876,British North America,Iron,"Nails, Screws, and Rivets",Tons,22910.0,920.0,,0,exact01,B,as_1876,1,1182
 1876,Canada,Iron,RAILROAD—Rails and Tie Rods,Tons,499683.0,58612.0,499683.0,1,exact01,A,as_1876,1,1037
-1876,Canada,Iron,RAILROAD—Unenumerated,Tons,24580.0,2442.0,24580.0,1,within5,C,as_1876,1,1062
+1876,Canada,Iron,RAILROAD—Unenumerated,Tons,24580.0,2442.0,24580.0,1,exact01,A,as_1876,1,1062
 1876,British North America,Iron,"Sheets, and Boiler and Armour Plates",Tons,45243.0,3934.0,45243.0,1,exact01,A,as_1876,1,1081
 1876,British North America,Iron,"Steel, Bar, of all Kinds",Tons,55031.0,2195.0,55031.0,1,exact01,A,as_1876,1,1227
 1876,British North America,Iron,Tin Plates,Tons,103341.0,4439.0,103341.0,1,exact01,A,as_1876,1,1094
@@ -802,15 +802,15 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1876,British North America,WOOLLEN and WORSTED MANUFACTURES,Blankets and Blanketing,Yards,,121930.0,57660.0,0,none,X,as_1876,1,2078
 1876,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",Yards,114187.0,663310.0,114187.0,1,within5,C,as_1876,1,2003
 1876,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffs, &c., Plain, all Wool",Yards,643740.0,589180.0,,0,within5,D,as_1876,1,1987
-1876,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",Yards,111982.0,834670.0,111982.0,1,within5,C,as_1876,1,2103
+1876,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",Yards,111982.0,834670.0,111982.0,1,exact01,A,as_1876,1,2103
 1876,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,Yards,53572.0,1125770.0,53572.0,1,mod,D,as_1876,1,2087
 1876,British North America,WOOLLEN and WORSTED MANUFACTURES,Hosiery,,31613.0,,31643.0,1,mod,D,as_1876,1,2136
-1876,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., Plain, all Wool",Yards,233883.0,1436190.0,99269.0,0,mod,D,as_1876,1,2015
-1876,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",Yards,72654.0,686020.0,115081.0,0,mod,D,as_1876,1,2029
+1876,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., Plain, all Wool",Yards,99269.0,1436190.0,99269.0,1,within5,C,as_1876,1,2015
+1876,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",Yards,115081.0,686020.0,115081.0,1,within5,C,as_1876,1,2029
 1876,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",Yards,,1965830.0,115081.0,0,none,X,as_1876,1,2040
 1876,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,No,21721.0,59537.0,21721.0,1,exact01,A,as_1876,1,2114
 1876,British North America,WOOLLEN and WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,15819.0,,15819.0,1,exact01,A,as_1876,1,2149
-1876,British North America,WOOLLEN and WORSTED YARN,Woollen Yarn (Carded),Lbs,6314.0,41958.0,6314.0,1,mod,D,as_1876,1,1961
+1876,British North America,WOOLLEN and WORSTED YARN,Woollen Yarn (Carded),Lbs,6314.0,41958.0,6314.0,1,exact01,A,as_1876,1,1961
 1876,British North America,ZINC or SPELTER,Manufactured,,1037752.0,,,0,mod,D,as_1876,1,2220
 1876,British North America,ZINC or SPELTER,Manufactures of,,3750.0,2378.0,,0,exact01,B,as_1876,1,2184
 1876,British North America,ZINC or SPELTER,Unmanufactured,,6439.0,,,0,exact01,B,as_1876,1,2197
@@ -818,16 +818,16 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1877,British North America,APPAREL and SLOPS,,,205018.0,,203018.0,0,exact01,D,as_1877,1,46
 1877,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Fowling Pieces,No,4425.0,1766.0,4425.0,1,exact01,A,as_1877,1,140
 1877,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Gunpowder,Lbs,10027.0,366747.0,10027.0,1,within5,C,as_1877,1,74
-1877,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ordnance Stores and Ammunition, Unenumerated",,96205.0,,12857.0,0,gross,D,as_1877,1,110
+1877,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ordnance Stores and Ammunition, Unenumerated",,12857.0,,12857.0,1,gross,D,as_1877,1,110
 1877,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,No,1908.0,17400500.0,1908.0,1,exact01,A,as_1877,1,92
 1877,British North America,BEER and ALE,,Barrels,39596.0,8857.0,,0,within5,D,as_1877,1,190
-1877,Canada,BLEACHING MATERIALS,,Cwts,4326.0,14134.0,4326.0,1,within5,C,as_1877,1,219
+1877,Canada,BLEACHING MATERIALS,,Cwts,4326.0,14134.0,4326.0,1,exact01,A,as_1877,1,219
 1877,British North America,"Bags and SACKS, Empty",,Dozens,23429.0,83816.0,,0,exact01,B,as_1877,1,169
 1877,British North America,"Books, Printed",,Cwts,70573.0,6996.0,70610.0,1,exact01,A,as_1877,1,235
-1877,British North America,CALCITRHOUS MANUFACTURES,,,77139.0,,203018.0,0,mod,D,as_1877,1,294
-1877,British North America,"CANDLES, of all Sorts",,Lbs,44515.0,1342778.0,7260.0,0,mod,D,as_1877,1,270
-1877,British North America,CEMENT,,Cwts,12709.0,97140.0,12709.0,1,exact01,A,as_1877,1,320
-1877,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,30850.0,,30850.0,1,mod,D,as_1877,1,355
+1877,British North America,CALCITRHOUS MANUFACTURES,,,23835.0,,203018.0,0,mod,D,as_1877,1,294
+1877,British North America,"CANDLES, of all Sorts",,Lbs,7260.0,1342778.0,7260.0,1,within5,C,as_1877,1,270
+1877,British North America,CEMENT,,Cwts,12709.0,97140.0,12709.0,1,within5,C,as_1877,1,320
+1877,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,30850.0,,30850.0,1,exact01,A,as_1877,1,355
 1877,British North America,"CLAY, unmanufactured",Manufactures thereof,Cwts,13047.0,218155.0,13047.0,1,exact01,A,as_1877,1,377
 1877,British North America,"COALS, CINDERS, &c.",Coals,Tons,83358.0,177194.0,83358.0,1,within5,C,as_1877,1,426
 1877,British North America,COPPER,"Mixed or Yellow Metal, for Sheathing",Cwts,47629.0,13425.0,,0,exact01,B,as_1877,1,481
@@ -859,7 +859,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1877,British North America,Iron,Pig,Tons,63630.0,20805.0,63690.0,1,exact01,A,as_1877,1,1053
 1877,Canada,Iron,Puddled,Tons,2048.0,412.0,2048.0,1,exact01,A,as_1877,1,1057
 1877,Canada,Iron,RAILROAD—Unenumerated,Tons,16102.0,1404.0,16102.0,1,exact01,A,as_1877,1,1142
-1877,British North America,Iron,Railroad—Rails and Tie Rods,Tons,282284.0,34694.0,,0,within5,D,as_1877,1,1118
+1877,British North America,Iron,Railroad—Rails and Tie Rods,Tons,282284.0,34694.0,,0,exact01,B,as_1877,1,1118
 1877,British North America,Iron,"Sheets, and Boiler and Armour Plates",Tons,58015.0,6219.0,58015.0,1,within5,C,as_1877,1,1162
 1877,British North America,Iron,"Steel, Bar, of all Kinds",,51439.0,2143.0,,0,none,X,as_1877,1,1288
 1877,British North America,Iron,Tin Plates,Tons,185836.0,9060.0,185836.0,1,exact01,A,as_1877,1,1176
@@ -871,10 +871,10 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1877,British North America,LINEN and JUTE MANUFACTURES,"Plain, Unbleached or Bleached",Yards,159326.0,6508815.0,159326.0,1,within5,C,as_1877,1,1372
 1877,British North America,LINEN and JUTE MANUFACTURES,Sail Cloth and Sails,Yards,10712.0,181733.0,10712.0,1,exact01,A,as_1877,1,1390
 1877,British North America,LINEN and JUTE MANUFACTURES,Thread for Sewing,Lbs,31394.0,287055.0,31394.0,1,mod,D,as_1877,1,1399
-1877,British North America,MACHINERY and Mill Work,Not being Steam Engines; other Descriptions,,34655.0,,34655.0,1,mod,D,as_1877,1,1501
+1877,British North America,MACHINERY and Mill Work,Not being Steam Engines; other Descriptions,,34655.0,,34655.0,1,exact01,A,as_1877,1,1501
 1877,British North America,MEDICINES,,,37914.0,,37914.0,1,within5,C,as_1877,1,1531
 1877,British North America,"MUSICAL INSTRUMENTS, and Parts thereof",,,6540.0,,203018.0,0,exact01,D,as_1877,1,1541
-1877,British North America,"MUSICAL INSTRUMENTS, and Parts thereof",Seed,Gallons,52942.0,447582.0,52942.0,1,within5,C,as_1877,1,1556
+1877,British North America,"MUSICAL INSTRUMENTS, and Parts thereof",Seed,Gallons,52942.0,447582.0,52942.0,1,exact01,A,as_1877,1,1556
 1877,British North America,PAINTERS' COLOURS and MATERIALS,Hangings,,28036.0,12105.0,28036.0,1,exact01,A,as_1877,1,1609
 1877,British North America,PAINTERS' COLOURS and MATERIALS,"Pasteboard, Millboard, &c. (including Play-     ing Cards)",Cwts,1617.0,1201.0,,0,exact01,B,as_1877,1,1617
 1877,British North America,PAINTERS' COLOURS and MATERIALS,Unenumerated,,103337.0,,103337.0,1,exact01,A,as_1877,1,1591
@@ -901,12 +901,12 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1877,British North America,UMBRELLAS and PARASOLS,,,29718.0,,203018.0,0,exact01,D,as_1877,1,1980
 1877,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffels, &c., Plain, all Wool",Yards,777960.0,705720.0,777960.0,1,exact01,A,as_1877,1,2052
 1877,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",Yards,135907.0,835690.0,135907.0,1,mod,D,as_1877,1,2069
-1877,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",Yards,1571110.0,1137300.0,141554.0,0,exact01,D,as_1877,1,2162
-1877,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,Yards,451490.0,1189170.0,55888.0,0,exact01,D,as_1877,1,2146
+1877,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",Yards,141554.0,1137300.0,141554.0,1,within5,C,as_1877,1,2162
+1877,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,Yards,55888.0,1189170.0,55888.0,1,exact01,A,as_1877,1,2146
 1877,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., Plain, all Wool",Yards,84682.0,677030.0,84682.0,1,exact01,A,as_1877,1,2079
 1877,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",Yards,148237.0,1251890.0,58890.0,0,exact01,D,as_1877,1,2092
 1877,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",Yards,463082.0,12456910.0,58890.0,0,mod,D,as_1877,1,2123
-1877,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",Yards,58890.0,538499.0,58890.0,1,mod,D,as_1877,1,2136
+1877,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",Yards,58890.0,538499.0,58890.0,1,exact01,A,as_1877,1,2136
 1877,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",Lbs,43624.0,722600.0,,0,within5,D,as_1877,1,2102
 1877,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,No,19067.0,65219.0,19067.0,1,exact01,A,as_1877,1,2171
 1877,British North America,WOOLLEN and WORSTED YARN,Woollen Yarn (Carded),Lbs,8076.0,57739.0,8076.0,1,within5,C,as_1877,1,2025
@@ -938,8 +938,8 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1878,British North America,COTTON MANUFACTURES,"Piece Goods, Plain",,170165.0,9689900.0,170165.0,1,gross,D,as_1878,1,649
 1878,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",,501540.0,27973100.0,,0,exact01,B,as_1878,1,701
 1878,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,13875.0,44565.0,13875.0,1,exact01,A,as_1878,1,752
-1878,British North America,COTTON MANUFACTURES,Thread for Sewing,,155677.0,1347500.0,58226.0,0,within5,D,as_1878,1,799
-1878,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,92584.0,,92584.0,1,within5,C,as_1878,1,861
+1878,British North America,COTTON MANUFACTURES,Thread for Sewing,,155677.0,1347500.0,58226.0,0,exact01,D,as_1878,1,799
+1878,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,92584.0,,92584.0,1,exact01,A,as_1878,1,861
 1878,British North America,"FURNITURE (Household), CABINET and UP- HOLSTERY WARES",,,7772.0,,180046.0,0,exact01,D,as_1878,1,922
 1878,British North America,GLASS,"FLINT, PLAIN, CUT, OR ORNAMENTED (including Bottles and Phials of Flint Glass)",Cwts,9518.0,2574.0,,0,within5,D,as_1878,1,945
 1878,British North America,GLASS,"Other Manufactures, Unenumerated",Cwts,5713.0,4197.0,5713.0,1,exact01,A,as_1878,1,957
@@ -952,14 +952,14 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1878,British North America,IRON,"Anchors, Grapnels, Chains, and Cables",Tons,34255.0,2595.0,34255.0,1,exact01,A,as_1878,1,1328
 1878,British North America,IRON,Bar,Tons,140993.0,21153.0,140993.0,1,exact01,A,as_1878,1,1156
 1878,British North America,IRON,Bolt and Rod,Tons,7130.0,877.0,7130.0,1,exact01,A,as_1878,1,1179
-1878,British North America,IRON,"Cast or Wrought, and all other Manufactures,     except Ordnance, unenumerated",Tons,56798.0,5349.0,56798.0,1,within5,C,as_1878,1,1378
+1878,British North America,IRON,"Cast or Wrought, and all other Manufactures,     except Ordnance, unenumerated",Tons,56798.0,5349.0,56798.0,1,exact01,A,as_1878,1,1378
 1878,British North America,IRON,Hoops,Tons,14873.0,1989.0,14873.0,1,exact01,A,as_1878,1,1301
 1878,British North America,IRON,"Manufactures of Steel, or of Steel and Iron combined",Tons,17943.0,270.0,17943.0,1,exact01,A,as_1878,1,1413
 1878,British North America,IRON,"Nails, Screws, and Rivets",Tons,14777.0,795.0,14777.0,1,exact01,A,as_1878,1,1351
 1878,British North America,IRON,Pig,Tons,68666.0,23324.0,68666.0,1,exact01,A,as_1878,1,1128
 1878,Canada,IRON,Puddled,Tons,350.0,99.0,350.0,1,exact01,A,as_1878,1,1132
 1878,British North America,IRON,RAILROAD—Rails and Tie Rods,Tons,236580.0,32287.0,236580.0,1,exact01,A,as_1878,1,1195
-1878,Canada,IRON,RAILROAD—Unenumerated,Tons,19074.0,2103.0,19074.0,1,within5,C,as_1878,1,1221
+1878,Canada,IRON,RAILROAD—Unenumerated,Tons,19074.0,2103.0,19074.0,1,exact01,A,as_1878,1,1221
 1878,British North America,IRON,"Sheets, and Boiler and Armour Plates",Tons,37061.0,4115.0,37061.0,1,exact01,A,as_1878,1,1244
 1878,British North America,IRON,"Steel, Bar, of all Kinds",Tons,48390.0,2371.0,48390.0,1,gross,D,as_1878,1,1392
 1878,British North America,IRON,Tin Plates,Tons,95216.0,5346.0,95216.0,1,exact01,A,as_1878,1,1263
@@ -973,19 +973,19 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1878,British North America,LINEN and JUTE MANUFACTURES,"Plain, Unbleached or Bleached",,144527.0,5879700.0,,0,exact01,B,as_1878,1,1503
 1878,British North America,LINEN and JUTE MANUFACTURES,Sail Cloth and Sails,,8958.0,146700.0,,0,exact01,B,as_1878,1,1522
 1878,British North America,LINEN and JUTE MANUFACTURES,Thread for Sewing,,23668.0,201100.0,58226.0,0,within5,D,as_1878,1,1530
-1878,British North America,MACHINERY and MILL WORK,Not being Steam Engines; other Descriptions,,39954.0,,39954.0,1,within5,C,as_1878,1,1647
+1878,British North America,MACHINERY and MILL WORK,Not being Steam Engines; other Descriptions,,39954.0,,39954.0,1,exact01,A,as_1878,1,1647
 1878,British North America,MEAL and FLOUR,Oatmeal,Cwts,1360.0,1415.0,1360.0,1,exact01,A,as_1878,1,569
-1878,British North America,MEAL and FLOUR,Wheat Meal or Flour,Cwts,2398.0,2552.0,2298.0,0,within5,D,as_1878,1,562
+1878,British North America,MEAL and FLOUR,Wheat Meal or Flour,Cwts,2298.0,2552.0,2298.0,1,exact01,A,as_1878,1,562
 1878,British North America,MEDICINES,,,36397.0,,36397.0,1,exact01,A,as_1878,1,1681
 1878,British North America,MUSICAL INSTRUMENTS; and Parts thereof,,,8738.0,,180046.0,0,exact01,D,as_1878,1,1691
 1878,British North America,"OIL, other than Essential or Medicinal",Seed,Gallons,44112.0,377500.0,,0,exact01,B,as_1878,1,1706
 1878,British North America,PAINTERS' COLOURS and MATERIALS,Unenumerated,,71126.0,,7001.0,0,exact01,D,as_1878,1,1747
 1878,British North America,PAPER,Hangings,Cwts,10706.0,,,0,gross,D,as_1878,1,1765
 1878,British North America,PAPER,"Pasteboard, Millboard, &c. (including Play- ing Cards)",Cwts,1685.0,1102.0,,0,exact01,B,as_1878,1,1773
-1878,British North America,PAPER,"Unenumerated, and Articles of Paper (except Papier Mâché)",,36659.0,15259.0,,0,exact01,B,as_1878,1,1789
+1878,British North America,PAPER,"Unenumerated, and Articles of Paper (except Papier Mâché)",,6446.0,15259.0,,0,mod,D,as_1878,1,1789
 1878,British North America,PAPER,"Writing or Printing, and Envelopes",Cwts,9619.0,,,0,gross,D,as_1878,1,1759
-1878,British North America,"PICKLES, VINEGAR, and SAUCES",,,41630.0,,180046.0,0,exact01,D,as_1878,1,1819
-1878,British North America,"PLATE, GOLD",PLATED and GILT WARES,,72993.0,,4383.0,0,gross,D,as_1878,1,1851
+1878,British North America,"PICKLES, VINEGAR, and SAUCES",,,41630.0,,180046.0,0,within5,D,as_1878,1,1819
+1878,British North America,"PLATE, GOLD",PLATED and GILT WARES,,4383.0,,4383.0,1,gross,D,as_1878,1,1851
 1878,British North America,PLUMBAGO,,,3492.0,1616.0,180046.0,0,gross,D,as_1878,1,1856
 1878,British North America,RAGS (except Woollen) and other Materials for making Paper,,Tons,3899.0,299.0,3899.0,1,exact01,A,as_1878,1,1891
 1878,British North America,SALT (Rock and White),,Tons,37190.0,75587.0,37190.0,1,exact01,A,as_1878,1,1917
@@ -994,7 +994,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1878,Canada,SILK MANUFACTURES,Broad Stuffs,,47786.0,299740.0,,0,mod,D,as_1878,1,1989
 1878,Canada,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,60777.0,326450.0,60777.0,1,exact01,A,as_1878,1,1950
 1878,British North America,SILK MANUFACTURES,Ribbons of all Kinds,,20859.0,,20859.0,1,exact01,A,as_1878,1,1962
-1878,British North America,SILK MANUFACTURES,Unenumerated,,51409.0,,7001.0,0,mod,D,as_1878,1,1979
+1878,British North America,SILK MANUFACTURES,Unenumerated,,7001.0,,7001.0,1,mod,D,as_1878,1,1979
 1878,Canada,SKINS and FURS,"Foreign, Dressed in the United Kingdom",,20257.0,15233.0,,0,within5,D,as_1878,1,2007
 1878,British North America,SOAP,,,7128.0,5192.0,180046.0,0,exact01,D,as_1878,1,2020
 1878,British North America,"SPIRITS, BRITISH and IRISH",,,34311.0,130345.0,180046.0,0,exact01,D,as_1878,1,2032
@@ -1005,12 +1005,12 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1878,British North America,SUGAR,Refined and Candy,,367704.0,331342.0,,0,gross,D,as_1878,1,2083
 1878,British North America,SUGAR,Refined and Candy,,367704.0,331342.0,,0,gross,D,as_1878,1,2108
 1878,British North America,SUGAR,Refined and Candy,,367704.0,331342.0,,0,gross,D,as_1878,1,2133
-1878,British North America,TELEGRAPHIC WIRES AND APPARATUS,,,55486.0,,134811.0,0,gross,D,as_1878,1,2149
+1878,British North America,TELEGRAPHIC WIRES AND APPARATUS,,,134811.0,,134811.0,1,gross,D,as_1878,1,2149
 1878,British North America,"TIN, Unwrought",,,9242.0,2760.0,9242.0,1,gross,D,as_1878,1,2161
 1878,British North America,"TIN, Unwrought",,,9242.0,2760.0,9242.0,1,gross,D,as_1878,1,2186
 1878,British North America,"TIN, Unwrought",,,9242.0,2760.0,9242.0,1,gross,D,as_1878,1,2211
 1878,British North America,UMBRELLAS and PARASOLS,,,31529.0,,180046.0,0,exact01,D,as_1878,1,2251
-1878,British North America,WOOLLEN and WORSTED MANUFACTURES,Blankets and Blanketing,,73360.0,785000.0,,0,exact01,B,as_1878,1,2417
+1878,British North America,WOOLLEN and WORSTED MANUFACTURES,Blankets and Blanketing,,51959.0,785000.0,,0,mod,D,as_1878,1,2417
 1878,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffels, &c., Plain, all Wool",,587300.0,552500.0,587300.0,1,gross,D,as_1878,1,2315
 1878,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",,130619.0,688800.0,,0,gross,D,as_1878,1,2334
 1878,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",Yards,119342.0,1006700.0,119342.0,1,exact01,A,as_1878,1,2443
@@ -1019,12 +1019,12 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1878,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., Plain, all Wool",,57106.0,407600.0,,0,mod,D,as_1878,1,2347
 1878,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffels, &c., of Wool mixed with other Materials",,154180.0,1276000.0,,0,mod,D,as_1878,1,2363
 1878,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,No,16696.0,45037.0,16696.0,1,exact01,A,as_1878,1,2453
-1878,British North America,WOOLLEN and WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,9376.0,,9376.0,1,mod,D,as_1878,1,2487
+1878,British North America,WOOLLEN and WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,9376.0,,9376.0,1,exact01,A,as_1878,1,2487
 1878,British North America,WOOLLEN and WORSTED MANUFACTURES,"Worsted Stuffs, all Wool",,90543.0,1572800.0,,0,exact01,B,as_1878,1,2377
 1878,British North America,WOOLLEN and WORSTED MANUFACTURES,"Worsted Stuffs, of Wool mixed with other Materials",,431809.0,12365200.0,,0,gross,D,as_1878,1,2404
 1878,British North America,WOOLLEN and WORSTED YARN,Woollen Yarn (Carded),,5387.0,36100.0,5387.0,1,gross,D,as_1878,1,2286
-1878,British North America,ZINC or SPELTER.,Manufactured,,1128598.0,,162378.0,0,gross,D,as_1878,1,2553
-1878,British North America,ZINC or SPELTER.,Manufactures of,,1000.0,647.0,,0,mod,D,as_1878,1,2508
+1878,British North America,ZINC or SPELTER.,Manufactured,,162378.0,,162378.0,1,gross,D,as_1878,1,2553
+1878,British North America,ZINC or SPELTER.,Manufactures of,,1000.0,647.0,,0,within5,D,as_1878,1,2508
 1879,British North America,ALKALI,,Cwts,75006.0,215050.0,75006.0,1,exact01,A,as_1879,1,15
 1879,British North America,APPAREL and SLOPS,,,134700.0,,134700.0,1,exact01,A,as_1879,1,66
 1879,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Fowling Pieces,,2122.0,996.0,,0,exact01,B,as_1879,1,156
@@ -1053,19 +1053,19 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1879,British North America,GLASS,Common Bottles,Cwts,7930.0,20490.0,7930.0,1,exact01,A,as_1879,1,894
 1879,British North America,GLASS,Glasses or Mirrors),Square feet,7676.0,78544.0,,0,exact01,B,as_1879,1,861
 1879,British North America,GLASS,"Other Manufactures, Unenumerated",Cwts,9810.0,13070.0,,0,exact01,B,as_1879,1,907
-1879,British North America,"HABERDASHERY and MILLINERY, including Em- broidery and Needlework","HABERDASHERY and MILITARY, including Em- broidery and Needle-work'd)",,856070.0,,,0,gross,D,as_1879,1,949
-1879,British North America,"HABERDASHERY and MILLINERY, including Em- broidery and Needlework","HARDWARES and CUTLERY, Unenumerated",Cwts,449726.0,80029.0,,0,gross,D,as_1879,1,988
+1879,British North America,"HABERDASHERY and MILLINERY, including Em- broidery and Needlework","HABERDASHERY and MILITARY, including Em- broidery and Needle-work'd)",,714440.0,,,0,gross,D,as_1879,1,949
+1879,British North America,"HABERDASHERY and MILLINERY, including Em- broidery and Needlework","HARDWARES and CUTLERY, Unenumerated",Cwts,110780.0,80029.0,,0,gross,D,as_1879,1,988
 1879,British North America,HATS,HATS'd),Dozens,38680.0,27200.0,,0,gross,D,as_1879,1,1000
 1879,British North America,HATS,Of Other Sorts,Dozens,3064.0,1760.0,3064.0,1,exact01,A,as_1879,1,1023
 1879,British North America,HATS,Of Straw,Dozens,30310.0,45055.0,30310.0,1,exact01,A,as_1879,1,1012
 1879,British North America,IRON,"Anchors, Grapnels, Chains, and Cables",Tons,26630.0,2161.0,,0,exact01,B,as_1879,1,1310
 1879,British North America,IRON,Bar,,159872.0,21547.0,,0,mod,D,as_1879,1,1121
 1879,British North America,IRON,Bolt and Rod,Tons,4310.0,632.0,,0,within5,D,as_1879,1,1142
-1879,British North America,IRON,"Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",Tons,604730.0,9256.0,,0,none,X,as_1879,1,1361
+1879,British North America,IRON,"Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",Tons,57320.0,9256.0,,0,none,X,as_1879,1,1361
 1879,British North America,IRON,Galvanized (other than Wire or Manufactures of Wire),Tons,36350.0,1610.0,,0,exact01,B,as_1879,1,1258
-1879,British North America,IRON,Hoops,Tons,17211.0,2249.0,18830.0,0,mod,D,as_1879,1,1277
+1879,British North America,IRON,Hoops,Tons,18830.0,2249.0,18830.0,1,mod,D,as_1879,1,1277
 1879,British North America,IRON,"Manufactures of Steel, or of Steel and Iron combined",Tons,14980.0,228.0,,0,within5,D,as_1879,1,1398
-1879,British North America,IRON,"Nails, Screws, and Rivets",Tons,73799.0,3258.0,26760.0,0,none,X,as_1879,1,1331
+1879,British North America,IRON,"Nails, Screws, and Rivets",Tons,26760.0,3258.0,26760.0,1,none,X,as_1879,1,1331
 1879,British North America,IRON,"Old, for Re-manufacture",,7860.0,1691.0,,0,mod,D,as_1879,1,1078
 1879,British North America,IRON,Pig,,76020.0,28910.0,11790.0,0,mod,D,as_1879,1,1093
 1879,British North America,IRON,Pig,Tons,11790.0,798.0,76020.0,0,exact01,D,as_1879,1,1413
@@ -1075,7 +1075,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1879,Canada,IRON,RAILROAD—Wheels and Axles,Tons,11750.0,668.0,,0,exact01,B,as_1879,1,1176
 1879,British North America,IRON,"Sheets, and Boiler and Armour Plates",Tons,47300.0,3993.0,,0,exact01,B,as_1879,1,1240
 1879,British North America,IRON,"Steel, Bar, of all Kinds",Tons,58285.0,3039.0,,0,exact01,B,as_1879,1,1376
-1879,British North America,IRON,Tin Plates,Tons,107700.0,5860.0,,0,within5,D,as_1879,1,1298
+1879,British North America,IRON,Tin Plates,Tons,73997.0,5860.0,,0,within5,D,as_1879,1,1298
 1879,British North America,IRON,"Tubes and Pipes, Wrought",Tons,22180.0,1888.0,,0,exact01,B,as_1879,1,1321
 1879,British North America,IRON,"Wire of Iron or Steel (except Telegraph Wire), Galvanized or not",Tons,21900.0,1552.0,,0,within5,D,as_1879,1,1218
 1879,British North America,LEATHER,"Tanned, Unwrought",Cwts,12160.0,1550.0,12160.0,1,within5,C,as_1879,1,1434
@@ -1137,30 +1137,30 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1880,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ordnance Stores and Ammunition, Unenumerated",,80327.0,,90327.0,0,mod,D,as_1880,1,146
 1880,Canada,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,,2140.0,20774000.0,7849.0,0,exact01,D,as_1880,1,124
 1880,Canada,"BAGS and SACKS, Empty",,,42244.0,163431.0,27348.0,0,within5,D,as_1880,1,216
-1880,Canada,BEER and ALE,,,21608.0,5678.0,27348.0,0,mod,D,as_1880,1,244
+1880,Canada,BEER and ALE,,,27777.0,5678.0,27348.0,0,mod,D,as_1880,1,244
 1880,Canada,BLEACHING MATERIALS,,,4375.0,12100.0,27348.0,0,within5,D,as_1880,1,272
-1880,Canada,"Books, Printed",,,317039.0,32257.0,27348.0,0,gross,D,as_1880,1,292
+1880,Canada,"Books, Printed",,,58488.0,32257.0,27348.0,0,gross,D,as_1880,1,292
 1880,Canada,"CANDLES, of all Sorts",,Lbs,23104.0,810390.0,,0,mod,D,as_1880,1,333
 1880,Canada,CAOUTCHOUQ MANUFACTURES,,,73805.0,,27348.0,0,within5,D,as_1880,1,359
 1880,Canada,CEMENT,,Cwts,17657.0,163300.0,79656.0,0,none,X,as_1880,1,404
 1880,Canada,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,27348.0,,27348.0,1,exact01,A,as_1880,1,441
 1880,Canada,"CLAY, unmant factured",Manufactures thereof,Cwts,9481.0,178900.0,9481.0,1,exact01,A,as_1880,1,469
 1880,British North America,"CLOCKS, WATCHES, and parts thereof",,,5860.0,,1361931.0,0,exact01,D,as_1880,1,483
-1880,Canada,"COALS, CINDERS, &c.",Coals,Tons,63513.0,161366.0,63513.0,1,within5,C,as_1880,1,526
-1880,Canada,COPPER,"Mixed or Yellow Metal, for Sheathing",Cwts,80608.0,26637.0,22735.0,0,gross,D,as_1880,1,593
-1880,Canada,COPPER,Unenumerated: (Coal),Cwts,27350.0,6535.0,9891.0,0,gross,D,as_1880,1,614
-1880,British North America,"CORDAGE, CABLES, and ROPES of HEMP or like MATERIAL",,Cwts,54155.0,16655.0,2599.0,0,gross,D,as_1880,1,633
-1880,Canada,COTTON MANUFACTURES,Hosiery of Other Sorts,,17625.0,,70099.0,0,gross,D,as_1880,1,886
-1880,Canada,COTTON MANUFACTURES,Lace and Patent Net,,47303.0,,47303.0,1,within5,C,as_1880,1,850
+1880,Canada,"COALS, CINDERS, &c.",Coals,Tons,63513.0,161366.0,63513.0,1,exact01,A,as_1880,1,526
+1880,Canada,COPPER,"Mixed or Yellow Metal, for Sheathing",Cwts,22735.0,26637.0,22735.0,1,gross,D,as_1880,1,593
+1880,Canada,COPPER,Unenumerated: (Coal),Cwts,9891.0,6535.0,9891.0,1,gross,D,as_1880,1,614
+1880,British North America,"CORDAGE, CABLES, and ROPES of HEMP or like MATERIAL",,Cwts,34766.0,16655.0,2599.0,0,gross,D,as_1880,1,633
+1880,Canada,COTTON MANUFACTURES,Hosiery of Other Sorts,,70099.0,,70099.0,1,gross,D,as_1880,1,886
+1880,Canada,COTTON MANUFACTURES,Lace and Patent Net,,47303.0,,47303.0,1,exact01,A,as_1880,1,850
 1880,British North America,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",,42590.0,2001800.0,42590.0,1,mod,D,as_1880,1,823
 1880,Canada,COTTON MANUFACTURES,"Piece Goods, Plain",,113977.0,6631900.0,113977.0,1,gross,D,as_1880,1,743
 1880,Canada,COTTON MANUFACTURES,"Piece Goods, Printed",,484917.0,28207400.0,484917.0,1,exact01,A,as_1880,1,797
-1880,Canada,COTTON MANUFACTURES,Stockings and Socks,,170405.0,523540.0,,0,gross,D,as_1880,1,861
+1880,Canada,COTTON MANUFACTURES,Stockings and Socks,,20095.0,523540.0,,0,gross,D,as_1880,1,861
 1880,Canada,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,73123.0,,73123.0,1,mod,D,as_1880,1,935
 1880,British North America,"FURNITURE (Household), CABINET and UP- HOLSTERY WARES",,,5952.0,,1361931.0,0,mod,D,as_1880,1,983
 1880,Canada,GLASS,Common Bottles,Cwts,11618.0,28371.0,11618.0,1,within5,C,as_1880,1,1033
-1880,Canada,GLASS,"Flint, Plain, Cut, or Ornamental (including Bottles and Phials of Flint Glass)",Cwts,3421.0,1903.0,5421.0,0,within5,D,as_1880,1,1013
-1880,Canada,GLASS,"Other Manufactures, Unenumerated",Cwts,19214.0,20576.0,10510.0,0,gross,D,as_1880,1,1047
+1880,Canada,GLASS,"Flint, Plain, Cut, or Ornamental (including Bottles and Phials of Flint Glass)",Cwts,5421.0,1903.0,5421.0,1,exact01,A,as_1880,1,1013
+1880,Canada,GLASS,"Other Manufactures, Unenumerated",Cwts,10510.0,20576.0,10510.0,1,gross,D,as_1880,1,1047
 1880,Canada,GLASS,"Plate, Rough or Silvered (including Looking     Glasses or Mirrors)",Square feet,9344.0,100580.0,9344.0,1,exact01,A,as_1880,1,997
 1880,Canada,"HABERDASHERY and MILLINERY, including Em- broidery and Needlework",,,618544.0,,27348.0,0,within5,D,as_1880,1,1096
 1880,Newfoundland,"HABERDASHERY and MILLINERY, including Em- broidery and Needlework",,,95105.0,,16023.0,0,within5,D,as_1880,1,1097
@@ -1170,14 +1170,14 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1880,Canada,"HIDES, RAW",,Cwts,7031.0,3129.0,79656.0,0,exact01,D,as_1880,1,1196
 1880,Canada,"ILLDWARRES and CUTLERY, Unenumerated",,,134057.0,20423.0,27348.0,0,gross,D,as_1880,1,1141
 1880,Newfoundland,"ILLDWARRES and CUTLERY, Unenumerated",,,16028.0,3487.0,16023.0,1,gross,D,as_1880,1,1142
-1880,Canada,IRON,"Anchors, Grapnels, Chains, and Cables",,73105.0,4463.0,,0,mod,D,as_1880,1,1520
+1880,Canada,IRON,"Anchors, Grapnels, Chains, and Cables",,28114.0,4463.0,,0,gross,D,as_1880,1,1520
 1880,Canada,IRON,Bar,Tons,220850.0,32210.0,296015.0,0,within5,D,as_1880,1,1298
 1880,Canada,IRON,Bolt and Rod,Tons,8933.0,821.0,8933.0,1,exact01,A,as_1880,1,1329
-1880,Canada,IRON,"Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",,536287.0,45390.0,,0,within5,D,as_1880,1,1575
+1880,Canada,IRON,"Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",,74432.0,45390.0,,0,within5,D,as_1880,1,1575
 1880,Canada,IRON,Galvanized (other than Wire or Manufactures of Wire),,21246.0,949.0,,0,gross,D,as_1880,1,1467
 1880,Canada,IRON,Galvanized or not,Tons,41347.0,2312.0,,0,exact01,B,as_1880,1,1416
 1880,Canada,IRON,Hoops,,22212.0,2648.0,,0,mod,D,as_1880,1,1489
-1880,Canada,IRON,"Manufactures of Steel, or of Steel and Iron combined",,94774.0,1675.0,,0,mod,D,as_1880,1,1619
+1880,Canada,IRON,"Manufactures of Steel, or of Steel and Iron combined",,15742.0,1675.0,,0,mod,D,as_1880,1,1619
 1880,British North America,IRON,"Nails, Screws, and Rivets",,21804.0,1561.0,,0,gross,D,as_1880,1,1543
 1880,Canada,IRON,Pig,Tons,172724.0,53592.0,172724.0,1,exact01,A,as_1880,1,1264
 1880,Canada,IRON,Puddled,Tons,1516.0,260.0,1516.0,1,exact01,A,as_1880,1,1269
@@ -1185,7 +1185,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1880,Canada,IRON,RAILROAD—Unenumerated,Tons,23578.0,2924.0,23578.0,1,exact01,A,as_1880,1,1400
 1880,Canada,IRON,RAILROAD—Wheels and Axles,Tons,10738.0,556.0,10738.0,1,exact01,A,as_1880,1,1375
 1880,Canada,IRON,"Sheets, and Boiler and Armour Plates",Tons,85555.0,7403.0,80087.0,0,exact01,D,as_1880,1,1442
-1880,Canada,IRON,"Steel, Bar, of all Kinds",,25663.0,1006.0,,0,mod,D,as_1880,1,1595
+1880,Canada,IRON,"Steel, Bar, of all Kinds",,91375.0,1006.0,,0,within5,D,as_1880,1,1595
 1880,Canada,IRON,"Steel, cast in Ingots",,3280.0,656.0,,0,exact01,B,as_1880,1,1581
 1880,Canada,IRON,"Tubes and Pipes, Wrought",,31735.0,2174.0,,0,mod,D,as_1880,1,1534
 1880,Canada,LEAD,Pig,,15407.0,918.0,,0,exact01,B,as_1880,1,1634
@@ -1196,18 +1196,18 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1880,Canada,LINEN and JUTE MANUFACTURES,"Plain, Unbleached or Bleached",,172098.0,7158800.0,,0,within5,D,as_1880,1,1727
 1880,Canada,LINEN and JUTE MANUFACTURES,Sail Cloth and Sails,,6861.0,140100.0,,0,within5,D,as_1880,1,1751
 1880,Canada,LINEN and JUTE MANUFACTURES,Thread for Sewing,Lbs,28908.0,231600.0,28908.0,1,exact01,A,as_1880,1,1762
-1880,British North America,MACHINERY and MILLS WORK,Not being Steam-Engines; other Descriptions,,87817.0,,87817.0,1,within5,C,as_1880,1,1914
+1880,British North America,MACHINERY and MILLS WORK,Not being Steam-Engines; other Descriptions,,87817.0,,87817.0,1,exact01,A,as_1880,1,1914
 1880,Canada,MACHINERY and MILLS WORK,"Steam Engines or Parts of Steam Engines, Locomotive",,4000.0,,4000.0,1,gross,D,as_1880,1,1831
-1880,British North America,MEDICINES,,,176918.0,,37117.0,0,mod,D,as_1880,1,1955
-1880,British North America,"Oil, other than Essential or Medicinal","Oil and FLOOR CLOTH, including India Rubber Cloth",,83368.0,949400.0,,0,gross,D,as_1880,1,2004
-1880,British North America,"Oil, other than Essential or Medicinal",Seed,Gallons,44929.0,388100.0,44929.0,1,within5,C,as_1880,1,1979
+1880,British North America,MEDICINES,,,37117.0,,37117.0,1,mod,D,as_1880,1,1955
+1880,British North America,"Oil, other than Essential or Medicinal","Oil and FLOOR CLOTH, including India Rubber Cloth",,16876.0,949400.0,,0,gross,D,as_1880,1,2004
+1880,British North America,"Oil, other than Essential or Medicinal",Seed,Gallons,44929.0,388100.0,44929.0,1,exact01,A,as_1880,1,1979
 1880,British North America,PAINTERS' COLOURS and MATERIALS,Unenumerated,,89139.0,,89139.0,1,exact01,A,as_1880,1,2031
 1880,British North America,PAPER,Hangings,,17292.0,7725.0,,0,exact01,B,as_1880,1,2052
 1880,British North America,PAPER,"Unenumerated, and Articles of Paper (except Papier Maché)",,5121.0,1777.0,,0,within5,D,as_1880,1,2074
 1880,British North America,PAPER,"Writing or Printing, and Envelopes",,54893.0,18000.0,,0,exact01,B,as_1880,1,2043
 1880,British North America,"PERFUMERY, of all Sorts",,,13034.0,,13034.0,1,mod,D,as_1880,1,2090
 1880,British North America,"PICKLES, VINEGAR, and SAUCES",,,45262.0,,6272.0,0,exact01,D,as_1880,1,2119
-1880,British North America,PLATED and GILT WARES,,,4010.0,,2179.0,0,within5,D,as_1880,1,2160
+1880,British North America,PLATED and GILT WARES,,,4010.0,,2179.0,0,exact01,D,as_1880,1,2160
 1880,British North America,PLUMBAGO,,Owts,2108.0,987.0,,0,within5,D,as_1880,1,2165
 1880,British North America,"PROVISIONS, UNENUMERATED",,,10291.0,,10291.0,1,within5,C,as_1880,1,2194
 1880,Canada,RAGS (except Woollen) and other Materials for making Paper,,Tons,11462.0,787.0,11462.0,1,exact01,A,as_1880,1,2203
@@ -1215,7 +1215,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1880,British North America,"SALTPETRE, British Prepared",,Cwts,2599.0,1865.0,2599.0,1,exact01,A,as_1880,1,2243
 1880,British North America,"SEEDS, of all Sorts",,Cwts,6470.0,2653.0,6470.0,1,exact01,A,as_1880,1,2253
 1880,Canada,SILK MANUFACTURES,Broad Stuffs,Yards,46265.0,487220.0,46265.0,1,mod,D,as_1880,1,2311
-1880,Canada,SILK MANUFACTURES,Lace,,4061.0,,4061.0,1,within5,C,as_1880,1,2291
+1880,Canada,SILK MANUFACTURES,Lace,,4061.0,,4061.0,1,exact01,A,as_1880,1,2291
 1880,Canada,SILK MANUFACTURES,Of Silk only,Yards,46639.0,334890.0,,0,exact01,B,as_1880,1,2268
 1880,Canada,SILK MANUFACTURES,Ribbons of all Kinds,,20998.0,,20998.0,1,exact01,A,as_1880,1,2279
 1880,British North America,SILK MANUFACTURES,Unenumerated,,9489.0,,9489.0,1,exact01,A,as_1880,1,2300
@@ -1248,9 +1248,9 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1881,British North America,APPAREL and STOPS,,,179472.0,,60841.0,0,exact01,D,as_1881,1,80
 1881,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Fowling Pieces,,3422.0,1711.0,,0,within5,D,as_1881,1,163
 1881,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Gunpowder,,9815.0,400400.0,,0,exact01,B,as_1881,1,103
-1881,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ordnance Stores and Ammunition, Unenumerated",,117969.0,,117969.0,1,mod,D,as_1881,1,136
+1881,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ordnance Stores and Ammunition, Unenumerated",,117969.0,,117969.0,1,exact01,A,as_1881,1,136
 1881,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,,1954.0,19061300.0,,0,exact01,B,as_1881,1,118
-1881,British North America,BEER and ALE,,,431913.0,89791.0,60841.0,0,none,X,as_1881,1,226
+1881,British North America,BEER and ALE,,,41478.0,89791.0,60841.0,0,none,X,as_1881,1,226
 1881,British North America,BLEACHING MATERIALS,,,4386.0,19000.0,60841.0,0,exact01,D,as_1881,1,255
 1881,British North America,"BOOKS, Printed",,,73572.0,8982.0,60841.0,0,exact01,D,as_1881,1,278
 1881,British North America,"BOOKS, Printed","Manufactures of, not being Ordnance",,7652.0,1741.0,,0,exact01,B,as_1881,1,302
@@ -1267,13 +1267,13 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1881,British North America,COPPER,Unenumerated,,,4290.0,,0,none,X,as_1881,1,610
 1881,British North America,"CORDAGE, CABLES, and ROPES of HEMP or like MATERIAL",,,,14890.0,33124.0,0,none,X,as_1881,1,629
 1881,British North America,COTTON MANUFACTURES,Hosiery of Other Sorts,,71118.0,,27814.0,0,exact01,D,as_1881,1,827
-1881,British North America,COTTON MANUFACTURES,Lace and Patent Net,,149737.0,,76609.0,0,gross,D,as_1881,1,792
+1881,British North America,COTTON MANUFACTURES,Lace and Patent Net,,76609.0,,76609.0,1,exact01,A,as_1881,1,792
 1881,British North America,COTTON MANUFACTURES,"Other Manufactures, Unenumerated",,26875.0,,26875.0,1,exact01,A,as_1881,1,894
 1881,British North America,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",,64113.0,3344600.0,64113.0,1,exact01,A,as_1881,1,766
 1881,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",,703960.0,36984300.0,,0,gross,D,as_1881,1,740
 1881,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,23215.0,80698.0,,0,exact01,B,as_1881,1,803
 1881,British North America,COTTON MANUFACTURES,Thread for Sewing,Lbs,88329.0,509900.0,31169.0,0,within5,D,as_1881,1,858
-1881,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,289497.0,,105464.0,0,within5,D,as_1881,1,943
+1881,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,105464.0,,105464.0,1,mod,D,as_1881,1,943
 1881,British North America,"FURNITURE (Household), CABINET and UP- HOLSTERY WARES",,,6986.0,,60841.0,0,exact01,D,as_1881,1,997
 1881,British North America,GLASS,Common Bottles,Cwts,15830.0,39249.0,15830.0,1,exact01,A,as_1881,1,1046
 1881,British North America,GLASS,"Flint, Plain, Cut, or Ornamental (including     Bottles and Phials of Flint Glass)",Cwts,12740.0,5409.0,,0,exact01,B,as_1881,1,1027
@@ -1297,22 +1297,22 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1881,British North America,IRON,RAILROAD—Rails and Tie Rods,Tons,718857.0,104737.0,718857.0,1,exact01,A,as_1881,1,1367
 1881,British North America,IRON,RAILROAD—Unenumerated,Tons,40081.0,4374.0,40081.0,1,exact01,A,as_1881,1,1413
 1881,British North America,IRON,RAILROAD—Wheels and Axles,Tons,5427.0,340.0,5427.0,1,exact01,A,as_1881,1,1387
-1881,British North America,IRON,"Sheets, and Boiler and Armour Plates",Tons,68374.0,7746.0,68374.0,1,within5,C,as_1881,1,1453
+1881,British North America,IRON,"Sheets, and Boiler and Armour Plates",Tons,68374.0,7746.0,68374.0,1,exact01,A,as_1881,1,1453
 1881,British North America,IRON,Tin Plates,,152668.0,8331.0,,0,gross,D,as_1881,1,1520
 1881,British North America,IRON,"Tubes and Pipes, Wrought",Tons,31057.0,2562.0,31057.0,1,exact01,A,as_1881,1,1550
 1881,British North America,IRON,"Wire of Iron or Steel (except Telegraph Wire), Galvanized or not",Tons,56993.0,3469.0,,0,exact01,B,as_1881,1,1428
 1881,British North America,Iron,"Cast or Wrought, and all other Manufactures, except Ordnance, unenumerated",Tons,74933.0,8360.0,74933.0,1,gross,D,as_1881,1,1596
-1881,British North America,Iron,"Manufactures of Steel, or of Steel and Iron combined",Tons,122055.0,2145.0,22546.0,0,mod,D,as_1881,1,1645
+1881,British North America,Iron,"Manufactures of Steel, or of Steel and Iron combined",Tons,22546.0,2145.0,22546.0,1,mod,D,as_1881,1,1645
 1881,British North America,Iron,"Steel, Bar, of all Kinds",Tons,96064.0,5179.0,96064.0,1,exact01,A,as_1881,1,1618
 1881,British North America,Iron,"Steel, Sheets",Tons,12475.0,714.0,12475.0,1,exact01,A,as_1881,1,1627
 1881,British North America,Iron,"Steel, cast in Ingots",Tons,3609.0,703.0,3609.0,1,exact01,A,as_1881,1,1604
 1881,British North America,LEAD,Pig,Tons,17854.0,1177.0,17854.0,1,within5,C,as_1881,1,1662
 1881,British North America,LEATHER,"Tanned, Unwrought",,19678.0,1974.0,,0,exact01,B,as_1881,1,1685
-1881,British North America,LEATHER,"Wrought, Boots and Shoes",,590215.0,233714.0,,0,within5,D,as_1881,1,1699
+1881,British North America,LEATHER,"Wrought, Boots and Shoes",,9462.0,233714.0,,0,mod,D,as_1881,1,1699
 1881,British North America,LEATHER,"Wrought, other Articles, Unenumerated",,42615.0,176199.0,,0,exact01,B,as_1881,1,1713
 1881,British North America,LINEN and JUTE MANUFACTURES,Jute Manufactures,Yards,53872.0,3156300.0,53872.0,1,exact01,A,as_1881,1,1846
 1881,British North America,LINEN and JUTE MANUFACTURES,"Manufactures, Unenumerated",,9334.0,,9334.0,1,exact01,A,as_1881,1,1822
-1881,British North America,LINEN and JUTE MANUFACTURES,"Plain, Unbleached or Bleached",,361803.0,11922700.0,,0,none,X,as_1881,1,1772
+1881,British North America,LINEN and JUTE MANUFACTURES,"Plain, Unbleached or Bleached",,151314.0,11922700.0,,0,none,X,as_1881,1,1772
 1881,British North America,LINEN and JUTE MANUFACTURES,Sail Cloth and Sails,,3668.0,65500.0,,0,none,X,as_1881,1,1794
 1881,British North America,LINEN and JUTE MANUFACTURES,Thread for Sewing,Lbs,31169.0,252700.0,31169.0,1,exact01,A,as_1881,1,1805
 1881,British North America,LINEN and JUTE YARN,Sail Cloth and Sails,,3668.0,65500.0,,0,none,X,as_1881,1,1737
@@ -1321,7 +1321,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1881,British North America,MEAL and FLOUR,COTTON TWIST and YARN,Lbs,15925.0,230000.0,,0,within5,D,as_1881,1,708
 1881,British North America,MEAL and FLOUR,Wheat Flour,Cwts,2937.0,3631.0,,0,exact01,B,as_1881,1,668
 1881,British North America,MEDICINES,,,42378.0,,60841.0,0,within5,D,as_1881,1,2013
-1881,British North America,"MUSICAL INSTRUMENTS, and Parts thereof",,,71727.0,,60841.0,0,gross,D,as_1881,1,2025
+1881,British North America,"MUSICAL INSTRUMENTS, and Parts thereof",,,5218.0,,60841.0,0,gross,D,as_1881,1,2025
 1881,British North America,"Oil, other than Essential or Medicinal","Oil and FLOOR CLOTH, including India Rubber Cloth",Square Yards,21456.0,231600.0,21456.0,1,exact01,A,as_1881,1,2074
 1881,British North America,"Oil, other than Essential or Medicinal",Seed,,45709.0,414200.0,,0,gross,D,as_1881,1,2047
 1881,British North America,PAINTERS' COLOURS and MATERIALS,Unenumerated,,65946.0,,,0,exact01,B,as_1881,1,2100
@@ -1331,7 +1331,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1881,British North America,PAPER,"Writing or Printing, and Envelopes",Cwts,55299.0,18526.0,55299.0,1,exact01,A,as_1881,1,2112
 1881,British North America,"PERFUMERY, of all Sorts",,,4525.0,,4525.0,1,exact01,A,as_1881,1,2161
 1881,British North America,"PICKLES, VINEGAR, and SAUCES",,,56054.0,,56054.0,1,exact01,A,as_1881,1,2192
-1881,British North America,PLATED and GILT WARES,,,76497.0,,5407.0,0,gross,D,as_1881,1,2232
+1881,British North America,PLATED and GILT WARES,,,5407.0,,5407.0,1,gross,D,as_1881,1,2232
 1881,British North America,PLUMBAGO,,,1482.0,714.0,1452.0,0,exact01,D,as_1881,1,2237
 1881,British North America,"PROVISIONS, UNENUMERATED","PROVISIONS, UNENUMERATED",,14170.0,,,0,gross,D,as_1881,1,2269
 1881,British North America,"PROVISIONS, UNENUMERATED",RAGS (except Woollen) and other Materials for making Paper,Tons,8658.0,610.0,,0,exact01,B,as_1881,1,2278
@@ -1340,7 +1340,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1881,British North America,"PROVISIONS, UNENUMERATED","SEEDS, of all Sorts",Cwts,4454.0,1588.0,,0,within5,D,as_1881,1,2327
 1881,British North America,SILK MANUFACTURES,Broad Stuffs,Yards,53405.0,398000.0,53405.0,1,exact01,A,as_1881,1,2388
 1881,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,86960.0,392020.0,86960.0,1,exact01,A,as_1881,1,2341
-1881,British North America,SILK MANUFACTURES,"Handkerchiefs, Scarfs, and Shawls",,8608.0,,8608.0,1,mod,D,as_1881,1,2350
+1881,British North America,SILK MANUFACTURES,"Handkerchiefs, Scarfs, and Shawls",,8608.0,,8608.0,1,exact01,A,as_1881,1,2350
 1881,British North America,SILK MANUFACTURES,Lace,,5761.0,,14480.0,0,exact01,D,as_1881,1,2367
 1881,British North America,SILK MANUFACTURES,Ribbons of all Kinds,,28019.0,,28019.0,1,exact01,A,as_1881,1,2356
 1881,British North America,SILK MANUFACTURES,Unenumerated,,14480.0,,,0,exact01,B,as_1881,1,2376
@@ -1354,27 +1354,27 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1881,British North America,UMBRELLAS and PARASOLS,,,37314.0,,60841.0,0,exact01,D,as_1881,1,2563
 1881,British North America,WOOL,Sheep and Lambs' (British),Lbs,27437.0,518700.0,27437.0,1,exact01,A,as_1881,1,2601
 1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffs, &c., Plain,     all Wool",Yards,525400.0,467900.0,,0,within5,D,as_1881,1,2650
-1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffs, &c., of Wool mixed with other Materials",,57592.0,466000.0,,0,mod,D,as_1881,1,2672
-1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",,2393500.0,1704500.0,180963.0,0,exact01,D,as_1881,1,2794
-1881,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,,307000.0,1034600.0,,0,exact01,B,as_1881,1,2770
-1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffs, &c., Plain, all Wool",,242305.0,1670800.0,,0,mod,D,as_1881,1,2689
-1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffs, &c., of Wool mixed with other Materials",,119033.0,1538400.0,,0,mod,D,as_1881,1,2707
-1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffs, &c., of Wool mixed with other Materials",,401662.0,10555400.0,,0,within5,D,as_1881,1,2741
+1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Broad Cloths, Coatings, Duffs, &c., of Wool mixed with other Materials",,163236.0,466000.0,,0,within5,D,as_1881,1,2672
+1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",,180963.0,1704500.0,180963.0,1,exact01,A,as_1881,1,2794
+1881,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,,41625.0,1034600.0,,0,exact01,B,as_1881,1,2770
+1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffs, &c., Plain, all Wool",,88141.0,1670800.0,,0,within5,D,as_1881,1,2689
+1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffs, &c., of Wool mixed with other Materials",,336581.0,1538400.0,,0,within5,D,as_1881,1,2707
+1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffs, &c., of Wool mixed with other Materials",,366014.0,10555400.0,,0,within5,D,as_1881,1,2741
 1881,British North America,WOOLLEN and WORSTED MANUFACTURES,"Narrow Cloths, Coatings, Duffs, &c., of Wool mixed with other Materials",,41084.0,485600.0,,0,exact01,B,as_1881,1,2760
-1881,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,,22344.0,66508.0,22344.0,1,within5,C,as_1881,1,2808
+1881,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,,22344.0,66508.0,22344.0,1,exact01,A,as_1881,1,2808
 1881,British North America,WOOLLEN and WORSTED YARN,Woollen Yarn (Carded),Lbs,6682.0,49700.0,6682.0,1,exact01,A,as_1881,1,2616
 1882,British North America,ALKALI,,Cwts,49338.0,153600.0,18409.0,0,within5,D,as_1882,1,18
 1882,British North America,"ANIMALS, LIVING","Bulls, Oxen, Cows, and Calves",No,40927.0,1174.0,40927.0,1,exact01,A,as_1882,1,37
 1882,British North America,"ANIMALS, LIVING",Horses,No,66329.0,749.0,66329.0,1,exact01,A,as_1882,1,28
 1882,British North America,"ANIMALS, LIVING",Sheep and Lambs,No,4510.0,814.0,4610.0,0,exact01,D,as_1882,1,45
 1882,British North America,APPAREL and SLOPS,,,200866.0,,200866.0,1,exact01,A,as_1882,1,79
-1882,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ammunition, Unenumerated",,4278.0,,10060.0,0,mod,D,as_1882,1,130
-1882,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Gunpowder,Lbs,107267.0,3819100.0,9692.0,0,mod,D,as_1882,1,100
-1882,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Muskets, Rifles and Fowling Pieces",No,44174.0,20018.0,10712.0,0,mod,D,as_1882,1,150
-1882,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,No,5115.0,40053000.0,2696.0,0,mod,D,as_1882,1,113
+1882,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ammunition, Unenumerated",,10060.0,,10060.0,1,mod,D,as_1882,1,130
+1882,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Gunpowder,Lbs,9692.0,3819100.0,9692.0,1,within5,C,as_1882,1,100
+1882,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Muskets, Rifles and Fowling Pieces",No,10712.0,20018.0,10712.0,1,within5,C,as_1882,1,150
+1882,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,No,2696.0,40053000.0,2696.0,1,within5,C,as_1882,1,113
 1882,British North America,BEER and ALE,,Barrels,49036.0,9632.0,,0,within5,D,as_1882,1,218
 1882,British North America,BLEACHING MATERIALS,,Cwts,5230.0,25600.0,18409.0,0,within5,D,as_1882,1,249
-1882,British North America,BRASS,"Manufactures of, not being Ordnance",Cwts,7793.0,1671.0,7793.0,1,within5,C,as_1882,1,295
+1882,British North America,BRASS,"Manufactures of, not being Ordnance",Cwts,7793.0,1671.0,7793.0,1,exact01,A,as_1882,1,295
 1882,British North America,"Bags and Sacks, Empty",,Dozens,30679.0,124819.0,,0,within5,D,as_1882,1,188
 1882,British North America,"Books, Printed",,Cwts,77666.0,9940.0,18409.0,0,within5,D,as_1882,1,271
 1882,British North America,"CANDLES, of all Sorts",,Lbs,4495.0,188200.0,4495.0,1,exact01,A,as_1882,1,316
@@ -1388,15 +1388,15 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1882,British North America,COPPER,Unenumerated,Cwts,22379.0,5151.0,,0,within5,D,as_1882,1,606
 1882,Canada,COPPER,"Unwrought, in Ingots, Cakes, or Slabs",Cwts,7038.0,1871.0,,0,exact01,B,as_1882,1,560
 1882,British North America,"CORDAGE, CABLES, ROPES and TWINE of HEMP or like MATERIAL",,Cwts,39555.0,17991.0,18409.0,0,exact01,D,as_1882,1,625
-1882,British North America,COTTON MANUFACTURES,", Other Manufactures, Unenumerated",,19932.0,,37721.0,0,mod,D,as_1882,1,906
-1882,British North America,COTTON MANUFACTURES,Hosiery of Other Sorts,,37316.0,,97798.0,0,gross,D,as_1882,1,841
+1882,British North America,COTTON MANUFACTURES,", Other Manufactures, Unenumerated",,37721.0,,37721.0,1,within5,C,as_1882,1,906
+1882,British North America,COTTON MANUFACTURES,Hosiery of Other Sorts,,97798.0,,97798.0,1,gross,D,as_1882,1,841
 1882,British North America,COTTON MANUFACTURES,"Piece Goods, Plain",Yards,154362.0,8514100.0,154362.0,1,within5,C,as_1882,1,754
 1882,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",Yards,1092307.0,53428600.0,856780.0,0,none,X,as_1882,1,809
-1882,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,357821.0,1046539.0,23317.0,0,mod,D,as_1882,1,819
-1882,British North America,COTTON MANUFACTURES,Thread for Sewing,Lbs,605600.0,242000.0,70838.0,0,gross,D,as_1882,1,873
-1882,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,316024.0,,131439.0,0,within5,D,as_1882,1,970
+1882,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,23317.0,1046539.0,23317.0,1,within5,C,as_1882,1,819
+1882,British North America,COTTON MANUFACTURES,Thread for Sewing,Lbs,70838.0,242000.0,70838.0,1,gross,D,as_1882,1,873
+1882,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,131439.0,,131439.0,1,exact01,A,as_1882,1,970
 1882,British North America,"FURNITURE (Household), CABINET and UP- HOLSTERY WARES",,,12095.0,,49338.0,0,within5,D,as_1882,1,1017
-1882,British North America,GLASS,Common Bottles,Cwts,25471.0,63098.0,,0,within5,D,as_1882,1,1067
+1882,British North America,GLASS,Common Bottles,Cwts,25471.0,63098.0,,0,exact01,B,as_1882,1,1067
 1882,British North America,GLASS,"Flint, Plain, Cut, or Ornamented (including     Bottles and other manufactures of Flint     Glass)",Cwts,10706.0,3688.0,10706.0,1,exact01,A,as_1882,1,1048
 1882,British North America,GLASS,"Other Manufactures, Unenumerated",,9930.0,9949.0,37721.0,0,within5,D,as_1882,1,1083
 1882,British North America,GLASS,"Plate, Rough or Silvered (including Looking     Glasses or Mirrors)",Square feet,21828.0,236970.0,21828.0,1,exact01,A,as_1882,1,1032
@@ -1416,7 +1416,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1882,British North America,IRON,"Wrought, and Manufactures thereof, un-     enumerated",Tons,62144.0,4982.0,,0,within5,D,as_1882,1,1578
 1882,British North America,Iron,"Angle, Bolt and Rod",Tons,12979.0,1693.0,21083.0,0,exact01,D,as_1882,1,1365
 1882,British North America,Iron,Bar,Tons,299703.0,43291.0,209703.0,0,within5,D,as_1882,1,1349
-1882,British North America,Iron,Pig,,38221.0,13506.0,23227.0,0,exact01,D,as_1882,1,1314
+1882,British North America,Iron,Pig,,145215.0,13506.0,23227.0,0,within5,D,as_1882,1,1314
 1882,British North America,Iron,Puddled and Puddled Bars,Tons,58245.0,11571.0,58245.0,1,exact01,A,as_1882,1,1317
 1882,British North America,Iron,RAILROAD—Rails and Tie Rods,Tons,603112.0,89985.0,608112.0,0,within5,D,as_1882,1,1391
 1882,British North America,Iron,RAILROAD—Unenumerated,Tons,49755.0,5123.0,118242.0,0,exact01,D,as_1882,1,1426
@@ -1424,21 +1424,21 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1882,British North America,Iron,"Wire of Iron or Steel (except Telegraph Wire), and manufactures thereof",Tons,73741.0,4217.0,73741.0,1,exact01,A,as_1882,1,1446
 1882,British North America,LEAD,Pig,Tons,23227.0,1611.0,145215.0,0,exact01,D,as_1882,1,1672
 1882,British North America,LEATHER,"Tanned, Unwrought",,108699.0,6877.0,26853.0,0,gross,D,as_1882,1,1696
-1882,British North America,LINEN MANUFACTURES,"Manufactures, Unenumerated",,13488.0,,13488.0,1,within5,C,as_1882,1,1784
-1882,British North America,LINEN MANUFACTURES,"Plain, Unbleached or Bleached",,416213.0,14953600.0,,0,exact01,B,as_1882,1,1735
+1882,British North America,LINEN MANUFACTURES,"Manufactures, Unenumerated",,13488.0,,13488.0,1,exact01,A,as_1882,1,1784
+1882,British North America,LINEN MANUFACTURES,"Plain, Unbleached or Bleached",,150631.0,14953600.0,,0,within5,D,as_1882,1,1735
 1882,British North America,LINEN MANUFACTURES,Sail Cloth and Sails,,7120.0,153900.0,7120.0,1,within5,C,as_1882,1,1756
 1882,British North America,LINEN MANUFACTURES,Thread for Sewing,Lbs,25004.0,202100.0,25004.0,1,exact01,A,as_1882,1,1767
 1882,British North America,MACHINERY and MILL WORK,Not being Steam Engines: Sewing Machines,No,14114.0,11500.0,14114.0,1,exact01,A,as_1882,1,1896
 1882,British North America,MACHINERY and MILL WORK,Not being Steam Engines: other Descriptions,,135766.0,,135766.0,1,exact01,A,as_1882,1,1934
 1882,British North America,MACHINERY and MILL WORK,"Steam Engines or Parts of Steam Engines, Locomotive",,57512.0,,57512.0,1,within5,C,as_1882,1,1815
-1882,British North America,MACHINERY and MILL WORK,"Steam Engines or Parts of Steam Engines, other Descriptions",,62724.0,,62721.0,1,within5,C,as_1882,1,1866
+1882,British North America,MACHINERY and MILL WORK,"Steam Engines or Parts of Steam Engines, other Descriptions",,62724.0,,62721.0,1,exact01,A,as_1882,1,1866
 1882,British North America,MEAL and FLOUR,COTTON TWIST and YARN,Lbs,18317.0,296400.0,,0,exact01,B,as_1882,1,700
 1882,British North America,MEAL and FLOUR,Wheat Flour,Cwts,3687.0,4665.0,3657.0,0,exact01,D,as_1882,1,662
 1882,British North America,MEDICINES,,,30196.0,,30196.0,1,exact01,A,as_1882,1,1982
 1882,British North America,"MUSICAL INSTRUMENTS, and Parts thereof",,,4169.0,,88314.0,0,exact01,D,as_1882,1,2002
 1882,British North America,"Oil, other than Essential or Medicinal","Oil and Flannel Cloth, including India Rubber Cloth",Square Yards,25188.0,286600.0,,0,exact01,B,as_1882,1,2052
 1882,British North America,"Oil, other than Essential or Medicinal",Seed,Gallons,75412.0,739900.0,,0,within5,D,as_1882,1,2024
-1882,British North America,PAINTERS' COLOURS and MATERIALS,Unenumerated,,76315.0,,5994.0,0,within5,D,as_1882,1,2078
+1882,British North America,PAINTERS' COLOURS and MATERIALS,Unenumerated,,5994.0,,5994.0,1,exact01,A,as_1882,1,2078
 1882,British North America,PAPER,Hangings,Cwts,20908.0,8922.0,,0,exact01,B,as_1882,1,2100
 1882,British North America,PAPER,"Unenumerated, and Articles of Paper (except Papier Mâché)",Cwts,8160.0,4672.0,,0,mod,D,as_1882,1,2121
 1882,British North America,PAPER,"Writing or Printing, and Envelopes",Cwts,59349.0,18595.0,,0,exact01,B,as_1882,1,2090
@@ -1448,7 +1448,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1882,British North America,"PROVISIONS, UNENUMERATED",,,7729.0,,7729.0,1,exact01,A,as_1882,1,2241
 1882,British North America,RAGS (except Woollen) and other Materials for making Paper,,Tons,3963.0,319.0,3963.0,1,exact01,A,as_1882,1,2249
 1882,British North America,SADDLERY and HARNESS,,,4096.0,,4096.0,1,exact01,A,as_1882,1,2266
-1882,British North America,SALT (Rock and White),,Tons,46328.0,90668.0,16328.0,0,within5,D,as_1882,1,2281
+1882,British North America,SALT (Rock and White),,Tons,46328.0,90668.0,16328.0,0,exact01,D,as_1882,1,2281
 1882,British North America,"SEEDS, of all Sorts",,Cwts,9301.0,3673.0,9301.0,1,exact01,A,as_1882,1,2298
 1882,British North America,SILK MANUFACTURES,Broad Stuffs,Yards,175948.0,1261030.0,175948.0,1,exact01,A,as_1882,1,2359
 1882,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,102327.0,432500.0,102327.0,1,exact01,A,as_1882,1,2313
@@ -1461,17 +1461,17 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1882,British North America,SOAP,,Cwts,5101.0,3547.0,18409.0,0,exact01,D,as_1882,1,2401
 1882,British North America,"SPIRITS, British and Irish",,Gallons,54491.0,200629.0,,0,exact01,B,as_1882,1,2413
 1882,British North America,"STATIONERY, other than Paper",,,63510.0,,63510.0,1,exact01,A,as_1882,1,2429
-1882,British North America,UMBRELLAS and PARASOLS,,,85208.0,,49338.0,0,mod,D,as_1882,1,2527
+1882,British North America,UMBRELLAS and PARASOLS,,,53242.0,,49338.0,0,mod,D,as_1882,1,2527
 1882,British North America,WOOL,Sheep and Lambs' (British),Lbs,51857.0,1017800.0,51857.0,1,exact01,A,as_1882,1,2563
 1882,British North America,WOOLLEN and WORSTED MANUFACTURES,,Yards,302882.0,7787000.0,,0,exact01,B,as_1882,1,2715
-1882,British North America,WOOLLEN and WORSTED MANUFACTURES,Blankets,,29361.0,492805.0,,0,gross,D,as_1882,1,2763
+1882,British North America,WOOLLEN and WORSTED MANUFACTURES,Blankets,,53504.0,492805.0,,0,gross,D,as_1882,1,2763
 1882,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",,199516.0,491200.0,,0,gross,D,as_1882,1,2749
 1882,British North America,WOOLLEN and WORSTED MANUFACTURES,"Coatings, &c.",Yards,46119.0,308000.0,46119.0,1,exact01,A,as_1882,1,2681
 1882,British North America,WOOLLEN and WORSTED MANUFACTURES,"Coatings, Duffs, &c. of Wool mixed with other Materials",Yards,345556.0,3029600.0,,0,exact01,B,as_1882,1,2641
 1882,British North America,WOOLLEN and WORSTED MANUFACTURES,"Coatings, Duffs, &c., all Wool",Yards,438750.0,2390800.0,,0,gross,D,as_1882,1,2616
 1882,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,Yards,57056.0,1331600.0,67056.0,0,exact01,D,as_1882,1,2726
-1882,British North America,WOOLLEN and WORSTED MANUFACTURES,Hosiery,,105319.0,,60502.0,0,mod,D,as_1882,1,2805
-1882,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,,11633.0,51318.0,,0,gross,D,as_1882,1,2775
+1882,British North America,WOOLLEN and WORSTED MANUFACTURES,Hosiery,,60502.0,,60502.0,1,mod,D,as_1882,1,2805
+1882,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,,20869.0,51318.0,,0,within5,D,as_1882,1,2775
 1882,British North America,WOOLLEN and WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,18010.0,,18010.0,1,within5,C,as_1882,1,2818
 1882,British North America,WOOLLEN and WORSTED MANUFACTURES,Stuffs,Yards,220740.0,3765900.0,302882.0,0,within5,D,as_1882,1,2668
 1882,British North America,WOOLLEN and WORSTED MANUFACTURES,Woollen Yarn (Carded),Lbs,11442.0,85500.0,11412.0,0,within5,D,as_1882,1,2582
@@ -1481,12 +1481,12 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1883,British North America,"ANIMALS, LIVING",Horses,No,69160.0,971.0,69160.0,1,exact01,A,as_1883,1,29
 1883,British North America,"ANIMALS, LIVING",Sheep and Lambs,No,2365.0,605.0,2365.0,1,exact01,A,as_1883,1,43
 1883,British North America,APPAREL and SLOPS,,,218155.0,,218156.0,1,exact01,A,as_1883,1,74
-1883,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ammunition, Unenumerated",,7071.0,,7071.0,1,within5,C,as_1883,1,133
+1883,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ammunition, Unenumerated",,7071.0,,7071.0,1,exact01,A,as_1883,1,133
 1883,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Gunpowder,Lbs,7752.0,303600.0,7752.0,1,exact01,A,as_1883,1,100
 1883,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Muskets, Rifles and Fowling Pieces",No,10298.0,3625.0,10298.0,1,exact01,A,as_1883,1,155
 1883,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,No,2269.0,22829000.0,2269.0,1,exact01,A,as_1883,1,114
-1883,British North America,"BAGS and SACKS, Empty",,,36557.0,93604.0,218156.0,0,within5,D,as_1883,1,194
-1883,British North America,BEER and ALE,,,49744.0,11217.0,218156.0,0,exact01,D,as_1883,1,220
+1883,British North America,"BAGS and SACKS, Empty",,,13403.0,93604.0,218156.0,0,mod,D,as_1883,1,194
+1883,British North America,BEER and ALE,,,49744.0,11217.0,218156.0,0,within5,D,as_1883,1,220
 1883,British North America,BLEACHING MATERIALS,,,8094.0,27800.0,218156.0,0,gross,D,as_1883,1,249
 1883,British North America,"Books, Printed",,Cwts,81382.0,10525.0,77006.0,0,exact01,D,as_1883,1,266
 1883,British North America,"CANDLES, of all Sorts",,Lbs,6605.0,230400.0,,0,exact01,B,as_1883,1,286
@@ -1496,7 +1496,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
                     not specially enumerated",,,23613.0,,23613.0,1,within5,C,as_1883,1,362
 1883,British North America,"CLOCKS, WATCHES, and parts thereof",,,9862.0,,218156.0,0,within5,D,as_1883,1,374
 1883,British North America,"COALS, CINDERS, &c.",Coals and Culm,Tons,79015.0,174344.0,79016.0,1,mod,D,as_1883,1,416
-1883,British North America,"CORDAGE, CABLES, ROPES, and TWINE of HEMP or like MATERIAL",,,26285.0,10337.0,26830.0,0,none,X,as_1883,1,528
+1883,British North America,"CORDAGE, CABLES, ROPES, and TWINE of HEMP or like MATERIAL",,,26830.0,10337.0,26830.0,1,none,X,as_1883,1,528
 1883,British North America,COTTON MANUFACTURES,"Piece Goods, Plain",,282121.0,23843600.0,,0,none,X,as_1883,1,639
 1883,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,32403.0,129135.0,32403.0,1,exact01,A,as_1883,1,759
 1883,British North America,COTTON MANUFACTURES,United States,,954261.0,48190300.0,43463.0,0,gross,D,as_1883,1,694
@@ -1511,7 +1511,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1883,British North America,"FURNITURE, (Household) CABINET, and UPHOLSTERY WARES",,,11934.0,,218156.0,0,gross,D,as_1883,1,960
 1883,British North America,GLASS,Common Bottles,Cwts,20231.0,51141.0,20231.0,1,exact01,A,as_1883,1,1019
 1883,British North America,GLASS,"Flint, Plain, Cut, or Ornamented         (including Bottles and other         manufactures of Flint Glass)",Cwts,10232.0,3219.0,10232.0,1,exact01,A,as_1883,1,999
-1883,British North America,GLASS,"HABERDASHERY and MILLINERY, in- cluding Embroidery and Needle- work",,18536.0,,,0,gross,D,as_1883,1,1072
+1883,British North America,GLASS,"HABERDASHERY and MILLINERY, in- cluding Embroidery and Needle- work",,918494.0,,,0,gross,D,as_1883,1,1072
 1883,British North America,GLASS,"HARDWARES and CUTLERY, Unenu- merated",Cwts,185837.0,25751.0,,0,exact01,B,as_1883,1,1117
 1883,British North America,GLASS,"Plate, Rough or Silvered (in-         cluding Looking Glasses or         Mirrors)",Square feet,20138.0,217322.0,,0,exact01,B,as_1883,1,979
 1883,British North America,Gold,PLATED and GILT WARES,,7517.0,,,0,exact01,B,as_1883,1,2246
@@ -1521,7 +1521,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1883,British North America,Gold,"Thrown, Twist or Yarn",Lbs,12431.0,19594.0,,0,exact01,B,as_1883,1,2345
 1883,British North America,HATS,,Dozens,71742.0,48847.0,,0,exact01,B,as_1883,1,1139
 1883,British North America,HATS,,Dozens,40880.0,72242.0,,0,exact01,B,as_1883,1,1152
-1883,British North America,HATS,Of Other Sorts,Dozens,3091.0,2148.0,3091.0,1,within5,C,as_1883,1,1165
+1883,British North America,HATS,Of Other Sorts,Dozens,3091.0,2148.0,3091.0,1,exact01,A,as_1883,1,1165
 1883,British North America,IMPLEMENTS and Tools,"INSTRUMENTS and APPARATUS ; Surgical, Anatomical, and Scientific",,10691.0,,10691.0,1,exact01,A,as_1883,1,1233
 1883,British North America,IMPLEMENTS and Tools,Unenumerated,,15928.0,,15928.0,1,exact01,A,as_1883,1,1217
 1883,British North America,IRON,"Anchors, Grapnels, Chains, and Cables",,42536.0,3036.0,42536.0,1,exact01,A,as_1883,1,1517
@@ -1559,13 +1559,13 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1883,British North America,Meal and Flour,COTTON TWIST and YARN,,20605.0,288500.0,,0,gross,D,as_1883,1,582
 1883,British North America,Meal and Flour,Wheat Flour,Cwts,2699.0,3520.0,2699.0,1,exact01,A,as_1883,1,546
 1883,British North America,"OIL, other than Essential or Medicinal","OIL and FLOOR CLOTH, including India Rubber Cloth",Square Yards,25932.0,353500.0,25932.0,1,exact01,A,as_1883,1,2097
-1883,British North America,"OIL, other than Essential or Medicinal",Seed,Gallons,81830.0,913000.0,81830.0,1,within5,C,as_1883,1,2073
+1883,British North America,"OIL, other than Essential or Medicinal",Seed,Gallons,81830.0,913000.0,81830.0,1,exact01,A,as_1883,1,2073
 1883,British North America,PAINTERS' COLOURS and MATERIALS,Unenumerated,,62431.0,,62431.0,1,exact01,A,as_1883,1,2124
 1883,British North America,PAPER,Hangings,Cwts,14106.0,6500.0,,0,within5,D,as_1883,1,2149
 1883,British North America,PAPER,"Unenumerated, and Articles of Paper (except Papier Mâché)",Cwts,5494.0,2575.0,,0,exact01,B,as_1883,1,2169
 1883,British North America,PAPER,"Writing or Printing, and Envelopes",Cwts,48906.0,16306.0,48906.0,1,exact01,A,as_1883,1,2139
 1883,British North America,"PERFUMERY, of all Sorts",,,3738.0,,3738.0,1,exact01,A,as_1883,1,2182
-1883,British North America,"PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY",,,386768.0,,218156.0,0,gross,D,as_1883,1,2208
+1883,British North America,"PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY",,,80756.0,,218156.0,0,gross,D,as_1883,1,2208
 1883,British North America,SILK MANUFACTURES,Broad Stuffs,Yards,166019.0,1236398.0,166019.0,1,exact01,A,as_1883,1,2395
 1883,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,77859.0,330127.0,,0,exact01,B,as_1883,1,2353
 1883,British North America,SILK MANUFACTURES,"Handkerchiefs, Scarfs, and Shawls",,14587.0,,,0,within5,D,as_1883,1,2361
@@ -1600,18 +1600,18 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1884,British North America,"ANIMALS, LIVING",Horses,No,72723.0,878.0,72723.0,1,exact01,A,as_1884,1,30
 1884,British North America,"ANIMALS, LIVING",Sheep and Lambs,No,2155.0,359.0,,0,exact01,B,as_1884,1,43
 1884,British North America,APPAREL and SLOPS,,,225008.0,,225008.0,1,exact01,A,as_1884,1,75
-1884,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ammunition, Unenumerated",,11075.0,,11075.0,1,within5,C,as_1884,1,132
+1884,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ammunition, Unenumerated",,11075.0,,11075.0,1,exact01,A,as_1884,1,132
 1884,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Gunpowder,Lbs,6129.0,235000.0,6129.0,1,exact01,A,as_1884,1,99
 1884,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Muskets, Rifles and Fowling Pieces",No,10710.0,4393.0,10710.0,1,exact01,A,as_1884,1,157
 1884,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,No,1716.0,16080000.0,1716.0,1,within5,C,as_1884,1,112
-1884,British North America,BEER and ALE,,,36720.0,9455.0,225008.0,0,exact01,D,as_1884,1,226
+1884,British North America,BEER and ALE,,,36720.0,9455.0,225008.0,0,within5,D,as_1884,1,226
 1884,British North America,BLEACHING MATERIALS,,,13263.0,31900.0,225008.0,0,gross,D,as_1884,1,255
 1884,British North America,BRASS,"Manufactures of, not being Ordnance",Cwts,10194.0,2171.0,,0,exact01,B,as_1884,1,295
 1884,British North America,"Books, Printed",,Cwts,83116.0,10237.0,81176.0,0,exact01,D,as_1884,1,271
 1884,British North America,"CANDLES, of all Sorts",,Lbs,5655.0,205900.0,,0,within5,D,as_1884,1,313
 1884,British North America,CEMENT,,Cwts,26927.0,227200.0,26927.0,1,exact01,A,as_1884,1,390
-1884,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,118693.0,,25630.0,0,gross,D,as_1884,1,424
-1884,British North America,"CLAY, unmanufactured",Manufactures thereof,Cwts,9540.0,133300.0,10574.0,0,gross,D,as_1884,1,448
+1884,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,25630.0,,25630.0,1,gross,D,as_1884,1,424
+1884,British North America,"CLAY, unmanufactured",Manufactures thereof,Cwts,10574.0,133300.0,10574.0,1,gross,D,as_1884,1,448
 1884,British North America,"COALS, CINDERS, &c.",Coals and Culm,Tons,48486.0,109443.0,48486.0,1,exact01,A,as_1884,1,499
 1884,British North America,"CORDAGE, CABLES, ROPES, and TWINE of HEMP or like MATERIAL",,,24655.0,11411.0,225008.0,0,exact01,D,as_1884,1,612
 1884,British North America,COTTON MANUFACTURES,Hosiery of other sorts,,91330.0,,,0,gross,D,as_1884,1,851
@@ -1659,11 +1659,11 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1884,British North America,JUTE MANUFACTURES,"Rolled, Sheet, Piping and Tubing",Tons,9400.0,730.0,9400.0,1,exact01,A,as_1884,1,1800
 1884,British North America,LEATHER,"Tanned, Unwrought",Cwts,25108.0,2686.0,25108.0,1,exact01,A,as_1884,1,1816
 1884,British North America,LEATHER,"Wrought, Boots and Shoes",Dozen Pairs,11514.0,2935.0,11514.0,1,within5,C,as_1884,1,1831
-1884,British North America,LEATHER,"Wrought, other Articles, Unenu- merated",,45636.0,,,0,within5,D,as_1884,1,1846
+1884,British North America,LEATHER,"Wrought, other Articles, Unenu- merated",,45636.0,,,0,exact01,B,as_1884,1,1846
 1884,British North America,LINEN MANUFACTURES,"Checked, Printed, or Dyed, and Damasks and Diapers",,10927.0,420200.0,10927.0,1,gross,D,as_1884,1,1895
-1884,British North America,LINEN MANUFACTURES,"Manufactures, Unenumerated",,49505.0,,23929.0,0,mod,D,as_1884,1,1932
+1884,British North America,LINEN MANUFACTURES,"Manufactures, Unenumerated",,23929.0,,23929.0,1,within5,C,as_1884,1,1932
 1884,British North America,LINEN MANUFACTURES,"Plain, Unbleached or Bleached",Tarls,139977.0,5779300.0,,0,exact01,B,as_1884,1,1887
-1884,British North America,LINEN MANUFACTURES,Sail Cloth and Sails,,6887.0,181600.0,30350.0,0,gross,D,as_1884,1,1904
+1884,British North America,LINEN MANUFACTURES,Sail Cloth and Sails,,30350.0,181600.0,30350.0,1,gross,D,as_1884,1,1904
 1884,British North America,LINEN MANUFACTURES,Thread for Sewing,,28724.0,233400.0,28724.0,1,exact01,A,as_1884,1,1913
 1884,British North America,MACHINERY and MILL WORK,Not being Steam Engines: other Descriptions,,77726.0,,77726.0,1,exact01,A,as_1884,1,2078
 1884,British North America,MACHINERY and MILL WORK,Steam Engines or Parts of Steam Engines: other Descriptions,,19509.0,,19509.0,1,mod,D,as_1884,1,2008
@@ -1672,15 +1672,15 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1884,British North America,"MUSICAL INSTRUMENTS, and Parts thereof",,,7219.0,,7919.0,0,exact01,D,as_1884,1,2162
 1884,British North America,"OIL, other than Essential or Medicinal","OIL and FLOOR CLOTH, including India Rubber Cloth",Square Yards,29380.0,425200.0,29380.0,1,exact01,A,as_1884,1,2210
 1884,British North America,"OIL, other than Essential or Medicinal",Seed,,54605.0,647600.0,,0,none,X,as_1884,1,2185
-1884,British North America,PAINTERS' COLOURS and MATERIALS,Unenumerated,,279973.0,,64489.0,0,gross,D,as_1884,1,2239
+1884,British North America,PAINTERS' COLOURS and MATERIALS,Unenumerated,,64489.0,,64489.0,1,gross,D,as_1884,1,2239
 1884,British North America,PAPER,Hangings,Cwts,13787.0,6535.0,,0,exact01,B,as_1884,1,2265
-1884,British North America,PAPER,"PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY",,14075.0,,83905.0,0,gross,D,as_1884,1,2323
+1884,British North America,PAPER,"PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY",,83905.0,,83905.0,1,gross,D,as_1884,1,2323
 1884,British North America,PAPER,"Unenumerated, and Articles of Paper (except Papier Mâché)",Cwts,7801.0,3737.0,,0,exact01,B,as_1884,1,2284
 1884,British North America,PAPER,"Writing or Printing, and Envelopes",Cwts,44511.0,14871.0,44511.0,1,mod,D,as_1884,1,2255
-1884,British North America,PLATED and GILT WARES,,,7219.0,,7219.0,1,within5,C,as_1884,1,2358
+1884,British North America,PLATED and GILT WARES,,,7219.0,,7219.0,1,exact01,A,as_1884,1,2358
 1884,British North America,RAGS (except Woollen) and other Materials for making Paper,,Tons,4255.0,390.0,4255.0,1,exact01,A,as_1884,1,2401
 1884,British North America,SALT (Rock and White),,Tons,48533.0,76337.0,48533.0,1,exact01,A,as_1884,1,2432
-1884,British North America,SILK,"Thrown, Twist or Yarn",Lbs,7497.0,8638.0,7497.0,1,within5,C,as_1884,1,2458
+1884,British North America,SILK,"Thrown, Twist or Yarn",Lbs,7497.0,8638.0,7497.0,1,exact01,A,as_1884,1,2458
 1884,British North America,SILK MANUFACTURES,Broad Stuffs,Yards,87874.0,639107.0,,0,within5,D,as_1884,1,2509
 1884,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,20564.0,109056.0,20564.0,1,exact01,A,as_1884,1,2467
 1884,British North America,SILK MANUFACTURES,"Handkerchiefs, Scarfs, and Shawls",,10157.0,,,0,exact01,B,as_1884,1,2476
@@ -1698,12 +1698,12 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1884,British North America,"TIN, Unwrought",,Cwts,19211.0,4468.0,19211.0,1,exact01,A,as_1884,1,2664
 1884,British North America,UMBRELLAS and PARASOLS,,,40322.0,,225008.0,0,exact01,D,as_1884,1,2690
 1884,British North America,WOOD,Sheep and Lambs' (British),Lbs,15579.0,327200.0,15579.0,1,exact01,A,as_1884,1,2725
-1884,British North America,WOOLLEN and WORSTED MANUFACTURES,Blankets,,169880.0,369978.0,,0,mod,D,as_1884,1,2942
-1884,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",,57652.0,573900.0,,0,within5,D,as_1884,1,2928
+1884,British North America,WOOLLEN and WORSTED MANUFACTURES,Blankets,,21340.0,369978.0,,0,mod,D,as_1884,1,2942
+1884,British North America,WOOLLEN and WORSTED MANUFACTURES,"Carpets, not being Rugs",,191926.0,573900.0,,0,mod,D,as_1884,1,2928
 1884,British North America,WOOLLEN and WORSTED MANUFACTURES,"Coatings, &c.",,81056.0,385900.0,,0,within5,D,as_1884,1,2861
 1884,British North America,WOOLLEN and WORSTED MANUFACTURES,"Coatings, Duffsels, &c. of Wool mixed with other Materials",Yards,284377.0,2357500.0,,0,within5,D,as_1884,1,2816
 1884,British North America,WOOLLEN and WORSTED MANUFACTURES,"Coatings, Duffsels, &c., all Wool",Yards,168310.0,761500.0,,0,exact01,B,as_1884,1,2790
-1884,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,,14646.0,420100.0,,0,none,X,as_1884,1,2906
+1884,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,,39557.0,420100.0,,0,none,X,as_1884,1,2906
 1884,British North America,WOOLLEN and WORSTED MANUFACTURES,Hosiery,,66540.0,,66540.0,1,exact01,A,as_1884,1,2991
 1884,British North America,WOOLLEN and WORSTED MANUFACTURES,"Rugs, Coverlets, or Wrappers",No,5119.0,11411.0,5119.0,1,within5,C,as_1884,1,2972
 1884,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,No,16546.0,53562.0,16546.0,1,within5,C,as_1884,1,2952
@@ -1717,7 +1717,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1885,British North America,"ANIMALS, LIVING",Horses,No,73780.0,853.0,,0,exact01,B,as_1885,1,39
 1885,British North America,APPAREL and SLOPS,,,246203.0,,65787.0,0,exact01,D,as_1885,1,103
 1885,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Ammunition, Unenumerated—",,21451.0,,21451.0,1,exact01,A,as_1885,1,177
-1885,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Gunpowder,Lbs,5749.0,214000.0,5749.0,1,within5,C,as_1885,1,132
+1885,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Gunpowder,Lbs,5749.0,214000.0,5749.0,1,exact01,A,as_1885,1,132
 1885,British North America,"ARMS, AMMUNITION, and MILITARY STORES","Muskets, Rifles and Fowling Pieces",No,38762.0,14645.0,38762.0,1,exact01,A,as_1885,1,208
 1885,British North America,"ARMS, AMMUNITION, and MILITARY STORES",Percussion Caps,No,2223.0,21835000.0,2223.0,1,exact01,A,as_1885,1,147
 1885,British North America,"BAGS and SACKS, Empty",,Dozens,12403.0,66407.0,,0,exact01,B,as_1885,1,261
@@ -1750,14 +1750,14 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1885,British North America,GLASS,"Flint, Plain, Cut, or Ornamented     (including Bottles and other     manufactures of Flint Glass)",Cwts,7893.0,3374.0,7893.0,1,within5,C,as_1885,1,1264
 1885,British North America,GLASS,"HABERDASHERY and MILLINERY, including Embroidery and Needlework",,507533.0,,,0,exact01,B,as_1885,1,1373
 1885,British North America,GLASS,"HARDWARES and CUTLERY, unenumerated",Cwts,116125.0,14196.0,,0,exact01,B,as_1885,1,1426
-1885,British North America,GLASS,"Other Manufactures, Unenumerated",Cwts,5865.0,6458.0,5865.0,1,within5,C,as_1885,1,1305
+1885,British North America,GLASS,"Other Manufactures, Unenumerated",Cwts,5865.0,6458.0,5865.0,1,exact01,A,as_1885,1,1305
 1885,British North America,GLASS,"Plate, Rough or Silvered (in-     cluding Looking Glasses or     Mirrors)",,16603.0,213560.0,,0,exact01,B,as_1885,1,1242
 1885,British North America,HATS,Of Felt,Dozens,68263.0,44655.0,,0,exact01,B,as_1885,1,1456
 1885,British North America,HATS,Of Other Sorts,Dozens,3344.0,2416.0,,0,exact01,B,as_1885,1,1488
 1885,British North America,HATS,Of Straw,Dozens,43847.0,73292.0,,0,exact01,B,as_1885,1,1476
 1885,British North America,IMPLEMENTS and TOOLS,Unenumerated,,8343.0,,5725.0,0,exact01,D,as_1885,1,1552
 1885,British North America,INSTRUMENTS and APPARATUS,"Surgical, Anatomical, and Scientific",,6989.0,,6989.0,1,exact01,A,as_1885,1,1569
-1885,British North America,IRON,"Anchors, Grapnels, Chains, and   Cables",Tons,23965.0,1910.0,23965.0,1,gross,D,as_1885,1,1928
+1885,British North America,IRON,"Anchors, Grapnels, Chains, and   Cables",Tons,23965.0,1910.0,23965.0,1,exact01,A,as_1885,1,1928
 1885,British North America,IRON,Bar,Tons,161620.0,28399.0,161620.0,1,exact01,A,as_1885,1,1653
 1885,British North America,IRON,"Cast, and Manufactures thereof,   unenumerated",Tons,15794.0,2113.0,15794.0,1,within5,C,as_1885,1,2004
 1885,British North America,IRON,Hoops and Hoop Iron,Tons,16869.0,2465.0,16869.0,1,exact01,A,as_1885,1,1874
@@ -1859,7 +1859,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1886,British North America,"COPPER,","Unwrought, in Ingots, Cakes, or Slabs",Cwts,7175.0,3274.0,,0,exact01,B,as_1886,1,731
 1886,British North America,"CORDAGE, CABLES, ROPES, and TWINE of HEMP, or like MATERIAL",,Cwts,16148.0,8431.0,131720.0,0,exact01,D,as_1886,1,814
 1886,British North America,COTTON MANUFACTURES,,Yards,53163.0,3160900.0,,0,gross,D,as_1886,1,974
-1886,British North America,COTTON MANUFACTURES,Hosiery of Other Sorts,,53570.0,,58570.0,0,gross,D,as_1886,1,1078
+1886,British North America,COTTON MANUFACTURES,Hosiery of Other Sorts,,53570.0,,58570.0,0,exact01,D,as_1886,1,1078
 1886,British North America,COTTON MANUFACTURES,Hosiery of Other Sorts,,101339.0,692000.0,58570.0,0,none,X,as_1886,1,1092
 1886,British North America,COTTON MANUFACTURES,Lace and Patent Net,,193507.0,,193507.0,1,exact01,A,as_1886,1,1038
 1886,British North America,COTTON MANUFACTURES,"Other Manufactures, unenumerated",,51788.0,,,0,within5,D,as_1886,1,1135
@@ -1888,7 +1888,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1886,British North America,IRON,"Manufactures of Steel, or of Steel and Iron combined",Tons,14509.0,819.0,,0,exact01,B,as_1886,1,2109
 1886,British North America,IRON,"Nails, Screws and Rivets",Tons,8210.0,552.0,8210.0,1,exact01,A,as_1886,1,1962
 1886,British North America,IRON,Railroad—Unenumerated,Tons,30258.0,5060.0,30258.0,1,within5,C,as_1886,1,1750
-1886,British North America,IRON,Sheets and Boiler Plates,Tons,71283.0,9621.0,71283.0,1,within5,C,as_1886,1,1806
+1886,British North America,IRON,Sheets and Boiler Plates,Tons,71283.0,9621.0,71283.0,1,exact01,A,as_1886,1,1806
 1886,British North America,IRON,Steel Sheets,Tons,46244.0,5306.0,46244.0,1,exact01,A,as_1886,1,2082
 1886,British North America,IRON,"Steel, Bar, of all kinds",Tons,72047.0,7616.0,,0,exact01,B,as_1886,1,2064
 1886,British North America,IRON,Tin Plates and Sheets,Tons,200911.0,13669.0,200911.0,1,exact01,A,as_1886,1,1893
@@ -1948,7 +1948,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1886,British North America,WOOLLEN and WORSTED MANUFACTURES,Flannels,Yards,35480.0,984800.0,35480.0,1,exact01,A,as_1886,1,3671
 1886,British North America,WOOLLEN and WORSTED MANUFACTURES,Hosiery,,114531.0,,114531.0,1,exact01,A,as_1886,1,3795
 1886,British North America,WOOLLEN and WORSTED MANUFACTURES,"Rugs, Coverlets, or Wrappers",No,4207.0,11237.0,1207.0,0,exact01,D,as_1886,1,3771
-1886,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,No,13952.0,68269.0,13952.0,1,within5,C,as_1886,1,3745
+1886,British North America,WOOLLEN and WORSTED MANUFACTURES,Shawls,No,13952.0,68269.0,13952.0,1,exact01,A,as_1886,1,3745
 1886,British North America,WOOLLEN and WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,36328.0,,36328.0,1,exact01,A,as_1886,1,3813
 1886,British North America,WOOLLEN and WORSTED MANUFACTURES,Stuffs,Yards,202586.0,3796000.0,202586.0,1,exact01,A,as_1886,1,3597
 1886,British North America,WOOLLEN and WORSTED MANUFACTURES,Stuffs,Yards,405689.0,10682100.0,202586.0,0,within5,D,as_1886,1,3649
@@ -1989,7 +1989,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1887,British North America,COTTON MANUFACTURES,"Piece Goods, Plain",Yards,48532.0,3294700.0,48532.0,1,exact01,A,as_1887,1,1024
 1887,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",Yards,571846.0,30440400.0,,0,exact01,B,as_1887,1,1091
 1887,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,13414.0,44620.0,13414.0,1,exact01,A,as_1887,1,1154
-1887,British North America,COTTON MANUFACTURES,Thread for Sewing,Lbs,96522.0,680600.0,98522.0,0,within5,D,as_1887,1,1219
+1887,British North America,COTTON MANUFACTURES,Thread for Sewing,Lbs,98522.0,680600.0,98522.0,1,exact01,A,as_1887,1,1219
 1887,British North America,COTTON TWIST AND YARN,,Lbs,13564.0,252700.0,,0,exact01,B,as_1887,1,957
 1887,British North America,EARTHEN and CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,143019.0,,,0,exact01,B,as_1887,1,1341
 1887,British North America,"FURNITURE (Household), CABINET, and UPHOLSTERY WARES",,,8437.0,,75899.0,0,within5,D,as_1887,1,1427
@@ -2007,7 +2007,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1887,British North America,IRON,,Tons,31638.0,2119.0,4087.0,0,gross,D,as_1887,1,2318
 1887,British North America,IRON,"Anchors, Grapnels, Chains and Cables",,21296.0,1728.0,,0,exact01,B,as_1887,1,2187
 1887,British North America,IRON,"Angle, Bolt and Rod",,5990.0,1032.0,5990.0,1,gross,D,as_1887,1,1918
-1887,British North America,IRON,Bar,Tons,14972.0,2429.0,,0,within5,D,as_1887,1,1901
+1887,British North America,IRON,Bar,Tons,144420.0,2429.0,,0,gross,D,as_1887,1,1901
 1887,British North America,IRON,"Cast, and Manufactures thereof,   unenumerated",Tons,53210.0,11373.0,53210.0,1,exact01,A,as_1887,1,2273
 1887,British North America,IRON,Hoops and Hoop Iron,Tons,15615.0,2568.0,15615.0,1,exact01,A,as_1887,1,2133
 1887,British North America,IRON,India,,369311.0,86789.0,369311.0,1,exact01,A,as_1887,1,1958
@@ -2094,7 +2094,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1888,British North America,"ANIMALS, LIVING","Bulls, Oxen, Cows, and Calves",No,5285.0,169.0,5285.0,1,exact01,A,as_1888,1,79
 1888,British North America,"ANIMALS, LIVING",Mares,No,54013.0,843.0,54013.0,1,exact01,A,as_1888,1,59
 1888,British North America,"ANIMALS, LIVING",Sheep and Lambs,No,12318.0,2092.0,,0,within5,D,as_1888,1,89
-1888,British North America,"ANIMALS, LIVING",Stallions,No,159061.0,1826.0,159061.0,1,within5,C,as_1888,1,45
+1888,British North America,"ANIMALS, LIVING",Stallions,No,159061.0,1826.0,159061.0,1,exact01,A,as_1888,1,45
 1888,British North America,APPAREL AND SLOPS,,,291981.0,,69546.0,0,exact01,D,as_1888,1,143
 1888,British North America,"ARMS, AMMUNITION, AND MILITARY STORES",Gunpowder,Lbs,4581.0,208400.0,,0,exact01,B,as_1888,1,178
 1888,British North America,"ARMS, AMMUNITION, AND MILITARY STORES","Muskets, Rifles, and Fowling Pieces",No,8840.0,4130.0,,0,exact01,B,as_1888,1,263
@@ -2111,14 +2111,14 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1888,British North America,CEMENT,,Tons,35874.0,18769.0,5420.0,0,exact01,D,as_1888,1,608
 1888,British North America,"CHEMICAL PRODUCTS or Preparations, not specially enumerated",,,27848.0,,27848.0,1,exact01,A,as_1888,1,657
 1888,British North America,"CLAY, Unmanufactured",,Tons,5420.0,4793.0,5420.0,1,exact01,A,as_1888,1,674
-1888,British North America,"CLAY, Unmanufactured",Manufactures thereof,Cwts,13447.0,303600.0,13447.0,1,within5,C,as_1888,1,694
+1888,British North America,"CLAY, Unmanufactured",Manufactures thereof,Cwts,13447.0,303600.0,13447.0,1,exact01,A,as_1888,1,694
 1888,British North America,"CLOCKS, WATCHES, and parts thereof",,,4956.0,,69546.0,0,exact01,D,as_1888,1,711
 1888,British North America,"COALS, CINDERS, &c.",Coals and Culm,Tons,43605.0,104157.0,,0,exact01,B,as_1888,1,757
 1888,British North America,COPPER,Mixed or Yellow Metal,Cwts,18199.0,4961.0,,0,exact01,B,as_1888,1,851
 1888,British North America,COPPER,Unenumerated,Cwts,17685.0,4284.0,,0,within5,D,as_1888,1,880
 1888,British North America,"CORDAGE, CABLES, ROPES, and TWINE of HEMP, or like MATERIAL",,Cwts,15170.0,7232.0,127343.0,0,exact01,D,as_1888,1,910
 1888,British North America,COTTON MANUFACTURES,HOSIERY of other sorts,,30375.0,,30375.0,1,exact01,A,as_1888,1,1300
-1888,British North America,COTTON MANUFACTURES,Laco and Patent Net,,139915.0,,139915.0,1,within5,C,as_1888,1,1255
+1888,British North America,COTTON MANUFACTURES,Laco and Patent Net,,139915.0,,139915.0,1,exact01,A,as_1888,1,1255
 1888,British North America,COTTON MANUFACTURES,"Other Manufactures, unenum-     rated",,72299.0,,,0,exact01,B,as_1888,1,1403
 1888,British North America,COTTON MANUFACTURES,"Piece Goods, Bleached",Yards,36484.0,2398800.0,36484.0,1,exact01,A,as_1888,1,1147
 1888,British North America,COTTON MANUFACTURES,"Piece Goods, Printed and Dyed",Yards,450644.0,26667700.0,450644.0,1,exact01,A,as_1888,1,1215
@@ -2126,7 +2126,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1888,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,13047.0,43458.0,13047.0,1,exact01,A,as_1888,1,1276
 1888,British North America,COTTON MANUFACTURES,Thread for Sewing,Lbs,68881.0,526800.0,68881.0,1,exact01,A,as_1888,1,1346
 1888,British North America,COTTON TWIST AND YARN,,,16867.0,343500.0,69546.0,0,exact01,D,as_1888,1,1014
-1888,British North America,DYE STUFFS,"Other Sorts, Unenumerated",,12595.0,,12595.0,1,within5,C,as_1888,1,1435
+1888,British North America,DYE STUFFS,"Other Sorts, Unenumerated",,12595.0,,12595.0,1,exact01,A,as_1888,1,1435
 1888,British North America,EARTHEN AND CHINA WARE,,,6951.0,,6951.0,1,exact01,A,as_1888,1,1453
 1888,British North America,EARTHEN AND CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,118854.0,,118854.0,1,exact01,A,as_1888,1,1496
 1888,British North America,"FURNITURE (Household), CABINET, and UPHOLSTERY WARES",,,9151.0,,69546.0,0,exact01,D,as_1888,1,1584
@@ -2177,7 +2177,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1888,British North America,LINEN YARN,,,3851.0,128300.0,69546.0,0,exact01,D,as_1888,1,2792
 1888,British North America,"MACHINERY and MILL WORK, or parts thereof",India,,17135.0,,7714.0,0,exact01,D,as_1888,1,2958
 1888,British North America,"MACHINERY and MILL WORK, or parts thereof",Not being Steam Engines: Other descriptions,,71640.0,,71640.0,1,exact01,A,as_1888,1,3113
-1888,British North America,"MACHINERY and MILL WORK, or parts thereof",Steam Engines : Other De- scriptions,,9198.0,,,0,mod,D,as_1888,1,3022
+1888,British North America,"MACHINERY and MILL WORK, or parts thereof",Steam Engines : Other De- scriptions,,9198.0,,,0,exact01,B,as_1888,1,3022
 1888,British North America,"MEDICINES, comprising Drugs and Medicinal Preparations",,,32675.0,,69546.0,0,within5,D,as_1888,1,3196
 1888,British North America,"METALS, Unenumerated and Manufactures thereof",,,22371.0,,69546.0,0,exact01,D,as_1888,1,3221
 1888,British North America,"MUSICAL INSTRUMENTS, and parts thereof",,,7947.0,,69546.0,0,exact01,D,as_1888,1,3241
@@ -2214,14 +2214,14 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1888,British North America,"TIN, Unwrought",,Cwts,43658.0,7270.0,127343.0,0,exact01,D,as_1888,1,4076
 1888,British North America,UMBRELLAS AND PARASOLS,,,69289.0,,69546.0,0,exact01,D,as_1888,1,4121
 1888,British North America,WOOL,Flocks and Ragwool,Lbs,4560.0,259200.0,4560.0,1,exact01,A,as_1888,1,4206
-1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Carpets, not being Rugs",,186969.0,2172600.0,186969.0,1,within5,C,as_1888,1,4502
+1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Carpets, not being Rugs",,186969.0,2172600.0,186969.0,1,exact01,A,as_1888,1,4502
 1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Coatings, &c.",,219049.0,1432800.0,219049.0,1,exact01,A,as_1888,1,4398
 1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,Flannels,Yards,34944.0,1039800.0,,0,exact01,B,as_1888,1,4468
 1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,Hosiery,,152497.0,,152497.0,1,exact01,A,as_1888,1,4612
 1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Rugs, Coverlets, or Wrappers",,5465.0,19867.0,,0,gross,D,as_1888,1,4584
 1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,Shawls,,17179.0,68027.0,,0,exact01,B,as_1888,1,4555
 1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,40443.0,,40443.0,1,gross,D,as_1888,1,4632
-1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,Stuffs,Yards,173864.0,4829500.0,269588.0,0,gross,D,as_1888,1,4370
+1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,Stuffs,Yards,26065.0,4829500.0,269588.0,0,gross,D,as_1888,1,4370
 1888,British North America,WOOLLEN AND WORSTED MANUFACTURES,Stuffs,Yards,269588.0,9516000.0,269588.0,1,exact01,A,as_1888,1,4444
 1888,British North America,WOOLLEN and WORSTED MANUFACTURES,"Coatings, Duffs, &c., of Wool mixed with other materials",,215336.0,1639100.0,,0,exact01,B,as_1888,1,4323
 1888,British North America,WOOLLEN and WORSTED MANUFACTURES,Woollen Yarn (Carded),Lbs,6575.0,53800.0,6575.0,1,exact01,A,as_1888,1,4221
@@ -2273,12 +2273,12 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1889,British North America,DYE STUFFS,Other Sorts. Unenumerated,,20012.0,,20012.0,1,exact01,A,as_1889,1,1602
 1889,British North America,EARTHEN AND CHINA WARE,,,7919.0,,7919.0,1,exact01,A,as_1889,1,1622
 1889,British North America,EARTHEN AND CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,153040.0,,153040.0,1,exact01,A,as_1889,1,1666
-1889,British North America,"FURNITURE (Household), CABINET, and UPHOLSTERY WARES",,,10097.0,,10097.0,1,within5,C,as_1889,1,1756
+1889,British North America,"FURNITURE (Household), CABINET, and UPHOLSTERY WARES",,,10097.0,,10097.0,1,exact01,A,as_1889,1,1756
 1889,British North America,GLASS,,Cwts,432992.0,,108402.0,0,exact01,D,as_1889,1,1931
 1889,British North America,GLASS,Common Bottles,Cwts,11596.0,28423.0,,0,exact01,B,as_1889,1,1843
 1889,British North America,GLASS,"Flint, Plain, Cut, or Ornamented (including Bottles and other Manufactures of Flint Glass)",Cwts,6965.0,2973.0,6965.0,1,exact01,A,as_1889,1,1813
 1889,British North America,GLASS,"Other Manufactures, Unenum- erated",Cwts,13112.0,18355.0,,0,exact01,B,as_1889,1,1863
-1889,British North America,GLASS,"Plate, Rough or Silvered",Square Feet,35397.0,441014.0,35397.0,1,mod,D,as_1889,1,1781
+1889,British North America,GLASS,"Plate, Rough or Silvered",Square Feet,35397.0,441014.0,35397.0,1,exact01,A,as_1889,1,1781
 1889,British North America,GLASS,enumerated,,108402.0,13075.0,,0,exact01,B,as_1889,1,1992
 1889,British North America,HORS,,Cwts,5373.0,1169.0,108402.0,0,exact01,D,as_1889,1,2093
 1889,British North America,ILATS,Felt,Dozens,118889.0,89476.0,118889.0,1,exact01,A,as_1889,1,2030
@@ -2292,7 +2292,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1889,British North America,IRON,"Cast, and Manufactures thereof,   unenumerated",Tons,25800.0,3999.0,,0,exact01,B,as_1889,1,2653
 1889,British North America,IRON,Hoops and Hoop Iron,Tons,18934.0,2826.0,18934.0,1,exact01,A,as_1889,1,2500
 1889,British North America,IRON,"Manufactures of Steel, or of Steel   and Iron combined",Tons,12940.0,365.0,,0,within5,D,as_1889,1,2790
-1889,British North America,IRON,"Nails, Screws and Rivets",Tons,8560.0,643.0,8560.0,1,within5,C,as_1889,1,2615
+1889,British North America,IRON,"Nails, Screws and Rivets",Tons,8560.0,643.0,8560.0,1,exact01,A,as_1889,1,2615
 1889,British North America,IRON,"Old and Scrap, for Re-Manufacture",,115330.0,40123.0,,0,gross,D,as_1889,1,2187
 1889,British North America,IRON,Pig,Tons,123743.0,51310.0,,0,exact01,B,as_1889,1,2199
 1889,British North America,IRON,Puddled and Puddled Bars,Tons,5413.0,1218.0,5413.0,1,exact01,A,as_1889,1,2207
@@ -2308,7 +2308,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1889,British North America,"IRON,",,,26139.0,1710.0,56231.0,0,exact01,D,as_1889,1,2699
 1889,British North America,"IRON,","Steel, Cast in Ingots and Blooms",Tons,6501.0,1066.0,,0,gross,D,as_1889,1,2710
 1889,British North America,JUTE MANUFACTURES,Piece Goods,Yards,91268.0,7547700.0,91268.0,1,within5,C,as_1889,1,2833
-1889,British North America,LEAD,Pig,,44964.0,3483.0,44964.0,1,mod,D,as_1889,1,2857
+1889,British North America,LEAD,Pig,,44964.0,3483.0,44964.0,1,exact01,A,as_1889,1,2857
 1889,British North America,LEAD,"Rolled, Sheet, Piping, Tubing, and other Manufactures",Tons,13090.0,923.0,,0,exact01,B,as_1889,1,2881
 1889,British North America,LEATHER,"Tanned, Unwrought",Cwts,16148.0,1677.0,16148.0,1,exact01,A,as_1889,1,2903
 1889,British North America,LEATHER,"Wrought, Boots and Shoes",Dozen Pairs,13635.0,4162.0,13635.0,1,exact01,A,as_1889,1,2933
@@ -2330,7 +2330,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1889,British North America,"PAINTERS' COLOURS and MATERIALS, Unenumerated",,,71634.0,,56231.0,0,exact01,D,as_1889,1,3564
 1889,British North America,PAPER,Hangings,Cwts,7813.0,3196.0,7813.0,1,exact01,A,as_1889,1,3624
 1889,British North America,PAPER,"PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY",,66994.0,,66994.0,1,exact01,A,as_1889,1,3731
-1889,British North America,PAPER,"Pasteboard, Millboard, &c. (in- cluding Playing Cards)",Cwts,1079.0,1009.0,,0,within5,D,as_1889,1,3640
+1889,British North America,PAPER,"Pasteboard, Millboard, &c. (in- cluding Playing Cards)",Cwts,1079.0,1009.0,,0,exact01,B,as_1889,1,3640
 1889,British North America,PAPER,"Unenumerated, and Articles of Paper (except Papier Mâché)",Cwts,8093.0,4204.0,8093.0,1,exact01,A,as_1889,1,3668
 1889,British North America,PAPER,"Writing or Printing, and En- velopes",Cwts,57081.0,28993.0,,0,within5,D,as_1889,1,3604
 1889,British North America,PICTURES,,No,10591.0,543.0,,0,exact01,B,as_1889,1,3746
@@ -2377,7 +2377,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1889,British North America,ZINC or SPELTER,Native Islands in the Indian Seas,,20917.0,,20917.0,1,exact01,A,as_1889,1,5049
 1889,British North America,ZINC or SPELTER,Unmanufactured,,6767.0,,6767.0,1,mod,D,as_1889,1,4931
 1890,British North America,ALKALI,,Cwts,65270.0,213800.0,,0,exact01,B,as_1890,1,32
-1890,British North America,"ANIMALS, LIVING",Mares,No,30805.0,589.0,30805.0,1,within5,C,as_1890,1,64
+1890,British North America,"ANIMALS, LIVING",Mares,No,30805.0,589.0,30805.0,1,exact01,A,as_1890,1,64
 1890,British North America,"ANIMALS, LIVING",Sheep and Lambs,No,8394.0,1893.0,8394.0,1,exact01,A,as_1890,1,96
 1890,British North America,"ANIMALS, LIVING",Stallions,No,100724.0,1388.0,100724.0,1,exact01,A,as_1890,1,47
 1890,British North America,APPAREL AND SLOPS,,,346568.0,,346568.0,1,exact01,A,as_1890,1,155
@@ -2400,7 +2400,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1890,British North America,"COAL, CINDERS, &c.","COCOA or CHOCOLATE, manufactured in the United Kingdom",Lbs,13534.0,301000.0,,0,exact01,B,as_1890,1,892
 1890,British North America,"COAL, CINDERS, &c.",Coal and Culm,Tons,30494.0,49826.0,,0,exact01,B,as_1890,1,809
 1890,British North America,COPPER,Mixed or Yellow Metal,Cwts,25305.0,8155.0,25305.0,1,exact01,A,as_1890,1,935
-1890,British North America,COPPER,Unenumerated,,30625.0,8220.0,30625.0,1,within5,C,as_1890,1,971
+1890,British North America,COPPER,Unenumerated,,30625.0,8220.0,30625.0,1,exact01,A,as_1890,1,971
 1890,British North America,COPPER,"Unwrought, in Ingots, Cakes, or   Slabs, and Precipitate",Cwts,7819.0,2714.0,,0,exact01,B,as_1890,1,908
 1890,British North America,"CORDAGE, CABLES, ROPES, and TWINE of HEMP, or like MATERIAL",,Cwts,14463.0,6526.0,,0,exact01,B,as_1890,1,1001
 1890,British North America,COTTON MANUFACTURES,HOSIERY of other sorts,,16713.0,,16713.0,1,exact01,A,as_1890,1,1490
@@ -2425,7 +2425,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1890,British North America,GLASS,"Plate, Rough or Silvered",Square Feet,32849.0,425316.0,32849.0,1,exact01,A,as_1890,1,1815
 1890,British North America,"HARDWARES AND CUTLERY, un- enumerated",,Cwts,94725.0,11015.0,,0,exact01,B,as_1890,1,2027
 1890,British North America,HATS,Felt,Dozens,104757.0,80589.0,104757.0,1,exact01,A,as_1890,1,2065
-1890,British North America,HATS,Other Sorts,Dozens,3284.0,2568.0,3284.0,1,within5,C,as_1890,1,2110
+1890,British North America,HATS,Other Sorts,Dozens,3284.0,2568.0,3284.0,1,exact01,A,as_1890,1,2110
 1890,British North America,HATS,Straw,Dozens,28664.0,57851.0,28664.0,1,exact01,A,as_1890,1,2095
 1890,British North America,HOPS,,Cwts,8431.0,1124.0,,0,within5,D,as_1890,1,2129
 1890,British North America,IMPLEMENTS AND TOOLS,Unenumerated,,14138.0,,14138.0,1,exact01,A,as_1890,1,2193
@@ -2560,7 +2560,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1891,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",Yards,199320.0,14516700.0,199320.0,1,exact01,A,as_1891,1,1353
 1891,British North America,COTTON MANUFACTURES,"Piece Goods, Unbleached",Yards,6308.0,518500.0,6308.0,1,exact01,A,as_1891,1,1217
 1891,British North America,COTTON MANUFACTURES,Stockings and Socks,Dozen Pairs,3056.0,10158.0,3056.0,1,exact01,A,as_1891,1,1489
-1891,British North America,COTTON MANUFACTURES,Thread for Sewing,,84325.0,613900.0,84325.0,1,within5,C,as_1891,1,1573
+1891,British North America,COTTON MANUFACTURES,Thread for Sewing,,84325.0,613900.0,84325.0,1,exact01,A,as_1891,1,1573
 1891,British North America,COTTON MANUFACTURES,United States,Yards,33631.0,2254100.0,,0,exact01,B,as_1891,1,1286
 1891,British North America,COTTON YARN AND TWIST,Bleached and Dyed,Lbs,10952.0,140400.0,10952.0,1,exact01,A,as_1891,1,1151
 1891,British North America,COTTON YARN AND TWIST,Grey,Lbs,7226.0,171600.0,7226.0,1,exact01,A,as_1891,1,1112
@@ -2660,10 +2660,10 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,Flannels,Yards,24303.0,759500.0,,0,exact01,B,as_1891,1,5276
 1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Heavy, Broad, all Wool",Yards,76467.0,308600.0,76467.0,1,exact01,A,as_1891,1,4807
 1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Heavy, Broad, mixed with other materials",Yards,99259.0,816700.0,99259.0,1,exact01,A,as_1891,1,4847
-1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Heavy, Narrow, all Wool",Yards,16544.0,107000.0,16544.0,1,within5,C,as_1891,1,4874
+1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Heavy, Narrow, all Wool",Yards,16544.0,107000.0,16544.0,1,exact01,A,as_1891,1,4874
 1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Heavy, Narrow, mixed with other materials",Yards,10587.0,104000.0,10587.0,1,gross,D,as_1891,1,4893
 1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,Hosiery,,138574.0,,138574.0,1,exact01,A,as_1891,1,5445
-1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Light, Broad, all Wool",Yards,31387.0,295300.0,31587.0,0,gross,D,as_1891,1,4930
+1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Light, Broad, all Wool",Yards,31587.0,295300.0,31587.0,1,exact01,A,as_1891,1,4930
 1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Light, Broad, mixed with other materials",Yards,26200.0,352300.0,26200.0,1,exact01,A,as_1891,1,4969
 1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Light, Narrow, all Wool",Yards,24567.0,312600.0,24567.0,1,exact01,A,as_1891,1,5000
 1891,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Light, Narrow, mixed with other materials",Yards,50771.0,1709400.0,,0,exact01,B,as_1891,1,5040
@@ -2707,7 +2707,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1892,British North America,"COAL, CINDERS, &c.",Coke and Cinders,Tons,9189.0,8926.0,,0,exact01,B,as_1892,1,1304
 1892,British North America,COPPER,Mixed or Yellow Metal,Cwts,16839.0,6390.0,16839.0,1,within5,C,as_1892,1,1423
 1892,British North America,COPPER,Sulphate of,Tons,1134.0,79.0,,0,exact01,B,as_1892,1,1484
-1892,British North America,COPPER,Unenumerated,Cwts,25507.0,75.0,,0,gross,D,as_1892,1,1463
+1892,British North America,COPPER,Unenumerated,Cwts,25507.0,75.0,,0,within5,D,as_1892,1,1463
 1892,British North America,COPPER,"Unwrought, in Ingots, Cakes, or Slabs, and Precipitate",Cwts,1679.0,692.0,1679.0,1,exact01,A,as_1892,1,1393
 1892,British North America,"CORDAGE, CABLES, ROPES, and TWINE of HEMP, or like MATERIAL",,Cwts,20282.0,9768.0,20282.0,1,exact01,A,as_1892,1,1518
 1892,British North America,COTTON MANUFACTURES,,,8493.0,761300.0,74783.0,0,exact01,D,as_1892,1,1718
@@ -2717,7 +2717,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1892,British North America,COTTON MANUFACTURES,"Piece Goods, Bleached",Yards,43617.0,2818500.0,43617.0,1,exact01,A,as_1892,1,1787
 1892,British North America,COTTON MANUFACTURES,"Piece Goods, Dyed or Manu-   factured of Dyed Yarn",Yards,198289.0,9152700.0,,0,exact01,B,as_1892,1,1925
 1892,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",Yards,202618.0,14022900.0,,0,exact01,B,as_1892,1,1855
-1892,British North America,COTTON MANUFACTURES,Thread for Sewing,,63591.0,486100.0,63521.0,0,within5,D,as_1892,1,2085
+1892,British North America,COTTON MANUFACTURES,Thread for Sewing,,63591.0,486100.0,63521.0,0,exact01,D,as_1892,1,2085
 1892,Canada,COTTON YARN AND TWIST,Grey,Lbs,13180.0,336100.0,13180.0,1,exact01,A,as_1892,1,1617
 1892,British North America,DYE STUFFS,Other Sorts. Unenumerated,,22935.0,,22925.0,1,exact01,A,as_1892,1,2180
 1892,British North America,EARTHEN AND CHINA WARE,"Earthenware, Chinaware, Parian, and Porcelain",,120005.0,,,0,exact01,B,as_1892,1,2258
@@ -2785,7 +2785,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1892,British North America,"PICKLES, VINEGAR, SAUCES, CONDIMENTS, PRESERVED FRUITS, and CONFECTIONERY",,,68019.0,,74783.0,0,exact01,D,as_1892,1,4913
 1892,British North America,PICTURES,,,10533.0,505.0,10533.0,1,exact01,A,as_1892,1,4930
 1892,British North America,POTATOES,,Cwt,3738.0,,,0,exact01,B,as_1892,1,5003
-1892,British North America,"PROVISIONS, Unenumerated",,,1800.0,,5443.0,0,within5,D,as_1892,1,5045
+1892,British North America,"PROVISIONS, Unenumerated",,,5443.0,,5443.0,1,gross,D,as_1892,1,5045
 1892,British North America,SADDLERY and HARNESS'd),,,10072.0,,74783.0,0,gross,D,as_1892,1,5091
 1892,British North America,SALT (Rock and White),,Tons,49245.0,62071.0,,0,exact01,B,as_1892,1,5120
 1892,British North America,"SEEDS, of all sorts",,Cwts,2437.0,884.0,20282.0,0,exact01,D,as_1892,1,5156
@@ -2837,7 +2837,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1892,Canada,YEAST,,Cwts,75.0,33.0,75.0,1,gross,D,as_1892,1,208
 1892,Canada,ZINC,Ore of,Tons,1658.0,161.0,1658.0,1,exact01,A,as_1892,1,224
 1892,British North America,ZINC or SPELTER,,,165067.0,,74783.0,0,within5,D,as_1892,1,6720
-1892,British North America,ZINC or SPELTER,Native Islands in the Indian Seas,,31351.0,,34351.0,0,within5,D,as_1892,1,6787
+1892,British North America,ZINC or SPELTER,Native Islands in the Indian Seas,,34351.0,,34351.0,1,exact01,A,as_1892,1,6787
 1892,British North America,ZINC or SPELTER,Unmanufactured,,6719.0,,9242.0,0,gross,D,as_1892,1,6660
 1892,British North America,ZINC'd),ARTICLES Imported by PARCEL Post,Number of Packets,17891.0,12412.0,,0,exact01,B,as_1892,1,334
 1892,British North America,ZINC'd),Manufactured,,76079.0,,165067.0,0,exact01,D,as_1892,1,307
@@ -2976,9 +2976,9 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1893,British North America,COTTON MANUFACTURES,HOSIERY of other sorts,,13341.0,,13341.0,1,within5,C,as_1893,1,1824
 1893,Canada,COTTON MANUFACTURES,"Hosiery, of Other Sorts",,11081.0,,11031.0,0,within5,D,as_1897,0,19416
 1893,Newfoundland,COTTON MANUFACTURES,"Hosiery, of Other Sorts",,1360.0,,1360.0,1,within5,C,as_1897,0,19421
-1893,British North America,COTTON MANUFACTURES,"Other Manufactures, unenumerated",,66408.0,,66408.0,1,within5,C,as_1893,1,1941
+1893,British North America,COTTON MANUFACTURES,"Other Manufactures, unenumerated",,66408.0,,66408.0,1,exact01,A,as_1893,1,1941
 1893,British North America,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",,158191.0,,,0,exact01,B,as_1893,1,1754
-1893,British North America,COTTON MANUFACTURES,"Piece Goods, Bleached",Yards,44284.0,3112400.0,44284.0,1,exact01,A,as_1893,1,1603
+1893,British North America,COTTON MANUFACTURES,"Piece Goods, Bleached",Yards,44284.0,3112400.0,44284.0,1,within5,C,as_1893,1,1603
 1893,British North America,COTTON MANUFACTURES,"Piece Goods, Dyed or Manu- factured of Dyed Yarn",,210852.0,10116700.0,,0,within5,D,as_1893,1,1732
 1893,British North America,COTTON MANUFACTURES,"Piece Goods, Printed",,256289.0,17697000.0,,0,within5,D,as_1893,1,1668
 1893,Canada,COTTON MANUFACTURES,"Piece Goods, Printed",Yards,215224.0,14204100.0,,0,gross,D,as_1897,0,17849
@@ -3136,7 +3136,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1893,British North America,LINEN MANUFACTURES,"Checked, Printed, or Dyed, and   Damasks and Diapers",Yds,10571.0,502300.0,10571.0,1,exact01,A,as_1893,1,3719
 1893,British North America,LINEN MANUFACTURES,"Manufactures, Unenumerated",,43641.0,,,0,exact01,B,as_1893,1,3813
 1893,British North America,LINEN MANUFACTURES,"Plain, Unbleached or Bleached",Yds,126786.0,7146400.0,126786.0,1,exact01,A,as_1893,1,3695
-1893,British North America,LINEN MANUFACTURES,Sailcloth,Yds,2053.0,50100.0,2053.0,1,within5,C,as_1893,1,3752
+1893,British North America,LINEN MANUFACTURES,Sailcloth,Yds,2053.0,50100.0,2053.0,1,exact01,A,as_1893,1,3752
 1893,British North America,LINEN MANUFACTURES,Thread for Sewing,Lbs,30288.0,247600.0,63503.0,0,exact01,D,as_1893,1,3777
 1893,British North America,LINEN YARN,,Lbs,4993.0,178200.0,,0,exact01,B,as_1893,1,3657
 1893,British North America,"MACHINERY and MILL WORK, or parts thereof",Not being Steam Engines:   Textile,,53023.0,,,0,exact01,B,as_1893,1,4050
@@ -3176,7 +3176,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1893,Canada,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",Cwt,2122.0,956.0,,0,within5,D,as_1897,0,40427
 1893,British North America,"PAINTERS' COLOURS and MATERIALS, Unenumerated",,,68481.0,,65705.0,0,exact01,D,as_1893,1,4497
 1893,British North America,PAPER,Hangings,Cwts,6673.0,3369.0,6673.0,1,exact01,A,as_1893,1,4568
-1893,British North America,PAPER,"Pasteboard, Millboard, &c. (in- cluding Playing Cards)",Cwts,2019.0,1061.0,,0,within5,D,as_1893,1,4587
+1893,British North America,PAPER,"Pasteboard, Millboard, &c. (in- cluding Playing Cards)",Cwts,2019.0,1061.0,,0,exact01,B,as_1893,1,4587
 1893,British North America,PAPER,"Unenumerated, and Articles of Paper (except Papier Mâché)",Cwts,9099.0,3837.0,9099.0,1,exact01,A,as_1893,1,4623
 1893,British North America,PAPER,"Writing or Printing, and En- velopes",Cwts,49502.0,27717.0,,0,exact01,B,as_1893,1,4542
 1893,British North America,"PICKLES, VINEGAR, SAUCES, CONDI- MENTS, PRESERVED FRUITS, and CONFECTIONERY'd)",,,63764.0,,65705.0,0,within5,D,as_1893,1,4674
@@ -3190,7 +3190,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1893,British North America,POTATOES,"SEEDS, of all sorts",Cwts,2672.0,1099.0,,0,exact01,B,as_1893,1,4947
 1893,Canada,SILK,"Thrown, Twist, or Yarn",Lbs,7662.0,16947.0,7962.0,0,within5,D,as_1897,0,40522
 1893,British North America,SILK MANUFACTURES,Broad Stuffs,Yards,61775.0,726887.0,61775.0,1,exact01,A,as_1893,1,5116
-1893,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,6102.0,56086.0,6102.0,1,within5,C,as_1893,1,4990
+1893,British North America,SILK MANUFACTURES,Broad Stuffs of Silk or Satin,Yards,6102.0,56086.0,6102.0,1,exact01,A,as_1893,1,4990
 1893,British North America,SILK MANUFACTURES,"Handkerchiefs, Scarfs and Shawls",,11449.0,,11449.0,1,exact01,A,as_1893,1,5019
 1893,British North America,SILK MANUFACTURES,Other Kinds,,9165.0,,9165.0,1,exact01,A,as_1893,1,5133
 1893,British North America,SILK MANUFACTURES,Ribbons of all kinds,,2853.0,,,0,gross,D,as_1893,1,5030
@@ -3362,7 +3362,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1894,Newfoundland,"ARMS, AMMUNITION, &c.",Percussion Caps,,169.0,1426.0,,0,within5,D,as_1897,0,2566
 1894,Canada,"ARMS, AMMUNITION, &c.",Percussion Caps,,1563.0,19539.0,,0,within5,D,as_1898,0,2530
 1894,Newfoundland,"ARMS, AMMUNITION, &c.",Percussion Caps,,169.0,1426.0,,0,within5,D,as_1898,0,2535
-1894,British North America,"ARMS, AMMUNITION, AND MILITARY STORES","Ammunition, Unenumerated",,9407.0,,9407.0,1,within5,C,as_1894,1,301
+1894,British North America,"ARMS, AMMUNITION, AND MILITARY STORES","Ammunition, Unenumerated",,9407.0,,9407.0,1,exact01,A,as_1894,1,301
 1894,British North America,"ARMS, AMMUNITION, AND MILITARY STORES",Gunpowder,Lbs,2321.0,71400.0,2321.0,1,exact01,A,as_1894,1,231
 1894,British North America,"ARMS, AMMUNITION, AND MILITARY STORES",Percussion Caps,No,1737.0,21015000.0,1737.0,1,exact01,A,as_1894,1,257
 1894,British North America,"ARMS, AMMUNITION, AND MILITARY STORES'd)","Muskets, Rifles, and Fowling Pieces",,9059.0,8378.0,,0,none,X,as_1894,1,361
@@ -3418,7 +3418,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1894,Newfoundland,CEMENT,,Tons,1885.0,1230.0,198.0,0,within5,D,as_1898,0,9803
 1894,Canada,CEMENT,Dutch,,36172.0,29007.0,1542.0,0,mod,D,as_1897,0,9996
 1894,Newfoundland,CEMENT,Dutch,,1585.0,1230.0,642.0,0,mod,D,as_1897,0,10001
-1894,British North America,CEMENT'd),,,36057.0,21237.0,36057.0,1,within5,C,as_1894,1,921
+1894,British North America,CEMENT'd),,,36057.0,21237.0,36057.0,1,exact01,A,as_1894,1,921
 1894,Canada,CHEESE,,Cwts,61.0,110.0,2453.0,0,within5,D,as_1897,0,10290
 1894,Newfoundland,CHEESE,,Cwts,165.0,44.0,2220.0,0,within5,D,as_1897,0,10295
 1894,Canada,CHEESE,,Cwts,34197.0,,2453.0,0,mod,D,as_1897,0,10744
@@ -3531,7 +3531,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1894,Newfoundland,COTTON MANUFACTURES,"Hosiery, of Other Sorts",,890.0,,890.0,1,within5,C,as_1898,0,19277
 1894,British North America,COTTON MANUFACTURES,"Other Manufactures, unenumerated",,70463.0,,70463.0,1,exact01,A,as_1894,1,1990
 1894,British North America,COTTON MANUFACTURES,"Piece Goods of Mixed Materials, Cotton predominating",,130682.0,,,0,exact01,B,as_1894,1,1804
-1894,British North America,COTTON MANUFACTURES,"Piece Goods, Bleached",Yards,37567.0,2812200.0,37567.0,1,exact01,A,as_1894,1,1650
+1894,British North America,COTTON MANUFACTURES,"Piece Goods, Bleached",Yards,37567.0,2812200.0,37567.0,1,within5,C,as_1894,1,1650
 1894,Canada,COTTON MANUFACTURES,"Piece Goods, Bleached",,30810.0,2287100.0,,0,within5,D,as_1898,0,17148
 1894,Newfoundland,COTTON MANUFACTURES,"Piece Goods, Bleached",,6757.0,525100.0,,0,within5,D,as_1898,0,17153
 1894,British North America,COTTON MANUFACTURES,"Piece Goods, Dyed or Manufactured of Dyed Yarn",Yards,164896.0,8963600.0,164896.0,1,exact01,A,as_1894,1,1782
@@ -3773,7 +3773,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1894,Newfoundland,LEAD,"Piece Goods, Sailcloth",,1750.0,42200.0,,0,within5,D,as_1897,0,34154
 1894,Canada,LEAD,"Piece Goods, Sailcloth",Yards,431.0,14700.0,,0,exact01,B,as_1898,0,34281
 1894,Newfoundland,LEAD,"Piece Goods, Sailcloth",Yards,1750.0,42200.0,,0,exact01,B,as_1898,0,34286
-1894,British North America,LEAD,Pig,Tons,7558.0,783.0,7558.0,1,within5,C,as_1894,1,3596
+1894,British North America,LEAD,Pig,Tons,7558.0,783.0,7558.0,1,exact01,A,as_1894,1,3596
 1894,Canada,LEAD,Pig,Tons,7432.0,774.0,7452.0,0,within5,D,as_1897,0,32525
 1894,Canada,LEAD,Pig,Tons,7463.0,774.0,3323.0,0,exact01,D,as_1898,0,32816
 1894,Canada,LEAD,"Rolled, Sheet, Piping, Tubing,   and other Manufactures",Tons,3225.0,224.0,3225.0,1,within5,C,as_1897,0,32695
@@ -3792,7 +3792,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1894,Canada,LEAD,"Wrought, Boots and Shoes",Doz. Prs,3985.0,1733.0,902.0,0,within5,D,as_1898,0,33336
 1894,Newfoundland,LEAD,"Wrought, Boots and Shoes",Doz. Prs,11090.0,4159.0,4077.0,0,within5,D,as_1898,0,33341
 1894,Canada,LEAD,"Wrought. Other Articles, Un- enumerated",,12291.0,,,0,within5,D,as_1897,0,33355
-1894,British North America,LEATHER,Unwrought,Cwts,10652.0,1281.0,10682.0,0,within5,D,as_1894,1,3653
+1894,British North America,LEATHER,Unwrought,Cwts,10652.0,1281.0,10682.0,0,exact01,D,as_1894,1,3653
 1894,British North America,LEATHER,"Wrought, Boots and Shoes",Doz. Pcs,15075.0,5897.0,,0,exact01,B,as_1894,1,3693
 1894,British North America,LEATHER,"Wrought, other Articles, Unenumerated",,12775.0,,,0,exact01,B,as_1894,1,3729
 1894,British North America,LINEN MANUFACTURES,"Checked, Printed, or Dyed, and     Damasks and Diapers",Yds,9423.0,526800.0,9423.0,1,exact01,A,as_1894,1,3820
@@ -3979,13 +3979,13 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1894,British North America,WOOD and TIMBER,Unenumerated,,1163.0,,1163.0,1,exact01,A,as_1894,1,5706
 1894,British North America,WOOL,Flocks and Ragwool,,1971.0,89000.0,,0,exact01,B,as_1894,1,5735
 1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,All Wool,Yards,44732.0,718500.0,,0,exact01,B,as_1894,1,6254
-1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,Blankets,Pairs,8702.0,27648.0,8702.0,1,within5,C,as_1894,1,6397
+1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,Blankets,Pairs,8702.0,27648.0,8702.0,1,exact01,A,as_1894,1,6397
 1894,Canada,WOOLLEN AND WORSTED MANUFACTURES,Blankets,,2334.0,6980.0,,0,within5,D,as_1897,0,48329
 1894,Newfoundland,WOOLLEN AND WORSTED MANUFACTURES,Blankets,,6368.0,20059.0,,0,within5,D,as_1897,0,48334
 1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Carpets, not being Rugs",,162113.0,1914100.0,,0,exact01,B,as_1894,1,6362
 1894,Canada,WOOLLEN AND WORSTED MANUFACTURES,"Carpets, not being Rugs",,159323.0,1856700.0,,0,within5,D,as_1897,0,48155
 1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Combed or Carded, and Tops",,1263.0,22300.0,1263.0,1,exact01,A,as_1894,1,5782
-1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,Flannels,,25507.0,737600.0,209353.0,0,mod,D,as_1894,1,6332
+1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,Flannels,,25507.0,737600.0,209353.0,0,exact01,D,as_1894,1,6332
 1894,Canada,WOOLLEN AND WORSTED MANUFACTURES,Flannels,Yards,9414.0,330800.0,,0,mod,D,as_1897,0,47910
 1894,Newfoundland,WOOLLEN AND WORSTED MANUFACTURES,Flannels,Yards,10063.0,406800.0,,0,mod,D,as_1897,0,47915
 1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,Hosiery,,142938.0,,142938.0,1,exact01,A,as_1894,1,6489
@@ -3994,7 +3994,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1894,Canada,WOOLLEN AND WORSTED MANUFACTURES,"Light, Narrow, all Wool",Yards,10296.0,94400.0,,0,within5,D,as_1897,0,46232
 1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Light, Narrow, mixed with other materials",,14042.0,396500.0,,0,exact01,B,as_1894,1,6117
 1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,Mixed with other materials,Yards,209358.0,5813000.0,,0,exact01,B,as_1894,1,6303
-1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Rugs, Coverlets, or Wrappers",No,4079.0,16071.0,4910.0,0,gross,D,as_1894,1,6454
+1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Rugs, Coverlets, or Wrappers",No,4910.0,16071.0,4910.0,1,within5,C,as_1894,1,6454
 1894,Canada,WOOLLEN AND WORSTED MANUFACTURES,"Rugs, Coverlets, or Wrappers",Number,4700.0,10218.0,,0,within5,D,as_1897,0,48569
 1894,British North America,WOOLLEN AND WORSTED MANUFACTURES,Shawls,No,9770.0,55194.0,9770.0,1,exact01,A,as_1894,1,6417
 1894,Canada,WOOLLEN AND WORSTED MANUFACTURES,Shawls,Number,9966.0,46964.0,8966.0,0,within5,D,as_1897,0,48414
@@ -4123,7 +4123,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1895,British North America,"ARMS, AMMUNITION, AND MILITARY STORES",Ammunition. Unenumerated,,13736.0,,13736.0,1,exact01,A,as_1895,1,303
 1895,British North America,"ARMS, AMMUNITION, AND MILITARY STORES",Gunpowder,Lbs,2141.0,53000.0,2141.0,1,exact01,A,as_1895,1,232
 1895,British North America,"ARMS, AMMUNITION, AND MILITARY STORES","Muskets, Rifles, and Fowling Pieces",No,13603.0,3836.0,13603.0,1,exact01,A,as_1895,1,367
-1895,British North America,"ARMS, AMMUNITION, AND MILITARY STORES",Percussion Caps,No,1471.0,17707000.0,1471.0,1,within5,C,as_1895,1,255
+1895,British North America,"ARMS, AMMUNITION, AND MILITARY STORES",Percussion Caps,No,1471.0,17707000.0,1471.0,1,exact01,A,as_1895,1,255
 1895,Canada,"BAGS AND SACKS, EMPTY",,Doz,227.0,1122.0,,0,within5,D,as_1897,0,4715
 1895,Canada,"BAGS AND SACKS, EMPTY",,Doz,14081.0,3259.0,,0,gross,D,as_1897,0,5184
 1895,Newfoundland,"BAGS AND SACKS, EMPTY",,Doz,1409.0,444.0,,0,gross,D,as_1897,0,5189
@@ -4997,7 +4997,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1895,Canada,WOOD AND TIMBER,"Yarn, Alpaca and Mohair",Lbs,1011.0,5400.0,1011.0,1,exact01,A,as_1899,0,46347
 1895,British North America,WOOD and TIMBER,Unenumerated,,1394.0,,1394.0,1,exact01,A,as_1895,1,5786
 1895,British North America,WOOL,Flocks and Ragwool,Lbs,1011.0,39000.0,1011.0,1,exact01,A,as_1895,1,5814
-1895,British North America,WOOLLEN AND WORSTED MANUFACTURES,All Wool,Yards,56014.0,882000.0,56014.0,1,within5,C,as_1895,1,6348
+1895,British North America,WOOLLEN AND WORSTED MANUFACTURES,All Wool,Yards,56014.0,882000.0,56014.0,1,exact01,A,as_1895,1,6348
 1895,British North America,WOOLLEN AND WORSTED MANUFACTURES,Blankets,Pairs,7050.0,20938.0,7050.0,1,exact01,A,as_1895,1,6519
 1895,Canada,WOOLLEN AND WORSTED MANUFACTURES,Blankets,,2421.0,8054.0,,0,within5,D,as_1897,0,48330
 1895,Newfoundland,WOOLLEN AND WORSTED MANUFACTURES,Blankets,,4620.0,12584.0,,0,within5,D,as_1897,0,48335
@@ -5023,7 +5023,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1895,Canada,WOOLLEN AND WORSTED MANUFACTURES,"Rugs, Coverlets, or Wrappers",Number,2740.0,9854.0,,0,within5,D,as_1897,0,48570
 1895,British North America,WOOLLEN AND WORSTED MANUFACTURES,Shawls,No,7107.0,39515.0,7107.0,1,exact01,A,as_1895,1,6538
 1895,Canada,WOOLLEN AND WORSTED MANUFACTURES,Shawls,Number,6895.0,37756.0,6895.0,1,exact01,A,as_1897,0,48415
-1895,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,22332.0,,,0,within5,D,as_1895,1,6650
+1895,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Small Wares, and Manufactures of Wool or Worsted, unenumerated",,22332.0,,,0,exact01,B,as_1895,1,6650
 1895,Canada,WOOLLEN AND WORSTED MANUFACTURES,"Small Wares, and Manufactures of Woollen or Worsted, Unenumerated",,19968.0,,,0,exact01,B,as_1897,0,48930
 1895,Canada,WOOLLEN AND WORSTED MANUFACTURES,Wool and Mohair Plushes,Yards,576.0,3700.0,,0,exact01,B,as_1897,0,47761
 1895,Canada,WOOLLEN AND WORSTED MANUFACTURES,"Woollen Tissues, Heavy, Broad, all Wool",Yards,75973.0,320700.0,75973.0,1,within5,C,as_1897,0,44982
@@ -5277,7 +5277,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1896,Newfoundland,"COAL, CINDERS, &c.",tinued,,1039.0,,,0,within5,D,as_1899,0,12379
 1896,Canada,"COAL, CINDERS, &c.",tinued,,8023.0,189100.0,,0,within5,D,as_1899,0,12681
 1896,Newfoundland,"COAL, CINDERS, &c.",tinued,,1018.0,35400.0,,0,within5,D,as_1899,0,12686
-1896,British North America,COPPER,Mixed or Yellow Metal,,10311.0,3941.0,10311.0,1,within5,C,as_1896,1,1221
+1896,British North America,COPPER,Mixed or Yellow Metal,,10311.0,3941.0,10311.0,1,exact01,A,as_1896,1,1221
 1896,Canada,COPPER,Sulphate of,Tons,341.0,21.0,,0,mod,D,as_1897,0,14312
 1896,Canada,COPPER,Sulphate of,Tons,341.0,21.0,,0,within5,D,as_1898,0,14135
 1896,Canada,COPPER,Sulphate of,Tons,311.0,21.0,311.0,1,mod,D,as_1899,0,14007
@@ -5372,7 +5372,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1896,Canada,COTTON MANUFACTURES,"Hosiery, of Other Sorts",,22977.0,,22077.0,0,exact01,D,as_1898,0,19274
 1896,Newfoundland,COTTON MANUFACTURES,"Hosiery, of Other Sorts",,713.0,,713.0,1,exact01,A,as_1898,0,19279
 1896,British North America,COTTON MANUFACTURES,Lace and Patent Net,,148802.0,,148802.0,1,exact01,A,as_1896,1,1824
-1896,British North America,COTTON MANUFACTURES,"Other Manufactures, Unenumerated",,87750.0,,87750.0,1,gross,D,as_1896,1,2012
+1896,British North America,COTTON MANUFACTURES,"Other Manufactures, Unenumerated",,87750.0,,87750.0,1,exact01,A,as_1896,1,2012
 1896,British North America,COTTON MANUFACTURES,"Piece Goods, Bleached",,42597.0,3236000.0,,0,exact01,B,as_1896,1,1630
 1896,Canada,COTTON MANUFACTURES,"Piece Goods, Bleached",,37992.0,2850200.0,,0,mod,D,as_1898,0,17150
 1896,Newfoundland,COTTON MANUFACTURES,"Piece Goods, Bleached",,4605.0,385300.0,,0,mod,D,as_1898,0,17155
@@ -5446,7 +5446,7 @@ Unmanufactured",,7695.0,,,0,exact01,B,as_1872,1,2902
 1896,Canada,FLAX AND HEMP,Dressed and Undressed,,3592.0,500.0,3892.0,0,mod,D,as_1899,0,21818
 1896,Canada,FLAX and HEMP,Dressed and Undressed,,3592.0,899.0,,0,mod,D,as_1897,0,21985
 1896,Canada,FLAX and HEMP,Dressed and Undressed,,3892.0,800.0,,0,within5,D,as_1898,0,21819
-1896,British North America,"FURNITURE (Household), CABINET, and UPHOLSTERY WARES",,,6471.0,,50862.0,0,within5,D,as_1896,1,2260
+1896,British North America,"FURNITURE (Household), CABINET, and UPHOLSTERY WARES",,,6471.0,,50862.0,0,exact01,D,as_1896,1,2260
 1896,Canada,"FURNITURE (Household), Cabinet and Upholstery Wares",,,2227.0,,,0,gross,D,as_1897,0,22300
 1896,Newfoundland,"FURNITURE (Household), Cabinet and Upholstery Wares",,,1227.0,,,0,gross,D,as_1897,0,22305
 1896,Canada,"FURNITURE (Household), Cabinet and Upholstery Wares",,,18475.0,244700.0,,0,exact01,B,as_1897,0,22476
@@ -5678,14 +5678,14 @@ enumerated",,,62382.0,7317.0,50862.0,0,exact01,D,as_1896,1,2520
 1896,British North America,Iron,"Angle, Bolt and Rod",Tons,869.0,154.0,869.0,1,exact01,A,as_1896,1,2950
 1896,British North America,Iron,Bar,Tons,14671.0,1725.0,14671.0,1,exact01,A,as_1896,1,2920
 1896,British North America,Iron,Bar. of all kinds,,49750.0,5137.0,,0,exact01,B,as_1896,1,3538
-1896,British North America,Iron,"Cast, and Manufactures thereof,   unenumerated",Tons,7237.0,1067.0,7237.0,1,within5,C,as_1896,1,3433
+1896,British North America,Iron,"Cast, and Manufactures thereof,   unenumerated",Tons,7237.0,1067.0,7237.0,1,exact01,A,as_1896,1,3433
 1896,British North America,Iron,Hoops and Hoop Iron,Tons,2539.0,374.0,2539.0,1,exact01,A,as_1896,1,3220
 1896,British North America,Iron,"Nails, Screws, and Rivets",Tons,4323.0,349.0,4823.0,0,exact01,D,as_1896,1,3380
 1896,British North America,Iron,Pig,Tons,11234.0,4204.0,11234.0,1,within5,C,as_1896,1,2864
 1896,British North America,Iron,Railroad—Rails (Iron and Steel),Tons,169236.0,40363.0,169236.0,1,exact01,A,as_1896,1,2988
 1896,British North America,Iron,Railroad—Unenumerated,Tons,5234.0,793.0,,0,exact01,B,as_1896,1,3035
 1896,British North America,Iron,Sheets and Boiler Plates,Tons,46896.0,6603.0,46896.0,1,exact01,A,as_1896,1,3118
-1896,British North America,Iron,"Sheets, Galvanized",Tons,56013.0,3619.0,56013.0,1,within5,C,as_1896,1,3168
+1896,British North America,Iron,"Sheets, Galvanized",Tons,56013.0,3619.0,56013.0,1,exact01,A,as_1896,1,3168
 1896,British North America,Iron,Tin Plates and Sheets,,184043.0,17695.0,,0,exact01,B,as_1896,1,3264
 1896,British North America,Iron,"Tubes and Pipes, Wrought",Tons,10296.0,762.0,10296.0,1,exact01,A,as_1896,1,3338
 1896,British North America,Iron,"Wire of Iron and Steel (except Telegraphic Wire), and Manu- factures thereof",Tons,15222.0,781.0,,0,exact01,B,as_1896,1,3078
@@ -6031,7 +6031,7 @@ enumerated",,,62382.0,7317.0,50862.0,0,exact01,D,as_1896,1,2520
 1896,British North America,WOOLLEN AND WORSTED MANUFACTURES,Flannels,Yards,14821.0,429400.0,,0,exact01,B,as_1896,1,6512
 1896,Canada,WOOLLEN AND WORSTED MANUFACTURES,Flannels,Yards,7489.0,262900.0,,0,within5,D,as_1897,0,47912
 1896,Newfoundland,WOOLLEN AND WORSTED MANUFACTURES,Flannels,Yards,7332.0,166600.0,,0,within5,D,as_1897,0,47917
-1896,British North America,WOOLLEN AND WORSTED MANUFACTURES,Hosiery,,132137.0,,132137.0,1,within5,C,as_1896,1,6684
+1896,British North America,WOOLLEN AND WORSTED MANUFACTURES,Hosiery,,132137.0,,132137.0,1,exact01,A,as_1896,1,6684
 1896,Canada,WOOLLEN AND WORSTED MANUFACTURES,Hosiery,Number,125654.0,,,0,within5,D,as_1897,0,48801
 1896,Newfoundland,WOOLLEN AND WORSTED MANUFACTURES,Hosiery,Number,7683.0,,,0,within5,D,as_1897,0,48806
 1896,British North America,WOOLLEN AND WORSTED MANUFACTURES,"Light, Broad, mixed with other materials",Yards,26585.0,515900.0,26585.0,1,exact01,A,as_1896,1,6198
@@ -6535,7 +6535,7 @@ enumerated",,,62382.0,7317.0,50862.0,0,exact01,D,as_1896,1,2520
 1897,Canada,IMPLEMENTS AND TOOLS,"Iron Sheets, Galvanized",Tons,9616.0,1164.0,56687.0,0,exact01,D,as_1899,1,29080
 1897,Canada,IMPLEMENTS AND TOOLS,"Iron Tubes and Pipes, Wrought",Tons,3030.0,193.0,3169.0,0,mod,D,as_1897,0,29908
 1897,Canada,IMPLEMENTS AND TOOLS,"Iron Tubes and Pipes, Wrought",Tons,3069.0,193.0,,0,exact01,B,as_1898,0,30094
-1897,Canada,IMPLEMENTS AND TOOLS,"Iron Tubes and Pipes, Wrought",Tons,3030.0,193.0,3030.0,1,within5,C,as_1899,1,30239
+1897,Canada,IMPLEMENTS AND TOOLS,"Iron Tubes and Pipes, Wrought",Tons,3030.0,193.0,3030.0,1,exact01,A,as_1899,1,30239
 1897,Canada,IMPLEMENTS AND TOOLS,"Iron Tubes and Pipes, Wrought",Tons,1291.0,73.0,3030.0,0,gross,D,as_1899,1,30584
 1897,Newfoundland,IMPLEMENTS AND TOOLS,"Iron Tubes and Pipes, Wrought",Tons,2980.0,257.0,2080.0,0,gross,D,as_1899,1,30589
 1897,Canada,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Tons,28.0,39.0,226.0,0,gross,D,as_1897,0,27339
@@ -7366,8 +7366,8 @@ enumerated",,,62382.0,7317.0,50862.0,0,exact01,D,as_1896,1,2520
 1898,Newfoundland,"MEDICINES, COMPRISING DRUGS AND MEDICINAL PREPARA- TIONS",,,546.0,282.0,113.0,0,mod,D,as_1899,1,37963
 1898,Canada,"METALS AND MANUFACTURES THEREOF, UNENUMERATED",,Cwts,1385.0,599.0,58723.0,0,within5,D,as_1898,0,37095
 1898,Newfoundland,"METALS AND MANUFACTURES THEREOF, UNENUMERATED",,Cwts,546.0,282.0,,0,within5,D,as_1898,0,37100
-1898,Canada,"METALS AND MANUFACTURES THEREOF, UNENUMERATED",,Cwts,287.0,,58723.0,0,gross,D,as_1898,0,37186
-1898,Newfoundland,"METALS AND MANUFACTURES THEREOF, UNENUMERATED",,Cwts,3550.0,,,0,gross,D,as_1898,0,37191
+1898,Canada,"METALS AND MANUFACTURES THEREOF, UNENUMERATED",,Cwts,2646.0,,58723.0,0,mod,D,as_1898,0,37186
+1898,Newfoundland,"METALS AND MANUFACTURES THEREOF, UNENUMERATED",,Cwts,297.0,,,0,mod,D,as_1898,0,37191
 1898,Canada,"METALS AND MANUFACTURES THEREOF, UNENUMERATED","Other Sorts, Unenumerated—cont.",,8935.0,,,0,within5,D,as_1898,0,37885
 1898,Newfoundland,"METALS AND MANUFACTURES THEREOF, UNENUMERATED","Other Sorts, Unenumerated—cont.",,323.0,,,0,within5,D,as_1898,0,37890
 1898,Canada,"METALS AND MANUFACTURES THEREOF, UNENUMERATED","Seed, Linseed",Tons,51439.0,3211.0,51459.0,1,within5,C,as_1898,0,37486

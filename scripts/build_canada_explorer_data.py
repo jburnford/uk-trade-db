@@ -113,9 +113,9 @@ ISSUES = {
                      'the printed page'),
         (1894, 1894, 'GBP0.85M in a single block: not yet checked against '
                      'the printed page')],
+    # (COTTON 1882 'Thread for Sewing' 605,600 was a row slip -- Canada's
+    # label on Australia's value -- repaired by repair_row_slip.py)
     'COTTON MANUFACTURES': [
-        (1882, 1882, 'Thread for Sewing reads GBP605,600 at 20x its usual unit '
-                     'price; ~GBP575k of this year is that one cell'),
         (1883, 1883, 'much of this year sits under an article named '
                      '"United States" - a destination read as a commodity')],
 }
@@ -174,6 +174,9 @@ def load_repairs(paths):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--db', default='db/uk_trade.duckdb')
+    ap.add_argument('--dump-cells', help='write every contributing cell '
+                    '(flow, year, family, volume, group, article, unit, seq, '
+                    'country, value, exact) as TSV, for spike forensics')
     ap.add_argument('--flows', default='export_uk,reexport')
     ap.add_argument('--out', default='reports/canada_explorer.json')
     a = ap.parse_args()
@@ -181,6 +184,8 @@ def main():
     fix = load_repairs(('reference/export_cell_repairs.csv',
                         'reference/malformed_cell_repairs.csv',
                         'reference/edge_column_repairs.csv',
+                        'reference/row_slip_repairs.csv',
+                        'reference/scaled_block_repairs.csv',
                 'reference/section_closure_repairs.csv'))
     con = duckdb.connect(a.db, read_only=True)
     flows = [f.strip() for f in a.flows.split(',') if f.strip()]
@@ -243,6 +248,7 @@ def main():
     for (flow, vol, yr, *_) in blocks:
         own[(flow, vol)] = max(own.get((flow, vol), 0), yr)
 
+    dump = open(a.dump_cells, 'w') if a.dump_cells else None
     # (flow, commodity) -> year -> [value, cells, proven_value]
     series = collections.defaultdict(lambda: collections.defaultdict(
         lambda: [0.0, 0, 0.0]))
@@ -283,6 +289,9 @@ def main():
                 cell[1] += 1
                 if exact:
                     cell[2] += val
+                if dump:
+                    dump.write('\t'.join(map(str, (flow, yr, canon, vol, ag, art,
+                                                 unit, ctry, val, int(exact)))) + '\n')
 
     years = list(range(1870, 1901))
     out = {'years': years, 'flows': flows,

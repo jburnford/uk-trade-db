@@ -61,10 +61,26 @@ TARGETS = {('as_1899', 1897): ['as_1897', 'as_1898', 'tn_1899', 'tn_1901'],
            ('as_1899', 1899): ['tn_1901'],
            ('tn_1901', 1900): [],
            ('as_1897', 1897): ['as_1898', 'as_1899', 'tn_1899', 'tn_1901'],
-           ('as_1898', 1898): ['as_1899', 'tn_1899', 'tn_1901']}
+           ('as_1898', 1898): ['as_1899', 'tn_1899', 'tn_1901'],
+           # 2026-08-18: EVERY own-year volume. The single-year annuals have
+           # no reprint, but the second engine reading the same page is a
+           # candidate source, and the section arithmetic is the proof: the
+           # 1870s-80s spikes in the Canada series (LEATHER 1881 590,215
+           # against inf's 9,462; carpets 1877/1881 x10 across a block;
+           # MEDICINES 1880, EARTHEN 1881/82, STATIONERY 1873, PLATED 1875)
+           # are single-engine misreads that the other engine has right.
+           ('tn_1871', 1870): [],
+           ('as_1893', 1893): ['as_1897'],
+           ('as_1894', 1894): ['as_1897', 'as_1898', 'tn_1895', 'tn_1899'],
+           ('as_1895', 1895): ['as_1897', 'as_1898', 'as_1899', 'tn_1899'],
+           ('as_1896', 1896): ['as_1897', 'as_1898', 'as_1899', 'tn_1899', 'tn_1901']}
+for _y in range(1872, 1893):
+    TARGETS[(f'as_{_y}', _y)] = []
 PRIOR = ('reference/export_cell_repairs.csv',
          'reference/malformed_cell_repairs.csv',
-         'reference/edge_column_repairs.csv')
+         'reference/edge_column_repairs.csv',
+         'reference/row_slip_repairs.csv',
+         'reference/scaled_block_repairs.csv')
 NO = object()
 
 

@@ -119,6 +119,8 @@ def section_verdicts(rws):
 REPAIR_FILES = ('reference/export_cell_repairs.csv',
                 'reference/malformed_cell_repairs.csv',
                 'reference/edge_column_repairs.csv',
+                'reference/row_slip_repairs.csv',
+                'reference/scaled_block_repairs.csv',
                 'reference/section_closure_repairs.csv')
 NO_REPAIR = object()
 
