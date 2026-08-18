@@ -1,0 +1,563 @@
+flow,volume,from_group,article,to_group,method,sim,rows,value
+export_uk,as_1897,"ARMS, AMMUNITION, &c.",Gunpowder,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,8,7140
+export_uk,as_1897,"ARMS, AMMUNITION, &c.",Percussion Caps,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,61,110920
+export_uk,as_1897,"ARMS, AMMUNITION, &c.","Ammunition, Unenumerated","ARMS, AMMUNITION, AND MILITARY STORES",interpolated,0.0,89,2526099
+export_uk,as_1897,"ARMS, AMMUNITION, &c.",Torpedoes and Parts thereof,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,7,29526
+export_uk,as_1897,"ARMS, AMMUNITION, &c.","Muskets, Rifles, and Fowling-pieces","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,93,1027242
+export_uk,as_1897,"ARMS, AMMUNITION, &c.",Other Firearms and Parts of Firearms,"ARMS, AMMUNITION, AND MILITARY STORES",interpolated,0.0,17,18753
+export_uk,as_1897,"ARMS, AMMUNITION, &c.","Swords, Cutlasses, Bayonets, and Arms of Other Sorts, not being Firearms","ARMS, AMMUNITION, AND MILITARY STORES",aligned,0.75,13,4467
+export_uk,as_1897,"ARMS, AMMUNITION, &c.","Military and Ordnance Stores,     not otherwise described","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,14,104337
+export_uk,as_1897,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Wheat Flour,MEAL and FLOUR,aligned,1.0,21,586834
+export_uk,as_1897,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Oatmeal,MEAL and FLOUR,aligned,1.0,35,130117
+export_uk,as_1897,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material","Mead, unenumerated",MEAL and FLOUR,trailing,0.0,5,8461
+export_uk,as_1897,"FURNITURE (Household), Cabinet and Upholstery Wares","Flint, Plain, Cut, or Ornamented     (including Bottles, and other     Manufactures of Flint Glass)",GLASS,aligned,1.0,55,656381
+export_uk,as_1897,"FURNITURE (Household), Cabinet and Upholstery Wares",Bottles and Manufactures of     Green or Common Glass,GLASS,aligned,1.0,13,38714
+export_uk,as_1897,"FURNITURE (Household), Cabinet and Upholstery Wares",Bottles and Manufactures of Green or Common Glass,GLASS,trailing,0.0,47,1074748
+export_uk,as_1897,"FURNITURE (Household), Cabinet and Upholstery Wares","Other Manufactures, Unenumerated",GLASS,trailing,0.0,49,546697
+export_uk,as_1897,IMPLEMENTS AND TOOLS,Iron Ore,Iron,aligned,1.0,6,15401
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron, Old and Scrap for Re-         manufacture",Iron,interpolated,0.0,18,672715
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron, Pig",Iron,aligned,1.0,64,8156685
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron, Bar",Iron,aligned,1.0,73,2852738
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Iron,aligned,1.0,38,162528
+export_uk,as_1897,IMPLEMENTS AND TOOLS,Railroad — Rails (Iron and Steel),Iron,interpolated,0.0,229,15720391
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron Sheets, Galvanized",Iron,aligned,1.0,21,5347671
+export_uk,as_1897,IMPLEMENTS AND TOOLS,Armour Plates,Iron,aligned,1.0,4,170294
+export_uk,as_1897,IMPLEMENTS AND TOOLS,Iron Black Plates for Tinning,Iron,aligned,1.0,11,73626
+export_uk,as_1897,IMPLEMENTS AND TOOLS,Hoops and Hoop Iron,Iron,aligned,1.0,46,951234
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron, Tin Plates and Sheets",Iron,aligned,1.0,106,10443702
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron Tubes and Pipes, Wrought",Iron,aligned,1.0,65,2541914
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron Nails, Screws, and Rivets",Iron,aligned,1.0,63,1088099
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron Cast and Manufactures     "" thereof, Unenumerated",Iron,aligned,1.0,33,325244
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron, Cast and Manufactures thereof, Unenumerated",Iron,interpolated,0.0,42,3022826
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Iron, Wrought and Manufactures     thereof, Unenumerated",Iron,aligned,1.0,96,6451861
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Steel Bar, of all kinds",IRON AND STEEL,interpolated,0.0,99,6159526
+export_uk,as_1897,IMPLEMENTS AND TOOLS,Steel Black Plates for Tinning,IRON AND STEEL,aligned,1.0,18,1572153
+export_uk,as_1897,IMPLEMENTS AND TOOLS,"Manufactures of Steel, or of     Steel and Iron combined",IRON AND STEEL,aligned,1.0,133,7183926
+export_uk,as_1897,LEAD,Unwrought,LEATHER,aligned,1.0,49,2565297
+export_uk,as_1897,LEAD,"Wrought, Boots and Shoes",LEATHER,aligned,1.0,51,4064254
+export_uk,as_1897,LEAD,"Wrought. Other Articles, Un- enumerated",LEATHER,aligned,1.0,58,3704029
+export_uk,as_1897,LEAD,"Piece Goods, Plain, Unbleached or Bleached",LINEN MANUFACTURES,aligned,1.0,92,9453910
+export_uk,as_1897,LEAD,"Piece Goods, Sailcloth",LINEN MANUFACTURES,aligned,1.0,42,676035
+export_uk,as_1897,LEAD,Thread for Sewing,LINEN MANUFACTURES,aligned,1.0,74,4110324
+export_uk,as_1897,LEAD,"Steam Engines, Locomotive","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,24,2342792
+export_uk,as_1897,LEAD,"Steam Engines, Locomotive : Agricultural","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,26,1399658
+export_uk,as_1897,LEAD,Other Descriptions,"MACHINERY and MILL WORK, or parts thereof",interpolated,0.0,281,24862748
+export_uk,as_1897,LEAD,"Not being Steam Engines, Agricultural","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,96,7323051
+export_uk,as_1897,LEAD,"Not being Steam Engines, Textile","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,34,15674294
+export_uk,as_1897,LEAD,Sulphate of Ammonia,MANURE,aligned,1.0,22,380942
+export_uk,as_1897,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Pasteboard, Millboard, Cardboard, and Cards (including Playing Cards)",PAPER,aligned,0.8,9,13885
+export_uk,as_1897,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",PAPER,aligned,1.0,365,7988792
+export_uk,as_1897,"SILK MANUFACTURES, WHOLLY OF SILK",Broad Stuffs of Silk or Satin,SILK MANUFACTURES,aligned,1.0,17,846681
+export_uk,as_1897,"SILK MANUFACTURES, WHOLLY OF SILK","Handkerchiefs, Scarfs, and Shawls",SILK MANUFACTURES,aligned,1.0,19,195540
+export_uk,as_1897,"SILK MANUFACTURES, WHOLLY OF SILK",Ribbons of all kinds,SILK MANUFACTURES,aligned,1.0,10,116876
+export_uk,as_1897,"SILK MANUFACTURES, WHOLLY OF SILK",Lace,SILK MANUFACTURES,aligned,1.0,15,359743
+export_uk,as_1897,"SILK MANUFACTURES, WHOLLY OF SILK",Unenumerated,SILK MANUFACTURES,interpolated,0.0,16,405362
+export_uk,as_1897,"SILK MANUFACTURES, WHOLLY OF SILK",Bread Stuffs,SILK MANUFACTURES,interpolated,0.0,38,452775
+export_uk,as_1897,"SILK MANUFACTURES, WHOLLY OF SILK",Other Kinds,SILK MANUFACTURES,interpolated,0.0,12,16896
+export_uk,as_1897,"SILK MANUFACTURES, WHOLLY OF SILK","British, Sheep and Lambs', Undressed, without the Wool",SKINS and FURS,aligned,1.0,8,72800
+export_uk,as_1897,"SILK MANUFACTURES, WHOLLY OF SILK","British, Unenumerated",SKINS and FURS,aligned,1.0,30,1924902
+export_uk,as_1897,"SILK MANUFACTURES, WHOLLY OF SILK",Dutch,SKINS and FURS,trailing,0.0,48,905216
+export_uk,as_1897,WOOLLEN AND WORSTED MANUFACTURES,Ore,ZINC or SPELTER,aligned,1.0,3,47166
+export_uk,as_1897,WOOLLEN AND WORSTED MANUFACTURES,Crude in Cakes,ZINC or SPELTER,aligned,1.0,11,273984
+export_uk,as_1897,WOOLLEN AND WORSTED MANUFACTURES,Manufactures of,ZINC or SPELTER,aligned,1.0,13,80210
+export_uk,as_1898,"ARMS, AMMUNITION, &c.",Gunpowder,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,5,7859
+export_uk,as_1898,"ARMS, AMMUNITION, &c.",Percussion Caps,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,62,91964
+export_uk,as_1898,"ARMS, AMMUNITION, &c.","Ammunition, Unenumerated","ARMS, AMMUNITION, AND MILITARY STORES",interpolated,0.0,86,1676922
+export_uk,as_1898,"ARMS, AMMUNITION, &c.","Cannon, Mortars, and Machine Guns","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,133,2247398
+export_uk,as_1898,"ARMS, AMMUNITION, &c.",Other Firearms and Parts of Firearms,"ARMS, AMMUNITION, AND MILITARY STORES",interpolated,0.0,37,39550
+export_uk,as_1898,"ARMS, AMMUNITION, &c.","Military and Ordnance Stores, not otherwise described","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,438,10445238
+export_uk,as_1898,CARRIAGES,"Railway Carriages for Passengers, and parts thereof","CARRIAGES, &c.",aligned,1.0,108,3373105
+export_uk,as_1898,CARRIAGES,"Cycles, and parts thereof","CARRIAGES, &c.",aligned,1.0,28,2403
+export_uk,as_1898,CARRIAGES,"Cycles, and parts thereof—cont.","CARRIAGES, &c.",interpolated,0.0,50,1385230
+export_uk,as_1898,CARRIAGES,"Other Sorts, and parts thereof (including Carts)","CARRIAGES, &c.",aligned,1.0,82,626397
+export_uk,as_1898,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Malt,CORN and GRAIN,aligned,1.0,27,719973
+export_uk,as_1898,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Oats,CORN and GRAIN,aligned,1.0,19,174531
+export_uk,as_1898,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Pease,CORN and GRAIN,interpolated,0.0,22,79524
+export_uk,as_1898,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Beans,CORN and GRAIN,aligned,1.0,6,5268
+export_uk,as_1898,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Wheat Flour,MEAL and FLOUR,aligned,1.0,22,651409
+export_uk,as_1898,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Oatmeal,MEAL and FLOUR,aligned,1.0,96,21841570
+export_uk,as_1898,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Bleached and Dyed,COTTON YARN AND TWIST,aligned,1.0,10,134481
+export_uk,as_1898,"FURNITURE (Household), Cabinet and Upholstery Wares","Flint, Plain, Cut, or Ornamented   (including Bottles, and other   Manufactures of Flint Glass)",GLASS,aligned,1.0,61,661741
+export_uk,as_1898,"FURNITURE (Household), Cabinet and Upholstery Wares",Bottles and Manufactures of Green or Common Glass,GLASS,aligned,1.0,68,1091111
+export_uk,as_1898,"FURNITURE (Household), Cabinet and Upholstery Wares","Other Manufactures, Unenumerated",GLASS,trailing,0.0,55,636065
+export_uk,as_1898,IMPLEMENTS AND TOOLS,Iron Ore,Iron,aligned,1.0,6,5966
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron, Old and Scrap for Re-         manufacture",Iron,interpolated,0.0,18,494032
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron, Pig",Iron,aligned,1.0,64,8060535
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron, Bar",Iron,aligned,1.0,73,2704558
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Iron,aligned,1.0,262,11772205
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron Sheets, Galvanized",Iron,aligned,1.0,79,7560013
+export_uk,as_1898,IMPLEMENTS AND TOOLS,Armour Plates,Iron,aligned,1.0,6,95466
+export_uk,as_1898,IMPLEMENTS AND TOOLS,Iron Black Plates for Tinning,Iron,aligned,1.0,14,126543
+export_uk,as_1898,IMPLEMENTS AND TOOLS,Hoops and Hoop Iron,Iron,aligned,1.0,55,1021933
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron, Tin Plates and Sheets",Iron,aligned,1.0,114,9014497
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron Tubes and Pipes, Wrought",Iron,aligned,1.0,64,2662338
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron Nails, Screws, and Rivets",Iron,aligned,1.0,72,1059598
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron, Cast and Manufactures         thereof, Unenumerated",Iron,aligned,1.0,32,324558
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron, Cast and Manufactures thereof, Unenumerated",Iron,interpolated,0.0,41,2827133
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Iron, Wrought and Manufactures thereof, Unenumerated",Iron,aligned,1.0,97,6509484
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Steel Bar, of all kinds",IRON AND STEEL,interpolated,0.0,99,7469275
+export_uk,as_1898,IMPLEMENTS AND TOOLS,Steel Black Plates for Tinning,IRON AND STEEL,aligned,1.0,21,1504950
+export_uk,as_1898,IMPLEMENTS AND TOOLS,"Manufactures of Steel, or of 
+    Steel and Iron combined",IRON AND STEEL,aligned,1.0,87,4126225
+export_uk,as_1898,IMPLEMENTS AND TOOLS,Piece Goods,JUTE MANUFACTURES,aligned,1.0,65,5561341
+export_uk,as_1898,LEAD,"Wrought, Boots and Shoes",LEATHER,aligned,1.0,51,4448437
+export_uk,as_1898,LEAD,"Wrought, Other Articles, Unenumerated",LEATHER,aligned,1.0,52,3853230
+export_uk,as_1898,LEAD,"Piece Goods, Plain, Unbleached or Bleached",LINEN MANUFACTURES,aligned,1.0,92,8950629
+export_uk,as_1898,LEAD,"Piece Goods, Sailcloth",LINEN MANUFACTURES,aligned,1.0,41,714329
+export_uk,as_1898,LEAD,Thread for Sewing,LINEN MANUFACTURES,aligned,1.0,88,3674322
+export_uk,as_1898,LEAD,"Steam Engines, Locomotive","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,24,2663778
+export_uk,as_1898,LEAD,Agricultural,"MACHINERY and MILL WORK, or parts thereof",aligned,1.0,26,1786985
+export_uk,as_1898,LEAD,Other Descriptions,"MACHINERY and MILL WORK, or parts thereof",interpolated,0.0,85,6603414
+export_uk,as_1898,LEAD,"Not being Steam Engines, Agricultural","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,23,2080032
+export_uk,as_1898,LEAD,"Not being Steam Engines, Agricultural : Sewing Machines","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,147,37167026
+export_uk,as_1898,"METALS AND MANUFACTURES THEREOF, UNENUMERATED","Seed, Linseed","OIL, other than Essential or Medicinal",aligned,1.0,61,1130581
+export_uk,as_1898,"METALS AND MANUFACTURES THEREOF, UNENUMERATED","Seed, Cotton","OIL, other than Essential or Medicinal",interpolated,0.0,20,960434
+export_uk,as_1898,"METALS AND MANUFACTURES THEREOF, UNENUMERATED",Other Seed Oils,"OIL, OTHER THAN ESSENTIAL OR MEDICINAL",aligned,1.0,14,202535
+export_uk,as_1898,"METALS AND MANUFACTURES THEREOF, UNENUMERATED","Other Sorts, Unenumerated","OIL, OTHER THAN ESSENTIAL OR MEDICINAL",trailing,0.0,14,258590
+export_uk,as_1898,"METALS AND MANUFACTURES THEREOF, UNENUMERATED","Other Sorts, Unenumerated—cont.","OIL, OTHER THAN ESSENTIAL OR MEDICINAL",trailing,0.0,33,1080190
+export_uk,as_1898,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED",Writing or Printing and Envelopes,PAPER,aligned,1.0,51,2750025
+export_uk,as_1898,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED",Hangings,PAPER,aligned,1.0,27,576582
+export_uk,as_1898,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Pasteboard, Millboard, Cardboard, and Cards (including Playing Cards)",PAPER,aligned,0.8,9,165204
+export_uk,as_1898,"PAINTERS' COLOURS AND MA- TERIALS, UNENUMERATED","Unenumerated, and Articles of Paper (except Papier Maché)",PAPER,aligned,1.0,161,2649672
+export_uk,as_1898,"SILK MANUFACTURES, WHOLLY OF SILK",Broad Stuffs of Silk or Satin,SILK MANUFACTURES,aligned,1.0,21,1428016
+export_uk,as_1898,"SILK MANUFACTURES, WHOLLY OF SILK","Handkerchiefs, Scarfs, and     Shawls",SILK MANUFACTURES,aligned,1.0,9,667692
+export_uk,as_1898,"SILK MANUFACTURES, WHOLLY OF SILK",Ribbons of all kinds,SILK MANUFACTURES,aligned,1.0,4,85386
+export_uk,as_1898,"SILK MANUFACTURES, WHOLLY OF SILK",Lace,SILK MANUFACTURES,aligned,1.0,54,1673090
+export_uk,as_1898,"SILK MANUFACTURES, WHOLLY OF SILK",Other Kinds,SILK MANUFACTURES,interpolated,0.0,12,104525
+export_uk,as_1898,"SILK MANUFACTURES, WHOLLY OF SILK","British, Sheep and Lambs', Undressed, without the Wool",SKINS and FURS,aligned,1.0,8,854967
+export_uk,as_1898,"SILK MANUFACTURES, WHOLLY OF SILK","British, Unenumerated",SKINS and FURS,aligned,1.0,78,4237205
+export_uk,as_1898,WOOD AND TIMBER,Noils,WOOL,aligned,1.0,17,1792119
+export_uk,as_1898,WOOD AND TIMBER,Waste,WOOL,aligned,1.0,90,17438525
+export_uk,as_1898,WOOD AND TIMBER,"Yarn, Alpaca and Mohair",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,15,4995452
+export_uk,as_1898,WOOD AND TIMBER,"Yarn, Hair or Wool, not otherwise Enumerated",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,8,312467
+export_uk,as_1898,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,318,12263590
+export_uk,as_1898,WOOD AND TIMBER,"Woollen Tissues, Light, Narrow, mixed with other Materials",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,49,684154
+export_uk,as_1898,WOOD AND TIMBER,"Worsted Tissues, Coatings, Broad, all Wool",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,61,5915003
+export_uk,as_1898,WOOD AND TIMBER,"Worsted Tissues, Coatings, Broad, mixed with other Materials",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,38,640047
+export_uk,as_1898,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,46,954291
+export_uk,as_1898,WOOD AND TIMBER,"Worsted Stuffs, &c., mixed with other Materials",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,39,3671157
+export_uk,as_1898,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., Mixed with other Materials—cont.",WOOLLEN AND WORSTED MANUFACTURES,interpolated,0.0,27,3949504
+export_uk,as_1898,WOOD AND TIMBER,"Damasks, Tapestry, and other Furniture Stuffs",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,10,72463
+export_uk,as_1898,WOOD AND TIMBER,Wool and Mohair Plushes,WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,8,48552
+export_uk,as_1898,WOOD AND TIMBER,Flannels,WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,32,989632
+export_uk,as_1898,WOOD AND TIMBER,"Carpets, not being Rugs",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,46,2378610
+export_uk,as_1898,WOOD AND TIMBER,Blankets,WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,42,1088868
+export_uk,as_1898,WOOD AND TIMBER,Shawls,WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,20,220652
+export_uk,as_1898,WOOD AND TIMBER,"Rugs, Coverlets, or Wrappers",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,37,1364224
+export_uk,as_1898,WOOD AND TIMBER,Hosiery,WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,85,2792951
+export_uk,as_1898,WOOD AND TIMBER,Ore,ZINC or SPELTER,aligned,1.0,27,528260
+export_uk,as_1899,APPAREL AND SLOPS,"Shot, of Iron, including Shells","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,17,291513
+export_uk,as_1899,APPAREL AND SLOPS,Gunpowder,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,7,8304
+export_uk,as_1899,"ARMS, AMMUNITION, &c.",Percussion Caps,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,24,11938
+export_uk,as_1899,"ARMS, AMMUNITION, &c.","Ammunition, Unenumerated","ARMS, AMMUNITION, AND MILITARY STORES",interpolated,0.0,75,2681528
+export_uk,as_1899,"ARMS, AMMUNITION, &c.","Cannon, Mortars, and Machine Guns","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,20,549267
+export_uk,as_1899,"ARMS, AMMUNITION, &c.",Torpedoes and Parts thereof,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,8,73062
+export_uk,as_1899,"ARMS, AMMUNITION, &c.","Muskets, Rifles, and Fowling-pieces","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,94,646856
+export_uk,as_1899,"ARMS, AMMUNITION, &c.",Other Firearms and Parts of Firearms,"ARMS, AMMUNITION, AND MILITARY STORES",interpolated,0.0,14,18536
+export_uk,as_1899,"ARMS, AMMUNITION, &c.","Swords, Cutlasses, Bayonets, and Arms of Other Sorts, not being Firearms","ARMS, AMMUNITION, AND MILITARY STORES",aligned,0.75,13,6494
+export_uk,as_1899,"ARMS, AMMUNITION, &c.","Military and Ordnance Stores,     not otherwise described","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,7,121765
+export_uk,as_1899,"ARMS, AMMUNITION, &c.","Military and Ordnance Stores,   not otherwise described—con-   tinued","ARMS, AMMUNITION, AND MILITARY STORES",trailing,0.0,6,6605
+export_uk,as_1899,CARRIAGES,"Railway Carriages for Passengers, and parts thereof","CARRIAGES, &c.",aligned,1.0,114,5715823
+export_uk,as_1899,CARRIAGES,"Cycles, and parts thereof","CARRIAGES, &c.",aligned,1.0,28,280054
+export_uk,as_1899,CARRIAGES,"Cycles, and parts thereof—cont.","CARRIAGES, &c.",interpolated,0.0,43,1701681
+export_uk,as_1899,CARRIAGES,"Other Sorts, and parts thereof (including Carts)","CARRIAGES, &c.",aligned,1.0,79,723989
+export_uk,as_1899,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Wheat Flour,MEAL and FLOUR,aligned,1.0,24,720936
+export_uk,as_1899,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material",Oatmeal,MEAL and FLOUR,aligned,1.0,35,90598
+export_uk,as_1899,"CORDAGE, CABLES, ROPES, AND TWINE, of Hemp or like Material","Mead, unenumerated",MEAL and FLOUR,trailing,0.0,4,17528
+export_uk,as_1899,"FURNITURE (Household), Cabinet and Upholstery Wares","Flint, Plain, Cut, or Ornamented (including Bottles, and other Manufactures of Flint Glass)",GLASS,aligned,1.0,61,647179
+export_uk,as_1899,"FURNITURE (Household), Cabinet and Upholstery Wares",Bottles and Manufactures of     Green or Common Glass,GLASS,aligned,1.0,68,1119482
+export_uk,as_1899,"FURNITURE (Household), Cabinet and Upholstery Wares","Other Manufactures, Unenumerated",GLASS,trailing,0.0,55,661278
+export_uk,as_1899,IMPLEMENTS AND TOOLS,Iron Ore,Iron,aligned,1.0,6,17062
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"Iron, Old and Scrap for Re-     manufacture",Iron,interpolated,0.0,18,1106456
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"Iron, Pig",Iron,aligned,1.0,58,14017972
+export_uk,as_1899,IMPLEMENTS AND TOOLS,Iron Puddled and Puddled Bars,Iron,aligned,1.0,3,3492
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"Iron, Bar",Iron,aligned,1.0,73,3136206
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"Iron, Angle, Bolt, and Rod",Iron,aligned,1.0,121,8361302
+export_uk,as_1899,IMPLEMENTS AND TOOLS,Railroad Iron—Unenumerated,Iron,interpolated,0.0,52,1499293
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"Wire of Iron and Steel (except Telegraphic Wire), and Manufactures thereof",Iron,aligned,1.0,111,4366443
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"Iron Sheets, Galvanized",Iron,aligned,1.0,83,9361887
+export_uk,as_1899,IMPLEMENTS AND TOOLS,Hoops and Hoop Iron,Iron,aligned,1.0,55,1251625
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"ii. Iron, Tin Plates and Sheets",Iron,aligned,1.0,115,10828389
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"Iron Tubes and Pipes, Wrought",Iron,aligned,1.0,137,4384183
+export_uk,as_1899,IMPLEMENTS AND TOOLS,Bedsteads,Iron,interpolated,0.0,78,929907
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"Iron, Cast and Manufactures thereof, Unenumerated",Iron,aligned,1.0,42,2991334
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"Iron, Wrought and Manufactures thereof, Unenumerated",Iron,aligned,1.0,99,6149544
+export_uk,as_1899,IMPLEMENTS AND TOOLS,"Steel Bar, of all kinds",Iron,trailing,0.0,264,23056047
+export_uk,as_1899,LEAD,Unwrought,LEATHER,aligned,1.0,49,4269269
+export_uk,as_1899,LEAD,"Wrought, Boots and Shoes",LEATHER,aligned,1.0,51,4259159
+export_uk,as_1899,LEAD,"Wrought, Other Articles, Unenumerated",LEATHER,aligned,1.0,54,3919919
+export_uk,as_1899,LEAD,"Piece Goods, Plain, Unbleached     or Bleached",LINEN MANUFACTURES,aligned,1.0,92,10609821
+export_uk,as_1899,LEAD,"Piece Goods, Sailcloth",LINEN MANUFACTURES,aligned,1.0,42,656704
+export_uk,as_1899,LEAD,Thread for Sewing,LINEN MANUFACTURES,aligned,1.0,57,3166914
+export_uk,as_1899,LEAD,"Steam Engines, Locomotive","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,48,4452462
+export_uk,as_1899,LEAD,West Africa : Agricultural,"MACHINERY and MILL WORK, or parts thereof",interpolated,0.0,32,2228995
+export_uk,as_1899,LEAD,West Africa : Other Descriptions,"MACHINERY and MILL WORK, or parts thereof",interpolated,0.0,61,4644181
+export_uk,as_1899,LEAD,"Not being Steam Engines, Agricultural","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,50,2811154
+export_uk,as_1899,LEAD,Sewing Machines,"MACHINERY and MILL WORK, or parts thereof",aligned,1.0,65,6199122
+export_uk,as_1899,LEAD,"Not being Steam Engines, Textile","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,41,22234445
+export_uk,as_1899,LEAD,Other Descriptions,"MACHINERY and MILL WORK, or parts thereof",trailing,0.0,130,24136253
+export_uk,as_1899,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",Writing or Printing and Envelopes,PAPER,aligned,1.0,51,2601750
+export_uk,as_1899,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",Hangings,PAPER,aligned,1.0,27,593968
+export_uk,as_1899,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Pasteboard, Millboard, Cardboard, and Cards (including Playing Cards)",PAPER,aligned,0.8,14,180791
+export_uk,as_1899,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of   Paper (except Papier Maché)",PAPER,aligned,1.0,143,5962404
+export_uk,as_1899,"SILK MANUFACTURES, WHOLLY OF SILK",Broad Stuffs of Silk or Satin,SILK MANUFACTURES,aligned,1.0,29,1516027
+export_uk,as_1899,"SILK MANUFACTURES, WHOLLY OF SILK","Handkerchiefs, Scarfs, and Shawls",SILK MANUFACTURES,aligned,1.0,19,640729
+export_uk,as_1899,"SILK MANUFACTURES, WHOLLY OF SILK",Ribbons of all kinds,SILK MANUFACTURES,aligned,1.0,10,166861
+export_uk,as_1899,"SILK MANUFACTURES, WHOLLY OF SILK",Lace,SILK MANUFACTURES,aligned,1.0,23,835001
+export_uk,as_1899,"SILK MANUFACTURES, WHOLLY OF SILK",Broad Stuffs,SILK MANUFACTURES,aligned,1.0,38,1091211
+export_uk,as_1899,"SILK MANUFACTURES, WHOLLY OF SILK",Other Kinds,SILK MANUFACTURES,trailing,0.0,12,100133
+export_uk,as_1899,WOOD AND TIMBER,"Sheep and Lambs', British,     Raw or Undressed",WOOL,aligned,1.0,15,2136472
+export_uk,as_1899,WOOD AND TIMBER,Flocks and Ragwool,WOOL,aligned,1.0,13,1029004
+export_uk,as_1899,WOOD AND TIMBER,Noils,WOOL,aligned,1.0,17,2307958
+export_uk,as_1899,WOOD AND TIMBER,Waste,WOOL,aligned,1.0,16,233889
+export_uk,as_1899,WOOD AND TIMBER,Combed or Carded and Tops,WOOL,aligned,1.0,19,5121160
+export_uk,as_1899,WOOD AND TIMBER,Woollen Yarn (Carded),WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,21,298279
+export_uk,as_1899,WOOD AND TIMBER,Worsted Yarn (Combed or Carded),WOOLLEN AND WORSTED MANUFACTURES,interpolated,0.0,34,14327992
+export_uk,as_1899,WOOD AND TIMBER,"Yarn, Alpaca and Mohair",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,15,5231527
+export_uk,as_1899,WOOD AND TIMBER,"Yarn, Hair or Wool, not otherwise Enumerated",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,8,303183
+export_uk,as_1899,WOOD AND TIMBER,"Woollen Tissues, Heavy, Broad, all Wool",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,221,12868552
+export_uk,as_1899,WOOD AND TIMBER,"Woollen Tissues, Light, Broad, mixed with other Materials",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,97,2907744
+export_uk,as_1899,WOOD AND TIMBER,"Woollen Tissues, Light, Narrow, mixed with other Materials",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,49,626157
+export_uk,as_1899,WOOD AND TIMBER,"Worsted Tissues, Coatings, Broad, all Wool",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,139,8589634
+export_uk,as_1899,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., all Wool",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,48,1728583
+export_uk,as_1899,WOOD AND TIMBER,"Worsted Stuffs, &c., mixed with other Materials",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,39,4233506
+export_uk,as_1899,WOOD AND TIMBER,"Worsted Stuffs, Dress Goods, Linings, Lastings, &c., Mixed with other Materials—cont.",WOOLLEN AND WORSTED MANUFACTURES,interpolated,0.0,27,3837432
+export_uk,as_1899,WOOD AND TIMBER,"Damasks, Tapestry, and other Furniture Stuffs",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,13,77257
+export_uk,as_1899,WOOD AND TIMBER,Wool and Mohair Plushes,WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,8,41695
+export_uk,as_1899,WOOD AND TIMBER,Flannels,WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,32,1059600
+export_uk,as_1899,WOOD AND TIMBER,"Carpets, not being Rugs",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,46,2722502
+export_uk,as_1899,WOOD AND TIMBER,Blankets,WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,42,907290
+export_uk,as_1899,WOOD AND TIMBER,Shawls,WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,20,232866
+export_uk,as_1899,WOOD AND TIMBER,"Rugs, Coverlets, or Wrappers",WOOLLEN AND WORSTED MANUFACTURES,aligned,1.0,98,4323541
+export_uk,as_1899,WOOD AND TIMBER,Ore,ZINC or SPELTER,aligned,1.0,195,18402756
+export_uk,tn_1901,"ARMS, AMMUNITION, &c.",Percussion Caps,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,24,11294
+export_uk,tn_1901,"ARMS, AMMUNITION, &c.","Ammunition, Unenumerated","ARMS, AMMUNITION, AND MILITARY STORES",interpolated,0.0,69,1265645
+export_uk,tn_1901,"ARMS, AMMUNITION, &c.","Cannon, Mortars, and Machine Guns","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,18,428255
+export_uk,tn_1901,"ARMS, AMMUNITION, &c.",Torpedoes and Parts thereof,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,8,83652
+export_uk,tn_1901,"ARMS, AMMUNITION, &c.","Muskets, Rifles, and Fowling-pieces","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,77,551656
+export_uk,tn_1901,"ARMS, AMMUNITION, &c.",Revolvers,"ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,8,4923
+export_uk,tn_1901,"ARMS, AMMUNITION, &c.",Other Firearms and Parts of Firearms,"ARMS, AMMUNITION, AND MILITARY STORES",interpolated,0.0,14,20435
+export_uk,tn_1901,"ARMS, AMMUNITION, &c.","Swords, Cutlasses, Bayonets, and Arms of Other Sorts, not being Firearms","ARMS, AMMUNITION, AND MILITARY STORES",aligned,0.75,11,4338
+export_uk,tn_1901,"ARMS, AMMUNITION, &c.","Military and Ordnance Stores, not otherwise described","ARMS, AMMUNITION, AND MILITARY STORES",aligned,1.0,17,229651
+export_uk,tn_1901,"ARMS, AMMUNITION, &c.","Military and Ordnance Stores,   not otherwise described—con-   tinued","ARMS, AMMUNITION, AND MILITARY STORES",trailing,0.0,8,248048
+export_uk,tn_1901,"CAOUTCHOUQ, MANUFACTURES OF","Railway Carriages for Passengers, and parts thereof","CARRIAGES, &c.",aligned,1.0,21,996520
+export_uk,tn_1901,"CAOUTCHOUQ, MANUFACTURES OF","Railway Waggons, Trucks, &c. (not of iron), and parts thereof, for Ballast, Minerals, or Merchandise","CARRIAGES, &c.",aligned,1.0,61,3351691
+export_uk,tn_1901,"CAOUTCHOUQ, MANUFACTURES OF","Cycles, and parts thereof","CARRIAGES, &c.",aligned,1.0,26,197022
+export_uk,tn_1901,"CAOUTCHOUQ, MANUFACTURES OF","Cycles, and parts thereof—cont.","CARRIAGES, &c.",interpolated,0.0,44,1391430
+export_uk,tn_1901,"CAOUTCHOUQ, MANUFACTURES OF","Other Sorts, and parts thereof (including Carts)","CARRIAGES, &c.",aligned,1.0,78,1000900
+export_uk,tn_1901,"CORN, GRAIN, MEAL, and FLOUR",Wheat,MEAL and FLOUR,aligned,1.0,13,49910
+export_uk,tn_1901,"CORN, GRAIN, MEAL, and FLOUR",Barley,MEAL and FLOUR,interpolated,0.0,18,42552
+export_uk,tn_1901,"CORN, GRAIN, MEAL, and FLOUR",Malt,MEAL and FLOUR,interpolated,0.0,24,724356
+export_uk,tn_1901,"CORN, GRAIN, MEAL, and FLOUR",Oats,MEAL and FLOUR,interpolated,0.0,16,90501
+export_uk,tn_1901,"CORN, GRAIN, MEAL, and FLOUR",Rye,MEAL and FLOUR,interpolated,0.0,3,156
+export_uk,tn_1901,"CORN, GRAIN, MEAL, and FLOUR",Peas,MEAL and FLOUR,interpolated,0.0,22,78484
+export_uk,tn_1901,"CORN, GRAIN, MEAL, and FLOUR",Beans,MEAL and FLOUR,interpolated,0.0,7,2841
+export_uk,tn_1901,"CORN, GRAIN, MEAL, and FLOUR",Wheatmeal or Flour,MEAL and FLOUR,interpolated,0.0,24,904390
+export_uk,tn_1901,"CORN, GRAIN, MEAL, and FLOUR",Oatmeal,MEAL and FLOUR,aligned,1.0,35,109102
+export_uk,tn_1901,"CORN, GRAIN, MEAL, and FLOUR","Meal, unenumerated",MEAL and FLOUR,trailing,0.0,5,18028
+export_uk,tn_1901,"FURNITURE (Household), Cabinet and Upholstery Wares","Flint, Plain, Cut, or Ornamented   (including Bottles, and other   Manufactures of Flint Glass)",GLASS,aligned,1.0,61,731793
+export_uk,tn_1901,"FURNITURE (Household), Cabinet and Upholstery Wares",Bottles and Manufactures of Green or Common Glass,GLASS,aligned,1.0,19,35286
+export_uk,tn_1901,"FURNITURE (Household), Cabinet and Upholstery Wares",Bottles and Manufactures of   Green or Common Glass,GLASS,trailing,0.0,49,1211141
+export_uk,tn_1901,"FURNITURE (Household), Cabinet and Upholstery Wares","Other Manufactures, Unenumerated",GLASS,trailing,0.0,55,696518
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC",Iron Ore,Iron,aligned,1.0,6,21895
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Iron, Old and Scrap for Re-manufacture",Iron,interpolated,0.0,18,1104233
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Iron, Pig",Iron,aligned,1.0,58,17856193
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Iron, Bar",Iron,aligned,1.0,201,12366011
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC",Railroad Iron—Unenumerated,Iron,interpolated,0.0,170,5798701
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Iron Sheets, Galvanized",Iron,aligned,1.0,87,11333519
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC",Hoops and Hoop Iron,Iron,aligned,1.0,54,1431573
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Iron, Tin Plates and Sheets",Iron,aligned,1.0,115,13270582
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Iron Tubes and Pipes, Wrought",Iron,aligned,1.0,65,3874787
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Iron Nails, Screws, and Rivets",Iron,aligned,1.0,71,1350523
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC",Bedsteads,Iron,interpolated,0.0,45,1044179
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Iron, Cast and Manufactures   thereof, Unenumerated",Iron,aligned,1.0,32,464295
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Iron, Cast and Manufactures thereof, Unenumerated",Iron,interpolated,0.0,42,3000416
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Iron, Wrought and Manufactures thereof, Unenumerated",Iron,aligned,1.0,99,6451436
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Steel Bar, of all kinds",IRON AND STEEL,interpolated,0.0,99,10712382
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC",Steel Black Plates for Tinning,IRON AND STEEL,aligned,1.0,21,1950533
+export_uk,tn_1901,"INSTRUMENTS AND APPARATUS, SURGICAL, ANATOMICAL, AND SCIENTIFIC","Manufactures of Steel, or of Steel and Iron combined",IRON AND STEEL,aligned,1.0,71,3047805
+export_uk,tn_1901,LEAD,Unwrought,LEATHER,aligned,1.0,49,4301411
+export_uk,tn_1901,LEAD,"Wrought, Boots and Shoes",LEATHER,aligned,1.0,55,4485539
+export_uk,tn_1901,LEAD,"Wrought, Other Articles, Un- enumerated",LEATHER,aligned,1.0,56,4180390
+export_uk,tn_1901,LINEN MANUFACTURES,"Steam Engines, Locomotive","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,25,1474234
+export_uk,tn_1901,LINEN MANUFACTURES,Agricultural,"MACHINERY and MILL WORK, or parts thereof",aligned,1.0,29,2005920
+export_uk,tn_1901,LINEN MANUFACTURES,Other Descriptions,"MACHINERY and MILL WORK, or parts thereof",interpolated,0.0,120,9646760
+export_uk,tn_1901,LINEN MANUFACTURES,Other Descriptions : Sewing Machines,"MACHINERY and MILL WORK, or parts thereof",aligned,1.0,69,5808702
+export_uk,tn_1901,LINEN MANUFACTURES,"Not being Steam Engines, Tex- tile","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,41,17984521
+export_uk,tn_1901,LINEN MANUFACTURES,"Not being Steam Engines, Tex- tile : Other Descriptions","MACHINERY and MILL WORK, or parts thereof",aligned,1.0,70,9431730
+export_uk,tn_1901,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED",Hangings,PAPER,aligned,1.0,33,508344
+export_uk,tn_1901,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Pasteboard, Millboard, Cardboard, and Cards (including Playing Cards)",PAPER,aligned,0.8,20,182756
+export_uk,tn_1901,"PAINTERS' COLOURS AND MATERIALS, UNENUMERATED","Unenumerated, and Articles of   Paper",PAPER,trailing,0.0,157,4043591
+export_uk,tn_1901,"SILK MANUFACTURES, WHOLLY OF SILK",Broad Stuffs of Silk or Satin,SILK MANUFACTURES,aligned,1.0,29,1614318
+export_uk,tn_1901,"SILK MANUFACTURES, WHOLLY OF SILK","Handkerchiefs, Scarfs, and Shawls",SILK MANUFACTURES,aligned,1.0,9,577938
+export_uk,tn_1901,"SILK MANUFACTURES, WHOLLY OF SILK",Ribbons of all kinds,SILK MANUFACTURES,aligned,1.0,4,112694
+export_uk,tn_1901,"SILK MANUFACTURES, WHOLLY OF SILK",Lace,SILK MANUFACTURES,aligned,1.0,87,4015923
+export_uk,tn_1901,"SILK MANUFACTURES, WHOLLY OF SILK","British, Unenumerated",SKINS and FURS,aligned,1.0,4,358359
+export_uk,tn_1901,"SILK MANUFACTURES, WHOLLY OF SILK","Foreign, dressed in the United Kingdom",SKINS and FURS,aligned,1.0,70,4572040
+export_uk,tn_1901,GOODS NOT ENUMERATED AND NOT FALLING UNDER ANY OF THE GENERAL HEADS,Unmanufactured,ZINC or SPELTER,aligned,1.0,28,1455908
+export_uk,tn_1901,GOODS NOT ENUMERATED AND NOT FALLING UNDER ANY OF THE GENERAL HEADS,Manufactured,ZINC or SPELTER,aligned,1.0,73,3419114
+export_uk,tn_1901,GOODS NOT ENUMERATED AND NOT FALLING UNDER ANY OF THE GENERAL HEADS,PARCEL POST (Articles Exported),ZINC or SPELTER,aligned,0.75,90,8725781
+reexport,as_1897,"CORN; Grain, Meal, and Flour",Oatmeal and Groats,MEAL AND FLOUR,aligned,1.0,8,78090
+reexport,as_1897,"CORN; Grain, Meal, and Flour",Maize or Indian Corn Meal,MEAL AND FLOUR,aligned,1.0,8,16608
+reexport,as_1897,"CORN; Grain, Meal, and Flour","Meal, not otherwise enumerated or described",MEAL AND FLOUR,trailing,0.0,7,39348
+reexport,as_1897,COTTON MANUFACTURES,"Piece Goods, Muslins",COTTON,aligned,1.0,6,10621
+reexport,as_1897,COTTON MANUFACTURES,"Piece Goods, other than Muslins",COTTON,aligned,1.0,37,720629
+reexport,as_1897,COTTON MANUFACTURES,"Hosiery, of all sorts",COTTON,aligned,1.0,14,118647
+reexport,as_1897,COTTON MANUFACTURES,Unenumerated,COTTON,trailing,0.0,29,246609
+reexport,as_1897,"DYE STUFFS (other than Dye Woods), and Substances used in Tanning or Dyeing",Herrings,"FISH, Fresh (not of British taking)",aligned,1.0,2,1846
+reexport,as_1897,"DYE STUFFS (other than Dye Woods), and Substances used in Tanning or Dyeing",Other Sorts of Fresh Fish,"FISH, Fresh (not of British taking)",interpolated,0.0,3,4376
+reexport,as_1897,"DYE STUFFS (other than Dye Woods), and Substances used in Tanning or Dyeing",Shell Fish—Oysters,"FISH, Fresh (not of British taking)",aligned,1.0,2,94
+reexport,as_1897,"DYE STUFFS (other than Dye Woods), and Substances used in Tanning or Dyeing",Shell Fish—Other Sorts,"FISH, Fresh (not of British taking)",trailing,0.0,3,190
+reexport,as_1897,"DYE STUFFS (other than Dye Woods), and Substances used in Tanning or Dyeing",Cured—Sardines,"FISH, Fresh (not of British taking)",trailing,0.0,11,78778
+reexport,as_1897,"FRUIT, Almonds","Apples, Raw",FRUIT,aligned,1.0,9,103166
+reexport,as_1897,"FRUIT, Almonds","Grapes, Raw",FRUIT,aligned,1.0,13,102197
+reexport,as_1897,"FRUIT, Almonds",Lemons,FRUIT,aligned,1.0,10,78321
+reexport,as_1897,"FRUIT, Almonds","Nuts, used as Fruit",FRUIT,aligned,1.0,12,188771
+reexport,as_1897,"FRUIT, Almonds",Oranges,FRUIT,aligned,1.0,16,746116
+reexport,as_1897,"FRUIT, Almonds","Pears, Raw",FRUIT,aligned,1.0,2,242
+reexport,as_1897,"FRUIT, Almonds","Plums, Raw",FRUIT,aligned,1.0,2,10
+reexport,as_1897,"FRUIT, Almonds","Unenumerated, Raw",FRUIT,interpolated,0.0,7,88775
+reexport,as_1897,"FRUIT, Almonds","Unenumerated, Dried",FRUIT,aligned,1.0,9,271548
+reexport,as_1897,"GLASS, Window and German Sheet, including Shades and Cyinders","Plate, Fluted, Rolled or Rough",GLASS,aligned,1.0,3,10385
+reexport,as_1897,"GLASS, Window and German Sheet, including Shades and Cyinders","Other Plate, whether Silvered or not",GLASS,aligned,1.0,5,12893
+reexport,as_1897,"GLASS, Window and German Sheet, including Shades and Cyinders",Bottles (included in Glass Manufactures in 1893),GLASS,interpolated,0.0,5,13683
+reexport,as_1897,"GLASS, Window and German Sheet, including Shades and Cyinders","Manufactures, unenumerated",GLASS,aligned,1.0,54,342709
+reexport,as_1897,"GLASS, Window and German Sheet, including Shades and Cyinders","Lac, Seed, Shell, Stick, and Dye",GUM,aligned,1.0,20,1074390
+reexport,as_1897,"GLASS, Window and German Sheet, including Shades and Cyinders",Unenumerated,GUM,trailing,0.0,18,618855
+reexport,as_1897,"GLASS, Window and German Sheet, including Shades and Cyinders",GUNPOWDER,GUM,trailing,0.0,3,1011
+reexport,as_1897,LEATHER,Manufactures: Boots and Shoes,LEATHER MANUFACTURES,aligned,1.0,15,140698
+reexport,as_1897,LEATHER,Gloves,LEATHER MANUFACTURES,aligned,1.0,15,577299
+reexport,as_1897,LEATHER,"Unenumerated, or whereof Leather is the most valuable part",LEATHER MANUFACTURES,trailing,0.0,14,96175
+reexport,as_1897,MUSICAL INSTRUMENTS,Palm,OIL,aligned,1.0,21,1909147
+reexport,as_1897,MUSICAL INSTRUMENTS,Seed,OIL,aligned,1.0,21,296674
+reexport,as_1897,MUSICAL INSTRUMENTS,Turpentine,OIL,aligned,1.0,13,66849
+reexport,as_1897,MUSICAL INSTRUMENTS,"Chemical, Essential, or Per- fumed",OIL,aligned,1.0,13,192984
+reexport,as_1897,MUSICAL INSTRUMENTS,Unenumerated,OIL,trailing,0.0,81,701775
+reexport,as_1897,SPONGE,Molasses,SUGAR,aligned,1.0,12,274852
+reexport,as_1897,SPONGE,Glucose (solid or liquid),SUGAR,aligned,1.0,10,34492
+reexport,as_1897,WOOD and TIMBER,Mahogany,FURNITURE AND HARDWOODS,aligned,1.0,18,16038
+reexport,as_1897,WOOD and TIMBER,"House Frames, Fittings, Joiners' and Cabinet Work",FURNITURE AND HARDWOODS,aligned,1.0,15,76316
+reexport,as_1897,WOOD and TIMBER,"Alpaca, Vicuna, and Llama",WOOL,aligned,1.0,6,71110
+reexport,as_1897,WOOD and TIMBER,Mohair,WOOL,aligned,1.0,4,117466
+reexport,as_1897,WOOD and TIMBER,Other Goats' Wool or Hair,WOOL,aligned,1.0,5,24850
+reexport,as_1897,WOOD and TIMBER,Sheep or Lambs',WOOL,aligned,1.0,22,39345
+reexport,as_1897,WOOD and TIMBER,Other kinds and Flocks,WOOL,aligned,1.0,6,981
+reexport,as_1897,WOOD and TIMBER,"For fancy purposes, including Berlin Wool and Zephyr Yarn",WOOLLEN YARN,aligned,1.0,15,306
+reexport,as_1897,WOOD and TIMBER,"For fancy purposes, including Berlin Wool and Zephyr Yarn : For Weaving, mixed or not with Silk",WOOLLEN YARN,aligned,1.0,9,23649
+reexport,as_1897,WOOD and TIMBER,"For fancy purposes, including Berlin Wool and Zephyr Yarn : Unenumerated",WOOLLEN YARN,interpolated,0.0,18,68384
+reexport,as_1897,WOOD and TIMBER,"For fancy purposes, including Berlin Wool and Zephyr Yarn : Of Wool other than Goats', or of Wool mixed with Cotton: Cloths",WOOLLEN MANUFACTURES,aligned,1.0,49,1255826
+reexport,as_1897,"CONFECTIONERY, in the manufacture of which Spirit has been used",Currants,FRUIT,aligned,1.0,70,236098
+reexport,as_1897,"CONFECTIONERY, in the manufacture of which Spirit has been used",Prunes,FRUIT,aligned,1.0,10,5126
+reexport,as_1897,"CONFECTIONERY, in the manufacture of which Spirit has been used",Raisins,FRUIT,aligned,1.0,31,170509
+reexport,as_1897,"SPIRITS, Unenumerated",of China,TEA,aligned,1.0,45,2157474
+reexport,as_1897,"SPIRITS, Unenumerated",of other Countries,TEA,aligned,1.0,22,92841
+reexport,as_1897,TOBACCO,"White, in Bottles, Still","WINE, Red",aligned,1.0,17,49781
+reexport,as_1897,TOBACCO,"Red in Bottles, Sparkling Burgundy","WINE, Red",aligned,1.0,6,936
+reexport,as_1897,TOBACCO,"Red in Bottles, Sparkling, Other Sorts","WINE, Red",aligned,1.0,4,377
+reexport,as_1897,TOBACCO,"White, in Bottles, Sparkling Champagne","WINE, White",aligned,1.0,44,475093
+reexport,as_1897,TOBACCO,"White, in Bottles, Sparkling Saumur","WINE, White",aligned,1.0,127,1329604
+reexport,as_1897,TOBACCO,Total of Wine of all kinds,"WINE, White",trailing,0.0,71,8000941
+reexport,as_1898,"CORN ; Grain, Meal, and Flour",Oatmeal and Groats,MEAL AND FLOUR,aligned,1.0,8,62968
+reexport,as_1898,"CORN ; Grain, Meal, and Flour",Maize or Indian Corn Meal,MEAL AND FLOUR,aligned,1.0,8,6647
+reexport,as_1898,"CORN ; Grain, Meal, and Flour","Meal, not otherwise enumerated or described",MEAL AND FLOUR,trailing,0.0,7,23325
+reexport,as_1898,COTTON MANUFACTURES,"Piece Goods, Muslins",COTTON,aligned,1.0,6,12255
+reexport,as_1898,COTTON MANUFACTURES,"Piece Goods, other than Muslins",COTTON,aligned,1.0,35,888520
+reexport,as_1898,COTTON MANUFACTURES,"Hosiery, of all sorts",COTTON,aligned,1.0,14,131248
+reexport,as_1898,COTTON MANUFACTURES,,COTTON,trailing,0.0,29,411927
+reexport,as_1898,EGGS,Herrings,"FISH, Fresh (not of British taking)",aligned,1.0,2,1132
+reexport,as_1898,EGGS,Other Sorts of Fresh Fish,"FISH, Fresh (not of British taking)",interpolated,0.0,3,5514
+reexport,as_1898,EGGS,Shell Fish—Oysters,"FISH, Fresh (not of British taking)",aligned,1.0,2,198
+reexport,as_1898,EGGS,Shell Fish—Other Sorts,"FISH, Fresh (not of British taking)",trailing,0.0,3,150
+reexport,as_1898,EGGS,Cured—Sardines,"FISH, Fresh (not of British taking)",trailing,0.0,13,114311
+reexport,as_1898,"FRUIT, Almonds","Apples, Raw",FRUIT,aligned,1.0,10,32650
+reexport,as_1898,"FRUIT, Almonds","Grapes, Raw",FRUIT,aligned,1.0,13,133291
+reexport,as_1898,"FRUIT, Almonds",Lemons,FRUIT,aligned,1.0,11,87604
+reexport,as_1898,"FRUIT, Almonds","Nuts, used as Fruit",FRUIT,aligned,1.0,12,186550
+reexport,as_1898,"FRUIT, Almonds",Oranges,FRUIT,aligned,1.0,16,428791
+reexport,as_1898,"FRUIT, Almonds","Pears, Raw",FRUIT,aligned,1.0,2,1606
+reexport,as_1898,"FRUIT, Almonds","Plums, Raw",FRUIT,aligned,1.0,3,106
+reexport,as_1898,"FRUIT, Almonds","Unenumerated, Raw",FRUIT,interpolated,0.0,7,89511
+reexport,as_1898,"FRUIT, Almonds","Unenumerated, Dried",FRUIT,aligned,1.0,8,224230
+reexport,as_1898,FRUIT,Rum,"SPIRITS, not Sweetened",aligned,1.0,32,434409
+reexport,as_1898,FRUIT,"Rum, Imitation","SPIRITS, not Sweetened",aligned,1.0,3,302
+reexport,as_1898,FRUIT,Brandy,"SPIRITS, not Sweetened",interpolated,0.0,31,109006
+reexport,as_1898,FRUIT,Sweetened or Mixed (Tested),"SPIRITS, not Sweetened",interpolated,0.0,21,56878
+reexport,as_1898,FRUIT,"Liqueurs, Cordials, &c., not   tested for ascertaining the   Strength","SPIRITS, not Sweetened",aligned,1.0,16,25443
+reexport,as_1898,FRUIT,Perfumed,"SPIRITS, not Sweetened",aligned,1.0,19,82566
+reexport,as_1898,FRUIT,Perfumed in Bond,"SPIRITS, not Sweetened",interpolated,0.0,45,1896098
+reexport,as_1898,FRUIT,Tea: of British East India,TEA,aligned,1.0,32,1012822
+reexport,as_1898,FRUIT,of Ceylon,TEA,aligned,1.0,119,6255253
+reexport,as_1898,"GLASS, Window and German Sheet, including Shades and Cylinders","Plate, Fluted, Rolled or Rough",GLASS,aligned,1.0,6,2234
+reexport,as_1898,"GLASS, Window and German Sheet, including Shades and Cylinders","Other Plate, whether Silvered or not",GLASS,aligned,1.0,5,15672
+reexport,as_1898,"GLASS, Window and German Sheet, including Shades and Cylinders",Bottles,GLASS,interpolated,0.0,5,14561
+reexport,as_1898,"GLASS, Window and German Sheet, including Shades and Cylinders","Manufactures, unenumerated",GLASS,aligned,1.0,56,1015384
+reexport,as_1898,"GLASS, Window and German Sheet, including Shades and Cylinders","Lac, Seed, Shell, Stick, and Dye",GUM,aligned,1.0,38,1314548
+reexport,as_1898,"GLASS, Window and German Sheet, including Shades and Cylinders",GUNPOWDER,GUM,trailing,0.0,7,6809
+reexport,as_1898,LEATHER,Manufactures: Boots and Shoes,LEATHER MANUFACTURES,aligned,1.0,14,165358
+reexport,as_1898,LEATHER,Gloves,LEATHER MANUFACTURES,aligned,1.0,15,642682
+reexport,as_1898,LEATHER,"Unenumerated, or whereof     Leather is the most valuable     part",LEATHER MANUFACTURES,trailing,0.0,13,70530
+reexport,as_1898,"SAUCES or CONDIMENTS, Unenumerated",Rape,Cotton,aligned,1.0,9,129291
+reexport,as_1898,"SAUCES or CONDIMENTS, Unenumerated","Garden, Unenumerated",Cotton,aligned,1.0,13,120901
+reexport,as_1898,"SAUCES or CONDIMENTS, Unenumerated",Tares and Lentils,Cotton,aligned,1.0,5,31827
+reexport,as_1898,"SAUCES or CONDIMENTS, Unenumerated","Unenumerated, for expressing Oil therefrom",SEEDS,aligned,1.0,15,671024
+reexport,as_1898,"SAUCES or CONDIMENTS, Unenumerated","Unenumerated, Other Sorts",SEEDS,trailing,0.0,16,108562
+reexport,as_1898,SILK,"Skins, in any way Dressed     (not Leather)","SKINS, FURS, and PELTS",aligned,1.0,10,64476
+reexport,as_1898,SILK,"Furs, Rabbit Skins","SKINS, FURS, and PELTS",aligned,1.0,11,405018
+reexport,as_1898,SILK,Seal Skins,"SKINS, FURS, and PELTS",aligned,1.0,44,5577114
+reexport,as_1898,SILK,Cinnamon,SPICES,aligned,1.0,13,127279
+reexport,as_1898,SILK,Ginger,SPICES,aligned,1.0,16,144441
+reexport,as_1898,SILK,Pepper,SPICES,aligned,1.0,168,3379257
+reexport,as_1898,SILK,"Unrefined, Beetroot",SPICES,interpolated,0.0,7,57299
+reexport,as_1898,SILK,"Unrefined, Beetroot : Cane and Other Sorts",SPICES,interpolated,0.0,28,864703
+reexport,as_1898,SILK,Glucose (solid or liquid),SUGAR,aligned,1.0,8,44062
+reexport,as_1898,WOOD and TIMBER,Mahogany,FURNITURE AND HARDWOODS,aligned,1.0,34,546725
+reexport,as_1898,WOOD and TIMBER,"House Frames, Fittings, Joiners' and Cabinet Work",FURNITURE AND HARDWOODS,aligned,1.0,17,115264
+reexport,as_1898,WOOD and TIMBER,"Alpaca, Vicuna, and Llama",WOOL,aligned,1.0,6,48405
+reexport,as_1898,WOOD and TIMBER,Mohair,WOOL,aligned,1.0,5,88398
+reexport,as_1898,WOOD and TIMBER,Other Goats' Wool or Hair,WOOL,aligned,1.0,6,21073
+reexport,as_1898,WOOD and TIMBER,Sheep or Lambs',WOOL,aligned,1.0,28,29936926
+reexport,as_1898,WOOD and TIMBER,"For fancy purposes, including Berlin Wool and Zephyr Yarn",WOOLLEN YARN,aligned,1.0,13,26240
+reexport,as_1898,WOOD and TIMBER,"For fancy purposes, including Berlin Wool and Zephyr Yarn : For Weaving, mixed or not with Silk",WOOLLEN YARN,aligned,1.0,24,55586
+reexport,as_1898,WOOD and TIMBER,"For fancy purposes, including Berlin Wool and Zephyr Yarn : Of Wool other than Goats', or of Wool mixed with Cotton: Cloths",WOOLLEN MANUFACTURES,aligned,1.0,46,1448693
+reexport,as_1898,CHICORY,Husks and Shells,COCOA,aligned,1.0,2,1846
+reexport,as_1898,CHICORY,"or CHOCOLATE, Ground, Pre- pared, or in any way Manu- factured",COCOA,aligned,1.0,28,234342
+reexport,as_1898,CHICORY,"or CHOCOLATE, in the manu- facture of which Spirit has been used",COCOA,interpolated,0.0,47,6410105
+reexport,as_1898,CHICORY,"Kiln-dried, Roasted, or Ground",COCOA,interpolated,0.0,19,4259
+reexport,as_1898,CHICORY,Not exceeding 50 per cent.     Chocolate,COCOA,interpolated,0.0,3,68
+reexport,as_1898,CHICORY,Not exceeding 50 per cent.     Chocolate prepared with     Spirit,CONFECTIONERY,aligned,1.0,3,284
+reexport,as_1898,ETHER,Butyric,"ETHER, Acetic",aligned,1.0,3,154
+reexport,as_1898,ETHER,Sulphuric,"ETHER, Acetic",aligned,1.0,6,2821
+reexport,as_1898,ETHER,Chloride of,"ETHER, Acetic",trailing,0.0,3,904
+reexport,as_1898,TOBACCO,"WINE, in Bottles, Still","WINE, Red",aligned,1.0,19,73146
+reexport,as_1898,TOBACCO,"in Bottles, Sparkling Champagne","WINE, Red",aligned,1.0,44,441945
+reexport,as_1898,TOBACCO,"In Bottles, Sparkling Saumur","WINE, Red",aligned,1.0,97,9235870
+reexport,as_1899,"ANIMALS, LIVING, Oxen and Bulls",Cows,"ANIMALS, LIVING",aligned,1.0,2,472
+reexport,as_1899,"ANIMALS, LIVING, Oxen and Bulls",Sheep and Lambs,"ANIMALS, LIVING",aligned,1.0,1,313
+reexport,as_1899,"ANIMALS, LIVING, Oxen and Bulls","Horses, Stallions","ANIMALS, LIVING",aligned,1.0,3,75810
+reexport,as_1899,"ANIMALS, LIVING, Oxen and Bulls","Horses, Mares","ANIMALS, LIVING",aligned,1.0,7,9330
+reexport,as_1899,"ANIMALS, LIVING, Oxen and Bulls","Horses, Geldings","ANIMALS, LIVING",aligned,1.0,17,95691
+reexport,as_1899,"COPPER, Ore of",Unmanufactured,TOBACCO,aligned,1.0,12,85984
+reexport,as_1899,"COPPER, Ore of",Manufactured,TOBACCO,aligned,1.0,23,328801
+reexport,as_1899,"CORN; Grain, Meal, and Flour—cont.",Buckwheat,CORN AND GRAIN,aligned,1.0,3,117
+reexport,as_1899,"CORN; Grain, Meal, and Flour—cont.",Wheat Meal or Flour,CORN AND GRAIN,aligned,1.0,22,651137
+reexport,as_1899,"CORN; Grain, Meal, and Flour—cont.",Oatmeal and Groats,MEAL AND FLOUR,aligned,1.0,8,76714
+reexport,as_1899,"CORN; Grain, Meal, and Flour—cont.",Maize or Indian Corn Meal,MEAL AND FLOUR,aligned,1.0,8,6933
+reexport,as_1899,"CORN; Grain, Meal, and Flour—cont.","Meal, not otherwise enumerated or described",MEAL AND FLOUR,interpolated,0.0,7,33231
+reexport,as_1899,"CORN; Grain, Meal, and Flour—cont.",Raw,MEAL AND FLOUR,interpolated,0.0,24,14187354
+reexport,as_1899,"CORN; Grain, Meal, and Flour—cont.",Yarn,COTTON,aligned,1.0,3,2586
+reexport,as_1899,"CORN; Grain, Meal, and Flour—cont.",Waste of (raw and yarn),COTTON,aligned,1.0,18,1321858
+reexport,as_1899,COTTON MANUFACTURES,"Piece Goods, Muslins",COTTON,aligned,1.0,6,10582
+reexport,as_1899,COTTON MANUFACTURES,"Piece Goods, other than Muslins",COTTON,aligned,1.0,37,816988
+reexport,as_1899,COTTON MANUFACTURES,"Hosiery, of all sorts",COTTON,aligned,1.0,13,114727
+reexport,as_1899,COTTON MANUFACTURES,,COTTON,trailing,0.0,30,518724
+reexport,as_1899,EMBROIDERY AND NEEDLEWORK,Herrings,"FISH, Fresh (not of British taking)",aligned,1.0,3,2142
+reexport,as_1899,EMBROIDERY AND NEEDLEWORK,Other Sorts of Fresh Fish,"FISH, Fresh (not of British taking)",interpolated,0.0,3,4328
+reexport,as_1899,EMBROIDERY AND NEEDLEWORK,Shell Fish—Oysters for Food,"FISH, Fresh (not of British taking)",aligned,1.0,2,144
+reexport,as_1899,EMBROIDERY AND NEEDLEWORK,Shell Fish—Other Sorts,"FISH, Fresh (not of British taking)",trailing,0.0,2,36
+reexport,as_1899,EMBROIDERY AND NEEDLEWORK,Cured—Sardines,"FISH, Fresh (not of British taking)",trailing,0.0,13,124782
+reexport,as_1899,"FRUIT, Almonds","Apples, Raw",FRUIT,aligned,1.0,10,50384
+reexport,as_1899,"FRUIT, Almonds","Grapes, Raw",FRUIT,aligned,1.0,13,181185
+reexport,as_1899,"FRUIT, Almonds",Lemons,FRUIT,aligned,1.0,11,88498
+reexport,as_1899,"FRUIT, Almonds","Nuts, used as Fruit",FRUIT,aligned,1.0,12,266337
+reexport,as_1899,"FRUIT, Almonds",Oranges,FRUIT,aligned,1.0,16,383486
+reexport,as_1899,"FRUIT, Almonds","Pears, Raw",FRUIT,aligned,1.0,2,510
+reexport,as_1899,"FRUIT, Almonds","Plums, Raw",FRUIT,aligned,1.0,2,120
+reexport,as_1899,"FRUIT, Almonds","Unenumerated, Raw",FRUIT,interpolated,0.0,7,117512
+reexport,as_1899,"FRUIT, Almonds","Unenumerated, Dried",FRUIT,aligned,1.0,9,294307
+reexport,as_1899,"GLASS, Window and German Sheet, including Shades and Cylinders","Plate, Fluted, Rolled or Rough",GLASS,aligned,1.0,3,75
+reexport,as_1899,"GLASS, Window and German Sheet, including Shades and Cylinders","Other Plate, whether Silvered or not",GLASS,aligned,1.0,5,5008
+reexport,as_1899,"GLASS, Window and German Sheet, including Shades and Cylinders",Bottles,GLASS,trailing,0.0,37,140647
+reexport,as_1899,"GUM, Arabic",Kowrie,GUM,aligned,1.0,10,465828
+reexport,as_1899,"GUM, Arabic","Lac, Seed, Shell, Stick, and Dye",GUM,aligned,1.0,20,749763
+reexport,as_1899,LEATHER,Manufactures : Boots and Shoes,LEATHER MANUFACTURES,aligned,1.0,14,133278
+reexport,as_1899,LEATHER,Gloves,LEATHER MANUFACTURES,aligned,1.0,15,648483
+reexport,as_1899,LEATHER,"Unenumerated, or whereof Leather is the most valuable part",LEATHER MANUFACTURES,trailing,0.0,13,71985
+reexport,as_1899,SILK,"Skins, Goat, Undressed","SKINS, FURS, AND PELTS",aligned,1.0,11,4625643
+reexport,as_1899,SILK,"Skins, Goat, Undressed : Sheep, Undressed","SKINS, FURS, AND PELTS",aligned,1.0,13,1681759
+reexport,as_1899,SILK,"Skins, Goat, Undressed : Unenumerated: Undressed","SKINS, FURS, and PELTS",aligned,1.0,156,7696472
+reexport,as_1899,WOOD and TIMBER,Sheep or Lambs',WOOL,aligned,1.0,22,31686912
+reexport,as_1899,WOOD and TIMBER,Other kinds and Flocks,WOOL,aligned,1.0,5,102096
+reexport,as_1899,CHICORY,Husks and Shells,COCOA,aligned,1.0,2,1138
+reexport,as_1899,CHICORY,"or CHOCOLATE, Ground, Pre- pared, or in any way Manu- factured",COCOA,aligned,1.0,29,241883
+reexport,as_1899,CHICORY,"or CHOCOLATE, in the manufacture of which Spirit has been used",COCOA,interpolated,0.0,40,6879761
+reexport,as_1899,CHICORY,"Kiln-dried, Roasted, or Ground",COCOA,interpolated,0.0,18,6095
+reexport,as_1899,CHICORY,Not exceeding 50 per cent.     Chocolate,COCOA,interpolated,0.0,2,26
+reexport,as_1899,CHICORY,Not exceeding 50 per cent.     Chocolate prepared with     Spirit,CONFECTIONERY,aligned,1.0,2,4
+reexport,as_1899,ETHER,Butyric,"ETHER, Acetic",aligned,1.0,2,2
+reexport,as_1899,ETHER,Sulphuric,"ETHER, Acetic",aligned,1.0,9,2213
+reexport,as_1899,Tea: of British East India,of Ceylon,TEA,aligned,1.0,34,1591640
+reexport,as_1899,Tea: of British East India,of other Countries,TEA,aligned,1.0,23,85464
+reexport,as_1899,Tea: of British East India,Total,TEA,trailing,0.0,64,4228053
+reexport,as_1899,TOBACCO,"WINE, in Bottles, Still","WINE, WHITE",aligned,1.0,19,70255
+reexport,as_1899,TOBACCO,"in Bottles, Sparkling Champagne","WINE, White",aligned,1.0,44,425978
+reexport,as_1899,TOBACCO,"In Bottles, Sparkling Saumur","WINE, White",aligned,1.0,7,5496
+reexport,as_1899,TOBACCO,"WINE, in Bottles, Sparkling Burgundy","WINE, White",interpolated,0.0,6,2049
+reexport,as_1899,TOBACCO,"In Bottles, Sparkling Hock","WINE, White",aligned,1.0,3,986
+reexport,as_1899,TOBACCO,"In Bottles, Sparkling Moselle","WINE, White",aligned,1.0,5,1492
+reexport,as_1899,TOBACCO,"In Bottles, Sparkling, Other sorts","WINE, RED",aligned,1.0,3,334
+reexport,tn_1901,"ANIMALS, LIVING, Oxen and Bulls",Cows,"ANIMALS, LIVING",aligned,1.0,2,480
+reexport,tn_1901,"ANIMALS, LIVING, Oxen and Bulls",Stallions,"ANIMALS, LIVING",aligned,1.0,5,182100
+reexport,tn_1901,"ANIMALS, LIVING, Oxen and Bulls",Stallions : Mares,"ANIMALS, LIVING",interpolated,0.0,6,12370
+reexport,tn_1901,"ANIMALS, LIVING, Oxen and Bulls",Geldings,"ANIMALS, LIVING",aligned,1.0,7,26448
+reexport,tn_1901,"ANIMALS, LIVING, Oxen and Bulls",Unenumerated,"ANIMALS, LIVING",interpolated,0.0,18,45206
+reexport,tn_1901,"ANIMALS, LIVING, Oxen and Bulls","Cannon and Mortars, and parts thereof","ANIMALS, LIVING",interpolated,0.0,3,68400
+reexport,tn_1901,"ANIMALS, LIVING, Oxen and Bulls","Rifles, Carbines, Fowling-pieces, Muskets, Pistols, or Guns of any other sorts unenumerated, and parts thereof",ARMS AND AMMUNITION,aligned,1.0,28,115828
+reexport,tn_1901,"CORN; Grain, Meal, Flour—cont.",Buckwheat,CORN AND GRAIN,aligned,1.0,4,14
+reexport,tn_1901,"CORN; Grain, Meal, Flour—cont.",Wheat Meal and Flour,CORN AND GRAIN,aligned,1.0,13,269654
+reexport,tn_1901,"CORN; Grain, Meal, Flour—cont.","Wheat, Meal, and Flour",MEAL AND FLOUR,interpolated,0.0,10,291975
+reexport,tn_1901,"CORN; Grain, Meal, Flour—cont.",Oatmeal and Groats,MEAL AND FLOUR,aligned,1.0,8,110028
+reexport,tn_1901,"CORN; Grain, Meal, Flour—cont.",Maize Meal or Indian Corn Meal,MEAL AND FLOUR,aligned,1.0,6,4185
+reexport,tn_1901,"CORN; Grain, Meal, Flour—cont.","Meal, unenumerated",CORN,aligned,1.0,6,27623
+reexport,tn_1901,COTTON MANUFACTURES,"Piece Goods, Muslins",COTTON,aligned,1.0,6,10157
+reexport,tn_1901,COTTON MANUFACTURES,"Piece Goods, other than Muslins",COTTON,aligned,1.0,39,735988
+reexport,tn_1901,COTTON MANUFACTURES,"Hosiery, of all sorts",COTTON,aligned,1.0,15,127994
+reexport,tn_1901,COTTON MANUFACTURES,Unenumerated,COTTON,trailing,0.0,30,588135
+reexport,tn_1901,"FEATHERS AND DOWN, in Beds, or for Beds",Herrings,"FISH, Fresh (not of British taking)",aligned,1.0,3,1616
+reexport,tn_1901,"FEATHERS AND DOWN, in Beds, or for Beds",Other Sorts of Fresh Fish,"FISH, Fresh (not of British taking)",interpolated,0.0,3,5142
+reexport,tn_1901,"FEATHERS AND DOWN, in Beds, or for Beds",Shell Fish—Oysters for Food,"FISH, Fresh (not of British taking)",aligned,1.0,2,108
+reexport,tn_1901,"FEATHERS AND DOWN, in Beds, or for Beds",—Other Sorts,"FISH, Fresh (not of British taking)",interpolated,0.0,3,112
+reexport,tn_1901,"FEATHERS AND DOWN, in Beds, or for Beds",Cured or Salted—Sardines,"FISH, Fresh (not of British taking)",interpolated,0.0,31,616631
+reexport,tn_1901,"FEATHERS AND DOWN, in Beds, or for Beds","Cured or Salted, other sorts","FISH, Fresh (not of British taking)",aligned,1.0,46,1651784
+reexport,tn_1901,"FEATHERS AND DOWN, in Beds, or for Beds",Tow,FLAX,aligned,1.0,21,42305
+reexport,tn_1901,"FRUIT, Apples, Raw","Grapes, Raw",FRUIT,aligned,1.0,13,248021
+reexport,tn_1901,"FRUIT, Apples, Raw","Lemons, Limes, and Citrons",FRUIT,aligned,1.0,11,75814
+reexport,tn_1901,"FRUIT, Apples, Raw","Nuts, Almonds",FRUIT,interpolated,0.0,16,581649
+reexport,tn_1901,"FRUIT, Apples, Raw","Other Nuts, used as Fruit",FRUIT,aligned,1.0,12,261238
+reexport,tn_1901,"FRUIT, Apples, Raw",Oranges,FRUIT,aligned,1.0,16,408006
+reexport,tn_1901,"FRUIT, Apples, Raw","Pears, Raw",FRUIT,aligned,1.0,1,217
+reexport,tn_1901,"FRUIT, Apples, Raw","Plums, Raw",FRUIT,aligned,1.0,2,4
+reexport,tn_1901,"FRUIT, Apples, Raw","Unenumerated, Raw",FRUIT,interpolated,0.0,7,112603
+reexport,tn_1901,"FRUIT, Apples, Raw","Unenumerated, Dried",FRUIT,aligned,1.0,44,1059419
+reexport,tn_1901,"FRUIT, Apples, Raw","FRUIT JUICE, not containing Spirit",FRUIT,trailing,0.0,10,9936
+reexport,tn_1901,"LEATHER, Undressed",Dressed,LEATHER,aligned,1.0,23,639493
+reexport,tn_1901,"LEATHER, Undressed","Varnished, Japanned, or Enamelled",LEATHER,aligned,1.0,5,34842
+reexport,tn_1901,"LEATHER, Undressed",Manufactures: Boots and Shoes,LEATHER MANUFACTURES,aligned,1.0,14,147894
+reexport,tn_1901,"LEATHER, Undressed",Gloves,LEATHER MANUFACTURES,aligned,1.0,15,641521
+reexport,tn_1901,"LEATHER, Undressed","Unenumerated, or whereof     Leather is the most valuable     part",LEATHER MANUFACTURES,trailing,0.0,14,93397
+reexport,tn_1901,SKINS AND FURS,"Skins, Goat, Undressed","SKINS, FURS, AND PELTS",aligned,1.0,11,3730226
+reexport,tn_1901,SKINS AND FURS,"Skins, Goat, Undressed : Sheep, Undressed","SKINS, FURS, AND PELTS",aligned,1.0,13,1916390
+reexport,tn_1901,SKINS AND FURS,Dressed or Undressed (not Leather),"SKINS, FURS, and PELTS",aligned,1.0,11,160786
+reexport,tn_1901,SKINS AND FURS,"Furs, Rabbit Skins","SKINS, FURS, and PELTS",aligned,1.0,10,475707
+reexport,tn_1901,SKINS AND FURS,"Furs, Rabbit Skins : Seal Skins","SKINS, FURS, and PELTS",aligned,1.0,10,354573
+reexport,tn_1901,SKINS AND FURS,"Furs, Rabbit Skins : Unenumerated","SKINS, FURS, and PELTS",interpolated,0.0,13,4397142
+reexport,tn_1901,SKINS AND FURS,"Furs, Rabbit Skins : Manufactures of, including     Skin Rugs","SKINS, FURS and PELTS",aligned,1.0,24,120052
+reexport,tn_1901,SKINS AND FURS,Cinnamon,SPICES,aligned,1.0,13,116525
+reexport,tn_1901,SKINS AND FURS,Ginger,SPICES,aligned,1.0,16,161336
+reexport,tn_1901,SKINS AND FURS,Pepper,SPICES,aligned,1.0,29,1304242
+reexport,tn_1901,SKINS AND FURS,Unenumerated,SPICES,trailing,0.0,29,443518
+reexport,tn_1901,"SUGAR: Refined, or rendered by any process equal thereto, in lumps and loaves",Molasses,SUGAR,aligned,1.0,11,143683
+reexport,tn_1901,"SUGAR: Refined, or rendered by any process equal thereto, in lumps and loaves",Glucose (solid or liquid),SUGAR,aligned,1.0,8,27875
+reexport,tn_1901,"WOOD and TIMBER, viz.","Hewn, Fir",WOOD AND TIMBER,aligned,1.0,12,18904
+reexport,tn_1901,"WOOD and TIMBER, viz.","Hewn, Fir : Oak",WOOD AND TIMBER,aligned,1.0,7,13841
+reexport,tn_1901,"WOOD and TIMBER, viz.","Hewn, Teak",WOOD AND TIMBER,aligned,1.0,16,262759
+reexport,tn_1901,"WOOD and TIMBER, viz.",Unenumerated,WOOD AND TIMBER,trailing,0.0,6,4345
+reexport,tn_1901,"WOOD and TIMBER, viz.","Sawn or Split, Planed or Dressed: Fir",WOOD AND TIMBER,trailing,0.0,105,1462988
+reexport,tn_1901,"WOOD and TIMBER, viz.",Other Sorts (including Wood-ware and Wood Turnery),WOOD AND TIMBER,trailing,0.0,20,331858
+reexport,tn_1901,ETHER,Butyric,"ETHER, Acetic",aligned,1.0,3,554
+reexport,tn_1901,ETHER,Sulphuric,"ETHER, Acetic",aligned,1.0,6,1984
+reexport,tn_1901,FRUIT,"Rum, imported in Casks","SPIRITS, not Sweetened",aligned,1.0,33,528114
+reexport,tn_1901,FRUIT,"Rum, imported in Bottles","SPIRITS, not Sweetened",aligned,1.0,5,122
+reexport,tn_1901,FRUIT,Rum—Total of,"SPIRITS, not Sweetened",trailing,0.0,38,534262
+reexport,tn_1901,FRUIT,"Brandy, imported in Casks","SPIRITS, not Sweetened",trailing,0.0,29,75599
+reexport,tn_1901,Tea: of China,Tea: of British East India,TEA,aligned,1.0,32,1257671
+reexport,tn_1901,Tea: of China,of Ceylon,TEA,aligned,1.0,108,6942236

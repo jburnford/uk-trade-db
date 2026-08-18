@@ -27,6 +27,14 @@ Applies, in this order:
   * the section-capture reassignments from reference/group_reassign.csv, which
     move a captured article back to the group it belongs to (as_1898/99 filed
     the whole wool section under WOOD AND TIMBER)
+  * the positional capture repairs from reference/capture_reassign.csv
+    (build_capture_reassign.py): a lost heading files the next section(s)
+    under the previous group -- IMPLEMENTS AND TOOLS holding all of IRON AND
+    STEEL, LEAD holding LEATHER, LINEN and MACHINERY in 1897-99 -- and the
+    articles are put back by aligning the captor's print order onto as_1896's
+  * the family table reference/export_group_families.csv: era wordings, OCR
+    variants and continuation suffixes of one heading become one commodity
+    (IRON + IRON AND STEEL, seven spellings of CAOUTCHOUC, "...'d)" pages)
   * the phantom-region relabel (scripts/phantom_articles.py): 'West Africa' /
     'East Africa' / 'Dutch Possessions in Indian Seas' as an ARTICLE is a
     printed country sub-heading the parser absorbed; the rows go back to the
@@ -66,7 +74,7 @@ from pathlib import Path
 import duckdb
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from phantom_articles import fix_articles
+from phantom_articles import fix_articles, known_groups, promote_headings
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 
@@ -89,20 +97,29 @@ CANADA = ('British North America', 'Canada', 'Newfoundland')
 # Defects found but NOT yet repaired, surfaced on the chart so a reader is not
 # quietly misled by a series the project already knows is wrong.
 ISSUES = {
-    # the WOOD/WOOL capture is REPAIRED (reference/group_reassign.csv); what is
-    # left under WOOD in 1899 is phantom-region rows, a different defect
-    'WOOD AND TIMBER': [
-        (1898, 1899, 'residual: still holds iron/steel and wool articles the '
-                     'parser filed here; the wool capture itself is repaired')],
-    'GLASS': [(1886, 1895, 'holds GREASE, TALLOW AND ANIMAL FAT as an article')],
+    # keys are FAMILY names (after folds and export_group_families.csv)
+    'GREASE, TALLOW AND ANIMAL FAT': [
+        (1886, 1891, 'the HABERDASHERY heading is lost in these volumes and '
+                     'its section is fused into this block: most of this '
+                     'value is haberdashery and millinery'),
+        (1894, 1894, 'same fusion as 1886-91: mostly haberdashery')],
+    'HABERDASHERY AND MILLINERY': [
+        (1886, 1891, 'reads zero: the section is fused into GREASE, TALLOW '
+                     'AND ANIMAL FAT (heading lost)'),
+        (1894, 1894, 'reads zero: fused into GREASE, TALLOW AND ANIMAL FAT')],
+    'GLASS': [(1887, 1887, 'the GREASE and HABERDASHERY sections are fused '
+                           'into "Other Manufactures, Unenumerated" this '
+                           'year; ~GBP0.5M of this is not glass')],
+    'TELEGRAPHIC WIRES AND APPARATUS': [
+        (1884, 1884, 'GBP1.03M in a single block: not yet checked against '
+                     'the printed page'),
+        (1894, 1894, 'GBP0.85M in a single block: not yet checked against '
+                     'the printed page')],
     'COTTON MANUFACTURES': [
         (1882, 1882, 'Thread for Sewing reads GBP605,600 at 20x its usual unit '
                      'price; ~GBP575k of this year is that one cell'),
         (1883, 1883, 'much of this year sits under an article named '
                      '"United States" - a destination read as a commodity')],
-    'IMPLEMENTS AND TOOLS': [
-        (1897, 1899, 'holds iron and steel articles (the IRON AND STEEL '
-                     'heading was lost, so its whole section is filed here)')],
 }
 
 
@@ -117,10 +134,26 @@ def load_folds(path, flow):
             for r in csv.DictReader(open(path)) if r['flow'] == flow}
 
 
-def load_reassign(path, flow):
+def load_reassign(paths, flow):
+    out = {}
+    for path in paths:
+        if not os.path.exists(path):
+            continue
+        for r in csv.DictReader(open(path)):
+            if r['flow'] == flow:
+                out[(r['volume'], r['from_group'], r['article'])] = r['to_group']
+    return out
+
+
+def load_families(path, flow):
+    """Era wordings, OCR variants and continuation suffixes of one printed
+    heading -> one family label (reference/export_group_families.csv), applied
+    after the group-name folds. IRON (to 1890) and IRON AND STEEL (from 1891)
+    are one series; CAOUTCHOUC has seven spellings; "IRON AND STEEL'd)" is a
+    page continuation."""
     if not os.path.exists(path):
         return {}
-    return {(r['volume'], r['from_group'], r['article']): r['to_group']
+    return {r['canonical']: r['family']
             for r in csv.DictReader(open(path)) if r['flow'] == flow}
 
 
@@ -159,11 +192,15 @@ def main():
     n_fixed = 0
     folds = {}
     reassign = {}
+    families = {}
     n_moved = 0
     n_sub = 0
     for flow in flows:
         folds[flow] = load_folds('reference/group_name_folds.csv', flow)
-        reassign[flow] = load_reassign('reference/group_reassign.csv', flow)
+        reassign[flow] = load_reassign(('reference/group_reassign.csv',
+                                        'reference/capture_reassign.csv'), flow)
+        families[flow] = load_families('reference/export_group_families.csv',
+                                       flow)
         rows = con.execute("""
             select volume, flow, year, coalesce(article_group,'') ag,
                    article, unit, row_seq, country_raw, value
@@ -174,6 +211,10 @@ def main():
         # above. Repairs are keyed on the RAW parse: look up, then relabel.
         fixed = fix_articles(rows, vol=0, flow=1, year=2, group=3, art=4,
                              unit=5, seq=6)
+        # then a lost heading stored as the ARTICLE becomes its own group
+        # (GLASS holding 'GREASE, TALLOW, AND ANIMAL FAT' 1886-94)
+        fixed = promote_headings(fixed, known_groups(con, flow), vol=0,
+                                 flow=1, year=2, group=3, art=4)
         for r, f in zip(rows, fixed):
             vol, _, yr, ag, art, unit, sq, ctry, val = r
             if val is not None:
@@ -181,7 +222,7 @@ def main():
                              NO_REPAIR)
                 if nv is not NO_REPAIR:
                     val, n_fixed = nv, n_fixed + 1   # None = null-out
-            art, unit = f[4] or '', f[5] or ''
+            ag, art, unit = f[3], f[4] or '', f[5] or ''
             blocks[(flow, vol, yr, ag, art, unit)].append((sq, ctry, val))
             if val is not None and ctry and not TOTAL_RE.search(ctry):
                 k = (flow, vol, yr, ag, ctry)
@@ -211,6 +252,7 @@ def main():
         if tgt:
             n_moved += 1
         canon = (folds[flow].get(tgt or ag, tgt or ag) or '(no group)')
+        canon = families[flow].get(canon, canon)
         sect, buf = [], []
         for ctry, val in rws:
             if is_total(ctry):
