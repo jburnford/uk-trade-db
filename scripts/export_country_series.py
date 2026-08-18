@@ -29,7 +29,11 @@ Aliases: pass --country once per printed spelling. Use --list-countries to see
 the spellings actually present for a flow.
 """
 import argparse, collections, csv, re, sys
+from pathlib import Path
 import duckdb
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from phantom_articles import fix_articles
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 
@@ -38,8 +42,12 @@ TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 # and 1898 the volume-of-record is the WORST witness: measured closure says
 # as_1899's mid-table reprint columns corroborate roughly 3x more value than
 # the vote-repaired edge columns (Canada 1897: 22.0% of value against 2.1%).
-# Those years are therefore read from as_1899. 1899 has no such refuge: it is
-# as_1899's own edge column, and no later volume reprints it.
+# Those years are therefore read from as_1899. 1899 stays on as_1899's own
+# edge column -- the one reprint, tn_1901's mid-table 1899 column
+# (parse_tn_overlap.py -> country_obs_tn), closes no better and is a
+# different publication whose headings align poorly, so it serves as a
+# WITNESS to repair as_1899 (repair_edge_columns.py, repair_section_closure.py)
+# rather than as the primary.
 PRIMARY_OVERRIDE = {1897: 'as_1899', 1898: 'as_1899'}
 ENGINES = {'obs': 'country_obs', 'inf': 'country_obs_inf'}
 
@@ -67,19 +75,26 @@ def load(con, tbl, flow):
     seq = 'row_seq' if 'row_seq' in cols else 'rowid'
     qty = 'quantity' if 'quantity' in cols else 'NULL'
     rows = con.execute(f"""
-        select volume, year, coalesce(article_group,'') ag, coalesce(article,'') art,
-               coalesce(unit,'') unit, {seq} seq, country_raw, value, {qty}
+        select volume, flow, year, coalesce(article_group,'') ag, article,
+               unit, {seq} seq, country_raw, value, {qty}
         from "{tbl}" where flow = ?
-        order by volume, ag, art, unit, seq
     """, [flow]).fetchall()
+    # phantom-region relabel (phantom_articles.py): 'West Africa' as an
+    # article is an absorbed heading; the row belongs to the article above.
+    # Repairs are keyed on the RAW parse, so look them up before relabelling.
+    fixed = fix_articles(rows, vol=0, flow=1, year=2, group=3, art=4,
+                         unit=5, seq=6)
     fix = load_repairs()
     b = collections.defaultdict(list)
-    for vol, yr, ag, art, unit, sq, ctry, val, qt in rows:
+    for r, f in zip(rows, fixed):
+        vol, _, yr, ag, art, unit, sq, ctry, val, qt = r
         if val is not None:
-            nv = fix.get((vol, yr, ag, art, ctry, round(val)), NO_REPAIR)
+            nv = fix.get((vol, yr, ag, art or '', ctry, round(val)), NO_REPAIR)
             if nv is not NO_REPAIR:
                 val = nv                       # None = null-out, cell dropped
-        b[(vol, yr, ag, art, unit)].append((sq, ctry, val, qt))
+        b[(vol, yr, ag, f[4] or '', f[5] or '')].append((sq, ctry, val, qt))
+    for k in b:
+        b[k].sort(key=lambda t: t[0] if t[0] is not None else -1)
     return b
 
 
@@ -102,7 +117,8 @@ def section_verdicts(rws):
 
 REPAIR_FILES = ('reference/export_cell_repairs.csv',
                 'reference/malformed_cell_repairs.csv',
-                'reference/edge_column_repairs.csv')
+                'reference/edge_column_repairs.csv',
+                'reference/section_closure_repairs.csv')
 NO_REPAIR = object()
 
 

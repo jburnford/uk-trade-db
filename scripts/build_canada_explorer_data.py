@@ -27,6 +27,10 @@ Applies, in this order:
   * the section-capture reassignments from reference/group_reassign.csv, which
     move a captured article back to the group it belongs to (as_1898/99 filed
     the whole wool section under WOOD AND TIMBER)
+  * the phantom-region relabel (scripts/phantom_articles.py): 'West Africa' /
+    'East Africa' / 'Dutch Possessions in Indian Seas' as an ARTICLE is a
+    printed country sub-heading the parser absorbed; the rows go back to the
+    article above them, which is what lets their printed TOTALs close
   * suppression of printed SUBTOTAL lines ingested as article names -- but only
     where the components they total are also present (see below)
 
@@ -57,8 +61,12 @@ right-hand column loses digits at the page edge.
 Usage:
     python3 scripts/build_canada_explorer_data.py [--out reports/canada_explorer.json]
 """
-import argparse, collections, csv, json, os, re
+import argparse, collections, csv, json, os, re, sys
+from pathlib import Path
 import duckdb
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from phantom_articles import fix_articles
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 
@@ -67,8 +75,12 @@ TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 # and 1898 the volume-of-record is the WORST witness: measured closure says
 # as_1899's mid-table reprint columns corroborate roughly 3x more value than
 # the vote-repaired edge columns (Canada 1897: 22.0% of value against 2.1%).
-# Those years are therefore read from as_1899. 1899 has no such refuge: it is
-# as_1899's own edge column, and no later volume reprints it.
+# Those years are therefore read from as_1899. 1899 stays on as_1899's own
+# edge column -- the one reprint, tn_1901's mid-table 1899 column
+# (parse_tn_overlap.py -> country_obs_tn), closes no better and is a
+# different publication whose headings align poorly, so it serves as a
+# WITNESS to repair as_1899 (repair_edge_columns.py, repair_section_closure.py)
+# rather than as the primary.
 PRIMARY_OVERRIDE = {1897: 'as_1899', 1898: 'as_1899'}
 # an ARTICLE name that is really a printed subtotal line
 SUBTOTAL_ART = re.compile(r'^\s*(total|sum|grand total)\b', re.I)
@@ -80,8 +92,8 @@ ISSUES = {
     # the WOOD/WOOL capture is REPAIRED (reference/group_reassign.csv); what is
     # left under WOOD in 1899 is phantom-region rows, a different defect
     'WOOD AND TIMBER': [
-        (1898, 1899, 'residual: still holds "West Africa" rows filed as an '
-                     'article name; the wool capture itself is now repaired')],
+        (1898, 1899, 'residual: still holds iron/steel and wool articles the '
+                     'parser filed here; the wool capture itself is repaired')],
     'GLASS': [(1886, 1895, 'holds GREASE, TALLOW AND ANIMAL FAT as an article')],
     'COTTON MANUFACTURES': [
         (1882, 1882, 'Thread for Sewing reads GBP605,600 at 20x its usual unit '
@@ -89,8 +101,8 @@ ISSUES = {
         (1883, 1883, 'much of this year sits under an article named '
                      '"United States" - a destination read as a commodity')],
     'IMPLEMENTS AND TOOLS': [
-        (1897, 1899, 'holds iron and steel articles, and 2,180 rows of '
-                     '"West Africa" as an article name')],
+        (1897, 1899, 'holds iron and steel articles (the IRON AND STEEL '
+                     'heading was lost, so its whole section is filed here)')],
 }
 
 
@@ -137,7 +149,8 @@ def main():
 
     fix = load_repairs(('reference/export_cell_repairs.csv',
                         'reference/malformed_cell_repairs.csv',
-                        'reference/edge_column_repairs.csv'))
+                        'reference/edge_column_repairs.csv',
+                'reference/section_closure_repairs.csv'))
     con = duckdb.connect(a.db, read_only=True)
     flows = [f.strip() for f in a.flows.split(',') if f.strip()]
 
@@ -152,24 +165,34 @@ def main():
         folds[flow] = load_folds('reference/group_name_folds.csv', flow)
         reassign[flow] = load_reassign('reference/group_reassign.csv', flow)
         rows = con.execute("""
-            select volume, year, coalesce(article_group,'') ag,
-                   coalesce(article,'') art, coalesce(unit,'') unit,
-                   row_seq, country_raw, value
+            select volume, flow, year, coalesce(article_group,'') ag,
+                   article, unit, row_seq, country_raw, value
             from country_obs where flow = ?
-            order by volume, ag, art, unit, row_seq
         """, [flow]).fetchall()
-        for vol, yr, ag, art, unit, sq, ctry, val in rows:
+        # phantom-region relabel (phantom_articles.py): 'West Africa' as an
+        # article is an absorbed heading; the row belongs to the article
+        # above. Repairs are keyed on the RAW parse: look up, then relabel.
+        fixed = fix_articles(rows, vol=0, flow=1, year=2, group=3, art=4,
+                             unit=5, seq=6)
+        for r, f in zip(rows, fixed):
+            vol, _, yr, ag, art, unit, sq, ctry, val = r
             if val is not None:
-                nv = fix.get((vol, yr, ag, art, ctry, round(val)), NO_REPAIR)
+                nv = fix.get((vol, yr, ag, art or '', ctry, round(val)),
+                             NO_REPAIR)
                 if nv is not NO_REPAIR:
                     val, n_fixed = nv, n_fixed + 1   # None = null-out
-            blocks[(flow, vol, yr, ag, art, unit)].append((ctry, val))
+            art, unit = f[4] or '', f[5] or ''
+            blocks[(flow, vol, yr, ag, art, unit)].append((sq, ctry, val))
             if val is not None and ctry and not TOTAL_RE.search(ctry):
                 k = (flow, vol, yr, ag, ctry)
                 if SUBTOTAL_ART.match(art or ''):
                     subtotal_keys.setdefault(k, []).append((ag, art, unit, ctry))
                 else:
                     component_keys.add(k)
+
+    for k in blocks:
+        blocks[k].sort(key=lambda t: t[0] if t[0] is not None else -1)
+        blocks[k] = [(c, v) for _, c, v in blocks[k]]
 
     # own-year is per flow: a volume is primary for the max year it carries
     own = {}
@@ -219,13 +242,16 @@ def main():
     years = list(range(1870, 1901))
     out = {'years': years, 'flows': flows,
            'bad_years': {'1871': 'no volume covers this year',
-                         '1897': 'read from the as_1899 reprint (vote-repaired); '
-                                 '~22% of value page-corroborated',
-                         '1898': 'read from the as_1899 reprint; '
-                                 '~20% of value page-corroborated',
-                         '1899': 'page-edge digit loss, no reprint exists to '
-                                 'repair from',
-                         '1900': 'weakly corroborated (27%)'},
+                         '1897': 'read from the as_1899 reprint, repaired '
+                                 'against as_1898/tn_1899/tn_1901; ~39% of '
+                                 'value page-corroborated',
+                         '1898': 'read from the as_1899 reprint, repaired '
+                                 'against tn_1901; ~40% page-corroborated',
+                         '1899': 'as_1899 page-edge column, repaired against '
+                                 'tn_1901 (the only reprint); ~32% '
+                                 'page-corroborated',
+                         '1900': 'tn_1901 page-edge column, no reprint '
+                                 'anywhere; ~25% page-corroborated'},
            'commodities': []}
     for (flow, name), byyear in series.items():
         vals = [round(byyear[y][0]) if y in byyear else None for y in years]

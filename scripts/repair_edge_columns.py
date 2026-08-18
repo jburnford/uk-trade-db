@@ -33,12 +33,23 @@ reprinted by as_1899 in both engines. Per own-year cell:
     the page's own arithmetic corroborates those cells and outranks any
     reprint.
 
-For 1898 the two witnesses are necessarily the same BOOK read by two engines
-(only as_1899 reprints 1898). Two engines agreeing proves what that book
-printed, not that the book is right — weaker than the 1897 two-book vote,
-accepted with that caveat because the alternative is a read at the damaged
-page edge. 1899 and 1900 own columns have no reprint anywhere: not
-repairable by any witness, left to the malformed-cell null-outs.
+For 1898 the as_* witnesses are the same BOOK read by two engines (only
+as_1899 reprints 1898 among the Annual Statements); tn_1901 adds a second
+book. For 1899 the ONLY reprint is tn_1901's mid-table column, so its two
+engines are the whole vote. Two engines agreeing proves what that book
+printed, not that the book is right — weaker than a two-book vote, accepted
+with that caveat because the alternative is a read at the damaged page edge.
+1900 (tn_1901's own edge column) has no reprint anywhere and is left to the
+malformed-cell null-outs and repair_section_closure.py.
+
+Alignment is the binding constraint, not agreement: as_1899 and tn_1901 are
+different publications with different lost-heading captures (as_1899 files
+iron under IMPLEMENTS AND TOOLS, tn_1901 under INSTRUMENTS AND APPARATUS),
+so ~40% of as_1899's 1898/99 cells find no tn_1901 row under any key. The
+phantom-region relabel (phantom_articles.py) is applied before keying, which
+is what makes the rest align at all. A looser, group-and-unit-free key was
+tried and rejected: on page-exact cells it disagreed with the page 38% of
+the time.
 
 Output: reference/edge_column_repairs.csv, same provenance-safe overlay
 format as the other repair files (keyed on the BAD value as well as the
@@ -48,23 +59,38 @@ Usage:
     python3 scripts/repair_edge_columns.py [--dry-run]
         [--out reference/edge_column_repairs.csv]
 """
-import argparse, collections, csv, re
+import argparse, collections, csv, re, sys
+from pathlib import Path
 import duckdb
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from phantom_articles import fix_articles
 
 # (volume, year) column to repair -> witness volumes. A volume must NEVER
 # witness its own maximum year: that column is at the damaged page edge, and
 # two engines agreeing on the same damaged print is not corroboration — the
 # digits are lost in the scan, so both engines read the same wrong number.
-# as_1899's 1897/98 columns are repaired because the per-year witness override
+# as_1899's 1897-99 columns are repaired because the per-year witness override
 # in the series scripts makes them PRIMARY for those years (measured closure:
 # they corroborate ~3x more value than the repaired own-year edge columns).
-TARGETS = {('as_1897', 1897): ['as_1898', 'as_1899'],
-           ('as_1898', 1898): ['as_1899'],
-           ('as_1899', 1897): ['as_1898']}
-# NOT targeted: as_1899's 1898 column (its only witness would be as_1898's
-# edge column) and mutual pairs like as_1898's 1897 column, which would let
-# two disagreeing volumes simply swap values.
+#
+# The tn_ annuals (parse_tn_overlap.py -> country_obs_tn / _tn_inf) add
+# witnesses the as_* books cannot: tn_1899 prints 1894-98 (its own edge year
+# is 1898, so it witnesses 1897 only here) and tn_1901 prints 1896-1900, whose
+# 1899 column is the ONLY mid-table print of 1899 in the corpus — before it,
+# as_1899's 1899 edge column had no witness at all.
+TARGETS = {('as_1897', 1897): ['as_1898', 'as_1899', 'tn_1899', 'tn_1901'],
+           ('as_1898', 1898): ['as_1899', 'tn_1901'],
+           ('as_1899', 1897): ['as_1898', 'tn_1899', 'tn_1901'],
+           ('as_1899', 1898): ['tn_1901'],
+           ('as_1899', 1899): ['tn_1901']}
+# NOT targeted: mutual pairs like as_1898's 1897 column, which would let two
+# disagreeing volumes simply swap values; and 1900 (tn_1901's own edge
+# column), which no annual reprints.
 ENGINES = {'obs': 'country_obs', 'inf': 'country_obs_inf'}
+# the tn_ annuals' overlapping years live in separate tables (see
+# parse_tn_overlap.py); country_obs holds them only for 1870 and 1900
+TN_TABLES = {'obs': 'country_obs_tn', 'inf': 'country_obs_tn_inf'}
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 
 
@@ -73,13 +99,26 @@ def norm(s):
 
 
 def fetch(con, tbl, vol, year):
-    """Block-ordered rows: (flow, ag, art, unit, country_raw, value)."""
-    return con.execute(f"""
-        select flow, coalesce(article_group,''), coalesce(article,''),
-               coalesce(unit,''), country_raw, value
+    """Block-ordered rows: (flow, ag, art, unit, country_raw, value,
+    raw_art, raw_unit).
+
+    art/unit have the phantom-region relabel applied (phantom_articles.py):
+    'West Africa' as an article is a heading the parser absorbed, and it is
+    absorbed at DIFFERENT rows in different volumes, so the raw label can
+    never align across books. The vote keys on the relabelled article; the
+    overlay is written with the RAW one, because every consumer applies the
+    overlays to the raw parse first and the relabel afterwards."""
+    rows = con.execute(f"""
+        select volume, flow, year, coalesce(article_group,''), article, unit,
+               row_seq, country_raw, value
         from "{tbl}" where volume = ? and year = ?
-        order by flow, 2, 3, 4, row_seq
     """, [vol, year]).fetchall()
+    fixed = fix_articles(rows, vol=0, flow=1, year=2, group=3, art=4,
+                         unit=5, seq=6)
+    out = [(f[1], f[3], f[4] or '', f[5] or '', f[7], f[8],
+            r[4] or '', r[5] or '', f[6]) for f, r in zip(fixed, rows)]
+    out.sort(key=lambda t: (t[0], t[1], t[2], t[3], t[8]))
+    return [t[:8] for t in out]
 
 
 def index_rows(rows):
@@ -92,7 +131,7 @@ def index_rows(rows):
     """
     full, count = {}, collections.Counter()
     nogroup = {}
-    for flow, ag, art, unit, ctry, v in rows:
+    for flow, ag, art, unit, ctry, v, *_ in rows:
         k = (flow, norm(ag), norm(art), norm(unit), norm(ctry))
         full[k + (count[k],)] = v
         count[k] += 1
@@ -110,7 +149,7 @@ def page_confirmed_cells(rows):
     corroborates these; no vote may touch them."""
     confirmed = set()
     blocks = collections.defaultdict(list)
-    for flow, ag, art, unit, ctry, v in rows:
+    for flow, ag, art, unit, ctry, v, *_ in rows:
         blocks[(flow, ag, art, unit)].append((ctry, v))
     for bk, seq in blocks.items():
         members = []
@@ -146,10 +185,11 @@ def main():
         wit = {}          # name -> (full, count, nogroup)
         for eng, tbl in ENGINES.items():
             for wv in wvols:
-                wit[f'{eng}:{wv}'] = index_rows(fetch(con, tbl, wv, year))
+                src = TN_TABLES[eng] if wv.startswith('tn_') else tbl
+                wit[f'{eng}:{wv}'] = index_rows(fetch(con, src, wv, year))
 
         occ_seen = collections.Counter()
-        for flow, ag, art, unit, ctry, v in own_rows:
+        for flow, ag, art, unit, ctry, v, raw_art, raw_unit in own_rows:
             k = (flow, norm(ag), norm(art), norm(unit), norm(ctry))
             occ = occ_seen[k]
             occ_seen[k] += 1
@@ -162,7 +202,11 @@ def main():
                 wv_val = None
                 if wcount.get(k) == own_count[k]:
                     wv_val = wfull.get(k + (occ,))
-                elif own_count[k] == 1 and k not in wcount:
+                elif own_count[k] == 1 and k not in wcount and k[2]:
+                    # group-free fallback needs an ARTICLE to stand on: a
+                    # bare TOTAL with no article is identified by its group
+                    # alone, and dropping the group would let every such
+                    # anchor in the volume match the one witness anchor
                     wv_val = wng.get((k[0],) + k[2:])
                 if wv_val is not None:
                     votes[wv_val] += 1
@@ -170,9 +214,14 @@ def main():
             if not votes:
                 stats[f'{vol} no witness'] += 1
                 continue
-            best, n = votes.most_common(1)[0]
+            (best, n), *rest = votes.most_common()
             if n < 2:
                 stats[f'{vol} lone witness'] += 1
+                continue
+            if rest and rest[0][1] == n:
+                # two values tie for the vote (e.g. two books agreeing
+                # against two engines of a third): no verdict, leave the cell
+                stats[f'{vol} split vote'] += 1
                 continue
             if best == v:
                 stats[f'{vol} witnesses confirm'] += 1
@@ -184,22 +233,23 @@ def main():
             stats[f'{vol} REPAIRED ' + ('anchor' if is_anchor else 'member')] += 1
             repairs.append(dict(
                 volume=vol, year=year, flow=flow, article_group=ag,
-                article=art, country_raw=ctry, old_value=v, new_value=best,
+                article=raw_art, country_raw=ctry, old_value=v, new_value=best,
                 witnesses='; '.join(sorted(nm for nm, val in voters.items()
                                            if val == best))))
 
         # APPLICATION-GRANULARITY GUARD. The overlay key the consumers use is
         # (volume, year, group, article, country, old_value) — no unit, no
-        # flow, no occurrence. If that key matches more rows in the volume-
-        # year than this vote repaired, or the repairs disagree on the new
+        # flow, no occurrence. If that key matches more rows in THIS volume-
+        # year (as_1899 is targeted for three years) than this vote repaired, or the repairs disagree on the new
         # value, applying the overlay would rewrite rows the vote never saw.
         # Such groups are dropped entirely.
         own_key_count = collections.Counter(
-            (ag, art, ctry, round(v)) for _, ag, art, unit, ctry, v in own_rows
+            (ag, raw_art, ctry, round(v))
+            for _, ag, art, unit, ctry, v, raw_art, _u in own_rows
             if v is not None)
         grouped = collections.defaultdict(list)
         for r in repairs:
-            if r['volume'] != vol:
+            if r['volume'] != vol or r['year'] != year:
                 continue
             grouped[(r['article_group'], r['article'], r['country_raw'],
                      round(r['old_value']))].append(r)

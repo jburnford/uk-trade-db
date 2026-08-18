@@ -802,6 +802,9 @@ COLS = ('volume', 'flow', 'duty', 'article_group', 'article', 'country_raw',
 # 180 previously-exact cells broken, and GBP-weighted agreement fell 51.9% ->
 # 46.5%. Restricted to the non-overlapping years the same volumes are purely
 # additive — no existing cell can move. See reports/tn_volumes_findings.md.
+# The overlapping years ARE parsed, into separate tables (country_obs_tn /
+# country_obs_tn_inf) by parse_tn_overlap.py, for consumers that arbitrate
+# witnesses themselves (the export series scripts).
 AS_SPAN = (1872, 1899)
 
 

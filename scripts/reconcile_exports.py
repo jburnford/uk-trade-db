@@ -45,10 +45,16 @@ section is corroborated by the printed page itself; that is the export-side
 substitute for a gold transcription.
 """
 import argparse, collections, re, sys
+from pathlib import Path
 import duckdb
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from phantom_articles import fix_articles
+
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
-ENGINES = {'obs': 'country_obs', 'inf': 'country_obs_inf', 'twoup': 'country_obs_twoup'}
+ENGINES = {'obs': 'country_obs', 'inf': 'country_obs_inf', 'twoup': 'country_obs_twoup',
+           # the tn_ annuals' comparative years (parse_tn_overlap.py)
+           'tn': 'country_obs_tn', 'tn_inf': 'country_obs_tn_inf'}
 
 
 def is_total(label):
@@ -127,22 +133,32 @@ def main():
     seq = 'row_seq' if 'row_seq' in names else 'rowid'
 
     q = f"""
-      select volume, year, coalesce(article_group,'') ag, coalesce(article,'') art,
-             coalesce(unit,'') unit, {seq} seq, country_raw, {a.measure} amt
+      select volume, flow, year, coalesce(article_group,'') ag, article,
+             unit, {seq} seq, country_raw, {a.measure} amt
       from "{tbl}"
       where flow = ? and year between ? and ?
-      order by volume, ag, art, unit, seq
     """
-    rows = con.execute(q, [a.flow, a.min_year, a.max_year]).fetchall()
-    if not rows:
+    raw = con.execute(q, [a.flow, a.min_year, a.max_year]).fetchall()
+    if not raw:
         sys.exit(f'no rows for flow={a.flow} in {tbl}')
+    # --repairs also applies the phantom-region relabel (phantom_articles.py):
+    # a label repair, not a value repair, but the same kind of thing -- it is
+    # what the export consumers see, and the closure it restores comes from
+    # re-uniting members with the printed TOTAL that the absorbed heading
+    # had split them from. Repairs are keyed on the RAW article.
+    fixed = (fix_articles(raw, vol=0, flow=1, year=2, group=3, art=4,
+                          unit=5, seq=6) if a.repairs else raw)
+    rows = [(r[0], r[2], r[3], r[4] or '', f[4] or '', f[5] or '', r[6], r[7], r[8])
+            for r, f in zip(raw, fixed)]
+    rows.sort(key=lambda t: (t[0], t[2], t[4], t[5], t[6] if t[6] is not None else -1))
 
     fix, no_repair = {}, object()
     if a.repairs and a.measure == 'value' and a.engine == 'obs':
         import csv, os
         for path in ('reference/export_cell_repairs.csv',
                      'reference/malformed_cell_repairs.csv',
-                     'reference/edge_column_repairs.csv'):
+                     'reference/edge_column_repairs.csv',
+                'reference/section_closure_repairs.csv'):
             if not os.path.exists(path):
                 continue
             for r in csv.DictReader(open(path)):
@@ -153,9 +169,9 @@ def main():
 
     blocks = collections.defaultdict(list)
     n_fixed = 0
-    for vol, yr, ag, art, unit, seq, ctry, amt in rows:
+    for vol, yr, ag, raw_art, art, unit, seq, ctry, amt in rows:
         if amt is not None and fix:
-            nv = fix.get((vol, yr, ag, art, ctry, round(amt)), no_repair)
+            nv = fix.get((vol, yr, ag, raw_art, ctry, round(amt)), no_repair)
             if nv is not no_repair:
                 amt, n_fixed = nv, n_fixed + 1
         blocks[(vol, yr, ag, art, unit)].append((seq, ctry, amt))

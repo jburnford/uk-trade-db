@@ -119,3 +119,13 @@ Maize, Cotton Raw, Fir, Wool, Oxen, Wheat and Sugar all move off `nodata`.
 - `tn_1895` and `tn_1899` contribute nothing under the year restriction (their
   years are inside the `as_*` span). Admitting them as a genuine second witness
   needs the overlap arbitration that failure 1 showed is missing.
+  **Update 2026-08-17:** the overlapping years of all the tn_ annuals are now
+  parsed into SEPARATE tables, `country_obs_tn` / `country_obs_tn_inf`
+  (`scripts/parse_tn_overlap.py`, same as_*-seeded vocabulary, verified
+  row-identical to `country_obs` on the shared tn_1901/1900 rows). The import
+  pipeline still does not see them; the export-side scripts use them as
+  WITNESSES for the 1897-99 columns (`repair_edge_columns.py`,
+  `repair_section_closure.py`). tn_1901's 1899 column is the only non-edge
+  print of 1899 in the corpus, but it closes no better than as_1899's edge
+  column (18% vs 18% of sections before repair) and its headings align with
+  as_1899's for only ~60% of cells, so it repairs 1899 rather than replacing it.
