@@ -272,6 +272,19 @@ def main():
             for bk, secs in own_secs.items():
                 cands = oth_by_norm.get(tuple(norm(x) for x in bk[:3]))
                 osecs = cands[0] if cands and len(cands) == 1 else None
+                if cands and len(cands) > 1:
+                    # the other engine split the same block on unit ('' for
+                    # a one-line 'all Countries' row, 'Dozens' for the
+                    # hierarchy after it -- as_1874 ARMS 'Swords'): take the
+                    # candidate list whose sections share the most values
+                    # with ours (a plurality, at least a third)
+                    own_vals = {round(v) for m, t in secs for _, c, v in m}
+                    scored = sorted(
+                        ((sum(1 for m, t in cs for _, c, v in m if round(v) in own_vals), i)
+                         for i, cs in enumerate(cands)), reverse=True)
+                    if scored[0][0] >= len(own_vals) / 3 and \
+                            (len(scored) < 2 or scored[0][0] > scored[1][0]):
+                        osecs = cands[scored[0][1]]
                 for si, (mem, tot) in enumerate(secs):
                     if len(mem) < 4:
                         continue

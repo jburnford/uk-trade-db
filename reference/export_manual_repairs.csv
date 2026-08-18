@@ -1,0 +1,10 @@
+volume,year,flow,article_group,article,country_raw,old_value,new_value,witnesses
+as_1874,1874,export_uk,BEEF and ALE,,Bengal and Burmah,67577.0,264249.0,"hand: labels one row early from Bengal on (barrels 73768 = 1873's 73415); parser lost a label above and duplicated 'Other Countries' at the end, so no shortfall for repair_label_merge; SA/Bombay/Madras left ambiguous"
+as_1874,1874,export_uk,BEEF and ALE,,Straits Settlements,264249.0,31132.0,"hand: labels one row early from Bengal on"
+as_1874,1874,export_uk,BEEF and ALE,,Ceylon,31132.0,37576.0,"hand: labels one row early from Bengal on"
+as_1874,1874,export_uk,BEEF and ALE,,Hong Kong,37576.0,25981.0,"hand: labels one row early from Bengal on"
+as_1874,1874,export_uk,BEEF and ALE,,Australia,25981.0,557744.0,"hand: labels one row early from Bengal on (118418 barrels; 1873 Australia 528953/124071 bbl, 1876 475608)"
+as_1874,1874,export_uk,BEEF and ALE,,British North America,557744.0,80647.0,"hand: labels one row early from Bengal on (1873 BNA 69082, 1876 42503)"
+as_1874,1874,export_uk,BEEF and ALE,,British West India Islands and British Guiana,80647.0,121055.0,"hand: labels one row early from Bengal on"
+as_1874,1874,export_uk,BEEF and ALE,,Other Countries,121055.0,140215.0,"hand: labels one row early from Bengal on"
+as_1874,1874,export_uk,BEEF and ALE,,Other Countries,140215.0,,"hand: duplicated last label; its value is the real Other Countries, moved to the row above"

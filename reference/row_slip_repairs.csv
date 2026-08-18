@@ -478,6 +478,10 @@ tn_1901,1900,import,"Lead, Ore of",Eastern Coast of Africa,Portugal,56634.0,443.
 tn_1901,1900,import,"Lead, Ore of",Eastern Coast of Africa,Italy,443.0,3233.0,inf:tn_1901 slip run 7 rows offset +1
 tn_1901,1900,import,"Lead, Ore of",Eastern Coast of Africa,United States of America,3233.0,358251.0,inf:tn_1901 slip run 7 rows offset +1
 tn_1901,1900,import,"Lead, Ore of",Eastern Coast of Africa,Other Foreign Countries,358254.0,916.0,inf:tn_1901 slip run 7 rows offset +1
+tn_1901,1900,import,NUTS AND KERNELS,"Other sorts, unenumerated (not being Drugs, Dye Stuffs, nor Fruit)",Bengal,25.0,80.0,inf:tn_1901 slip run 4 rows offset -1
+tn_1901,1900,import,NUTS AND KERNELS,"Other sorts, unenumerated (not being Drugs, Dye Stuffs, nor Fruit)",Straits Settlements,92933.0,,inf:tn_1901 slip run 4 rows offset -1
+tn_1901,1900,import,NUTS AND KERNELS,"Other sorts, unenumerated (not being Drugs, Dye Stuffs, nor Fruit)",Ceylon,105.0,92038.0,inf:tn_1901 slip run 4 rows offset -1
+tn_1901,1900,import,NUTS AND KERNELS,"Other sorts, unenumerated (not being Drugs, Dye Stuffs, nor Fruit)",Other British Possessions,93840.0,105.0,inf:tn_1901 slip run 4 rows offset -1
 tn_1901,1900,reexport,COTTON MANUFACTURES,"Piece Goods, other than Muslins",Other Foreign Countries,253.0,,"inf:tn_1901 duplicate label, value belongs elsewhere"
 as_1897,1897,export_uk,COTTON MANUFACTURES,East Africa,Portuguese Possessions,18437.0,,"inf:as_1897 duplicate label, value belongs elsewhere"
 as_1897,1897,export_uk,Linen Manufactures,Metals,"Milk, Condensed",29438.0,,"inf:as_1897 duplicate label, value belongs elsewhere"
@@ -620,6 +624,9 @@ as_1898,1898,import,"SILVER, Ore of, or Ore of which the greater part in Value i
 as_1898,1898,import,"SILVER, Ore of, or Ore of which the greater part in Value is Silver","Skins, Unenumerated, undressed",Other Foreign Countries,567.0,518.0,inf:as_1898 slip run 6 rows offset +1
 as_1898,1898,import,Silk,Skins,Slates,16893.0,,"inf:as_1898 duplicate label, value belongs elsewhere"
 as_1898,1898,import,Wool,Woollen,Manufactures of all kinds (including Manufactures of Goats' Wool),590.0,,"inf:as_1898 duplicate label, value belongs elsewhere"
+as_1898,1898,reexport,Drugs,,Not otherwise Enumerated,19269.0,,"inf:as_1898 duplicate label, value belongs elsewhere"
+as_1898,1898,reexport,Drugs,,"Bark, Peruvian",851.0,,"inf:as_1898 duplicate label, value belongs elsewhere"
+as_1898,1898,reexport,Drugs,,Not otherwise enumerated,42760.0,,"inf:as_1898 duplicate label, value belongs elsewhere"
 as_1898,1898,reexport,Drugs,Dyes and Dyeing Stuffs,Cochineal,1082.0,,inf:as_1898 duplicate label inside slip run
 as_1898,1898,reexport,Drugs,Dyes and Dyeing Stuffs,Cutch and Gambier,23926.0,,inf:as_1898 duplicate label inside slip run
 as_1898,1898,reexport,Drugs,Dyes and Dyeing Stuffs,Indigo,83645.0,,inf:as_1898 duplicate label inside slip run
@@ -1608,6 +1615,7 @@ as_1873,1873,reexport,SPIRITS,"Various Sorts, mixed in Bond",Wallachia and Molda
 as_1873,1873,reexport,SPIRITS,"Various Sorts, mixed in Bond",West Africa (Foreign),5146.0,72691.0,inf:as_1873 slip run 5 rows offset +1
 as_1873,1873,reexport,SPIRITS,"Various Sorts, mixed in Bond",Australia,72691.0,17635.0,inf:as_1873 slip run 5 rows offset +1
 as_1873,1873,reexport,SPIRITS,"Various Sorts, mixed in Bond",Other Countries,17635.0,14275.0,inf:as_1873 slip run 5 rows offset +1
+as_1874,1874,export_uk,"ARMS, AMMUNITION, and MILITARY STORES","Swords, Cutlasses, Bayonets, and Arms of other Sorts, not being Fire-arms",Canada,156955.0,,"inf:as_1874 duplicate label, value belongs elsewhere"
 as_1874,1874,export_uk,BRASS,"Manufactures of, not being Ordnance",Straits Settlements,14567.0,7816.0,inf:as_1874 slip run 3 rows offset +1
 as_1874,1874,export_uk,BRASS,"Manufactures of, not being Ordnance",Australia,7816.0,29786.0,inf:as_1874 slip run 3 rows offset +1
 as_1874,1874,export_uk,BRASS,"Manufactures of, not being Ordnance",British North America,29786.0,3401.0,inf:as_1874 slip run 3 rows offset +1
@@ -3518,6 +3526,13 @@ as_1887,1887,import,SHELLS of all kinds,,Islands in the Pacific (ex- cept Fiji),
 as_1887,1887,import,SHELLS of all kinds,,United States of America,14710.0,8149.0,inf:as_1887 slip run 12 rows offset +1
 as_1887,1887,import,SHELLS of all kinds,,United States of Colombia,8149.0,2728.0,inf:as_1887 slip run 12 rows offset +1
 as_1887,1887,import,SHELLS of all kinds,,Other Foreign Countries,2728.0,3284.0,inf:as_1887 slip run 12 rows offset +1
+as_1887,1887,import,SUGAR,Cane and Other Sorts,Mauritius,25366.0,57498.0,inf:as_1887 slip run 7 rows offset +1
+as_1887,1887,import,SUGAR,Cane and Other Sorts,British East Indies,57498.0,397722.0,inf:as_1887 slip run 7 rows offset +1
+as_1887,1887,import,SUGAR,Cane and Other Sorts,Hong Kong,397722.0,9133.0,inf:as_1887 slip run 7 rows offset +1
+as_1887,1887,import,SUGAR,Cane and Other Sorts,Australasia,9133.0,21803.0,inf:as_1887 slip run 7 rows offset +1
+as_1887,1887,import,SUGAR,Cane and Other Sorts,British West India Islands,21803.0,494267.0,inf:as_1887 slip run 7 rows offset +1
+as_1887,1887,import,SUGAR,Cane and Other Sorts,British Honduras,494267.0,5603.0,inf:as_1887 slip run 7 rows offset +1
+as_1887,1887,import,SUGAR,Cane and Other Sorts,British Guiana,5603.0,1058108.0,inf:as_1887 slip run 7 rows offset +1
 as_1887,1887,import,ZINC,ARTICLES Imported by PARCEL POST,Germany,1132.0,83829.0,inf:as_1887 slip run 7 rows offset +1
 as_1887,1887,import,ZINC,ARTICLES Imported by PARCEL POST,Holland,83829.0,4728.0,inf:as_1887 slip run 7 rows offset +1
 as_1887,1887,import,ZINC,ARTICLES Imported by PARCEL POST,Belgium,4728.0,8108.0,inf:as_1887 slip run 7 rows offset +1

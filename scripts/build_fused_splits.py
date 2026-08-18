@@ -36,6 +36,21 @@ ROW-RANGE relabel:
      value-only segment to a value-only heading, which resolves most 2-vs-1
      ambiguities.
 
+Three refinements (2026-08-18):
+  * a one-line 'all Countries' article is a complete segment, so a
+    hierarchy that follows it under the same key is the next section with
+    its heading lost (as_1874 ARMS 'Swords' -> BAGS AND SACKS, Canada
+    188,820 of arms that were sacks);
+  * an INTERLEAVED block (another block opened between the block's first row
+    and its extra segments -- an article printed twice, keyed at its first
+    row) takes its reference gap from the blocks that precede and follow the
+    segments in print order, and a NAMESAKE answer (a nearby reference group
+    printing the same article name, since the parser merged by name)
+    outranks the gap guesses;
+  * a group heading absent from the reference may match a near-identical
+    spelling ('BEEF and ALE' for BEER and ALE), which also stopped ZINC
+    'Manufactured' 1892 being named PARCEL POST by continuation.
+
 Output: reference/fused_section_splits.csv -- flow, volume, year, group,
 article (RAW keys, before the phantom relabel), seq_from, seq_to, to_group,
 to_article, rows, value, method. Consumers apply it with the other overlays,
@@ -66,6 +81,15 @@ def ckey(c):
     return _key(c)
 
 
+ALL_COUNTRIES = re.compile(r'^\s*all\s+countries\s*$', re.I)
+
+
+def is_oneliner(seg):
+    """a one-line article: its only row is 'all Countries' (the printed
+    total of an article that lists no destinations)"""
+    return len(seg) == 1 and bool(ALL_COUNTRIES.match(seg[0][1] or ''))
+
+
 def segment(rows):
     """rows: list of (row_seq, country_raw, unit, quantity, value) sorted by
     row_seq. Returns a list of segments (lists of rows)."""
@@ -76,6 +100,14 @@ def segment(rows):
     while i < len(rows):
         r = rows[i]
         c = r[1]
+        if ALL_COUNTRIES.match(c or '') and not cur and i + 1 < len(rows):
+            # 'all Countries' is a complete one-line article; a hierarchy
+            # that follows it under the same key is the NEXT section with
+            # its heading lost (as_1874 ARMS 'Swords...' 6,078 all
+            # Countries, then all of BAGS AND SACKS in Dozens)
+            segs.append([r])
+            i += 1
+            continue
         if is_total(c):
             cur.append(r)
             totals.append(r)
@@ -113,17 +145,20 @@ def segment(rows):
         i += 1
     if cur:
         segs.append(cur)
-    # merge back segments that are not hierarchies
+    # merge back segments that are not hierarchies (a one-line 'all
+    # Countries' article IS one)
     out = []
     for s in segs:
-        if out and (len(s) < MIN_SEG_ROWS or not any(is_total(x[1]) for x in s)):
+        if out and not is_oneliner(s) and not is_oneliner(out[-1]) and \
+                (len(s) < MIN_SEG_ROWS or not any(is_total(x[1]) for x in s)):
             out[-1].extend(s)
         else:
             out.append(s)
     # a leading non-hierarchy fragment merges FORWARD -- unless it is a
     # TOTAL-less section of its own (>= MIN_SEG_ROWS members whose quantity
-    # shape differs from what follows)
+    # shape differs from what follows) or a one-line article
     if (len(out) >= 2 and not any(is_total(x[1]) for x in out[0])
+            and not is_oneliner(out[0])
             and not (len(out[0]) >= MIN_SEG_ROWS and shape_flip(out[0], out[1][0]))):
         out[1] = out[0] + out[1]
         out = out[1:]
@@ -292,14 +327,29 @@ def build_ref(con, rv, flow):
     ref_pairs = [(g, art) for (g, art), n, v in ref]
     rfixed, _ = load_volume(con, rv, flow)
     ryr = max(r[2] for r in rfixed) if rfixed else None
-    rq, rval = {}, {}
+    rq, rval, runit = {}, {}, {}
     for k, rws in year_sequence(rfixed, ryr).items():
         rws = sorted(rws)
         kk = (cap.gnorm(k[0]), _key(k[1]))
         rq[kk] = has_qty(rws)
         # the reference block's own first hierarchy only (it may be fused too)
         rval[kk] = seg_total(segment(rws)[0])
-    return ref_pairs, ref_positions(ref_pairs), rq, rval
+        runit[kk] = seg_unit(segment(rws)[0])
+    return ref_pairs, ref_positions(ref_pairs), rq, rval, runit
+
+
+def unit_key(u):
+    """'Cwts.' / 'Cwt' / 'cwts' -> 'CWT'"""
+    u = re.sub(r'[^A-Z]', '', (u or '').upper())
+    return u[:-1] if u.endswith('S') and len(u) > 3 else u
+
+
+def seg_unit(seg):
+    """the unit the segment's quantity-bearing member rows carry (majority),
+    '' when they carry none"""
+    c = collections.Counter(unit_key(r[2]) for r in seg
+                            if r[3] is not None and not is_total(r[1]) and r[2])
+    return c.most_common(1)[0][0] if c else ''
 
 
 def locate(ref_pairs, rpos, key, first=True, after=None):
@@ -313,7 +363,18 @@ def locate(ref_pairs, rpos, key, first=True, after=None):
     if q is not None:
         return q
     if gk not in gfirst:
-        return None
+        # an OCR variant of a heading the reference does carry ('BEEF and
+        # ALE' for BEER and ALE): near-identical spelling, same initial
+        import difflib
+        near = [g2 for g2 in gfirst if g2[:1] == gk[:1] and len(g2) >= 6
+                and difflib.SequenceMatcher(None, gk, g2).ratio() >= 0.9]
+        if len(near) != 1:
+            return None
+        gk = near[0]
+        key = (key[0], key[1])
+        q = pos.get((gk, _key(key[1])))
+        if q is not None:
+            return q
     if key[1]:
         gt = frozenset(cap.norm_tokens(key[0]))
         best = None
@@ -333,7 +394,7 @@ def locate(ref_pairs, rpos, key, first=True, after=None):
 def resolve(ref, g, art, keys, bi, extra):
     """Name the extra segments of block keys[bi] from one reference.
     Returns (names, method) or (None, why)."""
-    ref_pairs, rpos, rq, rval = ref
+    ref_pairs, rpos, rq, rval, runit = ref
     p0 = locate(ref_pairs, rpos, (g, art), first=False)
     if p0 is None:
         return None, 'block group absent from reference'
@@ -359,7 +420,7 @@ def resolve(ref, g, art, keys, bi, extra):
         if q is not None and cap.gnorm(nk[0]) == cap.gnorm(g):
             # a same-group article the reference does not carry: the fused
             # segments still lie inside the group's span
-            p1 = rpos[2][cap.gnorm(g)] + 1
+            p1 = rpos[2].get(cap.gnorm(g), p0) + 1
             break
     if p1 is None:
         p1 = len(ref_pairs)
@@ -449,6 +510,35 @@ def resolve(ref, g, art, keys, bi, extra):
                   + ' | '.join(f'{c[0]}/{c[1]}' for c in cands))
 
 
+def namesake(ref, g, art, pk, extra, window=60):
+    """For an interleaved block (its extra segments sit after another block
+    opened): the reference group, other than the block's own, that prints an
+    article of the same name within `window` positions after the preceding
+    block's place. Exactly one such group, and each segment's value within
+    VALUE_BAND of that reference block -> every extra segment is named
+    (group, article). None otherwise."""
+    ref_pairs, rpos, rq, rval, runit = ref
+    p0 = locate(ref_pairs, rpos, pk, first=False)
+    if p0 is None:
+        return None
+    ak = _key(art)
+    hits = []
+    for i in range(p0 + 1, min(len(ref_pairs), p0 + 1 + window)):
+        rg, ra = ref_pairs[i]
+        if cap.gnorm(rg) != cap.gnorm(g) and ra and _key(ra) == ak:
+            if not hits or cap.gnorm(hits[-1][0]) != cap.gnorm(rg):
+                hits.append((rg, ra))
+    if len(hits) != 1:
+        return None
+    rg, ra = hits[0]
+    rv = rval.get((cap.gnorm(rg), _key(ra)))
+    for sg in extra:
+        sv = seg_total(sg)
+        if rv and sv and max(sv, rv) >= VALUE_FLOOR and max(sv / rv, rv / sv) > VALUE_BAND:
+            return None
+    return [(rg, ra, rq.get((cap.gnorm(rg), _key(ra)))) for _ in extra]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--db', default='db/uk_trade.duckdb')
@@ -478,6 +568,7 @@ def main():
                            else year == own_year)
                 blocks = year_sequence(fixed, year)
                 keys = list(blocks.keys())
+                first_seq = {k2: min(r[0] for r in blocks[k2]) for k2 in keys}
                 for bi, k in enumerate(keys):
                     rows = sorted(blocks[k])
                     segs = segment(rows)
@@ -487,11 +578,31 @@ def main():
                     if cap.gnorm(g).startswith('ALLOTHERARTICLES'):
                         continue
                     extra = segs[1:]
-                    if any(country_share(s) < MIN_COUNTRY_SHARE for s in extra):
-                        # not destination rows: a summary table, a year
-                        # column, article names read as countries (the
-                        # leakage class) -- not this repair
-                        continue
+                    # the gap in the reference is bounded by the block that
+                    # follows the EXTRA SEGMENTS in print order, not the one
+                    # after the block's first row: an article that appears
+                    # twice (as_1874 ARMS 'Swords' -- a one-liner at seq 124
+                    # and again at 176 with BAGS AND SACKS fused after it)
+                    # is keyed at its first row, mid-group
+                    after_seq = max(r[0] for sg in extra for r in sg)
+                    before_seq = min(r[0] for sg in extra for r in sg)
+                    # INTERLEAVED block: another block opened between this
+                    # block's first row and its extra segments (an article
+                    # printed twice -- as_1874 ARMS 'Swords' is a one-liner
+                    # at seq 124 and again at 176 with BAGS AND SACKS fused
+                    # after it; the block is keyed at 124, mid-group). Then
+                    # the reference gap is bounded by the blocks that
+                    # PRECEDE and FOLLOW the segments in print order, not by
+                    # the block's own key and its successor. Contiguous
+                    # blocks keep the plain bounds (widening every gap
+                    # names as_1876 IRON 'Pig' JUTE YARN).
+                    between = [k2 for k2 in keys
+                               if first_seq[k] < first_seq[k2] < before_seq]
+                    if between:
+                        pk = max(between, key=lambda k2: first_seq[k2])
+                        nkeys = [pk] + [k2 for k2 in keys if first_seq[k2] > after_seq]
+                    else:
+                        pk, nkeys = k, keys[bi:]
                     tot_v = sum((r[4] or 0) for s in extra for r in s
                                 if not is_total(r[1]))
                     can_v = sum((r[4] or 0) for s in extra for r in s
@@ -509,11 +620,27 @@ def main():
                     for rv in order:
                         if rv not in refs:
                             refs[rv] = build_ref(con, rv, flow)
-                        nm, mt = resolve(refs[rv], g, art, keys, bi, extra)
+                        if between and art and not any(is_oneliner(sg) for sg in extra):
+                            # NAMESAKE: the parser merged these rows into an
+                            # earlier block BY ARTICLE NAME, so the lost
+                            # heading is a nearby group that prints the same
+                            # article -- as_1876 IRON 'Pig' 1251-1258 is
+                            # LEAD's Pig (Rolled and Sheet, Piping and Tubing
+                            # follow), not JUTE YARN from the gap
+                            nm = namesake(refs[rv], g, art, pk, extra)
+                            if nm:
+                                answers.append((rv, nm, 'namesake'))
+                                continue
+                        nm, mt = resolve(refs[rv], pk[0], pk[1], nkeys, 0, extra)
                         if nm:
                             answers.append((rv, nm, mt))
                         else:
                             whys.append(f'{rv}: {mt}')
+                    if any(mt == 'namesake' for _, _, mt in answers):
+                        # a namesake answer is structural (the parser matched
+                        # this article's NAME); gap guesses from other
+                        # references do not outvote it
+                        answers = [x for x in answers if x[2] == 'namesake']
                     if answers:
                         # agreement at GROUP level, as the explorer keys it:
                         # family of the canonical spelling, else name

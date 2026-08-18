@@ -186,6 +186,8 @@ def main():
                         'reference/edge_column_repairs.csv',
                         'reference/row_slip_repairs.csv',
                         'reference/scaled_block_repairs.csv',
+                        'reference/label_merge_repairs.csv',
+                        'reference/export_manual_repairs.csv',
                 'reference/section_closure_repairs.csv'))
     con = duckdb.connect(a.db, read_only=True)
     flows = [f.strip() for f in a.flows.split(',') if f.strip()]
