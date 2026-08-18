@@ -29,7 +29,12 @@ the SAME group takes that group. 'Pig' between 'Ore' and 'Rolled, Sheet' is
 LEAD; 'Other Descriptions' after 'Sewing Machines' and 'Textile' is
 MACHINERY.
 
-Reference: as_1896 (single-year, healthy), per flow. Articles are compared
+Reference: the nearest of six single-year annuals (as_1876/80/84/88/92/96)
+that is not the target itself, per flow -- article vocabulary drifts by
+decade. Every volume 1870-1900 is a target; the older ones yield mostly
+name-variant folds plus a handful of real captures (HATS holding IRON in
+as_1873, HOPS holding IRON in as_1886, JUTE holding LEAD in as_1884, Slates
+holding SUGAR in as_1895). Articles are compared
 after the phantom-region relabel (phantom_articles.py) and on the same
 normalisation the explorer keys on, so the output keys match what the
 consumer looks up.
@@ -48,9 +53,18 @@ import duckdb
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from phantom_articles import fix_articles, known_groups, promote_headings
 
-REF_VOLUME = 'as_1896'
+# reference volumes: single-year annuals, one per four years; a target is
+# aligned onto the nearest one that is not itself (article vocabulary drifts
+# by decade, so as_1896 is a poor reference for as_1874)
+REFS = ['as_1876', 'as_1880', 'as_1884', 'as_1888', 'as_1892', 'as_1896']
 KNOWN = {}             # flow -> known group headings (filled in main)
-TARGETS = ['as_1897', 'as_1898', 'as_1899', 'tn_1901']
+TARGETS = (['tn_1871'] + [f'as_{y}' for y in range(1872, 1900)] + ['tn_1901'])
+
+
+def ref_for(vol):
+    y = 1900 if vol == 'tn_1901' else 1870 if vol == 'tn_1871' else int(vol[-4:])
+    cands = [r for r in REFS if r != vol]
+    return min(cands, key=lambda r: (abs(int(r[-4:]) - y), -int(r[-4:])))
 FLOWS = ['export_uk', 'reexport']
 MIN_SIM = 0.6          # article-name similarity to count as aligned
 MIN_FOREIGN = 2        # a captor needs >=2 aligned articles in other groups
@@ -268,7 +282,7 @@ def clean_reference(con, ref, flow):
                 n_fixed += 1
                 continue
         out.append([(g, art), n, v])
-    print(f'reference {flow}: {n_fixed} positions re-homed by dominant host')
+    print(f'reference {flow}: {n_fixed} positions re-homed by dominant host', file=sys.stderr)
     return out
 
 
@@ -283,13 +297,17 @@ def main():
     recs = []
     for flow in FLOWS:
         KNOWN[flow] = known_groups(con, flow)
-        ref = clean_reference(con, sequence(con, REF_VOLUME, flow), flow)
-        ref_pairs = [(g, art) for (g, art), n, v in ref]
-        # first index of each reference group
-        gstart = {}
-        for i, (g, art) in enumerate(ref_pairs):
-            gstart.setdefault(gnorm(g), i)
+        refs = {}
         for vol in TARGETS:
+            rv = ref_for(vol)
+            if rv not in refs:
+                ref = clean_reference(con, sequence(con, rv, flow), flow)
+                ref_pairs = [(g, art) for (g, art), n, v in ref]
+                gstart = {}
+                for i, (g, art) in enumerate(ref_pairs):
+                    gstart.setdefault(gnorm(g), i)
+                refs[rv] = (ref_pairs, gstart)
+            ref_pairs, gstart = refs[rv]
             seq = sequence(con, vol, flow)
             bygroup = collections.OrderedDict()
             for (g, art), n, v in seq:
@@ -384,7 +402,7 @@ def main():
                     recs.append(dict(flow=flow, volume=vol, from_group=g,
                                      article=art, to_group=labels[i][0],
                                      method=labels[i][1], sim=labels[i][2],
-                                     rows=n, value=round(v)))
+                                     rows=n, value=round(v), reference=rv))
 
     by = collections.Counter((r['flow'], r['volume'], r['from_group']) for r in recs)
     print(f'{len(recs)} article reassignments in {len(by)} captor groups')
