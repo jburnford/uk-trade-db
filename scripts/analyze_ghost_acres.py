@@ -215,7 +215,24 @@ def main():
         reg_tot[r['region']][0] += r['through']
         reg_tot[r['region']][1] += r['embodied']
     T_thr, T_emb = sum(thr_p.values()), sum(emb_p.values())
+    # flows for the Sankey: region -> material (embodied) and region -> forwarded commodity (through)
+    reg_mat = collections.Counter()
+    for pl, mats in place_material.items():
+        reg = region_of(pl, gaz)
+        for mt, v in mats.items():
+            reg_mat[(reg, mt)] += v
+    reg_thr = collections.Counter()
+    for pl, cs in place_through_comm.items():
+        reg = region_of(pl, gaz)
+        for cn, v in cs.items():
+            reg_thr[(reg, cn)] += v
+    flows = dict(
+        embodied=[dict(region=r, material=mt, value=round(v)) for (r, mt), v in reg_mat.most_common()],
+        through=[dict(region=r, commodity=cn, value=round(v)) for (r, cn), v in reg_thr.most_common()],
+        britain=[(k, round(v)) for k, v in emb_by_material.items() if k == 'DOMESTIC'],
+    )
     out = dict(
+        flows=flows,
         total_through=round(T_thr), total_embodied=round(T_emb),
         places=rows,
         regions=[dict(region=k, through=round(v[0]), embodied=round(v[1]), total=round(v[0] + v[1]))
