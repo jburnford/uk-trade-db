@@ -33,6 +33,7 @@ from pathlib import Path
 import duckdb
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import inf_fallback
 from phantom_articles import fix_articles, load_splits, apply_splits
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
@@ -79,6 +80,8 @@ def load(con, tbl, flow):
                unit, {seq} seq, country_raw, value, {qty}
         from "{tbl}" where flow = ?
     """, [flow]).fetchall()
+    if tbl == 'country_obs':
+        rows += inf_fallback.load_rows(flow, with_qty=True)   # inf-only sections
     # phantom-region relabel (phantom_articles.py): 'West Africa' as an
     # article is an absorbed heading; the row belongs to the article above.
     # Repairs are keyed on the RAW parse, so look them up before relabelling.

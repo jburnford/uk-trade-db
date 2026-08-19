@@ -81,6 +81,7 @@ from pathlib import Path
 import duckdb
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import inf_fallback
 from phantom_articles import (fix_articles, known_groups, promote_headings,
                               load_splits, apply_splits)
 
@@ -211,6 +212,9 @@ def main():
                    article, unit, row_seq, country_raw, value
             from country_obs where flow = ?
         """, [flow]).fetchall()
+        # sections obs never read, whole from inf where they close on their
+        # printed TOTAL (build_inf_fallback.py); same columns, appended
+        rows += inf_fallback.load_rows(flow)
         # phantom-region relabel (phantom_articles.py): 'West Africa' as an
         # article is an absorbed heading; the row belongs to the article
         # above. Repairs are keyed on the RAW parse: look up, then relabel.

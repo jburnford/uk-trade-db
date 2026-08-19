@@ -59,7 +59,7 @@ takes to_group/to_article; everything else is untouched).
 
 Usage: python3 scripts/build_fused_splits.py [--dry-run] [--verbose]
 """
-import argparse, collections, csv, re, sys
+import argparse, collections, csv, os, re, sys
 from pathlib import Path
 import duckdb
 
@@ -740,6 +740,15 @@ def main():
             w = csv.DictWriter(fh, fieldnames=list(unresolved[0].keys()))
             w.writeheader()
             w.writerows(unresolved)
+    # hand adjudications ride along: reference/fused_section_splits_manual.csv
+    # holds row-range relabels the resolver cannot reach (a heading fragment
+    # left as an article -- as_1889 GLASS 'enumerated' is HARDWARES AND
+    # CUTLERY), same columns, merged into the output on every rebuild
+    manual = 'reference/fused_section_splits_manual.csv'
+    if os.path.exists(manual):
+        mrows = list(csv.DictReader(open(manual)))
+        recs.extend(mrows)
+        print(f'+ {len(mrows)} manual rows from {manual}')
     if not a.dry_run and recs:
         with open(a.out, 'w', newline='') as fh:
             w = csv.DictWriter(fh, fieldnames=list(recs[0].keys()))

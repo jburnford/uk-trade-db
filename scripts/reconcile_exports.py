@@ -49,6 +49,7 @@ from pathlib import Path
 import duckdb
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import inf_fallback
 from phantom_articles import fix_articles, load_splits, apply_splits
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
@@ -141,6 +142,9 @@ def main():
       where flow = ? and year between ? and ?
     """
     raw = con.execute(q, [a.flow, a.min_year, a.max_year]).fetchall()
+    if a.repairs and tbl == 'country_obs':
+        raw += [r for r in inf_fallback.load_rows(a.flow)
+                if a.min_year <= r[2] <= a.max_year]     # inf-only sections
     if not raw:
         sys.exit(f'no rows for flow={a.flow} in {tbl}')
     # --repairs also applies the phantom-region relabel (phantom_articles.py):

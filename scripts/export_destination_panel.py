@@ -34,6 +34,7 @@ import duckdb
 
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
 import countrykey
+import inf_fallback
 from phantom_articles import fix_articles, load_splits, apply_splits
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
@@ -113,6 +114,7 @@ def main():
                unit, row_seq, country_raw, value
         from country_obs where flow = ?
     """, [a.flow]).fetchall()
+    rows += inf_fallback.load_rows(a.flow)     # inf-only sections (build_inf_fallback.py)
     # phantom-region relabel (phantom_articles.py): 'West Africa' as an
     # article is an absorbed heading; the row belongs to the article above.
     # Repairs are keyed on the RAW parse, so look them up before relabelling.
