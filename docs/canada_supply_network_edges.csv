@@ -1,0 +1,210 @@
+commodity,commodity_family,family,route,material,hub,supplier,region,rank,note
+Tea,food & drink,food & drink,forwarded,,London / Liverpool warehouses,China,China & Japan,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Tea,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Bengal,India & Southeast Asia,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Tea,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Ceylon,India & Southeast Asia,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+Fruit,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Spain,Europe,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Fruit,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Greece,Mediterranean & Levant,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Fruit,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Turkey,Mediterranean & Levant,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+Fruit,food & drink,food & drink,forwarded,,London / Liverpool warehouses,France,Europe,4,re-exported to Canada unchanged; supplier = major consignor to Britain
+Fruit,food & drink,food & drink,forwarded,,London / Liverpool warehouses,United States Of America,North America,5,re-exported to Canada unchanged; supplier = major consignor to Britain
+Silk Manufactures,textiles,textiles,forwarded,,London / Liverpool warehouses,France,Europe,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Silk Manufactures,textiles,textiles,forwarded,,London / Liverpool warehouses,Holland,Europe,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Silk Manufactures,textiles,textiles,forwarded,,London / Liverpool warehouses,Belgium,Europe,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+"Skins, Furs And Pelts",animal products,animal products,forwarded,,London / Liverpool warehouses,British Possessions In South Africa,Africa,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+"Skins, Furs And Pelts",animal products,animal products,forwarded,,London / Liverpool warehouses,United States Of America,North America,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+"Skins, Furs And Pelts",animal products,animal products,forwarded,,London / Liverpool warehouses,France,Europe,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+"Skins, Furs And Pelts",animal products,animal products,forwarded,,London / Liverpool warehouses,Madras,India & Southeast Asia,4,re-exported to Canada unchanged; supplier = major consignor to Britain
+"Skins, Furs And Pelts",animal products,animal products,forwarded,,London / Liverpool warehouses,Argentine Republic,South America,5,re-exported to Canada unchanged; supplier = major consignor to Britain
+"Skins, Furs And Pelts",animal products,animal products,forwarded,,London / Liverpool warehouses,Australasia,Australasia & Pacific,6,re-exported to Canada unchanged; supplier = major consignor to Britain
+Hemp,textiles,textiles,forwarded,,London / Liverpool warehouses,Philippine Islands,India & Southeast Asia,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Hemp,textiles,textiles,forwarded,,London / Liverpool warehouses,Russia,Europe,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Hemp,textiles,textiles,forwarded,,London / Liverpool warehouses,Italy,Europe,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+Hemp,textiles,textiles,forwarded,,London / Liverpool warehouses,Germany,Europe,4,re-exported to Canada unchanged; supplier = major consignor to Britain
+Wool,textiles,textiles,forwarded,,London / Liverpool warehouses,New South Wales,Australasia & Pacific,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Wool,textiles,textiles,forwarded,,London / Liverpool warehouses,British Possessions In South Africa,Africa,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Wool,textiles,textiles,forwarded,,London / Liverpool warehouses,Victoria,Australasia & Pacific,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+Wool,textiles,textiles,forwarded,,London / Liverpool warehouses,New Zealand,Australasia & Pacific,4,re-exported to Canada unchanged; supplier = major consignor to Britain
+Woollen Manufactures,textiles,textiles,forwarded,,London / Liverpool warehouses,France,Europe,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Woollen Manufactures,textiles,textiles,forwarded,,London / Liverpool warehouses,Holland,Europe,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Woollen Manufactures,textiles,textiles,forwarded,,London / Liverpool warehouses,Germany,Europe,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+Woollen Manufactures,textiles,textiles,forwarded,,London / Liverpool warehouses,United States Of America,North America,4,re-exported to Canada unchanged; supplier = major consignor to Britain
+Rice,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Bengal,India & Southeast Asia,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Rice,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Burmah,India & Southeast Asia,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Rice,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Holland,Europe,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+Spices,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Straits Settlements,India & Southeast Asia,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Spices,food & drink,food & drink,forwarded,,London / Liverpool warehouses,British West India Islands,Caribbean & Central America,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Spices,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Ceylon,India & Southeast Asia,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+Wine,food & drink,food & drink,forwarded,,London / Liverpool warehouses,France,Europe,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Wine,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Spain,Europe,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Wine,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Portugal,Europe,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+Wine,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Holland,Europe,4,re-exported to Canada unchanged; supplier = major consignor to Britain
+"Silk, Raw And Thrown",textiles,textiles,forwarded,,London / Liverpool warehouses,China,China & Japan,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+"Silk, Raw And Thrown",textiles,textiles,forwarded,,London / Liverpool warehouses,France,Europe,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Tallow And Stearine,animal products,animal products,forwarded,,London / Liverpool warehouses,United States Of America,North America,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Tallow And Stearine,animal products,animal products,forwarded,,London / Liverpool warehouses,New South Wales,Australasia & Pacific,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Tallow And Stearine,animal products,animal products,forwarded,,London / Liverpool warehouses,Argentine Republic,South America,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+Tallow And Stearine,animal products,animal products,forwarded,,London / Liverpool warehouses,New Zealand,Australasia & Pacific,4,re-exported to Canada unchanged; supplier = major consignor to Britain
+Spirits,food & drink,food & drink,forwarded,,London / Liverpool warehouses,British West India Islands,Caribbean & Central America,1,re-exported to Canada unchanged; supplier = major consignor to Britain
+Spirits,food & drink,food & drink,forwarded,,London / Liverpool warehouses,British Guiana,South America,2,re-exported to Canada unchanged; supplier = major consignor to Britain
+Spirits,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Spain,Europe,3,re-exported to Canada unchanged; supplier = major consignor to Britain
+Spirits,food & drink,food & drink,forwarded,,London / Liverpool warehouses,France,Europe,4,re-exported to Canada unchanged; supplier = major consignor to Britain
+Spirits,food & drink,food & drink,forwarded,,London / Liverpool warehouses,Portugal,Europe,5,re-exported to Canada unchanged; supplier = major consignor to Britain
+Woollen And Worsted Manufactures,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",New South Wales,Australasia & Pacific,1,wool worked up in Britain; supplier = major consignor of wool to Britain
+Woollen And Worsted Manufactures,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",British Possessions In South Africa,Africa,2,wool worked up in Britain; supplier = major consignor of wool to Britain
+Woollen And Worsted Manufactures,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",Victoria,Australasia & Pacific,3,wool worked up in Britain; supplier = major consignor of wool to Britain
+Woollen And Worsted Manufactures,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",New Zealand,Australasia & Pacific,4,wool worked up in Britain; supplier = major consignor of wool to Britain
+Woollen And Worsted Manufactures,textiles,textiles,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Iron And Steel,metals & minerals,metals & minerals,worked,iron ore,"Middlesbrough (Cleveland), South Wales, Cumberland",Spain,Europe,1,iron ore worked up in Britain; supplier = major consignor of iron ore to Britain
+Iron And Steel,metals & minerals,metals & minerals,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Cotton Manufactures,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",United States Of America,North America,1,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Cotton Manufactures,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",Egypt,Mediterranean & Levant,2,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Cotton Manufactures,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",Bombay,India & Southeast Asia,3,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Haberdashery And Millinery,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",United States Of America,North America,1,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Haberdashery And Millinery,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",Egypt,Mediterranean & Levant,2,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Haberdashery And Millinery,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",Bombay,India & Southeast Asia,3,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Haberdashery And Millinery,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",New South Wales,Australasia & Pacific,1,wool worked up in Britain; supplier = major consignor of wool to Britain
+Haberdashery And Millinery,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",British Possessions In South Africa,Africa,2,wool worked up in Britain; supplier = major consignor of wool to Britain
+Haberdashery And Millinery,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",Victoria,Australasia & Pacific,3,wool worked up in Britain; supplier = major consignor of wool to Britain
+Haberdashery And Millinery,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",New Zealand,Australasia & Pacific,4,wool worked up in Britain; supplier = major consignor of wool to Britain
+Haberdashery And Millinery,textiles,textiles,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Apparel And Slops,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",New South Wales,Australasia & Pacific,1,wool worked up in Britain; supplier = major consignor of wool to Britain
+Apparel And Slops,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",British Possessions In South Africa,Africa,2,wool worked up in Britain; supplier = major consignor of wool to Britain
+Apparel And Slops,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",Victoria,Australasia & Pacific,3,wool worked up in Britain; supplier = major consignor of wool to Britain
+Apparel And Slops,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",New Zealand,Australasia & Pacific,4,wool worked up in Britain; supplier = major consignor of wool to Britain
+Apparel And Slops,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",United States Of America,North America,1,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Apparel And Slops,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",Egypt,Mediterranean & Levant,2,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Apparel And Slops,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",Bombay,India & Southeast Asia,3,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Apparel And Slops,textiles,textiles,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Linen Manufactures,textiles,textiles,worked,flax,Belfast and Dundee,Russia,Europe,1,flax worked up in Britain; supplier = major consignor of flax to Britain
+Linen Manufactures,textiles,textiles,worked,flax,Belfast and Dundee,Belgium,Europe,2,flax worked up in Britain; supplier = major consignor of flax to Britain
+Linen Manufactures,textiles,textiles,worked,flax,Belfast and Dundee,Holland,Europe,3,flax worked up in Britain; supplier = major consignor of flax to Britain
+Linen Manufactures,textiles,textiles,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Zinc Or Spelter,metals & minerals,metals & minerals,worked,zinc,"Swansea, Birmingham",Germany,Europe,1,zinc worked up in Britain; supplier = major consignor of zinc to Britain
+Zinc Or Spelter,metals & minerals,metals & minerals,worked,zinc,"Swansea, Birmingham",Holland,Europe,2,zinc worked up in Britain; supplier = major consignor of zinc to Britain
+Zinc Or Spelter,metals & minerals,metals & minerals,worked,zinc,"Swansea, Birmingham",Belgium,Europe,3,zinc worked up in Britain; supplier = major consignor of zinc to Britain
+Zinc Or Spelter,metals & minerals,metals & minerals,worked,zinc,"Swansea, Birmingham",France,Europe,4,zinc worked up in Britain; supplier = major consignor of zinc to Britain
+Zinc Or Spelter,metals & minerals,metals & minerals,worked,zinc,"Swansea, Birmingham",United States Of America,North America,5,zinc worked up in Britain; supplier = major consignor of zinc to Britain
+Telegraphic Wires And Apparatus,metals & minerals,metals & minerals,worked,copper,Swansea,Chile,South America,1,copper worked up in Britain; supplier = major consignor of copper to Britain
+Telegraphic Wires And Apparatus,metals & minerals,metals & minerals,worked,copper,Swansea,United States Of America,North America,2,copper worked up in Britain; supplier = major consignor of copper to Britain
+Telegraphic Wires And Apparatus,metals & minerals,metals & minerals,worked,copper,Swansea,British Possessions In South Africa,Africa,3,copper worked up in Britain; supplier = major consignor of copper to Britain
+Telegraphic Wires And Apparatus,metals & minerals,metals & minerals,worked,copper,Swansea,Australasia,Australasia & Pacific,4,copper worked up in Britain; supplier = major consignor of copper to Britain
+Telegraphic Wires And Apparatus,metals & minerals,"oils, gums & dyes",worked,gutta percha,"Silvertown, Greenwich cable works",Straits Settlements,India & Southeast Asia,1,gutta percha worked up in Britain; supplier = major consignor of gutta percha to Britain
+Telegraphic Wires And Apparatus,metals & minerals,metals & minerals,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Hardwares And Cutlery,metals & minerals,metals & minerals,worked,iron ore,"Middlesbrough (Cleveland), South Wales, Cumberland",Spain,Europe,1,iron ore worked up in Britain; supplier = major consignor of iron ore to Britain
+Hardwares And Cutlery,metals & minerals,metals & minerals,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Sugar, Refined",food & drink,food & drink,worked,sugar,"Greenock, Liverpool, London refineries",Germany,Europe,1,sugar worked up in Britain; supplier = major consignor of sugar to Britain
+"Sugar, Refined",food & drink,food & drink,worked,sugar,"Greenock, Liverpool, London refineries",France,Europe,2,sugar worked up in Britain; supplier = major consignor of sugar to Britain
+"Sugar, Refined",food & drink,food & drink,worked,sugar,"Greenock, Liverpool, London refineries",Java,India & Southeast Asia,3,sugar worked up in Britain; supplier = major consignor of sugar to Britain
+"Sugar, Refined",food & drink,food & drink,worked,sugar,"Greenock, Liverpool, London refineries",Holland,Europe,4,sugar worked up in Britain; supplier = major consignor of sugar to Britain
+"Sugar, Refined",food & drink,food & drink,worked,sugar,"Greenock, Liverpool, London refineries",British West India Islands,Caribbean & Central America,5,sugar worked up in Britain; supplier = major consignor of sugar to Britain
+Silk Manufactures,textiles,textiles,worked,silk,"Macclesfield, Coventry, Spitalfields",China,China & Japan,1,silk worked up in Britain; supplier = major consignor of silk to Britain
+Silk Manufactures,textiles,textiles,worked,silk,"Macclesfield, Coventry, Spitalfields",France,Europe,2,silk worked up in Britain; supplier = major consignor of silk to Britain
+Earthen And China Ware,"manufactures, other","manufactures, other",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Hats,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",New South Wales,Australasia & Pacific,1,wool worked up in Britain; supplier = major consignor of wool to Britain
+Hats,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",British Possessions In South Africa,Africa,2,wool worked up in Britain; supplier = major consignor of wool to Britain
+Hats,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",Victoria,Australasia & Pacific,3,wool worked up in Britain; supplier = major consignor of wool to Britain
+Hats,textiles,textiles,worked,wool,"West Riding (Bradford, Leeds, Huddersfield)",New Zealand,Australasia & Pacific,4,wool worked up in Britain; supplier = major consignor of wool to Britain
+Hats,textiles,textiles,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Oil, Other Than Essential","oils, gums & dyes","oils, gums & dyes",worked,linseed,Hull crushers,Bengal,India & Southeast Asia,1,linseed worked up in Britain; supplier = major consignor of linseed to Britain
+"Oil, Other Than Essential","oils, gums & dyes","oils, gums & dyes",worked,linseed,Hull crushers,Russia,Europe,2,linseed worked up in Britain; supplier = major consignor of linseed to Britain
+"Oil, Other Than Essential","oils, gums & dyes","oils, gums & dyes",worked,linseed,Hull crushers,Bombay,India & Southeast Asia,3,linseed worked up in Britain; supplier = major consignor of linseed to Britain
+"Oil, Other Than Essential","oils, gums & dyes","oils, gums & dyes",worked,linseed,Hull crushers,Argentine Republic,South America,4,linseed worked up in Britain; supplier = major consignor of linseed to Britain
+"Oil, Other Than Essential","oils, gums & dyes","oils, gums & dyes",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Machinery And Millwork,metals & minerals,metals & minerals,worked,iron ore,"Middlesbrough (Cleveland), South Wales, Cumberland",Spain,Europe,1,iron ore worked up in Britain; supplier = major consignor of iron ore to Britain
+Machinery And Millwork,metals & minerals,metals & minerals,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Painters' Colours And Materials,"oils, gums & dyes",metals & minerals,worked,lead,"Newcastle, Chester",Spain,Europe,1,lead worked up in Britain; supplier = major consignor of lead to Britain
+Painters' Colours And Materials,"oils, gums & dyes",metals & minerals,worked,lead,"Newcastle, Chester",United States Of America,North America,2,lead worked up in Britain; supplier = major consignor of lead to Britain
+Painters' Colours And Materials,"oils, gums & dyes",metals & minerals,worked,lead,"Newcastle, Chester",France,Europe,3,lead worked up in Britain; supplier = major consignor of lead to Britain
+Painters' Colours And Materials,"oils, gums & dyes",metals & minerals,worked,lead,"Newcastle, Chester",Madras,India & Southeast Asia,4,lead worked up in Britain; supplier = major consignor of lead to Britain
+Painters' Colours And Materials,"oils, gums & dyes","oils, gums & dyes",worked,linseed,Hull crushers,Bengal,India & Southeast Asia,1,linseed worked up in Britain; supplier = major consignor of linseed to Britain
+Painters' Colours And Materials,"oils, gums & dyes","oils, gums & dyes",worked,linseed,Hull crushers,Russia,Europe,2,linseed worked up in Britain; supplier = major consignor of linseed to Britain
+Painters' Colours And Materials,"oils, gums & dyes","oils, gums & dyes",worked,linseed,Hull crushers,Bombay,India & Southeast Asia,3,linseed worked up in Britain; supplier = major consignor of linseed to Britain
+Painters' Colours And Materials,"oils, gums & dyes","oils, gums & dyes",worked,linseed,Hull crushers,Argentine Republic,South America,4,linseed worked up in Britain; supplier = major consignor of linseed to Britain
+Painters' Colours And Materials,"oils, gums & dyes","oils, gums & dyes",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Pickles, Vinegar, Sauces And Condiments",food & drink,food & drink,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Paper,"manufactures, other","manufactures, other",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Spirits, British And Irish",food & drink,food & drink,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Books, Printed","manufactures, other","manufactures, other",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Leather,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",Bengal,India & Southeast Asia,1,hides worked up in Britain; supplier = major consignor of hides to Britain
+Leather,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",United States Of America,North America,2,hides worked up in Britain; supplier = major consignor of hides to Britain
+Leather,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",Germany,Europe,3,hides worked up in Britain; supplier = major consignor of hides to Britain
+Leather,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",British Possessions In South Africa,Africa,4,hides worked up in Britain; supplier = major consignor of hides to Britain
+Leather,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",Holland,Europe,5,hides worked up in Britain; supplier = major consignor of hides to Britain
+Leather,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",Australasia,Australasia & Pacific,6,hides worked up in Britain; supplier = major consignor of hides to Britain
+Leather,animal products,animal products,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Coals, Cinders, &C.",metals & minerals,metals & minerals,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Alkali,"oils, gums & dyes","oils, gums & dyes",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Animals, Living",animal products,animal products,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Glass,"manufactures, other","manufactures, other",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Salt,food & drink,food & drink,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Arms, Ammunition And Military Stores",metals & minerals,metals & minerals,worked,iron ore,"Middlesbrough (Cleveland), South Wales, Cumberland",Spain,Europe,1,iron ore worked up in Britain; supplier = major consignor of iron ore to Britain
+"Arms, Ammunition And Military Stores",metals & minerals,metals & minerals,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Copper,metals & minerals,metals & minerals,worked,copper,Swansea,Chile,South America,1,copper worked up in Britain; supplier = major consignor of copper to Britain
+Copper,metals & minerals,metals & minerals,worked,copper,Swansea,United States Of America,North America,2,copper worked up in Britain; supplier = major consignor of copper to Britain
+Copper,metals & minerals,metals & minerals,worked,copper,Swansea,British Possessions In South Africa,Africa,3,copper worked up in Britain; supplier = major consignor of copper to Britain
+Copper,metals & minerals,metals & minerals,worked,copper,Swansea,Australasia,Australasia & Pacific,4,copper worked up in Britain; supplier = major consignor of copper to Britain
+Copper,metals & minerals,metals & minerals,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Jute Manufactures,textiles,textiles,worked,jute,Dundee,Bengal,India & Southeast Asia,1,jute worked up in Britain; supplier = major consignor of jute to Britain
+Chemical Products And Preparations,"oils, gums & dyes","oils, gums & dyes",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Stationery, Other Than Paper","manufactures, other","manufactures, other",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Gum,"oils, gums & dyes","oils, gums & dyes",worked,gum,London,Egypt,Mediterranean & Levant,1,gum worked up in Britain; supplier = major consignor of gum to Britain
+Gum,"oils, gums & dyes","oils, gums & dyes",worked,gum,London,Turkey,Mediterranean & Levant,2,gum worked up in Britain; supplier = major consignor of gum to Britain
+Gum,"oils, gums & dyes","oils, gums & dyes",worked,gum,London,Straits Settlements,India & Southeast Asia,3,gum worked up in Britain; supplier = major consignor of gum to Britain
+Gum,"oils, gums & dyes","oils, gums & dyes",worked,gum,London,France,Europe,4,gum worked up in Britain; supplier = major consignor of gum to Britain
+Gum,"oils, gums & dyes","oils, gums & dyes",worked,gum,London,Bombay,India & Southeast Asia,5,gum worked up in Britain; supplier = major consignor of gum to Britain
+Medicines,"oils, gums & dyes","oils, gums & dyes",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Umbrellas And Parasols,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",United States Of America,North America,1,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Umbrellas And Parasols,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",Egypt,Mediterranean & Levant,2,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Umbrellas And Parasols,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",Bombay,India & Southeast Asia,3,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Umbrellas And Parasols,textiles,textiles,worked,silk,"Macclesfield, Coventry, Spitalfields",China,China & Japan,1,silk worked up in Britain; supplier = major consignor of silk to Britain
+Umbrellas And Parasols,textiles,textiles,worked,silk,"Macclesfield, Coventry, Spitalfields",France,Europe,2,silk worked up in Britain; supplier = major consignor of silk to Britain
+Umbrellas And Parasols,textiles,textiles,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Skins And Furs,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",Bengal,India & Southeast Asia,1,hides worked up in Britain; supplier = major consignor of hides to Britain
+Skins And Furs,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",United States Of America,North America,2,hides worked up in Britain; supplier = major consignor of hides to Britain
+Skins And Furs,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",Germany,Europe,3,hides worked up in Britain; supplier = major consignor of hides to Britain
+Skins And Furs,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",British Possessions In South Africa,Africa,4,hides worked up in Britain; supplier = major consignor of hides to Britain
+Skins And Furs,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",Holland,Europe,5,hides worked up in Britain; supplier = major consignor of hides to Britain
+Skins And Furs,animal products,animal products,worked,hides,"Bermondsey, Leeds, Bristol tanneries",Australasia,Australasia & Pacific,6,hides worked up in Britain; supplier = major consignor of hides to Britain
+Skins And Furs,animal products,animal products,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Beer And Ale,food & drink,food & drink,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Cotton Yarn And Twist,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",United States Of America,North America,1,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Cotton Yarn And Twist,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",Egypt,Mediterranean & Levant,2,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+Cotton Yarn And Twist,textiles,textiles,worked,cotton,"Lancashire (Manchester, Oldham, Blackburn)",Bombay,India & Southeast Asia,3,cotton worked up in Britain; supplier = major consignor of cotton to Britain
+"Grease, Tallow And Animal Fat",animal products,animal products,worked,tallow,"Liverpool, London soapers and candlers",United States Of America,North America,1,tallow worked up in Britain; supplier = major consignor of tallow to Britain
+"Grease, Tallow And Animal Fat",animal products,animal products,worked,tallow,"Liverpool, London soapers and candlers",New South Wales,Australasia & Pacific,2,tallow worked up in Britain; supplier = major consignor of tallow to Britain
+"Grease, Tallow And Animal Fat",animal products,animal products,worked,tallow,"Liverpool, London soapers and candlers",Argentine Republic,South America,3,tallow worked up in Britain; supplier = major consignor of tallow to Britain
+"Grease, Tallow And Animal Fat",animal products,animal products,worked,tallow,"Liverpool, London soapers and candlers",New Zealand,Australasia & Pacific,4,tallow worked up in Britain; supplier = major consignor of tallow to Britain
+"Grease, Tallow And Animal Fat",animal products,animal products,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Lead,metals & minerals,metals & minerals,worked,lead,"Newcastle, Chester",Spain,Europe,1,lead worked up in Britain; supplier = major consignor of lead to Britain
+Lead,metals & minerals,metals & minerals,worked,lead,"Newcastle, Chester",United States Of America,North America,2,lead worked up in Britain; supplier = major consignor of lead to Britain
+Lead,metals & minerals,metals & minerals,worked,lead,"Newcastle, Chester",France,Europe,3,lead worked up in Britain; supplier = major consignor of lead to Britain
+Lead,metals & minerals,metals & minerals,worked,lead,"Newcastle, Chester",Madras,India & Southeast Asia,4,lead worked up in Britain; supplier = major consignor of lead to Britain
+Lead,metals & minerals,metals & minerals,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Cement,"manufactures, other","manufactures, other",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Cordage, Cables, Ropes And Twine",textiles,textiles,worked,hemp,"Bridport, Hull, Glasgow rope-walks",Philippine Islands,India & Southeast Asia,1,hemp worked up in Britain; supplier = major consignor of hemp to Britain
+"Cordage, Cables, Ropes And Twine",textiles,textiles,worked,hemp,"Bridport, Hull, Glasgow rope-walks",Russia,Europe,2,hemp worked up in Britain; supplier = major consignor of hemp to Britain
+"Cordage, Cables, Ropes And Twine",textiles,textiles,worked,hemp,"Bridport, Hull, Glasgow rope-walks",Italy,Europe,3,hemp worked up in Britain; supplier = major consignor of hemp to Britain
+"Cordage, Cables, Ropes And Twine",textiles,textiles,worked,hemp,"Bridport, Hull, Glasgow rope-walks",Germany,Europe,4,hemp worked up in Britain; supplier = major consignor of hemp to Britain
+"Cordage, Cables, Ropes And Twine",textiles,textiles,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Tin, Unwrought",metals & minerals,metals & minerals,worked,tin,"Cornwall, Liverpool",Straits Settlements,India & Southeast Asia,1,tin worked up in Britain; supplier = major consignor of tin to Britain
+"Tin, Unwrought",metals & minerals,metals & minerals,worked,tin,"Cornwall, Liverpool",New South Wales,Australasia & Pacific,2,tin worked up in Britain; supplier = major consignor of tin to Britain
+"Tin, Unwrought",metals & minerals,metals & minerals,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Caoutchouc Manufactures,"oils, gums & dyes","oils, gums & dyes",worked,caoutchouc,"Silvertown, Manchester",Brazil,South America,1,caoutchouc worked up in Britain; supplier = major consignor of caoutchouc to Britain
+Caoutchouc Manufactures,"oils, gums & dyes","oils, gums & dyes",worked,caoutchouc,"Silvertown, Manchester",Germany,Europe,2,caoutchouc worked up in Britain; supplier = major consignor of caoutchouc to Britain
+Soap,"oils, gums & dyes",animal products,worked,tallow,"Liverpool, London soapers and candlers",United States Of America,North America,1,tallow worked up in Britain; supplier = major consignor of tallow to Britain
+Soap,"oils, gums & dyes",animal products,worked,tallow,"Liverpool, London soapers and candlers",New South Wales,Australasia & Pacific,2,tallow worked up in Britain; supplier = major consignor of tallow to Britain
+Soap,"oils, gums & dyes",animal products,worked,tallow,"Liverpool, London soapers and candlers",Argentine Republic,South America,3,tallow worked up in Britain; supplier = major consignor of tallow to Britain
+Soap,"oils, gums & dyes",animal products,worked,tallow,"Liverpool, London soapers and candlers",New Zealand,Australasia & Pacific,4,tallow worked up in Britain; supplier = major consignor of tallow to Britain
+Soap,"oils, gums & dyes","oils, gums & dyes",worked,palm oil,"Liverpool (Port Sunlight, Widnes)",Lagos,Africa,1,palm oil worked up in Britain; supplier = major consignor of palm oil to Britain
+Soap,"oils, gums & dyes","oils, gums & dyes",worked,palm oil,"Liverpool (Port Sunlight, Widnes)",British West Africa,Africa,2,palm oil worked up in Britain; supplier = major consignor of palm oil to Britain
+Soap,"oils, gums & dyes","oils, gums & dyes",worked,palm oil,"Liverpool (Port Sunlight, Widnes)",The Gold Coast,Africa,3,palm oil worked up in Britain; supplier = major consignor of palm oil to Britain
+Soap,"oils, gums & dyes","oils, gums & dyes",worked,palm oil,"Liverpool (Port Sunlight, Widnes)",Germany,Europe,4,palm oil worked up in Britain; supplier = major consignor of palm oil to Britain
+Soap,"oils, gums & dyes","oils, gums & dyes",worked,palm oil,"Liverpool (Port Sunlight, Widnes)",Niger Protectorate,Africa,5,palm oil worked up in Britain; supplier = major consignor of palm oil to Britain
+Soap,"oils, gums & dyes","oils, gums & dyes",worked,palm oil,"Liverpool (Port Sunlight, Widnes)",Portuguese Possessions In Western Africa,Africa,6,palm oil worked up in Britain; supplier = major consignor of palm oil to Britain
+Soap,"oils, gums & dyes","oils, gums & dyes",home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Wool,textiles,textiles,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+Tea,food & drink,food & drink,worked,tea,London,China,China & Japan,1,tea worked up in Britain; supplier = major consignor of tea to Britain
+Tea,food & drink,food & drink,worked,tea,London,Bengal,India & Southeast Asia,2,tea worked up in Britain; supplier = major consignor of tea to Britain
+Tea,food & drink,food & drink,worked,tea,London,Ceylon,India & Southeast Asia,3,tea worked up in Britain; supplier = major consignor of tea to Britain
+"Hides, Raw",animal products,animal products,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
+"Corn, Grain, Meal And Flour",food & drink,food & drink,home,,,Britain,Britain,0,"home-grown or mined material, or no traceable input"
