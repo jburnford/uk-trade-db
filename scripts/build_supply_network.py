@@ -18,7 +18,9 @@ Routes:
                and coal, hides), or goods with no traceable input
 
 Outputs
-  reports/canada_supply_network_edges.csv   commodity, family, route, hub,
+  reports/canada_supply_network_edges.csv   commodity, commodity_family, family (of
+                                            what travels on the line: the material for
+                                            worked routes), route, material, hub,
                                             supplier, region, rank, note
   reports/canada_supply_network.json        the same plus node coordinates
 Usage: python3 scripts/build_supply_network.py
@@ -47,9 +49,9 @@ FAMILY = {  # export-side commodity/material -> family
                           'MACHINERY AND MILLWORK', 'COPPER', 'LEAD', 'TIN, UNWROUGHT', 'ARMS, AMMUNITION AND MILITARY STORES',
                           'ZINC AND ZINC ORE', 'TIN', 'COALS, CINDERS, &c.', 'BRASS MANUFACTURES', 'PLATED AND GILT WARES'],
     'animal products': ['LEATHER', 'SKINS AND FURS', 'SKINS, FURS AND PELTS', 'TALLOW and STEARINE', 'HIDES, RAW',
-                        'GREASE, TALLOW AND ANIMAL FAT', 'SOAP', 'CANDLES', 'SADDLERY AND HARNESS', 'ANIMALS, LIVING',
+                        'GREASE, TALLOW AND ANIMAL FAT', 'SADDLERY AND HARNESS', 'ANIMALS, LIVING',
                         'BRISTLES', 'FEATHERS AND DOWN'],
-    'oils, gums & dyes': ['OIL, OTHER THAN ESSENTIAL', "PAINTERS' COLOURS AND MATERIALS", 'CAOUTCHOUC MANUFACTURES',
+    'oils, gums & dyes': ['SOAP', 'CANDLES', 'OIL, OTHER THAN ESSENTIAL', "PAINTERS' COLOURS AND MATERIALS", 'CAOUTCHOUC MANUFACTURES',
                           'CAOUTCHOU', 'GUM', 'DYE STUFFS AND DYE WOODS', 'DRUGS', 'CHEMICAL PRODUCTS AND PREPARATIONS',
                           'MEDICINES', 'ALKALI', 'OIL', 'CHEMICAL MANUFACTURES AND PRODUCTS', 'GUTTA PERCHA', 'SALTPETRE',
                           "PAINTERS' Colours and Pigments, Unenumerated"],
@@ -58,6 +60,17 @@ FAMILY = {  # export-side commodity/material -> family
                             'MUSICAL INSTRUMENTS', 'TOYS', 'FLOWERS, Artificial'],
 }
 FAM_OF = {c: f for f, cs in FAMILY.items() for c in cs}
+# a WORKED supply line is coloured by what travels on it -- the material --
+# not by the finished good: palm oil into soap is a vegetable-oil line, tallow
+# into the same soap an animal-product line, iron ore into rails a mineral line
+MAT_FAMILY = {'cotton': 'textiles', 'wool': 'textiles', 'flax': 'textiles', 'jute': 'textiles', 'hemp': 'textiles',
+              'silk': 'textiles', 'sugar': 'food & drink', 'tea': 'food & drink',
+              'iron ore': 'metals & minerals', 'copper': 'metals & minerals', 'zinc': 'metals & minerals',
+              'lead': 'metals & minerals', 'tin': 'metals & minerals',
+              'hides': 'animal products', 'tallow': 'animal products',
+              'palm oil': 'oils, gums & dyes', 'linseed': 'oils, gums & dyes', 'gutta percha': 'oils, gums & dyes',
+              'caoutchouc': 'oils, gums & dyes', 'gum': 'oils, gums & dyes',
+              'timber': 'manufactures, other'}
 
 # the conventional British centre where a material was worked up
 HUB = {'cotton': 'Lancashire (Manchester, Oldham, Blackburn)', 'wool': 'West Riding (Bradford, Leeds, Huddersfield)',
@@ -143,7 +156,7 @@ def main():
             continue
         for rank, (place, s) in enumerate(majors(mix(pref)), 1):
             add_node(place)
-            edges.append(dict(commodity=name.title(), family=FAM_OF.get(name, 'other'), route='forwarded',
+            edges.append(dict(commodity=name.title(), commodity_family=FAM_OF.get(name, 'other'), family=FAM_OF.get(name, 'other'), route='forwarded',
                               material='', hub='London / Liverpool warehouses', supplier=place,
                               region=nodes[place]['region'], rank=rank,
                               note='re-exported to Canada unchanged; supplier = major consignor to Britain'))
@@ -159,7 +172,7 @@ def main():
             if mat == 'DOMESTIC':
                 add_node('Britain')
                 nodes['Britain'].update(lat=53.0, lon=-2.0, region='Britain', kind='home')
-                edges.append(dict(commodity=name.title(), family=FAM_OF.get(name, 'other'), route='home',
+                edges.append(dict(commodity=name.title(), commodity_family=FAM_OF.get(name, 'other'), family=FAM_OF.get(name, 'other'), route='home',
                                   material='', hub='', supplier='Britain', region='Britain', rank=0,
                                   note='home-grown or mined material, or no traceable input'))
                 continue
@@ -167,8 +180,8 @@ def main():
                 continue
             for rank, (place, s) in enumerate(mat_mix.get(mat, []), 1):
                 add_node(place)
-                edges.append(dict(commodity=name.title(), family=FAM_OF.get(name, 'other'), route='worked',
-                                  material=mat, hub=HUB.get(mat, ''), supplier=place,
+                edges.append(dict(commodity=name.title(), commodity_family=FAM_OF.get(name, 'other'), family=MAT_FAMILY.get(mat, FAM_OF.get(name, 'other')),
+                                  route='worked', material=mat, hub=HUB.get(mat, ''), supplier=place,
                                   region=nodes[place]['region'], rank=rank,
                                   note=f'{mat} worked up in Britain; supplier = major consignor of {mat} to Britain'))
     add_node('Canada')
