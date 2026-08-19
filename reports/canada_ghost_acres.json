@@ -1,0 +1,5635 @@
+{
+ "total_through": 25177450,
+ "total_embodied": 223238938,
+ "places": [
+  {
+   "place": "DOMESTIC",
+   "region": "Britain",
+   "lat": null,
+   "lon": null,
+   "through": 0,
+   "embodied": 91780336,
+   "total": 91780336,
+   "materials": [],
+   "through_goods": []
+  },
+  {
+   "place": "Australasia",
+   "region": "Australasia & Pacific",
+   "lat": -30.0,
+   "lon": 145.0,
+   "through": 1116156,
+   "embodied": 28988211,
+   "total": 30104367,
+   "materials": [
+    [
+     "wool",
+     27569763
+    ],
+    [
+     "tallow",
+     439195
+    ],
+    [
+     "copper",
+     385553
+    ],
+    [
+     "tin",
+     114389
+    ]
+   ],
+   "through_goods": [
+    [
+     "WOOL",
+     641003
+    ],
+    [
+     "TALLOW and STEARINE",
+     202379
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     136942
+    ],
+    [
+     "HEMP",
+     29060
+    ]
+   ]
+  },
+  {
+   "place": "United States Of America",
+   "region": "North America",
+   "lat": 40.71,
+   "lon": -74.01,
+   "through": 1397915,
+   "embodied": 28658805,
+   "total": 30056721,
+   "materials": [
+    [
+     "cotton",
+     26652975
+    ],
+    [
+     "copper",
+     575464
+    ],
+    [
+     "zinc",
+     356311
+    ],
+    [
+     "tallow",
+     305875
+    ]
+   ],
+   "through_goods": [
+    [
+     "HAMS",
+     339997
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     162327
+    ],
+    [
+     "COTTON, RAW",
+     153201
+    ],
+    [
+     "TALLOW and STEARINE",
+     140946
+    ]
+   ]
+  },
+  {
+   "place": "British East Indies",
+   "region": "India & Southeast Asia",
+   "lat": 20.0,
+   "lon": 77.0,
+   "through": 6187050,
+   "embodied": 11929432,
+   "total": 18116482,
+   "materials": [
+    [
+     "cotton",
+     4044067
+    ],
+    [
+     "wool",
+     1559726
+    ],
+    [
+     "linseed",
+     1546934
+    ],
+    [
+     "jute",
+     1228327
+    ]
+   ],
+   "through_goods": [
+    [
+     "TEA",
+     4406191
+    ],
+    [
+     "RICE",
+     537217
+    ],
+    [
+     "SPICES",
+     401952
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     162451
+    ]
+   ]
+  },
+  {
+   "place": "Spain",
+   "region": "Europe",
+   "lat": 43.26,
+   "lon": -2.93,
+   "through": 850523,
+   "embodied": 11156079,
+   "total": 12006602,
+   "materials": [
+    [
+     "iron ore",
+     10604851
+    ],
+    [
+     "lead",
+     389305
+    ],
+    [
+     "copper",
+     81344
+    ],
+    [
+     "wool",
+     30438
+    ]
+   ],
+   "through_goods": [
+    [
+     "FRUIT",
+     429953
+    ],
+    [
+     "IRON AND STEEL",
+     187091
+    ],
+    [
+     "WINE",
+     118684
+    ],
+    [
+     "SPIRITS",
+     70772
+    ]
+   ]
+  },
+  {
+   "place": "China",
+   "region": "China & Japan",
+   "lat": 31.23,
+   "lon": 121.47,
+   "through": 5062824,
+   "embodied": 4003286,
+   "total": 9066110,
+   "materials": [
+    [
+     "silk",
+     3542463
+    ],
+    [
+     "tea",
+     230064
+    ],
+    [
+     "wool",
+     63930
+    ],
+    [
+     "zinc",
+     63386
+    ]
+   ],
+   "through_goods": [
+    [
+     "TEA",
+     4600814
+    ],
+    [
+     "SILK, RAW AND THROWN",
+     197005
+    ],
+    [
+     "FRUIT",
+     59752
+    ],
+    [
+     "HEMP",
+     49556
+    ]
+   ]
+  },
+  {
+   "place": "France",
+   "region": "Europe",
+   "lat": 49.49,
+   "lon": 0.11,
+   "through": 2806388,
+   "embodied": 4150451,
+   "total": 6956839,
+   "materials": [
+    [
+     "silk",
+     1558293
+    ],
+    [
+     "wool",
+     818091
+    ],
+    [
+     "zinc",
+     612928
+    ],
+    [
+     "sugar",
+     507743
+    ]
+   ],
+   "through_goods": [
+    [
+     "WOOLLEN MANUFACTURES",
+     608016
+    ],
+    [
+     "SILK MANUFACTURES",
+     603105
+    ],
+    [
+     "WINE",
+     231552
+    ],
+    [
+     "SILK, RAW AND THROWN",
+     170515
+    ]
+   ]
+  },
+  {
+   "place": "Russia",
+   "region": "Europe",
+   "lat": 59.94,
+   "lon": 30.31,
+   "through": 376445,
+   "embodied": 6308565,
+   "total": 6685010,
+   "materials": [
+    [
+     "flax",
+     3727258
+    ],
+    [
+     "wool",
+     1152947
+    ],
+    [
+     "linseed",
+     988972
+    ],
+    [
+     "hemp",
+     114719
+    ]
+   ],
+   "through_goods": [
+    [
+     "HEMP",
+     185135
+    ],
+    [
+     "FLAX",
+     45365
+    ],
+    [
+     "WOOL",
+     28905
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     27745
+    ]
+   ]
+  },
+  {
+   "place": "Egypt",
+   "region": "Mediterranean & Levant",
+   "lat": 31.2,
+   "lon": 29.92,
+   "through": 82266,
+   "embodied": 6332544,
+   "total": 6414809,
+   "materials": [
+    [
+     "cotton",
+     5850446
+    ],
+    [
+     "gum",
+     185408
+    ],
+    [
+     "wool",
+     182415
+    ],
+    [
+     "sugar",
+     34710
+    ]
+   ],
+   "through_goods": [
+    [
+     "COTTON, RAW",
+     42805
+    ],
+    [
+     "TEA",
+     9573
+    ],
+    [
+     "FRUIT",
+     7369
+    ],
+    [
+     "WOOL",
+     4929
+    ]
+   ]
+  },
+  {
+   "place": "British Possessions In South Africa",
+   "region": "Africa",
+   "lat": -32.0,
+   "lon": 24.0,
+   "through": 387313,
+   "embodied": 5301638,
+   "total": 5688952,
+   "materials": [
+    [
+     "wool",
+     4798896
+    ],
+    [
+     "copper",
+     356224
+    ],
+    [
+     "hides",
+     91869
+    ],
+    [
+     "zinc",
+     37915
+    ]
+   ],
+   "through_goods": [
+    [
+     "SKINS, FURS AND PELTS",
+     187942
+    ],
+    [
+     "WOOL",
+     124523
+    ],
+    [
+     "FEATHERS AND DOWN",
+     23347
+    ],
+    [
+     "FARINACEOUS SUBSTANCES",
+     18782
+    ]
+   ]
+  },
+  {
+   "place": "Germany",
+   "region": "Europe",
+   "lat": 53.55,
+   "lon": 9.99,
+   "through": 880259,
+   "embodied": 3827471,
+   "total": 4707730,
+   "materials": [
+    [
+     "sugar",
+     1379313
+    ],
+    [
+     "zinc",
+     1265579
+    ],
+    [
+     "wool",
+     403769
+    ],
+    [
+     "flax",
+     188558
+    ]
+   ],
+   "through_goods": [
+    [
+     "HEMP",
+     144849
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     120428
+    ],
+    [
+     "WOOLLEN YARN",
+     88811
+    ],
+    [
+     "SUGAR",
+     86674
+    ]
+   ]
+  },
+  {
+   "place": "Belgium",
+   "region": "Europe",
+   "lat": 51.22,
+   "lon": 4.4,
+   "through": 970668,
+   "embodied": 3266635,
+   "total": 4237302,
+   "materials": [
+    [
+     "flax",
+     1409049
+    ],
+    [
+     "zinc",
+     834903
+    ],
+    [
+     "wool",
+     456248
+    ],
+    [
+     "silk",
+     197977
+    ]
+   ],
+   "through_goods": [
+    [
+     "SILK MANUFACTURES",
+     288377
+    ],
+    [
+     "WOOLLEN YARN",
+     157723
+    ],
+    [
+     "EMBROIDERY AND NEEDLEWORK",
+     79568
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     79446
+    ]
+   ]
+  },
+  {
+   "place": "Holland",
+   "region": "Europe",
+   "lat": 51.92,
+   "lon": 4.48,
+   "through": 1285350,
+   "embodied": 2634134,
+   "total": 3919484,
+   "materials": [
+    [
+     "zinc",
+     1175585
+    ],
+    [
+     "flax",
+     499740
+    ],
+    [
+     "sugar",
+     300928
+    ],
+    [
+     "silk",
+     145941
+    ]
+   ],
+   "through_goods": [
+    [
+     "SILK MANUFACTURES",
+     356310
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     111864
+    ],
+    [
+     "TEA",
+     89302
+    ],
+    [
+     "IRON AND STEEL",
+     61508
+    ]
+   ]
+  },
+  {
+   "place": "UNTRACED",
+   "region": "Untraced",
+   "lat": null,
+   "lon": null,
+   "through": 366992,
+   "embodied": 2858772,
+   "total": 3225764,
+   "materials": [],
+   "through_goods": []
+  },
+  {
+   "place": "Brazil",
+   "region": "South America",
+   "lat": -22.91,
+   "lon": -43.17,
+   "through": 135868,
+   "embodied": 1685194,
+   "total": 1821061,
+   "materials": [
+    [
+     "cotton",
+     1044807
+    ],
+    [
+     "caoutchouc",
+     376215
+    ],
+    [
+     "sugar",
+     156002
+    ],
+    [
+     "zinc",
+     62368
+    ]
+   ],
+   "through_goods": [
+    [
+     "COFFEE",
+     40669
+    ],
+    [
+     "GOODS UNENUMERATED",
+     27902
+    ],
+    [
+     "CAOUTCHOU",
+     25860
+    ],
+    [
+     "SUGAR",
+     9803
+    ]
+   ]
+  },
+  {
+   "place": "Turkey",
+   "region": "Mediterranean & Levant",
+   "lat": 41.01,
+   "lon": 28.98,
+   "through": 261976,
+   "embodied": 1191268,
+   "total": 1453245,
+   "materials": [
+    [
+     "wool",
+     614691
+    ],
+    [
+     "iron ore",
+     236725
+    ],
+    [
+     "gum",
+     144157
+    ],
+    [
+     "zinc",
+     71099
+    ]
+   ],
+   "through_goods": [
+    [
+     "FRUIT",
+     146684
+    ],
+    [
+     "WOOL",
+     39614
+    ],
+    [
+     "LIQUORICE",
+     26435
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     14130
+    ]
+   ]
+  },
+  {
+   "place": "Italy",
+   "region": "Europe",
+   "lat": 44.41,
+   "lon": 8.93,
+   "through": 427469,
+   "embodied": 857080,
+   "total": 1284550,
+   "materials": [
+    [
+     "iron ore",
+     309912
+    ],
+    [
+     "zinc",
+     215374
+    ],
+    [
+     "hemp",
+     106018
+    ],
+    [
+     "copper",
+     71609
+    ]
+   ],
+   "through_goods": [
+    [
+     "HEMP",
+     171093
+    ],
+    [
+     "FRUIT",
+     64654
+    ],
+    [
+     "LIQUORICE",
+     59661
+    ],
+    [
+     "CHEMICAL MANUFACTURES AND PRODUCTS",
+     29496
+    ]
+   ]
+  },
+  {
+   "place": "Chile",
+   "region": "South America",
+   "lat": -33.05,
+   "lon": -71.61,
+   "through": 52105,
+   "embodied": 1042593,
+   "total": 1094698,
+   "materials": [
+    [
+     "copper",
+     829268
+    ],
+    [
+     "wool",
+     134627
+    ],
+    [
+     "cotton",
+     31461
+    ],
+    [
+     "tin",
+     11141
+    ]
+   ],
+   "through_goods": [
+    [
+     "COPPER, Ore of",
+     11044
+    ],
+    [
+     "CHEMICAL MANUFACTURES AND PRODUCTS",
+     9405
+    ],
+    [
+     "SILK MANUFACTURES",
+     7252
+    ],
+    [
+     "WOOL",
+     4601
+    ]
+   ]
+  },
+  {
+   "place": "Philippine Islands",
+   "region": "India & Southeast Asia",
+   "lat": 14.6,
+   "lon": 120.98,
+   "through": 411929,
+   "embodied": 377679,
+   "total": 789608,
+   "materials": [
+    [
+     "hemp",
+     248341
+    ],
+    [
+     "sugar",
+     117019
+    ],
+    [
+     "zinc",
+     6719
+    ],
+    [
+     "gum",
+     3794
+    ]
+   ],
+   "through_goods": [
+    [
+     "HEMP",
+     400777
+    ],
+    [
+     "SUGAR",
+     7353
+    ],
+    [
+     "COFFEE",
+     1641
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     639
+    ]
+   ]
+  },
+  {
+   "place": "Falkland Islands",
+   "region": "South America",
+   "lat": -51.7,
+   "lon": -57.85,
+   "through": 19947,
+   "embodied": 761280,
+   "total": 781227,
+   "materials": [
+    [
+     "wool",
+     759248
+    ],
+    [
+     "tallow",
+     1883
+    ],
+    [
+     "sugar",
+     129
+    ],
+    [
+     "copper",
+     19
+    ]
+   ],
+   "through_goods": [
+    [
+     "WOOL",
+     17652
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     1417
+    ],
+    [
+     "TALLOW and STEARINE",
+     868
+    ],
+    [
+     "SUGAR",
+     8
+    ]
+   ]
+  },
+  {
+   "place": "Greece",
+   "region": "Mediterranean & Levant",
+   "lat": 37.94,
+   "lon": 23.65,
+   "through": 295283,
+   "embodied": 474694,
+   "total": 769976,
+   "materials": [
+    [
+     "iron ore",
+     347047
+    ],
+    [
+     "zinc",
+     74043
+    ],
+    [
+     "lead",
+     34046
+    ],
+    [
+     "copper",
+     12700
+    ]
+   ],
+   "through_goods": [
+    [
+     "FRUIT",
+     280087
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     7046
+    ],
+    [
+     "IRON AND STEEL",
+     6119
+    ],
+    [
+     "OIL",
+     753
+    ]
+   ]
+  },
+  {
+   "place": "Argentine Republic",
+   "region": "South America",
+   "lat": -34.61,
+   "lon": -58.38,
+   "through": 143674,
+   "embodied": 571134,
+   "total": 714807,
+   "materials": [
+    [
+     "wool",
+     274457
+    ],
+    [
+     "linseed",
+     174543
+    ],
+    [
+     "tallow",
+     95320
+    ],
+    [
+     "hides",
+     11034
+    ]
+   ],
+   "through_goods": [
+    [
+     "SKINS, FURS AND PELTS",
+     80679
+    ],
+    [
+     "TALLOW and STEARINE",
+     43923
+    ],
+    [
+     "WOOL",
+     6398
+    ],
+    [
+     "SILK, RAW AND THROWN",
+     5312
+    ]
+   ]
+  },
+  {
+   "place": "Peru",
+   "region": "South America",
+   "lat": -12.05,
+   "lon": -77.14,
+   "through": 46748,
+   "embodied": 501163,
+   "total": 547911,
+   "materials": [
+    [
+     "cotton",
+     190761
+    ],
+    [
+     "wool",
+     161969
+    ],
+    [
+     "sugar",
+     98236
+    ],
+    [
+     "copper",
+     37496
+    ]
+   ],
+   "through_goods": [
+    [
+     "WOOL",
+     13929
+    ],
+    [
+     "SPIRITS",
+     12618
+    ],
+    [
+     "SUGAR",
+     6173
+    ],
+    [
+     "WOOLLEN MANUFACTURES",
+     2629
+    ]
+   ]
+  },
+  {
+   "place": "Portugal",
+   "region": "Europe",
+   "lat": 38.72,
+   "lon": -9.13,
+   "through": 268119,
+   "embodied": 271926,
+   "total": 540045,
+   "materials": [
+    [
+     "wool",
+     162143
+    ],
+    [
+     "iron ore",
+     43407
+    ],
+    [
+     "copper",
+     27328
+    ],
+    [
+     "caoutchouc",
+     17792
+    ]
+   ],
+   "through_goods": [
+    [
+     "WINE",
+     104317
+    ],
+    [
+     "FRUIT",
+     66151
+    ],
+    [
+     "SPIRITS",
+     33582
+    ],
+    [
+     "TEA",
+     30639
+    ]
+   ]
+  },
+  {
+   "place": "Algeria",
+   "region": "Mediterranean & Levant",
+   "lat": 36.75,
+   "lon": 3.06,
+   "through": 12377,
+   "embodied": 518999,
+   "total": 531376,
+   "materials": [
+    [
+     "iron ore",
+     489302
+    ],
+    [
+     "copper",
+     13432
+    ],
+    [
+     "zinc",
+     13423
+    ],
+    [
+     "lead",
+     2074
+    ]
+   ],
+   "through_goods": [
+    [
+     "IRON AND STEEL",
+     8627
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     1277
+    ],
+    [
+     "GOODS UNENUMERATED",
+     728
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     609
+    ]
+   ]
+  },
+  {
+   "place": "Japan",
+   "region": "China & Japan",
+   "lat": 35.44,
+   "lon": 139.64,
+   "through": 69959,
+   "embodied": 455665,
+   "total": 525624,
+   "materials": [
+    [
+     "silk",
+     309625
+    ],
+    [
+     "copper",
+     101944
+    ],
+    [
+     "zinc",
+     40736
+    ],
+    [
+     "hides",
+     880
+    ]
+   ],
+   "through_goods": [
+    [
+     "RICE",
+     20128
+    ],
+    [
+     "SILK, RAW AND THROWN",
+     18464
+    ],
+    [
+     "SILK MANUFACTURES",
+     4768
+    ],
+    [
+     "TEA",
+     3963
+    ]
+   ]
+  },
+  {
+   "place": "British West India Islands",
+   "region": "Caribbean & Central America",
+   "lat": 15.0,
+   "lon": -75.0,
+   "through": 220294,
+   "embodied": 302789,
+   "total": 523082,
+   "materials": [
+    [
+     "sugar",
+     228466
+    ],
+    [
+     "zinc",
+     43285
+    ],
+    [
+     "cotton",
+     11288
+    ],
+    [
+     "gutta percha",
+     10138
+    ]
+   ],
+   "through_goods": [
+    [
+     "SPIRITS",
+     102054
+    ],
+    [
+     "SPICES",
+     49422
+    ],
+    [
+     "COCOA",
+     19445
+    ],
+    [
+     "SUGAR",
+     14357
+    ]
+   ]
+  },
+  {
+   "place": "Canada",
+   "region": "North America",
+   "lat": 45.5,
+   "lon": -73.57,
+   "through": 215195,
+   "embodied": 270371,
+   "total": 485566,
+   "materials": [
+    [
+     "copper",
+     78868
+    ],
+    [
+     "timber",
+     69135
+    ],
+    [
+     "zinc",
+     64139
+    ],
+    [
+     "lead",
+     9424
+    ]
+   ],
+   "through_goods": [
+    [
+     "SKINS, FURS AND PELTS",
+     45960
+    ],
+    [
+     "FISH",
+     40662
+    ],
+    [
+     "FRUIT",
+     39693
+    ],
+    [
+     "HAMS",
+     34185
+    ]
+   ]
+  },
+  {
+   "place": "Java",
+   "region": "India & Southeast Asia",
+   "lat": -6.2,
+   "lon": 106.85,
+   "through": 79142,
+   "embodied": 345175,
+   "total": 424317,
+   "materials": [
+    [
+     "sugar",
+     315452
+    ],
+    [
+     "gum",
+     20197
+    ],
+    [
+     "hides",
+     3202
+    ],
+    [
+     "tin",
+     2326
+    ]
+   ],
+   "through_goods": [
+    [
+     "TEA",
+     43518
+    ],
+    [
+     "SUGAR",
+     19823
+    ],
+    [
+     "SPIRITS",
+     6150
+    ],
+    [
+     "SPICES",
+     5292
+    ]
+   ]
+  },
+  {
+   "place": "Sweden",
+   "region": "Europe",
+   "lat": 57.71,
+   "lon": 11.97,
+   "through": 115502,
+   "embodied": 240563,
+   "total": 356065,
+   "materials": [
+    [
+     "iron ore",
+     94775
+    ],
+    [
+     "timber",
+     65101
+    ],
+    [
+     "zinc",
+     32998
+    ],
+    [
+     "copper",
+     29354
+    ]
+   ],
+   "through_goods": [
+    [
+     "IRON AND STEEL",
+     98552
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     3140
+    ],
+    [
+     "BRISTLES",
+     2208
+    ],
+    [
+     "FISH",
+     1766
+    ]
+   ]
+  },
+  {
+   "place": "British Guiana",
+   "region": "South America",
+   "lat": 6.8,
+   "lon": -58.16,
+   "through": 110743,
+   "embodied": 214395,
+   "total": 325138,
+   "materials": [
+    [
+     "sugar",
+     187905
+    ],
+    [
+     "gutta percha",
+     23669
+    ],
+    [
+     "zinc",
+     1584
+    ],
+    [
+     "timber",
+     553
+    ]
+   ],
+   "through_goods": [
+    [
+     "SPIRITS",
+     92588
+    ],
+    [
+     "SUGAR",
+     11808
+    ],
+    [
+     "FRUIT",
+     5194
+    ],
+    [
+     "COFFEE",
+     513
+    ]
+   ]
+  },
+  {
+   "place": "Denmark",
+   "region": "Europe",
+   "lat": 55.68,
+   "lon": 12.57,
+   "through": 44677,
+   "embodied": 161593,
+   "total": 206270,
+   "materials": [
+    [
+     "wool",
+     143480
+    ],
+    [
+     "zinc",
+     4890
+    ],
+    [
+     "cotton",
+     3930
+    ],
+    [
+     "sugar",
+     3206
+    ]
+   ],
+   "through_goods": [
+    [
+     "BRISTLES",
+     17559
+    ],
+    [
+     "FISH",
+     6618
+    ],
+    [
+     "LEATHER AND LEATHER MANUFACTURES",
+     3927
+    ],
+    [
+     "WOOL",
+     3764
+    ]
+   ]
+  },
+  {
+   "place": "Morocco",
+   "region": "Mediterranean & Levant",
+   "lat": 35.78,
+   "lon": -5.81,
+   "through": 22414,
+   "embodied": 183378,
+   "total": 205791,
+   "materials": [
+    [
+     "wool",
+     121071
+    ],
+    [
+     "gum",
+     61873
+    ],
+    [
+     "tallow",
+     308
+    ],
+    [
+     "hides",
+     126
+    ]
+   ],
+   "through_goods": [
+    [
+     "FRUIT",
+     13115
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     4234
+    ],
+    [
+     "WOOL",
+     3162
+    ],
+    [
+     "GUM",
+     530
+    ]
+   ]
+  },
+  {
+   "place": "Uruguay",
+   "region": "South America",
+   "lat": -34.9,
+   "lon": -56.19,
+   "through": 40741,
+   "embodied": 134676,
+   "total": 175417,
+   "materials": [
+    [
+     "wool",
+     76613
+    ],
+    [
+     "tallow",
+     48918
+    ],
+    [
+     "hides",
+     5364
+    ],
+    [
+     "caoutchouc",
+     2564
+    ]
+   ],
+   "through_goods": [
+    [
+     "TALLOW and STEARINE",
+     22541
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     14401
+    ],
+    [
+     "WOOL",
+     1781
+    ],
+    [
+     "WOOLLEN MANUFACTURES",
+     814
+    ]
+   ]
+  },
+  {
+   "place": "Norway",
+   "region": "Europe",
+   "lat": 59.91,
+   "lon": 10.75,
+   "through": 52695,
+   "embodied": 112885,
+   "total": 165580,
+   "materials": [
+    [
+     "copper",
+     31471
+    ],
+    [
+     "timber",
+     26380
+    ],
+    [
+     "iron ore",
+     23035
+    ],
+    [
+     "zinc",
+     22365
+    ]
+   ],
+   "through_goods": [
+    [
+     "FISH",
+     27245
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     8744
+    ],
+    [
+     "IRON AND STEEL",
+     6457
+    ],
+    [
+     "GOODS UNENUMERATED",
+     2455
+    ]
+   ]
+  },
+  {
+   "place": "Asiatic",
+   "region": "India & Southeast Asia",
+   "lat": 30.0,
+   "lon": 70.0,
+   "through": 7823,
+   "embodied": 130782,
+   "total": 138605,
+   "materials": [
+    [
+     "wool",
+     84059
+    ],
+    [
+     "iron ore",
+     32384
+    ],
+    [
+     "gum",
+     12527
+    ],
+    [
+     "zinc",
+     748
+    ]
+   ],
+   "through_goods": [
+    [
+     "WOOL",
+     4914
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     1129
+    ],
+    [
+     "DRUGS",
+     799
+    ],
+    [
+     "IRON AND STEEL",
+     571
+    ]
+   ]
+  },
+  {
+   "place": "Austrian Territories",
+   "region": "Europe",
+   "lat": 45.65,
+   "lon": 13.77,
+   "through": 28364,
+   "embodied": 102838,
+   "total": 131202,
+   "materials": [
+    [
+     "gum",
+     46836
+    ],
+    [
+     "zinc",
+     21419
+    ],
+    [
+     "wool",
+     15109
+    ],
+    [
+     "sugar",
+     6548
+    ]
+   ],
+   "through_goods": [
+    [
+     "GOODS UNENUMERATED",
+     6416
+    ],
+    [
+     "DYE STUFFS AND DYE WOODS",
+     5195
+    ],
+    [
+     "HEMP",
+     3857
+    ],
+    [
+     "DRUGS",
+     2164
+    ]
+   ]
+  },
+  {
+   "place": "United States Of Colombia",
+   "region": "Caribbean & Central America",
+   "lat": 10.4,
+   "lon": -75.51,
+   "through": 28264,
+   "embodied": 89231,
+   "total": 117495,
+   "materials": [
+    [
+     "cotton",
+     61651
+    ],
+    [
+     "zinc",
+     10384
+    ],
+    [
+     "caoutchouc",
+     5493
+    ],
+    [
+     "copper",
+     3059
+    ]
+   ],
+   "through_goods": [
+    [
+     "COFFEE",
+     9493
+    ],
+    [
+     "DRUGS",
+     9468
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     2365
+    ],
+    [
+     "DYE STUFFS AND DYE WOODS",
+     1081
+    ]
+   ]
+  },
+  {
+   "place": "Spanish West India Islands",
+   "region": "Caribbean & Central America",
+   "lat": 20.0,
+   "lon": -77.0,
+   "through": 17365,
+   "embodied": 99231,
+   "total": 116597,
+   "materials": [
+    [
+     "sugar",
+     91813
+    ],
+    [
+     "iron ore",
+     3730
+    ],
+    [
+     "cotton",
+     3168
+    ],
+    [
+     "timber",
+     520
+    ]
+   ],
+   "through_goods": [
+    [
+     "SPIRITS",
+     5915
+    ],
+    [
+     "SUGAR",
+     5769
+    ],
+    [
+     "FRUIT",
+     4249
+    ],
+    [
+     "COFFEE",
+     1171
+    ]
+   ]
+  },
+  {
+   "place": "Channel Islands",
+   "region": "Europe",
+   "lat": 49.45,
+   "lon": -2.35,
+   "through": 22545,
+   "embodied": 79560,
+   "total": 102105,
+   "materials": [
+    [
+     "zinc",
+     78073
+    ],
+    [
+     "wool",
+     910
+    ],
+    [
+     "copper",
+     294
+    ],
+    [
+     "tallow",
+     159
+    ]
+   ],
+   "through_goods": [
+    [
+     "FRUIT",
+     7514
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     7429
+    ],
+    [
+     "GOODS UNENUMERATED",
+     2580
+    ],
+    [
+     "SPIRITS",
+     1823
+    ]
+   ]
+  },
+  {
+   "place": "British West Africa",
+   "region": "Africa",
+   "lat": 6.45,
+   "lon": 3.39,
+   "through": 9385,
+   "embodied": 89742,
+   "total": 99127,
+   "materials": [
+    [
+     "palm oil",
+     49003
+    ],
+    [
+     "gum",
+     23144
+    ],
+    [
+     "caoutchouc",
+     17086
+    ],
+    [
+     "wool",
+     177
+    ]
+   ],
+   "through_goods": [
+    [
+     "OIL",
+     3273
+    ],
+    [
+     "SPICES",
+     2447
+    ],
+    [
+     "COFFEE",
+     1540
+    ],
+    [
+     "CAOUTCHOU",
+     1174
+    ]
+   ]
+  },
+  {
+   "place": "Venezuela",
+   "region": "Caribbean & Central America",
+   "lat": 10.6,
+   "lon": -66.93,
+   "through": 3327,
+   "embodied": 93541,
+   "total": 96868,
+   "materials": [
+    [
+     "copper",
+     85052
+    ],
+    [
+     "gutta percha",
+     7545
+    ],
+    [
+     "cotton",
+     726
+    ],
+    [
+     "caoutchouc",
+     192
+    ]
+   ],
+   "through_goods": [
+    [
+     "COPPER, Ore of",
+     1133
+    ],
+    [
+     "FARINACEOUS SUBSTANCES",
+     789
+    ],
+    [
+     "DYE STUFFS AND DYE WOODS",
+     533
+    ],
+    [
+     "COFFEE",
+     425
+    ]
+   ]
+  },
+  {
+   "place": "Mauritius",
+   "region": "Africa",
+   "lat": -20.16,
+   "lon": 57.5,
+   "through": 25249,
+   "embodied": 70359,
+   "total": 95608,
+   "materials": [
+    [
+     "sugar",
+     53873
+    ],
+    [
+     "hemp",
+     6776
+    ],
+    [
+     "caoutchouc",
+     3509
+    ],
+    [
+     "hides",
+     3426
+    ]
+   ],
+   "through_goods": [
+    [
+     "HEMP",
+     10934
+    ],
+    [
+     "SPIRITS",
+     6486
+    ],
+    [
+     "SUGAR",
+     3385
+    ],
+    [
+     "DRUGS",
+     2198
+    ]
+   ]
+  },
+  {
+   "place": "Mexico",
+   "region": "Caribbean & Central America",
+   "lat": 19.2,
+   "lon": -96.14,
+   "through": 31122,
+   "embodied": 61356,
+   "total": 92478,
+   "materials": [
+    [
+     "copper",
+     31099
+    ],
+    [
+     "hemp",
+     12072
+    ],
+    [
+     "zinc",
+     7523
+    ],
+    [
+     "sugar",
+     3708
+    ]
+   ],
+   "through_goods": [
+    [
+     "HEMP",
+     19482
+    ],
+    [
+     "HATS OR BONNETS",
+     3635
+    ],
+    [
+     "SILK, RAW AND THROWN",
+     1483
+    ],
+    [
+     "DYE STUFFS AND DYE WOODS",
+     1450
+    ]
+   ]
+  },
+  {
+   "place": "Aden",
+   "region": "Africa",
+   "lat": 12.79,
+   "lon": 45.03,
+   "through": 23726,
+   "embodied": 65176,
+   "total": 88902,
+   "materials": [
+    [
+     "gum",
+     50286
+    ],
+    [
+     "hides",
+     4950
+    ],
+    [
+     "caoutchouc",
+     4759
+    ],
+    [
+     "zinc",
+     3259
+    ]
+   ],
+   "through_goods": [
+    [
+     "SKINS, FURS AND PELTS",
+     11702
+    ],
+    [
+     "SPICES",
+     6311
+    ],
+    [
+     "COFFEE",
+     3770
+    ],
+    [
+     "GUM",
+     431
+    ]
+   ]
+  },
+  {
+   "place": "Lagos",
+   "region": "Africa",
+   "lat": 6.45,
+   "lon": 3.39,
+   "through": 5290,
+   "embodied": 79345,
+   "total": 84635,
+   "materials": [
+    [
+     "palm oil",
+     67886
+    ],
+    [
+     "caoutchouc",
+     10401
+    ],
+    [
+     "cotton",
+     561
+    ],
+    [
+     "zinc",
+     348
+    ]
+   ],
+   "through_goods": [
+    [
+     "OIL",
+     4534
+    ],
+    [
+     "CAOUTCHOU",
+     715
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     33
+    ],
+    [
+     "COTTON, RAW",
+     3
+    ]
+   ]
+  },
+  {
+   "place": "Persia",
+   "region": "Mediterranean & Levant",
+   "lat": 28.98,
+   "lon": 50.84,
+   "through": 3289,
+   "embodied": 56072,
+   "total": 59361,
+   "materials": [
+    [
+     "gum",
+     25915
+    ],
+    [
+     "wool",
+     18060
+    ],
+    [
+     "zinc",
+     8588
+    ],
+    [
+     "iron ore",
+     1779
+    ]
+   ],
+   "through_goods": [
+    [
+     "FRUIT",
+     902
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     817
+    ],
+    [
+     "WOOL",
+     442
+    ],
+    [
+     "DRUGS",
+     420
+    ]
+   ]
+  },
+  {
+   "place": "The Gold Coast",
+   "region": "Africa",
+   "lat": 5.55,
+   "lon": -0.2,
+   "through": 3480,
+   "embodied": 51628,
+   "total": 55107,
+   "materials": [
+    [
+     "palm oil",
+     30418
+    ],
+    [
+     "caoutchouc",
+     20036
+    ],
+    [
+     "zinc",
+     633
+    ],
+    [
+     "timber",
+     541
+    ]
+   ],
+   "through_goods": [
+    [
+     "OIL",
+     2032
+    ],
+    [
+     "CAOUTCHOU",
+     1377
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     60
+    ],
+    [
+     "WOOD AND TIMBER",
+     6
+    ]
+   ]
+  },
+  {
+   "place": "Malta",
+   "region": "Mediterranean & Levant",
+   "lat": 35.9,
+   "lon": 14.51,
+   "through": 5120,
+   "embodied": 44342,
+   "total": 49462,
+   "materials": [
+    [
+     "silk",
+     31273
+    ],
+    [
+     "zinc",
+     10449
+    ],
+    [
+     "wool",
+     2198
+    ],
+    [
+     "hides",
+     222
+    ]
+   ],
+   "through_goods": [
+    [
+     "SILK, RAW AND THROWN",
+     1734
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     994
+    ],
+    [
+     "FRUIT",
+     875
+    ],
+    [
+     "DRUGS",
+     379
+    ]
+   ]
+  },
+  {
+   "place": "Central America",
+   "region": "Caribbean & Central America",
+   "lat": 13.0,
+   "lon": -85.0,
+   "through": 40975,
+   "embodied": 6250,
+   "total": 47225,
+   "materials": [
+    [
+     "caoutchouc",
+     4084
+    ],
+    [
+     "sugar",
+     1160
+    ],
+    [
+     "timber",
+     642
+    ],
+    [
+     "wool",
+     337
+    ]
+   ],
+   "through_goods": [
+    [
+     "COFFEE",
+     39891
+    ],
+    [
+     "DRUGS",
+     494
+    ],
+    [
+     "CAOUTCHOU",
+     281
+    ],
+    [
+     "SPIRITS",
+     125
+    ]
+   ]
+  },
+  {
+   "place": "Bolivia",
+   "region": "South America",
+   "lat": -17.78,
+   "lon": -63.18,
+   "through": 9035,
+   "embodied": 31569,
+   "total": 40604,
+   "materials": [
+    [
+     "copper",
+     31450
+    ],
+    [
+     "lead",
+     119
+    ]
+   ],
+   "through_goods": [
+    [
+     "SILK MANUFACTURES",
+     8590
+    ],
+    [
+     "COPPER, Ore of",
+     419
+    ],
+    [
+     "CHEMICAL MANUFACTURES AND PRODUCTS",
+     26
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     1
+    ]
+   ]
+  },
+  {
+   "place": "Ecuador",
+   "region": "South America",
+   "lat": -2.19,
+   "lon": -79.88,
+   "through": 9235,
+   "embodied": 23534,
+   "total": 32769,
+   "materials": [
+    [
+     "zinc",
+     13685
+    ],
+    [
+     "caoutchouc",
+     9009
+    ],
+    [
+     "sugar",
+     545
+    ],
+    [
+     "gutta percha",
+     259
+    ]
+   ],
+   "through_goods": [
+    [
+     "COCOA",
+     4183
+    ],
+    [
+     "DRUGS",
+     2398
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     1302
+    ],
+    [
+     "CAOUTCHOU",
+     619
+    ]
+   ]
+  },
+  {
+   "place": "Newfoundland",
+   "region": "North America",
+   "lat": 47.56,
+   "lon": -52.71,
+   "through": 7600,
+   "embodied": 23775,
+   "total": 31375,
+   "materials": [
+    [
+     "copper",
+     21393
+    ],
+    [
+     "iron ore",
+     924
+    ],
+    [
+     "lead",
+     740
+    ],
+    [
+     "zinc",
+     559
+    ]
+   ],
+   "through_goods": [
+    [
+     "SKINS, FURS AND PELTS",
+     5962
+    ],
+    [
+     "FISH",
+     971
+    ],
+    [
+     "OIL",
+     305
+    ],
+    [
+     "COPPER, Ore of",
+     285
+    ]
+   ]
+  },
+  {
+   "place": "Niger Protectorate",
+   "region": "Africa",
+   "lat": 4.75,
+   "lon": 7.0,
+   "through": 2240,
+   "embodied": 28528,
+   "total": 30768,
+   "materials": [
+    [
+     "palm oil",
+     15081
+    ],
+    [
+     "caoutchouc",
+     7450
+    ],
+    [
+     "gum",
+     3464
+    ],
+    [
+     "gutta percha",
+     1323
+    ]
+   ],
+   "through_goods": [
+    [
+     "OIL",
+     1007
+    ],
+    [
+     "SPICES",
+     579
+    ],
+    [
+     "CAOUTCHOU",
+     512
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     102
+    ]
+   ]
+  },
+  {
+   "place": "Sierra Leone",
+   "region": "Africa",
+   "lat": 8.48,
+   "lon": -13.23,
+   "through": 5222,
+   "embodied": 19989,
+   "total": 25210,
+   "materials": [
+    [
+     "gum",
+     10450
+    ],
+    [
+     "caoutchouc",
+     6815
+    ],
+    [
+     "palm oil",
+     1416
+    ],
+    [
+     "zinc",
+     862
+    ]
+   ],
+   "through_goods": [
+    [
+     "SPICES",
+     4449
+    ],
+    [
+     "CAOUTCHOU",
+     468
+    ],
+    [
+     "OIL",
+     95
+    ],
+    [
+     "GUM",
+     90
+    ]
+   ]
+  },
+  {
+   "place": "Gibraltar",
+   "region": "Mediterranean & Levant",
+   "lat": 36.14,
+   "lon": -5.35,
+   "through": 2896,
+   "embodied": 22066,
+   "total": 24962,
+   "materials": [
+    [
+     "wool",
+     14411
+    ],
+    [
+     "zinc",
+     6833
+    ],
+    [
+     "cotton",
+     436
+    ],
+    [
+     "linseed",
+     256
+    ]
+   ],
+   "through_goods": [
+    [
+     "FRUIT",
+     1298
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     650
+    ],
+    [
+     "WOOL",
+     335
+    ],
+    [
+     "WINE",
+     257
+    ]
+   ]
+  },
+  {
+   "place": "Canary Islands",
+   "region": "Europe",
+   "lat": 28.1,
+   "lon": -15.42,
+   "through": 19840,
+   "embodied": 1806,
+   "total": 21645,
+   "materials": [
+    [
+     "wool",
+     1794
+    ],
+    [
+     "tea",
+     12
+    ]
+   ],
+   "through_goods": [
+    [
+     "FRUIT",
+     18856
+    ],
+    [
+     "WINE",
+     413
+    ],
+    [
+     "TEA",
+     239
+    ],
+    [
+     "TOYS",
+     136
+    ]
+   ]
+  },
+  {
+   "place": "Portuguese Possessions In Western Africa",
+   "region": "Africa",
+   "lat": -8.84,
+   "lon": 13.23,
+   "through": 1992,
+   "embodied": 19321,
+   "total": 21313,
+   "materials": [
+    [
+     "palm oil",
+     12054
+    ],
+    [
+     "caoutchouc",
+     5032
+    ],
+    [
+     "wool",
+     1653
+    ],
+    [
+     "hides",
+     449
+    ]
+   ],
+   "through_goods": [
+    [
+     "OIL",
+     805
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     674
+    ],
+    [
+     "CAOUTCHOU",
+     346
+    ],
+    [
+     "FARINACEOUS SUBSTANCES",
+     40
+    ]
+   ]
+  },
+  {
+   "place": "Madagascar",
+   "region": "Africa",
+   "lat": -18.15,
+   "lon": 49.41,
+   "through": 6378,
+   "embodied": 9443,
+   "total": 15821,
+   "materials": [
+    [
+     "caoutchouc",
+     5143
+    ],
+    [
+     "hides",
+     1849
+    ],
+    [
+     "hemp",
+     1376
+    ],
+    [
+     "sugar",
+     485
+    ]
+   ],
+   "through_goods": [
+    [
+     "HATS OR BONNETS",
+     2833
+    ],
+    [
+     "HEMP",
+     2220
+    ],
+    [
+     "GOODS UNENUMERATED",
+     588
+    ],
+    [
+     "CAOUTCHOU",
+     354
+    ]
+   ]
+  },
+  {
+   "place": "East Coast Of Africa",
+   "region": "Africa",
+   "lat": -6.16,
+   "lon": 39.19,
+   "through": 6440,
+   "embodied": 8207,
+   "total": 14647,
+   "materials": [
+    [
+     "caoutchouc",
+     5242
+    ],
+    [
+     "gum",
+     1877
+    ],
+    [
+     "hides",
+     989
+    ],
+    [
+     "sugar",
+     59
+    ]
+   ],
+   "through_goods": [
+    [
+     "SPICES",
+     5946
+    ],
+    [
+     "CAOUTCHOU",
+     360
+    ],
+    [
+     "HIDES, RAW",
+     85
+    ],
+    [
+     "DRUGS",
+     21
+    ]
+   ]
+  },
+  {
+   "place": "Dutch Guiana",
+   "region": "South America",
+   "lat": 5.87,
+   "lon": -55.17,
+   "through": 3583,
+   "embodied": 10254,
+   "total": 13837,
+   "materials": [
+    [
+     "sugar",
+     9664
+    ],
+    [
+     "gutta percha",
+     590
+    ]
+   ],
+   "through_goods": [
+    [
+     "SPIRITS",
+     2430
+    ],
+    [
+     "SUGAR",
+     607
+    ],
+    [
+     "COCOA",
+     423
+    ],
+    [
+     "FRUIT",
+     123
+    ]
+   ]
+  },
+  {
+   "place": "Siam",
+   "region": "India & Southeast Asia",
+   "lat": 13.75,
+   "lon": 100.5,
+   "through": 11921,
+   "embodied": 996,
+   "total": 12918,
+   "materials": [
+    [
+     "timber",
+     745
+    ],
+    [
+     "sugar",
+     209
+    ],
+    [
+     "hides",
+     42
+    ]
+   ],
+   "through_goods": [
+    [
+     "RICE",
+     11471
+    ],
+    [
+     "SPICES",
+     396
+    ],
+    [
+     "FARINACEOUS SUBSTANCES",
+     24
+    ],
+    [
+     "SUGAR",
+     13
+    ]
+   ]
+  },
+  {
+   "place": "Tunis",
+   "region": "Mediterranean & Levant",
+   "lat": 36.8,
+   "lon": 10.18,
+   "through": 1147,
+   "embodied": 9447,
+   "total": 10594,
+   "materials": [
+    [
+     "zinc",
+     9188
+    ],
+    [
+     "lead",
+     258
+    ]
+   ],
+   "through_goods": [
+    [
+     "ZINC AND ZINC ORE",
+     874
+    ],
+    [
+     "OIL",
+     229
+    ],
+    [
+     "PAPER",
+     44
+    ]
+   ]
+  },
+  {
+   "place": "Hayti And St Domingo",
+   "region": "Caribbean & Central America",
+   "lat": 18.54,
+   "lon": -72.34,
+   "through": 3621,
+   "embodied": 5882,
+   "total": 9503,
+   "materials": [
+    [
+     "cotton",
+     4895
+    ],
+    [
+     "sugar",
+     600
+    ],
+    [
+     "timber",
+     386
+    ]
+   ],
+   "through_goods": [
+    [
+     "COFFEE",
+     3341
+    ],
+    [
+     "COCOA",
+     207
+    ],
+    [
+     "SUGAR",
+     38
+    ],
+    [
+     "COTTON, RAW",
+     28
+    ]
+   ]
+  },
+  {
+   "place": "Roumania",
+   "region": "Europe",
+   "lat": 45.43,
+   "lon": 28.05,
+   "through": 144,
+   "embodied": 9155,
+   "total": 9299,
+   "materials": [
+    [
+     "linseed",
+     7541
+    ],
+    [
+     "wool",
+     1612
+    ],
+    [
+     "timber",
+     2
+    ]
+   ],
+   "through_goods": [
+    [
+     "WOOL",
+     50
+    ],
+    [
+     "IRON AND STEEL",
+     37
+    ],
+    [
+     "SEEDS",
+     19
+    ],
+    [
+     "WOOLLEN MANUFACTURES",
+     12
+    ]
+   ]
+  },
+  {
+   "place": "Costa Rica",
+   "region": "Caribbean & Central America",
+   "lat": 9.98,
+   "lon": -83.03,
+   "through": 7465,
+   "embodied": 306,
+   "total": 7771,
+   "materials": [
+    [
+     "wool",
+     300
+    ],
+    [
+     "timber",
+     6
+    ]
+   ],
+   "through_goods": [
+    [
+     "COFFEE",
+     7457
+    ],
+    [
+     "WOOL",
+     7
+    ],
+    [
+     "TOBACCO",
+     1
+    ],
+    [
+     "WOOD AND TIMBER",
+     0
+    ]
+   ]
+  },
+  {
+   "place": "Zanzibar And Pemba",
+   "region": "Africa",
+   "lat": -6.16,
+   "lon": 39.19,
+   "through": 831,
+   "embodied": 4295,
+   "total": 5125,
+   "materials": [
+    [
+     "caoutchouc",
+     2600
+    ],
+    [
+     "gum",
+     1661
+    ],
+    [
+     "hides",
+     34
+    ]
+   ],
+   "through_goods": [
+    [
+     "SPICES",
+     632
+    ],
+    [
+     "CAOUTCHOU",
+     179
+    ],
+    [
+     "GUM",
+     14
+    ],
+    [
+     "HIDES, RAW",
+     3
+    ]
+   ]
+  },
+  {
+   "place": "Islands In The Pacific",
+   "region": "Australasia & Pacific",
+   "lat": -18.14,
+   "lon": 178.44,
+   "through": 37,
+   "embodied": 4296,
+   "total": 4333,
+   "materials": [
+    [
+     "lead",
+     1638
+    ],
+    [
+     "iron ore",
+     1501
+    ],
+    [
+     "cotton",
+     1011
+    ],
+    [
+     "wool",
+     147
+    ]
+   ],
+   "through_goods": [
+    [
+     "IRON AND STEEL",
+     26
+    ],
+    [
+     "COTTON, RAW",
+     7
+    ],
+    [
+     "WOOL",
+     3
+    ]
+   ]
+  },
+  {
+   "place": "Danish West India Islands",
+   "region": "Caribbean & Central America",
+   "lat": 17.74,
+   "lon": -64.7,
+   "through": 458,
+   "embodied": 3469,
+   "total": 3927,
+   "materials": [
+    [
+     "sugar",
+     3003
+    ],
+    [
+     "cotton",
+     465
+    ],
+    [
+     "timber",
+     1
+    ]
+   ],
+   "through_goods": [
+    [
+     "SPIRITS",
+     205
+    ],
+    [
+     "SUGAR",
+     189
+    ],
+    [
+     "SPICES",
+     33
+    ],
+    [
+     "COCOA",
+     28
+    ]
+   ]
+  },
+  {
+   "place": "British Honduras",
+   "region": "Caribbean & Central America",
+   "lat": 17.5,
+   "lon": -88.2,
+   "through": 782,
+   "embodied": 2989,
+   "total": 3771,
+   "materials": [
+    [
+     "sugar",
+     1470
+    ],
+    [
+     "timber",
+     1368
+    ],
+    [
+     "gutta percha",
+     142
+    ],
+    [
+     "tin",
+     10
+    ]
+   ],
+   "through_goods": [
+    [
+     "COFFEE",
+     466
+    ],
+    [
+     "SPIRITS",
+     172
+    ],
+    [
+     "SUGAR",
+     92
+    ],
+    [
+     "DRUGS",
+     23
+    ]
+   ]
+  },
+  {
+   "place": "Cuba",
+   "region": "Caribbean & Central America",
+   "lat": 23.11,
+   "lon": -82.37,
+   "through": 1489,
+   "embodied": 1975,
+   "total": 3464,
+   "materials": [
+    [
+     "iron ore",
+     1464
+    ],
+    [
+     "copper",
+     511
+    ]
+   ],
+   "through_goods": [
+    [
+     "SPIRITS",
+     1414
+    ],
+    [
+     "IRON AND STEEL",
+     52
+    ],
+    [
+     "GOODS UNENUMERATED",
+     17
+    ],
+    [
+     "COPPER, Ore of",
+     7
+    ]
+   ]
+  },
+  {
+   "place": "Tripoli",
+   "region": "Mediterranean & Levant",
+   "lat": 32.9,
+   "lon": 13.19,
+   "through": 522,
+   "embodied": 1671,
+   "total": 2193,
+   "materials": [
+    [
+     "wool",
+     1237
+    ],
+    [
+     "lead",
+     434
+    ]
+   ],
+   "through_goods": [
+    [
+     "FEATHERS AND DOWN",
+     194
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     121
+    ],
+    [
+     "PAPER",
+     94
+    ],
+    [
+     "FARINACEOUS SUBSTANCES",
+     65
+    ]
+   ]
+  },
+  {
+   "place": "Gambia",
+   "region": "Africa",
+   "lat": 13.45,
+   "lon": -16.58,
+   "through": 103,
+   "embodied": 1453,
+   "total": 1556,
+   "materials": [
+    [
+     "caoutchouc",
+     1408
+    ],
+    [
+     "hides",
+     45
+    ],
+    [
+     "palm oil",
+     0
+    ]
+   ],
+   "through_goods": [
+    [
+     "CAOUTCHOU",
+     97
+    ],
+    [
+     "HIDES, RAW",
+     4
+    ],
+    [
+     "CLOCKS AND WATCHES",
+     3
+    ],
+    [
+     "OIL",
+     0
+    ]
+   ]
+  },
+  {
+   "place": "Fernando Po",
+   "region": "Africa",
+   "lat": 3.75,
+   "lon": 8.78,
+   "through": 109,
+   "embodied": 1414,
+   "total": 1523,
+   "materials": [
+    [
+     "palm oil",
+     1037
+    ],
+    [
+     "caoutchouc",
+     377
+    ]
+   ],
+   "through_goods": [
+    [
+     "OIL",
+     69
+    ],
+    [
+     "CAOUTCHOU",
+     26
+    ],
+    [
+     "COCOA",
+     14
+    ]
+   ]
+  },
+  {
+   "place": "Nicaragua",
+   "region": "Caribbean & Central America",
+   "lat": 12.15,
+   "lon": -86.27,
+   "through": 1124,
+   "embodied": 178,
+   "total": 1302,
+   "materials": [
+    [
+     "caoutchouc",
+     150
+    ],
+    [
+     "timber",
+     28
+    ]
+   ],
+   "through_goods": [
+    [
+     "COFFEE",
+     1104
+    ],
+    [
+     "CAOUTCHOU",
+     10
+    ],
+    [
+     "DYE STUFFS AND DYE WOODS",
+     9
+    ],
+    [
+     "WOOD AND TIMBER",
+     0
+    ]
+   ]
+  },
+  {
+   "place": "Bermudas",
+   "region": "North America",
+   "lat": 32.29,
+   "lon": -64.78,
+   "through": 350,
+   "embodied": 738,
+   "total": 1088,
+   "materials": [
+    [
+     "zinc",
+     709
+    ],
+    [
+     "tallow",
+     27
+    ],
+    [
+     "timber",
+     1
+    ]
+   ],
+   "through_goods": [
+    [
+     "FARINACEOUS SUBSTANCES",
+     265
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     68
+    ],
+    [
+     "TALLOW and STEARINE",
+     13
+    ],
+    [
+     "SKINS, FURS AND PELTS",
+     5
+    ]
+   ]
+  },
+  {
+   "place": "Cyprus",
+   "region": "Mediterranean & Levant",
+   "lat": 35.1,
+   "lon": 33.4,
+   "through": 111,
+   "embodied": 940,
+   "total": 1051,
+   "materials": [
+    [
+     "cotton",
+     465
+    ],
+    [
+     "zinc",
+     366
+    ],
+    [
+     "linseed",
+     108
+    ]
+   ],
+   "through_goods": [
+    [
+     "LEATHER AND LEATHER MANUFACTURES",
+     61
+    ],
+    [
+     "ZINC AND ZINC ORE",
+     35
+    ],
+    [
+     "FRUIT",
+     9
+    ],
+    [
+     "COTTON, RAW",
+     4
+    ]
+   ]
+  },
+  {
+   "place": "Congo Free State",
+   "region": "Africa",
+   "lat": -5.85,
+   "lon": 13.06,
+   "through": 37,
+   "embodied": 537,
+   "total": 574,
+   "materials": [
+    [
+     "caoutchouc",
+     383
+    ],
+    [
+     "palm oil",
+     154
+    ]
+   ],
+   "through_goods": [
+    [
+     "CAOUTCHOU",
+     26
+    ],
+    [
+     "OIL",
+     10
+    ]
+   ]
+  },
+  {
+   "place": "Tripoli And Tunis",
+   "region": "Mediterranean & Levant",
+   "lat": 34.5,
+   "lon": 11.5,
+   "through": 278,
+   "embodied": 151,
+   "total": 429,
+   "materials": [
+    [
+     "lead",
+     151
+    ]
+   ],
+   "through_goods": [
+    [
+     "OIL",
+     180
+    ],
+    [
+     "FEATHERS AND DOWN",
+     98
+    ],
+    [
+     "CORN, GRAIN, MEAL AND FLOUR",
+     0
+    ]
+   ]
+  },
+  {
+   "place": "Bulgaria",
+   "region": "Europe",
+   "lat": 43.2,
+   "lon": 27.91,
+   "through": 5,
+   "embodied": 244,
+   "total": 249,
+   "materials": [
+    [
+     "copper",
+     244
+    ]
+   ],
+   "through_goods": [
+    [
+     "COPPER, Ore of",
+     3
+    ],
+    [
+     "CORN, GRAIN, MEAL AND FLOUR",
+     2
+    ],
+    [
+     "COTTON, RAW",
+     0
+    ]
+   ]
+  },
+  {
+   "place": "Foreign West Indies",
+   "region": "Caribbean & Central America",
+   "lat": 16.0,
+   "lon": -73.0,
+   "through": 98,
+   "embodied": 0,
+   "total": 98,
+   "materials": [],
+   "through_goods": [
+    [
+     "SILK MANUFACTURES",
+     52
+    ],
+    [
+     "GLASS",
+     46
+    ]
+   ]
+  },
+  {
+   "place": "Dutch West India Islands",
+   "region": "Caribbean & Central America",
+   "lat": 12.11,
+   "lon": -68.93,
+   "through": 25,
+   "embodied": 0,
+   "total": 25,
+   "materials": [],
+   "through_goods": [
+    [
+     "DRUGS",
+     18
+    ],
+    [
+     "DYE STUFFS AND DYE WOODS",
+     7
+    ],
+    [
+     "SPIRITS",
+     0
+    ]
+   ]
+  }
+ ],
+ "regions": [
+  {
+   "region": "Britain",
+   "through": 0,
+   "embodied": 91780336,
+   "total": 91780336
+  },
+  {
+   "region": "Europe",
+   "through": 8148993,
+   "embodied": 33180985,
+   "total": 41329978
+  },
+  {
+   "region": "North America",
+   "through": 1621060,
+   "embodied": 28953689,
+   "total": 30574749
+  },
+  {
+   "region": "Australasia & Pacific",
+   "through": 1116193,
+   "embodied": 28992507,
+   "total": 30108700
+  },
+  {
+   "region": "India & Southeast Asia",
+   "through": 6697865,
+   "embodied": 12784064,
+   "total": 19481929
+  },
+  {
+   "region": "China & Japan",
+   "through": 5132783,
+   "embodied": 4458951,
+   "total": 9591734
+  },
+  {
+   "region": "Mediterranean & Levant",
+   "through": 687679,
+   "embodied": 8835572,
+   "total": 9523251
+  },
+  {
+   "region": "Africa",
+   "through": 477795,
+   "embodied": 5751075,
+   "total": 6228870
+  },
+  {
+   "region": "South America",
+   "through": 571679,
+   "embodied": 4975792,
+   "total": 5547471
+  },
+  {
+   "region": "Untraced",
+   "through": 366992,
+   "embodied": 2858772,
+   "total": 3225764
+  },
+  {
+   "region": "Caribbean & Central America",
+   "through": 356409,
+   "embodied": 667197,
+   "total": 1023606
+  }
+ ],
+ "materials": [
+  [
+   "DOMESTIC",
+   91780336
+  ],
+  [
+   "wool",
+   39865915
+  ],
+  [
+   "cotton",
+   38317458
+  ],
+  [
+   "iron ore",
+   12452153
+  ],
+  [
+   "silk",
+   6318304
+  ],
+  [
+   "flax",
+   5986553
+  ],
+  [
+   "zinc",
+   5917563
+  ],
+  [
+   "sugar",
+   3992913
+  ],
+  [
+   "copper",
+   3158473
+  ],
+  [
+   "linseed",
+   2907929
+  ],
+  [
+   "UNTRACED",
+   2858772
+  ],
+  [
+   "hides",
+   1520821
+  ],
+  [
+   "jute",
+   1280677
+  ],
+  [
+   "gum",
+   1099155
+  ],
+  [
+   "lead",
+   1084557
+  ],
+  [
+   "tallow",
+   1013648
+  ],
+  [
+   "gutta percha",
+   877711
+  ],
+  [
+   "caoutchouc",
+   697272
+  ],
+  [
+   "hemp",
+   684725
+  ],
+  [
+   "tea",
+   464829
+  ],
+  [
+   "tin",
+   440290
+  ],
+  [
+   "timber",
+   317544
+  ],
+  [
+   "palm oil",
+   201338
+  ]
+ ],
+ "material_mix": {
+  "cotton": [
+   [
+    "United States Of America",
+    0.67
+   ],
+   [
+    "Egypt",
+    0.153
+   ],
+   [
+    "Bombay",
+    0.079
+   ],
+   [
+    "Brazil",
+    0.027
+   ],
+   [
+    "United States Of America (Atlantic)",
+    0.026
+   ],
+   [
+    "Madras",
+    0.015
+   ],
+   [
+    "Bengal And Burmah",
+    0.007
+   ],
+   [
+    "Peru",
+    0.005
+   ]
+  ],
+  "wool": [
+   [
+    "Australia",
+    0.207
+   ],
+   [
+    "New South Wales",
+    0.142
+   ],
+   [
+    "Victoria",
+    0.101
+   ],
+   [
+    "New Zealand",
+    0.099
+   ],
+   [
+    "British Possessions In South Africa",
+    0.088
+   ],
+   [
+    "Australasia",
+    0.055
+   ],
+   [
+    "Queensland",
+    0.04
+   ],
+   [
+    "South Australia",
+    0.037
+   ]
+  ],
+  "sugar": [
+   [
+    "Germany",
+    0.345
+   ],
+   [
+    "France",
+    0.127
+   ],
+   [
+    "Java",
+    0.079
+   ],
+   [
+    "Holland",
+    0.075
+   ],
+   [
+    "British West India Islands",
+    0.057
+   ],
+   [
+    "British Guiana",
+    0.047
+   ],
+   [
+    "Belgium",
+    0.044
+   ],
+   [
+    "Brazil",
+    0.039
+   ]
+  ],
+  "flax": [
+   [
+    "Russia",
+    0.623
+   ],
+   [
+    "Belgium",
+    0.235
+   ],
+   [
+    "Holland",
+    0.083
+   ],
+   [
+    "Germany",
+    0.031
+   ],
+   [
+    "France",
+    0.009
+   ],
+   [
+    "United States Of America (Atlantic)",
+    0.006
+   ],
+   [
+    "United States Of America",
+    0.004
+   ],
+   [
+    "Spain",
+    0.002
+   ]
+  ],
+  "jute": [
+   [
+    "Bengal",
+    0.629
+   ],
+   [
+    "Bengal And Burmah",
+    0.287
+   ],
+   [
+    "France",
+    0.035
+   ],
+   [
+    "British India",
+    0.033
+   ],
+   [
+    "British East Indies",
+    0.009
+   ],
+   [
+    "Canada",
+    0.002
+   ],
+   [
+    "Germany",
+    0.001
+   ],
+   [
+    "Madras",
+    0.001
+   ]
+  ],
+  "hemp": [
+   [
+    "Philippine Islands",
+    0.293
+   ],
+   [
+    "Russia",
+    0.168
+   ],
+   [
+    "Italy",
+    0.155
+   ],
+   [
+    "Germany",
+    0.131
+   ],
+   [
+    "Philippine And Ladrone Islands",
+    0.069
+   ],
+   [
+    "Hong Kong",
+    0.039
+   ],
+   [
+    "British East Indies",
+    0.022
+   ],
+   [
+    "United States Of America",
+    0.018
+   ]
+  ],
+  "silk": [
+   [
+    "China",
+    0.518
+   ],
+   [
+    "France",
+    0.247
+   ],
+   [
+    "Japan",
+    0.049
+   ],
+   [
+    "Hong Kong",
+    0.043
+   ],
+   [
+    "Belgium",
+    0.031
+   ],
+   [
+    "Holland",
+    0.023
+   ],
+   [
+    "Bengal",
+    0.017
+   ],
+   [
+    "Bengal And Burmah",
+    0.015
+   ]
+  ],
+  "hides": [
+   [
+    "Bengal And Burmah",
+    0.218
+   ],
+   [
+    "United States Of America",
+    0.141
+   ],
+   [
+    "Bengal",
+    0.113
+   ],
+   [
+    "Germany",
+    0.069
+   ],
+   [
+    "Holland",
+    0.055
+   ],
+   [
+    "Madras",
+    0.047
+   ],
+   [
+    "British Possessions In South Africa",
+    0.047
+   ],
+   [
+    "Straits Settlements",
+    0.042
+   ]
+  ],
+  "tallow": [
+   [
+    "United States Of America",
+    0.289
+   ],
+   [
+    "New South Wales",
+    0.127
+   ],
+   [
+    "Argentine Republic",
+    0.094
+   ],
+   [
+    "Australia",
+    0.093
+   ],
+   [
+    "Australasia",
+    0.071
+   ],
+   [
+    "New Zealand",
+    0.063
+   ],
+   [
+    "Uruguay",
+    0.048
+   ],
+   [
+    "Victoria",
+    0.044
+   ]
+  ],
+  "palm oil": [
+   [
+    "Lagos",
+    0.337
+   ],
+   [
+    "Western Africa (Foreign",
+    0.18
+   ],
+   [
+    "The Gold Coast",
+    0.151
+   ],
+   [
+    "Germany",
+    0.106
+   ],
+   [
+    "Niger Protectorate",
+    0.075
+   ],
+   [
+    "British West Africa",
+    0.063
+   ],
+   [
+    "Portuguese Possessions In Western Africa",
+    0.06
+   ],
+   [
+    "Sierra Leone",
+    0.007
+   ]
+  ],
+  "linseed": [
+   [
+    "Russia",
+    0.321
+   ],
+   [
+    "Bengal",
+    0.286
+   ],
+   [
+    "Bengal And Burmah",
+    0.148
+   ],
+   [
+    "Bombay",
+    0.097
+   ],
+   [
+    "Argentine Republic",
+    0.06
+   ],
+   [
+    "Germany",
+    0.02
+   ],
+   [
+    "Holland",
+    0.015
+   ],
+   [
+    "Russia (Northern Ports)",
+    0.014
+   ]
+  ],
+  "iron ore": [
+   [
+    "Spain",
+    0.852
+   ],
+   [
+    "Algeria",
+    0.039
+   ],
+   [
+    "Greece",
+    0.028
+   ],
+   [
+    "Italy",
+    0.025
+   ],
+   [
+    "Turkey",
+    0.019
+   ],
+   [
+    "Russia",
+    0.008
+   ],
+   [
+    "Sweden",
+    0.008
+   ],
+   [
+    "France",
+    0.004
+   ]
+  ],
+  "copper": [
+   [
+    "Chile",
+    0.263
+   ],
+   [
+    "United States Of America",
+    0.172
+   ],
+   [
+    "British Possessions In South Africa",
+    0.073
+   ],
+   [
+    "Australasia",
+    0.062
+   ],
+   [
+    "France",
+    0.043
+   ],
+   [
+    "Cape Of Good Hope",
+    0.039
+   ],
+   [
+    "New South Wales",
+    0.034
+   ],
+   [
+    "Japan",
+    0.032
+   ]
+  ],
+  "zinc": [
+   [
+    "Germany",
+    0.214
+   ],
+   [
+    "Holland",
+    0.199
+   ],
+   [
+    "Belgium",
+    0.141
+   ],
+   [
+    "France",
+    0.104
+   ],
+   [
+    "United States Of America",
+    0.06
+   ],
+   [
+    "Bengal",
+    0.049
+   ],
+   [
+    "Italy",
+    0.036
+   ],
+   [
+    "Bombay",
+    0.016
+   ]
+  ],
+  "lead": [
+   [
+    "Spain",
+    0.359
+   ],
+   [
+    "United States Of America",
+    0.149
+   ],
+   [
+    "France",
+    0.071
+   ],
+   [
+    "Madras",
+    0.06
+   ],
+   [
+    "Germany",
+    0.047
+   ],
+   [
+    "British East Indies",
+    0.043
+   ],
+   [
+    "Holland",
+    0.037
+   ],
+   [
+    "Greece",
+    0.031
+   ]
+  ],
+  "tin": [
+   [
+    "Straits Settlements",
+    0.633
+   ],
+   [
+    "New South Wales",
+    0.103
+   ],
+   [
+    "Australia",
+    0.083
+   ],
+   [
+    "Australasia",
+    0.04
+   ],
+   [
+    "Chile",
+    0.025
+   ],
+   [
+    "Victoria",
+    0.025
+   ],
+   [
+    "Holland",
+    0.023
+   ],
+   [
+    "Bombay",
+    0.016
+   ]
+  ],
+  "gutta percha": [
+   [
+    "Straits Settlements",
+    0.779
+   ],
+   [
+    "British East Indies",
+    0.089
+   ],
+   [
+    "Holland",
+    0.041
+   ],
+   [
+    "British Guiana",
+    0.027
+   ],
+   [
+    "Germany",
+    0.014
+   ],
+   [
+    "British West India Islands",
+    0.012
+   ],
+   [
+    "Venezuela",
+    0.009
+   ],
+   [
+    "France",
+    0.008
+   ]
+  ],
+  "caoutchouc": [
+   [
+    "Brazil",
+    0.54
+   ],
+   [
+    "Germany",
+    0.077
+   ],
+   [
+    "United States Of America",
+    0.042
+   ],
+   [
+    "France",
+    0.03
+   ],
+   [
+    "The Gold Coast",
+    0.029
+   ],
+   [
+    "Straits Settlements",
+    0.026
+   ],
+   [
+    "Portugal",
+    0.026
+   ],
+   [
+    "Holland",
+    0.017
+   ]
+  ],
+  "gum": [
+   [
+    "Egypt",
+    0.169
+   ],
+   [
+    "British East Indies",
+    0.139
+   ],
+   [
+    "Turkey",
+    0.131
+   ],
+   [
+    "Straits Settlements",
+    0.097
+   ],
+   [
+    "France",
+    0.068
+   ],
+   [
+    "Bombay",
+    0.064
+   ],
+   [
+    "Morocco",
+    0.056
+   ],
+   [
+    "Aden",
+    0.046
+   ]
+  ],
+  "tea": [
+   [
+    "China",
+    0.485
+   ],
+   [
+    "Bengal",
+    0.249
+   ],
+   [
+    "Ceylon",
+    0.124
+   ],
+   [
+    "Bengal And Burmah",
+    0.096
+   ],
+   [
+    "Hong Kong",
+    0.01
+   ],
+   [
+    "Holland",
+    0.01
+   ],
+   [
+    "France",
+    0.008
+   ],
+   [
+    "Java",
+    0.005
+   ]
+  ],
+  "timber": [
+   [
+    "Canada",
+    0.218
+   ],
+   [
+    "Sweden",
+    0.205
+   ],
+   [
+    "Russia",
+    0.192
+   ],
+   [
+    "United States Of America",
+    0.103
+   ],
+   [
+    "Norway",
+    0.083
+   ],
+   [
+    "Germany",
+    0.068
+   ],
+   [
+    "France",
+    0.033
+   ],
+   [
+    "United States Of America (Atlantic)",
+    0.014
+   ]
+  ]
+ },
+ "rules": {
+  "WOOLLEN AND WORSTED MANUFACTURES": [
+   [
+    "wool",
+    0.67
+   ],
+   [
+    "DOMESTIC",
+    0.33
+   ]
+  ],
+  "WOOLLEN YARN": [
+   [
+    "wool",
+    0.67
+   ],
+   [
+    "DOMESTIC",
+    0.33
+   ]
+  ],
+  "CARPETS": [
+   [
+    "wool",
+    0.67
+   ],
+   [
+    "DOMESTIC",
+    0.33
+   ]
+  ],
+  "WOOL": [
+   [
+    "DOMESTIC",
+    1.0
+   ]
+  ],
+  "COTTON MANUFACTURES": [
+   [
+    "cotton",
+    1.0
+   ]
+  ],
+  "COTTON YARN AND TWIST": [
+   [
+    "cotton",
+    1.0
+   ]
+  ],
+  "HABERDASHERY AND MILLINERY": [
+   [
+    "cotton",
+    0.45
+   ],
+   [
+    "wool",
+    0.3
+   ],
+   [
+    "silk",
+    0.1
+   ],
+   [
+    "DOMESTIC",
+    0.15
+   ]
+  ],
+  "APPAREL AND SLOPS": [
+   [
+    "wool",
+    0.45
+   ],
+   [
+    "cotton",
+    0.35
+   ],
+   [
+    "flax",
+    0.05
+   ],
+   [
+    "DOMESTIC",
+    0.15
+   ]
+  ],
+  "HATS": [
+   [
+    "wool",
+    0.45
+   ],
+   [
+    "silk",
+    0.15
+   ],
+   [
+    "DOMESTIC",
+    0.4
+   ]
+  ],
+  "UMBRELLAS and PARASOLS": [
+   [
+    "cotton",
+    0.35
+   ],
+   [
+    "silk",
+    0.3
+   ],
+   [
+    "DOMESTIC",
+    0.35
+   ]
+  ],
+  "LINEN MANUFACTURES": [
+   [
+    "flax",
+    0.85
+   ],
+   [
+    "DOMESTIC",
+    0.15
+   ]
+  ],
+  "JUTE MANUFACTURES": [
+   [
+    "jute",
+    1.0
+   ]
+  ],
+  "CORDAGE, CABLES, ROPES AND TWINE": [
+   [
+    "hemp",
+    0.9
+   ],
+   [
+    "DOMESTIC",
+    0.1
+   ]
+  ],
+  "SILK MANUFACTURES": [
+   [
+    "silk",
+    1.0
+   ]
+  ],
+  "SUGAR, REFINED": [
+   [
+    "sugar",
+    1.0
+   ]
+  ],
+  "IRON AND STEEL": [
+   [
+    "iron ore",
+    0.25
+   ],
+   [
+    "DOMESTIC",
+    0.75
+   ]
+  ],
+  "HARDWARES AND CUTLERY": [
+   [
+    "iron ore",
+    0.25
+   ],
+   [
+    "DOMESTIC",
+    0.75
+   ]
+  ],
+  "MACHINERY AND MILLWORK": [
+   [
+    "iron ore",
+    0.25
+   ],
+   [
+    "DOMESTIC",
+    0.75
+   ]
+  ],
+  "IMPLEMENTS AND TOOLS": [
+   [
+    "iron ore",
+    0.25
+   ],
+   [
+    "DOMESTIC",
+    0.75
+   ]
+  ],
+  "ARMS, AMMUNITION AND MILITARY STORES": [
+   [
+    "iron ore",
+    0.25
+   ],
+   [
+    "DOMESTIC",
+    0.75
+   ]
+  ],
+  "TELEGRAPHIC WIRES AND APPARATUS": [
+   [
+    "copper",
+    0.4
+   ],
+   [
+    "gutta percha",
+    0.2
+   ],
+   [
+    "iron ore",
+    0.1
+   ],
+   [
+    "DOMESTIC",
+    0.3
+   ]
+  ],
+  "ZINC OR SPELTER": [
+   [
+    "zinc",
+    1.0
+   ]
+  ],
+  "LEAD": [
+   [
+    "lead",
+    0.5
+   ],
+   [
+    "DOMESTIC",
+    0.5
+   ]
+  ],
+  "TIN, UNWROUGHT": [
+   [
+    "tin",
+    0.6
+   ],
+   [
+    "DOMESTIC",
+    0.4
+   ]
+  ],
+  "COPPER": [
+   [
+    "copper",
+    0.9
+   ],
+   [
+    "DOMESTIC",
+    0.1
+   ]
+  ],
+  "BRASS MANUFACTURES": [
+   [
+    "copper",
+    0.6
+   ],
+   [
+    "zinc",
+    0.3
+   ],
+   [
+    "DOMESTIC",
+    0.1
+   ]
+  ],
+  "PLATED AND GILT WARES": [
+   [
+    "copper",
+    0.5
+   ],
+   [
+    "DOMESTIC",
+    0.5
+   ]
+  ],
+  "LEATHER": [
+   [
+    "hides",
+    0.5
+   ],
+   [
+    "DOMESTIC",
+    0.5
+   ]
+  ],
+  "SADDLERY AND HARNESS": [
+   [
+    "hides",
+    0.5
+   ],
+   [
+    "DOMESTIC",
+    0.5
+   ]
+  ],
+  "SKINS AND FURS": [
+   [
+    "hides",
+    0.5
+   ],
+   [
+    "DOMESTIC",
+    0.5
+   ]
+  ],
+  "OIL, OTHER THAN ESSENTIAL": [
+   [
+    "linseed",
+    0.8
+   ],
+   [
+    "DOMESTIC",
+    0.2
+   ]
+  ],
+  "PAINTERS' COLOURS AND MATERIALS": [
+   [
+    "lead",
+    0.3
+   ],
+   [
+    "linseed",
+    0.3
+   ],
+   [
+    "DOMESTIC",
+    0.4
+   ]
+  ],
+  "SOAP": [
+   [
+    "tallow",
+    0.5
+   ],
+   [
+    "palm oil",
+    0.3
+   ],
+   [
+    "DOMESTIC",
+    0.2
+   ]
+  ],
+  "CANDLES": [
+   [
+    "tallow",
+    0.6
+   ],
+   [
+    "palm oil",
+    0.2
+   ],
+   [
+    "DOMESTIC",
+    0.2
+   ]
+  ],
+  "GREASE, TALLOW AND ANIMAL FAT": [
+   [
+    "tallow",
+    0.7
+   ],
+   [
+    "DOMESTIC",
+    0.3
+   ]
+  ],
+  "CAOUTCHOUC MANUFACTURES": [
+   [
+    "caoutchouc",
+    1.0
+   ]
+  ],
+  "GUM": [
+   [
+    "gum",
+    1.0
+   ]
+  ],
+  "TEA": [
+   [
+    "tea",
+    1.0
+   ]
+  ],
+  "PAPER": [
+   [
+    "UNTRACED",
+    0.5
+   ],
+   [
+    "DOMESTIC",
+    0.5
+   ]
+  ],
+  "BOOKS, PRINTED": [
+   [
+    "UNTRACED",
+    0.3
+   ],
+   [
+    "DOMESTIC",
+    0.7
+   ]
+  ],
+  "STATIONERY, other than Paper": [
+   [
+    "UNTRACED",
+    0.4
+   ],
+   [
+    "DOMESTIC",
+    0.6
+   ]
+  ],
+  "FURNITURE (HOUSEHOLD)": [
+   [
+    "timber",
+    0.6
+   ],
+   [
+    "DOMESTIC",
+    0.4
+   ]
+  ],
+  "WOOD AND TIMBER": [
+   [
+    "timber",
+    1.0
+   ]
+  ],
+  "HIDES, RAW": [
+   [
+    "DOMESTIC",
+    1.0
+   ]
+  ],
+  "CHEMICAL PRODUCTS AND PREPARATIONS": [
+   [
+    "UNTRACED",
+    0.3
+   ],
+   [
+    "DOMESTIC",
+    0.7
+   ]
+  ],
+  "MEDICINES": [
+   [
+    "UNTRACED",
+    0.4
+   ],
+   [
+    "DOMESTIC",
+    0.6
+   ]
+  ]
+ },
+ "export_commodities": [
+  [
+   "WOOLLEN AND WORSTED MANUFACTURES",
+   44526727
+  ],
+  [
+   "IRON AND STEEL",
+   39880635
+  ],
+  [
+   "COTTON MANUFACTURES",
+   26935374
+  ],
+  [
+   "HABERDASHERY AND MILLINERY",
+   15703592
+  ],
+  [
+   "APPAREL AND SLOPS",
+   8729378
+  ],
+  [
+   "LINEN MANUFACTURES",
+   6529511
+  ],
+  [
+   "ZINC OR SPELTER",
+   5858172
+  ],
+  [
+   "TELEGRAPHIC WIRES AND APPARATUS",
+   4388556
+  ],
+  [
+   "HARDWARES AND CUTLERY",
+   4034292
+  ],
+  [
+   "SUGAR, REFINED",
+   3992913
+  ],
+  [
+   "SILK MANUFACTURES",
+   3958197
+  ],
+  [
+   "EARTHEN AND CHINA WARE",
+   3362210
+  ],
+  [
+   "HATS",
+   3097134
+  ],
+  [
+   "OIL, OTHER THAN ESSENTIAL",
+   2818955
+  ],
+  [
+   "MACHINERY AND MILLWORK",
+   2760251
+  ],
+  [
+   "PAINTERS' COLOURS AND MATERIALS",
+   2175882
+  ],
+  [
+   "PICKLES, VINEGAR, SAUCES AND CONDIMENTS",
+   2133528
+  ],
+  [
+   "PAPER",
+   2102217
+  ],
+  [
+   "SPIRITS, BRITISH AND IRISH",
+   2059224
+  ],
+  [
+   "BOOKS, PRINTED",
+   1983675
+  ],
+  [
+   "LEATHER",
+   1888648
+  ],
+  [
+   "COALS, CINDERS, &c.",
+   1865906
+  ],
+  [
+   "ALKALI",
+   1829755
+  ],
+  [
+   "ANIMALS, LIVING",
+   1810486
+  ],
+  [
+   "GLASS",
+   1639554
+  ],
+  [
+   "SALT",
+   1385940
+  ],
+  [
+   "ARMS, AMMUNITION AND MILITARY STORES",
+   1378013
+  ],
+  [
+   "COPPER",
+   1311318
+  ],
+  [
+   "JUTE MANUFACTURES",
+   1280677
+  ],
+  [
+   "CHEMICAL PRODUCTS AND PREPARATIONS",
+   1119073
+  ],
+  [
+   "STATIONERY, other than Paper",
+   1101480
+  ],
+  [
+   "GUM",
+   1099155
+  ],
+  [
+   "MEDICINES",
+   1090619
+  ],
+  [
+   "UMBRELLAS and PARASOLS",
+   1083927
+  ],
+  [
+   "SKINS AND FURS",
+   1073474
+  ],
+  [
+   "BEER AND ALE",
+   1042266
+  ],
+  [
+   "COTTON YARN AND TWIST",
+   880811
+  ],
+  [
+   "GREASE, TALLOW AND ANIMAL FAT",
+   877772
+  ],
+  [
+   "LEAD",
+   863584
+  ],
+  [
+   "CEMENT",
+   845725
+  ],
+  [
+   "CORDAGE, CABLES, ROPES AND TWINE",
+   760806
+  ],
+  [
+   "TIN, UNWROUGHT",
+   733817
+  ],
+  [
+   "CAOUTCHOUC MANUFACTURES",
+   697272
+  ],
+  [
+   "SOAP",
+   512016
+  ],
+  [
+   "WOOL",
+   504388
+  ],
+  [
+   "TEA",
+   464829
+  ],
+  [
+   "HIDES, RAW",
+   409937
+  ],
+  [
+   "CORN, GRAIN, MEAL AND FLOUR",
+   404106
+  ],
+  [
+   "BAGS AND SACKS, EMPTY",
+   368909
+  ],
+  [
+   "DYE STUFFS",
+   341152
+  ],
+  [
+   "FURNITURE (HOUSEHOLD)",
+   332858
+  ],
+  [
+   "STONES AND SLATES",
+   326700
+  ],
+  [
+   "CLAY, UNMANUFACTURED",
+   284453
+  ],
+  [
+   "CARRIAGES",
+   267736
+  ],
+  [
+   "CLOCKS AND WATCHES",
+   261699
+  ],
+  [
+   "AGRICULTURAL IMPLEMENTS AND TOOLS",
+   257959
+  ],
+  [
+   "CANDLES",
+   238666
+  ],
+  [
+   "METALS, UNENUMERATED",
+   217067
+  ],
+  [
+   "BLEACHING MATERIALS",
+   215275
+  ],
+  [
+   "PLATED AND GILT WARES",
+   208163
+  ],
+  [
+   "BRASS MANUFACTURES",
+   197971
+  ],
+  [
+   "PROVISIONS, UNENUMERATED",
+   187730
+  ],
+  [
+   "PICTURES",
+   181079
+  ],
+  [
+   "MUSICAL INSTRUMENTS",
+   172416
+  ],
+  [
+   "SEEDS",
+   160184
+  ],
+  [
+   "Gold",
+   158733
+  ],
+  [
+   "WOOLLEN AND WORSTED YARN",
+   149637
+  ],
+  [
+   "SHIPS AND BOATS",
+   137100
+  ],
+  [
+   "INSTRUMENTS AND APPARATUS, SURGICAL AND SCIENTIFIC",
+   128925
+  ],
+  [
+   "BRICKS",
+   128422
+  ],
+  [
+   "WOOD AND TIMBER",
+   117829
+  ],
+  [
+   "MACHINERY AND MILL WORK, OR PARTS THEREOF",
+   115186
+  ],
+  [
+   "RAGS (except Woollen) and other Materials for making Paper",
+   105646
+  ],
+  [
+   "SADDLERY AND HARNESS",
+   79520
+  ],
+  [
+   "LINEN YARN",
+   78866
+  ],
+  [
+   "OIL AND FLOOR CLOTH, INCLUDING INDIA RUBBER CLOTH",
+   72965
+  ],
+  [
+   "HOPS",
+   67417
+  ],
+  [
+   "TOBACCO AND SNUFF",
+   60189
+  ],
+  [
+   "FLAX AND HEMP",
+   56893
+  ],
+  [
+   "FISHING TACKLE",
+   54292
+  ],
+  [
+   "PRINTS, ENGRAVINGS, DRAWINGS, &c.",
+   46789
+  ],
+  [
+   "PERFUMERY, of all Sorts",
+   43719
+  ],
+  [
+   "FISH, FRESH AND CURED",
+   40705
+  ],
+  [
+   "BISCUIT AND BREAD",
+   37482
+  ],
+  [
+   "PETROLEUM, Unrefined",
+   32722
+  ],
+  [
+   "BUTTER",
+   29716
+  ],
+  [
+   "SALTPETRE, British Prepared",
+   29213
+  ],
+  [
+   "SILK",
+   29135
+  ],
+  [
+   "FRUIT",
+   28635
+  ],
+  [
+   "QUICKSILVER",
+   25201
+  ],
+  [
+   "PLUMBAGO",
+   22655
+  ],
+  [
+   "ELECTRIC LIGHTING APPARATUS, or parts thereof (except Steam Engines)",
+   20339
+  ],
+  [
+   "COFFEE",
+   19434
+  ],
+  [
+   "COALS, CINDERS, &C.",
+   17705
+  ],
+  [
+   "WOOD",
+   15579
+  ],
+  [
+   "WINE",
+   15386
+  ],
+  [
+   "HATTERS' WARES",
+   11759
+  ],
+  [
+   "JUTE YARN",
+   9226
+  ],
+  [
+   "SPICES",
+   5515
+  ],
+  [
+   "MANURE (including Sulphate of Ammonia and other Chemical Manures)",
+   5452
+  ],
+  [
+   "SAPFLOWER",
+   4788
+  ],
+  [
+   "JEWELLERY",
+   4725
+  ],
+  [
+   "AERATED WATERS",
+   3420
+  ],
+  [
+   "BLACKING AND POLISHES",
+   2951
+  ],
+  [
+   "MILK, CONDENSED",
+   2791
+  ],
+  [
+   "CONFECTIONERY, JAMS, AND PRESERVED FRUITS",
+   2431
+  ],
+  [
+   "CHEESE",
+   2203
+  ],
+  [
+   "ALUM",
+   2062
+  ],
+  [
+   "BORAX (Refined in the United Kingdom)",
+   1973
+  ],
+  [
+   "PLATE, GOLD AND SILVER",
+   1950
+  ],
+  [
+   "PLATE",
+   1580
+  ],
+  [
+   "BROOMS AND BRUSHES",
+   1462
+  ],
+  [
+   "BRIMSTONE",
+   1445
+  ],
+  [
+   "DENTISTS' MATERIALS (except Instruments)",
+   665
+  ],
+  [
+   "MARGARINE",
+   312
+  ],
+  [
+   "MATCHES",
+   183
+  ],
+  [
+   "MICA and TALC",
+   141
+  ],
+  [
+   "YEAST",
+   75
+  ]
+ ],
+ "reexport_commodities": [
+  [
+   "TEA",
+   9295628
+  ],
+  [
+   "FRUIT",
+   1450574
+  ],
+  [
+   "SILK MANUFACTURES",
+   1353445
+  ],
+  [
+   "SKINS, FURS AND PELTS",
+   1143301
+  ],
+  [
+   "HEMP",
+   1105023
+  ],
+  [
+   "WOOL",
+   999785
+  ],
+  [
+   "WOOLLEN MANUFACTURES",
+   877427
+  ],
+  [
+   "RICE",
+   628582
+  ],
+  [
+   "ZINC AND ZINC ORE",
+   563093
+  ],
+  [
+   "SPICES",
+   535607
+  ],
+  [
+   "WINE",
+   502999
+  ],
+  [
+   "IRON AND STEEL",
+   494247
+  ],
+  [
+   "SILK, RAW AND THROWN",
+   477111
+  ],
+  [
+   "TALLOW and STEARINE",
+   467084
+  ],
+  [
+   "SPIRITS",
+   463185
+  ],
+  [
+   "HAMS",
+   381460
+  ],
+  [
+   "COFFEE",
+   347196
+  ],
+  [
+   "WOOLLEN YARN",
+   339187
+  ],
+  [
+   "EMBROIDERY AND NEEDLEWORK",
+   265905
+  ],
+  [
+   "FISH",
+   257671
+  ],
+  [
+   "SUGAR",
+   250910
+  ],
+  [
+   "COTTON, RAW",
+   232782
+  ],
+  [
+   "GOODS UNENUMERATED",
+   231212
+  ],
+  [
+   "LACE, and Articles thereof",
+   195716
+  ],
+  [
+   "CHEMICAL MANUFACTURES AND PRODUCTS",
+   192958
+  ],
+  [
+   "HATS OR BONNETS",
+   160544
+  ],
+  [
+   "DRUGS",
+   150433
+  ],
+  [
+   "LEATHER AND LEATHER MANUFACTURES",
+   149924
+  ],
+  [
+   "FARINACEOUS SUBSTANCES",
+   135872
+  ],
+  [
+   "HIDES, RAW",
+   129953
+  ],
+  [
+   "LIQUORICE",
+   108331
+  ],
+  [
+   "OIL",
+   84246
+  ],
+  [
+   "PAINTERS' Colours and Pigments, Unenumerated",
+   81726
+  ],
+  [
+   "TOBACCO",
+   79464
+  ],
+  [
+   "GLASS",
+   76922
+  ],
+  [
+   "FLAX",
+   72864
+  ],
+  [
+   "DYE STUFFS AND DYE WOODS",
+   62866
+  ],
+  [
+   "TIN",
+   55710
+  ],
+  [
+   "BRISTLES",
+   55455
+  ],
+  [
+   "FEATHERS AND DOWN",
+   49706
+  ],
+  [
+   "CAOUTCHOU",
+   47929
+  ],
+  [
+   "FLOWERS, Artificial",
+   45501
+  ],
+  [
+   "COPPER, Ore of",
+   42062
+  ],
+  [
+   "COCOA",
+   39722
+  ],
+  [
+   "SALTPETRE",
+   33397
+  ],
+  [
+   "JUTE",
+   31056
+  ],
+  [
+   "LEAD",
+   28006
+  ],
+  [
+   "SUGAR. Refined, or rendered by any process equal thereto, in Lumps and Leaves",
+   26968
+  ],
+  [
+   "PICTURES AND DRAWINGS, by hand",
+   26888
+  ],
+  [
+   "ICE",
+   25545
+  ],
+  [
+   "ORE, Unenumerated",
+   24146
+  ],
+  [
+   "BOOKS",
+   20559
+  ],
+  [
+   "MEAL AND FLOUR",
+   19067
+  ],
+  [
+   "SPONGE",
+   17564
+  ],
+  [
+   "CHICORY",
+   16452
+  ],
+  [
+   "CORDAGE, TWINE, AND CABLE YARN",
+   14641
+  ],
+  [
+   "SAGO",
+   14578
+  ],
+  [
+   "STRAW PLAITING",
+   13975
+  ],
+  [
+   "JUTE YARN",
+   13249
+  ],
+  [
+   "CLOCKS AND WATCHES",
+   13059
+  ],
+  [
+   "LINEN",
+   12245
+  ],
+  [
+   "GUM",
+   9416
+  ],
+  [
+   "PAPER",
+   9156
+  ],
+  [
+   "DYE STUFFS (other than Dye Woods), and Substances used in Tanning and Dyeing, viz.",
+   8855
+  ],
+  [
+   "FRUIT AND VEGETABLES, PRESERVED IN SUGAR",
+   8150
+  ],
+  [
+   "CORN AND GRAIN",
+   7806
+  ],
+  [
+   "COALS, CULM, CINDERS AND SHALE",
+   6845
+  ],
+  [
+   "VEGETABLES, RAW",
+   6501
+  ],
+  [
+   "BUTTER",
+   6131
+  ],
+  [
+   "BEADS",
+   6004
+  ],
+  [
+   "ETHER, SULPHURIC",
+   5759
+  ],
+  [
+   "PETROLEUM, Illuminating",
+   5701
+  ],
+  [
+   "CORK",
+   4942
+  ],
+  [
+   "CHINAWARE OR PORCELAIN, AND EARTHENWARE",
+   4822
+  ],
+  [
+   "ONIONS",
+   4786
+  ],
+  [
+   "SEEDS",
+   4500
+  ],
+  [
+   "OLEO-MARGARINE OR OLEO OIL",
+   4378
+  ],
+  [
+   "TOYS",
+   4241
+  ],
+  [
+   "TAN",
+   4096
+  ],
+  [
+   "MINERAL WATER",
+   3591
+  ],
+  [
+   "WOOD AND TIMBER",
+   3462
+  ],
+  [
+   "ANIMALS, LIVING",
+   3061
+  ],
+  [
+   "METAL: Leaf, not Gold",
+   2694
+  ],
+  [
+   "FURNITURE AND HARDWOODS",
+   2642
+  ],
+  [
+   "SALT",
+   2494
+  ],
+  [
+   "MEAT, Preserved, otherwise than by Salting",
+   2347
+  ],
+  [
+   "ARMS: Swords, Cutlasses, Matchets, and Bayonets",
+   2137
+  ],
+  [
+   "BUTTONS AND STUDS, not of Metal",
+   1836
+  ],
+  [
+   "ARMS AND AMMUNITION",
+   1443
+  ],
+  [
+   "PLANTS, SHRUBS, TREES, AND FLOWER ROOTS",
+   1302
+  ],
+  [
+   "BEEF",
+   1046
+  ],
+  [
+   "METHYLIC ALCOHOL, not purified so as to be potable",
+   1035
+  ],
+  [
+   "CORN, GRAIN, MEAL AND FLOUR",
+   909
+  ],
+  [
+   "RAGS and other Materials used for making Paper",
+   867
+  ],
+  [
+   "PLATINA",
+   816
+  ],
+  [
+   "PAPER-MAKING MATERIALS",
+   350
+  ],
+  [
+   "WOOLLEN RAGS, applicable to other uses than manure, torn up or not",
+   258
+  ],
+  [
+   "GOLD'd)",
+   200
+  ],
+  [
+   "HAIR",
+   118
+  ],
+  [
+   "RABBITS",
+   40
+  ]
+ ],
+ "unmapped_reexport": 366992
+}
