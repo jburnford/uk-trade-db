@@ -1,0 +1,5122 @@
+{
+ "years": [
+  1870,
+  1871,
+  1872,
+  1873,
+  1874,
+  1875,
+  1876,
+  1877,
+  1878,
+  1879,
+  1880,
+  1881,
+  1882,
+  1883,
+  1884,
+  1885,
+  1886,
+  1887,
+  1888,
+  1889,
+  1890,
+  1891,
+  1892,
+  1893,
+  1894,
+  1895,
+  1896,
+  1897,
+  1898,
+  1899,
+  1900
+ ],
+ "total_export_uk": [
+  9231150,
+  0,
+  9406633,
+  8575397,
+  8190309,
+  9287199,
+  7279722,
+  8107219,
+  7622801,
+  5608856,
+  7258045,
+  8561335,
+  9211849,
+  9129849,
+  8517364,
+  6754604,
+  7175426,
+  7984038,
+  7264239,
+  8037220,
+  7115565,
+  6931009,
+  7248074,
+  6642937,
+  5983548,
+  5281725,
+  5558856,
+  5204809,
+  5749278,
+  6667629,
+  7652253
+ ],
+ "total_reexport": [
+  0,
+  0,
+  969857,
+  622203,
+  728721,
+  495662,
+  542503,
+  550179,
+  522644,
+  549087,
+  585763,
+  697580,
+  737933,
+  763103,
+  883413,
+  1000896,
+  962004,
+  936139,
+  983171,
+  1162280,
+  899761,
+  875518,
+  1010850,
+  1266471,
+  934067,
+  901958,
+  798250,
+  924192,
+  1192457,
+  1225569,
+  1455219
+ ],
+ "regions": [
+  "Europe",
+  "India & Southeast Asia",
+  "China & Japan",
+  "North America",
+  "Australasia & Pacific",
+  "Mediterranean & Levant",
+  "South America",
+  "Unmapped",
+  "Africa",
+  "Caribbean & Central America"
+ ],
+ "region_year": {
+  "1870": {},
+  "1871": {},
+  "1872": {
+   "Europe": 158789,
+   "Mediterranean & Levant": 36482,
+   "China & Japan": 470852,
+   "North America": 20876,
+   "South America": 32625,
+   "India & Southeast Asia": 148940,
+   "Caribbean & Central America": 11296,
+   "Africa": 20159,
+   "Australasia & Pacific": 53168,
+   "Unmapped": 16670
+  },
+  "1873": {
+   "Europe": 108607,
+   "Mediterranean & Levant": 25282,
+   "China & Japan": 305358,
+   "North America": 12380,
+   "India & Southeast Asia": 129704,
+   "Caribbean & Central America": 12299,
+   "South America": 11402,
+   "Africa": 8086,
+   "Australasia & Pacific": 2256,
+   "Unmapped": 6828
+  },
+  "1874": {
+   "Europe": 128758,
+   "China & Japan": 336361,
+   "North America": 16041,
+   "India & Southeast Asia": 136693,
+   "Mediterranean & Levant": 24215,
+   "Caribbean & Central America": 25401,
+   "Australasia & Pacific": 2480,
+   "South America": 25628,
+   "Africa": 9243,
+   "Unmapped": 23902
+  },
+  "1875": {
+   "Europe": 55623,
+   "China & Japan": 270866,
+   "North America": 8268,
+   "India & Southeast Asia": 109501,
+   "Mediterranean & Levant": 17865,
+   "Caribbean & Central America": 10187,
+   "Australasia & Pacific": 1094,
+   "Africa": 4223,
+   "South America": 9061,
+   "Unmapped": 8973
+  },
+  "1876": {
+   "Europe": 71027,
+   "China & Japan": 274854,
+   "North America": 8603,
+   "India & Southeast Asia": 123876,
+   "Mediterranean & Levant": 17356,
+   "Caribbean & Central America": 19821,
+   "South America": 18654,
+   "Africa": 5897,
+   "Australasia & Pacific": 1062,
+   "Unmapped": 1354
+  },
+  "1877": {
+   "Europe": 80527,
+   "China & Japan": 255506,
+   "India & Southeast Asia": 134679,
+   "Mediterranean & Levant": 24025,
+   "North America": 11077,
+   "Caribbean & Central America": 17079,
+   "Australasia & Pacific": 2725,
+   "Africa": 5917,
+   "South America": 18644
+  },
+  "1878": {
+   "Europe": 97144,
+   "China & Japan": 227421,
+   "India & Southeast Asia": 143795,
+   "Mediterranean & Levant": 24571,
+   "North America": 11927,
+   "Africa": 2708,
+   "Australasia & Pacific": 2397,
+   "Caribbean & Central America": 6451,
+   "South America": 6230
+  },
+  "1879": {
+   "Europe": 52767,
+   "China & Japan": 301747,
+   "India & Southeast Asia": 160348,
+   "Mediterranean & Levant": 7050,
+   "North America": 9205,
+   "South America": 5483,
+   "Africa": 2603,
+   "Caribbean & Central America": 9149,
+   "Australasia & Pacific": 736
+  },
+  "1880": {
+   "Europe": 100034,
+   "China & Japan": 295613,
+   "North America": 17039,
+   "India & Southeast Asia": 135854,
+   "Mediterranean & Levant": 11298,
+   "Caribbean & Central America": 11558,
+   "South America": 8478,
+   "Africa": 4875,
+   "Australasia & Pacific": 1013
+  },
+  "1881": {
+   "Europe": 131981,
+   "China & Japan": 300794,
+   "India & Southeast Asia": 178877,
+   "Mediterranean & Levant": 17903,
+   "North America": 21350,
+   "Caribbean & Central America": 8339,
+   "South America": 7617,
+   "Australasia & Pacific": 2039,
+   "Africa": 3135,
+   "Unmapped": 25545
+  },
+  "1882": {
+   "Mediterranean & Levant": 21621,
+   "Europe": 200979,
+   "Caribbean & Central America": 9351,
+   "South America": 113548,
+   "North America": 150459,
+   "India & Southeast Asia": 55194,
+   "Africa": 3552,
+   "China & Japan": 8072,
+   "Australasia & Pacific": 175157
+  },
+  "1883": {
+   "Europe": 178064,
+   "China & Japan": 295111,
+   "North America": 27578,
+   "India & Southeast Asia": 210737,
+   "Australasia & Pacific": 3812,
+   "Mediterranean & Levant": 22598,
+   "Africa": 4520,
+   "South America": 9837,
+   "Caribbean & Central America": 10845
+  },
+  "1884": {
+   "Europe": 249460,
+   "China & Japan": 278259,
+   "North America": 38718,
+   "India & Southeast Asia": 233185,
+   "Australasia & Pacific": 2461,
+   "Mediterranean & Levant": 36277,
+   "Caribbean & Central America": 10833,
+   "South America": 8023,
+   "Africa": 5013,
+   "Unmapped": 21182
+  },
+  "1885": {
+   "Europe": 284780,
+   "China & Japan": 302625,
+   "India & Southeast Asia": 243302,
+   "Australasia & Pacific": 47210,
+   "Mediterranean & Levant": 29086,
+   "Africa": 12560,
+   "Caribbean & Central America": 15902,
+   "South America": 15355,
+   "North America": 41222,
+   "Unmapped": 8855
+  },
+  "1886": {
+   "Europe": 342392,
+   "China & Japan": 221070,
+   "India & Southeast Asia": 239773,
+   "Australasia & Pacific": 53480,
+   "Mediterranean & Levant": 26696,
+   "Africa": 24675,
+   "North America": 23870,
+   "Caribbean & Central America": 11182,
+   "South America": 7187,
+   "Unmapped": 11678
+  },
+  "1887": {
+   "Europe": 308582,
+   "China & Japan": 177955,
+   "North America": 19997,
+   "India & Southeast Asia": 284938,
+   "Mediterranean & Levant": 34708,
+   "Caribbean & Central America": 17553,
+   "South America": 13903,
+   "Australasia & Pacific": 50789,
+   "Africa": 22677,
+   "Unmapped": 5037
+  },
+  "1888": {
+   "Europe": 278616,
+   "China & Japan": 153841,
+   "North America": 80893,
+   "India & Southeast Asia": 316255,
+   "Mediterranean & Levant": 29365,
+   "Caribbean & Central America": 43183,
+   "South America": 9102,
+   "Australasia & Pacific": 17261,
+   "Africa": 34718,
+   "Unmapped": 19937
+  },
+  "1889": {
+   "Europe": 452173,
+   "China & Japan": 141293,
+   "North America": 18006,
+   "India & Southeast Asia": 403849,
+   "Mediterranean & Levant": 25162,
+   "Caribbean & Central America": 18419,
+   "South America": 17916,
+   "Australasia & Pacific": 48055,
+   "Africa": 18078,
+   "Unmapped": 19329
+  },
+  "1890": {
+   "Europe": 365652,
+   "China & Japan": 102877,
+   "North America": 9892,
+   "India & Southeast Asia": 317788,
+   "Mediterranean & Levant": 18613,
+   "Caribbean & Central America": 16255,
+   "South America": 12563,
+   "Australasia & Pacific": 44308,
+   "Africa": 11812
+  },
+  "1891": {
+   "Europe": 346701,
+   "China & Japan": 79993,
+   "North America": 15629,
+   "India & Southeast Asia": 345036,
+   "Australasia & Pacific": 27556,
+   "Africa": 11303,
+   "Mediterranean & Levant": 14910,
+   "Caribbean & Central America": 14946,
+   "South America": 8938,
+   "Unmapped": 10507
+  },
+  "1892": {
+   "Europe": 445658,
+   "China & Japan": 74360,
+   "North America": 29126,
+   "India & Southeast Asia": 317640,
+   "Australasia & Pacific": 52186,
+   "Africa": 20847,
+   "Mediterranean & Levant": 21916,
+   "South America": 12452,
+   "Caribbean & Central America": 11500,
+   "Unmapped": 25163
+  },
+  "1893": {
+   "Europe": 648683,
+   "China & Japan": 81583,
+   "North America": 61822,
+   "India & Southeast Asia": 273509,
+   "Australasia & Pacific": 79484,
+   "Mediterranean & Levant": 29662,
+   "Caribbean & Central America": 10305,
+   "Africa": 44976,
+   "South America": 18990,
+   "Unmapped": 17456
+  },
+  "1894": {
+   "Europe": 467622,
+   "China & Japan": 49420,
+   "North America": 40290,
+   "India & Southeast Asia": 267747,
+   "Australasia & Pacific": 41556,
+   "Mediterranean & Levant": 21200,
+   "Caribbean & Central America": 9817,
+   "South America": 11794,
+   "Africa": 24582,
+   "Unmapped": 40
+  },
+  "1895": {
+   "Europe": 457162,
+   "China & Japan": 40825,
+   "North America": 35297,
+   "India & Southeast Asia": 254457,
+   "Australasia & Pacific": 35881,
+   "Mediterranean & Levant": 23053,
+   "Caribbean & Central America": 18255,
+   "Africa": 23358,
+   "South America": 10166,
+   "Unmapped": 3503
+  },
+  "1896": {
+   "Europe": 287413,
+   "China & Japan": 36026,
+   "North America": 45166,
+   "India & Southeast Asia": 204235,
+   "Australasia & Pacific": 24308,
+   "Mediterranean & Levant": 20493,
+   "Africa": 20704,
+   "Caribbean & Central America": 9258,
+   "Unmapped": 141461,
+   "South America": 9188
+  },
+  "1897": {
+   "Europe": 270155,
+   "China & Japan": 29326,
+   "North America": 150077,
+   "India & Southeast Asia": 172583,
+   "Australasia & Pacific": 63976,
+   "Mediterranean & Levant": 24282,
+   "Caribbean & Central America": 35218,
+   "South America": 75226,
+   "Africa": 31025,
+   "Unmapped": 72323
+  },
+  "1898": {
+   "Europe": 452986,
+   "China & Japan": 42119,
+   "North America": 199071,
+   "India & Southeast Asia": 180320,
+   "Australasia & Pacific": 104545,
+   "Mediterranean & Levant": 25506,
+   "Caribbean & Central America": 22464,
+   "Africa": 49314,
+   "South America": 71312,
+   "Unmapped": 44820
+  },
+  "1899": {
+   "Europe": 413999,
+   "China & Japan": 59606,
+   "North America": 224567,
+   "India & Southeast Asia": 188049,
+   "Australasia & Pacific": 83627,
+   "Mediterranean & Levant": 35744,
+   "Caribbean & Central America": 22191,
+   "Africa": 44878,
+   "South America": 65290,
+   "Unmapped": 87617
+  },
+  "1900": {
+   "Europe": 472181,
+   "China & Japan": 76346,
+   "North America": 107062,
+   "India & Southeast Asia": 460398,
+   "Australasia & Pacific": 55811,
+   "Mediterranean & Levant": 75133,
+   "Caribbean & Central America": 14416,
+   "South America": 45335,
+   "Africa": 50164,
+   "Unmapped": 98374
+  }
+ },
+ "region_total": {
+  "Europe": 7908516,
+  "India & Southeast Asia": 6371261,
+  "China & Japan": 5290080,
+  "North America": 1455510,
+  "Australasia & Pacific": 1080433,
+  "Mediterranean & Levant": 742074,
+  "South America": 679947,
+  "Unmapped": 670554,
+  "Africa": 525602,
+  "Caribbean & Central America": 453473
+ },
+ "top_origin_countries": [
+  [
+   "China",
+   5022977
+  ],
+  [
+   "France",
+   2802966
+  ],
+  [
+   "Bengal",
+   2307343
+  ],
+  [
+   "Bengal And Burmah",
+   1466593
+  ],
+  [
+   "United States Of America",
+   1213320
+  ],
+  [
+   "Holland",
+   1174609
+  ],
+  [
+   "Belgium",
+   1071209
+  ],
+  [
+   "Ceylon",
+   1060631
+  ],
+  [
+   "Germany",
+   839171
+  ],
+  [
+   "Spain",
+   782291
+  ],
+  [
+   "Italy",
+   372526
+  ],
+  [
+   "Philippine Islands",
+   366346
+  ],
+  [
+   "British East Indies",
+   348509
+  ],
+  [
+   "Greece",
+   310848
+  ],
+  [
+   "Russia",
+   307504
+  ],
+  [
+   "British West India Islands",
+   284976
+  ],
+  [
+   "Turkey",
+   280196
+  ],
+  [
+   "Portugal",
+   243455
+  ],
+  [
+   "Australasia",
+   240630
+  ],
+  [
+   "New Zealand",
+   233653
+  ],
+  [
+   "Straits Settlements",
+   230324
+  ],
+  [
+   "Cape Of Good Hope",
+   229395
+  ],
+  [
+   "New South Wales",
+   214917
+  ],
+  [
+   "Hong Kong",
+   197119
+  ],
+  [
+   "Argentine Republic",
+   196363
+  ]
+ ],
+ "reexport_commodities": [
+  {
+   "commodity": "TEA",
+   "total": 9295628,
+   "mapped": 9295628,
+   "years": 28,
+   "top_origins": [
+    [
+     "China",
+     4835358
+    ],
+    [
+     "Bengal",
+     2071964
+    ],
+    [
+     "Bengal And Burmah",
+     1025005
+    ],
+    [
+     "Ceylon",
+     950597
+    ],
+    [
+     "Hong Kong",
+     103951
+    ],
+    [
+     "Holland",
+     87547
+    ]
+   ],
+   "regions": {
+    "China & Japan": 4942929,
+    "India & Southeast Asia": 4138903,
+    "Europe": 184279,
+    "Mediterranean & Levant": 13507,
+    "North America": 11683,
+    "Australasia & Pacific": 3810,
+    "South America": 438,
+    "Africa": 78
+   }
+  },
+  {
+   "commodity": "FRUIT",
+   "total": 1450574,
+   "mapped": 1450574,
+   "years": 29,
+   "top_origins": [
+    [
+     "Spain",
+     442898
+    ],
+    [
+     "Greece",
+     294834
+    ],
+    [
+     "Turkey",
+     151400
+    ],
+    [
+     "France",
+     95074
+    ],
+    [
+     "United States Of America",
+     76659
+    ],
+    [
+     "Portugal",
+     72670
+    ]
+   ],
+   "regions": {
+    "Europe": 815870,
+    "Mediterranean & Levant": 470277,
+    "North America": 117235,
+    "China & Japan": 20595,
+    "Australasia & Pacific": 8725,
+    "Caribbean & Central America": 7985,
+    "South America": 5120,
+    "India & Southeast Asia": 4314,
+    "Africa": 453
+   }
+  },
+  {
+   "commodity": "SILK MANUFACTURES",
+   "total": 1353445,
+   "mapped": 1219737,
+   "years": 15,
+   "top_origins": [
+    [
+     "France",
+     555000
+    ],
+    [
+     "Belgium",
+     379048
+    ],
+    [
+     "Holland",
+     216097
+    ],
+    [
+     "British East Indies",
+     19456
+    ],
+    [
+     "China",
+     11672
+    ],
+    [
+     "United States Of America",
+     8490
+    ]
+   ],
+   "regions": {
+    "Europe": 1153671,
+    "Unmapped": 133708,
+    "China & Japan": 21796,
+    "India & Southeast Asia": 21658,
+    "North America": 15734,
+    "South America": 4859,
+    "Australasia & Pacific": 1186,
+    "Caribbean & Central America": 770,
+    "Mediterranean & Levant": 62
+   }
+  },
+  {
+   "commodity": "SKINS, FURS AND PELTS",
+   "total": 1143301,
+   "mapped": 1143301,
+   "years": 26,
+   "top_origins": [
+    [
+     "Cape Of Good Hope",
+     143973
+    ],
+    [
+     "United States Of America",
+     107809
+    ],
+    [
+     "Argentine Republic",
+     99836
+    ],
+    [
+     "New Zealand",
+     83731
+    ],
+    [
+     "France",
+     79449
+    ],
+    [
+     "British Possessions In South Africa",
+     55783
+    ]
+   ],
+   "regions": {
+    "Africa": 228742,
+    "Europe": 226837,
+    "Australasia & Pacific": 224827,
+    "North America": 173628,
+    "South America": 128381,
+    "India & Southeast Asia": 104425,
+    "China & Japan": 37625,
+    "Mediterranean & Levant": 18828,
+    "Caribbean & Central America": 8
+   }
+  },
+  {
+   "commodity": "HEMP",
+   "total": 1105023,
+   "mapped": 1105023,
+   "years": 16,
+   "top_origins": [
+    [
+     "Philippine Islands",
+     351834
+    ],
+    [
+     "Germany",
+     143482
+    ],
+    [
+     "Italy",
+     142553
+    ],
+    [
+     "Russia",
+     133047
+    ],
+    [
+     "Philippine And Ladrone Islands",
+     90757
+    ],
+    [
+     "Hong Kong",
+     64649
+    ]
+   ],
+   "regions": {
+    "India & Southeast Asia": 493596,
+    "Europe": 436495,
+    "China & Japan": 71810,
+    "Australasia & Pacific": 44274,
+    "North America": 21113,
+    "Africa": 19004,
+    "Caribbean & Central America": 17978,
+    "Mediterranean & Levant": 753
+   }
+  },
+  {
+   "commodity": "WOOL",
+   "total": 999785,
+   "mapped": 999785,
+   "years": 17,
+   "top_origins": [
+    [
+     "New South Wales",
+     173632
+    ],
+    [
+     "New Zealand",
+     126592
+    ],
+    [
+     "Victoria",
+     115083
+    ],
+    [
+     "Cape Of Good Hope",
+     60934
+    ],
+    [
+     "British Possessions In South Africa",
+     54360
+    ],
+    [
+     "France",
+     51195
+    ]
+   ],
+   "regions": {
+    "Australasia & Pacific": 572323,
+    "Europe": 147055,
+    "Africa": 126095,
+    "Mediterranean & Levant": 60524,
+    "India & Southeast Asia": 51498,
+    "South America": 37266,
+    "North America": 2465,
+    "China & Japan": 2453,
+    "Caribbean & Central America": 106
+   }
+  },
+  {
+   "commodity": "WOOLLEN MANUFACTURES",
+   "total": 877427,
+   "mapped": 877427,
+   "years": 16,
+   "top_origins": [
+    [
+     "France",
+     715779
+    ],
+    [
+     "Holland",
+     67180
+    ],
+    [
+     "Germany",
+     35906
+    ],
+    [
+     "Belgium",
+     25091
+    ],
+    [
+     "United States Of America (Atlantic)",
+     13969
+    ],
+    [
+     "Australasia",
+     2937
+    ]
+   ],
+   "regions": {
+    "Europe": 848107,
+    "North America": 16963,
+    "South America": 3321,
+    "Australasia & Pacific": 2946,
+    "India & Southeast Asia": 2512,
+    "China & Japan": 1255,
+    "Africa": 1083,
+    "Caribbean & Central America": 734,
+    "Mediterranean & Levant": 507
+   }
+  },
+  {
+   "commodity": "RICE",
+   "total": 628582,
+   "mapped": 628582,
+   "years": 21,
+   "top_origins": [
+    [
+     "Bengal And Burmah",
+     416384
+    ],
+    [
+     "Bengal",
+     54514
+    ],
+    [
+     "Madras",
+     39488
+    ],
+    [
+     "Holland",
+     27495
+    ],
+    [
+     "Burmah",
+     26143
+    ],
+    [
+     "Japan",
+     19166
+    ]
+   ],
+   "regions": {
+    "India & Southeast Asia": 564262,
+    "Europe": 43182,
+    "China & Japan": 19750,
+    "Mediterranean & Levant": 651,
+    "North America": 396,
+    "Africa": 316,
+    "South America": 25
+   }
+  },
+  {
+   "commodity": "ZINC AND ZINC ORE",
+   "total": 563093,
+   "mapped": 563093,
+   "years": 23,
+   "top_origins": [
+    [
+     "Germany",
+     163152
+    ],
+    [
+     "Holland",
+     143113
+    ],
+    [
+     "Belgium",
+     91719
+    ],
+    [
+     "France",
+     34269
+    ],
+    [
+     "Bengal",
+     24249
+    ],
+    [
+     "Italy",
+     17245
+    ]
+   ],
+   "regions": {
+    "Europe": 461569,
+    "India & Southeast Asia": 48934,
+    "North America": 20867,
+    "Mediterranean & Levant": 12956,
+    "Australasia & Pacific": 6434,
+    "Africa": 3519,
+    "Caribbean & Central America": 3094,
+    "China & Japan": 2971,
+    "South America": 2749
+   }
+  },
+  {
+   "commodity": "SPICES",
+   "total": 535607,
+   "mapped": 535607,
+   "years": 24,
+   "top_origins": [
+    [
+     "British East Indies",
+     182536
+    ],
+    [
+     "Straits Settlements",
+     154017
+    ],
+    [
+     "British West India Islands",
+     53812
+    ],
+    [
+     "Ceylon",
+     27252
+    ],
+    [
+     "Holland",
+     20059
+    ],
+    [
+     "Bombay",
+     12986
+    ]
+   ],
+   "regions": {
+    "India & Southeast Asia": 402363,
+    "Caribbean & Central America": 53955,
+    "Europe": 29020,
+    "Africa": 24382,
+    "China & Japan": 18704,
+    "North America": 6557,
+    "Mediterranean & Levant": 414,
+    "South America": 140,
+    "Australasia & Pacific": 72
+   }
+  },
+  {
+   "commodity": "WINE",
+   "total": 502999,
+   "mapped": 502999,
+   "years": 28,
+   "top_origins": [
+    [
+     "France",
+     232539
+    ],
+    [
+     "Portugal",
+     112416
+    ],
+    [
+     "Spain",
+     108496
+    ],
+    [
+     "Holland",
+     25402
+    ],
+    [
+     "Italy",
+     8765
+    ],
+    [
+     "Germany",
+     4829
+    ]
+   ],
+   "regions": {
+    "Europe": 495304,
+    "Australasia & Pacific": 4902,
+    "North America": 881,
+    "Africa": 716,
+    "Mediterranean & Levant": 663,
+    "India & Southeast Asia": 447,
+    "South America": 51,
+    "China & Japan": 28,
+    "Caribbean & Central America": 7
+   }
+  },
+  {
+   "commodity": "IRON AND STEEL",
+   "total": 494247,
+   "mapped": 494247,
+   "years": 23,
+   "top_origins": [
+    [
+     "Spain",
+     186188
+    ],
+    [
+     "Sweden",
+     107599
+    ],
+    [
+     "Holland",
+     65482
+    ],
+    [
+     "Belgium",
+     42050
+    ],
+    [
+     "United States Of America",
+     23764
+    ],
+    [
+     "Germany",
+     18662
+    ]
+   ],
+   "regions": {
+    "Europe": 444002,
+    "North America": 27436,
+    "Mediterranean & Levant": 18462,
+    "Australasia & Pacific": 2295,
+    "India & Southeast Asia": 996,
+    "China & Japan": 723,
+    "South America": 190,
+    "Africa": 83,
+    "Caribbean & Central America": 60
+   }
+  },
+  {
+   "commodity": "SILK, RAW AND THROWN",
+   "total": 477111,
+   "mapped": 477111,
+   "years": 6,
+   "top_origins": [
+    [
+     "France",
+     212336
+    ],
+    [
+     "China",
+     73228
+    ],
+    [
+     "Bengal",
+     26827
+    ],
+    [
+     "Argentine Republic",
+     23235
+    ],
+    [
+     "Holland",
+     21853
+    ],
+    [
+     "Belgium",
+     19242
+    ]
+   ],
+   "regions": {
+    "Europe": 276789,
+    "China & Japan": 107241,
+    "India & Southeast Asia": 42190,
+    "South America": 38513,
+    "Caribbean & Central America": 10243,
+    "Mediterranean & Levant": 1095,
+    "North America": 885,
+    "Australasia & Pacific": 152,
+    "Africa": 3
+   }
+  },
+  {
+   "commodity": "TALLOW and STEARINE",
+   "total": 467084,
+   "mapped": 467084,
+   "years": 5,
+   "top_origins": [
+    [
+     "Australasia",
+     174050
+    ],
+    [
+     "United States Of America",
+     119467
+    ],
+    [
+     "Argentine Republic",
+     58719
+    ],
+    [
+     "Uruguay",
+     48567
+    ],
+    [
+     "France",
+     26786
+    ],
+    [
+     "Russia",
+     18298
+    ]
+   ],
+   "regions": {
+    "Australasia & Pacific": 178889,
+    "North America": 121125,
+    "South America": 107353,
+    "Europe": 59674,
+    "India & Southeast Asia": 19,
+    "China & Japan": 19,
+    "Africa": 5,
+    "Mediterranean & Levant": 0
+   }
+  },
+  {
+   "commodity": "SPIRITS",
+   "total": 463185,
+   "mapped": 463185,
+   "years": 29,
+   "top_origins": [
+    [
+     "British Guiana",
+     164975
+    ],
+    [
+     "British West India Islands",
+     164141
+    ],
+    [
+     "Holland",
+     42183
+    ],
+    [
+     "United States Of America",
+     18229
+    ],
+    [
+     "France",
+     11180
+    ],
+    [
+     "Mauritius",
+     10460
+    ]
+   ],
+   "regions": {
+    "Caribbean & Central America": 174064,
+    "South America": 169752,
+    "Europe": 71226,
+    "North America": 27327,
+    "Africa": 12443,
+    "China & Japan": 2506,
+    "Australasia & Pacific": 2466,
+    "India & Southeast Asia": 2285,
+    "Mediterranean & Levant": 1116
+   }
+  },
+  {
+   "commodity": "HAMS",
+   "total": 381460,
+   "mapped": 381460,
+   "years": 3,
+   "top_origins": [
+    [
+     "United States Of America",
+     354438
+    ],
+    [
+     "Canada",
+     26122
+    ],
+    [
+     "Germany",
+     385
+    ],
+    [
+     "Denmark",
+     312
+    ],
+    [
+     "Spain",
+     137
+    ],
+    [
+     "Belgium",
+     67
+    ]
+   ],
+   "regions": {
+    "North America": 380560,
+    "Europe": 900
+   }
+  },
+  {
+   "commodity": "COFFEE",
+   "total": 347196,
+   "mapped": 347196,
+   "years": 17,
+   "top_origins": [
+    [
+     "Brazil",
+     60948
+    ],
+    [
+     "Central America",
+     56537
+    ],
+    [
+     "Ceylon",
+     53670
+    ],
+    [
+     "Madras",
+     46780
+    ],
+    [
+     "United States Of America",
+     24470
+    ],
+    [
+     "Bombay",
+     17862
+    ]
+   ],
+   "regions": {
+    "India & Southeast Asia": 123845,
+    "Caribbean & Central America": 97921,
+    "South America": 62237,
+    "Europe": 29076,
+    "North America": 24470,
+    "Africa": 8248,
+    "Mediterranean & Levant": 953,
+    "China & Japan": 446
+   }
+  },
+  {
+   "commodity": "WOOLLEN YARN",
+   "total": 339187,
+   "mapped": 339187,
+   "years": 4,
+   "top_origins": [
+    [
+     "Belgium",
+     164857
+    ],
+    [
+     "France",
+     95523
+    ],
+    [
+     "Germany",
+     68621
+    ],
+    [
+     "Holland",
+     3164
+    ],
+    [
+     "Denmark",
+     2351
+    ],
+    [
+     "Egypt",
+     1005
+    ]
+   ],
+   "regions": {
+    "Europe": 336723,
+    "Mediterranean & Levant": 1129,
+    "Australasia & Pacific": 710,
+    "South America": 283,
+    "North America": 214,
+    "India & Southeast Asia": 129
+   }
+  },
+  {
+   "commodity": "EMBROIDERY AND NEEDLEWORK",
+   "total": 265905,
+   "mapped": 231456,
+   "years": 18,
+   "top_origins": [
+    [
+     "France",
+     137462
+    ],
+    [
+     "Belgium",
+     65034
+    ],
+    [
+     "Holland",
+     12391
+    ],
+    [
+     "Turkey",
+     4959
+    ],
+    [
+     "Portugal",
+     4899
+    ],
+    [
+     "Germany",
+     4082
+    ]
+   ],
+   "regions": {
+    "Europe": 223867,
+    "Unmapped": 34449,
+    "Mediterranean & Levant": 4959,
+    "China & Japan": 1421,
+    "India & Southeast Asia": 1174,
+    "Africa": 24,
+    "North America": 11
+   }
+  },
+  {
+   "commodity": "FISH",
+   "total": 257671,
+   "mapped": 257671,
+   "years": 23,
+   "top_origins": [
+    [
+     "Holland",
+     67709
+    ],
+    [
+     "United States Of America",
+     47552
+    ],
+    [
+     "France",
+     46184
+    ],
+    [
+     "Norway",
+     30297
+    ],
+    [
+     "Canada",
+     24852
+    ],
+    [
+     "British West India Islands",
+     11192
+    ]
+   ],
+   "regions": {
+    "Europe": 172653,
+    "North America": 72980,
+    "Caribbean & Central America": 11218,
+    "Australasia & Pacific": 753,
+    "South America": 33,
+    "India & Southeast Asia": 25,
+    "Africa": 10,
+    "Mediterranean & Levant": 0
+   }
+  },
+  {
+   "commodity": "SUGAR",
+   "total": 250910,
+   "mapped": 250910,
+   "years": 15,
+   "top_origins": [
+    [
+     "Germany",
+     79607
+    ],
+    [
+     "France",
+     40824
+    ],
+    [
+     "Holland",
+     17917
+    ],
+    [
+     "British West India Islands",
+     15973
+    ],
+    [
+     "Java",
+     14054
+    ],
+    [
+     "Belgium",
+     12995
+    ]
+   ],
+   "regions": {
+    "Europe": 152564,
+    "South America": 29837,
+    "India & Southeast Asia": 27170,
+    "Caribbean & Central America": 24811,
+    "Africa": 5117,
+    "North America": 4202,
+    "Australasia & Pacific": 3471,
+    "Mediterranean & Levant": 2214,
+    "China & Japan": 1525
+   }
+  },
+  {
+   "commodity": "COTTON, RAW",
+   "total": 232782,
+   "mapped": 232782,
+   "years": 16,
+   "top_origins": [
+    [
+     "United States Of America",
+     128710
+    ],
+    [
+     "Egypt",
+     56966
+    ],
+    [
+     "United States Of America (Atlantic)",
+     27102
+    ],
+    [
+     "Bombay",
+     7216
+    ],
+    [
+     "Brazil",
+     3597
+    ],
+    [
+     "Madras",
+     1986
+    ]
+   ],
+   "regions": {
+    "North America": 155854,
+    "Mediterranean & Levant": 57460,
+    "India & Southeast Asia": 11570,
+    "South America": 5594,
+    "Europe": 1646,
+    "Caribbean & Central America": 215,
+    "China & Japan": 182,
+    "Africa": 143,
+    "Australasia & Pacific": 118
+   }
+  },
+  {
+   "commodity": "GOODS UNENUMERATED",
+   "total": 231212,
+   "mapped": 163621,
+   "years": 7,
+   "top_origins": [
+    [
+     "Germany",
+     29815
+    ],
+    [
+     "Belgium",
+     22413
+    ],
+    [
+     "France",
+     21394
+    ],
+    [
+     "United States Of America",
+     18013
+    ],
+    [
+     "Russia (Northern Ports)",
+     15722
+    ],
+    [
+     "Holland",
+     15566
+    ]
+   ],
+   "regions": {
+    "Europe": 135756,
+    "Unmapped": 67591,
+    "North America": 18574,
+    "South America": 4783,
+    "China & Japan": 3947,
+    "Caribbean & Central America": 306,
+    "Mediterranean & Levant": 256
+   }
+  },
+  {
+   "commodity": "LACE, and Articles thereof",
+   "total": 195716,
+   "mapped": 195716,
+   "years": 10,
+   "top_origins": [
+    [
+     "France",
+     130600
+    ],
+    [
+     "Holland",
+     46922
+    ],
+    [
+     "Belgium",
+     15995
+    ],
+    [
+     "Germany",
+     2068
+    ],
+    [
+     "Denmark",
+     128
+    ],
+    [
+     "British East Indies",
+     2
+    ]
+   ],
+   "regions": {
+    "Europe": 195713,
+    "India & Southeast Asia": 2,
+    "Mediterranean & Levant": 0
+   }
+  },
+  {
+   "commodity": "CHEMICAL MANUFACTURES AND PRODUCTS",
+   "total": 192958,
+   "mapped": 192958,
+   "years": 21,
+   "top_origins": [
+    [
+     "France",
+     43960
+    ],
+    [
+     "Germany",
+     43496
+    ],
+    [
+     "Holland",
+     38186
+    ],
+    [
+     "Italy",
+     25241
+    ],
+    [
+     "Chile",
+     13719
+    ],
+    [
+     "United States Of America",
+     7644
+    ]
+   ],
+   "regions": {
+    "Europe": 166152,
+    "South America": 14911,
+    "North America": 7741,
+    "India & Southeast Asia": 1951,
+    "Mediterranean & Levant": 1612,
+    "China & Japan": 399,
+    "Australasia & Pacific": 181,
+    "Caribbean & Central America": 10
+   }
+  },
+  {
+   "commodity": "HATS OR BONNETS",
+   "total": 160544,
+   "mapped": 160544,
+   "years": 1,
+   "top_origins": [
+    [
+     "United States Of America",
+     56633
+    ],
+    [
+     "British East Indies",
+     38819
+    ],
+    [
+     "Mexico",
+     25749
+    ],
+    [
+     "Madagascar",
+     13205
+    ],
+    [
+     "Mauritius",
+     10301
+    ],
+    [
+     "Philippine Islands",
+     6012
+    ]
+   ],
+   "regions": {
+    "North America": 56633,
+    "India & Southeast Asia": 44831,
+    "Caribbean & Central America": 25749,
+    "Africa": 23506,
+    "Europe": 4558,
+    "China & Japan": 3769,
+    "Mediterranean & Levant": 1497
+   }
+  },
+  {
+   "commodity": "DRUGS",
+   "total": 150433,
+   "mapped": 150433,
+   "years": 13,
+   "top_origins": [
+    [
+     "Turkey",
+     19256
+    ],
+    [
+     "Madras",
+     18012
+    ],
+    [
+     "Ceylon",
+     16708
+    ],
+    [
+     "Asiatic",
+     11629
+    ],
+    [
+     "Bombay",
+     10113
+    ],
+    [
+     "Holland",
+     8753
+    ]
+   ],
+   "regions": {
+    "India & Southeast Asia": 63920,
+    "Europe": 30632,
+    "Mediterranean & Levant": 24123,
+    "South America": 13482,
+    "China & Japan": 9934,
+    "North America": 4842,
+    "Africa": 2071,
+    "Caribbean & Central America": 1418,
+    "Australasia & Pacific": 10
+   }
+  },
+  {
+   "commodity": "LEATHER AND LEATHER MANUFACTURES",
+   "total": 149924,
+   "mapped": 149924,
+   "years": 11,
+   "top_origins": [
+    [
+     "France",
+     43018
+    ],
+    [
+     "Holland",
+     34048
+    ],
+    [
+     "United States Of America",
+     30752
+    ],
+    [
+     "Belgium",
+     24916
+    ],
+    [
+     "Germany",
+     9129
+    ],
+    [
+     "Denmark",
+     2738
+    ]
+   ],
+   "regions": {
+    "Europe": 115359,
+    "North America": 33139,
+    "Mediterranean & Levant": 362,
+    "Africa": 324,
+    "Australasia & Pacific": 290,
+    "South America": 266,
+    "India & Southeast Asia": 133,
+    "Caribbean & Central America": 47,
+    "China & Japan": 3
+   }
+  },
+  {
+   "commodity": "FARINACEOUS SUBSTANCES",
+   "total": 135872,
+   "mapped": 135872,
+   "years": 15,
+   "top_origins": [
+    [
+     "Germany",
+     32252
+    ],
+    [
+     "Holland",
+     17854
+    ],
+    [
+     "Burmah",
+     17756
+    ],
+    [
+     "Cape Of Good Hope",
+     12630
+    ],
+    [
+     "British East Indies",
+     9217
+    ],
+    [
+     "United States Of America",
+     8968
+    ]
+   ],
+   "regions": {
+    "Europe": 67434,
+    "India & Southeast Asia": 39061,
+    "Africa": 13017,
+    "North America": 10590,
+    "Caribbean & Central America": 3940,
+    "China & Japan": 618,
+    "Mediterranean & Levant": 613,
+    "South America": 553,
+    "Australasia & Pacific": 47
+   }
+  },
+  {
+   "commodity": "HIDES, RAW",
+   "total": 129953,
+   "mapped": 129953,
+   "years": 9,
+   "top_origins": [
+    [
+     "Bengal",
+     40249
+    ],
+    [
+     "United States Of America",
+     10596
+    ],
+    [
+     "Straits Settlements",
+     7708
+    ],
+    [
+     "Bengal And Burmah",
+     7220
+    ],
+    [
+     "Germany",
+     7156
+    ],
+    [
+     "British Possessions In South Africa",
+     6648
+    ]
+   ],
+   "regions": {
+    "India & Southeast Asia": 67748,
+    "Europe": 22908,
+    "Africa": 16506,
+    "North America": 11021,
+    "Australasia & Pacific": 4051,
+    "South America": 3262,
+    "China & Japan": 3010,
+    "Caribbean & Central America": 785,
+    "Mediterranean & Levant": 661
+   }
+  },
+  {
+   "commodity": "LIQUORICE",
+   "total": 108331,
+   "mapped": 108331,
+   "years": 18,
+   "top_origins": [
+    [
+     "Italy",
+     55259
+    ],
+    [
+     "Turkey",
+     29475
+    ],
+    [
+     "Russia",
+     10294
+    ],
+    [
+     "France",
+     8819
+    ],
+    [
+     "Spain",
+     3532
+    ],
+    [
+     "United States Of America",
+     600
+    ]
+   ],
+   "regions": {
+    "Europe": 78250,
+    "Mediterranean & Levant": 29475,
+    "North America": 600,
+    "India & Southeast Asia": 6
+   }
+  },
+  {
+   "commodity": "OIL",
+   "total": 84246,
+   "mapped": 84246,
+   "years": 12,
+   "top_origins": [
+    [
+     "United States Of America",
+     25725
+    ],
+    [
+     "Italy",
+     8146
+    ],
+    [
+     "Lagos",
+     6718
+    ],
+    [
+     "Russia (Northern Ports)",
+     4610
+    ],
+    [
+     "Ceylon",
+     4209
+    ],
+    [
+     "France",
+     4024
+    ]
+   ],
+   "regions": {
+    "North America": 28285,
+    "Europe": 27381,
+    "Africa": 13981,
+    "India & Southeast Asia": 8293,
+    "Mediterranean & Levant": 4216,
+    "Australasia & Pacific": 1236,
+    "China & Japan": 360,
+    "South America": 297,
+    "Caribbean & Central America": 197
+   }
+  },
+  {
+   "commodity": "PAINTERS' Colours and Pigments, Unenumerated",
+   "total": 81726,
+   "mapped": 75675,
+   "years": 12,
+   "top_origins": [
+    [
+     "Holland",
+     31020
+    ],
+    [
+     "Belgium",
+     17537
+    ],
+    [
+     "Germany",
+     15034
+    ],
+    [
+     "France",
+     7956
+    ],
+    [
+     "United States Of America",
+     1797
+    ],
+    [
+     "Spain",
+     779
+    ]
+   ],
+   "regions": {
+    "Europe": 73137,
+    "Unmapped": 6051,
+    "North America": 1828,
+    "India & Southeast Asia": 300,
+    "Mediterranean & Levant": 268,
+    "China & Japan": 77,
+    "Australasia & Pacific": 52,
+    "Caribbean & Central America": 11,
+    "South America": 2
+   }
+  },
+  {
+   "commodity": "TOBACCO",
+   "total": 79464,
+   "mapped": 79464,
+   "years": 12,
+   "top_origins": [
+    [
+     "United States Of America",
+     58246
+    ],
+    [
+     "Holland",
+     10992
+    ],
+    [
+     "Turkey",
+     1917
+    ],
+    [
+     "Germany",
+     1562
+    ],
+    [
+     "Egypt",
+     1404
+    ],
+    [
+     "France",
+     1231
+    ]
+   ],
+   "regions": {
+    "North America": 58280,
+    "Europe": 14666,
+    "Mediterranean & Levant": 3375,
+    "China & Japan": 1802,
+    "India & Southeast Asia": 1030,
+    "Caribbean & Central America": 154,
+    "South America": 82,
+    "Australasia & Pacific": 54,
+    "Africa": 21
+   }
+  },
+  {
+   "commodity": "GLASS",
+   "total": 76922,
+   "mapped": 76922,
+   "years": 15,
+   "top_origins": [
+    [
+     "Belgium",
+     38696
+    ],
+    [
+     "Germany",
+     18746
+    ],
+    [
+     "France",
+     8613
+    ],
+    [
+     "Holland",
+     6969
+    ],
+    [
+     "Sweden",
+     885
+    ],
+    [
+     "Australia",
+     568
+    ]
+   ],
+   "regions": {
+    "Europe": 74503,
+    "North America": 848,
+    "Australasia & Pacific": 645,
+    "Africa": 309,
+    "India & Southeast Asia": 272,
+    "South America": 140,
+    "Caribbean & Central America": 83,
+    "Mediterranean & Levant": 66,
+    "China & Japan": 57
+   }
+  },
+  {
+   "commodity": "FLAX",
+   "total": 72864,
+   "mapped": 72864,
+   "years": 4,
+   "top_origins": [
+    [
+     "Russia",
+     44239
+    ],
+    [
+     "Belgium",
+     18009
+    ],
+    [
+     "Holland",
+     6489
+    ],
+    [
+     "Germany",
+     2654
+    ],
+    [
+     "France",
+     927
+    ],
+    [
+     "United States Of America",
+     361
+    ]
+   ],
+   "regions": {
+    "Europe": 72318,
+    "North America": 520,
+    "Mediterranean & Levant": 26
+   }
+  },
+  {
+   "commodity": "DYE STUFFS AND DYE WOODS",
+   "total": 62866,
+   "mapped": 2546,
+   "years": 6,
+   "top_origins": [
+    [
+     "France",
+     745
+    ],
+    [
+     "Bombay",
+     423
+    ],
+    [
+     "Mexico",
+     223
+    ],
+    [
+     "United States Of America",
+     203
+    ],
+    [
+     "Holland",
+     174
+    ],
+    [
+     "Madras",
+     126
+    ]
+   ],
+   "regions": {
+    "Unmapped": 60320,
+    "Europe": 1201,
+    "India & Southeast Asia": 640,
+    "Caribbean & Central America": 315,
+    "North America": 279,
+    "Mediterranean & Levant": 72,
+    "Africa": 27,
+    "South America": 10,
+    "China & Japan": 0,
+    "Australasia & Pacific": 0
+   }
+  },
+  {
+   "commodity": "TIN",
+   "total": 55710,
+   "mapped": 55710,
+   "years": 6,
+   "top_origins": [
+    [
+     "Straits Settlements",
+     40157
+    ],
+    [
+     "New South Wales",
+     6709
+    ],
+    [
+     "Victoria",
+     2410
+    ],
+    [
+     "Chile",
+     2394
+    ],
+    [
+     "Bombay",
+     1477
+    ],
+    [
+     "Queensland",
+     532
+    ]
+   ],
+   "regions": {
+    "India & Southeast Asia": 41993,
+    "Australasia & Pacific": 9885,
+    "South America": 2764,
+    "Europe": 889,
+    "China & Japan": 139,
+    "North America": 30,
+    "Africa": 9
+   }
+  },
+  {
+   "commodity": "BRISTLES",
+   "total": 55455,
+   "mapped": 55455,
+   "years": 11,
+   "top_origins": [
+    [
+     "Russia",
+     19382
+    ],
+    [
+     "Germany",
+     10719
+    ],
+    [
+     "China",
+     7289
+    ],
+    [
+     "Holland",
+     5379
+    ],
+    [
+     "Denmark",
+     4351
+    ],
+    [
+     "France",
+     1751
+    ]
+   ],
+   "regions": {
+    "Europe": 43385,
+    "China & Japan": 8493,
+    "India & Southeast Asia": 1511,
+    "Australasia & Pacific": 1249,
+    "North America": 736,
+    "South America": 70,
+    "Mediterranean & Levant": 10
+   }
+  },
+  {
+   "commodity": "FEATHERS AND DOWN",
+   "total": 49706,
+   "mapped": 49706,
+   "years": 10,
+   "top_origins": [
+    [
+     "France",
+     13813
+    ],
+    [
+     "British Possessions In South Africa",
+     12549
+    ],
+    [
+     "Germany",
+     6861
+    ],
+    [
+     "Holland",
+     4475
+    ],
+    [
+     "China",
+     2274
+    ],
+    [
+     "British East Indies",
+     1700
+    ]
+   ],
+   "regions": {
+    "Europe": 27773,
+    "Africa": 12753,
+    "China & Japan": 2812,
+    "India & Southeast Asia": 1843,
+    "North America": 1605,
+    "South America": 1320,
+    "Caribbean & Central America": 811,
+    "Mediterranean & Levant": 493,
+    "Australasia & Pacific": 296
+   }
+  },
+  {
+   "commodity": "CAOUTCHOU",
+   "total": 47929,
+   "mapped": 47929,
+   "years": 4,
+   "top_origins": [
+    [
+     "Brazil",
+     25709
+    ],
+    [
+     "The Gold Coast",
+     3530
+    ],
+    [
+     "Germany",
+     3104
+    ],
+    [
+     "Straits Settlements",
+     1755
+    ],
+    [
+     "Lagos",
+     1673
+    ],
+    [
+     "France",
+     1554
+    ]
+   ],
+   "regions": {
+    "South America": 27474,
+    "Europe": 8173,
+    "Africa": 7928,
+    "India & Southeast Asia": 2240,
+    "North America": 1734,
+    "Caribbean & Central America": 349,
+    "Australasia & Pacific": 27,
+    "Mediterranean & Levant": 5
+   }
+  },
+  {
+   "commodity": "FLOWERS, Artificial",
+   "total": 45501,
+   "mapped": 45501,
+   "years": 7,
+   "top_origins": [
+    [
+     "France",
+     39127
+    ],
+    [
+     "Holland",
+     5268
+    ],
+    [
+     "Germany",
+     843
+    ],
+    [
+     "Belgium",
+     263
+    ],
+    [
+     "United States Of America",
+     1
+    ],
+    [
+     "Canada",
+     0
+    ]
+   ],
+   "regions": {
+    "Europe": 45500,
+    "North America": 1
+   }
+  },
+  {
+   "commodity": "COPPER, Ore of",
+   "total": 42062,
+   "mapped": 42062,
+   "years": 4,
+   "top_origins": [
+    [
+     "United States Of America",
+     7746
+    ],
+    [
+     "Chile",
+     5700
+    ],
+    [
+     "Sweden",
+     5378
+    ],
+    [
+     "France",
+     4594
+    ],
+    [
+     "Cape Of Good Hope",
+     3896
+    ],
+    [
+     "Greece",
+     2878
+    ]
+   ],
+   "regions": {
+    "Europe": 15647,
+    "North America": 8116,
+    "South America": 7181,
+    "Africa": 3896,
+    "Australasia & Pacific": 3654,
+    "Mediterranean & Levant": 2990,
+    "China & Japan": 350,
+    "Caribbean & Central America": 137,
+    "India & Southeast Asia": 91
+   }
+  },
+  {
+   "commodity": "COCOA",
+   "total": 39722,
+   "mapped": 39722,
+   "years": 3,
+   "top_origins": [
+    [
+     "British West India Islands",
+     14964
+    ],
+    [
+     "Portugal",
+     5090
+    ],
+    [
+     "Ceylon",
+     4209
+    ],
+    [
+     "Ecuador",
+     4077
+    ],
+    [
+     "France",
+     3806
+    ],
+    [
+     "Brazil",
+     2551
+    ]
+   ],
+   "regions": {
+    "Caribbean & Central America": 15757,
+    "Europe": 12332,
+    "South America": 6861,
+    "India & Southeast Asia": 4243,
+    "North America": 319,
+    "Africa": 210
+   }
+  },
+  {
+   "commodity": "SALTPETRE",
+   "total": 33397,
+   "mapped": 33397,
+   "years": 5,
+   "top_origins": [
+    [
+     "Bengal And Burmah",
+     9461
+    ],
+    [
+     "Germany",
+     8641
+    ],
+    [
+     "Holland",
+     4911
+    ],
+    [
+     "British India",
+     2594
+    ],
+    [
+     "Belgium",
+     1899
+    ],
+    [
+     "United States Of America",
+     1685
+    ]
+   ],
+   "regions": {
+    "Europe": 17558,
+    "India & Southeast Asia": 13444,
+    "North America": 1845,
+    "Australasia & Pacific": 281,
+    "China & Japan": 79,
+    "South America": 79,
+    "Mediterranean & Levant": 73,
+    "Caribbean & Central America": 37
+   }
+  },
+  {
+   "commodity": "JUTE",
+   "total": 31056,
+   "mapped": 31056,
+   "years": 4,
+   "top_origins": [
+    [
+     "Bengal",
+     30934
+    ],
+    [
+     "China",
+     33
+    ],
+    [
+     "Germany",
+     28
+    ],
+    [
+     "Madras",
+     15
+    ],
+    [
+     "France",
+     14
+    ],
+    [
+     "Aden",
+     11
+    ]
+   ],
+   "regions": {
+    "India & Southeast Asia": 30961,
+    "Europe": 45,
+    "China & Japan": 33,
+    "Africa": 16,
+    "North America": 1
+   }
+  },
+  {
+   "commodity": "LEAD",
+   "total": 28006,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 28006
+   }
+  },
+  {
+   "commodity": "SUGAR. Refined, or rendered by any process equal thereto, in Lumps and Leaves",
+   "total": 26968,
+   "mapped": 0,
+   "years": 2,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 26968
+   }
+  },
+  {
+   "commodity": "PICTURES AND DRAWINGS, by hand",
+   "total": 26888,
+   "mapped": 0,
+   "years": 2,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 26888
+   }
+  },
+  {
+   "commodity": "ICE",
+   "total": 25545,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 25545
+   }
+  },
+  {
+   "commodity": "ORE, Unenumerated",
+   "total": 24146,
+   "mapped": 0,
+   "years": 3,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 24146
+   }
+  },
+  {
+   "commodity": "BOOKS",
+   "total": 20559,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 20559
+   }
+  },
+  {
+   "commodity": "MEAL AND FLOUR",
+   "total": 19067,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 19067
+   }
+  },
+  {
+   "commodity": "SPONGE",
+   "total": 17564,
+   "mapped": 0,
+   "years": 7,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 17564
+   }
+  },
+  {
+   "commodity": "CHICORY",
+   "total": 16452,
+   "mapped": 0,
+   "years": 8,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 16452
+   }
+  },
+  {
+   "commodity": "CORDAGE, TWINE, AND CABLE YARN",
+   "total": 14641,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 14641
+   }
+  },
+  {
+   "commodity": "SAGO",
+   "total": 14578,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 14578
+   }
+  },
+  {
+   "commodity": "STRAW PLAITING",
+   "total": 13975,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 13975
+   }
+  },
+  {
+   "commodity": "JUTE YARN",
+   "total": 13249,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 13249
+   }
+  },
+  {
+   "commodity": "CLOCKS AND WATCHES",
+   "total": 13059,
+   "mapped": 13059,
+   "years": 6,
+   "top_origins": [
+    [
+     "France",
+     9630
+    ],
+    [
+     "Belgium",
+     2286
+    ],
+    [
+     "United States Of America",
+     827
+    ],
+    [
+     "Germany",
+     219
+    ],
+    [
+     "Holland",
+     64
+    ],
+    [
+     "Australasia",
+     26
+    ]
+   ],
+   "regions": {
+    "Europe": 12198,
+    "North America": 827,
+    "Australasia & Pacific": 26,
+    "Mediterranean & Levant": 5,
+    "India & Southeast Asia": 3
+   }
+  },
+  {
+   "commodity": "LINEN",
+   "total": 12245,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 12245
+   }
+  },
+  {
+   "commodity": "GUM",
+   "total": 9416,
+   "mapped": 9416,
+   "years": 7,
+   "top_origins": [
+    [
+     "France",
+     2284
+    ],
+    [
+     "Egypt",
+     1205
+    ],
+    [
+     "Persia",
+     1153
+    ],
+    [
+     "Asiatic",
+     1059
+    ],
+    [
+     "Austrian Territories",
+     831
+    ],
+    [
+     "Morocco",
+     692
+    ]
+   ],
+   "regions": {
+    "Europe": 3736,
+    "Mediterranean & Levant": 3510,
+    "India & Southeast Asia": 1604,
+    "Africa": 506,
+    "Australasia & Pacific": 24,
+    "South America": 22,
+    "North America": 11,
+    "China & Japan": 2
+   }
+  },
+  {
+   "commodity": "PAPER",
+   "total": 9156,
+   "mapped": 9156,
+   "years": 6,
+   "top_origins": [
+    [
+     "Holland",
+     2086
+    ],
+    [
+     "Germany",
+     1597
+    ],
+    [
+     "Sweden",
+     898
+    ],
+    [
+     "Belgium",
+     886
+    ],
+    [
+     "Norway",
+     684
+    ],
+    [
+     "Philippine And Ladrone Islands",
+     587
+    ]
+   ],
+   "regions": {
+    "Europe": 7470,
+    "India & Southeast Asia": 630,
+    "North America": 597,
+    "Mediterranean & Levant": 372,
+    "China & Japan": 47,
+    "Africa": 18,
+    "South America": 11,
+    "Caribbean & Central America": 9,
+    "Australasia & Pacific": 2
+   }
+  },
+  {
+   "commodity": "DYE STUFFS (other than Dye Woods), and Substances used in Tanning and Dyeing, viz.",
+   "total": 8855,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 8855
+   }
+  },
+  {
+   "commodity": "FRUIT AND VEGETABLES, PRESERVED IN SUGAR",
+   "total": 8150,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 8150
+   }
+  },
+  {
+   "commodity": "CORN AND GRAIN",
+   "total": 7806,
+   "mapped": 0,
+   "years": 3,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 7806
+   }
+  },
+  {
+   "commodity": "COALS, CULM, CINDERS AND SHALE",
+   "total": 6845,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 6845
+   }
+  },
+  {
+   "commodity": "VEGETABLES, RAW",
+   "total": 6501,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 6501
+   }
+  },
+  {
+   "commodity": "BUTTER",
+   "total": 6131,
+   "mapped": 6131,
+   "years": 2,
+   "top_origins": [
+    [
+     "France",
+     2574
+    ],
+    [
+     "Holland",
+     1326
+    ],
+    [
+     "Denmark",
+     894
+    ],
+    [
+     "Germany",
+     491
+    ],
+    [
+     "Belgium",
+     299
+    ],
+    [
+     "Canada",
+     231
+    ]
+   ],
+   "regions": {
+    "Europe": 5690,
+    "North America": 441
+   }
+  },
+  {
+   "commodity": "BEADS",
+   "total": 6004,
+   "mapped": 0,
+   "years": 6,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 6004
+   }
+  },
+  {
+   "commodity": "ETHER, SULPHURIC",
+   "total": 5759,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 5759
+   }
+  },
+  {
+   "commodity": "PETROLEUM, Illuminating",
+   "total": 5701,
+   "mapped": 0,
+   "years": 3,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 5701
+   }
+  },
+  {
+   "commodity": "CORK",
+   "total": 4942,
+   "mapped": 4942,
+   "years": 2,
+   "top_origins": [
+    [
+     "Holland",
+     902
+    ],
+    [
+     "United States Of America",
+     887
+    ],
+    [
+     "France",
+     823
+    ],
+    [
+     "Germany",
+     640
+    ],
+    [
+     "Belgium",
+     563
+    ],
+    [
+     "Bengal",
+     280
+    ]
+   ],
+   "regions": {
+    "Europe": 3495,
+    "North America": 943,
+    "India & Southeast Asia": 287,
+    "China & Japan": 154,
+    "Mediterranean & Levant": 42,
+    "Caribbean & Central America": 16,
+    "Australasia & Pacific": 3,
+    "South America": 1
+   }
+  },
+  {
+   "commodity": "CHINAWARE OR PORCELAIN, AND EARTHENWARE",
+   "total": 4822,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 4822
+   }
+  },
+  {
+   "commodity": "ONIONS",
+   "total": 4786,
+   "mapped": 4786,
+   "years": 1,
+   "top_origins": [
+    [
+     "Spain",
+     1856
+    ],
+    [
+     "Egypt",
+     1277
+    ],
+    [
+     "Holland",
+     666
+    ],
+    [
+     "France",
+     315
+    ],
+    [
+     "Belgium",
+     261
+    ],
+    [
+     "Portugal",
+     201
+    ]
+   ],
+   "regions": {
+    "Europe": 3477,
+    "Mediterranean & Levant": 1309
+   }
+  },
+  {
+   "commodity": "SEEDS",
+   "total": 4500,
+   "mapped": 4500,
+   "years": 1,
+   "top_origins": [
+    [
+     "France",
+     1621
+    ],
+    [
+     "Bengal",
+     1151
+    ],
+    [
+     "Bombay",
+     506
+    ],
+    [
+     "Holland",
+     396
+    ],
+    [
+     "Russia",
+     225
+    ],
+    [
+     "Germany",
+     203
+    ]
+   ],
+   "regions": {
+    "Europe": 2534,
+    "India & Southeast Asia": 1671,
+    "South America": 203,
+    "North America": 43,
+    "Mediterranean & Levant": 31,
+    "Australasia & Pacific": 9,
+    "Caribbean & Central America": 7,
+    "China & Japan": 1,
+    "Africa": 1
+   }
+  },
+  {
+   "commodity": "OLEO-MARGARINE OR OLEO OIL",
+   "total": 4378,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 4378
+   }
+  },
+  {
+   "commodity": "TOYS",
+   "total": 4241,
+   "mapped": 4241,
+   "years": 3,
+   "top_origins": [
+    [
+     "Germany",
+     2405
+    ],
+    [
+     "Holland",
+     893
+    ],
+    [
+     "France",
+     466
+    ],
+    [
+     "Belgium",
+     248
+    ],
+    [
+     "Canary Islands",
+     120
+    ],
+    [
+     "Spain",
+     54
+    ]
+   ],
+   "regions": {
+    "Europe": 4204,
+    "North America": 18,
+    "China & Japan": 13,
+    "Africa": 6
+   }
+  },
+  {
+   "commodity": "TAN",
+   "total": 4096,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 4096
+   }
+  },
+  {
+   "commodity": "MINERAL WATER",
+   "total": 3591,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 3591
+   }
+  },
+  {
+   "commodity": "WOOD AND TIMBER",
+   "total": 3462,
+   "mapped": 3462,
+   "years": 4,
+   "top_origins": [
+    [
+     "Sweden",
+     687
+    ],
+    [
+     "Russia",
+     668
+    ],
+    [
+     "Canada",
+     623
+    ],
+    [
+     "United States Of America",
+     453
+    ],
+    [
+     "Norway",
+     238
+    ],
+    [
+     "France",
+     179
+    ]
+   ],
+   "regions": {
+    "Europe": 2035,
+    "North America": 1208,
+    "India & Southeast Asia": 95,
+    "Australasia & Pacific": 48,
+    "Caribbean & Central America": 36,
+    "Africa": 33,
+    "South America": 6,
+    "Mediterranean & Levant": 1,
+    "China & Japan": 0
+   }
+  },
+  {
+   "commodity": "ANIMALS, LIVING",
+   "total": 3061,
+   "mapped": 0,
+   "years": 4,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 3061
+   }
+  },
+  {
+   "commodity": "METAL: Leaf, not Gold",
+   "total": 2694,
+   "mapped": 0,
+   "years": 3,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 2694
+   }
+  },
+  {
+   "commodity": "FURNITURE AND HARDWOODS",
+   "total": 2642,
+   "mapped": 2642,
+   "years": 1,
+   "top_origins": [
+    [
+     "Canada",
+     700
+    ],
+    [
+     "Russia",
+     533
+    ],
+    [
+     "Sweden",
+     472
+    ],
+    [
+     "Norway",
+     234
+    ],
+    [
+     "United States Of America",
+     190
+    ],
+    [
+     "Germany",
+     183
+    ]
+   ],
+   "regions": {
+    "Europe": 1531,
+    "North America": 890,
+    "Caribbean & Central America": 134,
+    "India & Southeast Asia": 64,
+    "South America": 13,
+    "Mediterranean & Levant": 7,
+    "Africa": 2
+   }
+  },
+  {
+   "commodity": "SALT",
+   "total": 2494,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 2494
+   }
+  },
+  {
+   "commodity": "MEAT, Preserved, otherwise than by Salting",
+   "total": 2347,
+   "mapped": 0,
+   "years": 3,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 2347
+   }
+  },
+  {
+   "commodity": "ARMS: Swords, Cutlasses, Matchets, and Bayonets",
+   "total": 2137,
+   "mapped": 0,
+   "years": 2,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 2137
+   }
+  },
+  {
+   "commodity": "BUTTONS AND STUDS, not of Metal",
+   "total": 1836,
+   "mapped": 0,
+   "years": 3,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 1836
+   }
+  },
+  {
+   "commodity": "ARMS AND AMMUNITION",
+   "total": 1443,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 1443
+   }
+  },
+  {
+   "commodity": "PLANTS, SHRUBS, TREES, AND FLOWER ROOTS",
+   "total": 1302,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 1302
+   }
+  },
+  {
+   "commodity": "BEEF",
+   "total": 1046,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 1046
+   }
+  },
+  {
+   "commodity": "METHYLIC ALCOHOL, not purified so as to be potable",
+   "total": 1035,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 1035
+   }
+  },
+  {
+   "commodity": "CORN, GRAIN, MEAL AND FLOUR",
+   "total": 909,
+   "mapped": 909,
+   "years": 1,
+   "top_origins": [
+    [
+     "United States Of America",
+     323
+    ],
+    [
+     "Russia",
+     144
+    ],
+    [
+     "Germany",
+     104
+    ],
+    [
+     "France",
+     58
+    ],
+    [
+     "Bengal And Burmah",
+     54
+    ],
+    [
+     "Canada",
+     51
+    ]
+   ],
+   "regions": {
+    "North America": 376,
+    "Europe": 368,
+    "India & Southeast Asia": 75,
+    "Mediterranean & Levant": 72,
+    "South America": 11,
+    "Australasia & Pacific": 6
+   }
+  },
+  {
+   "commodity": "RAGS and other Materials used for making Paper",
+   "total": 867,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 867
+   }
+  },
+  {
+   "commodity": "PLATINA",
+   "total": 816,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 816
+   }
+  },
+  {
+   "commodity": "PAPER-MAKING MATERIALS",
+   "total": 350,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 350
+   }
+  },
+  {
+   "commodity": "WOOLLEN RAGS, applicable to other uses than manure, torn up or not",
+   "total": 258,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 258
+   }
+  },
+  {
+   "commodity": "GOLD'd)",
+   "total": 200,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 200
+   }
+  },
+  {
+   "commodity": "HAIR",
+   "total": 118,
+   "mapped": 0,
+   "years": 2,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 118
+   }
+  },
+  {
+   "commodity": "RABBITS",
+   "total": 40,
+   "mapped": 0,
+   "years": 1,
+   "top_origins": [],
+   "regions": {
+    "Unmapped": 40
+   }
+  }
+ ],
+ "export_uk_top": [
+  {
+   "commodity": "WOOLLEN AND WORSTED MANUFACTURES",
+   "total": 44526727,
+   "years": 30,
+   "v": [
+    2695765,
+    null,
+    1315012,
+    1145271,
+    1123311,
+    2065076,
+    1248314,
+    1973653,
+    1713598,
+    1285196,
+    1368641,
+    1872851,
+    1774946,
+    1551818,
+    1608318,
+    1260754,
+    1793034,
+    1777062,
+    1324417,
+    1662158,
+    1260661,
+    1373000,
+    1488986,
+    1198746,
+    1029549,
+    1169018,
+    1126844,
+    1102107,
+    1278214,
+    1419761,
+    1520646
+   ]
+  },
+  {
+   "commodity": "IRON AND STEEL",
+   "total": 39880635,
+   "years": 30,
+   "v": [
+    1245041,
+    null,
+    2449705,
+    2107708,
+    1654171,
+    1877320,
+    1300590,
+    1159341,
+    852230,
+    1060914,
+    1459524,
+    1770944,
+    1757186,
+    1724923,
+    1399504,
+    1218454,
+    1248449,
+    1503577,
+    1485953,
+    1583330,
+    1591898,
+    1431261,
+    1176452,
+    1301600,
+    880547,
+    731271,
+    647233,
+    686000,
+    625621,
+    1072991,
+    876897
+   ]
+  },
+  {
+   "commodity": "COTTON MANUFACTURES",
+   "total": 26935374,
+   "years": 30,
+   "v": [
+    110107,
+    null,
+    1040893,
+    1032597,
+    665798,
+    1173190,
+    827276,
+    1075635,
+    968131,
+    694992,
+    778981,
+    1054219,
+    1548753,
+    1710122,
+    980006,
+    1071493,
+    742739,
+    1044558,
+    823767,
+    857626,
+    691332,
+    731616,
+    774718,
+    815289,
+    714078,
+    733567,
+    751241,
+    765169,
+    780873,
+    936090,
+    1040518
+   ]
+  },
+  {
+   "commodity": "HABERDASHERY AND MILLINERY",
+   "total": 15703592,
+   "years": 28,
+   "v": [
+    null,
+    null,
+    1126360,
+    1099066,
+    1044718,
+    1064983,
+    816011,
+    null,
+    806335,
+    714440,
+    713649,
+    925782,
+    1064617,
+    918494,
+    696804,
+    507533,
+    480699,
+    538514,
+    436699,
+    432992,
+    370311,
+    401678,
+    395717,
+    252292,
+    144647,
+    142795,
+    150941,
+    137925,
+    141678,
+    14001,
+    163911
+   ]
+  },
+  {
+   "commodity": "APPAREL AND SLOPS",
+   "total": 8729378,
+   "years": 30,
+   "v": [
+    813624,
+    null,
+    268289,
+    245933,
+    294514,
+    289268,
+    233321,
+    205018,
+    180046,
+    134700,
+    136197,
+    179472,
+    200866,
+    218155,
+    225008,
+    246203,
+    260397,
+    227738,
+    291981,
+    331319,
+    346568,
+    376798,
+    395581,
+    342091,
+    297901,
+    350953,
+    343675,
+    300532,
+    321802,
+    310421,
+    361007
+   ]
+  },
+  {
+   "commodity": "LINEN MANUFACTURES",
+   "total": 6529511,
+   "years": 30,
+   "v": [
+    181440,
+    null,
+    236929,
+    198376,
+    236524,
+    260528,
+    197208,
+    201432,
+    177153,
+    138190,
+    215607,
+    195485,
+    196243,
+    189371,
+    233907,
+    200012,
+    203477,
+    245444,
+    231198,
+    267143,
+    210749,
+    222596,
+    260980,
+    213339,
+    173351,
+    233792,
+    221145,
+    204789,
+    237084,
+    259636,
+    286383
+   ]
+  },
+  {
+   "commodity": "ZINC OR SPELTER",
+   "total": 5858172,
+   "years": 30,
+   "v": [
+    1534,
+    null,
+    304608,
+    278551,
+    184108,
+    214410,
+    214759,
+    192750,
+    163378,
+    134803,
+    14920,
+    268778,
+    19367,
+    287443,
+    293280,
+    213352,
+    216947,
+    210315,
+    218609,
+    230409,
+    189101,
+    174195,
+    311007,
+    203793,
+    171640,
+    170845,
+    186532,
+    192491,
+    214142,
+    231463,
+    150642
+   ]
+  },
+  {
+   "commodity": "TELEGRAPHIC WIRES AND APPARATUS",
+   "total": 4388556,
+   "years": 25,
+   "v": [
+    null,
+    null,
+    48065,
+    31890,
+    304643,
+    173585,
+    48023,
+    113418,
+    134811,
+    null,
+    486833,
+    null,
+    null,
+    null,
+    1033982,
+    93412,
+    10936,
+    73824,
+    80468,
+    221654,
+    119960,
+    27540,
+    84685,
+    49416,
+    850318,
+    87799,
+    55954,
+    130,
+    6600,
+    5,
+    250605
+   ]
+  },
+  {
+   "commodity": "HARDWARES AND CUTLERY",
+   "total": 4034292,
+   "years": 29,
+   "v": [
+    null,
+    null,
+    295902,
+    213315,
+    266779,
+    265254,
+    162891,
+    268920,
+    134059,
+    110780,
+    150085,
+    194429,
+    216417,
+    185837,
+    128125,
+    116125,
+    131720,
+    125865,
+    127343,
+    108402,
+    94725,
+    97286,
+    96120,
+    93830,
+    66035,
+    54438,
+    62382,
+    68172,
+    77772,
+    26493,
+    94791
+   ]
+  },
+  {
+   "commodity": "SUGAR, REFINED",
+   "total": 3992913,
+   "years": 26,
+   "v": [
+    160455,
+    null,
+    273976,
+    233076,
+    310399,
+    219207,
+    487868,
+    452995,
+    1110210,
+    150390,
+    143712,
+    57104,
+    null,
+    50172,
+    59972,
+    12554,
+    12196,
+    20702,
+    27836,
+    20583,
+    16517,
+    23912,
+    17930,
+    30220,
+    22533,
+    16186,
+    22639,
+    null,
+    null,
+    null,
+    39569
+   ]
+  },
+  {
+   "commodity": "SILK MANUFACTURES",
+   "total": 3958197,
+   "years": 30,
+   "v": [
+    109833,
+    null,
+    154533,
+    126407,
+    159181,
+    109596,
+    133470,
+    147998,
+    136423,
+    89471,
+    127452,
+    197233,
+    349915,
+    306658,
+    150468,
+    123705,
+    163342,
+    154087,
+    172298,
+    131029,
+    91902,
+    114772,
+    157195,
+    95094,
+    52291,
+    67359,
+    54271,
+    41574,
+    64733,
+    103713,
+    72194
+   ]
+  },
+  {
+   "commodity": "EARTHEN AND CHINA WARE",
+   "total": 3362210,
+   "years": 29,
+   "v": [
+    80748,
+    null,
+    141043,
+    122210,
+    133881,
+    108499,
+    89841,
+    95486,
+    92584,
+    65730,
+    73123,
+    105464,
+    131439,
+    116102,
+    97332,
+    107642,
+    137630,
+    143019,
+    125805,
+    160959,
+    145517,
+    5993,
+    127741,
+    130024,
+    101745,
+    100800,
+    null,
+    148145,
+    176429,
+    143177,
+    154102
+   ]
+  },
+  {
+   "commodity": "HATS",
+   "total": 3097134,
+   "years": 29,
+   "v": [
+    25727,
+    null,
+    36411,
+    29337,
+    39225,
+    86159,
+    153348,
+    null,
+    82890,
+    72054,
+    96450,
+    120929,
+    129458,
+    74833,
+    91047,
+    115454,
+    145290,
+    142839,
+    58592,
+    146298,
+    136705,
+    145435,
+    154250,
+    170878,
+    139678,
+    143241,
+    129251,
+    127306,
+    130030,
+    33751,
+    140268
+   ]
+  },
+  {
+   "commodity": "OIL, OTHER THAN ESSENTIAL",
+   "total": 2818955,
+   "years": 29,
+   "v": [
+    90272,
+    null,
+    83394,
+    109994,
+    143331,
+    128147,
+    null,
+    52942,
+    44112,
+    57950,
+    61805,
+    67165,
+    100600,
+    107762,
+    83985,
+    91031,
+    112965,
+    114561,
+    110857,
+    107006,
+    128312,
+    112328,
+    107848,
+    84151,
+    89248,
+    108016,
+    100192,
+    73110,
+    103826,
+    139792,
+    104253
+   ]
+  },
+  {
+   "commodity": "MACHINERY AND MILLWORK",
+   "total": 2760251,
+   "years": 29,
+   "v": [
+    80193,
+    null,
+    178809,
+    100125,
+    43648,
+    36089,
+    51812,
+    34655,
+    39954,
+    59220,
+    null,
+    159224,
+    256002,
+    174474,
+    97235,
+    41682,
+    70315,
+    77538,
+    97973,
+    103412,
+    98374,
+    102517,
+    85775,
+    104739,
+    75412,
+    54881,
+    64711,
+    59597,
+    100609,
+    164373,
+    146903
+   ]
+  },
+  {
+   "commodity": "PAINTERS' COLOURS AND MATERIALS",
+   "total": 2175882,
+   "years": 29,
+   "v": [
+    null,
+    null,
+    114631,
+    79899,
+    123974,
+    110830,
+    95068,
+    103337,
+    71126,
+    71900,
+    89139,
+    65946,
+    5994,
+    62431,
+    64489,
+    68420,
+    74207,
+    81445,
+    69301,
+    71634,
+    71602,
+    123649,
+    73135,
+    68481,
+    52381,
+    53037,
+    55932,
+    48946,
+    59424,
+    77996,
+    67528
+   ]
+  },
+  {
+   "commodity": "PICKLES, VINEGAR, SAUCES AND CONDIMENTS",
+   "total": 2133528,
+   "years": 29,
+   "v": [
+    null,
+    null,
+    70534,
+    48571,
+    59499,
+    43829,
+    215220,
+    204199,
+    41630,
+    34550,
+    45262,
+    56054,
+    83355,
+    80756,
+    83905,
+    63281,
+    66997,
+    65980,
+    60627,
+    66994,
+    73745,
+    74668,
+    68019,
+    63764,
+    61055,
+    58038,
+    57894,
+    65240,
+    65313,
+    89013,
+    65536
+   ]
+  },
+  {
+   "commodity": "PAPER",
+   "total": 2102217,
+   "years": 30,
+   "v": [
+    74774,
+    null,
+    104486,
+    117081,
+    122336,
+    117845,
+    83206,
+    79548,
+    28456,
+    43110,
+    77306,
+    81745,
+    88417,
+    68506,
+    66099,
+    74133,
+    80796,
+    74546,
+    77947,
+    74066,
+    68127,
+    17922,
+    71938,
+    67293,
+    57248,
+    44168,
+    47914,
+    43439,
+    39944,
+    42593,
+    67228
+   ]
+  },
+  {
+   "commodity": "SPIRITS, BRITISH AND IRISH",
+   "total": 2059224,
+   "years": 28,
+   "v": [
+    39195,
+    null,
+    28538,
+    25258,
+    31281,
+    33195,
+    null,
+    null,
+    34311,
+    31916,
+    33655,
+    41792,
+    54491,
+    59894,
+    48462,
+    45755,
+    51143,
+    57417,
+    58810,
+    70781,
+    71203,
+    77506,
+    126426,
+    90835,
+    86924,
+    91953,
+    101441,
+    118927,
+    152564,
+    179531,
+    216020
+   ]
+  },
+  {
+   "commodity": "BOOKS, PRINTED",
+   "total": 1983675,
+   "years": 28,
+   "v": [
+    null,
+    null,
+    81590,
+    71163,
+    69127,
+    63899,
+    68102,
+    70573,
+    64504,
+    56300,
+    58488,
+    81224,
+    77666,
+    81382,
+    83116,
+    76842,
+    83819,
+    87689,
+    79052,
+    84721,
+    83621,
+    null,
+    80646,
+    23507,
+    23013,
+    67030,
+    62317,
+    78361,
+    77586,
+    69742,
+    78595
+   ]
+  },
+  {
+   "commodity": "LEATHER",
+   "total": 1888648,
+   "years": 29,
+   "v": [
+    136144,
+    null,
+    157272,
+    108267,
+    93826,
+    88997,
+    55364,
+    40493,
+    22040,
+    35768,
+    45928,
+    71755,
+    108699,
+    79614,
+    82258,
+    84580,
+    null,
+    81138,
+    74047,
+    88419,
+    55855,
+    59834,
+    68419,
+    50675,
+    38502,
+    36022,
+    31177,
+    15348,
+    22099,
+    26491,
+    29617
+   ]
+  },
+  {
+   "commodity": "COALS, CINDERS, &c.",
+   "total": 1865906,
+   "years": 27,
+   "v": [
+    null,
+    null,
+    145448,
+    134604,
+    139206,
+    79186,
+    111594,
+    83358,
+    71704,
+    null,
+    63513,
+    55705,
+    65108,
+    79015,
+    48486,
+    55564,
+    40172,
+    40697,
+    43605,
+    43373,
+    44028,
+    56637,
+    59332,
+    55469,
+    59658,
+    59087,
+    67849,
+    57158,
+    60710,
+    45640,
+    null
+   ]
+  },
+  {
+   "commodity": "ALKALI",
+   "total": 1829755,
+   "years": 29,
+   "v": [
+    38469,
+    null,
+    75222,
+    76034,
+    93273,
+    43746,
+    55346,
+    70610,
+    40351,
+    75006,
+    79656,
+    60811,
+    49338,
+    77006,
+    81176,
+    65787,
+    63207,
+    75899,
+    69546,
+    56231,
+    65270,
+    72022,
+    74783,
+    null,
+    61242,
+    54377,
+    50862,
+    44550,
+    50508,
+    45352,
+    64075
+   ]
+  },
+  {
+   "commodity": "ANIMALS, LIVING",
+   "total": 1810486,
+   "years": 23,
+   "v": [
+    null,
+    null,
+    null,
+    null,
+    4165,
+    2501,
+    38620,
+    null,
+    null,
+    null,
+    52777,
+    71356,
+    111766,
+    127229,
+    103639,
+    106659,
+    135210,
+    179505,
+    230677,
+    175010,
+    139923,
+    102409,
+    48279,
+    97713,
+    5459,
+    3668,
+    null,
+    4381,
+    9628,
+    21668,
+    38244
+   ]
+  },
+  {
+   "commodity": "GLASS",
+   "total": 1639554,
+   "years": 30,
+   "v": [
+    49603,
+    null,
+    83509,
+    74856,
+    71886,
+    29306,
+    30248,
+    44425,
+    26023,
+    37446,
+    36893,
+    47764,
+    67935,
+    58617,
+    50883,
+    43419,
+    37084,
+    57967,
+    64231,
+    67070,
+    65249,
+    76936,
+    68154,
+    50578,
+    52186,
+    46050,
+    54830,
+    42925,
+    56843,
+    68246,
+    78392
+   ]
+  },
+  {
+   "commodity": "SALT",
+   "total": 1385940,
+   "years": 30,
+   "v": [
+    41974,
+    null,
+    39600,
+    51568,
+    39667,
+    34462,
+    28342,
+    25807,
+    37190,
+    41440,
+    56109,
+    42998,
+    46328,
+    64533,
+    48533,
+    54360,
+    45270,
+    46211,
+    41203,
+    49952,
+    57277,
+    53594,
+    49245,
+    55993,
+    51371,
+    49230,
+    46059,
+    45100,
+    43973,
+    36621,
+    61930
+   ]
+  },
+  {
+   "commodity": "ARMS, AMMUNITION AND MILITARY STORES",
+   "total": 1378013,
+   "years": 30,
+   "v": [
+    16391,
+    null,
+    43961,
+    31811,
+    42955,
+    45992,
+    30735,
+    29217,
+    26400,
+    15523,
+    91567,
+    133160,
+    33160,
+    27390,
+    29630,
+    68185,
+    33857,
+    25322,
+    19879,
+    21848,
+    21651,
+    22883,
+    32043,
+    21448,
+    23909,
+    30951,
+    231298,
+    107271,
+    44534,
+    35780,
+    39262
+   ]
+  },
+  {
+   "commodity": "COPPER",
+   "total": 1311318,
+   "years": 29,
+   "v": [
+    130076,
+    null,
+    null,
+    60109,
+    82506,
+    59125,
+    46788,
+    47629,
+    32254,
+    26267,
+    32626,
+    33736,
+    61935,
+    45949,
+    48546,
+    28392,
+    31759,
+    37445,
+    35884,
+    61239,
+    63749,
+    48753,
+    45159,
+    32256,
+    27311,
+    27277,
+    26677,
+    34360,
+    26725,
+    53257,
+    23529
+   ]
+  },
+  {
+   "commodity": "JUTE MANUFACTURES",
+   "total": 1280677,
+   "years": 19,
+   "v": [
+    null,
+    null,
+    18167,
+    22390,
+    27903,
+    null,
+    19269,
+    20848,
+    22005,
+    28380,
+    36096,
+    53872,
+    null,
+    null,
+    null,
+    54561,
+    58991,
+    96869,
+    88869,
+    91268,
+    91450,
+    null,
+    114292,
+    137822,
+    null,
+    null,
+    153435,
+    null,
+    null,
+    null,
+    144190
+   ]
+  },
+  {
+   "commodity": "CHEMICAL PRODUCTS AND PREPARATIONS",
+   "total": 1119073,
+   "years": 28,
+   "v": [
+    null,
+    null,
+    27150,
+    26791,
+    46143,
+    25945,
+    37895,
+    30850,
+    31563,
+    null,
+    27348,
+    35772,
+    31955,
+    23613,
+    25630,
+    27325,
+    29236,
+    22568,
+    27848,
+    32095,
+    34658,
+    36459,
+    36223,
+    38218,
+    34919,
+    34746,
+    44867,
+    48745,
+    94778,
+    101081,
+    104652
+   ]
+  }
+ ],
+ "reexport_top": [
+  {
+   "commodity": "TEA",
+   "total": 9295628,
+   "v": [
+    null,
+    null,
+    556714,
+    371334,
+    418252,
+    324451,
+    339303,
+    321180,
+    287456,
+    384163,
+    406913,
+    414678,
+    null,
+    448529,
+    443490,
+    492104,
+    376375,
+    357781,
+    344902,
+    359912,
+    341237,
+    333918,
+    308393,
+    254784,
+    242897,
+    195984,
+    200037,
+    125515,
+    152130,
+    158953,
+    334243
+   ]
+  },
+  {
+   "commodity": "FRUIT",
+   "total": 1450574,
+   "v": [
+    null,
+    null,
+    33092,
+    47224,
+    56227,
+    40455,
+    45280,
+    52514,
+    76353,
+    38690,
+    37356,
+    40395,
+    50217,
+    53712,
+    82499,
+    56632,
+    49529,
+    72035,
+    62338,
+    50808,
+    46442,
+    36295,
+    31727,
+    39485,
+    47593,
+    52813,
+    50865,
+    49189,
+    43186,
+    49898,
+    57725
+   ]
+  },
+  {
+   "commodity": "SILK MANUFACTURES",
+   "total": 1353445,
+   "v": [
+    null,
+    null,
+    37502,
+    7970,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    58079,
+    55955,
+    55631,
+    41704,
+    50758,
+    105692,
+    95814,
+    99061,
+    119110,
+    174719,
+    158375,
+    159367,
+    133708,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "commodity": "SKINS, FURS AND PELTS",
+   "total": 1143301,
+   "v": [
+    null,
+    null,
+    82686,
+    22405,
+    34291,
+    14534,
+    5102,
+    16287,
+    null,
+    null,
+    7258,
+    6864,
+    null,
+    12840,
+    14811,
+    21900,
+    22721,
+    21443,
+    21040,
+    16335,
+    7807,
+    24618,
+    62366,
+    158243,
+    81151,
+    54295,
+    41293,
+    64248,
+    113865,
+    99118,
+    115780
+   ]
+  },
+  {
+   "commodity": "HEMP",
+   "total": 1105023,
+   "v": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    38297,
+    null,
+    24461,
+    36013,
+    44130,
+    74783,
+    64490,
+    74830,
+    null,
+    225595,
+    45349,
+    100613,
+    80420,
+    39610,
+    22266,
+    52260,
+    60105,
+    null,
+    null,
+    null,
+    121801
+   ]
+  },
+  {
+   "commodity": "WOOL",
+   "total": 999785,
+   "v": [
+    null,
+    null,
+    89033,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    61943,
+    75604,
+    69849,
+    16909,
+    42591,
+    52910,
+    25812,
+    53322,
+    68130,
+    34870,
+    42522,
+    22583,
+    63027,
+    99307,
+    84552,
+    96821
+   ]
+  },
+  {
+   "commodity": "WOOLLEN MANUFACTURES",
+   "total": 877427,
+   "v": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    22266,
+    29511,
+    11064,
+    31899,
+    40456,
+    35244,
+    23116,
+    37747,
+    61958,
+    58182,
+    62855,
+    58893,
+    133991,
+    116290,
+    93178,
+    60777,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "commodity": "RICE",
+   "total": 628582,
+   "v": [
+    null,
+    null,
+    43128,
+    41153,
+    56381,
+    39023,
+    33251,
+    38854,
+    63803,
+    49153,
+    null,
+    50845,
+    21759,
+    15097,
+    15016,
+    12004,
+    10245,
+    8627,
+    7735,
+    null,
+    null,
+    null,
+    null,
+    5857,
+    null,
+    18538,
+    null,
+    40763,
+    27483,
+    29867,
+    null
+   ]
+  },
+  {
+   "commodity": "ZINC AND ZINC ORE",
+   "total": 563093,
+   "v": [
+    null,
+    null,
+    3185,
+    null,
+    5513,
+    null,
+    11197,
+    3915,
+    null,
+    10524,
+    11286,
+    null,
+    null,
+    22132,
+    23036,
+    36248,
+    31731,
+    39909,
+    29468,
+    40884,
+    41590,
+    42612,
+    43453,
+    45777,
+    36649,
+    40595,
+    37455,
+    1716,
+    949,
+    3269,
+    null
+   ]
+  },
+  {
+   "commodity": "SPICES",
+   "total": 535607,
+   "v": [
+    null,
+    null,
+    10781,
+    20395,
+    null,
+    19288,
+    21985,
+    18538,
+    20134,
+    19007,
+    15514,
+    19299,
+    26562,
+    22968,
+    25700,
+    null,
+    22964,
+    44756,
+    33216,
+    31808,
+    28464,
+    19988,
+    24755,
+    15783,
+    16598,
+    17220,
+    13695,
+    null,
+    null,
+    null,
+    26189
+   ]
+  },
+  {
+   "commodity": "WINE",
+   "total": 502999,
+   "v": [
+    null,
+    null,
+    26718,
+    26442,
+    26954,
+    17817,
+    10851,
+    14882,
+    5998,
+    3131,
+    9136,
+    14143,
+    17266,
+    13082,
+    12610,
+    9523,
+    14136,
+    8641,
+    7499,
+    38472,
+    39897,
+    30770,
+    43949,
+    36290,
+    7267,
+    7611,
+    7574,
+    9995,
+    19632,
+    22713,
+    null
+   ]
+  },
+  {
+   "commodity": "IRON AND STEEL",
+   "total": 494247,
+   "v": [
+    null,
+    null,
+    22777,
+    13322,
+    null,
+    null,
+    null,
+    5343,
+    7391,
+    null,
+    11911,
+    null,
+    15659,
+    24944,
+    16247,
+    28731,
+    80926,
+    46878,
+    39077,
+    23647,
+    20782,
+    13777,
+    22581,
+    18952,
+    10533,
+    19883,
+    16716,
+    12275,
+    8451,
+    13444,
+    null
+   ]
+  },
+  {
+   "commodity": "SILK, RAW AND THROWN",
+   "total": 477111,
+   "v": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9076,
+    4282,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    60296,
+    84275,
+    95350,
+    223832
+   ]
+  },
+  {
+   "commodity": "TALLOW and STEARINE",
+   "total": 467084,
+   "v": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    458805,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    2526,
+    5010,
+    628,
+    115
+   ]
+  },
+  {
+   "commodity": "SPIRITS",
+   "total": 463185,
+   "v": [
+    null,
+    null,
+    20597,
+    11635,
+    45336,
+    15883,
+    12257,
+    27340,
+    6861,
+    7627,
+    14642,
+    12596,
+    10986,
+    6316,
+    3457,
+    22862,
+    5469,
+    4098,
+    4670,
+    4719,
+    5843,
+    7489,
+    6443,
+    4665,
+    3872,
+    4502,
+    5076,
+    79952,
+    50012,
+    40410,
+    17570
+   ]
+  }
+ ],
+ "unmapped": {
+  "SILK MANUFACTURES": 133708,
+  "GOODS UNENUMERATED": 67591,
+  "DYE STUFFS AND DYE WOODS": 60320,
+  "EMBROIDERY AND NEEDLEWORK": 34449,
+  "LEAD": 28006,
+  "SUGAR. Refined, or rendered by any process equal thereto, in Lumps and Leaves": 26968,
+  "PICTURES AND DRAWINGS, by hand": 26888,
+  "ICE": 25545,
+  "ORE, Unenumerated": 24146,
+  "BOOKS": 20559,
+  "MEAL AND FLOUR": 19067,
+  "SPONGE": 17564,
+  "CHICORY": 16452,
+  "CORDAGE, TWINE, AND CABLE YARN": 14641,
+  "SAGO": 14578,
+  "STRAW PLAITING": 13975,
+  "JUTE YARN": 13249,
+  "LINEN": 12245,
+  "DYE STUFFS (other than Dye Woods), and Substances used in Tanning and Dyeing, viz.": 8855,
+  "FRUIT AND VEGETABLES, PRESERVED IN SUGAR": 8150,
+  "CORN AND GRAIN": 7806,
+  "COALS, CULM, CINDERS AND SHALE": 6845,
+  "VEGETABLES, RAW": 6501,
+  "PAINTERS' Colours and Pigments, Unenumerated": 6051,
+  "BEADS": 6004,
+  "ETHER, SULPHURIC": 5759,
+  "PETROLEUM, Illuminating": 5701,
+  "CHINAWARE OR PORCELAIN, AND EARTHENWARE": 4822,
+  "OLEO-MARGARINE OR OLEO OIL": 4378,
+  "TAN": 4096,
+  "MINERAL WATER": 3591,
+  "ANIMALS, LIVING": 3061,
+  "METAL: Leaf, not Gold": 2694,
+  "SALT": 2494,
+  "MEAT, Preserved, otherwise than by Salting": 2347,
+  "ARMS: Swords, Cutlasses, Matchets, and Bayonets": 2137,
+  "BUTTONS AND STUDS, not of Metal": 1836,
+  "ARMS AND AMMUNITION": 1443,
+  "PLANTS, SHRUBS, TREES, AND FLOWER ROOTS": 1302,
+  "BEEF": 1046,
+  "METHYLIC ALCOHOL, not purified so as to be potable": 1035,
+  "RAGS and other Materials used for making Paper": 867,
+  "PLATINA": 816,
+  "PAPER-MAKING MATERIALS": 350,
+  "WOOLLEN RAGS, applicable to other uses than manure, torn up or not": 258,
+  "GOLD'd)": 200,
+  "HAIR": 118,
+  "RABBITS": 40
+ },
+ "bad_years": {
+  "1871": "no volume covers this year",
+  "1897": "read from the as_1899 reprint, repaired against as_1898/tn_1899/tn_1901; ~39% of value page-corroborated",
+  "1898": "read from the as_1899 reprint, repaired against tn_1901; ~40% page-corroborated",
+  "1899": "as_1899 page-edge column, repaired against tn_1901 (the only reprint); ~32% page-corroborated",
+  "1900": "tn_1901 page-edge column, no reprint anywhere; ~25% page-corroborated"
+ },
+ "method": "re-export value x UK import-origin value shares of the same commodity-year (nearest year within 2 if the year is missing); origins are consignment points"
+}

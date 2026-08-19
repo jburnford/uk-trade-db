@@ -1,0 +1,220 @@
+<title>Canada Through the Entrepôt</title>
+<style>
+:root{
+  --bg:#f5f6f4; --paper:#fbfbf9; --ink:#182029; --ink-2:#4a5561; --ink-3:#7c8792; --rule:#d9ddd6; --rule-2:#e9ece6;
+  --accent:#1f5f8b; --accent-ink:#164a6d; --tint:#e6eef4;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#4a3aa7; --grey:#b9c0c7;
+  --seq:#1f5f8b;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#141a20; --paper:#1b2229; --ink:#eef1f3; --ink-2:#c1c8ce; --ink-3:#8d979f; --rule:#323c45; --rule-2:#28313a;
+  --accent:#6fb0dc; --accent-ink:#8ec3e8; --tint:#1f2e3a;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#9085e9; --grey:#55606a; --seq:#5ea3d3;
+}}
+:root[data-theme="dark"]{
+  --bg:#141a20; --paper:#1b2229; --ink:#eef1f3; --ink-2:#c1c8ce; --ink-3:#8d979f; --rule:#323c45; --rule-2:#28313a;
+  --accent:#6fb0dc; --accent-ink:#8ec3e8; --tint:#1f2e3a;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#9085e9; --grey:#55606a; --seq:#5ea3d3;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:40px 24px 80px}
+header{border-bottom:1px solid var(--rule);padding-bottom:28px;margin-bottom:36px}
+.eyebrow{font-family:"Gill Sans","Gill Sans MT","Segoe UI",system-ui,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin:0 0 14px}
+h1{font-size:44px;line-height:1.08;margin:0 0 14px;font-weight:600;letter-spacing:-.01em;text-wrap:balance}
+.dek{font-size:20px;color:var(--ink-2);max-width:66ch;margin:0}
+h2{font-size:26px;margin:52px 0 12px;font-weight:600;letter-spacing:-.005em;text-wrap:balance}
+h3{font-family:"Gill Sans","Gill Sans MT","Segoe UI",system-ui,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin:0 0 6px}
+p{max-width:68ch;margin:0 0 14px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:26px 0 8px}
+.kpi{background:var(--paper);border:1px solid var(--rule);padding:14px 16px 12px}
+.kpi .v{font-family:"Gill Sans","Gill Sans MT","Segoe UI",system-ui,sans-serif;font-size:32px;font-weight:600;letter-spacing:-.01em;line-height:1.1;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:14px;color:var(--ink-2);margin-top:6px;line-height:1.35}
+figure{margin:22px 0 30px;background:var(--paper);border:1px solid var(--rule);padding:16px 18px 12px}
+figure .cap{font-family:"Gill Sans","Gill Sans MT","Segoe UI",system-ui,sans-serif;font-size:14px;color:var(--ink-2);margin:0 0 10px;max-width:none}
+figure .cap b{color:var(--ink);font-weight:600}
+figcaption{font-size:14px;color:var(--ink-3);margin-top:8px;line-height:1.45}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+svg{display:block;width:100%;height:auto;font-family:"Gill Sans","Gill Sans MT","Segoe UI",system-ui,sans-serif}
+.axis text{fill:var(--ink-3);font-size:11px}
+.axis line{stroke:var(--rule);stroke-width:1}
+.grid line{stroke:var(--rule-2);stroke-width:1}
+.lbl{fill:var(--ink-2);font-size:12px}
+.lbl.strong{fill:var(--ink);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:"Gill Sans","Gill Sans MT","Segoe UI",system-ui,sans-serif;font-size:13px;color:var(--ink-2);margin:0 0 8px}
+.legend span i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-family:"Gill Sans","Gill Sans MT","Segoe UI",system-ui,sans-serif;font-size:12.5px;line-height:1.4;padding:7px 9px;border-radius:3px;opacity:0;transition:opacity .08s;max-width:260px;z-index:9;font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;font-family:"Gill Sans","Gill Sans MT","Segoe UI",system-ui,sans-serif;font-size:14px;font-variant-numeric:tabular-nums}
+th{text-align:left;font-weight:600;color:var(--ink-3);font-size:12px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--rule);padding:8px 8px}
+td{padding:7px 8px;border-bottom:1px solid var(--rule-2);vertical-align:top}
+td.n,th.n{text-align:right}
+.tblwrap{overflow-x:auto;background:var(--paper);border:1px solid var(--rule);padding:6px 10px}
+.note{background:var(--tint);border-left:3px solid var(--accent);padding:12px 16px;margin:18px 0;max-width:72ch}
+.note p{margin:0 0 8px}.note p:last-child{margin:0}
+ul{max-width:68ch;padding-left:22px}li{margin-bottom:6px}
+a{color:var(--accent-ink)}
+.small{font-size:14px;color:var(--ink-3)}
+</style>
+<div class="wrap">
+<header>
+<p class="eyebrow">UK Annual Statement of Trade · exports to British North America, 1870–1900 · preliminary</p>
+<h1>Canada Through the Entrepôt</h1>
+<p class="dek">What Canada consumed of the world by way of Britain: the goods Britain made and shipped, and the colonial and foreign goods it landed, warehoused and sent on — with the latter traced back, through the same volumes' import tables, to the regions they came from.</p>
+</header>
+
+<div class="kpis" id="kpis"></div>
+<p class="small">Own-year witnesses only, all repairs applied (state of 18 Aug 2026). 1871 has no volume; 1897–1900 come from wide comparative tables and are the least reliable years. Values are declared values at British ports, current £.</p>
+
+<h2>Two lenses on one flow</h2>
+<p>The Statement keeps two tables for what left Britain for Canada. <b>British and Irish produce</b> is what Britain made — woollens, iron and steel, cottons, haberdashery — and it is the bulk of the trade, £223 million over the thirty years. <b>Foreign and colonial merchandise re-exported</b> is what Britain merely handled: tea, silks, wine, hemp, spices, wool, rice, dried fruit, £25 million. The second table records only where the goods went, never where they had come from. But the same volumes' import tables record where Britain got each commodity in each year, so the via-Britain flow can be redistributed over those origins. That redistribution is an estimate — it assumes the tea reshipped to Montreal drew on the same sources as Britain's tea imports at large — and it inherits the Statement's own frame: origins are the ports goods were <i>consigned</i> from, so Holland and Hong Kong stand in for the hinterlands behind them.</p>
+
+<figure><p class="cap"><b>Both flows by year.</b> British produce to Canada (left) and re-exports to Canada (right), £ thousands, own scales.</p>
+<div class="two"><div id="c-ex"></div><div id="c-rx"></div></div>
+<figcaption>Re-exports were about a tenth of the two flows over the period, and their share rose — 5–9% in the 1870s, 11–13% in the 1880s, 13–17% in the 1890s — while British produce fell from £9M a year in the early 1870s to £5–6M in the mid-1890s. 1871 missing; 1897–1900 from comparative tables.</figcaption></figure>
+
+<h2>Made in Britain</h2>
+<p>The British-produce side is the familiar industrial basket. Textiles and metals dominate throughout: woollens and worsteds, iron and steel (rails above all in the railway-building years), cottons, haberdashery and millinery, ready-made clothing, linens. Below the top four the list is long — refined sugar, zinc, telegraph wire, hardware, silks, earthenware, hats, oils, machinery — and it is this long tail, more than the headline textiles, that Canadian household consumption of British manufactures lives in.</p>
+<figure><p class="cap"><b>British produce to Canada, top twelve commodities, 1870–1900 total.</b> £ millions.</p><div id="c-top"></div>
+<figcaption>Group totals after the commodity families were folded (era wordings and OCR variants of one printed heading count once). IRON AND STEEL includes railroad iron; SUGAR, REFINED is British-refined colonial sugar and sits on this side of the ledger.</figcaption></figure>
+
+<h2>Through Britain: what, and from where</h2>
+<p>Tea is the re-export trade to Canada. At £9.3 million it is 37% of everything Britain forwarded, larger than every British-produce commodity except woollens, iron and cottons. Behind it come dried fruit, silk manufactures, skins and furs, hemp, raw wool, foreign woollens, rice, spices and wine. Redistributed over Britain's import origins, the via-Britain basket is Asian first — India, Ceylon and Southeast Asia 25%, China and Japan 21% — and European second at 31%, with North America (skins, furs, hams and tallow consigned from the United States, some of it Canadian fur coming home) at 6% and Australasia (wool) at 4%.</p>
+<figure><p class="cap"><b>Re-exports to Canada by estimated origin region.</b> Stacked, £ thousands per year.</p>
+<div class="legend" id="lg-reg"></div><div id="c-reg"></div>
+<figcaption>Each commodity-year is spread over the UK's import origins for that commodity in that year (nearest year within two where the origin table is missing). "Other regions" folds the Mediterranean and Levant, South America, Africa, the Caribbean and the residual "Other Countries" lines, plus £0.7M of commodities with no origin table. Values estimated, not read.</figcaption></figure>
+
+<div class="tblwrap"><table id="t-dec"></table></div>
+<p class="small" style="margin-top:8px">Decade shares of the via-Britain flow by estimated origin region.</p>
+
+<h2>Tea: the Statement's clearest story</h2>
+<p>The origin panel moves for one reason above all others: the British tea trade shifted from China to India and Ceylon, and whatever tea Canada bought through London and Liverpool moved with it. In the UK's tea imports of 1872 China supplied 84%; by 1892 Bengal supplied 48% and Ceylon 30%; by 1897 China was under 10%. The Canadian side tells a second story on top of that. Tea re-exported from Britain to Canada <i>declines</i> — about £560,000 in 1872, £300,000–490,000 through the 1880s, £130,000–200,000 by the late 1890s — even as the re-export basket as a whole grows. Canada was not drinking less tea; it was buying it less through Britain. The years match the growth of direct shipment (Indian and Ceylon tea consigned to Montreal, and from 1886 the Pacific route to Vancouver), which is exactly the kind of movement an entrepôt-only view of Canadian consumption cannot see. The redistribution below shows what the entrepôt held; it does not know what any particular chest held, and it cannot see the chests that never came through Britain.</p>
+<figure><div class="two"><div><p class="cap"><b>Tea re-exported to Canada.</b> £ thousands.</p><div id="c-tea"></div></div><div><p class="cap"><b>Where the UK's tea came from.</b> Share of import value.</p><div class="legend" id="lg-tea"></div><div id="c-teash"></div></div></div>
+<figcaption>Right panel: China (with Hong Kong), India (Bengal, Bombay, Madras, Burmah), Ceylon, other consignors. Left panel: own-year Canada value; 1882 is a hole in the parse, not a collapse in the trade.</figcaption></figure>
+
+<h2>Commodities and their consignors</h2>
+<div class="tblwrap"><table id="t-com"></table></div>
+<p class="small" style="margin-top:8px">Top re-export commodities to Canada with the four largest estimated origins. ZINC and IRON AND STEEL on the re-export side are suspect — an export table misfiled as re-exports is a known class — and are shown but not trusted.</p>
+
+<figure><p class="cap"><b>Estimated origin countries of the via-Britain flow, all years.</b> £ thousands; consignment points, not producers.</p><div id="c-cty"></div>
+<figcaption>China and the Bengal ports carry the tea; France carries silks, wine and (with Holland and Belgium) the re-consigned European trades; the United States carries skins, furs, hams and tallow.</figcaption></figure>
+
+<h2>What this does and does not show</h2>
+<div class="note">
+<p><b>Read as a first pass.</b> The re-export origins are an allocation, not an observation: the Statement records destination for re-exports and origin for imports and never both on one line. Where a commodity's origin mix is stable (tea, rice, spices) the allocation is safe; where the mix is broad (silk manufactures across France, Switzerland via Holland, China, Japan) it is only indicative.</p>
+<p><b>Consignment is not production.</b> Holland, Belgium, Hong Kong, Gibraltar are ports of transit in the import tables. "Europe" here is partly the Continent's re-consignment of goods from further away.</p>
+<p><b>The British-produce side hides a second layer of reach.</b> Britain's cottons were spun from American, Indian and Egyptian cotton; its woollens from Australian and River Plate wool; its refined sugar was West Indian and Brazilian cane. Following those inputs through the import tables is the natural next step and would roughly double the traced foreign content of Canada's British imports.</p>
+<p><b>Data state.</b> Own-year sections close on their printed totals in 63.8% of cases (80% within 5%); the Canada series has been repaired for the row-slip, label-merge, capture and fused-section classes; a handful of known one-year defects remain (listed in the project notes). 1897–1900 are the weakest years.</p>
+</div>
+
+<h3>Method</h3>
+<p class="small">Sources: <code>reports/canada_explorer.json</code> (Canada value by commodity and year, both flows, own-year witnesses, all repairs) and <code>exports/map_slim.json</code> (UK import origins per commodity per year, curated). Script: <code>scripts/analyze_canada_reach.py</code>; outputs <code>reports/canada_reach.json</code>, <code>canada_reach_origins.csv</code>, <code>canada_reach_commodities.csv</code>. Regions by gazetteer coordinates with hand overrides for the Mediterranean, Bermuda, the Mascarenes and the Pacific.</p>
+</div>
+<div class="tip" id="tip"></div>
+<script>
+const D={"years":[1870,1871,1872,1873,1874,1875,1876,1877,1878,1879,1880,1881,1882,1883,1884,1885,1886,1887,1888,1889,1890,1891,1892,1893,1894,1895,1896,1897,1898,1899,1900],"total_export_uk":[9231150,0,9406633,8575397,8190309,9287199,7279722,8107219,7622801,5608856,7258045,8561335,9211849,9129849,8517364,6754604,7175426,7984038,7264239,8037220,7115565,6931009,7248074,6642937,5983548,5281725,5558856,5204809,5749278,6667629,7652253],"total_reexport":[0,0,969857,622203,728721,495662,542503,550179,522644,549087,585763,697580,737933,763103,883413,1000896,962004,936139,983171,1162280,899761,875518,1010850,1266471,934067,901958,798250,924192,1192457,1225569,1455219],"regions":["China & Japan","India & Southeast Asia","Europe","North America","Australasia & Pacific","Other regions"],"region_year":{"1870":{},"1871":{},"1872":{"Europe":158789,"Other regions":117232,"China & Japan":470852,"North America":20876,"India & Southeast Asia":148940,"Australasia & Pacific":53168},"1873":{"Europe":108607,"Other regions":63897,"China & Japan":305358,"North America":12380,"India & Southeast Asia":129704,"Australasia & Pacific":2256},"1874":{"Europe":128758,"China & Japan":336361,"North America":16041,"India & Southeast Asia":136693,"Other regions":108389,"Australasia & Pacific":2480},"1875":{"Europe":55623,"China & Japan":270866,"North America":8268,"India & Southeast Asia":109501,"Other regions":50309,"Australasia & Pacific":1094},"1876":{"Europe":71027,"China & Japan":274854,"North America":8603,"India & Southeast Asia":123876,"Other regions":63082,"Australasia & Pacific":1062},"1877":{"Europe":80527,"China & Japan":255506,"India & Southeast Asia":134679,"Other regions":65665,"North America":11077,"Australasia & Pacific":2725},"1878":{"Europe":97144,"China & Japan":227421,"India & Southeast Asia":143795,"Other regions":39960,"North America":11927,"Australasia & Pacific":2397},"1879":{"Europe":52767,"China & Japan":301747,"India & Southeast Asia":160348,"Other regions":24285,"North America":9205,"Australasia & Pacific":736},"1880":{"Europe":100034,"China & Japan":295613,"North America":17039,"India & Southeast Asia":135854,"Other regions":36209,"Australasia & Pacific":1013},"1881":{"Europe":131981,"China & Japan":300794,"India & Southeast Asia":178877,"Other regions":62539,"North America":21350,"Australasia & Pacific":2039},"1882":{"Other regions":148072,"Europe":200979,"North America":150459,"India & Southeast Asia":55194,"China & Japan":8072,"Australasia & Pacific":175157},"1883":{"Europe":178064,"China & Japan":295111,"North America":27578,"India & Southeast Asia":210737,"Australasia & Pacific":3812,"Other regions":47800},"1884":{"Europe":249460,"China & Japan":278259,"North America":38718,"India & Southeast Asia":233185,"Australasia & Pacific":2461,"Other regions":81328},"1885":{"Europe":284780,"China & Japan":302625,"India & Southeast Asia":243302,"Australasia & Pacific":47210,"Other regions":81758,"North America":41222},"1886":{"Europe":342392,"China & Japan":221070,"India & Southeast Asia":239773,"Australasia & Pacific":53480,"Other regions":81418,"North America":23870},"1887":{"Europe":308582,"China & Japan":177955,"North America":19997,"India & Southeast Asia":284938,"Other regions":93878,"Australasia & Pacific":50789},"1888":{"Europe":278616,"China & Japan":153841,"North America":80893,"India & Southeast Asia":316255,"Other regions":136305,"Australasia & Pacific":17261},"1889":{"Europe":452173,"China & Japan":141293,"North America":18006,"India & Southeast Asia":403849,"Other regions":98904,"Australasia & Pacific":48055},"1890":{"Europe":365652,"China & Japan":102877,"North America":9892,"India & Southeast Asia":317788,"Other regions":59243,"Australasia & Pacific":44308},"1891":{"Europe":346701,"China & Japan":79993,"North America":15629,"India & Southeast Asia":345036,"Australasia & Pacific":27556,"Other regions":60604},"1892":{"Europe":445658,"China & Japan":74360,"North America":29126,"India & Southeast Asia":317640,"Australasia & Pacific":52186,"Other regions":91878},"1893":{"Europe":648683,"China & Japan":81583,"North America":61822,"India & Southeast Asia":273509,"Australasia & Pacific":79484,"Other regions":121389},"1894":{"Europe":467622,"China & Japan":49420,"North America":40290,"India & Southeast Asia":267747,"Australasia & Pacific":41556,"Other regions":67433},"1895":{"Europe":457162,"China & Japan":40825,"North America":35297,"India & Southeast Asia":254457,"Australasia & Pacific":35881,"Other regions":78335},"1896":{"Europe":287413,"China & Japan":36026,"North America":45166,"India & Southeast Asia":204235,"Australasia & Pacific":24308,"Other regions":201104},"1897":{"Europe":270155,"China & Japan":29326,"North America":150077,"India & Southeast Asia":172583,"Australasia & Pacific":63976,"Other regions":238074},"1898":{"Europe":452986,"China & Japan":42119,"North America":199071,"India & Southeast Asia":180320,"Australasia & Pacific":104545,"Other regions":213416},"1899":{"Europe":413999,"China & Japan":59606,"North America":224567,"India & Southeast Asia":188049,"Australasia & Pacific":83627,"Other regions":255720},"1900":{"Europe":472181,"China & Japan":76346,"North America":107062,"India & Southeast Asia":460398,"Australasia & Pacific":55811,"Other regions":283422}},"region_total":{"China & Japan":5290080,"India & Southeast Asia":6371261,"Europe":7908516,"North America":1455510,"Australasia & Pacific":1080433,"Other regions":3071650},"tea_share":{"1872":{"China":0.842,"India":0.108,"Ceylon":0.0,"Other":0.05},"1873":{"China":0.816,"India":0.134,"Ceylon":0.0,"Other":0.05},"1874":{"China":0.791,"India":0.136,"Ceylon":0.004,"Other":0.069},"1875":{"China":0.833,"India":0.159,"Ceylon":0.001,"Other":0.007},"1876":{"China":0.799,"India":0.191,"Ceylon":0.001,"Other":0.009},"1877":{"China":0.777,"India":0.215,"Ceylon":0.0,"Other":0.008},"1878":{"China":0.773,"India":0.215,"Ceylon":0.0,"Other":0.013},"1879":{"China":0.724,"India":0.259,"Ceylon":0.001,"Other":0.016},"1880":{"China":0.72,"India":0.265,"Ceylon":0.001,"Other":0.014},"1881":{"China":0.721,"India":0.274,"Ceylon":0.001,"Other":0.004},"1882":{"China":0.666,"India":0.317,"Ceylon":0.003,"Other":0.014},"1883":{"China":0.644,"India":0.322,"Ceylon":0.012,"Other":0.022},"1884":{"China":0.608,"India":0.354,"Ceylon":0.015,"Other":0.023},"1885":{"China":0.604,"India":0.351,"Ceylon":0.026,"Other":0.018},"1886":{"China":0.565,"India":0.371,"Ceylon":0.04,"Other":0.024},"1887":{"China":0.474,"India":0.431,"Ceylon":0.078,"Other":0.018},"1888":{"China":0.422,"India":0.436,"Ceylon":0.123,"Other":0.019},"1889":{"China":0.35,"India":0.458,"Ceylon":0.169,"Other":0.023},"1890":{"China":0.284,"India":0.481,"Ceylon":0.213,"Other":0.023},"1891":{"China":0.224,"India":0.469,"Ceylon":0.28,"Other":0.027},"1892":{"China":0.204,"India":0.476,"Ceylon":0.301,"Other":0.019},"1893":{"China":0.247,"India":0.591,"Ceylon":0.134,"Other":0.028},"1894":{"China":0.156,"India":0.5,"Ceylon":0.323,"Other":0.022},"1895":{"China":0.138,"India":0.498,"Ceylon":0.333,"Other":0.03},"1896":{"China":0.093,"India":0.398,"Ceylon":0.289,"Other":0.22},"1897":{"China":0.094,"India":0.524,"Ceylon":0.358,"Other":0.024},"1898":{"China":0.091,"India":0.527,"Ceylon":0.358,"Other":0.025},"1899":{"China":0.098,"India":0.517,"Ceylon":0.353,"Other":0.032}},"tea_canada":[null,null,556714,371334,418252,324451,339303,321180,287456,384163,406913,414678,null,448529,443490,492104,376375,357781,344902,359912,341237,333918,308393,254784,242897,195984,200037,125515,152130,158953,334243],"export_top":[["WOOLLEN AND WORSTED MANUFACTURES",44526727],["IRON AND STEEL",39880635],["COTTON MANUFACTURES",26935374],["HABERDASHERY AND MILLINERY",15703592],["APPAREL AND SLOPS",8729378],["LINEN MANUFACTURES",6529511],["ZINC OR SPELTER",5858172],["TELEGRAPHIC WIRES AND APPARATUS",4388556],["HARDWARES AND CUTLERY",4034292],["SUGAR, REFINED",3992913],["SILK MANUFACTURES",3958197],["EARTHEN AND CHINA WARE",3362210]],"reexport_top":[["TEA",9295628,[["China",4835358],["Bengal",2071964],["Bengal And Burmah",1025005],["Ceylon",950597]]],["FRUIT",1450574,[["Spain",442898],["Greece",294834],["Turkey",151400],["France",95074]]],["SILK MANUFACTURES",1353445,[["France",555000],["Belgium",379048],["Holland",216097],["British East Indies",19456]]],["SKINS, FURS AND PELTS",1143301,[["Cape Of Good Hope",143973],["United States Of America",107809],["Argentine Republic",99836],["New Zealand",83731]]],["HEMP",1105023,[["Philippine Islands",351834],["Germany",143482],["Italy",142553],["Russia",133047]]],["WOOL",999785,[["New South Wales",173632],["New Zealand",126592],["Victoria",115083],["Cape Of Good Hope",60934]]],["WOOLLEN MANUFACTURES",877427,[["France",715779],["Holland",67180],["Germany",35906],["Belgium",25091]]],["RICE",628582,[["Bengal And Burmah",416384],["Bengal",54514],["Madras",39488],["Holland",27495]]],["ZINC AND ZINC ORE",563093,[["Germany",163152],["Holland",143113],["Belgium",91719],["France",34269]]],["SPICES",535607,[["British East Indies",182536],["Straits Settlements",154017],["British West India Islands",53812],["Ceylon",27252]]],["WINE",502999,[["France",232539],["Portugal",112416],["Spain",108496],["Holland",25402]]],["IRON AND STEEL",494247,[["Spain",186188],["Sweden",107599],["Holland",65482],["Belgium",42050]]],["SILK, RAW AND THROWN",477111,[["France",212336],["China",73228],["Bengal",26827],["Argentine Republic",23235]]],["TALLOW and STEARINE",467084,[["Australasia",174050],["United States Of America",119467],["Argentine Republic",58719],["Uruguay",48567]]],["SPIRITS",463185,[["British Guiana",164975],["British West India Islands",164141],["Holland",42183],["United States Of America",18229]]],["HAMS",381460,[["United States Of America",354438],["Canada",26122],["Germany",385],["Denmark",312]]]],"top_countries":[["China",5022977],["France",2802966],["Bengal",2307343],["Bengal And Burmah",1466593],["United States Of America",1213320],["Holland",1174609],["Belgium",1071209],["Ceylon",1060631],["Germany",839171],["Spain",782291],["Italy",372526],["Philippine Islands",366346],["British East Indies",348509],["Greece",310848],["Russia",307504]],"sugar_canada":[160455,null,273976,233076,310399,219207,487868,452995,1110210,150390,143712,57104,null,50172,59972,12554,12196,20702,27836,20583,16517,23912,17930,30220,22533,16186,22639,null,null,null,39569],"bad_years":{"1871":"no volume covers this year","1897":"read from the as_1899 reprint, repaired against as_1898/tn_1899/tn_1901; ~39% of value page-corroborated","1898":"read from the as_1899 reprint, repaired against tn_1901; ~40% page-corroborated","1899":"as_1899 page-edge column, repaired against tn_1901 (the only reprint); ~32% page-corroborated","1900":"tn_1901 page-edge column, no reprint anywhere; ~25% page-corroborated"}};
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const fmtK=v=>Math.round(v/1000).toLocaleString();
+const fmtM=v=>(v/1e6).toFixed(1);
+const tip=document.getElementById('tip');
+function showTip(e,html){tip.innerHTML=html;tip.style.opacity=1;const x=e.clientX+14,y=e.clientY+14;tip.style.left=Math.min(x,window.innerWidth-280)+'px';tip.style.top=y+'px';}
+function hideTip(){tip.style.opacity=0;}
+const NS='http://www.w3.org/2000/svg';
+function el(t,a,parent){const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);if(parent)parent.appendChild(n);return n;}
+const Y=D.years;
+// KPIs
+const exT=D.total_export_uk.reduce((a,b)=>a+b,0), rxT=D.total_reexport.reduce((a,b)=>a+b,0);
+const teaT=D.tea_canada.reduce((a,b)=>a+(b||0),0);
+const asia=D.region_total['India & Southeast Asia']+D.region_total['China & Japan'];
+document.getElementById('kpis').innerHTML=[
+ ['£'+fmtM(exT)+'M','British and Irish produce shipped to Canada, 1870–1900'],
+ ['£'+fmtM(rxT)+'M','foreign and colonial goods re-exported to Canada — '+(100*rxT/(rxT+exT)).toFixed(0)+'% of the two flows'],
+ ['£'+fmtM(teaT)+'M','of that was tea — '+(100*teaT/rxT).toFixed(0)+'% of all re-exports'],
+ [(100*asia/rxT).toFixed(0)+'%','of the via-Britain flow traces to Asia by estimated origin; Europe '+(100*D.region_total['Europe']/rxT).toFixed(0)+'%']
+].map(k=>`<div class="kpi"><div class="v">${k[0]}</div><div class="l">${k[1]}</div></div>`).join('');
+
+// generic line chart
+function lineChart(id,vals,color,opts={}){
+  const W=480,H=230,m={l:44,r:14,t:10,b:26};const box=document.getElementById(id);
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`},box);
+  const pts=Y.map((y,i)=>[y,vals[i]]).filter(p=>p[1]!=null&&p[1]>0);
+  const ymax=Math.max(...pts.map(p=>p[1]))*1.05, x0=Y[0],x1=Y[Y.length-1];
+  const X=y=>m.l+(y-x0)/(x1-x0)*(W-m.l-m.r), Yy=v=>m.t+(1-v/ymax)*(H-m.t-m.b);
+  const g=el('g',{class:'grid'},svg);const ax=el('g',{class:'axis'},svg);
+  const ticks=5;for(let i=0;i<=ticks;i++){const v=ymax/ticks*i;el('line',{x1:m.l,x2:W-m.r,y1:Yy(v),y2:Yy(v)},g);const t=el('text',{x:m.l-6,y:Yy(v)+4,'text-anchor':'end'},ax);t.textContent=(opts.k?Math.round(v/1000):v.toFixed(opts.dec||0)).toLocaleString();}
+  for(const y of [1870,1875,1880,1885,1890,1895,1900]){const t=el('text',{x:X(y),y:H-8,'text-anchor':'middle'},ax);t.textContent=y;}
+  // path with gaps
+  let d='',prev=null;for(const p of pts){d+=(prev&&p[0]-prev===1?'L':'M')+X(p[0]).toFixed(1)+' '+Yy(p[1]).toFixed(1)+' ';prev=p[0];}
+  el('path',{d,fill:'none',stroke:color,'stroke-width':2,'stroke-linejoin':'round'},svg);
+  const last=pts[pts.length-1];el('circle',{cx:X(last[0]),cy:Yy(last[1]),r:3.5,fill:color},svg);
+  // hover
+  const hl=el('line',{x1:0,x2:0,y1:m.t,y2:H-m.b,stroke:css('--ink-3'),'stroke-width':1,opacity:0},svg);
+  const dot=el('circle',{r:4,fill:color,stroke:css('--paper'),'stroke-width':2,opacity:0},svg);
+  svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const mx=(e.clientX-r.left)/r.width*W;let best=null;for(const p of pts){if(!best||Math.abs(X(p[0])-mx)<Math.abs(X(best[0])-mx))best=p;}if(!best)return;hl.setAttribute('x1',X(best[0]));hl.setAttribute('x2',X(best[0]));hl.setAttribute('opacity',1);dot.setAttribute('cx',X(best[0]));dot.setAttribute('cy',Yy(best[1]));dot.setAttribute('opacity',1);showTip(e,`<b>${best[0]}</b><br>${opts.label||''} £${Math.round(best[1]).toLocaleString()}`);});
+  svg.addEventListener('mouseleave',()=>{hl.setAttribute('opacity',0);dot.setAttribute('opacity',0);hideTip();});
+}
+lineChart('c-ex',D.total_export_uk,css('--seq'),{k:1,label:'British produce'});
+lineChart('c-rx',D.total_reexport,css('--s2'),{k:1,label:'Re-exports'});
+lineChart('c-tea',D.tea_canada,css('--s2'),{k:1,label:'Tea re-exported to Canada'});
+
+// horizontal bars
+function hbars(id,rows,color,unitFn,unitLabel){
+  const W=900,rowH=26,m={l:290,r:70,t:6,b:6},H=m.t+m.b+rows.length*rowH;
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`},document.getElementById(id));
+  const max=Math.max(...rows.map(r=>r[1]));const X=v=>m.l+v/max*(W-m.l-m.r);
+  rows.forEach((r,i)=>{const y=m.t+i*rowH;
+    const t=el('text',{x:m.l-10,y:y+17,'text-anchor':'end',class:'lbl'},svg);t.textContent=r[0].length>40?r[0].slice(0,38)+'…':r[0];
+    const rect=el('rect',{x:m.l,y:y+5,width:Math.max(2,X(r[1])-m.l),height:rowH-10,fill:color,rx:0},svg);
+    rect.style.cursor='default';rect.addEventListener('mousemove',e=>showTip(e,`<b>${r[0]}</b><br>£${Math.round(r[1]).toLocaleString()}`));rect.addEventListener('mouseleave',hideTip);
+    const v=el('text',{x:X(r[1])+6,y:y+17,class:'lbl'},svg);v.textContent=unitFn(r[1]);
+  });
+}
+hbars('c-top',D.export_top,css('--seq'),v=>fmtM(v)+'M');
+hbars('c-cty',D.top_countries,css('--seq'),v=>fmtK(v)+'k');
+
+// stacked area by region
+const REGCOL={'China & Japan':'--s2','India & Southeast Asia':'--s4','Europe':'--s1','North America':'--s3','Australasia & Pacific':'--s5','Other regions':'--grey'};
+function stackedArea(id,keys,getVal,colors,opts={}){
+  const W=900,H=300,m={l:48,r:14,t:10,b:26};const svg=el('svg',{viewBox:`0 0 ${W} ${H}`},document.getElementById(id));
+  const yrs=Y.filter(y=>keys.some(k=>getVal(y,k)>0));
+  const tot=y=>keys.reduce((a,k)=>a+(getVal(y,k)||0),0);
+  const ymax=opts.pct?1:Math.max(...yrs.map(tot))*1.05;
+  const x0=yrs[0],x1=yrs[yrs.length-1];const X=y=>m.l+(y-x0)/(x1-x0)*(W-m.l-m.r), Yy=v=>m.t+(1-v/ymax)*(H-m.t-m.b);
+  const g=el('g',{class:'grid'},svg),ax=el('g',{class:'axis'},svg);
+  for(let i=0;i<=5;i++){const v=ymax/5*i;el('line',{x1:m.l,x2:W-m.r,y1:Yy(v),y2:Yy(v)},g);const t=el('text',{x:m.l-6,y:Yy(v)+4,'text-anchor':'end'},ax);t.textContent=opts.pct?Math.round(v*100)+'%':Math.round(v/1000).toLocaleString();}
+  for(const y of [1875,1880,1885,1890,1895,1900]){if(y<x0||y>x1)continue;const t=el('text',{x:X(y),y:H-8,'text-anchor':'middle'},ax);t.textContent=y;}
+  // build stacks per contiguous run
+  const base={};yrs.forEach(y=>base[y]=0);
+  keys.forEach((k,ki)=>{
+    let d='';let segs=[];let cur=[];
+    yrs.forEach((y,i)=>{const v=getVal(y,k)||0;const T=tot(y);const b=base[y];const top=opts.pct?(T?(b+v)/T:0):b+v;const bot=opts.pct?(T?b/T:0):b;
+      if(i>0&&yrs[i-1]!==y-1){if(cur.length)segs.push(cur);cur=[];}
+      cur.push([X(y),Yy(top),Yy(bot)]);base[y]=b+v;});
+    if(cur.length)segs.push(cur);
+    for(const s of segs){let p='M'+s.map(q=>q[0].toFixed(1)+' '+q[1].toFixed(1)).join('L');p+='L'+s.slice().reverse().map(q=>q[0].toFixed(1)+' '+q[2].toFixed(1)).join('L')+'Z';
+      el('path',{d:p,fill:css(colors[k]),stroke:css('--paper'),'stroke-width':1.5},svg);}
+  });
+  const hl=el('line',{x1:0,x2:0,y1:m.t,y2:H-m.b,stroke:css('--ink-3'),'stroke-width':1,opacity:0},svg);
+  svg.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const mx=(e.clientX-r.left)/r.width*W;let best=null;for(const y of yrs){if(best===null||Math.abs(X(y)-mx)<Math.abs(X(best)-mx))best=y;}
+    hl.setAttribute('x1',X(best));hl.setAttribute('x2',X(best));hl.setAttribute('opacity',1);const T=tot(best);
+    showTip(e,`<b>${best}</b>`+(opts.pct?'':` · total £${Math.round(T).toLocaleString()}`)+'<br>'+keys.map(k=>{const v=getVal(best,k)||0;return `${k}: ${opts.pct?(100*v).toFixed(0)+'%':'£'+Math.round(v).toLocaleString()+' ('+(T?(100*v/T).toFixed(0):0)+'%)'}`}).join('<br>'));});
+  svg.addEventListener('mouseleave',()=>{hl.setAttribute('opacity',0);hideTip();});
+}
+const regs=D.regions;
+document.getElementById('lg-reg').innerHTML=regs.map(r=>`<span><i style="background:${css(REGCOL[r])}"></i>${r}</span>`).join('');
+stackedArea('c-reg',regs,(y,k)=>(D.region_year[y]||{})[k]||0,REGCOL);
+const TEACOL={'China':'--s2','India':'--s4','Ceylon':'--s3','Other':'--grey'};
+document.getElementById('lg-tea').innerHTML=Object.keys(TEACOL).map(r=>`<span><i style="background:${css(TEACOL[r])}"></i>${r}</span>`).join('');
+stackedArea('c-teash',Object.keys(TEACOL),(y,k)=>(D.tea_share[y]||{})[k]||0,TEACOL,{pct:true});
+
+// decade table
+const decs=[['1870s',1872,1879],['1880s',1880,1889],['1890s',1890,1899],['1900',1900,1900]];
+let th='<tr><th>Decade</th><th class="n">Re-exports £k</th>'+regs.map(r=>`<th class="n">${r}</th>`).join('')+'</tr>';
+let tb='';for(const [n,a,b] of decs){let T=0;const s={};regs.forEach(r=>s[r]=0);for(let y=a;y<=b;y++){const d=D.region_year[y]||{};for(const r of regs){s[r]+=d[r]||0;T+=d[r]||0;}}
+ tb+=`<tr><td>${n}</td><td class="n">${fmtK(T)}</td>`+regs.map(r=>`<td class="n">${T?(100*s[r]/T).toFixed(0):'–'}%</td>`).join('')+'</tr>';}
+document.getElementById('t-dec').innerHTML=th+tb;
+// commodity table
+let ch='<tr><th>Commodity (re-export)</th><th class="n">1870–1900 £k</th><th>Largest estimated origins (£k)</th></tr>';
+let cb=D.reexport_top.map(r=>`<tr><td>${r[0]}</td><td class="n">${fmtK(r[1])}</td><td>${r[2].map(o=>`${o[0]} <span class="small">${fmtK(o[1])}</span>`).join(' · ')}</td></tr>`).join('');
+document.getElementById('t-com').innerHTML=ch+cb;
+</script>
