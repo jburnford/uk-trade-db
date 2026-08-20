@@ -435,6 +435,8 @@ class Parser:
                 self._article(ctx, a_n)
                 ctx['country'] = carried
                 a_n = ''; self.diag['page_top_heading_continuation'] += 1
+            if a_n and numeric and a_n not in self.vocab and a_n.rstrip('—–- .') in self.vocab:
+                a_n = a_n.rstrip('—–- .')                      # 'Great Britain— | Ontario | values'
             # ---- 'Article Country' fused without a dash
             if a_n and numeric and a_n not in self.vocab and not re.match(r'totals?\b', a_n, re.I):
                 head, tail = split_trailing_country(a_n, self.vocab)
@@ -541,6 +543,9 @@ class Parser:
                         ctx['country'] = '?'; kind = 'detail_lostlabel'; self.diag['lost_label_block'] += 1
                     elif kind == 'detail' and ctx.get('country') == '?':
                         kind = 'detail_lostlabel'
+                    elif kind == 'detail' and ctx.get('country') in (None, ''):
+                        # a province row straight after a heading: the country label is missing
+                        ctx['country'] = '?'; kind = 'detail_lostlabel'; self.diag['country_label_lost'] += 1
                 elif b.strip():
                     # something in province position that is not a province: country row missing province?
                     cand = norm_label(b)
@@ -1085,7 +1090,7 @@ class Parser:
                     # article-opening '?' block: the previous article is closed by its printed grand total (the row
                     # just before the segment, possibly fused into this article's heading), no labelled country has
                     # appeared yet in this block and the next labelled country is not GB -> this is Great Britain
-                    elif prev is None and nxt is not None and rank(nxt) >= 1 and rank(nxt) <= 3:
+                    elif prev is None and nxt is not None and rank(nxt) == 1:
                         before = None
                         idx0 = i + k                      # the row preceding the segment, in volume order
                         if idx0 > 0:

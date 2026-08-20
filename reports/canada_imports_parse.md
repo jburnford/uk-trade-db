@@ -20,7 +20,7 @@
 | 1887 | oocihm.9_08052_21_3 | 547 | 15787 |
 | 1889 | oocihm.9_08052_23_2 | 558 | 16720 |
 
-Diagnostics: scrambled_row 3547, fused_article_country_nodash 2978, short_article_heading 1690, short_row 1307, blank_row_skipped 1082, unfused_rows 668, article_fragment 658, label_in_province_slot 541, short_country_label 513, no_regime_yet 455, country_label_lost 441, fused_cells 380, article_heading_lost 203, label_slip_repaired 202, page_top_total_fusion 136, short_total_label 116, fused_rows_expanded 90, lost_label_resolved_detail 87, heading_deferred_past_data_row 86, province_unrecognised 76, lost_label_after_total 74, lost_label_block 50, fused_article_country 35, country_label_in_province_slot 33, heading_fragment_starts_article 30, nil_province_row 28, lost_label_joined_prev_country 22, page_top_heading_continuation 21, heading_fused_into_total 18, lost_label_resolved_total 17, split_country_province 17, lost_label_total_structural 13, stray_unit_cells_dropped 11, value_column_lost 8, province_values_on_next_row 7, trailing_label_lost 5, country_inferred_Great 4, heading_fragment_on_data_row 4, country_inferred_United 1
+Diagnostics: scrambled_row 3547, fused_article_country_nodash 2978, short_article_heading 1690, short_row 1307, blank_row_skipped 1082, unfused_rows 668, article_fragment 658, country_label_lost 547, label_in_province_slot 541, short_country_label 513, no_regime_yet 455, fused_cells 380, article_heading_lost 203, label_slip_repaired 202, lost_label_resolved_detail 197, page_top_total_fusion 136, short_total_label 116, fused_rows_expanded 90, heading_deferred_past_data_row 86, province_unrecognised 76, lost_label_after_total 74, lost_label_block 50, fused_article_country 35, country_label_in_province_slot 33, heading_fragment_starts_article 30, nil_province_row 28, lost_label_joined_prev_country 22, page_top_heading_continuation 21, heading_fused_into_total 18, lost_label_resolved_total 17, split_country_province 17, lost_label_total_structural 13, country_inferred_Great 13, stray_unit_cells_dropped 11, value_column_lost 8, province_values_on_next_row 7, trailing_label_lost 5, heading_fragment_on_data_row 4, country_inferred_United 1
 Cell flags: fused 1884, unparsed 135
 
 | FY | regime | rows | row kinds |
@@ -69,7 +69,7 @@ Cell flags: fused 1884, unparsed 135
     - Black Lead/United States val_imp: rows 8434.00 vs printed 8034.00
     - Books, Printed, &c/Germany duty: rows 62.92 vs printed 62.85
     - Account Books, Copy Books, or Books to b/United States val_imp: rows 44065.00 vs printed 44095.00
-| 1883 | C | 17708 | detail 10436, article_province_total 4364, country_total 2163, article_total 646, country_noprov 64, article_total_fused 35 | country closure 5177 ok / 436 bad; article blocks (sum detail vs grand total, val_imp): no_grand_total 517, exact 425, under 130, within_1pct 59, over 9
+| 1883 | C | 17708 | detail 10436, article_province_total 4364, country_total 2163, article_total 646, country_noprov 64, article_total_fused 35 | country closure 5177 ok / 436 bad; article blocks (sum detail vs grand total, val_imp): no_grand_total 516, exact 426, under 129, within_1pct 59, over 9
     - Ale, beer and porter, in casks/Great Britain val_efc: rows 28475.00 vs printed 29335.00
     - Swine/United States val_imp: rows 4659.00 vs printed 21614.00
     - Swine/United States val_efc: rows 4659.00 vs printed 21614.00
