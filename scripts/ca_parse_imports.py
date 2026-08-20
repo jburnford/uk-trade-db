@@ -112,8 +112,8 @@ def parse_num(s, cents_ok=True):
     t = t.replace('$', '').strip()
     if not t or re.fullmatch(r'[.\s]+', t):
         return None, 'blank'
-    if is_unit_token(t):
-        return None, 'unit'
+    if is_unit_token(t) or not re.search(r'\d', t):
+        return None, 'unit'            # 'Sq. Yds.', 'Cub. Ft.', 'M.' — any digit-free text in a value cell is a unit
     toks = t.split()
     if len(toks) == 1 and NUM_RE.match(toks[0]):
         return int(toks[0].replace(',', '')), ''
@@ -317,6 +317,9 @@ class Parser:
             units_only = not numeric and all(f in ('blank', 'unit') for f in flags)
             a = labels[0] if len(labels) >= 2 else None
             b = labels[-1] if labels else ''
+            if len(labels) >= 3:
+                # '" " | Spain..... | Quebec.....': the country is the last non-ditto cell before the province
+                a = next((x for x in reversed(labels[:-1]) if norm_label(x)), labels[0])
             if len(labels) == 1 and b.strip() and not province_of(b) and not numeric:
                 a, b = b, ''            # lone label with no values: treat as first-column text
             if len(labels) == 1 and b.strip() and not province_of(b) and numeric:
@@ -361,6 +364,7 @@ class Parser:
                 if a_n in self.vocab and units_only:
                     # a country label whose values are on the next row (or blank)
                     ctx['country'] = a_n; ctx['article_buf'] = []; ctx['expect_label'] = False; ctx['last_prov'] = None
+                    ctx['pending_prov'] = province_of(b) if b.strip() else None
                     continue
                 if units_only and len(a_n) > 3 and (not ctx.get('article_buf')) and not frag.endswith('-') \
                         and any(is_unit_token(v) for v in vals_raw):
@@ -408,9 +412,24 @@ class Parser:
                     a_n = tail
                     self.diag['fused_article_country'] += 1
             if not a_n and not numeric and not province_of(b):
+                cand = norm_label(b)
+                if cand and (cand in self.vocab or re.match(r'totals?\b', cand, re.I)):
+                    # '" | United States... | | | |': the country label rode in the province slot, values follow
+                    ctx['country'] = 'TOTAL' if re.match(r'totals?\b', cand, re.I) else cand
+                    ctx['expect_label'] = False; ctx['last_prov'] = None; ctx['article_buf'] = []
+                    self.diag['country_label_in_province_slot'] += 1
+                    continue
                 # a units row / blank row with no label: nothing to emit, and it must not arm expect_label
                 self.diag['blank_row_skipped'] += 1
                 continue
+            if not a_n and not numeric and province_of(b) and units_only:
+                # 'F. W. Indies | Nova Scotia | Galls. | |' (label handled above) or '| Quebec | Lbs. | |': the values
+                # of this province are on the next, label-less row
+                ctx['pending_prov'] = province_of(b); self.diag['province_values_on_next_row'] += 1
+                continue
+            if not a_n and not b.strip() and numeric and ctx.get('pending_prov'):
+                b = ctx['pending_prov']
+            ctx['pending_prov'] = None
             country = None; kind = None; prov = None
             if a_n:
                 ctx['expect_label'] = False
@@ -967,7 +986,7 @@ class Parser:
                         while p >= 0 and blk[p]['row_kind'] == 'detail' and blk[p]['country'] not in (None, '', '?', 'TOTAL') \
                                 and blk[p]['country'] == blk[k - 1]['country']: p -= 1
                         run = blk[p + 1:k]
-                        if run and (p < 0 or blk[p]['row_kind'] not in ('country_total',)):
+                        if run:
                             seg = [x for x in blk[k:m - 1] if x['row_kind'] == 'detail']
                             for col in ('val_imp', 'val_efc'):
                                 tv = tail[col]
