@@ -121,6 +121,94 @@ def parse_num(s, cents_ok=True):
     return None, 'unparsed'
 
 
+NUMTOK_RE = re.compile(r'\d{1,3}(?:,\d{3})+|\d+')
+
+
+def split_numeric_tokens(cell, cents_ok=False):
+    """'Galls. 4,261 979' -> ['4,261', '979'];  '300 00 6 00 854 08' (cents) -> ['300 00', '6 00', '854 08'];
+    '.....' -> ['.....'] ; returns None if the cell is not numeric-ish."""
+    t = UNIT_RE.sub('', cell.strip()).replace('$', '').strip()
+    if not t or re.fullmatch(r'[.\s·…]+', t):
+        return ['.....']
+    toks = t.split()
+    if not all(NUMTOK_RE.fullmatch(x) for x in toks):
+        return None
+    if cents_ok and len(toks) >= 2 and len(toks) % 2 == 0 and all(re.fullmatch(r'\d{2}', toks[i]) for i in range(1, len(toks), 2)):
+        return [toks[i] + ' ' + toks[i + 1] for i in range(0, len(toks), 2)]
+    return toks
+
+
+def split_names(cell, names):
+    """Split a label cell holding several known names ('Great Britain..... United States.....') in order."""
+    t = DITTO_RE.sub('', cell)
+    found = []
+    pos = 0
+    low = t.lower()
+    while pos < len(t):
+        best = None
+        for n in names:
+            i = low.find(n.lower(), pos)
+            if i >= 0 and (best is None or i < best[0] or (i == best[0] and len(n) > len(best[1]))):
+                best = (i, n)
+        if best is None: break
+        found.append(best[1]); pos = best[0] + len(best[1])
+    # the remaining text must be only leaders/punctuation
+    rest = re.sub(r'[.\s·,;“"”]+', '', low[pos:])
+    return found if len(found) >= 2 and not rest else None
+
+
+def unfuse_rows(body, names, label_cols, cents_col):
+    """Expand rows whose label cell holds n names and whose numeric cells hold n tokens into n rows.
+    label_cols: indices (from the left) that may hold the fused names; cents_col: index from the right of the duty column."""
+    out = []
+    for cells in body:
+        texts = [c for _, _, c in cells]
+        n = None; lab_i = None; parts = None
+        for li in label_cols:
+            if li < len(texts):
+                sp = split_names(texts[li], names)
+                if sp:
+                    n = len(sp); lab_i = li; parts = sp; break
+        if not n:
+            out.append(cells); continue
+        toks = []
+        ok = True
+        for ci, tx in enumerate(texts):
+            if ci == lab_i: toks.append(None); continue
+            if ci < max(label_cols) + 1 and ci != lab_i and not NUMTOK_RE.search(tx):
+                toks.append(None); continue
+            sp = split_numeric_tokens(tx, cents_ok=(ci == len(texts) - 1 - cents_col))
+            if sp is None:
+                toks.append(None)            # text cell (article etc.)
+            elif len(sp) == n:
+                toks.append(sp)
+            elif len(sp) == 1:
+                toks.append(sp * 1)          # single token: placed below
+            else:
+                ok = False; break
+        # require at least one numeric cell actually split n ways, and names of one kind (all provinces or none)
+        nsplit = sum(1 for t in toks if t is not None and len(t) == n)
+        kinds = set(bool(province_of(x)) for x in parts)
+        if not ok or nsplit == 0 or len(kinds) != 1:
+            out.append(cells); continue
+        # single-token numeric cells: give them to the LAST row unless the first row needs them (rare);
+        # the caller's arithmetic cannot be checked here, so last row is the default (first rows print blanks)
+        for r in range(n):
+            new = []
+            for ci, tx in enumerate(texts):
+                kind = cells[ci][0]; span = cells[ci][1]
+                if ci == lab_i:
+                    new.append((kind, span, parts[r]))
+                elif toks[ci] is None:
+                    new.append((kind, span, tx if r == 0 else ''))
+                elif len(toks[ci]) == n:
+                    new.append((kind, span, toks[ci][r]))
+                else:
+                    new.append((kind, span, toks[ci][0] if r == n - 1 else '.....'))
+            out.append(new)
+    return out
+
+
 def regime_of(header_rows):
     h = ' | '.join(' | '.join(c for _, _, c in r) for r in header_rows).upper()
     if 'PROVINCES INTO WHICH' in h or 'COUNTRIES WHENCE' in h:
@@ -163,6 +251,9 @@ class Parser:
 
     # ---------------------------------------------------------------- regime C
     def parse_table_C(self, fy, vol, seq, body, ctx):
+        n0 = len(body)
+        body = unfuse_rows(body, self.vocab | set(PROVINCE_KEYS.values()) | set(PROVINCE_ORDER), [0, 1], 0)
+        if len(body) != n0: self.diag['unfused_rows'] += len(body) - n0
         NV = 5
         for ri, cells in enumerate(body):
             texts = [c for _, _, c in cells]
@@ -317,8 +408,37 @@ class Parser:
             ctx['expect_label'] = kind in ('country_total', 'article_total')
             self._emit(fy, vol, seq, ri, ctx, kind, prov, nums, flags, vals_raw, texts)
 
+    # ---------------------------------------------------------------- shared A/B helpers
+    @staticmethod
+    def _trim_trailing_empty(texts, NV):
+        # a trailing '' cell after a cents-looking duty cell is an OCR artefact, not the duty column
+        while len(texts) > NV + 1 and texts[-1].strip() == '' and re.search(r'\d \d\d$', texts[-2].strip()):
+            texts = texts[:-1]
+        return texts
+
+    def _expand_fused(self, vals_raw, NV, labels_avail):
+        """vals_raw: NV value cells, some holding n whitespace-separated numbers (n country rows fused).
+        Returns list of n value-lists when consistent and n <= labels available (+1 for the row's own), else None."""
+        toks = [split_numeric_tokens(v, cents_ok=(i == NV - 1)) for i, v in enumerate(vals_raw)]
+        if any(t is None for t in toks):
+            return None
+        ns = set(len(t) for t in toks if len(t) > 1)
+        if len(ns) != 1:
+            return None
+        n = ns.pop()
+        if n > labels_avail:
+            return None
+        rows = []
+        for r in range(n):
+            rows.append([t[r] if len(t) == n else (t[0] if r == n - 1 else '.....') for t in toks])
+        self.diag['fused_rows_expanded'] += n
+        return rows
+
     # ---------------------------------------------------------------- regime B (1877)
     def parse_table_B(self, fy, vol, seq, body, ctx):
+        n0 = len(body)
+        body = unfuse_rows(body, self.vocab | set(PROVINCE_KEYS.values()) | set(PROVINCE_ORDER), [0, 1], 0)
+        if len(body) != n0: self.diag['unfused_rows'] += len(body) - n0
         NV = 5
         # First pass: collect rows as (labels, vals). Labels may be ['article', 'country'] / ['country'] / [''].
         pending_labels = []     # country labels waiting for value rows (slip correction)
@@ -331,6 +451,7 @@ class Parser:
                 else:
                     self.diag['short_row'] += 1
                 continue
+            texts = self._trim_trailing_empty(texts, NV)
             vals_raw = texts[-NV:]; labels = texts[:-NV]
             parsed = [parse_num(v, cents_ok=(i == 4)) for i, v in enumerate(vals_raw)]
             nums = [p[0] for p in parsed]; flags = [p[1] for p in parsed]
@@ -346,47 +467,93 @@ class Parser:
                 pending_labels.append(cty)
             if not numeric:
                 continue
+            # fused value row (n countries' values in each cell): expand with the pending labels
+            if 'fused' in flags:
+                exp = self._expand_fused(vals_raw, NV, len(pending_labels))
+                if exp:
+                    for vr in exp:
+                        pr = [parse_num(v, cents_ok=(i == NV - 1)) for i, v in enumerate(vr)]
+                        country = pending_labels.pop(0); ctx['country'] = country
+                        self._emit(fy, vol, seq, ri, ctx, 'detail', ctx.get('province'), [p[0] for p in pr], [p[1] for p in pr], vr, texts)
+                    continue
             # a value row: pair with the oldest pending label (slip) else it is a subtotal
             if pending_labels:
                 country = pending_labels.pop(0); ctx['country'] = country; kind = 'detail'
             else:
-                kind = 'country_total_or_article_total'
                 kind = 'article_total'
             self._emit(fy, vol, seq, ri, ctx, kind, ctx.get('province'), nums, flags, vals_raw, texts)
 
     # ---------------------------------------------------------------- regime A (1869-73)
     def parse_table_A(self, fy, vol, seq, body, ctx):
-        NV = 8
+        """Vessel-split layout.  Cells are frequently dropped or duplicated, so columns are anchored from the
+        right: duty (cents-style) | value e.f.c. | qty e.f.c. | total value | total qty | [vessel cols...]."""
+        n0 = len(body)
+        body = unfuse_rows(body, self.vocab | set(PROVINCE_KEYS.values()) | set(PROVINCE_ORDER), [0, 1], 0)
+        if len(body) != n0: self.diag['unfused_rows'] += len(body) - n0
         pending_labels = []
         for ri, cells in enumerate(body):
             texts = [c for _, _, c in cells]
             joined = ' '.join(texts).strip()
-            if len(cells) < NV:
-                if re.search(r'DUTY|FREE GOODS|PER CENT|SPECIFIC|AD VALOREM', joined, re.I):
+            # leading label cells = leading cells that are not numeric-ish
+            nl = 0
+            while nl < len(texts) and nl < 2 and parse_num(texts[nl])[0] is None and parse_num(texts[nl])[1] not in ('fused',) \
+                    and not (parse_num(texts[nl])[1] == 'blank' and nl >= 1 and len(texts) - nl <= 9):
+                nl += 1
+            labels = texts[:nl]; vals = texts[nl:]
+            while vals and vals[-1].strip() == '': vals = vals[:-1]
+            if len(vals) < 4:
+                if re.search(r'DUTY|FREE GOODS|PER CENT|SPECIFIC|AD VALOREM', joined, re.I) and not any(parse_num(v)[0] is not None for v in vals):
                     self._section(ctx, joined)
+                elif labels and labels[0].strip() and not any(parse_num(v)[0] is not None for v in vals):
+                    self._article(ctx, labels[0]); pending_labels = []
+                    if len(labels) >= 2 and labels[1].strip(): pending_labels.append(norm_label(labels[1]))
                 else:
                     self.diag['short_row'] += 1
                 continue
-            vals_raw = texts[-NV:]; labels = texts[:-NV]
-            parsed = [parse_num(v, cents_ok=(i == 7)) for i, v in enumerate(vals_raw)]
-            nums = [p[0] for p in parsed]; flags = [p[1] for p in parsed]
-            numeric = any(v is not None for v in nums)
-            if 'fused' in flags:
-                self.diag['fused_cells'] += 1
-            art = norm_label(labels[0]) if len(labels) >= 2 and labels[0].strip() else None
-            cty = norm_label(labels[-1]) if labels and labels[-1].strip() else None
+            if len(vals) > 10:
+                self.diag['scrambled_row'] += 1; continue
+            parsedv = [parse_num(v, cents_ok=True) for v in vals]
+            numeric = any(p[0] is not None for p in parsedv)
+            art = norm_label(labels[0]) if len(labels) >= 1 and labels[0].strip() else None
+            cty = norm_label(labels[-1]) if len(labels) == 2 and labels[-1].strip() else None
+            if len(labels) == 1 and art and (art in self.vocab or re.match(r'totals?\b', art, re.I)):
+                cty, art = art, None
             if art:
                 if re.search(r'DUTY|FREE GOODS|PER CENT|SPECIFIC|AD VALOREM', art, re.I):
-                    m = re.match(r'(.*?(?:DUTY|GOODS|CENT|AD VALOREM)[^A-Za-z]*(?:—Continued\.?)?)(.*)', art, re.I)
+                    m = re.match(r'(.*?(?:DUTY|DUTIES|GOODS|CENT\.?|AD VALOREM)[^A-Za-z]*(?:—\s*Continued\.?)?)(.*)', art, re.I)
                     if m:
                         self._section(ctx, m.group(1)); art = m.group(2).strip() or None
                 if art:
                     self._article(ctx, art); pending_labels = []
-                self._units(ctx, vals_raw)
+                self._units(ctx, vals)
             if cty and not re.match(r'totals?\b', cty, re.I):
                 pending_labels.append(cty)
             if not numeric:
                 continue
+            # ---- align from the right
+            last = vals[-1].strip()
+            duty = None; rest = vals
+            if re.search(r'\d \d\d$', last) or (ctx.get('section') != 'FREE' and parse_num(last)[1] == 'blank' and len(vals) >= 8):
+                duty = vals[-1]; rest = vals[:-1]
+            elif ctx.get('section') == 'FREE' and parse_num(last)[1] == 'blank':
+                rest = vals[:-1]
+            tail = rest[-4:] if len(rest) >= 4 else ([''] * (4 - len(rest)) + rest)
+            vessel = rest[:-4] if len(rest) > 4 else []
+            vessel = [''] * (3 - len(vessel)) + vessel[-3:]
+            vals_raw = vessel + tail + [duty if duty is not None else '']
+            # fused value row: expand with pending labels
+            flags_probe = [parse_num(v, cents_ok=(i == 7))[1] for i, v in enumerate(vals_raw)]
+            if 'fused' in flags_probe:
+                self.diag['fused_cells'] += 1
+                exp = self._expand_fused(vals_raw, 8, len(pending_labels))
+                if exp:
+                    for vr in exp:
+                        pr = [parse_num(v, cents_ok=(i == 7)) for i, v in enumerate(vr)]
+                        country = pending_labels.pop(0); ctx['country'] = country
+                        self._emit(fy, vol, seq, ri, ctx, 'detail', ctx.get('province'), [p[0] for p in pr], [p[1] for p in pr], vr, texts)
+                    continue
+            parsed = [parse_num(v, cents_ok=(i == 7)) for i, v in enumerate(vals_raw)]
+            nums = [p[0] for p in parsed]; flags = [p[1] for p in parsed]
             if pending_labels:
                 country = pending_labels.pop(0); ctx['country'] = country; kind = 'detail'
             else:

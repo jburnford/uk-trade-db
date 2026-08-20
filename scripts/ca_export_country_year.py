@@ -93,6 +93,25 @@ try:
         L.append(f"| {fy} | {e['Great Britain']:,.0f} | {a['Great Britain']:,.0f} | {e['Great Britain']/a['Great Britain']:.3f} | {e['United States']:,.0f} | {a['United States']:,.0f} | {e['United States']/a['United States']:.3f} | {og:,.0f} | {oa:,.0f} | {og/oa if oa else 0:.3f} | {e['?']:,.0f} |")
 except FileNotFoundError:
     pass
+# the printed, majority-voted by-country series (prefatory tables of every volume): the authority for origin shares
+try:
+    ser = list(csv.DictReader(open(ROOT / 'reference' / 'canada_country_series_voted.csv')))
+    PS = defaultdict(dict)
+    for r in ser:
+        if r['measure'] == 'efc': PS[r['fiscal_year']][r['country']] = float(r['value'])
+    E2 = defaultdict(lambda: defaultdict(float))
+    for (fy, reg, c, sec), d in CY.items(): E2[fy][c] += d['val_efc']
+    L += ['', '## PRINTED series: value entered for consumption by country, 1873-1889 (prefatory tables, majority-voted across volumes)', '',
+          'Source: `reference/canada_country_series_voted.csv`. This is the authoritative origin table; the parsed General Statement (columns on the right) is the article-level layer beneath it.', '',
+          '| FY | printed total | GB | US | France | Germany | West Indies | other | GB % | US % | other % | parsed GB | parsed US | parsed ? |', '|---|---|---|---|---|---|---|---|---|---|---|---|---|---|']
+    for fy in sorted(PS):
+        d = PS[fy]; tot = d.get('total') or sum(v for k, v in d.items() if k != 'total')
+        gb = d.get('great britain', 0); us = d.get('united states', 0)
+        oth = tot - gb - us
+        e = E2.get(fy, {})
+        L.append(f"| {fy} | {tot:,.0f} | {gb:,.0f} | {us:,.0f} | {d.get('france',0):,.0f} | {d.get('germany',0):,.0f} | {d.get('west indies',0):,.0f} | {oth:,.0f} | {100*gb/tot:.1f} | {100*us/tot:.1f} | {100*oth/tot:.1f} | {e.get('Great Britain',0):,.0f} | {e.get('United States',0):,.0f} | {e.get('?',0):,.0f} |")
+except FileNotFoundError:
+    pass
 L += ['', '## Top 15 origins by value, regime C years pooled (1880-89)', '']
 pool = defaultdict(float)
 for (fy, reg, c, sec), d in CY.items():
