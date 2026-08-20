@@ -707,6 +707,8 @@ class Parser:
         text = re.sub(r'(\w)- (?=[a-z])', r'\1', text)      # 'raspber- ries' -> 'raspberries'
         t = re.sub(r'\s+', ' ', norm_label(text)).strip()
         t = re.sub(r'\s*[—-]\s*Con(tinued)?\.?$', '', t, flags=re.I)
+        t = re.sub(r'^.*?\bGOODS\s*[—-]\s*Con(tinued)?\.?\s*', '', t, flags=re.I)      # 'FREE GOODS—Continued Bolting Cloths—'
+        t = re.sub(r'^(?:—\s*)?Continued\.?\s*[—:]?\s*', '', t, flags=re.I)        # '—Continued. Settlers' effects'
         # mark parent boundaries, then split on dashes
         t = re.sub(r',?\s*viz\.?\s*[:;]?\s*[—–-]?', ' :— ', t, flags=re.I)
         t = re.sub(r'\s*[:;]\s*[—–-]', ' :— ', t)
@@ -730,6 +732,8 @@ class Parser:
         if cur.strip(' ,.-'):
             if leaf is not None: parents.append(leaf)
             leaf = cur.strip(' ,.-')
+        if leaf is not None:
+            leaf = re.sub(r'^Continued\.?\s+', '', leaf, flags=re.I).strip() or None
         if not parents and leaf is None:
             return
         if re.search(r'recapitulation', text, re.I):
@@ -830,7 +834,7 @@ class Parser:
                 pend[0] += r['val_imp'] or 0; pend[1] += r['qty_imp'] or 0; pend[2] += r['val_efc'] or 0
             elif k == 'article_total':
                 pend = None
-            elif k in ('detail', 'detail_lostlabel') and pend is not None:
+            elif k in ('detail', 'detail_lostlabel', 'country_noprov') and pend is not None:
                 def _close(x, y, tol):
                     return x is not None and y and abs(x - y) <= max(0.5, tol * y)
                 vi, ve, qi = r['val_imp'], r['val_efc'], r['qty_imp']
