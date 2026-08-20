@@ -263,6 +263,20 @@ class Parser:
                     self.diag['fused_article_country'] += 1
             country = None; kind = None; prov = None
             if a_n:
+                ctx['expect_label'] = False
+            if a_n and not re.match(r'totals?\b', a_n, re.I):
+                # countries are printed GB, US, then alphabetical: an order restart without a new heading
+                # means the article heading was lost (or a Total row just closed the previous article)
+                # (the printed country order after GB/US/France/Germany is a fixed list, not alphabetical, so
+                #  only GB/US re-occurrence and a preceding Total row are used as evidence)
+                rank = lambda c: 0 if c.startswith('Great Brit') else 1 if c.startswith('United Stat') else 2
+                prev = ctx.get('country')
+                if prev in ('TOTAL',) or (prev and prev != '?' and rank(a_n) < 2 and rank(a_n) <= rank(prev)):
+                    ctx['article_parents'] = ctx.get('article_parents') or []
+                    ctx['article'] = '?'; ctx['block_id'] = ctx.get('block_id', 0) + 1
+                    ctx['leaf_used'] = False; ctx['unit'] = None
+                    self.diag['article_heading_lost'] += 1
+            if a_n:
                 if re.match(r'totals?\b', a_n, re.I):
                     kind = 'article_province_total'; ctx['country'] = 'TOTAL'
                     prov = province_of(b)
@@ -279,8 +293,11 @@ class Parser:
                 prov = province_of(b) if b.strip() else None
                 if prov:
                     kind = 'article_province_total' if ctx.get('country') == 'TOTAL' else 'detail'
+                    if ctx.get('expect_label'):
+                        # a subtotal/total row was just printed: the next row must carry a label; it did not
+                        ctx['country'] = '?'; kind = 'detail_lostlabel'; self.diag['lost_label_after_total'] += 1
                     # province order restarting inside a country block => a label row was lost
-                    if kind == 'detail' and ctx.get('last_prov') and prov in PROVINCE_ORDER and ctx['last_prov'] in PROVINCE_ORDER \
+                    elif kind == 'detail' and ctx.get('last_prov') and prov in PROVINCE_ORDER and ctx['last_prov'] in PROVINCE_ORDER \
                             and PROVINCE_ORDER.index(prov) <= PROVINCE_ORDER.index(ctx['last_prov']):
                         ctx['country'] = '?'; kind = 'detail_lostlabel'; self.diag['lost_label_block'] += 1
                     elif kind == 'detail' and ctx.get('country') == '?':
@@ -297,6 +314,7 @@ class Parser:
             if not numeric and kind in ('detail', 'article_province_total'):
                 self.diag['label_row_no_values'] += 1
             ctx['last_prov'] = prov if kind in ('detail', 'detail_lostlabel', 'article_province_total') else None
+            ctx['expect_label'] = kind in ('country_total', 'article_total')
             self._emit(fy, vol, seq, ri, ctx, kind, prov, nums, flags, vals_raw, texts)
 
     # ---------------------------------------------------------------- regime B (1877)
@@ -421,6 +439,7 @@ class Parser:
             leaf = cur.strip(' ,.-')
         if not parents and leaf is None:
             return
+        old_leaf = ctx.get('article')
         if parents:
             if ctx.get('article_parents') and not ctx.get('leaf_used', True):
                 # previous heading row had no data rows under it: nest beneath it
@@ -431,7 +450,12 @@ class Parser:
                 ctx['article_parents'] = parents
             ctx['article'] = None
         if leaf is not None:
-            if leaf != ctx.get('article'):
+            import difflib
+            same = leaf == old_leaf or (old_leaf and old_leaf != '?' and
+                   difflib.SequenceMatcher(None, re.sub(r'\W', '', leaf.lower()), re.sub(r'\W', '', old_leaf.lower())).ratio() >= 0.85)
+            if same:
+                leaf = old_leaf            # page-top repeat (possibly re-hyphenated): keep block and spelling
+            else:
                 ctx['block_id'] = ctx.get('block_id', 0) + 1
             import os
             if os.environ.get('CA_DEBUG_ARTICLE') and leaf == os.environ['CA_DEBUG_ARTICLE']:
@@ -454,6 +478,9 @@ class Parser:
                 ctx['unit'] = t
 
     def _emit(self, fy, vol, seq, ri, ctx, kind, prov, nums, flags, vals_raw, texts):
+        if kind in ('detail', 'country_total', 'detail_lostlabel') and not ctx.get('article'):
+            ctx['article'] = '?'; ctx['block_id'] = ctx.get('block_id', 0) + 1; ctx['leaf_used'] = False
+            self.diag['article_heading_lost'] += 1
         if ctx.get('regime') == 'A':
             cols = ['qty_brit', 'qty_foreign', 'qty_land', 'qty_imp', 'val_imp', 'qty_efc', 'val_efc', 'duty']
         else:
@@ -474,9 +501,82 @@ class Parser:
         if kind in ('detail', 'country_total'): ctx['leaf_used'] = True
         self.rows.append(rec)
 
+    # ---------------------------------------------------------------- post-pass
+    def resolve_lost_labels(self, start_idx):
+        """Lost-label segments (detail_lostlabel rows + their trailing subtotal) are either the article's
+        Total block (values == sum of the preceding country blocks, by province) or a country block whose
+        label was dropped (kept as detail with country '?')."""
+        rows = self.rows[start_idx:]
+        # (a) page-top fusion: the previous article's unlabelled grand total merged into the next article's
+        #     heading+first-country row.  Signature: the row's values equal the sum of the preceding Total-by-
+        #     province rows, which themselves were not followed by a grand total.
+        pend = None        # (val_imp sum, qty_imp sum, val_efc sum) of article_province_total rows awaiting a grand total
+        for r in rows:
+            k = r['row_kind']
+            if k == 'article_province_total':
+                if pend is None: pend = [0.0, 0.0, 0.0, False]
+                pend[0] += r['val_imp'] or 0; pend[1] += r['qty_imp'] or 0; pend[2] += r['val_efc'] or 0
+            elif k == 'article_total':
+                pend = None
+            elif k in ('detail', 'detail_lostlabel') and pend is not None:
+                if pend[0] > 0 and r['val_imp'] is not None and abs(r['val_imp'] - pend[0]) < 0.5 and \
+                        (r['qty_imp'] is None or pend[1] == 0 or abs(r['qty_imp'] - pend[1]) < 0.5):
+                    r['row_kind'] = 'article_total_fused'; r['country'] = None; r['province'] = None
+                    self.diag['page_top_total_fusion'] += 1
+                pend = None
+            elif k == 'country_total':
+                pass
+            else:
+                pend = None
+        # group by block_id preserving order
+        i = 0; n = len(rows)
+        while i < n:
+            j = i
+            while j < n and rows[j]['block_id'] == rows[i]['block_id']: j += 1
+            blk = rows[i:j]
+            acc = defaultdict(float)      # province -> val_imp of detail rows seen so far in the block
+            acc_e = defaultdict(float)
+            k = 0
+            while k < len(blk):
+                r = blk[k]
+                if r['row_kind'] == 'article_total':
+                    acc = defaultdict(float); acc_e = defaultdict(float)     # a printed Total closes the sum
+                    k += 1; continue
+                if r['row_kind'] == 'detail':
+                    if r['val_imp'] is not None: acc[r['province']] += r['val_imp']
+                    if r['val_efc'] is not None: acc_e[r['province']] += r['val_efc']
+                    k += 1; continue
+                if r['row_kind'] != 'detail_lostlabel':
+                    k += 1; continue
+                # segment of lost-label rows
+                m = k
+                while m < len(blk) and blk[m]['row_kind'] == 'detail_lostlabel': m += 1
+                seg = blk[k:m]
+                tail = blk[m] if m < len(blk) and blk[m]['row_kind'] in ('country_total', 'article_total') else None
+                segv = {r['province']: r['val_imp'] for r in seg if r['val_imp'] is not None}
+                sege = {r['province']: r['val_efc'] for r in seg if r['val_efc'] is not None}
+                match = sum(1 for p, v in segv.items() if abs(acc.get(p, 0) - v) < 0.5)
+                match_e = sum(1 for p, v in sege.items() if abs(acc_e.get(p, 0) - v) < 0.5)
+                is_total = (segv and match >= max(1, len(segv) // 2 + 1)) or (sege and match_e >= max(1, len(sege) // 2 + 1))
+                if is_total and sum(acc.values()) > 0:
+                    for r in seg: r['row_kind'] = 'article_province_total'; r['country'] = 'TOTAL'
+                    if tail: tail['row_kind'] = 'article_total'; tail['country'] = None
+                    acc = defaultdict(float); acc_e = defaultdict(float)
+                    self.diag['lost_label_resolved_total'] += 1
+                else:
+                    for r in seg:
+                        r['row_kind'] = 'detail'; r['country'] = '?'
+                        if r['val_imp'] is not None: acc[r['province']] += r['val_imp']
+                        if r['val_efc'] is not None: acc_e[r['province']] += r['val_efc']
+                    if tail: tail['country'] = '?'
+                    self.diag['lost_label_resolved_detail'] += 1
+                k = m + (1 if tail else 0)
+            i = j
+
     # ---------------------------------------------------------------- driver
     def parse_volume(self, tag, fy, md_path):
         text = md_path.read_text(errors='replace')
+        start_rows = len(self.rows)
         start = 0
         for mm in P.TN_START_RE2.finditer(text):
             if re.search(r'COMPILED\s+FROM\s+OFFICIAL\s+RETURNS', text[mm.start(): mm.start() + 1500], re.I):
@@ -527,6 +627,7 @@ class Parser:
             ctx['article_buf'] = []
             n_tables += 1
             getattr(self, 'parse_table_' + ctx['regime'])(fy, tag, seq, body, ctx)
+        self.resolve_lost_labels(start_rows)
         return n_tables
 
 
