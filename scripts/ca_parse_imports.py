@@ -152,17 +152,25 @@ def split_names(cell, names):
     found = []
     pos = 0
     low = t.lower()
+    first = None
     while pos < len(t):
         best = None
         for n in names:
             i = low.find(n.lower(), pos)
+            while i >= 0:
+                # whole-word match only ('other' inside 'any other liquid' must not split the cell)
+                if (i == 0 or not low[i - 1].isalpha()) and (i + len(n) >= len(low) or not low[i + len(n)].isalpha()):
+                    break
+                i = low.find(n.lower(), i + 1)
             if i >= 0 and (best is None or i < best[0] or (i == best[0] and len(n) > len(best[1]))):
                 best = (i, n)
         if best is None: break
+        if first is None: first = best[0]
         found.append(best[1]); pos = best[0] + len(best[1])
-    # the remaining text must be only leaders/punctuation
+    # the text before the first name and after the last must be only leaders/punctuation
     rest = re.sub(r'[.\s·,;“"”]+', '', low[pos:])
-    return found if len(found) >= 2 and not rest else None
+    head = re.sub(r'[.\s·,;“"”]+', '', low[:first]) if first is not None else ''
+    return found if len(found) >= 2 and not rest and not head else None
 
 
 def unfuse_rows(body, names, label_cols, cents_col):
