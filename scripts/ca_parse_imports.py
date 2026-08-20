@@ -499,7 +499,7 @@ class Parser:
                    section=ctx.get('section'), section_label=ctx.get('section_label'),
                    article_parent=' > '.join(ctx.get('article_parents') or []), article=ctx.get('article'),
                    country=None if kind in ('article_total',) else ctx.get('country'),
-                   province=prov, row_kind=kind, unit=ctx.get('unit'))
+                   province=prov, row_kind=kind, unit=ctx.get('unit'), country_inferred=0)
         for c in ['qty_brit', 'qty_foreign', 'qty_land', 'qty_imp', 'val_imp', 'qty_efc', 'val_efc', 'duty']:
             rec[c] = None
         for c, v in zip(cols, nums):
@@ -538,6 +538,7 @@ class Parser:
                 pass
             else:
                 pend = None
+        self._infer_lost_countries_later = True
         # group by block_id preserving order
         i = 0; n = len(rows)
         while i < n:
@@ -597,6 +598,36 @@ class Parser:
                     if tail: tail['country'] = '?'
                     self.diag['lost_label_resolved_detail'] += 1
                 k = m + (1 if tail else 0)
+            i = j
+        # (b) infer lost country labels from the printed country order within the block:
+        #     GB first, US second, then France, Germany, then the rest.  A '?' block between GB and a
+        #     rank>=2 country is the US; a '?' block opening the article and followed by the US is GB.
+        rank = lambda c: 0 if c.startswith('Great Brit') else 1 if c.startswith('United Stat') else 2 if c.startswith('France') else 3 if c.startswith('Germany') else 4
+        i = 0
+        while i < n:
+            j = i
+            while j < n and rows[j]['block_id'] == rows[i]['block_id']: j += 1
+            blk = rows[i:j]
+            # segments of '?' detail rows
+            k = 0
+            while k < len(blk):
+                if blk[k]['row_kind'] == 'detail' and blk[k]['country'] == '?':
+                    m = k
+                    while m < len(blk) and blk[m]['row_kind'] in ('detail', 'country_total') and blk[m]['country'] == '?': m += 1
+                    prev = next((x['country'] for x in reversed(blk[:k]) if x['row_kind'] == 'detail' and x['country'] not in (None, '', '?', 'TOTAL')), None)
+                    nxt = next((x['country'] for x in blk[m:] if x['row_kind'] == 'detail' and x['country'] not in (None, '', '?', 'TOTAL')), None)
+                    guess = None
+                    if prev is not None and rank(prev) == 0 and nxt is not None and rank(nxt) >= 2: guess = 'United States'
+                    # (GB inference for article-opening '?' blocks was tried and over-assigns: such blocks are often
+                    #  the previous article's unlabelled Total or a heading-less new article — left as '?')
+                    elif prev is not None and rank(prev) == 0 and nxt is None and not any(x['row_kind'] in ('article_province_total',) for x in blk[m:]): guess = None
+                    if guess:
+                        for x in blk[k:m]:
+                            x['country'] = guess; x['country_inferred'] = 1
+                        self.diag['country_inferred_' + guess.split()[0]] += 1
+                    k = m
+                else:
+                    k += 1
             i = j
 
     # ---------------------------------------------------------------- driver
@@ -769,7 +800,7 @@ def main():
         per_vol.append((fy, tag, n, len(p.rows) - before))
         print(f'{fy:8} {tag:24} tables={n:4} rows={len(p.rows)-before:6}', file=sys.stderr)
     fields = ['fiscal_year', 'volume', 'table_seq', 'row_seq', 'regime', 'block_id', 'section', 'section_label', 'article_parent',
-              'article', 'country', 'province', 'row_kind', 'unit', 'qty_brit', 'qty_foreign', 'qty_land',
+              'article', 'country', 'country_inferred', 'province', 'row_kind', 'unit', 'qty_brit', 'qty_foreign', 'qty_land',
               'qty_imp', 'val_imp', 'qty_efc', 'val_efc', 'duty', 'flags', 'raw']
     with open(OUT_CSV, 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=fields); w.writeheader()

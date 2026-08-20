@@ -20,7 +20,7 @@
 | 1887 | oocihm.9_08052_21_3 | 547 | 15741 |
 | 1889 | oocihm.9_08052_23_2 | 558 | 16747 |
 
-Diagnostics: short_row 4115, fused_article_country_nodash 2930, lost_label_after_total 1348, fused_cells 1292, lost_label_resolved_detail 1267, article_heading_lost 951, label_in_province_slot 593, country_label_lost 557, no_regime_yet 455, article_fragment 324, lost_label_block 245, lost_label_resolved_total 183, province_unrecognised 78, page_top_total_fusion 46, lost_label_total_structural 28, label_row_no_values 22, split_country_province 17, fused_article_country 8, lost_label_total_by_sum 3
+Diagnostics: short_row 4115, fused_article_country_nodash 2930, lost_label_after_total 1348, fused_cells 1292, lost_label_resolved_detail 1267, article_heading_lost 951, label_in_province_slot 593, country_label_lost 557, no_regime_yet 455, article_fragment 324, lost_label_block 245, lost_label_resolved_total 183, province_unrecognised 78, country_inferred_United 65, page_top_total_fusion 46, lost_label_total_structural 28, label_row_no_values 22, split_country_province 17, fused_article_country 8, lost_label_total_by_sum 3
 Cell flags: fused 3407, unparsed 1810
 
 | FY | regime | rows | row kinds |
@@ -58,7 +58,7 @@ Cell flags: fused 3407, unparsed 1810
 | 1880 | C | 15642 | detail 8702, article_province_total 3755, country_total 2470, article_total 607, country_noprov 103, article_total_fused 5 | country closure 3572 ok / 1229 bad; article blocks (sum detail vs grand total, val_imp): no_grand_total 368, exact 292, within_1pct 98, under 68, over 57
     - Ginger Ale/Great Britain val_efc: rows 2486.00 vs printed 2446.00
     - Ginger Ale/Great Britain duty: rows 489.39 vs printed 489.19
-    - Horses/? val_efc: rows 41407.00 vs printed 41409.00
+    - Horses/United States val_efc: rows 41407.00 vs printed 41409.00
     - Swine/United States duty: rows 23525.33 vs printed 23725.13
     - Baking Powders/United tates val_efc: rows 23217.00 vs printed 23017.00
     - Black Lead/United States val_imp: rows 3811.00 vs printed 3711.00
