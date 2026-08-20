@@ -33,12 +33,14 @@ def canon(c):
     if c in (None, '', '?'): return '?'
     t = I.norm_label(c)
     t = re.sub(r'(\w)- (?=[a-z])', r'\1', t)
-    k = re.sub(r'[^a-z& ]', '', t.lower()).strip(); k = re.sub(r'\s+', ' ', k)
+    k = re.sub(r'[^a-z& ]', ' ', t.lower().replace('-', ' ')).strip(); k = re.sub(r'\s+', ' ', k)
     if k in CANON: return CANON[k]
     k2 = k.replace('&', 'and')
     if k2 in CANON: return CANON[k2]
-    if k.startswith('great brit'): return 'Great Britain'
+    if k.startswith('great brit') or (k.startswith('grea') and 'brit' in k): return 'Great Britain'
     if k.startswith('united st'): return 'United States'
+    m = re.match(r'^(west|east) indies (british|spanish|french|danish|dutch)$', k)
+    if m: return m.group(2).capitalize() + ' ' + m.group(1).capitalize() + ' Indies'
     return t.strip(' .')
 
 rows = list(csv.DictReader(open(ROOT / 'db' / 'canada' / 'imports_general_rows.csv')))

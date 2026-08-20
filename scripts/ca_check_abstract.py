@@ -12,12 +12,21 @@ import ca_parse_imports as I
 
 def ckey(c):
     c = I.norm_label(c or '')
-    c = re.sub(r'\bBrit\.?\b', 'British', c); c = re.sub(r'\bW\.\s*Indies', 'West Indies', c); c = re.sub(r'\bE\.\s*Indies', 'East Indies', c)
+    c = re.sub(r'\bBrit\.?\b', 'British', c); c = re.sub(r'\bBrt\.\s*', 'British ', c); c = re.sub(r'\bW\.\s*Indies', 'West Indies', c); c = re.sub(r'\bE\.\s*Indies', 'East Indies', c)
+    c = re.sub(r'\bSpan?\.\s*', 'Spanish ', c); c = re.sub(r'\bFr(en)?\.\s*', 'French ', c); c = re.sub(r'\bDan\.\s*', 'Danish ', c)
+    c = re.sub(r'\bW\.\s*Ind\b\.?', 'West Indies', c); c = re.sub(r'\bE\.\s*Ind\b\.?', 'East Indies', c)
     c = re.sub(r'\bB\.\s*(?=West|East)', 'British ', c); c = re.sub(r'\bS\.\s*(?=West)', 'Spanish ', c); c = re.sub(r'\bF\.\s*(?=West)', 'French ', c)
     c = re.sub(r'\bD(an)?\.\s*(?=West)', 'Danish ', c); c = re.sub(r'\bD\.\s*(?=East)', 'Dutch ', c)
     c = re.sub(r'\bCent\.\s*', 'Central ', c); c = re.sub(r'\bSand\.\s*', 'Sandwich ', c)
+    c = re.sub(r'(\w)- (?=[a-z])', r'\1', c)                      # 'posses- sions' -> 'possessions'
+    c = re.sub(r'\bB\.\s*(?=Africa|Guiana|Honduras)', 'British ', c)
     c = re.sub(r'[^A-Za-z ]', '', c).lower().strip()
-    return re.sub(r'\s+', ' ', c)
+    c = re.sub(r'\s+', ' ', c)
+    m = re.match(r'^(west|east) indies (british|spanish|french|danish|dutch)$', c)      # 'West Indies, Spanish'
+    if m: c = m.group(2) + ' ' + m.group(1) + ' indies'
+    if c.startswith('grea') and 'brit' in c: c = 'great britain'
+    if c.startswith('united st'): c = 'united states'
+    return c
 
 imp = list(csv.DictReader(open(ROOT / 'db' / 'canada' / 'imports_general_rows.csv')))
 ab = list(csv.DictReader(open(ROOT / 'db' / 'canada' / 'imports_abstract_rows.csv')))

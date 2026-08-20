@@ -86,7 +86,15 @@ def split_trailing_country(s, vocab):
             if best is None or len(c) > len(best): best = c
     if best:
         head = t[:-len(best)].rstrip(' .,—-–;:')
-        return head, t[-len(best):]
+        tail = t[-len(best):]
+        # 'Brit W. Indies' / 'Span. W. Indies': pull the abbreviation tokens back into the country name
+        # (only when the matched tail is itself a fragment, never for a complete country name)
+        while re.match(r'^(W\.?\s*|E\.?\s*)?(Indies|Ind\b|Africa|Guiana)', tail):
+            mm = re.search(r'(?:^|\s)((?:Brit|Span|Sp|Fr|Fren|Dan|Dutch|B|S|F|D|W|E|N)\.?)$', head)
+            if not mm: break
+            tail = mm.group(1) + ' ' + tail
+            head = head[:mm.start(1)].rstrip(' .,—-–;:')
+        return head, tail
     return t, None
 
 
@@ -263,9 +271,28 @@ class Parser:
             if (len(cells) == 1 or spans >= 7 and len(cells) <= 2) and re.search(r'DUTIABLE|FREE GOODS', joined, re.I):
                 self._section(ctx, joined); continue
             if len(cells) < NV:
-                # short rows: banner-ish or junk
+                # short rows: full-width label cells (the 1880s volumes print article headings, country labels
+                # and 'Total' as one spanning cell, often ditto-led: '“ Buckwheat—', '“ United States...'),
+                # section banners, or junk (index lines, page furniture)
+                j = norm_label(joined)
                 if re.search(r'DUTIABLE|FREE GOODS', joined, re.I):
                     self._section(ctx, joined)
+                elif not j or re.search(r'\d', j) or len(j) <= 2:
+                    self.diag['short_row'] += 1
+                elif re.match(r'totals?\b', j, re.I):
+                    ctx['country'] = 'TOTAL'; ctx['expect_label'] = False; ctx['article_buf'] = []
+                    ctx['last_prov'] = None; self.diag['short_total_label'] += 1
+                elif j in self.vocab or split_trailing_country(j, self.vocab)[1] == j:
+                    ctx['country'] = j; ctx['expect_label'] = False; ctx['article_buf'] = []
+                    ctx['last_prov'] = None; self.diag['short_country_label'] += 1
+                elif re.search(r'[—–:;-]\s*$', j.rstrip('.')) or re.search(r'viz\.?\s*$', j, re.I):
+                    self._article(ctx, ' '.join(ctx.get('article_buf', []) + [j]))
+                    ctx['article_buf'] = []; ctx['expect_label'] = False
+                    self.diag['short_article_heading'] += 1
+                elif len(j) > 3 and not j.isupper():
+                    # a wrapped fragment of an article name ('“ Buckwheat meal or' / 'flour—')
+                    ctx.setdefault('article_buf', []).append(j)
+                    self.diag['article_fragment'] += 1
                 else:
                     self.diag['short_row'] += 1
                 continue
@@ -295,6 +322,13 @@ class Parser:
                 c2, p2 = split_trailing_province(b)
                 if p2: b = p2
             a_n = norm_label(a) if a is not None else None
+            if a_n:
+                if re.match(r'^\(.*\)$', a_n) or re.match(r'^\(?see also\b', a_n, re.I):
+                    a_n = ''                                   # a cross-reference note, not a label
+                elif province_of(a_n) and (not b.strip() or province_of(b) == province_of(a_n)):
+                    b = a_n; a_n = ''                          # 'Ontario | Ontario': the label column repeats the province
+                elif re.fullmatch(r'To(t|ta|tal?)?s?', a_n):
+                    a_n = 'Total'                              # truncated 'Total'
             # ---- article header rows: text ending in a dash, values blank/units
             if a_n and not numeric:
                 frag = a.strip()
@@ -305,6 +339,7 @@ class Parser:
                         if head: self._article(ctx, ' '.join(ctx.get('article_buf', []) + [head]))
                         ctx['article_buf'] = []
                         ctx['country'] = 'TOTAL' if re.match(r'totals?\b', tail, re.I) else tail
+                        ctx['expect_label'] = False; ctx['last_prov'] = None
                         self._units(ctx, vals_raw)
                         continue
                 if re.search(r'[—:;]\s*$', frag) or re.search(r'(viz\.?|—)\s*$', frag):
@@ -312,12 +347,12 @@ class Parser:
                     ctx['article_buf'] = []
                     self._units(ctx, vals_raw)
                     continue
+                if re.match(r'totals?\b', a_n, re.I):
+                    ctx['country'] = 'TOTAL'; ctx['expect_label'] = False; ctx['last_prov'] = None; continue
                 if a_n in self.vocab and units_only:
                     # a country label whose values are on the next row (or blank)
-                    ctx['country'] = a_n; ctx['article_buf'] = []
+                    ctx['country'] = a_n; ctx['article_buf'] = []; ctx['expect_label'] = False; ctx['last_prov'] = None
                     continue
-                if re.match(r'totals?\b', a_n, re.I):
-                    ctx['country'] = 'TOTAL'; continue
                 if units_only and len(a_n) > 3 and (not ctx.get('article_buf')) and not frag.endswith('-') \
                         and any(is_unit_token(v) for v in vals_raw):
                     # article name without trailing dash (OCR dropped it) followed by a units row
@@ -399,11 +434,27 @@ class Parser:
                     if re.match(r'totals?\b', cand, re.I):
                         kind = 'article_total'; ctx['country'] = 'TOTAL'
                     else:
+                        if '—' in cand:
+                            head, tail = cand.rsplit('—', 1); tail = tail.strip(' .')
+                            if tail and (tail in self.vocab or split_trailing_country(tail, self.vocab)[1] == tail or len(tail) < 25):
+                                self._article(ctx, head + '—'); cand = tail
+                        else:
+                            head, tail = split_trailing_country(cand, self.vocab)
+                            if tail:
+                                if head: self._article(ctx, head)
+                                cand = tail
                         ctx['country'] = cand; kind = 'country_noprov'; self.diag['label_in_province_slot'] += 1
                 else:
                     kind = 'article_total' if ctx.get('country') == 'TOTAL' else 'country_total'
             if not numeric and kind in ('detail', 'article_province_total'):
                 self.diag['label_row_no_values'] += 1
+            # value column lost: the unit token sits in the quantity slot and the QUANTITY was read as the value
+            # ('Lbs. | 916,211 | Lbs. | 916,211 | 1,717 75'); on a dutiable line the duty/value ratio gives it away
+            if kind in ('detail', 'article_province_total') and is_unit_token(vals_raw[0]) and nums[0] is None and nums[1] is not None and nums[1] > 0 \
+                    and ctx.get('section') == 'DUTIABLE' and nums[4] is not None and nums[4] > 0 and nums[4] / nums[1] < 0.005:
+                nums = [nums[1], None, nums[3] if is_unit_token(vals_raw[2]) else nums[2], None, nums[4]]
+                flags = list(flags); flags[1] = flags[3] = 'value_lost'
+                self.diag['value_column_lost'] += 1
             ctx['last_prov'] = prov if kind in ('detail', 'detail_lostlabel', 'article_province_total') else None
             ctx['expect_label'] = kind in ('country_total', 'article_total')
             self._emit(fy, vol, seq, ri, ctx, kind, prov, nums, flags, vals_raw, texts)
@@ -645,6 +696,7 @@ class Parser:
         ctx['country'] = None
         ctx['unit'] = None
         ctx['last_prov'] = None
+        ctx['expect_label'] = False
 
     def _units(self, ctx, vals_raw):
         for v in vals_raw[:1]:
@@ -696,8 +748,14 @@ class Parser:
             elif k == 'article_total':
                 pend = None
             elif k in ('detail', 'detail_lostlabel') and pend is not None:
-                if pend[0] > 0 and r['val_imp'] is not None and abs(r['val_imp'] - pend[0]) < 0.5 and \
-                        (r['qty_imp'] is None or pend[1] == 0 or abs(r['qty_imp'] - pend[1]) < 0.5):
+                def _close(x, y, tol):
+                    return x is not None and y and abs(x - y) <= max(0.5, tol * y)
+                vi, ve, qi = r['val_imp'], r['val_efc'], r['qty_imp']
+                exact = (_close(vi, pend[0], 0) and (qi is None or pend[1] == 0 or _close(qi, pend[1], 0))) \
+                        or (_close(ve, pend[2], 0) and pend[2] > 1000)
+                # an OCR digit slip in one column: val_imp within 0.5% and a second column within 0.5%
+                near = _close(vi, pend[0], 0.005) and (_close(ve, pend[2], 0.005) or _close(qi, pend[1], 0.005)) and pend[0] > 1000
+                if pend[0] > 0 and (exact or near):
                     r['row_kind'] = 'article_total_fused'; r['country'] = None; r['province'] = None
                     self.diag['page_top_total_fusion'] += 1
                 pend = None
@@ -705,6 +763,90 @@ class Parser:
                 pass
             else:
                 pend = None
+        # (b) label slip: the label column lost its first entry (usually 'Ontario') and shifted up one row, so
+        #     'Quebec' carries Ontario's values and the last province ends up unlabelled just before the real
+        #     country total.  Signature: a country run d1..dn, then TWO blank-label rows t1, t2 with
+        #     sum(d) + t1 == t2.  If the run starts at Ontario the labels are intact and t1 is a trailing
+        #     province whose label was lost.
+        def _v(r): return r['val_imp'] if r['val_imp'] is not None else r['val_efc']
+        i = 0; n = len(rows)
+        while i < n:
+            if rows[i]['row_kind'] != 'detail' or not rows[i]['province'] or rows[i]['country'] in (None, 'TOTAL'):
+                i += 1; continue
+            j = i
+            while j < n and rows[j]['row_kind'] == 'detail' and rows[j]['country'] == rows[i]['country'] \
+                    and rows[j]['block_id'] == rows[i]['block_id'] and rows[j]['province']: j += 1
+            run = rows[i:j]
+            if j + 1 < n and rows[j]['row_kind'] == 'country_total' and rows[j + 1]['row_kind'] == 'country_total' \
+                    and rows[j]['block_id'] == rows[i]['block_id'] and rows[j + 1]['block_id'] == rows[i]['block_id']:
+                t1, t2 = rows[j], rows[j + 1]
+                provs = [r['province'] for r in run]
+                inorder = all(p in PROVINCE_ORDER for p in provs) and \
+                    [PROVINCE_ORDER.index(p) for p in provs] == sorted(PROVINCE_ORDER.index(p) for p in provs)
+                dsum = sum(_v(r) or 0 for r in run); v1 = _v(t1) or 0; v2 = _v(t2) or 0
+                if inorder and v2 > 0 and abs(dsum + v1 - v2) <= max(1, 0.001 * v2) and abs(dsum - v1) > 1:
+                    if provs[0] != 'Ontario':
+                        first = PROVINCE_ORDER[PROVINCE_ORDER.index(provs[0]) - 1]
+                        shifted = [first] + provs[:-1]
+                        for r, pv in zip(run, shifted):
+                            r['province'] = pv; r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'label_slip'
+                        t1['row_kind'] = 'detail'; t1['province'] = provs[-1]
+                        t1['flags'] = (t1['flags'] + ',' if t1['flags'] else '') + 'label_slip'
+                        self.diag['label_slip_repaired'] += 1
+                    elif v1 > 0 and PROVINCE_ORDER.index(provs[-1]) + 1 < len(PROVINCE_ORDER):
+                        t1['row_kind'] = 'detail'; t1['province'] = PROVINCE_ORDER[PROVINCE_ORDER.index(provs[-1]) + 1]
+                        t1['flags'] = (t1['flags'] + ',' if t1['flags'] else '') + 'trailing_label_lost'
+                        self.diag['trailing_label_lost'] += 1
+                i = j + 2
+            else:
+                i = max(j, i + 1)
+        # (d) heading fused into a continuing Total-by-province row: 'Article— Great Britain | Manitoba | ...' where
+        #     Manitoba continues the PREVIOUS article's Total block.  The rows up to the next blank-label total are
+        #     that Total (their sum proves it); the new article's first country starts after it, label lost ('?').
+        i = 0; n = len(rows)
+        while i < n:
+            r = rows[i]
+            if r['row_kind'] == 'detail' and r['country'] not in (None, '', '?', 'TOTAL') and r['province'] in PROVINCE_ORDER \
+                    and r['province'] != 'Ontario' and i > 0 and rows[i - 1]['row_kind'] == 'article_province_total' \
+                    and rows[i - 1]['province'] in PROVINCE_ORDER \
+                    and PROVINCE_ORDER.index(rows[i - 1]['province']) < PROVINCE_ORDER.index(r['province']):
+                # the open Total block before
+                p = i - 1
+                while p >= 0 and rows[p]['row_kind'] == 'article_province_total': p -= 1
+                tot_rows = rows[p + 1:i]
+                j = i
+                while j < n and rows[j]['row_kind'] == 'detail' and rows[j]['country'] == r['country']: j += 1
+                run = rows[i:j]
+                if j < n and rows[j]['row_kind'] == 'country_total' and rows[j]['country'] == r['country']:
+                    T = rows[j]; ok = False
+                    for col in ('val_imp', 'val_efc'):
+                        tv = T[col]
+                        if tv is None or tv <= 0: continue
+                        sv = sum((x[col] or 0) for x in tot_rows) + sum((x[col] or 0) for x in run)
+                        if abs(sv - tv) <= max(1, 0.001 * tv): ok = True; break
+                    nxt = rows[j + 1] if j + 1 < n else None
+                    if ok and nxt is not None and nxt['row_kind'] in ('detail', 'detail_lostlabel') \
+                            and nxt['country'] in ('?', None, '') and nxt['province'] == 'Ontario':
+                        cty = r['country']
+                        prev_art = tot_rows[0]['article'] if tot_rows else r['article']
+                        prev_par = tot_rows[0]['article_parent'] if tot_rows else r['article_parent']
+                        prev_blk = tot_rows[0]['block_id'] if tot_rows else r['block_id']
+                        for x in run:
+                            x['row_kind'] = 'article_province_total'; x['country'] = 'TOTAL'
+                            x['article'] = prev_art; x['article_parent'] = prev_par; x['block_id'] = prev_blk
+                            x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'heading_fused_into_total'
+                        T['row_kind'] = 'article_total'; T['country'] = None
+                        T['article'] = prev_art; T['article_parent'] = prev_par; T['block_id'] = prev_blk
+                        # the lost-label rows that follow are the fused label's country
+                        q = j + 1
+                        while q < n and rows[q]['row_kind'] in ('detail', 'detail_lostlabel', 'country_total') \
+                                and rows[q]['country'] in ('?', None, ''):
+                            rows[q]['country'] = cty; rows[q]['country_inferred'] = 1
+                            if rows[q]['row_kind'] == 'detail_lostlabel': rows[q]['row_kind'] = 'detail'
+                            q += 1
+                        self.diag['heading_fused_into_total'] += 1
+                        i = q; continue
+            i += 1
         self._infer_lost_countries_later = True
         # group by block_id preserving order
         i = 0; n = len(rows)
@@ -784,7 +926,49 @@ class Parser:
                     prev = next((x['country'] for x in reversed(blk[:k]) if x['row_kind'] == 'detail' and x['country'] not in (None, '', '?', 'TOTAL')), None)
                     nxt = next((x['country'] for x in blk[m:] if x['row_kind'] == 'detail' and x['country'] not in (None, '', '?', 'TOTAL')), None)
                     guess = None
+                    # (c) the segment continues the preceding labelled country: no subtotal between them, and the
+                    #     two runs together sum to the segment's trailing total (a misread province label — usually a
+                    #     repeated 'Ontario' — made the order restart and cut the run)
+                    tail = blk[m - 1] if m - 1 >= k and blk[m - 1]['row_kind'] == 'country_total' else None
+                    if tail is not None and k > 0:
+                        p = k - 1
+                        while p >= 0 and blk[p]['row_kind'] == 'detail' and blk[p]['country'] not in (None, '', '?', 'TOTAL') \
+                                and blk[p]['country'] == blk[k - 1]['country']: p -= 1
+                        run = blk[p + 1:k]
+                        if run and (p < 0 or blk[p]['row_kind'] not in ('country_total',)):
+                            seg = [x for x in blk[k:m - 1] if x['row_kind'] == 'detail']
+                            for col in ('val_imp', 'val_efc'):
+                                tv = tail[col]
+                                if tv is None or tv <= 0: continue
+                                sv = sum((x[col] or 0) for x in run) + sum((x[col] or 0) for x in seg)
+                                if abs(sv - tv) <= max(1, 0.001 * tv):
+                                    cty = run[-1]['country']
+                                    for x in blk[k:m]:
+                                        x['country'] = cty; x['country_inferred'] = 1
+                                    last = run[-1]['province']
+                                    if seg and seg[0]['province'] == last and last in PROVINCE_ORDER \
+                                            and PROVINCE_ORDER.index(last) + 1 < len(PROVINCE_ORDER):
+                                        seg[0]['province'] = PROVINCE_ORDER[PROVINCE_ORDER.index(last) + 1]
+                                        seg[0]['flags'] = (seg[0]['flags'] + ',' if seg[0]['flags'] else '') + 'province_relabelled'
+                                    self.diag['lost_label_joined_prev_country'] += 1
+                                    guess = 'JOINED'; break
+                    if guess == 'JOINED':
+                        k = m; continue
                     if prev is not None and rank(prev) == 0 and nxt is not None and rank(nxt) >= 2: guess = 'United States'
+                    # article-opening '?' block: the previous article is closed by its printed grand total (the row
+                    # just before the segment, possibly fused into this article's heading), no labelled country has
+                    # appeared yet in this block and the next labelled country is not GB -> this is Great Britain
+                    elif prev is None and nxt is not None and rank(nxt) >= 1 and rank(nxt) <= 3:
+                        before = None
+                        idx0 = i + k                      # the row preceding the segment, in volume order
+                        if idx0 > 0:
+                            before = rows[idx0 - 1]
+                            # skip the heading-fused Total-by-province rows that carry this article's name
+                            q = idx0 - 1
+                            while q >= 0 and rows[q]['row_kind'] == 'article_province_total': q -= 1
+                            before = rows[q] if q >= 0 else None
+                        if before is not None and before['row_kind'] in ('article_total', 'article_total_fused'):
+                            guess = 'Great Britain'
                     # (GB inference for article-opening '?' blocks was tried and over-assigns: such blocks are often
                     #  the previous article's unlabelled Total or a heading-less new article — left as '?')
                     elif prev is not None and rank(prev) == 0 and nxt is None and not any(x['row_kind'] in ('article_province_total',) for x in blk[m:]): guess = None
