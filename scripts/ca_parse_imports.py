@@ -439,6 +439,8 @@ class Parser:
             leaf = cur.strip(' ,.-')
         if not parents and leaf is None:
             return
+        if re.search(r'recapitulation', text, re.I):
+            ctx['recap'] = True
         old_leaf = ctx.get('article')
         if parents:
             if ctx.get('article_parents') and not ctx.get('leaf_used', True):
@@ -451,10 +453,16 @@ class Parser:
             ctx['article'] = None
         if leaf is not None:
             import difflib
-            same = leaf == old_leaf or (old_leaf and old_leaf != '?' and
-                   difflib.SequenceMatcher(None, re.sub(r'\W', '', leaf.lower()), re.sub(r'\W', '', old_leaf.lower())).ratio() >= 0.85)
+            def _nk(x):
+                x = re.sub(r'(&c|\betc\b)\.?', '', x.lower()); return re.sub(r'\W', '', x)
+            a, b = _nk(leaf), _nk(old_leaf or '')
+            same = leaf == old_leaf or (old_leaf and old_leaf != '?' and (
+                   difflib.SequenceMatcher(None, a, b).ratio() >= 0.85 or
+                   (min(len(a), len(b)) >= 8 and (a.startswith(b) or b.startswith(a)))))   # running-head abbreviation 'X, &c.'
             if same:
                 leaf = old_leaf            # page-top repeat (possibly re-hyphenated): keep block and spelling
+                ctx['article'] = leaf
+                return                     # a continuation: the country block carries over the page break
             else:
                 ctx['block_id'] = ctx.get('block_id', 0) + 1
             import os
@@ -478,6 +486,8 @@ class Parser:
                 ctx['unit'] = t
 
     def _emit(self, fy, vol, seq, ri, ctx, kind, prov, nums, flags, vals_raw, texts):
+        if ctx.get('recap'):
+            kind = 'recap'
         if kind in ('detail', 'country_total', 'detail_lostlabel') and not ctx.get('article'):
             ctx['article'] = '?'; ctx['block_id'] = ctx.get('block_id', 0) + 1; ctx['leaf_used'] = False
             self.diag['article_heading_lost'] += 1
@@ -558,6 +568,22 @@ class Parser:
                 match = sum(1 for p, v in segv.items() if abs(acc.get(p, 0) - v) < 0.5)
                 match_e = sum(1 for p, v in sege.items() if abs(acc_e.get(p, 0) - v) < 0.5)
                 is_total = (segv and match >= max(1, len(segv) // 2 + 1)) or (sege and match_e >= max(1, len(sege) // 2 + 1))
+                # alternative: the segment's grand total equals the sum of the block's country blocks so far
+                if not is_total and tail is not None:
+                    tot_v = sum(acc.values()); tot_e = sum(acc_e.values())
+                    seg_v = sum(segv.values()); seg_e = sum(sege.values())
+                    for tv, sv, tt in ((tot_v, seg_v, tail['val_imp']), (tot_e, seg_e, tail['val_efc'])):
+                        if tv > 0 and ((tt is not None and abs(tt - tv) < 0.5) or abs(sv - tv) < 0.5):
+                            is_total = True; self.diag['lost_label_total_by_sum'] += 1; break
+                # structural criterion: the last segment of a block that already holds 2+ labelled country blocks
+                # and no printed grand total is the article's Total block (the Total is always printed last)
+                if not is_total:
+                    rest = blk[m + (1 if tail else 0):]
+                    later_detail = any(x['row_kind'] in ('detail', 'detail_lostlabel') for x in rest)
+                    prior_total = any(x['row_kind'] in ('article_total', 'article_total_fused') for x in blk[:k])
+                    labelled = set(x['country'] for x in blk[:k] if x['row_kind'] == 'detail' and x['country'] not in (None, '', '?'))
+                    if not later_detail and not prior_total and len(labelled) >= 2 and sum(acc.values()) > 0:
+                        is_total = True; self.diag['lost_label_total_structural'] += 1
                 if is_total and sum(acc.values()) > 0:
                     for r in seg: r['row_kind'] = 'article_province_total'; r['country'] = 'TOTAL'
                     if tail: tail['row_kind'] = 'article_total'; tail['country'] = None
@@ -625,6 +651,7 @@ class Parser:
                 ctx['province'] = None
             ctx['article_parents'] = []          # page tops repeat the parent heading
             ctx['article_buf'] = []
+            ctx['recap'] = False                 # embedded recapitulations (sugar, molasses) end with their page
             n_tables += 1
             getattr(self, 'parse_table_' + ctx['regime'])(fy, tag, seq, body, ctx)
         self.resolve_lost_labels(start_rows)
