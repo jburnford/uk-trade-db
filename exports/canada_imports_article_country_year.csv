@@ -11314,7 +11314,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,,?,Great Britain,FREE,,3,0,123035,0,123035,0.0
 1880,C,,?,Less—Duties returned on supplies for Mounted Police,DUTIABLE,,1,0,0,0,0,11806.48
 1880,C,,?,United States,DUTIABLE,,3,78,378,78,378,47.26
-1880,C,,?,United States,FREE,,46,95313,135476,95313,135476,0.0
+1880,C,,?,United States,FREE,,35,13353,132900,13353,132900,0.0
 1880,C,,"Ale, Beer and Porter, in bottles",Germany,DUTIABLE,Galls,1,296,156,296,156,53.28
 1880,C,,"Ale, Beer and Porter, in bottles",Great Britain,DUTIABLE,Galls,7,91433,73228,96906,77338,17441.1
 1880,C,,"Ale, Beer and Porter, in bottles",United States,DUTIABLE,Galls,8,1385,1655,1145,1149,206.5
@@ -11336,7 +11336,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,,"Almonds, not shelled",United States,DUTIABLE,,5,28363,3603,25161,3230,646.83
 1880,C,,Aloes,United States,FREE,Lbs,5,3127,536,3127,536,0.0
 1880,C,,Alum and Aluminous Cake,Great Britain,FREE,,6,1353113,18489,1353113,18489,0.0
+1880,C,,Alum and Aluminous Cake,United States,FREE,,7,77083,2073,77083,2073,0.0
 1880,C,,"Ammonia, Sulphate of",Great Britain,FREE,,3,1778,74,1778,74,0.0
+1880,C,,"Ammonia, Sulphate of",United States,FREE,,4,4877,503,4877,503,0.0
 1880,C,,"Aniline Dyes, Analine Salts and Arseniate of Aniline",Germany,FREE,,2,0,5779,0,5779,0.0
 1880,C,,"Aniline Dyes, Analine Salts and Arseniate of Aniline",Great Britain,FREE,,6,0,8554,0,8554,0.0
 1880,C,,"Aniline Dyes, Analine Salts and Arseniate of Aniline",United States,FREE,,6,0,13987,0,13987,0.0
@@ -11512,9 +11514,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,,"Chicory, raw or green, and Substitutes for Coffee, N.E.S",United States,DUTIABLE,Lbs,2,1521,159,1521,159,46.23
 1880,C,,Chloride of Lime,Great Britain,FREE,,5,1668796,24161,1668796,24161,0.0
 1880,C,,Chloride of Lime,United States,FREE,,6,214334,3681,214334,3681,0.0
-1880,C,,Cider,?,DUTIABLE,Galls,8,29236,4319,29420,4338,868.12
+1880,C,,Cider,?,DUTIABLE,Galls,8,28507,4072,28531,4061,812.72
 1880,C,,Cider,Great Britain,DUTIABLE,Galls,5,729,247,889,277,55.4
-1880,C,,Cider,United States,DUTIABLE,Galls,8,28507,4072,28531,4061,812.72
 1880,C,,"Citrons, Lemons and Oranges in brine for candy",Great Britain,FREE,,1,0,59,0,59,0.0
 1880,C,,Clays,Germany,FREE,Cwt,1,112,200,112,200,0.0
 1880,C,,Clays,Great Britain,FREE,Cwt,4,32579,9062,32579,9062,0.0
@@ -11984,9 +11985,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,,"Mustard, ground or prepared, and French Mustard",Great Britain,DUTIABLE,Lbs,7,253323,40157,215383,35579,8894.93
 1880,C,,"Mustard, ground or prepared, and French Mustard",United States,DUTIABLE,Lbs,7,21586,2851,21630,2893,723.61
 1880,C,,"Newspapers and quarterly, monthly and semimonthly Magazines, unbound",United States,FREE,,5,0,23336,0,23336,0.0
-1880,C,,Nut Galls,?,FREE,Lbs,2,1347,353,1347,353,0.0
+1880,C,,Nut Galls,?,FREE,Lbs,2,747,170,747,170,0.0
 1880,C,,Nut Galls,Great Britain,FREE,Lbs,1,600,183,600,183,0.0
-1880,C,,Nut Galls,United States,FREE,Lbs,2,747,170,747,170,0.0
 1880,C,,"Nuts: Almonds, shelled",France,DUTIABLE,Lbs,1,3830,749,4960,886,177.2
 1880,C,,"Nuts: Almonds, shelled",Great Britain,DUTIABLE,Lbs,4,3512,759,4617,953,192.6
 1880,C,,"Nuts: Almonds, shelled",Spain,DUTIABLE,Lbs,2,2800,477,3080,525,105.1
@@ -12087,9 +12087,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,,"Philosophical Instruments and Apparatus, including globes and pictorial illustrations of insects, &c., imported by, and for the use of, Colleges and Schools, Scientific and Literary Societies",Germany,FREE,,2,0,1296,0,1296,0.0
 1880,C,,"Philosophical Instruments and Apparatus, including globes and pictorial illustrations of insects, &c., imported by, and for the use of, Colleges and Schools, Scientific and Literary Societies",Great Britain,FREE,,5,0,3265,0,3265,0.0
 1880,C,,"Philosophical Instruments and Apparatus, including globes and pictorial illustrations of insects, &c., imported by, and for the use of, Colleges and Schools, Scientific and Literary Societies",United States,FREE,,4,0,2118,0,2118,0.0
-1880,C,,Phosphorus,?,FREE,Lbs,5,22051,11345,22051,11345,0.0
+1880,C,,Phosphorus,?,FREE,Lbs,5,19991,10364,19991,10364,0.0
 1880,C,,Phosphorus,Great Britain,FREE,Lbs,2,2060,981,2060,981,0.0
-1880,C,,Phosphorus,United States,FREE,Lbs,5,19991,10364,19991,10364,0.0
 1880,C,,Pickled,Great Britain,FREE,Brls,4,13,90,13,90,0.0
 1880,C,,Pickled,United States,FREE,Brls,17,2857,13080,2857,13080,0.0
 1880,C,,"Pickles, Sauces and Capers",British West Indies,DUTIABLE,,1,0,3,0,3,0.6
@@ -12178,8 +12177,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,,"Silk in the Gum, not more advanced than Singles, Tram and Thrown, or Orgazine, & Raw Spun Silk, not colored",?,DUTIABLE,,1,0,305,0,305,91.5
 1880,C,,"Silk in the Gum, not more advanced than Singles, Tram and Thrown, or Orgazine, & Raw Spun Silk, not colored",Great Britain,DUTIABLE,,1,622,1592,622,1592,238.8
 1880,C,,"Silk in the Gum, not more advanced than Singles, Tram and Thrown, or Orgazine, & Raw Spun Silk, not colored",United States,DUTIABLE,,1,353,2028,353,2028,304.2
-1880,C,,"Silk, Raw, or as reeled from the Cocoon, not being doubled, twisted or advanced in manufacture any way",?,FREE,,2,12928,59699,12928,59699,0.0
-1880,C,,"Silk, Raw, or as reeled from the Cocoon, not being doubled, twisted or advanced in manufacture any way",United States,FREE,,1,0,0,0,0,0.0
+1880,C,,"Silk, Raw, or as reeled from the Cocoon, not being doubled, twisted or advanced in manufacture any way",United States,FREE,,3,12928,59699,12928,59699,0.0
 1880,C,,"Silk, Ready-made Clothing",China,DUTIABLE,,1,0,188,0,284,85.2
 1880,C,,"Silk, Ready-made Clothing",France,DUTIABLE,,3,0,1409,0,1509,452.7
 1880,C,,"Silk, Ready-made Clothing",Great Britain,DUTIABLE,,7,0,32694,0,32215,9664.4
@@ -12644,8 +12642,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,"Drugs, Dyes, Chemicals & Medicines","Acid, Acetic",United States,DUTIABLE,,6,515,425,216,149,24.89
 1880,C,"Drugs, Dyes, Chemicals & Medicines","Acid, Muriatic",United States,DUTIABLE,,7,45476,1314,45476,1314,262.66
 1880,C,"Drugs, Dyes, Chemicals & Medicines","Acid, Nitric",Great Britain,DUTIABLE,,3,1857,201,1857,201,40.2
-1880,C,"Drugs, Dyes, Chemicals and Medicines",?,China,DUTIABLE,,1,5075,17757,5435,19023,3804.8
-1880,C,"Drugs, Dyes, Chemicals and Medicines",?,United States,DUTIABLE,,8,25015,68318,15685,12769,2553.8
 1880,C,"Drugs, Dyes, Chemicals and Medicines","Acid, Nitric",United States,DUTIABLE,Lbs,5,20416,2607,20416,2607,521.58
 1880,C,"Drugs, Dyes, Chemicals and Medicines","Acid, Sulphuric",Germany,DUTIABLE,,1,15,1,15,1,0.07
 1880,C,"Drugs, Dyes, Chemicals and Medicines","Acid, Sulphuric",Great Britain,DUTIABLE,,3,5073,163,5073,163,25.43
@@ -12655,6 +12651,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,"Drugs, Dyes, Chemicals and Medicines","Acids, all other, N. E. S",Great Britain,DUTIABLE,,6,0,4269,0,4783,957.58
 1880,C,"Drugs, Dyes, Chemicals and Medicines","Acids, all other, N. E. S",United States,DUTIABLE,,6,0,15613,0,15613,3082.6
 1880,C,"Drugs, Dyes, Chemicals and Medicines",Camphor,Great Britain,DUTIABLE,,5,11212,3159,10697,2989,597.99
+1880,C,"Drugs, Dyes, Chemicals and Medicines",Camphor,United States,DUTIABLE,,4,13222,4016,13222,4016,803.2
 1880,C,"Drugs, Dyes, Chemicals and Medicines",Chlorate of Potash,Great Britain,DUTIABLE,Lbs,2,336,44,336,44,8.8
 1880,C,"Drugs, Dyes, Chemicals and Medicines",Colodion,United States,DUTIABLE,Lbs,4,413,440,413,440,88.0
 1880,C,"Drugs, Dyes, Chemicals and Medicines","Drugs, Dyes, Chemicals and Medicines, all other, not otherwise provided for",Austria,DUTIABLE,,1,0,29,0,29,5.8
@@ -12700,7 +12697,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,"Drugs, Dyes, Chemicals and Medicines",Mercury or Quicksilver,United States,DUTIABLE,,6,0,1720,0,1659,248.63
 1880,C,"Drugs, Dyes, Chemicals and Medicines",Morphine,Great Britain,DUTIABLE,Oz,3,926,1666,226,413,82.62
 1880,C,"Drugs, Dyes, Chemicals and Medicines",Morphine,United States,DUTIABLE,Oz,1,50,75,50,75,15.0
+1880,C,"Drugs, Dyes, Chemicals and Medicines",Opium,China,DUTIABLE,,1,5075,17757,5435,19023,3804.8
 1880,C,"Drugs, Dyes, Chemicals and Medicines",Opium,Great Britain,DUTIABLE,,4,343,1313,343,1313,262.6
+1880,C,"Drugs, Dyes, Chemicals and Medicines",Opium,United States,DUTIABLE,,4,11793,64302,2463,8753,1750.6
 1880,C,"Drugs, Dyes, Chemicals and Medicines","Patent Medicines, all other, N.E.S",China,DUTIABLE,,1,0,7,0,7,1.75
 1880,C,"Drugs, Dyes, Chemicals and Medicines","Patent Medicines, all other, N.E.S",France,DUTIABLE,,3,0,634,0,523,130.75
 1880,C,"Drugs, Dyes, Chemicals and Medicines","Patent Medicines, all other, N.E.S",Great Britain,DUTIABLE,,7,0,11956,0,12136,3059.7
@@ -13342,9 +13341,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,"Provisions, N.E.S",Pork,United States,DUTIABLE,,7,13500044,714125,12448464,660962,124496.85
 1880,C,"Provisions, N.E.S",Poultry and Game of all kinds,Newfoundland,DUTIABLE,,1,0,11,0,11,2.2
 1880,C,"Provisions, N.E.S",Poultry and Game of all kinds,United States,DUTIABLE,,7,0,4104,0,4304,605.98
-1880,C,"Provisions, N.E.S","Pumice Stone, ground or powdere!",?,DUTIABLE,,3,0,466,0,466,93.2
-1880,C,"Provisions, N.E.S",Quills,?,DUTIABLE,,2,0,44,0,44,8.8
-1880,C,"Provisions, N.E.S","Swine, imported, to be slaughtered and cured in bond for exportation",?,DUTIABLE,Lbs,1,9388718,393607,0,0,0.0
+1880,C,"Provisions, N.E.S","Pumice Stone, ground or powdere!",United States,DUTIABLE,,3,0,466,0,466,93.2
+1880,C,"Provisions, N.E.S",Quills,United States,DUTIABLE,,2,0,44,0,44,8.8
+1880,C,"Provisions, N.E.S","Swine, imported, to be slaughtered and cured in bond for exportation",United States,DUTIABLE,Lbs,1,9388718,393607,0,0,0.0
 1880,C,"Provisions, N.E.S > Lard, tried or rendered","Lard, untried",United States,DUTIABLE,,2,125,8,125,8,1.88
 1880,C,Railway Carriages,Passengers,United States,DUTIABLE,,4,0,19456,0,19456,5836.8
 1880,C,Railway Carriages,"Sleighs, Waggons, Wheelbarrows & other like articles",Great Britain,DUTIABLE,,2,0,1038,0,1038,311.4
@@ -13681,8 +13680,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,"Sugars, Syrups and Molasses > Melado, Concentrated Melado, Cane Juice, Molasses, Beet-root Juice and Concrete",?,?,DUTIABLE,,3,733,283,733,283,42.45
 1880,C,"Sugars, Syrups and Molasses > Melado, Concentrated Melado, Cane Juice, Molasses, Beet-root Juice and Concrete",?,Great Britain,DUTIABLE,,1,20,5,910,135,20.25
 1880,C,"Sugars, Syrups and Molasses > Melado, Concentrated Melado, Cane Juice, Molasses, Beet-root Juice and Concrete","Molasses for refining, &c., &c., not imported direct from the country of growth or production",United States,DUTIABLE,Galls,2,24945,3902,24945,3902,1170.67
-1880,C,"Sugars, Syrups and Molasses > Melado, Concentrated Melado, Cane Juice, Molasses, Beet-root Juice and Concrete","Molasses for refining, clarifying or rectifying purposes, or for the manufacture of Sugar, direct from the country of growth or production",?,DUTIABLE,Galls,5,5893,618,20146,2895,723.75
-1880,C,"Sugars, Syrups and Molasses > Melado, Concentrated Melado, Cane Juice, Molasses, Beet-root Juice and Concrete","Molasses for refining, clarifying or rectifying purposes, or for the manufacture of Sugar, direct from the country of growth or production",United States,DUTIABLE,Galls,1,64,98,64,93,24.5
+1880,C,"Sugars, Syrups and Molasses > Melado, Concentrated Melado, Cane Juice, Molasses, Beet-root Juice and Concrete","Molasses for refining, clarifying or rectifying purposes, or for the manufacture of Sugar, direct from the country of growth or production",?,DUTIABLE,Galls,2,3240,318,3240,318,79.5
+1880,C,"Sugars, Syrups and Molasses > Melado, Concentrated Melado, Cane Juice, Molasses, Beet-root Juice and Concrete","Molasses for refining, clarifying or rectifying purposes, or for the manufacture of Sugar, direct from the country of growth or production",United States,DUTIABLE,Galls,3,64,98,14317,2370,593.75
 1880,C,Sweetened and mixed so that the strength cannot be ascertained,"Cordials, Rum-shrub, Bitters, &c",?,DUTIABLE,,1,26,117,26,117,49.35
 1880,C,Sweetened and mixed so that the strength cannot be ascertained,"Cordials, Rum-shrub, Bitters, &c",Great Britain,DUTIABLE,,6,564,2563,375,1583,712.5
 1880,C,Sweetened and mixed so that the strength cannot be ascertained,"Cordials, Rum-shrub, Bitters, &c",United States,DUTIABLE,,5,743,4376,645,4034,1226.09
@@ -15459,8 +15458,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,Fruits and Nuts,Dates,United States,DUTIABLE,,8,214380,7710,214380,7710,1929.5
 1882,C,Fruits and Nuts,Dried Apples,Great Britain,DUTIABLE,Lbs,1,190,27,190,27,3.8
 1882,C,Fruits and Nuts,Dried Apples,United States,DUTIABLE,Lbs,7,179195,14428,188826,14889,3776.53
+1882,C,Fruits and Nuts,Figs,?,DUTIABLE,,7,195978,12634,212154,12803,3200.75
 1882,C,Fruits and Nuts,Figs,France,DUTIABLE,,2,14966,605,10015,342,85.5
-1882,C,Fruits and Nuts,Figs,Great Britain,DUTIABLE,,7,195978,12634,212154,12803,3200.75
 1882,C,Fruits and Nuts,Figs,Greece,DUTIABLE,,2,10604,966,26704,1437,359.25
 1882,C,Fruits and Nuts,Figs,Spain,DUTIABLE,,2,391232,12458,368333,11869,2967.25
 1882,C,Fruits and Nuts,Figs,Turkey,DUTIABLE,,3,310307,22867,237316,18154,4538.5
@@ -16044,17 +16043,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,Metals,"Iron Masts for Ships, or parts of",Great Britain,FREE,,2,969,4818,969,4818,0.0
 1882,C,Metals,"Moss, Sea Weed, and all other vegetable substances used for beds and mattresses, in their natural state or only cleaned",Great Britain,FREE,,2,225,1250,225,1250,0.0
 1882,C,Metals,"Moss, Sea Weed, and all other vegetable substances used for beds and mattresses, in their natural state or only cleaned",United States,FREE,,6,7836,22736,7836,22736,0.0
-1882,C,Metals,"Spelter, in blocks and pigs",Great Britain,FREE,,2,112,512,112,512,0.0
-1882,C,Metals,Steel Fish-plates,Great Britain,FREE,,5,82685,137828,82685,137828,0.0
-1882,C,Metals,Steel Fish-plates,United States,FREE,,2,790,2407,790,2407,0.0
-1882,C,Metals,Steel Railway Bars or Rails,Great Britain,FREE,,5,1473073,2356368,1473073,2356368,0.0
-1882,C,Metals,Steel Railway Bars or Rails,United States,FREE,,4,132498,260065,132498,260065,0.0
-1882,C,Metals,Steel for manufacture of Skates,Great Britain,FREE,,2,837,4116,837,4116,0.0
-1882,C,Metals,Steel for manufacture of Skates,United States,FREE,,1,165,958,165,958,0.0
-1882,C,Metals,"Steel, in ingots, bars, sheets and coils",?,FREE,Cwt,7,328382,895857,328382,895857,0.0
-1882,C,Metals,"Steel, in ingots, bars, sheets and coils",Germany,FREE,Cwt,2,7779,27470,7779,27470,0.0
+1882,C,Metals,"Steel, in ingots, bars, sheets and coils",?,FREE,Cwt,15,203583,367686,203583,367686,0.0
 1882,C,Metals,"Steel, in ingots, bars, sheets and coils",Great Britain,FREE,Cwt,7,208274,668406,208274,668406,0.0
-1882,C,Metals,"Steel, in ingots, bars, sheets and coils",United States,FREE,Cwt,6,112329,199981,112329,199981,0.0
 1882,C,Metals,Tin Crystals,Great Britain,FREE,,1,4435,805,4435,805,0.0
 1882,C,Metals,Tin Crystals,United States,FREE,,1,800,152,800,152,0.0
 1882,C,Metals,Tin Foil,Germany,FREE,,1,400,69,400,69,0.0
@@ -16073,6 +16063,11 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,Metals,"Zinc, in blocks, pigs and sheets",Belgium,FREE,,2,4885,27058,4885,27058,0.0
 1882,C,Metals,"Zinc, in blocks, pigs and sheets",Great Britain,FREE,,5,1008,4974,1008,4974,0.0
 1882,C,Metals,"Zinc, in blocks, pigs and sheets",United States,FREE,,5,392,1331,392,1331,0.0
+1882,C,Metals > Steel Fish-plates,"Spelter, in blocks and pigs",Great Britain,FREE,,2,112,512,112,512,0.0
+1882,C,Metals > Steel Fish-plates,Steel Railway Bars or Rails,Great Britain,FREE,,5,1473073,2356368,1473073,2356368,0.0
+1882,C,Metals > Steel Fish-plates,Steel Railway Bars or Rails,United States,FREE,,4,132498,260065,132498,260065,0.0
+1882,C,Metals > Steel Fish-plates,Steel for manufacture of Skates,Great Britain,FREE,,2,837,4116,837,4116,0.0
+1882,C,Metals > Steel Fish-plates,Steel for manufacture of Skates,United States,FREE,,1,165,958,165,958,0.0
 1882,C,"Mineral Substances, not otherwise provided for > Plumbago",Mineral and Aerated Waters,Belgium,DUTIABLE,,2,0,2356,0,105,21.0
 1882,C,"Mineral Substances, not otherwise provided for > Plumbago",Mineral and Aerated Waters,France,DUTIABLE,,1,0,72,0,72,14.4
 1882,C,"Mineral Substances, not otherwise provided for > Plumbago",Mineral and Aerated Waters,Germany,DUTIABLE,,1,0,3270,0,2162,432.4
@@ -16383,9 +16378,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,Soap,Castile and White,Great Britain,DUTIABLE,,7,48925,2779,53890,3057,1077.71
 1882,C,Soap,Castile and White,Italy,DUTIABLE,,2,11520,679,8051,532,161.02
 1882,C,Soap,Castile and White,United States,DUTIABLE,,6,40923,3237,40923,3237,823.74
-1882,C,Soap,"Common, Brown and Yellow, not perfumed",?,DUTIABLE,Lbs,13,148777,7191,148354,7194,1819.7
-1882,C,Soap,"Common, Brown and Yellow, not perfumed",France,DUTIABLE,Lbs,9,314051,18315,325664,18821,4896.22
-1882,C,Soap,"Common, Brown and Yellow, not perfumed",Great Britain,DUTIABLE,Lbs,6,21185,1082,20994,1069,213.8
+1882,C,Soap,"Common, Brown and Yellow, not perfumed",?,DUTIABLE,Lbs,20,403368,22478,414790,22971,5726.45
+1882,C,Soap,"Common, Brown and Yellow, not perfumed",France,DUTIABLE,Lbs,1,125,4,125,4,1.87
+1882,C,Soap,"Common, Brown and Yellow, not perfumed",Great Britain,DUTIABLE,,7,80520,4106,80097,4109,1201.4
 1882,C,Soap,"Common, Brown and Yellow, not perfumed",United States,DUTIABLE,Lbs,7,232678,14201,243581,14630,3665.13
 1882,C,Soap,Perfumed or Toilet,France,DUTIABLE,,2,0,1671,0,1659,497.7
 1882,C,Soap,Perfumed or Toilet,Germany,DUTIABLE,,1,0,54,0,54,16.2
@@ -16486,8 +16481,16 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c, containing over 29 and not over 30 per cent. of Spirits",Spain,DUTIABLE,,4,21544,18284,19661,13420,11300.14
 1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c, containing over 29 and not over 30 per cent. of Spirits",St. Pierre,DUTIABLE,,1,27,28,27,28,18.39
 1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c, containing over 29 and not over 30 per cent. of Spirits",United States,DUTIABLE,,2,740,1344,102,153,83.64
-1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",?,DUTIABLE,Galls,20,392176,309801,364876,296737,180404.82
+1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",Australia,DUTIABLE,Galls,1,4,24,4,24,8.2
+1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",Belgium,DUTIABLE,Galls,1,5,15,5,15,5.75
+1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",British West Indies,DUTIABLE,Galls,1,0,0,60,49,29.7
+1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",China,DUTIABLE,Galls,1,23054,14901,19278,12832,8669.1
+1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",Holland,DUTIABLE,Galls,1,69,59,12,32,12.6
+1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",Italy,DUTIABLE,Galls,2,6485,3124,1487,797,610.85
+1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",Newfoundland,DUTIABLE,Galls,1,54,82,54,82,38.1
 1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",Portugal,DUTIABLE,Galls,2,0,0,185,241,118.55
+1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",St. Pierre,DUTIABLE,Galls,1,123,117,123,117,65.85
+1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing 26 per cent. or less of Spirits",Turkey,DUTIABLE,Galls,1,0,0,119,54,45.95
 1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing over 26 and not over 27 per cent. of Spirits",France,DUTIABLE,,2,854,642,989,738,497.32
 1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing over 26 and not over 27 per cent. of Spirits",Italy,DUTIABLE,,3,12010,6637,7606,4200,3389.68
 1882,C,Spirits and Wines,"Wines of all kinds, except Sparkling Wines, &c., containing over 26 and not over 27 per cent. of Spirits",Portugal,DUTIABLE,,3,346,379,594,552,331.92
@@ -16667,10 +16670,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,"Tea, Black, from countries other than the United States (to 24th Feb., 1882)","Green, from countries other than the United States (to 24th Feb., 1882)",China,DUTIABLE,,3,527140,118435,299439,65680,15527.17
 1882,C,"Tea, Black, from countries other than the United States (to 24th Feb., 1882)","Green, from countries other than the United States (to 24th Feb., 1882)",Great Britain,DUTIABLE,,6,771776,206891,567436,144047,31427.88
 1882,C,"Tea, Black, from countries other than the United States (to 24th Feb., 1882)","Green, from countries other than the United States (to 24th Feb., 1882)",Japan,DUTIABLE,,3,2618814,517322,1482606,282077,72685.88
-1882,C,Tin and manufactures of,"Blocks, pigs, bars, plates and sheets (to 24th February)",?,DUTIABLE,,6,11584,93989,11487,92666,9266.6
+1882,C,Tin and manufactures of,"Blocks, pigs, bars, plates and sheets (to 24th February)",Great Britain,DUTIABLE,,6,11584,93989,11487,92666,9266.6
 1882,C,Tin and manufactures of,"Blocks, pigs, bars, plates and sheets (to 24th February)",United States,DUTIABLE,Cwt,8,3965,65934,4029,65826,6582.6
-1882,C,Tin and manufactures of,"Cans or packages made of Tin or other material, containing Fish of any kind, admitted free of duty under any existing law or treaty, not exceeding one quart in contents",?,DUTIABLE,,7,878147,24098,853475,22922,12819.95
-1882,C,Tin and manufactures of,"Cans or packages made of Tin or other material, containing Fish of any kind, admitted free of duty under any existing law or treaty, not exceeding one quart in contents",United States,DUTIABLE,,5,2649,30505,2661,30287,3028.7
+1882,C,Tin and manufactures of,"Cans or packages made of Tin or other material, containing Fish of any kind, admitted free of duty under any existing law or treaty, not exceeding one quart in contents",United States,DUTIABLE,,7,878147,24098,853475,22922,12819.95
 1882,C,Tin and manufactures of,"Tinware, and all manufactures of Tin, N. E. S",Great Britain,DUTIABLE,,7,0,33337,0,33168,8292.0
 1882,C,Tin and manufactures of,when exceeding one quart,United States,DUTIABLE,,4,624,45,624,45,15.48
 1882,C,Tobacco and manufactures of,Cigars & Cigarettes,Brit. E. Indies,DUTIABLE,Lbs,1,99,76,99,76,74.6
@@ -16808,7 +16810,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,"Wool, manufactures of","Felt for Boots, Shoes and Skirts, imported by manufacturers for use in their factories",Belgium,DUTIABLE,,1,1157,407,1157,407,61.05
 1882,C,"Wool, manufactures of","Felt for Boots, Shoes and Skirts, imported by manufacturers for use in their factories",Great Britain,DUTIABLE,,2,81468,62294,84987,63373,9505.95
 1882,C,"Wool, manufactures of","Felt for Boots, Shoes and Skirts, imported by manufacturers for use in their factories",United States,DUTIABLE,,3,7166,4097,10320,4816,722.4
-1882,C,"Wool, manufactures of","Felt for Glove Linings and Endless Felt for paper makers, imported by manufacturers for use in their factories",?,DUTIABLE,,2,0,32785,0,32507,3258.4
+1882,C,"Wool, manufactures of","Felt for Glove Linings and Endless Felt for paper makers, imported by manufacturers for use in their factories",Great Britain,DUTIABLE,,2,0,32785,0,32507,3258.4
 1882,C,"Wool, manufactures of","Felt for Glove Linings and Endless Felt for paper makers, imported by manufacturers for use in their factories",United States,DUTIABLE,,3,0,11492,0,11492,1149.25
 1882,C,"Wool, manufactures of","Flannels, including plain and checked, of all colors",Germany,DUTIABLE,,1,26686,24375,26686,24375,6876.45
 1882,C,"Wool, manufactures of","Flannels, including plain and checked, of all colors",Great Britain,DUTIABLE,,7,627500,452517,622508,421518,136673.82
@@ -16922,8 +16924,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,,?,Germany,FREE,,2,0,279,0,279,0.0
 1883,C,,?,Great Britain,DUTIABLE,,15,286634,27760,275375,27052,7969.6
 1883,C,,?,Great Britain,FREE,,2,0,1002,0,1002,0.0
-1883,C,,?,N. E. Island,DUTIABLE,,1,3350,134,3350,134,26.8
 1883,C,,?,Newfoundland,FREE,,1,0,10,0,10,0.0
+1883,C,,?,P. W,DUTIABLE,,1,3350,134,3350,134,26.8
 1883,C,,?,Switzerland,FREE,,1,0,1,0,1,0.0
 1883,C,,?,Tin and manufactures of:,DUTIABLE,,1,0,10780,0,10780,2695.0
 1883,C,,?,United States,DUTIABLE,,25,807792,52246,814268,52638,13674.33
@@ -17885,7 +17887,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,,Watches and watch cases,Germany,DUTIABLE,,2,0,2867,0,2867,716.75
 1883,C,,Watches and watch cases,Great Britain,DUTIABLE,,6,0,22254,0,22892,5723.0
 1883,C,,Watches and watch cases,Switzerland,DUTIABLE,,3,0,198214,0,198214,49553.5
-1883,C,,Watches and watch cases,United States,DUTIABLE,,8,0,153934,0,153934,38486.35
+1883,C,,Watches and watch cases,United States,DUTIABLE,,7,0,153875,0,153875,38471.6
+1883,C,,Watches and watch cases,W. N,DUTIABLE,,1,0,59,0,59,14.75
 1883,C,,Wax Tapers,Great Britain,DUTIABLE,,3,851,264,851,264,53.8
 1883,C,,Wax Tapers,United States,DUTIABLE,,3,292,97,292,97,20.95
 1883,C,,"Wax and manufactures of, N.E.S",China,DUTIABLE,,1,0,33,0,33,6.6
@@ -18004,7 +18007,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,"Animals, living",Sheep,United States,DUTIABLE,,5,14829,38024,14829,38024,7604.9
 1883,C,"Animals, living",Swine,United States,DUTIABLE,,1,805,4659,805,4659,931.85
 1883,C,"Animals, living",Swine to be slaughtered in bond for Exportation,United States,DUTIABLE,Lbs,1,10025,1053,10025,1053,210.6
-1883,C,"Articles for the use of the Army, Navy and the Canadian Militia",?,"Arms, clothing, musical instruments for bands, military stores and munitions of war",FREE,,1,0,66914,0,66914,0.0
 1883,C,"Articles for the use of the Army, Navy and the Canadian Militia",?,British West Indies,FREE,,1,0,10,0,10,0.0
 1883,C,"Articles for the use of the Army, Navy and the Canadian Militia",?,France,FREE,,1,0,131,0,131,0.0
 1883,C,"Articles for the use of the Army, Navy and the Canadian Militia",?,Great Britain,FREE,,6,0,27436,0,27436,0.0
@@ -18537,9 +18539,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,FIRE GOODS > Continued Minerals > THE MINE,Nickel,United States,FREE,,3,0,207,0,207,0.0
 1883,C,"FREN GOODS > MANUFACTURES > Plaits, straw, Tuscan and grass","Potash, muriate and bichromate of crude",Great Britain,FREE,Lbs,3,343129,35539,343129,35479,0.0
 1883,C,"FREN GOODS > MANUFACTURES > Plaits, straw, Tuscan and grass","Potash, muriate and bichromate of crude",United States,FREE,Lbs,6,17669,1016,17669,1016,0.0
-1883,C,"FREN GOODS > MANUFACTURES > Plaits, straw, Tuscan and grass","Rags, of cotton, linen, jute and hemp, paper waste or clippings, and waste of any kind, fit only for manufacture of paper",?,FREE,,3,9998,18359,9998,18359,0.0
 1883,C,"FREN GOODS > MANUFACTURES > Plaits, straw, Tuscan and grass","Rags, of cotton, linen, jute and hemp, paper waste or clippings, and waste of any kind, fit only for manufacture of paper",Germany,FREE,,1,3,9,3,9,0.0
-1883,C,"FREN GOODS > MANUFACTURES > Plaits, straw, Tuscan and grass","Rags, of cotton, linen, jute and hemp, paper waste or clippings, and waste of any kind, fit only for manufacture of paper",Great Britain,FREE,,2,95,22,95,22,0.0
+1883,C,"FREN GOODS > MANUFACTURES > Plaits, straw, Tuscan and grass","Rags, of cotton, linen, jute and hemp, paper waste or clippings, and waste of any kind, fit only for manufacture of paper",Great Britain,FREE,,3,9998,18359,9998,18359,0.0
 1883,C,"FREN GOODS > MANUFACTURES > Plaits, straw, Tuscan and grass","Rags, of cotton, linen, jute and hemp, paper waste or clippings, and waste of any kind, fit only for manufacture of paper",United States,FREE,,2,84835,153693,84835,153693,0.0
 1883,C,FRESH GOODS > AGRICULTURAL PRODUCTS,Jute butts and jute,United States,FREE,,3,3661,4913,3661,4913,0.0
 1883,C,FRESH GOODS > AGRICULTURAL PRODUCTS,"Locust beans, for the manufacture of horse and cattle feed",Great Britain,FREE,,1,5250,82,5250,82,0.0
@@ -18692,10 +18693,10 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,"Fruit, green",Oranges and lemons,Spanish West Indies,DUTIABLE,,1,0,413,0,413,82.6
 1883,C,"Fruit, green",Oranges and lemons,United States,DUTIABLE,,8,0,146549,0,146358,29070.9
 1883,C,"Fruit, green",Peaches,United States,DUTIABLE,Bush,7,18297,52428,18297,52428,7319.61
-1883,C,"Fruit, green > Oranges and lemons","All other green fruit, N.E.S",?,DUTIABLE,,1,0,135,0,135,27.0
 1883,C,"Fruit, green > Oranges and lemons","All other green fruit, N.E.S",British West Indies,DUTIABLE,,2,0,579,0,579,115.8
 1883,C,"Fruit, green > Oranges and lemons","All other green fruit, N.E.S",China,DUTIABLE,,1,0,12,0,12,2.4
 1883,C,"Fruit, green > Oranges and lemons","All other green fruit, N.E.S",France,DUTIABLE,,1,0,11,0,11,2.2
+1883,C,"Fruit, green > Oranges and lemons","All other green fruit, N.E.S",Great Britain,DUTIABLE,,2,0,160,0,160,32.0
 1883,C,"Fruit, green > Oranges and lemons","All other green fruit, N.E.S",Newfoundland,DUTIABLE,,1,0,6,0,6,1.2
 1883,C,"Fruit, green > Oranges and lemons","All other green fruit, N.E.S",Spanish West Indies,DUTIABLE,,2,0,115,0,115,23.0
 1883,C,"Fruit, green > Oranges and lemons","All other green fruit, N.E.S",United States,DUTIABLE,,7,0,63741,0,63741,12750.39
@@ -18778,7 +18779,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,Glass and manufactures of,"All other glass and manufactures of glass, N.E.S",Germany,DUTIABLE,,4,0,21448,0,22710,4549.0
 1883,C,Glass and manufactures of,"All other glass and manufactures of glass, N.E.S",Great Britain,DUTIABLE,,7,0,35081,0,35441,7088.2
 1883,C,Glass and manufactures of,"All other glass and manufactures of glass, N.E.S",United States,DUTIABLE,,8,0,39842,0,39688,7942.5
-1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",?,DUTIABLE,,7,0,91366,0,92724,27857.2
 1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",Austria,DUTIABLE,,2,0,1627,0,1627,488.1
 1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",Belgium,DUTIABLE,,3,0,7882,0,6372,1911.6
 1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",British West Indies,DUTIABLE,,1,0,44,0,44,13.2
@@ -18786,7 +18786,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",Denmark,DUTIABLE,,1,0,3,0,3,0.9
 1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",France,DUTIABLE,,4,0,3922,0,3933,1179.9
 1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",Germany,DUTIABLE,,3,0,25176,0,20886,6265.8
-1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",Great Britain,DUTIABLE,,5,0,36088,0,36562,9141.75
+1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",Great Britain,DUTIABLE,,7,0,91366,0,92724,27857.2
 1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",Holland,DUTIABLE,,1,0,46,0,123,36.9
 1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",Spain,DUTIABLE,,1,0,30,0,30,9.0
 1883,C,Glass and manufactures of,"Carboys, demijohns, bottles and decanters, flasks & phials, telegraph and lightning rod insulators, jars and glass balls, and cut, pressed or moulded table-ware",United States,DUTIABLE,,8,0,327928,0,321846,96559.94
@@ -19046,7 +19046,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,Iron and steel and manufactures of,Sewing Machines,Germany,DUTIABLE,,1,13,614,13,614,148.8
 1883,C,Iron and steel and manufactures of,Sewing Machines,Great Britain,DUTIABLE,,3,11392,112114,9619,95543,38346.6
 1883,C,Iron and steel and manufactures of,Sewing Machines,United States,DUTIABLE,,7,11111,217622,11887,227040,69192.41
-1883,C,Iron and steel and manufactures of,"Sheet-iron, smoothed or polished, coated or galvanized, and common or black No. 17 gauge and thinner",?,DUTIABLE,,8,93882,304734,94370,307371,38454.0
+1883,C,Iron and steel and manufactures of,"Sheet-iron, smoothed or polished, coated or galvanized, and common or black No. 17 gauge and thinner",?,DUTIABLE,,1,0,176,0,176,52.8
+1883,C,Iron and steel and manufactures of,"Sheet-iron, smoothed or polished, coated or galvanized, and common or black No. 17 gauge and thinner",Great Britain,DUTIABLE,,7,93882,304558,94370,307195,38401.2
 1883,C,Iron and steel and manufactures of,"Skates, iron & steel",Germany,DUTIABLE,Pairs,1,8866,1779,8866,1779,533.7
 1883,C,Iron and steel and manufactures of,"Skates, iron & steel",Great Britain,DUTIABLE,Pairs,4,2728,1321,2728,1321,485.4
 1883,C,Iron and steel and manufactures of,"Skates, iron & steel",United States,DUTIABLE,Pairs,5,1114,1467,1114,1467,529.2
@@ -19148,14 +19149,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,Leather and manufactures of,"All other leather and skins tanned, N.E.S",Newfoundland,DUTIABLE,Lbs,1,3612,386,3612,386,77.2
 1883,C,Leather and manufactures of,"All other leather and skins tanned, N.E.S",United States,DUTIABLE,Lbs,8,180966,123282,179572,121932,24384.5
 1883,C,Leather and manufactures of,Boot and shoe counters made from leather board,United States,DUTIABLE,,2,99171,2501,99171,2501,495.89
-1883,C,Leather and manufactures of,"Boots and shoes, all materials, N. E. S",?,DUTIABLE,Pairs,8,241239,218015,238733,216205,54053.28
-1883,C,Leather and manufactures of,"Boots and shoes, all materials, N. E. S",Austria,DUTIABLE,Pairs,1,34,49,34,49,12.25
-1883,C,Leather and manufactures of,"Boots and shoes, all materials, N. E. S",China,DUTIABLE,Pairs,1,6230,3973,6350,4028,1007.0
-1883,C,Leather and manufactures of,"Boots and shoes, all materials, N. E. S",France,DUTIABLE,Pairs,3,4631,5568,3517,4068,1017.0
-1883,C,Leather and manufactures of,"Boots and shoes, all materials, N. E. S",Germany,DUTIABLE,Pairs,2,20924,6516,20924,6516,1629.6
+1883,C,Leather and manufactures of,"Boots and shoes, all materials, N. E. S",?,DUTIABLE,Pairs,13,207194,190339,206080,188839,47212.35
 1883,C,Leather and manufactures of,"Boots and shoes, all materials, N. E. S",Great Britain,DUTIABLE,Pairs,1,3605,5924,3605,5924,1481.0
 1883,C,Leather and manufactures of,"Boots and shoes, all materials, N. E. S",Quebe,DUTIABLE,Pairs,5,4417,10288,4417,10288,2572.03
-1883,C,Leather and manufactures of,"Boots and shoes, all materials, N. E. S",United States,DUTIABLE,Pairs,8,181639,178255,181639,178255,44565.75
 1883,C,Leather and manufactures of,"Calf, kid, lamb and sheep skins, tanned or dressed, but not waxed or glazed",Austria,DUTIABLE,,1,2805,3671,2805,3671,550.65
 1883,C,Leather and manufactures of,"Calf, kid, lamb and sheep skins, tanned or dressed, but not waxed or glazed",Belgium,DUTIABLE,,1,110,101,110,101,15.15
 1883,C,Leather and manufactures of,"Calf, kid, lamb and sheep skins, tanned or dressed, but not waxed or glazed",France,DUTIABLE,,2,4234,4206,4234,4206,630.9
@@ -19802,7 +19798,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,Spirits sweetened & mixed so that the strength cannot be ascertained,?,?,DUTIABLE,,1,989,832,490,433,650.83
 1883,C,Spirits sweetened & mixed so that the strength cannot be ascertained,?,Great Britain,DUTIABLE,,6,1229,4433,993,3988,1886.7
 1883,C,Steel and manufactures of,"Pen knives, jack knives and pocket knives of all kinds",Great Britain,DUTIABLE,,6,0,22503,0,22346,4468.5
-1883,C,Steel and manufactures of,"Pen knives, jack knives and pocket knives of all kinds",United States,DUTIABLE,,7,0,3050,0,3050,669.4
+1883,C,Steel and manufactures of,"Pen knives, jack knives and pocket knives of all kinds",United States,DUTIABLE,,6,0,3047,0,3047,609.4
+1883,C,Steel and manufactures of,"Pen knives, jack knives and pocket knives of all kinds",W. N,DUTIABLE,,1,0,3,0,3,60.0
 1883,C,Stone and manufactures of,?,?,DUTIABLE,,1,0,5753,0,5730,1146.03
 1883,C,Stone and manufactures of,"Dressed freestone and all other building stone (except marble) from the quarry, not hammered or chiselled",?,DUTIABLE,,2,0,68,0,68,13.6
 1883,C,Stone and manufactures of,"Dressed freestone and all other building stone (except marble) from the quarry, not hammered or chiselled",Great Britain,DUTIABLE,,1,5,316,5,316,65.2
@@ -20020,12 +20017,10 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,Woollen manufactures : Blankets,"Cassimeres, cloths, coatings, doeskins, tweeds, meltons, overcoatings, felt cloth, N. E. S., and horse collar cloth",Great Britain,DUTIABLE,,7,5282802,3853612,5251637,3836243,1161335.78
 1883,C,Woollen manufactures : Blankets,"Cassimeres, cloths, coatings, doeskins, tweeds, meltons, overcoatings, felt cloth, N. E. S., and horse collar cloth",Switzerland,DUTIABLE,,1,87,130,87,130,32.82
 1883,C,Woollen manufactures : Blankets,"Cassimeres, cloths, coatings, doeskins, tweeds, meltons, overcoatings, felt cloth, N. E. S., and horse collar cloth",United States,DUTIABLE,,8,15629,19850,15629,19850,5142.27
-1883,C,"Woollen manufactures : Carpets, treble ingrain three-ply, &c., &c","Carpets, two-ply and three-ply ingrain carpets of which the warp is composed wholly of cotton or other material than wool, worsted, &c",?,DUTIABLE,,2,4600,2482,4600,2482,834.83
-1883,C,"Woollen manufactures : Carpets, treble ingrain three-ply, &c., &c","Carpets, two-ply and three-ply ingrain carpets of which the warp is composed wholly of cotton or other material than wool, worsted, &c",Great Britain,DUTIABLE,,7,135973,55945,141718,58304,18753.34
+1883,C,"Woollen manufactures : Carpets, treble ingrain three-ply, &c., &c","Carpets, two-ply and three-ply ingrain carpets of which the warp is composed wholly of cotton or other material than wool, worsted, &c",?,DUTIABLE,,9,140573,58427,146318,60786,19588.17
 1883,C,"Woollen manufactures : Carpets, treble ingrain three-ply, &c., &c","Carpets, two-ply and three-ply ingrain carpets of which the warp is composed wholly of cotton or other material than wool, worsted, &c",United States,DUTIABLE,,5,2781,1169,2781,1169,373.84
-1883,C,"Woollen manufactures : Carpets, treble ingrain three-ply, &c., &c","Dress or costume cloths, serges and similar fabrics, under 25 inches wide and weighing not over 3½ oz. per lineal yard (from 23rd April)",?,DUTIABLE,,3,2756,1183,2756,1183,374.52
+1883,C,"Woollen manufactures : Carpets, treble ingrain three-ply, &c., &c","Dress or costume cloths, serges and similar fabrics, under 25 inches wide and weighing not over 3½ oz. per lineal yard (from 23rd April)",?,DUTIABLE,,5,2756,5951,2756,5951,1328.12
 1883,C,"Woollen manufactures : Carpets, treble ingrain three-ply, &c., &c","Dress or costume cloths, serges and similar fabrics, under 25 inches wide and weighing not over 3½ oz. per lineal yard (from 23rd April)",France,DUTIABLE,,1,0,655,0,655,131.0
-1883,C,"Woollen manufactures : Carpets, treble ingrain three-ply, &c., &c","Dress or costume cloths, serges and similar fabrics, under 25 inches wide and weighing not over 3½ oz. per lineal yard (from 23rd April)",Great Britain,DUTIABLE,,2,0,4768,0,4768,953.6
 1883,C,"Woollen manufactures : Carpets, treble ingrain three-ply, &c., &c","Dress or costume cloths, serges and similar fabrics, under 25 inches wide and weighing not over 3½ oz. per lineal yard (from 23rd April)",United States,DUTIABLE,,1,0,4,0,4,0.8
 1883,C,"Woollen manufactures : Dress or costume cloths, serges, &c","Felt for boots, shoes and skirts, imported by manufacturers, for use in their factories",Belgium,DUTIABLE,,1,106,77,106,77,11.55
 1883,C,"Woollen manufactures : Dress or costume cloths, serges, &c","Felt for boots, shoes and skirts, imported by manufacturers, for use in their factories",Germany,DUTIABLE,,1,290,193,290,193,28.95
@@ -20061,17 +20056,15 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1883,C,ufactures of,Band and hoop iron thicker than No. 17 gauge,United States,DUTIABLE,,5,331,1305,331,1305,229.32
 1883,C,ufactures of,Band and hoop iron thinner,Great Britain,DUTIABLE,,6,29130,54816,29150,55031,6858.76
 1883,C,ufactures of,Band and hoop iron thinner,United States,DUTIABLE,,6,1183,4835,1183,4835,604.74
-1883,C,ufactures of,"Tubing, wrought iron, plain, not threaded, coupled or otherwise man",?,DUTIABLE,,6,571981,93385,572473,93521,14049.25
-1883,C,ufactures of,"Tubing, wrought iron, plain, not threaded, coupled or otherwise man",Germany,DUTIABLE,,2,6566,1233,6566,1233,184.95
+1883,C,ufactures of,"Tubing, wrought iron, plain, not threaded, coupled or otherwise man",?,DUTIABLE,,8,190832,35070,190384,35001,5251.25
 1883,C,ufactures of,"Tubing, wrought iron, plain, not threaded, coupled or otherwise man",Great Britain,DUTIABLE,,5,381149,58265,382089,58520,8778.0
-1883,C,ufactures of,"Tubing, wrought iron, plain, not threaded, coupled or otherwise man",United States,DUTIABLE,,6,184266,33837,183818,33768,5066.3
 1883,C,"ufactures of > Hardware > Builders', cabinet makers', upholster > ers', carriage mak","ers', saddlers' and undertakers'",China,DUTIABLE,,1,35,35,10,50,0.0
 1883,C,"ufactures of > Hardware > Builders', cabinet makers', upholster > ers', carriage mak","ers', saddlers' and undertakers'",France,DUTIABLE,,2,620,575,172,50,0.0
 1883,C,"ufactures of > Hardware > Builders', cabinet makers', upholster > ers', carriage mak","ers', saddlers' and undertakers'",Germany,DUTIABLE,,2,2750,2750,824,100,0.0
 1883,C,"ufactures of > Hardware > Builders', cabinet makers', upholster > ers', carriage mak","ers', saddlers' and undertakers'",Great Britain,DUTIABLE,,7,93949,93919,28172,350,0.0
 1883,C,"ufactures of > Hardware > Builders', cabinet makers', upholster > ers', carriage mak","ers', saddlers' and undertakers'",United States,DUTIABLE,,8,574352,573397,172386,367,0.0
+1883,C,"ufactures of > Tubing, wrought iron, threaded coupled or other > wise manufac",diameter,?,DUTIABLE,,6,171534,53696,170750,53379,10700.55
 1883,C,"ufactures of > Tubing, wrought iron, threaded coupled or other > wise manufac",diameter,Great Britain,DUTIABLE,,6,52792,20065,53969,20195,4062.0
-1883,C,"ufactures of > Tubing, wrought iron, threaded coupled or other > wise manufac",diameter,United States,DUTIABLE,,6,171534,53696,170750,53379,10700.55
 1883,C,ufactures of > ments > Mowing Reaping and Thres,Cultivators and ploughs,Great Britain,DUTIABLE,,4,0,266,0,266,68.7
 1883,C,ufactures of > ments > Mowing Reaping and Thres,Cultivators and ploughs,United States,DUTIABLE,,8,0,127653,0,127653,32166.82
 1883,C,ufactures of > ments > Mowing Reaping and Thres,hing Machines,United States,DUTIABLE,,8,1528,191122,1535,191617,48478.56
@@ -20256,7 +20249,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1884,C,,"Carpets, N.E.S",Germany,DUTIABLE,,1,704,173,704,173,34.6
 1884,C,,"Carpets, N.E.S",Great Britain,DUTIABLE,,7,247473,68102,251101,67853,13774.55
 1884,C,,"Carpets, N.E.S",United States,DUTIABLE,,5,7752,4076,7752,4076,814.75
-1884,C,,"Carpets, two ply and three ply, treble ingrain, composed wholly of wool",?,DUTIABLE,,7,100980,57817,103547,59084,22061.6
+1884,C,,"Carpets, two ply and three ply, treble ingrain, composed wholly of wool",Great Britain,DUTIABLE,,7,100980,57817,103547,59084,22061.6
 1884,C,,"Carpets, two ply and three ply, treble ingrain, composed wholly of wool",United States,DUTIABLE,,5,840,648,840,648,213.52
 1884,C,,"Carriages, parts of",Great Britain,DUTIABLE,,2,0,2346,0,2346,838.6
 1884,C,,"Carriages, parts of",United States,DUTIABLE,,7,0,64538,0,64538,22542.09
@@ -21038,13 +21031,13 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1884,C,,Telegraphic instruments,United States,DUTIABLE,,6,0,13606,0,13606,3401.75
 1884,C,,Telephones,United States,DUTIABLE,,7,0,8213,0,8213,2053.75
 1884,C,,Terra japonica,United States,FREE,,4,23205,1498,23205,1498,0.0
-1884,C,,"Tin and manufactures of: Cans or packages made of tin or other material containing fish of any kind admitted free of duty under any existing law or treaty, not exceeding one quart in contents",United States,DUTIABLE,,9,710348,0,699071,0,10525.41
+1884,C,,"Tin and manufactures of: Cans or packages made of tin or other material containing fish of any kind admitted free of duty under any existing law or treaty, not exceeding one quart in contents",?,DUTIABLE,,9,710348,0,699071,0,10525.41
+1884,C,,"Tinware and all manufactures of tin, N. E. S",?,DUTIABLE,,7,0,31197,0,32091,8022.75
 1884,C,,"Tinware and all manufactures of tin, N. E. S",Austria,DUTIABLE,,1,0,193,0,193,48.25
 1884,C,,"Tinware and all manufactures of tin, N. E. S",Belgium,DUTIABLE,,1,0,147,0,147,36.75
 1884,C,,"Tinware and all manufactures of tin, N. E. S",China,DUTIABLE,,1,0,63,0,63,15.75
 1884,C,,"Tinware and all manufactures of tin, N. E. S",France,DUTIABLE,,4,0,2403,0,2301,575.25
 1884,C,,"Tinware and all manufactures of tin, N. E. S",Germany,DUTIABLE,,2,0,9888,0,10069,2417.25
-1884,C,,"Tinware and all manufactures of tin, N. E. S",Great Britain,DUTIABLE,,7,0,31197,0,32091,8022.75
 1884,C,,"Tinware and all manufactures of tin, N. E. S",United States,DUTIABLE,,8,0,131493,0,131580,32893.36
 1884,C,,"Tobacco pipes, not otherwise provided for",Austria,DUTIABLE,,2,0,12468,0,14319,2863.8
 1884,C,,"Tobacco pipes, not otherwise provided for",Belgium,DUTIABLE,,1,0,511,0,511,102.2
@@ -21325,8 +21318,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1884,C,Brass and manufactures of,"Strips for printers’ rules, not finished",United States,DUTIABLE,,2,0,722,0,722,113.3
 1884,C,Brass and manufactures of,Wire cloth,Great Britain,DUTIABLE,,4,0,3888,0,3888,777.6
 1884,C,Brass and manufactures of,Wire cloth,United States,DUTIABLE,,7,0,10997,0,10997,2201.7
-1884,C,"Breadstuffs, &c","All other, N.E.S",?,DUTIABLE,,10,0,24385,0,25077,5019.2
-1884,C,"Breadstuffs, &c","All other, N.E.S",United States,DUTIABLE,,11,0,25624,0,25847,5173.3
+1884,C,"Breadstuffs, &c","All other, N.E.S",?,DUTIABLE,,11,0,30958,0,31650,6333.9
+1884,C,"Breadstuffs, &c","All other, N.E.S",Newfoundland,DUTIABLE,,1,0,4,0,4,0.8
+1884,C,"Breadstuffs, &c","All other, N.E.S",United States,DUTIABLE,,8,0,18436,0,18659,3735.6
 1884,C,"Breadstuffs, &c",Arrowroot and tapioca,British West Indies,DUTIABLE,Lbs,2,2116,497,2116,497,99.4
 1884,C,"Breadstuffs, &c",Arrowroot and tapioca,China,DUTIABLE,Lbs,1,500,14,500,14,2.8
 1884,C,"Breadstuffs, &c",Arrowroot and tapioca,Great Britain,DUTIABLE,Lbs,7,328932,10694,332905,10673,2134.6
@@ -21380,8 +21374,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1884,C,Brick and tiles,"Drain pipes & sewer pipes, glazed",United States,DUTIABLE,,6,0,52873,0,52873,13218.25
 1884,C,Brick and tiles,"Drain tile, not glazed",Great Britain,DUTIABLE,,2,0,3168,0,3168,633.6
 1884,C,Brick and tiles,"Drain tile, not glazed",United States,DUTIABLE,,5,0,2418,0,2417,483.4
+1884,C,Brick and tiles,Fire brick and tiles for lining stoves and furnaces,?,DUTIABLE,,7,0,27621,0,27248,5449.6
 1884,C,Brick and tiles,Fire brick and tiles for lining stoves and furnaces,China,DUTIABLE,,1,0,7,0,7,1.4
-1884,C,Brick and tiles,Fire brick and tiles for lining stoves and furnaces,Great Britain,DUTIABLE,,7,0,27621,0,27248,5449.6
 1884,C,Brick and tiles,Fire brick and tiles for lining stoves and furnaces,United States,DUTIABLE,,7,0,36542,0,36542,7310.4
 1884,C,Brick and tiles,Roofing and other tiles,Great Britain,DUTIABLE,,4,0,1897,0,1897,379.4
 1884,C,Brick and tiles,Roofing and other tiles,United States,DUTIABLE,,5,0,1018,0,1018,203.6
@@ -22461,12 +22455,12 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1884,C,Marble and manufactures of,Slabs sawn on not more than two sides,Italy,DUTIABLE,,2,0,10447,0,6028,602.8
 1884,C,Marble and manufactures of,Slabs sawn on not more than two sides,United States,DUTIABLE,,7,0,30231,0,30231,3102.8
 1884,C,Meats,"Bacon and hams, shoulders & sides",Great Britain,DUTIABLE,,5,11375,1994,11375,1994,227.5
+1884,C,Meats > Pork,Poultry and game of all kinds,?,DUTIABLE,,3,0,282,0,282,56.4
 1884,C,Meats > Pork,Poultry and game of all kinds,China,DUTIABLE,,1,0,1099,0,1099,219.8
 1884,C,Meats > Pork,Poultry and game of all kinds,Germany,DUTIABLE,,1,0,7,0,7,1.4
-1884,C,Meats > Pork,Poultry and game of all kinds,Great Britain,DUTIABLE,,3,0,282,0,282,56.4
 1884,C,Meats > Pork,Poultry and game of all kinds,Newfoundland,DUTIABLE,,1,0,9,0,9,1.8
 1884,C,Meats > Pork,Poultry and game of all kinds,United States,DUTIABLE,,6,0,16431,0,16367,3273.58
-1884,C,Meats > Pork,"Prepared meats, sealed or unsealed, in cans or otherwise, N.E.S",?,DUTIABLE,,6,13818,2175,13632,2013,272.64
+1884,C,Meats > Pork,"Prepared meats, sealed or unsealed, in cans or otherwise, N.E.S",Great Britain,DUTIABLE,,6,13818,2175,13632,2013,272.64
 1884,C,"Metal and manufactures of, N. E. S",Babbit metal,Great Britain,DUTIABLE,,3,0,152,0,152,15.2
 1884,C,"Metal and manufactures of, N. E. S",Babbit metal,United States,DUTIABLE,,6,0,4471,0,4471,447.1
 1884,C,"Metal and manufactures of, N. E. S","Britannia metal, manufactures of, not plated",Germany,DUTIABLE,,1,0,88,0,88,22.0
@@ -22742,8 +22736,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1884,C,"Paper and manufactures of, N. E. S","Envelopes, papier maché, manufactures, articles and wares of paper, N.E.S",China,DUTIABLE,,2,0,2873,0,3024,756.0
 1884,C,"Paper and manufactures of, N. E. S","Envelopes, papier maché, manufactures, articles and wares of paper, N.E.S",Italy,DUTIABLE,,1,0,32,0,32,8.0
 1884,C,"Paper and manufactures of, N. E. S","Envelopes, papier maché, manufactures, articles and wares of paper, N.E.S",Japan,DUTIABLE,,2,0,17,0,17,4.25
-1884,C,"Paper and manufactures of, N. E. S","Hangings or wall paper, and glazed, plated, marbled, enamelled or embossed paper, in rolls or sheets, and cardboard similarly finished",?,DUTIABLE,,7,0,71592,0,76529,22958.7
-1884,C,"Paper and manufactures of, N. E. S","Hangings or wall paper, and glazed, plated, marbled, enamelled or embossed paper, in rolls or sheets, and cardboard similarly finished",Great Britain,DUTIABLE,,1,0,33,0,33,7.44
+1884,C,"Paper and manufactures of, N. E. S","Hangings or wall paper, and glazed, plated, marbled, enamelled or embossed paper, in rolls or sheets, and cardboard similarly finished",Great Britain,DUTIABLE,,7,0,71592,0,76529,22958.7
 1884,C,"Paper and manufactures of, N. E. S","Hangings or wall paper, and glazed, plated, marbled, enamelled or embossed paper, in rolls or sheets, and cardboard similarly finished",United States,DUTIABLE,,7,0,186683,0,179504,53862.74
 1884,C,"Paper and manufactures of, N. E. S",Printing paper,Great Britain,DUTIABLE,,4,0,17051,0,17454,3131.8
 1884,C,"Paper and manufactures of, N. E. S",Printing paper,United States,DUTIABLE,,6,0,15084,0,15455,3091.4
@@ -23706,8 +23699,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1885,C,,"Fancy goods, all other, N. E. S",Italy,DUTIABLE,,1,0,402,0,402,80.4
 1885,C,,"Fancy goods, all other, N. E. S",Japan,DUTIABLE,,1,0,147,0,147,29.4
 1885,C,,"Fancy goods, all other, N. E. S",Newfoundland,DUTIABLE,,1,0,5,0,5,1.0
-1885,C,,"Felt for boots, shoes and skirts, imported by manufacturers for use in their factories",?,DUTIABLE,,4,60326,41417,64797,45564,6834.6
 1885,C,,"Felt for boots, shoes and skirts, imported by manufacturers for use in their factories",Germany,DUTIABLE,,2,478,211,478,211,31.65
+1885,C,,"Felt for boots, shoes and skirts, imported by manufacturers for use in their factories",Great Britain,DUTIABLE,,4,60326,41417,64797,45564,6834.6
 1885,C,,"Felt for boots, shoes and skirts, imported by manufacturers for use in their factories",United States,DUTIABLE,,1,1949,779,2649,581,132.15
 1885,C,,"Felt for glove linings and endless felt for paper makers, imported by the manufacturers for use in their factories",Great Britain,DUTIABLE,,3,0,9618,0,9618,1017.84
 1885,C,,"Felt for glove linings and endless felt for paper makers, imported by the manufacturers for use in their factories",United States,DUTIABLE,,5,0,11037,0,11037,1103.7
@@ -34138,10 +34131,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,Spirits and wines,Rum,Spanish West Indies,DUTIABLE,,1,5,10,5,10,8.75
 1889,C,Spirits and wines,Rum,St. Pierre,DUTIABLE,,2,263,219,263,222,460.25
 1889,C,Spirits and wines,Rum,United States,DUTIABLE,,3,739,340,1677,622,2934.75
-1889,C,Spirits and wines,"Spirits and strong waters mixed with any ingredient, and thereby coming under the denomination of proprietary medicines, tinctures, essences, extracts or any other denomination, including medical extracts, in bulk or bottle, N.E.S",?,DUTIABLE,,2,1502,565,1067,451,2027.3
+1889,C,Spirits and wines,"Spirits and strong waters mixed with any ingredient, and thereby coming under the denomination of proprietary medicines, tinctures, essences, extracts or any other denomination, including medical extracts, in bulk or bottle, N.E.S",?,DUTIABLE,,7,1557,1115,1190,1402,2558.6
 1889,C,Spirits and wines,"Spirits and strong waters mixed with any ingredient, and thereby coming under the denomination of proprietary medicines, tinctures, essences, extracts or any other denomination, including medical extracts, in bulk or bottle, N.E.S",France,DUTIABLE,,1,378,2273,301,1986,1197.8
 1889,C,Spirits and wines,"Spirits and strong waters mixed with any ingredient, and thereby coming under the denomination of proprietary medicines, tinctures, essences, extracts or any other denomination, including medical extracts, in bulk or bottle, N.E.S",Germany,DUTIABLE,,2,50,221,50,221,166.3
-1889,C,Spirits and wines,"Spirits and strong waters mixed with any ingredient, and thereby coming under the denomination of proprietary medicines, tinctures, essences, extracts or any other denomination, including medical extracts, in bulk or bottle, N.E.S",Great Britain,DUTIABLE,,5,55,550,123,951,531.3
 1889,C,Spirits and wines,"Spirits and strong waters mixed with any ingredient, and thereby coming under the denomination of proprietary medicines, tinctures, essences, extracts or any other denomination, including medical extracts, in bulk or bottle, N.E.S",United States,DUTIABLE,,6,829,6752,866,6763,3762.83
 1889,C,Spirits and wines,"Spirits, and strong waters, N.E.S",St. Pierre,DUTIABLE,,1,7,8,7,8,13.3
 1889,C,Spirits and wines,"Spirits, unenumerated, not sweetened or mixed, &c., &c","British Possessions, all other",DUTIABLE,,1,38,25,38,25,67.38
@@ -34517,7 +34509,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,"Tin and manufactures of : Cans or packages made tin or or other material containing fish of any kind admitted free, &c","Tin ware, and all manufactures of tin, N. E. S",France,DUTIABLE,,2,0,444,0,434,108.5
 1889,C,"Tin and manufactures of : Cans or packages made tin or or other material containing fish of any kind admitted free, &c","Tin ware, and all manufactures of tin, N. E. S",Great Britain,DUTIABLE,,6,0,5973,0,6007,1501.68
 1889,C,"Tin and manufactures of : Cans or packages made tin or or other material containing fish of any kind admitted free, &c","Tin ware, and all manufactures of tin, N. E. S",United States,DUTIABLE,,8,0,85143,0,84815,21204.6
-1889,C,"Tin and manufactures of : Cans or packages made tin or or other material containing fish of any kind admitted free, &c",do when exceeding one quart,?,DUTIABLE,,1,816,0,816,0,12.24
+1889,C,"Tin and manufactures of : Cans or packages made tin or or other material containing fish of any kind admitted free, &c",do when exceeding one quart,Newfoundland,DUTIABLE,,1,816,0,816,0,12.24
 1889,C,Tobacco and manufactures of,All other manufactures of tobacco,France,DUTIABLE,,1,483,238,476,238,172.55
 1889,C,Tobacco and manufactures of,All other manufactures of tobacco,Germany,DUTIABLE,,2,151,60,151,60,52.8
 1889,C,Tobacco and manufactures of,All other manufactures of tobacco,Great Britain,DUTIABLE,,4,11132,5917,17144,6296,5930.19

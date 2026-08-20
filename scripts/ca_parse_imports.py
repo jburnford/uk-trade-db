@@ -326,7 +326,10 @@ class Parser:
                     a, b = c2, p2; self.diag['split_country_province'] += 1
             if a is not None and len(labels) >= 2 and not province_of(b) and b.strip():
                 c2, p2 = split_trailing_province(b)
-                if p2: b = p2
+                if p2:
+                    b = p2
+                    if c2 and not norm_label(a) and not re.match(r'totals?\b', c2, re.I):
+                        a = c2              # '" | Holland..... Quebec.....': the country rode in the province slot
             a_n = norm_label(a) if a is not None else None
             if a_n:
                 if re.match(r'^\(.*\)$', a_n) or re.match(r'^\(?see also\b', a_n, re.I):
@@ -404,6 +407,10 @@ class Parser:
                     self._article(ctx, head + '—')
                     a_n = tail
                     self.diag['fused_article_country'] += 1
+            if not a_n and not numeric and not province_of(b):
+                # a units row / blank row with no label: nothing to emit, and it must not arm expect_label
+                self.diag['blank_row_skipped'] += 1
+                continue
             country = None; kind = None; prov = None
             if a_n:
                 ctx['expect_label'] = False
@@ -473,7 +480,7 @@ class Parser:
                 flags = list(flags); flags[1] = flags[3] = 'value_lost'
                 self.diag['value_column_lost'] += 1
             ctx['last_prov'] = prov if kind in ('detail', 'detail_lostlabel', 'article_province_total') else None
-            ctx['expect_label'] = kind in ('country_total', 'article_total')
+            ctx['expect_label'] = kind in ('country_total', 'article_total') and numeric
             self._emit(fy, vol, seq, ri, ctx, kind, prov, nums, flags, vals_raw, texts)
 
     # ---------------------------------------------------------------- shared A/B helpers
