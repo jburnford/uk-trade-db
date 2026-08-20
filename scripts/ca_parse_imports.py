@@ -249,11 +249,15 @@ class Parser:
         self.vocab = set(SEED_COUNTRIES)
 
     def learn_vocab(self, tn):
+        # a ditto-led label is a country only when it sits where countries sit: label | province | numbers
+        # (learning every ditto-led short text put 'N.E.S', 'Tin, plate and sheets' into the vocab and they then
+        #  hijacked headings and country order)
         for tm in P.TABLE_RE.finditer(tn):
             for cells in P.parse_table(tm.group(0)):
-                if cells and DITTO_RE.match(cells[0][2]):
+                if len(cells) >= 4 and DITTO_RE.match(cells[0][2]) and province_of(cells[1][2]):
                     t = norm_label(cells[0][2])
-                    if t and len(t) < 30 and not re.search(r'[—:]', t) and not t[0].islower():
+                    if t and len(t) < 30 and not re.search(r'[—:\d$,]', t) and not t[0].islower() \
+                            and any(parse_num(c[2])[0] is not None for c in cells[2:]):
                         self.vocab.add(t)
         self.vocab.discard('')
 
@@ -277,7 +281,9 @@ class Parser:
                 j = norm_label(joined)
                 if re.search(r'DUTIABLE|FREE GOODS', joined, re.I):
                     self._section(ctx, joined)
-                elif not j or re.search(r'\d', j) or len(j) <= 2:
+                elif not j or len(j) <= 2 or re.match(r'\d', j) or re.search(r'\d{4}|\d[,.]\d{3}', j) \
+                        or (re.search(r'\d', j) and not re.search(r'[—–:;-]\s*$', j.rstrip('.'))):
+                    # index lines, page furniture, numbers; headings may hold 'No. 9' / '17 gauge' only with a dash
                     self.diag['short_row'] += 1
                 elif re.match(r'totals?\b', j, re.I):
                     ctx['country'] = 'TOTAL'; ctx['expect_label'] = False; ctx['article_buf'] = []
