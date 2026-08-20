@@ -691,7 +691,10 @@ class Parser:
             def _nk(x):
                 x = re.sub(r'(&c|\betc\b)\.?', '', x.lower()); return re.sub(r'\W', '', x)
             a, b = _nk(leaf), _nk(old_leaf or '')
-            same = leaf == old_leaf or (old_leaf and old_leaf != '?' and (
+            # a page-top repeat is only possible while the article is still OPEN (its Total not yet printed), and
+            # sibling leaves that differ in their numbers ('over 89 degrees' / 'over 90 degrees') are never the same
+            digits_same = re.findall(r'\d+', leaf) == re.findall(r'\d+', old_leaf or '')
+            same = leaf == old_leaf or (old_leaf and old_leaf != '?' and not ctx.get('article_closed') and digits_same and (
                    difflib.SequenceMatcher(None, a, b).ratio() >= 0.85 or
                    (min(len(a), len(b)) >= 8 and (a.startswith(b) or b.startswith(a)))))   # running-head abbreviation 'X, &c.'
             if same:
@@ -708,6 +711,7 @@ class Parser:
                 ctx['article_parents'] = (ctx.get('article_parents') or []) + [ctx['article']]
             ctx['article'] = leaf
             ctx['leaf_used'] = False
+            ctx['article_closed'] = False
         else:
             ctx['leaf_used'] = False
             if ctx.get('table_top') and ctx.get('country') not in (None, '', '?'):
@@ -747,6 +751,7 @@ class Parser:
         for f in flags:
             if f in ('unparsed', 'fused'): self.unparsed[f] += 1
         if kind in ('detail', 'country_total'): ctx['leaf_used'] = True
+        if kind in ('article_total', 'article_total_fused', 'article_province_total'): ctx['article_closed'] = True
         ctx['table_top'] = False
         self.rows.append(rec)
 
