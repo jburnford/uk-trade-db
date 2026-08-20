@@ -302,7 +302,8 @@ class Parser:
                 elif re.match(r'totals?\b', j, re.I):
                     ctx['country'] = 'TOTAL'; ctx['expect_label'] = False; ctx['article_buf'] = []
                     ctx['last_prov'] = None; self.diag['short_total_label'] += 1
-                elif j in self.vocab or split_trailing_country(j, self.vocab)[1] == j:
+                elif j in self.vocab or j.rstrip('—–- .') in SEED_COUNTRIES or split_trailing_country(j, self.vocab)[1] == j:
+                    j = j.rstrip('—–- .') if j.rstrip('—–- .') in SEED_COUNTRIES else j     # '“ Great Britain—'
                     ctx['country'] = j; ctx['expect_label'] = False; ctx['article_buf'] = []
                     ctx['last_prov'] = None; self.diag['short_country_label'] += 1
                 elif re.search(r'[—–:;-]\s*$', j.rstrip('.')) or re.search(r'viz\.?\s*$', j, re.I):
@@ -316,6 +317,11 @@ class Parser:
                 else:
                     self.diag['short_row'] += 1
                 continue
+            if len(texts) > NV + 2:
+                # stray unit cells ('| Lbs. |') between the labels and the numbers: column-header remnants
+                keep = [i for i, t in enumerate(texts) if not (is_unit_token(t) and i >= 2)]
+                if len(keep) >= NV + 2 and len(keep) < len(texts):
+                    texts = [texts[i] for i in keep]; self.diag['stray_unit_cells_dropped'] += 1
             vals_raw = texts[-NV:]
             labels = texts[:-NV]
             # banner in label position with blank values
@@ -353,6 +359,10 @@ class Parser:
                     b = p2
                     if c2 and not norm_label(a) and not re.match(r'totals?\b', c2, re.I):
                         a = c2              # '" | Holland..... Quebec.....': the country rode in the province slot
+                    elif c2 and (c2 in self.vocab or re.match(r'totals?\b', c2, re.I)) and re.search(r'[—:]\s*$', norm_label(a)):
+                        # '“ do do testing not over 96 degrees— | United States... Quebec.....': heading + fused country
+                        self._article(ctx, ' '.join(ctx.get('article_buf', []) + [norm_label(a)])); ctx['article_buf'] = []
+                        a = c2
             a_n = norm_label(a) if a is not None else None
             if a_n:
                 if re.match(r'^\(.*\)$', a_n) or re.match(r'^\(?see also\b', a_n, re.I):
@@ -381,7 +391,7 @@ class Parser:
                     continue
                 if re.match(r'totals?\b', a_n, re.I):
                     ctx['country'] = 'TOTAL'; ctx['expect_label'] = False; ctx['last_prov'] = None
-                    ctx['pending_prov'] = province_of(b) if (b.strip() and units_only) else None
+                    ctx['pending_prov'] = province_of(b) if (b.strip() and any(is_unit_token(v) or f == 'unit' for v, f in zip(vals_raw, flags))) else None
                     continue
                 if '—' in a_n and units_only:
                     # 'Hats, Straw, &c.— Great Brita'n...' on a units row: heading + (possibly misspelt) country
@@ -396,10 +406,10 @@ class Parser:
                 if a_n in self.vocab and units_only:
                     # a country label whose values are on the next row (or blank)
                     ctx['country'] = a_n; ctx['article_buf'] = []; ctx['expect_label'] = False; ctx['last_prov'] = None
-                    ctx['pending_prov'] = province_of(b) if b.strip() else None
+                    ctx['pending_prov'] = province_of(b) if (b.strip() and any(is_unit_token(v) or f == 'unit' for v, f in zip(vals_raw, flags))) else None
                     continue
                 if units_only and len(a_n) > 3 and (not ctx.get('article_buf')) and not frag.endswith('-') \
-                        and any(is_unit_token(v) for v in vals_raw):
+                        and any(is_unit_token(v) or f == 'unit' for v, f in zip(vals_raw, flags)):
                     # article name without trailing dash (OCR dropped it) followed by a units row
                     self._article(ctx, a); self._units(ctx, vals_raw); continue
                 # a wrapped fragment of an article name: buffer it
@@ -432,13 +442,37 @@ class Parser:
                     if head:
                         self._article(ctx, head)
                     a_n = tail; self.diag['fused_article_country_nodash'] += 1
+            # ---- a heading wrapped over DATA rows: 'iron, plain, not | P. E. Island | 58' (fragment starts lowercase
+            #      or the previous one ended with a hyphen) — the row's data continue the current block
+            deferred = None
+            if a_n and numeric and province_of(b) and a_n not in self.vocab and not re.match(r'totals?\b', a_n, re.I) \
+                    and not split_trailing_country(a_n, self.vocab)[1] \
+                    and (a_n[0].islower() or (ctx.get('article_buf') and ctx['article_buf'][-1].endswith('-'))) \
+                    and not re.search(r'—\s*[A-Z]', a_n):
+                if ctx.get('article_closed') or ctx.get('country') in (None, '', '?'):
+                    # the previous article is closed: this row is the first data row of the new article (its
+                    # country label lost); the heading applies now
+                    self._article(ctx, ' '.join(ctx.get('article_buf', []) + [a_n])); ctx['article_buf'] = []
+                    ctx['country'] = None; a_n = ''; self.diag['heading_fragment_starts_article'] += 1
+                else:
+                    ctx.setdefault('article_buf', []).append(a_n)
+                    if a_n.endswith('—'):
+                        deferred = ' '.join(ctx['article_buf']); ctx['article_buf'] = []
+                    a_n = ''; self.diag['heading_fragment_on_data_row'] += 1
             # ---- fused 'Article— Country' in one cell
             if a_n and '—' in a_n and numeric and not re.match(r'total', a_n, re.I):
                 head, tail = a_n.rsplit('—', 1)
                 tail = tail.strip(' .')
                 if not tail:
-                    self._article(ctx, head + '—'); a_n = ''
-                    ctx['country'] = None; self.diag['country_label_lost'] += 1
+                    pv = province_of(b); lp = ctx.get('last_prov')
+                    if pv and lp and pv in PROVINCE_ORDER and lp in PROVINCE_ORDER and ctx.get('country') not in (None, '', '?') \
+                            and PROVINCE_ORDER.index(pv) > PROVINCE_ORDER.index(lp):
+                        # the heading ends on a data row that still continues the current block: apply it after
+                        deferred = ' '.join(ctx.get('article_buf', []) + [head + '—']); ctx['article_buf'] = []
+                        a_n = ''; self.diag['heading_deferred_past_data_row'] += 1
+                    else:
+                        self._article(ctx, ' '.join(ctx.get('article_buf', []) + [head + '—'])); ctx['article_buf'] = []; a_n = ''
+                        ctx['country'] = None; self.diag['country_label_lost'] += 1
                 elif tail and not province_of(tail) and (tail in self.vocab or re.match(r'totals?\b', tail, re.I) or len(tail) < 25):
                     self._article(ctx, head + '—')
                     a_n = tail
@@ -454,10 +488,14 @@ class Parser:
                 # a units row / blank row with no label: nothing to emit, and it must not arm expect_label
                 self.diag['blank_row_skipped'] += 1
                 continue
-            if not a_n and not numeric and province_of(b) and units_only:
-                # 'F. W. Indies | Nova Scotia | Galls. | |' (label handled above) or '| Quebec | Lbs. | |': the values
-                # of this province are on the next, label-less row
+            if not a_n and not numeric and province_of(b) and units_only and any(is_unit_token(v) or f == 'unit' for v, f in zip(vals_raw, flags)):
+                # '| Quebec | Lbs. | | Lbs. |': the values of this province are on the next, label-less row
+                # (an all-dots province row is a genuine nil line and must NOT capture the following total)
                 ctx['pending_prov'] = province_of(b); self.diag['province_values_on_next_row'] += 1
+                continue
+            if not a_n and not numeric and province_of(b):
+                ctx['pending_prov'] = None
+                self.diag['nil_province_row'] += 1
                 continue
             if not a_n and not b.strip() and numeric and ctx.get('pending_prov'):
                 b = ctx['pending_prov']
@@ -533,6 +571,8 @@ class Parser:
             ctx['last_prov'] = prov if kind in ('detail', 'detail_lostlabel', 'article_province_total') else None
             ctx['expect_label'] = kind in ('country_total', 'article_total') and numeric
             self._emit(fy, vol, seq, ri, ctx, kind, prov, nums, flags, vals_raw, texts)
+            if deferred:
+                self._article(ctx, deferred); ctx['country'] = None
 
     # ---------------------------------------------------------------- shared A/B helpers
     @staticmethod
