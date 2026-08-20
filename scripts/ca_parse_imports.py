@@ -253,12 +253,18 @@ class Parser:
         # (learning every ditto-led short text put 'N.E.S', 'Tin, plate and sheets' into the vocab and they then
         #  hijacked headings and country order)
         for tm in P.TABLE_RE.finditer(tn):
-            for cells in P.parse_table(tm.group(0)):
-                if len(cells) >= 4 and DITTO_RE.match(cells[0][2]) and province_of(cells[1][2]):
-                    t = norm_label(cells[0][2])
-                    if t and len(t) < 30 and not re.search(r'[—:\d$,]', t) and not t[0].islower() \
-                            and any(parse_num(c[2])[0] is not None for c in cells[2:]):
-                        self.vocab.add(t)
+            rows = P.parse_table(tm.group(0))
+            has_prov = any(len(c) >= 3 and province_of(c[1][2]) for c in rows)
+            for cells in rows:
+                if len(cells) < 3 or not DITTO_RE.match(cells[0][2]): continue
+                # regime C (province column present): label | province | numbers; regimes A/B: label | numbers
+                if has_prov and not province_of(cells[1][2]): continue
+                if not has_prov and not any(parse_num(c[2])[0] is not None for c in cells[1:]): continue
+                t = norm_label(cells[0][2])
+                if t and len(t) < 30 and not re.search(r'[—:\d$,]', t) and not t[0].islower() \
+                        and not re.fullmatch(r'(?:[A-Z]\.\s?)+[A-Z]?\.?', t) and re.search(r'[A-Za-z]{3}', t) \
+                        and not is_unit_token(t):
+                    self.vocab.add(t)
         self.vocab.discard('')
 
     # ---------------------------------------------------------------- regime C
@@ -318,8 +324,14 @@ class Parser:
             a = labels[0] if len(labels) >= 2 else None
             b = labels[-1] if labels else ''
             if len(labels) >= 3:
-                # '" " | Spain..... | Quebec.....': the country is the last non-ditto cell before the province
-                a = next((x for x in reversed(labels[:-1]) if norm_label(x)), labels[0])
+                # '" " | Spain..... | Quebec.....': the country is the last non-ditto cell before the province;
+                # '“ Currants— | Great Britain... | Ontario': a heading cell precedes it
+                heads = [x for x in labels[:-1] if re.search(r'[—:]\s*$', norm_label(x))]
+                rest = [x for x in labels[:-1] if norm_label(x) and x not in heads]
+                if heads:
+                    self._article(ctx, ' '.join(ctx.get('article_buf', []) + [norm_label(h) for h in heads]))
+                    ctx['article_buf'] = []
+                a = rest[-1] if rest else (labels[0] if not heads else '')
             if len(labels) == 1 and b.strip() and not province_of(b) and not numeric:
                 a, b = b, ''            # lone label with no values: treat as first-column text
             if len(labels) == 1 and b.strip() and not province_of(b) and numeric:
@@ -360,7 +372,19 @@ class Parser:
                     self._units(ctx, vals_raw)
                     continue
                 if re.match(r'totals?\b', a_n, re.I):
-                    ctx['country'] = 'TOTAL'; ctx['expect_label'] = False; ctx['last_prov'] = None; continue
+                    ctx['country'] = 'TOTAL'; ctx['expect_label'] = False; ctx['last_prov'] = None
+                    ctx['pending_prov'] = province_of(b) if (b.strip() and units_only) else None
+                    continue
+                if '—' in a_n and units_only:
+                    # 'Hats, Straw, &c.— Great Brita'n...' on a units row: heading + (possibly misspelt) country
+                    head, tail = a_n.rsplit('—', 1); tail = tail.strip(' .')
+                    if tail and not province_of(tail) and (tail in self.vocab or (
+                            re.fullmatch(r"[A-Z][A-Za-z.' ]{2,22}", tail) and len(tail.split()) <= 3 and not re.search(r'&c|,', tail))):
+                        self._article(ctx, head + '—'); ctx['country'] = tail; ctx['article_buf'] = []
+                        ctx['expect_label'] = False; ctx['last_prov'] = None
+                        ctx['pending_prov'] = province_of(b) if b.strip() else None
+                        self._units(ctx, vals_raw); self.diag['fused_article_country'] += 1
+                        continue
                 if a_n in self.vocab and units_only:
                     # a country label whose values are on the next row (or blank)
                     ctx['country'] = a_n; ctx['article_buf'] = []; ctx['expect_label'] = False; ctx['last_prov'] = None
@@ -1041,6 +1065,7 @@ class Parser:
             if re.search(r'COMPILED\s+FROM\s+OFFICIAL\s+RETURNS', text[mm.start(): mm.start() + 1500], re.I):
                 start = mm.start(); break
         tn = text[start:]
+        self.vocab = set(SEED_COUNTRIES)      # per volume: a label learned in 1871 must not steer 1887
         self.learn_vocab(tn)
         ctx = dict(regime=None, section=None, section_label=None, article_parents=[], article=None,
                    country=None, province=None, unit=None)
