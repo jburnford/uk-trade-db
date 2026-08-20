@@ -375,6 +375,17 @@ class Parser:
                     a_n = ''
                 else:
                     self._article(ctx, ' '.join(ctx['article_buf'])); ctx['article_buf'] = []
+            # ---- page-top continuation: the running heading repeated in the label cell of a data row whose country
+            #      is the one carried over from the previous page ('Sugar, melado, &c.— do do not testing over 93
+            #      degrees.. | Quebec | values', then 'Brazil | Quebec' starts the next country)
+            if a_n and numeric and ctx.get('table_top') and a_n not in self.vocab and not re.match(r'totals?\b', a_n, re.I) \
+                    and province_of(b) and ctx.get('country') not in (None, '', '?') \
+                    and not split_trailing_country(a_n, self.vocab)[1] \
+                    and (len(a_n) > 30 or re.search(r'[—:]|&c|^do\b', a_n)):
+                carried = ctx['country']
+                self._article(ctx, a_n)
+                ctx['country'] = carried
+                a_n = ''; self.diag['page_top_heading_continuation'] += 1
             # ---- 'Article Country' fused without a dash
             if a_n and numeric and a_n not in self.vocab and not re.match(r'totals?\b', a_n, re.I):
                 head, tail = split_trailing_country(a_n, self.vocab)
@@ -699,6 +710,8 @@ class Parser:
             ctx['leaf_used'] = False
         else:
             ctx['leaf_used'] = False
+            if ctx.get('table_top') and ctx.get('country') not in (None, '', '?'):
+                return                     # page-top running head (parents only): the country block carries over
         ctx['country'] = None
         ctx['unit'] = None
         ctx['last_prov'] = None
@@ -734,6 +747,7 @@ class Parser:
         for f in flags:
             if f in ('unparsed', 'fused'): self.unparsed[f] += 1
         if kind in ('detail', 'country_total'): ctx['leaf_used'] = True
+        ctx['table_top'] = False
         self.rows.append(rec)
 
     # ---------------------------------------------------------------- post-pass
@@ -1040,6 +1054,7 @@ class Parser:
             ctx['article_parents'] = []          # page tops repeat the parent heading
             ctx['article_buf'] = []
             ctx['recap'] = False                 # embedded recapitulations (sugar, molasses) end with their page
+            ctx['table_top'] = True              # until the first data row of this table has been emitted
             n_tables += 1
             getattr(self, 'parse_table_' + ctx['regime'])(fy, tag, seq, body, ctx)
         self.resolve_lost_labels(start_rows)

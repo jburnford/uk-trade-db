@@ -15350,12 +15350,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,"Flax, manufactures of","Sail twine, used for boats' or ships' sails",United States,DUTIABLE,Lbs,6,7844,1989,7844,1989,99.45
 1882,C,"Flax, manufactures of","Tow of, scutched or green",Great Britain,DUTIABLE,,2,653,95,653,95,3.27
 1882,C,"Flax, manufactures of","Tow of, scutched or green",United States,DUTIABLE,,5,52083,1037,52083,1037,260.48
-1882,C,"Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,France,DUTIABLE,,2,0,11701,0,12789,1918.35
-1882,C,"Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,Germany,DUTIABLE,,2,0,8770,0,6279,941.85
-1882,C,"Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,Holland,DUTIABLE,,1,0,46,0,46,6.9
-1882,C,"Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,Italy,DUTIABLE,,1,0,74,0,74,11.1
-1882,C,"Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,Madeira,DUTIABLE,,1,0,54,0,54,8.1
-1882,C,"Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,United States,DUTIABLE,,8,0,154714,0,153110,22966.12
 1882,C,"Flowers, Leaves and Roots > Camomile Flowers","Buchu Leaves, Conium Cicutæ or Hemlock Seed and Leaf, Foliæ Digitalis, Hyoscyamus or Henbane Leaf, Senna Leaves",?,FREE,,1,7,3,7,3,0.0
 1882,C,"Flowers, Leaves and Roots > Camomile Flowers","Buchu Leaves, Conium Cicutæ or Hemlock Seed and Leaf, Foliæ Digitalis, Hyoscyamus or Henbane Leaf, Senna Leaves",Germany,FREE,,1,0,8,0,8,0.0
 1882,C,"Flowers, Leaves and Roots > Camomile Flowers","Buchu Leaves, Conium Cicutæ or Hemlock Seed and Leaf, Foliæ Digitalis, Hyoscyamus or Henbane Leaf, Senna Leaves",Great Britain,FREE,,7,0,1392,0,1392,0.0
@@ -16238,7 +16232,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,"Roots, Medicinal","Aconite, Calumba, Ipecacuanha, Sarsaparilla, Squills, Taraxicum and Valerian",United States,FREE,,4,0,5208,0,5208,0.0
 1882,C,Rosin,"""",Great Britain,FREE,Brls,5,98,402,98,402,0.0
 1882,C,Rosin,"""",United States,FREE,Brls,7,20823,89787,20823,89787,0.0
-1882,C,Seeds,?,?,DUTIABLE,,7,0,42867,0,43873,6580.95
 1882,C,Seeds,Bulbous Roots,China,DUTIABLE,,1,0,6,0,6,1.2
 1882,C,Seeds,Bulbous Roots,Germany,DUTIABLE,,1,0,36,0,36,7.2
 1882,C,Seeds,Bulbous Roots,Great Britain,DUTIABLE,,6,0,1342,0,1342,268.4
@@ -16253,6 +16246,12 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,Seeds,"Ships and other Vessels, built in any foreign country, hull, rigging and all appurtenances except machinery",Norway,DUTIABLE,,1,0,38,0,38,3.8
 1882,C,Seeds,"Ships and other Vessels, built in any foreign country, hull, rigging and all appurtenances except machinery",St. Pierre,DUTIABLE,,1,0,1254,0,1254,125.4
 1882,C,Seeds,"Ships and other Vessels, built in any foreign country, hull, rigging and all appurtenances except machinery",United States,DUTIABLE,,6,0,41264,0,41264,4126.4
+1882,C,"Seeds > Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,France,DUTIABLE,,2,0,11701,0,12789,1918.35
+1882,C,"Seeds > Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,Germany,DUTIABLE,,2,0,8770,0,6279,941.85
+1882,C,"Seeds > Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,Holland,DUTIABLE,,1,0,46,0,46,6.9
+1882,C,"Seeds > Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,Italy,DUTIABLE,,1,0,74,0,74,11.1
+1882,C,"Seeds > Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,Madeira,DUTIABLE,,1,0,54,0,54,8.1
+1882,C,"Seeds > Flower, Garden, Field and other Seeds for agricultural purposes when in bulk or in large parcels",Great Britain,United States,DUTIABLE,,8,0,154714,0,153110,22966.12
 1882,C,Silk and manufactures of,Cords and Tassels,France,DUTIABLE,,2,0,1712,0,1712,513.6
 1882,C,Silk and manufactures of,Cords and Tassels,Germany,DUTIABLE,,2,0,2480,0,2480,744.0
 1882,C,Silk and manufactures of,Cords and Tassels,Great Britain,DUTIABLE,,5,0,32988,0,32352,9705.57
@@ -20823,9 +20822,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1884,C,,"Quinine, sulphate of, in powder",Great Britain,FREE,Oz,5,17193,27923,17193,27923,0.0
 1884,C,,"Quinine, sulphate of, in powder",United States,FREE,Oz,6,13397,19923,13397,19923,0.0
 1884,C,,"Rags, of cotton, linen, jute and hemp, paper, waste or clippings, and waste of any kind, fit only for manufacture of paper",Belgium,FREE,,1,321,1622,321,1622,0.0
-1884,C,,"Rags, of cotton, linen, jute and hemp, paper, waste or clippings, and waste of any kind, fit only for manufacture of paper",British Guiana,FREE,,1,7,7,7,7,0.0
 1884,C,,"Rags, of cotton, linen, jute and hemp, paper, waste or clippings, and waste of any kind, fit only for manufacture of paper",Great Britain,FREE,,3,10217,30561,10217,30561,0.0
-1884,C,,"Rags, of cotton, linen, jute and hemp, paper, waste or clippings, and waste of any kind, fit only for manufacture of paper",Newfoundland,FREE,,1,54,27,54,27,0.0
 1884,C,,"Rags, of cotton, linen, jute and hemp, paper, waste or clippings, and waste of any kind, fit only for manufacture of paper",United States,FREE,,3,56481,120227,56481,120227,0.0
 1884,C,,"Rainite, or German potash salts, for fertilizers",United States,FREE,,1,12200,564,12200,564,0.0
 1884,C,,"Rattans and reeds, unmanufactured",Great Britain,FREE,,1,0,6,0,6,0.0
@@ -20834,13 +20831,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1884,C,,Rennet,Germany,FREE,,1,0,600,0,600,0.0
 1884,C,,Rennet,Great Britain,FREE,,1,0,11,0,11,0.0
 1884,C,,Rennet,United States,FREE,,4,0,18129,0,18129,0.0
-1884,C,,Rosin,France,FREE,,1,2,9,2,9,0.0
-1884,C,,Rosin,Germany,FREE,,1,2,10,2,10,0.0
-1884,C,,Rosin,Great Britain,FREE,,3,5,21,5,21,0.0
-1884,C,,Rosin,United States,FREE,,7,20126,80416,20126,80416,0.0
 1884,C,,"Rough freestone, sandstone and other building stone (except marble)",Great Britain,DUTIABLE,,2,3,52,3,52,3.0
-1884,C,,"Rubber, hard crude, in sheets, plain or moulded",Great Britain,FREE,,2,21,26,21,26,0.0
-1884,C,,"Rubber, hard crude, in sheets, plain or moulded",United States,FREE,,3,2745,1171,2745,1171,0.0
 1884,C,,"Saffron and safflower, and extract of, and saffron cake",France,FREE,Lbs,1,325,90,325,90,0.0
 1884,C,,"Saffron and safflower, and extract of, and saffron cake",Great Britain,FREE,Lbs,4,372,117,375,117,0.0
 1884,C,,"Saffron and safflower, and extract of, and saffron cake",United States,FREE,Lbs,5,327,157,327,157,0.0
@@ -22734,6 +22725,14 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1884,C,"Provisions, N.E.S > Meats","Ribbons, N.E.S",Great Britain,DUTIABLE,,5,0,9742,0,9870,2971.0
 1884,C,"Provisions, N.E.S > Meats","Ribbons, N.E.S",United States,DUTIABLE,,4,0,3114,0,3114,934.2
 1884,C,"Provisions, N.E.S > Meats","Sails for boats and ships, also tents and awnings",Great Britain,DUTIABLE,,6,0,2546,0,2546,636.5
+1884,C,"Rags, of cotton, linen, jute and hemp, &c",Newfoundand,Belgium,FREE,,1,54,27,54,27,0.0
+1884,C,"Rags, of cotton, linen, jute and hemp, &c",Newfoundand,British Guiana,FREE,,1,7,7,7,7,0.0
+1884,C,"Rags, of cotton, linen, jute and hemp, &c",Rosin,France,FREE,,1,2,9,2,9,0.0
+1884,C,"Rags, of cotton, linen, jute and hemp, &c",Rosin,Germany,FREE,,1,2,10,2,10,0.0
+1884,C,"Rags, of cotton, linen, jute and hemp, &c",Rosin,Great Britain,FREE,,3,5,21,5,21,0.0
+1884,C,"Rags, of cotton, linen, jute and hemp, &c",Rosin,United States,FREE,,7,20126,80416,20126,80416,0.0
+1884,C,"Rags, of cotton, linen, jute and hemp, &c","Rubber, hard crude, in sheets, plain or moulded",Great Britain,FREE,,2,21,26,21,26,0.0
+1884,C,"Rags, of cotton, linen, jute and hemp, &c","Rubber, hard crude, in sheets, plain or moulded",United States,FREE,,3,2745,1171,2745,1171,0.0
 1884,C,"Roots, medicinal","Aconite, calumba, ipeacacuanha, sarsaparilla, squills, taraxicum and valerian",?,FREE,,2,0,85,0,85,0.0
 1884,C,"Roots, medicinal","Aconite, calumba, ipeacacuanha, sarsaparilla, squills, taraxicum and valerian",Great Britain,FREE,,3,0,486,0,486,0.0
 1884,C,"Roots, medicinal","Aconite, calumba, ipeacacuanha, sarsaparilla, squills, taraxicum and valerian",United States,FREE,,4,0,3055,0,3055,0.0
@@ -25346,6 +25345,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1885,C,Iron and Steel and manufactures of > Bedsteads and other iron furniture,Car wheels,Germany,DUTIABLE,,2,2854,10040,2854,10040,2510.0
 1885,C,Iron and Steel and manufactures of > Bedsteads and other iron furniture,Car wheels,Great Britain,DUTIABLE,,2,691,1105,691,1105,276.25
 1885,C,Iron and Steel and manufactures of > Bedsteads and other iron furniture,Car wheels,United States,DUTIABLE,,4,8142,17576,8242,17576,4403.9
+1885,C,Iron and steel and manufactures of,?,Great Britain,DUTIABLE,,6,0,13210,0,13510,4053.0
+1885,C,Iron and steel and manufactures of,?,United States,DUTIABLE,,7,0,44604,0,41385,12413.9
 1885,C,Iron and steel and manufactures of,Axles of iron or steel,United States,DUTIABLE,Cwt,4,129,377,129,377,96.1
 1885,C,Iron and steel and manufactures of,"Band and hoop iron, No. 17 gauge, or thinner",Great Britain,DUTIABLE,,7,22015,42528,22015,42528,5316.61
 1885,C,Iron and steel and manufactures of,"Band and hoop iron, No. 17 gauge, or thinner",United States,DUTIABLE,,5,2305,7563,2305,7563,945.44
@@ -25359,9 +25360,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1885,C,Iron and steel and manufactures of,Bedsteads and other iron furniture,Great Britain,DUTIABLE,,7,0,13112,0,13190,4574.1
 1885,C,Iron and steel and manufactures of,Bedsteads and other iron furniture,Italy,DUTIABLE,,1,0,5,0,5,1.75
 1885,C,Iron and steel and manufactures of,Bedsteads and other iron furniture,United States,DUTIABLE,,7,0,3905,0,3905,1356.35
-1885,C,Iron and steel and manufactures of,"Bolts, washers and rivets",?,DUTIABLE,,1,0,2481,0,2481,744.0
-1885,C,Iron and steel and manufactures of,"Bolts, washers and rivets",Great Britain,DUTIABLE,,6,0,13210,0,13510,4053.0
-1885,C,Iron and steel and manufactures of,"Bolts, washers and rivets",United States,DUTIABLE,,7,0,44604,0,41385,12413.9
 1885,C,Iron and steel and manufactures of,"Cast iron, gas, water and soil pipes",Great Britain,DUTIABLE,,5,0,89494,0,89771,22442.75
 1885,C,Iron and steel and manufactures of,"Cast iron, gas, water and soil pipes",United States,DUTIABLE,,7,0,18640,0,18640,4660.1
 1885,C,Iron and steel and manufactures of,"Castings of every description N.E.S., and forgings",France,DUTIABLE,,2,0,1620,0,1620,405.0
@@ -27455,7 +27453,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,,"Salmon, fresh",Newfoundland,FREE,,1,66,8,66,8,0.0
 1887,C,,"Salmon, pickled",Newfoundland,FREE,,2,672975,38629,672975,38629,0.0
 1887,C,,Salt cake (being a sulphate of soda) when imported by manufacturers of glass and soap for their own use in their works,Great Britain,FREE,,1,22576,94,22576,94,0.0
-1887,C,,"Salt, coarse (not from Great Britain or British possessions, or for Sea or Gulf fisheries) and all fine salt, in bulk",?,DUTIABLE,,2,847100,2252,847100,2252,716.28
+1887,C,,"Salt, coarse (not from Great Britain or British possessions, or for Sea or Gulf fisheries) and all fine salt, in bulk",Great Britain,DUTIABLE,,2,847100,2252,847100,2252,716.28
 1887,C,,"Salt, imported from the United Kingdom, &c",Newfoundland,FREE,,1,11250,30,11250,30,0.0
 1887,C,,"Sand paper, glass, flint and emery paper, sand, glass and emery cloth",Germany,DUTIABLE,,1,0,102,0,102,25.5
 1887,C,,"Sand paper, glass, flint and emery paper, sand, glass and emery cloth",Great Britain,DUTIABLE,,5,0,1344,0,1344,336.05
@@ -28065,6 +28063,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,Cotton manufactures of,"Ginghams or plaids, dyed or colored",France,DUTIABLE,,1,1000,108,1000,108,36.2
 1887,C,Cotton manufactures of,"Ginghams or plaids, dyed or colored",Great Britain,DUTIABLE,,7,151462,20877,152187,21123,6215.49
 1887,C,Cotton manufactures of,"Ginghams or plaids, dyed or colored",United States,DUTIABLE,,7,55964,8810,55964,8810,2435.0
+1887,C,"Cotton, manufactures of",?,France,DUTIABLE,,1,0,853,0,853,85.3
+1887,C,"Cotton, manufactures of",?,Germany,DUTIABLE,,1,0,492,0,492,49.2
+1887,C,"Cotton, manufactures of",?,Great Britain,DUTIABLE,,2,0,35,0,35,3.5
 1887,C,"Cotton, manufactures of",?,United States,DUTIABLE,,2,2647,585,2647,585,117.0
 1887,C,"Cotton, manufactures of","All other cotton thread, N.E.S",France,DUTIABLE,,1,7,3,7,3,0.6
 1887,C,"Cotton, manufactures of","All other cotton thread, N.E.S",United States,DUTIABLE,,2,4696,1266,4696,1266,253.2
@@ -28127,10 +28128,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,"Cotton, manufactures of","Printed or dyed cotton fabrics, N.E.S",Great Britain,DUTIABLE,,7,29574255,1998356,30078388,2022572,558753.35
 1887,C,"Cotton, manufactures of","Printed or dyed cotton fabrics, N.E.S",Switzerland,DUTIABLE,,1,300,60,300,60,16.5
 1887,C,"Cotton, manufactures of","Printed or dyed cotton fabrics, N.E.S",United States,DUTIABLE,,7,4107410,247846,4202956,249218,69840.42
-1887,C,"Cotton, manufactures of","Prunella, for boots and shoes",?,DUTIABLE,,1,0,15968,0,16256,1625.6
-1887,C,"Cotton, manufactures of","Prunella, for boots and shoes",France,DUTIABLE,,1,0,853,0,853,85.3
-1887,C,"Cotton, manufactures of","Prunella, for boots and shoes",Germany,DUTIABLE,,1,0,492,0,492,49.2
-1887,C,"Cotton, manufactures of","Prunella, for boots and shoes",Great Britain,DUTIABLE,,2,0,35,0,35,3.5
 1887,C,"Cotton, manufactures of",Seamless bags,France,DUTIABLE,,2,58,12,55,12,2.96
 1887,C,"Cotton, manufactures of",Seamless bags,Germany,DUTIABLE,,1,25,7,25,7,1.55
 1887,C,"Cotton, manufactures of",Seamless bags,Great Britain,DUTIABLE,,3,4991,876,4991,876,231.22
@@ -28487,12 +28484,11 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,Fancy goods,?,Austria,DUTIABLE,,1,0,621,0,365,109.5
 1887,C,Fancy goods,?,Belgium,DUTIABLE,,1,0,29,0,29,8.7
 1887,C,Fancy goods,?,China,DUTIABLE,,1,0,111,0,111,27.75
-1887,C,Fancy goods,?,France,DUTIABLE,,8,0,22787,0,23051,6546.2
+1887,C,Fancy goods,?,France,DUTIABLE,,7,0,22773,0,23037,6543.4
 1887,C,Fancy goods,?,Germany,DUTIABLE,,6,0,2670,0,3122,916.1
-1887,C,Fancy goods,?,"Gold and silver cloth, tassels, thread, &c",DUTIABLE,,1,0,44,0,44,8.8
 1887,C,Fancy goods,?,Great Britain,DUTIABLE,,9,0,74254,0,72472,18502.85
 1887,C,Fancy goods,?,Japan,DUTIABLE,,2,0,12,0,12,3.0
-1887,C,Fancy goods,?,United States,DUTIABLE,,13,0,17254,0,15489,4047.45
+1887,C,Fancy goods,?,United States,DUTIABLE,,12,0,17238,0,15473,4044.25
 1887,C,Fancy goods,"Alabaster, spar, terra cotta or composition ornaments",Austria,DUTIABLE,,2,0,893,0,379,113.7
 1887,C,Fancy goods,"Alabaster, spar, terra cotta or composition ornaments",Belgium,DUTIABLE,,1,0,476,0,476,142.8
 1887,C,Fancy goods,"Alabaster, spar, terra cotta or composition ornaments",France,DUTIABLE,,3,0,4937,0,4937,1540.5
@@ -28541,7 +28537,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,Fancy goods,"Feathers, ostrich and vulture, undressed",Germany,DUTIABLE,,2,0,484,0,484,145.2
 1887,C,Fancy goods,"Feathers, ostrich and vulture, undressed",Great Britain,DUTIABLE,,7,0,156236,0,156195,46860.5
 1887,C,Fancy goods,"Feathers, ostrich and vulture, undressed",United States,DUTIABLE,,11,0,9177,0,9177,2692.93
-1887,C,Fancy goods,"Gold and silver cloth, tassels, thread, &c",Great Britain,DUTIABLE,,1,0,11,0,11,2.2
+1887,C,Fancy goods,"Gold and silver cloth, tassels, thread, &c",France,DUTIABLE,,1,0,14,0,14,2.8
+1887,C,Fancy goods,"Gold and silver cloth, tassels, thread, &c",Great Britain,DUTIABLE,,2,0,55,0,55,11.0
+1887,C,Fancy goods,"Gold and silver cloth, tassels, thread, &c",United States,DUTIABLE,,1,0,16,0,16,3.2
 1887,C,Fancy goods,"Ivory or bone dice draughts, chessmen, &c",France,DUTIABLE,,1,0,236,0,236,47.2
 1887,C,Fancy goods,"Ivory or bone dice draughts, chessmen, &c",Germany,DUTIABLE,,1,0,374,0,374,74.8
 1887,C,Fancy goods,"Ivory or bone dice draughts, chessmen, &c",Great Britain,DUTIABLE,,5,0,2026,0,2026,413.3
@@ -28986,6 +28984,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,Iron and steel and manufactures cf: Hardware,"Builders', cabinet makers', harness makers' and saddlers' and tinsmiths' tools",Great Britain,DUTIABLE,,7,0,65928,0,66191,19937.44
 1887,C,Iron and steel and manufactures cf: Hardware,"Builders', cabinet makers', harness makers' and saddlers' and tinsmiths' tools",United States,DUTIABLE,,8,0,430594,0,430724,130378.53
 1887,C,Iron and steel and manufactures cf: Hardware,"Hardware, carriage",Great Britain,DUTIABLE,,4,0,5209,0,5514,1929.9
+1887,C,Iron and steel and manufactures of,?,Belgium,DUTIABLE,,1,0,245,0,245,61.25
+1887,C,Iron and steel and manufactures of,?,United States,DUTIABLE,,4,0,1608,0,1608,402.0
 1887,C,Iron and steel and manufactures of,"All other machinery composed wholly or in part of iron, N.E.S",Belgium,DUTIABLE,,1,0,0,0,29992,7498.0
 1887,C,Iron and steel and manufactures of,"All other machinery composed wholly or in part of iron, N.E.S",Denmark,DUTIABLE,,1,0,127,0,127,31.75
 1887,C,Iron and steel and manufactures of,"All other machinery composed wholly or in part of iron, N.E.S",France,DUTIABLE,,3,0,874,0,874,221.89
@@ -29083,9 +29083,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,Iron and steel and manufactures of,"Nails, spikes and sheathing nails, composition",United States,DUTIABLE,,4,9697,1451,9697,1451,283.55
 1887,C,Iron and steel and manufactures of,"Nuts, N.E.S",Great Britain,DUTIABLE,,3,14237,400,29012,841,388.27
 1887,C,Iron and steel and manufactures of,"Nuts, N.E.S",United States,DUTIABLE,,5,23340,1078,22740,1078,371.36
-1887,C,Iron and steel and manufactures of,Ornamental iron work,?,DUTIABLE,,1,0,6228,0,6228,1557.0
-1887,C,Iron and steel and manufactures of,Ornamental iron work,Belgium,DUTIABLE,,1,0,245,0,245,61.25
-1887,C,Iron and steel and manufactures of,Ornamental iron work,United States,DUTIABLE,,4,0,1608,0,1608,402.0
 1887,C,Iron and steel and manufactures of,Other wrought iron or steel tubes or pipes,Germany,DUTIABLE,,1,39464,4201,0,0,0.0
 1887,C,Iron and steel and manufactures of,Other wrought iron or steel tubes or pipes,Great Britain,DUTIABLE,Lbs,2,459590,8902,459590,8902,5494.57
 1887,C,Iron and steel and manufactures of,Other wrought iron or steel tubes or pipes,United States,DUTIABLE,,4,32373,863,32373,863,503.91
@@ -29428,9 +29425,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,Metal and manufactures of,"German and nickel silver, manufactures of, not plated",Great Britain,DUTIABLE,,5,0,14260,0,14294,3573.5
 1887,C,Metal and manufactures of,"German and nickel silver, manufactures of, not plated",Japan,DUTIABLE,,1,0,16,0,16,4.0
 1887,C,Metal and manufactures of,"German and nickel silver, manufactures of, not plated",United States,DUTIABLE,,6,0,12763,0,12763,3190.75
-1887,C,Metal and manufactures of,"Japanned and stamped ware, N.E.S",?,DUTIABLE,,1,0,77,0,77,19.25
 1887,C,Metal and manufactures of,"Japanned and stamped ware, N.E.S",France,DUTIABLE,,1,0,153,0,273,68.25
 1887,C,Metal and manufactures of,"Japanned and stamped ware, N.E.S",Germany,DUTIABLE,,1,0,5,0,5,1.25
+1887,C,Metal and manufactures of,"Japanned and stamped ware, N.E.S",United States,DUTIABLE,,1,0,77,0,77,19.25
 1887,C,Metal and manufactures of,Japanned and stamped wares N.E.S,Great Britain,DUTIABLE,,6,0,3756,0,3696,926.5
 1887,C,Metal and manufactures of,Japanned and stamped wares N.E.S,United States,DUTIABLE,,5,0,19634,0,20533,5133.25
 1887,C,Metal and manufactures of,Nickel anodes,Great Britain,DUTIABLE,,2,0,742,0,742,74.2
@@ -30118,20 +30115,15 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,"Sugars, syrups and molasses",?,British West Indies,DUTIABLE,,3,45735,1088,84993,2137,1131.1
 1887,C,"Sugars, syrups and molasses",?,China,DUTIABLE,,2,1310800,27626,1310800,27626,15604.39
 1887,C,"Sugars, syrups and molasses",?,Dutch East Indies,DUTIABLE,,3,1509742,27051,1509742,27051,19939.81
-1887,C,"Sugars, syrups and molasses",?,Germany,DUTIABLE,,4,22429453,611310,19036097,499667,339314.32
+1887,C,"Sugars, syrups and molasses",?,Germany,DUTIABLE,,2,12533338,319153,10006061,271146,176773.7
 1887,C,"Sugars, syrups and molasses",?,Spanish Possessions in Pacific Ocean,DUTIABLE,,2,366401,9439,847099,20060,10729.91
-1887,C,"Sugars, syrups and molasses",?,Spanish West Indies,DUTIABLE,,7,10089395,285548,6615592,191720,123229.3
+1887,C,"Sugars, syrups and molasses",?,Spanish West Indies,DUTIABLE,,5,9891111,279713,6418331,185913,119678.62
 1887,C,"Sugars, syrups and molasses",?,Spanish possessions in Pacific Ocean,DUTIABLE,,1,241931,6085,241931,6085,3467.68
-1887,C,"Sugars, syrups and molasses",?,"Sugar, melado, & Spanish Possessions in Pacific Ocean",DUTIABLE,,1,30062,658,30062,658,360.74
-1887,C,"Sugars, syrups and molasses",?,"Sugar, melado, &c",DUTIABLE,,1,5231726,154105,4189295,129804,75407.3
-1887,C,"Sugars, syrups and molasses",?,"Sugar, melado, &c. Spanish Possessions in Pacific Ocean",DUTIABLE,,1,2041524,38399,2041524,38399,22456.76
 1887,C,"Sugars, syrups and molasses",?,"Sugar, melado, concentrated melado",DUTIABLE,,1,12832,393,12832,393,264.92
-1887,C,"Sugars, syrups and molasses",?,United States,DUTIABLE,,9,4750671,117783,4750671,117783,75660.95
+1887,C,"Sugars, syrups and molasses",?,United States,DUTIABLE,,10,4882045,121438,4882045,121438,78203.02
 1887,C,"Sugars, syrups and molasses",?,"concentrated cane juice, concentrated",DUTIABLE,,1,707,16,707,16,12.66
 1887,C,"Sugars, syrups and molasses",?,do do testing not over 82 degrees— Spanish possessions in Pacific Ocean,DUTIABLE,,1,540446,13592,540446,13592,8133.71
 1887,C,"Sugars, syrups and molasses",?,"juice, concentrated molasses, concentrated",DUTIABLE,,1,117800,3010,122400,3335,2405.82
-1887,C,"Sugars, syrups and molasses","Fugar, melado, &c. do do testing not over 94 degrees",?,DUTIABLE,,1,0,0,281493,9290,5446.88
-1887,C,"Sugars, syrups and molasses","Fugar, melado, &c. do do testing not over 94 degrees",United States,DUTIABLE,,1,131374,3655,131374,3655,2542.07
 1887,C,"Sugars, syrups and molasses",Glucose syrup,Germany,DUTIABLE,,1,7535,176,7535,176,150.7
 1887,C,"Sugars, syrups and molasses",Glucose syrup,Great Britain,DUTIABLE,,1,2843,65,2843,65,56.86
 1887,C,"Sugars, syrups and molasses",Glucose syrup,United States,DUTIABLE,,7,882701,24917,852701,24917,17654.03
@@ -30158,16 +30150,19 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,"Sugars, syrups and molasses",Sugar candy and confectionery,United States,DUTIABLE,,8,226222,35993,231070,36958,15764.77
 1887,C,"Sugars, syrups and molasses","Sugar not imported direct without transhipment from the country of growth and production, above No. 14, D.S",Great Britain,DUTIABLE,,1,0,0,2310,90,57.9
 1887,C,"Sugars, syrups and molasses","Sugar not imported direct without transhipment from the country of growth and production, above No. 14, D.S",United States,DUTIABLE,,1,0,0,2216,139,70.81
+1887,C,"Sugars, syrups and molasses","Sugar, melado, & Spanish Possessions in Pacific Ocean",Dutch East Indies,DUTIABLE,,1,30062,658,30062,658,360.74
+1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",British Guiana,DUTIABLE,,1,5231726,154105,4189295,129804,75407.3
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",D. East Indies,DUTIABLE,,1,154130,4186,154130,4186,2209.17
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",Dutch East Indies,DUTIABLE,,3,2153476,54436,2160026,54601,31937.75
-1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",Germany,DUTIABLE,,1,824012,23793,824012,23793,15383.55
+1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",Germany,DUTIABLE,,3,10720127,315950,9854048,252314,177924.17
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",Mauritius,DUTIABLE,,1,0,0,1479339,35257,22799.53
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",S. West Indies,DUTIABLE,,3,123341,2618,123341,2533,1767.89
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",Spanish Possessions in Pacific Ocean,DUTIABLE,,1,994840,28806,994840,28806,15254.2
-1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",Spanish West Indies,DUTIABLE,,8,2933019,64141,2472482,54326,40228.44
+1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",Spanish West Indies,DUTIABLE,,10,3131303,69976,2669743,60133,43779.12
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",Spanish possessions in Pacific Ocean,DUTIABLE,,3,7218283,188940,7218283,188940,101253.81
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c",United States,DUTIABLE,,1,304119,7254,304119,7254,5122.03
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c. Spanish Possessions in Pacific Ocean",?,DUTIABLE,,2,2133657,57347,2609257,67851,33920.34
+1887,C,"Sugars, syrups and molasses","Sugar, melado, &c. Spanish Possessions in Pacific Ocean",Dutch East Indies,DUTIABLE,,1,2041524,38399,2041524,38399,22456.76
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c. do do testing not over 88 degrees",Belgium,DUTIABLE,,1,220896,5504,110135,2150,1762.16
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c. do do testing not over 88 degrees",Brazil,DUTIABLE,,2,3027213,56791,1816114,33251,29058.81
 1887,C,"Sugars, syrups and molasses","Sugar, melado, &c. do do testing not over 88 degrees",British West Indies,DUTIABLE,,3,2231166,51879,2372693,55503,37963.07
@@ -30177,7 +30172,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,"Sugars, syrups and molasses","Sugar, not imported direct, above No. 14, D.S., in color, and refined sugar of all kinds, grades and standards",Great Britain,DUTIABLE,,3,27493,819,25925,766,706.45
 1887,C,"Sugars, syrups and molasses","Sugar, not imported direct, above No. 14, D.S., in color, and refined sugar of all kinds, grades and standards",St. Pierre,DUTIABLE,,1,928,69,928,69,40.92
 1887,C,"Sugars, syrups and molasses","Sugar, not imported direct, above No. 14, D.S., in color, and refined sugar of all kinds, grades and standards",United States,DUTIABLE,,4,73326,3348,52995,2192,1592.21
-1887,C,"Sugars, syrups and molasses","Sugar, not imported direct, not for refining purposes and not over No. 14 D. S., in color",?,DUTIABLE,,1,117800,3010,122400,3335,2405.83
+1887,C,"Sugars, syrups and molasses","Sugar, not imported direct, not for refining purposes and not over No. 14 D. S., in color",Spanish West Indies,DUTIABLE,,1,117800,3010,122400,3335,2405.83
 1887,C,"Sugars, syrups and molasses","Sugar, not imported direct, not for refining purposes and not over No. 14, D.S., in color",British West Indies,DUTIABLE,,4,296404,6890,380611,9504,7156.5
 1887,C,"Sugars, syrups and molasses","Sugar, not imported direct, not for refining purposes and not over No. 14, D.S., in color",Great Britain,DUTIABLE,,1,185771,4974,281007,8475,5754.01
 1887,C,"Sugars, syrups and molasses","Sugar, not imported direct, not for refining purposes and not over No. 14, D.S., in color",Spanish West Indies,DUTIABLE,,1,482702,10782,446518,9948,8008.29
@@ -30283,9 +30278,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,"Sugars, syrups, and molasses",?,British West Indies,DUTIABLE,,3,117769,3202,282401,8174,4800.81
 1887,C,"Sugars, syrups, and molasses",?,Dutch East Indies,DUTIABLE,,1,3750,59,3750,59,41.25
 1887,C,"Sugars, syrups, and molasses",?,Germany,DUTIABLE,,3,1633280,35503,943765,23756,16296.48
-1887,C,"Sugars, syrups, and molasses",?,"Sugar, melado, &c",DUTIABLE,,1,606728,16127,827045,20582,13508.4
 1887,C,"Sugars, syrups, and molasses",?,do do testing not over 71 degrees— Spanish possessions in Pacific Ocean,DUTIABLE,,1,2785,52,2785,52,28.77
 1887,C,"Sugars, syrups, and molasses",Span.W,Indies,DUTIABLE,,2,2108697,47431,1906304,44697,31142.65
+1887,C,"Sugars, syrups, and molasses","Sugar, melado, &c",Germany,DUTIABLE,,1,606728,16127,827045,20582,13508.4
 1887,C,"Sugars, syrups, and molasses","Sugar, melado, &c. do do testing not over 85 degrees",Brazil,DUTIABLE,,2,5599913,109119,1796889,34414,26953.3
 1887,C,"Sugars, syrups, and molasses","Sugar, melado, &c. do do testing not over 85 degrees",British Guiana,DUTIABLE,,1,0,0,61984,1486,929.76
 1887,C,"Sugars, syrups, and molasses","Sugar, melado, &c. do do testing not over 85 degrees",British West Indies,DUTIABLE,,2,182601,4398,225512,5398,3382.68
@@ -30479,23 +30474,13 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,,"$ cts Animals, all other, N.E.S",United States,DUTIABLE,,7,0,13129,0,12929,2588.7
 1889,C,,?,"Additional duties collected under Sec. 8, of 49 Vic., Cap. 32",DUTIABLE,,4,0,0,0,0,7952.63
 1889,C,,?,"Amount collected at the Port of Penetanguishene, for which no detailed statements have been received",DUTIABLE,,1,0,0,0,0,285.44
-1889,C,,?,Austria,DUTIABLE,,1,0,10,0,10,3.5
-1889,C,,?,Belgium,DUTIABLE,,1,0,26,0,26,9.1
-1889,C,,?,Brazil,DUTIABLE,,1,2072468,60563,1935840,54415,34199.79
-1889,C,,?,British Guiana,DUTIABLE,,2,522388,19350,645419,23501,11832.68
-1889,C,,?,China,DUTIABLE,,1,0,15,0,15,5.25
-1889,C,,?,France,DUTIABLE,,3,0,1237,0,991,346.0
+1889,C,,?,France,DUTIABLE,,1,0,4,0,8,1.95
 1889,C,,?,France,FREE,,2,3073,3558,3073,3558,0.0
-1889,C,,?,Germany,DUTIABLE,,5,7341755,243358,4466693,147164,81145.64
 1889,C,,?,Germany,FREE,,1,1297,1618,1297,1618,0.0
-1889,C,,?,Great Britain,DUTIABLE,,11,100,39423,100,39449,13767.4
+1889,C,,?,Great Britain,DUTIABLE,,5,100,471,100,479,127.9
 1889,C,,?,Holland,DUTIABLE,,1,0,6,0,3,0.75
-1889,C,,?,"Iron and steel and manufactures of :— Hardware, viz. :— Builders', cabinet makers', carriage harness makers' and saddlers' hardware and tinsmiths' tools",DUTIABLE,,1,0,15554,0,15554,5443.9
 1889,C,,?,Japan,DUTIABLE,,1,0,87,0,87,21.22
-1889,C,,?,Newfoundland,DUTIABLE,,1,0,20,0,20,7.0
-1889,C,,?,Spanish West Indies,DUTIABLE,,3,595544,17612,2541337,73394,44896.94
-1889,C,,?,"Sugars, syrups, and molasses:— Sugar, melado, &c.— do do not testing over 93 degrees",DUTIABLE,,1,1386446,45442,2961591,84998,52321.46
-1889,C,,?,United States,DUTIABLE,,23,14590,393318,14090,392437,135685.65
+1889,C,,?,United States,DUTIABLE,,15,14590,16011,14090,15153,3585.59
 1889,C,,?,United States,FREE,,5,54020,47915,54020,47915,0.0
 1889,C,,?,do at Maple Creek,DUTIABLE,,1,0,0,0,0,508.8
 1889,C,,All other lubricating oils,United States,DUTIABLE,,7,110591,41208,85172,36435,9111.27
@@ -31608,9 +31593,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,,clarified or refined,France,DUTIABLE,,1,28,40,28,40,2.8
 1889,C,,clarified or refined,Great Britain,DUTIABLE,,4,392,280,330,226,33.0
 1889,C,,clarified or refined,United States,DUTIABLE,,5,3813,2208,4011,2393,401.15
-1889,C,,do do not testing over 94 degrees,British Guiana,DUTIABLE,,2,182907,6244,182907,6244,3292.32
-1889,C,,do do not testing over 94 degrees,Germany,DUTIABLE,,3,16387901,486284,16904253,497850,304276.55
-1889,C,,do do not testing over 94 degrees,Spanish West Indies,DUTIABLE,,2,1399129,59945,2201680,73581,39630.24
 1889,C,,do manufactures of,Great Britain,DUTIABLE,,6,0,6756,0,7131,1786.5
 1889,C,,in brine,China,DUTIABLE,,1,1391,252,1391,252,347.75
 1889,C,,in brine,Great Britain,DUTIABLE,,2,47,25,47,25,11.75
@@ -31943,6 +31925,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,"Copper, and manufactures of",Old and scrap,United States,DUTIABLE,,4,48,586,48,586,58.6
 1889,C,"Copper, and manufactures of",Seamless drawn tubing,Great Britain,DUTIABLE,,4,22697,5590,22697,5590,559.0
 1889,C,"Copper, and manufactures of",Seamless drawn tubing,United States,DUTIABLE,,5,36331,11603,36331,11603,1160.3
+1889,C,"Copper, and manufactures of > Wire cloth",?,United States,DUTIABLE,,3,0,799,0,799,159.8
 1889,C,"Copper, and manufactures of > Wire cloth","All other manufactures of copper, N.E.S",Belgium,DUTIABLE,,2,0,7,0,7,2.1
 1889,C,"Copper, and manufactures of > Wire cloth","All other manufactures of copper, N.E.S",China,DUTIABLE,,1,0,1416,0,1596,478.3
 1889,C,"Copper, and manufactures of > Wire cloth","All other manufactures of copper, N.E.S",France,DUTIABLE,,3,0,86,0,86,6.3
@@ -31950,8 +31933,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,"Copper, and manufactures of > Wire cloth","All other manufactures of copper, N.E.S",Great Britain,DUTIABLE,,7,0,6303,0,6303,1889.92
 1889,C,"Copper, and manufactures of > Wire cloth","All other manufactures of copper, N.E.S",Japan,DUTIABLE,,1,0,54,0,54,16.2
 1889,C,"Copper, and manufactures of > Wire cloth","All other manufactures of copper, N.E.S",United States,DUTIABLE,,7,0,20715,0,20715,6214.95
-1889,C,"Copper, and manufactures of > Wire cloth",Great Britain,?,DUTIABLE,,1,0,222,0,222,44.4
-1889,C,"Copper, and manufactures of > Wire cloth",Great Britain,United States,DUTIABLE,,3,0,799,0,799,159.8
 1889,C,Cotton and manufactures of,"All other cotton thread, N.E.S",Great Britain,DUTIABLE,,3,9153,2806,9153,2806,561.2
 1889,C,Cotton and manufactures of,"All other cotton thread, N.E.S",United States,DUTIABLE,,2,8296,3120,8296,3120,620.25
 1889,C,Cotton and manufactures of,"Sewing cotton thread in hanks, black and bleached, 3 and 6 cord",Great Britain,DUTIABLE,,3,0,212513,0,212513,26564.27
@@ -32102,6 +32083,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,DUTTABLE GOODS,"Ale, beer and porter, in casks",United States,,,6,55099,13321,54775,14148,5477.5
 1889,C,DUTTABLE GOODS,"Ale, ginger",Great Britain,,,5,0,3854,0,4211,842.2
 1889,C,DUTTABLE GOODS,"Ale, ginger",United States,,,3,0,815,0,815,163.0
+1889,C,"Drugs, dyes, chemicals and medicines",?,United States,DUTIABLE,,6,1710,415,1590,401,95.43
 1889,C,"Drugs, dyes, chemicals and medicines","Acid, acetic",Belgium,DUTIABLE,,1,855,712,855,712,356.15
 1889,C,"Drugs, dyes, chemicals and medicines","Acid, acetic",France,DUTIABLE,,1,3273,4115,11440,11694,5198.8
 1889,C,"Drugs, dyes, chemicals and medicines","Acid, acetic",Germany,DUTIABLE,,3,15016,14318,10111,10188,4565.35
@@ -32319,8 +32301,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,"Drugs, dyes, chemicals and medicines",Terra-japonica,United States,FREE,,3,9526,611,9526,611,0.0
 1889,C,"Drugs, dyes, chemicals and medicines",Turmeric,Great Britain,FREE,,2,28426,858,28426,858,0.0
 1889,C,"Drugs, dyes, chemicals and medicines",Turmeric,United States,FREE,,2,7600,367,7600,367,0.0
-1889,C,"Drugs, dyes, chemicals and medicines","Vaseline, &c., in bottles or other packages, not over 1 lb. in weight each",?,DUTIABLE,,1,290,46,290,46,17.4
-1889,C,"Drugs, dyes, chemicals and medicines","Vaseline, &c., in bottles or other packages, not over 1 lb. in weight each",United States,DUTIABLE,,6,1710,415,1590,401,95.43
 1889,C,"Drugs, dyes, chemicals and medicines","Vasseline and all similar preparations of petroleum for toilet, medicinal or other purposes, in bulk",Great Britain,DUTIABLE,,3,2371,176,2371,176,94.84
 1889,C,"Drugs, dyes, chemicals and medicines","Vasseline and all similar preparations of petroleum for toilet, medicinal or other purposes, in bulk",United States,DUTIABLE,,6,72421,6252,70398,6588,2815.9
 1889,C,"Drugs, dyes, chemicals and medicines","Verdigris or subacetate of copper, dry",France,FREE,,1,99,15,99,15,0.0
@@ -32904,7 +32884,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,Gunpowder and other explosives,"Gun, rifle and pistol cartridges and carttridge cases",United States,DUTIABLE,,8,0,42854,0,42856,12856.45
 1889,C,Gunpowder and other explosives,"Gun, rifle and sporting powder, in kegs, half kegs or quarter kegs, &c",Great Britain,DUTIABLE,,4,11425,2921,9650,2283,482.51
 1889,C,Gunpowder and other explosives,"Gun, rifle and sporting powder, in kegs, half kegs or quarter kegs, &c",United States,DUTIABLE,,4,46247,8359,55247,10608,2762.35
-1889,C,"Gutta percha and India rubber, manufactures of",?,"Clothing, &c",DUTIABLE,,1,0,7,0,7,2.45
 1889,C,"Gutta percha and India rubber, manufactures of","All other manufactures of gutta percha, &c., N. E. S",Austria,DUTIABLE,,2,0,399,0,399,99.75
 1889,C,"Gutta percha and India rubber, manufactures of","All other manufactures of gutta percha, &c., N. E. S",Belgium,DUTIABLE,,1,0,7,0,7,1.75
 1889,C,"Gutta percha and India rubber, manufactures of","All other manufactures of gutta percha, &c., N. E. S",France,DUTIABLE,,3,0,8191,0,8104,2026.0
@@ -33164,6 +33143,14 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,"Iron and steel and manufactures of > Axle and springs of iron or steel, &c","Bar iron, rolled or hammered, comprising flats, rounds and squares, and bars and shapes of rolled iron, N.E.S",Sweden,DUTIABLE,,1,344,594,344,594,223.6
 1889,C,"Iron and steel and manufactures of > Axle and springs of iron or steel, &c","Bar iron, rolled or hammered, comprising flats, rounds and squares, and bars and shapes of rolled iron, N.E.S",United States,DUTIABLE,,6,10307,25866,10307,25866,6428.21
 1889,C,"Iron and steel and manufactures of > Axle and springs of iron or steel, &c","Boiler or other plate iron, sheared or unsheared, skelp iron, sheared or rolled in grooves, and sheet iron, common or black, not thinner than No. 20 gauge not elsewhere specified, including nail plate, of iron or steel, 16 gauge and thicker",Great Britain,DUTIABLE,,7,42382,60188,42382,60188,27548.39
+1889,C,Iron and steel and manufactures of > Hardware,?,Austria,DUTIABLE,,1,0,10,0,10,3.5
+1889,C,Iron and steel and manufactures of > Hardware,?,Belgium,DUTIABLE,,1,0,26,0,26,9.1
+1889,C,Iron and steel and manufactures of > Hardware,?,China,DUTIABLE,,1,0,15,0,15,5.25
+1889,C,Iron and steel and manufactures of > Hardware,?,France,DUTIABLE,,2,0,1233,0,983,344.05
+1889,C,Iron and steel and manufactures of > Hardware,?,Germany,DUTIABLE,,3,0,6113,0,6383,2234.05
+1889,C,Iron and steel and manufactures of > Hardware,?,Great Britain,DUTIABLE,,6,0,38952,0,38970,13639.5
+1889,C,Iron and steel and manufactures of > Hardware,?,Newfoundland,DUTIABLE,,1,0,20,0,20,7.0
+1889,C,Iron and steel and manufactures of > Hardware,?,United States,DUTIABLE,,8,0,377307,0,377284,132100.06
 1889,C,Iron and steel and manuffactures of,"Machines, typewriting",Great Britain,DUTIABLE,,1,1,6,1,6,1.8
 1889,C,Iron and steel and manuffactures of,"Machines, typewriting",United States,DUTIABLE,,6,540,25865,540,25865,7760.4
 1889,C,Iron and steel and manuffactures of,Parts of above machines and machinery,Great Britain,DUTIABLE,,1,0,168,0,168,58.8
@@ -34263,7 +34250,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,"Sugars, syrups, and molasses",Sugar candy and confectionery,Spain,DUTIABLE,,2,672,70,1344,129,53.55
 1889,C,"Sugars, syrups, and molasses",Sugar candy and confectionery,Switzerland,DUTIABLE,,1,12960,1096,15069,1279,636.01
 1889,C,"Sugars, syrups, and molasses",Sugar candy and confectionery,United States,DUTIABLE,,6,336739,59120,339585,59242,24986.73
-1889,C,"Sugars, syrups, and molasses","Sugar, melado, &c",?,DUTIABLE,,1,0,0,1639087,41160,30049.92
+1889,C,"Sugars, syrups, and molasses","Sugar, melado, &c",British Guiana,DUTIABLE,,1,0,0,1639087,41160,30049.92
 1889,C,"Sugars, syrups, and molasses","Sugar, melado, &c",British West Indies,DUTIABLE,,5,373305,11314,659888,18987,9867.17
 1889,C,"Sugars, syrups, and molasses","Sugar, melado, &c",Dutch East Indies,DUTIABLE,,4,1396330,36231,1628672,41643,25202.17
 1889,C,"Sugars, syrups, and molasses","Sugar, melado, &c",French West Indies,DUTIABLE,,2,47249,1548,47249,1548,687.39
@@ -34313,11 +34300,11 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,"Sugars, syrups, and molasses",do do not testing over 96 degrees,Germany,DUTIABLE,,1,152523,4651,152523,4651,2847.1
 1889,C,"Sugars, syrups, and molasses",do do not testing over 96 degrees,Spanish West Indies,DUTIABLE,,3,8956995,301154,16102178,513036,300573.97
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,B. Africa,DUTIABLE,,1,663272,14128,663272,14128,9949.08
-1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,Brazil,DUTIABLE,,4,5867436,146001,5362376,133140,82611.37
-1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,British Guiana,DUTIABLE,,3,140341,4555,16485,376,247.27
+1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,Brazil,DUTIABLE,,5,7939904,206564,7298216,187555,116811.16
+1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,British Guiana,DUTIABLE,,5,662729,23905,661904,23877,12079.95
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,British West Indies,DUTIABLE,,2,722425,18760,722425,18760,12522.02
-1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,Germany,DUTIABLE,,5,3409537,100856,3923354,114000,69796.3
-1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,Spanish West Indies,DUTIABLE,,4,2353553,74145,2383265,71978,43101.3
+1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,Germany,DUTIABLE,,7,10751292,338101,8390047,254781,148707.89
+1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,Spanish West Indies,DUTIABLE,,7,2949097,91757,4924602,145372,87998.24
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,Spanish possessions in Pacific Ocean,DUTIABLE,,1,1546295,28503,0,0,0.0
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",?,United States,DUTIABLE,,5,2762656,111151,0,0,0.0
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",do do not testing over 80 degrees,Spanish possessions in Pacific Ocean,DUTIABLE,,1,182429,3363,0,0,0.0
@@ -34332,6 +34319,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",do do not testing over 91 degrees,Spanish West Indies,DUTIABLE,,3,2506899,71315,3052499,79067,51892.48
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",do do not testing over 93 degrees,Germany,DUTIABLE,,1,139898,4036,139898,4036,2656.89
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",do do not testing over 93 degrees,United States,DUTIABLE,,1,1169451,48382,89860,2807,1706.59
+1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",do do not testing over 94 degrees,British Guiana,DUTIABLE,,2,182907,6244,182907,6244,3292.32
+1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",do do not testing over 94 degrees,Germany,DUTIABLE,,3,16387901,486284,16904253,497850,304276.55
+1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",do do not testing over 94 degrees,Spanish West Indies,DUTIABLE,,2,1399129,59945,2201680,73581,39630.24
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",do do not testing over 95 degrees,United States,DUTIABLE,,1,219768,9092,0,0,0.0
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",do do not testing over 98 degrees,Spanish West Indies,DUTIABLE,,1,26681,843,26681,843,515.83
 1889,C,"Sugars, syrups, and molasses > Sugar, melado, &c",not testing over 84 degrees,Brazil,DUTIABLE,,3,8482812,195801,7362315,170729,107981.62

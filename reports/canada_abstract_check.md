@@ -7,9 +7,9 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 | 1880 | 132 | 111 | 24 | 30 | 19 | 71,782,311 | 70,580,251 | 0.983 | 80,055 |
 | 1882 | 147 | 135 | 78 | 61 | 71 | 112,648,927 | 110,234,711 | 0.979 | 246,741 |
 | 1883 | 146 | 130 | 70 | 53 | 60 | 122,960,711 | 118,989,128 | 0.968 | 203,815 |
-| 1884 | 152 | 144 | 80 | 67 | 75 | 108,180,644 | 105,600,220 | 0.976 | 51,102 |
+| 1884 | 152 | 144 | 80 | 66 | 75 | 108,180,644 | 105,600,247 | 0.976 | 51,102 |
 | 1885 | 152 | 144 | 85 | 63 | 80 | 102,721,019 | 101,060,803 | 0.984 | 10,351 |
-| 1887 | 158 | 151 | 75 | 68 | 70 | 105,639,428 | 104,963,979 | 0.994 | 16,678 |
+| 1887 | 158 | 151 | 74 | 68 | 68 | 105,639,428 | 105,159,130 | 0.995 | 16,678 |
 | 1889 | 169 | 157 | 74 | 77 | 74 | 109,673,447 | 108,862,774 | 0.993 | 79,696 |
 
 ## Largest discrepancies (|parsed − abstract| efc total)
@@ -50,7 +50,7 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 | 1880 | great britain | Ontario | 10,804,984 | 10,955,882 | 9,956,028 | 10097555 | 848,956 | 858327 |
 | 1884 | united states | Ontario | 23,738,260 | 23,888,927 | 17,863,418 | 18014093 | 5,874,842 | 5874835 |
 | 1880 | british africa | Quebec | 1,338 | 136,596 | 1,338 | 1338 | 0 | 135258 |
-| 1887 | germany | Quebec | 1,919,910 | 2,047,913 | 1,752,504 | 1879798 | 167,406 | 168115 |
+| 1887 | british guiana | Quebec | 132,572 | 2,768 | 132,572 |  | 0 |  |
 | 1889 | france | Ontario | 508,397 | 634,326 | 427,136 | 424987 | 81,261 | 209339 |
 | 1884 | united states | New Brunswick | 2,985,208 | 3,098,292 | 1,936,854 | 2049774 | 1,048,354 | 1048518 |
 | 1885 | united states | New Brunswick | 2,910,538 | 2,799,440 | 1,870,395 | 1821443 | 1,040,143 | 977997 |
@@ -59,19 +59,17 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 
 ## Parsed (country, year) with no abstract counterpart (name mismatch or abstract parse gap), by value
 
-- 1882 '': 2,179,163
+- 1882 '': 2,135,290
 - 1880 '': 2,040,835
-- 1889 '': 1,274,564
-- 1887 '': 1,093,395
+- 1889 '': 1,233,136
+- 1887 '': 1,055,957
 - 1883 '': 898,774
 - 1884 '': 898,075
-- 1885 '': 779,037
+- 1885 '': 776,556
 - 1882 'british w indies': 421,444
 - 1882 'africa': 204,867
 - 1883 'united states': 193,617
-- 1887 'sugar melado c': 150,386
 - 1883 'spanish possessions in pacific ocean': 136,247
-- 1889 'sugars syrups and molasses sugar melado c do do not testing over degrees': 84,998
 - 1885 'quebec': 71,534
 - 1883 'arms clothing musical instruments for bands military stores and munitions of war': 66,914
 - 1887 'great britain': 66,133
@@ -81,6 +79,8 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 - 1889 'british west indies': 48,450
 - 1884 'oranges and lemons': 47,429
 - 1887 'indies': 44,697
+- 1889 'british guiana': 41,160
 - 1889 'sp west indies': 40,679
 - 1883 'norway sweden': 40,640
 - 1885 'all other hats caps and bonnets nes': 40,248
+- 1882 'army navy and the': 38,670
