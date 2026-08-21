@@ -916,7 +916,7 @@ class Parser:
         rows = self.rows[n_start:]
         if not rows or rows[0].get('regime') != 'C': return
         rank = {p: i for i, p in enumerate(PROVINCE_ORDER)}
-        cands = []
+        cands = []; dupcands = []
         i = 0
         while i < len(rows):
             r = rows[i]
@@ -959,7 +959,32 @@ class Parser:
                     if rr == sorted(rr) and len(set(rr)) == len(rr):
                         cands.append((r['block_id'], r['country'], grp[a], grp[a + 1]))
                         break
+                else:
+                    # one label DUPLICATED ('Ontario, Quebec, N.S., N.B., Ontario, B.C., ...' on the 1883 cassimeres
+                    # Total block; 'Quebec, Quebec, N.S., ...' on 1880 steel rails): the copy that breaks the order is
+                    # a misread of the one province that fits its slot
+                    dups = [v for v in set(rk) if rk.count(v) == 2]
+                    if len(dups) == 1 and len(rk) - 1 == len(set(rk)):
+                        pos = [q for q, v in enumerate(rk) if v == dups[0]]
+                        for bad in pos:
+                            rest = rk[:bad] + rk[bad + 1:]
+                            if rest != sorted(rest): continue
+                            lo = rk[bad - 1] if bad > 0 else -1
+                            hi = rk[bad + 1] if bad + 1 < len(rk) else len(PROVINCE_ORDER)
+                            gap = [v for v in range(lo + 1, hi) if v not in rk]
+                            if len(gap) == 1:
+                                dupcands.append((r['block_id'], r['country'], grp[bad], PROVINCE_ORDER[gap[0]]))
+                                break
             i = j
+        for blk_id, country, x, newp in dupcands:
+            verdict = self._relabel_verdict(rows, blk_id, country, x, newp)
+            if verdict is True:
+                x['province'] = newp
+                x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'province_dup_relabelled'
+                self.diag['province_dup_relabelled'] += 1
+            else:
+                x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'province_dup_unarbitrated'
+                self.diag['province_dup_unarbitrated'] += 1
         # the OCR may have swapped the two LABELS (values in printed order: 1887 cigars, abstract-proven) or the two
         # whole ROWS (1883 salt, also abstract-proven) — arbitrate by the article's Total block: details per province
         # must sum to the printed province totals. Total-block candidates first (judged by the details of the
@@ -976,6 +1001,33 @@ class Parser:
                 for x in (x1, x2):
                     x['flags'] = (x['flags'] + ',' if x['flags'] else '') + ('province_rows_swapped' if verdict is False else 'province_order_unarbitrated')
                 self.diag['province_rows_swapped' if verdict is False else 'province_order_unarbitrated'] += 1
+
+    def _relabel_verdict(self, rows, block_id, country, x, newp):
+        """x carries a duplicated province label; True when relabelling it newp closes the article's Total block
+        better than leaving two rows under the old label."""
+        blk = [b for b in rows if b['block_id'] == block_id]
+        oldp = x['province']
+        def val(b, c): return b[c] if b[c] is not None else 0.0
+        COLS = ('val_imp', 'val_efc')
+        if country == 'TOTAL':
+            S = {P: {c: sum(val(b, c) for b in blk if b['row_kind'] == 'detail' and b['province'] == P) for c in COLS} for P in (oldp, newp)}
+            if not any(b['row_kind'] == 'detail' and b['province'] in (oldp, newp) for b in blk): return None
+            same = [b for b in blk if b['row_kind'] == 'article_province_total' and b['province'] == oldp and b is not x]
+            keep = sum(abs(S[oldp][c] - sum(val(b, c) for b in same) - val(x, c)) + abs(S[newp][c]) for c in COLS)
+            rel = sum(abs(S[oldp][c] - sum(val(b, c) for b in same)) + abs(S[newp][c] - val(x, c)) for c in COLS)
+        else:
+            T = {P: [b for b in blk if b['row_kind'] == 'article_province_total' and b['province'] == P] for P in (oldp, newp)}
+            if not (T[oldp] or T[newp]): return None
+            other = {P: {c: sum(val(b, c) for b in blk if b['row_kind'] == 'detail' and b['province'] == P and (b['country'] != country or b is not x) and b is not x) for c in COLS} for P in (oldp, newp)}
+            def resid(lab):
+                tot = 0.0
+                for P in (oldp, newp):
+                    if T[P]:
+                        for c in COLS: tot += abs(val(T[P][0], c) - other[P][c] - (val(x, c) if lab == P else 0.0))
+                return tot
+            keep = resid(oldp); rel = resid(newp)
+        if rel < keep * 0.5: return True
+        return False
 
     def _swap_verdict(self, rows, block_id, country, x1, x2, cand_ids=()):
         """True = swap the labels (closes better), False = keep (rows were swapped whole), None = no arbiter."""
