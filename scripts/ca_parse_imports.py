@@ -122,9 +122,9 @@ def wrapped_suffix(a, b):
     ta = re.findall(r'[A-Za-z]+', a or ''); tb = re.findall(r'[A-Za-z]+', b or '')
     if not ta or not tb: return False
     for x, y in ((ta, tb), (tb, ta)):
-        if len(x) == 1 and len(x[0]) >= 3 and x[0][0].islower() and len(y) >= 2 and (
-                (y[-1].lower().endswith(x[0].lower()) and len(y[-1]) > len(x[0])) or
-                (len(x[0]) >= 5 and x[0].lower() in [t.lower() for t in y])):     # 'diameter' = the tail of a wrapped heading
+        if len(x) == 1 and len(x[0]) >= 3 and x[0][0].islower() and (
+                (y[-1].lower().endswith(x[0].lower()) and len(y[-1]) > len(x[0])) or                  # 'ages' / 'Packages'
+                (len(y) >= 2 and len(x[0]) >= 5 and x[0].lower() in [t.lower() for t in y])):       # 'diameter' = the tail of a wrapped heading
             return True
     return False
 
@@ -1225,7 +1225,9 @@ class Parser:
                     # any one column closes (values may be blank on quantity-and-duty lines: the duty then witnesses)
                     for col in ('val_imp', 'val_efc', 'duty'):
                         dsum = sum((r[col] or 0) for r in run); xs = sum((r[col] or 0) for r in extras); vT = T[col] or 0
-                        if vT > 0 and all(r[col] is not None for r in run) and abs(dsum + xs - vT) <= max(1, 0.001 * vT) and abs(dsum - vT) > 1:
+                        dv = abs(dsum + xs - vT)
+                        digit_slip = dv in (10, 100, 1000, 10000) and vT >= 20 * dv      # one OCR digit off in one cell
+                        if vT > 0 and all(r[col] is not None for r in run) and (dv <= max(1, 0.001 * vT) or digit_slip) and abs(dsum - vT) > 1:
                             k = kk; break
                     if k: break
             if k >= 1:
@@ -1289,6 +1291,42 @@ class Parser:
                     x['province'] = pv
                     x['flags'] = re.sub(r'(label_slip|trailing_label_lost)\d?', alt + '_by_totals', x['flags'] or '')
                 self.diag['slip_hypothesis_flipped'] += 1
+        # (b2) a Total-by-province block whose labels are shifted up by one with NO unlabelled row left to trigger the
+        #      slip test ('Quebec 375,531' = the block's Ontario details exactly): decide identity vs shift by how
+        #      many provinces the two readings reconcile with the block's detail sums
+        i = 0; n = len(rows)
+        while i < n:
+            r0 = rows[i]
+            if r0['row_kind'] == 'article_province_total' and r0['province'] in PROVINCE_ORDER and r0['province'] != 'Ontario' \
+                    and not (i > 0 and rows[i - 1]['row_kind'] == 'article_province_total' and rows[i - 1]['block_id'] == r0['block_id']):
+                j = i
+                while j < n and rows[j]['row_kind'] == 'article_province_total' and rows[j]['block_id'] == r0['block_id'] and rows[j]['province']: j += 1
+                run = rows[i:j]; provs = [x['province'] for x in run]
+                inorder = all(p in PROVINCE_ORDER for p in provs) and [PROVINCE_ORDER.index(p) for p in provs] == sorted(PROVINCE_ORDER.index(p) for p in provs) and len(set(provs)) == len(provs)
+                if inorder and len(run) >= 2:
+                    b0 = i
+                    while b0 > 0 and rows[b0 - 1]['block_id'] == r0['block_id']: b0 -= 1
+                    dets = [x for x in rows[b0:i] if x['row_kind'] == 'detail' and x['province']]
+                    if dets and any(x['province'] == 'Ontario' for x in dets):
+                        col = 'val_imp' if all(x['val_imp'] is not None for x in run) else 'val_efc'
+                        acc = defaultdict(float)
+                        for x in dets:
+                            if x[col] is not None: acc[x['province']] += x[col]
+                        def score(labels):
+                            m = 0
+                            for x, pv in zip(run, labels):
+                                if x[col] is None or pv not in acc: continue
+                                if abs(acc[pv] - x[col]) <= max(1, 0.001 * max(acc[pv], x[col])): m += 1
+                            return m
+                        shifted = [PROVINCE_ORDER[PROVINCE_ORDER.index(p) - 1] for p in provs]
+                        s_id, s_sh = score(provs), score(shifted)
+                        if s_sh >= 2 and s_sh > s_id:
+                            for x, pv in zip(run, shifted):
+                                x['province'] = pv; x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'total_labels_shifted'
+                            self.diag['total_block_labels_shifted'] += 1
+                i = j
+            else:
+                i += 1
         # (d) heading fused into a continuing Total-by-province row: 'Article— Great Britain | Manitoba | ...' where
         #     Manitoba continues the PREVIOUS article's Total block.  The rows up to the next blank-label total are
         #     that Total (their sum proves it); the new article's first country starts after it, label lost ('?').

@@ -11255,13 +11255,12 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,Woolllens,Unenumerated Articles,United States,DUTIABLE,,1,0,3994,0,2554,447.57
 1877,B,"of Lead, &c., Shot, Piping",?,Great Britain,DUTIABLE,,1,0,3484,0,3484,609.73
 1877,B,"of Lead, &c., Shot, Piping",?,United States,DUTIABLE,,1,0,675,0,675,118.12
-1880,C,,?,?,FREE,,3,0,1273,0,1273,0.0
 1880,C,,?,"Add—For special deposits, amended entries, balances due from former collectors, and other amounts not included in detailed stat-ment",DUTIABLE,,5,0,3973,0,3973,11806.48
 1880,C,,?,Less—Duties returned on supplies for Mounted Police,DUTIABLE,,1,0,0,0,0,11806.48
 1880,C,,?,Maritoba,DUTIABLE,Galls,3,1707,2046,1427,1828,385.73
 1880,C,,?,P. E. I. land,DUTIABLE,,1,1110,151,1110,151,50.35
 1880,C,,?,United States,DUTIABLE,Lbs,2,2883,241,2883,241,24.1
-1880,C,,?,United States,FREE,,6,45,2325,45,2325,0.0
+1880,C,,?,United States,FREE,,9,45,3598,45,3598,0.0
 1880,C,,"Ale, Beer and Porter, in bottles",Germany,DUTIABLE,Galls,1,296,156,296,156,53.28
 1880,C,,"Ale, Beer and Porter, in bottles",Great Britain,DUTIABLE,Galls,7,91433,73228,96906,77338,17441.1
 1880,C,,"Ale, Beer and Porter, in bottles",United States,DUTIABLE,Galls,8,1385,1655,1145,1149,206.5
@@ -12277,7 +12276,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1880,C,,"Tobacco, all other manufactures of",St. Pierre,DUTIABLE,Lbs,2,478,106,480,106,133.0
 1880,C,,"Tobacco, unmanufactured, for Excise purposes",Germany,FREE,Lbs,1,533,78,0,0,0.0
 1880,C,,"Tobacco, unmanufactured, for Excise purposes",Spanish W. Ind,FREE,Lbs,2,19398,8729,3207,775,0.0
-1880,C,,"Tobacco, unmanufactured, for Excise purposes",United States,FREE,Lbs,6,2226649,795919,9260850,791900,0.0
+1880,C,,"Tobacco, unmanufactured, for Excise purposes",United States,FREE,Lbs,7,2425106,805629,9522703,805321,0.0
 1880,C,,Tortoise and other Shells,British West Indies,FREE,,1,0,1,0,1,0.0
 1880,C,,Tortoise and other Shells,Great Britain,FREE,,1,0,59,0,59,0.0
 1880,C,,Tortoise and other Shells,United States,FREE,,3,0,1183,0,1183,0.0
@@ -24063,13 +24062,23 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1885,C,,"Oysters, shelled, in bulk",United States,FREE,Galls,5,252774,199421,252774,199421,0.0
 1885,C,,Packages,Austria,DUTIABLE,,2,0,1385,0,5222,1044.4
 1885,C,,Packages,Belgium,DUTIABLE,,3,0,239,0,2473,494.6
+1885,C,,Packages,British East Indies,DUTIABLE,,2,0,125,0,125,25.0
+1885,C,,Packages,British Guiana,DUTIABLE,,4,0,4161,0,2954,590.8
+1885,C,,Packages,British West Indies,DUTIABLE,,6,0,555,0,1130,226.0
+1885,C,,Packages,China,DUTIABLE,,1,0,6,0,6,1.2
+1885,C,,Packages,Danish West Indies,DUTIABLE,,1,0,0,0,4,0.8
 1885,C,,Packages,Denmark,DUTIABLE,,1,0,2,0,100,20.0
+1885,C,,Packages,Dutch W. Indies,DUTIABLE,,1,0,76,0,79,15.8
 1885,C,,Packages,France,DUTIABLE,,7,0,33212,0,43670,8734.0
 1885,C,,Packages,Germany,DUTIABLE,,6,0,24824,0,12011,2402.2
 1885,C,,Packages,Great Britain,DUTIABLE,,7,0,104140,0,107706,21541.2
 1885,C,,Packages,Holland,DUTIABLE,,6,0,60549,0,64687,12937.4
+1885,C,,Packages,Italy,DUTIABLE,,3,0,79,0,84,16.8
+1885,C,,Packages,Newfoundland,DUTIABLE,,1,0,1,0,13,2.6
 1885,C,,Packages,Portugal,DUTIABLE,,1,0,12,0,12,2.4
 1885,C,,Packages,Spain,DUTIABLE,,1,0,13,0,21,4.2
+1885,C,,Packages,Spanish West Indies,DUTIABLE,,2,0,315,0,12,2.4
+1885,C,,Packages,St. Pierre,DUTIABLE,,2,0,41,0,35,7.0
 1885,C,,Packages,United States,DUTIABLE,,8,0,319662,0,295350,59181.16
 1885,C,,"Packages, not otherwise provided for",United States,FREE,,3,0,11903,0,11903,0.0
 1885,C,,"Paintings in oil or water colors, by artists of well-known merit, or copies of the old masters by such artists",France,FREE,,2,0,17155,0,17155,0.0
@@ -24428,16 +24437,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1885,C,,"Zinc, manufactures of, N.E.S",Germany,DUTIABLE,,1,0,87,0,87,21.75
 1885,C,,"Zinc, manufactures of, N.E.S",Great Britain,DUTIABLE,,4,0,704,0,684,171.0
 1885,C,,"Zinc, manufactures of, N.E.S",United States,DUTIABLE,,7,0,8417,0,8434,2108.5
-1885,C,,ages,British East Indies,DUTIABLE,,2,0,125,0,125,25.0
-1885,C,,ages,British Guiana,DUTIABLE,,4,0,4161,0,2954,590.8
-1885,C,,ages,British West Indies,DUTIABLE,,6,0,555,0,1130,226.0
-1885,C,,ages,China,DUTIABLE,,1,0,6,0,6,1.2
-1885,C,,ages,Danish West Indies,DUTIABLE,,1,0,0,0,4,0.8
-1885,C,,ages,Dutch W. Indies,DUTIABLE,,1,0,76,0,79,15.8
-1885,C,,ages,Italy,DUTIABLE,,3,0,79,0,84,16.8
-1885,C,,ages,Newfoundland,DUTIABLE,,1,0,1,0,13,2.6
-1885,C,,ages,Spanish West Indies,DUTIABLE,,2,0,315,0,12,2.4
-1885,C,,ages,St. Pierre,DUTIABLE,,2,0,41,0,35,7.0
 1885,C,$ $ cts,"Fur caps, hats, muffs, &c, and other manufactures of fur",France,DUTIABLE,,2,0,271,0,271,67.75
 1885,C,$ $ cts,"Fur caps, hats, muffs, &c, and other manufactures of fur",Germany,DUTIABLE,,2,0,14244,0,14244,3561.0
 1885,C,$ $ cts,"Fur caps, hats, muffs, &c, and other manufactures of fur",Great Britain,DUTIABLE,,7,0,133195,0,134238,19528.35
@@ -28712,7 +28711,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,"Fruit, dried","All other nuts, N. E. S",United States,DUTIABLE,,7,1165073,56787,1080321,54048,32411.96
 1887,C,"Fruit, dried",Apples,United States,DUTIABLE,,6,40795,10318,34356,9928,2621.08
 1887,C,"Fruit, dried",Currants,France,DUTIABLE,,2,13537,2335,13537,567,157.5
-1887,C,"Fruit, dried",Currants,Great Britain,DUTIABLE,,7,1184916,47242,1145836,47484,11736.72
+1887,C,"Fruit, dried",Currants,Great Britain,DUTIABLE,,8,1212752,47242,1173672,47484,11736.72
 1887,C,"Fruit, dried",Currants,United States,DUTIABLE,,7,362508,16016,336895,14965,3384.69
 1887,C,"Fruit, dried",Filberts and walnuts,France,DUTIABLE,,4,308790,18802,309538,18240,9286.15
 1887,C,"Fruit, dried",Filberts and walnuts,Italy,DUTIABLE,,2,34187,1719,31960,1725,958.8
