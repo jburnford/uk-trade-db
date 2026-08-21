@@ -49,7 +49,7 @@ def norm_label(s):
 
 
 _PROV_FUZZY = [
-    (re.compile(r'^[a-z]{1,2}island$|^[a-z]{1,2}[a-z]?isla.?d+$|^p[a-z]{0,3}island+$'), 'P. E. Island'),   # 'P. R. Island', 'P. & Island', 'P. E. Isla. d', 'P. E. Islanddd'
+    (re.compile(r'^[a-z]{1,2}island$|^[a-z]{1,2}[a-z]?isla.?d+$|^p[a-z]{0,3}island+$|^p?e?edward$|^princeedward[a-z]*$'), 'P. E. Island'),   # 'P. R. Island', 'P. & Island', 'P. E. Isla. d', 'P. E. Islanddd'
     (re.compile(r'^n?w?territo[a-z]*$|^northwestterrit[a-z]*$'), 'N. W. Territories'),                     # 'N. W. Territoires', 'N.-W. Territo ies'
     (re.compile(r'^[a-z]{1,5}scotia$'), 'Nova Scotia'),                                                    # 'New Scotia', 'N. Scotia'
     (re.compile(r'^[a-z]{1,4}brunswick$'), 'New Brunswick'),                                               # 'Few Brunswick'
@@ -89,7 +89,7 @@ SEED_COUNTRIES = ['Great Britain', 'United States', 'France', 'Germany', 'Belgiu
     'Hayti', 'Cuba', 'Venezuela', 'Argentine Republic', 'New Zealand', 'South Africa', 'British Africa', 'Gibraltar',
     'Malta', 'Madeira', 'Azores', 'Canary Islands', 'Cent. America', 'Central America', 'Sand. Islands',
     'Sandwich Islands', 'Society Islands', 'St. Pierre', 'B. W. Indies', 'S. W. Indies', 'F. W. Indies', 'D. W. Indies',
-    'Dan. W. Indies', 'B. E. Indies', 'D. E. Indies', 'Dutch E. Indies', 'Brit. W. Indies', 'British Guiana',
+    'Dan. W. Indies', 'B. E. Indies', 'D. E. Indies', 'Dutch E. Indies', 'Brit. W. Indies', 'Brit. East Indies', 'Brit. E. Indies', 'Brit. Guiana', 'British Guiana',
     'Dutch Guiana', 'British West Indies', 'Spanish West Indies', 'French West Indies', 'Danish West Indies',
     'British East Indies', 'Dutch East Indies', 'Bermuda', 'British Columbia', 'Norway and Sweden', 'Total']
 
@@ -363,6 +363,13 @@ class Parser:
                 keep = [i for i, t in enumerate(texts) if not (is_unit_token(t) and i >= 2)]
                 if len(keep) >= NV + 2 and len(keep) < len(texts):
                     texts = [texts[i] for i in keep]; self.diag['stray_unit_cells_dropped'] += 1
+            if len(texts) == NV and (province_of(texts[0]) or not texts[0].strip() or re.fullmatch(r'[.\s·…]+', texts[0])) \
+                    and sum(1 for t in texts[1:] if parse_num(t, cents_ok=False)[0] is not None) == 4 \
+                    and not re.search(r'\d \d\d$', texts[-1].strip()) and ctx.get('section') == 'FREE':
+                # free-goods row whose trailing (blank) duty cell the OCR dropped: 'Quebec | 1,219,955 | 257,639 |
+                # 1,219,955 | 257,639' is label + qty + value + qty + value, not five values
+                texts = texts + ['']
+                self.diag['duty_cell_dropped'] += 1
             vals_raw = texts[-NV:]
             labels = texts[:-NV]
             # banner in label position with blank values
@@ -1170,9 +1177,10 @@ class Parser:
                         sv = sum((x[col] or 0) for x in tot_rows) + sum((x[col] or 0) for x in run)
                         if abs(sv - tv) <= max(1, 0.001 * tv): ok = True; break
                     nxt = rows[j + 1] if j + 1 < n else None
-                    if ok and nxt is not None and nxt['row_kind'] in ('detail', 'detail_lostlabel') \
-                            and nxt['country'] in ('?', None, '') and nxt['province'] == 'Ontario':
-                        cty = r['country']
+                    cty = r['country']
+                    is_heading = len(cty) > 22 and cty not in self.vocab and norm_label(cty) not in self.vocab and not split_trailing_country(cty, self.vocab)[1]
+                    relabel = nxt is not None and nxt['row_kind'] in ('detail', 'detail_lostlabel') and nxt['country'] in ('?', None, '') and nxt['province'] == 'Ontario'
+                    if ok and nxt is not None and (relabel or is_heading or (nxt['row_kind'] == 'detail' and nxt['country'] not in (None, '', '?', 'TOTAL'))):
                         prev_art = tot_rows[0]['article'] if tot_rows else r['article']
                         prev_par = tot_rows[0]['article_parent'] if tot_rows else r['article_parent']
                         prev_blk = tot_rows[0]['block_id'] if tot_rows else r['block_id']
@@ -1182,13 +1190,20 @@ class Parser:
                             x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'heading_fused_into_total'
                         T['row_kind'] = 'article_total'; T['country'] = None
                         T['article'] = prev_art; T['article_parent'] = prev_par; T['block_id'] = prev_blk
-                        # the lost-label rows that follow are the fused label's country
                         q = j + 1
-                        while q < n and rows[q]['row_kind'] in ('detail', 'detail_lostlabel', 'country_total') \
-                                and rows[q]['country'] in ('?', None, ''):
-                            rows[q]['country'] = cty; rows[q]['country_inferred'] = 1
-                            if rows[q]['row_kind'] == 'detail_lostlabel': rows[q]['row_kind'] = 'detail'
-                            q += 1
+                        if relabel and not is_heading:
+                            # the lost-label rows that follow are the fused label's country
+                            while q < n and rows[q]['row_kind'] in ('detail', 'detail_lostlabel', 'country_total') \
+                                    and rows[q]['country'] in ('?', None, ''):
+                                rows[q]['country'] = cty; rows[q]['country_inferred'] = 1
+                                if rows[q]['row_kind'] == 'detail_lostlabel': rows[q]['row_kind'] = 'detail'
+                                q += 1
+                        elif is_heading:
+                            # the fused label is the NEXT article's heading: name the '?' block that follows
+                            head = re.sub(r'\s*[—–-]\s*$', '', norm_label(cty)).strip()
+                            while q < n and rows[q]['article'] == '?' and rows[q]['block_id'] == nxt['block_id']:
+                                rows[q]['article'] = head; rows[q]['flags'] = (rows[q]['flags'] + ',' if rows[q]['flags'] else '') + 'heading_from_fused_total'
+                                q += 1
                         self.diag['heading_fused_into_total'] += 1
                         i = q; continue
             i += 1
@@ -1493,6 +1508,33 @@ class Parser:
                 else:
                     k += 1
             i = j
+        # (h) a 'country_total' right after a SINGLE detail row of its country whose value differs from that row:
+        #     single-row countries carry no printed subtotal, so the row is the article's grand total with its
+        #     'Total' label lost (China 7,246 then 614,444 = all of Furskins 1887) when the block's runs sum to it
+        i = 0; n = len(rows)
+        while i < n:
+            r = rows[i]
+            if r['row_kind'] == 'country_total' and i > 0 and rows[i - 1]['row_kind'] == 'detail' \
+                    and rows[i - 1]['country'] == r['country'] and rows[i - 1]['block_id'] == r['block_id'] \
+                    and not (i > 1 and rows[i - 2]['row_kind'] == 'detail' and rows[i - 2]['country'] == r['country'] and rows[i - 2]['block_id'] == r['block_id']):
+                d0 = rows[i - 1]
+                differs = any(r[c] is not None and d0[c] is not None and abs(r[c] - d0[c]) > max(1, 0.001 * r[c]) for c in ('val_imp', 'val_efc'))
+                if differs:
+                    p = i - 1
+                    while p >= 0 and rows[p]['block_id'] == r['block_id'] and rows[p]['row_kind'] not in ('article_total', 'article_total_fused'): p -= 1
+                    blk = rows[p + 1:i]
+                    ok = False
+                    for col in ('val_imp', 'val_efc'):
+                        tv = r[col]
+                        if tv is None or tv <= 0: continue
+                        has_t = set(x['country'] for x in blk if x['row_kind'] == 'country_total')
+                        sv = sum((x[col] or 0) for x in blk if x['row_kind'] == 'country_total' or (x['row_kind'] in ('detail', 'country_noprov') and x['country'] not in has_t))
+                        if abs(sv - tv) <= max(1, 0.001 * tv): ok = True; break
+                    if ok:
+                        r['row_kind'] = 'article_total'; r['country'] = None
+                        r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'grand_total_after_single_row'
+                        self.diag['grand_total_after_single_row'] += 1
+            i += 1
         # (g) adjacent blocks carrying the same article (a page-top running head that the same-leaf test did not
         #     recognise) merge when the first has no printed grand total: one article, one block
         def _ak(x):
