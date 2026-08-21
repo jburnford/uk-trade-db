@@ -884,7 +884,7 @@ class Parser:
         if leaf is not None:
             import difflib
             def _nk(x):
-                x = re.sub(r'(&c|\betc\b)\.?', '', x.lower()); return re.sub(r'\W', '', x)
+                x = re.sub(r'(&c|\betc\b|\bn\.?\s*e\.?\s*s\b|\bn\.?\s*o\.?\s*p\b)\.?', '', x.lower()); return re.sub(r'\W', '', x)
             a, b = _nk(leaf), _nk(old_leaf or '')
             # a page-top repeat is only possible while the article is still OPEN (its Total not yet printed), and
             # sibling leaves that differ in their numbers ('over 89 degrees' / 'over 90 degrees') are never the same
