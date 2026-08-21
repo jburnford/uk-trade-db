@@ -15722,9 +15722,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,,"All other Drugs, Dyes and Chemicals, &c., not otherwise provided for",Switzerland,DUTIABLE,,1,0,16,0,16,3.2
 1882,C,,All other and Dust,Belgium,DUTIABLE,,1,1,4,1,4,0.5
 1882,C,,All other and Dust,United States,DUTIABLE,,1,3001,3909,470,896,231.85
-1882,C,,All other fruit trees,France,DUTIABLE,Galls,1,8,11,8,11,2.2
-1882,C,,All other fruit trees,Great Britain,DUTIABLE,Galls,1,27,22,27,22,4.4
-1882,C,,All other fruit trees,United States,DUTIABLE,Galls,8,308972,166601,309055,166658,33331.5
 1882,C,,"All other manufactures of Copper, N.E.S",China,DUTIABLE,,1,0,617,0,538,161.4
 1882,C,,"All other manufactures of Gutta Percha and India Rubber, N. E. S",France,DUTIABLE,,3,0,8773,0,8634,2158.35
 1882,C,,"All other manufactures of Gutta Percha and India Rubber, N. E. S",Germany,DUTIABLE,,2,0,9384,0,8097,2025.25
@@ -16579,6 +16576,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,,Turmeric,United States,FREE,,3,2597,155,2597,155,0.0
 1882,C,,"Turpentine, raw or crude",Great Britain,FREE,,1,17,4,17,4,0.0
 1882,C,,"Turpentine, raw or crude",United States,FREE,,4,29752,335,29752,335,0.0
+1882,C,,"Turpentine, spirits of",France,DUTIABLE,Galls,1,8,11,8,11,2.2
+1882,C,,"Turpentine, spirits of",Great Britain,DUTIABLE,Galls,1,27,22,27,22,4.4
+1882,C,,"Turpentine, spirits of",United States,DUTIABLE,Galls,8,308972,166601,309055,166658,33331.5
 1882,C,,Turtles,British West Indies,FREE,No,1,3,8,3,8,0.0
 1882,C,,Turtles,United States,FREE,No,3,31,226,31,226,0.0
 1882,C,,Twines of all kinds,Chile,DUTIABLE,,1,19,4,19,4,1.0

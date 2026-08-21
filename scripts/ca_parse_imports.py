@@ -570,7 +570,9 @@ class Parser:
                 if a_n not in self.vocab and not re.match(r'totals?\b', a_n, re.I):
                     head, tail = split_trailing_country(a_n, self.vocab)
                     if tail:
-                        if head: self._article(ctx, ' '.join(ctx.get('article_buf', []) + [head]))
+                        # keep the leaf's dash ('Turpentine, spirits of— Great Britain' at a page top: without it the
+                        # 'ends in of' parent-running-head test swallowed the new article into the open one)
+                        if head: self._article(ctx, ' '.join(ctx.get('article_buf', []) + [head + ('—' if '—' in a_n else '')]))
                         ctx['article_buf'] = []
                         ctx['country'] = 'TOTAL' if re.match(r'totals?\b', tail, re.I) else tail
                         ctx['expect_label'] = False; ctx['last_prov'] = None

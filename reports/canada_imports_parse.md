@@ -69,7 +69,7 @@ Cell flags: fused 2290, unparsed 131
     - Swine/United States duty: rows 23525.33 vs printed 23725.13
     - Baking Powders/United tates val_efc: rows 23217.00 vs printed 23017.00
     - Black Lead/United States val_imp: rows 3811.00 vs printed 3711.00
-| 1882 | C | 17162 | detail 10006, article_province_total 4424, country_total 1984, article_total 683, article_total_fused 35, country_noprov 29, heading_row 1 | country closure 5051 ok / 310 bad; article blocks (sum detail vs grand total, val_imp): exact 568, no_grand_total 270, within_1pct 60, under 33, over 11
+| 1882 | C | 17162 | detail 10006, article_province_total 4424, country_total 1984, article_total 683, article_total_fused 35, country_noprov 29, heading_row 1 | country closure 5051 ok / 310 bad; article blocks (sum detail vs grand total, val_imp): exact 568, no_grand_total 271, within_1pct 61, under 33, over 10
     - Black Lead/United States val_imp: rows 8434.00 vs printed 8034.00
     - Books, Printed, &c/Germany duty: rows 62.92 vs printed 62.85
     - Account Books, Copy Books, or Books to b/United States val_imp: rows 44065.00 vs printed 44095.00
