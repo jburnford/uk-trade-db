@@ -792,6 +792,7 @@ class Parser:
         t = re.sub(r',?\s*viz\.?\s*[:;]?\s*[—–-]?', ' :— ', t, flags=re.I)
         t = re.sub(r'\s*[:;]\s*[—–-]', ' :— ', t)
         t = re.sub(r'\s*[:;]\s*$', ' :— ', t)
+        t = re.sub(r'(?<=[a-z,]):\s+(?=[A-Z])', ' :— ', t)        # 'Wool, manufactures of: Cassimeres, cloths, &c' (no dash)
         segs = []
         for piece in re.split(r'(:—|—)', t):
             segs.append(piece)
@@ -845,9 +846,14 @@ class Parser:
             # a page-top repeat is only possible while the article is still OPEN (its Total not yet printed), and
             # sibling leaves that differ in their numbers ('over 89 degrees' / 'over 90 degrees') are never the same
             digits_same = re.findall(r'\d+', leaf) == re.findall(r'\d+', old_leaf or '')
+            def _toks(x):
+                x = re.sub(r'(&c|\betc\b|\bn\.?\s*e\.?\s*s\b)\.?', '', x.lower()); return set(re.findall(r'[a-z0-9]+', x)) - {'of', 'and', 'the', 'or'}
+            ta, tb = _toks(leaf), _toks(old_leaf or '')
+            jac = len(ta & tb) / len(ta | tb) if (ta | tb) else 0.0
             same = leaf == old_leaf or (old_leaf and old_leaf != '?' and not ctx.get('article_closed') and digits_same and (
                    difflib.SequenceMatcher(None, a, b).ratio() >= 0.85 or
-                   (min(len(a), len(b)) >= 8 and (a.startswith(b) or b.startswith(a)))))   # running-head abbreviation 'X, &c.'
+                   (min(len(a), len(b)) >= 8 and (a.startswith(b) or b.startswith(a))) or      # running-head abbreviation 'X, &c.'
+                   (ctx.get('table_top') and len(ta) >= 3 and jac >= 0.75)))                  # page-top running head, words reordered
             if same:
                 leaf = old_leaf            # page-top repeat (possibly re-hyphenated): keep block and spelling
                 ctx['article'] = leaf
@@ -1452,6 +1458,26 @@ class Parser:
                     k = m
                 else:
                     k += 1
+            i = j
+        # (g) adjacent blocks carrying the same article (a page-top running head that the same-leaf test did not
+        #     recognise) merge when the first has no printed grand total: one article, one block
+        def _ak(x):
+            x = re.sub(r'(&c|\betc\b|\bn\.?\s*e\.?\s*s\b)\.?', '', (x or '').lower())
+            return ' '.join(sorted(set(re.findall(r'[a-z0-9]+', x)) - {'of', 'and', 'the', 'or'}))
+        i = 0; n = len(rows); prev_blk = None; prev_key = None; prev_closed = False; remap = {}
+        while i < n:
+            j = i
+            while j < n and rows[j]['block_id'] == rows[i]['block_id']: j += 1
+            blk = rows[i:j]
+            key = _ak(blk[0]['article']) if blk[0]['article'] not in (None, '', '?') else None
+            closed = any(x['row_kind'] in ('article_total', 'article_total_fused') for x in blk)
+            if key and key == prev_key and not prev_closed and blk[0]['row_kind'] != 'recap':
+                for x in blk:
+                    x['block_id'] = prev_blk; x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'block_merged'
+                self.diag['adjacent_blocks_merged'] += 1
+                prev_closed = closed
+            else:
+                prev_blk = blk[0]['block_id']; prev_key = key; prev_closed = closed
             i = j
 
     # ---------------------------------------------------------------- driver
