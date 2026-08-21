@@ -5,10 +5,10 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 | FY | abstract cells | matched keys | efc dutiable exact | efc free exact | duty exact | abstract efc total | parsed efc total | ratio | unmatched abstract value |
 |---|---|---|---|---|---|---|---|---|---|
 | 1880 | 132 | 115 | 35 | 35 | 32 | 71,782,311 | 71,767,430 | 1.000 | 79,722 |
-| 1882 | 147 | 137 | 94 | 63 | 82 | 112,648,927 | 111,445,109 | 0.989 | 40,679 |
+| 1882 | 147 | 137 | 94 | 63 | 82 | 112,648,927 | 111,544,005 | 0.990 | 40,679 |
 | 1883 | 146 | 136 | 75 | 55 | 66 | 122,960,711 | 121,526,765 | 0.988 | 25,838 |
 | 1884 | 151 | 148 | 84 | 69 | 78 | 108,180,554 | 107,256,441 | 0.991 | 20,871 |
-| 1885 | 152 | 146 | 88 | 67 | 82 | 102,721,019 | 101,416,733 | 0.987 | 5,492 |
+| 1885 | 152 | 146 | 88 | 67 | 82 | 102,721,019 | 101,417,002 | 0.987 | 5,492 |
 | 1887 | 158 | 152 | 85 | 69 | 82 | 105,639,428 | 105,184,496 | 0.996 | 16,632 |
 | 1889 | 169 | 158 | 87 | 79 | 87 | 109,673,447 | 109,419,447 | 0.998 | 77,149 |
 
@@ -16,26 +16,26 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 
 | FY | country | province | parsed | abstract | parsed dut | abs dut | parsed free | abs free |
 |---|---|---|---|---|---|---|---|---|
-| 1885 | great britain | Quebec | 18,107,783 | 18,729,038 | 13,136,865 | 13651715 | 4,970,918 | 5077323 |
+| 1885 | great britain | Quebec | 18,108,031 | 18,729,038 | 13,136,865 | 13651715 | 4,971,166 | 5077323 |
 | 1883 | great britain | Quebec | 23,347,318 | 23,907,446 | 17,559,343 | 18106450 | 5,787,975 | 5800996 |
 | 1883 | great britain | Ontario | 17,647,142 | 18,055,605 | 14,541,779 | 14944428 | 3,105,363 | 3111177 |
 | 1884 | great britain | Quebec | 20,015,064 | 20,347,059 | 14,384,346 | 14726134 | 5,630,718 | 5620925 |
-| 1882 | great britain | Ontario | 16,991,160 | 17,304,912 | 14,974,968 | 15288620 | 2,016,192 | 2016292 |
-| 1882 | united states | Nova Scotia | 1,986,269 | 2,236,905 | 1,500,396 | 1751284 | 485,873 | 485621 |
+| 1882 | great britain | Ontario | 17,023,436 | 17,304,912 | 15,007,244 | 15288620 | 2,016,192 | 2016292 |
 | 1882 | british west indies | Quebec | 564,340 | 814,535 | 558,186 | 808381 | 6,154 | 6154 |
+| 1882 | united states | Nova Scotia | 1,988,160 | 2,236,905 | 1,502,287 | 1751284 | 485,873 | 485621 |
 | 1887 | great britain | Ontario | 16,005,438 | 16,241,045 | 13,861,243 | 14098917 | 2,144,195 | 2144128 |
 | 1880 | united states | Ontario | 13,937,896 | 14,172,669 | 9,902,471 | 10062620 | 4,035,425 | 4110049 |
-| 1885 | great britain | Ontario | 14,124,461 | 14,325,530 | 11,412,851 | 11611719 | 2,711,610 | 2713811 |
+| 1885 | great britain | Ontario | 14,124,479 | 14,325,530 | 11,412,851 | 11611719 | 2,711,628 | 2713811 |
 | 1885 | united states | Ontario | 22,177,092 | 22,374,036 | 15,656,344 | 15802811 | 6,520,748 | 6571225 |
 | 1884 | great britain | Ontario | 14,045,830 | 14,237,145 | 11,744,253 | 11935562 | 2,301,577 | 2301583 |
+| 1882 | great britain | Quebec | 24,418,416 | 24,230,383 | 19,180,737 | 18993699 | 5,237,679 | 5236684 |
 | 1887 | united states | Ontario | 23,284,934 | 23,470,693 | 16,614,413 | 16797515 | 6,670,521 | 6673178 |
 | 1880 | great britain | Nova Scotia | 3,216,441 | 3,036,276 | 2,627,878 | 2456833 | 588,563 | 579443 |
-| 1882 | great britain | Quebec | 24,397,288 | 24,230,383 | 19,159,609 | 18993699 | 5,237,679 | 5236684 |
 | 1884 | united states | Ontario | 23,734,887 | 23,888,927 | 17,860,045 | 18014093 | 5,874,842 | 5874835 |
 | 1883 | great britain | Nova Scotia | 3,729,506 | 3,879,476 | 2,620,078 | 2769597 | 1,109,428 | 1109879 |
-| 1882 | united states | New Brunswick | 2,587,028 | 2,728,597 | 1,794,901 | 1933915 | 792,127 | 794682 |
 | 1883 | great britain | New Brunswick | 3,053,701 | 3,195,071 | 2,253,449 | 2394737 | 800,252 | 800334 |
 | 1880 | great britain | Quebec | 17,123,478 | 16,982,281 | 12,473,688 | 12358783 | 4,649,790 | 4623498 |
+| 1882 | united states | New Brunswick | 2,589,713 | 2,728,597 | 1,797,586 | 1933915 | 792,127 | 794682 |
 | 1887 | united states | Quebec | 13,046,860 | 12,918,321 | 7,941,792 | 7811004 | 5,105,068 | 5107317 |
 | 1889 | france | Ontario | 508,404 | 634,326 | 427,143 | 424987 | 81,261 | 209339 |
 | 1885 | united states | Quebec | 14,240,942 | 14,363,750 | 7,722,810 | 7798697 | 6,518,132 | 6565053 |
@@ -59,7 +59,7 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 
 ## Parsed (country, year) with no abstract counterpart (name mismatch or abstract parse gap), by value
 
-- 1885 '': 487,859
+- 1885 '': 487,590
 - 1882 'british w indies': 421,444
 - 1884 '': 276,329
 - 1883 'united states': 197,028
@@ -68,7 +68,6 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 - 1885 'united states': 114,435
 - 1885 'quebec': 87,050
 - 1889 'sp west indies': 65,357
-- 1882 '': 58,104
 - 1889 'e guiana': 53,379
 - 1880 'newfoundland': 52,327
 - 1889 'british west indies': 48,450
@@ -84,3 +83,4 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 - 1884 'sandwich isds': 17,036
 - 1887 'st pierre': 16,609
 - 1880 'british e indies': 16,458
+- 1882 'total': 16,318

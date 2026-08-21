@@ -436,12 +436,33 @@ class Parser:
                     ctx['last_prov'] = None; self.diag['short_total_label'] += 1
                 elif j in self.vocab or j.rstrip('—–- .') in SEED_COUNTRIES or split_trailing_country(j, self.vocab)[1] == j:
                     j = j.rstrip('—–- .') if j.rstrip('—–- .') in SEED_COUNTRIES else j     # '“ Great Britain—'
+                    buf = ctx.get('article_buf') or []
+                    rank = lambda c: 0 if c.startswith('Great Brit') else 1 if c.startswith('United Stat') else 2
+                    prev = ctx.get('country')
+                    if buf and len(' '.join(buf)) >= 4:
+                        # '“ Indian or corn meal' (dash lost) straight before 'Great Britain...': the buffered fragment
+                        # is a complete heading, not a wrapped half (1885 cornmeal \$330K was filed under buckwheat)
+                        self._article(ctx, ' '.join(buf)); self.diag['heading_from_fragment_before_country'] += 1
+                    elif prev in ('TOTAL',) or (prev and prev != '?' and rank(j) < 2 and rank(j) <= rank(prev)):
+                        # GB or US re-occurring after a later country: the article heading was lost entirely
+                        ctx['article_parents'] = ctx.get('article_parents') or []
+                        ctx['article'] = '?'; ctx['block_id'] = ctx.get('block_id', 0) + 1
+                        ctx['leaf_used'] = False; ctx['unit'] = None; ctx['article_closed'] = False
+                        self.diag['article_heading_lost'] += 1
                     ctx['country'] = j; ctx['expect_label'] = False; ctx['article_buf'] = []
                     ctx['last_prov'] = None; self.diag['short_country_label'] += 1
                 elif re.search(r'[—–:;-]\s*$', j.rstrip('.')) or re.search(r'viz\.?\s*$', j, re.I):
                     self._article(ctx, ' '.join(ctx.get('article_buf', []) + [j]))
                     ctx['article_buf'] = []; ctx['expect_label'] = False
                     self.diag['short_article_heading'] += 1
+                elif split_trailing_country(j, self.vocab)[1] and len(split_trailing_country(j, self.vocab)[0].strip(' —–-.')) >= 4 \
+                        and (split_trailing_country(j, self.vocab)[1] in SEED_COUNTRIES or '—' in j):
+                    # '“ Chloride of lime— | Great Britain...' / '“ Chloralum or chloride of aluminium | Great Britain...'
+                    # (two short cells): the heading and its first country on one row
+                    head, tail = split_trailing_country(j, self.vocab)
+                    self._article(ctx, ' '.join(ctx.get('article_buf', []) + [head.strip()]))
+                    ctx['article_buf'] = []; ctx['country'] = tail; ctx['expect_label'] = False; ctx['last_prov'] = None
+                    self.diag['short_heading_with_country'] += 1
                 elif len(j) > 3 and not j.isupper():
                     # a wrapped fragment of an article name ('“ Buckwheat meal or' / 'flour—')
                     ctx.setdefault('article_buf', []).append(j)
