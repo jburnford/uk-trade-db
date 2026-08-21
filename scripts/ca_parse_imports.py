@@ -48,16 +48,33 @@ def norm_label(s):
     return s.strip(' ,;')
 
 
+_PROV_FUZZY = [
+    (re.compile(r'^[a-z]{1,2}island$|^[a-z]{1,2}[a-z]?isla.?d+$|^p[a-z]{0,3}island+$'), 'P. E. Island'),   # 'P. R. Island', 'P. & Island', 'P. E. Isla. d', 'P. E. Islanddd'
+    (re.compile(r'^n?w?territo[a-z]*$|^northwestterrit[a-z]*$'), 'N. W. Territories'),                     # 'N. W. Territoires', 'N.-W. Territo ies'
+    (re.compile(r'^[a-z]{1,5}scotia$'), 'Nova Scotia'),                                                    # 'New Scotia', 'N. Scotia'
+    (re.compile(r'^[a-z]{1,4}brunswick$'), 'New Brunswick'),                                               # 'Few Brunswick'
+    (re.compile(r'^[a-z]{2,7}columbia$'), 'British Columbia'),                                             # 'Briti-b Columbia', 'P. tish Columbia'
+    (re.compile(r'^quebe[a-z]?$'), 'Quebec'),
+    (re.compile(r'^ontari[a-z]?$|^ontaio$'), 'Ontario'),
+    (re.compile(r'^manitob[a-z]?$|^mantoba$'), 'Manitoba'),
+]
+
+
 def province_of(s):
     t = re.sub(r'\([^)]*\)', '', norm_label(s))
     k = re.sub(r'[^a-z]', '', t.lower().replace('é', 'e'))
-    return PROVINCE_KEYS.get(k)
+    p = PROVINCE_KEYS.get(k)
+    if p or not k: return p
+    # OCR-damaged spellings: a province label is never a country, so tolerate one or two bad characters
+    for rx, prov in _PROV_FUZZY:
+        if rx.match(k): return prov
+    return None
 
 
 def split_trailing_province(s):
     """'United States... Quebec' -> ('United States', 'Quebec'); else (s, None)."""
     t = norm_label(s)
-    for n in range(1, 4):
+    for n in (3, 2, 1):                      # longest tail first: 'British Columbia' before a fuzzy 'Columbia'
         parts = t.rsplit(None, n)
         if len(parts) == n + 1:
             tail = ' '.join(parts[1:])
@@ -75,6 +92,24 @@ SEED_COUNTRIES = ['Great Britain', 'United States', 'France', 'Germany', 'Belgiu
     'Dan. W. Indies', 'B. E. Indies', 'D. E. Indies', 'Dutch E. Indies', 'Brit. W. Indies', 'British Guiana',
     'Dutch Guiana', 'British West Indies', 'Spanish West Indies', 'French West Indies', 'Danish West Indies',
     'British East Indies', 'Dutch East Indies', 'Bermuda', 'British Columbia', 'Norway and Sweden', 'Total']
+
+
+def fuzzy_jaccard(a, b):
+    """Token-set overlap of two article names with OCR-tolerant token equality (ratio >= 0.85), '&c'/'N.E.S'
+    and stop words dropped: 'Cotton, all other manuffactures of' ~ 'All other manufactures of cotton'."""
+    import difflib
+    def toks(x):
+        x = re.sub(r'(&c|\betc\b|\bn\.?\s*e\.?\s*s\b)\.?', '', (x or '').lower())
+        return [t for t in re.findall(r'[a-z0-9]+', x) if t not in ('of', 'and', 'the', 'or', 'all', 'other')]
+    ta, tb = toks(a), toks(b)
+    if not ta or not tb: return 0.0
+    used = set(); hit = 0
+    for t in ta:
+        for i, u in enumerate(tb):
+            if i in used: continue
+            if t == u or (len(t) >= 4 and len(u) >= 4 and difflib.SequenceMatcher(None, t, u).ratio() >= 0.85):
+                used.add(i); hit += 1; break
+    return hit / (len(ta) + len(tb) - hit)
 
 
 def split_trailing_country(s, vocab):
@@ -792,7 +827,8 @@ class Parser:
         t = re.sub(r',?\s*viz\.?\s*[:;]?\s*[—–-]?', ' :— ', t, flags=re.I)
         t = re.sub(r'\s*[:;]\s*[—–-]', ' :— ', t)
         t = re.sub(r'\s*[:;]\s*$', ' :— ', t)
-        t = re.sub(r'(?<=[a-z,]):\s+(?=[A-Z])', ' :— ', t)        # 'Wool, manufactures of: Cassimeres, cloths, &c' (no dash)
+        t = re.sub(r'([a-z,])\s?:\s+(?=[A-Z])', r'\1 :— ', t)     # 'Wool, manufactures of: Cassimeres, cloths, &c' (no dash)
+        t = re.sub(r'^\$\s*cts\.?\s*', '', t)                        # '$ cts Brass manufactures of' (unit header glued on)
         segs = []
         for piece in re.split(r'(:—|—)', t):
             segs.append(piece)
@@ -846,14 +882,12 @@ class Parser:
             # a page-top repeat is only possible while the article is still OPEN (its Total not yet printed), and
             # sibling leaves that differ in their numbers ('over 89 degrees' / 'over 90 degrees') are never the same
             digits_same = re.findall(r'\d+', leaf) == re.findall(r'\d+', old_leaf or '')
-            def _toks(x):
-                x = re.sub(r'(&c|\betc\b|\bn\.?\s*e\.?\s*s\b)\.?', '', x.lower()); return set(re.findall(r'[a-z0-9]+', x)) - {'of', 'and', 'the', 'or'}
-            ta, tb = _toks(leaf), _toks(old_leaf or '')
-            jac = len(ta & tb) / len(ta | tb) if (ta | tb) else 0.0
+            jac = fuzzy_jaccard(leaf, old_leaf or '')
+            ta = [t for t in re.findall(r'[a-z0-9]+', leaf.lower()) if t not in ('of', 'and', 'the', 'or', 'all', 'other')]
             same = leaf == old_leaf or (old_leaf and old_leaf != '?' and not ctx.get('article_closed') and digits_same and (
                    difflib.SequenceMatcher(None, a, b).ratio() >= 0.85 or
                    (min(len(a), len(b)) >= 8 and (a.startswith(b) or b.startswith(a))) or      # running-head abbreviation 'X, &c.'
-                   (ctx.get('table_top') and len(ta) >= 3 and jac >= 0.75)))                  # page-top running head, words reordered
+                   (ctx.get('table_top') and len(ta) >= 2 and jac >= 0.75)))                  # page-top running head, words reordered
             if same:
                 leaf = old_leaf            # page-top repeat (possibly re-hyphenated): keep block and spelling
                 ctx['article'] = leaf
@@ -1469,9 +1503,11 @@ class Parser:
             j = i
             while j < n and rows[j]['block_id'] == rows[i]['block_id']: j += 1
             blk = rows[i:j]
-            key = _ak(blk[0]['article']) if blk[0]['article'] not in (None, '', '?') else None
+            key = blk[0]['article'] if blk[0]['article'] not in (None, '', '?') else None
             closed = any(x['row_kind'] in ('article_total', 'article_total_fused') for x in blk)
-            if key and key == prev_key and not prev_closed and blk[0]['row_kind'] != 'recap':
+            if key and prev_key and not prev_closed and blk[0]['row_kind'] != 'recap' \
+                    and (_ak(key) == _ak(prev_key) or fuzzy_jaccard(key, prev_key) >= 0.75) \
+                    and re.findall(r'\d+', key) == re.findall(r'\d+', prev_key):
                 for x in blk:
                     x['block_id'] = prev_blk; x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'block_merged'
                 self.diag['adjacent_blocks_merged'] += 1
