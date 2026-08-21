@@ -20,8 +20,8 @@
 | 1887 | oocihm.9_08052_21_3 | 547 | 15787 |
 | 1889 | oocihm.9_08052_23_2 | 558 | 16720 |
 
-Diagnostics: scrambled_row 3547, fused_article_country_nodash 2982, short_article_heading 1690, short_row 1307, blank_row_skipped 1082, unfused_rows 668, article_fragment 658, country_label_lost 553, label_in_province_slot 541, short_country_label 513, no_regime_yet 455, fused_cells 380, grand_total_rejoined 349, label_slip_repaired 202, article_heading_lost 188, lost_label_resolved_detail 168, page_top_total_fusion 136, short_total_label 116, fused_rows_expanded 90, article_heading_lost_after_total 87, heading_deferred_past_data_row 86, province_unrecognised 76, lost_label_after_total 75, lost_label_block 51, total_tail_rejoined 37, fused_article_country 35, country_label_in_province_slot 33, article_closed_with_prev 33, nil_province_row 28, lost_label_joined_next_country 28, country_inferred_Great 23, lost_label_joined_prev_country 22, heading_fragment_starts_article 19, heading_fused_into_total 18, lost_label_resolved_total 17, split_country_province 17, article_closed_with_next 16, page_top_heading_new_article 14, lost_label_total_structural 13, stray_unit_cells_dropped 11, heading_fragment_on_data_row 11, summary_line 11, heading_from_label_row 8, value_column_lost 8, province_values_on_next_row 7, trailing_label_lost 5, page_top_heading_continuation 5, article_resumed 3, country_inferred_United 1, label_slip_down 1
-Cell flags: fused 1884, unparsed 135
+Diagnostics: scrambled_row 3547, fused_article_country_nodash 2982, short_article_heading 1690, short_row 1307, blank_row_skipped 1082, unfused_rows 668, article_fragment 658, country_label_lost 553, label_in_province_slot 541, short_country_label 513, no_regime_yet 455, fused_cells 380, grand_total_rejoined 349, label_slip_repaired 281, article_heading_lost 188, lost_label_resolved_detail 168, page_top_total_fusion 136, short_total_label 116, fused_rows_expanded 90, article_heading_lost_after_total 87, heading_deferred_past_data_row 86, province_unrecognised 76, lost_label_after_total 75, lost_label_block 51, total_tail_rejoined 37, fused_article_country 35, country_label_in_province_slot 33, article_closed_with_prev 33, nil_province_row 28, lost_label_joined_next_country 28, country_inferred_Great 23, lost_label_joined_prev_country 22, heading_fragment_starts_article 19, heading_fused_into_total 18, lost_label_resolved_total 17, split_country_province 17, article_closed_with_next 16, page_top_heading_new_article 14, lost_label_total_structural 13, stray_unit_cells_dropped 11, heading_fragment_on_data_row 11, summary_line 11, trailing_label_lost 9, heading_from_label_row 8, value_column_lost 8, fused_efc_duty_split 7, province_values_on_next_row 7, slip_hypothesis_flipped 5, page_top_heading_continuation 5, label_slip2_repaired 4, article_resumed 3, country_inferred_United 1, label_slip_down 1
+Cell flags: fused 1877, unparsed 135
 
 | FY | regime | rows | row kinds |
 |---|---|---|---|
@@ -55,28 +55,28 @@ Cell flags: fused 1884, unparsed 135
     - Hops val_imp: rows 7641.00 vs printed 7636.00
     - Hops val_efc: rows 7641.00 vs printed 7636.00
     - Hops duty: rows 1581.75 vs printed 1577.70
-| 1880 | C | 15339 | detail 8711, article_province_total 3966, country_total 1846, article_total 724, country_noprov 78, article_total_fused 14 | country closure 3902 ok / 763 bad; article blocks (sum detail vs grand total, val_imp): exact 410, no_grand_total 291, within_1pct 118, under 69, over 22
+| 1880 | C | 15339 | detail 8734, article_province_total 4010, country_total 1823, article_total 680, country_noprov 78, article_total_fused 14 | country closure 3940 ok / 728 bad; article blocks (sum detail vs grand total, val_imp): exact 405, no_grand_total 291, within_1pct 122, under 67, over 25
     - Ginger Ale/Great Britain val_efc: rows 2486.00 vs printed 2446.00
     - Ginger Ale/Great Britain duty: rows 489.39 vs printed 489.19
     - Horses/United States val_efc: rows 41407.00 vs printed 41409.00
     - Swine/United States duty: rows 23525.33 vs printed 23725.13
     - Baking Powders/United tates val_efc: rows 23217.00 vs printed 23017.00
     - Black Lead/United States val_imp: rows 3811.00 vs printed 3711.00
-| 1882 | C | 17123 | detail 9963, article_province_total 4413, country_total 1992, article_total 684, article_total_fused 35, country_noprov 35, heading_row 1 | country closure 4984 ok / 315 bad; article blocks (sum detail vs grand total, val_imp): exact 510, no_grand_total 349, under 88, within_1pct 52, over 11
+| 1882 | C | 17123 | detail 9965, article_province_total 4417, country_total 1990, article_total 680, article_total_fused 35, country_noprov 35, heading_row 1 | country closure 4986 ok / 314 bad; article blocks (sum detail vs grand total, val_imp): exact 508, no_grand_total 349, under 88, within_1pct 54, over 11
     - Black Lead/United States val_imp: rows 8434.00 vs printed 8034.00
     - Books, Printed, &c/Germany duty: rows 62.92 vs printed 62.85
     - Account Books, Copy Books, or Books to b/United States val_imp: rows 44065.00 vs printed 44095.00
     - Account Books, Copy Books, or Books to b/United States val_efc: rows 43830.00 vs printed 43860.00
     - Bookbinders' Tools and Implements, inclu/United States duty: rows 2492.62 vs printed 2488.62
     - Braces or Suspenders, Belts and trusses /Great Britain val_efc: rows 85308.00 vs printed 85360.00
-| 1883 | C | 17708 | detail 10416, article_province_total 4384, country_total 2077, article_total 732, country_noprov 64, article_total_fused 35 | country closure 5188 ok / 397 bad; article blocks (sum detail vs grand total, val_imp): exact 518, no_grand_total 380, under 111, within_1pct 71, over 8
+| 1883 | C | 17708 | detail 10418, article_province_total 4385, country_total 2075, article_total 731, country_noprov 64, article_total_fused 35 | country closure 5189 ok / 396 bad; article blocks (sum detail vs grand total, val_imp): exact 519, no_grand_total 380, under 110, within_1pct 71, over 8
     - Ale, beer and porter, in casks/Great Britain val_efc: rows 28475.00 vs printed 29335.00
     - Swine/United States val_imp: rows 4659.00 vs printed 21614.00
     - Swine/United States val_efc: rows 4659.00 vs printed 21614.00
     - Swine/United States duty: rows 931.85 vs printed 4322.85
     - Swine to be slaughtered in bond for Expo/United States val_imp: rows 1053.00 vs printed 173585.00
     - Swine to be slaughtered in bond for Expo/United States val_efc: rows 1053.00 vs printed 1090.00
-| 1884 | C | 17702 | detail 10613, article_province_total 4064, country_total 2160, article_total 775, country_noprov 60, article_total_fused 28, heading_row 2 | country closure 5349 ok / 440 bad; article blocks (sum detail vs grand total, val_imp): exact 569, no_grand_total 384, under 93, within_1pct 55, over 19
+| 1884 | C | 17702 | detail 10622, article_province_total 4065, country_total 2151, article_total 774, country_noprov 60, article_total_fused 28, heading_row 2 | country closure 5365 ok / 425 bad; article blocks (sum detail vs grand total, val_imp): exact 568, no_grand_total 385, under 92, within_1pct 56, over 19
     - Horses/Great Britain val_imp: rows 12069.00 vs printed 12049.00
     - Horses/United States val_efc: rows 207988.00 vs printed 107988.00
     - Sheep/United States duty: rows 9378.90 vs printed 9678.90
@@ -90,7 +90,7 @@ Cell flags: fused 1884, unparsed 135
     - Books, printed, periodicals and pamphlet/France val_imp: rows 32222.00 vs printed 32272.00
     - British copyright works, reprints of/United States duty: rows 574.95 vs printed 568.95
     - Bibles, prayer books, psalm and hymn boo/Great Britain val_imp: rows 75066.00 vs printed 75068.00
-| 1887 | C | 15787 | detail 11780, country_total 2445, article_total 894, article_province_total 496, country_noprov 109, recap 51, summary 7, article_total_fused 5 | country closure 5946 ok / 636 bad; article blocks (sum detail vs grand total, val_imp): exact 658, no_grand_total 457, under 134, within_1pct 91, over 8
+| 1887 | C | 15787 | detail 11781, country_total 2444, article_total 894, article_province_total 496, country_noprov 109, recap 51, summary 7, article_total_fused 5 | country closure 5947 ok / 635 bad; article blocks (sum detail vs grand total, val_imp): exact 658, no_grand_total 457, under 134, within_1pct 91, over 8
     - Ale, ginger/Great Britain duty: rows 771.40 vs printed 791.40
     - Horned cattle/United States val_efc: rows 60398.00 vs printed 60497.00
     - Sheep/United States duty: rows 14689.22 vs printed 14659.22
@@ -117,10 +117,10 @@ Printed series: `reference/canada_printed_totals.csv`. Parsed = sum of `detail` 
 | 1871 | A | 46,418,582 | 96,092,971 | 0.483 | 41,744,409 | 86,947,482 | 0.480 | 5,137,089 | 11,843,656 | 0.434 |
 | 1873 | A | 65,498,455 | 128,011,281 | 0.512 | 69,856,771 | 127,514,594 | 0.548 | 6,885,348 | 13,017,730 | 0.529 |
 | 1877 | B | 99,643,779 | 99,327,962 | 1.003 | 99,756,093 | 96,300,483 | 1.036 | 14,690,553 | 12,548,451 | 1.171 |
-| 1880 | C | 87,319,027 | 86,489,747 | 1.010 | 72,005,656 | 71,787,349 | 1.003 | 14,153,948 | 14,138,849 | 1.001 |
-| 1882 | C | 116,291,653 | 119,419,500 | 0.974 | 111,808,313 | 112,648,927 | 0.993 | 21,385,149 | 21,708,837 | 0.985 |
-| 1883 | C | 130,490,074 | 132,254,022 | 0.987 | 120,463,558 | 123,137,019 | 0.978 | 22,786,979 | 23,172,309 | 0.983 |
-| 1884 | C | 114,231,777 | 116,397,043 | 0.981 | 106,486,936 | 108,180,644 | 0.984 | 19,784,089 | 20,164,963 | 0.981 |
+| 1880 | C | 87,358,583 | 86,489,747 | 1.010 | 72,043,405 | 71,787,349 | 1.004 | 14,188,859 | 14,138,849 | 1.004 |
+| 1882 | C | 116,291,576 | 119,419,500 | 0.974 | 111,821,754 | 112,648,927 | 0.993 | 21,388,564 | 21,708,837 | 0.985 |
+| 1883 | C | 130,504,969 | 132,254,022 | 0.987 | 120,478,453 | 123,137,019 | 0.978 | 22,790,353 | 23,172,309 | 0.984 |
+| 1884 | C | 114,234,797 | 116,397,043 | 0.981 | 106,490,644 | 108,180,644 | 0.984 | 19,785,071 | 20,164,963 | 0.981 |
 | 1885 | C | 108,191,357 | 108,941,486 | 0.993 | 102,132,762 | 102,710,019 | 0.994 | 19,005,909 | 19,133,559 | 0.993 |
-| 1887 | C | 113,205,866 | 112,892,236 | 1.003 | 106,119,562 | 105,639,428 | 1.005 | 22,216,261 | 22,469,706 | 0.989 |
+| 1887 | C | 113,206,177 | 112,892,236 | 1.003 | 106,119,843 | 105,639,428 | 1.005 | 22,216,426 | 22,469,706 | 0.989 |
 | 1889 | C | 116,366,013 | 115,224,931 | 1.010 | 110,833,911 | 109,673,447 | 1.011 | 23,609,555 | 23,784,523 | 0.993 |

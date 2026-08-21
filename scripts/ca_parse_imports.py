@@ -578,6 +578,19 @@ class Parser:
                     kind = 'article_total' if ctx.get('country') == 'TOTAL' else 'country_total'
             if not numeric and kind in ('detail', 'article_province_total'):
                 self.diag['label_row_no_values'] += 1
+            # value column dropped, duty cell fused: 'Lbs. | 185,147 | Lbs. | 189,812 | 19,490 3,898 00' = qty_imp,
+            # [val_imp lost], qty_efc, val_efc + duty in one cell (quantity slots hold unit tokens or blanks)
+            if kind in ('detail', 'article_province_total', 'country_total', 'article_total') and nums[0] is None and nums[2] is None \
+                    and nums[1] is not None and nums[3] is not None and flags[4] == 'fused':
+                toks = split_numeric_tokens(vals_raw[4], cents_ok=True)
+                if toks and len(toks) == 2:
+                    ve = parse_num(toks[0], cents_ok=False)[0]; du = parse_num(toks[1], cents_ok=True)[0]
+                    if ve is not None and du is not None:
+                        qi, qe = nums[1], nums[3]
+                        vi = ve if abs(qi - qe) < 0.5 else None
+                        nums = [qi, vi, qe, ve, du]
+                        flags = list(flags); flags[1] = 'value_imp_from_efc' if vi is not None else 'value_lost'; flags[4] = ''
+                        self.diag['fused_efc_duty_split'] += 1
             # value column lost: the unit token sits in the quantity slot and the QUANTITY was read as the value
             # ('Lbs. | 916,211 | Lbs. | 916,211 | 1,717 75'); on a dutiable line the duty/value ratio gives it away
             if kind in ('detail', 'article_province_total') and is_unit_token(vals_raw[0]) and nums[0] is None and nums[1] is not None and nums[1] > 0 \
@@ -990,37 +1003,99 @@ class Parser:
         #     sum(d) + t1 == t2.  If the run starts at Ontario the labels are intact and t1 is a trailing
         #     province whose label was lost.
         def _v(r): return r['val_imp'] if r['val_imp'] is not None else r['val_efc']
+        slip_cands = []
         i = 0; n = len(rows)
         while i < n:
-            if rows[i]['row_kind'] != 'detail' or not rows[i]['province'] or rows[i]['country'] in (None, 'TOTAL'):
+            r0 = rows[i]
+            if r0['row_kind'] == 'detail' and r0['province'] and r0['country'] not in (None, 'TOTAL'):
+                run_kind, tail_kind = 'detail', 'country_total'
+            elif r0['row_kind'] == 'article_province_total' and r0['province']:
+                run_kind, tail_kind = 'article_province_total', 'article_total'
+            else:
                 i += 1; continue
             j = i
-            while j < n and rows[j]['row_kind'] == 'detail' and rows[j]['country'] == rows[i]['country'] \
-                    and rows[j]['block_id'] == rows[i]['block_id'] and rows[j]['province']: j += 1
+            while j < n and rows[j]['row_kind'] == run_kind and rows[j]['country'] == r0['country'] \
+                    and rows[j]['block_id'] == r0['block_id'] and rows[j]['province']: j += 1
             run = rows[i:j]
-            if j + 1 < n and rows[j]['row_kind'] == 'country_total' and rows[j + 1]['row_kind'] == 'country_total' \
-                    and rows[j]['block_id'] == rows[i]['block_id'] and rows[j + 1]['block_id'] == rows[i]['block_id']:
-                t1, t2 = rows[j], rows[j + 1]
-                provs = [r['province'] for r in run]
-                inorder = all(p in PROVINCE_ORDER for p in provs) and \
-                    [PROVINCE_ORDER.index(p) for p in provs] == sorted(PROVINCE_ORDER.index(p) for p in provs)
-                dsum = sum(_v(r) or 0 for r in run); v1 = _v(t1) or 0; v2 = _v(t2) or 0
-                if inorder and v2 > 0 and abs(dsum + v1 - v2) <= max(1, 0.001 * v2) and abs(dsum - v1) > 1:
-                    if provs[0] != 'Ontario':
-                        first = PROVINCE_ORDER[PROVINCE_ORDER.index(provs[0]) - 1]
-                        shifted = [first] + provs[:-1]
-                        for r, pv in zip(run, shifted):
-                            r['province'] = pv; r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'label_slip'
-                        t1['row_kind'] = 'detail'; t1['province'] = provs[-1]
-                        t1['flags'] = (t1['flags'] + ',' if t1['flags'] else '') + 'label_slip'
-                        self.diag['label_slip_repaired'] += 1
-                    elif v1 > 0 and PROVINCE_ORDER.index(provs[-1]) + 1 < len(PROVINCE_ORDER):
-                        t1['row_kind'] = 'detail'; t1['province'] = PROVINCE_ORDER[PROVINCE_ORDER.index(provs[-1]) + 1]
-                        t1['flags'] = (t1['flags'] + ',' if t1['flags'] else '') + 'trailing_label_lost'
-                        self.diag['trailing_label_lost'] += 1
-                i = j + 2
+            # the tail: k unlabelled rows (read as totals) then the real total, k = 1..3 (smallest k that closes)
+            q = j
+            while q < n and q - j <= 3 and rows[q]['row_kind'] == tail_kind and rows[q]['block_id'] == r0['block_id'] \
+                    and (tail_kind == 'article_total' or rows[q]['country'] == r0['country']): q += 1
+            kmax = q - j - 1
+            provs = [r['province'] for r in run]
+            inorder = all(p in PROVINCE_ORDER for p in provs) and \
+                [PROVINCE_ORDER.index(p) for p in provs] == sorted(PROVINCE_ORDER.index(p) for p in provs) and len(set(provs)) == len(provs)
+            k = 0
+            if kmax >= 1 and inorder:
+                for kk in range(1, kmax + 1):
+                    extras, T = rows[j:j + kk], rows[j + kk]
+                    # any one column closes (values may be blank on quantity-and-duty lines: the duty then witnesses)
+                    for col in ('val_imp', 'val_efc', 'duty'):
+                        dsum = sum((r[col] or 0) for r in run); xs = sum((r[col] or 0) for r in extras); vT = T[col] or 0
+                        if vT > 0 and all(r[col] is not None for r in run) and abs(dsum + xs - vT) <= max(1, 0.001 * vT) and abs(dsum - vT) > 1:
+                            k = kk; break
+                    if k: break
+            if k >= 1:
+                extras, T = rows[j:j + k], rows[j + k]
+                idx0 = PROVINCE_ORDER.index(provs[0]); idxl = PROVINCE_ORDER.index(provs[-1])
+                def _mark(r, f):
+                    r['flags'] = (r['flags'] + ',' if r['flags'] else '') + f
+                # two hypotheses: labels shifted UP by k (the k unknown provinces precede the first label) or the
+                # trailing k labels lost (they follow the last label).  The block's printed province totals decide.
+                hyps = []
+                if idx0 >= k and idx0 > 0:
+                    hyps.append(('shift', [PROVINCE_ORDER[idx0 - k + m] for m in range(k)] + provs))
+                if idxl + k < len(PROVINCE_ORDER):
+                    hyps.append(('trail', provs + [PROVINCE_ORDER[idxl + 1 + m] for m in range(k)]))
+                if hyps:
+                    # apply the historical default now (shift unless the run starts at Ontario); two-hypothesis runs
+                    # are re-scored against the block's printed province totals in a second sweep, once every run
+                    # and Total block of the table has had its default repair (scoring against unrepaired
+                    # neighbours picks the wrong reading)
+                    name, labels = hyps[0]
+                    for x, pv in zip(run + extras, labels):
+                        x['province'] = pv; _mark(x, ('label_slip' if name == 'shift' else 'trailing_label_lost') + ('' if k == 1 else str(k)))
+                    for x in extras:
+                        x['row_kind'] = run_kind; x['country'] = r0['country']
+                    self.diag['label_slip_repaired' if name == 'shift' else 'trailing_label_lost'] += 1
+                    if k > 1: self.diag[f'label_slip{k}_repaired'] += 1
+                    if len(hyps) > 1:
+                        slip_cands.append((run + extras, hyps, run_kind, r0['block_id'], i))
+                i = j + k + 1
             else:
-                i = max(j, i + 1)
+                i = max(j + max(kmax, 0) + 1, i + 1) if kmax >= 0 and j > i else max(j, i + 1)
+        # second sweep: shift vs trailing, decided by the block's printed province totals (now that every run of
+        # the block carries its default repair); flip only when the alternative is confirmed and the default is not
+        by_block = defaultdict(list)
+        for idx, r in enumerate(rows): by_block[r['block_id']].append(r)
+        for rs, hyps, run_kind, blk, i0 in slip_cands:
+            other_kind = 'article_province_total' if run_kind == 'detail' else 'detail'
+            mine = set(id(x) for x in rs)
+            col = next((c for c in ('val_imp', 'val_efc', 'duty') if all(x[c] is not None for x in rs)), 'val_imp')
+            same = defaultdict(float); other = defaultdict(float); have_other = False
+            for x in by_block[blk]:
+                if id(x) in mine or not x['province'] or x[col] is None: continue
+                if x['row_kind'] == run_kind: same[x['province']] += x[col]
+                elif x['row_kind'] == other_kind: other[x['province']] += x[col]; have_other = True
+            if not have_other: continue
+            scores = {}
+            for name, labels in hyps:
+                contrib = defaultdict(float)
+                for x, pv in zip(rs, labels): contrib[pv] += x[col] or 0
+                match = miss = 0
+                for pv in contrib:
+                    if pv not in other: continue
+                    a = same.get(pv, 0) + contrib[pv]; b = other[pv]
+                    if abs(a - b) <= max(1, 0.001 * max(a, b)): match += 1
+                    else: miss += 1
+                scores[name] = (match, miss)
+            cur = hyps[0][0]; alt = hyps[1][0]
+            if scores[alt][0] >= 1 and scores[alt][0] > scores[cur][0] and scores[cur][0] == 0:
+                labels = hyps[1][1]
+                for x, pv in zip(rs, labels):
+                    x['province'] = pv
+                    x['flags'] = re.sub(r'(label_slip|trailing_label_lost)\d?', alt + '_by_totals', x['flags'] or '')
+                self.diag['slip_hypothesis_flipped'] += 1
         # (d) heading fused into a continuing Total-by-province row: 'Article— Great Britain | Manitoba | ...' where
         #     Manitoba continues the PREVIOUS article's Total block.  The rows up to the next blank-label total are
         #     that Total (their sum proves it); the new article's first country starts after it, label lost ('?').
