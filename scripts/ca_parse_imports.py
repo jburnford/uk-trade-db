@@ -814,6 +814,102 @@ class Parser:
                 self._article(ctx, deferred); ctx['country'] = None
         self._fix_duty_slot(n_start)
 
+    def _fix_province_order(self, n_start):
+        """The provinces are printed in one fixed order (Ontario, Quebec, N.S., N.B., Manitoba, B.C., P.E.I., N.W.T.).
+        A block whose labels are that order with ONE adjacent pair swapped ('Quebec, Ontario, Nova Scotia, ...' on the
+        1887 Spanish West Indies cigars block) has its labels scrambled by the OCR while the values stayed in printed
+        order — the abstract confirms the first row is Ontario's. Swap the two labels back."""
+        rows = self.rows[n_start:]
+        if not rows or rows[0].get('regime') != 'C': return
+        rank = {p: i for i, p in enumerate(PROVINCE_ORDER)}
+        cands = []
+        i = 0
+        while i < len(rows):
+            r = rows[i]
+            if r['row_kind'] not in ('detail', 'article_province_total') or r['province'] not in rank:
+                i += 1; continue
+            j = i
+            while j < len(rows) and rows[j]['row_kind'] in ('detail', 'article_province_total') and rows[j]['province'] in rank \
+                    and rows[j]['block_id'] == r['block_id'] and rows[j]['country'] == r['country']:
+                j += 1
+            grp = rows[i:j]
+            # the swap itself makes the rows after it look like a new country with its label lost ('Quebec' then
+            # 'Ontario, Nova Scotia, ...' -> detail_lostlabel '?'): include that run when a country total closes over all
+            k = j; lost = []
+            while k < len(rows) and rows[k]['row_kind'] == 'detail_lostlabel' and rows[k]['country'] in (None, '', '?') \
+                    and rows[k]['province'] in rank and rows[k]['block_id'] == r['block_id']:
+                lost.append(rows[k]); k += 1
+            if lost and r['row_kind'] == 'detail' and r['country'] not in (None, '', '?', 'TOTAL'):
+                tot = rows[k] if k < len(rows) and rows[k]['row_kind'] == 'country_total' and rows[k]['block_id'] == r['block_id'] \
+                    and rows[k]['country'] in (r['country'], None, '', '?') else None
+                comb = grp + lost
+                def _sum(col): return sum(x[col] or 0 for x in comb)
+                closes = tot is not None and any(tot[c] is not None and tot[c] > 0 and abs(_sum(c) - tot[c]) <= 0.005 * tot[c] for c in ('val_imp', 'val_efc'))
+                rk2 = [rank[x['province']] for x in comb]
+                swap_ok = False
+                if closes and not (rk2 == sorted(rk2) and len(set(rk2)) == len(rk2)):
+                    for a in range(len(rk2) - 1):
+                        rr = rk2[:]; rr[a], rr[a + 1] = rr[a + 1], rr[a]
+                        if rr == sorted(rr) and len(set(rr)) == len(rr): swap_ok = True; break
+                if swap_ok:
+                    for x in lost:
+                        x['country'] = r['country']; x['row_kind'] = 'detail'
+                        x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'lost_label_after_swap'
+                    grp = comb; j = k
+            rk = [rank[x['province']] for x in grp]
+            if os.environ.get('CA_DEBUG_TABLE') == f"{r['fiscal_year']}:{r['table_seq']}":
+                print('PROVGRP', [(x['row_seq'], x['row_kind'], x['block_id'], x['country'], x['province']) for x in grp], 'NEXT', [(x['row_seq'], x['row_kind'], x['country'], x['province']) for x in rows[j:j+3]], file=sys.stderr)
+            if len(grp) >= 2 and not (rk == sorted(rk) and len(set(rk)) == len(rk)):
+                for a in range(len(rk) - 1):
+                    rr = rk[:]; rr[a], rr[a + 1] = rr[a + 1], rr[a]
+                    if rr == sorted(rr) and len(set(rr)) == len(rr):
+                        cands.append((r['block_id'], r['country'], grp[a], grp[a + 1]))
+                        break
+            i = j
+        # the OCR may have swapped the two LABELS (values in printed order: 1887 cigars, abstract-proven) or the two
+        # whole ROWS (1883 salt, also abstract-proven) — arbitrate by the article's Total block: details per province
+        # must sum to the printed province totals. Total-block candidates first (judged by the details of the
+        # blocks that are NOT themselves candidates), then the country blocks against the corrected Totals.
+        cand_ids = {id(x) for _, _, x1, x2 in cands for x in (x1, x2)}
+        for blk_id, country, x1, x2 in sorted(cands, key=lambda c: 0 if c[1] == 'TOTAL' else 1):
+            verdict = self._swap_verdict(rows, blk_id, country, x1, x2, cand_ids)
+            if verdict is True:
+                x1['province'], x2['province'] = x2['province'], x1['province']
+                for x in (x1, x2):
+                    x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'province_order_swapped'
+                self.diag['province_order_swapped'] += 1
+            else:
+                for x in (x1, x2):
+                    x['flags'] = (x['flags'] + ',' if x['flags'] else '') + ('province_rows_swapped' if verdict is False else 'province_order_unarbitrated')
+                self.diag['province_rows_swapped' if verdict is False else 'province_order_unarbitrated'] += 1
+
+    def _swap_verdict(self, rows, block_id, country, x1, x2, cand_ids=()):
+        """True = swap the labels (closes better), False = keep (rows were swapped whole), None = no arbiter."""
+        blk = [x for x in rows if x['block_id'] == block_id]
+        P1, P2 = x1['province'], x2['province']
+        def val(x, c): return x[c] if x[c] is not None else 0.0
+        COLS = ('val_imp', 'val_efc')
+        if country == 'TOTAL':
+            S = {P: {c: sum(val(x, c) for x in blk if x['row_kind'] == 'detail' and x['province'] == P and id(x) not in cand_ids) for c in COLS} for P in (P1, P2)}
+            have = {P: any(x['row_kind'] == 'detail' and x['province'] == P and id(x) not in cand_ids for x in blk) for P in (P1, P2)}
+            if not (have[P1] or have[P2]): return None
+            keep = sum(abs(S[P1][c] - val(x1, c)) + abs(S[P2][c] - val(x2, c)) for c in COLS)
+            swap = sum(abs(S[P2][c] - val(x1, c)) + abs(S[P1][c] - val(x2, c)) for c in COLS)
+        else:
+            T = {P: [x for x in blk if x['row_kind'] == 'article_province_total' and x['province'] == P] for P in (P1, P2)}
+            if not (T[P1] or T[P2]): return None
+            other = {P: {c: sum(val(x, c) for x in blk if x['row_kind'] == 'detail' and x['province'] == P and x['country'] != country) for c in COLS} for P in (P1, P2)}
+            def resid(lab1, lab2):
+                tot = 0.0
+                for P, x in ((lab1, x1), (lab2, x2)):
+                    if T[P]:
+                        for c in COLS: tot += abs(val(T[P][0], c) - other[P][c] - val(x, c))
+                return tot
+            keep = resid(P1, P2); swap = resid(P2, P1)
+        if swap < keep * 0.5: return True
+        if keep <= swap: return False
+        return None
+
     def _fix_duty_slot(self, n_start):
         """Regime C, DUTIABLE: the duty column is always printed with cents. A run of rows (one country block, or
         the Total block) whose 'duty' cells are ALL plain integers, with unit tokens in the quantity slots, is
@@ -1978,6 +2074,7 @@ class Parser:
             ctx['table_top'] = True              # until the first data row of this table has been emitted
             n_tables += 1
             getattr(self, 'parse_table_' + ctx['regime'])(fy, tag, seq, body, ctx)
+        self._fix_province_order(start_rows)
         self.resolve_lost_labels(start_rows)
         return n_tables
 
