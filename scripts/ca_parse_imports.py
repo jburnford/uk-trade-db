@@ -138,6 +138,12 @@ def token_containment(short, long):
     # tokens the longer name adds (or the shorter drops) must not change the meaning: 'Pig iron' is not
     # 'Pig iron, all other'; 'Feathers, dressed' is not 'Feathers, undressed'
     extra = [u for i, u in enumerate(b) if i not in used] + [t for t in a if t not in b and not any(t[:3] == u[:3] for u in b)]
+    # a name cut off mid-phrase by the OCR ('... otherwise manufactured, over') is a prefix of the full name
+    sraw = (short if len(toks(short)) <= len(toks(long)) else long) or ''
+    last = re.findall(r'[a-z]+', sraw.lower())[-1:] 
+    truncated = bool(last) and last[0] in ('over', 'under', 'of', 'and', 'or', 'for', 'the', 'in', 'to', 'not', 'than', 'with', 'by', 'on', 'at', 'from') \
+        and all(i in used for i in range(len(a))) and sorted(used) == list(range(len(a)))
+    if truncated: return 1.0
     abbreviated = bool(re.search(r'&c|\betc\b', (short or '').lower())) or bool(re.search(r'&c|\betc\b', (long or '').lower()))
     if not abbreviated and any(t in QUAL or t.isdigit() for t in extra): return 0.0
     if abbreviated and any(t in QUAL for t in [x for x in a if x not in b]): return 0.0   # the short form must not ADD a qualifier

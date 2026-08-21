@@ -26882,6 +26882,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,,"All other candles, including sperm",United States,DUTIABLE,,6,102424,11054,103424,11148,2787.0
 1887,C,,"All other dried fruits, N.E.S",China,DUTIABLE,,1,2873,121,2873,121,28.73
 1887,C,,"All other dried fruits, N.E.S",Spain,DUTIABLE,,1,2763,229,2763,229,27.63
+1887,C,,"All other glass and manufactures of glass, not otherwise provided for",Belgium,DUTIABLE,,3,0,5315,0,5315,1063.0
+1887,C,,"All other glass and manufactures of glass, not otherwise provided for",Switzerland,DUTIABLE,,2,0,639,0,639,127.8
 1887,C,,All other lubricating oils,Great Britain,DUTIABLE,,5,1446,474,1683,604,151.0
 1887,C,,All other lubricating oils,United States,DUTIABLE,,7,115386,54921,114852,54643,13598.84
 1887,C,,"All other manufactures of copper, N.E.S",Japan,DUTIABLE,,1,0,57,0,57,17.1
@@ -27247,8 +27249,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,,"Fur skins of all kinds, not dressed in any manner, and not elsewhere specified",United States,FREE,,5,0,273152,0,273152,0.0
 1887,C,,"Furs or skins, undressed",United States,FREE,,1,0,1766,0,1766,0.0
 1887,C,,Gannister,Great Britain,FREE,,1,1780,325,1780,325,0.0
-1887,C,,"Glass, all other manufactures of",Belgium,DUTIABLE,,3,0,5315,0,5315,1063.0
-1887,C,,"Glass, all other manufactures of",Switzerland,DUTIABLE,,2,0,639,0,639,127.8
 1887,C,,"Gloves and mitts of cotton, silk, woollen or any other material, except leather, elsewhere specified",Austria,DUTIABLE,,1,0,7216,0,7216,2164.8
 1887,C,,"Gloves and mitts of cotton, silk, woollen or any other material, except leather, elsewhere specified",China,DUTIABLE,,1,0,11,0,11,3.3
 1887,C,,"Gloves and mitts of cotton, silk, woollen or any other material, except leather, elsewhere specified",France,DUTIABLE,,3,0,14652,0,14652,4395.6

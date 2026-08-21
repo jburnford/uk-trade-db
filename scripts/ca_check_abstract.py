@@ -21,7 +21,8 @@ def ckey(c):
     c = re.sub(r'(\w)- (?=[a-z])', r'\1', c)                      # 'posses- sions' -> 'possessions'
     c = re.sub(r'\bB\.\s*(?=Africa|Guiana|Honduras)', 'British ', c)
     c = re.sub(r'[^A-Za-z ]', '', c).lower().strip()
-    c = re.sub(r'\s+', ' ', c)
+    c = re.sub(r'\b(in|and|the|of)\b', ' ', c)                       # 'Spanish possessions in Pacific Ocean', 'Norway & Sweden'
+    c = re.sub(r'\s+', ' ', c).strip()
     m = re.match(r'^(west|east) indies (british|spanish|french|danish|dutch)$', c)      # 'West Indies, Spanish'
     if m: c = m.group(2) + ' ' + m.group(1) + ' indies'
     if c.startswith('grea') and 'brit' in c: c = 'great britain'

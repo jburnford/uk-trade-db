@@ -6,8 +6,8 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 |---|---|---|---|---|---|---|---|---|---|
 | 1880 | 132 | 113 | 34 | 33 | 31 | 71,782,311 | 71,587,906 | 0.997 | 79,801 |
 | 1882 | 147 | 135 | 86 | 62 | 79 | 112,648,927 | 111,011,174 | 0.985 | 246,741 |
-| 1883 | 146 | 130 | 70 | 55 | 60 | 122,960,711 | 120,427,487 | 0.979 | 203,815 |
-| 1884 | 152 | 144 | 79 | 69 | 75 | 108,180,644 | 106,128,427 | 0.981 | 51,102 |
+| 1883 | 146 | 135 | 74 | 55 | 64 | 122,960,711 | 120,604,374 | 0.981 | 25,878 |
+| 1884 | 152 | 148 | 81 | 69 | 77 | 108,180,644 | 106,152,689 | 0.981 | 23,012 |
 | 1885 | 152 | 145 | 85 | 68 | 80 | 102,721,019 | 101,471,858 | 0.988 | 10,280 |
 | 1887 | 158 | 152 | 82 | 69 | 78 | 105,639,428 | 106,001,152 | 1.003 | 16,632 |
 | 1889 | 169 | 158 | 76 | 79 | 76 | 109,673,447 | 109,569,935 | 0.999 | 77,149 |
@@ -64,7 +64,6 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 - 1884 '': 276,214
 - 1882 'africa': 204,867
 - 1883 'united states': 193,995
-- 1883 'spanish possessions in pacific ocean': 136,247
 - 1880 'africa': 135,331
 - 1880 '': 127,809
 - 1887 '': 124,008
@@ -73,14 +72,15 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 - 1882 '': 58,104
 - 1889 'e guiana': 53,379
 - 1889 'british west indies': 48,450
-- 1884 'oranges and lemons': 47,429
+- 1884 'oranges lemons': 47,429
 - 1889 '': 47,007
-- 1883 'norway sweden': 40,640
-- 1885 'all other hats caps and bonnets nes': 40,248
-- 1882 'army navy and the': 38,670
-- 1880 'spanish poss in pac ocean': 31,668
-- 1884 'norway sweden': 24,226
+- 1885 'all other hats caps bonnets nes': 40,248
+- 1882 'army navy': 38,670
+- 1880 'spanish poss pac ocean': 31,668
 - 1885 'new brunswick': 23,474
 - 1880 'united tates': 23,217
 - 1885 'nova scotia': 21,864
-- 1880 'articles for the use of the army navy and canadian militia viz': 20,649
+- 1880 'articles for use army navy canadian militia viz': 20,649
+- 1880 'great britain': 17,421
+- 1884 'sandwich isds': 17,036
+- 1887 'st pierre': 16,609
