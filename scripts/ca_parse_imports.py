@@ -269,9 +269,15 @@ class Parser:
                 if has_prov and not province_of(cells[1][2]): continue
                 if not has_prov and not any(parse_num(c[2])[0] is not None for c in cells[1:]): continue
                 t = norm_label(cells[0][2])
-                if t and len(t) < 30 and not re.search(r'[—:\d$,]', t) and not t[0].islower() \
+                if t and len(t) < 42 and not re.search(r'[—:\d$,"“”]', t) and not t[0].islower() \
                         and not re.fullmatch(r'(?:[A-Z]\.\s?)+[A-Z]?\.?', t) and re.search(r'[A-Za-z]{3}', t) \
                         and not is_unit_token(t):
+                    # 'Ready made clothing Great Britain' / 'Spades and shovels. Great Britain': a heading fused with
+                    # a country is not a country (it would hijack headings as labels); long names are allowed only
+                    # for the possessions ('Spanish Possessions in Pacific Ocean')
+                    head, tail = split_trailing_country(t, SEED_COUNTRIES)
+                    if tail and head and tail != t and not re.search(r'(\band|&)$', head): continue       # keep 'Norway & Sweden'
+                    if len(t) >= 30 and not re.search(r'possess', t, re.I): continue
                     self.vocab.add(t)
         self.vocab.discard('')
 
@@ -431,10 +437,16 @@ class Parser:
                     and province_of(b) and ctx.get('country') not in (None, '', '?') \
                     and not split_trailing_country(a_n, self.vocab)[1] \
                     and (len(a_n) > 30 or re.search(r'[—:]|&c|^do\b', a_n)):
-                carried = ctx['country']
+                carried = ctx['country']; old_blk = ctx.get('block_id', 0)
                 self._article(ctx, a_n)
-                ctx['country'] = carried
-                a_n = ''; self.diag['page_top_heading_continuation'] += 1
+                if ctx.get('block_id', 0) == old_blk and ctx.get('article') is not None:
+                    ctx['country'] = carried
+                    a_n = ''; self.diag['page_top_heading_continuation'] += 1
+                else:
+                    # the heading is a NEW article's: this is its first data row and the country label is lost
+                    # ('Builders' ... hardware | Ontario | 15,554', then 'Great Britain | Quebec' continues the run)
+                    ctx['country'] = None; ctx['expect_label'] = False
+                    a_n = ''; self.diag['page_top_heading_new_article'] += 1
             if a_n and numeric and a_n not in self.vocab and a_n.rstrip('—–- .') in self.vocab:
                 a_n = a_n.rstrip('—–- .')                      # 'Great Britain— | Ontario | values'
             # ---- 'Article Country' fused without a dash
@@ -784,6 +796,13 @@ class Parser:
         if re.search(r'recapitulation', text, re.I):
             ctx['recap'] = True
         old_leaf = ctx.get('article')
+        page_top_running = ctx.get('table_top') and ctx.get('country') not in (None, '', '?')
+        if parents and leaf is None and page_top_running:
+            # a parents-only running head at the page top ('Sugars, syrups, and molasses:—'): the open article
+            # and its country block carry over; the leaf may be repeated on the next row and must still match
+            ctx['article_parents'] = parents if not ctx.get('article_parents') else ctx['article_parents']
+            ctx['leaf_used'] = False
+            return
         if parents:
             if ctx.get('article_parents') and not ctx.get('leaf_used', True):
                 # previous heading row had no data rows under it: nest beneath it
@@ -895,6 +914,47 @@ class Parser:
                 pass
             else:
                 pend = None
+        # (a') the previous article's Total block continues past a heading that rode on one of its rows
+        #      ('Earthenware, viz.: ... ware— | P. E. Island | 1,686' was emitted as the old article's PEI total, then
+        #      'N.-W. Territories | 299' and the grand total 298,926 fell into the new article as '?' rows):
+        #      unlabelled rows opening a block right after Total-by-province rows, provinces continuing the order,
+        #      followed by a total equal to those Totals plus the rows -> they are the old article's Total tail
+        i = 0; n = len(rows)
+        while i < n:
+            r = rows[i]
+            if r['row_kind'] in ('detail', 'detail_lostlabel') and r['country'] in ('?', None, '') and i > 0 \
+                    and rows[i - 1]['row_kind'] == 'article_province_total' and rows[i - 1]['block_id'] != r['block_id'] \
+                    and r['province'] in PROVINCE_ORDER and rows[i - 1]['province'] in PROVINCE_ORDER \
+                    and PROVINCE_ORDER.index(rows[i - 1]['province']) < PROVINCE_ORDER.index(r['province']):
+                p = i - 1
+                while p >= 0 and rows[p]['row_kind'] == 'article_province_total' and rows[p]['block_id'] == rows[i - 1]['block_id']: p -= 1
+                tot_rows = rows[p + 1:i]
+                j = i
+                while j < n and rows[j]['row_kind'] in ('detail', 'detail_lostlabel') and rows[j]['country'] in ('?', None, '') \
+                        and rows[j]['block_id'] == r['block_id']: j += 1
+                seg = rows[i:j]
+                provs = [x['province'] for x in tot_rows + seg]
+                inorder = all(pv in PROVINCE_ORDER for pv in provs) and \
+                    [PROVINCE_ORDER.index(pv) for pv in provs] == sorted(PROVINCE_ORDER.index(pv) for pv in provs)
+                T = rows[j] if j < n and rows[j]['row_kind'] == 'country_total' and rows[j]['block_id'] == r['block_id'] else None
+                ok = False
+                if T is not None and inorder:
+                    for col in ('val_imp', 'val_efc'):
+                        tv = T[col]
+                        if tv is None or tv <= 0: continue
+                        sv = sum((x[col] or 0) for x in tot_rows) + sum((x[col] or 0) for x in seg)
+                        if abs(sv - tv) <= max(1, 0.001 * tv): ok = True; break
+                if ok:
+                    prev = tot_rows[0]
+                    for x in seg + [T]:
+                        x['article'] = prev['article']; x['article_parent'] = prev['article_parent']; x['block_id'] = prev['block_id']
+                        x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'total_tail_rejoined'
+                    for x in seg:
+                        x['row_kind'] = 'article_province_total'; x['country'] = 'TOTAL'
+                    T['row_kind'] = 'article_total'; T['country'] = None
+                    self.diag['total_tail_rejoined'] += 1
+                    i = j + 1; continue
+            i += 1
         # (b) label slip: the label column lost its first entry (usually 'Ontario') and shifted up one row, so
         #     'Quebec' carries Ontario's values and the last province ends up unlabelled just before the real
         #     country total.  Signature: a country run d1..dn, then TWO blank-label rows t1, t2 with
@@ -979,6 +1039,78 @@ class Parser:
                         self.diag['heading_fused_into_total'] += 1
                         i = q; continue
             i += 1
+        # (e) article-heading '?' runs resolved by resumption or by closure: a run of rows whose article is '?'
+        #     (an order restart fired, or a heading never arrived) belongs to the PRECEDING article P when P's name
+        #     resumes right after it ('Wool, unmanufactured, N.E.S — United States' at the next page top) with no
+        #     Total printed before the run, or when the run's own Total rows close only over P's open details plus
+        #     the run; to the FOLLOWING article N when the run's details are needed to close N's Totals.
+        def _tots(rs):
+            """per-province Total-by-province values and the grand total of a row list (val_imp, val_efc)"""
+            pv = {}; gt = None
+            for x in rs:
+                if x['row_kind'] == 'article_province_total' and x['province']:
+                    pv[x['province']] = (x['val_imp'], x['val_efc'])
+                elif x['row_kind'] in ('article_total', 'article_total_fused'):
+                    gt = (x['val_imp'], x['val_efc'])
+            return pv, gt
+        def _closes(details, pv, gt):
+            """details (list of rows) close the Totals: grand total within 0.1% in either column, or (no grand
+            total) every printed province total matched by the per-province detail sums"""
+            for ci, col in enumerate(('val_imp', 'val_efc')):
+                if gt is not None and gt[ci] is not None and gt[ci] > 0:
+                    sv = sum((x[col] or 0) for x in details)
+                    if abs(sv - gt[ci]) <= max(1, 0.001 * gt[ci]): return True
+            if gt is None and pv:
+                for ci, col in enumerate(('val_imp', 'val_efc')):
+                    acc = defaultdict(float)
+                    for x in details:
+                        if x[col] is not None: acc[x['province']] += x[col]
+                    ok = 0; tried = 0
+                    for prov, t in pv.items():
+                        if t[ci] is None or t[ci] <= 0: continue
+                        tried += 1
+                        if abs(acc.get(prov, 0) - t[ci]) <= max(1, 0.001 * t[ci]): ok += 1
+                    if tried and ok == tried and sum(acc.values()) > 0: return True
+            return False
+        i = 0; n = len(rows)
+        while i < n:
+            if rows[i]['article'] != '?':
+                i += 1; continue
+            j = i
+            while j < n and rows[j]['article'] == '?': j += 1
+            run = rows[i:j]
+            before = rows[i - 1] if i > 0 else None
+            after = rows[j] if j < n else None
+            P = before['article'] if before and before['article'] not in (None, '', '?') else None
+            N = after['article'] if after and after['article'] not in (None, '', '?') else None
+            assign = None; how = None
+            run_det = [x for x in run if x['row_kind'] == 'detail']
+            run_pv, run_gt = _tots(run)
+            if P is not None and before['row_kind'] not in ('article_total', 'article_total_fused'):
+                # P's open block: its rows back to the previous article_total
+                p = i - 1
+                while p >= 0 and rows[p]['block_id'] == before['block_id'] and rows[p]['row_kind'] not in ('article_total', 'article_total_fused'): p -= 1
+                p_rows = rows[p + 1:i]
+                p_det = [x for x in p_rows if x['row_kind'] == 'detail']
+                p_pv, p_gt = _tots(p_rows)
+                if N == P and p_gt is None:
+                    assign, how = before, 'article_resumed'
+                elif (run_pv or run_gt) and p_det and _closes(p_det + run_det, run_pv, run_gt) and not _closes(run_det, run_pv, run_gt):
+                    assign, how = before, 'article_closed_with_prev'
+            if assign is None and N is not None and not (run_pv or run_gt) and run_det:
+                q = j
+                while q < n and rows[q]['block_id'] == after['block_id']: q += 1
+                n_rows = rows[j:q]
+                n_det = [x for x in n_rows if x['row_kind'] == 'detail']
+                n_pv, n_gt = _tots(n_rows)
+                if (n_pv or n_gt) and _closes(run_det + n_det, n_pv, n_gt) and not _closes(n_det, n_pv, n_gt):
+                    assign, how = after, 'article_closed_with_next'
+            if assign is not None:
+                for x in run:
+                    x['article'] = assign['article']; x['article_parent'] = assign['article_parent']; x['block_id'] = assign['block_id']
+                    x['flags'] = (x['flags'] + ',' if x['flags'] else '') + how
+                self.diag[how] += 1
+            i = j
         self._infer_lost_countries_later = True
         # group by block_id preserving order
         i = 0; n = len(rows)
@@ -1084,6 +1216,46 @@ class Parser:
                                         seg[0]['flags'] = (seg[0]['flags'] + ',' if seg[0]['flags'] else '') + 'province_relabelled'
                                     self.diag['lost_label_joined_prev_country'] += 1
                                     guess = 'JOINED'; break
+                    # (c') the segment OPENS the labelled run that follows: a page-top row whose country label was lost
+                    #      ('heading | Ontario | 15,554', then 'Great Britain | Quebec | ...'): the run's country total
+                    #      equals segment + run, and the provinces continue in order
+                    if guess is None and tail is None and nxt is not None:
+                        seg = [x for x in blk[k:m] if x['row_kind'] == 'detail']
+                        q = m
+                        while q < len(blk) and blk[q]['row_kind'] == 'detail' and blk[q]['country'] == nxt: q += 1
+                        run = blk[m:q]
+                        T = blk[q] if q < len(blk) and blk[q]['row_kind'] == 'country_total' and blk[q]['country'] == nxt else None
+                        def _inorder(rs):
+                            ps = [x['province'] for x in rs]
+                            return all(p in PROVINCE_ORDER for p in ps) and \
+                                [PROVINCE_ORDER.index(p) for p in ps] == sorted(PROVINCE_ORDER.index(p) for p in ps) and len(set(ps)) == len(ps)
+                        def _sums_to(rs, T):
+                            for col in ('val_imp', 'val_efc'):
+                                tv = T[col]
+                                if tv is None or tv <= 100: continue
+                                sv = sum((x[col] or 0) for x in rs)
+                                if abs(sv - tv) <= max(1, 0.001 * tv): return True
+                            return False
+                        if seg and run and T is not None and _inorder(seg + run) and _sums_to(seg + run, T):
+                            for x in blk[k:m]:
+                                x['country'] = nxt; x['country_inferred'] = 1
+                            self.diag['lost_label_joined_next_country'] += 1
+                            guess = 'JOINED'
+                        elif seg and len(run) == 1 and T is None and q < len(blk) and blk[q]['row_kind'] == 'detail' \
+                                and blk[q]['country'] not in (None, '', '?', 'TOTAL', nxt):
+                            # label slipped DOWN one row past the heading: 'heading | Quebec | v1', 'Brazil | Quebec | v2',
+                            # 'Germany | N.S. | v3', '| N.B.', '| | T' with T == v2 + v3 + ...: v2 is Germany's, v1 Brazil's
+                            y = blk[q]['country']; q2 = q
+                            while q2 < len(blk) and blk[q2]['row_kind'] == 'detail' and blk[q2]['country'] == y: q2 += 1
+                            run2 = blk[q:q2]
+                            T2 = blk[q2] if q2 < len(blk) and blk[q2]['row_kind'] == 'country_total' and blk[q2]['country'] == y else None
+                            if T2 is not None and _inorder(run + run2) and _sums_to(run + run2, T2) and not _sums_to(run2, T2):
+                                run[0]['country'] = y; run[0]['country_inferred'] = 1
+                                run[0]['flags'] = (run[0]['flags'] + ',' if run[0]['flags'] else '') + 'label_slip_down'
+                                for x in blk[k:m]:
+                                    x['country'] = nxt; x['country_inferred'] = 1
+                                self.diag['label_slip_down'] += 1
+                                guess = 'JOINED'
                     if guess == 'JOINED':
                         k = m; continue
                     if prev is not None and rank(prev) == 0 and nxt is not None and rank(nxt) >= 2: guess = 'United States'
