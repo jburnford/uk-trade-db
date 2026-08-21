@@ -102,7 +102,7 @@ def fuzzy_jaccard(a, b):
     and stop words dropped: 'Cotton, all other manuffactures of' ~ 'All other manufactures of cotton'."""
     import difflib
     def toks(x):
-        x = re.sub(r'not (elsewhere|otherwise) (specified|provided for|enumerated)|not specially enumerated or provided for', ' nes ', (x or '').lower())
+        x = re.sub(r'not (elsewhere|otherwise) (specified|provided for|enumerated)|not specially enumerated or provided for', ' nes ', re.sub(r'\\frac\{[^}]*\}\{[^}]*\}', ' ', (x or '').lower()))
         x = re.sub(r'(&c|\betc\b|\bn\.?\s*e\.?\s*s\b)\.?', '', x)
         return [t for t in re.findall(r'[a-z0-9]+', x) if t not in ('of', 'and', 'the', 'or', 'all', 'other', 'nes')]
     ta, tb = toks(a), toks(b)
@@ -137,7 +137,7 @@ def token_containment(short, long):
     QUAL = {'other', 'others', 'nes', 'nop', 'not', 'except', 'unenumerated', 'elsewhere', 'specified', 'provided',
             'otherwise', 'all', 'over', 'under', 'less', 'more', 'than', 'above', 'below', 'direct', 'refined', 'raw'}
     def toks(x):
-        x = re.sub(r'(&c|\betc\b)\.?', '', (x or '').lower())
+        x = re.sub(r'(&c|\betc\b)\.?', '', re.sub(r'\\frac\{[^}]*\}\{[^}]*\}', ' ', (x or '').lower()))
         x = re.sub(r'not (elsewhere|otherwise) (specified|provided for|enumerated)|not specially enumerated or provided for', ' nes ', x)
         x = re.sub(r'\bn\.?\s*e\.?\s*s\b\.?', ' nes ', x); x = re.sub(r'\bn\.?\s*o\.?\s*p\b\.?', ' nop ', x)
         return [t for t in re.findall(r'[a-z0-9]+', x) if t not in ('of', 'and', 'the', 'or', 'con')]
@@ -1291,6 +1291,30 @@ class Parser:
                     x['province'] = pv
                     x['flags'] = re.sub(r'(label_slip|trailing_label_lost)\d?', alt + '_by_totals', x['flags'] or '')
                 self.diag['slip_hypothesis_flipped'] += 1
+        # (b1) 'United States | 76,720 | 315,996' (a country label with values but no province) right before that
+        #      country's province rows starting at Quebec: the Ontario row with its province label lost, when the
+        #      country total closes with it
+        i = 0; n = len(rows)
+        while i < n:
+            r = rows[i]
+            if r['row_kind'] == 'country_noprov' and r['country'] not in (None, '', '?', 'TOTAL') and i + 1 < n \
+                    and rows[i + 1]['row_kind'] == 'detail' and rows[i + 1]['country'] == r['country'] and rows[i + 1]['block_id'] == r['block_id'] \
+                    and rows[i + 1]['province'] in PROVINCE_ORDER and rows[i + 1]['province'] != 'Ontario':
+                j = i + 1
+                while j < n and rows[j]['row_kind'] == 'detail' and rows[j]['country'] == r['country'] and rows[j]['block_id'] == r['block_id']: j += 1
+                T = rows[j] if j < n and rows[j]['row_kind'] == 'country_total' and rows[j]['country'] == r['country'] and rows[j]['block_id'] == r['block_id'] else None
+                if T is not None:
+                    for col in ('val_imp', 'val_efc'):
+                        tv = T[col]
+                        if tv is None or tv <= 0: continue
+                        sv = sum((x[col] or 0) for x in rows[i:j])
+                        if abs(sv - tv) <= max(1, 0.001 * tv):
+                            first = PROVINCE_ORDER.index(rows[i + 1]['province'])
+                            r['province'] = PROVINCE_ORDER[first - 1] if first > 0 else 'Ontario'
+                            r['row_kind'] = 'detail'; r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'province_label_lost'
+                            self.diag['country_noprov_is_first_province'] += 1
+                            break
+            i += 1
         # (b2) a Total-by-province block whose labels are shifted up by one with NO unlabelled row left to trigger the
         #      slip test ('Quebec 375,531' = the block's Ontario details exactly): decide identity vs shift by how
         #      many provinces the two readings reconcile with the block's detail sums
@@ -1710,10 +1734,55 @@ class Parser:
                         r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'grand_total_after_single_row'
                         self.diag['grand_total_after_single_row'] += 1
             i += 1
+        # (e2) a lost heading between two articles: the rows of block P (no Total block of its own) are really the
+        #      first country runs of the NEXT article N when N's printed province totals close exactly over
+        #      P's details + N's details (≥2 provinces) and not over N's details alone — the heading of N was
+        #      dropped and its opening runs fell under P's name (1885 carboys: GB/US/France/Germany under
+        #      'lightning rod insulators')
+        i = 0; n = len(rows)
+        starts = []
+        while i < n:
+            j = i
+            while j < n and rows[j]['block_id'] == rows[i]['block_id']: j += 1
+            starts.append((i, j)); i = j
+        for bi in range(1, len(starts)):
+            p0, p1 = starts[bi - 1]; n0, n1 = starts[bi]
+            P = rows[p0:p1]; N = rows[n0:n1]
+            if P[0]['fiscal_year'] != N[0]['fiscal_year']: continue
+            if any(x['row_kind'] in ('article_province_total', 'article_total', 'article_total_fused') for x in P): continue
+            if N[0]['article'] in (None, '', '?') or P[0]['article'] in (None, '', '?'): continue
+            na = norm_label(N[0]['article'])
+            if na in self.vocab or na in SEED_COUNTRIES or split_trailing_country(na, self.vocab)[1] == na \
+                    or (len(na.split()) <= 4 and re.search(r'possessions|indies|islands|guiana|africa|america', na, re.I)):
+                continue                                   # N's 'article' is a country name that swallowed a heading: not a target
+            ntot = {x['province']: x for x in N if x['row_kind'] == 'article_province_total' and x['province']}
+            if len(ntot) < 2: continue
+            pdet = [x for x in P if x['row_kind'] == 'detail' and x['province']]
+            ndet = [x for x in N if x['row_kind'] == 'detail' and x['province']]
+            if not pdet: continue
+            ok_cols = 0
+            for col in ('val_imp', 'val_efc'):
+                accP = defaultdict(float); accN = defaultdict(float)
+                for x in pdet:
+                    if x[col] is not None: accP[x['province']] += x[col]
+                for x in ndet:
+                    if x[col] is not None: accN[x['province']] += x[col]
+                match_both = match_alone = tried = 0
+                for pv, t in ntot.items():
+                    if t[col] is None or t[col] <= 0: continue
+                    tried += 1
+                    if abs(accP[pv] + accN[pv] - t[col]) <= max(1, 0.001 * t[col]): match_both += 1
+                    if abs(accN[pv] - t[col]) <= max(1, 0.001 * t[col]): match_alone += 1
+                if tried >= 2 and match_both >= max(2, tried - 1) and match_both > match_alone: ok_cols += 1
+            if ok_cols >= 1:
+                for x in P:
+                    x['article'] = N[0]['article']; x['article_parent'] = N[0]['article_parent']; x['block_id'] = N[0]['block_id']
+                    x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'lost_heading_closed_with_next'
+                self.diag['lost_heading_closed_with_next'] += 1
         # (g) adjacent blocks carrying the same article (a page-top running head that the same-leaf test did not
         #     recognise) merge when the first has no printed grand total: one article, one block
         def _ak(x):
-            x = re.sub(r'(&c|\betc\b|\bn\.?\s*e\.?\s*s\b)\.?', '', (x or '').lower())
+            x = re.sub(r'(&c|\betc\b|\bn\.?\s*e\.?\s*s\b)\.?', '', re.sub(r'\\frac\{[^}]*\}\{[^}]*\}', ' ', (x or '').lower()))
             return ' '.join(sorted(set(re.findall(r'[a-z0-9]+', x)) - {'of', 'and', 'the', 'or'}))
         i = 0; n = len(rows); prev_blk = None; prev_key = None; prev_closed = False; remap = {}
         while i < n:
