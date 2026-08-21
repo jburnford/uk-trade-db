@@ -381,6 +381,15 @@ class Parser:
                     texts = new; self.diag['fused_qty_value_split'] += 1
                     while len(texts) > NV + 2 and not texts[-1].strip():     # the OCR's trailing empty cell
                         texts = texts[:-1]
+            # both quantity cells dropped on a value-only article: 'Great Britain | Ontario | 4,143 | 4,684 | 936 87'
+            # (label, province, value, value, duty) -> insert the blank quantity cells
+            tt = [t.strip() for t in texts]
+            while len(tt) > 3 and not tt[-1]: tt = tt[:-1]
+            if ctx.get('unit') is None and len(tt) in (4, 5) and re.fullmatch(r'\d{1,3}(,\d{3})* \d\d', tt[-1]) \
+                    and all(re.fullmatch(r'[\d,]+', c) for c in tt[-3:-1]) and province_of(tt[-4]) \
+                    and (len(tt) == 4 or not re.fullmatch(r'[\d,]+', tt[0])):
+                texts = tt[:-3] + ['', tt[-3], '', tt[-2], tt[-1]]
+                self.diag['qty_cells_dropped'] += 1
             joined = ' '.join(texts).strip()
             # section banners
             if (len(cells) == 1 or spans >= 7 and len(cells) <= 2) and re.search(BANNER_RE, joined):
