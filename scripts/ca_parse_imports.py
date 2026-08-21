@@ -876,6 +876,38 @@ class Parser:
         if changed:
             self.rows[n_start:] = out
 
+    def _fix_grand_total_on_country_row(self, n_start):
+        """An article with no Total block whose LAST row is a country-labelled detail equal (within 5 %) to the sum
+        of the other countries' totals: the grand total rode on that country's label ('“ Holland | Ontario | 206,279'
+        on 1889 diamonds = GB 46,878 + US 17,808 + Belgium 128,105 + France 12,541 + Holland 947; the abstract gives
+        Holland Ontario free 73,723 in all). The row becomes the article total; the residual is the country's own."""
+        rows = self.rows[n_start:]
+        if not rows or rows[0].get('regime') != 'C': return
+        blocks = defaultdict(list)
+        for x in rows: blocks[x['block_id']].append(x)
+        for b, g in blocks.items():
+            if any(x['row_kind'] in ('article_total', 'article_province_total', 'article_total_fused') for x in g): continue
+            last = g[-1]
+            if last['row_kind'] != 'detail' or last['val_efc'] is None or last['country'] in (None, '', '?', 'TOTAL') or not last['province']: continue
+            others = defaultdict(list)
+            for x in g:
+                if x['country'] not in (last['country'], None, '', '?', 'TOTAL'): others[x['country']].append(x)
+            if len(others) < 2: continue
+            tot = 0.0
+            for c, xs in others.items():
+                ct = [x for x in xs if x['row_kind'] == 'country_total' and x['val_efc'] is not None]
+                tot += ct[-1]['val_efc'] if ct else sum(x['val_efc'] or 0 for x in xs if x['row_kind'] == 'detail')
+            if tot <= 0 or not (tot <= last['val_efc'] <= 1.05 * tot): continue
+            resid = last['val_efc'] - tot
+            own = dict(last); own['province'] = '?'; own['val_imp'] = own['val_efc'] = resid if resid > 0 else None
+            own['qty_imp'] = own['qty_efc'] = None; own['flags'] = 'country_residual_from_grand_total'
+            last['row_kind'] = 'article_total'; last['country'] = None; last['province'] = None
+            last['flags'] = (last['flags'] + ',' if last['flags'] else '') + 'grand_total_on_country_row'
+            self.diag['grand_total_on_country_row'] += 1
+            if resid > 0:
+                idx = self.rows.index(last)
+                self.rows.insert(idx, own)
+
     def _fix_province_order(self, n_start):
         """The provinces are printed in one fixed order (Ontario, Quebec, N.S., N.B., Manitoba, B.C., P.E.I., N.W.T.).
         A block whose labels are that order with ONE adjacent pair swapped ('Quebec, Ontario, Nova Scotia, ...' on the
@@ -2138,6 +2170,7 @@ class Parser:
             getattr(self, 'parse_table_' + ctx['regime'])(fy, tag, seq, body, ctx)
         self._fix_province_order(start_rows)
         self.resolve_lost_labels(start_rows)
+        self._fix_grand_total_on_country_row(start_rows)
         return n_tables
 
 

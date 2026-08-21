@@ -10,7 +10,7 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 | 1884 | 151 | 148 | 84 | 69 | 78 | 108,180,554 | 107,256,441 | 0.991 | 20,871 |
 | 1885 | 152 | 146 | 88 | 67 | 82 | 102,721,019 | 101,416,733 | 0.987 | 5,492 |
 | 1887 | 158 | 152 | 85 | 69 | 82 | 105,639,428 | 105,184,496 | 0.996 | 16,632 |
-| 1889 | 169 | 158 | 87 | 79 | 87 | 109,673,447 | 109,625,726 | 1.000 | 77,149 |
+| 1889 | 169 | 158 | 87 | 79 | 87 | 109,673,447 | 109,419,447 | 0.998 | 77,149 |
 
 ## Largest discrepancies (|parsed − abstract| efc total)
 
@@ -27,7 +27,6 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 | 1880 | united states | Ontario | 13,937,896 | 14,172,669 | 9,902,471 | 10062620 | 4,035,425 | 4110049 |
 | 1885 | great britain | Ontario | 14,124,461 | 14,325,530 | 11,412,851 | 11611719 | 2,711,610 | 2713811 |
 | 1885 | united states | Ontario | 22,177,092 | 22,374,036 | 15,656,344 | 15802811 | 6,520,748 | 6571225 |
-| 1889 | holland | Ontario | 309,952 | 116,190 | 42,491 | 42467 | 267,461 | 73723 |
 | 1884 | great britain | Ontario | 14,045,830 | 14,237,145 | 11,744,253 | 11935562 | 2,301,577 | 2301583 |
 | 1887 | united states | Ontario | 23,284,934 | 23,470,693 | 16,614,413 | 16797515 | 6,670,521 | 6673178 |
 | 1880 | great britain | Nova Scotia | 3,216,441 | 3,036,276 | 2,627,878 | 2456833 | 588,563 | 579443 |
@@ -56,6 +55,7 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 | 1882 | british west indies | Nova Scotia | 496,473 | 557,750 | 420,394 | 481611 | 76,079 | 76139 |
 | 1883 | france | Quebec | 1,522,978 | 1,583,113 | 1,428,667 | 1473126 | 94,311 | 109987 |
 | 1883 | france | British Columbia | 71,725 | 13,894 | 71,725 | 13894 | 0 |  |
+| 1887 | great britain | Quebec | 21,382,875 | 21,326,053 | 16,503,865 | 16447157 | 4,879,010 | 4878896 |
 
 ## Parsed (country, year) with no abstract counterpart (name mismatch or abstract parse gap), by value
 
