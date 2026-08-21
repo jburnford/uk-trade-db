@@ -374,12 +374,14 @@ class Parser:
     # ---------------------------------------------------------------- regime C
     def parse_table_C(self, fy, vol, seq, body, ctx):
         n0 = len(body)
+        n_start = len(self.rows)
         body = unfuse_rows(body, self.vocab | set(PROVINCE_KEYS.values()) | set(PROVINCE_ORDER), [0, 1], 0)
         if len(body) != n0: self.diag['unfused_rows'] += len(body) - n0
         NV = 5
         for ri, cells in enumerate(body):
             texts = [c for _, _, c in cells]
             spans = sum(cs for _, cs, _ in cells)
+            dd_mark = False
             # quantity and value fused into one cell ('United States | Ontario | 29 126 | 29 126 | 14 75' — a whole
             # page of the 1884 flour tables reads like this): split every non-final cell holding two plain numbers
             # a phantom blank cell between the imported and entered-for-consumption pairs ('| Nova Scotia | | 112 | 37 |
@@ -452,17 +454,42 @@ class Parser:
                 keep = [i for i, t in enumerate(texts) if not (is_unit_token(t) and i >= 2)]
                 if len(keep) >= NV + 2 and len(keep) < len(texts):
                     texts = [texts[i] for i in keep]; self.diag['stray_unit_cells_dropped'] += 1
-            if ctx.get('section') == 'FREE' and NV <= len(texts) <= NV + 2 and not re.search(r'\d \d\d$', texts[-1].strip()):
+            if ctx.get('section') == 'DUTIABLE' and len(texts) == NV + 2 and not texts[-1].strip():
+                # '| Ontario | 349,716 | 349,925 | 105,029 | 95 | ': the duty cell split into dollars | cents and a
+                # trailing blank cell — value, value, duty on a value-only line (val_imp ~ val_efc, duty an ad valorem share)
+                t4 = [t.strip() for t in texts[-5:-1]]
+                if all(re.fullmatch(r'\d{1,3}(,\d{3})*|\d+', t) for t in t4) and re.fullmatch(r'\d\d', t4[3]) \
+                        and all(parse_num(t, cents_ok=False)[0] is None for t in texts[:-5]):
+                    a4, b4, c4, _ = [parse_num(t, cents_ok=False)[0] for t in t4]
+                    if b4 > 0 and 0.02 <= c4 / b4 <= 0.6 and abs(a4 - b4) <= 0.15 * max(a4, b4):
+                        texts = texts[:-5] + ['', t4[0], '', t4[1], t4[2] + ' ' + t4[3]]
+                        self.diag['duty_cell_split_rejoined'] += 1
+            if NV <= len(texts) <= NV + 2 and not re.search(r'\d \d\d$', texts[-1].strip()):
                 # free-goods row whose trailing (blank) duty cell the OCR dropped: 'Quebec | 1,219,955 | 257,639 |
                 # 1,219,955 | 257,639' (or 'heading | Great Britain | Ontario | Lbs. 2,518,083 | 644,463 | Lbs.
                 # 2,518,083 | 644,463') is label(s) + qty + value + qty + value, not five values
+                # DUTIABLE rows lose their duty cell too ('Nova Scotia | 379 | 190 | 67 | 32' on the 1884 whiskey page,
+                # read as province-in-the-unit-slot + four shifted values): duty is always printed with cents, so a
+                # province followed by four plain integers is qty, value, qty, value with the duty lost
                 tail = texts[-4:]
                 lab = texts[:-4]
                 if all(parse_num(t, cents_ok=False)[0] is not None for t in tail) \
-                        and lab and all(parse_num(t, cents_ok=False)[0] is None for t in lab) \
-                        and (province_of(lab[-1]) or not lab[-1].strip() or re.fullmatch(r'[.\s·…]+', lab[-1]) or len(lab) >= 2):
-                    texts = texts + ['']
-                    self.diag['duty_cell_dropped'] += 1
+                        and lab and all(parse_num(t, cents_ok=False)[0] is None for t in lab):
+                    if ctx.get('section') == 'FREE' and (province_of(lab[-1]) or not lab[-1].strip() or re.fullmatch(r'[.\s·…]+', lab[-1]) or len(lab) >= 2):
+                        texts = texts + ['']
+                        self.diag['duty_cell_dropped'] += 1
+                    elif ctx.get('section') == 'DUTIABLE' and (province_of(lab[-1]) or not lab[-1].strip() or re.fullmatch(r'[.\s·…]+', lab[-1])) \
+                            and all(re.fullmatch(r'\d{1,3}(,\d{3})*|\d+', t.strip()) for t in tail):
+                        a4, b4, c4, d4 = [parse_num(t, cents_ok=False)[0] for t in tail]
+                        if re.fullmatch(r'\d\d', tail[3].strip()) and b4 > 0 and 0.02 <= c4 / b4 <= 0.6 and abs(a4 - b4) <= 0.15 * max(a4, b4):
+                            # 'Ontario | 34,088 | 34,079 | 10,223 | 70': value, value, duty dollars, duty cents (the duty
+                            # cell split in two) on a value-only line
+                            texts = lab + ['', tail[0], '', tail[1], tail[2].strip() + ' ' + tail[3].strip()]
+                            self.diag['duty_cell_split_rejoined'] += 1
+                        else:
+                            texts = texts + ['']
+                            dd_mark = True
+                            self.diag['duty_cell_dropped_dutiable'] += 1
             vals_raw = texts[-NV:]
             labels = texts[:-NV]
             # banner in label position with blank values
@@ -474,6 +501,7 @@ class Parser:
             parsed = [parse_num(v, cents_ok=(i == 4)) for i, v in enumerate(vals_raw)]
             nums = [p[0] for p in parsed]
             flags = [p[1] for p in parsed]
+            if dd_mark: flags[4] = 'duty_dropped'
             numeric = any(v is not None for v in nums)
             units_only = not numeric and all(f in ('blank', 'unit') for f in flags)
             if os.environ.get('CA_DEBUG_TABLE') == f'{fy}:{seq}':
@@ -784,6 +812,76 @@ class Parser:
             self._emit(fy, vol, seq, ri, ctx, kind, prov, nums, flags, vals_raw, texts)
             if deferred:
                 self._article(ctx, deferred); ctx['country'] = None
+        self._fix_duty_slot(n_start)
+
+    def _fix_duty_slot(self, n_start):
+        """Regime C, DUTIABLE: the duty column is always printed with cents. A run of rows (one country block, or
+        the Total block) whose 'duty' cells are ALL plain integers, with unit tokens in the quantity slots, is
+        '[Feet.] qty | [blank] | qty | VALUE' — the value column lost and the value read into the duty slot (1889
+        drawing tubing, brown blanks; 1880 boots and shoes Total block). The real duties sometimes follow as lone
+        cents-bearing rows ('| | | | | 906 30' = 10 % of 9,063): one such row is the block total's duty, a run as long
+        as the block gives every row its duty. A lone one- or two-digit cents-less 'duty' larger than the row's value
+        ('| 2 | ..... | 2 | 60') is the cents with the '0 ' lost."""
+        KINDS = ('detail', 'country_total', 'article_province_total', 'article_total', 'country_noprov')
+        rows = self.rows[n_start:]
+        if not rows or rows[0].get('regime') != 'C': return
+        def dcell(x):
+            c = (x.get('raw') or '').split(' | ')
+            return c[-1].strip() if c else ''
+        def nocents(x):
+            return x['duty'] is not None and bool(re.fullmatch(r'\d{1,3}(,\d{3})*|\d+', dcell(x)))
+        def duty_only(x):
+            return x['duty'] is not None and all(x[c] is None for c in ('qty_imp', 'val_imp', 'qty_efc', 'val_efc')) \
+                and re.fullmatch(r'[\d,]+ \d\d', dcell(x)) is not None
+        def unit_in_qty(x):
+            c = (x.get('raw') or '').split(' | ')
+            return len(c) >= 5 and (is_unit_token(c[-5]) or is_unit_token(c[-3]))
+        drop = set()
+        fixed_blocks = set()
+        i = 0
+        while i < len(rows):
+            r = rows[i]
+            if r.get('section') != 'DUTIABLE' or r['row_kind'] not in KINDS:
+                i += 1; continue
+            j = i
+            while j < len(rows) and rows[j].get('section') == 'DUTIABLE' and rows[j]['row_kind'] in KINDS \
+                    and rows[j]['block_id'] == r['block_id'] and rows[j]['country'] == r['country']:
+                j += 1
+            k = j
+            while k > i and duty_only(rows[k - 1]): k -= 1
+            main = rows[i:k]; tail = rows[k:j]
+            shape = [x for x in main if x['val_imp'] is not None and x['val_efc'] is not None and x['duty'] is not None
+                     and x['qty_imp'] is None and x['qty_efc'] is None and nocents(x)]
+            # a total row whose duty cell was dropped is already 'qty | value | qty | value' (duty None) and may close the run
+            proper = [x for x in main if x not in shape and x['qty_imp'] is not None and x['val_imp'] is not None and x['duty'] is None
+                      and x['row_kind'] in ('country_total', 'article_total', 'article_province_total')]
+            both_units = any(is_unit_token(c[-5]) and is_unit_token(c[-3]) for c in [(x.get('raw') or '').split(' | ') for x in main] if len(c) >= 5)
+            if main and shape and len(shape) + len(proper) == len(main) \
+                    and (any(unit_in_qty(x) for x in main) or tail or r['block_id'] in fixed_blocks) \
+                    and (len(main) >= 2 or tail or both_units):
+                fixed_blocks.add(r['block_id'])
+                for x in shape:
+                    qi, qe, ve = x['val_imp'], x['val_efc'], x['duty']
+                    x['qty_imp'], x['qty_efc'], x['val_efc'], x['duty'] = qi, qe, ve, None
+                    x['val_imp'] = ve if qi == qe else None
+                    x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'value_in_duty_slot'
+                    self.diag['value_in_duty_slot'] += 1
+                if tail:
+                    if len(tail) == len(main):
+                        for x, t in zip(main, tail): x['duty'] = t['duty']
+                    elif main[-1]['row_kind'] in ('country_total', 'article_total', 'article_province_total', 'country_noprov'):
+                        main[-1]['duty'] = tail[-1]['duty']
+                    for t in tail: drop.add(id(t))
+                    self.diag['value_in_duty_slot_duty_row'] += len(tail)
+            else:
+                for x in main:
+                    if x['duty'] is not None and re.fullmatch(r'\d{1,2}', dcell(x)) and (x['val_efc'] is None or x['duty'] > x['val_efc']):
+                        x['duty'] = x['duty'] / 100.0
+                        x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'duty_cents_only'
+                        self.diag['duty_cents_only'] += 1
+            i = j
+        if drop:
+            self.rows[n_start:] = [x for x in rows if id(x) not in drop]
 
     # ---------------------------------------------------------------- shared A/B helpers
     @staticmethod
