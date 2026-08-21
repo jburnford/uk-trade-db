@@ -107,9 +107,36 @@ def fuzzy_jaccard(a, b):
     for t in ta:
         for i, u in enumerate(tb):
             if i in used: continue
-            if t == u or (len(t) >= 4 and len(u) >= 4 and difflib.SequenceMatcher(None, t, u).ratio() >= 0.85):
+            if t == u or (len(t) >= 4 and len(u) >= 4 and t[:3] == u[:3] and difflib.SequenceMatcher(None, t, u).ratio() >= 0.85):
                 used.add(i); hit += 1; break
     return hit / (len(ta) + len(tb) - hit)
+
+
+def token_containment(short, long):
+    """Share of the shorter name's content tokens found (fuzzily) in the longer: 'Bituminous' in 'Coal, bituminous',
+    'Portland or Roman' in 'Cement, Portland or Roman', 'Gutta percha, all other' in 'Gutta percha and India rubber, all
+    other' — the running-head forms of an open article."""
+    import difflib
+    QUAL = {'other', 'others', 'nes', 'nop', 'not', 'except', 'unenumerated', 'elsewhere', 'specified', 'provided',
+            'otherwise', 'all', 'over', 'under', 'less', 'more', 'than', 'above', 'below', 'direct', 'refined', 'raw'}
+    def toks(x):
+        x = re.sub(r'(&c|\betc\b)\.?', '', (x or '').lower())
+        x = re.sub(r'\bn\.?\s*e\.?\s*s\b\.?', ' nes ', x); x = re.sub(r'\bn\.?\s*o\.?\s*p\b\.?', ' nop ', x)
+        return [t for t in re.findall(r'[a-z0-9]+', x) if t not in ('of', 'and', 'the', 'or', 'con')]
+    a, b = toks(short), toks(long)
+    if not a or not b: return 0.0
+    if len(a) > len(b): a, b = b, a
+    used = set(); hit = 0
+    for t in a:
+        for i, u in enumerate(b):
+            if i in used: continue
+            if t == u or (len(t) >= 4 and len(u) >= 4 and t[:3] == u[:3] and difflib.SequenceMatcher(None, t, u).ratio() >= 0.85):
+                used.add(i); hit += 1; break
+    # tokens the longer name adds (or the shorter drops) must not change the meaning: 'Pig iron' is not
+    # 'Pig iron, all other'; 'Feathers, dressed' is not 'Feathers, undressed'
+    extra = [u for i, u in enumerate(b) if i not in used] + [t for t in a if t not in b and not any(t[:3] == u[:3] for u in b)]
+    if any(t in QUAL or t.isdigit() for t in extra): return 0.0
+    return hit / len(a)
 
 
 def split_trailing_country(s, vocab):
@@ -830,6 +857,7 @@ class Parser:
         t = re.sub(r'\s*[—-]\s*Con(tinued)?\.?$', '', t, flags=re.I)
         t = re.sub(r'^.*?\bGOODS\s*[—-]\s*Con(tinued)?\.?\s*', '', t, flags=re.I)      # 'FREE GOODS—Continued Bolting Cloths—'
         t = re.sub(r'^(?:—\s*)?Continued\.?\s*[—:]?\s*', '', t, flags=re.I)        # '—Continued. Settlers' effects'
+        t = re.sub(r'^Con\.?\s+(?=[A-Z])', '', t)                                   # 'Con Books, &c.' (Continued, truncated)
         # mark parent boundaries, then split on dashes
         t = re.sub(r',?\s*viz\.?\s*[:;]?\s*[—–-]?', ' :— ', t, flags=re.I)
         t = re.sub(r'\s*[:;]\s*[—–-]', ' :— ', t)
@@ -894,7 +922,8 @@ class Parser:
             same = leaf == old_leaf or (old_leaf and old_leaf != '?' and not ctx.get('article_closed') and digits_same and (
                    difflib.SequenceMatcher(None, a, b).ratio() >= 0.85 or
                    (min(len(a), len(b)) >= 8 and (a.startswith(b) or b.startswith(a))) or      # running-head abbreviation 'X, &c.'
-                   (ctx.get('table_top') and len(ta) >= 2 and jac >= 0.75)))                  # page-top running head, words reordered
+                   (ctx.get('table_top') and len(ta) >= 2 and jac >= 0.75) or                 # page-top running head, words reordered
+                   (ctx.get('table_top') and token_containment(leaf, old_leaf) >= 0.9)))       # running head = parent+leaf or leaf+'&c.'
             if same:
                 leaf = old_leaf            # page-top repeat (possibly re-hyphenated): keep block and spelling
                 ctx['article'] = leaf
@@ -1548,7 +1577,7 @@ class Parser:
             key = blk[0]['article'] if blk[0]['article'] not in (None, '', '?') else None
             closed = any(x['row_kind'] in ('article_total', 'article_total_fused') for x in blk)
             if key and prev_key and not prev_closed and blk[0]['row_kind'] != 'recap' \
-                    and (_ak(key) == _ak(prev_key) or fuzzy_jaccard(key, prev_key) >= 0.75) \
+                    and (_ak(key) == _ak(prev_key) or fuzzy_jaccard(key, prev_key) >= 0.75 or token_containment(key, prev_key) >= 0.9) \
                     and re.findall(r'\d+', key) == re.findall(r'\d+', prev_key):
                 for x in blk:
                     x['block_id'] = prev_blk; x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'block_merged'
