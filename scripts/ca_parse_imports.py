@@ -327,6 +327,7 @@ class Parser:
         self.rows = []
         self.diag = Counter()
         self.unparsed = Counter()
+        self.blank_rows = []          # province rows the OCR left without values (coverage loss, for re-OCR triage)
         self.vocab = set(SEED_COUNTRIES)
 
     def learn_vocab(self, tn):
@@ -363,6 +364,23 @@ class Parser:
         for ri, cells in enumerate(body):
             texts = [c for _, _, c in cells]
             spans = sum(cs for _, cs, _ in cells)
+            # quantity and value fused into one cell ('United States | Ontario | 29 126 | 29 126 | 14 75' — a whole
+            # page of the 1884 flour tables reads like this): split every non-final cell holding two plain numbers
+            k_two = sum(1 for i, t in enumerate(texts) if i < len(texts) - 1 and re.fullmatch(r'[\d,]+ [\d,]+', t.strip()) and not re.fullmatch(r'[\d,]+ \d\d', t.strip()))
+            n_real = len([t for t in texts if t.strip()]) if k_two else 0
+            # ('19 534' alone is 19,534 with its comma lost — only a row short of cells with BOTH pairs fused is split)
+            if len(texts) < NV + 2 and (k_two >= 2 or (k_two == 1 and len(texts) < NV)):
+                new = []; changed = False
+                for i, t in enumerate(texts):
+                    tt = t.strip()
+                    if i < len(texts) - 1 and re.fullmatch(r'[\d,]+ [\d,]+', tt) and not re.fullmatch(r'[\d,]+ \d\d', tt):
+                        new.extend(tt.split()); changed = True
+                    else:
+                        new.append(t)
+                if changed:
+                    texts = new; self.diag['fused_qty_value_split'] += 1
+                    while len(texts) > NV + 2 and not texts[-1].strip():     # the OCR's trailing empty cell
+                        texts = texts[:-1]
             joined = ' '.join(texts).strip()
             # section banners
             if (len(cells) == 1 or spans >= 7 and len(cells) <= 2) and re.search(BANNER_RE, joined):
@@ -594,6 +612,8 @@ class Parser:
             if not a_n and not numeric and province_of(b):
                 ctx['pending_prov'] = None
                 self.diag['nil_province_row'] += 1
+                self.blank_rows.append(dict(fiscal_year=fy, volume=vol, table_seq=seq, row_seq=ri, section=ctx.get('section'),
+                                            article=ctx.get('article'), country=ctx.get('country'), province=province_of(b), raw=' | '.join(texts)))
                 continue
             if not a_n and not b.strip() and numeric and ctx.get('pending_prov'):
                 b = ctx['pending_prov']
@@ -1806,7 +1826,10 @@ def main():
             cells += [f'{v:,.0f}', f'{pv:,.0f}' if pv else '', f'{v/pv:.3f}' if pv else '']
         L.append('| ' + ' | '.join(cells) + ' |')
     OUT_MD.write_text('\n'.join(L) + '\n')
-    print(f'wrote {OUT_CSV} ({len(p.rows)} rows) and {OUT_MD}', file=sys.stderr)
+    with open(OUT_DIR / 'blank_rows.csv', 'w', newline='') as f:
+        w = csv.DictWriter(f, fieldnames=['fiscal_year', 'volume', 'table_seq', 'row_seq', 'section', 'article', 'country', 'province', 'raw'])
+        w.writeheader(); w.writerows(p.blank_rows)
+    print(f'wrote {OUT_CSV} ({len(p.rows)} rows) and {OUT_MD}; {len(p.blank_rows)} blank province rows -> {OUT_DIR / "blank_rows.csv"}', file=sys.stderr)
 
 
 if __name__ == '__main__':

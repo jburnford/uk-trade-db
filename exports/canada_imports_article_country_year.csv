@@ -15652,6 +15652,10 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,Fruits and Nuts > Filberts and Walnuts,"All other Nuts, N.E.S",Great Britain,DUTIABLE,,6,0,9811,0,10487,2097.4
 1882,C,Fruits and Nuts > Filberts and Walnuts,"All other Nuts, N.E.S",Italy,DUTIABLE,,1,0,2,0,2,0.4
 1882,C,Fruits and Nuts > Filberts and Walnuts,"All other Nuts, N.E.S",United States,DUTIABLE,,8,0,46058,0,46660,9333.42
+1882,C,"Fruits, and Nuts > Dried Apples","Currants, Zante, or other",Great Britain,DUTIABLE,Lbs,7,680755,30302,682029,30705,7676.17
+1882,C,"Fruits, and Nuts > Dried Apples","Currants, Zante, or other",Greece,DUTIABLE,Lbs,3,3437316,142815,3015789,125726,31431.5
+1882,C,"Fruits, and Nuts > Dried Apples","Currants, Zante, or other",Spain,DUTIABLE,Lbs,2,123440,5391,85766,3817,954.25
+1882,C,"Fruits, and Nuts > Dried Apples","Currants, Zante, or other",United States,DUTIABLE,Lbs,7,815218,35932,823981,38134,9558.5
 1882,C,Fur and manufactures of,"Caps, Hats, Muffs, &c., and other manufactures of fur",Australia,DUTIABLE,,1,0,175,0,175,43.75
 1882,C,Fur and manufactures of,"Caps, Hats, Muffs, &c., and other manufactures of fur",China,DUTIABLE,,1,0,70,0,70,17.5
 1882,C,Fur and manufactures of,"Caps, Hats, Muffs, &c., and other manufactures of fur",Germany,DUTIABLE,,2,0,13599,0,12510,3127.5
@@ -21385,6 +21389,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1884,C,"Breadstuffs, &c > Grain and products of",Wheat,Great Britain,DUTIABLE,,2,36,71,36,71,5.4
 1884,C,"Breadstuffs, &c > Grain and products of",Wheat,Russia,DUTIABLE,,1,3,7,3,7,0.45
 1884,C,"Breadstuffs, &c > Grain and products of",Wheat,United States,DUTIABLE,,6,3604408,3876039,298626,291940,44791.17
+1884,C,"Breadstuffs, &c > Grain and products of > Oatmeal",Rye flour,United States,DUTIABLE,,3,82,363,82,363,42.5
+1884,C,"Breadstuffs, &c > Grain and products of > Oatmeal",Wheat flour,Great Britain,DUTIABLE,,2,1807,11876,1807,11876,903.25
+1884,C,"Breadstuffs, &c > Grain and products of > Oatmeal",Wheat flour,United States,DUTIABLE,,8,563465,2590635,529376,2423086,264688.58
 1884,C,"Breadstuffs, &c > Maccaroni and vermicelli, and all similar preparations",Rice,China,DUTIABLE,,1,3032707,65718,3254099,72753,32540.99
 1884,C,"Breadstuffs, &c > Maccaroni and vermicelli, and all similar preparations",Rice,Great Britain,DUTIABLE,,6,3062012,64555,3231213,68059,32312.13
 1884,C,"Breadstuffs, &c > Maccaroni and vermicelli, and all similar preparations",Rice,Holland,DUTIABLE,,1,39200,1235,15680,519,156.8
@@ -34344,9 +34351,14 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1889,C,"Spirits and wines > Spirits and strong waters mixed with any ingredient, and thereby coming under the denomination of proprietary medicines, tinctures, essences, extracts or any other denomination, including medical extracts, in bulk or bottle, N.E.S","Cologne water and perfumed spirits, in bottles or flasks, not weighing more than four ounces each",Great Britain,DUTIABLE,,6,727,8885,647,7957,3978.5
 1889,C,"Spirits and wines > Spirits and strong waters mixed with any ingredient, and thereby coming under the denomination of proprietary medicines, tinctures, essences, extracts or any other denomination, including medical extracts, in bulk or bottle, N.E.S","Cologne water and perfumed spirits, in bottles or flasks, not weighing more than four ounces each",United States,DUTIABLE,,5,780,11025,767,10009,5004.5
 1889,C,"Spirits and wines > Spirits and strong waters mixed with any ingredient, and thereby coming under the denomination of proprietary medicines, tinctures, essences, extracts or any other denomination, including medical extracts, in bulk or bottle, N.E.S","Cologne water and perfumed spirits, in bottles, flasks or other packages, weighing more than four ounces each",Great Britain,DUTIABLE,,6,142,1880,160,2041,1138.3
-1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Cordials, rum schrub, hitters, schiedam schnapps, tafia and articles of like kind, N.E.S",Holland,DUTIABLE,,2,246,379,106,151,201.4
-1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Cordials, rum schrub, hitters, schiedam schnapps, tafia and articles of like kind, N.E.S",Italy,DUTIABLE,,1,286,427,209,238,397.1
-1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Cordials, rum schrub, hitters, schiedam schnapps, tafia and articles of like kind, N.E.S",St. Pierre,DUTIABLE,,2,27,53,8,22,15.2
+1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Cordials, &c",Holland,DUTIABLE,,2,246,379,106,151,201.4
+1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Cordials, &c",Italy,DUTIABLE,,1,286,427,209,238,397.1
+1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Cordials, &c",St. Pierre,DUTIABLE,,2,27,53,8,22,15.2
+1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Cordials, rum schrub, hitters, schiedam schnapps, tafia and articles of like kind, N.E.S",?,DUTIABLE,,2,299,556,374,749,500.48
+1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Cordials, rum schrub, hitters, schiedam schnapps, tafia and articles of like kind, N.E.S",France,DUTIABLE,,2,5444,10739,5245,10824,9966.46
+1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Cordials, rum schrub, hitters, schiedam schnapps, tafia and articles of like kind, N.E.S",Great Britain,DUTIABLE,,6,820,3272,1066,3723,2025.85
+1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Cordials, rum schrub, hitters, schiedam schnapps, tafia and articles of like kind, N.E.S",United States,DUTIABLE,,5,1936,8745,1306,6899,2481.23
+1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained",Germany. .... “ Belgium. .... “ B. W. Indies,China,DUTIABLE,,1,17638,9696,14276,7782,27124.9
 1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Spirits and strong * waters, N.E.S",Belgium,DUTIABLE,,1,5538,10073,0,0,0.0
 1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Spirits and strong * waters, N.E.S",British West Indies,DUTIABLE,,1,10,35,10,35,19.0
 1889,C,"Spirits and wines > Spirits, sweetened and mixed so that the strength cannot be ascertained","Spirits and strong * waters, N.E.S",China,DUTIABLE,,1,1143,428,945,365,1795.5
