@@ -27,6 +27,10 @@ CANON = {
     'st pierre': 'St. Pierre', 'st pierre et miquelon': 'St. Pierre', 'newfoundand': 'Newfoundland', 'newfoundland': 'Newfoundland',
     'norway & sweden': 'Norway and Sweden', 'norway and sweden': 'Norway and Sweden', 'b guiana': 'British Guiana', 'brit guiana': 'British Guiana',
     'chili': 'Chile', 'hayti': 'Haiti', 'united tates': 'United States', 'unted states': 'United States',
+    # '“ “ Africa' under 'British West Indies' = British Africa (the ditto marks stand for 'British'); the abstract
+    # prints it 'British Africa' / 'British Possessions in Africa' / 'B. Africa'
+    'africa': 'British Africa', 'b africa': 'British Africa', 'brit africa': 'British Africa', 'british africa': 'British Africa',
+    'british possessions in africa': 'British Africa', 'south africa': 'British Africa',
 }
 
 def canon(c):

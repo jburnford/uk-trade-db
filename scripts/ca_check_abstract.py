@@ -27,6 +27,7 @@ def ckey(c):
     if m: c = m.group(2) + ' ' + m.group(1) + ' indies'
     if c.startswith('grea') and 'brit' in c: c = 'great britain'
     if c.startswith('united st'): c = 'united states'
+    if c in ('africa', 'british possessions africa', 'south africa'): c = 'british africa'     # '“ “ Africa' = British Africa
     return c
 
 def main():

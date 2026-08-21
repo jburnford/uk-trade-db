@@ -813,6 +813,68 @@ class Parser:
             if deferred:
                 self._article(ctx, deferred); ctx['country'] = None
         self._fix_duty_slot(n_start)
+        self._fix_free_scramble(n_start)
+
+    def _fix_free_scramble(self, n_start):
+        """FREE goods with a unit (1885 gums page): the OCR kept ONE number per printed row ('Ontario | Lbs. | 489 |
+        Lbs. | 489') and appended the rest of the block's numbers as label-less rows, the last two being the block's
+        printed qty and value totals (GB 68,881 lbs / \$9,490; US 651,628 / 114,435; grand 791,568 / 127,068 = the
+        Summary Statement). Which labelled number is a quantity and which a value is unknowable, so the details are
+        nulled and one province-'?' row carries the printed country value; the Total block likewise."""
+        KINDS = ('detail', 'article_province_total')
+        TAILS = ('country_total', 'article_total')
+        rows = self.rows[n_start:]
+        if not rows or rows[0].get('regime') != 'C': return
+        def single(x):
+            return x['qty_imp'] is None and x['qty_efc'] is None and x['val_imp'] is not None and x['val_imp'] == x['val_efc'] and x['duty'] is None
+        def unit_in_qty(x):
+            c = (x.get('raw') or '').split(' | ')
+            return len(c) >= 5 and (is_unit_token(c[-5]) or is_unit_token(c[-3]))
+        out = []; i = 0; changed = False; fixed_blocks = set()
+        while i < len(rows):
+            r = rows[i]
+            if r.get('section') != 'FREE' or r['row_kind'] not in KINDS or r['province'] not in PROVINCE_ORDER:
+                out.append(r); i += 1; continue
+            j = i
+            while j < len(rows) and rows[j].get('section') == 'FREE' and rows[j]['row_kind'] in KINDS \
+                    and rows[j]['block_id'] == r['block_id'] and rows[j]['country'] == r['country']:
+                j += 1
+            k = j
+            while k < len(rows) and rows[k]['row_kind'] in TAILS and rows[k]['block_id'] == r['block_id'] \
+                    and (rows[k]['country'] == r['country'] or r['country'] == 'TOTAL'):
+                k += 1
+            det = rows[i:j]; tail = rows[j:k]
+            ok = det and tail and all(single(x) for x in det + tail) and (any(unit_in_qty(x) for x in det) or r['block_id'] in fixed_blocks) \
+                and (len(tail) >= 2 or len(det) == 1)
+            qty_kept = False
+            if ok and len(tail) >= 2:
+                # a run of trailing rows that CLOSES on the first (country total then lost-label provinces) is the
+                # lost-label class, not a scramble; a tail of exactly two where the first is the sum of the details is
+                # the value column lost with the QUANTITIES kept (1880 seal oil: 99,750 + 4,866 = 104,616 galls, $52,327)
+                sd = sum(x['val_imp'] for x in det); st = sum(x['val_imp'] for x in tail[1:])
+                if abs(tail[0]['val_imp'] - (sd + st)) <= 0.005 * max(1.0, tail[0]['val_imp']): ok = False
+                elif len(tail) == 2 and abs(tail[0]['val_imp'] - sd) <= 0.005 * max(1.0, sd): qty_kept = True
+            if ok and len(tail) == 1 and len(det) == 1 and tail[0]['val_imp'] >= det[0]['val_imp']: ok = False
+            if not ok:
+                out.extend(rows[i:k]); i = k; continue
+            fixed_blocks.add(r['block_id'])
+            vtot = tail[-1]['val_imp']; qtot = tail[-2]['val_imp'] if len(tail) >= 2 else None
+            for x in det:
+                if qty_kept:
+                    x['qty_imp'] = x['qty_efc'] = x['val_imp']
+                else:
+                    x['qty_imp'] = x['qty_efc'] = None
+                x['val_imp'] = x['val_efc'] = None
+                x['flags'] = (x['flags'] + ',' if x['flags'] else '') + ('value_column_lost_free' if qty_kept else 'qty_value_scrambled')
+            syn = dict(det[0]); syn['province'] = '?'; syn['val_imp'] = syn['val_efc'] = vtot; syn['qty_imp'] = syn['qty_efc'] = None
+            syn['flags'] = 'scrambled_block_total'; syn['raw'] = tail[-1]['raw']
+            tot = dict(tail[-1]); tot['val_imp'] = tot['val_efc'] = vtot; tot['qty_imp'] = tot['qty_efc'] = qtot
+            tot['flags'] = (tot['flags'] + ',' if tot['flags'] else '') + 'scrambled_block_total'
+            out.extend(det); out.append(syn); out.append(tot)
+            self.diag['qty_value_scrambled_block'] += 1; changed = True
+            i = k
+        if changed:
+            self.rows[n_start:] = out
 
     def _fix_province_order(self, n_start):
         """The provinces are printed in one fixed order (Ontario, Quebec, N.S., N.B., Manitoba, B.C., P.E.I., N.W.T.).
