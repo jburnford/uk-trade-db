@@ -527,7 +527,7 @@ class Parser:
                 if prev in ('TOTAL',) or (prev and prev != '?' and rank(a_n) < 2 and rank(a_n) <= rank(prev)):
                     ctx['article_parents'] = ctx.get('article_parents') or []
                     ctx['article'] = '?'; ctx['block_id'] = ctx.get('block_id', 0) + 1
-                    ctx['leaf_used'] = False; ctx['unit'] = None
+                    ctx['leaf_used'] = False; ctx['unit'] = None; ctx['article_closed'] = False
                     self.diag['article_heading_lost'] += 1
             if a_n:
                 if re.match(r'totals?\b', a_n, re.I):
@@ -794,7 +794,10 @@ class Parser:
         if not parents and leaf is None:
             return
         if re.search(r'recapitulation', text, re.I):
-            ctx['recap'] = True
+            ctx['recap'] = True; ctx['recap_done'] = False
+        elif ctx.get('recap') and ctx.get('recap_done') and leaf is not None and not re.match(r'^(by\b|total)', leaf, re.I):
+            ctx['recap'] = False          # the recapitulation closed with its Total; a new article follows on the page
+            # ('By Provinces' / 'By Grades' sub-tables of a recapitulation each carry a Total and stay inside it)
         old_leaf = ctx.get('article')
         page_top_running = ctx.get('table_top') and ctx.get('country') not in (None, '', '?')
         if parents and leaf is None and page_top_running:
@@ -856,9 +859,16 @@ class Parser:
     def _emit(self, fy, vol, seq, ri, ctx, kind, prov, nums, flags, vals_raw, texts):
         if ctx.get('recap'):
             kind = 'recap'
+            if ctx.get('country') == 'TOTAL' or any(re.match(r'\s*[“"]?\s*Total', t) for t in texts[:2]):
+                ctx['recap_done'] = True
         if kind in ('detail', 'country_total', 'detail_lostlabel') and not ctx.get('article'):
             ctx['article'] = '?'; ctx['block_id'] = ctx.get('block_id', 0) + 1; ctx['leaf_used'] = False
             self.diag['article_heading_lost'] += 1
+        elif kind in ('detail', 'country_total', 'detail_lostlabel', 'country_noprov') and ctx.get('article_closed') and ctx.get('regime') == 'C':
+            # data rows after the article's printed grand total with no heading read: a new article, heading lost
+            ctx['article'] = '?'; ctx['block_id'] = ctx.get('block_id', 0) + 1; ctx['leaf_used'] = False
+            ctx['article_closed'] = False; ctx['article_parents'] = []
+            self.diag['article_heading_lost_after_total'] += 1
         if ctx.get('regime') == 'A':
             cols = ['qty_brit', 'qty_foreign', 'qty_land', 'qty_imp', 'val_imp', 'qty_efc', 'val_efc', 'duty']
         else:
@@ -891,12 +901,25 @@ class Parser:
         #     heading+first-country row.  Signature: the row's values equal the sum of the preceding Total-by-
         #     province rows, which themselves were not followed by a grand total.
         pend = None        # (val_imp sum, qty_imp sum, val_efc sum) of article_province_total rows awaiting a grand total
+        pend_src = None    # the first of those Total rows (carries the article the grand total belongs to)
         for r in rows:
             k = r['row_kind']
             if k == 'article_province_total':
-                if pend is None: pend = [0.0, 0.0, 0.0, False]
+                if pend is None: pend = [0.0, 0.0, 0.0, False]; pend_src = r
                 pend[0] += r['val_imp'] or 0; pend[1] += r['qty_imp'] or 0; pend[2] += r['val_efc'] or 0
             elif k == 'article_total':
+                pend = None
+            elif k == 'country_total' and pend is not None and r['block_id'] != pend_src['block_id']:
+                # the grand total came right after the Total-by-province rows but a new heading (+ country) had
+                # already been read: it was emitted as the new article's first country total with no rows.
+                # Values equal to the province totals prove it the OLD article's grand total.
+                def _close(x, y, tol):
+                    return x is not None and y and abs(x - y) <= max(0.5, tol * y)
+                if pend[0] > 0 and (_close(r['val_imp'], pend[0], 0) or (_close(r['val_efc'], pend[2], 0) and pend[2] > 1000)):
+                    r['row_kind'] = 'article_total'; r['country'] = None; r['province'] = None
+                    r['article'] = pend_src['article']; r['article_parent'] = pend_src['article_parent']; r['block_id'] = pend_src['block_id']
+                    r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'grand_total_rejoined'
+                    self.diag['grand_total_rejoined'] += 1
                 pend = None
             elif k in ('detail', 'detail_lostlabel', 'country_noprov') and pend is not None:
                 def _close(x, y, tol):
@@ -914,6 +937,12 @@ class Parser:
                 pass
             else:
                 pend = None
+        # (s) summary lines of the sugar section ('Melado, &c., &c., direct, of all degrees by polariscope' = the sum
+        #     of the 'not over N degrees' grades, repeated in the recapitulation that follows): never detail
+        for r in rows:
+            if r['article'] and re.search(r'\ball degrees\b', r['article'], re.I) and not re.search(r'testing', r['article'], re.I) \
+                    and r['row_kind'] in ('detail', 'detail_lostlabel', 'country_total', 'article_province_total', 'article_total', 'country_noprov'):
+                r['row_kind'] = 'summary'; self.diag['summary_line'] += 1
         # (a') the previous article's Total block continues past a heading that rode on one of its rows
         #      ('Earthenware, viz.: ... ware— | P. E. Island | 1,686' was emitted as the old article's PEI total, then
         #      'N.-W. Territories | 299' and the grand total 298,926 fell into the new article as '?' rows):
@@ -1039,6 +1068,53 @@ class Parser:
                         self.diag['heading_fused_into_total'] += 1
                         i = q; continue
             i += 1
+        # (f) a heading read as a country label: 'Machinery for Worsted and Cotton-Mills ... | | 2,610' — a long,
+        #     non-vocab label on a row whose values are the preceding run's total (country_noprov), followed by an
+        #     article-'?' block.  The label names that block; the row is the previous run's country total when the
+        #     sum proves it (else the previous article's grand total, else a bare heading row).
+        i = 0; n = len(rows)
+        while i < n:
+            r = rows[i]
+            lab = r['country'] or ''
+            if r['row_kind'] == 'country_noprov' and len(lab) > 22 and lab not in self.vocab and norm_label(lab) not in self.vocab \
+                    and not province_of(lab) and not split_trailing_country(lab, self.vocab)[1] \
+                    and i + 1 < n and rows[i + 1]['article'] == '?' and rows[i + 1]['row_kind'] in ('detail', 'detail_lostlabel', 'country_total'):
+                head = re.sub(r'\s*[—–-]\s*$', '', norm_label(lab)).strip()
+                head = re.sub(r'(\w)- (?=[a-z])', r'\1', head)
+                q = i + 1
+                while q < n and rows[q]['article'] == '?': q += 1
+                for x in rows[i + 1:q]:
+                    x['article'] = head; x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'heading_from_label_row'
+                # the row's own values
+                p = i - 1
+                while p >= 0 and rows[p]['row_kind'] == 'detail' and rows[p]['block_id'] == r['block_id'] \
+                        and rows[p]['country'] == rows[i - 1]['country'] and rows[p]['country'] not in (None, '', '?', 'TOTAL'): p -= 1
+                run = rows[p + 1:i]
+                done = False
+                if run:
+                    for col in ('val_imp', 'val_efc'):
+                        tv = r[col]
+                        if tv is None or tv <= 0: continue
+                        if abs(sum((x[col] or 0) for x in run) - tv) <= max(1, 0.001 * tv):
+                            r['row_kind'] = 'country_total'; r['country'] = run[-1]['country']; done = True; break
+                if not done:
+                    p = i - 1
+                    while p >= 0 and rows[p]['row_kind'] == 'article_province_total': p -= 1
+                    tot = rows[p + 1:i]
+                    if tot:
+                        for col in ('val_imp', 'val_efc'):
+                            tv = r[col]
+                            if tv is None or tv <= 0: continue
+                            if abs(sum((x[col] or 0) for x in tot) - tv) <= max(1, 0.001 * tv):
+                                r['row_kind'] = 'article_total'; r['country'] = None; r['province'] = None
+                                r['article'] = tot[0]['article']; r['article_parent'] = tot[0]['article_parent']; r['block_id'] = tot[0]['block_id']
+                                done = True; break
+                if not done:
+                    r['row_kind'] = 'heading_row'; r['country'] = None
+                r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'heading_label_row'
+                self.diag['heading_from_label_row'] += 1
+                i = q; continue
+            i += 1
         # (e) article-heading '?' runs resolved by resumption or by closure: a run of rows whose article is '?'
         #     (an order restart fired, or a heading never arrived) belongs to the PRECEDING article P when P's name
         #     resumes right after it ('Wool, unmanufactured, N.E.S — United States' at the next page top) with no
@@ -1053,18 +1129,27 @@ class Parser:
                 elif x['row_kind'] in ('article_total', 'article_total_fused'):
                     gt = (x['val_imp'], x['val_efc'])
             return pv, gt
+        def _runs(rs, col):
+            """value of a row list for closure: each country's printed country_total when it has one (its detail
+            rows may be partly on another page), else its detail rows"""
+            has_t = set(x['country'] for x in rs if x['row_kind'] == 'country_total')
+            v = 0.0
+            for x in rs:
+                if x['row_kind'] == 'country_total' or (x['row_kind'] in ('detail', 'country_noprov') and x['country'] not in has_t):
+                    v += x[col] or 0
+            return v
         def _closes(details, pv, gt):
             """details (list of rows) close the Totals: grand total within 0.1% in either column, or (no grand
             total) every printed province total matched by the per-province detail sums"""
             for ci, col in enumerate(('val_imp', 'val_efc')):
                 if gt is not None and gt[ci] is not None and gt[ci] > 0:
-                    sv = sum((x[col] or 0) for x in details)
+                    sv = _runs(details, col)
                     if abs(sv - gt[ci]) <= max(1, 0.001 * gt[ci]): return True
             if gt is None and pv:
                 for ci, col in enumerate(('val_imp', 'val_efc')):
                     acc = defaultdict(float)
                     for x in details:
-                        if x[col] is not None: acc[x['province']] += x[col]
+                        if x['row_kind'] == 'detail' and x[col] is not None: acc[x['province']] += x[col]
                     ok = 0; tried = 0
                     for prov, t in pv.items():
                         if t[ci] is None or t[ci] <= 0: continue
@@ -1084,14 +1169,14 @@ class Parser:
             P = before['article'] if before and before['article'] not in (None, '', '?') else None
             N = after['article'] if after and after['article'] not in (None, '', '?') else None
             assign = None; how = None
-            run_det = [x for x in run if x['row_kind'] == 'detail']
+            run_det = [x for x in run if x['row_kind'] in ('detail', 'country_total', 'country_noprov')]
             run_pv, run_gt = _tots(run)
             if P is not None and before['row_kind'] not in ('article_total', 'article_total_fused'):
                 # P's open block: its rows back to the previous article_total
                 p = i - 1
                 while p >= 0 and rows[p]['block_id'] == before['block_id'] and rows[p]['row_kind'] not in ('article_total', 'article_total_fused'): p -= 1
                 p_rows = rows[p + 1:i]
-                p_det = [x for x in p_rows if x['row_kind'] == 'detail']
+                p_det = [x for x in p_rows if x['row_kind'] in ('detail', 'country_total', 'country_noprov')]
                 p_pv, p_gt = _tots(p_rows)
                 if N == P and p_gt is None:
                     assign, how = before, 'article_resumed'
@@ -1101,7 +1186,7 @@ class Parser:
                 q = j
                 while q < n and rows[q]['block_id'] == after['block_id']: q += 1
                 n_rows = rows[j:q]
-                n_det = [x for x in n_rows if x['row_kind'] == 'detail']
+                n_det = [x for x in n_rows if x['row_kind'] in ('detail', 'country_total', 'country_noprov')]
                 n_pv, n_gt = _tots(n_rows)
                 if (n_pv or n_gt) and _closes(run_det + n_det, n_pv, n_gt) and not _closes(n_det, n_pv, n_gt):
                     assign, how = after, 'article_closed_with_next'
