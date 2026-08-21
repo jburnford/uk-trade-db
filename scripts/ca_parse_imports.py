@@ -15,7 +15,7 @@ Earlier layouts (1868 per-province statements, 1866-67 ports x countries) are no
 Output: db/canada/imports_general_rows.csv (one row per printed line, with row_kind) and
 reports/canada_imports_parse.md (diagnostics + closure checks).
 """
-import csv, html, json, re, sys
+import csv, html, json, os, re, sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -102,8 +102,9 @@ def fuzzy_jaccard(a, b):
     and stop words dropped: 'Cotton, all other manuffactures of' ~ 'All other manufactures of cotton'."""
     import difflib
     def toks(x):
-        x = re.sub(r'(&c|\betc\b|\bn\.?\s*e\.?\s*s\b)\.?', '', (x or '').lower())
-        return [t for t in re.findall(r'[a-z0-9]+', x) if t not in ('of', 'and', 'the', 'or', 'all', 'other')]
+        x = re.sub(r'not (elsewhere|otherwise) (specified|provided for|enumerated)|not specially enumerated or provided for', ' nes ', (x or '').lower())
+        x = re.sub(r'(&c|\betc\b|\bn\.?\s*e\.?\s*s\b)\.?', '', x)
+        return [t for t in re.findall(r'[a-z0-9]+', x) if t not in ('of', 'and', 'the', 'or', 'all', 'other', 'nes')]
     ta, tb = toks(a), toks(b)
     if not ta or not tb: return 0.0
     used = set(); hit = 0
@@ -135,9 +136,11 @@ def token_containment(short, long):
             'otherwise', 'all', 'over', 'under', 'less', 'more', 'than', 'above', 'below', 'direct', 'refined', 'raw'}
     def toks(x):
         x = re.sub(r'(&c|\betc\b)\.?', '', (x or '').lower())
+        x = re.sub(r'not (elsewhere|otherwise) (specified|provided for|enumerated)|not specially enumerated or provided for', ' nes ', x)
         x = re.sub(r'\bn\.?\s*e\.?\s*s\b\.?', ' nes ', x); x = re.sub(r'\bn\.?\s*o\.?\s*p\b\.?', ' nop ', x)
         return [t for t in re.findall(r'[a-z0-9]+', x) if t not in ('of', 'and', 'the', 'or', 'con')]
     a, b = toks(short), toks(long)
+    a = list(dict.fromkeys(a)); b = list(dict.fromkeys(b))          # duplicates ('wool ... wool') count once
     if not a or not b: return 0.0
     if len(a) > len(b): a, b = b, a
     used = set(); hit = 0
@@ -463,6 +466,8 @@ class Parser:
             flags = [p[1] for p in parsed]
             numeric = any(v is not None for v in nums)
             units_only = not numeric and all(f in ('blank', 'unit') for f in flags)
+            if os.environ.get('CA_DEBUG_TABLE') == f'{fy}:{seq}':
+                print('ROW', ri, 'texts=', texts, 'nums=', nums, 'numeric=', numeric, file=sys.stderr)
             a = labels[0] if len(labels) >= 2 else None
             b = labels[-1] if labels else ''
             if len(labels) >= 3:
@@ -1702,8 +1707,12 @@ class Parser:
                 in_general = False
             if not in_general:
                 continue
-            if reg:
+            if reg and (not ctx['regime'] or reg == ctx['regime']):
                 ctx['regime'] = reg
+            elif reg and ctx['regime']:
+                # the layout is constant within a volume: a header misread ('ARTICLES | COUNTRIES | DUTY' on a
+                # province table) must not flip a regime-C volume to B for one page (1883 t193 lost $1.1M that way)
+                self.diag['regime_flip_ignored'] += 1
             if not ctx['regime']:
                 self.diag['no_regime_yet'] += 1; continue
             pt = province_from_title(short)
