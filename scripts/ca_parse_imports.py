@@ -135,7 +135,9 @@ def token_containment(short, long):
     # tokens the longer name adds (or the shorter drops) must not change the meaning: 'Pig iron' is not
     # 'Pig iron, all other'; 'Feathers, dressed' is not 'Feathers, undressed'
     extra = [u for i, u in enumerate(b) if i not in used] + [t for t in a if t not in b and not any(t[:3] == u[:3] for u in b)]
-    if any(t in QUAL or t.isdigit() for t in extra): return 0.0
+    abbreviated = bool(re.search(r'&c|\betc\b', (short or '').lower())) or bool(re.search(r'&c|\betc\b', (long or '').lower()))
+    if not abbreviated and any(t in QUAL or t.isdigit() for t in extra): return 0.0
+    if abbreviated and any(t in QUAL for t in [x for x in a if x not in b]): return 0.0   # the short form must not ADD a qualifier
     return hit / len(a)
 
 
@@ -390,13 +392,17 @@ class Parser:
                 keep = [i for i, t in enumerate(texts) if not (is_unit_token(t) and i >= 2)]
                 if len(keep) >= NV + 2 and len(keep) < len(texts):
                     texts = [texts[i] for i in keep]; self.diag['stray_unit_cells_dropped'] += 1
-            if len(texts) == NV and (province_of(texts[0]) or not texts[0].strip() or re.fullmatch(r'[.\s·…]+', texts[0])) \
-                    and sum(1 for t in texts[1:] if parse_num(t, cents_ok=False)[0] is not None) == 4 \
-                    and not re.search(r'\d \d\d$', texts[-1].strip()) and ctx.get('section') == 'FREE':
+            if ctx.get('section') == 'FREE' and NV <= len(texts) <= NV + 2 and not re.search(r'\d \d\d$', texts[-1].strip()):
                 # free-goods row whose trailing (blank) duty cell the OCR dropped: 'Quebec | 1,219,955 | 257,639 |
-                # 1,219,955 | 257,639' is label + qty + value + qty + value, not five values
-                texts = texts + ['']
-                self.diag['duty_cell_dropped'] += 1
+                # 1,219,955 | 257,639' (or 'heading | Great Britain | Ontario | Lbs. 2,518,083 | 644,463 | Lbs.
+                # 2,518,083 | 644,463') is label(s) + qty + value + qty + value, not five values
+                tail = texts[-4:]
+                lab = texts[:-4]
+                if all(parse_num(t, cents_ok=False)[0] is not None for t in tail) \
+                        and lab and all(parse_num(t, cents_ok=False)[0] is None for t in lab) \
+                        and (province_of(lab[-1]) or not lab[-1].strip() or re.fullmatch(r'[.\s·…]+', lab[-1]) or len(lab) >= 2):
+                    texts = texts + ['']
+                    self.diag['duty_cell_dropped'] += 1
             vals_raw = texts[-NV:]
             labels = texts[:-NV]
             # banner in label position with blank values
