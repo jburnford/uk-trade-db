@@ -382,6 +382,14 @@ class Parser:
             spans = sum(cs for _, cs, _ in cells)
             # quantity and value fused into one cell ('United States | Ontario | 29 126 | 29 126 | 14 75' — a whole
             # page of the 1884 flour tables reads like this): split every non-final cell holding two plain numbers
+            # a phantom blank cell between the imported and entered-for-consumption pairs ('| Nova Scotia | | 112 | 37 |
+            # | 112 | 37 | 7 40'): the row has one cell too many and the pairs repeat
+            if len(texts) >= NV + 3:
+                z = [t.strip() for t in texts[-6:]]
+                if re.fullmatch(r'[\d,]+', z[0]) and re.fullmatch(r'[\d,]+', z[1]) and not z[2] and re.fullmatch(r'[\d,]+', z[3]) and re.fullmatch(r'[\d,]+', z[4]) \
+                        and (re.fullmatch(r'[\d,]+ \d\d', z[5]) or not z[5] or re.fullmatch(r'[.\s·…]+', z[5])):
+                    texts = texts[:-4] + texts[-3:]
+                    self.diag['phantom_blank_cell_dropped'] += 1
             k_two = sum(1 for i, t in enumerate(texts) if i < len(texts) - 1 and re.fullmatch(r'[\d,]+ [\d,]+', t.strip()) and not re.fullmatch(r'[\d,]+ \d\d', t.strip()))
             n_real = len([t for t in texts if t.strip()]) if k_two else 0
             # ('19 534' alone is 19,534 with its comma lost — only a row short of cells with BOTH pairs fused is split)
@@ -699,7 +707,7 @@ class Parser:
                             head, tail = cand.rsplit('—', 1); tail = tail.strip(' .')
                             if tail and (tail in self.vocab or split_trailing_country(tail, self.vocab)[1] == tail or len(tail) < 25):
                                 self._article(ctx, head + '—'); cand = tail
-                            elif not tail and head.strip() and head.strip() not in self.vocab:
+                            elif not tail and head.strip() and head.strip() not in self.vocab and len(head.strip()) <= 22:
                                 # '“ Wheat flour— | 93 | 395 | ...': the NEXT article's heading rode on this row, whose
                                 # values are the current country's (or article's) total — emit the total, then the heading
                                 kind = 'article_total' if ctx.get('country') in ('TOTAL', None, '') else 'country_total'
@@ -967,7 +975,8 @@ class Parser:
         # 'Feathers, ostrich and vulture, dressed— Great Britain': the trailing segment is the first country, not the leaf
         pending_country = None
         vocab = getattr(self, 'vocab', None) or SEED_COUNTRIES
-        if leaf is not None and parents and (leaf in vocab or leaf.rstrip(' .') in vocab or leaf.rstrip(' .') in SEED_COUNTRIES):
+        lf = leaf.rstrip(' .') if leaf else ''
+        if leaf is not None and parents and lf in SEED_COUNTRIES:      # learned vocab is too polluted ('Wheat Flour') for this
             pending_country = leaf.rstrip(' .'); leaf = parents.pop()
         if not parents and leaf is None:
             return
@@ -978,6 +987,19 @@ class Parser:
             # ('By Provinces' / 'By Grades' sub-tables of a recapitulation each carry a Total and stay inside it)
         old_leaf = ctx.get('article')
         page_top_running = ctx.get('table_top') and ctx.get('country') not in (None, '', '?')
+        if page_top_running and leaf is not None and not parents and old_leaf not in (None, '?'):
+            # 'Grain and products of' / 'Meats' at a page top: the running PARENT head of the open article, printed
+            # without its colon — it is a parent of the open article (or ends in 'of'), not a new leaf
+            lk = leaf.lower().rstrip(' :;,')
+            ntok = len(re.findall(r'[A-Za-z]+', leaf))
+            short_parent_head = not re.search(r'[—–:;]\s*$', text.strip()) and ntok <= 4 and (lk.endswith(' of') or (ntok == 1 and leaf[:1].isupper()))
+            def _is_parent(pp):
+                # the page-top text IS the parent (or a shorter form of it) — not a leaf that merely contains it
+                if ntok > len(re.findall(r'[A-Za-z]+', pp)) + 1: return False
+                return fuzzy_jaccard(leaf, pp) >= 0.75 or token_containment(leaf, pp) >= 0.9
+            if short_parent_head or any(_is_parent(pp) for pp in (ctx.get('article_parents') or [])):
+                ctx['leaf_used'] = False
+                return
         if parents and leaf is None and page_top_running:
             # a parents-only running head at the page top ('Sugars, syrups, and molasses:—'): the open article
             # and its country block carry over; the leaf may be repeated on the next row and must still match
