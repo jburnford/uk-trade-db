@@ -122,7 +122,9 @@ def wrapped_suffix(a, b):
     ta = re.findall(r'[A-Za-z]+', a or ''); tb = re.findall(r'[A-Za-z]+', b or '')
     if not ta or not tb: return False
     for x, y in ((ta, tb), (tb, ta)):
-        if len(x) == 1 and len(x[0]) >= 3 and x[0][0].islower() and y[-1].lower().endswith(x[0].lower()) and len(y[-1]) > len(x[0]):
+        if len(x) == 1 and len(x[0]) >= 3 and x[0][0].islower() and len(y) >= 2 and (
+                (y[-1].lower().endswith(x[0].lower()) and len(y[-1]) > len(x[0])) or
+                (len(x[0]) >= 5 and x[0].lower() in [t.lower() for t in y])):     # 'diameter' = the tail of a wrapped heading
             return True
     return False
 
@@ -697,12 +699,20 @@ class Parser:
                             head, tail = cand.rsplit('—', 1); tail = tail.strip(' .')
                             if tail and (tail in self.vocab or split_trailing_country(tail, self.vocab)[1] == tail or len(tail) < 25):
                                 self._article(ctx, head + '—'); cand = tail
+                            elif not tail and head.strip() and head.strip() not in self.vocab:
+                                # '“ Wheat flour— | 93 | 395 | ...': the NEXT article's heading rode on this row, whose
+                                # values are the current country's (or article's) total — emit the total, then the heading
+                                kind = 'article_total' if ctx.get('country') in ('TOTAL', None, '') else 'country_total'
+                                deferred = head.strip() + '—'
+                                self.diag['heading_on_total_row'] += 1
+                                cand = None
                         else:
                             head, tail = split_trailing_country(cand, self.vocab)
                             if tail:
                                 if head: self._article(ctx, head)
                                 cand = tail
-                        ctx['country'] = cand; kind = 'country_noprov'; self.diag['label_in_province_slot'] += 1
+                        if cand is not None:
+                            ctx['country'] = cand; kind = 'country_noprov'; self.diag['label_in_province_slot'] += 1
                 else:
                     kind = 'article_total' if ctx.get('country') == 'TOTAL' else 'country_total'
             if not numeric and kind in ('detail', 'article_province_total'):
