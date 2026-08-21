@@ -730,9 +730,11 @@ class Parser:
             if kind in ('detail', 'article_province_total', 'country_total', 'article_total') and nums[0] is None and nums[2] is None \
                     and nums[1] is not None and nums[3] is not None and flags[4] == 'fused':
                 toks = split_numeric_tokens(vals_raw[4], cents_ok=True)
+                if toks and len(toks) == 3 and re.fullmatch(r'\d\d', toks[2]):
+                    toks = [toks[0], toks[1] + ' ' + toks[2]]                # '19,490 | 3,898 | 00' -> value + cents duty
                 if toks and len(toks) == 2:
                     ve = parse_num(toks[0], cents_ok=False)[0]; du = parse_num(toks[1], cents_ok=True)[0]
-                    if ve is not None and du is not None:
+                    if ve is not None and du is not None and ve > 0 and 0.003 <= du / ve <= 1.0:     # a real duty on that value
                         qi, qe = nums[1], nums[3]
                         vi = ve if abs(qi - qe) < 0.5 else None
                         nums = [qi, vi, qe, ve, du]
@@ -751,13 +753,27 @@ class Parser:
                 self.diag['value_in_qty_slot'] += 1
             qty_shape = nums[0] is None and nums[1] is not None and nums[1] > 0 and ctx.get('section') == 'DUTIABLE' \
                 and nums[4] is not None and nums[4] > 0 and nums[4] / nums[1] < 0.005
-            if kind in ('detail', 'article_province_total') and is_unit_token(vals_raw[0]) and qty_shape:
+            def _not_ad_valorem(r):
+                # a duty/value ratio that no ad valorem rate of the period explains (5 .. 40 %, by 2.5) — so the
+                # 'value' must be a quantity (specific duty per lb/gal): 2c/lb on 67,855 lb = 2.0 %
+                return r < 0.045 and all(abs(r - x / 100.0) > 0.004 for x in (5, 7.5, 10, 12.5, 15, 17.5, 20, 22.5, 25, 27.5, 30, 32.5, 35, 40))
+            both_units = is_unit_token(vals_raw[0]) and is_unit_token(vals_raw[2]) and nums[1] is not None and nums[3] is not None \
+                and nums[1] > 0 and nums[3] > 0 and nums[4] is not None and ctx.get('section') == 'DUTIABLE' \
+                and _not_ad_valorem(nums[4] / nums[3]) and _not_ad_valorem(nums[4] / nums[1])
+            rate = ctx.get('qty_only_rate')
+            same_rate = rate is not None and ctx.get('qty_only_block') == ctx.get('block_id') and nums[1] is not None and nums[1] > 0 \
+                and nums[4] is not None and nums[0] is None and nums[2] is None and not vals_raw[0].strip().strip('.') and not vals_raw[2].strip().strip('.') \
+                and abs(nums[4] / nums[1] - rate) <= 0.25 * rate
+            if kind in ('detail', 'article_province_total') and is_unit_token(vals_raw[0]) and (qty_shape or both_units):
+                # 'Lbs. | 56,585 | Lbs. | 67,855 | 1,357 10' (starch, 2c/lb): unit tokens in BOTH quantity slots and the
+                # numbers after them are the quantities; the value column is lost
+                ctx['qty_only_rate'] = (nums[4] / nums[3]) if (nums[3] or 0) > 0 else (nums[4] / nums[1] if nums[4] is not None else None)
                 nums = [nums[1], None, nums[3] if is_unit_token(vals_raw[2]) else nums[2], None, nums[4]]
                 flags = list(flags); flags[1] = flags[3] = 'value_lost'
                 self.diag['value_column_lost'] += 1
                 ctx['qty_only_block'] = ctx.get('block_id')
-            elif kind in ('detail', 'article_province_total', 'country_total', 'article_total') and qty_shape \
-                    and ctx.get('qty_only_block') == ctx.get('block_id') and not vals_raw[0].strip() and not vals_raw[2].strip():
+            elif kind in ('detail', 'article_province_total', 'country_total', 'article_total') and (qty_shape or same_rate) \
+                    and ctx.get('qty_only_block') == ctx.get('block_id') and not vals_raw[0].strip().strip('.') and not vals_raw[2].strip().strip('.'):
                 # the rest of a block whose value column is blank throughout ('| | 337,647 | | 337,647 | 1,350 58':
                 # strawboard 1889 — quantities in lbs, duty 0.4% of them): same shape, same block, same treatment
                 nums = [nums[1], None, nums[3], None, nums[4]]
