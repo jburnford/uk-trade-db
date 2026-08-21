@@ -37,7 +37,7 @@ for r in summ:
 L = ['# General Statement blocks vs No. 2 Summary Statement (article totals, Dominion)', '',
      '| FY | summary articles | GS blocks | matched | val_imp exact | within 1% | GS>summary (×>1.01) | GS<summary | summary value matched | GS value of matched | ratio |',
      '|---|---|---|---|---|---|---|---|---|---|---|']
-details = []
+details = []; matched_rows = []
 by_fy = defaultdict(list)
 for k in S: by_fy[k[0]].append(k)
 for fy in sorted(by_fy):
@@ -66,6 +66,9 @@ for fy in sorted(by_fy):
             else: under += 1
             if abs(g['val_imp'] - srow['val_imp']) > 1000:
                 details.append((fy, srow['article'], g['article'], g['val_imp'], srow['val_imp'], g['val_efc'], srow['val_efc'], g['duty'], srow['duty'], k[1]))
+        matched_rows.append(dict(fiscal_year=fy, block_id=k[1], gs_article=g['article'], summary_article=srow['article'], section=sk[2] or '',
+                                 gs_val_imp=round(g['val_imp'], 2), summary_val_imp=round(srow['val_imp'], 2), gs_val_efc=round(g['val_efc'], 2),
+                                 summary_val_efc=round(srow['val_efc'], 2), gs_duty=round(g['duty'], 2), summary_duty=round(srow['duty'], 2)))
     L.append(f"| {fy} | {len(by_fy[fy])} | {len(gkeys)} | {m} | {ex} | {w1} | {over} | {under} | {sv:,.0f} | {gv:,.0f} | {gv/sv if sv else 0:.3f} |")
 L += ['', '## Largest article discrepancies (|GS − summary| val_imp)', '',
       '| FY | summary article | GS article | GS val_imp | summary val_imp | GS efc | summary efc | GS duty | summary duty | block |', '|---|---|---|---|---|---|---|---|---|---|']
@@ -73,4 +76,6 @@ details.sort(key=lambda d: -abs(d[3] - d[4]))
 for d in details[:60]:
     L.append(f"| {d[0]} | {d[1][:45]} | {d[2][:45]} | {d[3]:,.0f} | {d[4]:,.0f} | {d[5]:,.0f} | {d[6]:,.0f} | {d[7]:,.2f} | {d[8]:,.2f} | {d[9]} |")
 (ROOT / 'reports' / 'canada_summary_check.md').write_text('\n'.join(L) + '\n')
+with open(ROOT / 'db' / 'canada' / 'summary_match.csv', 'w', newline='') as f:
+    w = csv.DictWriter(f, fieldnames=list(matched_rows[0].keys())); w.writeheader(); w.writerows(matched_rows)
 print('\n'.join(L[:14]))

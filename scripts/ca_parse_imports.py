@@ -593,11 +593,20 @@ class Parser:
                         self.diag['fused_efc_duty_split'] += 1
             # value column lost: the unit token sits in the quantity slot and the QUANTITY was read as the value
             # ('Lbs. | 916,211 | Lbs. | 916,211 | 1,717 75'); on a dutiable line the duty/value ratio gives it away
-            if kind in ('detail', 'article_province_total') and is_unit_token(vals_raw[0]) and nums[0] is None and nums[1] is not None and nums[1] > 0 \
-                    and ctx.get('section') == 'DUTIABLE' and nums[4] is not None and nums[4] > 0 and nums[4] / nums[1] < 0.005:
+            qty_shape = nums[0] is None and nums[1] is not None and nums[1] > 0 and ctx.get('section') == 'DUTIABLE' \
+                and nums[4] is not None and nums[4] > 0 and nums[4] / nums[1] < 0.005
+            if kind in ('detail', 'article_province_total') and is_unit_token(vals_raw[0]) and qty_shape:
                 nums = [nums[1], None, nums[3] if is_unit_token(vals_raw[2]) else nums[2], None, nums[4]]
                 flags = list(flags); flags[1] = flags[3] = 'value_lost'
                 self.diag['value_column_lost'] += 1
+                ctx['qty_only_block'] = ctx.get('block_id')
+            elif kind in ('detail', 'article_province_total', 'country_total', 'article_total') and qty_shape \
+                    and ctx.get('qty_only_block') == ctx.get('block_id') and not vals_raw[0].strip() and not vals_raw[2].strip():
+                # the rest of a block whose value column is blank throughout ('| | 337,647 | | 337,647 | 1,350 58':
+                # strawboard 1889 — quantities in lbs, duty 0.4% of them): same shape, same block, same treatment
+                nums = [nums[1], None, nums[3], None, nums[4]]
+                flags = list(flags); flags[1] = flags[3] = 'value_lost'
+                self.diag['value_column_lost_block'] += 1
             ctx['last_prov'] = prov if kind in ('detail', 'detail_lostlabel', 'article_province_total') else None
             ctx['expect_label'] = kind in ('country_total', 'article_total') and numeric
             self._emit(fy, vol, seq, ri, ctx, kind, prov, nums, flags, vals_raw, texts)

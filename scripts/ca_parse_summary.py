@@ -76,6 +76,12 @@ def parse_volume(tag, fy, md_path, out):
                 ctx['parents'] = []; ctx['article'] = None
                 if len(texts) <= 2: continue
                 texts = [''] + texts[1:]
+            # trailing empty cells shift the right-aligned values; a duty printed as two cells ('540,308 | 80')
+            # is one cents-style cell
+            while len(texts) > 2 and not texts[-1].strip():
+                texts = texts[:-1]
+            if len(texts) >= 3 and re.fullmatch(r'\d{2}', texts[-1].strip()) and re.fullmatch(r'[\d,]+', texts[-2].strip()):
+                texts = texts[:-2] + [texts[-2].strip() + ' ' + texts[-1].strip()]
             if len(texts) < 5:
                 continue
             # free goods carry no duty column (4 value cells); dutiable 5.  Decide per row: a trailing

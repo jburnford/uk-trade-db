@@ -20,7 +20,7 @@
 | 1887 | oocihm.9_08052_21_3 | 547 | 15787 |
 | 1889 | oocihm.9_08052_23_2 | 558 | 16720 |
 
-Diagnostics: scrambled_row 3547, fused_article_country_nodash 2982, short_article_heading 1690, short_row 1307, blank_row_skipped 1082, unfused_rows 668, article_fragment 658, country_label_lost 553, label_in_province_slot 541, short_country_label 513, no_regime_yet 455, fused_cells 380, grand_total_rejoined 349, label_slip_repaired 281, article_heading_lost 188, lost_label_resolved_detail 168, page_top_total_fusion 136, short_total_label 116, fused_rows_expanded 90, article_heading_lost_after_total 87, heading_deferred_past_data_row 86, province_unrecognised 76, lost_label_after_total 75, lost_label_block 51, total_tail_rejoined 37, fused_article_country 35, country_label_in_province_slot 33, article_closed_with_prev 33, nil_province_row 28, lost_label_joined_next_country 28, country_inferred_Great 23, lost_label_joined_prev_country 22, heading_fragment_starts_article 19, heading_fused_into_total 18, lost_label_resolved_total 17, split_country_province 17, article_closed_with_next 16, page_top_heading_new_article 14, lost_label_total_structural 13, stray_unit_cells_dropped 11, heading_fragment_on_data_row 11, summary_line 11, trailing_label_lost 9, heading_from_label_row 8, value_column_lost 8, fused_efc_duty_split 7, province_values_on_next_row 7, slip_hypothesis_flipped 5, page_top_heading_continuation 5, label_slip2_repaired 4, article_resumed 3, country_inferred_United 1, label_slip_down 1
+Diagnostics: scrambled_row 3547, fused_article_country_nodash 2982, short_article_heading 1690, short_row 1307, blank_row_skipped 1082, unfused_rows 668, article_fragment 658, country_label_lost 553, label_in_province_slot 541, short_country_label 513, no_regime_yet 455, fused_cells 380, grand_total_rejoined 349, label_slip_repaired 281, article_heading_lost 188, lost_label_resolved_detail 168, page_top_total_fusion 136, short_total_label 116, fused_rows_expanded 90, article_heading_lost_after_total 87, heading_deferred_past_data_row 86, province_unrecognised 76, lost_label_after_total 75, lost_label_block 51, total_tail_rejoined 37, fused_article_country 35, country_label_in_province_slot 33, article_closed_with_prev 33, nil_province_row 28, lost_label_joined_next_country 28, country_inferred_Great 23, lost_label_joined_prev_country 22, heading_fragment_starts_article 19, heading_fused_into_total 18, lost_label_resolved_total 17, split_country_province 17, article_closed_with_next 16, page_top_heading_new_article 14, value_column_lost_block 14, lost_label_total_structural 13, stray_unit_cells_dropped 11, heading_fragment_on_data_row 11, summary_line 11, trailing_label_lost 9, heading_from_label_row 8, value_column_lost 8, fused_efc_duty_split 7, province_values_on_next_row 7, slip_hypothesis_flipped 5, page_top_heading_continuation 5, label_slip2_repaired 4, article_resumed 3, country_inferred_United 1, label_slip_down 1
 Cell flags: fused 1877, unparsed 135
 
 | FY | regime | rows | row kinds |
@@ -76,7 +76,7 @@ Cell flags: fused 1877, unparsed 135
     - Swine/United States duty: rows 931.85 vs printed 4322.85
     - Swine to be slaughtered in bond for Expo/United States val_imp: rows 1053.00 vs printed 173585.00
     - Swine to be slaughtered in bond for Expo/United States val_efc: rows 1053.00 vs printed 1090.00
-| 1884 | C | 17702 | detail 10622, article_province_total 4065, country_total 2151, article_total 774, country_noprov 60, article_total_fused 28, heading_row 2 | country closure 5365 ok / 425 bad; article blocks (sum detail vs grand total, val_imp): exact 568, no_grand_total 385, under 92, within_1pct 56, over 19
+| 1884 | C | 17702 | detail 10622, article_province_total 4065, country_total 2151, article_total 774, country_noprov 60, article_total_fused 28, heading_row 2 | country closure 5365 ok / 423 bad; article blocks (sum detail vs grand total, val_imp): exact 568, no_grand_total 385, under 92, within_1pct 56, over 19
     - Horses/Great Britain val_imp: rows 12069.00 vs printed 12049.00
     - Horses/United States val_efc: rows 207988.00 vs printed 107988.00
     - Sheep/United States duty: rows 9378.90 vs printed 9678.90
@@ -97,7 +97,7 @@ Cell flags: fused 1877, unparsed 135
     - Swine/United States val_efc: rows 36986.00 vs printed 36936.00
     - Belts and trusses of all kinds/United States val_imp: rows 15060.00 vs printed 15120.00
     - Belts and trusses of all kinds/United States val_efc: rows 15060.00 vs printed 15120.00
-| 1889 | C | 16720 | detail 12785, country_total 2620, article_total 984, article_province_total 211, country_noprov 62, recap 54, summary 4 | country closure 7028 ok / 149 bad; article blocks (sum detail vs grand total, val_imp): exact 862, no_grand_total 373, under 94, within_1pct 12, over 9
+| 1889 | C | 16720 | detail 12785, country_total 2620, article_total 984, article_province_total 211, country_noprov 62, recap 54, summary 4 | country closure 7026 ok / 147 bad; article blocks (sum detail vs grand total, val_imp): exact 862, no_grand_total 374, under 93, within_1pct 12, over 9
     - Ale, beer and porter, in casks/United States val_efc: rows 14148.00 vs printed 13148.00
     - Belts and trusses of all kinds/Great Britain duty: rows 1931.70 vs printed 1932.20
     - British copyright works, reprints of/United States val_efc: rows 15970.00 vs printed 15941.00
@@ -123,4 +123,4 @@ Printed series: `reference/canada_printed_totals.csv`. Parsed = sum of `detail` 
 | 1884 | C | 114,234,797 | 116,397,043 | 0.981 | 106,490,644 | 108,180,644 | 0.984 | 19,785,071 | 20,164,963 | 0.981 |
 | 1885 | C | 108,191,357 | 108,941,486 | 0.993 | 102,132,762 | 102,710,019 | 0.994 | 19,005,909 | 19,133,559 | 0.993 |
 | 1887 | C | 113,206,177 | 112,892,236 | 1.003 | 106,119,843 | 105,639,428 | 1.005 | 22,216,426 | 22,469,706 | 0.989 |
-| 1889 | C | 116,366,013 | 115,224,931 | 1.010 | 110,833,911 | 109,673,447 | 1.011 | 23,609,555 | 23,784,523 | 0.993 |
+| 1889 | C | 115,343,790 | 115,224,931 | 1.001 | 109,818,588 | 109,673,447 | 1.001 | 23,609,555 | 23,784,523 | 0.993 |
