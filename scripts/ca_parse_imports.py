@@ -42,6 +42,9 @@ DITTO_RE = re.compile(r'^(?:[“"”\'‘’]+\s*)+')
 NUM_RE = re.compile(r'^\d{1,3}(?:,\d{3})*$|^\d+$')
 
 
+BANNER_RE = re.compile(r'DUTIABLE|DU[CT]\w{2,6}\s+GOODS|FREE\s+GOODS', re.I)      # 'DUCTILE GOODS', 'DUTLABLE GOODS' = DUTIABLE GOODS
+
+
 def norm_label(s):
     s = DITTO_RE.sub('', s)
     s = LEADER_RE.sub('', s)
@@ -356,14 +359,14 @@ class Parser:
             spans = sum(cs for _, cs, _ in cells)
             joined = ' '.join(texts).strip()
             # section banners
-            if (len(cells) == 1 or spans >= 7 and len(cells) <= 2) and re.search(r'DUTIABLE|FREE GOODS', joined, re.I):
+            if (len(cells) == 1 or spans >= 7 and len(cells) <= 2) and re.search(BANNER_RE, joined):
                 self._section(ctx, joined); continue
             if len(cells) < NV:
                 # short rows: full-width label cells (the 1880s volumes print article headings, country labels
                 # and 'Total' as one spanning cell, often ditto-led: '“ Buckwheat—', '“ United States...'),
                 # section banners, or junk (index lines, page furniture)
                 j = norm_label(joined)
-                if re.search(r'DUTIABLE|FREE GOODS', joined, re.I):
+                if re.search(BANNER_RE, joined):
                     self._section(ctx, joined)
                 elif not j or len(j) <= 2 or re.match(r'\d', j) or re.search(r'\d{4}|\d[,.]\d{3}', j) \
                         or (re.search(r'\d', j) and not re.search(r'[—–:;-]\s*$', j.rstrip('.'))):
@@ -406,7 +409,7 @@ class Parser:
             vals_raw = texts[-NV:]
             labels = texts[:-NV]
             # banner in label position with blank values
-            if labels and re.search(r'^(DUTIABLE|FREE) GOODS', norm_label(labels[0]), re.I):
+            if labels and re.search(r'^(DUTIABLE|DU[CT]\w{2,6}|FREE) GOODS', norm_label(labels[0]), re.I):
                 self._section(ctx, labels[0])
                 labels = [''] + labels[1:]
                 if not any(parse_num(v, cents_ok=(i == 4))[0] is not None for i, v in enumerate(vals_raw)):
@@ -845,7 +848,7 @@ class Parser:
         t = norm_label(text)
         if re.search(r'free', t, re.I):
             ctx['section'] = 'FREE'
-        elif re.search(r'dutiable|duty|per cent|ad valorem|specific', t, re.I):
+        elif re.search(r'dutiable|duty|per cent|ad valorem|specific|du[ct]\w{2,6}\s+goods', t, re.I):
             ctx['section'] = 'DUTIABLE'
         new_label = re.sub(r'\s*[—-]\s*Con(tinued)?\.?\s*$', '', t, flags=re.I).strip()
         is_con = bool(re.search(r'Con(tinued)?\.?\s*$', t, re.I))
@@ -922,7 +925,8 @@ class Parser:
             a, b = _nk(leaf), _nk(old_leaf or '')
             # a page-top repeat is only possible while the article is still OPEN (its Total not yet printed), and
             # sibling leaves that differ in their numbers ('over 89 degrees' / 'over 90 degrees') are never the same
-            digits_same = re.findall(r'\d+', leaf) == re.findall(r'\d+', old_leaf or '')
+            digits_same = re.findall(r'\d+', leaf) == re.findall(r'\d+', old_leaf or '') \
+                or (ctx.get('table_top') and not re.search(r'\d', leaf) and bool(re.search(r'&c|\betc\b', leaf, re.I)))   # '&c.' running head drops the digits
             jac = fuzzy_jaccard(leaf, old_leaf or '')
             ta = [t for t in re.findall(r'[a-z0-9]+', leaf.lower()) if t not in ('of', 'and', 'the', 'or', 'all', 'other')]
             same = leaf == old_leaf or (old_leaf and old_leaf != '?' and not ctx.get('article_closed') and digits_same and (
