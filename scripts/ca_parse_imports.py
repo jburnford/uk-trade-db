@@ -115,6 +115,17 @@ def fuzzy_jaccard(a, b):
     return hit / (len(ta) + len(tb) - hit)
 
 
+def wrapped_suffix(a, b):
+    """'ages' (the tail of a hyphen-wrapped 'Pack- ages' whose head was lost) vs 'Packages': one name is a single
+    lowercase-led token of 3+ letters that ends the other's last token."""
+    ta = re.findall(r'[A-Za-z]+', a or ''); tb = re.findall(r'[A-Za-z]+', b or '')
+    if not ta or not tb: return False
+    for x, y in ((ta, tb), (tb, ta)):
+        if len(x) == 1 and len(x[0]) >= 3 and x[0][0].islower() and y[-1].lower().endswith(x[0].lower()) and len(y[-1]) > len(x[0]):
+            return True
+    return False
+
+
 def token_containment(short, long):
     """Share of the shorter name's content tokens found (fuzzily) in the longer: 'Bituminous' in 'Coal, bituminous',
     'Portland or Roman' in 'Cement, Portland or Roman', 'Gutta percha, all other' in 'Gutta percha and India rubber, all
@@ -706,6 +717,15 @@ class Parser:
                         self.diag['fused_efc_duty_split'] += 1
             # value column lost: the unit token sits in the quantity slot and the QUANTITY was read as the value
             # ('Lbs. | 916,211 | Lbs. | 916,211 | 1,717 75'); on a dutiable line the duty/value ratio gives it away
+            # values printed in the QUANTITY slots with the value slots blank ('| Quebec | 6,764 |  | 7,563 |  | 2,268 72'
+            # on silk, a value-only article): the duty/value ratio is a plausible ad valorem rate, the article has no unit
+            if kind in ('detail', 'article_province_total', 'country_total', 'article_total') and ctx.get('unit') is None \
+                    and nums[1] is None and nums[3] is None and nums[0] is not None and nums[2] is not None and nums[2] > 0 \
+                    and not vals_raw[1].strip().strip('.') and not vals_raw[3].strip().strip('.') \
+                    and (ctx.get('section') == 'FREE' or (nums[4] is not None and 0.04 <= nums[4] / nums[2] <= 0.6)):
+                nums = [None, nums[0], None, nums[2], nums[4]]
+                flags = list(flags); flags[0] = flags[2] = 'blank'; flags[1] = flags[3] = 'value_in_qty_slot'
+                self.diag['value_in_qty_slot'] += 1
             qty_shape = nums[0] is None and nums[1] is not None and nums[1] > 0 and ctx.get('section') == 'DUTIABLE' \
                 and nums[4] is not None and nums[4] > 0 and nums[4] / nums[1] < 0.005
             if kind in ('detail', 'article_province_total') and is_unit_token(vals_raw[0]) and qty_shape:
@@ -929,6 +949,11 @@ class Parser:
             leaf = cur.strip(' ,.-')
         if leaf is not None:
             leaf = re.sub(r'^Continued\.?\s+', '', leaf, flags=re.I).strip() or None
+        # 'Feathers, ostrich and vulture, dressed— Great Britain': the trailing segment is the first country, not the leaf
+        pending_country = None
+        vocab = getattr(self, 'vocab', None) or SEED_COUNTRIES
+        if leaf is not None and parents and (leaf in vocab or leaf.rstrip(' .') in vocab or leaf.rstrip(' .') in SEED_COUNTRIES):
+            pending_country = leaf.rstrip(' .'); leaf = parents.pop()
         if not parents and leaf is None:
             return
         if re.search(r'recapitulation', text, re.I):
@@ -968,7 +993,8 @@ class Parser:
                    difflib.SequenceMatcher(None, a, b).ratio() >= 0.85 or
                    (min(len(a), len(b)) >= 8 and (a.startswith(b) or b.startswith(a))) or      # running-head abbreviation 'X, &c.'
                    (ctx.get('table_top') and len(ta) >= 2 and jac >= 0.75) or                 # page-top running head, words reordered
-                   (ctx.get('table_top') and token_containment(leaf, old_leaf) >= 0.9)))       # running head = parent+leaf or leaf+'&c.'
+                   (ctx.get('table_top') and token_containment(leaf, old_leaf) >= 0.9) or      # running head = parent+leaf or leaf+'&c.'
+                   wrapped_suffix(leaf, old_leaf)))                                             # 'ages' / 'Packages'
             if same:
                 leaf = old_leaf            # page-top repeat (possibly re-hyphenated): keep block and spelling
                 ctx['article'] = leaf
@@ -988,7 +1014,7 @@ class Parser:
             ctx['leaf_used'] = False
             if ctx.get('table_top') and ctx.get('country') not in (None, '', '?'):
                 return                     # page-top running head (parents only): the country block carries over
-        ctx['country'] = None
+        ctx['country'] = pending_country
         ctx['unit'] = None
         ctx['last_prov'] = None
         ctx['expect_label'] = False
@@ -1622,7 +1648,8 @@ class Parser:
             key = blk[0]['article'] if blk[0]['article'] not in (None, '', '?') else None
             closed = any(x['row_kind'] in ('article_total', 'article_total_fused') for x in blk)
             if key and prev_key and not prev_closed and blk[0]['row_kind'] != 'recap' \
-                    and (_ak(key) == _ak(prev_key) or fuzzy_jaccard(key, prev_key) >= 0.75 or token_containment(key, prev_key) >= 0.9) \
+                    and (_ak(key) == _ak(prev_key) or fuzzy_jaccard(key, prev_key) >= 0.75 or token_containment(key, prev_key) >= 0.9
+                         or wrapped_suffix(prev_key, key)) \
                     and re.findall(r'\d+', key) == re.findall(r'\d+', prev_key):
                 for x in blk:
                     x['block_id'] = prev_blk; x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'block_merged'
