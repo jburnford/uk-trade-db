@@ -392,6 +392,17 @@ class Parser:
                         and (re.fullmatch(r'[\d,]+ \d\d', z[5]) or not z[5] or re.fullmatch(r'[.\s·…]+', z[5])):
                     texts = texts[:-4] + texts[-3:]
                     self.diag['phantom_blank_cell_dropped'] += 1
+            if len(texts) >= NV + 3:
+                # a phantom dots cell BEFORE each pair ('Quebec | ..... | 90,546 | 67,838 | ..... | 89,848 | 67,189 |
+                # 20,196 98' on the 1885 yarn page — read as country Quebec, province '90,546'): drop both
+                z = [t.strip() for t in texts[-7:]]
+                blank = lambda c: not c or re.fullmatch(r'[.\s·…]+', c)
+                if blank(z[0]) and re.fullmatch(r'[\d,]+', z[1]) and re.fullmatch(r'[\d,]+', z[2]) and blank(z[3]) \
+                        and re.fullmatch(r'[\d,]+', z[4]) and re.fullmatch(r'[\d,]+', z[5]) \
+                        and (re.fullmatch(r'[\d,]+ \d\d', z[6]) or blank(z[6])) and len(texts) - 7 >= 1 \
+                        and not any(re.fullmatch(r'[\d,]+', t.strip()) for t in texts[:-7]):
+                    texts = texts[:-7] + texts[-6:-4] + texts[-3:]
+                    self.diag['phantom_pair_cells_dropped'] += 1
             k_two = sum(1 for i, t in enumerate(texts) if i < len(texts) - 1 and re.fullmatch(r'[\d,]+ [\d,]+', t.strip()) and not re.fullmatch(r'[\d,]+ \d\d', t.strip()))
             n_real = len([t for t in texts if t.strip()]) if k_two else 0
             # ('19 534' alone is 19,534 with its comma lost — only a row short of cells with BOTH pairs fused is split)
