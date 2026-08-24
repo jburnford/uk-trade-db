@@ -1511,7 +1511,7 @@ class Parser:
                 # Values equal to the province totals prove it the OLD article's grand total.
                 def _close(x, y, tol):
                     return x is not None and y and abs(x - y) <= max(0.5, tol * y)
-                if pend[0] > 0 and (_close(r['val_imp'], pend[0], 0) or (_close(r['val_efc'], pend[2], 0) and pend[2] > 1000)):
+                if (pend[0] > 0 or pend[2] > 1000) and (_close(r['val_imp'], pend[0], 0) or (_close(r['val_efc'], pend[2], 0) and pend[2] > 1000)):
                     r['row_kind'] = 'article_total'; r['country'] = None; r['province'] = None
                     r['article'] = pend_src['article']; r['article_parent'] = pend_src['article_parent']; r['block_id'] = pend_src['block_id']
                     r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'grand_total_rejoined'
@@ -1525,7 +1525,7 @@ class Parser:
                         or (_close(ve, pend[2], 0) and pend[2] > 1000)
                 # an OCR digit slip in one column: val_imp within 0.5% and a second column within 0.5%
                 near = _close(vi, pend[0], 0.005) and (_close(ve, pend[2], 0.005) or _close(qi, pend[1], 0.005)) and pend[0] > 1000
-                if pend[0] > 0 and (exact or near):
+                if (pend[0] > 0 or pend[2] > 1000) and (exact or near):
                     r['row_kind'] = 'article_total_fused'; r['country'] = None; r['province'] = None
                     self.diag['page_top_total_fusion'] += 1
                 pend = None
