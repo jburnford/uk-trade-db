@@ -942,6 +942,62 @@ class Parser:
                 idx = self.rows.index(last)
                 self.rows.insert(idx, own)
 
+    def _fix_noprov_slip_down(self, n_start):
+        """The label column slipped DOWN one row against the values, page-wide: the country label row
+        (country_noprov) carries the FIRST province's values, each province label carries the PREVIOUS
+        province's values, and the last province-labelled row is really the country total (1883 champagne
+        page t433: France 'British Columbia' 5,868/60,974/58,438 = the France total; TOTAL block closes
+        exactly in all three columns under this reading for GB, US, France, Germany).  Proof: the noprov
+        values + all details but the last sum EXACTLY to the last detail in val_efc AND a second column
+        (strong); efc-only blocks (Spain: qty/val cells ditto-damaged) accepted when the same table holds
+        >=2 strong blocks.  Fix: shift payloads down one, append the country_total row."""
+        rows = self.rows[n_start:]
+        if not rows or rows[0].get('regime') != 'C': return
+        rank = {p: i for i, p in enumerate(PROVINCE_ORDER)}
+        VAL = ('unit', 'qty_brit', 'qty_foreign', 'qty_land', 'qty_imp', 'val_imp', 'qty_efc', 'val_efc', 'duty')
+        cands = []
+        i = 0
+        while i < len(rows):
+            r = rows[i]
+            if r['row_kind'] != 'country_noprov' or r['country'] in (None, '', '?', 'TOTAL') or r['val_efc'] is None:
+                i += 1; continue
+            j = i + 1; details = []
+            while j < len(rows) and rows[j]['row_kind'] == 'detail' and rows[j]['country'] == r['country'] \
+                    and rows[j]['block_id'] == r['block_id'] and rows[j]['province'] in rank:
+                details.append(rows[j]); j += 1
+            # a printed country_total right after the run means the block is whole - not this class
+            if j < len(rows) and rows[j]['row_kind'] == 'country_total' and rows[j]['block_id'] == r['block_id'] \
+                    and rows[j]['country'] in (r['country'], None, '', '?'):
+                i = j; continue
+            rk = [rank[x['province']] for x in details]
+            if len(details) >= 2 and rk == sorted(rk) and len(set(rk)) == len(rk):
+                def ex(col):
+                    L = details[-1][col]
+                    if L is None or not isinstance(L, (int, float)) or L <= 0: return False
+                    s = (r[col] or 0) + sum(d[col] or 0 for d in details[:-1] if isinstance(d[col], (int, float)) or d[col] is None)
+                    return s > 0 and abs(s - L) <= 0.5
+                if ex('val_efc'):
+                    strong = ex('val_imp') or ex('qty_imp')
+                    cands.append((r['table_seq'], strong, r, details))
+            i = j
+        n_strong = defaultdict(int)
+        for tseq, strong, _, _ in cands:
+            if strong: n_strong[tseq] += 1
+        for tseq, strong, n0, details in cands:
+            if not (strong or n_strong[tseq] >= 2): continue
+            pay = [{c: x[c] for c in VAL} for x in [n0] + details[:-1]]
+            tot_pay = {c: details[-1][c] for c in VAL}
+            for d, p in zip(details, pay):
+                for c in VAL: d[c] = p[c]
+                d['flags'] = (d['flags'] + ',' if d['flags'] else '') + 'noprov_slip_down'
+            tot = dict(details[-1]); tot.update(tot_pay)
+            tot['row_kind'] = 'country_total'; tot['province'] = None
+            tot['flags'] = 'noprov_slip_down_total'
+            for c in VAL: n0[c] = None
+            n0['flags'] = (n0['flags'] + ',' if n0['flags'] else '') + 'noprov_slip_down_label'
+            self.rows.insert(self.rows.index(details[-1]) + 1, tot)
+            self.diag['noprov_slip_down'] += 1
+
     def _fix_province_order(self, n_start):
         """The provinces are printed in one fixed order (Ontario, Quebec, N.S., N.B., Manitoba, B.C., P.E.I., N.W.T.).
         A block whose labels are that order with ONE adjacent pair swapped ('Quebec, Ontario, Nova Scotia, ...' on the
@@ -2255,6 +2311,7 @@ class Parser:
             n_tables += 1
             getattr(self, 'parse_table_' + ctx['regime'])(fy, tag, seq, body, ctx)
         self._fix_province_order(start_rows)
+        self._fix_noprov_slip_down(start_rows)
         self.resolve_lost_labels(start_rows)
         self._fix_grand_total_on_country_row(start_rows)
         return n_tables
