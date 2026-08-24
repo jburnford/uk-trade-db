@@ -2283,7 +2283,14 @@ class Parser:
             if na in self.vocab or na in SEED_COUNTRIES or split_trailing_country(na, self.vocab)[1] == na \
                     or (len(na.split()) <= 4 and re.search(r'possessions|indies|islands|guiana|africa|america', na, re.I)):
                 continue                                   # N's 'article' is a country name that swallowed a heading: not a target
-            ntot = {x['province']: x for x in N if x['row_kind'] == 'article_province_total' and x['province']}
+            ptrows = [x for x in N if x['row_kind'] == 'article_province_total' and x['province']]
+            # TWO Total blocks inside N (province order restarts) = N spans two articles and the closure test
+            # would mix their totals: the 1885 ginger page named the complete 'unground' article (own Total
+            # block, grand 142,244) after the following 'ground' article - leave the run '?' for the
+            # cross-volume order inference instead
+            _rk = [PROVINCE_ORDER.index(x['province']) for x in ptrows if x['province'] in PROVINCE_ORDER]
+            if any(b <= a for a, b in zip(_rk, _rk[1:])): continue
+            ntot = {x['province']: x for x in ptrows}
             if len(ntot) < 2: continue
             pdet = [x for x in P if x['row_kind'] == 'detail' and x['province']]
             ndet = [x for x in N if x['row_kind'] == 'detail' and x['province']]
