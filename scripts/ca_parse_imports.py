@@ -910,6 +910,88 @@ class Parser:
         if changed:
             self.rows[n_start:] = out
 
+    def _fix_single_detail_chain(self, n_start):
+        """A tail chain of single-detail countries whose 'country totals' fail closure: the unlabelled value
+        row after each single-detail country is really the NEXT country's value, and the last country's
+        on-row value is the article grand total (1889 diamonds: 'Belgium | N.B. | 920' then 128,105 —
+        France Ontario's value; 'France | Ontario | 27' then 12,541 — Holland Ontario's; 'Holland |
+        Ontario | 206,279' = the grand total; the on-row 27 is France's residual second detail).  Gate:
+        the re-read block total equals the grand EXACTLY (<=0.5).  Verified by the abstract: France
+        Ontario free 209,339 and Holland Ontario free 73,723 both close to the cent."""
+        rows = self.rows[n_start:]
+        if not rows or rows[0].get('regime') != 'C': return
+        VAL = ('unit', 'qty_brit', 'qty_foreign', 'qty_land', 'qty_imp', 'val_imp', 'qty_efc', 'val_efc', 'duty')
+        blocks = {}; order = []
+        for r in rows:
+            b = r['block_id']
+            if b not in blocks: blocks[b] = []; order.append(b)
+            blocks[b].append(r)
+        for b in order:
+            g = blocks[b]
+            if any(x['row_kind'] in ('article_total', 'article_province_total', 'article_total_fused') for x in g):
+                continue
+            seq = []; cur = None; ok = True
+            for r in g:
+                k = r['row_kind']
+                if k == 'detail' and r['country'] not in (None, '', '?', 'TOTAL'):
+                    if cur and cur[0] == r['country']: cur[1].append(r)
+                    else:
+                        if cur: seq.append(cur)
+                        cur = [r['country'], [r], None]
+                elif k == 'country_total' and cur and r['country'] in (cur[0], None, ''):
+                    cur[2] = r; seq.append(cur); cur = None
+                elif k == 'summary':
+                    continue
+                else:
+                    ok = False; break
+            if cur: seq.append(cur)
+            if not ok or len(seq) < 3: continue
+            def tot_of(e):
+                c, dets, t = e
+                if t is not None and t['val_efc'] is not None: return t['val_efc']
+                return sum(d['val_efc'] or 0 for d in dets)
+            def bad_single(e):
+                c, dets, t = e
+                return len(dets) == 1 and t is not None and t['val_efc'] and dets[0]['val_efc'] is not None \
+                    and abs(t['val_efc'] - dets[0]['val_efc']) > 0.05 * t['val_efc']
+            last = seq[-1]
+            if not (len(last[1]) == 1 and last[2] is None and last[1][0]['val_efc']): continue
+            s = len(seq) - 2
+            while s >= 0 and bad_single(seq[s]): s -= 1
+            s += 1
+            if s > len(seq) - 2: continue
+            chain = seq[s:-1]; prior = seq[:s]; m = len(chain)
+            grand = last[1][0]['val_efc']
+            tot = sum(tot_of(e) for e in prior) + (chain[0][1][0]['val_efc'] or 0)
+            for i in range(1, m):
+                tot += (chain[i - 1][2]['val_efc'] or 0) + (chain[i][1][0]['val_efc'] or 0)
+            tot += chain[m - 1][2]['val_efc'] or 0
+            if grand <= 0 or abs(tot - grand) > 0.5: continue
+            kill = []; ins = []
+            for i in range(1, m):
+                d = chain[i][1][0]
+                x_pay = {c: d[c] for c in VAL}
+                for c in VAL: d[c] = chain[i - 1][2][c]
+                d['flags'] = (d['flags'] + ',' if d['flags'] else '') + 'single_detail_chain'
+                extra = dict(d); extra.update(x_pay)
+                extra['province'] = '?'; extra['row_kind'] = 'detail'; extra['flags'] = 'single_detail_chain_residual'
+                ins.append((d, extra)); kill.append(chain[i - 1][2])
+            d_last = last[1][0]
+            grand_pay = {c: d_last[c] for c in VAL}
+            for c in VAL: d_last[c] = chain[m - 1][2][c]
+            d_last['flags'] = (d_last['flags'] + ',' if d_last['flags'] else '') + 'single_detail_chain'
+            kill.append(chain[m - 1][2])
+            at = dict(d_last); at.update(grand_pay)
+            at['row_kind'] = 'article_total'; at['country'] = None; at['province'] = None
+            at['flags'] = 'single_detail_chain_grand'
+            ins.append((d_last, at))
+            chain[0][1][0]['flags'] = (chain[0][1][0]['flags'] + ',' if chain[0][1][0]['flags'] else '') + 'single_detail_chain'
+            killset = {id(x) for x in kill}
+            self.rows = [r for r in self.rows if id(r) not in killset]
+            for after, new in ins:
+                self.rows.insert(self.rows.index(after) + 1, new)
+            self.diag['single_detail_chain'] += 1
+
     def _fix_grand_total_on_country_row(self, n_start):
         """An article with no Total block whose LAST row is a country-labelled detail equal (within 5 %) to the sum
         of the other countries' totals: the grand total rode on that country's label ('“ Holland | Ontario | 206,279'
@@ -2313,6 +2395,7 @@ class Parser:
         self._fix_province_order(start_rows)
         self._fix_noprov_slip_down(start_rows)
         self.resolve_lost_labels(start_rows)
+        self._fix_single_detail_chain(start_rows)
         self._fix_grand_total_on_country_row(start_rows)
         return n_tables
 
