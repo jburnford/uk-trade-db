@@ -1,0 +1,649 @@
+fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_imp_value,gt_qty,gt_value,gt_duty,pt_qty,pt_value,pt_duty,sx_qty,sx_value,sx_duty,efc_qty,efc_value,efc_duty,closes
+1902,statcan_nibi_w2_1902,3,5,GP,Total.....,joined_weak,position,231639,166962,236594,167582,56734.56,,,,,,,236394,167582,56734.56,2
+1902,statcan_nibi_w2_1902,3,13,GP,5 Horned cattle..... > Great Britain.....,joined_weak,position,120,20210,,6782,1740.99,,,,,,,116066,6782,1740.99,2
+1902,statcan_nibi_w2_1902,3,14,GP,5 Horned cattle..... > Germany.....,joined_weak,position,16,1852,,,,,,,,,,,,,0
+1902,statcan_nibi_w2_1902,3,17,GP,6 Horses..... > Great Britain.....,left_only,,1,58,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,3,18,GP,6 Horses..... > United States.....,left_only,,18059,570593,17822,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,3,19,GP,6 Horses..... > Total.....,left_only,,18060,570651,17822,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,3,20,GP,7 Sheep..... > Great Britain.....,joined_weak,position,70,1415,,537470,107494.0,1.58,7.73,17822,,,,537470,107494.0,6,-2
+1902,statcan_nibi_w2_1902,3,21,GP,7 Sheep..... > Germany.....,joined_weak,position,398,12380,,537470,107494.0,1.58,7.73,17823,,,,537528,107501.73,,-1
+1902,statcan_nibi_w2_1902,4,0,GP,1 Bagatelle tables or boards ..... > Great Britain. ....,left_only,,,8,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,4,4,GP,2 Baking powders. .... > United States. ....,joined_weak,position,427,81,252,73,15.12,,54,14.2,,,,,127,29.32,2
+1902,statcan_nibi_w2_1902,5,24,GP,"7 Boats, open pleasure sail boats, skiffs and canoes..... > Great Britain.....",left_only,,2,430,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,5,25,GP,United States.....,joined_weak,position,275,15322,271,14772,3693.0,2,430,71.67,,,,271,14772,3693.0,-2
+1902,statcan_nibi_w2_1902,6,33,GP,"5 Posters, advertising bills and folders... > Great Britain.....",joined_weak,position,,1712,,215,117.75,,6356,1497,,,,635.58,,7141,-1
+1902,statcan_nibi_w2_1902,6,34,GP,France.....,joined_weak,position,57,16,57,16,8.55,,,,,,,,57,16,-2
+1902,statcan_nibi_w2_1902,6,35,GP,Japan.....,joined_weak,position,70,37,70,37,10.5,,,,,,,,70,37,-2
+1902,statcan_nibi_w2_1902,7,0,GP,DUTIABLE GOODS—Con.,left_only,,,8,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,7,36,GP,,right_only,,,,,15,4.5,,,,,,,,15,4.5,2
+1902,statcan_nibi_w2_1902,8,28,GP,"6 Wire cloth, &c., N.E.S. .... > Great Britain. ....",joined_weak,position,,14616,,,,14616,2436.13,,,,,14616,2436.13,,1
+1902,statcan_nibi_w2_1902,10,9,GP,"7 Rice, uncleaned, unhulled or paddy.... > Great Britain.....",joined_weak,position,335238,7580,223238,5271,1116.19,7976023,98893,26586.75,,,,223238,5271,1116.19,-2
+1902,statcan_nibi_w2_1902,10,10,GP,B. E. Indies.....,joined_weak,position,8297148,102528,,370,114.18,,,,,,,7976023,98893,26586.75,-2
+1902,statcan_nibi_w2_1902,10,15,GP,Total.....,joined_weak,position,11199134,146728,2789986,562,140.5,404426,5959,993.16,,,,10763009,140784,40536.69,-2
+1902,statcan_nibi_w2_1902,10,16,GP,1 Rice and sago flour and sago..... > Great Britain.....,joined_weak,position,465796,7104,32906,1740,435.0,366109,5991,998.59,,,,6521,1133.66,3,-2
+1902,statcan_nibi_w2_1902,10,17,GP,B. E. Indies.....,joined_weak,position,365121,5353,145640,10,2.5,,,,,,,511749,7731,1433.59,-2
+1902,statcan_nibi_w2_1902,10,21,GP,United States.....,joined_weak,position,117502,2569,118352,5702,1425.5,770535,11950,1991.75,,,,118352,2599,649.75,-2
+1902,statcan_nibi_w2_1902,10,22,GP,Total.....,joined_weak,position,984772,15827,333251,962,240.5,1198644,25641,4273.5,,,,1103786,17652,3417.25,-2
+1902,statcan_nibi_w2_1902,10,23,GP,2 Tapioca..... > Great Britain.....,joined_weak,position,1321957,28857,45857,3012,753.0,1411469,32405,5400.97,,,,26603,4514.0,4,-2
+1902,statcan_nibi_w2_1902,10,24,GP,B. E. Indies.....,joined_weak,position,1494497,34307,141989,35,8.75,,,,,,,1556458,35417,6153.97,-2
+1902,statcan_nibi_w2_1902,10,30,GP,,right_only,,,,,,,,,,,,,2924610,65941,11648.22,-2
+1902,statcan_nibi_w2_1902,10,31,GP,Total.....,joined_weak,position,2940080,67083,314497,3423,1026.9,588,268,53.6,,,,,,,0
+1902,statcan_nibi_w2_1902,10,35,GP,,right_only,,,,,7,0.15,8,16,0.8,,,,,,,0
+1902,statcan_nibi_w2_1902,10,41,GP,United States.....,joined_weak,position,9388,19849,9757,21923,1740.3,8,16,0.8,,,,9757,20455,1463.55,-2
+1902,statcan_nibi_w2_1902,10,42,GP,Total.....,joined_weak,position,11241,21333,11602,,,,,,,,,11610,21939,1741.1,-2
+1902,statcan_nibi_w2_1902,11,18,GP,10 Oatmeal ..... > Great Britain.....,joined_weak,position,,132,,31,6.2,,2106,101,,,,13.47,,132,-1
+1902,statcan_nibi_w2_1902,13,19,GP,"4 Buttons, pantaloan wholly of metal . . . . . > Great Britain . . . . .",joined_weak,position,,950,,47,11.75,4436,910,151.76,,,,4720,957,163.51,2
+1902,statcan_nibi_w2_1902,13,38,GP,"7 Candles, tallow . . . . . > Great Britain . . . . .",joined_weak,position,,2978,,20,5.0,30020,2740,456.73,,,,30420,2760,461.73,2
+1902,statcan_nibi_w2_1902,14,5,GP,"2 All other, N.E.S..... > Great Britain.....",joined_weak,position,94051,8567,1096,146,36.5,85890,7858,1309.81,,,,86980,8004,1346.31,2
+1902,statcan_nibi_w2_1902,15,18,GP,Germany . . . . .,joined_weak,position,1,76,1,76,22.8,,,,,,,1.76,22.8,,-1
+1902,statcan_nibi_w2_1902,16,6,GP,Total .....,joined_weak,position,189106,119045,8005,7842,2744.7,180508,110324,25742.5,,,,183741,114671,27263.95,-2
+1902,statcan_nibi_w2_1902,16,18,GP,France .....,joined_weak,position,165,50,165,50,20.82,,,,,,,165.5,20.82,,-1
+1902,statcan_nibi_w2_1902,16,19,GP,Germany .....,joined_weak,position,98949,33626,108597,33148,13574.62,,,,,,,168597,33148,13574.62,2
+1902,statcan_nibi_w2_1902,18,3,GP,Norway & Sweden...,left_only,,150,300,150,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,4,GP,United States.....,left_only,,3204627,5924670,3009135,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,9,GP,"5 Cocoa carpeting, mats, rugs and matting.. > Great Britain.....",left_only,,,2249,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,10,GP,Germany.....,left_only,,,19,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,11,GP,Japan.....,left_only,,,1485,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,15,GP,Porto Rico.....,left_only,,2030,43,2030,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,17,GP,"7 Cocoa nut, N.E.S..... > B. W. Indies.....",left_only,,57700,932,57700,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,18,GP,U. States.....,joined_weak,position,100799,3437,100299,,,,,,,,,,,,0
+1902,statcan_nibi_w2_1902,18,21,GP,B. W. Indies.....,left_only,,1300,81,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,22,GP,U. States.....,joined_weak,position,11246,,11471,1472,573.55,,,,,,,,,,0
+1902,statcan_nibi_w2_1902,18,24,GP,"9 Cocoa paste, chocolate paste, cocoa and cocoa butter, N.O.P..... > G. Britain.....",left_only,,469011,75154,11325,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,26,GP,France.....,left_only,,712,155,712,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,27,GP,Germany.....,left_only,,84941,17937,87041,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,28,GP,Holland.....,left_only,,19252,5292,19252,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,29,GP,Switzerland.....,left_only,,1100,212,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,18,31,GP,Total.....,joined_weak,position,886915,165928,429541,92789,17181.64,433270,70497,11554.07,,,,882811,163286,28735.71,2
+1902,statcan_nibi_w2_1902,19,19,GP,"5 "" roasted or ground, and imitations of and substitutes for, N. O. P. .... > Great Britain.....",left_only,,12,4,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,19,20,GP,United States.....,joined_weak,position,137945,15725,137068,15728,2741.36,12,4,0.16,,,,137068,15728,2741.36,-2
+1902,statcan_nibi_w2_1902,19,22,GP,"6 "" condensed with milk..... > Great Britain.....",joined_weak,position,336,48,,,,216,30,6.0,,,,216.3,6.0,6,0
+1902,statcan_nibi_w2_1902,19,25,GP,Belgium.....,joined_weak,position,83,67,83,67,23.45,,,,,,,83.67,23.45,,-1
+1902,statcan_nibi_w2_1902,20,6,GP,Total.....,joined_weak,position,603268,93891,603198,93880,14082.0,70.11,1.1,603268,,,,93891,14083.1,,-1
+1902,statcan_nibi_w2_1902,20,7,GP,"3 Wire cloth, &c..... > Great Britain.....",joined_weak,position,,1501,,,,1501,250.18,,,,,1501,250.18,3,0
+1902,statcan_nibi_w2_1902,22,5,GP,Italy .....,joined_weak,position,151,73,151,73,25.55,,,,,,,151.73,25.55,,-1
+1902,statcan_nibi_w2_1902,22,6,GP,Japan .....,joined_weak,position,6436,1087,935,82,28.7,,,,,,,935.82,28.7,,-1
+1902,statcan_nibi_w2_1902,22,22,GP,"4 Batts, batting, and sheet wadding, not bleached, dyed or coloured ..... > Great Britain .....",joined_weak,position,,20,,8497,2124.25,110,20,3.33,,,,110.2,3.33,4,-2
+1902,statcan_nibi_w2_1902,22,24,GP,Total .....,joined_weak,position,105250,8517,105140,8497,2124.25,110.2,3.33,105250,,,,8517,2127.58,,-1
+1902,statcan_nibi_w2_1902,23,18,GP,Switzerland.....,joined_weak,position,32,73,32,73,25.55,,,,,,,32.73,25.55,,-1
+1902,statcan_nibi_w2_1902,23,20,GP,Total.....,joined_weak,position,14613,76101,9146,46380,16233.0,5196,27208,6348.59,,,,14842,73588,22581.59,2
+1902,statcan_nibi_w2_1902,23,27,GP,"7 Sewing cotton thread in hanks, 3 and 6 cord..... > Great Britain.....",joined_weak,position,,345393,,6.9,,345387,34538.7,,,,,345393,34539.6,7,-2
+1902,statcan_nibi_w2_1902,24,0,GP,,right_only,,,,,470,117.5,600,166,27.67,,,,600,166,27.67,-2
+1902,statcan_nibi_w2_1902,24,1,GP,"1 Cotton, manufactures of—Con. All other cotton thread, N.E.S..... > Great Britain..... United States.....",joined_weak,position,,,,,,,,,,,,3057,470,117.5,-2
+1902,statcan_nibi_w2_1902,24,3,GP,,right_only,,,,,1613,483.9,100524,81121,16224.2,,,,102920,82734,16708.1,2
+1902,statcan_nibi_w2_1902,24,4,GP,,right_only,,,,,155,46.5,,,,,,,297,155,46.5,2
+1902,statcan_nibi_w2_1902,24,5,GP,,right_only,,,,,212,63.6,,,,,,,430,212,63.6,2
+1902,statcan_nibi_w2_1902,24,6,GP,,right_only,,,,,31,9.3,,,,,,,18.31,9.3,,-1
+1902,statcan_nibi_w2_1902,24,7,GP,"2 Bed quilts of cotton, N.O.P..... > Great Britain..... China..... France..... Germany..... United States.....",joined_weak,position,,,,10039,3011.7,,,,,,,12830,10039,3011.7,2
+1902,statcan_nibi_w2_1902,24,9,GP,,right_only,,,,,11553,4043.55,,102930,24017.73,,,,,114483,28061.28,2
+1902,statcan_nibi_w2_1902,24,10,GP,,right_only,,,,,211,73.85,,,,,,,,211,73.85,2
+1902,statcan_nibi_w2_1902,24,11,GP,,right_only,,,,,572,200.2,,,,,,,,572,200.2,2
+1902,statcan_nibi_w2_1902,24,12,GP,,right_only,,,,,2261,791.35,,,,,,,,2261,791.35,2
+1902,statcan_nibi_w2_1902,24,13,GP,,right_only,,,,,10360,3626.0,,,,,,,,10360,3626.0,2
+1902,statcan_nibi_w2_1902,24,14,GP,,right_only,,,,,27457,9609.95,,,,,,,,27457,9609.95,2
+1902,statcan_nibi_w2_1902,24,15,GP,,right_only,,,,,352,123.2,,,,,,,,352,123.2,2
+1902,statcan_nibi_w2_1902,24,16,GP,,right_only,,,,,2294,802.9,,,,,,,,2294,802.9,2
+1902,statcan_nibi_w2_1902,24,17,GP,,right_only,,,,,214224,74978.4,,,,,,,,214224,74978.4,2
+1902,statcan_nibi_w2_1902,24,18,GP,,right_only,,,,,269284,94249.4,,102930,24017.73,,,,,372214,118267.13,2
+1902,statcan_nibi_w2_1902,24,23,GP,,right_only,,,,,1425,427.5,,8133,1626.6,,,,,9558,2054.1,2
+1902,statcan_nibi_w2_1902,24,24,GP,,right_only,,,,,508,152.4,,,,,,,,508,152.4,2
+1902,statcan_nibi_w2_1902,24,27,GP,,right_only,,,,,185,64.75,,514,119.93,,,,,699,184.68,2
+1902,statcan_nibi_w2_1902,24,28,GP,,right_only,,,,,45,15.75,,,,,,,,45,15.75,2
+1902,statcan_nibi_w2_1902,24,31,GP,,right_only,,,,,7885,2759.75,,21879,5105.31,,,,,29764,7865.06,2
+1902,statcan_nibi_w2_1902,24,32,GP,,right_only,,,,,169,59.15,,,,,,,,169,59.15,2
+1902,statcan_nibi_w2_1902,24,33,GP,,right_only,,,,,769,269.15,,,,,,,,769,269.15,2
+1902,statcan_nibi_w2_1902,24,34,GP,,right_only,,,,,59305,20756.75,,,,,,,,59305,20756.75,2
+1902,statcan_nibi_w2_1902,24,35,GP,,right_only,,,,,544,190.4,,,,,,,,544,190.4,2
+1902,statcan_nibi_w2_1902,26,23,GP,"6 Acid, acetic and pyroligenous, crude of any strength, not exceeding 30 p.c..... > Great Britain.....",joined_weak,position,400,63,,,,400,63,10.5,,,,400.63,10.5,6,-2
+1902,statcan_nibi_w2_1902,26,25,GP,"6 Acid, acetic and pyroligenous, crude of any strength, not exceeding 30 p.c..... > Total.....",joined_weak,position,6378,730,5978,667,166.75,400.63,10.5,6378,,,,730,177.25,,-1
+1902,statcan_nibi_w2_1902,26,28,GP,Total.....,joined_weak,position,267172,16056,263726,15812,3953.0,446.94,15.68,264172,,,,15906,3968.68,,-1
+1902,statcan_nibi_w2_1902,26,32,GP,9 Muriatic and nitric..... > Great Britain.....,joined_weak,position,116,31,,,,416,31,4.14,,,,416.31,4.14,9,-2
+1902,statcan_nibi_w2_1902,26,35,GP,Total.....,joined_weak,position,467143,8200,466727,8169,1633.8,416.31,4.14,467143,,,,8200,1637.94,,-1
+1902,statcan_nibi_w2_1902,27,1,GP,France.....,left_only,,720,53,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,27,4,GP,"2 Other, N.E.S. .... > Great Britain.....",joined_weak,position,142272,26407,7628,2025,405.0,128015,22153,2953.77,,,,135648,24178,3378.77,0
+1902,statcan_nibi_w2_1902,27,13,GP,Belgium.....,joined_weak,position,2240,531,2460,571,142.75,,,,,,,2400,571,142.75,2
+1902,statcan_nibi_w2_1902,28,0,GP,,right_only,,,,,547,169.4,43301,7342,978.92,,,,44196,7889,1088.32,0
+1902,statcan_nibi_w2_1902,28,1,GP,,right_only,,,,,859,171.8,,,,,,,1761,859,171.8,2
+1902,statcan_nibi_w2_1902,28,2,GP,,right_only,,,,,7765,1553.0,,,,,,,16172,7765,1553.0,2
+1902,statcan_nibi_w2_1902,28,3,GP,,right_only,,,,,1496,299.2,,,,,,,3295,1496,299.2,2
+1902,statcan_nibi_w2_1902,28,4,GP,,right_only,,,,,10667,2133.4,43301,7342,978.92,,,,65421,18009,3112.32,2
+1902,statcan_nibi_w2_1902,28,5,GP,,right_only,,,,,3299,1528.0,5839,21011,3886.66,,,,7358,24301,5414.66,0
+1902,statcan_nibi_w2_1902,28,6,GP,,right_only,,,,,,,61218,218523,40812.0,,,,61218,218523,40812.0,2
+1902,statcan_nibi_w2_1902,28,7,GP,,right_only,,,,,387,184.0,,,,,,,184,387,184.0,2
+1902,statcan_nibi_w2_1902,28,8,GP,"1 Drugs, dyes, &c.—Con. Camphor..... > Great Britain..... Germany..... Japan..... United States..... Total.....",joined_weak,position,,,,270,126.0,,,,,,,126,270,126.0,2
+1902,statcan_nibi_w2_1902,28,9,GP,2 Opium (crude)..... > Great Britain..... B. E. Indies..... Egypt..... Turkey..... United States..... Total.....,joined_weak,position,,,,6524,3173.0,,,,,,,3173,6524,3173.0,2
+1902,statcan_nibi_w2_1902,28,10,GP,,right_only,,,,,10471,5011.0,67648,239534,44693.66,,,,72059,250003,49709.66,-2
+1902,statcan_nibi_w2_1902,28,12,GP,,right_only,,,,,3424,684.8,1506,314,41.87,,,,43114,3738,726.67,2
+1902,statcan_nibi_w2_1902,28,13,GP,,right_only,,,,,277,55.4,,,,,,,2310,277,55.4,2
+1902,statcan_nibi_w2_1902,28,14,GP,,right_only,,,,,65456,13091.2,,,,,,,1027722,65456,13091.2,2
+1902,statcan_nibi_w2_1902,28,15,GP,,right_only,,,,,28836,5767.2,,,,,,,420431,28836,5767.2,2
+1902,statcan_nibi_w2_1902,28,16,GP,,right_only,,,,,97993,19598.6,1506,314,41.87,,,,1493577,98307,19640.47,2
+1902,statcan_nibi_w2_1902,28,17,GP,,right_only,,,,,1336,271.2,14522,1272,169.62,,,,23793,2628,440.82,0
+1902,statcan_nibi_w2_1902,28,18,GP,,right_only,,,,,356,71.2,,,,,,,1814,356,71.2,2
+1902,statcan_nibi_w2_1902,28,19,GP,,right_only,,,,,22933,4586.6,,,,,,,273930,22933,4586.6,2
+1902,statcan_nibi_w2_1902,28,20,GP,,right_only,,,,,24645,4929.0,14522,1272,169.62,,,,299537,25917,5098.62,2
+1902,statcan_nibi_w2_1902,28,21,GP,,right_only,,,,,,,11918,1036,138.15,,,,11918,1036,138.15,2
+1902,statcan_nibi_w2_1902,28,22,GP,,right_only,,,,,200,40.0,,,,,,,17290,200,40.0,2
+1902,statcan_nibi_w2_1902,28,23,GP,,right_only,,,,,1771,354.2,,,,,,,45528,1771,354.2,2
+1902,statcan_nibi_w2_1902,28,24,GP,,right_only,,,,,1971,394.2,11918,1036,138.15,,,,74736,3007,532.35,2
+1902,statcan_nibi_w2_1902,28,25,GP,,right_only,,,,,169,50.7,,9317,1863.4,,,,,9486,1914.1,2
+1902,statcan_nibi_w2_1902,28,31,GP,,right_only,,,,,,,2830,3225,429.99,,,,2830,3225,429.99,2
+1902,statcan_nibi_w2_1902,28,32,GP,,right_only,,,,,12,2.4,,,,,,,25.12,2.4,,-1
+1902,statcan_nibi_w2_1902,28,33,GP,,right_only,,,,,418,83.6,,,,,,,216,418,83.6,2
+1902,statcan_nibi_w2_1902,28,34,GP,,right_only,,,,,430,86.0,2830,3225,429.99,,,,3071,3655,515.99,2
+1902,statcan_nibi_w2_1902,29,1,GP,United States.....,joined_weak,position,12,69,12,69,16.2,,,,,,,12.69,16.2,,-1
+1902,statcan_nibi_w2_1902,29,36,GP,Total.....,joined_weak,position,209754,8434,209724,8421,2047.35,250.29,6.77,209974,,,,8450,2054.12,,-1
+1902,statcan_nibi_w2_1902,31,35,GP,United States.....,left_only,,150,169701,150,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,32,29,GP,6 Emery wheels and manufactures of emery..... > Great Britain.....,joined_weak,position,,528,,2.5,,494,82.35,,,,,496,82.85,6,-2
+1902,statcan_nibi_w2_1902,36,14,GP,"4 Fertilizers, compounded or manufactured. > Great Britain.....",joined_weak,position,,6253,,1.1,,6252,416.79,,,,,6253,416.89,4,-2
+1902,statcan_nibi_w2_1902,36,33,GP,"8 "" "" dry salted..... > St. Pierre.....",left_only,,2065940,78921,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,38,2,GP,Japan . . . . .,joined_weak,position,1871,82,1871,82,20.5,,,,,,,1871.82,20.5,,-1
+1902,statcan_nibi_w2_1902,38,21,GP,"14 "" pickled or salted . . . . . > Norway and Sweden. . . . .",left_only,,7000,560,725,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,39,4,GP,"2 Anchovies and sardines, packed in oil or otherwise, in tin boxes measuring not more than 5 inches long, 4 inches wide and 3½ inches deep..... > Norway and Sweden.....",joined_weak,position,,13,,13,5.0,,,,,,,100.13,5.0,2,-2
+1902,statcan_nibi_w2_1902,39,7,GP,"3 Anchovies and sardines in half boxes, measuring not more than 5 inches long, 4 inches wide and 1½ inches deep. > Great Britain.....",joined_weak,position,,2939,,2208,337.3,,,,,,,13492,2208,337.3,2
+1902,statcan_nibi_w2_1902,39,12,GP,"4 Anchovies and sardines in quarter boxes, measuring not more than 4½ inches long, 3½ inches wide and 1¼ inches deep..... > Great Britain.....",joined_weak,position,,42841,,38225,10976.42,7200,527,96.01,,,,556021,38752,11072.43,2
+1902,statcan_nibi_w2_1902,39,14,GP,Italy.....,joined_weak,position,1000,54,1000,54,20.0,,,,,,,1000.54,20.0,,-1
+1902,statcan_nibi_w2_1902,39,16,GP,Norway and Sweden.....,joined_weak,position,1600,94,1600,94,32.0,,,,,,,1600.94,32.0,,-1
+1902,statcan_nibi_w2_1902,40,4,GP,Total .....,joined_weak,position,80214,4336,79766,4311,398.84,448.25,1.4,80214,,,,4336,400.33,,-1
+1902,statcan_nibi_w2_1902,40,14,GP,United States. ....,joined_weak,position,2469,113,2219,89,22.19,,,,,,,2219.89,22.19,,-1
+1902,statcan_nibi_w2_1902,40,26,GP,"6 Oil, cod, N.E.S. .... > Great Britain. ....",joined_weak,position,,,,706,141.2,,,,,,,1500,706,141.2,2
+1902,statcan_nibi_w2_1902,40,30,GP,7 Cod liver ..... > Great Britain.....,joined_weak,position,2351,1357,2049,1147,229.4,115.87,11.6,2164,,,,1234,241.0,7,-2
+1902,statcan_nibi_w2_1902,40,35,GP,Total .....,joined_weak,position,16339,8653,15187,8754,1750.8,115.87,11.6,15302,,,,8841,1762.4,,-1
+1902,statcan_nibi_w2_1902,42,28,GP,"7 Jute cloth, not otherwise finished than bleached or calendered..... > Great Britain.....",joined_weak,position,,21546,,44,4.4,460372,23518,1572.19,,,,460772,23622,1576.59,0
+1902,statcan_nibi_w2_1902,43,0,GP,"1 Flax, hemp and jute—Con. Other articles made by the seamstress from linen fabrics, N.O.P. .... > Great Britain .....",left_only,,,6439,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,43,19,GP,"5 "" Currants ..... > Great Britain .....",joined_weak,position,99595,4766,147770,8038,1477.7,588,65,3.91,,,,1148358,8103,1481.61,2
+1902,statcan_nibi_w2_1902,43,21,GP,Greece .....,joined_weak,position,5523002,206830,5288602,206984,52886.62,,,,,,,5288662,206984,52886.62,2
+1902,statcan_nibi_w2_1902,44,0,GP,1 Dried—Figs..... > Great Britain.....,joined_weak,position,255654,4949,259313,5133,1283.25,84.14,2.33,259397,,,,5147,1285.58,1,-2
+1902,statcan_nibi_w2_1902,44,7,GP,Total.....,joined_weak,position,3768420,91356,3617989,87945,21986.25,84.14,2.33,3618073,,,,87959,21988.58,,-1
+1902,statcan_nibi_w2_1902,44,8,GP,"2 "" Prunes..... > Great Britain.....",joined_weak,position,3502,186,792,55,7.02,,,,,,,702.55,7.02,2,-2
+1902,statcan_nibi_w2_1902,44,17,GP,France.....,joined_weak,position,28482,1240,907,73,9.07,,,,,,,907.73,9.07,,-1
+1902,statcan_nibi_w2_1902,44,29,GP,"5 Nuts, Almonds, shelled..... > Great Britain.....",joined_weak,position,3434,509,3159,428,123.83,275.81,9.17,3434,,,,509,133.0,5,-2
+1902,statcan_nibi_w2_1902,44,34,GP,Total.....,joined_weak,position,384471,67244,388007,68338,13514.99,275.81,9.17,388282,,,,68419,13524.16,,-1
+1902,statcan_nibi_w2_1902,45,1,GP,France. ....,joined_weak,position,517,59,517,59,15.51,,,,,,,517.59,15.51,,-1
+1902,statcan_nibi_w2_1902,45,11,GP,Spain. ....,joined_weak,position,,,1073,74,21.46,,,,,,,1073.74,21.46,,-1
+1902,statcan_nibi_w2_1902,45,12,GP,Turkey. ....,joined_weak,position,600,65,600,65,18.0,,,,,,,600.65,18.0,,-1
+1902,statcan_nibi_w2_1902,45,13,GP,United States. ....,joined_weak,position,237798,19114,211670,17569,5400.14,,,,,,,211070,17569,5400.14,2
+1902,statcan_nibi_w2_1902,45,15,GP,"4 "" All other nuts, N.O.P. .... > Great Britain. ....",joined_weak,position,808,151,657,94,13.14,368.77,4.92,1025,,,,171,18.06,4,-2
+1902,statcan_nibi_w2_1902,45,19,GP,Greece. ....,joined_weak,position,600,60,600,60,12.0,,,,,,,600.6,12.0,,-1
+1902,statcan_nibi_w2_1902,45,25,GP,Total. ....,joined_weak,position,3514888,145069,3586063,146346,71721.26,368.77,4.92,3586431,,,,146423,71726.18,,-1
+1902,statcan_nibi_w2_1902,46,17,GP,"6 „ Oranges, lemons and limes, in ½ boxes of capacity not exceeding 1¼ cu. ft. > Great Britain.....",joined_weak,position,,22,,22,2.86,,,,,,,22.22,2.86,6,-2
+1902,statcan_nibi_w2_1902,46,18,GP,B. W. Indies.....,joined_weak,position,108,84,108,84,14.04,,,,,,,108.84,14.04,,-1
+1902,statcan_nibi_w2_1902,46,24,GP,China.....,joined_weak,position,247,58,247,58,24.7,,,,,,,247.58,24.7,,-1
+1902,statcan_nibi_w2_1902,47,0,GP,,right_only,,,,,592,74.8,,,,,,,136,592,74.8,2
+1902,statcan_nibi_w2_1902,47,1,GP,,right_only,,,,,2001,446.05,12718,27052,4663.27,,,,13529,29053,5100.32,0
+1902,statcan_nibi_w2_1902,47,2,GP,,right_only,,,,,16821,2379.3,,,,,,,4326,16821,2379.3,2
+1902,statcan_nibi_w2_1902,47,3,GP,"1 Fruits, including nuts—Con. Green—Oranges, lemons and limes, in barrels, not exceeding the capacity of flour barrels..... > Great Britain..... B. W. Indies..... United States..... Total .....",joined_weak,position,,,,19414,2900.15,12718,27052,4663.27,,,,17991,46466,7563.42,2
+1902,statcan_nibi_w2_1902,47,4,GP,"2 "" Peaches, N.O.P..... > United States.....",joined_weak,position,,91870,,91839,35583.58,,,,,,,3558358,91839,35583.58,2
+1902,statcan_nibi_w2_1902,47,5,GP,"3 "" Plums..... > United States.....",joined_weak,position,,40368,,39057,9764.25,,,,,,,32200,39057,9764.25,2
+1902,statcan_nibi_w2_1902,47,7,GP,,right_only,,,,,19,3.8,,30,4.0,,,,,49,7.8,2
+1902,statcan_nibi_w2_1902,47,8,GP,,right_only,,,,,50,10.0,,184,24.54,,,,,234,34.54,2
+1902,statcan_nibi_w2_1902,47,9,GP,,right_only,,,,,66,13.2,,,,,,,,66,13.2,2
+1902,statcan_nibi_w2_1902,47,10,GP,,right_only,,,,,66,13.2,,,,,,,,66,13.2,2
+1902,statcan_nibi_w2_1902,47,11,GP,"5 "" All other, N.E.S..... > Great Britain..... B. W. Indies..... China..... Porto Rico..... Turkey..... United States..... Total .....",joined_weak,position,60903,,60903,2,0.4,,,,,,,,2,0.4,2
+1902,statcan_nibi_w2_1902,47,14,GP,,right_only,,,,,940,230.32,394926,18228,5923.88,,,,405162,19168,6154.2,2
+1902,statcan_nibi_w2_1902,47,15,GP,,right_only,,,,,54,13.5,,,,,,,600.54,13.5,,-1
+1902,statcan_nibi_w2_1902,47,16,GP,,right_only,,,,,378,216.9,186360,6866,2795.4,,,,196000,7244,3012.3,2
+1902,statcan_nibi_w2_1902,47,17,GP,,right_only,,,,,885,574.76,,,,,,,25545,885,574.76,2
+1902,statcan_nibi_w2_1902,47,18,GP,,right_only,,,,,6719,1424.49,,,,,,,63311,6719,1424.49,2
+1902,statcan_nibi_w2_1902,47,19,GP,,right_only,,,,,138,21.87,,,,,,,972,138,21.87,2
+1902,statcan_nibi_w2_1902,47,20,GP,,right_only,,,,,7,9.09,,,,,,,404,7,9.09,2
+1902,statcan_nibi_w2_1902,47,21,GP,,right_only,,,,,219,123.75,,,,,,,5500,219,123.75,2
+1902,statcan_nibi_w2_1902,47,22,GP,,right_only,,,,,53470,20420.49,,,,,,,907559,53470,20420.49,2
+1902,statcan_nibi_w2_1902,47,23,GP,,right_only,,,,,62810,23035.17,581286,25094,8719.28,,,,1605053,87904,31754.45,2
+1902,statcan_nibi_w2_1902,47,24,GP,,right_only,,,,,179,156.0,,,,,,,78,179,156.0,2
+1902,statcan_nibi_w2_1902,47,25,GP,,right_only,,,,,342,306.0,,,,,,,153,342,306.0,2
+1902,statcan_nibi_w2_1902,47,26,GP,,right_only,,,,,584,258.0,,,,,,,129,584,258.0,2
+1902,statcan_nibi_w2_1902,47,27,GP,,right_only,,,,,1105,720.0,,,,,,,360,1105,720.0,2
+1902,statcan_nibi_w2_1902,48,36,GP,Total . . . . .,joined_weak,position,34552644,713038,18425114,527787,105557.4,6056945,193101,25747.31,,,,24411119,720888,131304.71,2
+1902,statcan_nibi_w2_1902,51,13,GP,Total.....,joined_weak,position,808924,28147,791284,27391,6847.75,16305,493,82.17,,,,801589,27884,6929.92,2
+1902,statcan_nibi_w2_1902,52,0,GP,"1 Gun or pistol covers or cases, game bags, loading tools and cartridge bolts of any material. > Great Britain.....",left_only,,,572,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,3,GP,2 Boots and shoes..... > Great Britain.....,left_only,,,159,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,4,GP,United States.....,left_only,,,150616,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,5,GP,Total.....,left_only,,,150776,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,6,GP,3 Balting..... > Great Britain.....,left_only,,,564,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,7,GP,United States.....,left_only,,,29365,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,8,GP,Total.....,left_only,,,30289,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,9,GP,4 Clothing and clothing made waterproof with India-rubber..... > Great Britain.....,left_only,,,179937,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,10,GP,France.....,left_only,,,72,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,11,GP,Germany.....,left_only,,,138,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,12,GP,United States.....,left_only,,,54020,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,25,GP,"8 All other, not otherwise provided for..... > Great Britain.....",left_only,,,34959,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,26,GP,Austria-Hungary.....,left_only,,,255,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,27,GP,Belgium.....,left_only,,,432,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,28,GP,France.....,left_only,,,1224,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,52,29,GP,Germany.....,left_only,,,28786,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,53,8,GP,3 Hops. .... > Great Britain. ....,joined_weak,position,144767,23631,14234,2184,860.64,125229,20599,5009.16,,,,139563,22783,5869.2,0
+1902,statcan_nibi_w2_1902,53,29,GP,United States .....,left_only,,2743,22834,2743,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,53,30,GP,Total .....,joined_weak,position,2755,22863,2743,22834,4566.8,12.29,3.87,2743,,,,22834,4566.8,,-1
+1902,statcan_nibi_w2_1902,53,31,GP,"8 Drills, grain seed ..... > France .....",joined_weak,position,2,151,,22834,4566.8,12.29,3.87,2755,,,,22863,4570.67,,-1
+1902,statcan_nibi_w2_1902,54,0,GP,"1 Farm, road or field rollers..... > Great Britain .....",joined_weak,position,1,70,1,70,17.5,,,,,,,1.7,17.5,1,-2
+1902,statcan_nibi_w2_1902,54,8,GP,Total .....,joined_weak,position,2472,36755,2469,36718,7343.6,1.12,1.6,2470,,,,36730,7345.2,,-1
+1902,statcan_nibi_w2_1902,54,13,GP,Total .....,joined_weak,position,3406,1010,3161,970,242.5,245.4,6.67,3406,,,,1010,249.17,,-1
+1902,statcan_nibi_w2_1902,54,15,GP,"8 Knives, hay or straw..... > Great Britain.....",joined_weak,position,200,70,,,,200,70,11.67,,,,200.7,11.67,8,-2
+1902,statcan_nibi_w2_1902,54,17,GP,Total .....,joined_weak,position,446,246,246,176,44.0,200.7,11.67,446,,,,246,55.67,,-1
+1902,statcan_nibi_w2_1902,54,21,GP,10 Manure spreaders..... > Great Britain.....,joined_weak,position,1,79,1,79,15.8,,,,,,,1.79,15.8,10,-2
+1902,statcan_nibi_w2_1902,55,1,GP,Australia.....,joined_weak,position,1,75,1,75,15.0,,,,,,,1.75,15.0,,-1
+1902,statcan_nibi_w2_1902,55,10,GP,United States.....,joined_weak,position,1569,6738,1572,6759,1689.75,,,,,,,1380,6759,1689.75,2
+1902,statcan_nibi_w2_1902,55,11,GP,Total.....,joined_weak,position,2949,11949,1662,7241,1810.25,1290,4729,788.19,,,,1572,2952,2598.44,0
+1902,statcan_nibi_w2_1902,55,16,GP,United States.....,left_only,,,489837,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,56,13,GP,United States . . . . .,left_only,,,28928,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,56,26,GP,,right_only,,,,,,,,,,,,,,,,0
+1902,statcan_nibi_w2_1902,56,31,GP,Cape de Verde Isl'ds . . . . .,joined_weak,position,6,75,6,75,15.0,,,,,,,6.75,15.0,,-1
+1902,statcan_nibi_w2_1902,57,1,GP,Germany.....,joined_weak,position,13,59,13,59,2.95,,,,,,,13.59,2.95,,-1
+1902,statcan_nibi_w2_1902,57,3,GP,Total.....,joined_weak,position,37926,138700,25556,97971,4898.55,11331,40378,1346.36,,,,37487,138349,6244.91,2
+1902,statcan_nibi_w2_1902,57,25,GP,United States. ....,joined_weak,position,3865754,232088,3884623,231460,69438.0,13181,,,,,,13745,231460,69438.0,2
+1902,statcan_nibi_w2_1902,58,26,GP,"8 "" Charcoal..... > Great Britain.....",left_only,,20,360,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,59,0,GP,DUTIABLE GOODS— Con.,left_only,,,8,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,59,6,GP,Fanning mills > United States,joined_weak,position,271,4555,271,4555,1138.75,,,,,,,,271,4555,-2
+1902,statcan_nibi_w2_1902,59,7,GP,3 Grain crushers > United States,joined_weak,position,43,1619,43,1619,404.75,,,,,,,,43,1619,-2
+1902,statcan_nibi_w2_1902,59,8,GP,4 Wind mills > United States,joined_weak,position,483,20373,483,20373,5093.25,,,,,,,,483,20373,-2
+1902,statcan_nibi_w2_1902,59,13,GP,Fodder or feed cutters > United States,left_only,,16,60,16,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,59,14,GP,7 Horse powers > United States,joined_weak,position,60,6137,62,6590,1647.5,,,,,,,,16.6,15.0,-2
+1902,statcan_nibi_w2_1902,59,15,GP,8 Portable engines > United States,joined_weak,position,270,260336,271,261188,65297.0,,,,,,,,62,6590,-2
+1902,statcan_nibi_w2_1902,59,16,GP,9 Portable saw mills and planing mills > United States,joined_weak,position,7,5163,7,5163,1290.75,,,,,,,,271,261188,-2
+1902,statcan_nibi_w2_1902,59,17,GP,10 Threshers and separators > United States,joined_weak,position,673,146271,678,147634,36908.5,,,,,,,,7,5163,-2
+1902,statcan_nibi_w2_1902,59,22,GP,,right_only,,,,,52,13.0,,,,,,,,49691,12220.0,-2
+1902,statcan_nibi_w2_1902,59,24,GP,United States,left_only,,,122898,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,59,26,GP,"13 Sewing machines, and parts of > Great Britain",joined_weak,position,157,3476,,83,24.9,147,3306,661.2,,,,156,122647,30661.75,-2
+1902,statcan_nibi_w2_1902,59,30,GP,,right_only,,,,,,,,,,,,,,246400,73589.4,-2
+1902,statcan_nibi_w2_1902,60,28,GP,"9 Mould boards, or shaves or plough plates, land sides and other plates for agricultural implements, cut to shape from rolled plates of steel but not moulded, punched, polished or otherwise manufactured..... > Total.....",joined_weak,position,372591,12862,372491,12852,2234.95,100.1,0.4,372591,,,,12862,2235.35,,-1
+1902,statcan_nibi_w2_1902,63,1,GP,United States.....,left_only,,12091,17022,12091,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,63,2,GP,Total.....,joined_weak,position,12104,17053,12091,17022,5106.6,13.31,6.2,12091,,,,17022,5106.6,,-1
+1902,statcan_nibi_w2_1902,63,12,GP,Newfoundland.....,left_only,,,70,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,63,21,GP,6 Swedish rolled iron and Swedish rolled steel nail rods under half an inch in diameter for the manufacture of horse-shoe nails..... > Great Britain.....,joined_weak,position,667,1344,667,2166,324.9,,,,,,,,667,1344,-2
+1902,statcan_nibi_w2_1902,63,22,GP,Norway and Sweden.....,joined_weak,position,11472,23790,11472,27300,4095.0,,,,,,,,11472,23790,-2
+1902,statcan_nibi_w2_1902,63,23,GP,United States.....,joined_weak,position,1761,2166,1761,20221,6066.3,,,,,,,,1761,2166,-2
+1902,statcan_nibi_w2_1902,63,24,GP,Total.....,joined_weak,position,13900,27300,13900,,,,,,,,,,13900,27300,-2
+1902,statcan_nibi_w2_1902,63,25,GP,"7 Switches, frogs, crossings and intersections for railways..... > United States.....",joined_weak,position,7037,20221,7037,,,,,,,,,,7037,20221,-2
+1902,statcan_nibi_w2_1902,64,0,GP,"1 Tubes of rolled steel, seamless, not joined or welded, not more than 1½ inches in diameter > Great Britain.....",left_only,,23773,629,1465,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,1,GP,United States.....,joined_weak,position,140540,7846,140540,,,22308,312,20.8,,,,,,,0
+1902,statcan_nibi_w2_1902,64,3,GP,"2 Tubes, seamless steel, for bicycles..... > Great Britain.....",left_only,,3646,502,1950,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,4,GP,United States.....,joined_weak,position,223854,16220,223629,,,1696,170,11.33,,,,,,,0
+1902,statcan_nibi_w2_1902,64,6,GP,"3 Tubing, wrought iron or steel, plain or galvanized, threaded and coupled or not, over 2 inches in diameter, N.E.S..... > Great Britain.....",left_only,,2527753,80960,67718,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,7,GP,Germany.....,left_only,,266227,8850,246430,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,8,GP,United States.....,joined_weak,position,6267080,198922,6111907,,,2368843,75705,7570.5,,,,,,,0
+1902,statcan_nibi_w2_1902,64,10,GP,"4 Tubing, wrought iron or steel, plain or galvanized, threaded and coupled or not, 2 inches or less in diameter, N.E.S..... > Great Britain.....",left_only,,2240571,59078,42062,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,11,GP,France.....,left_only,,128,25,128,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,12,GP,Germany.....,left_only,,25301,815,25301,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,13,GP,United States.....,joined_weak,position,1063762,48170,1063687,,,2177519,56453,13172.37,,,,,,,0
+1902,statcan_nibi_w2_1902,64,15,GP,"5 Other iron or steel tubes or pipes, N.O.P..... > Great Britain.....",left_only,,40218,1348,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,16,GP,United States.....,joined_weak,position,307307,22925,307357,22961,6888.3,40218,1348,269.6,,,,,,,0
+1902,statcan_nibi_w2_1902,64,18,GP,"6 Ware—Galvanized sheet iron or galvanized sheet steel, manufactures, N.O.P..... > Great Britain.....",left_only,,,2421,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,19,GP,France.....,left_only,,,17,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,20,GP,United States.....,left_only,,,21297,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,21,GP,Total.....,left_only,,,23735,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,22,GP,"7 Ware—Agate, granite or enamelled iron or steel hollow ware..... > Great Britain.....",left_only,,,2764,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,23,GP,Austria-Hungary.....,left_only,,,87,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,24,GP,France.....,left_only,,,310,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,25,GP,Germany.....,left_only,,,13711,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,26,GP,Japan.....,left_only,,,18,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,27,GP,United States.....,left_only,,,11873,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,28,GP,Total.....,left_only,,,28763,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,64,30,GP,France.....,joined_weak,position,,116,,21703,5425.75,2124,2124,354.02,,,,23827,23827,5779.77,2
+1902,statcan_nibi_w2_1902,64,32,GP,Japan.....,joined_weak,position,,52,,26658,9120.3,2656,2656,619.8,,,,28714,28714,9740.1,0
+1902,statcan_nibi_w2_1902,64,34,GP,Total.....,joined_weak,position,,101373,,98790,29637.0,2357,2357,471.4,,,,101147,101147,30108.4,2
+1902,statcan_nibi_w2_1902,65,6,GP,France.....,joined_weak,position,,22,,22,6.6,,,,,,,22.22,6.6,,-1
+1902,statcan_nibi_w2_1902,65,7,GP,Japan.....,joined_weak,position,,23,,23,6.9,,,,,,,23.23,6.9,,-1
+1902,statcan_nibi_w2_1902,65,8,GP,United States.....,joined_weak,position,,9751,,9751,2925.3,,,,,,,9751,2925.3,2925.3,0
+1902,statcan_nibi_w2_1902,65,21,GP,France.....,joined_weak,position,394,84,394,84,16.8,,,,,,,304.84,16.8,,-1
+1902,statcan_nibi_w2_1902,65,26,GP,Newfoundland.....,joined_weak,position,700,67,700,67,16.75,,,,,,,700.67,16.75,,-1
+1902,statcan_nibi_w2_1902,65,28,GP,Germany.....,joined_weak,position,2324,62,2324,62,15.5,,,,,,,2324.62,15.5,,-1
+1902,statcan_nibi_w2_1902,65,29,GP,United States.....,joined_weak,position,587009,59143,559426,58163,14540.75,,,,,,,359426,58163,14540.75,2
+1902,statcan_nibi_w2_1902,67,25,GP,"6 Tools and Implements— Adzes, cleavers, hatchets, wedges, sledges, hammers, crowbars, cant hooks and track tools; picks, mattocks and eyes, or poles for the same..... > Total.....",joined_weak,position,135650,595299,114080,500753,25037.65,,94013,3134.64,,,,135496,594766,28171.69,0
+1902,statcan_nibi_w2_1902,67,33,GP,United States.....,joined_weak,position,10374,50121,10378,50134,12533.5,,14,2.34,,,,,10378,12533.5,-2
+1902,statcan_nibi_w2_1902,68,0,GP,,right_only,,,,,1234,370.2,,3642,728.4,,,,,4876,1098.6,2
+1902,statcan_nibi_w2_1902,69,9,GP,"1 Jellies, jams and preserves, N.E.S. .... > Spain .....",left_only,,3220,651,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,69,29,GP,,right_only,,,,,2302,345.3,,59819,5981.9,,,,,62121,,1
+1902,statcan_nibi_w2_1902,69,30,GP,"4 Lead and manufactures of— Old, scrap, pig and block ..... > Great Britain .....",joined_weak,position,,61556,,,,110,387,38.7,,,,110,387,38.7,2
+1902,statcan_nibi_w2_1902,69,35,GP,5 Bars and in sheets ..... > Great Britain .....,joined_weak,position,15196,41748,,,,15616,44000,7333.43,,,,15616,44000,,1
+1902,statcan_nibi_w2_1902,71,0,GP,,right_only,,,,,5448,544.8,250,195,12.94,,,,8114,5648,557.74,0
+1902,statcan_nibi_w2_1902,71,1,GP,,right_only,,,,,546,54.6,,,,,,,1165,546,54.6,2
+1902,statcan_nibi_w2_1902,71,2,GP,,right_only,,,,,110,11.0,,,,,,,250,110,11.0,2
+1902,statcan_nibi_w2_1902,71,3,GP,,right_only,,,,,4272,427.2,,,,,,,5486,4272,427.2,2
+1902,statcan_nibi_w2_1902,71,4,GP,"1 Leather and manufactures of—Con. Glove leathers, tanned or dressed, coloured or uncoloured, imported by glove manufacturers for use in their own factories in the manufacture of gloves..... > Great Britain..... Austria-Hungary.... France..... Germany..... United States.....",joined_weak,position,,,,163676,16367.6,,,,,,,318936,163676,16367.6,2
+1902,statcan_nibi_w2_1902,71,6,GP,,right_only,,,,,,,1629,768,89.61,,,,1629,768,89.61,2
+1902,statcan_nibi_w2_1902,71,7,GP,2 Harness leather..... > Great Britain..... United States.....,joined_weak,position,,,,1760,308.02,,,,,,,4607,1760,308.02,2
+1902,statcan_nibi_w2_1902,71,9,GP,,right_only,,,,,63,9.45,13191,4076,407.6,,,,14321,4139,417.05,2
+1902,statcan_nibi_w2_1902,71,10,GP,3 Tanners' scrap leather..... > Great Britain..... United States.....,joined_weak,position,,,,1381,207.15,,,,,,,25479,1381,207.15,2
+1902,statcan_nibi_w2_1902,71,12,GP,,right_only,,,,,1805,315.88,42656,28880,3369.4,,,,44891,30685,3685.28,2
+1902,statcan_nibi_w2_1902,71,13,GP,,right_only,,,,,740,129.5,,,,,,,28755,740,129.5,2
+1902,statcan_nibi_w2_1902,71,14,GP,,right_only,,,,,190,33.25,,,,,,,155,190,33.25,2
+1902,statcan_nibi_w2_1902,71,15,GP,,right_only,,,,,10914,1909.95,,,,,,,20761,10914,1909.95,2
+1902,statcan_nibi_w2_1902,71,16,GP,,right_only,,,,,165,28.87,,,,,,,84,165,28.87,2
+1902,statcan_nibi_w2_1902,71,17,GP,,right_only,,,,,12,2.1,,,,,,,8.12,2.1,,-1
+1902,statcan_nibi_w2_1902,71,18,GP,"4 Upper leather, including dongola, cordovan, kangaroo, alligator and chamois skins, or other upper leather, N. E. S., dressed, waxed or glazed..... > Great Britain..... Newfoundland..... Belgium..... France..... Germany..... Russia..... United States.....",joined_weak,position,,,,140969,24669.91,,,,,,,165573,140969,24669.91,2
+1902,statcan_nibi_w2_1902,71,20,GP,,right_only,,,,,1314,328.5,1337,1002,167.02,,,,2608,2316,495.52,2
+1902,statcan_nibi_w2_1902,71,21,GP,,right_only,,,,,939,234.75,,,,,,,1060,939,234.75,2
+1902,statcan_nibi_w2_1902,71,22,GP,,right_only,,,,,12854,3213.5,,,,,,,8157,12854,3213.5,2
+1902,statcan_nibi_w2_1902,71,23,GP,"5 Japanned, patent or enamelled leather and Morocco leather..... > Great Britain..... France..... Germany..... United States.....",joined_weak,position,,,,27388,6847.0,,,,,,,26368,27388,6847.0,2
+1902,statcan_nibi_w2_1902,71,25,GP,,right_only,,,,,337,50.55,1170,490,49.0,,,,2080,827,99.55,2
+1902,statcan_nibi_w2_1902,71,26,GP,"6 Skins for Morocco leather, tanned, but not further manufactured..... > Great Britain..... United States.....",joined_weak,position,,,,1184,177.6,,,,,,,1066,1184,177.6,2
+1902,statcan_nibi_w2_1902,71,28,GP,,right_only,,,,,456,68.4,54075,22660,2266.0,,,,54965,23116,2334.4,2
+1902,statcan_nibi_w2_1902,71,29,GP,,right_only,,,,,92,13.8,,,,,,,2222.92,13.8,,-1
+1902,statcan_nibi_w2_1902,71,30,GP,7 All other leather and skins N.O.P..... > Great Britain..... Newfoundland..... United States.....,joined_weak,position,,,,9295,1394.26,,,,,,,28215,9295,1394.26,2
+1902,statcan_nibi_w2_1902,72,0,GP,,right_only,,,,,1369,239.57,9686,4255,496.44,,,,11236,5624,736.01,2
+1902,statcan_nibi_w2_1902,72,1,GP,,right_only,,,,,569,99.58,,,,,,,1057,569,99.58,2
+1902,statcan_nibi_w2_1902,72,2,GP,"1 Leather and manufactures of—Con. All other, dressed, waxed or glazed, &c., N.E.S. .... > Great Britain. .... France. .... United States. ....",joined_weak,position,,,,34559,6048.09,,,,,,,58980,34559,6048.09,2
+1902,statcan_nibi_w2_1902,72,4,GP,,right_only,,,,,4708,1177.09,,28077,4679.62,,,,,32785,5856.62,0
+1902,statcan_nibi_w2_1902,72,5,GP,,right_only,,,,,226,56.5,,,,,,,,226,56.5,2
+1902,statcan_nibi_w2_1902,72,6,GP,,right_only,,,,,26,6.5,,,,,,,,26,6.5,2
+1902,statcan_nibi_w2_1902,72,7,GP,,right_only,,,,,328,82.0,,,,,,,,328,82.0,2
+1902,statcan_nibi_w2_1902,72,8,GP,,right_only,,,,,445,111.25,,,,,,,,445,111.25,2
+1902,statcan_nibi_w2_1902,72,9,GP,,right_only,,,,,96,24.0,,,,,,,,96,24.0,2
+1902,statcan_nibi_w2_1902,72,10,GP,,right_only,,,,,169,42.25,,,,,,,,169,42.25,2
+1902,statcan_nibi_w2_1902,72,11,GP,,right_only,,,,,665716,166429.0,,,,,,,,665716,166429.0,2
+1902,statcan_nibi_w2_1902,72,12,GP,,right_only,,,,,671714,167928.5,,28077,4679.62,,,,,699791,172608.12,2
+1902,statcan_nibi_w2_1902,72,13,GP,,right_only,,,,,476,142.8,,8393,1678.6,,,,,8869,1821.4,2
+1902,statcan_nibi_w2_1902,72,14,GP,,right_only,,,,,4,1.2,,,,,,,,4,1.2,2
+1902,statcan_nibi_w2_1902,72,15,GP,,right_only,,,,,73163,21948.9,,,,,,,,73163,21948.9,2
+1902,statcan_nibi_w2_1902,72,16,GP,,right_only,,,,,73643,22092.9,,8393,1678.6,,,,,82036,23771.5,2
+1902,statcan_nibi_w2_1902,72,17,GP,,right_only,,,,,,,,12976,1730.16,,,,,12976,1730.16,2
+1902,statcan_nibi_w2_1902,72,18,GP,,right_only,,,,,1218,243.6,,,,,,,,1218,243.6,2
+1902,statcan_nibi_w2_1902,72,19,GP,,right_only,,,,,554,110.8,,,,,,,,554,110.8,2
+1902,statcan_nibi_w2_1902,72,29,GP,,right_only,,,,,17428,3485.6,117,156,20.81,,,,117,156,20.81,-2
+1902,statcan_nibi_w2_1902,72,30,GP,,right_only,,,,,,,,,,,,,24485,17428,3485.6,-2
+1902,statcan_nibi_w2_1902,72,32,GP,,right_only,,,,,20,7.8,,,,,,,13,20,7.8,2
+1902,statcan_nibi_w2_1902,72,33,GP,"7 Lime juice, and fruit juices, fortified with or containing not more than twenty- five per cent of proof spirits. .... > Great Britain. .... United States. ....",joined_weak,position,,,,319,89.4,,,,,,,149,319,89.4,2
+1902,statcan_nibi_w2_1902,73,21,GP,United States.....,joined_weak,position,520,540,,,,160,175,16.0,,,,160,175,16.0,2
+1902,statcan_nibi_w2_1902,77,24,GP,France.....,joined_weak,position,674,65,674,65,10.11,,,,,,,674.65,10.11,,-1
+1902,statcan_nibi_w2_1902,77,29,GP,Great Britain.....,left_only,,270,6,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,78,0,GP,"1 Type for printing, including chases, quoins and slugs of all kinds. .... > Great Britain. ....",left_only,,,27202,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,78,12,GP,France. ....,joined_weak,position,60,95,60,95,19.0,,,,,,,60.95,19.0,,-1
+1902,statcan_nibi_w2_1902,78,26,GP,8 Blacklead. .... > Great Britain. ....,joined_weak,position,,5387,,1.25,,5458,909.71,,,,,5459,909.96,8,-2
+1902,statcan_nibi_w2_1902,79,0,GP,DUTIABLE GOODS— Con.,left_only,,,8,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,79,13,GP,,right_only,,,,,11699,2924.75,,,,,,,,11699,2924.75,2
+1902,statcan_nibi_w2_1902,79,20,GP,,right_only,,,,,3,0.6,,,,,,,,3,60,0
+1902,statcan_nibi_w2_1902,80,0,GP,1 Cabinet organs ..... > Great Britain .....,left_only,,4,260,2,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,1,GP,1 Cabinet organs ..... > United States.....,joined_weak,position,231,13527,229,,,2,231,46.2,,,,,,,0
+1902,statcan_nibi_w2_1902,80,3,GP,2 Parts of organs ..... > Great Britain.....,left_only,,,665,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,4,GP,2 Parts of organs ..... > Germany .....,left_only,,,25,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,8,GP,4 Pianofortes ..... > Great Britain.....,left_only,,4,524,2,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,9,GP,4 Pianofortes ..... > Italy .....,left_only,,2,123,2,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,10,GP,4 Pianofortes ..... > United States.....,joined_weak,position,658,105524,656,,,1,107,21.4,,,,,,,0
+1902,statcan_nibi_w2_1902,80,12,GP,"5 Pianos, parts of..... > Great Britain.....",left_only,,,401,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,13,GP,"5 Pianos, parts of..... > France.....",left_only,,,16679,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,14,GP,"5 Pianos, parts of..... > Germany .....",left_only,,,2960,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,15,GP,"5 Pianos, parts of..... > United States.....",left_only,,,134209,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,16,GP,"5 Pianos, parts of..... > Total .....",left_only,,,154249,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,17,GP,"6 Other musical instruments, N.E.S ..... > Great Britain .....",left_only,,,1703,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,18,GP,"6 Other musical instruments, N.E.S ..... > Newfoundland .....",left_only,,,23,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,19,GP,"6 Other musical instruments, N.E.S ..... > Austria-Hungary.....",left_only,,,100,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,20,GP,"6 Other musical instruments, N.E.S ..... > China .....",left_only,,,36,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,21,GP,"6 Other musical instruments, N.E.S ..... > France.....",left_only,,,1500,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,22,GP,"6 Other musical instruments, N.E.S ..... > Germany .....",left_only,,,70251,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,23,GP,"6 Other musical instruments, N.E.S ..... > Italy .....",left_only,,,30,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,24,GP,"6 Other musical instruments, N.E.S ..... > Spain .....",left_only,,,10,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,30,GP,8 Ground..... > Great Britain .....,left_only,,315815,69337,556,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,31,GP,8 Ground..... > France .....,left_only,,1540,140,1120,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,80,32,GP,8 Ground..... > United States.....,joined_weak,position,208235,13221,209483,,,296725,64403,10733.94,,,,,,,0
+1902,statcan_nibi_w2_1902,81,0,GP,,right_only,,,,,161,56.35,149.43,10.04,300,,,,204,66.39,1,-2
+1902,statcan_nibi_w2_1902,81,1,GP,,right_only,,,,,421,147.35,,,,,,,433,421,147.35,2
+1902,statcan_nibi_w2_1902,81,2,GP,,right_only,,,,,8136,2847.6,,,,,,,45977,8136,2847.6,2
+1902,statcan_nibi_w2_1902,81,3,GP,,right_only,,,,,8718,3051.3,149.43,10.04,46710,,,,8761,3061.34,,-1
+1902,statcan_nibi_w2_1902,81,4,GP,"1 Mustard—Con. French, liquid..... > Great Britain..... France..... United States.....",joined_weak,position,,,,334,96.25,,,,,,,1925,334,96.25,2
+1902,statcan_nibi_w2_1902,81,5,GP,"Oils— 2 Mineral— Coal and kerosene, distilled, purified or refined, naphtha, and petro- leum, N.E.S..... > Total..... Great Britain..... United States.....",joined_weak,position,,,,877753,545723.55,,,,,,,10914471,877753,545723.55,2
+1902,statcan_nibi_w2_1902,81,7,GP,,right_only,,,,,,,1,3,0.03,,,,1,3,0.03,2
+1902,statcan_nibi_w2_1902,81,8,GP,,right_only,,,,,52282,24555.25,,,,,,,491105,52282,24555.25,2
+1902,statcan_nibi_w2_1902,81,9,GP,,right_only,,,,,52282,24555.25,1,3,0.03,,,,491106,52285,24555.28,2
+1902,statcan_nibi_w2_1902,81,10,GP,,right_only,,,,,40568,14783.16,,,,,,,591328,40568,14783.16,2
+1902,statcan_nibi_w2_1902,81,11,GP,"3 Products of petroleum, N.E.S..... > Great Britain..... United States.....",joined_weak,position,,,,,,4203,1193,198.83,,,,4203,1193,198.83,2
+1902,statcan_nibi_w2_1902,81,12,GP,"4 Crude petroleum, fuel and gas oils (other than naphtha, benzine or gasoline) when imported by manu- facturers (other than oil refiners) for use in their own factories, for fuel purposes or for the manufac- ture of gas..... > Total..... United States.....",joined_weak,position,,,,1348,337.0,,,,,,,3053,1348,337.0,2
+1902,statcan_nibi_w2_1902,81,13,GP,"5 Illuminating oils composed wholly or in part of the products of petro- leum, coal, shale or lignite, costing more than thirty cents per gallon.. > Great Britain..... United States..... Total.....",joined_weak,position,,,,1348,337.0,4203,1193,198.83,,,,7256,2541,535.83,2
+1902,statcan_nibi_w2_1902,81,16,GP,,right_only,,,,,152,30.4,,,,,,,250,152,30.4,2
+1902,statcan_nibi_w2_1902,81,17,GP,,right_only,,,,,743,148.6,,,,,,,1324,743,148.6,2
+1902,statcan_nibi_w2_1902,81,18,GP,,right_only,,,,,895,179.0,,,,,,,1574,895,179.0,2
+1902,statcan_nibi_w2_1902,81,19,GP,,right_only,,,,,1268,253.6,74002,39591,5278.89,,,,76430,40859,5532.49,2
+1902,statcan_nibi_w2_1902,81,20,GP,,right_only,,,,,104,20.8,,,,,,,196,104,20.8,2
+1902,statcan_nibi_w2_1902,81,21,GP,,right_only,,,,,2469,493.9,,,,,,,4300,2469,493.9,2
+1902,statcan_nibi_w2_1902,81,22,GP,,right_only,,,,,7,1.4,,,,,,,9,7,1.4,2
+1902,statcan_nibi_w2_1902,81,23,GP,,right_only,,,,,515,103.0,,,,,,,2294,515,103.0,2
+1902,statcan_nibi_w2_1902,81,24,GP,,right_only,,,,,915,183.0,,,,,,,1998,915,183.0,2
+1902,statcan_nibi_w2_1902,81,25,GP,,right_only,,,,,5278,1055.7,74002,39591,5278.89,,,,85227,44869,6334.59,2
+1902,statcan_nibi_w2_1902,81,26,GP,"8 Other animal oil, N.E.S..... > Norway and Sweden..... United States..... Total.....",joined_weak,position,,,,,,12060,6424,856.54,,,,12060,6424,856.54,2
+1902,statcan_nibi_w2_1902,81,27,GP,9 Vegetable— Castor..... > Great Britain..... Belgium..... France..... Germany..... Italy..... United States..... Total.....,joined_weak,position,,,,20179,4035.8,,,,,,,42034,20179,4035.8,2
+1902,statcan_nibi_w2_1902,81,28,GP,"10 Cotton seed, crude..... > Great Britain..... United States..... Total.....",joined_weak,position,,,,20179,4035.8,12060,6424,856.54,,,,54094,26603,4892.34,2
+1902,statcan_nibi_w2_1902,82,0,GP,1 Refined..... > Great Britain.....,left_only,,15140,7870,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,1,GP,United States.....,left_only,,1026217,340865,1023640,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,2,GP,Total.....,joined_weak,position,1041357,348735,1023640,339746,67949.2,14140,7272,969.59,,,,,,,0
+1902,statcan_nibi_w2_1902,82,3,GP,"2 Flaxseed or linseed, raw or boiled... > Great Britain.....",joined_weak,position,650943,387253,11004,339746,67949.2,14140,7272,969.59,,,,1087780,347018,68918.79,2
+1902,statcan_nibi_w2_1902,82,4,GP,United States.....,joined_weak,position,41916,19846,41921,,,639965,377614,62935.77,,,,,,,0
+1902,statcan_nibi_w2_1902,82,6,GP,"3 Olive, N.E.S..... > Great Britain.....",left_only,,8882,10605,2238,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,7,GP,Belgium.....,left_only,,150,271,150,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,8,GP,China.....,left_only,,55,149,54,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,9,GP,France.....,left_only,,10517,15563,9568,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,10,GP,Italy.....,left_only,,5075,3834,3073,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,11,GP,Portugal.....,left_only,,5,4,5,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,12,GP,Spain.....,left_only,,6,12,6,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,13,GP,St. Pierre.....,left_only,,5,13,5,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,14,GP,Turkey.....,left_only,,81,84,81,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,15,GP,United States.....,joined_weak,position,11529,10113,11508,,,5366,7520,1002.82,,,,,,,0
+1902,statcan_nibi_w2_1902,82,17,GP,4 Sesame seed..... > Great Britain.....,left_only,,80,57,80,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,18,GP,China.....,left_only,,9,4,9,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,19,GP,Turkey.....,left_only,,13,12,13,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,20,GP,United States.....,joined_weak,position,363,315,363,,,,,,,,,,,,0
+1902,statcan_nibi_w2_1902,82,22,GP,"5 Vegetable oil, not otherwise specified. > Great Britain.....",left_only,,8170,4428,409,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,23,GP,Hong Kong.....,left_only,,2236,1592,2236,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,24,GP,Newfoundland.....,left_only,,174,120,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,25,GP,China.....,left_only,,19249,14443,19251,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,26,GP,France.....,left_only,,4752,2702,4729,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,27,GP,Germany.....,left_only,,2581,1591,2581,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,28,GP,Turkey.....,joined_weak,position,17,21,17,,,69.28,38.57,514.28,,,,,,,0
+1902,statcan_nibi_w2_1902,82,29,GP,United States.....,joined_weak,position,9702,8099,9891,,,,,,,,,,,,0
+1902,statcan_nibi_w2_1902,82,31,GP,6 Lubricating oils composed wholly or in part of petroleum and costing less than 25 cts. per gallon..... > Great Britain.....,left_only,,344,58,264,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,82,32,GP,United States.....,joined_weak,position,1215756,134452,1213575,,,80.1,2.67,,,,,,,6,-1
+1902,statcan_nibi_w2_1902,82,33,GP,Total.....,joined_weak,position,1216100,134510,1213839,133716,60691.95,80.1,2.67,1213919,,,,133726,60694.62,,-1
+1902,statcan_nibi_w2_1902,84,23,GP,,right_only,,,,,12,2.4,,,,,,,,12,2.4,2
+1902,statcan_nibi_w2_1902,84,24,GP,,right_only,,,,,3,0.6,,,,,,,,3,0.6,2
+1902,statcan_nibi_w2_1902,84,27,GP,,right_only,,,,,97125,19425.0,,,,,,,,97125,19425.0,2
+1902,statcan_nibi_w2_1902,85,5,GP,Switzerland.....,joined_weak,position,53,65,53,65,13.0,,,,,,,53.65,13.0,,-1
+1902,statcan_nibi_w2_1902,85,8,GP,Great Britain.....,joined_weak,position,488206,32567,13942,1277,319.25,461411,30448,5074.94,,,,475853,31725,5394.19,2
+1902,statcan_nibi_w2_1902,85,30,GP,China.....,joined_weak,position,200,18,200,18,4.5,,,,,,,260.18,4.5,,-1
+1902,statcan_nibi_w2_1902,85,38,GP,Total.....,joined_weak,position,67443,5224,66771,5192,1298.6,672.32,5.33,67443,,,,5224,1303.33,,-1
+1902,statcan_nibi_w2_1902,86,0,GP,"1 Paints and colours, and rough stuff and fillers, anti-corrosive and anti-fouling paints commonly used for ships' hulls, N.E.S. .... > Great Britain. ....",left_only,,84057,6644,760,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,1,GP,United States. ....,joined_weak,position,309371,12370,313734,,,78951,5717,952.86,,,,,,,0
+1902,statcan_nibi_w2_1902,86,3,GP,"2 Paris green, dry. .... > Great Britain. ....",left_only,,400917,50310,60710,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,4,GP,United States. ....,joined_weak,position,253268,30508,254168,,,340207,43463,2897.53,,,,,,,0
+1902,statcan_nibi_w2_1902,86,6,GP,Great Britain. ....,left_only,,31,86,1,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,7,GP,France. ....,left_only,,4,40,4,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,8,GP,Germany. ....,left_only,,3,12,1,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,9,GP,United States. ....,left_only,,669,1996,672,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,10,GP,Total. ....,left_only,,707,2134,678,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,11,GP,Great Britain. ....,left_only,,5610,69,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,12,GP,Italy. ....,left_only,,50,4,50,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,13,GP,United States. ....,left_only,,149678,2542,149678,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,14,GP,Total. ....,left_only,,155338,2615,149728,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,16,GP,Germany. ....,joined_weak,position,,560,,2066,702.74,30.82,22.5,708,,,,2148,785.24,,-1
+1902,statcan_nibi_w2_1902,86,18,GP,Total. ....,joined_weak,position,,105339,,2546,509.2,5610.69,9.2,155338,,,,2615,518.4,,-1
+1902,statcan_nibi_w2_1902,86,24,GP,Great Britain. ....,left_only,,23100,3480,2640,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,25,GP,France. ....,left_only,,144,1,144,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,26,GP,Japan. ....,left_only,,1200,29,1200,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,27,GP,United States. ....,left_only,,364054,35192,372314,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,29,GP,Great Britain. ....,left_only,,,2912,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,30,GP,China. ....,left_only,,,44,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,86,31,GP,Germany. ....,left_only,,,230,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,87,0,GP,"1 Card board, paste board, in sheets or cut to size, N. E. S. ....",left_only,,,,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,87,7,GP,,joined_weak,position,,20,4,150,52.5,5579,8164,1905.13,,,,5732,8314,1957.63,2
+1902,statcan_nibi_w2_1902,87,8,GP,,joined_weak,position,,218,404,4,1.4,,,,,,,20,4,1.4,2
+1902,statcan_nibi_w2_1902,87,9,GP,,joined_weak,position,,666,897,404,141.4,,,,,,,218,404,141.4,2
+1902,statcan_nibi_w2_1902,87,10,GP,,joined_weak,position,,4,16,897,313.95,,,,,,,666,897,313.95,2
+1902,statcan_nibi_w2_1902,87,11,GP,,joined_weak,position,,6,12,16,5.6,,,,,,,4,16,5.6,2
+1902,statcan_nibi_w2_1902,87,12,GP,,joined_weak,position,,23539,21767,12,4.2,,,,,,,6,12,4.2,2
+1902,statcan_nibi_w2_1902,87,13,GP,,joined_weak,position,,30185,31414,21769,7619.15,,,,,,,23541,21769,7619.15,2
+1902,statcan_nibi_w2_1902,87,15,GP,"3 Paper, felt or straw board, tarred.....",left_only,,,,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,87,22,GP,,joined_weak,position,,3348,1850,837,202.95,54570,11006,2568.1,,,,57791,11843,2861.05,0
+1902,statcan_nibi_w2_1902,87,23,GP,,joined_weak,position,,4438,894,1850,647.5,,,,,,,3348,1850,647.5,2
+1902,statcan_nibi_w2_1902,87,24,GP,,joined_weak,position,,838,1370,894,312.9,,,,,,,4438,894,312.9,2
+1902,statcan_nibi_w2_1902,87,25,GP,,joined_weak,position,,2589117,176627,1427,399.45,,,,,,,868,1427,399.45,2
+1902,statcan_nibi_w2_1902,87,26,GP,,joined_weak,position,,2653707,191721,176469,61764.15,,,,,,,2569177,176469,61764.15,2
+1902,statcan_nibi_w2_1902,87,28,GP,6 Borders and bordering.....,left_only,,,25860,2509,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,88,40,GP,Total .....,joined_weak,position,819401,34409,793858,32830,8207.5,23013,1468,244.7,,,,816901,34298,8452.2,2
+1902,statcan_nibi_w2_1902,89,40,GP,"5 Perfumery, non-alcoholic, viz. :— Hair oil, tooth and other powders and washes, pomatum, pastes, and all other perfumed preparations N. O. P., used for the hair, mouth or skin.... > 6 Photographic dryplates..... > Germany.....",left_only,,1300,134,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,90,0,GP,,left_only,,,8,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,90,14,GP,B. E. Indies.....,joined_weak,position,93481,91618,931,1097,383.95,,92947,21687.93,,,,,94044,22071.88,2
+1902,statcan_nibi_w2_1902,90,24,GP,Total.....,joined_weak,position,146465,135838,46861,43853,15348.55,,92947,21687.93,,,,140696,136800,37036.48,2
+1902,statcan_nibi_w2_1902,90,28,GP,Japan.....,left_only,,330,550,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,91,14,GP,,left_only,,,,14278,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,93,0,GP,,right_only,,,,,5469,546.9,,7294,486.3,,,,,12763,1033.2,2
+1902,statcan_nibi_w2_1902,93,1,GP,,right_only,,,,,468,46.8,,,,,,,,468,46.8,2
+1902,statcan_nibi_w2_1902,93,2,GP,,right_only,,,,,1318,131.8,,,,,,,,1518,131.8,0
+1902,statcan_nibi_w2_1902,93,3,GP,,right_only,,,,,19,1.9,,,,,,,,19,1.9,2
+1902,statcan_nibi_w2_1902,93,4,GP,,right_only,,,,,16166,1616.6,,,,,,,,16166,1616.6,2
+1902,statcan_nibi_w2_1902,93,5,GP,,right_only,,,,,19537,1953.7,,,,,,,,19537,1953.7,2
+1902,statcan_nibi_w2_1902,93,6,GP,,right_only,,,,,87,8.7,,,,,,,,87,8.7,2
+1902,statcan_nibi_w2_1902,93,7,GP,,right_only,,,,,71,7.1,,,,,,,,71,7.1,2
+1902,statcan_nibi_w2_1902,93,8,GP,,right_only,,,,,14122,1412.2,,,,,,,,14122,1412.2,2
+1902,statcan_nibi_w2_1902,93,22,GP,"4 Provisions, not otherwise specified : Butter..... > Total.....",joined_weak,position,782210,179479,656497,161978,26259.88,2495,555,66.64,,,,658996,162533,26326.52,2
+1902,statcan_nibi_w2_1902,94,17,GP,Total.....,joined_weak,position,1181179,146253,1090082,132873,33218.25,188372,21663,3610.61,,,,1278484,154536,36828.86,2
+1902,statcan_nibi_w2_1902,94,24,GP,"5 Mutton and lamb, fresh..... > Australia.....",joined_weak,position,232164,9792,,42113,10528.25,,12896,2149.45,,,,,55009,12677.7,2
+1902,statcan_nibi_w2_1902,94,25,GP,,right_only,,,,,2879,1007.65,232137,9790,2284.44,,,,232137,9790,2284.44,-2
+1902,statcan_nibi_w2_1902,96,1,GP,Norway and Sweden.....,left_only,,,50,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,96,15,GP,,right_only,,,,,62489,15622.25,,1500,260.0,,,,,64049,15882.25,0
+1902,statcan_nibi_w2_1902,96,17,GP,"6 Sauces and catsups, in bottles..... > Great Britain.....",joined_weak,position,27261,42380,414,42,14.7,,,,,,,27508,42,14.7,2
+1902,statcan_nibi_w2_1902,96,22,GP,France.....,left_only,,129,249,223,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,96,26,GP,"7 "" "" in bulk..... > Great Britain.....",joined_weak,position,299,582,,456,159.6,506,1153,269.06,,,,506,1153,269.06,-2
+1902,statcan_nibi_w2_1902,96,29,GP,United States.....,joined_weak,position,8799,2913,9154,3862,1351.7,506,1153,269.06,,,,9154,3289,1151.15,-2
+1902,statcan_nibi_w2_1902,96,30,GP,Total.....,joined_weak,position,12497,4068,12553,17,5.95,,,,,,,13059,5015,1620.76,-2
+1902,statcan_nibi_w2_1902,97,30,GP,"7 Signs of any material, framed or not, and letters of any material for signs or similar use..... > Egypt.....",left_only,,,1,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,98,12,GP,,right_only,,,,,416,124.8,,,,,,,,416,124.8,2
+1902,statcan_nibi_w2_1902,99,0,GP,DUTIABLE GOODS—Con.,left_only,,,8,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,100,21,GP,France.....,joined_weak,position,460669,196993,169219,82781,24834.3,,113720,22744.0,,,,,196501,47578.3,2
+1902,statcan_nibi_w2_1902,100,32,GP,France.....,joined_weak,position,1596,59,1380,54,13.5,,216,5,,,,0.84,1596,59,-2
+1902,statcan_nibi_w2_1902,100,33,GP,Germany.....,joined_weak,position,57830,716,57730,711,177.75,,,,,,,,57730,711,-2
+1902,statcan_nibi_w2_1902,100,34,GP,United States.....,joined_weak,position,64287,373,64287,373,93.25,,,,,,,,64287,373,-2
+1902,statcan_nibi_w2_1902,100,35,GP,,joined_weak,position,425658,12613,424958,12591,3147.75,,,,,,,,424958,12591,-2
+1902,statcan_nibi_w2_1902,101,19,GP,Total.....,joined_weak,position,1017281,48475,976723,45280,10680.31,20,2.27,976743,,,,45282,10680.58,,-1
+1902,statcan_nibi_w2_1902,101,26,GP,7 Toilet..... > Great Britain.....,joined_weak,position,84012,24784,830,130,45.5,81658,24857,5800.18,,,,82497,24987,5845.68,2
+1902,statcan_nibi_w2_1902,101,27,GP,Austria-Hungary.....,joined_weak,position,270,62,270,62,21.7,,,,,,,270.62,21.7,,-1
+1902,statcan_nibi_w2_1902,102,15,GP,United States.....,joined_weak,position,513018,46207,506067,45712,5714.4,,,,,,,506667,45712,5714.4,2
+1902,statcan_nibi_w2_1902,102,33,GP,B. W. Indies.....,joined_weak,position,2058,730,19,2,0.5,2323,771,128.5,,,,2333,773,129.0,2
+1902,statcan_nibi_w2_1902,103,19,GP,Newfoundland.....,left_only,,1,5,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,103,40,GP,United States.....,joined_weak,position,1287,7112,1067,6257,2416.8,,,,,,,1007,6257,2416.8,2
+1902,statcan_nibi_w2_1902,104,6,GP,"Gin of all kinds, N.E.S. .... > United States.....",joined_weak,position,31,43,110,85,264.0,,,,,,,110.85,264.0,,-1
+1902,statcan_nibi_w2_1902,104,42,GP,United States.....,joined_weak,position,13,70,13,70,19.5,,,,,,,13.7,19.5,,-1
+1902,statcan_nibi_w2_1902,105,18,GP,Italy.....,joined_weak,position,1203,1222,1896,1796,1625.4,,,,,,,1806,1796,1625.4,2
+1902,statcan_nibi_w2_1902,106,8,GP,Germany .....,joined_weak,position,9268,11040,10362,10340,5679.0,,,,,,,10262,10340,5679.0,2
+1902,statcan_nibi_w2_1902,106,15,GP,Switzerland.....,left_only,,458,270,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,106,26,GP,Total .....,joined_weak,position,13517,6258,15062,7189,6374.94,,,,,,,15902,7189,6374.94,2
+1902,statcan_nibi_w2_1902,106,38,GP,Total .....,joined_weak,position,10379,5827,13185,7243,6244.77,,,,,,,13135,7243,6244.77,2
+1902,statcan_nibi_w2_1902,107,0,GP,DUTIABLE GOODS— Con.,left_only,,,8,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,107,4,GP,Germany.....,joined_weak,position,,,130,54,60.4,,,,,,,130.54,60.4,,-1
+1902,statcan_nibi_w2_1902,107,9,GP,Spain.....,joined_weak,position,8539,6397,6510,5808,3954.8,,,,,,,6519,5808,3954.8,2
+1902,statcan_nibi_w2_1902,107,15,GP,Italy.....,left_only,,600,384,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,107,20,GP,Total.....,joined_weak,position,18895,10800,22038,14297,12443.24,,,,,,,22638,14297,12443.24,2
+1902,statcan_nibi_w2_1902,107,22,GP,,joined_weak,position,,54,279.54,279,105.3,,,,,,,54,279,105.3,2
+1902,statcan_nibi_w2_1902,107,26,GP,Italy.....,joined_weak,position,204,235,107,95,71.3,,,,,,,107.95,71.3,,-1
+1902,statcan_nibi_w2_1902,107,28,GP,,joined_weak,position,,48,146.48,146,63.0,,,,,,,48,146,63.0,2
+1902,statcan_nibi_w2_1902,108,1,GP,,joined_weak,position,,270.55,270,55,140.7,,,,,,,270.55,140.7,,-1
+1902,statcan_nibi_w2_1902,108,3,GP,,joined_weak,position,,197,196.6,52,47.34,,,,,,,69.52,47.34,,-1
+1902,statcan_nibi_w2_1902,108,4,GP,,joined_weak,position,,348,518.12,10,8.52,,,,,,,12.1,8.52,,-1
+1902,statcan_nibi_w2_1902,108,5,GP,,joined_weak,position,,45,92.56,105,57.26,,,,,,,56,105,57.26,2
+1902,statcan_nibi_w2_1902,108,15,GP,,joined_weak,position,,178.97,178,97,116.32,,,,,,,178.97,116.32,,-1
+1902,statcan_nibi_w2_1902,108,28,GP,,joined_weak,position,,82,280.89,305,140.45,,,,,,,89,305,140.45,2
+1902,statcan_nibi_w2_1902,108,29,GP,,joined_weak,position,,14,65.55,50,45.25,,,,,,,55.5,45.25,,-1
+1902,statcan_nibi_w2_1902,108,35,GP,,joined_weak,position,,12,3.12,3,7.86,,,,,,,12,3,7.86,2
+1902,statcan_nibi_w2_1902,108,36,GP,,joined_weak,position,,154.88,154,88,115.72,,,,,,,154.88,115.72,,-1
+1902,statcan_nibi_w2_1902,109,3,GP,,joined_weak,position,,40,175.87,270,134.47,,,,,,,87,270,134.47,2
+1902,statcan_nibi_w2_1902,109,4,GP,,joined_weak,position,,39,81.39,81,48.09,,,,,,,39.81,48.09,,-1
+1902,statcan_nibi_w2_1902,109,7,GP,,joined_weak,position,,28,10.28,10,20.92,,,,,,,28.1,20.92,,-1
+1902,statcan_nibi_w2_1902,109,8,GP,,joined_weak,position,,36,7.36,7,25.14,,,,,,,36,7,25.14,2
+1902,statcan_nibi_w2_1902,109,11,GP,"3 > "" 39 "" 40 """,joined_weak,position,,331.84,331,84,246.98,,,,,,,331.84,246.98,3,-2
+1902,statcan_nibi_w2_1902,109,12,GP,,joined_weak,position,,72,160.72,150,96.24,,,,,,,72,160,96.24,0
+1902,statcan_nibi_w2_1902,109,13,GP,Spain.....,joined_weak,position,,,56,56,54.32,,,,,,,56.56,54.32,,-1
+1902,statcan_nibi_w2_1902,109,22,GP,,joined_weak,position,,29,406.34,481,131.7,,,,,,,34,481,131.7,2
+1902,statcan_nibi_w2_1902,109,30,GP,,joined_weak,position,,78,418.56,356,199.2,,,,,,,56,356,199.2,2
+1902,statcan_nibi_w2_1902,109,32,GP,France.....,joined_weak,position,911,2632,912,754.44,,,,,,,,213,754.44,,1
+1902,statcan_nibi_w2_1902,110,0,GP,DUTIABLE GOODS— Con.,left_only,,,8,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,110,13,GP,,right_only,,,,,453,107.12,294766,16570,2948.26,,,,301907,17023,,1
+1902,statcan_nibi_w2_1902,112,14,GP,Germany.....,joined_weak,position,21056404,483172,19260160,446678,222959.0,,,,,,,19200160,446678,222959.0,2
+1902,statcan_nibi_w2_1902,112,20,GP,"3 Sugar, N.E.S., not above No. 16 D. S. in colour, sugar drainings, or pumpings drained in transit, melado or concentrated melado, tank bottoms and sugar concrete..... > Great Britain.....",joined_weak,position,6008537,127377,2183508,48387,16934.45,697652,46078,3215.6,,,,2883160,64465,20150.05,0
+1902,statcan_nibi_w2_1902,113,0,GP,,right_only,,,,,,,12470,1996,145.48,,,,12470,1996,145.48,2
+1902,statcan_nibi_w2_1902,113,1,GP,"1 Molasses produced in the process of the manufacture of cane sugar from the juice of the cane without any admixture with any other ingredients, when imported in the original package in which it was placed at the point of production and not afterwards subjected to any process of treating or mixing. Testing by polariscope, 40 degrees or over ..... > Great Britain.....",joined_weak,position,148055,24588,,,,314,79,3.66,,,,314,79,3.66,2
+1902,statcan_nibi_w2_1902,113,2,GP,B. W. Indies.....,joined_weak,position,2997634,463217,118588,25399,2075.29,2565607,450708,29932.9,,,,2684255,476107,32008.19,2
+1902,statcan_nibi_w2_1902,113,7,GP,,right_only,,,,,,,5074,1049,93.02,,,,5074,1049,93.02,2
+1902,statcan_nibi_w2_1902,113,8,GP,"3 "" "" 38 ..... > B. W. Indies.....",joined_weak,position,1055,232,,,,5058,1081,126.45,,,,5058,1081,126.45,2
+1902,statcan_nibi_w2_1902,113,12,GP,"5 "" "" 36 ..... > B. W. Indies.....",joined_weak,position,172,19,,,,2214,417,84.87,,,,2214,417,84.87,2
+1902,statcan_nibi_w2_1902,113,16,GP,Belgium.....,left_only,,2974,84,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,114,2,GP,Switzerland.....,joined_weak,position,70,99,70,99,19.8,,,,,,,70.99,19.8,,-1
+1902,statcan_nibi_w2_1902,114,15,GP,United States.....,joined_weak,position,25212,1722,21537,1838,367.6,43753,2563,341.74,,,,21537,1488,297.6,-2
+1902,statcan_nibi_w2_1902,114,16,GP,Total.....,joined_weak,position,76304,4635,28876,,,,,,,,,72629,4401,709.34,-2
+1902,statcan_nibi_w2_1902,114,22,GP,"6 Tea of Ceylon, black..... > Great Britain.....",joined_weak,position,5537,980,5517,928,96.8,20.12,0.8,5537,,,,980,97.6,6,-2
+1902,statcan_nibi_w2_1902,114,25,GP,Total.....,joined_weak,position,16226,2895,16206,2883,288.3,20.12,0.8,16226,,,,2895,289.1,,-1
+1902,statcan_nibi_w2_1902,115,0,GP,"1 Tea of China, black..... > China.....",left_only,,55,12,55,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,1,GP,United States....,joined_weak,position,24110,5006,24110,,,,,,,,,,,,0
+1902,statcan_nibi_w2_1902,115,4,GP,"3 "" Japan, green ..... > Great Britain.....",left_only,,20,5,20,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,7,GP,Total.....,left_only,,207175,44305,88243,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,8,GP,"4 "" other countries, black. .... > Great Britain.....",left_only,,60,35,60,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,9,GP,France.....,left_only,,1,1,1,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,10,GP,United States.....,joined_weak,position,1707,397,1707,,,,,,,,,,,,0
+1902,statcan_nibi_w2_1902,115,13,GP,6 Telephones and telegraph instruments.... > Great Britain.....,left_only,,,557,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,14,GP,France.....,left_only,,,130,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,18,GP,"8 Tinware, plain, japanned, or litho- graphed, and all manufactures of tin, N.E.S..... > Great Britain.....",left_only,,,10431,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,19,GP,Belgium.....,left_only,,,3,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,20,GP,China.....,left_only,,,12,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,21,GP,Egypt.....,left_only,,,6,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,22,GP,France.....,left_only,,,696,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,23,GP,Germany.....,left_only,,,6046,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,24,GP,Japan.....,left_only,,,67,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,25,GP,Portugal.....,left_only,,,2,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,115,26,GP,Switzerland.....,left_only,,,36,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,116,38,GP,Cuba.....No.,joined_weak,position,5452900,227423,5856500,232824,250878.0,,,,,,,5856800,232824,250878.0,2
+1902,statcan_nibi_w2_1902,119,1,GP,Belgium. ....,joined_weak,position,8,67,8,67,15.0,,,,,,,8.67,15.0,,-1
+1902,statcan_nibi_w2_1902,119,13,GP,"4 "" sweet and yams. .... > B. W. Indies. ....",joined_weak,position,72,59,72,59,7.2,,,,,,,72.59,7.2,4,-2
+1902,statcan_nibi_w2_1902,119,22,GP,Germany. ....,joined_weak,position,600,91,600,91,9.0,,,,,,,600.91,9.0,,-1
+1902,statcan_nibi_w2_1902,119,32,GP,,right_only,,,,,9,2.25,,,,,,,,9,2.25,2
+1902,statcan_nibi_w2_1902,121,0,GP,,left_only,,,,8,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,121,30,GP,"7 Wood and manufactures of : Barrels containing petroleum or its prod- ucts, or any mixture of which petro- leum forms a part, when such contents are chargeable with a specific duty... > Total .....",joined_weak,position,22786,22919,22202,22353,4440.4,2,2,0.26,,,,22206,22355,4440.66,2
+1902,statcan_nibi_w2_1902,122,31,GP,"7 Sawed boards, planks, deals, planed or dressed on one or both sides, when the edges thereof are jointed or tongued and grooved..... > United States .....",joined_weak,position,,47722,,47280,11820.0,,,,,,,4064,47280,11820.0,2
+1902,statcan_nibi_w2_1902,122,35,GP,"8 Lumber and timber manufactured, N.E.S..... > Total .....",joined_weak,position,550,10236,549,15202,2040.45,1.34,4.53,550,,,,10236,2044.93,,-1
+1902,statcan_nibi_w2_1902,123,0,GP,"1 Wood and manufactures of— Con. Umbrella, parasol and sunshade sticks or handles, N.E.S. .... > Great Britain. ....",joined_weak,position,,4045,,124,24.8,3121,416.17,,,,,3245,440.97,,-1
+1902,statcan_nibi_w2_1902,123,1,GP,Germany. ....,joined_weak,position,,789,,789,157.8,,,,,,,789,157.8,,-1
+1902,statcan_nibi_w2_1902,123,2,GP,United States. ....,joined_weak,position,,10878,,10878,2175.6,,,,,,,10878,2175.6,,-1
+1902,statcan_nibi_w2_1902,123,3,GP,Total. ....,joined_weak,position,,15712,,11791,2358.2,3121,416.17,,,,,14912,2774.37,,-1
+1902,statcan_nibi_w2_1902,123,4,GP,"2 Veneers of wood, not over \frac{3}{2} of an inch in thickness. .... > Great Britain. ....",joined_weak,position,,417,,,,417,20.85,,,,,417,20.85,2,0
+1902,statcan_nibi_w2_1902,123,5,GP,France. ....,joined_weak,position,,756,,756,56.7,,,,,,,756,56.7,,-1
+1902,statcan_nibi_w2_1902,123,6,GP,United States. ....,joined_weak,position,,113204,,113204,8490.3,,,,,,,113204,8490.3,,-1
+1902,statcan_nibi_w2_1902,123,7,GP,Total. ....,joined_weak,position,,114377,,113960,8547.0,417,20.85,,,,,114377,8567.85,,-1
+1902,statcan_nibi_w2_1902,123,8,GP,"3 Walking sticks and canes of all kinds, N.E.S. .... > Great Britain. ....",joined_weak,position,,1680,,264,79.2,1416,283.2,,,,,1680,362.4,3,-2
+1902,statcan_nibi_w2_1902,123,9,GP,Austria-Hungary. ....,joined_weak,position,,510,,510,153.0,,,,,,,510,153.0,,-1
+1902,statcan_nibi_w2_1902,123,10,GP,France. ....,joined_weak,position,,79,,79,23.7,,,,,,,79,23.7,,-1
+1902,statcan_nibi_w2_1902,123,11,GP,Germany. ....,joined_weak,position,,140,,140,42.0,,,,,,,140,42.0,,-1
+1902,statcan_nibi_w2_1902,123,12,GP,Japan. ....,joined_weak,position,,12,,12,3.6,,,,,,,12,3.6,,-1
+1902,statcan_nibi_w2_1902,123,13,GP,United States. ....,joined_weak,position,,12385,,12385,3715.5,,,,,,,12385,3715.5,,-1
+1902,statcan_nibi_w2_1902,123,14,GP,Total. ....,joined_weak,position,,14806,,13390,4017.0,1416,283.2,,,,,14806,4300.2,,-1
+1902,statcan_nibi_w2_1902,123,15,GP,4 Wood pulp. .... > Germany. ....,joined_weak,position,,81,,81,20.25,,,,,,,81,20.25,4,-2
+1902,statcan_nibi_w2_1902,123,16,GP,United States. ....,joined_weak,position,,27366,,27366,6841.5,,,,,,,27366,6841.5,,-1
+1902,statcan_nibi_w2_1902,123,17,GP,Total. ....,joined_weak,position,,27447,,27447,6861.75,,,,,,,27447,6861.75,,-1
+1902,statcan_nibi_w2_1902,123,19,GP,Germany. ....,joined_weak,position,571,363,571,363,127.05,,,,,,,363,127.05,,-1
+1902,statcan_nibi_w2_1902,123,20,GP,United States. ....,joined_weak,position,8772,3245,8877,3372,1180.2,,,,,,,3372,1180.2,,-1
+1902,statcan_nibi_w2_1902,123,23,GP,France. ....,joined_weak,position,17259,3111,17259,3111,1088.85,,,,,,,3111,1088.85,,-1
+1902,statcan_nibi_w2_1902,123,24,GP,United States. ....,joined_weak,position,37,16,37,16,5.6,,,,,,,16,5.6,,-1
+1902,statcan_nibi_w2_1902,123,27,GP,Austria-Hungary. ....,joined_weak,position,25,35,25,35,12.25,,,,,,,35,12.25,,-1
+1902,statcan_nibi_w2_1902,123,28,GP,Belgium. ....,joined_weak,position,4602,3778,4602,3778,1392.3,,,,,,,3778,1392.3,,-1
+1902,statcan_nibi_w2_1902,123,29,GP,France. ....,joined_weak,position,138512,49071,134147,37893,13262.55,,,,,,,37893,13262.55,,-1
+1902,statcan_nibi_w2_1902,123,30,GP,Germany. ....,joined_weak,position,96883,46202,101883,48533,16986.55,,,,,,,48533,16986.55,,-1
+1902,statcan_nibi_w2_1902,123,31,GP,United States. ....,joined_weak,position,14895,6574,14889,6569,2299.15,,,,,,,6569,2299.15,,-1
+1902,statcan_nibi_w2_1902,124,2,GP,Germany.....,joined_weak,position,7507,6627,7586,6449,2257.15,,,,,,,7386,6449,2257,0
+1902,statcan_nibi_w2_1902,124,5,GP,2 Overcoatings..... > Great Britain.....,joined_weak,position,8347,4225,,,,7283,3898,909.53,,,,7283,3898,909,0
+1902,statcan_nibi_w2_1902,124,10,GP,Belgium.....,joined_weak,position,4170,3824,4603,4223,1478.05,,,,,,,4003,4223,1478,0
+1902,statcan_nibi_w2_1902,126,0,GP,DUTIABLE GOODS— Con.,left_only,,,8,,,,,,,,,,,,,
+1902,statcan_nibi_w2_1902,126,37,GP,Total.....,joined_weak,position,663931,419655,12378,9196,3218.6,663329,417314,97373.27,,,,675607,426510,100591.87,2
+1902,statcan_nibi_w2_1902,127,6,GP,"3 "" druggets..... > United States.....",joined_weak,position,133,53,133,53,18.55,,,,,,,133.53,18.55,3,-2
+1902,statcan_nibi_w2_1902,127,7,GP,"4 "" felts, printed..... > Great Britain.....",joined_weak,position,92,78,60,32,11.2,32,46,10.73,,,,92.78,21.93,4,-2
+1902,statcan_nibi_w2_1902,127,9,GP,Total.....,joined_weak,position,140,107,108,61,21.35,32.46,10.73,140,,,,107,32.08,,-1
+1902,statcan_nibi_w2_1902,127,13,GP,United States.....,joined_weak,position,103,90,103,90,31.5,,,,,,,103.9,31.5,,-1
+1902,statcan_nibi_w2_1902,128,0,GP,,right_only,,,,,143,35.75,614,102.32,757,,,,138.07,1,,-1
+1902,statcan_nibi_w2_1902,128,1,GP,"1 Zinc, manufactures of, N.O.P. .... > Great Britain. ....",joined_weak,position,,757,,26,6.5,,,26,,,,6.5,,,0
+1902,statcan_nibi_w2_1902,128,2,GP,Austria Hungary. ....,joined_weak,position,,26,,404,101.0,,,404,,,,101.0,,,0
+1902,statcan_nibi_w2_1902,128,3,GP,Belguim. ....,joined_weak,position,,404,,122,30.5,,,122,,,,30.5,,,0
+1902,statcan_nibi_w2_1902,128,4,GP,Germany. ....,joined_weak,position,,122,,5327,1331.75,,,5327,,,,1331.75,,,0
+1902,statcan_nibi_w2_1902,128,5,GP,United States. ....,joined_weak,position,,5381,,6622,1505.5,614,102.32,6636,,,,1607.82,,,0
+1902,statcan_nibi_w2_1902,128,6,GP,Total. ....,joined_weak,position,,6690,,40,8.0,3660,629.23,3700,,,,637.23,2,,-1
+1902,statcan_nibi_w2_1902,128,7,GP,"2 Damaged Goods, under Sections 49 to 53 of Rev. Stat., Chap. 22. .... > Great Britain. ....",joined_weak,position,,3700,,715,143.0,2671,467.43,3386,,,,610.43,,,0
+1902,statcan_nibi_w2_1902,128,8,GP,B. W. Indies. ....,joined_weak,position,,3012,,76,14.2,,,76,,,,14.2,,,0
+1902,statcan_nibi_w2_1902,128,9,GP,France. ....,joined_weak,position,,76,,373,74.4,,,373,,,,74.4,,,0
+1902,statcan_nibi_w2_1902,128,10,GP,Germany. ....,joined_weak,position,,373,,446,82.2,,,446,,,,82.2,,,0
+1902,statcan_nibi_w2_1902,128,11,GP,Japan. ....,joined_weak,position,,446,,1506,301.2,,,1506,,,,301.2,,,0
+1902,statcan_nibi_w2_1902,128,12,GP,Spain. ....,joined_weak,position,,1506,,4019,794.16,,,4019,,,,794.16,,,0
+1902,statcan_nibi_w2_1902,128,13,GP,United States. ....,joined_weak,position,,4019,,7175,1417.16,6331,1096.66,13506,,,,2513.82,,,0
+1902,statcan_nibi_w2_1902,128,14,GP,Total. ....,joined_weak,position,,13132,,72713.89,,,280.44,,,,,72994.33,3,,-1
+1902,statcan_nibi_w2_1902,128,15,GP,Total dutiable goods. ....,joined_weak,position,,127955281,,88021607,26696301.33,30635889,5729230.98,118657496,,,,32425532.31,,,0
