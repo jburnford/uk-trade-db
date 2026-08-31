@@ -1,0 +1,97 @@
+# The previous article's Total block continuing past a page break
+
+*Opened 2026-08-30, diagnosed to an exact two-column proof. Not yet fixed.*
+
+## The defect
+
+FY1886 t525 is the largest single country-`'?'` concentration in the corpus:
+**$1,644,588**, 55% of all country `'?'` (which totals $2,995,783).
+
+Row order as parsed:
+
+```
+article_province_total  Yarn, knitting…   TOTAL           Ontario         95,959
+article_province_total  Yarn, knitting…   TOTAL           Quebec          67,064
+article_province_total  Yarn, knitting…   TOTAL           Nova Scotia      8,024
+article_province_total  Yarn, knitting…   TOTAL           New Brunswick   12,082
+detail                  All other fabrics Great Britain   Manitoba         3,107   <-- wrong
+detail                  All other fabrics Great Britain   Br. Columbia     2,592   <-- wrong
+detail                  All other fabrics Great Britain   P. E. Island     1,263   <-- wrong
+country_total           All other fabrics Great Britain                  190,091   <-- wrong
+detail                  All other fabrics ?               Quebec       1,186,452
+detail                  All other fabrics ?               Nova Scotia    178,050
+detail                  All other fabrics ?               New Brunswick  177,967
+detail                  All other fabrics ?               Manitoba        43,584
+detail                  All other fabrics ?               Br. Columbia    29,946
+detail                  All other fabrics ?               P. E. Island    28,589
+country_total           All other fabrics ?                              (blank)
+detail                  All other fabrics United States   Ontario         44,670
+detail                  All other fabrics France          Ontario         94,879
+…
+```
+
+Two tells. The Yarn TOTAL block is missing exactly Manitoba, British Columbia
+and P. E. Island — and the three rows that follow it carry exactly those three
+provinces. And the `'?'` run is missing exactly Ontario, the one province the
+runs after it do carry.
+
+## The proof — exact in both columns
+
+The three rows labelled `Great Britain` are the **Yarn** article's province
+totals for Manitoba / BC / P. E. Island, and the row parsed as Great Britain's
+`country_total` is the **Yarn article's grand total**:
+
+| | val_imp | val_efc |
+|---|---:|---:|
+| Yarn province totals present (Ont, Que, NS, NB) | 183,129 | 183,274 |
+| rows mislabelled `Great Britain` (Man, BC, PEI) | 6,962 | 6,853 |
+| **sum** | **190,091** | **190,127** |
+| row parsed as `Great Britain` country_total | 190,091 | 190,127 |
+| difference | **0** | **0** |
+
+Exact in val_imp *and* val_efc. There is no combination-search here: the
+province split is fixed by the print order, and both columns close on the
+first reading tried.
+
+## What it means
+
+The Yarn article's Total block ran over a page break. Its last three province
+rows and its grand total landed on the new page, where the next article's first
+country label (`Great Britain`) slid up onto them. The genuine first country of
+"All other fabrics composed wholly or in part of wool" then had no label left,
+opening the `'?'` run.
+
+That `'?'` run is almost certainly **Great Britain**: it is the dominant source
+for wool fabrics, it is missing only Ontario (whose row will be at the tail of
+t524, the previous page), and every other country in the block is a
+single-province run. That last step is inference, not arithmetic — the article
+has **no** `article_total` and no `article_province_total` of its own in the
+parsed rows, so there is no in-table anchor to close it against. Confirm
+against the printed Abstract cell or the t524 tail before assigning the label.
+
+## Why the existing passes miss it
+
+- `_fix_grand_total_on_country_row` (line 1010) handles a different shape: the
+  grand total riding the **last** country-labelled detail of the article's own
+  block. Here it rides an **early** row, and the block it belongs to is the
+  *previous* article's.
+- Pass (a) — "a LEADING country_total equal to the province totals = old
+  article's grand total", 349 hits — is the right family, but it reassigns the
+  `country_total` row alone. This case needs the **k preceding detail rows** to
+  go back to the old article's Total block as well. The signature that makes
+  that safe is the province complementarity: the old Total block is missing
+  exactly the provinces the mislabelled rows carry, and the sum closes on both
+  columns.
+
+## Still open
+
+1. Extend pass (a) to carry back the k preceding rows when (i) the previous
+   article's Total block is missing exactly those provinces, (ii) the sum
+   closes exactly on the trailing `country_total` in **two** columns. Guard:
+   never fire when the old block is already complete.
+2. Then name the freed `'?'` run — by the t524 tail or the Abstract, not by
+   assuming Great Britain.
+3. Re-check the other country-`'?'` concentrations for the same signature:
+   FY1885 t270 ($286,776), FY1890 t556 ($183,336), FY1881 t566 ($108,163).
+   The FY1881 table also carries the largest article-`'?'` mass in that year,
+   so it may be one defect, not two.
