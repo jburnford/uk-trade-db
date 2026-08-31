@@ -46257,8 +46257,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1885,C,"Provisions, N.E.S > Meats","Extract or fluid beef, not medicated",France,DUTIABLE,,1,0,1,0,1,0.2
 1885,C,"Provisions, N.E.S > Meats","Extract or fluid beef, not medicated",Great Britain,DUTIABLE,,7,0,3279,0,3612,746.9
 1885,C,"Provisions, N.E.S > Meats","Extract or fluid beef, not medicated",United States,DUTIABLE,,6,0,2269,0,2284,462.1
-1885,C,"Provisions, N.E.S > Meats",Mutton,Pork— Great Britain (via Hudson's Bay.),DUTIABLE,,1,22800,2303,22800,2303,228.0
 1885,C,"Provisions, N.E.S > Meats",Mutton,United States,DUTIABLE,,4,179045,10892,179045,10892,1790.45
+1885,C,"Provisions, N.E.S > Meats",Pork,Great Britain,DUTIABLE,,1,22800,2303,22800,2303,228.0
 1885,C,"Provisions, N.E.S > Prepared meats, sealed or unsealed, in cans, or otherwise, N.E.S","Beef in the carcass, to be cured or preserved in bond for exportation",United States,DUTIABLE,,1,150,9,150,9,1.5
 1885,C,"Provisions, N.E.S > Prepared meats, sealed or unsealed, in cans, or otherwise, N.E.S","Other meats, N.E.S",Great Britain,DUTIABLE,,2,632,213,632,213,12.64
 1885,C,"Provisions, N.E.S > Prepared meats, sealed or unsealed, in cans, or otherwise, N.E.S","Other meats, N.E.S",Italy,DUTIABLE,,1,181,38,181,38,3.62
@@ -46851,10 +46851,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1886,C,,?,?,DUTIABLE,,1,0,23,0,23,4.6
 1886,C,,?,Belgium,DUTIABLE,,1,14933,612,13204,565,264.08
 1886,C,,?,China,DUTIABLE,,1,8205,185,12298,349,245.96
-1886,C,,?,"Coal, anthracite— Great Britain... (Via Hudson Bay.)",DUTIABLE,,1,23,69,23,69,11.5
 1886,C,,?,France,DUTIABLE,,2,1834,346,1281,70,32.71
 1886,C,,?,Great Britain,DUTIABLE,,16,329520,26581,347597,27430,9088.2
-1886,C,,?,United States,DUTIABLE,,18,1451320,4118032,1450226,4051300,507234.42
+1886,C,,?,United States,DUTIABLE,,11,431445,22066,454824,23319,9546.3
 1886,C,,"ANIMALS, ETC",United States,FREE,,1,4,460,4,460,0.0
 1886,C,,"Ale, beer and porter, in casks",Germany,DUTIABLE,,1,92,32,92,32,9.2
 1886,C,,"Ale, beer and porter, in casks",Newfoundland,DUTIABLE,,1,2,1,1,1,0.2
@@ -47061,6 +47060,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1886,C,,"Clothing, ready made, including socks and stockings, cloth caps and horse clothing, shaped",United States,DUTIABLE,,8,15294,22994,14844,22532,7118.16
 1886,C,,Coal tar and coal pitch,Great Britain,DUTIABLE,Brls,4,809,1016,809,1016,101.6
 1886,C,,Coal tar and coal pitch,United States,DUTIABLE,Brls,6,19353,26896,19353,26896,2691.7
+1886,C,,"Coal, anthracite",Great Britain,DUTIABLE,,1,23,69,23,69,11.5
+1886,C,,"Coal, anthracite",United States,DUTIABLE,,7,1019875,4095966,995402,4027981,497688.12
 1886,C,,Cocoa matting,Great Britain,DUTIABLE,,7,0,3198,0,3317,829.25
 1886,C,,Cocoa matting,United States,DUTIABLE,,4,0,738,0,738,184.5
 1886,C,,"Cocoa nut, desiccated, sweetened or not (from 31st March)",Great Britain,DUTIABLE,,1,486,239,486,239,38.88

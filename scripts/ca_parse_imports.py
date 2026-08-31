@@ -173,6 +173,21 @@ def split_trailing_country(s, vocab):
     for c in vocab:
         if t.lower().endswith(c.lower()) and len(t) > len(c) + 2:
             if best is None or len(c) > len(best): best = c
+    if best is None:
+        # A route qualifier may follow the country name, so the label no longer *ends* with a
+        # country: 'Coal, anthracite— Great Britain... (Via Hudson Bay.)'. These volumes annotate
+        # goods shipped via Hudson's Bay, and the printed Abstract has no such country -- they are
+        # Great Britain. Retry against the stem, and keep the qualifier on the tail so the two runs
+        # stay distinguishable in the rows (ca_check_abstract.ckey folds it away for arbitration).
+        m = re.search(r'\s*(\([^()]*\))\s*$', t)
+        if m:
+            stem = t[:m.start()].rstrip(' .,—-–;:')
+            for c in vocab:
+                if stem.lower().endswith(c.lower()) and len(stem) > len(c) + 2:
+                    if best is None or len(c) > len(best): best = c
+            if best:
+                head = stem[:-len(best)].rstrip(' .,—-–;:')
+                return head, stem[-len(best):] + ' ' + m.group(1)
     if best:
         head = t[:-len(best)].rstrip(' .,—-–;:')
         tail = t[-len(best):]
