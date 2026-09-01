@@ -1733,6 +1733,67 @@ class Parser:
                     self.diag['total_tail_rejoined'] += 1
                     i = j + 1; continue
             i += 1
+        # (a'') the previous article's Total block ran past a PAGE BREAK: its last k province rows and its
+        #        grand total landed on the new page, where the next article's first country label (or its
+        #        heading junk) slid up onto them (FY1886 t525 yarn $1.64M; FY1885 t270; FY1881 t566).
+        #        Signature: an article_province_total run with NO grand total of its own, then in the NEXT
+        #        block 1..4 detail rows whose provinces strictly CONTINUE the Total run's province order,
+        #        then a country_total equal to sum(Total run) + sum(those rows) to the dollar in BOTH value
+        #        columns.  The carried rows go back as the old article's Total tail; the freed '?' run that
+        #        follows keeps '?' here (the article-opening inference / abstract fit may name it later).
+        i = 0; n = len(rows)
+        while i < n:
+            r = rows[i]
+            if r['row_kind'] != 'article_province_total': i += 1; continue
+            j = i
+            while j < n and rows[j]['row_kind'] == 'article_province_total' and rows[j]['block_id'] == r['block_id']: j += 1
+            if j < n and rows[j]['row_kind'] in ('article_total', 'article_total_fused') and rows[j]['block_id'] == r['block_id']:
+                i = j; continue                                   # block already has its grand total
+            tot_run = rows[i:j]
+            provs = [x['province'] for x in tot_run]
+            if not provs or not all(pv in PROVINCE_ORDER for pv in provs): i = j; continue
+            seg = []; k2 = j
+            while k2 < n and len(seg) < 4 and rows[k2]['row_kind'] in ('detail', 'detail_lostlabel') \
+                    and rows[k2]['block_id'] != r['block_id'] and rows[k2]['province'] in PROVINCE_ORDER:
+                seg.append(rows[k2]); k2 += 1
+            if not seg or k2 >= n or rows[k2]['row_kind'] != 'country_total' or rows[k2]['block_id'] != seg[-1]['block_id']:
+                i = j; continue                               # the tail may span blocks (junk labels split it); T closes the LAST
+            T = rows[k2]
+            idxs = [PROVINCE_ORDER.index(pv) for pv in provs + [x['province'] for x in seg]]
+            if idxs != sorted(idxs) or len(set(idxs)) != len(idxs): i = j; continue
+            ok_cols = 0; bad = False
+            for col in ('val_imp', 'val_efc'):
+                tv = T[col]
+                if tv is None or tv <= 0: continue
+                sv = sum((x[col] or 0) for x in tot_run) + sum((x[col] or 0) for x in seg)
+                if abs(sv - tv) <= 1: ok_cols += 1
+                else: bad = True
+            if ok_cols >= 2 and not bad:
+                hijack = T['country'] if T['country'] not in (None, '', '?', 'TOTAL') else None
+                for x in seg:
+                    x['row_kind'] = 'article_province_total'; x['country'] = 'TOTAL'
+                    x['article'] = r['article']; x['article_parent'] = r['article_parent']; x['block_id'] = r['block_id']
+                    x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'total_pagebreak_rejoined'
+                T['row_kind'] = 'article_total'; T['country'] = None; T['province'] = None
+                T['article'] = r['article']; T['article_parent'] = r['article_parent']; T['block_id'] = r['block_id']
+                T['flags'] = (T['flags'] + ',' if T['flags'] else '') + 'total_pagebreak_rejoined'
+                self.diag['total_pagebreak_rejoined'] += 1
+                # the label that slid up is the label the print gave the NEXT block: restore it to the
+                # freed '?' run that immediately follows (1882 t442 proves it in-table: Melado's Quebec
+                # province total closes exactly only with the '?' row under the hijacking country)
+                if hijack is not None:
+                    w = k2 + 1
+                    while w < n and rows[w]['row_kind'] in ('detail', 'detail_lostlabel', 'country_total') \
+                            and (rows[w]['country'] or '?') in ('?', ''):
+                        rows[w]['country'] = hijack; rows[w]['country_inferred'] = 1
+                        if rows[w]['row_kind'] == 'detail_lostlabel': rows[w]['row_kind'] = 'detail'
+                        rows[w]['flags'] = (rows[w]['flags'] + ',' if rows[w]['flags'] else '') + 'pagebreak_hijacker_restored'
+                        self.diag['pagebreak_hijacker_restored'] += 1
+                        stop = rows[w]['row_kind'] == 'country_total'
+                        w += 1
+                        if stop: break
+                i = k2 + 1; continue
+            i = j
         # (b) label slip: the label column lost its first entry (usually 'Ontario') and shifted up one row, so
         #     'Quebec' carries Ontario's values and the last province ends up unlabelled just before the real
         #     country total.  Signature: a country run d1..dn, then TWO blank-label rows t1, t2 with
