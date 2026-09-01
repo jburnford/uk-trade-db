@@ -72,6 +72,39 @@ def main():
         a = A.get((fy, c, prov))
         if a is None or a[col] is None: return None
         return a[col] - P[(fy, c, prov)][col]
+    # province-order pairs the parser could not arbitrate in-table: the Abstract decides.
+    # An adjacent out-of-order pair is either swapped LABELS (values move between provinces) or
+    # swapped ROWS (numerically nothing moves).  Score both readings against the abstract residuals
+    # of the two (country, province) cells; act only on a decisive margin (>= $50 and 2x better).
+    pair_at = defaultdict(list)
+    for idx, r in enumerate(rows):
+        if 'province_order_unarbitrated' in (r['flags'] or ''):
+            pair_at[(r['fiscal_year'], r['table_seq'], r['block_id'])].append(idx)
+    n_sw = n_keep = 0
+    for k2, idxs in sorted(pair_at.items()):
+        if len(idxs) != 2: continue
+        r1, r2 = rows[idxs[0]], rows[idxs[1]]
+        fy = r1['fiscal_year']; c = ckey(r1['country']); sec = 'free' if r1['section'] == 'FREE' else 'dut'
+        va, vb = float(r1['val_efc'] or 0), float(r2['val_efc'] or 0)
+        res1 = resid(fy, c, r1['province'], sec); res2 = resid(fy, c, r2['province'], sec)
+        if res1 is None or res2 is None: continue
+        cur_s = abs(res1) + abs(res2)
+        swp_s = abs(res1 - (vb - va)) + abs(res2 - (va - vb))
+        if swp_s + 50 < cur_s and swp_s < 0.5 * cur_s:
+            r1['province'], r2['province'] = r2['province'], r1['province']
+            for x in (r1, r2):
+                x['flags'] = x['flags'].replace('province_order_unarbitrated', 'province_order_swapped_abstract')
+            # keep the parsed sums consistent for the segment matching below
+            P[(fy, c, r1['province'])][sec] += va - vb; P[(fy, c, r2['province'])][sec] += vb - va
+            n_sw += 1
+        elif cur_s + 50 < swp_s and cur_s < 0.5 * swp_s:
+            for x in (r1, r2):
+                x['flags'] = x['flags'].replace('province_order_unarbitrated', 'province_order_kept_abstract')
+            n_keep += 1
+    if n_sw or n_keep:
+        print(f'province-order pairs: {n_sw} swapped by the abstract, {n_keep} confirmed as printed, '
+              f'{sum(1 for v in pair_at.values() if len(v) == 2) - n_sw - n_keep} undecided')
+
     # '?' segments: consecutive rows in one block with country '?' (detail rows carry the values)
     segs = []
     i = 0; n = len(rows)
