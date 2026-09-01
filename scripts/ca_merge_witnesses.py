@@ -1,0 +1,276 @@
+#!/usr/bin/env python3
+"""Phase 3b of CANADA_IMPORTS_PLAN.md: merge the StatCan witness into the main corpus,
+per-cell, arbitrated by printed totals (user decision 2026-08-28: a VOTE, never
+pick-the-better-scan).
+
+Two passes:
+
+PASS L -- label transfer.  A Canadiana '?' country-run whose rows match a witness country
+block value-for-value (same provinces, same val_efc to $1, val_imp agreeing where both
+carry one) takes the witness's country LABEL.  No values move, nothing is double-counted;
+the 1884 peaches case is the type specimen (the '?' run 47,458/20,340/... = the witness's
+United States block exactly).  The label must be unique among witness blocks matching the
+run, and the article must not already hold that country on the Canadiana side.
+
+PASS I -- coverage insertion: an article x country block the witness carries and the
+Canadiana parse lacks entirely.  A block is inserted only when EVERY gate holds:
+
+  G1  the article exists in the Canadiana parse for that year (matched on a normalised
+      name, unique on both sides) -- we complete articles, we do not invent them;
+  G2  the Canadiana article block has NO rows for that country (ckey);
+  G3  the witness block closes in-table: sum(details) == its own country_total to $1
+      in val_efc (and in val_imp when the total carries one);
+  G4  the printed Abstract has room: for every (province, section) cell the block
+      touches, the Canadiana residual (printed - parsed) must cover the inserted value
+      -- short by at most 0.5% of the printed cell, never exceeded by more than $50 --
+      and at least one touched cell must have a residual >= $100 (else nothing to fix).
+
+Witness rows enter db/canada/imports_general_rows.csv verbatim (volume = the statcan tag
+= the provenance), flagged witness_block_inserted.  db/canada/witness_patches.csv logs
+every accepted and rejected candidate with the gate that stopped it.
+
+Run AFTER ca_parse_imports, BEFORE the inference scripts.
+"""
+import csv, re, sys
+from collections import defaultdict
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ca_check_abstract import ckey
+
+ROOT = Path(__file__).resolve().parents[1]
+ROWS = ROOT / 'db' / 'canada' / 'imports_general_rows.csv'
+W2 = ROOT / 'db' / 'canada' / 'imports_general_rows_w2.csv'
+ABS = ROOT / 'db' / 'canada' / 'imports_abstract_rows.csv'
+OUT = ROOT / 'db' / 'canada' / 'witness_patches.csv'
+
+
+def anorm(a):
+    a = re.sub(r'[^a-z0-9 ]', ' ', (a or '').lower())
+    return re.sub(r'\s+', ' ', a).strip()
+
+
+def blocks_of(rows):
+    """(fy) -> list of blocks; a block = consecutive rows sharing (block_id, ckey(country) for
+    detail/country_total rows).  Returns per-fy dicts: article -> {ckey -> block rows} and
+    article occurrence counts."""
+    out = defaultdict(lambda: defaultdict(dict))
+    counts = defaultdict(lambda: defaultdict(int))
+    for r in rows:
+        if r['regime'] != 'C': continue
+        a = anorm(r['article'])
+        if not a or a == '?': continue
+        counts[r['fiscal_year']][a] += 0    # touch
+    cur_key = None; cur = None
+    for r in rows:
+        if r['regime'] != 'C' or r['row_kind'] not in ('detail', 'country_total'): continue
+        a = anorm(r['article']); c = ckey(r['country'] or '')
+        if not a or a == '?' or not c or c in ('total',): cur_key = None; continue
+        k = (r['fiscal_year'], r['block_id'], a, c)
+        if k != cur_key:
+            cur_key = k; cur = []
+            out[r['fiscal_year']][a].setdefault(c, []).append(cur)
+        cur.append(r)
+    return out
+
+
+def f(x):
+    try: return float(x)
+    except (TypeError, ValueError): return None
+
+
+def main():
+    dry = '--dry-run' in sys.argv
+    rows = list(csv.DictReader(open(ROWS)))
+    w2 = list(csv.DictReader(open(W2)))
+    fields = list(rows[0].keys())
+    A = defaultdict(dict)
+    for r in csv.DictReader(open(ABS)):
+        if r['row_kind'] == 'province' and r['country'] != 'TOTAL':
+            for col, sec in (('efc_dutiable', 'dut'), ('efc_free', 'free')):
+                if r[col]: A[r['fiscal_year']][(ckey(r['country']), r['province'], sec)] = float(r[col])
+    P = defaultdict(lambda: defaultdict(float))
+    for r in rows:
+        if r['row_kind'] != 'detail' or r['regime'] != 'C': continue
+        sec = 'free' if r['section'] == 'FREE' else 'dut'
+        P[r['fiscal_year']][(ckey(r['country'] or ''), r['province'], sec)] += f(r['val_efc']) or 0
+
+    # ---------- PASS L: label transfer onto '?' runs ----------
+    W = defaultdict(lambda: defaultdict(list))   # (fy, anorm) -> ckey -> [ [(prov, vi, ve)...] per block ]
+    wname = {}                                   # (fy, ckey) -> witness's printed country name
+    cur = None; key = None
+    for r in w2:
+        if r['regime'] != 'C' or r['row_kind'] != 'detail': continue
+        a = anorm(r['article']); c = ckey(r['country'] or '')
+        if not a or a == '?' or not c or c == '?': key = None; continue
+        k = (r['fiscal_year'], r['block_id'], a, c)
+        if k != key:
+            key = k; cur = []
+            W[(r['fiscal_year'], a)][c].append(cur)
+            wname[(r['fiscal_year'], c)] = r['country']
+        cur.append((r['province'], f(r['val_imp']), f(r['val_efc'])))
+    def sig(rows_):
+        return sorted((p or '', round(ve or 0)) for p, vi, ve in rows_)
+    n_lab = 0; lab_val = 0.0
+    i = 0; n = len(rows)
+    while i < n:
+        r = rows[i]
+        if not (r['regime'] == 'C' and r['row_kind'] == 'detail' and (r['country'] or '?') == '?'
+                and anorm(r['article']) not in ('', '?')):
+            i += 1; continue
+        j = i
+        while j < n and rows[j]['fiscal_year'] == r['fiscal_year'] and rows[j]['block_id'] == r['block_id'] \
+                and rows[j]['row_kind'] in ('detail', 'country_total') and (rows[j]['country'] or '?') == '?': j += 1
+        run = [x for x in rows[i:j] if x['row_kind'] == 'detail' and x['province']]
+        fy = r['fiscal_year']; a = anorm(r['article'])
+        if run and sum(f(x['val_efc']) or 0 for x in run) >= 10:
+            rsig = sorted((x['province'] or '', round(f(x['val_efc']) or 0)) for x in run)
+            cands = []
+            for c, blks in W.get((fy, a), {}).items():
+                for blk in blks:
+                    if sig(blk) == rsig: cands.append(c); break
+            # unique label, and the article must not already hold that country in Canadiana
+            if len(set(cands)) == 1:
+                c = cands[0]
+                have = any(x['regime'] == 'C' and x['fiscal_year'] == fy and anorm(x['article']) == a
+                           and ckey(x['country'] or '') == c and x['row_kind'] == 'detail' for x in rows)
+                # abstract gate: the transfer must not push any touched cell past printed (the 1880
+                # silk-raw case: US Quebec free was exact before the transfer, +57K over after -> the
+                # witness's own label is suspect there; leave '?')
+                room = True
+                for x in run:
+                    sec = 'free' if x['section'] == 'FREE' else 'dut'
+                    a_cell = A[fy].get((c, x['province'], sec))
+                    if a_cell is None: room = False; break
+                    if (f(x['val_efc']) or 0) - (a_cell - P[fy][(c, x['province'], sec)]) > max(50, 0.002 * a_cell):
+                        room = False; break
+                if not have and room:
+                    label = wname[(fy, c)]
+                    for x in rows[i:j]:
+                        x['country'] = label; x['country_inferred'] = '3'
+                        x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'witness_label_transfer'
+                    for x in run:
+                        sec = 'free' if x['section'] == 'FREE' else 'dut'
+                        P[fy][(c, x['province'], sec)] += f(x['val_efc']) or 0
+                    n_lab += 1; lab_val += sum(f(x['val_efc']) or 0 for x in run)
+        i = j
+    print(f"pass L: {n_lab} '?' runs labelled from the witness (efc {lab_val:,.0f})")
+    # rebuild the parsed-cell sums with the new labels before pass I
+    P.clear()
+    for r in rows:
+        if r['row_kind'] != 'detail' or r['regime'] != 'C': continue
+        sec = 'free' if r['section'] == 'FREE' else 'dut'
+        P[r['fiscal_year']][(ckey(r['country'] or ''), r['province'], sec)] += f(r['val_efc']) or 0
+
+    # ---------- PASS I: coverage insertion ----------
+    B1 = blocks_of(rows); B2 = blocks_of(w2)
+    # '?' detail mass per (fy, anorm): any sizable unlabelled mass blocks insertion outright
+    Q1 = defaultdict(float)
+    for r in rows:
+        if r['regime'] == 'C' and r['row_kind'] == 'detail' and (r['country'] or '?') == '?':
+            Q1[(r['fiscal_year'], anorm(r['article']))] += f(r['val_efc']) or 0
+    # article-level detail mass per (fy, anorm) on each side, '?' rows INCLUDED -- a block Canadiana
+    # holds unlabelled must not be inserted again from the witness (the jute-yarn double-count)
+    M1 = defaultdict(float); M2 = defaultdict(float)
+    for r in rows:
+        if r['regime'] == 'C' and r['row_kind'] == 'detail':
+            M1[(r['fiscal_year'], anorm(r['article']))] += f(r['val_efc']) or 0
+    for r in w2:
+        if r['regime'] == 'C' and r['row_kind'] == 'detail':
+            M2[(r['fiscal_year'], anorm(r['article']))] += f(r['val_efc']) or 0
+    # (fy, ckey) -> list of (anorm, country block efc sum) on the Canadiana side, for variant-name dupes
+    V1 = defaultdict(list)
+    acc = defaultdict(float)
+    for r in rows:
+        if r['regime'] == 'C' and r['row_kind'] == 'detail':
+            acc[(r['fiscal_year'], anorm(r['article']), ckey(r['country'] or ''))] += f(r['val_efc']) or 0
+    for (fy_, a_, c_), v_ in acc.items(): V1[(fy_, c_)].append((a_, v_))
+    import difflib
+    log = []; inserts = []   # (anchor row index hint, list of witness rows)
+    # index of main rows by (fy, article) for insertion anchoring
+    last_row_of_article = {}
+    for i, r in enumerate(rows):
+        if r['regime'] == 'C':
+            last_row_of_article[(r['fiscal_year'], anorm(r['article']))] = i
+
+    for fy in sorted(B2):
+        if fy not in B1: continue
+        for a, by_c in B2[fy].items():
+            if a not in B1[fy]:
+                continue                                   # G1: article unknown to Canadiana
+            for c, blks in by_c.items():
+                if c in B1[fy][a]:
+                    continue                               # G2: country present already
+                if len(blks) != 1:
+                    log.append((fy, a, c, 0, 'ambiguous: multiple witness blocks')); continue
+                blk = blks[0]
+                det = [r for r in blk if r['row_kind'] == 'detail' and r['province']]
+                tot = [r for r in blk if r['row_kind'] == 'country_total']
+                if not det: continue
+                sv = sum(f(r['val_efc']) or 0 for r in det)
+                svi = sum(f(r['val_imp']) or 0 for r in det)
+                if tot:
+                    tv, tvi = f(tot[0]['val_efc']), f(tot[0]['val_imp'])
+                    if tv is None or abs(sv - tv) > 1 or (tvi is not None and abs(svi - tvi) > 1):
+                        log.append((fy, a, c, sv, 'G3 fail: block does not close')); continue
+                elif len(det) > 1:
+                    log.append((fy, a, c, sv, 'G3 fail: no country_total to close against')); continue
+                ok = True; strong = False
+                for r in det:
+                    sec = 'free' if r['section'] == 'FREE' else 'dut'
+                    key = (c, r['province'], sec)
+                    a_cell = A[fy].get(key)
+                    if a_cell is None: ok = False; why = f'no abstract cell {key}'; break
+                    resid = a_cell - P[fy][key]
+                    v = f(r['val_efc']) or 0
+                    if v - resid > max(50, 0):             # G4: would exceed printed
+                        ok = False; why = f'G4 fail: {key} resid {resid:.0f} < row {v:.0f}'; break
+                    if resid >= 100: strong = True
+                if not ok:
+                    log.append((fy, a, c, sv, why)); continue
+                if not strong:
+                    log.append((fy, a, c, sv, 'G4: no touched cell has resid >= 100')); continue
+                if Q1[(fy, a)] >= 0.25 * sv:
+                    log.append((fy, a, c, sv, f"G2c fail: article holds '?' mass {Q1[(fy, a)]:.0f} (label transfer territory)")); continue
+                # G2b: the Canadiana article must actually be MISSING this much mass ('?' rows count)
+                gap = M2[(fy, a)] - M1[(fy, a)]
+                if gap < sv - max(50, 0.005 * sv):
+                    log.append((fy, a, c, sv, f'G2b fail: article gap {gap:.0f} < block {sv:.0f} (mass present, maybe unlabelled)')); continue
+                # G5: the same country block under a VARIANT article name on the Canadiana side
+                dupe = None
+                for a1, v1 in V1[(fy, c)]:
+                    if a1 == a or abs(v1 - sv) > max(2, 0.01 * sv): continue
+                    if difflib.SequenceMatcher(None, a1, a).ratio() >= 0.7: dupe = a1; break
+                if dupe:
+                    log.append((fy, a, c, sv, f'G5 fail: present under variant name {dupe[:40]!r}')); continue
+                # accept
+                anchor = last_row_of_article.get((fy, a))
+                if anchor is None: continue
+                newrows = []
+                for r in blk:
+                    nr = {k: r.get(k, '') for k in fields}
+                    nr['block_id'] = 'w' + str(nr['block_id'])          # never collide with a host block key
+                    nr['flags'] = (nr['flags'] + ',' if nr['flags'] else '') + 'witness_block_inserted'
+                    newrows.append(nr)
+                inserts.append((anchor, newrows))
+                for r in det:
+                    sec = 'free' if r['section'] == 'FREE' else 'dut'
+                    P[fy][(c, r['province'], sec)] += f(r['val_efc']) or 0
+                log.append((fy, a, c, sv, 'INSERTED'))
+
+    with open(OUT, 'w', newline='') as fh:
+        w = csv.writer(fh); w.writerow(['fiscal_year', 'article', 'country', 'val_efc', 'outcome'])
+        for e in sorted(log): w.writerow(e)
+    ins_val = sum(e[3] for e in log if e[4] == 'INSERTED')
+    n_ins = sum(1 for e in log if e[4] == 'INSERTED')
+    print(f'candidates {len(log)}; inserted {n_ins} blocks (efc {ins_val:,.0f}); log -> {OUT}')
+    if dry: return
+    for anchor, newrows in sorted(inserts, key=lambda x: -x[0]):
+        rows[anchor + 1:anchor + 1] = newrows
+    with open(ROWS, 'w', newline='') as fh:
+        w = csv.DictWriter(fh, fieldnames=fields); w.writeheader(); w.writerows(rows)
+    print(f'applied to {ROWS}')
+
+
+if __name__ == '__main__':
+    main()

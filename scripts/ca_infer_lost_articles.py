@@ -43,6 +43,7 @@ def main():
     seen = {}
     for idx, r in enumerate(rows):
         if r['regime'] != 'C' or r['row_kind'] in ('recap', 'summary'): continue
+        if str(r['volume']).startswith('statcan_'): continue   # witness-inserted blocks are not part of the Canadiana print order
         k = (r['fiscal_year'], r['block_id'])
         if k in seen: continue
         seen[k] = len(seq[r['fiscal_year']])
