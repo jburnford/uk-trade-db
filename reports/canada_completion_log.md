@@ -105,3 +105,24 @@ re-OCR/Gemini territory; the merged-vs-witness gap is variant-name mirror residu
 OVER nationally (residual junk mass, unlocated). Regime B witness runs not yet done.
 1885 US NB / 1888 US BC duty cells drift over. The misfiled-row class (1884 peaches GB
 under Oranges) still unbuilt.
+
+## Phase 4 — first survey (2026-09-01; merge attempt REVERTED)
+
+The witness parse for regime A/B ran clean (`ca_parse_witness.py regimeAB`):
+**the greyscale witness transforms regime A** — province-statement efc ratios
+0.797/0.911/1.080/0.949/0.913/0.933/0.938/0.919 (1868–75) against Canadiana's
+0.72/0.69/0.60/0.48/0.55/0.53/0.62/0.96. Regime B stays Canadiana-primary (the
+witness reads 0.894/1.030/0.981/1.160 there — worse).
+
+**Discovery: 1874–75 print a DOMINION RECAPITULATION** — a national article×country
+statement. Canadiana's 1874 Dominion sums to 127,607,261 vs printed 127,404,169
+(**1.0016**) while its province statements manage 0.624. The national series for
+1874–75 should be sourced from the Dominion statement; the exports currently exclude
+it from nothing/everything inconsistently — decide in the phase-4 session.
+
+A first block-vote merge (`ca_merge_regimeA.py`) was written, run, measured, and
+**reverted**: it loses mass (1868 → 0.613) because a detail-complete block with an
+unparsed total counts as non-closing and gets superseded, and sequence-position
+pairing mis-pairs. The script is annotated with the failure analysis and the three
+requirements for the real vote (no-total ≠ total-mismatch; fingerprint pairing;
+per-statement printed grands as arbiter). Nothing from this attempt is in the corpus.
