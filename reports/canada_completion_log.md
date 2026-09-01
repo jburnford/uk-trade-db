@@ -38,3 +38,27 @@ Full mechanics in `reports/canada_page_break_total_findings.md`.
 **State after phase 2**: country-`?` $939,991, article-`?` $1,982,848; abstract ratios
 1880-90: 1.000/.978/.990/.988/.991/.990/.991/.996/.991/.999/.988. Parked coverage:
 `reports/canada_phase3_coverage_list.md`.
+
+## Phase 3 — StatCan second engine (2026-08-31, commit 32c36ca; IN PROGRESS)
+
+**3a done**: `raw_canada/INDEX_W2.tsv` + `ca_parse_witness.py` →
+`db/canada/imports_general_rows_w2.csv` (185,675 rows, 11 regime-C years). The regime
+parser needed NO changes for the StatCan scans. Witness quality:
+`reports/canada_witness_parse.md` (1882 is the witness's bad year, 1.121 — treat its
+cells with suspicion in every gate).
+
+**3b first merge done**: `ca_merge_witnesses.py` — **the chain now runs
+parse → merge → infer_articles → infer_countries → export → check.**
+Pass L label-transfer (11 runs $471K), pass I gated insertion (90 blocks $162K).
+Ship 187/9. Country-`?` now $677,582.
+
+**Still open in phase 3**:
+- the value-fill class (Canadiana rows with BLANK values, witness has them — 1883 GB
+  machinery is the type case);
+- the misfiled-row class (1884 peaches GB run sits under 'Oranges and lemons' as bare
+  country_total rows — witness shows the truth; needs a row-level correction pass);
+- the big under cells still open: 1886 GB Ontario −1.02M (witness reads +2.6% over
+  there — needs per-block arbitration, not cell fill), 1881 Newfoundland, 1882
+  sugar-molasses, 1883/85 GB province unders;
+- regime B years through the witness (cheap once trusted);
+- 1890's unmatched abstract value 685,649.
