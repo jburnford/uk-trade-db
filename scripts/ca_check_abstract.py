@@ -28,6 +28,12 @@ def ckey(c):
     if (c.startswith('grea') or c.startswith('gt ')) and 'brit' in c: c = 'great britain'   # 'Gt. Britain ( via Hudson Bay)'
     if c.startswith('united st'): c = 'united states'
     if c in ('africa', 'british possessions africa', 'south africa'): c = 'british africa'     # '“ “ Africa' = British Africa
+    if c.startswith('sp west indies'): c = 'spanish west indies'                                # 'Sp. W. Indies'
+    if c in ('brit w indies', 'british w indies'): c = 'british west indies'
+    if c == 'e guiana': c = 'british guiana'                                                    # 'B.' misread as 'E.' (1889, sugar to NS)
+    if c in ('spanish possessions other', 'spanish possessions all other'): c = 'spanish possessions all other'
+    if c in ('central am states', 'central american states'): c = 'central american states'
+    if c in ('norway sweden', 'norway and sweden'): c = 'norway sweden'                         # '&' vs 'and' (the & is stripped)
     return c
 
 def main():

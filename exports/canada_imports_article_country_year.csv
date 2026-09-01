@@ -32134,7 +32134,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1881,C,?,"Mats and Matting of Coir, Jute, Grass, &c., not otherwise provided for",China,DUTIABLE,,2,0,115,0,115,23.0
 1881,C,?,"Mats and Matting of Coir, Jute, Grass, &c., not otherwise provided for",Great Britain,DUTIABLE,,7,0,14063,0,13830,2795.25
 1881,C,?,"Mats and Matting of Coir, Jute, Grass, &c., not otherwise provided for",United States,DUTIABLE,,7,0,5351,0,5351,1098.97
-1881,C,?,"The following articles being the Natural Products or the Manufactures of Newfoundland Fish, fresh, dried, salted or smoked",Newfoundland,FREE,,4,0,398631,0,398631,0.0
 1881,C,Animals for improvement of Stock,"Bone Dust and Bone Ash, for manufacture of phosphates and fertilizers",St. Pierre,FREE,Cwt,1,120,80,120,80,0.0
 1881,C,Animals for improvement of Stock,"Bone Dust and Bone Ash, for manufacture of phosphates and fertilizers",United States,FREE,Cwt,2,264,442,264,442,0.0
 1881,C,Animals for improvement of Stock,"Bones, crude, not manufactured, burned, calcined, ground or steamed",Great Britain,FREE,Cwt,2,20,67,20,67,0.0
@@ -33769,8 +33768,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1881,C,THE,Ambergris,Great Britain,FREE,,1,0,85,0,85,0.0
 1881,C,THE,"Cod, Haddock, Ling and Pollock, fresh",United States,FREE,,5,1527007,47995,1527007,47995,0.0
 1881,C,THE,Dry salted or smoked,United States,FREE,,7,37671,128933,37671,128933,0.0
-1881,C,The following articles being the Natural Products or the Manufactures of,"Fish, fresh, dried salted or smoked",Fish Oil and products,FREE,,7,0,540310,0,540310,0.0
-1881,C,The following articles being the Natural Products or the Manufactures of,"Fish, fresh, dried salted or smoked",Seal Oil,FREE,,1,0,133198,0,133198,0.0
+1881,C,The following articles being the Natural Products or the Manufactures of,Fish Oil and products,?,FREE,,3,0,141679,0,141679,0.0
+1881,C,The following articles being the Natural Products or the Manufactures of,"Fish, fresh, dried salted or smoked",Newfoundland,FREE,,4,0,398631,0,398631,0.0
+1881,C,The following articles being the Natural Products or the Manufactures of,Seal Oil,?,FREE,,1,0,133198,0,133198,0.0
 1881,C,Tin and manufactures of,"Blocks, Pigs, Bars, Plates and Sheets",Great Britain,DUTIABLE,,6,15349,151435,15518,152631,15262.97
 1881,C,Tin and manufactures of,"Blocks, Pigs, Bars, Plates and Sheets",United States,DUTIABLE,Cwt,7,4803,72507,4768,71794,7178.99
 1881,C,Tin and manufactures of,"Cans or packages made of Tin or other material, containing Fish of any kind, admitted free of duty under any existing law or treaty, not exceeding one quart in contents",Newfoundland,DUTIABLE,,1,192,0,192,0,2.88
@@ -34912,7 +34912,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1882,C,,"White Shellac, for manufacturing purposes",United States,FREE,,2,0,2468,0,2468,0.0
 1882,C,,Whiting or Whitening,France,FREE,,1,1579,551,1579,551,0.0
 1882,C,,Whiting or Whitening,Great Britain,FREE,,5,33683,15043,33683,15043,0.0
-1882,C,,Whiting or Whitening,Total,FREE,,7,36270,16318,36270,16318,0.0
 1882,C,,Whiting or Whitening,United States,FREE,,7,1008,724,1008,724,0.0
 1882,C,,Willow for Basket Makers,France,FREE,,1,0,116,0,116,0.0
 1882,C,,Willow for Basket Makers,Great Britain,FREE,,1,0,351,0,351,0.0
@@ -48657,7 +48656,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1886,C,Fancy goods,"Flowers, artificial, and feathers, N. E. S",Great Britain,DUTIABLE,,7,0,125685,0,125670,31477.3
 1886,C,Fancy goods,"Flowers, artificial, and feathers, N. E. S",St. Pierre,DUTIABLE,,1,0,44,0,44,11.0
 1886,C,Fancy goods,"Flowers, artificial, and feathers, N. E. S",United States,DUTIABLE,,7,0,14863,0,14863,3716.2
-1886,C,Fancy goods,"Lace curtains, collars and similar goods of lace or part of lace, nets, blonds and alllaces of cotton, linen, silk or other material",Total,DUTIABLE,,7,0,708684,0,705444,157280.74
 1886,C,Fancy goods,Millinery not elsewhere provided for,France,DUTIABLE,,1,0,256,0,256,64.0
 1886,C,Fancy goods,Millinery not elsewhere provided for,Germany,DUTIABLE,,1,0,346,0,346,86.5
 1886,C,Fancy goods,Millinery not elsewhere provided for,Great Britain,DUTIABLE,,3,0,3817,0,3817,1028.1
@@ -66589,7 +66587,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1890,C,Spirits and wines,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines, containing 26 p.c. or less of spirits",Portugal,DUTIABLE,,4,3272,2747,4013,2521,1760.34
 1890,C,Spirits and wines,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines, containing 26 p.c. or less of spirits",Spain,DUTIABLE,,6,186195,89048,147449,68457,57416.26
 1890,C,Spirits and wines,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines, containing 26 p.c. or less of spirits",Span. possessions in Africa,DUTIABLE,,1,4520,837,0,0,0.0
-1890,C,Spirits and wines,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines, containing 26 p.c. or less of spirits",Spanish West Indies,DUTIABLE,,2,10,10,10,10,5.5
+1890,C,Spirits and wines,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines, containing 26 p.c. or less of spirits",Spanish West Indies,DUTIABLE,,1,5,5,5,5,2.75
 1890,C,Spirits and wines,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines, containing 26 p.c. or less of spirits",St. Pierre,DUTIABLE,,4,484,517,484,517,276.1
 1890,C,Spirits and wines,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines, containing 26 p.c. or less of spirits",United States,DUTIABLE,,7,15531,12207,14988,11506,7194.82
 1890,C,Spirits and wines,"Wines of all kinds, except sparkling, &c., containing over 27 p. c. and not over 28 p.c. of spirits",British West Indies,DUTIABLE,,1,52,25,0,0,0.0

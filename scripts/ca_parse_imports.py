@@ -2639,6 +2639,24 @@ def apply_manual_repairs(rows, diag):
         diag['manual_repair'] += 1
 
 
+def sweep_total_country(rows, diag):
+    """A page-top Total block whose 'Total' label was read as a COUNTRY: its province rows come
+    through as detail rows of a country named 'Total' and double-count in every sum (1886 t210
+    lace curtains, $705K -- Ontario 263,792 = the article's five country rows exactly; 1882 t499).
+    'Total' can never be a country: reclass to the Total-block row kinds."""
+    for r in rows:
+        c = (r.get('country') or '').strip().rstrip('.').lower()
+        if c != 'total': continue
+        if r['row_kind'] == 'detail':
+            r['row_kind'] = 'article_province_total'; r['country'] = 'TOTAL'
+            r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'total_country_reclassed'
+            diag['total_country_reclassed'] += 1
+        elif r['row_kind'] == 'country_total':
+            r['row_kind'] = 'article_total'; r['country'] = None
+            r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'total_country_reclassed'
+            diag['total_country_reclassed'] += 1
+
+
 def sweep_junk_country_labels(rows, diag):
     """Phase 0c (plan §5): regime A/B rows whose country slot holds a numeric string.
 
@@ -2693,6 +2711,7 @@ def main():
         n = p.parse_volume(tag, fy, md)
         per_vol.append((fy, tag, n, len(p.rows) - before))
         print(f'{fy:8} {tag:24} tables={n:4} rows={len(p.rows)-before:6}', file=sys.stderr)
+    sweep_total_country(p.rows, p.diag)
     apply_manual_repairs(p.rows, p.diag)
     sweep_junk_country_labels(p.rows, p.diag)
     fields = ['fiscal_year', 'volume', 'table_seq', 'row_seq', 'regime', 'block_id', 'section', 'section_label', 'article_parent',
