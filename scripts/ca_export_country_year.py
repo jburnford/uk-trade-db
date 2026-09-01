@@ -9,6 +9,8 @@ Regime C (1880+) uses province rows; regime B (1877) uses the province statement
 recapitulation excluded); regime A (1869-73, 1868) is included but flagged unreliable (column alignment open).
 """
 import csv, re, sys
+
+DOMINION_YEARS = {'1874', '1875'}
 from collections import defaultdict
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
@@ -50,7 +52,14 @@ def canon(c):
 rows = list(csv.DictReader(open(ROOT / 'db' / 'canada' / 'imports_general_rows.csv')))
 CY = defaultdict(lambda: defaultdict(float)); ACY = defaultdict(lambda: defaultdict(float)); AU = {}
 for r in rows:
-    if r['row_kind'] != 'detail' or r['province'] == 'Dominion': continue
+    if r['row_kind'] != 'detail': continue
+    # regime A years that print a Dominion recapitulation (1874-75): the national series comes
+    # from it (Canadiana 1874 Dominion reads within 0.2% of the printed total; the province
+    # statements manage 0.62) -- everywhere else the Dominion recap is excluded as a duplicate
+    if r['regime'] == 'A' and r['fiscal_year'] in DOMINION_YEARS:
+        if r['province'] != 'Dominion': continue
+    elif r['province'] == 'Dominion':
+        continue
     c = canon(r['country']); fy = r['fiscal_year']; sec = r['section'] or ''
     k = (fy, r['regime'], c, sec)
     CY[k]['n'] += 1
@@ -71,7 +80,7 @@ with open(ROOT / 'exports' / 'canada_imports_article_country_year.csv', 'w', new
         d = ACY[k]; w.writerow([*k, AU.get(k, ''), int(d['n']), round(d['qty_imp']), round(d['val_imp']), round(d['qty_efc']), round(d['val_efc']), round(d['duty'], 2)])
 # origin shares
 L = ['# Canadian imports by origin, fiscal years ending 30 June', '',
-     'From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country label lost in OCR). Regime A years (1868-73) are unreliable pending column alignment.', '',
+     'From `exports/canada_imports_country_year.csv` (value imported, \$; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote -- both scans fail there).', '',
      '| FY | regime | total $ | Great Britain | United States | France | Germany | B.W. Indies | other named | ? | GB % | US % | other % (incl ?) |', '|---|---|---|---|---|---|---|---|---|---|---|---|---|']
 by = defaultdict(lambda: defaultdict(float)); regs = {}
 for (fy, reg, c, sec), d in CY.items():

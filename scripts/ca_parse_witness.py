@@ -25,7 +25,7 @@ OUT_MD = ROOT / 'reports' / 'canada_witness_parse.md'
 
 
 def main():
-    roles = set(a for a in sys.argv[1:] if not a.startswith('-')) or {'regimeC'}
+    roles = set(a for a in sys.argv[1:] if not a.startswith('-')) or {'regimeC', 'regimeAB'}
     index = list(csv.DictReader(open(P.RAW / 'INDEX_W2.tsv'), delimiter='\t'))
     p = I.Parser()
     per_vol = []
