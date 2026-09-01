@@ -62,3 +62,17 @@ Ship 187/9. Country-`?` now $677,582.
   sugar-molasses, 1883/85 GB province unders;
 - regime B years through the witness (cheap once trusted);
 - 1890's unmatched abstract value 685,649.
+
+### Phase 3 continued (same day, commits through HEAD)
+
+- **Pass F** (value fill): 192 blank-value rows, $1.13M — 1882 sugar-molasses closed
+  (US NS within $142 of print).
+- **Cross-year insertion**: G1 relaxed to corpus-wide article existence + fragment
+  guard; 112 blocks, $977K — 1881 Newfoundland recovered from the witness.
+- Ratios now: 1880 1.000 / 1881 0.986 / 1882 0.994 / 1883 0.988 / 1884 0.994 /
+  1885 0.994 / 1886 0.991 / 1887 0.997 / 1888 0.991 / 1889 0.999 / 1890 0.993.
+  Country-`?` $677,582.
+- Still open (phase 3): misfiled-row class (1884 peaches GB under Oranges); the GB
+  Ontario/Quebec dut unders 1881/1883/1886 (witness over-reads the same cells — needs
+  block-level arbitration, the next build); regime B years through the witness; 1890
+  unmatched abstract 685,649; witness 1882 quarantine check.
