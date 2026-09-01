@@ -94,6 +94,7 @@ def main():
     out = []
     for row in index:
         tag = row['volume_tag']; fy = row['fiscal_year']
+        if row.get('note', '').startswith('NOPARSE'): continue   # registered but pending its parser (INDEX.tsv note says which phase)
         md = P.RAW / tag / f'{tag}.md'
         if not md.exists(): continue
         before = len(out)

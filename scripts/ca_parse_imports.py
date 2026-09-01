@@ -2517,6 +2517,44 @@ def closure_report(rows):
     return out
 
 
+def sweep_junk_country_labels(rows, diag):
+    """Phase 0c (plan §5): regime A/B rows whose country slot holds a numeric string.
+
+    Two shapes, both verified against raw before this was written:
+      * 1868/69 (regime A): the country label slid into the ARTICLE slot and a fused
+        qty pair ('122\u201410,680') took the country slot; the value columns are
+        correctly placed. Evidence for the swap is on the row itself: the article
+        text matches a label this fiscal year elsewhere uses as a country.
+      * 1877 t631 (regime B): the whole row is shifted \u2014 the raw carries the true
+        country but the parsed values sit in the wrong columns, so relabelling would
+        file wrong numbers under a right name. Those go to '?' (phase 4/witness work).
+    """
+    def _clean(s):
+        return re.sub(r'[.\u2026 ]+$', '', (s or '').strip().strip('"\u201c\u201d').strip())
+    def _is_numeric_junk(c):
+        letters = sum(ch.isalpha() for ch in c); digits = sum(ch.isdigit() for ch in c)
+        return bool(c) and c not in ('?',) and (letters == 0 or digits > letters)
+    per_fy = defaultdict(Counter)
+    for r in rows:
+        if r['regime'] in ('A', 'B') and r.get('country'):
+            c = _clean(r['country'])
+            if c and not _is_numeric_junk(r['country']):
+                per_fy[r['fiscal_year']][c] += 1
+    for r in rows:
+        c = r.get('country') or ''
+        if not _is_numeric_junk(c): continue
+        art = _clean(r.get('article'))
+        if r['regime'] in ('A', 'B') and art and per_fy[r['fiscal_year']].get(art, 0) >= 2:
+            r['country'] = art
+            r['article'] = '?'
+            r['flags'] = (r['flags'] + ';' if r.get('flags') else '') + 'junk_country_swapped'
+            diag['junk_country_swapped'] += 1
+        else:
+            r['country'] = '?'
+            r['flags'] = (r['flags'] + ';' if r.get('flags') else '') + 'junk_country_label'
+            diag['junk_country_label'] += 1
+
+
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     index = list(csv.DictReader(open(P.RAW / 'INDEX.tsv'), delimiter='\t'))
@@ -2525,6 +2563,7 @@ def main():
     per_vol = []
     for row in index:
         tag = row['volume_tag']; fy = row['fiscal_year']
+        if row.get('note', '').startswith('NOPARSE'): continue   # registered but pending its parser (INDEX.tsv note says which phase)
         if only and fy not in only and tag not in only: continue
         md = P.RAW / tag / f'{tag}.md'
         if not md.exists(): continue
@@ -2532,6 +2571,7 @@ def main():
         n = p.parse_volume(tag, fy, md)
         per_vol.append((fy, tag, n, len(p.rows) - before))
         print(f'{fy:8} {tag:24} tables={n:4} rows={len(p.rows)-before:6}', file=sys.stderr)
+    sweep_junk_country_labels(p.rows, p.diag)
     fields = ['fiscal_year', 'volume', 'table_seq', 'row_seq', 'regime', 'block_id', 'section', 'section_label', 'article_parent',
               'article', 'country', 'country_inferred', 'province', 'row_kind', 'unit', 'qty_brit', 'qty_foreign', 'qty_land',
               'qty_imp', 'val_imp', 'qty_efc', 'val_efc', 'duty', 'flags', 'raw']

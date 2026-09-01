@@ -1,4 +1,6 @@
 fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_imp,qty_efc,val_efc,duty
+1868,A,,?,P. E. Island,FREE,,1,0,15399,0,18049,2125.6
+1868,A,,?,United States,FREE,,1,0,11082,0,13738,1693.88
 1868,A,,"Acids of every description except Acetic, Sulphuric or Vinegar",France,FREE,,1,0,300,0,300,0.0
 1868,A,,"Acids of every description except Acetic, Sulphuric or Vinegar",Great Britain,FREE,,1,0,0,0,15167,0.0
 1868,A,,"Acids of every description except Acetic, Sulphuric or Vinegar",United States,FREE,,1,0,27820,0,27826,0.0
@@ -163,7 +165,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1868,A,,Other F. Countries,B. N. A. Provinces,,,1,22889,0,8,120,32.0
 1868,A,,Other F. Countries,Germany,,,2,1332,0,222,4542,977.1
 1868,A,,Other F. Countries,United States,,,2,5195,0,682,16500,3025.0
-1868,A,,P. E. Island,"1,250—9,443",FREE,,1,0,15399,0,18049,2125.6
 1868,A,,P. E. Island,British Guiana,FREE,,1,2528,1271,1862,938,1458.61
 1868,A,,P. E. Island,British West Indies,FREE,,2,5205583,195762,4003200,181433,158484.19
 1868,A,,P. E. Island,French West Indies,FREE,,2,176585,6424,225824,6170,4809.43
@@ -228,7 +229,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1868,A,,Timber and Lumber,Great Britain,FREE,,1,69,802,69,802,0.0
 1868,A,,"Trees, Plants and Shrubs, &c",Great Britain,FREE,,1,28,816,28,816,0.0
 1868,A,,Type,United States,FREE,,1,5,86,5,86,6.3
-1868,A,,United States,"1,190—7,946",FREE,,1,0,11082,0,13738,1693.88
 1868,A,,United States,Newfoundland,FREE,,1,1,12,1,12,1.76
 1868,A,,Whisky,British West Indies,FREE,,1,24,50,120,104,98.3
 1868,A,,Whisky,Great Britain,FREE,,1,32981,31848,21112,22102,17111.58
@@ -721,7 +721,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1868,A,Oils > P. E. Island,Paper & Paper Hangings,Great Britain,FREE,,1,1269,58685,1174,53377,6972.57
 1868,A,Oils > P. E. Island,Paper & Paper Hangings,United States,FREE,,1,2888,15614,2881,14141,1803.29
 1868,A,Oils > P. E. Island,Parasols and Umbrellas,Great Britain,FREE,,1,5,141,5,141,21.17
-1868,A,"Oils > Rectified, not elsewhere specified",Great Britain,"599—2,175",FREE,,1,0,22474,0,28403,2972.65
+1868,A,"Oils > Rectified, not elsewhere specified",?,Great Britain,FREE,,1,0,22474,0,28403,2972.65
 1868,A,"Oils > Rectified, not elsewhere specified",Great Britain,Spain,FREE,,1,60,1910,578,1875,187.5
 1868,A,"Oils > Rectified, not elsewhere specified",Great Britain,United States,FREE,,1,601555,3894,311571,2611,318.86
 1868,A,Other F. Countries,"Spirits and Strong Waters, including Spirits of Wine and Alcohol, and not being Whiskey",France,,,1,851,833,60,48,43.0
@@ -854,7 +854,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1868,A,P. E. Island,Starch,United States,FREE,,1,348,45,348,45,6.63
 1868,A,P. E. Island > Flour & Meal > St. P. Miquelon,"Indian Corn & other Grain, except Wheat",United States,FREE,,1,23153,23094,1949,2144,194.85
 1868,A,P. E. Island > Flour & Meal > St. P. Miquelon,Malt,Great Britain,FREE,,1,522,838,522,838,208.8
-1868,A,P. E. Island > St. P. Miquelon,B. W. Indies,"356—1,185",FREE,,1,0,994,0,994,123.42
+1868,A,P. E. Island > St. P. Miquelon,?,British West Indies,FREE,,1,0,994,0,994,123.42
+1868,A,P. E. Island > St. P. Miquelon,?,United States,FREE,,1,0,27141,0,22202,3213.54
 1868,A,P. E. Island > St. P. Miquelon,B. W. Indies,French West Indies,FREE,,1,54,167,54,167,24.43
 1868,A,P. E. Island > St. P. Miquelon,B. W. Indies,Spanish West Indies,FREE,,1,11,73,11,73,10.3
 1868,A,P. E. Island > St. P. Miquelon,Corks,Great Britain,FREE,,1,2,22,2,22,3.16
@@ -864,10 +865,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1868,A,P. E. Island > St. P. Miquelon,Cottons,United States,FREE,,1,1842,78270,1848,79798,8717.38
 1868,A,P. E. Island > St. P. Miquelon,Dried and Green Fruits,Great Britain,FREE,,1,0,3361,0,6197,764.62
 1868,A,P. E. Island > St. P. Miquelon,P. E. Island,British West Indies,FREE,,1,23,3136,32,3056,310.2
-1868,A,P. E. Island > St. P. Miquelon,United States,"7,390—8,190",FREE,,1,0,27141,0,22202,3213.54
 1868,A,P. E. Island > St. P. Miquelon,United States,France,FREE,,1,16,250,173,464,65.35
 1868,A,P. E. Island > St. P. Miquelon,United States,Newfoundland,FREE,,1,2,13,2,13,1.95
-1868,A,P. E. Island > St. P. Miquelon > Dutch W. Indies,Spain,"2,829—407,370",FREE,,1,0,68373,0,31536,4364.18
+1868,A,P. E. Island > St. P. Miquelon > Dutch W. Indies,?,Spain,FREE,,1,0,68373,0,31536,4364.18
 1868,A,Plaster of Paris and Hydraulic Cement,Pickles and Sauces,Great Britain,FREE,,1,1425,12192,937,9411,1410.26
 1868,A,Plaster of Paris and Hydraulic Cement,Pickles and Sauces,United States,FREE,,1,1,28,1,28,2.8
 1868,A,Plaster of Paris and Hydraulic Cement,ground and calcined,Great Britain,FREE,,1,680,1484,680,1484,165.3
@@ -926,7 +926,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1868,A,St. P. Miquelon > Sugar,other than refined,French West Indies,FREE,,1,269221,18011,342187,23339,5229.04
 1868,A,St. P. Miquelon > Sugar,other than refined,Spanish West Indies,FREE,,1,7192308,400919,2529720,167824,41054.16
 1868,A,St. P. Miquelon > Sugar,other than refined,United States,FREE,,1,15215,921,26395,1703,419.21
-1868,A,St. P. Miquelon > Sugar > Danish W. Indies > Dutch W. Indies > St. P. Miquelon > Confectionery,United States,"122—10,680",FREE,,1,0,4305,0,7707,1858.86
+1868,A,St. P. Miquelon > Sugar > Danish W. Indies > Dutch W. Indies > St. P. Miquelon > Confectionery,?,United States,FREE,,1,0,4305,0,7707,1858.86
 1868,A,Steam Engines,E. W. Indies,France,FREE,,1,0,0,0,163,24.45
 1868,A,Steam Engines,E. W. Indies,Holland,FREE,,1,0,110,0,110,16.5
 1868,A,Steam Engines,E. W. Indies,St. Pierre,FREE,,1,0,275,0,275,13.75
@@ -1084,7 +1084,9 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1868,A,Wood,Un-manufactured,Great Britain,FREE,,1,0,481,0,481,0.0
 1868,A,Wood,Unenumerated Articles,Great Britain,FREE,,1,0,7025,0,7025,0.0
 1868,A,Wood,Zinc & Spelter,Great Britain,FREE,,1,408,6706,408,6706,0.0
+1869,A,,?,Jersey,FREE,,1,0,3271,0,3271,0.0
 1869,A,,?,United States,DUTIABLE,,1,147,4998,102,3348,510.25
+1869,A,,?,United States,FREE,,1,0,24354,0,24354,0.0
 1869,A,,"Ale, Beer and Porter, in Bottles",Great Britain,DUTIABLE,,3,50431,28809,59349,37464,7899.31
 1869,A,,"Ale, Beer and Porter, in Bottles",P. E. Island,DUTIABLE,,1,2636,1340,2317,1230,349.78
 1869,A,,"Ale, Beer and Porter, in Bottles",United States,DUTIABLE,,1,2508,1309,2277,1219,342.33
@@ -1210,7 +1212,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1869,A,,Indigo,Great Britain,FREE,Lbs,1,27178,14750,27178,14750,0.0
 1869,A,,Iron,Great Britain,DUTIABLE,,1,0,19951,0,19951,999.24
 1869,A,,Iron,United States,DUTIABLE,,1,0,297845,0,298719,14936.22
-1869,A,,Jersey,"13,310—970",FREE,,1,0,3271,0,3271,0.0
 1869,A,,Jewellery and Watches,France,DUTIABLE,,1,17,21565,17,16732,0.0
 1869,A,,Jewellery and Watches,Germany,DUTIABLE,,1,7,5626,7,5636,0.0
 1869,A,,Jewellery and Watches,Great Britain,DUTIABLE,,1,12778,40,13653,2047,0.0
@@ -1352,7 +1353,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1869,A,,Type,United States,DUTIABLE,,1,271,5455,271,5455,272.83
 1869,A,,Undressed,Great Britain,FREE,,1,52,52,52,95,0.0
 1869,A,,Undressed,United States,FREE,,1,17903,17903,17903,6176,0.0
-1869,A,,United States,"16,812—6,237",FREE,,1,0,24354,0,24354,0.0
 1869,A,,United States,France,DUTIABLE,,1,97,20905,88,19933,2884.89
 1869,A,,United States,Germany,DUTIABLE,,1,322,29825,322,20825,3123.55
 1869,A,,United States,Lbs,DUTIABLE,,1,3595,0,17117,3904,585.37
@@ -18369,8 +18369,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,Paintings in Oil,Italy,FREE,Number,1,4,915,4,915,0.0
 1877,B,,Paintings in Oil,Switzerland,FREE,Number,1,1,200,1,200,0.0
 1877,B,,Paintings in Oil,United States,FREE,Number,3,43,3890,43,3890,0.0
-1877,B,,Paintings in Oil and Chromos,150,FREE,,1,201,246,281,0,367.0
-1877,B,,Paintings in Oil and Chromos,160,FREE,,1,210,0,0,0,382.0
+1877,B,,Paintings in Oil and Chromos,?,FREE,,2,411,246,281,0,749.0
 1877,B,,"Paintings in Oil and Chromos, &c",China,DUTIABLE,Number,1,4,62,4,62,10.85
 1877,B,,"Paintings in Oil and Chromos, &c",Great Britain,DUTIABLE,Number,1,10,217,10,217,37.97
 1877,B,,"Paintings in Oil and Chromos, &c",United States,DUTIABLE,Number,2,133,1170,133,1170,204.75
@@ -18381,7 +18380,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,"Paintings in Oil and Chromos, not elsewhere specified",United States,DUTIABLE,Number,4,77601,19240,77480,19026,3328.28
 1877,B,,Paintings in oil,Great Britain,FREE,,1,4,1050,4,1050,0.0
 1877,B,,Paintings in oil,United States,FREE,,1,1,9,1,9,0.0
-1877,B,,Paints and Colors,150,FREE,,1,201,246,281,317,367.0
+1877,B,,Paints and Colors,?,FREE,,1,201,246,281,317,367.0
 1877,B,,Paints and Colors,Germany,DUTIABLE,,1,0,3259,0,3259,570.35
 1877,B,,Paints and Colors,Great Britain,DUTIABLE,,4,0,122274,0,116969,20469.8
 1877,B,,Paints and Colors,United States,DUTIABLE,,4,0,23259,0,23259,4071.76
@@ -18389,10 +18388,10 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,Paints and Colours,United States,DUTIABLE,,2,0,45528,0,45715,8000.12
 1877,B,,"Paints and, Colours",Great Britain,DUTIABLE,,1,0,6199,0,5446,952.89
 1877,B,,"Paints and, Colours",United States,DUTIABLE,,1,0,2103,0,2423,424.02
-1877,B,,Paper Hangings,151,FREE,,1,202,246,282,317,368.0
+1877,B,,Paper Hangings,?,FREE,,1,202,246,282,317,368.0
 1877,B,,Paper Hangings,Great Britain,DUTIABLE,,3,0,49751,0,52511,9189.42
 1877,B,,Paper Hangings,United States,DUTIABLE,,3,0,55695,0,52985,9282.37
-1877,B,,Paper of all kinds,151,FREE,,1,200,246,0,0,368.0
+1877,B,,Paper of all kinds,?,FREE,,1,200,246,0,0,368.0
 1877,B,,"Paper, Printing",Great Britain,DUTIABLE,,4,0,6015,0,5650,988.74
 1877,B,,"Paper, Printing",United States,DUTIABLE,,6,0,29070,0,28861,5051.44
 1877,B,,"Paper, Writing",Great Britain,DUTIABLE,,1,0,457,0,457,79.97
@@ -18407,14 +18406,14 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,Papier Maché,France,DUTIABLE,,1,0,195,0,195,34.14
 1877,B,,Papier Maché,Great Britain,DUTIABLE,,2,0,241,0,241,42.31
 1877,B,,Papier Maché,United States,DUTIABLE,,1,0,31,0,31,5.37
-1877,B,,Parasols and Umbrellas,151,FREE,,1,202,246,282,318,368.0
+1877,B,,Parasols and Umbrellas,?,FREE,,1,202,246,282,318,368.0
 1877,B,,Parasols and Umbrellas,France,DUTIABLE,,1,0,673,0,179,31.33
 1877,B,,Parasols and Umbrellas,Germany,DUTIABLE,,1,0,46,0,46,8.05
 1877,B,,Parasols and Umbrellas,Great Britain,DUTIABLE,,7,0,210406,0,210608,36857.19
 1877,B,,Parasols and Umbrellas,United States,DUTIABLE,,6,0,3382,0,3382,591.93
 1877,B,,Paris and Permanent Green,Great Britain,FREE,Lbs,2,120,55,120,55,0.0
 1877,B,,Paris and Permanent Green,United States,FREE,Lbs,1,22,26,22,26,0.0
-1877,B,,Paris and Permanent Greens,162,FREE,,1,212,0,290,0,386.0
+1877,B,,Paris and Permanent Greens,?,FREE,,1,212,0,290,0,386.0
 1877,B,,Paris and Permanent Greens,Belgium,FREE,Lbs,1,2520,329,2520,329,0.0
 1877,B,,Paris and Permanent Greens,Germany,FREE,Lbs,1,20,8,20,8,0.0
 1877,B,,Paris and Permanent Greens,Great Britain,FREE,Lbs,4,147788,14565,147788,14565,0.0
@@ -18425,14 +18424,14 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,Patent Medicines,Great Britain,DUTIABLE,,4,0,9084,0,9192,2298.22
 1877,B,,Patent Medicines,Switzerland,DUTIABLE,,1,0,3,0,3,0.75
 1877,B,,Patent Medicines,United States,DUTIABLE,,3,0,23784,0,23046,5761.53
-1877,B,,Patent Medicines and Medicinal Preparations,132,FREE,,1,185,232,266,304,343.0
+1877,B,,Patent Medicines and Medicinal Preparations,?,FREE,,1,185,232,266,304,343.0
 1877,B,,Patent Medicines and Medicinal Preparations,France,DUTIABLE,,1,0,158,0,158,39.5
 1877,B,,Patent Medicines and Medicinal Preparations,Great Britain,DUTIABLE,,3,0,6578,0,6577,1634.23
 1877,B,,Patent Medicines and Medicinal Preparations,United States,DUTIABLE,,3,0,40601,0,40402,10108.18
 1877,B,,Pearl and Soda,United States,FREE,,1,1,29,1,29,0.0
-1877,B,,"Peas and Beans, whole",174,FREE,,1,223,257,297,330,402.0
+1877,B,,"Peas and Beans, whole",?,FREE,,1,223,257,297,330,402.0
 1877,B,,"Peas and Beans, whole",United States,FREE,,1,300,699,300,699,0.0
-1877,B,,"Peas, Split",151,FREE,,1,202,246,282,318,368.0
+1877,B,,"Peas, Split",?,FREE,,1,202,246,282,318,368.0
 1877,B,,"Peas, Split",Great Britain,DUTIABLE,Bush,4,31,77,31,67,11.72
 1877,B,,"Peas, Split",United States,DUTIABLE,Bush,5,165,210,165,397,69.61
 1877,B,,"Pease and Beans, Whole",Great Britain,FREE,Bush,2,225,1073,225,1073,0.0
@@ -18440,11 +18439,11 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,"Pease and Beans, Whole",United States,FREE,Bush,2,1830,6156,1830,6156,0.0
 1877,B,,"Pease and Beans, whole",Great Britain,FREE,Bush,1,113,317,113,317,0.0
 1877,B,,"Pease and Beans, whole",United States,FREE,Bush,1,55,99,55,99,0.0
-1877,B,,Perfumed and Fancy Soaps,133,FREE,,1,185,233,266,304,343.0
+1877,B,,Perfumed and Fancy Soaps,?,FREE,,1,185,233,266,304,343.0
 1877,B,,Perfumed and Fancy Soaps,France,DUTIABLE,,1,7369,947,7369,947,236.75
 1877,B,,Perfumed and Fancy Soaps,Great Britain,DUTIABLE,Lbs,6,14236,3672,14089,3672,917.75
 1877,B,,Perfumed and Fancy Soaps,United States,DUTIABLE,Lbs,5,10858,2629,10858,2629,657.58
-1877,B,,"Perfumery, not elsewhere specified",132,FREE,,1,185,232,266,304,343.0
+1877,B,,"Perfumery, not elsewhere specified",?,FREE,,1,185,232,266,304,343.0
 1877,B,,"Perfumery, not elsewhere specified",British West Indies,DUTIABLE,Lbs. ,1,0,6,0,6,1.5
 1877,B,,"Perfumery, not elsewhere specified",China,DUTIABLE,,1,0,8,0,8,2.0
 1877,B,,"Perfumery, not elsewhere specified",France,DUTIABLE,,2,0,2814,0,2710,677.48
@@ -18464,17 +18463,17 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,Philosophical Instruments,France,FREE,,1,0,410,0,410,0.0
 1877,B,,Philosophical Instruments,Great Britain,FREE,,1,0,1033,0,1033,0.0
 1877,B,,Philosophical Instruments,United States,FREE,,1,0,647,0,647,0.0
-1877,B,,Philosophical Instruments and Apparatus for Colleges and Schools,166,FREE,,1,216,255,0,0,391.0
+1877,B,,Philosophical Instruments and Apparatus for Colleges and Schools,?,FREE,,1,216,255,0,0,391.0
 1877,B,,"Philosophical Instruments and Apparatus for Colleges and Schools, &c",Great Britain,FREE,,1,0,1361,0,1361,0.0
 1877,B,,"Philosophical Instruments and Apparatus for Colleges and Schools, &c",United States,FREE,,1,0,3215,0,3215,0.0
-1877,B,,Phosphorus,163,FREE,,1,212,0,291,0,386.0
+1877,B,,Phosphorus,?,FREE,,1,212,0,291,0,386.0
 1877,B,,Phosphorus,Great Britain,FREE,Lbs,2,1454,497,1454,497,0.0
 1877,B,,Phosphorus,United States,FREE,Lbs,3,22007,8318,22007,8318,0.0
-1877,B,,Photographic Materials,151,FREE,,1,202,246,282,318,369.0
+1877,B,,Photographic Materials,?,FREE,,1,202,246,282,318,369.0
 1877,B,,Photographic Materials,France,DUTIABLE,,1,0,332,0,332,58.1
 1877,B,,Photographic Materials,Great Britain,DUTIABLE,,4,0,2243,0,2243,392.53
 1877,B,,Photographic Materials,United States,DUTIABLE,,7,0,19436,0,19435,3396.83
-1877,B,,Pianos,151,FREE,,1,202,247,283,318,369.0
+1877,B,,Pianos,?,FREE,,1,202,247,283,318,369.0
 1877,B,,Pianos,France,DUTIABLE,Number,2,11,2490,11,2490,435.75
 1877,B,,Pianos,Germany,DUTIABLE,Number,2,18,3047,18,3047,533.22
 1877,B,,Pianos,Great Britain,DUTIABLE,Number,6,184,39755,190,40970,7169.74
@@ -18484,7 +18483,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,Pickled,Newfoundland,FREE,,2,1742,6684,1742,6684,0.0
 1877,B,,Pickled,St. Pierre et Miq'lon,FREE,,1,788,1784,788,1784,0.0
 1877,B,,Pickled,United States,FREE,Brls,24,6896,28973,6896,28973,0.0
-1877,B,,Pickles and Sauces,152,FREE,,1,202,247,283,318,369.0
+1877,B,,Pickles and Sauces,?,FREE,,1,202,247,283,318,369.0
 1877,B,,Pickles and Sauces,British West Indies,DUTIABLE,,2,0,33,0,33,5.82
 1877,B,,Pickles and Sauces,China,DUTIABLE,,1,0,132,0,172,30.1
 1877,B,,Pickles and Sauces,France,DUTIABLE,,2,0,247,0,140,24.8
@@ -18493,7 +18492,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,Pickles and Sauces,United States,DUTIABLE,,7,0,8907,0,8958,1567.73
 1877,B,,Pig,Great Britain,FREE,Cwt,2,1707,32763,1657,32763,0.0
 1877,B,,Pig,United States,FREE,,2,12,308,12,308,0.0
-1877,B,,Pipe Clay,176,FREE,,1,0,247,0,0,405.0
+1877,B,,Pipe Clay,?,FREE,,1,0,247,0,0,405.0
 1877,B,,Pipe Clay,Great Britain,FREE,,1,6884,1261,6884,1261,0.0
 1877,B,,Pipe Clay,United States,FREE,Cwt,1,132,43,132,43,0.0
 1877,B,,"Piston Rods, Guide and Slide Bars",United States,DUTIABLE,,2,0,2520,0,2520,252.0
@@ -18505,12 +18504,12 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,Plain,United States,DUTIABLE,Feet,2,10393,144700,10393,144224,25246.88
 1877,B,,"Plaster of Paris, Ground, &c",United States,DUTIABLE,,1,71,86,71,86,15.06
 1877,B,,"Plaster of Paris, ground",United States,DUTIABLE,,2,146,120,146,120,21.02
-1877,B,,"Plaster of Paris, ground and calcined",151,FREE,,1,202,0,282,318,369.0
+1877,B,,"Plaster of Paris, ground and calcined",?,FREE,,1,202,0,282,318,369.0
 1877,B,,"Plaster of Paris, ground and calcined",Great Britain,DUTIABLE,Cwt,1,70,73,70,73,12.77
 1877,B,,"Plaster of Paris, ground and calcined",United States,DUTIABLE,Cwt,4,13850,6058,13850,6058,1179.54
 1877,B,,"Plates, cut to any form, but not moulded",United States,FREE,,1,16,95,16,95,0.0
 1877,B,,Platform,United States,DUTIABLE,Number,1,20,1488,20,1488,260.4
-1877,B,,Playing Cards,133,FREE,,1,186,233,267,304,344.0
+1877,B,,Playing Cards,?,FREE,,1,186,233,267,304,344.0
 1877,B,,Playing Cards,Belgium,DUTIABLE,,1,62644,2965,60224,2820,705.0
 1877,B,,Playing Cards,France,DUTIABLE,,2,84421,3935,84421,3933,983.2
 1877,B,,Playing Cards,Germany,DUTIABLE,,1,1728,38,1728,38,9.5
@@ -18518,7 +18517,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,Playing Cards,United States,DUTIABLE,,5,8420,1639,7780,1511,377.66
 1877,B,,Ploughs and parts thereof,Great Britain,DUTIABLE,,3,98,911,98,911,159.52
 1877,B,,Ploughs and parts thereof,United States,DUTIABLE,,3,463,2784,463,2784,487.0
-1877,B,,"Ploughs, and parts thereof",151,FREE,,1,202,247,282,318,369.0
+1877,B,,"Ploughs, and parts thereof",?,FREE,,1,202,247,282,318,369.0
 1877,B,,"Ploughs, and parts thereof",Great Britain,DUTIABLE,Number,5,120,4977,120,4977,874.7
 1877,B,,"Ploughs, and parts thereof",United States,DUTIABLE,Number,5,1230,16637,1235,16637,3231.74
 1877,B,,"Plush for Hatters' use, &c",Great Britain,DUTIABLE,,1,0,2010,0,2010,201.0
@@ -18832,7 +18831,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,"Spikes, Nails, &c",United States,DUTIABLE,,1,0,9196,0,8939,1564.63
 1877,B,,"Spikes, Nails, Tacks, Brads and Sprigs",Great Britain,DUTIABLE,,1,0,11380,0,11456,2005.05
 1877,B,,"Spikes, Nails, Tacks, Brads and Sprigs",United States,DUTIABLE,,1,0,9109,0,9058,1585.15
-1877,B,,Spirits of Turpentine,154,FREE,,1,205,248,284,320,373.0
+1877,B,,Spirits of Turpentine,?,FREE,,1,205,248,284,320,373.0
 1877,B,,Spirits of Turpentine,Great Britain,DUTIABLE,Galls,1,92,62,92,62,10.85
 1877,B,,Spirits of Turpentine,United States,DUTIABLE,Galls,1,162570,44932,163010,45072,7887.79
 1877,B,,"Spirits, Alcohol",British West Indies,DUTIABLE,,1,0,0,412,151,494.4
@@ -18860,11 +18859,11 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,"Spirits, unenumerated",Germany,DUTIABLE,Galls,1,62,326,31,108,55.8
 1877,B,,"Spirits, unenumerated",Great Britain,DUTIABLE,Galls,1,83,215,34,191,61.2
 1877,B,,"Spirits, unenumerated",United States,DUTIABLE,Galls,1,2183,3707,2291,4063,4123.8
-1877,B,,Sponges,153,FREE,,1,204,248,0,319,371.0
+1877,B,,Sponges,?,FREE,,1,204,248,0,319,371.0
 1877,B,,Sponges,France,DUTIABLE,,1,0,837,0,1114,195.06
 1877,B,,Sponges,Great Britain,DUTIABLE,,5,0,938,0,904,158.15
 1877,B,,Sponges,United States,DUTIABLE,,5,0,6268,0,6671,1167.5
-1877,B,,Starch,128,FREE,,1,181,0,263,301,337.0
+1877,B,,Starch,?,FREE,,1,181,0,263,301,337.0
 1877,B,,Starch,France,DUTIABLE,,1,15172,29775,31380,48471,37657.0
 1877,B,,Starch,Great Britain,DUTIABLE,Lbs,6,209957,21113,259695,33587,16888.0
 1877,B,,Starch,Great Britain,FREE,,2,108539,7122,119024,7709,2380.48
@@ -18875,7 +18874,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,Stationery,Germany,DUTIABLE,,1,0,989,0,1361,238.17
 1877,B,,Stationery,Great Britain,DUTIABLE,,4,0,119309,0,116931,20467.85
 1877,B,,Stationery,United States,DUTIABLE,,3,0,79801,0,79856,13974.8
-1877,B,,Stationery (not elsewhere specified),153,FREE,,1,204,0,284,319,371.0
+1877,B,,Stationery (not elsewhere specified),?,FREE,,1,204,0,284,319,371.0
 1877,B,,"Stationery, &c., &c",Great Britain,DUTIABLE,,1,0,874,0,874,153.27
 1877,B,,"Stationery, &c., &c",United States,DUTIABLE,,1,0,872,0,870,152.25
 1877,B,,"Stationery, not elsewhere specified",France,DUTIABLE,,1,0,3279,0,3279,573.82
@@ -18884,25 +18883,25 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,"Stationery, not elsewhere specified",United States,DUTIABLE,,2,0,131074,0,131338,22990.74
 1877,B,,Steam Engines,United States,DUTIABLE,Number,1,1,14,1,14,2.45
 1877,B,,"Steam Engines, other than Locomotive",United States,DUTIABLE,Number,1,10,18518,10,18518,3240.65
-1877,B,,"Steam Engines, other than Locomotives",153,FREE,,1,204,0,0,0,371.0
+1877,B,,"Steam Engines, other than Locomotives",?,FREE,,1,204,0,0,0,371.0
 1877,B,,"Steam Engines, other than Locomotives",United States,DUTIABLE,Number,2,7,6331,7,6331,1107.93
 1877,B,,Steam Fire Engines,United States,DUTIABLE,Number,1,7,20060,5,12060,2110.5
 1877,B,,Steel,Great Britain,FREE,Cwt,2,540085,1062353,540085,1062353,0.0
 1877,B,,Steel,United States,FREE,Cwt,2,2797,3959,2797,3959,0.0
 1877,B,,"Steel Plates cut to any form, but not moulded",Great Britain,FREE,Cwt,2,5048,26935,5048,26935,0.0
 1877,B,,"Steel Plates cut to any form, but not moulded",United States,FREE,Cwt,2,2827,25626,2827,25626,0.0
-1877,B,,"Steel Plates, cut to any form but not moulded",169,FREE,,1,218,0,0,0,395.0
+1877,B,,"Steel Plates, cut to any form but not moulded",?,FREE,,1,218,0,0,0,395.0
 1877,B,,"Steel Plates, cut to any form but not moulded",Great Britain,FREE,Cwt,1,3740,18221,3740,18221,0.0
 1877,B,,"Steel Plates, cut to any form but not moulded",United States,FREE,Cwt,1,57,491,57,491,0.0
 1877,B,,"Steel, wrought or cast",Great Britain,FREE,,1,229,2287,229,2287,0.0
 1877,B,,"Steel, wrought or cast",United States,FREE,,2,123,1694,123,1694,0.0
 1877,B,,"Steel, wrought or cast in bars or rods",Great Britain,FREE,Cwt,2,13870,63032,13870,63032,0.0
 1877,B,,"Steel, wrought or cast in bars or rods",United States,FREE,Cwt,2,9562,60537,9562,60537,0.0
-1877,B,,"Steel, wrought or cast, in Bars and Rods",169,FREE,,1,218,256,294,328,395.0
+1877,B,,"Steel, wrought or cast, in Bars and Rods",?,FREE,,1,218,256,294,328,395.0
 1877,B,,"Steel, wrought or cast, in bars or rods",Belgium,FREE,Cwt,1,1,5,1,5,0.0
 1877,B,,"Steel, wrought or cast, in bars or rods",Great Britain,FREE,Cwt,2,35690,222480,35690,222480,0.0
 1877,B,,"Steel, wrought or cast, in bars or rods",United States,FREE,Cwt,2,991,7386,991,7386,0.0
-1877,B,,"Stone, unwrought",176,FREE,,1,225,0,0,332,406.0
+1877,B,,"Stone, unwrought",?,FREE,,1,225,0,0,332,406.0
 1877,B,,"Stone, unwrought",France,FREE,,2,610,703,610,703,0.0
 1877,B,,"Stone, unwrought",Great Britain,FREE,Tons,3,2098,4791,2098,4791,0.0
 1877,B,,"Stone, unwrought",United States,FREE,Tons,2,10254,32724,10254,32724,0.0
@@ -18976,7 +18975,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,,"Syrups, Lemon, Raspberry, Strawberry, &c., not containing spirits",Great Britain,DUTIABLE,,1,0,240,0,240,42.02
 1877,B,,"Syrups, Lemon, Raspberry, Strawberry, &c., not containing spirits",United States,DUTIABLE,,2,0,25,0,25,4.37
 1877,B,,"Syrups, Lemon,&c.,&c",United States,DUTIABLE,,1,0,28,0,25,4.31
-1877,B,,Tallow,166,FREE,,1,215,0,293,0,391.0
+1877,B,,Tallow,?,FREE,,1,215,0,293,0,391.0
 1877,B,,Tallow,Great Britain,DUTIABLE,Lbs,2,1120,128,1120,128,11.2
 1877,B,,Tallow,United States,DUTIABLE,Lbs,4,27411,2275,23494,1952,234.94
 1877,B,,Tanners' Bark,United States,FREE,,2,57,496,57,496,0.0
@@ -20269,30 +20268,15 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,Manufactures of Wood,"Wood, all other",Great Britain,DUTIABLE,,1,0,5178,0,5178,906.15
 1877,B,Manufactures of Wood,"Wood, all other",Italy,DUTIABLE,,1,0,62,0,62,10.85
 1877,B,Manufactures of Wood,"Wood, all other",United States,DUTIABLE,,1,0,62253,0,62196,10884.3
-1877,B,Meats,""" Bacon and Hams",2,FREE,,1,20,0,0,2,20.0
-1877,B,Meats,""" Bacon and Hams",202,FREE,,1,2494,0,0,202,2494.0
-1877,B,Meats,""" Bacon and Hams","38,127",FREE,,1,404343,11113,98392,49240,502735.0
-1877,B,Meats,""" Bacon and Hams","38,335",FREE,,1,406881,11113,98392,49448,505273.0
-1877,B,Meats,""" Bacon and Hams",4,FREE,,1,24,0,0,4,24.0
-1877,B,Meats,Beef and Mutton,12,FREE,,1,292,0,0,39,292.0
-1877,B,Meats,Beef and Mutton,"17,814",FREE,,1,1153,0,0,412,1153.0
-1877,B,Meats,Beef and Mutton,39,FREE,,1,139437,367,3930,19140,143367.0
-1877,B,Meats,Beef and Mutton,412,FREE,,1,2990,40,280,536,3270.0
-1877,B,Meats,Beef and Mutton,496,FREE,,1,204,0,0,12,204.0
+1877,B,Meats,""" Bacon and Hams",?,FREE,,5,813762,22226,196784,98896,1010546.0
+1877,B,Meats,Beef and Mutton,?,FREE,,5,144076,407,4210,20139,148286.0
 1877,B,Meats,Beef and Mutton,Cwt,FREE,,1,134798,327,3650,18141,138448.0
-1877,B,Meats,Pork,120,FREE,,1,108065,12900,91625,26327,199690.0
-1877,B,Meats,Pork,"3,942",FREE,,1,416,40,405,92,821.0
-1877,B,Meats,Pork,52,FREE,,2,69178,9626,65967,19007,135145.0
-1877,B,Meats,Pork,"9,261",FREE,,1,470,0,0,52,470.0
+1877,B,Meats,Pork,?,FREE,,5,178129,22566,157997,45478,336126.0
 1877,B,Meats,Pork,Cwt,FREE,,1,38001,3234,25253,7176,63254.0
-1877,B,Meats,"Preserved, not otherwise specified","1,122,432",FREE,,1,186,0,0,1216,186.0
-1877,B,Meats,"Preserved, not otherwise specified","1,216",FREE,,1,449,0,0,4650,449.0
-1877,B,Meats,"Preserved, not otherwise specified","328,944",FREE,,1,177188,0,0,1457242,177188.0
-1877,B,Meats,"Preserved, not otherwise specified","4,650",FREE,,1,39472,0,0,328944,39472.0
+1877,B,Meats,"Preserved, not otherwise specified",?,FREE,,4,217295,0,0,1792052,217295.0
 1877,B,Meats,"Preserved, not otherwise specified",Lbs,FREE,,1,137081,0,0,1122432,137081.0
 1877,B,Meats,Sheep's Pelts,Number,FREE,,1,4510,0,0,16206,4510.0
-1877,B,Meats,Tallow,"154,572",FREE,,1,20,0,0,250,20.0
-1877,B,Meats,Tallow,250,FREE,,1,10101,123100,8260,277922,18361.0
+1877,B,Meats,Tallow,?,FREE,,2,10121,123100,8260,278172,18381.0
 1877,B,Meats,Tallow,Lbs,FREE,,1,10081,123100,8260,277672,18341.0
 1877,B,Meats,Tongues,Kegs,FREE,,1,2709,550,3705,866,6414.0
 1877,B,"Oils, rectified or prepared",Castor,Great Britain,DUTIABLE,Galls,4,11178,7136,10966,7002,1225.44
@@ -20331,22 +20315,22 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,"PREP. GOODS > DRUGS, DYE STUFFS, OILS, ETC",British Gum,Germany,FREE,,1,100,6,100,6,0.0
 1877,B,"PREP. GOODS > DRUGS, DYE STUFFS, OILS, ETC",British Gum,Great Britain,FREE,,1,933,82,933,82,0.0
 1877,B,"PREP. GOODS > DRUGS, DYE STUFFS, OILS, ETC",British Gum,United States,FREE,,1,1950,275,1950,275,0.0
-1877,B,"Plush, for Hatter's use, &c",Portable Hand-Printing Presses,152,FREE,,1,202,0,0,318,369.0
-1877,B,"Plush, for Hatter's use, &c",Potatoes,158,FREE,,1,208,251,287,322,379.0
-1877,B,"Plush, for Hatter's use, &c",Precipitate of Copper,163,FREE,,1,213,0,0,0,386.0
-1877,B,"Plush, for Hatter's use, &c",Preserved Meats and Poultry,152,FREE,,1,203,247,283,318,369.0
-1877,B,"Plush, for Hatter's use, &c","Printed, Lithographed or Copperplate Bills",152,FREE,,1,203,247,283,318,370.0
-1877,B,"Plush, for Hatter's use, &c",Printing Ink,166,FREE,,1,216,0,0,327,391.0
-1877,B,"Plush, for Hatter's use, &c",Printing Paper,150,FREE,,1,200,246,282,317,368.0
-1877,B,"Plush, for Hatter's use, &c",Printing Presses,166,FREE,,1,216,255,293,327,391.0
-1877,B,"Plush, for Hatter's use, &c",Prunella,157,FREE,,1,208,0,287,322,378.0
-1877,B,"Plush, for Hatter's use, &c > Rags","Railroad Bars, Iron",168,FREE,,1,218,0,0,0,394.0
-1877,B,"Plush, for Hatter's use, &c > Rags","Railroad Bars, Steel",169,FREE,,1,218,0,294,328,394.0
-1877,B,"Plush, for Hatter's use, &c > Rags > Railroad Frogs","Railroad, Wrought Iron or Steel Chairs and Fish-Plates",169,FREE,,1,218,0,0,328,394.0
-1877,B,"Plush, for Hatter's use, &c > Rags > Railroad Frogs > Railroad Car Axles > Railroad Cars","Ratan, for Chairmakers",176,FREE,,1,224,0,0,331,405.0
-1877,B,"Plush, for Hatter's use, &c > Rags > Railroad Frogs > Railroad Car Axles > Railroad Cars > Rennet",Rice,127,FREE,,1,181,229,262,301,337.0
-1877,B,"Plush, for Hatter's use, &c > Rags > Railroad Frogs > Railroad Car Axles > Railroad Cars > Rennet","Roots, Medicinal, in their natural state",163,FREE,,1,213,0,291,0,386.0
-1877,B,"Plush, for Hatter's use, &c > Rags > Railroad Frogs > Railroad Car Axles > Railroad Cars > Rennet",Rosin,176,FREE,,1,224,258,298,331,405.0
+1877,B,"Plush, for Hatter's use, &c",Portable Hand-Printing Presses,?,FREE,,1,202,0,0,318,369.0
+1877,B,"Plush, for Hatter's use, &c",Potatoes,?,FREE,,1,208,251,287,322,379.0
+1877,B,"Plush, for Hatter's use, &c",Precipitate of Copper,?,FREE,,1,213,0,0,0,386.0
+1877,B,"Plush, for Hatter's use, &c",Preserved Meats and Poultry,?,FREE,,1,203,247,283,318,369.0
+1877,B,"Plush, for Hatter's use, &c","Printed, Lithographed or Copperplate Bills",?,FREE,,1,203,247,283,318,370.0
+1877,B,"Plush, for Hatter's use, &c",Printing Ink,?,FREE,,1,216,0,0,327,391.0
+1877,B,"Plush, for Hatter's use, &c",Printing Paper,?,FREE,,1,200,246,282,317,368.0
+1877,B,"Plush, for Hatter's use, &c",Printing Presses,?,FREE,,1,216,255,293,327,391.0
+1877,B,"Plush, for Hatter's use, &c",Prunella,?,FREE,,1,208,0,287,322,378.0
+1877,B,"Plush, for Hatter's use, &c > Rags","Railroad Bars, Iron",?,FREE,,1,218,0,0,0,394.0
+1877,B,"Plush, for Hatter's use, &c > Rags","Railroad Bars, Steel",?,FREE,,1,218,0,294,328,394.0
+1877,B,"Plush, for Hatter's use, &c > Rags > Railroad Frogs","Railroad, Wrought Iron or Steel Chairs and Fish-Plates",?,FREE,,1,218,0,0,328,394.0
+1877,B,"Plush, for Hatter's use, &c > Rags > Railroad Frogs > Railroad Car Axles > Railroad Cars","Ratan, for Chairmakers",?,FREE,,1,224,0,0,331,405.0
+1877,B,"Plush, for Hatter's use, &c > Rags > Railroad Frogs > Railroad Car Axles > Railroad Cars > Rennet",Rice,?,FREE,,1,181,229,262,301,337.0
+1877,B,"Plush, for Hatter's use, &c > Rags > Railroad Frogs > Railroad Car Axles > Railroad Cars > Rennet","Roots, Medicinal, in their natural state",?,FREE,,1,213,0,291,0,386.0
+1877,B,"Plush, for Hatter's use, &c > Rags > Railroad Frogs > Railroad Car Axles > Railroad Cars > Rennet",Rosin,?,FREE,,1,224,258,298,331,405.0
 1877,B,Printer's Implements,Presses,United States,FREE,,1,0,454,0,454,0.0
 1877,B,Printer's Implements,Printing Ink,United States,FREE,,1,0,9,0,9,0.0
 1877,B,Printer's Implements,"Straw Plaits, Tuscan and Grass, fancy",United States,FREE,,1,0,5,0,5,0.0
@@ -20398,46 +20382,45 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,"Printers' Implements, &c",Presses,United States,FREE,,1,9,773,9,773,0.0
 1877,B,"Printers' Implements, &c",Printing Ink,United States,FREE,,1,0,799,0,799,0.0
 1877,B,"Printers' Implements, &c",Veneering of Wood,United States,FREE,,1,6987,229,6987,229,0.0
-1877,B,Rye,"Sails, ready made",152,FREE,,1,203,0,283,319,370.0
-1877,B,Rye,Salt,176,FREE,,1,225,258,298,331,406.0
-1877,B,Rye,Salt Ammoniac,163,FREE,,1,213,254,291,0,386.0
-1877,B,Rye,Salt Soda and Soda Ash,163,FREE,,1,213,254,291,325,386.0
-1877,B,Rye,Salt from Newfoundland,178,FREE,,1,0,0,0,0,409.0
-1877,B,"Rye > Satin and fine-washed, white",Satinets,152,FREE,,1,203,0,0,0,370.0
-1877,B,"Rye > Satin and fine-washed, white",Sausage Casings,152,FREE,,1,203,247,283,319,370.0
-1877,B,"Rye > Satin and fine-washed, white","Seeds, other than Cereals",157,FREE,,1,208,251,287,322,378.0
-1877,B,"Rye > Satin and fine-washed, white",Settlers' Effects,152 177,FREE,,1,226,259,298,332,408.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines",Shawls,152,FREE,,1,203,247,283,319,370.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",All other,160,FREE,,1,210,252,289,324,382.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS","Cables, hemp or grass",159,FREE,,1,209,252,0,324,381.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",Cordage,159,FREE,,1,210,0,288,0,381.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS","Knees and Riders, iron",159,FREE,,1,210,0,0,324,381.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",Pumps and Pump Gear,159,FREE,,1,210,0,289,324,381.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",Sail Cloth or Canvas,160,FREE,,1,210,252,289,324,381.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",Ships' Stores,178,FREE,,1,226,0,0,0,408.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",Silk and Woollen Embroideries,153,FREE,,1,203,0,0,319,371.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS","Varnish, bright or black",160,FREE,,1,210,252,289,324,382.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon","Silks, Satins and Velvets",153,FREE,,1,203,247,283,319,371.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon",Silver Coin of United States,153,FREE,,1,0,0,283,0,371.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Slate, unwrought",176,FREE,,1,225,0,0,0,406.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet",Small Wares,153,FREE,,1,204,248,284,319,372.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Soap, Castile",153,FREE,,1,203,247,284,319,371.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Soap, Common",128,FREE,,1,181,229,263,301,337.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Soda, Caustic, Nitrate and Silicate of",163,FREE,,1,213,0,291,0,387.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet",Sole and Upper Leather,157,FREE,,1,207,251,287,322,377.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Specimens of Botany, Mineralogy, Natural History, Sculpture and Models",160,FREE,,1,210,0,0,0,363.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Spelter and Zinc, in blocks, sheet and plg",169,FREE,,1,218,0,0,328,395.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Spices, including Cassia, Cinnamon, Ginger, Pimento and Pepper, ground",133,FREE,,1,186,233,267,304,344.0
-1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Spices, including Cassia, Cinnamon, Ginger, Pimento and Pepper, ground",153,FREE,,1,204,248,284,319,371.0
-1877,B,SPIRITS,Alcohol,128,FREE,,1,0,229,263,301,337.0
-1877,B,SPIRITS,Brandy,128,FREE,,1,182,229,263,301,337.0
-1877,B,SPIRITS,"Cologne Water and Perfumed Spirits, not in flasks",128,FREE,,2,0,230,263,301,674.0
-1877,B,SPIRITS,Cordials,128,FREE,,1,182,230,263,301,338.0
-1877,B,SPIRITS,Gin,128,FREE,,1,182,230,263,302,338.0
-1877,B,SPIRITS,Rum,129,FREE,,1,0,0,0,0,338.0
-1877,B,SPIRITS,"Tinctures, Essences and Extracts",129,FREE,,1,182,0,264,0,338.0
-1877,B,SPIRITS,Unenumerated,129,FREE,,1,0,0,0,0,339.0
-1877,B,SPIRITS,Whiskey,129,FREE,,1,182,230,264,302,338.0
+1877,B,Rye,"Sails, ready made",?,FREE,,1,203,0,283,319,370.0
+1877,B,Rye,Salt,?,FREE,,1,225,258,298,331,406.0
+1877,B,Rye,Salt Ammoniac,?,FREE,,1,213,254,291,0,386.0
+1877,B,Rye,Salt Soda and Soda Ash,?,FREE,,1,213,254,291,325,386.0
+1877,B,Rye,Salt from Newfoundland,?,FREE,,1,0,0,0,0,409.0
+1877,B,"Rye > Satin and fine-washed, white",Satinets,?,FREE,,1,203,0,0,0,370.0
+1877,B,"Rye > Satin and fine-washed, white",Sausage Casings,?,FREE,,1,203,247,283,319,370.0
+1877,B,"Rye > Satin and fine-washed, white","Seeds, other than Cereals",?,FREE,,1,208,251,287,322,378.0
+1877,B,"Rye > Satin and fine-washed, white",Settlers' Effects,?,FREE,,1,226,259,298,332,408.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines",Shawls,?,FREE,,1,203,247,283,319,370.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",All other,?,FREE,,1,210,252,289,324,382.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS","Cables, hemp or grass",?,FREE,,1,209,252,0,324,381.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",Cordage,?,FREE,,1,210,0,288,0,381.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS","Knees and Riders, iron",?,FREE,,1,210,0,0,324,381.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",Pumps and Pump Gear,?,FREE,,1,210,0,289,324,381.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",Sail Cloth or Canvas,?,FREE,,1,210,252,289,324,381.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",Ships' Stores,?,FREE,,1,226,0,0,0,408.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS",Silk and Woollen Embroideries,?,FREE,,1,203,0,0,319,371.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS","Varnish, bright or black",?,FREE,,1,210,252,289,324,382.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon","Silks, Satins and Velvets",?,FREE,,1,203,247,283,319,371.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon",Silver Coin of United States,?,FREE,,1,0,0,283,0,371.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Slate, unwrought",?,FREE,,1,225,0,0,0,406.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet",Small Wares,?,FREE,,1,204,248,284,319,372.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Soap, Castile",?,FREE,,1,203,247,284,319,371.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Soap, Common",?,FREE,,1,181,229,263,301,337.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Soda, Caustic, Nitrate and Silicate of",?,FREE,,1,213,0,291,0,387.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet",Sole and Upper Leather,?,FREE,,1,207,251,287,322,377.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Specimens of Botany, Mineralogy, Natural History, Sculpture and Models",?,FREE,,1,210,0,0,0,363.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Spelter and Zinc, in blocks, sheet and plg",?,FREE,,1,218,0,0,328,395.0
+1877,B,"Rye > Satin and fine-washed, white > Sewing Machines > SHIPS' MATERIALS > Silk, Raw, or as reeled from the cocoon > Silver, German, Sheet","Spices, including Cassia, Cinnamon, Ginger, Pimento and Pepper, ground",?,FREE,,2,390,481,551,623,715.0
+1877,B,SPIRITS,Alcohol,?,FREE,,1,0,229,263,301,337.0
+1877,B,SPIRITS,Brandy,?,FREE,,1,182,229,263,301,337.0
+1877,B,SPIRITS,"Cologne Water and Perfumed Spirits, not in flasks",?,FREE,,2,0,230,263,301,674.0
+1877,B,SPIRITS,Cordials,?,FREE,,1,182,230,263,301,338.0
+1877,B,SPIRITS,Gin,?,FREE,,1,182,230,263,302,338.0
+1877,B,SPIRITS,Rum,?,FREE,,1,0,0,0,0,338.0
+1877,B,SPIRITS,"Tinctures, Essences and Extracts",?,FREE,,1,182,0,264,0,338.0
+1877,B,SPIRITS,Unenumerated,?,FREE,,1,0,0,0,0,339.0
+1877,B,SPIRITS,Whiskey,?,FREE,,1,182,230,264,302,338.0
 1877,B,Ship's materials,"Cables, Hemp, &c",Great Britain,DUTIABLE,Cwt,1,21,234,21,234,11.7
 1877,B,Ships' Materials,""" Cordage",Great Britain,DUTIABLE,Cwt,1,25,432,40,656,32.8
 1877,B,Ships' Materials,""" Cordage",United States,DUTIABLE,Cwt,1,23,386,148,2114,105.6
@@ -20512,29 +20495,29 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,Slate,"Stone, not elsewhere specified",Italy,DUTIABLE,,1,0,7,0,7,1.23
 1877,B,Slate,"Stone, not elsewhere specified",Newfoundland,DUTIABLE,,1,0,32,0,32,5.6
 1877,B,Slate,"Stone, not elsewhere specified",United States,DUTIABLE,,4,0,3607,0,3607,631.39
-1877,B,"Straw Plaits, Tuscan and Grass, fancy","SUGAR, of all Standards",131,FREE,,1,184,232,235,303,341.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy",Sugar Candy and Confectionery,132,FREE,,1,185,0,266,303,342.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy",Sugar of Lead,162,FREE,,1,212,253,290,0,386.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy",Swine,156,FREE,,1,206,250,286,0,375.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy","Syrups, Lemon, Raspberry, &c",153,FREE,,1,204,248,284,319,272.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy",Tallow,129,FREE,,1,182,230,0,0,339.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark",Tar and Pitch,177,FREE,,1,225,258,298,332,406.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark","Tea, Black (old tariff)",129,FREE,,1,183,230,264,302,339.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels","Thread, Linen",153,FREE,,1,204,248,0,319,372.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen","Thread, all other",154,FREE,,1,204,248,0,320,372.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tin, in bar, blocks, pig or granulated",169,FREE,,1,218,256,295,328,395.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tinctures, Essences and Extracts",129,FREE,,1,182,0,264,0,356.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tobacco Leaf, for Excise purposes",178,FREE,,1,0,0,298,332,408.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber",Tobacco Pipes,154,FREE,,1,204,248,284,320,372.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tobacco, manufactured and Snuff",102,FREE,,1,185,232,266,304,342.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber",Toys,154,FREE,,1,204,248,284,320,372.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber",Treenails,167,FREE,,1,217,0,0,0,373.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Trees, Plants and Shrubs",158,FREE,,1,208,251,287,322,379.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tubes and Piping of Brass, Copper or Iron, drawn (new tariff)",154,FREE,,1,205,0,284,0,373.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tubes and Piping of Brass, drawn (old tariff)",169,FREE,,3,656,0,590,328,1185.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Turpentine, Spirits of",154,FREE,,1,205,248,284,320,373.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Turpentine, other than Spirits of",177,FREE,,1,0,0,0,0,406.0
-1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber",Type,160,FREE,,1,210,252,289,324,382.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy","SUGAR, of all Standards",?,FREE,,1,184,232,235,303,341.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy",Sugar Candy and Confectionery,?,FREE,,1,185,0,266,303,342.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy",Sugar of Lead,?,FREE,,1,212,253,290,0,386.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy",Swine,?,FREE,,1,206,250,286,0,375.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy","Syrups, Lemon, Raspberry, &c",?,FREE,,1,204,248,284,319,272.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy",Tallow,?,FREE,,1,182,230,0,0,339.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark",Tar and Pitch,?,FREE,,1,225,258,298,332,406.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark","Tea, Black (old tariff)",?,FREE,,1,183,230,264,302,339.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels","Thread, Linen",?,FREE,,1,204,248,0,319,372.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen","Thread, all other",?,FREE,,1,204,248,0,320,372.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tin, in bar, blocks, pig or granulated",?,FREE,,1,218,256,295,328,395.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tinctures, Essences and Extracts",?,FREE,,1,182,0,264,0,356.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tobacco Leaf, for Excise purposes",?,FREE,,1,0,0,298,332,408.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber",Tobacco Pipes,?,FREE,,1,204,248,284,320,372.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tobacco, manufactured and Snuff",?,FREE,,1,185,232,266,304,342.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber",Toys,?,FREE,,1,204,248,284,320,372.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber",Treenails,?,FREE,,1,217,0,0,0,373.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Trees, Plants and Shrubs",?,FREE,,1,208,251,287,322,379.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tubes and Piping of Brass, Copper or Iron, drawn (new tariff)",?,FREE,,1,205,0,284,0,373.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Tubes and Piping of Brass, drawn (old tariff)",?,FREE,,3,656,0,590,328,1185.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Turpentine, Spirits of",?,FREE,,1,205,248,284,320,373.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber","Turpentine, other than Spirits of",?,FREE,,1,0,0,0,0,406.0
+1877,B,"Straw Plaits, Tuscan and Grass, fancy > Tanners' Bark > Teasels > Thread, Machine, Linen > Timber and Lumber",Type,?,FREE,,1,210,252,289,324,382.0
 1877,B,Sugar of,Heavy or Carbolic,United States,FREE,,1,50,32,50,32,0.0
 1877,B,Sugar of,"Metallic Oxides and Ochres, dry, ground, or unground, washed or unwashed, not calcined",Great Britain,FREE,,1,556,734,556,734,0.0
 1877,B,Sugar of,Nitre and Saltpetre,Great Britain,FREE,,1,1026,4832,1026,4832,0.0
@@ -20542,44 +20525,43 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1877,B,Sugar of,"Oils, Cocoa Nut, Pine and Palm, in their natural state",Great Britain,FREE,,1,7896,4203,7896,4203,0.0
 1877,B,Sugar of,Paris and Permanent Greens,Great Britain,FREE,,1,4544,106,4544,106,0.0
 1877,B,Sugar of,Paris and Permanent Greens,United States,FREE,,1,209,47,209,47,0.0
-1877,B,"Type Metal, in blocks or pigs",Ultramarine,163,FREE,,1,213,0,0,0,387.0
-1877,B,"Type Metal, in blocks or pigs","Umber, Raw",163,FREE,,1,0,254,0,0,387.0
-1877,B,"Type Metal, in blocks or pigs",Unenumerated Articles,155,FREE,,1,206,250,286,321,375.0
-1877,B,"Type Metal, in blocks or pigs","Varnish, other than bright or black",154,FREE,,1,205,249,285,320,373.0
-1877,B,"Type Metal, in blocks or pigs",Vegetables,158,FREE,,1,208,251,287,322,379.0
-1877,B,"Type Metal, in blocks or pigs",Vegetables,178,FREE,,1,0,0,0,0,409.0
-1877,B,"Type Metal, in blocks or pigs",Velveteens,154,FREE,,1,205,249,285,320,373.0
-1877,B,"Type Metal, in blocks or pigs > Veneering, of Ivory","Veneering, of Wood",166,FREE,,1,216,0,0,327,391.0
-1877,B,"Type Metal, in blocks or pigs > Veneering, of Ivory",Vinegar and Acetic Acid,130,FREE,,1,183,231,264,302,340.0
-1877,B,"Type Metal, in blocks or pigs > Veneering, of Ivory","Vitriol, Blue",163,FREE,,1,213,254,291,326,387.0
-1877,B,"Type Metal, in blocks or pigs > Veneering, of Ivory",Watches and parts of,154,FREE,,1,205,249,285,320,373.0
+1877,B,"Type Metal, in blocks or pigs",Ultramarine,?,FREE,,1,213,0,0,0,387.0
+1877,B,"Type Metal, in blocks or pigs","Umber, Raw",?,FREE,,1,0,254,0,0,387.0
+1877,B,"Type Metal, in blocks or pigs",Unenumerated Articles,?,FREE,,1,206,250,286,321,375.0
+1877,B,"Type Metal, in blocks or pigs","Varnish, other than bright or black",?,FREE,,1,205,249,285,320,373.0
+1877,B,"Type Metal, in blocks or pigs",Vegetables,?,FREE,,2,208,251,287,322,788.0
+1877,B,"Type Metal, in blocks or pigs",Velveteens,?,FREE,,1,205,249,285,320,373.0
+1877,B,"Type Metal, in blocks or pigs > Veneering, of Ivory","Veneering, of Wood",?,FREE,,1,216,0,0,327,391.0
+1877,B,"Type Metal, in blocks or pigs > Veneering, of Ivory",Vinegar and Acetic Acid,?,FREE,,1,183,231,264,302,340.0
+1877,B,"Type Metal, in blocks or pigs > Veneering, of Ivory","Vitriol, Blue",?,FREE,,1,213,254,291,326,387.0
+1877,B,"Type Metal, in blocks or pigs > Veneering, of Ivory",Watches and parts of,?,FREE,,1,205,249,285,320,373.0
 1877,B,Vegetables,"Books, printed, Periodicals and Pamphlets",Great Britain,DUTIABLE,,1,0,49239,0,49239,2461.93
 1877,B,Vegetables,GOODS PAYING 5 PER CENT AD VALOREM,British Guiana,DUTIABLE,,1,0,4,0,4,40.0
 1877,B,Vegetables,Other,Great Britain,DUTIABLE,,2,0,2701,0,2701,270.2
 1877,B,Vegetables,Other,United States,DUTIABLE,,3,0,13711,0,13711,1371.14
 1877,B,Vegetables,Potatoes,Great Britain,DUTIABLE,Bush,1,14,35,14,35,3.5
 1877,B,Vegetables,Potatoes,United States,DUTIABLE,,3,6628,4440,6628,4440,444.2
-1877,B,Wax,"Bees, Paraffin and other",154,FREE,,1,205,249,285,320,373.0
+1877,B,Wax,"Bees, Paraffin and other",?,FREE,,1,205,249,285,320,373.0
 1877,B,Wax,"Bees, Paraffine and other",United States,DUTIABLE,Lbs,1,50,22,50,22,3.85
 1877,B,Wax,"Bees, Paraffine, and other",United States,DUTIABLE,Lbs,1,0,1492,0,1492,65.11
 1877,B,Wax,"Bees, Parafine, and other",United States,DUTIABLE,Lbs,1,10,3,10,3,0.61
-1877,B,Wax,"WINES, of all kinds",130,FREE,,1,183,231,264,302,340.0
-1877,B,Wax,"Weaving or Tram Silk, or Cotton for Elastic Webbing",167,FREE,,1,0,0,293,0,392.0
-1877,B,Wax,Wheat,174,FREE,,1,223,257,297,330,402.0
-1877,B,Wax,Whiskey,129,FREE,,1,182,230,264,302,338.0
-1877,B,Wax,Whiting or Whitening,164,FREE,,1,213,254,291,326,387.0
-1877,B,Wax,"Wire Cloth, of Brass or Copper",167,FREE,,1,216,255,293,327,392.0
-1877,B,Wax,"Wire Rigging, and Wire for Wire Rigging",167,FREE,,1,216,0,293,328,392.0
-1877,B,Wax,"Wire, Brass or Copper",170,FREE,,1,219,256,295,329,396.0
-1877,B,Wax,"Wood, unmanufactured",177,FREE,,1,225,259,0,332,407.0
-1877,B,Wax,Wool,177,FREE,,1,0,259,298,0,407.0
-1877,B,Wax,Wool Waste,167,FREE,,1,216,0,0,327,392.0
-1877,B,Wax > Woollen Nettings for Gloves and Mitts,"WOOLLENS, of all kinds",154,FREE,,1,205,249,285,320,373.0
-1877,B,Wax > Woollen Nettings for Gloves and Mitts,Wrapping Paper,151,FREE,,1,201,246,282,317,268.0
-1877,B,Wax > Woollen Nettings for Gloves and Mitts > Wrecked Goods,Writing Paper,151,FREE,,1,201,246,282,317,368.0
-1877,B,Wax > Woollen Nettings for Gloves and Mitts > Wrecked Goods,"Yellow Metal, in bolts, bars, &c",170,FREE,,1,219,0,295,329,396.0
-1877,B,Wax > Woollen Nettings for Gloves and Mitts > Wrecked Goods,"Zinc, White, dry",164,FREE,,1,213,0,291,326,387.0
-1877,B,Wax > Woollen Nettings for Gloves and Mitts > Wrecked Goods,"Zinc, in sheets, blocks and pigs",170,FREE,,1,219,256,295,329,396.0
+1877,B,Wax,"WINES, of all kinds",?,FREE,,1,183,231,264,302,340.0
+1877,B,Wax,"Weaving or Tram Silk, or Cotton for Elastic Webbing",?,FREE,,1,0,0,293,0,392.0
+1877,B,Wax,Wheat,?,FREE,,1,223,257,297,330,402.0
+1877,B,Wax,Whiskey,?,FREE,,1,182,230,264,302,338.0
+1877,B,Wax,Whiting or Whitening,?,FREE,,1,213,254,291,326,387.0
+1877,B,Wax,"Wire Cloth, of Brass or Copper",?,FREE,,1,216,255,293,327,392.0
+1877,B,Wax,"Wire Rigging, and Wire for Wire Rigging",?,FREE,,1,216,0,293,328,392.0
+1877,B,Wax,"Wire, Brass or Copper",?,FREE,,1,219,256,295,329,396.0
+1877,B,Wax,"Wood, unmanufactured",?,FREE,,1,225,259,0,332,407.0
+1877,B,Wax,Wool,?,FREE,,1,0,259,298,0,407.0
+1877,B,Wax,Wool Waste,?,FREE,,1,216,0,0,327,392.0
+1877,B,Wax > Woollen Nettings for Gloves and Mitts,"WOOLLENS, of all kinds",?,FREE,,1,205,249,285,320,373.0
+1877,B,Wax > Woollen Nettings for Gloves and Mitts,Wrapping Paper,?,FREE,,1,201,246,282,317,268.0
+1877,B,Wax > Woollen Nettings for Gloves and Mitts > Wrecked Goods,Writing Paper,?,FREE,,1,201,246,282,317,368.0
+1877,B,Wax > Woollen Nettings for Gloves and Mitts > Wrecked Goods,"Yellow Metal, in bolts, bars, &c",?,FREE,,1,219,0,295,329,396.0
+1877,B,Wax > Woollen Nettings for Gloves and Mitts > Wrecked Goods,"Zinc, White, dry",?,FREE,,1,213,0,291,326,387.0
+1877,B,Wax > Woollen Nettings for Gloves and Mitts > Wrecked Goods,"Zinc, in sheets, blocks and pigs",?,FREE,,1,219,256,295,329,396.0
 1877,B,Wood,All other not elsewhere specified,France,DUTIABLE,,1,0,100,0,100,17.5
 1877,B,Wood,All other not elsewhere specified,Germany,DUTIABLE,,1,0,36,0,36,6.3
 1877,B,Wood,All other not elsewhere specified,Great Britain,DUTIABLE,,1,0,1093,0,1093,191.27
@@ -23320,12 +23302,12 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1878,B,"Manufactures of Caoutchouc, India Rubber, or of Gutta Percha","Gold Silver, Electroplate, Argentine, Albata, Nickel and Plated Ware of all kinds, not elsewhere specified",United States,DUTIABLE,,1,0,4386,0,4386,767.26
 1878,B,"Manufactures of Caoutchouc, India Rubber, or of Gutta Percha",Hose & Tubing,United States,DUTIABLE,,1,0,2347,0,2347,410.76
 1878,B,Manufactures of India Rubber,Boots and Shoes,Pairs,DUTIABLE,,1,80,79,80,79,13.83
-1878,B,Manufactures of India Rubber,Brass,$,DUTIABLE,,1,11,11,11,11,1.92
+1878,B,Manufactures of India Rubber,Brass,?,DUTIABLE,,1,11,11,11,11,1.92
 1878,B,"Manufactures of India Rubber > Iron and Steel > Axes > Cutlery of all sorts > Edge Tools > Hoes, Rakes and Forks > Spades and Shovels > Spikes and Nails > Stoves, &c > Iron, all other > Leather, or Imitation thereof > Boots and Shoes > Harness and Saddlery > Wood > Hubs, Spokes, &c > Other","Gils, other",Galls,DUTIABLE,,1,4,2,4,2,0.35
 1878,B,"Manufactures of India Rubber > Iron and Steel > Axes > Cutlery of all sorts > Edge Tools > Hoes, Rakes and Forks > Spades and Shovels > Spikes and Nails > Stoves, &c > Iron, all other > Leather, or Imitation thereof > Boots and Shoes > Harness and Saddlery > Wood > Hubs, Spokes, &c > Other",Mustard,Lbs,DUTIABLE,,1,160,33,160,33,5.77
-1878,B,"Manufactures of India Rubber > Iron and Steel > Axes > Cutlery of all sorts > Edge Tools > Hoes, Rakes and Forks > Spades and Shovels > Spikes and Nails > Stoves, &c > Iron, all other > Leather, or Imitation thereof > Boots and Shoes > Harness and Saddlery > Wood > Hubs, Spokes, &c > Other",Paints and Colors,$,DUTIABLE,,1,25,25,25,25,4.38
+1878,B,"Manufactures of India Rubber > Iron and Steel > Axes > Cutlery of all sorts > Edge Tools > Hoes, Rakes and Forks > Spades and Shovels > Spikes and Nails > Stoves, &c > Iron, all other > Leather, or Imitation thereof > Boots and Shoes > Harness and Saddlery > Wood > Hubs, Spokes, &c > Other",Paints and Colors,?,DUTIABLE,,1,25,25,25,25,4.38
 1878,B,"Manufactures of India Rubber > Iron and Steel > Axes > Cutlery of all sorts > Edge Tools > Hoes, Rakes and Forks > Spades and Shovels > Spikes and Nails > Stoves, &c > Iron, all other > Leather, or Imitation thereof > Boots and Shoes > Harness and Saddlery > Wood > Hubs, Spokes, &c > Other > Paper, Wrapping > Hangings > Pickles and Sauces > Preserved Meats, not elsewhere specified > Stationery, not elsewhere specified > Small wares > Tobacco Pipes > Toys",Turpentine,Galls,DUTIABLE,,1,10,5,10,5,0.87
-1878,B,"Manufactures of India Rubber > Iron and Steel > Axes > Cutlery of all sorts > Edge Tools > Hoes, Rakes and Forks > Spades and Shovels > Spikes and Nails > Stoves, &c > Iron, all other > Leather, or Imitation thereof > Boots and Shoes > Harness and Saddlery > Wood > Hubs, Spokes, &c > Other > Paper, Wrapping > Hangings > Pickles and Sauces > Preserved Meats, not elsewhere specified > Stationery, not elsewhere specified > Small wares > Tobacco Pipes > Toys","Watches, and parts thereof",$,DUTIABLE,,1,61,61,61,61,10.68
+1878,B,"Manufactures of India Rubber > Iron and Steel > Axes > Cutlery of all sorts > Edge Tools > Hoes, Rakes and Forks > Spades and Shovels > Spikes and Nails > Stoves, &c > Iron, all other > Leather, or Imitation thereof > Boots and Shoes > Harness and Saddlery > Wood > Hubs, Spokes, &c > Other > Paper, Wrapping > Hangings > Pickles and Sauces > Preserved Meats, not elsewhere specified > Stationery, not elsewhere specified > Small wares > Tobacco Pipes > Toys","Watches, and parts thereof",?,DUTIABLE,,1,61,61,61,61,10.68
 1878,B,"Manufactures of India Rubber, &c",All other,Great Britain,DUTIABLE,,1,0,1567,0,1567,274.22
 1878,B,"Manufactures of India Rubber, &c",All other,United States,DUTIABLE,,1,0,1798,0,1619,283.14
 1878,B,"Manufactures of India Rubber, &c",Brass,Great Britain,DUTIABLE,,1,0,3210,0,3210,561.75
@@ -23834,14 +23816,14 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1878,B,Vegetables,"Books, Printed, Periodicals and Pamphlets",Great Britain,DUTIABLE,,1,0,51668,0,51668,2583.4
 1878,B,Vegetables,"Books, Printed, Periodicals and Pamphlets",Newfoundland,DUTIABLE,,1,0,8,0,8,0.4
 1878,B,Vegetables,"Books, Printed, Periodicals and Pamphlets",United States,DUTIABLE,,1,0,31553,0,31553,1577.65
-1878,B,Vegetables,Other,$,DUTIABLE,,1,0,389,0,389,38.9
+1878,B,Vegetables,Other,?,DUTIABLE,,1,0,389,0,389,38.9
 1878,B,Vegetables,Other,British West Indies,DUTIABLE,,2,0,4838,0,3875,387.5
 1878,B,Vegetables,Other,Bush,DUTIABLE,,1,312,258,312,258,25.8
 1878,B,Vegetables,Other,China,DUTIABLE,,1,0,16,0,0,0.0
 1878,B,Vegetables,Other,GOODS PAYING 5 PER CENT. AD VALOREM,DUTIABLE,,1,0,21401,0,20801,2080.1
 1878,B,Vegetables,Other,Great Britain,DUTIABLE,,3,0,223,0,223,22.3
 1878,B,Vegetables,Other,United States,DUTIABLE,,6,0,54001,0,53980,5397.49
-1878,B,Vegetables,Potatoes,$,DUTIABLE,,1,0,19,0,19,1.9
+1878,B,Vegetables,Potatoes,?,DUTIABLE,,1,0,19,0,19,1.9
 1878,B,Vegetables,Potatoes,British West Indies,DUTIABLE,Bush,2,30,50,30,50,5.0
 1878,B,Vegetables,Potatoes,Great Britain,DUTIABLE,Bush,2,67,69,67,69,6.9
 1878,B,Vegetables,Potatoes,United States,DUTIABLE,Bush,7,49848,21091,49848,21091,2109.27
@@ -23890,7 +23872,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1878,B,Woolens > Clothing or Wearing Apparel,Worsted and Yarn,Great Britain,DUTIABLE,,1,4975,2490,4695,2352,411.78
 1878,B,Woolens > Clothing or Wearing Apparel,Worsted and Yarn,United States,DUTIABLE,,1,36,63,36,63,11.02
 1878,B,Woollen Goods,Blankets,No,DUTIABLE,,1,1239,2435,1239,2435,426.12
-1878,B,Woollen Goods,Clothing,$,DUTIABLE,,1,2304,2304,2304,2304,403.2
+1878,B,Woollen Goods,Clothing,?,DUTIABLE,,1,2304,2304,2304,2304,403.2
 1878,B,Woollens,All other,France,DUTIABLE,,2,0,62159,0,62492,10936.09
 1878,B,Woollens,All other,Germany,DUTIABLE,,2,0,45784,0,45353,7936.78
 1878,B,Woollens,All other,Great Britain,DUTIABLE,,5,0,4556486,0,4563128,798558.51
@@ -26270,13 +26252,13 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1879,B,"Fruits of all kinds, including Nuts, dried > Nuts",Filberts and Walnuts,United States,FREE,,1,719,90,719,90,17.68
 1879,B,"Fruits, Dried",Currants,Lbs,FREE,,1,1582,149,1582,149,26.09
 1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green",?,Brls,FREE,,1,2,29,2,29,2.9
-1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac",tures of,$,FREE,,1,0,26,0,26,4.55
+1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac",tures of,?,FREE,,1,0,26,0,26,4.55
 1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac > Glassware > Grease and Grease",Scrap,Lbs,FREE,,1,80,4,80,4,0.7
 1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac > Glassware > Grease and Grease > Gunpowder and Ex > ces > Gun > powder > Gun and Pistol > Cartridges > Haberdashery > Hats, Caps and Bon > nets",Hops,Lbs,FREE,,1,148,190,0,190,33.25
 1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac > Glassware > Grease and Grease > Gunpowder and Ex > ces > Gun > powder > Gun and Pistol > Cartridges > Haberdashery > Hats, Caps and Bon > nets > Hosiery > Iron and manufactures > of, and Steel and > manufactures of > Implements > Axes > Cutlery > Edge Tools > Guns, Rifles and > Fire-arms > Hardware, all > other, N.E.S",Sewing Machines,No,FREE,,1,2,70,2,70,12.25
-1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac > Glassware > Grease and Grease > Gunpowder and Ex > ces > Gun > powder > Gun and Pistol > Cartridges > Haberdashery > Hats, Caps and Bon > nets > Hosiery > Iron and manufactures > of, and Steel and > manufactures of > Implements > Axes > Cutlery > Edge Tools > Guns, Rifles and > Fire-arms > Hardware, all > other, N.E.S",Stoves,$,FREE,,1,0,192,0,192,33.61
+1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac > Glassware > Grease and Grease > Gunpowder and Ex > ces > Gun > powder > Gun and Pistol > Cartridges > Haberdashery > Hats, Caps and Bon > nets > Hosiery > Iron and manufactures > of, and Steel and > manufactures of > Implements > Axes > Cutlery > Edge Tools > Guns, Rifles and > Fire-arms > Hardware, all > other, N.E.S",Stoves,?,FREE,,1,0,192,0,192,33.61
 1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac > Glassware > Grease and Grease > Gunpowder and Ex > ces > Gun > powder > Gun and Pistol > Cartridges > Haberdashery > Hats, Caps and Bon > nets > Hosiery > Iron and manufactures > of, and Steel and > manufactures of > Implements > Axes > Cutlery > Edge Tools > Guns, Rifles and > Fire-arms > Hardware, all > other, N.E.S > Iron, all other > N.E.S > Jewellery of Gold > Silver, or any > other Metal > tures of",Sole and Upper,Lbs,FREE,,1,0,96,0,96,9.6
-1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac > Glassware > Grease and Grease > Gunpowder and Ex > ces > Gun > powder > Gun and Pistol > Cartridges > Haberdashery > Hats, Caps and Bon > nets > Hosiery > Iron and manufactures > of, and Steel and > manufactures of > Implements > Axes > Cutlery > Edge Tools > Guns, Rifles and > Fire-arms > Hardware, all > other, N.E.S > Iron, all other > N.E.S > Jewellery of Gold > Silver, or any > other Metal > tures of > Boots and Shoes > Harness and Sad",dlerly,$,FREE,,1,0,309,0,309,54.05
+1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac > Glassware > Grease and Grease > Gunpowder and Ex > ces > Gun > powder > Gun and Pistol > Cartridges > Haberdashery > Hats, Caps and Bon > nets > Hosiery > Iron and manufactures > of, and Steel and > manufactures of > Implements > Axes > Cutlery > Edge Tools > Guns, Rifles and > Fire-arms > Hardware, all > other, N.E.S > Iron, all other > N.E.S > Jewellery of Gold > Silver, or any > other Metal > tures of > Boots and Shoes > Harness and Sad",dlerly,?,FREE,,1,0,309,0,309,54.05
 1879,B,"Fruits, Dried > Prunes and Plums > Raisins > All other, N.E.S > Nuts, all other > Fruit, Green > Apples > Fruit in air-tight cans > Furs and manufac > Glassware > Grease and Grease > Gunpowder and Ex > ces > Gun > powder > Gun and Pistol > Cartridges > Haberdashery > Hats, Caps and Bon > nets > Hosiery > Iron and manufactures > of, and Steel and > manufactures of > Implements > Axes > Cutlery > Edge Tools > Guns, Rifles and > Fire-arms > Hardware, all > other, N.E.S > Iron, all other > N.E.S > Jewellery of Gold > Silver, or any > other Metal > tures of > Boots and Shoes > Harness and Sad > All other manu > factures of, N.E.S",Mustard,Lbs,FREE,,1,141,60,141,60,10.5
 1879,B,"Fruits, Green",All other N.E.S,United States,FREE,,1,0,2528,0,2528,267.32
 1879,B,"Fruits, Green",Apples and Pears,United States,FREE,Brls,1,1632,3343,1632,3343,364.35
@@ -27548,7 +27530,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1879,B,Oils,Lard Oil,United States,FREE,Galls,1,125,120,125,120,21.52
 1879,B,Oils,"Neatsfoot and all Animal, N.E.S",United States,FREE,Galls,1,24,31,24,31,5.77
 1879,B,Oils,"Whale Oil or Fish, not otherwise provided for",United States,FREE,Galls,1,73,85,73,85,16.22
-1879,B,"Oils > Coal, Kerosene,&c > Castor",Packages,$,FREE,,1,0,26,0,26,4.55
+1879,B,"Oils > Coal, Kerosene,&c > Castor",Packages,?,FREE,,1,0,26,0,26,4.55
 1879,B,"Oils, Animal","Cod Liver, Medicated",Great Britain,FREE,,1,8,22,8,22,4.4
 1879,B,"Oils, Animal","Cod Liver, medicated",Great Britain,FREE,Galls,1,829,787,615,658,122.0
 1879,B,"Oils, Animal","Cod Liver, medicated",Norway,FREE,Galls,1,575,1290,389,996,180.3
@@ -28389,7 +28371,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1879,B,Vegetable,Volatile or Essential Oils,Italy,FREE,,1,48,701,98,1350,241.8
 1879,B,Vegetable,Volatile or Essential Oils,Spain,FREE,,1,391,740,17,198,34.65
 1879,B,Vegetable,Volatile or Essential Oils,United States,FREE,,2,851,8435,816,8371,1562.62
-1879,B,Vegetables,"All other, N.E.S",$,FREE,,1,0,283,0,283,28.3
+1879,B,Vegetables,"All other, N.E.S",?,FREE,,1,0,283,0,283,28.3
 1879,B,Vegetables,"All other, N.E.S",British West Indies,FREE,,1,0,701,0,701,89.26
 1879,B,Vegetables,"All other, N.E.S",China,FREE,,1,0,13,0,13,2.27
 1879,B,Vegetables,"All other, N.E.S",France,FREE,,1,0,663,0,73,14.6
@@ -28458,7 +28440,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1879,B,Wood and manufactures of,"Furniture, House, Cabinet, or Office, &c",Newfoundland,FREE,,1,0,11,0,11,2.14
 1879,B,Wood and manufactures of,"Furniture, House, Cabinet, or Office, &c",United States,,,1,0,94137,0,94127,18327.05
 1879,B,Wood and manufactures of,"Furniture, House, Cabinet, or Office, &c",United States,FREE,,4,0,130216,0,130629,25791.25
-1879,B,Wood and manufactures of,"Furniture, house, office, &c",$,FREE,,1,0,121,0,121,21.18
+1879,B,Wood and manufactures of,"Furniture, house, office, &c",?,FREE,,1,0,121,0,121,21.18
 1879,B,Wood and manufactures of,"Handles for Tools, Brooms & Brushes",United States,FREE,,2,0,288,0,288,50.46
 1879,B,Wood and manufactures of,"Handles for Tools, Brooms and Brushes",Great Britain,FREE,,1,0,142,0,142,24.85
 1879,B,Wood and manufactures of,"Handles for Tools, Brooms and Brushes",Norway,FREE,,1,0,66,0,66,11.55
@@ -28475,7 +28457,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1879,B,Wood and manufactures of,Staves,St. Pierre,FREE,,1,0,3,0,3,0.52
 1879,B,Wood and manufactures of,Staves,United States,FREE,,2,0,114,0,114,19.98
 1879,B,"Wood and manufactures of > Handles for tools, &c > Woollen Manufactures",Blankets,No,FREE,,1,579,1530,579,1530,267.77
-1879,B,"Wood and manufactures of > Handles for tools, &c > Woollen Manufactures",Clothing or Wearing Apparel,$,FREE,,1,0,1719,0,1719,300.88
+1879,B,"Wood and manufactures of > Handles for tools, &c > Woollen Manufactures",Clothing or Wearing Apparel,?,FREE,,1,0,1719,0,1719,300.88
 1879,B,"Wood and manufactures of > Handles for tools, &c > Woollen Manufactures",Flannels,Yds,FREE,,1,42,13,42,13,2.28
 1879,B,"Wood, and manufactures of",All manufactures of Wood not otherwise provided for,Austria,,,1,0,67,0,67,16.75
 1879,B,"Wood, and manufactures of",All manufactures of Wood not otherwise provided for,British West Indies,,,1,0,4,0,4,1.0
@@ -31482,7 +31464,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1881,C,,Communion Plate and Plated Ware for use in Churches,United States,FREE,,6,0,1592,0,1592,0.0
 1881,C,,Cordage for Ship's purposes,Great Britain,DUTIABLE,,6,570584,48736,572572,48935,4893.45
 1881,C,,Cordage for Ship's purposes,United States,DUTIABLE,,7,762058,87163,780672,89615,8961.41
-1881,C,,"Cordage, all other, including Manila Marline, when not imported for Ship's purposes",26,DUTIABLE,Lbs,1,3426,26,321,3459,691.9
+1881,C,,"Cordage, all other, including Manila Marline, when not imported for Ship's purposes",?,DUTIABLE,Lbs,1,3426,26,321,3459,691.9
 1881,C,,"Cordage, all other, including Manila Marline, when not imported for Ship's purposes",Great Britain,DUTIABLE,Lbs,6,26156,3426,26321,3459,691.9
 1881,C,,Cork-wood,British West Indies,FREE,,1,0,6,0,6,0.0
 1881,C,,Cork-wood,Great Britain,FREE,,4,0,268,0,268,0.0
