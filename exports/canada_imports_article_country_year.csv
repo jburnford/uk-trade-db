@@ -45631,8 +45631,8 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1885,C,Iron and steel and manufactures of > Agricultural implements,Spades and shovels,China,DUTIABLE,No,1,6,4,6,4,1.4
 1885,C,Iron and steel and manufactures of > Agricultural implements,Spades and shovels,Great Britain,DUTIABLE,,7,15544,5761,15612,5710,1998.5
 1885,C,Iron and steel and manufactures of > Agricultural implements,Spades and shovels,United States,DUTIABLE,No,8,67953,29072,69121,29543,10382.14
-1885,C,"Iron and steel and manufactures of > All articles similar to agricultural implements, and parts thereof",Spades and shovels,Great Britain,DUTIABLE,,6,0,4046,0,4046,1416.1
-1885,C,"Iron and steel and manufactures of > All articles similar to agricultural implements, and parts thereof",Spades and shovels,United States,DUTIABLE,,8,0,37287,0,37287,13054.94
+1885,C,"Iron and steel and manufactures of > All articles similar to agricultural implements, and parts thereof",All other articles and parts thereof,Great Britain,DUTIABLE,,6,0,4046,0,4046,1416.1
+1885,C,"Iron and steel and manufactures of > All articles similar to agricultural implements, and parts thereof",All other articles and parts thereof,United States,DUTIABLE,,8,0,37287,0,37287,13054.94
 1885,C,"Iron and steel and manufactures of > All articles similar to agricultural implements, and parts thereof > Spades and shovels",Anvils,Germany,DUTIABLE,Cwt,1,2,12,2,12,3.6
 1885,C,"Iron and steel and manufactures of > All articles similar to agricultural implements, and parts thereof > Spades and shovels",Anvils,Great Britain,DUTIABLE,Cwt,7,1298,5019,1286,4923,1476.9
 1885,C,"Iron and steel and manufactures of > All articles similar to agricultural implements, and parts thereof > Spades and shovels",Anvils,United States,DUTIABLE,Cwt,4,324,1554,324,1554,466.2
@@ -46326,12 +46326,12 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1885,C,Spices,Ginger and spices of all kinds (except nutmegs and mace) ground,China,DUTIABLE,,1,179,24,179,24,6.0
 1885,C,Spices,Ginger and spices of all kinds (except nutmegs and mace) ground,Great Britain,DUTIABLE,,7,17599,3845,17408,3768,941.8
 1885,C,Spices,Ginger and spices of all kinds (except nutmegs and mace) ground,United States,DUTIABLE,,6,192908,11410,192630,11473,2867.4
-1885,C,Spices,"Ginger and spices of all kinds, &c",British East Indies,DUTIABLE,Lbs,1,0,0,0,407,40.7
-1885,C,Spices,"Ginger and spices of all kinds, &c",British West Indies,DUTIABLE,Lbs,3,100908,6497,206312,13152,1315.2
-1885,C,Spices,"Ginger and spices of all kinds, &c",China,DUTIABLE,Lbs,2,152,21,39491,2026,202.6
-1885,C,Spices,"Ginger and spices of all kinds, &c",France,DUTIABLE,,1,0,0,300,32,3.2
-1885,C,Spices,"Ginger and spices of all kinds, &c",Great Britain,DUTIABLE,,7,560232,70505,612094,77290,7826.1
-1885,C,Spices,"Ginger and spices of all kinds, &c",United States,DUTIABLE,,6,427121,50877,422302,49337,4934.8
+1885,C,Spices,Ginger and spices of all kinds (except nutmegs and mace) unground,British East Indies,DUTIABLE,Lbs,1,0,0,0,407,40.7
+1885,C,Spices,Ginger and spices of all kinds (except nutmegs and mace) unground,British West Indies,DUTIABLE,Lbs,3,100908,6497,206312,13152,1315.2
+1885,C,Spices,Ginger and spices of all kinds (except nutmegs and mace) unground,China,DUTIABLE,Lbs,2,152,21,39491,2026,202.6
+1885,C,Spices,Ginger and spices of all kinds (except nutmegs and mace) unground,France,DUTIABLE,,1,0,0,300,32,3.2
+1885,C,Spices,Ginger and spices of all kinds (except nutmegs and mace) unground,Great Britain,DUTIABLE,,7,560232,70505,612094,77290,7826.1
+1885,C,Spices,Ginger and spices of all kinds (except nutmegs and mace) unground,United States,DUTIABLE,,6,427121,50877,422302,49337,4934.8
 1885,C,Spices,Nutmegs and mace,British East Indies,DUTIABLE,,1,0,0,167,35,8.75
 1885,C,Spices,Nutmegs and mace,British West Indies,DUTIABLE,,2,138,31,138,31,7.75
 1885,C,Spices,Nutmegs and mace,France,DUTIABLE,,1,0,0,510,156,39.0
@@ -53159,7 +53159,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1887,C,Leather and manufactures of > Glove leathers,"Upper leather, dressed and waxed or glazed",Great Britain,DUTIABLE,,5,6307,4015,6307,4015,803.0
 1887,C,Leather and manufactures of > Glove leathers,"Upper leather, dressed and waxed or glazed",United States,DUTIABLE,,4,5061,11727,4181,11322,2264.4
 1887,C,"Leather, and manufactures of","Calf, kid, lamb and sheep skins, colored, dressed and waxed or glazed",Great Britain,DUTIABLE,,4,0,25785,0,25686,5137.2
-1887,C,"Leather, and manufactures of","Calf, kid, lamb and sheep skins, colored, dressed and waxed or glazed",United States,DUTIABLE,,1,0,38212,0,34687,6937.4
+1887,C,"Leather, and manufactures of","Calf, kid, lamb and sheep skins, colored, dressed and waxed or glazed",United States,DUTIABLE,,5,0,83351,0,84828,16965.6
 1887,C,"Leather, and manufactures of","Calf, kid, lamb and sheep skins, tanned or dressed, but not colored waxed or glazed",France,DUTIABLE,,2,403,258,403,258,38.7
 1887,C,"Leather, and manufactures of","Calf, kid, lamb and sheep skins, tanned or dressed, but not colored waxed or glazed",Germany,DUTIABLE,,2,1855,2153,1887,2169,325.35
 1887,C,"Leather, and manufactures of","Calf, kid, lamb and sheep skins, tanned or dressed, but not colored waxed or glazed",Great Britain,DUTIABLE,,4,14100,6509,13758,6087,913.05

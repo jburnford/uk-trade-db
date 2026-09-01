@@ -2591,23 +2591,50 @@ def apply_manual_repairs(rows, diag):
         try: return cell is not None and abs(float(cell) - float(want)) < 0.01
         except (TypeError, ValueError): return False
     for e in csv.DictReader(open(path)):
+        def g(k): return e.get(k, '') or ''
+        if e['action'] == 'rename_article':
+            hits = [i for i, r in enumerate(rows)
+                    if r['fiscal_year'] == e['fiscal_year'] and (r['article'] or '') == g('match_article')]
+            if not hits:
+                raise SystemExit(f"manual repair matched 0 rows: {e}")
+            for i in hits:
+                rows[i]['article'] = g('set_article') or rows[i]['article']
+                if g('set_article_parent'): rows[i]['article_parent'] = g('set_article_parent')
+                rows[i]['flags'] = (rows[i]['flags'] + ',' if rows[i]['flags'] else '') + 'manual_repair'
+            diag['manual_repair'] += len(hits)
+            continue
         hits = [i for i, r in enumerate(rows)
                 if r['fiscal_year'] == e['fiscal_year'] and str(r['table_seq']) == e['table_seq']
-                and (r['country'] or '') == e['match_country'] and (r['province'] or '') == e['match_province']
-                and num_eq(r['val_imp'], e['match_val_imp']) and num_eq(r['val_efc'], e['match_val_efc'])]
+                and (g('match_article') == '' or (r['article'] or '') == g('match_article'))
+                and (r['country'] or '') == g('match_country') and (r['province'] or '') == g('match_province')
+                and num_eq(r['val_imp'], g('match_val_imp')) and num_eq(r['val_efc'], g('match_val_efc'))]
         if len(hits) != 1:
             raise SystemExit(f"manual repair matched {len(hits)} rows (need exactly 1): {e}")
         i = hits[0]
+        if e['action'] == 'rename_span':
+            # the matched row is an article_total: rename it and the contiguous rows above it in the
+            # same block, stopping after a previous article_total (a two-total block holds two spans)
+            j = i - 1
+            while j >= 0 and rows[j]['block_id'] == rows[i]['block_id'] \
+                    and rows[j]['fiscal_year'] == rows[i]['fiscal_year'] \
+                    and not rows[j]['row_kind'].startswith('article_total'): j -= 1
+            for k2 in range(j + 1, i + 1):
+                rows[k2]['article'] = g('set_article') or rows[k2]['article']
+                if g('set_article_parent'): rows[k2]['article_parent'] = g('set_article_parent')
+                rows[k2]['flags'] = (rows[k2]['flags'] + ',' if rows[k2]['flags'] else '') + 'manual_repair'
+            diag['manual_repair'] += i - j
+            continue
         if e['action'] == 'add':
             import copy
             r = copy.deepcopy(rows[i]); rows.insert(i + 1, r)
         else:
             r = rows[i]
-        for src, dst in (('set_province', 'province'), ('set_val_imp', 'val_imp'),
-                         ('set_val_efc', 'val_efc'), ('set_duty', 'duty')):
-            v = e[src]
+        for src, dst in (('set_province', 'province'), ('set_country', 'country'),
+                         ('set_row_kind', 'row_kind'), ('set_article', 'article'),
+                         ('set_val_imp', 'val_imp'), ('set_val_efc', 'val_efc'), ('set_duty', 'duty')):
+            v = g(src)
             if v == '': continue
-            r[dst] = None if v == 'NULL' else (v if dst == 'province' else float(v))
+            r[dst] = None if v == 'NULL' else (v if dst in ('province', 'country', 'row_kind', 'article') else float(v))
         r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'manual_repair'
         diag['manual_repair'] += 1
 
