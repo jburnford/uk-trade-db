@@ -168,6 +168,138 @@ def main():
         sec = 'free' if r['section'] == 'FREE' else 'dut'
         P[r['fiscal_year']][(ckey(r['country'] or ''), r['province'], sec)] += f(r['val_efc']) or 0
 
+    # ---------- PASS R: row completion by the Canadiana block's OWN printed total ----------
+    # A Canadiana block whose details under-sum its own printed country_total by EXACTLY the value
+    # of the provinces the witness block carries and Canadiana lacks -- in val_efc AND val_imp where
+    # the total prints one -- takes those witness rows (the strongest proof in the toolbox: the
+    # 1884 US beef block is short 84,889 and the witness's five missing province rows sum to
+    # 84,889/84,889 in both columns).
+    WB = defaultdict(list)                     # (fy, anorm, ckey) -> closing witness blocks
+    curb = None; keyb = None
+    w2blocks = []
+    for r in w2:
+        if r['regime'] != 'C' or r['row_kind'] not in ('detail', 'country_total'): continue
+        a = anorm(r['article']); c = ckey(r['country'] or '')
+        if not a or a == '?' or not c or c == '?': keyb = None; continue
+        k = (r['fiscal_year'], r['block_id'], a, c)
+        if k != keyb:
+            keyb = k; curb = {'fy': r['fiscal_year'], 'a': a, 'c': c, 'det': [], 'tot': None}
+            w2blocks.append(curb)
+        if r['row_kind'] == 'detail' and r['province']: curb['det'].append(r)
+        else: curb['tot'] = r
+    for b in w2blocks:
+        if b['tot'] is None or not b['det']: continue
+        tv = f(b['tot']['val_efc'])
+        if tv and abs(sum(f(x['val_efc']) or 0 for x in b['det']) - tv) <= 1:
+            WB[(b['fy'], b['a'], b['c'])].append(b)
+    n_comp = 0; comp_val = 0.0
+    i = 0; n = len(rows)
+    while i < n:
+        r = rows[i]
+        if not (r['regime'] == 'C' and r['row_kind'] == 'detail' and r['province']
+                and (r['country'] or '?') not in ('?', '') and anorm(r['article']) not in ('', '?')
+                and not str(r['volume']).startswith('statcan_')):
+            i += 1; continue
+        fy = r['fiscal_year']; a = anorm(r['article']); c = ckey(r['country'] or '')
+        j = i
+        while j < n and rows[j]['fiscal_year'] == fy and rows[j]['block_id'] == r['block_id'] \
+                and rows[j]['row_kind'] == 'detail' and ckey(rows[j]['country'] or '') == c: j += 1
+        det = [x for x in rows[i:j] if x['province']]
+        T = rows[j] if j < n and rows[j]['row_kind'] == 'country_total' and rows[j]['block_id'] == r['block_id'] \
+            and ckey(rows[j]['country'] or '') == c else None
+        i2 = j + (1 if T else 0)
+        if T is not None and det:
+            tv = f(T['val_efc']); tvi = f(T['val_imp'])
+            sv = sum(f(x['val_efc']) or 0 for x in det); svi = sum(f(x['val_imp']) or 0 for x in det)
+            gap = (tv - sv) if tv else 0
+            m = WB.get((fy, a, c))
+            if gap > 1 and m and len(m) == 1:
+                have = {x['province'] for x in det}
+                miss = [x for x in m[0]['det'] if x['province'] not in have]
+                mv = sum(f(x['val_efc']) or 0 for x in miss)
+                mvi = sum(f(x['val_imp']) or 0 for x in miss)
+                gapi = (tvi - svi) if tvi is not None and tvi > 0 else None
+                if miss and abs(mv - gap) <= 1 and (gapi is None or abs(mvi - gapi) <= 1):
+                    newrows = []
+                    for x in miss:
+                        nr = {k2: x.get(k2, '') for k2 in fields}
+                        nr['block_id'] = r['block_id']            # joins the host block
+                        nr['flags'] = (nr['flags'] + ',' if nr['flags'] else '') + 'witness_row_completed'
+                        newrows.append(nr)
+                        sec = 'free' if x['section'] == 'FREE' else 'dut'
+                        P[fy][(c, x['province'], sec)] += f(x['val_efc']) or 0
+                    rows[j:j] = newrows
+                    n = len(rows)
+                    n_comp += 1; comp_val += mv
+                    i = j + len(newrows) + 1; continue
+        i = i2
+    print(f'pass R: {n_comp} blocks completed against their own printed totals (efc {comp_val:,.0f})')
+
+    # ---------- PASS B: block replacement for structurally broken blocks ----------
+    # A Canadiana block is BROKEN when its rows were shattered by the OCR: two or more
+    # country_total rows in one country block (the label column died and every row closed as a
+    # total -- 1884 US beef, 1885 US pianofortes), or a single total its details miss by >1%.
+    # When the witness carries a UNIQUE closing block for the same (fy, article, country), the
+    # witness rows replace the Canadiana ones (old rows -> row_kind 'superseded_w2', kept for
+    # audit), gated per touched cell: the replacement must not push any (province, section)
+    # cell past the printed abstract by more than max($50, 0.2%).  1887 Switzerland watches
+    # (5,393 -> 92,786 = the t505 missing rows) is the type specimen.
+    n_rep = 0; rep_val = 0.0
+    i = 0; n = len(rows)
+    while i < n:
+        r = rows[i]
+        if not (r['regime'] == 'C' and r['row_kind'] in ('detail', 'country_total')
+                and (r['country'] or '?') not in ('?', '') and ckey(r['country'] or '') not in ('total',)
+                and anorm(r['article']) not in ('', '?')
+                and not str(r['volume']).startswith('statcan_')):
+            i += 1; continue
+        fy = r['fiscal_year']; a = anorm(r['article']); c = ckey(r['country'] or '')
+        j = i
+        while j < n and rows[j]['fiscal_year'] == fy and rows[j]['block_id'] == r['block_id'] \
+                and rows[j]['row_kind'] in ('detail', 'country_total') and ckey(rows[j]['country'] or '') == c: j += 1
+        seg = rows[i:j]
+        det = [x for x in seg if x['row_kind'] == 'detail' and x['province']]
+        tots = [x for x in seg if x['row_kind'] == 'country_total']
+        broken = len(tots) >= 2
+        if not broken and len(tots) == 1 and det:
+            tv = f(tots[0]['val_efc']); sv = sum(f(x['val_efc']) or 0 for x in det)
+            broken = bool(tv) and abs(sv - tv) > max(1, 0.01 * tv)
+        m = WB.get((fy, a, c))
+        if not (broken and m and len(m) == 1):
+            i = j; continue
+        wb = m[0]
+        # per-cell delta gate
+        delta = defaultdict(float)
+        for x in det:
+            sec = 'free' if x['section'] == 'FREE' else 'dut'
+            delta[(c, x['province'], sec)] -= f(x['val_efc']) or 0
+        for x in wb['det']:
+            sec = 'free' if x['section'] == 'FREE' else 'dut'
+            delta[(c, x['province'], sec)] += f(x['val_efc']) or 0
+        ok = True
+        for cell, d in delta.items():
+            a_cell = A[fy].get(cell)
+            if a_cell is None: ok = False; break
+            if P[fy][cell] + d - a_cell > max(50, 0.002 * a_cell): ok = False; break
+        if not ok:
+            i = j; continue
+        for x in seg:
+            x['row_kind'] = 'superseded_w2'
+            x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'superseded_by_witness'
+        newrows = []
+        for x in wb['det'] + ([wb['tot']] if wb.get('tot') else []):
+            if x is None: continue
+            nr = {k2: x.get(k2, '') for k2 in fields}
+            nr['block_id'] = r['block_id']
+            nr['flags'] = (nr['flags'] + ',' if nr['flags'] else '') + 'witness_block_replaced'
+            newrows.append(nr)
+        rows[j:j] = newrows
+        n = len(rows)
+        for cell, d in delta.items(): P[fy][cell] += d
+        n_rep += 1; rep_val += sum(f(x['val_efc']) or 0 for x in wb['det'])
+        i = j + len(newrows)
+    print(f'pass B: {n_rep} broken blocks replaced by the witness (efc {rep_val:,.0f})')
+
     # ---------- PASS I: coverage insertion ----------
     B1 = blocks_of(rows); B2 = blocks_of(w2)
     # article names known to Canadiana in ANY regime-C year: an article absent from one year but
