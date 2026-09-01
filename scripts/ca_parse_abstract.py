@@ -89,6 +89,74 @@ def parse_volume(tag, fy, md_path, out):
     return n, diag
 
 
+def repair_row_arithmetic(out):
+    """Row sanity: on a province row, efc_dutiable + efc_free == efc_total (the printed table's own
+    identity).  When it fails, one of the three cells was misprinted or misread (1881 France Ontario:
+    total 1,359,178 against dut+free 359,178 -- a spurious leading 1 that showed as a phantom -1.01M
+    'discrepancy' in the check).  Repair a cell ONLY when the column identity across the province
+    (TOTAL row minus the sum of country rows) carries the SAME residual, so the two independent
+    identities pin the same cell; otherwise just flag the row so the check can annotate it."""
+    from collections import defaultdict
+    COLS = ('efc_dutiable', 'efc_free', 'efc_total')
+    by_fy = defaultdict(list)
+    for r in out:
+        if r['row_kind'] == 'province': by_fy[r['fiscal_year']].append(r)
+    n_rep = n_flag = 0
+    for fy, rows in by_fy.items():
+        colsum = defaultdict(float); coltot = {}
+        for r in rows:
+            for c in COLS:
+                if r[c] is None: continue
+                if r['country'] == 'TOTAL': coltot[(r['province'], c)] = r[c]
+                else: colsum[(r['province'], c)] += r[c]
+        for r in rows:
+            d, f_, tt = (r[c] for c in COLS)
+            if None in (d, f_, tt) or abs(d + f_ - tt) <= 0.5: continue
+            implied = {'efc_dutiable': tt - f_, 'efc_free': tt - d, 'efc_total': d + f_}
+            fixed = None
+            for c in COLS:
+                delta = implied[c] - r[c]                      # what the repair would add to the column
+                key = (r['province'], c)
+                if key not in coltot: continue
+                resid = coltot[key] - colsum[key]              # column residual before repair
+                if r['country'] == 'TOTAL':
+                    ok = abs(resid + delta) <= 1 and abs(resid) > 1        # repairing the TOTAL cell itself
+                else:
+                    ok = abs(resid - delta) <= 1 and abs(resid) > 1
+                if ok and implied[c] >= 0:
+                    if fixed is not None: fixed = 'ambiguous'; break
+                    fixed = c
+            if not fixed or fixed == 'ambiguous':
+                # second gate: the repair is a single-DIGIT DELETION from the printed string (a spurious
+                # leading/inner digit, e.g. 1,359,178 -> 359,178) and it moves the column residual toward
+                # zero; the polluted-column case the exact pin cannot reach (1881 Ontario carries -8K of
+                # other errors on top of France's -1M)
+                cands = []
+                for c in COLS:
+                    a, b = str(int(r[c])), str(int(implied[c]))
+                    if implied[c] < 0 or len(a) != len(b) + 1: continue
+                    if not any(a[:i] + a[i + 1:] == b for i in range(len(a))): continue
+                    key = (r['province'], c)
+                    if key not in coltot: continue
+                    delta = implied[c] - r[c]
+                    resid = coltot[key] - colsum[key]
+                    after = resid + delta if r['country'] == 'TOTAL' else resid - delta
+                    if abs(after) < abs(resid): cands.append(c)
+                fixed = cands[0] if len(cands) == 1 else fixed
+            if fixed and fixed != 'ambiguous':
+                delta = implied[fixed] - r[fixed]
+                key = (r['province'], fixed)
+                if r['country'] == 'TOTAL': coltot[key] += delta
+                else: colsum[key] += delta
+                r[fixed] = implied[fixed]
+                r['flags'] = (r['flags'] + ',' if r['flags'] else '') + f'row_repaired_{fixed}'
+                n_rep += 1
+            else:
+                r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'row_arith_fail'
+                n_flag += 1
+    print(f'row arithmetic: {n_rep} cells repaired by the two-identity pin, {n_flag} rows flagged unrepaired', file=sys.stderr)
+
+
 def main():
     index = list(csv.DictReader(open(P.RAW / 'INDEX.tsv'), delimiter='\t'))
     out = []
@@ -101,6 +169,7 @@ def main():
         n, diag = parse_volume(tag, fy, md, out)
         if n:
             print(f'{fy:8} {tag:24} abstract tables={n:3} rows={len(out)-before:5} {dict(diag)}', file=sys.stderr)
+    repair_row_arithmetic(out)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT, 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=list(out[0].keys())); w.writeheader()
