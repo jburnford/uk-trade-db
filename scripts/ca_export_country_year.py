@@ -80,7 +80,7 @@ with open(ROOT / 'exports' / 'canada_imports_article_country_year.csv', 'w', new
         d = ACY[k]; w.writerow([*k, AU.get(k, ''), int(d['n']), round(d['qty_imp']), round(d['val_imp']), round(d['qty_efc']), round(d['val_efc']), round(d['duty'], 2)])
 # origin shares
 L = ['# Canadian imports by origin, fiscal years ending 30 June', '',
-     'From `exports/canada_imports_country_year.csv` (value imported, \$; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote -- both scans fail there).', '',
+     'From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote - both scans fail there).', '',
      '| FY | regime | total $ | Great Britain | United States | France | Germany | B.W. Indies | other named | ? | GB % | US % | other % (incl ?) |', '|---|---|---|---|---|---|---|---|---|---|---|---|---|']
 by = defaultdict(lambda: defaultdict(float)); regs = {}
 for (fy, reg, c, sec), d in CY.items():
