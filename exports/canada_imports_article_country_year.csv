@@ -32635,6 +32635,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1881,C,"Fruits, including Nuts","Cranberries, Plums and Quinces",United States,DUTIABLE,,7,9406,19187,9406,19187,2822.94
 1881,C,"Fruits, including Nuts","Currants, Zante or other",?,DUTIABLE,,4,0,570,0,508,1183.0
 1881,C,"Fruits, including Nuts","Currants, Zante or other",Great Britain,DUTIABLE,Lbs,7,204990,10023,214388,11042,3583.74
+1881,C,"Fruits, including Nuts","Currants, Zante or other",Greece,DUTIABLE,Lbs,2,2386172,91404,2173761,82169,20539.7
 1881,C,"Fruits, including Nuts","Currants, Zante or other",Spain,DUTIABLE,Lbs,2,274397,10298,236607,9151,2289.75
 1881,C,"Fruits, including Nuts",Dates,China,DUTIABLE,Lbs,1,1535,54,1535,54,13.56
 1881,C,"Fruits, including Nuts",Dates,United States,DUTIABLE,Lbs,8,153354,5854,153354,5854,1463.75
@@ -45792,6 +45793,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1885,C,"Iron and steel and manufactures of > Steel, manufactures of","Wire rods, rolled round, &c",Germany,DUTIABLE,,1,3912,5157,3912,5157,257.85
 1885,C,"Iron and steel and manufactures of > Steel, manufactures of","Wire rods, rolled round, &c",Great Britain,DUTIABLE,,2,8100,14010,8100,14010,700.5
 1885,C,"Iron and steel and manufactures of > Steel, manufactures of","Wire rods, rolled round, under \frac{1}{2} an inch in diameter, imported by wire manufacturers for use in their factories",Belgium,DUTIABLE,,1,1120,1521,1120,1521,76.05
+1885,C,Iron and steel and manufactures of > Stoves,"Tubing, wrought iron, plain, not threaded, coupled or otherwise manufactured, over 2 ins. in diameter",Great Britain,DUTIABLE,,6,198399,56695,197031,56695,3429.6
 1885,C,"Iron and steel and manufactures of > Tools, &c","Carpenters', coopers', cabinet makers' and all other mechanics' tools, N.E.S",France,DUTIABLE,,2,0,1472,0,1472,441.6
 1885,C,"Iron and steel and manufactures of > Tools, &c","Carpenters', coopers', cabinet makers' and all other mechanics' tools, N.E.S",Germany,DUTIABLE,,2,0,2953,0,2953,885.9
 1885,C,"Iron and steel and manufactures of > Tools, &c","Carpenters', coopers', cabinet makers' and all other mechanics' tools, N.E.S",Great Britain,DUTIABLE,,7,0,35561,0,35266,10580.28
@@ -46458,7 +46460,6 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1885,C,Spirits and wines,Containing over 34 p.c. and not over 35 p.c. of spirits,Portugal,DUTIABLE,Galls,5,6263,9944,4703,6673,4449.77
 1885,C,Spirits and wines,Containing over 34 p.c. and not over 35 p.c. of spirits,Spain,DUTIABLE,Galls,5,6712,9133,8814,10497,7747.08
 1885,C,Spirits and wines,Containing over 34 p.c. and not over 35 p.c. of spirits,United States,DUTIABLE,,2,0,0,204,273,187.98
-1885,C,Spirits and wines,Containing over 35 p.c. and not over 36 p.c. of spirits,Great Britain,DUTIABLE,,5,1148,1852,2201,3269,2191.45
 1885,C,Spirits and wines,Geneva gin and Old Tom gin,Austria,DUTIABLE,,1,8,4,8,4,10.6
 1885,C,Spirits and wines,Geneva gin and Old Tom gin,Belgium,DUTIABLE,Galls,3,3063,1341,9525,3730,12620.63
 1885,C,Spirits and wines,Geneva gin and Old Tom gin,British West Indies,DUTIABLE,Galls,1,37,32,37,32,49.02
@@ -56248,6 +56249,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1888,C,Essences,"Of apple, pine apple, &c",Great Britain,DUTIABLE,Galls,1,5,27,5,27,14.9
 1888,C,Essences,"Of apple, pine apple, &c",New Brunswick,DUTIABLE,,1,147,0,16,147,60.79
 1888,C,Essences,"Of apple, pine apple, &c",Quebec,DUTIABLE,,2,109,0,17,144,103.75
+1888,C,Essences,"Of apple, pine apple, &c",United States,DUTIABLE,Galls,6,113,1213,106,1194,440.31
 1888,C,FRESH GOODS. THE MINE,"Flint, flints and ground flint stones",United States,FREE,,3,5062,2596,5062,2596,0.0
 1888,C,FRESH GOODS. THE MINE,Fossils,Great Britain,FREE,,1,0,20,0,20,0.0
 1888,C,FRESH GOODS. THE MINE,Fossils,United States,FREE,,1,0,6,0,6,0.0
@@ -57461,6 +57463,7 @@ fiscal_year,regime,article_parent,article,country,section,unit,rows,qty_imp,val_
 1888,C,PUTTABLE GOODS > Carriages,do do costing $100 each and over,United States,DUTIABLE,,4,6,1894,6,1894,662.9
 1888,C,PUTTABLE GOODS > Carriages,do do costing $50 and less than $100,United States,DUTIABLE,,7,79,5412,77,5312,2217.4
 1888,C,Paints and colors,"Fire proof paint, dry",United States,DUTIABLE,,5,219482,3049,219482,3049,548.81
+1888,C,Paints and colors,"Ochres, dry, ground or unground, washed or unwashed, not calcined",Germany,DUTIABLE,,1,265556,1557,265556,1557,155.7
 1888,C,Paints and colors,"Oehres, dry, ground or unground, washed or unwashed, not calcined",France,DUTIABLE,,1,569892,3565,569892,3565,356.5
 1888,C,Paints and colors,"Oehres, dry, ground or unground, washed or unwashed, not calcined",Germany,DUTIABLE,,2,302596,1935,302596,1935,193.5
 1888,C,Paints and colors,"Oehres, dry, ground or unground, washed or unwashed, not calcined",Great Britain,DUTIABLE,,6,443313,8483,443613,8491,849.1

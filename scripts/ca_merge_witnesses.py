@@ -43,6 +43,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from ca_check_abstract import ckey
+from ca_parse_imports import PROVINCE_ORDER as PROV_ORDER
 
 ROOT = Path(__file__).resolve().parents[1]
 ROWS = ROOT / 'db' / 'canada' / 'imports_general_rows.csv'
@@ -385,12 +386,32 @@ def main():
                 if not det: continue
                 sv = sum(f(r['val_efc']) or 0 for r in det)
                 svi = sum(f(r['val_imp']) or 0 for r in det)
+                unclosed = False
                 if tot:
                     tv, tvi = f(tot[0]['val_efc']), f(tot[0]['val_imp'])
                     if tv is None or abs(sv - tv) > 1 or (tvi is not None and abs(svi - tvi) > 1):
-                        log.append((fy, a, c, sv, 'G3 fail: block does not close')); continue
+                        unclosed = True
                 elif len(det) > 1:
-                    log.append((fy, a, c, sv, 'G3 fail: no country_total to close against')); continue
+                    unclosed = True
+                if unclosed:
+                    # G3 fallback: a block whose total is misread (or absent) may still insert when the
+                    # details are strictly province-ordered AND the touched cells' aggregate residual
+                    # shrinks by at least 60% of the block value -- the abstract itself testifies the
+                    # mass is missing (the ca_infer_lost_countries fits() philosophy)
+                    idxs = [PROV_ORDER.index(r['province']) for r in det if r['province'] in PROV_ORDER]
+                    if len(idxs) != len(det) or idxs != sorted(idxs) or len(set(idxs)) != len(idxs):
+                        log.append((fy, a, c, sv, 'G3 fail: block does not close, details not province-ordered')); continue
+                    before = after = 0.0; feas = True
+                    for r in det:
+                        sec = 'free' if r['section'] == 'FREE' else 'dut'
+                        key = (c, r['province'], sec)
+                        a_cell = A[fy].get(key)
+                        if a_cell is None: feas = False; break
+                        resid = a_cell - P[fy][key]
+                        v = f(r['val_efc']) or 0
+                        before += abs(resid); after += abs(resid - v)
+                    if not feas or before - after < 0.6 * sv or sv < 200:
+                        log.append((fy, a, c, sv, 'G3 fail: block does not close (fallback fit refused)')); continue
                 ok = True; strong = False
                 for r in det:
                     sec = 'free' if r['section'] == 'FREE' else 'dut'
@@ -427,10 +448,11 @@ def main():
                 anchor = last_row_of_article.get((fy, a), last_row_of_fy.get(fy))
                 if anchor is None: continue
                 newrows = []
+                tag = 'witness_block_inserted' + ('_unclosed' if unclosed else '')
                 for r in blk:
                     nr = {k: r.get(k, '') for k in fields}
                     nr['block_id'] = 'w' + str(nr['block_id'])          # never collide with a host block key
-                    nr['flags'] = (nr['flags'] + ',' if nr['flags'] else '') + 'witness_block_inserted'
+                    nr['flags'] = (nr['flags'] + ',' if nr['flags'] else '') + tag
                     newrows.append(nr)
                 inserts.append((anchor, newrows))
                 for r in det:
