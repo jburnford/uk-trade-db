@@ -76,3 +76,32 @@ Ship 187/9. Country-`?` now $677,582.
   Ontario/Quebec dut unders 1881/1883/1886 (witness over-reads the same cells — needs
   block-level arbitration, the next build); regime B years through the witness; 1890
   unmatched abstract 685,649; witness 1882 quarantine check.
+
+### Phase 3, second day (2026-09-01, commits 4a269bc..e469296)
+
+The merge grew to six operations — **L** label transfer (11 runs, $471K), **R** row
+completion against the block's own printed total (8), **B** block replacement for
+structurally broken blocks (252 blocks, $15.1M turned over; fingerprint matching because
+article names differ between witnesses; exact cross-closure — witness details equal the
+CANADIANA printed total — over-rules the per-cell gate), **F** value fill (128, $861K),
+**I** gated insertion (104, $594K; G3 fallback under the 60%-residual-shrink fit test),
+plus the parse-side `sweep_total_country` (the $705K 1886 double-count).
+
+Direct closures this day: 1887 Switzerland Quebec EXACT (the re-OCR item), 1886 GB
+Ontario's missing wool million, 1881 Greece exact, 1882 Newfoundland Quebec exact,
+ckey folds worth $1.4M of matching (Sp. W. Indies, Spanish Possessions all other,
+Brit W Indies, E. Guiana, Central Am. States, Norway and Sweden).
+
+**Abstract ratios 1880–90: 1.001/.985/.996/.988/.995/.996/1.004/1.000/.992/.998/1.001.**
+National efc ratios all within ±1.2% (nine of eleven within ±0.7%). Country-`?` $952K —
+$275K of that is the 1881 Newfoundland-provision sub-articles (Fish Oil / Seal Oil)
+deliberately parked at `?`: the witnesses disagree and Newfoundland would overshoot the
+printed Quebec cell.
+
+**Remaining for phase 3 close-out**: 1881 GB Ontario (−790K) and 1883 GB Quebec/Ontario
+(−505K/−390K) — the witness is ALSO under there (−341K/−265K/−188K), so full closure is
+re-OCR/Gemini territory; the merged-vs-witness gap is variant-name mirror residue
+('flannele'/'flannels', 'cropes'/'crapes') that nets zero per cell. 1886/1880 run ~0.4%
+OVER nationally (residual junk mass, unlocated). Regime B witness runs not yet done.
+1885 US NB / 1888 US BC duty cells drift over. The misfiled-row class (1884 peaches GB
+under Oranges) still unbuilt.
