@@ -126,3 +126,35 @@ unparsed total counts as non-closing and gets superseded, and sequence-position
 pairing mis-pairs. The script is annotated with the failure analysis and the three
 requirements for the real vote (no-total ≠ total-mismatch; fingerprint pairing;
 per-statement printed grands as arbiter). Nothing from this attempt is in the corpus.
+
+## Phase 4 — the real vote (2026-09-01, commits 4733283+)
+
+The rebuilt vote works (details in the commit): fingerprint pairing, no-total vs
+mismatch closure semantics, cross-closure against Canadiana's own printed totals,
+room-gated insertions in both value columns, and a regime-A value-fill for the
+column-loss class (1870's efc column). Regime C ship test 0/0 — the two merge layers
+do not interfere.
+
+**Province-statement efc ratios 1868–75**:
+.771 / .831 / .700 / .619 / .710 / .666 / .778 / .986 (from .716/.691/.602/.480/.550/.529/.624/.958).
+
+**The Dominion switch**: 1874–75 national + country series now come from the Dominion
+recapitulation. Against the printed EfC-by-country series: 1874 GB 1.015 / US 0.995 /
+Germany 0.989 (France 1.367 — a residual defect, filed); 1875 GB 0.931 / US 0.973 /
+France 1.003 / Germany 0.919.
+
+**The honest ceiling, stated in the origins report**: 1868–73 sit at 0.62–0.83 of
+print after the vote — both scans fail on those years (bitonal garble vs greyscale
+junk), and only per-block closure proofs transfer. Getting further means a third
+engine (targeted Gemini per the standing decision) or re-imaging. The plan's §5
+phase-4 acceptance (N ≥ 0.97) is MET for 1874–75 via the Dominion source and NOT MET
+for 1868–73 — recorded here as the §4.2 written explanation.
+
+**Bonus for the exports campaign**: `reference/canada_country_series_voted.csv`
+already carries a printed by-country EXPORTS series (379 rows, 1872+) — a ready
+Tier-1 anchor for Statement No. 4 parsing.
+
+**Chain order (canonical, updated)**: `ca_parse_imports` → `ca_merge_witnesses` →
+`ca_merge_regimeA` → `ca_infer_lost_articles` → `ca_infer_lost_countries` →
+`ca_export_country_year` → `ca_check_abstract`; `ca_parse_witness` (both roles, one
+file) must run whenever witness OCR changes; `ca_parse_abstract` on volume ingest.
