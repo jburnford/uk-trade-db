@@ -1,29 +1,29 @@
 # Regime D witness merge (FY1891-1897)
 
-blocks replaced 509, inserted 138, rows value-filled 4, blocks read identically by both witnesses 6475; written
+blocks replaced 497, inserted 113, rows value-filled 4, blocks read identically by both witnesses 6599; written
 
 | FY | printed efc | before | ratio | after | ratio | printed imp | after imp | ratio |
 |---|---|---|---|---|---|---|---|---|
-| 1891 | 113,345,124 | 105,793,809 | 0.933 | 107,036,373 | 0.944 | 119,967,638 | 111,558,693 | 0.930 |
-| 1892 | 116,978,943 | 103,269,650 | 0.883 | 105,382,741 | 0.901 | 127,406,068 | 117,139,928 | 0.919 |
-| 1893 | 121,705,030 | 109,941,331 | 0.903 | 111,598,966 | 0.917 | 129,074,268 | 120,107,599 | 0.931 |
-| 1894 | 113,093,983 | 108,109,342 | 0.956 | 110,870,593 | 0.980 | 123,474,940 | 120,679,431 | 0.977 |
-| 1895 | 105,252,511 | 97,694,796 | 0.928 | 100,262,515 | 0.953 | 110,781,682 | 105,888,507 | 0.956 |
-| 1896 | 110,587,480 | 100,328,223 | 0.907 | 102,746,043 | 0.929 | 118,011,508 | 110,137,389 | 0.933 |
+| 1891 | 113,345,124 | 105,793,809 | 0.933 | 104,834,827 | 0.925 | 119,967,638 | 109,385,404 | 0.912 |
+| 1892 | 116,978,943 | 103,269,650 | 0.883 | 104,769,614 | 0.896 | 127,406,068 | 116,522,037 | 0.915 |
+| 1893 | 121,705,030 | 109,941,331 | 0.903 | 111,576,473 | 0.917 | 129,074,268 | 119,996,107 | 0.930 |
+| 1894 | 113,093,983 | 108,109,342 | 0.956 | 111,026,539 | 0.982 | 123,474,940 | 120,831,151 | 0.979 |
+| 1895 | 105,252,511 | 97,694,796 | 0.928 | 100,159,795 | 0.952 | 110,781,682 | 105,782,982 | 0.955 |
+| 1896 | 110,587,480 | 100,328,223 | 0.907 | 102,035,796 | 0.923 | 118,011,508 | 109,407,566 | 0.927 |
 | 1897 | 111,294,021 | 114,355,863 | 1.028 | 112,958,689 | 1.015 | 119,218,609 | 122,887,200 | 1.031 |
 
 ## Per-country check against the Abstract by Countries (val_efc)
 
 | FY | abstract Σ / print | corpus Σ / abstract | Great Britain | United States | biggest gaps (abstract - corpus) |
 |---|---|---|---|---|---|
-| 1891 | 1.0000 | 0.917 | 0.898 | 0.949 | great britain +4,276,994; united states +2,762,743; spanish possessions pa +1,401,121; spanish possessions pa -1,372,215;  -998,426 |
-| 1892 | 1.0000 | 0.896 | 0.848 | 0.919 | great britain +6,297,609; united states +4,289,341; germany +406,246; france +289,700; newfoundland +284,820 |
-| 1893 | 1.0000 | 0.901 | 0.974 | 0.941 | united states +3,408,914; spanish possessions al +2,102,364; spanish west indies +2,093,159;  -1,305,988; great britain +1,123,811 |
-| 1894 | 1.0000 | 0.971 | 0.981 | 0.974 | united states +1,354,460; great britain +736,020;  -653,773; newfoundland +646,826; france +180,776 |
-| 1895 | 0.9985 | 0.951 | 0.950 | 0.954 | united states +2,494,296; great britain +1,542,198; spanish west indies +499,993; germany +275,710; british possessions au +113,242 |
-| 1896 | 0.9987 | 0.915 | 0.974 | 0.881 | united states +6,976,361; great britain +848,279;  -620,869; spanish possessions al +549,054; philippine islands -467,687 |
+| 1891 | 1.0000 | 0.897 | 0.847 | 0.949 | great britain +6,445,032; united states +2,764,516; spanish possessions pa +1,401,121; spanish possessions pa -1,372,215;  -998,426 |
+| 1892 | 1.0000 | 0.890 | 0.839 | 0.914 | great britain +6,657,396; united states +4,559,697; germany +395,572; france +287,029; newfoundland +286,999 |
+| 1893 | 1.0000 | 0.901 | 0.973 | 0.933 | united states +3,900,964; spanish possessions al +2,102,364; spanish west indies +2,093,159;  -1,305,988; great britain +1,158,344 |
+| 1894 | 1.0000 | 0.972 | 0.981 | 0.977 | united states +1,233,443; great britain +716,669;  -653,950; newfoundland +646,826; france +170,997 |
+| 1895 | 0.9985 | 0.950 | 0.949 | 0.953 | united states +2,546,167; great britain +1,580,510; spanish west indies +499,993; germany +285,306; british possessions au +113,242 |
+| 1896 | 0.9987 | 0.909 | 0.973 | 0.869 | united states +7,657,409; great britain +874,504;  -620,869; spanish possessions al +549,054; philippine islands -467,687 |
 | 1897 | 0.9773 | 1.016 | 1.122 | 0.981 | great britain -3,580,994; united states +1,162,034; china -1,085,287; dutch east indies -739,994; newfoundland +398,937 |
 
-Pairing outcomes (canadiana state, witness state): ('paired', 'closed', 'closed')=3925, ('paired', 'no_total', 'no_total')=2788, ('unpaired', 'no_total')=1076, ('paired', 'mismatch', 'mismatch')=664, ('paired', 'closed', 'mismatch')=477, ('paired', 'mismatch', 'closed')=328, ('unpaired', 'mismatch')=303, ('paired', 'no_total', 'closed')=264, ('unpaired', 'closed')=203, ('paired', 'no_total', 'mismatch')=190, ('paired', 'closed', 'no_total')=184, ('paired', 'mismatch', 'no_total')=120
+Pairing outcomes (canadiana state, witness state): ('paired', 'closed', 'closed')=3934, ('paired', 'no_total', 'no_total')=2975, ('unpaired', 'no_total')=850, ('paired', 'mismatch', 'mismatch')=687, ('paired', 'closed', 'mismatch')=491, ('paired', 'mismatch', 'closed')=334, ('paired', 'no_total', 'closed')=289, ('unpaired', 'mismatch')=252, ('paired', 'closed', 'no_total')=208, ('paired', 'no_total', 'mismatch')=204, ('unpaired', 'closed')=163, ('paired', 'mismatch', 'no_total')=135
 
-Decisions: accepted=651, rejected: no room=139, rejected: name present unpaired=25, dropped=5, rejected: canadiana not provably worse=4
+Decisions: accepted=614, rejected: no room=124, superseded: rows contained in the entering witness block=41, rejected: name present unpaired=25, dropped=5, rejected: canadiana not provably worse=4

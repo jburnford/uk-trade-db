@@ -186,3 +186,11 @@ column map, the slip cascade, the recap/section-total tags, the StatCan witness 
 and the GB/US under-read are the next step. Chain for the staging corpus:
 `ca_parse_regimeD.py` → `ca_parse_regimeD.py --witness` → `ca_merge_regimeD.py`;
 `ca_parse_abstract.py` now covers 1891–97.
+
+## Phase 5 — step 3 (2026-09-01): promoted
+
+Regime D rows enter the exports through `imports_general_rows_d.csv` (read by
+`ca_export_country_year.py`); origins report 1868–1897. Absorption guard and cross-closure added
+to the vote; 1891–97 at .925/.896/.917/.982/.952/.923/1.015 of print. The UK↔Canada mirror passes
+every year 1890–1896 on the promoted data. Remaining under-read is diffuse (GB/US), filed for a
+third engine. Next: phase 6 (FY1898–1908 spread rows into the schema).

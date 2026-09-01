@@ -132,6 +132,15 @@ def pair_blocks(b1, b2):
         cand = [i for i in names1.get(w['a'], []) if i not in used1]
         if len(cand) == 1:
             pairs.append((cand[0], j)); used1.add(cand[0]); used2.add(j)
+    # fuzzy name among the rest, for blocks one side read without country rows (no fingerprint):
+    # unique best match >= 0.85 on the normalised name, and the same section-order neighbourhood
+    import difflib
+    rest1 = [i for i, c in enumerate(b1) if i not in used1 and len(c['a']) >= 12 and c['a'] != '?']
+    for j, w in enumerate(b2):
+        if j in used2 or len(w['a']) < 12 or w['a'] == '?': continue
+        scored = sorted(((difflib.SequenceMatcher(None, b1[i]['a'], w['a']).ratio(), i) for i in rest1 if i not in used1), reverse=True)
+        if scored and scored[0][0] >= 0.85 and (len(scored) == 1 or scored[1][0] < 0.85):
+            i = scored[0][1]; pairs.append((i, j)); used1.add(i); used2.add(j)
     return pairs, used1, used2
 
 
@@ -179,6 +188,19 @@ def main():
     def apply_country(fy, add):
         for c, d in add.items(): cmass[fy][c] += d
 
+    def absorb(fy, g, w, b1, used1, skip_i):
+        """After a witness block enters, any UNPAIRED Canadiana block in the same group whose
+        country rows are all contained in the witness block is the same printed run split by a
+        heading slip: supersede it too, or its rows count twice (FY1891 'On all such goods
+        costing 14 cts' Great Britain 1,976,017)."""
+        for i2, c2 in enumerate(b1):
+            if i2 == skip_i or i2 in used1 or not c2['fp'] or any(k in supersede for k in c2['idx']): continue
+            if c2['fp'] <= w['fp']:
+                for k in c2['idx']: supersede.add(k)
+                mass[fy]['e'] -= c2['sum_e']; mass[fy]['i'] -= c2['sum_i']
+                for k2, v2 in block_country_mass(c2).items(): cmass[fy][k2] -= v2
+                patches.append((fy, g[1], c2['name'], w['name'], 'absorbed', c2['state'], f'{c2["sum_e"]:.0f}', 'superseded: rows contained in the entering witness block'))
+
     def room_ok(fy, add_e, add_i):
         pe = f(printed[fy]['entered_for_consumption']); pi = f(printed[fy]['total_imports'])
         ok_e = pe is None or mass[fy]['e'] + add_e <= pe * (1 + ROOM_SLACK)
@@ -215,6 +237,27 @@ def main():
                 for x in c['det']:
                     x['flags'] = (x['flags'] + ';' if x['flags'] else '') + 'witnessD_agree'
                 agreed += 1
+            if not c['det'] and c['grand_e'] and w['det'] and abs(w['sum_e'] - c['grand_e']) <= 1 \
+                    and (not c['grand_i'] or abs(w['sum_i'] - c['grand_i']) <= 1):
+                # EXACT CROSS-CLOSURE: Canadiana kept the printed total but lost every country row;
+                # the witness's country rows sum to Canadiana's own printed total to the dollar
+                cadd = block_country_mass(w)
+                if room_ok(fy, w['sum_e'], w['sum_i']) and country_room_ok(fy, cadd):
+                    apply_country(fy, cadd)
+                    new_rows[c['idx'][-1]].extend(dict(x, flags=(x['flags'] + ';' if x['flags'] else '') + 'witnessD_cross_closed')
+                                                  for x in w['det'])
+                    mass[fy]['e'] += w['sum_e']; mass[fy]['i'] += w['sum_i']
+                    replaced += 1
+                    patches.append((fy, g[1], c['name'], w['name'], 'cross_close', c['state'], f'{w["sum_e"]:.0f}', 'accepted'))
+                    absorb(fy, g, w, b1, used1, i)
+                else:
+                    patches.append((fy, g[1], c['name'], w['name'], 'cross_close', c['state'], f'{w["sum_e"]:.0f}', 'rejected: no room'))
+                continue
+            if c['det'] and c['state'] == 'no_total' and w['grand_e'] and abs(c['sum_e'] - w['grand_e']) <= 1:
+                for x in c['det']:
+                    x['flags'] = (x['flags'] + ';' if x['flags'] else '') + 'witnessD_cross_closed'
+                agreed += 1
+                continue
             superset = (w['state'] == 'no_total' and c['state'] == 'no_total' and c['fp'] and w['fp'] > c['fp']
                         and w['sum_e'] > c['sum_e'] + 1)      # the witness read every row Canadiana read, and more
             if (w['state'] == 'closed' and c['state'] != 'closed') or superset:
@@ -231,6 +274,7 @@ def main():
                         mass[fy]['e'] += add_e; mass[fy]['i'] += add_i
                         replaced += 1
                         patches.append((fy, g[1], c['name'], w['name'], 'replace' + ('_superset' if superset else ''), c['state'], f'{c["sum_e"]:.0f}->{w["sum_e"]:.0f}', 'accepted'))
+                        absorb(fy, g, w, b1, used1, i)
                     else:
                         patches.append((fy, g[1], c['name'], w['name'], 'replace', c['state'], f'{c["sum_e"]:.0f}->{w["sum_e"]:.0f}', 'rejected: no room'))
                     continue
@@ -275,6 +319,7 @@ def main():
             mass[fy]['e'] += w['sum_e']; mass[fy]['i'] += w['sum_i']
             inserted += 1
             patches.append((fy, g[1], '', w['name'], 'insert', w['state'], f'{w["sum_e"]:.0f}', 'accepted'))
+            absorb(fy, g, w, b1, used1, None)
 
     # write
     out = []

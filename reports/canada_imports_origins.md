@@ -1,6 +1,6 @@
 # Canadian imports by origin, fiscal years ending 30 June
 
-From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote - both scans fail there).
+From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote - both scans fail there). Regime D FY1891-97 (new marginal layout, parsed by ca_parse_regimeD + the StatCan witness vote) reads 0.90-0.98 of print (1897 1.015): the remaining loss is diffuse and two-sided, concentrated in Great Britain and the United States - see reports/canada_regimeD_merge.md for the per-country check against the Abstract.
 
 | FY | regime | total $ | Great Britain | United States | France | Germany | B.W. Indies | other named | ? | GB % | US % | other % (incl ?) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -27,6 +27,13 @@ From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country
 | 1888 | C | 110,548,677 | 39,383,012 | 55,151,026 | 2,263,540 | 3,094,911 | 887,540 | 9,753,540 | 15,108 | 35.6 | 49.9 | 14.5 |
 | 1889 | C | 114,747,924 | 42,028,395 | 56,111,359 | 2,226,175 | 3,852,473 | 999,147 | 9,529,875 | 500 | 36.6 | 48.9 | 14.5 |
 | 1890 | C | 121,869,888 | 43,279,959 | 60,635,175 | 2,664,659 | 3,966,372 | 1,293,321 | 10,022,032 | 8,370 | 35.5 | 49.8 | 14.7 |
+| 1891 | D | 109,385,404 | 35,633,569 | 52,306,746 | 2,234,564 | 3,437,762 | 1,147,862 | 14,624,902 | 0 | 32.6 | 47.8 | 19.6 |
+| 1892 | D | 116,522,037 | 34,944,769 | 59,019,586 | 2,164,469 | 4,934,687 | 1,165,770 | 14,292,756 | 0 | 30.0 | 50.7 | 19.4 |
+| 1893 | D | 119,996,107 | 42,132,828 | 61,017,816 | 2,783,906 | 3,636,971 | 890,464 | 9,534,122 | 0 | 35.1 | 50.8 | 14.0 |
+| 1894 | D | 120,831,294 | 37,819,963 | 61,528,381 | 2,331,892 | 5,734,918 | 1,263,220 | 12,152,919 | 0 | 31.3 | 50.9 | 17.8 |
+| 1895 | D | 105,782,982 | 29,566,665 | 56,745,311 | 2,591,393 | 4,685,723 | 1,249,824 | 10,944,066 | 0 | 28.0 | 53.6 | 18.4 |
+| 1896 | D | 109,407,566 | 32,340,457 | 56,599,456 | 2,732,535 | 6,154,504 | 1,166,294 | 10,414,320 | 0 | 29.6 | 51.7 | 18.7 |
+| 1897 | D | 122,887,200 | 32,820,617 | 69,417,046 | 2,493,681 | 5,714,386 | 1,064,783 | 11,376,684 | 3 | 26.7 | 56.5 | 16.8 |
 
 ## Check on the value entered for consumption: parsed vs the printed Abstract by Countries
 
@@ -43,6 +50,13 @@ From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country
 | 1888 | 38,993,261 | 39,298,721 | 0.992 | 48,086,773 | 48,481,848 | 0.992 | 15,046,204 | 15,066,511 | 0.999 | 15,108 |
 | 1889 | 42,096,371 | 42,317,389 | 0.995 | 50,601,536 | 50,537,440 | 1.001 | 16,818,753 | 16,818,618 | 1.000 | 500 |
 | 1890 | 43,198,912 | 43,390,241 | 0.996 | 52,577,675 | 52,291,973 | 1.005 | 17,114,719 | 17,083,298 | 1.002 | 8,370 |
+| 1891 | 35,602,494 | 42,047,526 | 0.847 | 50,921,141 | 53,685,657 | 0.949 | 18,311,192 | 17,611,941 | 1.040 | 0 |
+| 1892 | 34,691,039 | 41,348,435 | 0.839 | 48,577,875 | 53,137,572 | 0.914 | 21,500,700 | 22,493,206 | 0.956 | 0 |
+| 1893 | 41,990,069 | 43,148,413 | 0.973 | 54,321,012 | 58,221,976 | 0.933 | 15,265,392 | 20,334,641 | 0.751 | 0 |
+| 1894 | 38,000,598 | 38,717,267 | 0.981 | 51,800,657 | 53,034,100 | 0.977 | 21,225,283 | 21,342,616 | 0.995 | 0 |
+| 1895 | 29,547,217 | 31,127,727 | 0.949 | 51,939,047 | 54,485,214 | 0.953 | 18,673,531 | 19,486,204 | 0.958 | 0 |
+| 1896 | 32,089,197 | 32,963,701 | 0.973 | 50,795,434 | 58,452,843 | 0.869 | 19,151,165 | 19,031,413 | 1.006 | 0 |
+| 1897 | 32,964,867 | 29,383,873 | 1.122 | 60,251,001 | 61,413,035 | 0.981 | 19,742,819 | 17,967,930 | 1.099 | 1 |
 
 ## PRINTED series: value entered for consumption by country, 1873-1889 (prefatory tables, majority-voted across volumes)
 
@@ -83,5 +97,5 @@ Source: `reference/canada_country_series_voted.csv`. This is the authoritative o
 - Belgium: 5,544,968 (0.5%)
 - Spain: 4,668,596 (0.4%)
 - Holland: 3,517,218 (0.3%)
+- Spanish Possessions, Pacific: 3,276,451 (0.3%)
 - British Guiana: 2,764,878 (0.2%)
-- Switzerland: 2,422,349 (0.2%)

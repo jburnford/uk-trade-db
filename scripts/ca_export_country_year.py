@@ -44,12 +44,24 @@ def canon(c):
     k2 = k.replace('&', 'and')
     if k2 in CANON: return CANON[k2]
     if k.startswith('great brit') or (k.startswith('grea') and 'brit' in k): return 'Great Britain'
-    if k.startswith('united st'): return 'United States'
+    if k.startswith('united st') or k in ('u s america', 'u s of america', 'u s', 'unired states'): return 'United States'
+    if k.startswith('newfoundland'): return 'Newfoundland'                      # 'Newfoundland, includ- ing Labrador' (1891+)
+    k = re.sub(r'\bposs?\b', 'possessions', k)
+    if k.startswith('spanish possessions'):                                     # 1891+ abstract vs General Statement spellings
+        if 'other' in k: return 'Spanish Possessions, all other'
+        if 'pacific' in k: return 'Spanish Possessions, Pacific'
     m = re.match(r'^(west|east) indies (british|spanish|french|danish|dutch)$', k)
     if m: return m.group(2).capitalize() + ' ' + m.group(1).capitalize() + ' Indies'
     return t.strip(' .')
 
 rows = list(csv.DictReader(open(ROOT / 'db' / 'canada' / 'imports_general_rows.csv')))
+# regime D (FY1891-97) lives in its own staging file until the chain scripts learn its row shapes
+# (ca_parse_regimeD.py -> --witness -> ca_merge_regimeD.py); its detail rows are national country
+# rows (province '') plus the province rows of dash-country runs -- summing 'detail' is right,
+# their unlabelled country_total is a separate kind
+_d = ROOT / 'db' / 'canada' / 'imports_general_rows_d.csv'
+if _d.exists():
+    rows += [r for r in csv.DictReader(open(_d)) if r['regime'] == 'D']
 CY = defaultdict(lambda: defaultdict(float)); ACY = defaultdict(lambda: defaultdict(float)); AU = {}
 for r in rows:
     if r['row_kind'] != 'detail': continue
@@ -80,7 +92,7 @@ with open(ROOT / 'exports' / 'canada_imports_article_country_year.csv', 'w', new
         d = ACY[k]; w.writerow([*k, AU.get(k, ''), int(d['n']), round(d['qty_imp']), round(d['val_imp']), round(d['qty_efc']), round(d['val_efc']), round(d['duty'], 2)])
 # origin shares
 L = ['# Canadian imports by origin, fiscal years ending 30 June', '',
-     'From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote - both scans fail there).', '',
+     'From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote - both scans fail there). Regime D FY1891-97 (new marginal layout, parsed by ca_parse_regimeD + the StatCan witness vote) reads 0.90-0.98 of print (1897 1.015): the remaining loss is diffuse and two-sided, concentrated in Great Britain and the United States - see reports/canada_regimeD_merge.md for the per-country check against the Abstract.', '',
      '| FY | regime | total $ | Great Britain | United States | France | Germany | B.W. Indies | other named | ? | GB % | US % | other % (incl ?) |', '|---|---|---|---|---|---|---|---|---|---|---|---|---|']
 by = defaultdict(lambda: defaultdict(float)); regs = {}
 for (fy, reg, c, sec), d in CY.items():
@@ -105,7 +117,8 @@ try:
         e = E[fy]; a = A[fy]
         og = sum(v for c, v in e.items() if c not in ('Great Britain', 'United States', '?'))
         oa = sum(v for c, v in a.items() if c not in ('Great Britain', 'United States'))
-        L.append(f"| {fy} | {e['Great Britain']:,.0f} | {a['Great Britain']:,.0f} | {e['Great Britain']/a['Great Britain']:.3f} | {e['United States']:,.0f} | {a['United States']:,.0f} | {e['United States']/a['United States']:.3f} | {og:,.0f} | {oa:,.0f} | {og/oa if oa else 0:.3f} | {e['?']:,.0f} |")
+        rt = lambda x, y: f'{x / y:.3f}' if y else '-'
+        L.append(f"| {fy} | {e['Great Britain']:,.0f} | {a['Great Britain']:,.0f} | {rt(e['Great Britain'], a['Great Britain'])} | {e['United States']:,.0f} | {a['United States']:,.0f} | {rt(e['United States'], a['United States'])} | {og:,.0f} | {oa:,.0f} | {rt(og, oa)} | {e['?']:,.0f} |")
 except FileNotFoundError:
     pass
 # the printed, majority-voted by-country series (prefatory tables of every volume): the authority for origin shares

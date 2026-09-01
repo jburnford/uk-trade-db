@@ -96,3 +96,30 @@ order-pairing repair for slipped Total blocks. 1897 GB reads 1.12 against an abs
 lost 2.3% — locate the excess block. Then promotion: the chain scripts (infer, export, check) must
 accept regime D rows (national = detail rows; province runs under dash-countries are detail, their
 country_total is not).
+
+## A1 step 3 — absorption guard, cross-closure, promotion; the mirror reaches the 1890s (2026-09-01)
+
+- **A double count inside the vote**: a witness block that pairs with one Canadiana block can also
+  contain every row of a second, unpaired Canadiana fragment (the same printed run split by a heading
+  slip); the fragment survived beside the replacement (FY1891 'On all such goods costing 14 cts',
+  Great Britain 1,976,017 twice). `absorb()` now supersedes any unpaired Canadiana block whose
+  fingerprint is contained in an entering witness block (41 cases). 1891 fell from .944 to .925 —
+  the honest number.
+- **Exact cross-closure**: Canadiana kept the printed total but lost every country row, the
+  witness's rows sum to Canadiana's own total to the dollar → the witness rows enter (15 blocks);
+  fuzzy name pairing (≥0.85) for blocks one side read without country rows.
+- **Promoted**: `ca_export_country_year.py` reads `imports_general_rows_d.csv` beside the main
+  corpus; `exports/canada_imports_country_year.csv` and the origins report now run FY1868–1897,
+  with the regime D caveat inline. National after vote: **1891 .925 / 1892 .896 / 1893 .917 /
+  1894 .982 / 1895 .952 / 1896 .923 / 1897 1.015**; by country against the Abstract, GB
+  .847/.839/.973/.981/.949/.973/1.122 and US .949/.914/.933/.977/.953/.869/.981. The residue is
+  diffuse and two-sided (the two scans fail on different blocks; witness no-total blocks cannot be
+  admitted without a proof) — third-engine territory per the plan, filed, not slogged.
+- **The mirror, CY1890–1896 now covered: every year passes** (0.93–1.05 single, 0.97–1.03 three-
+  year). 26 years, 22 pass; the four flags are unchanged (1870/72 Canadian regime A; 1873/74 UK
+  side under). **A UK-side defect the mirror caught first**: CY1896 read 0.60 because as_1896's
+  re-export TEA 'Total'-by-destination section carries QUANTITIES (lbs; TOTAL 34,027,806 = the
+  year's tea re-exports in lbs) in the value column — British North America 4,842,458 lbs posed as
+  £4.84M. Ten null-outs in `reference/export_manual_repairs.csv` (column-crossing class, whole
+  section); the mirror now skips printed subtotal articles like the explorer does. Explorer
+  per-cell diff: 0 changed (it never summed 'Total' rows).

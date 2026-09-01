@@ -146,7 +146,9 @@ python3 scripts/ca_parse_regimeD.py               # Canadiana primary  -> db/can
 python3 scripts/ca_parse_regimeD.py --witness     # StatCan witness    -> imports_general_rows_d_w2.csv, reports/canada_regimeD_witness_parse.md
 python3 scripts/ca_merge_regimeD.py [--dry-run]   # block vote + Abstract room -> rows_d.csv rewritten, witness_patches_d.csv, reports/canada_regimeD_merge.md
 ```
-(`ca_parse_abstract.py` covers 1891–97 since 2026-09-01 and must have run first.)
+(`ca_parse_abstract.py` covers 1891–97 since 2026-09-01 and must have run first.
+`ca_export_country_year.py` reads the staging file beside the main corpus, so the exports and the
+origins report include FY1891–97 whenever it exists.)
 FY1898–1908: `ca_pair_spreads.py` + `ca_align_spreads.py` (→ `spread_rows_<tag>.csv`, graded
 verified / bracketed / flagged), `ca_compare_witnesses.py` (two-witness agreement).
 

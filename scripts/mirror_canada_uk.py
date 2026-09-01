@@ -35,8 +35,10 @@ import argparse
 import collections
 import csv
 import os
+import re
 
 RATE = 4.8666
+SUBTOTAL_ART = re.compile(r'^\s*(total|sum|grand total)\b', re.I)   # same rule as build_canada_explorer_data
 SINGLE_TOL = 0.15
 TRIPLE_TOL = 0.08
 FY_MONTHS = {1907: 9}
@@ -59,6 +61,8 @@ def uk_side(path, exclude=('newfoundland',)):
     for r in csv.DictReader(open(path)):
         if r['own_year'] != '1':
             continue
+        if SUBTOTAL_ART.match(r['article'] or ''):
+            continue        # a printed 'Total' line by destination duplicates the sub-articles above it
         y = int(r['year'])
         v = fnum(r['value'])
         if r['country'].strip().lower() in exclude:
