@@ -170,6 +170,13 @@ def main():
 
     # ---------- PASS I: coverage insertion ----------
     B1 = blocks_of(rows); B2 = blocks_of(w2)
+    # article names known to Canadiana in ANY regime-C year: an article absent from one year but
+    # printed in a neighbour (1881 'The following articles being the Natural Products...' exists in
+    # 1882) may be inserted whole -- the closure and abstract gates still apply, plus a value floor
+    ALLARTS = set()
+    for r in rows:
+        if r['regime'] == 'C': ALLARTS.add(anorm(r['article']))
+    last_row_of_fy = {}
     # '?' detail mass per (fy, anorm): any sizable unlabelled mass blocks insertion outright
     Q1 = defaultdict(float)
     for r in rows:
@@ -198,14 +205,16 @@ def main():
     for i, r in enumerate(rows):
         if r['regime'] == 'C':
             last_row_of_article[(r['fiscal_year'], anorm(r['article']))] = i
+            last_row_of_fy[r['fiscal_year']] = i
 
     for fy in sorted(B2):
         if fy not in B1: continue
         for a, by_c in B2[fy].items():
-            if a not in B1[fy]:
-                continue                                   # G1: article unknown to Canadiana
+            crossyear = a not in B1[fy]
+            if crossyear and a not in ALLARTS:
+                continue                                   # G1: article unknown to the whole Canadiana corpus
             for c, blks in by_c.items():
-                if c in B1[fy][a]:
+                if not crossyear and c in B1[fy][a]:
                     continue                               # G2: country present already
                 if len(blks) != 1:
                     log.append((fy, a, c, 0, 'ambiguous: multiple witness blocks')); continue
@@ -249,8 +258,12 @@ def main():
                     if difflib.SequenceMatcher(None, a1, a).ratio() >= 0.7: dupe = a1; break
                 if dupe:
                     log.append((fy, a, c, sv, f'G5 fail: present under variant name {dupe[:40]!r}')); continue
+                if crossyear and sv < 1000:
+                    log.append((fy, a, c, sv, 'G1 cross-year: below the $1,000 floor')); continue
+                if crossyear and any(a2 != a and a2.endswith(a) for a2 in ALLARTS):
+                    log.append((fy, a, c, sv, 'G1 cross-year: name is a fragment (suffix of another article)')); continue
                 # accept
-                anchor = last_row_of_article.get((fy, a))
+                anchor = last_row_of_article.get((fy, a), last_row_of_fy.get(fy))
                 if anchor is None: continue
                 newrows = []
                 for r in blk:
