@@ -158,3 +158,20 @@ Tier-1 anchor for Statement No. 4 parsing.
 `ca_merge_regimeA` → `ca_infer_lost_articles` → `ca_infer_lost_countries` →
 `ca_export_country_year` → `ca_check_abstract`; `ca_parse_witness` (both roles, one
 file) must run whenever witness OCR changes; `ca_parse_abstract` on volume ingest.
+
+## Phase 5 — regime D parser, step 1 (2026-09-01, commit 0636a53)
+
+**Design correction**: the cross-tab does NOT end at FY1890. All seven 1891–97 volumes
+print one combined 'COUNTRIES AND PROVINCES' column; dash-suffixed countries open
+province runs (277 'United States—' headers in 1893). The unsplit CSVs lose exactly
+those headers → `ca_parse_regimeD.py` parses from raw.
+
+National efc: 1891 **0.987** / 1892 .819 / 1893 .787 / 1894 .861 / 1895 .714 /
+1896 .691 / 1897 .756. The unders are Canadiana OCR coverage; the StatCan witness for
+1891–96 is on disk. Staging output `imports_general_rows_d.csv` — NOT yet promoted.
+
+**Queued for phase-5 step 2**: (a) the witness merge for regime D (the phase-3
+pattern); (b) the GS-tail 'ABSTRACT BY COUNTRIES AND PROVINCES' as the per-cell
+oracle (compact per-country layout, t331+ in 1891); (c) orphan_total placement;
+(d) section-boundary hardening (1894 FREE > DUT smells); (e) promotion into the main
+corpus + the export/check plumbing for regime D.
