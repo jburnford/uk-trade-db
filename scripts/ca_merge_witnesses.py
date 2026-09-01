@@ -25,6 +25,12 @@ Canadiana parse lacks entirely.  A block is inserted only when EVERY gate holds:
       -- short by at most 0.5% of the printed cell, never exceeded by more than $50 --
       and at least one touched cell must have a residual >= $100 (else nothing to fix).
 
+PASS F -- value fill.  A Canadiana detail row with a country and province but BOTH value
+cells blank (the 1883 GB machinery class: labels present, values never read) takes the
+witness's values when exactly one witness row matches (fy, article, country, province),
+the witness row's own block closes in-table, and the abstract cell has room for the
+amount.  val_imp, val_efc and duty fill together; flag witness_value_fill.
+
 Witness rows enter db/canada/imports_general_rows.csv verbatim (volume = the statcan tag
 = the provenance), flagged witness_block_inserted.  db/canada/witness_patches.csv logs
 every accepted and rejected candidate with the gate that stopped it.
@@ -257,6 +263,50 @@ def main():
                     sec = 'free' if r['section'] == 'FREE' else 'dut'
                     P[fy][(c, r['province'], sec)] += f(r['val_efc']) or 0
                 log.append((fy, a, c, sv, 'INSERTED'))
+
+    # ---------- PASS F: value fill for blank-value labelled rows ----------
+    # witness rows keyed (fy, anorm, ckey, province), only from blocks that close in-table
+    WF = defaultdict(list)
+    blk_rows = defaultdict(list)
+    for r in w2:
+        if r['regime'] == 'C' and r['row_kind'] in ('detail', 'country_total'):
+            blk_rows[(r['fiscal_year'], r['block_id'], anorm(r['article']), ckey(r['country'] or ''))].append(r)
+    for bk, rr in blk_rows.items():
+        det = [x for x in rr if x['row_kind'] == 'detail' and x['province']]
+        tot = [x for x in rr if x['row_kind'] == 'country_total']
+        if not det: continue
+        if tot:
+            tv = f(tot[0]['val_efc'])
+            if tv is None or abs(sum(f(x['val_efc']) or 0 for x in det) - tv) > 1: continue
+        elif len(det) > 1:
+            continue
+        for x in det:
+            WF[(bk[0], bk[2], bk[3], x['province'])].append(x)
+    n_fill = 0; fill_val = 0.0
+    for r in rows:
+        if not (r['regime'] == 'C' and r['row_kind'] == 'detail' and r['province']
+                and not r['val_efc'] and not r['val_imp']
+                and (r['country'] or '?') not in ('?', '') and not str(r['volume']).startswith('statcan_')):
+            continue
+        k = (r['fiscal_year'], anorm(r['article']), ckey(r['country'] or ''), r['province'])
+        m = WF.get(k)
+        if not m or len(m) != 1: continue
+        wrow = m[0]
+        ve = f(wrow['val_efc'])
+        if not ve: continue
+        sec = 'free' if r['section'] == 'FREE' else 'dut'
+        cell = (k[2], r['province'], sec)
+        a_cell = A[r['fiscal_year']].get(cell)
+        if a_cell is None: continue
+        if ve - (a_cell - P[r['fiscal_year']][cell]) > max(50, 0.002 * a_cell): continue
+        r['val_imp'] = wrow['val_imp']; r['val_efc'] = wrow['val_efc']
+        if not r['duty'] and wrow['duty']: r['duty'] = wrow['duty']
+        for q in ('qty_imp', 'qty_efc', 'unit'):
+            if not r[q] and wrow.get(q): r[q] = wrow[q]
+        r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'witness_value_fill'
+        P[r['fiscal_year']][cell] += ve
+        n_fill += 1; fill_val += ve
+    print(f'pass F: {n_fill} blank-value rows filled from the witness (efc {fill_val:,.0f})')
 
     with open(OUT, 'w', newline='') as fh:
         w = csv.writer(fh); w.writerow(['fiscal_year', 'article', 'country', 'val_efc', 'outcome'])
