@@ -4,7 +4,7 @@ Per (fiscal year, country, province): parsed sum of detail rows vs the printed a
 
 | FY | abstract cells | matched keys | efc dutiable exact | efc free exact | duty exact | abstract efc total | parsed efc total | ratio | unmatched abstract value |
 |---|---|---|---|---|---|---|---|---|---|
-| 1880 | 132 | 115 | 35 | 36 | 32 | 71,782,311 | 71,767,430 | 1.000 | 79,722 |
+| 1880 | 132 | 115 | 40 | 36 | 35 | 71,782,311 | 71,771,028 | 1.000 | 79,722 |
 | 1881 | 126 | 117 | 67 | 50 | 68 | 91,611,604 | 89,590,759 | 0.978 | 35,091 |
 | 1882 | 147 | 137 | 95 | 63 | 82 | 112,648,927 | 111,544,005 | 0.990 | 40,679 |
 | 1883 | 146 | 136 | 80 | 56 | 67 | 122,960,711 | 121,464,355 | 0.988 | 25,838 |

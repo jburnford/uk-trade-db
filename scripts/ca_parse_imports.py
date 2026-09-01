@@ -2578,6 +2578,40 @@ def closure_report(rows):
     return out
 
 
+def apply_manual_repairs(rows, diag):
+    """reference/canada_manual_repairs.csv: hand repairs carrying an exact printed-arithmetic proof
+    (the proof lives in the row's note and the commit).  Strict: every entry must match exactly one
+    row or the parse aborts -- a repair silently not applying is worse than a crash.  Entries apply
+    in file order; 'set' rewrites fields ('NULL' clears one), 'add' clones the matched row with the
+    set_* overrides and inserts it after."""
+    path = ROOT / 'reference' / 'canada_manual_repairs.csv'
+    if not path.exists(): return
+    def num_eq(cell, want):
+        if want == '': return True
+        try: return cell is not None and abs(float(cell) - float(want)) < 0.01
+        except (TypeError, ValueError): return False
+    for e in csv.DictReader(open(path)):
+        hits = [i for i, r in enumerate(rows)
+                if r['fiscal_year'] == e['fiscal_year'] and str(r['table_seq']) == e['table_seq']
+                and (r['country'] or '') == e['match_country'] and (r['province'] or '') == e['match_province']
+                and num_eq(r['val_imp'], e['match_val_imp']) and num_eq(r['val_efc'], e['match_val_efc'])]
+        if len(hits) != 1:
+            raise SystemExit(f"manual repair matched {len(hits)} rows (need exactly 1): {e}")
+        i = hits[0]
+        if e['action'] == 'add':
+            import copy
+            r = copy.deepcopy(rows[i]); rows.insert(i + 1, r)
+        else:
+            r = rows[i]
+        for src, dst in (('set_province', 'province'), ('set_val_imp', 'val_imp'),
+                         ('set_val_efc', 'val_efc'), ('set_duty', 'duty')):
+            v = e[src]
+            if v == '': continue
+            r[dst] = None if v == 'NULL' else (v if dst == 'province' else float(v))
+        r['flags'] = (r['flags'] + ',' if r['flags'] else '') + 'manual_repair'
+        diag['manual_repair'] += 1
+
+
 def sweep_junk_country_labels(rows, diag):
     """Phase 0c (plan §5): regime A/B rows whose country slot holds a numeric string.
 
@@ -2632,6 +2666,7 @@ def main():
         n = p.parse_volume(tag, fy, md)
         per_vol.append((fy, tag, n, len(p.rows) - before))
         print(f'{fy:8} {tag:24} tables={n:4} rows={len(p.rows)-before:6}', file=sys.stderr)
+    apply_manual_repairs(p.rows, p.diag)
     sweep_junk_country_labels(p.rows, p.diag)
     fields = ['fiscal_year', 'volume', 'table_seq', 'row_seq', 'regime', 'block_id', 'section', 'section_label', 'article_parent',
               'article', 'country', 'country_inferred', 'province', 'row_kind', 'unit', 'qty_brit', 'qty_foreign', 'qty_land',

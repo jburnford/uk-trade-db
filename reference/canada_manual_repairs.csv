@@ -1,0 +1,7 @@
+fiscal_year,table_seq,match_country,match_province,match_val_imp,match_val_efc,action,set_province,set_val_imp,set_val_efc,set_duty,note
+1880,418,China,Quebec,58942,,set,Ontario,,,,tea Black-other t418-419: province labels slipped; TOT Ontario closes exactly in vi/ve and duty lands within 30c
+1880,418,China,Manitoba,59307,,set,Quebec,,,,tea: TOT Quebec then exact in vi AND ve; duty residual 10530.84 is exactly this row's duty
+1880,418,China,British Columbia,1499,,set,Manitoba,NULL,,,tea: parsed row fuses two printed rows; efc 235 + duty 47.88 are Manitoba's (TOT Man duty residual 47.88 exact); val 1499 moves to the restored BC row
+1880,418,China,Manitoba,,235,add,British Columbia,1499,3598,720.60,tea: the dropped China BC row; ve 3598 proven by China country total 92540 = 38148+50559+235+3598 AND TOT BC ve; duty 720.60 = TOT BC 949.87 - GB 188.96 - StP 40.31
+1880,418,Japan,Quebec,1905,,set,Ontario,,,,tea: TOT Ontario ve closes exactly only with Japan 2080 in Ontario
+1880,418,St. Pierre,British Columbia,219,,set,Nova Scotia,,,,tea: TOT NS residual 219/219 and duty 40.34 vs StP 40.31; StP country total 233 unchanged
