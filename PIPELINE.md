@@ -139,10 +139,16 @@ python3 scripts/ca_parse_country_series.py        # prefatory by-country series 
 python3 scripts/ca_parse_witness.py [regimeC] [regimeAB]   # witness OCR changed -> db/canada/imports_general_rows_w2.csv
 ```
 
-Staged, not yet in the chain (workstream A1/A2): `ca_parse_regimeD.py` (FY1891–97 →
-`imports_general_rows_d.csv`), `ca_pair_spreads.py` + `ca_align_spreads.py` (FY1898–1908
-→ `spread_rows_<tag>.csv`, graded verified / bracketed / flagged),
-`ca_compare_witnesses.py` (two-witness agreement).
+Staged, not yet promoted (workstream A1/A2). Regime D, FY1891–97 — run in this order:
+
+```
+python3 scripts/ca_parse_regimeD.py               # Canadiana primary  -> db/canada/imports_general_rows_d.csv, reports/canada_regimeD_parse.md
+python3 scripts/ca_parse_regimeD.py --witness     # StatCan witness    -> imports_general_rows_d_w2.csv, reports/canada_regimeD_witness_parse.md
+python3 scripts/ca_merge_regimeD.py [--dry-run]   # block vote + Abstract room -> rows_d.csv rewritten, witness_patches_d.csv, reports/canada_regimeD_merge.md
+```
+(`ca_parse_abstract.py` covers 1891–97 since 2026-09-01 and must have run first.)
+FY1898–1908: `ca_pair_spreads.py` + `ca_align_spreads.py` (→ `spread_rows_<tag>.csv`, graded
+verified / bracketed / flagged), `ca_compare_witnesses.py` (two-witness agreement).
 
 Hand-repair channel: `reference/canada_manual_repairs.csv` (strict match-or-abort).
 Anchors: `reference/canada_printed_totals.csv` (national, FY1868–1908),

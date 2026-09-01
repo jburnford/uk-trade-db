@@ -175,3 +175,14 @@ pattern); (b) the GS-tail 'ABSTRACT BY COUNTRIES AND PROVINCES' as the per-cell
 oracle (compact per-country layout, t331+ in 1891); (c) orphan_total placement;
 (d) section-boundary hardening (1894 FREE > DUT smells); (e) promotion into the main
 corpus + the export/check plumbing for regime D.
+
+## Phase 5 — step 2 (2026-09-01): parser v3, witness, vote, oracle
+
+See `reports/completion_log.md` (A1 step 1–2) for the full account. Headline: the regime D
+shortfall was the parser mis-slotting value-only rows, not OCR coverage; after the header-driven
+column map, the slip cascade, the recap/section-total tags, the StatCan witness vote and the
+1891–97 Abstract oracle, the seven years read **0.944 / 0.901 / 0.917 / 0.980 / 0.953 / 0.929 /
+1.015** of print (from 0.987* / .819 / .787 / .861 / .714 / .691 / .756). Staging only; promotion
+and the GB/US under-read are the next step. Chain for the staging corpus:
+`ca_parse_regimeD.py` → `ca_parse_regimeD.py --witness` → `ca_merge_regimeD.py`;
+`ca_parse_abstract.py` now covers 1891–97.

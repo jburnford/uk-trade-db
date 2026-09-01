@@ -26,7 +26,12 @@ def ckey(c):
     m = re.match(r'^(west|east) indies (british|spanish|french|danish|dutch)$', c)      # 'West Indies, Spanish'
     if m: c = m.group(2) + ' ' + m.group(1) + ' indies'
     if (c.startswith('grea') or c.startswith('gt ')) and 'brit' in c: c = 'great britain'   # 'Gt. Britain ( via Hudson Bay)'
-    if c.startswith('united st'): c = 'united states'
+    if c.startswith('united st') or c.startswith('unired st') or c in ('u s america', 'u s', 'us america'): c = 'united states'
+    # 1891-97 abstract / General Statement spellings
+    c = re.sub(r'\bposs?\b', 'possessions', c); c = re.sub(r'\bpossessions\s+all\s+other\b', 'possessions other', c)
+    c = re.sub(r'^newfoundland\b.*labrador$', 'newfoundland', c)
+    c = re.sub(r'^east indies\s*(dutch|spanish|british|french)$', r'\1 east indies', c)
+    c = re.sub(r'^s east indies$', 'spanish east indies', c)
     if c in ('africa', 'british possessions africa', 'south africa'): c = 'british africa'     # '“ “ Africa' = British Africa
     if c.startswith('sp west indies'): c = 'spanish west indies'                                # 'Sp. W. Indies'
     if c in ('brit w indies', 'british w indies'): c = 'british west indies'

@@ -80,6 +80,12 @@ def parse_volume(tag, fy, md_path, out):
                     if p2: country = c2; prov = p2
                     elif re.match(r'totals?', I.norm_label(lab), re.I): country = 'TOTAL'
                     else: country = I.norm_label(lab); diag['label_not_province'] += 1
+            if country and country != 'TOTAL':
+                # 1891+ group headers absorbed into the first country label: 'British Empire, viz.:- Great Britain',
+                # 'Other Countries :- Holland', 'Other Countries :- Total all other Countries'
+                country = re.sub(r'^(British\s+Empire|Other\s+Countries)\W*(viz)?\W*', '', country, flags=re.I).strip() or country
+            if country and re.match(r'(grand\s+)?totals?\b', country, re.I):
+                country = 'TOTAL'                                   # 'Grand Total Entered for Consumption', 'Total all other Countries'
             kind = 'province' if prov else ('country_total' if country != 'TOTAL' else 'grand_total')
             if kind == 'grand_total':
                 in_abs = False          # the Dominion total closes the abstract
@@ -162,7 +168,9 @@ def main():
     out = []
     for row in index:
         tag = row['volume_tag']; fy = row['fiscal_year']
-        if row.get('note', '').startswith('NOPARSE'): continue   # registered but pending its parser (INDEX.tsv note says which phase)
+        # NOPARSE marks a volume whose General Statement needs another parser (regime D, phase 5);
+        # its ABSTRACT prints in the regime-C layout and is read here from 2026-09-01
+        if row.get('note', '').startswith('NOPARSE') and not (1891 <= int(fy) <= 1897): continue
         md = P.RAW / tag / f'{tag}.md'
         if not md.exists(): continue
         before = len(out)

@@ -69,11 +69,15 @@ def parse_volume(tag, fy, md_path, out, diag):
     body = text[start:]
     last_end = 0
     nval = 5
+    prev_html = None
     for seq, tm in enumerate(P.TABLE_RE.finditer(body)):
         inter = body[last_end:tm.start()]
         last_end = tm.end()
         if n_tab > 0 and END_RE.search(inter):
             break
+        if tm.group(0) == prev_html:
+            diag['duplicate_table_skipped'] += 1; continue     # the OCR emitted the same page twice (FY1897 t124)
+        prev_html = tm.group(0)
         n_tab += 1
         # the RECAPITULATION tail (by provinces, no countries) is announced by its own header
         # row 'PROVINCES INTO WHICH IMPORTED' without 'COUNTRIES' -- its rows are not detail
@@ -85,8 +89,12 @@ def parse_volume(tag, fy, md_path, out, diag):
                 n = sum(1 for _, _, c in row if re.search(r'quantity|value|duty|^\$', c, re.I))
                 if n in (4, 5): nval = n; break
         diag[f'nval_{nval}'] += 1
+        prev_texts = None
         for cells in P.parse_table(tm.group(0)):
             texts = [c for _, _, c in cells]
+            if texts == prev_texts and any(re.search(r'\d{3}', t) for t in texts):
+                diag['duplicate_row_skipped'] += 1; continue     # the OCR emitted a printed line twice (FY1897 t124)
+            prev_texts = texts
             joined = ' '.join(texts).upper()
             if 'FREE GOODS' in joined: ctx['section'] = 'FREE'
             if 'DUTIABLE GOODS' in joined: ctx['section'] = 'DUTIABLE'
@@ -194,7 +202,12 @@ def parse_volume(tag, fy, md_path, out, diag):
                 ctx['in_total'] = True; ctx['country'] = None; ctx['pending'] = None
                 if has_vals: emit('article_total', None, '')
                 continue
-            if lab_n and len(labs) == 1 and len(lab_n) > 22 and not is_country(lab_n) and not re.search(r'[—-]\s*$', lab.strip()):
+            if lab_n and RECAP_RE.match(lab_n):
+                # 'By Provinces' / 'By Countries' as a label: a recapitulation sub-table follows
+                ctx['article'] = lab_n; ctx['country'] = None; ctx['in_total'] = False; ctx['pending'] = None
+                if has_vals: emit('recap', None, '')
+                continue
+            if lab_n and len(labs) == 1 and len(lab_n) > 22 and not is_country(lab_n):
                 # a long non-country label alone on a value row is an ARTICLE heading that
                 # carries numbers (a summary line such as 'Melado, &c., direct and not
                 # direct' or a heading fused with the next line): open the article, keep

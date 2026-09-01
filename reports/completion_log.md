@@ -47,3 +47,52 @@ The flags, and what they say:
   Filed for **B4**; the missing £3M is not yet located.
 
 No Canadian side yet for CY1890–1900 (FY1891+ not in the exports; A1/A2).
+
+## A1 step 1–2 — regime D parser v3, the StatCan witness, the vote, and the Abstract oracle (2026-09-01)
+
+`ca_parse_regimeD.py` v3 (Canadiana primary AND `--witness` for StatCan, same state machine):
+- **The mass was never lost, it was mis-slotted.** The v1 parser right-padded rows' numbers, so a
+  value-only article (`| value | | value | duty`) put its consumption value in the qty slot: a third of
+  FY1896 vanished from every sum. v3 maps columns from each table's header (`Quantity Value Quantity
+  Value Duty` = 5 cells, free-goods tables 4) and takes the LAST n cells positionally; the old
+  heuristic is only the fallback (6% of rows).
+- The one-row label slip: the unit line (`Tons.`) carries the first country's label with no numbers,
+  and the OCR pairs label k with numbers k+1 until an unlabelled row re-syncs — a pending-label
+  cascade (regime B's rule, conditional on the unit row). Recapitulation tables (header `PROVINCES
+  INTO WHICH IMPORTED` without countries), recap sub-tables (`By Provinces` labels), section grands
+  (`Total, Dutiable Goods`), long non-country headings carrying numbers, duplicated OCR rows — each
+  its own row_kind or skip, none of it counted as detail. 1891's old 0.987 was inflated by ~20M of
+  sugar recapitulation counted as detail.
+- Instrument C (block closure) is in the report: ~700 blocks/yr (60–70M) close exactly on their own
+  Total block.
+
+`ca_parse_abstract.py` now reads the 1891–97 abstracts (same layout as regime C, two label variants
+folded): **1891–94 sum to print exactly, 1895–96 at 0.999, 1897 0.977** — the per-country oracle.
+`ca_check_abstract.ckey` gained the 1891+ spellings (U.S. America, Newfoundland incl. Labrador,
+Spanish Poss., East Indies Dutch).
+
+`ca_merge_regimeD.py`: block vote (fingerprint pairing; closed / mismatch / no_total semantics; witness
+replaces only where it closes and Canadiana provably fails; superset rule for no-total pairs; whole
+articles inserted only when closed, absent, and within BOTH the national and the per-country Abstract
+room; duplicate blocks dropped; 6,475 blocks flagged `witnessD_agree` where both imagings read every
+row identically).
+
+| FY | primary v1 | primary v3 | witness v3 | **after vote** | corpus/abstract by country | GB | US |
+|---|---|---|---|---|---|---|---|
+| 1891 | 0.987* | 0.933 | 0.902 | **0.944** | 0.917 | 0.898 | 0.949 |
+| 1892 | 0.819 | 0.883 | 0.940 | **0.901** | 0.896 | 0.848 | 0.919 |
+| 1893 | 0.787 | 0.903 | 0.940 | **0.917** | 0.901 | 0.974 | 0.941 |
+| 1894 | 0.861 | 0.956 | 0.972 | **0.980** | 0.971 | 0.981 | 0.974 |
+| 1895 | 0.714 | 0.928 | 0.959 | **0.953** | 0.951 | 0.950 | 0.954 |
+| 1896 | 0.691 | 0.907 | 1.035 | **0.929** | 0.915 | 0.974 | 0.881 |
+| 1897 | 0.756 | 1.028 | 0.951 | **1.015** | 1.016 | 1.122 | 0.981 |
+
+(*inflated by recap rows.) Staging only — `imports_general_rows_d.csv` is NOT yet promoted.
+
+**Open for A1 close-out (next session):** the under is now concentrated in Great Britain and the
+United States (1892 GB 0.848, 1896 US 0.881) — the 1,076 unpaired witness `no_total` blocks and the
+2,788 no-total pairs are where it sits; admitting them needs the per-country room gate plus an
+order-pairing repair for slipped Total blocks. 1897 GB reads 1.12 against an abstract that itself
+lost 2.3% — locate the excess block. Then promotion: the chain scripts (infer, export, check) must
+accept regime D rows (national = detail rows; province runs under dash-countries are detail, their
+country_total is not).
