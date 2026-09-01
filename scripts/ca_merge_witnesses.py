@@ -187,10 +187,15 @@ def main():
             w2blocks.append(curb)
         if r['row_kind'] == 'detail' and r['province']: curb['det'].append(r)
         else: curb['tot'] = r
+    WC = defaultdict(list)
     for b in w2blocks:
-        if b['tot'] is None or not b['det']: continue
+        if not b['det']: continue
+        b['detsum'] = sum(f(x['val_efc']) or 0 for x in b['det'])
+        b['fp'] = {(x['province'], round(f(x['val_efc']) or 0)) for x in b['det']}
+        WC[(b['fy'], b['c'])].append(b)
+        if b['tot'] is None: continue
         tv = f(b['tot']['val_efc'])
-        if tv and abs(sum(f(x['val_efc']) or 0 for x in b['det']) - tv) <= 1:
+        if tv and abs(b['detsum'] - tv) <= 1:
             WB[(b['fy'], b['a'], b['c'])].append(b)
     n_comp = 0; comp_val = 0.0
     i = 0; n = len(rows)
@@ -264,11 +269,32 @@ def main():
         if not broken and len(tots) == 1 and det:
             tv = f(tots[0]['val_efc']); sv = sum(f(x['val_efc']) or 0 for x in det)
             broken = bool(tv) and abs(sv - tv) > max(1, 0.01 * tv)
-        m = WB.get((fy, a, c))
-        if not (broken and m and len(m) == 1):
+        if not broken:
             i = j; continue
-        wb = m[0]
-        # per-cell delta gate
+        cdn_tot = f(tots[0]['val_efc']) if len(tots) == 1 else None
+        m = WB.get((fy, a, c))
+        wb = m[0] if m and len(m) == 1 else None
+        if wb is None:
+            # fingerprint fallback: the witness block sharing the Canadiana block's identical
+            # (province, val_efc) detail rows -- names differ between witnesses ('All other
+            # fabrics...' vs 'Wool, all other manufactures...'), values do not
+            fp = {(x['province'], round(f(x['val_efc']) or 0)) for x in det}
+            need = max(2, len(fp) // 2)
+            cands = [b for b in WC.get((fy, c), []) if len(b['fp'] & fp) >= need]
+            if len(cands) == 1:
+                b2 = cands[0]
+                tv2 = f(b2['tot']['val_efc']) if b2['tot'] is not None else None
+                closes = (tv2 is not None and abs(b2['detsum'] - tv2) <= 1) or \
+                         (cdn_tot is not None and abs(b2['detsum'] - cdn_tot) <= 1)
+                if closes: wb = b2
+        if wb is None:
+            i = j; continue
+        # exact cross-closure: the witness details reproduce CANADIANA's own printed country_total
+        # to the dollar -- the strongest proof there is, and it OVER-RULES the per-cell oracle
+        # (standing discipline: cells polluted by several defects mislead; a printed total does not).
+        # 1886 wool: cdn total 2,844,090 = witness details exactly, while the GB Ontario cell carries
+        # +190K of unrelated overs that would otherwise veto the replacement.
+        exact_cross = cdn_tot is not None and abs(wb['detsum'] - cdn_tot) <= 1
         delta = defaultdict(float)
         for x in det:
             sec = 'free' if x['section'] == 'FREE' else 'dut'
@@ -277,20 +303,23 @@ def main():
             sec = 'free' if x['section'] == 'FREE' else 'dut'
             delta[(c, x['province'], sec)] += f(x['val_efc']) or 0
         ok = True
-        for cell, d in delta.items():
-            a_cell = A[fy].get(cell)
-            if a_cell is None: ok = False; break
-            if P[fy][cell] + d - a_cell > max(50, 0.002 * a_cell): ok = False; break
+        if not exact_cross:
+            for cell, d in delta.items():
+                a_cell = A[fy].get(cell)
+                if a_cell is None: ok = False; break
+                if P[fy][cell] + d - a_cell > max(50, 0.002 * a_cell): ok = False; break
         if not ok:
             i = j; continue
         for x in seg:
             x['row_kind'] = 'superseded_w2'
             x['flags'] = (x['flags'] + ',' if x['flags'] else '') + 'superseded_by_witness'
         newrows = []
+        art_name = seg[0]['article']; art_parent = seg[0]['article_parent']
         for x in wb['det'] + ([wb['tot']] if wb.get('tot') else []):
             if x is None: continue
             nr = {k2: x.get(k2, '') for k2 in fields}
             nr['block_id'] = r['block_id']
+            nr['article'] = art_name; nr['article_parent'] = art_parent   # keep the host's name key
             nr['flags'] = (nr['flags'] + ',' if nr['flags'] else '') + 'witness_block_replaced'
             newrows.append(nr)
         rows[j:j] = newrows
