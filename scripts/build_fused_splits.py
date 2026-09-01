@@ -66,6 +66,7 @@ import duckdb
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from phantom_articles import fix_articles, known_groups, promote_headings, _key
 import build_capture_reassign as cap
+from export_overlays import load_reassign
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 FLOWS = ['export_uk', 'reexport']
@@ -229,18 +230,6 @@ def same_heading(a, b):
     if not ta or not tb:
         return False
     return len(ta & tb) / min(len(ta), len(tb)) >= 0.6
-
-
-def load_reassign(flow):
-    out = {}
-    for path in ('reference/group_reassign.csv',
-                 'reference/capture_reassign.csv'):
-        if not Path(path).exists():
-            continue
-        for r in csv.DictReader(open(path)):
-            if r['flow'] == flow:
-                out[(r['volume'], r['from_group'], r['article'])] = r['to_group']
-    return out
 
 
 def load_volume(con, vol, flow):

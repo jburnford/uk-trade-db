@@ -50,7 +50,7 @@ import duckdb
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import inf_fallback
-from phantom_articles import fix_articles, load_splits, apply_splits
+from export_overlays import relabel, load_repairs, repair_value
 
 TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
 ENGINES = {'obs': 'country_obs', 'inf': 'country_obs_inf', 'twoup': 'country_obs_twoup',
@@ -152,10 +152,7 @@ def main():
     # what the export consumers see, and the closure it restores comes from
     # re-uniting members with the printed TOTAL that the absorbed heading
     # had split them from. Repairs are keyed on the RAW article.
-    fixed = (fix_articles(apply_splits(raw, load_splits(flow=a.flow), vol=0,
-                                       flow=1, year=2, group=3, art=4, seq=6, unit=5),
-                          vol=0, flow=1, year=2, group=3, art=4, unit=5, seq=6)
-             if a.repairs else raw)
+    fixed = relabel(raw, a.flow) if a.repairs else raw
     # (vol, year, group, raw article, article, unit, seq, country, value):
     # the group is the relabelled one (a fused-section split moves rows to
     # another heading) but repairs are looked up on the raw group, so both
@@ -164,32 +161,16 @@ def main():
             for r, f in zip(raw, fixed)]
     rows.sort(key=lambda t: (t[0], t[2], t[5], t[6], t[7] if t[7] is not None else -1))
 
-    fix, no_repair = {}, object()
+    fix = {}
     if a.repairs and a.measure == 'value' and a.engine == 'obs':
-        import csv, os
-        for path in ('reference/export_cell_repairs.csv',
-                     'reference/malformed_cell_repairs.csv',
-                     'reference/edge_column_repairs.csv',
-                     'reference/row_slip_repairs.csv',
-                     'reference/scaled_block_repairs.csv',
-                     'reference/label_merge_repairs.csv',
-                     'reference/export_manual_repairs.csv',
-                'reference/section_closure_repairs.csv'):
-            if not os.path.exists(path):
-                continue
-            for r in csv.DictReader(open(path)):
-                fix[(r['volume'], int(r['year']), r['article_group'], r['article'],
-                     r['country_raw'], round(float(r['old_value'])))] = (
-                    float(r['new_value']) if r['new_value'] != '' else None)
+        fix = load_repairs()
         print(f'applying {len(fix)} cell repairs/null-outs')
 
     blocks = collections.defaultdict(list)
     n_fixed = 0
     for vol, yr, ag, raw_ag, raw_art, art, unit, seq, ctry, amt in rows:
-        if amt is not None and fix:
-            nv = fix.get((vol, yr, raw_ag, raw_art, ctry, round(amt)), no_repair)
-            if nv is not no_repair:
-                amt, n_fixed = nv, n_fixed + 1
+        amt, hit = repair_value(fix, vol, yr, raw_ag, raw_art, ctry, amt)
+        n_fixed += hit
         blocks[(vol, yr, ag, art, unit)].append((seq, ctry, amt))
     if fix:
         print(f'cell repairs applied: {n_fixed}')

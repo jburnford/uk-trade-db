@@ -33,28 +33,11 @@ from pathlib import Path
 import duckdb
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import inf_fallback
-from phantom_articles import fix_articles, load_splits, apply_splits
+from export_overlays import (load_flow_rows, relabel, load_repairs, repair_value,
+                             PRIMARY_OVERRIDE, is_total)
 
-TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
-
-# Per-year primary-witness OVERRIDE. A volume's own maximum year sits in the
-# damaged page-edge column of the ten-column comparative layout, so for 1897
-# and 1898 the volume-of-record is the WORST witness: measured closure says
-# as_1899's mid-table reprint columns corroborate roughly 3x more value than
-# the vote-repaired edge columns (Canada 1897: 22.0% of value against 2.1%).
-# Those years are therefore read from as_1899. 1899 stays on as_1899's own
-# edge column -- the one reprint, tn_1901's mid-table 1899 column
-# (parse_tn_overlap.py -> country_obs_tn), closes no better and is a
-# different publication whose headings align poorly, so it serves as a
-# WITNESS to repair as_1899 (repair_edge_columns.py, repair_section_closure.py)
-# rather than as the primary.
-PRIMARY_OVERRIDE = {1897: 'as_1899', 1898: 'as_1899'}
+# PRIMARY_OVERRIDE (1897/98 read from as_1899): see export_overlays.py
 ENGINES = {'obs': 'country_obs', 'inf': 'country_obs_inf'}
-
-
-def is_total(s):
-    return bool(s) and bool(TOTAL_RE.search(s))
 
 
 def norm(s):
@@ -72,30 +55,15 @@ def bucket(members, printed):
 
 def load(con, tbl, flow):
     """Return {(vol, yr, ag, art, unit): [(seq, country, value, quantity)]}."""
-    cols = {c[0] for c in con.execute(f'describe "{tbl}"').fetchall()}
-    seq = 'row_seq' if 'row_seq' in cols else 'rowid'
-    qty = 'quantity' if 'quantity' in cols else 'NULL'
-    rows = con.execute(f"""
-        select volume, flow, year, coalesce(article_group,'') ag, article,
-               unit, {seq} seq, country_raw, value, {qty}
-        from "{tbl}" where flow = ?
-    """, [flow]).fetchall()
-    if tbl == 'country_obs':
-        rows += inf_fallback.load_rows(flow, with_qty=True)   # inf-only sections
-    # phantom-region relabel (phantom_articles.py): 'West Africa' as an
-    # article is an absorbed heading; the row belongs to the article above.
-    # Repairs are keyed on the RAW parse, so look them up before relabelling.
-    fixed = fix_articles(apply_splits(rows, load_splits(flow=flow), vol=0,
-                                      flow=1, year=2, group=3, art=4, seq=6, unit=5),
-                         vol=0, flow=1, year=2, group=3, art=4, unit=5, seq=6)
+    rows = load_flow_rows(con, flow, with_qty=True, table=tbl)
+    # label passes (fused splits, phantom relabel) run AFTER the repairs are
+    # looked up, because repairs are keyed on the RAW parse
+    fixed = relabel(rows, flow)
     fix = load_repairs()
     b = collections.defaultdict(list)
     for r, f in zip(rows, fixed):
         vol, _, yr, ag, art, unit, sq, ctry, val, qt = r
-        if val is not None:
-            nv = fix.get((vol, yr, ag, art or '', ctry, round(val)), NO_REPAIR)
-            if nv is not NO_REPAIR:
-                val = nv                       # None = null-out, cell dropped
+        val, _ = repair_value(fix, vol, yr, ag, art, ctry, val)   # None = null-out
         b[(vol, yr, ag, f[4] or '', f[5] or '')].append((sq, ctry, val, qt))
     for k in b:
         b[k].sort(key=lambda t: t[0] if t[0] is not None else -1)
@@ -116,40 +84,6 @@ def section_verdicts(rws):
             for s in seqs:
                 out[s] = v
             members, seqs = [], []
-    return out
-
-
-REPAIR_FILES = ('reference/export_cell_repairs.csv',
-                'reference/malformed_cell_repairs.csv',
-                'reference/edge_column_repairs.csv',
-                'reference/row_slip_repairs.csv',
-                'reference/scaled_block_repairs.csv',
-                'reference/label_merge_repairs.csv',
-                'reference/export_manual_repairs.csv',
-                'reference/section_closure_repairs.csv')
-NO_REPAIR = object()
-
-
-def load_repairs(paths=REPAIR_FILES):
-    """Provenance-safe overlay of repair_fused_cells.py and
-    repair_malformed_cells.py corrections.
-
-    Keyed on the BAD value as well as the coordinates, so a correction can only
-    ever replace the exact number it was derived from. If the parse changes
-    upstream the key stops matching and the repair drops out rather than
-    silently overwriting a different figure. A BLANK new_value is a null-out:
-    the cell is malformed with no witness anywhere and must be dropped, not
-    trusted.
-    """
-    import csv as _csv, os as _os
-    out = {}
-    for path in paths:
-        if not _os.path.exists(path):
-            continue
-        for r in _csv.DictReader(open(path)):
-            out[(r['volume'], int(r['year']), r['article_group'], r['article'],
-                 r['country_raw'], round(float(r['old_value'])))] = (
-                float(r['new_value']) if r['new_value'] != '' else None)
     return out
 
 

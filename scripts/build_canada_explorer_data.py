@@ -81,27 +81,14 @@ from pathlib import Path
 import duckdb
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import inf_fallback
-from phantom_articles import (fix_articles, known_groups, promote_headings,
-                              load_splits, apply_splits)
+from export_overlays import (load_flow_rows, relabel, load_repairs, repair_value,
+                             load_folds, load_reassign, load_families,
+                             PRIMARY_OVERRIDE, TOTAL_RE, is_total, CANADA_LABELS)
 
-TOTAL_RE = re.compile(r'\bTOTAL\b', re.I)
-
-# Per-year primary-witness OVERRIDE. A volume's own maximum year sits in the
-# damaged page-edge column of the ten-column comparative layout, so for 1897
-# and 1898 the volume-of-record is the WORST witness: measured closure says
-# as_1899's mid-table reprint columns corroborate roughly 3x more value than
-# the vote-repaired edge columns (Canada 1897: 22.0% of value against 2.1%).
-# Those years are therefore read from as_1899. 1899 stays on as_1899's own
-# edge column -- the one reprint, tn_1901's mid-table 1899 column
-# (parse_tn_overlap.py -> country_obs_tn), closes no better and is a
-# different publication whose headings align poorly, so it serves as a
-# WITNESS to repair as_1899 (repair_edge_columns.py, repair_section_closure.py)
-# rather than as the primary.
-PRIMARY_OVERRIDE = {1897: 'as_1899', 1898: 'as_1899'}
+# PRIMARY_OVERRIDE (1897/98 read from as_1899): see export_overlays.py
 # an ARTICLE name that is really a printed subtotal line
 SUBTOTAL_ART = re.compile(r'^\s*(total|sum|grand total)\b', re.I)
-CANADA = ('British North America', 'Canada', 'Newfoundland')
+CANADA = CANADA_LABELS
 
 # Defects found but NOT yet repaired, surfaced on the chart so a reader is not
 # quietly misled by a series the project already knows is wrong.
@@ -122,56 +109,6 @@ ISSUES = {
 }
 
 
-def is_total(s):
-    return bool(s) and bool(TOTAL_RE.search(s))
-
-
-def load_folds(path, flow):
-    if not os.path.exists(path):
-        return {}
-    return {r['raw_group']: r['canonical']
-            for r in csv.DictReader(open(path)) if r['flow'] == flow}
-
-
-def load_reassign(paths, flow):
-    out = {}
-    for path in paths:
-        if not os.path.exists(path):
-            continue
-        for r in csv.DictReader(open(path)):
-            if r['flow'] == flow:
-                out[(r['volume'], r['from_group'], r['article'])] = r['to_group']
-    return out
-
-
-def load_families(path, flow):
-    """Era wordings, OCR variants and continuation suffixes of one printed
-    heading -> one family label (reference/export_group_families.csv), applied
-    after the group-name folds. IRON (to 1890) and IRON AND STEEL (from 1891)
-    are one series; CAOUTCHOUC has seven spellings; "IRON AND STEEL'd)" is a
-    page continuation."""
-    if not os.path.exists(path):
-        return {}
-    return {r['canonical']: r['family']
-            for r in csv.DictReader(open(path)) if r['flow'] == flow}
-
-
-NO_REPAIR = object()
-
-
-def load_repairs(paths):
-    # blank new_value = null-out: malformed cell with no witness, drop it
-    out = {}
-    for path in paths:
-        if not os.path.exists(path):
-            continue
-        for r in csv.DictReader(open(path)):
-            out[(r['volume'], int(r['year']), r['article_group'], r['article'],
-                 r['country_raw'], round(float(r['old_value'])))] = (
-                float(r['new_value']) if r['new_value'] != '' else None)
-    return out
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--db', default='db/uk_trade.duckdb')
@@ -182,14 +119,7 @@ def main():
     ap.add_argument('--out', default='reports/canada_explorer.json')
     a = ap.parse_args()
 
-    fix = load_repairs(('reference/export_cell_repairs.csv',
-                        'reference/malformed_cell_repairs.csv',
-                        'reference/edge_column_repairs.csv',
-                        'reference/row_slip_repairs.csv',
-                        'reference/scaled_block_repairs.csv',
-                        'reference/label_merge_repairs.csv',
-                        'reference/export_manual_repairs.csv',
-                'reference/section_closure_repairs.csv'))
+    fix = load_repairs()
     con = duckdb.connect(a.db, read_only=True)
     flows = [f.strip() for f in a.flows.split(',') if f.strip()]
 
@@ -202,40 +132,19 @@ def main():
     n_moved = 0
     n_sub = 0
     for flow in flows:
-        folds[flow] = load_folds('reference/group_name_folds.csv', flow)
-        reassign[flow] = load_reassign(('reference/group_reassign.csv',
-                                        'reference/capture_reassign.csv'), flow)
-        families[flow] = load_families('reference/export_group_families.csv',
-                                       flow)
-        rows = con.execute("""
-            select volume, flow, year, coalesce(article_group,'') ag,
-                   article, unit, row_seq, country_raw, value
-            from country_obs where flow = ?
-        """, [flow]).fetchall()
-        # sections obs never read, whole from inf where they close on their
-        # printed TOTAL (build_inf_fallback.py); same columns, appended
-        rows += inf_fallback.load_rows(flow)
-        # phantom-region relabel (phantom_articles.py): 'West Africa' as an
-        # article is an absorbed heading; the row belongs to the article
-        # above. Repairs are keyed on the RAW parse: look up, then relabel.
-        # fused sections first (build_fused_splits.py): the second TOTAL
-        # hierarchy inside a block takes the heading the reference prints
-        # next -- keyed on the raw parse and a row_seq range
-        split = apply_splits(rows, load_splits(flow=flow), vol=0, flow=1,
-                             year=2, group=3, art=4, seq=6, unit=5)
-        fixed = fix_articles(split, vol=0, flow=1, year=2, group=3, art=4,
-                             unit=5, seq=6)
-        # then a lost heading stored as the ARTICLE becomes its own group
-        # (GLASS holding 'GREASE, TALLOW, AND ANIMAL FAT' 1886-94)
-        fixed = promote_headings(fixed, known_groups(con, flow), vol=0,
-                                 flow=1, year=2, group=3, art=4)
+        folds[flow] = load_folds(flow)
+        reassign[flow] = load_reassign(flow)
+        families[flow] = load_families(flow)
+        rows = load_flow_rows(con, flow)        # country_obs + inf-only sections
+        # label passes: fused splits -> phantom relabel -> heading promotion
+        # (a lost heading stored as the ARTICLE becomes its own group: GLASS
+        # holding 'GREASE, TALLOW, AND ANIMAL FAT' 1886-94). Repairs are keyed
+        # on the RAW parse, so they are looked up on `rows`, not `fixed`.
+        fixed = relabel(rows, flow, con=con, promote=True)
         for r, f in zip(rows, fixed):
             vol, _, yr, ag, art, unit, sq, ctry, val = r
-            if val is not None:
-                nv = fix.get((vol, yr, ag, art or '', ctry, round(val)),
-                             NO_REPAIR)
-                if nv is not NO_REPAIR:
-                    val, n_fixed = nv, n_fixed + 1   # None = null-out
+            val, hit = repair_value(fix, vol, yr, ag, art, ctry, val)   # None = null-out
+            n_fixed += hit
             ag, art, unit = f[3], f[4] or '', f[5] or ''
             blocks[(flow, vol, yr, ag, art, unit)].append((sq, ctry, val))
             if val is not None and ctry and not TOTAL_RE.search(ctry):
