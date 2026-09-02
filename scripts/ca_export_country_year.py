@@ -62,6 +62,11 @@ rows = list(csv.DictReader(open(ROOT / 'db' / 'canada' / 'imports_general_rows.c
 _d = ROOT / 'db' / 'canada' / 'imports_general_rows_d.csv'
 if _d.exists():
     rows += [r for r in csv.DictReader(open(_d)) if r['regime'] == 'D']
+# regime S (FY1898-1908): the spread-joined dutiable rows + single-page free-goods tables
+# (ca_promote_spreads.py); same detail semantics
+_s = ROOT / 'db' / 'canada' / 'imports_general_rows_s.csv'
+if _s.exists():
+    rows += [r for r in csv.DictReader(open(_s)) if r['regime'] == 'S']
 CY = defaultdict(lambda: defaultdict(float)); ACY = defaultdict(lambda: defaultdict(float)); AU = {}
 for r in rows:
     if r['row_kind'] != 'detail': continue
@@ -92,7 +97,7 @@ with open(ROOT / 'exports' / 'canada_imports_article_country_year.csv', 'w', new
         d = ACY[k]; w.writerow([*k, AU.get(k, ''), int(d['n']), round(d['qty_imp']), round(d['val_imp']), round(d['qty_efc']), round(d['val_efc']), round(d['duty'], 2)])
 # origin shares
 L = ['# Canadian imports by origin, fiscal years ending 30 June', '',
-     'From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote - both scans fail there). Regime D FY1891-97 (new marginal layout, parsed by ca_parse_regimeD + the StatCan witness vote) reads 0.90-0.98 of print (1897 1.015): the remaining loss is diffuse and two-sided, concentrated in Great Britain and the United States - see reports/canada_regimeD_merge.md for the per-country check against the Abstract.', '',
+     'From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote - both scans fail there). Regime D FY1891-97 (new marginal layout, parsed by ca_parse_regimeD + the StatCan witness vote) reads 0.90-0.98 of print (1897 1.015): the remaining loss is diffuse and two-sided, concentrated in Great Britain and the United States - see reports/canada_regimeD_merge.md for the per-country check against the Abstract. Regime S FY1898-1908 (dutiable goods printed across a spread and re-joined by ca_align_spreads, free goods on single pages; ca_promote_spreads) reads 0.86-0.97 of print on value entered for consumption, single witness, no Abstract check yet - see reports/canada_spreads_promote.md.', '',
      '| FY | regime | total $ | Great Britain | United States | France | Germany | B.W. Indies | other named | ? | GB % | US % | other % (incl ?) |', '|---|---|---|---|---|---|---|---|---|---|---|---|---|']
 by = defaultdict(lambda: defaultdict(float)); regs = {}
 for (fy, reg, c, sec), d in CY.items():

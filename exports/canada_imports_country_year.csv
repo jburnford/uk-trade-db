@@ -3217,3 +3217,2385 @@ fiscal_year,regime,country,section,rows,qty_imp,val_imp,qty_efc,val_efc,duty
 1897,D,Venezuela,DUTIABLE,1,15000,240,15000,240,75.0
 1897,D,Venezuela,FREE,1,1320447,237127,1320447,237127,0.0
 1897,D,W.N. Ter,DUTIABLE,2,0,47,0,47,9.8
+1898,S,1 1,FREE,2,2,2,0,0,0.0
+1898,S,1 2,FREE,2,2,4,0,0,0.0
+1898,S,1 4,FREE,1,1,4,0,0,0.0
+1898,S,1 5,FREE,1,1,5,0,0,0.0
+1898,S,1 7,FREE,1,1,7,0,0,0.0
+1898,S,"1 Belts of all kinds, N.O.P",DUTIABLE,8,0,61228,0,61229,20574.93
+1898,S,"1 Brass, manufactures of, N.O.P",DUTIABLE,8,0,288116,0,287039,84678.72
+1898,S,1 Brushes,DUTIABLE,8,0,138758,0,137164,31995.2
+1898,S,"1 Buttons, all kinds, N.O.P",DUTIABLE,8,0,105787,0,105699,34457.61
+1898,S,"1 Carpets, N.E.S",DUTIABLE,8,97480,56245,91013,55421,17676.0
+1898,S,"1 Cement, hydraulic or waterlime",DUTIABLE,6,16033,7097,16033,7097,1988.53
+1898,S,"1 Chalk, prepared",DUTIABLE,8,0,9587,0,9338,1825.51
+1898,S,"1 Cocoa carpeting, mats, rugs and matted",DUTIABLE,7,0,4593,0,4440,1047.21
+1898,S,1 Copper and manufactures of— N.E.S. See twines,DUTIABLE,8,426166,30442,419077,30082,7459.61
+1898,S,"1 Cotton, manufactures of",DUTIABLE,1,0,219,0,219,58.04
+1898,S,"1 Cotton, manufactures of— Sewing cotton thread in hanks, 3 and 6 cord",,3,144,71,135,9,0.0
+1898,S,"1 Cotton, manufactures of— Sewing cotton thread in hanks, 3 and 6 cord",DUTIABLE,1,413851,205180,413851,205180,26948.84
+1898,S,"1 Drugs, dyes, chemicals and medicines",DUTIABLE,1,46244,3083,30997,2060,404.0
+1898,S,1 Eggs,DUTIABLE,6,253453,36365,249238,35581,7460.75
+1898,S,"1 Electric apparatus, N.E.S., insulators of all kinds, &c., electric batteries",DUTIABLE,8,0,277385,0,276176,68938.77
+1898,S,1 Emery wheels and manufactures of emery,DUTIABLE,1,0,0,0,9187,2295.95
+1898,S,1 Fertilizers compounded or manufactured,DUTIABLE,7,0,46438,0,46438,4637.45
+1898,S,1 Fish,,1,12,1,0,0,0.0
+1898,S,1 Fish,DUTIABLE,6,204554,9011,204554,9011,1022.81
+1898,S,"1 Fish— Preserved in oil, except anchovies and sardines",DUTIABLE,5,0,1501,0,1441,423.41
+1898,S,"1 Fruits, including nuts :",DUTIABLE,6,203927,26572,190066,25124,5196.43
+1898,S,"1 Fruits— Oranges, lemons and limes, in barrels, not exceeding the capacity of flour barrels",,1,1574,6892,1574,6892,0.0
+1898,S,"1 Fruits— Oranges, lemons and limes, in barrels, not exceeding the capacity of flour barrels",DUTIABLE,5,6837,18164,6372,17083,3521.38
+1898,S,"1 Furniture — House, office, cabinet or store furniture of wood, iron or other material, in parts or finished",DUTIABLE,8,0,282565,0,281303,83619.87
+1898,S,1 Glass and manufactures of :,,1,10,7,0,0,0.0
+1898,S,1 Gun powder and other explosives— Cannister powder,DUTIABLE,2,896,376,9697,5657,280.48
+1898,S,"1 Gutta percha and India rubber, manufactures of",DUTIABLE,8,0,146502,0,145326,46155.61
+1898,S,"1 Hats, caps and bonnets— Straw, grass, chip or other material, N. E. S",DUTIABLE,8,0,530796,0,530911,149747.93
+1898,S,1 Iron and steel and manufactures of,DUTIABLE,15,0,174702,0,165218,48407.98
+1898,S,1 Iron and steel and manufactures of— Cast scrap iron,DUTIABLE,5,1559,13251,1559,13251,3876.03
+1898,S,"1 Iron and steel and manufactures of— Pen knives, jack knives, and pocket knives of all kinds",DUTIABLE,8,0,88339,0,83098,22136.98
+1898,S,"1 Iron and steel and manufactures of— Wire fencing, woven, buckthorn strip, and wire fencing of iron or steel, N.E.S",,1,4273,95,4274,14,0.0
+1898,S,"1 Iron and steel and manufactures of— Wire fencing, woven, buckthorn strip, and wire fencing of iron or steel, N.E.S",DUTIABLE,8,2396701,56927,2397701,56927,8372.91
+1898,S,"1 Jewellery, N.O.P",DUTIABLE,8,0,341396,0,341449,100619.02
+1898,S,1 Lead and manufactures of,DUTIABLE,1,30894,1182,43572,1609,513.94
+1898,S,"1 Lime juice and other fruit syrups and fruit juices, N.O.P",DUTIABLE,7,14533,14684,14034,14086,2634.7
+1898,S,"1 Metal, N. E. S., and manufactures of— Gas, coal or other oil and electric light fixtures or parts thereof of metal, including lava or other eips, burners, collars, galleries, shades and shade holders",DUTIABLE,9,0,161814,0,161366,48236.9
+1898,S,"1 Mineral and aerated waters, N.E.S",DUTIABLE,1,0,0,0,4279,830.88
+1898,S,"1 Mineral substances, not otherwise provided for",DUTIABLE,1,0,2234,0,2234,406.38
+1898,S,"1 Oil cloth, enamelled floor, stair, shelf and table oil cloth, cork matting or carpet and linoleum",,1,488,78,489,23,0.0
+1898,S,"1 Oil cloth, enamelled floor, stair, shelf and table oil cloth, cork matting or carpet and linoleum",DUTIABLE,7,554160,169940,551607,168722,45228.84
+1898,S,"1 Oils, essential",,3,1795,8718,8719,870,0.0
+1898,S,"1 Oils, essential",DUTIABLE,4,26249,66031,26208,65350,6400.36
+1898,S,"1 Oils, vegetable",,2,398,156,386,39,0.0
+1898,S,"1 Oils, vegetable",DUTIABLE,5,383295,90944,391376,90370,18054.45
+1898,S,1 Optical instruments,DUTIABLE,7,0,39918,0,39790,7928.2
+1898,S,1 Paper and manufactures of,DUTIABLE,1,0,0,0,88966,27665.89
+1898,S,"1 Paper and manufactures of— All kinds, N.R.S",DUTIABLE,8,0,327473,0,326629,78374.95
+1898,S,1 Picture and photograph frames of any material,DUTIABLE,8,0,26534,0,25826,7577.31
+1898,S,1 Plants and trees— Apple trees,,5,6403,348,4085,192,0.0
+1898,S,1 Plants and trees— Apple trees,DUTIABLE,2,34517,2108,3461,1115,45.4
+1898,S,"1 Provisions, not otherwise specified— Butter",,2,3048579,470077,351,13,0.0
+1898,S,"1 Provisions, not otherwise specified— Butter",DUTIABLE,4,385343,76265,373160,73852,14646.16
+1898,S,"1 Quills, N.E.S",DUTIABLE,4,0,412,0,412,73.38
+1898,S,1 Sails for boats and ships,DUTIABLE,5,0,935,0,551,134.84
+1898,S,"1 Sand paper, glass, flint and emery paper and emery cloth",DUTIABLE,9,29830,112237,0,103556,28004.32
+1898,S,"1 Silk and all manufactures of, not otherwise provided for, or of which silk is the component part of chief value, N.E.S",DUTIABLE,10,334,319930,334,305204,97907.24
+1898,S,1 Silk and manufactures of— Fabrics,DUTIABLE,9,0,2663024,0,2573450,718517.84
+1898,S,1 Soap,DUTIABLE,1,955,87,956,19,1.0
+1898,S,1 Spices,DUTIABLE,7,75006,20732,76333,20890,5163.89
+1898,S,1 Spices— Ginger and spices of all kinds (N. E. S.) unground,,2,54478,4607,5440,564,0.0
+1898,S,1 Spices— Ginger and spices of all kinds (N. E. S.) unground,DUTIABLE,5,2020437,154787,1923160,148988,18483.9
+1898,S,1 Spirits and wines,DUTIABLE,9,316036,197031,278964,174867,160908.14
+1898,S,1 Spirits and wines— Medicinal or medicated wines containing not more than 40 per cent of proof spirit,,1,26,35,26,39,0.0
+1898,S,1 Spirits and wines— Medicinal or medicated wines containing not more than 40 per cent of proof spirit,DUTIABLE,3,1349,5691,956,4358,1412.75
+1898,S,"1 Sugars, syrups and molasses-",DUTIABLE,1,20,4,20,4,0.35
+1898,S,1 Telephones and telegraph instruments; and galvanic batteries,DUTIABLE,7,0,20339,0,19628,4883.81
+1898,S,"1 Tobacco and manufactures of— Tobacco, cut",,1,70,37,70,38,0.0
+1898,S,"1 Tobacco and manufactures of— Tobacco, cut",DUTIABLE,6,59009,38987,51061,31703,28083.98
+1898,S,"1 Twine, manufactures of— Hammocks and lawn tennis nets, sportsman's fish nets and other articles, N.O.P",,8,0,7999,2305,0,0.0
+1898,S,1 Vegetables,DUTIABLE,8,14300,11870,14296,11865,1430.0
+1898,S,"1 Webbing, elastic and non-elastic",DUTIABLE,8,0,131788,0,130539,24763.18
+1898,S,"1 Wood and manufactures of— Walking sticks and canes of all kinds, N.E.S",DUTIABLE,7,0,10711,0,10743,3185.32
+1898,S,"1 Wool, manufactures of— Cloths",DUTIABLE,8,1943880,1110399,1910582,1093940,337621.28
+1898,S,"1 Wool, manufactures of— Socks and stockings of wool, worsted, the air of the alpaca, goat, &c",DUTIABLE,8,301719,488664,301288,487678,149836.5
+1898,S,10 1,FREE,1,10,1,0,0,0.0
+1898,S,10 2,FREE,1,10,2,0,0,0.0
+1898,S,10 4,FREE,1,10,4,0,0,0.0
+1898,S,100 1,FREE,1,100,1,0,0,0.0
+1898,S,100 3,FREE,1,100,3,0,0,0.0
+1898,S,100 7,FREE,1,100,7,0,0,0.0
+1898,S,109 5,FREE,1,109,5,0,0,0.0
+1898,S,11 1,FREE,1,11,1,0,0,0.0
+1898,S,11 3,FREE,1,11,3,0,0,0.0
+1898,S,11 7,FREE,1,11,7,0,0,0.0
+1898,S,112 4,FREE,1,112,4,0,0,0.0
+1898,S,112 6,FREE,1,112,6,0,0,0.0
+1898,S,12 8,FREE,1,12,8,0,0,0.0
+1898,S,120 4,FREE,1,120,4,0,0,0.0
+1898,S,120 5,FREE,1,120,5,0,0,0.0
+1898,S,14 3,FREE,1,14,3,0,0,0.0
+1898,S,150 5,FREE,1,150,5,0,0,0.0
+1898,S,2 1,FREE,2,4,2,0,0,0.0
+1898,S,2 3,FREE,1,2,3,0,0,0.0
+1898,S,2 680,FREE,1,2680,949,949,0,0.0
+1898,S,"2 Breadstuff, &c., viz :",DUTIABLE,1,3838,281,5446,349,63.56
+1898,S,2 Fruits :,DUTIABLE,8,35607,77187,35489,76750,14193.7
+1898,S,"2 Seeds, viz. :",DUTIABLE,1,0,0,0,45109,8943.65
+1898,S,"2 Spirits and wines, viz. :",DUTIABLE,1,75006,20732,76353,20890,5163.89
+1898,S,2 Tin and manufactures of :,DUTIABLE,2,8963,597,6363,597,149.25
+1898,S,200 5,FREE,1,200,5,0,0,0.0
+1898,S,235 8,FREE,1,235,8,0,0,0.0
+1898,S,24 4,FREE,1,24,4,0,0,0.0
+1898,S,25 1,FREE,1,25,1,0,0,0.0
+1898,S,25 8,FREE,1,25,8,0,0,0.0
+1898,S,25 9,FREE,1,25,9,0,0,0.0
+1898,S,"3 Cotton, manufactures of:",DUTIABLE,1,2471,720,2471,720,146.38
+1898,S,3 Lead and manufactures of :,DUTIABLE,1,39578,103052,0,101388,13444.9
+1898,S,30 2,FREE,1,30,2,0,0,0.0
+1898,S,31 3,FREE,1,31,3,0,0,0.0
+1898,S,39 3,FREE,1,39,3,0,0,0.0
+1898,S,4 Fish :,,1,148000,4138,0,0,0.0
+1898,S,4 Leather and manufactures of,DUTIABLE,1,19894,5666,18069,4969,671.78
+1898,S,"4 Musical instruments, viz.:",DUTIABLE,1,0,0,0,1806,412.49
+1898,S,"4 Plants and trees, viz. :",DUTIABLE,1,882,107,882,107,23.16
+1898,S,4 Spices :,DUTIABLE,1,880772,68941,794995,64136,7882.06
+1898,S,4 Tobacco and manufactures of :,DUTIABLE,1,3520,6274,0,4664,7930.41
+1898,S,4 Wood and manufactures of :,DUTIABLE,1,173,299,133,219,23.91
+1898,S,4 „ Milk food and other similar pre,DUTIABLE,1,0,1486,0,1518,409.0
+1898,S,40 5,FREE,1,40,5,0,0,0.0
+1898,S,48 9,FREE,1,48,9,0,0,0.0
+1898,S,5 2,FREE,1,5,2,0,0,0.0
+1898,S,5 5,FREE,2,10,10,0,0,0.0
+1898,S,5 6,FREE,1,5,6,0,0,0.0
+1898,S,50 6,FREE,1,50,6,0,0,0.0
+1898,S,50 7,FREE,1,50,7,0,0,0.0
+1898,S,50 8,FREE,3,150,24,0,0,0.0
+1898,S,52 7,FREE,1,52,7,0,0,0.0
+1898,S,55 3,FREE,1,55,3,0,0,0.0
+1898,S,8 1,FREE,2,16,2,0,0,0.0
+1898,S,"960 657,193",FREE,3,671773,658153,671773,658153,0.0
+1898,S,?,,34,1015419,460579,121075,10876,0.0
+1898,S,?,DUTIABLE,409,18226901,21483685,38969466,8684918,2553516.89
+1898,S,Acids,DUTIABLE,1,26,13,26,3,4.0
+1898,S,Aden,FREE,1,10080,1518,10080,1518,0.0
+1898,S,"Amber, arabic, Australian, copal, damar, elemy, kaurie, mastic, sandarac, Senegal, shellac; and white shellac in gum or flake, for manufacturing purposes; and gum tragacanth, gum gedda and gum barberry",FREE,1,177950,11947,177950,11947,0.0
+1898,S,Arabia,FREE,1,138917,16364,138917,16364,0.0
+1898,S,Argentina,FREE,1,0,19,0,19,0.0
+1898,S,Argentine Rep,FREE,1,258085,32298,258085,32298,0.0
+1898,S,Argentine Repub,FREE,2,12000,548129,12000,548129,0.0
+1898,S,Australasia,,3,273,30,251,6,0.0
+1898,S,Australasia,DUTIABLE,1,0,54,0,54,16.2
+1898,S,Australasia,FREE,1,7888,1380,7888,1380,0.0
+1898,S,Australia,,6,2354,1058,406,13,0.0
+1898,S,Australia,DUTIABLE,27,358510,24054,376312,23782,7965.28
+1898,S,Australia,FREE,9,234054,110520,234054,110208,0.0
+1898,S,Australia..... United States,DUTIABLE,1,0,0,336,1022,204.4
+1898,S,Austria,,7,413,228,276,50,0.0
+1898,S,Austria,DUTIABLE,84,187369,180585,214775,164076,44893.47
+1898,S,Austria,FREE,10,1172,633,1172,751,0.0
+1898,S,B. W. Indi-s,FREE,1,200,10,200,0,0.0
+1898,S,B. W. Indies— Nova Scotia,DUTIABLE,1,71,500,71,500,177.5
+1898,S,"B. poss., other",FREE,1,8233,1492,8233,1492,0.0
+1898,S,Belgium,,13,852,454,37427,179,0.0
+1898,S,Belgium,DUTIABLE,113,13462506,572497,12586267,558857,140685.87
+1898,S,Belgium,FREE,31,177756,96455,177756,96414,0.0
+1898,S,Belgium..... Germany,DUTIABLE,1,0,0,0,450,150.19
+1898,S,Brass and manufactures of :— Pumps,,1,24,74,25,22,0.0
+1898,S,Brass and manufactures of :— Pumps,DUTIABLE,6,15373,12396,15374,12324,3697.7
+1898,S,Brazil,,1,0,50,0,0,0.0
+1898,S,Brazil,DUTIABLE,3,0,77,1305,201,31.9
+1898,S,Brazil,FREE,2,2113505,166084,2113505,166084,0.0
+1898,S,"Breadstuffs, &c",,1,0,3,0,0,0.0
+1898,S,"Breadstuffs, &c",DUTIABLE,3,95838,45213,1106,1206,322.17
+1898,S,British Africa,DUTIABLE,2,0,33,0,33,5.4
+1898,S,British Africa,FREE,4,1115767,130937,1115767,130937,0.0
+1898,S,British East Indies,,7,340677,21439,6302,1089,0.0
+1898,S,British East Indies,DUTIABLE,32,6900251,79116,6202368,70490,33174.14
+1898,S,British East Indies,FREE,16,2339481,453476,2342381,453957,0.0
+1898,S,British Guiana,DUTIABLE,3,116157,22987,84280,16394,78780.24
+1898,S,British Guiana,FREE,1,0,0,0,168,0.0
+1898,S,British West Indies,,8,763,736,825,75,0.0
+1898,S,British West Indies,DUTIABLE,36,3351881,335253,3410975,359740,88445.61
+1898,S,British West Indies,FREE,19,535603,81920,535605,82158,0.0
+1898,S,Carriages:,DUTIABLE,1,37,582,37,582,189.62
+1898,S,Central Am. States,FREE,1,11624,2232,11624,2232,0.0
+1898,S,"Champagne and all other, sparkling wines",DUTIABLE,1,0,96,250,195,226.0
+1898,S,Chile,FREE,2,1202624,40056,1202624,40056,0.0
+1898,S,China,,23,22926,1728,6272,192,0.0
+1898,S,China,DUTIABLE,171,7986751,338844,7795955,333524,185844.74
+1898,S,China,FREE,19,3610390,474792,3610390,474994,0.0
+1898,S,China..... United States,DUTIABLE,1,0,0,0,102,25.5
+1898,S,"Cotton, manufactures of",DUTIABLE,1,0,3018,0,3018,803.81
+1898,S,"Curtains and shams when made up, trimmed or untrimmed",DUTIABLE,8,0,313235,0,313569,100145.86
+1898,S,Cwt. 277 9,FREE,1,277,9,0,0,0.0
+1898,S,Danish West Indies,,1,138,57,40,96,0.0
+1898,S,Danish West Indies,DUTIABLE,3,50818,7919,47693,7918,841.17
+1898,S,Dap. W. Indies,FREE,1,0,64,0,64,0.0
+1898,S,Denmark,,2,40,170,16,38,0.0
+1898,S,Denmark,DUTIABLE,7,5,327,5,292,101.2
+1898,S,Denmark,FREE,2,0,57993,0,60207,0.0
+1898,S,Dutch East Indies,FREE,1,49416,9385,49416,9385,0.0
+1898,S,Dutch W. Indies,,1,0,0,93,223,0.0
+1898,S,Dutch W. Indies,DUTIABLE,2,181,535,1,6,3.2
+1898,S,Egypt,DUTIABLE,3,2427,5357,2052,4724,7341.28
+1898,S,Egypt,FREE,2,0,3,0,17,0.0
+1898,S,Equador,FREE,1,22000,2097,22000,2097,0.0
+1898,S,Fancy goods,DUTIABLE,1,0,9791,0,9791,2686.54
+1898,S,"Fancy goods, viz",DUTIABLE,1,0,117921,0,117794,25937.85
+1898,S,"Fancy goods, viz.— Bead ornaments and statuettes, N.E.S",DUTIABLE,8,0,29553,0,31307,10087.0
+1898,S,Fish,DUTIABLE,7,300407,26166,275919,25093,5105.66
+1898,S,Fr. poss. in Africa,FREE,1,0,627,0,627,0.0
+1898,S,France,,31,1221338,95706,21121,6069,0.0
+1898,S,France,DUTIABLE,316,4117061,7688097,3984352,2435382,971547.44
+1898,S,France,FREE,77,1531094,539541,1531099,540500,0.0
+1898,S,France..... United States,DUTIABLE,1,0,0,3965,173,118.95
+1898,S,France— Nova Scotia,DUTIABLE,1,7,31,7,11,16.0
+1898,S,France— Quebec,DUTIABLE,1,0,46,21,28,8.0
+1898,S,Fren. Poss. Africa,DUTIABLE,1,0,62,0,36,7.2
+1898,S,French Poss.: Africa,DUTIABLE,1,576,172,394,119,98.5
+1898,S,French West Indies,,1,0,350,46,0,0.0
+1898,S,French West Indies,DUTIABLE,1,0,12,0,12,9.0
+1898,S,French West Indies,FREE,1,0,642,0,642,0.0
+1898,S,"Fruits, including nuts",,1,5283,301,0,0,0.0
+1898,S,"Fruits, including nuts",DUTIABLE,1,3,3,36,7,1.0
+1898,S,Germany,,39,15038,46892,24000,6581,0.0
+1898,S,Germany,DUTIABLE,305,7480328,3017779,7187736,2822848,723220.5
+1898,S,Germany,FREE,82,5811256,1903374,5841205,1904095,0.0
+1898,S,Germany N. Brunswick,DUTIABLE,1,0,121,342,297,545.15
+1898,S,Germany..... United States,DUTIABLE,1,0,0,12,3,0.75
+1898,S,Germany— Ontario,DUTIABLE,5,654,758,711,704,750.77
+1898,S,Germany— Ontario..... B. Columbia,DUTIABLE,1,0,0,137,119,136.68
+1898,S,Germany— Quebec,DUTIABLE,2,142,40,394,300,394.18
+1898,S,Great Britain,,48,216105,423603,46568,13580,0.0
+1898,S,Great Britain,DUTIABLE,571,65136749,19820773,64371030,19880496,6058703.75
+1898,S,Great Britain,FREE,199,67563469,9350143,67593646,9395533,0.0
+1898,S,Greece,DUTIABLE,5,4576843,168586,4571501,167144,47022.35
+1898,S,Gross. 5 4,FREE,1,5,4,0,0,0.0
+1898,S,"Gums, viz.:",FREE,1,0,3506,0,3506,0.0
+1898,S,Haiti,FREE,1,100,10,100,0,0.0
+1898,S,Hawaii,FREE,4,15416,3215,15416,3215,0.0
+1898,S,Holland,,3,1110,406,160,382,0.0
+1898,S,Holland,DUTIABLE,32,593623,296877,540227,261516,910382.44
+1898,S,Holland,FREE,11,27126,21798,27126,21801,0.0
+1898,S,Hong Kong,FREE,1,0,3,0,3,0.0
+1898,S,Iron and steel and manufactures of,,1,238,658,658,227,0.0
+1898,S,Iron and steel and manufactures of,DUTIABLE,4,25755,5757,25655,5744,1990.5
+1898,S,Italy,,11,238573,10034,5610,134,0.0
+1898,S,Italy,DUTIABLE,62,145639,83976,141337,80681,52405.06
+1898,S,Italy,FREE,14,18665559,185884,18665559,185896,0.0
+1898,S,Japan,,26,57572,4686,10697,375,0.0
+1898,S,Japan,DUTIABLE,116,1643807,268052,1434612,250703,79498.05
+1898,S,Japan,FREE,14,9495784,1173254,9495785,1173251,0.0
+1898,S,Leather and manufactures of— Boots and shoes,DUTIABLE,8,0,378453,0,374879,93264.07
+1898,S,Mexico,DUTIABLE,6,16073,4040,1338,1073,2096.4
+1898,S,Mexico,FREE,3,96545,9738,96545,9738,0.0
+1898,S,Newfoundland,,7,717,216,940,546,0.0
+1898,S,Newfoundland,DUTIABLE,21,766,1768,820,2318,810.6
+1898,S,Newfoundland,FREE,24,5920539,131309,5920541,131106,0.0
+1898,S,Norway,,1,1,36,1,13,0.0
+1898,S,Norway,DUTIABLE,11,13327,8968,11482,7727,1455.6
+1898,S,Norway and Sweden,,2,302,26,302,6,0.0
+1898,S,Norway and Sweden,DUTIABLE,4,0,490,0,547,137.76
+1898,S,Norway and Sweden,FREE,4,0,5332,0,5332,0.0
+1898,S,Persia,DUTIABLE,3,134929,4593,129105,4474,1084.81
+1898,S,Peru,DUTIABLE,1,0,0,331542,558,165.76
+1898,S,Peru,FREE,1,101,25,101,0,0.0
+1898,S,Portugal,,1,57,48,0,0,0.0
+1898,S,Portugal,DUTIABLE,16,251319,47827,249196,43460,20549.39
+1898,S,Portugal,FREE,1,0,36,0,36,0.0
+1898,S,"Provisions, not otherwise specified",DUTIABLE,1,7322,934,7138,903,137.7
+1898,S,R. Africa,DUTIABLE,1,72,2088,72,2088,548.1
+1898,S,"Rubber, crude caoutchouc or India rubber unmanufactured",FREE,1,8198,4307,8198,4307,0.0
+1898,S,Russia,,1,72,16,72,6,0.0
+1898,S,Russia,DUTIABLE,6,246,6842,246,5054,747.8
+1898,S,Russia,FREE,3,0,10200,0,10200,0.0
+1898,S,"Seeds, viz",DUTIABLE,4,0,515,0,515,102.7
+1898,S,Silk and manufactures of— Sewing and embroidery silk and silk twist,DUTIABLE,8,0,16919,0,16673,3929.92
+1898,S,"Soda, nitrate of, soda ash, soda caustic, bichromate of soda, sal soda and silicate of soda in crystals or in solution",FREE,1,1381899,51236,1381899,51236,0.0
+1898,S,Sp. West Indies,DUTIABLE,1,0,304,0,304,76.0
+1898,S,Spain,,7,111602,5716,334,328,0.0
+1898,S,Spain,DUTIABLE,34,7711000,432738,7474933,422341,160283.3
+1898,S,Spain,FREE,2,29120,464,29120,906,0.0
+1898,S,Spanish E. Indies,DUTIABLE,1,795,718,795,718,2564.5
+1898,S,Spanish West Indies,,1,1600,35,1600,9,0.0
+1898,S,Spanish West Indies,DUTIABLE,12,1325130,350310,1053446,289200,149448.64
+1898,S,Spanish West Indies,FREE,4,9194,1720,9194,2419,0.0
+1898,S,Spirits and wines,DUTIABLE,23,338700,451563,295990,402361,657149.25
+1898,S,St. Pierre,,10,3133048,97068,868,396,0.0
+1898,S,St. Pierre,DUTIABLE,16,15911,929,15911,862,495.18
+1898,S,St. Pierre,FREE,5,913,2218,913,2218,0.0
+1898,S,Sweden,,2,7,20,43,87,0.0
+1898,S,Sweden,DUTIABLE,5,224,521,241,561,149.0
+1898,S,Switzerland,,5,380,244,353,60,0.0
+1898,S,Switzerland,DUTIABLE,59,345633,370763,336146,367798,95945.29
+1898,S,Switzerland,FREE,2,0,15,0,31,0.0
+1898,S,Tobacco and manufactures of— Cigarettes,DUTIABLE,3,4175,9577,3422,7949,12257.53
+1898,S,Turkey,,2,7,4,534,30,0.0
+1898,S,Turkey,DUTIABLE,21,2513215,145300,2641168,158577,32274.46
+1898,S,Turkey,FREE,3,1209062,187161,1209062,187161,0.0
+1898,S,Turtles,FREE,1,10,54,11,0,0.0
+1898,S,United States,,63,4815179,5068585,52268,103853,0.0
+1898,S,United States,DUTIABLE,840,152468294,26851015,126391499,20801359,5401209.97
+1898,S,United States,FREE,360,123403718,27240377,123446505,27076943,0.0
+1898,S,Venezuela,FREE,1,1035767,90772,1035767,90772,0.0
+1898,S,"Wool, manufactures of",DUTIABLE,7,5516,3046,5516,3046,961.64
+1899,S,1 1,FREE,4,4,4,0,0,0.0
+1899,S,1 2,FREE,2,2,4,0,0,0.0
+1899,S,1 3,FREE,1,1,3,0,0,0.0
+1899,S,1 4,FREE,3,3,12,0,0,0.0
+1899,S,1 5,FREE,2,2,10,0,0,0.0
+1899,S,1 6,FREE,1,1,6,0,0,0.0
+1899,S,1 7,FREE,1,1,7,0,0,0.0
+1899,S,"1 Animals, living, viz. :",DUTIABLE,1,1,10,1,2,1.0
+1899,S,"1 Baths, tubes and washstands of earthenware, stone, cement of clay, or of other material, N.O.P",DUTIABLE,1,0,6961,0,9478,2466.3
+1899,S,"1 Boots and shoes, and slippers of all kinds, except rubber and leather",DUTIABLE,6,0,58050,0,51636,11437.61
+1899,S,1 Brass and manufactures of :,DUTIABLE,1,8823,1646,8823,1646,135.08
+1899,S,1 Brushes,DUTIABLE,9,0,156026,0,156541,37059.71
+1899,S,"1 Cane, reed or rattan, split or otherwise manufactured, N.O.P",DUTIABLE,7,0,28690,0,28690,4301.21
+1899,S,1 Carriages,DUTIABLE,9,26744,497161,26300,490195,147039.85
+1899,S,"1 Cement, Portland",DUTIABLE,8,1434844,471951,1300424,467994,147145.69
+1899,S,"1 Coal, bituminous",,1,10,60,11,5,0.0
+1899,S,"1 Coal, bituminous",DUTIABLE,7,2172037,3699569,3570759,1317549,47059.95
+1899,S,"1 Cocoa nuts, N.E.S",,3,1178,45,1178,12,0.0
+1899,S,"1 Cocoa nuts, N.E.S",DUTIABLE,5,324772,7416,324772,7416,3248.22
+1899,S,"1 Cocoa shells and nibs, chocolate and other preparations of cocoa, N.E.S",DUTIABLE,9,439323,107498,455194,110177,19180.87
+1899,S,"1 Cotton, manufactures of",DUTIABLE,2,19292,22380,19301,22485,5883.23
+1899,S,"1 Cotton, manufactures of— Clothing",DUTIABLE,9,0,335134,0,336279,105996.34
+1899,S,"1 Cotton, manufactures of— Crochet cotton thread, on spools or tubes or in balls",DUTIABLE,5,0,14974,0,15111,3711.03
+1899,S,"1 Cotton, manufactures of— Handkerchiefs",DUTIABLE,10,0,319744,0,320976,88187.0
+1899,S,"1 Cotton, manufactures of— Knitting yarn, hosiery yarn, &c., dyed or coloured",DUTIABLE,3,114205,23836,116205,23836,5244.59
+1899,S,"1 Cotton, manufactures of— Socks and stockings",,1,23,39,23,12,0.0
+1899,S,"1 Cotton, manufactures of— Socks and stockings",DUTIABLE,8,66340,76155,70244,78203,25350.1
+1899,S,"1 Cotton, manufactures of— Towels",DUTIABLE,9,0,33549,0,33200,7777.58
+1899,S,"1 Curtains and shams when made up, trimmed or untrimmed",DUTIABLE,8,0,392020,0,390379,116041.55
+1899,S,"1 Drugs, dyes, chemicals and medicines— Acids, other, N.E.S",DUTIABLE,6,432572,34746,437976,35511,6423.75
+1899,S,"1 Drugs, dyes, chemicals and medicines— Yeast, compressed, in packages weighing less than 50 lbs",DUTIABLE,3,1546,210,1547,184,61.12
+1899,S,1 Earthen and chinaware,DUTIABLE,5,0,3133,0,3133,939.9
+1899,S,1 Earthen and chinaware— Earthenware tiles,DUTIABLE,7,0,31866,0,32235,10657.22
+1899,S,"1 Elastic, round or flat, including garter elastic",DUTIABLE,8,0,83631,0,83828,23625.62
+1899,S,1 Express parcels of small value,DUTIABLE,9,0,699886,0,715153,180235.36
+1899,S,"1 Fancy goods, viz",,5,0,6636,5450,1092,0.0
+1899,S,"1 Fancy goods, viz",DUTIABLE,1,0,95,1218,233,1.0
+1899,S,1 Fish,DUTIABLE,1,300,2,300,2,3.0
+1899,S,"1 Fish— Cod, haddock, ling and pollock—fresh, imported otherwise than in barrels, &c",DUTIABLE,4,1374834,40335,979854,28751,4900.05
+1899,S,"1 Flax, hemp and jute, manufactures of Sheets and sheetings",,2,583,156,585,47,0.0
+1899,S,"1 Flax, hemp and jute, manufactures of Sheets and sheetings",DUTIABLE,3,9392,1382,9392,1382,336.32
+1899,S,"1 Flax, hemp and jute, manufactures of— Linen clothing",DUTIABLE,6,0,5577,0,5577,1730.45
+1899,S,"1 Fruits, including nuts",,1,274462,23314,273133,23226,0.0
+1899,S,"1 Fruits, including nuts",DUTIABLE,3,381966,94110,451389,97169,17305.67
+1899,S,"1 Fruits, including nuts— Dates",,1,330,31,330,8,0.0
+1899,S,"1 Fruits, including nuts— Dates",DUTIABLE,8,828188,28210,837997,28478,7116.55
+1899,S,"1 Fruits, including nuts— Walnuts, not shelled",,1,524,63,525,16,0.0
+1899,S,"1 Fruits, including nuts— Walnuts, not shelled",DUTIABLE,8,823592,67845,889641,71072,19526.38
+1899,S,1 Glass and manufactures of,DUTIABLE,1,110850,6553,110850,6553,1474.47
+1899,S,"1 Gutta percha and India rubber, manufactures of",DUTIABLE,9,0,151842,0,152805,45646.97
+1899,S,1 Hair and manufactures of— Hair cloth of all kinds,DUTIABLE,7,0,10239,0,10239,2374.34
+1899,S,"1 Hats, caps and bonnets— Straw, grass, chip or other material, N.E.S",,1,0,308137,0,307978,0.0
+1899,S,"1 Hats, caps and bonnets— Straw, grass, chip or other material, N.E.S",DUTIABLE,8,0,255516,0,255558,67601.94
+1899,S,1 Iron and steel and manufactures of,,1,50,67,51,7,0.0
+1899,S,1 Iron and steel and manufactures of,DUTIABLE,6,241357,251138,241357,251138,25080.23
+1899,S,"1 Iron and steel and manufactures of— Chains, N.E.S",,1,0,11655,0,11655,0.0
+1899,S,"1 Iron and steel and manufactures of— Chains, N.E.S",DUTIABLE,8,0,12886,0,13647,3508.73
+1899,S,"1 Iron and steel and manufactures of— Engines, Fire",DUTIABLE,4,0,3466,0,3466,1211.1
+1899,S,"1 Iron and steel and manufactures of— Ferro-silicon, spiegeleisen, &c",DUTIABLE,4,1121,21964,1160,22539,899.91
+1899,S,"1 Iron and steel and manufactures of— Nails and spikes, &c",,3,18153,786,3124,231,0.0
+1899,S,"1 Iron and steel and manufactures of— Nails and spikes, &c",DUTIABLE,6,250499,8199,246666,8107,2256.24
+1899,S,1 Leather and manufactures of— Boots and shoes,DUTIABLE,9,0,451376,0,453631,112408.65
+1899,S,"1 Metal, N.E.S., and manufactures of— Stereotypes, electrotypes and celluloids almanacs, calendars, illustrated pamphlets, &c",,3,312388,11787,11456,4525,0.0
+1899,S,"1 Metal, N.E.S., and manufactures of— Stereotypes, electrotypes and celluloids almanacs, calendars, illustrated pamphlets, &c",DUTIABLE,6,205830,6981,195830,6581,2940.89
+1899,S,"1 Mineral substances, not otherwise provided for",DUTIABLE,4,0,4979,0,4979,444.6
+1899,S,1 Musical instruments— Parts of organs,DUTIABLE,5,0,19164,0,19164,4752.06
+1899,S,"1 Paper and manufactures of— All kinds, N.E.S",DUTIABLE,9,0,359457,0,361161,83531.86
+1899,S,1 Paper and manufactures of— Envelopes,,3,844,675,708,222,0.0
+1899,S,1 Paper and manufactures of— Envelopes,DUTIABLE,5,31717,25586,31734,25606,8376.93
+1899,S,1 Picture and photograph frames of any material,DUTIABLE,8,0,37225,0,37898,10903.36
+1899,S,"1 Plaster of Paris or gypsum, calcined or manufactured",,3,310,161,312,21,0.0
+1899,S,"1 Plaster of Paris or gypsum, calcined or manufactured",DUTIABLE,4,4653,2959,4653,2959,577.21
+1899,S,"1 Polish or composition, knife and other, N.O.P",DUTIABLE,8,0,20273,0,19831,4772.59
+1899,S,1 Railway or travelling rugs and lap dusters of all kinds,,1,0,8,0,0,0.0
+1899,S,"1 Salt, N.E.S., in bags, barrels or other packages",,2,65241,1156,1156,49,0.0
+1899,S,"1 Salt, N.E.S., in bags, barrels or other packages",DUTIABLE,7,4339272,16743,4349772,16766,3286.47
+1899,S,"1 Sauces and catsups, in bulk",DUTIABLE,5,13345,4941,12959,4913,1702.23
+1899,S,1 Silk and manufactures of,DUTIABLE,1,0,731,0,751,209.0
+1899,S,1 Silk and manufactures of— Handkerchiefs,DUTIABLE,8,0,90080,0,89854,27317.97
+1899,S,1 Soap— Toilet,DUTIABLE,8,375820,83220,386890,84307,27508.47
+1899,S,1 Spices— Ginger and spices of all kinds (N. E. S.) unground,,1,1619,46,1619,6,0.0
+1899,S,1 Spices— Ginger and spices of all kinds (N. E. S.) unground,DUTIABLE,6,1590924,138674,1637653,141563,15590.89
+1899,S,1 Spices— Nutmegs and mace,,1,474,126,126,30,0.0
+1899,S,1 Spices— Nutmegs and mace,DUTIABLE,6,114092,27318,108321,26950,5582.81
+1899,S,1 Spirits and wines,DUTIABLE,9,376626,523819,321963,456369,772691.44
+1899,S,"1 Spirits and wines— Champagne and all other sparkling wines, in bottles containing not more than a pint but more than half a pint, old wine measure",DUTIABLE,7,22403,151883,18701,124182,32455.12
+1899,S,"1 Spirits and wines— Wines of all kinds, except sparkling wines, &c., containing over 26 p. c. and not over 27 p. c",,1,56,122,0,0,0.0
+1899,S,"1 Spirits and wines— Wines of all kinds, except sparkling wines, &c., containing over 26 p. c. and not over 27 p. c",DUTIABLE,6,8174,5013,16329,7820,6917.4
+1899,S,"1 Spirits and wines— Wines of all kinds, except sparkling wines, &c., containing over 31 p. c. and not over 32 p. c. of spirits",DUTIABLE,8,21800,19662,22337,20984,15892.2
+1899,S,"1 Table cloths, all kinds",DUTIABLE,8,0,57434,0,57911,13893.2
+1899,S,"1 Tea of Ceylon, green",,2,638,136,639,14,0.0
+1899,S,"1 Tea of Ceylon, green",DUTIABLE,1,1510,286,1510,286,28.6
+1899,S,"1 Tea of Japan, green",,1,138,28,138,3,0.0
+1899,S,"1 Tea of Japan, green",DUTIABLE,2,367443,73012,370258,65723,6572.3
+1899,S,1 Tobacco and manufactures of — Snuff,,1,41,25,41,20,0.0
+1899,S,1 Tobacco and manufactures of — Snuff,DUTIABLE,6,6953,1854,7033,1917,3516.13
+1899,S,"1 Tobacco pipes of all kinds, &c",DUTIABLE,9,0,191890,0,205044,63242.39
+1899,S,1 Vegetables,DUTIABLE,1,23,13,23,13,3.45
+1899,S,"1 Vinegar, of any strength not exceeding strength of proof",DUTIABLE,10,105676,25468,117674,26976,14425.54
+1899,S,1 Watch cases,DUTIABLE,1,0,0,0,44206,13131.47
+1899,S,1 Window cornices and cornice poles of all kinds,DUTIABLE,3,0,4604,0,4604,1308.73
+1899,S,10 1,FREE,3,30,3,0,0,0.0
+1899,S,10 5,FREE,1,10,5,0,0,0.0
+1899,S,10 6,FREE,1,10,6,0,0,0.0
+1899,S,10 9,FREE,1,10,9,0,0,0.0
+1899,S,100 3,FREE,1,100,3,0,0,0.0
+1899,S,100 7,FREE,3,300,21,0,0,0.0
+1899,S,100 9,FREE,1,100,9,0,0,0.0
+1899,S,11 4,FREE,1,11,4,0,0,0.0
+1899,S,11 8,FREE,1,11,8,0,0,0.0
+1899,S,110 8,FREE,1,110,8,0,0,0.0
+1899,S,112 7,FREE,1,112,7,0,0,0.0
+1899,S,"12,99",FREE,1,126995,12994,126995,0,0.0
+1899,S,120 4,FREE,1,120,4,0,0,0.0
+1899,S,126 106,FREE,1,35,35,0,0,0.0
+1899,S,13 5,FREE,1,13,5,0,0,0.0
+1899,S,14 7,FREE,1,14,7,0,0,0.0
+1899,S,15 3,FREE,1,15,3,0,0,0.0
+1899,S,150 8,FREE,1,150,8,0,0,0.0
+1899,S,150 9,FREE,1,150,9,0,0,0.0
+1899,S,161 9,FREE,1,161,9,0,0,0.0
+1899,S,18 5,FREE,1,18,5,0,0,0.0
+1899,S,185 9,FREE,1,185,9,0,0,0.0
+1899,S,2 1,FREE,1,2,1,0,0,0.0
+1899,S,2 2,FREE,5,10,10,0,0,0.0
+1899,S,2 5,FREE,1,2,5,0,0,0.0
+1899,S,2 Carriages,DUTIABLE,1,10,4003,10,4003,1182.91
+1899,S,"2 Spirits and wines, viz.:",DUTIABLE,1,114566,27444,108795,27076,5612.69
+1899,S,20 2,FREE,1,20,2,0,0,0.0
+1899,S,20 3,FREE,2,40,6,0,0,0.0
+1899,S,20 4,FREE,2,40,8,0,0,0.0
+1899,S,21 7,FREE,1,21,7,0,0,0.0
+1899,S,216 8,FREE,1,216,8,0,0,0.0
+1899,S,237 4,FREE,1,237,4,0,0,0.0
+1899,S,24 8,FREE,1,24,8,0,0,0.0
+1899,S,28 5,FREE,1,28,5,0,0,0.0
+1899,S,3 2,FREE,2,6,4,0,0,0.0
+1899,S,3 Brass and manufactures of,DUTIABLE,1,0,278,0,263,59.18
+1899,S,3 Slate and manufactures of :,,1,0,75,0,75,0.0
+1899,S,"3,013 142",FREE,1,384,384,0,0,0.0
+1899,S,300 2,FREE,1,300,2,0,0,0.0
+1899,S,32 2,FREE,1,32,2,0,0,0.0
+1899,S,341 6,FREE,1,341,6,0,0,0.0
+1899,S,35 5,FREE,1,35,5,0,0,0.0
+1899,S,350 9,FREE,1,350,9,0,0,0.0
+1899,S,4 Bricks and tiles: See Earthenware,DUTIABLE,1,0,5950,0,5950,1017.35
+1899,S,"4 Drugs, dyes, chemicals and medicines",DUTIABLE,1,0,54835,0,55020,13668.81
+1899,S,4 Earthen and chinaware: See Bricks and tiles,DUTIABLE,1,0,3627,0,6116,1410.96
+1899,S,40 8,FREE,1,40,8,0,0,0.0
+1899,S,400 2,FREE,1,400,2,0,0,0.0
+1899,S,485 5,FREE,1,5728,5728,0,0,0.0
+1899,S,5 1,FREE,1,5,1,0,0,0.0
+1899,S,5 2,FREE,1,5,2,0,0,0.0
+1899,S,5 3,FREE,1,5,3,0,0,0.0
+1899,S,5 5,FREE,1,5,5,0,0,0.0
+1899,S,5 7,FREE,1,5,7,0,0,0.0
+1899,S,5 740,FREE,1,5740,655,655,0,0.0
+1899,S,5 Tin and manufactures of :,DUTIABLE,2,13193,857,13193,1533,383.25
+1899,S,50 4,FREE,1,50,4,0,0,0.0
+1899,S,50 5,FREE,1,50,5,0,0,0.0
+1899,S,50 7,FREE,1,50,7,0,0,0.0
+1899,S,51 181,FREE,1,42,42,0,0,0.0
+1899,S,51 9,FREE,1,51,9,0,0,0.0
+1899,S,60 7,FREE,1,60,7,0,0,0.0
+1899,S,60 8,FREE,1,60,8,0,0,0.0
+1899,S,600 2,FREE,1,600,2,0,0,0.0
+1899,S,7 2,FREE,1,7,2,0,0,0.0
+1899,S,71 9,FREE,1,71,9,0,0,0.0
+1899,S,8 4,FREE,1,8,4,0,0,0.0
+1899,S,90 7,FREE,1,90,7,0,0,0.0
+1899,S,934 9,FREE,1,934,9,0,0,0.0
+1899,S,?,,32,2938882,219285,99130,80952,0.0
+1899,S,?,DUTIABLE,314,4268451,5321662,14074487,6180328,2008212.77
+1899,S,Acids,,1,113,24,63,9,0.0
+1899,S,Arabia,FREE,2,74545,10703,74545,10703,0.0
+1899,S,Argentina,FREE,1,961860,56786,961860,56786,0.0
+1899,S,Argentine Rep,FREE,1,0,708145,0,708145,0.0
+1899,S,Australasia,,5,317,398,117,7,0.0
+1899,S,Australasia,DUTIABLE,28,19014292,479416,8384041,224184,48986.23
+1899,S,Australasia,FREE,15,20347,77037,20347,77494,0.0
+1899,S,Austria,,8,454,4319,129999,31126,0.0
+1899,S,Austria,DUTIABLE,81,1855895,244362,1623230,269280,74531.02
+1899,S,Austria,FREE,11,10199,6631,10199,6631,0.0
+1899,S,"B. Poss., other",FREE,1,23840,3751,23840,3751,0.0
+1899,S,B. W. Indies. .... United States,DUTIABLE,1,13523,2663,13523,2663,913.53
+1899,S,B. W. Indies— Nova Scotia,DUTIABLE,1,17,85,1955,19123,4887.26
+1899,S,Belgium,,12,844858,245731,6582,1926,0.0
+1899,S,Belgium,DUTIABLE,110,80413022,1928754,80367552,1951268,576272.01
+1899,S,Belgium,FREE,37,65651,93308,65390,92981,0.0
+1899,S,"Books, &c",DUTIABLE,1,29001,7703,30527,8131,3813.76
+1899,S,Brazil,FREE,2,1399864,102294,1399864,102294,0.0
+1899,S,"Breadstuffs, &c",,2,100,100,101,10,0.0
+1899,S,"Breadstuffs, &c",DUTIABLE,15,63136,92581,55258,84084,12276.52
+1899,S,British Africa,DUTIABLE,3,2121,394,2121,394,64.15
+1899,S,British Africa,FREE,4,12,30489,13,30434,0.0
+1899,S,British East Indies,,5,5712298,65375,5686695,64831,0.0
+1899,S,British East Indies,DUTIABLE,24,1244176,45117,1269196,56366,14082.87
+1899,S,British East Indies,FREE,7,1159766,1079427,1159766,1079427,0.0
+1899,S,British Guiana,DUTIABLE,4,677785,44335,620800,32108,70863.72
+1899,S,British West Indies,,7,283,528,286,312,0.0
+1899,S,British West Indies,DUTIABLE,46,18730339,740170,22199638,780578,177995.58
+1899,S,British West Indies,FREE,24,18321167,162086,18321167,162154,0.0
+1899,S,Carriages,DUTIABLE,1,3,560,1,414,144.9
+1899,S,Central Am. States,FREE,1,293301,26810,293301,26810,0.0
+1899,S,China,,24,17599,3632,9070,2112,0.0
+1899,S,China,DUTIABLE,203,9096418,362122,8923458,476106,232065.51
+1899,S,China,FREE,14,1525070,176259,1525070,176273,0.0
+1899,S,Coffee,DUTIABLE,1,6804,1812,6723,1775,153.33
+1899,S,Cuba,,2,2279,102,2280,27,0.0
+1899,S,Cuba,DUTIABLE,7,389155,203285,354775,189753,143275.04
+1899,S,Cuba,FREE,3,13801,2496,13544,2261,0.0
+1899,S,Danish West Indies,,1,0,0,114,271,0.0
+1899,S,Danish West Indies,DUTIABLE,3,98484,8439,133730,8102,1280.33
+1899,S,Danish West Indies,FREE,1,0,462,0,462,0.0
+1899,S,Denmark,DUTIABLE,6,29,178,16,112,54.1
+1899,S,Denmark,FREE,3,391,1974,392,1911,0.0
+1899,S,"Drugs, dyes, chemicals and medicines",DUTIABLE,1,3,8,3,8,4.57
+1899,S,Dutch East Indies,DUTIABLE,2,6716541,146806,6784173,147664,45043.36
+1899,S,Dutch East Indies,FREE,1,44743,4900,44743,4900,0.0
+1899,S,Dutch W. Indies,,2,40,56,39,94,0.0
+1899,S,Dutch W. Indies,DUTIABLE,1,300,9,1702950,18569,11675.45
+1899,S,Dutch W. Indies,FREE,1,1516820,1990,1516820,1990,0.0
+1899,S,Ecuador,FREE,1,20000,1630,20000,1630,0.0
+1899,S,Egypt,,1,0,0,14,49,0.0
+1899,S,Egypt,DUTIABLE,2,2279,5388,2193,5161,7873.01
+1899,S,Egypt,FREE,2,0,60,0,74,0.0
+1899,S,"Fancy goods, viz",,1,0,464483,132662,0,0.0
+1899,S,Fish,DUTIABLE,4,34535,4792,31247,4257,703.1
+1899,S,"Flax, hemp and jute—manufactures of, viz. :",DUTIABLE,1,0,12023,0,12808,1928.3
+1899,S,France,,44,42551,201663,42545,3130,0.0
+1899,S,France,DUTIABLE,333,4564967,2854160,4606927,2864130,1188515.58
+1899,S,France,FREE,80,376192,341149,376196,331196,0.0
+1899,S,France.. .... United States,DUTIABLE,1,0,0,0,463,93.8
+1899,S,France..... United States,DUTIABLE,2,0,0,439,1619,521.19
+1899,S,France— Nova Scotia,,1,130,8,130,8,0.0
+1899,S,France— Quebec,DUTIABLE,2,0,0,24,31,21.0
+1899,S,Fren. Poss. Africa,DUTIABLE,1,0,46,0,21,4.2
+1899,S,Fren. Poss. Africa,FREE,1,0,2702,0,2702,0.0
+1899,S,French Poss. Africa,DUTIABLE,3,22773,552,11806,434,184.5
+1899,S,French West Indies,,1,10000,25,10000,15,0.0
+1899,S,French West Indies,FREE,1,2105260,2577,2105260,2577,0.0
+1899,S,Germany,,44,449047,289345,92187,22042,0.0
+1899,S,Germany,DUTIABLE,334,129154738,5877520,122721179,5842695,1737455.22
+1899,S,Germany,FREE,95,1153043,691076,1098725,646307,0.0
+1899,S,Germany..... United States,DUTIABLE,1,0,0,0,1122,154.85
+1899,S,Germany— N. Brunswick,DUTIABLE,1,22,17,22,42,4.0
+1899,S,Germany— Quebec,DUTIABLE,3,490,412,615,559,757.51
+1899,S,Germany— Quebec,FREE,1,195,36,195,0,0.0
+1899,S,Great Britain,,70,4317328,1408529,3969591,502410,0.0
+1899,S,Great Britain,DUTIABLE,594,68067527,24283131,70876386,25462089,6911349.17
+1899,S,Great Britain,FREE,249,158584358,7989937,158595577,7950754,0.0
+1899,S,Greece,,1,1,2,0,0,0.0
+1899,S,Greece,DUTIABLE,10,6242168,188764,5929944,182955,61207.51
+1899,S,Guatemala,FREE,1,60123,7740,60123,7740,0.0
+1899,S,Haiti,,1,2,30,0,0,0.0
+1899,S,Haiti,FREE,1,100,14,100,0,0.0
+1899,S,Hawaii,FREE,4,612135,53592,612135,53592,0.0
+1899,S,Holland,,8,152,592,332,696,0.0
+1899,S,Holland,DUTIABLE,40,1731571,333697,1870174,305193,1059814.17
+1899,S,Holland,FREE,17,1846123,1857243,1812723,1850674,0.0
+1899,S,Hong Kong,FREE,5,3620,460,3620,460,0.0
+1899,S,Iceland,FREE,2,0,1193,0,1193,0.0
+1899,S,Italy,,7,2372,2829,1337,31,0.0
+1899,S,Italy,DUTIABLE,66,1004114,463082,1066603,317344,61248.08
+1899,S,Italy,FREE,19,12433387,47762,12433387,47762,0.0
+1899,S,Japan,,22,4862,4598,23891,4404,0.0
+1899,S,Japan,DUTIABLE,134,11396644,517012,11492929,544987,192194.93
+1899,S,Japan,FREE,18,11621526,1531013,11621527,1531261,0.0
+1899,S,Lbs. 272 119,FREE,1,357,357,0,0,0.0
+1899,S,M. 2 7,FREE,1,2,7,0,0,0.0
+1899,S,M. ft,FREE,7,1568,50538,1569,50482,0.0
+1899,S,MISCELLANEOUS ARTICLES,FREE,1,55527,19751,55527,19751,0.0
+1899,S,"Metal, N.E.S., and manufactures of— Furniture springs",DUTIABLE,3,0,2100,0,2648,790.27
+1899,S,Mexico,,1,52,13,0,0,0.0
+1899,S,Mexico,DUTIABLE,7,2978,4993,2017,3779,5187.6
+1899,S,Mexico,FREE,4,395814,44128,374922,41136,0.0
+1899,S,Mexico— Ontario,FREE,1,52,26,52,0,0.0
+1899,S,N.-W. Ter,FREE,1,0,207,0,207,0.0
+1899,S,Newfoundland,,5,1037,108,968,14,0.0
+1899,S,Newfoundland,DUTIABLE,40,43949,6319,119676,42197,10388.65
+1899,S,Newfoundland,FREE,38,3205076,159206,3205078,158965,0.0
+1899,S,Norway,DUTIABLE,1,0,1,0,1,0.3
+1899,S,Norway and Sweden,,2,606,64,607,18,0.0
+1899,S,Norway and Sweden,DUTIABLE,14,12183,8084,15436,8365,1704.33
+1899,S,Norway and Sweden,FREE,7,22841,3809,22842,3739,0.0
+1899,S,Oils :,DUTIABLE,1,34941,5891,32587,5478,1899.34
+1899,S,"Oils, vegetable",,1,1018291,322380,0,0,0.0
+1899,S,Packages,,1,0,83607,0,81529,0.0
+1899,S,Packages,DUTIABLE,8,0,486795,0,443220,87970.97
+1899,S,Paints and colours:,,1,0,115,0,115,0.0
+1899,S,Paper and manufactures of,DUTIABLE,5,27970,5752,10552,3351,698.99
+1899,S,Persia,,1,450,75,451,26,0.0
+1899,S,Persia,DUTIABLE,2,153332,8698,153332,8698,2782.5
+1899,S,Peru,DUTIABLE,1,0,0,3766405,86110,25370.91
+1899,S,Peru,FREE,1,0,25,0,25,0.0
+1899,S,Philippine Islands,FREE,1,0,0,3792,660,0.0
+1899,S,Philippines Islands,DUTIABLE,1,4879,5546,8401,13572,28596.0
+1899,S,Pine-apples,FREE,1,483,70,484,0,0.0
+1899,S,"Plants and trees, viz.:",,1,99,34,99,34,0.0
+1899,S,Porto Rico,FREE,1,16,106,16,106,0.0
+1899,S,Portugal,DUTIABLE,17,784353,63346,681918,58559,25039.08
+1899,S,Portugal,FREE,3,3738000,4101,3738000,4101,0.0
+1899,S,"Provisions, not otherwise specified",,1,108,13,108,4,0.0
+1899,S,"Provisions, not otherwise specified",DUTIABLE,7,2336516,428383,575102,135445,22860.54
+1899,S,Russia,DUTIABLE,9,505,6737,505,6737,1080.05
+1899,S,Russia,FREE,6,0,157223,0,157223,0.0
+1899,S,"Seeds, viz.:",DUTIABLE,1,0,137,0,137,33.62
+1899,S,Siam,DUTIABLE,1,0,28,0,28,8.4
+1899,S,Silk and manufactures of— Shawls,,1,0,8,0,0,0.0
+1899,S,Silk and manufactures of— Shawls,DUTIABLE,3,0,1055,0,1055,274.13
+1899,S,"Sp. Poss., other",FREE,1,0,0,0,91,0.0
+1899,S,Spain,,3,150,1634,0,455,0.0
+1899,S,Spain,DUTIABLE,43,8979099,504255,9125105,546088,194090.04
+1899,S,Spain,FREE,8,6137995,6671,6137996,6695,0.0
+1899,S,Spanish West Indies,,1,6800,35,6800,10,0.0
+1899,S,Spanish West Indies,DUTIABLE,8,1856950,215525,1716234,171702,38726.64
+1899,S,Spanish West Indies,FREE,3,7642,2372,7642,5425,0.0
+1899,S,Spirits and wines,DUTIABLE,2,1807,2221,2909,3357,2274.28
+1899,S,St. Pierre,,6,264,1497,301,210,0.0
+1899,S,St. Pierre,DUTIABLE,23,826791,27792,55178,1660,395.47
+1899,S,St. Pierre,FREE,7,576,3672,577,3526,0.0
+1899,S,Switzerland,,8,46948,20708,4448,504,0.0
+1899,S,Switzerland,DUTIABLE,70,310420,518553,314306,522563,147954.2
+1899,S,Switzerland,FREE,6,11185,7875,11185,7875,0.0
+1899,S,THE MINE—Con,FREE,1,0,8,0,8,0.0
+1899,S,Turkey,,3,26,680,26,9,0.0
+1899,S,Turkey,DUTIABLE,21,1982063,146206,1864543,135708,27585.63
+1899,S,Turkey,FREE,4,19049,6221,19049,6221,0.0
+1899,S,U. S. of Colombia,FREE,1,400,128,400,128,0.0
+1899,S,United States,,86,2093434,2919605,469835,415281,0.0
+1899,S,United States,DUTIABLE,875,175476689,42452940,155481480,32038215,8825645.49
+1899,S,United States,FREE,451,167367350,39986131,169063405,40139839,0.0
+1899,S,Venezuela,FREE,1,1347612,122769,1347612,122769,0.0
+1899,S,"Wool, manufactures of",,1,2203,1267,0,0,0.0
+1899,S,"Wool, manufactures of— Carpets, tapestry",DUTIABLE,7,1444352,468916,1469114,477139,127451.88
+1899,S,Yukon,FREE,22,550637,13633,550640,13311,0.0
+1900,S,1 1,FREE,3,3,3,0,0,0.0
+1900,S,1 2,FREE,1,1,2,0,0,0.0
+1900,S,1 3,FREE,4,4,12,0,0,0.0
+1900,S,1 8,FREE,1,1,8,0,0,0.0
+1900,S,1 9,FREE,3,3,27,0,0,0.0
+1900,S,"1 Animals, living, viz :",DUTIABLE,1,0,38,0,38,7.6
+1900,S,"1 Animals, living, viz:",,1,0,8,0,0,0.0
+1900,S,1 Brass and manufactures of,DUTIABLE,8,1999,12347,1936,10956,3282.08
+1900,S,"1 Breadstuffs, etc",DUTIABLE,2,12696040,155860,10647096,132273,39975.17
+1900,S,1 Bricks and tiles,DUTIABLE,1,0,852,0,852,128.6
+1900,S,1 Carriages,DUTIABLE,2,0,792,2,947,232.45
+1900,S,1 Comm,,1,0,5,0,0,0.0
+1900,S,1 Copper and manufactures of,DUTIABLE,1,12840,2302,12840,2302,258.99
+1900,S,"1 Cotton, manufactures of",,1,0,8,0,0,0.0
+1900,S,"1 Cotton, manufactures of",DUTIABLE,1,0,123791,0,123008,33428.78
+1900,S,1 Eggs,DUTIABLE,9,720136,128405,709829,128128,21294.17
+1900,S,"1 Emery wheels, etc",DUTIABLE,9,0,25600,0,25615,6377.68
+1900,S,1 Fancy goods,DUTIABLE,1,0,11078,0,11039,3403.99
+1900,S,"1 Fancy goods— Bead ornaments, etc",DUTIABLE,7,0,38394,0,38363,13197.26
+1900,S,1 Fish,DUTIABLE,1,0,212,0,202,37.94
+1900,S,1 Fish Oil,DUTIABLE,1,11,19,11,3,1.0
+1900,S,1 Iron and steel and manufactures of,,1,69552,2811,0,0,0.0
+1900,S,"1 Jewellery, N.O.P",DUTIABLE,9,0,578963,0,778845,171298.74
+1900,S,1 Leather and manufactures of,DUTIABLE,1,125773,33129,130273,34034,3848.79
+1900,S,"1 Metals, N.E.S. and manufactures of",DUTIABLE,1,0,2206,0,2206,1820.0
+1900,S,1 Oils,DUTIABLE,1,3858,5705,4164,5721,940.15
+1900,S,"1 Oils, all other, N.E.S",,1,91244,19116,91254,19133,0.0
+1900,S,"1 Oils, all other, N.E.S",DUTIABLE,8,42558,17026,41098,16333,2907.15
+1900,S,"1 Oils, mineral",DUTIABLE,4,334704,23244,334704,23244,8367.37
+1900,S,1 Paints and colours,DUTIABLE,1,385044,5146,351984,4958,843.0
+1900,S,1 Plants and trees,,1,184,57,184,57,0.0
+1900,S,"1 Silk, and manufactures of",DUTIABLE,1,0,560,0,560,131.55
+1900,S,"1 Silk, and manufactures of— Socks and stockings",DUTIABLE,4,694,2580,694,2580,747.48
+1900,S,1 Soap,DUTIABLE,1,22985,1690,27618,1861,489.6
+1900,S,1 Sponges-,,1,0,19087,0,17027,0.0
+1900,S,1 Sponges-,DUTIABLE,7,0,17455,0,18040,3428.9
+1900,S,1 Tobacco and manufactures of,DUTIABLE,1,99,54,99,54,49.5
+1900,S,"1 Tobacco pipes of all kinds, &c",DUTIABLE,9,0,214357,0,215723,71276.24
+1900,S,"1 Trunks, &c",DUTIABLE,9,0,52444,0,52186,15254.45
+1900,S,1 Wood and manufactures of,,2,0,73,0,50,0.0
+1900,S,"1 Wood, manufactures of",,1,952837,569581,0,0,0.0
+1900,S,"1,85",FREE,1,21302,1852,21302,0,0.0
+1900,S,"1. Canned meats, etc",DUTIABLE,9,2203566,220579,2163753,206316,50465.42
+1900,S,"1. Flax, hemp and jute, manufactures of— Linen thread",,1,4,2,4,2,0.0
+1900,S,"1. Flax, hemp and jute, manufactures of— Linen thread",DUTIABLE,8,276687,131759,280264,130598,24693.0
+1900,S,1. Paints and colours,DUTIABLE,1,187186,11304,186781,11264,1750.71
+1900,S,"1. Vegetables, viz",DUTIABLE,1,19,33,19,33,5.0
+1900,S,10 1,FREE,1,10,1,0,0,0.0
+1900,S,10 2,FREE,1,10,2,0,0,0.0
+1900,S,10 3,FREE,1,10,3,0,0,0.0
+1900,S,10 4,FREE,2,20,8,0,0,0.0
+1900,S,10 6,FREE,1,10,6,0,0,0.0
+1900,S,100 5,FREE,1,100,5,0,0,0.0
+1900,S,106 7,FREE,1,106,7,0,0,0.0
+1900,S,112 3,FREE,1,112,3,0,0,0.0
+1900,S,12 1,FREE,1,12,1,0,0,0.0
+1900,S,125 6,FREE,1,125,6,0,0,0.0
+1900,S,13 9,FREE,1,13,9,0,0,0.0
+1900,S,14 2,FREE,1,14,2,0,0,0.0
+1900,S,191 9,FREE,1,191,9,0,0,0.0
+1900,S,2 3,FREE,1,2,3,0,0,0.0
+1900,S,2 5,FREE,1,2,5,0,0,0.0
+1900,S,2 Carriages and vehicles:,DUTIABLE,1,4,486,4,486,148.84
+1900,S,"2 Hair and manufactures of, N. O. P. :",DUTIABLE,1,0,25,0,25,6.57
+1900,S,2. Gums,DUTIABLE,1,21691,6327,20963,6490,1000.0
+1900,S,20 4,FREE,1,20,4,0,0,0.0
+1900,S,21 7,FREE,1,21,7,0,0,0.0
+1900,S,221 5,FREE,1,221,5,0,0,0.0
+1900,S,24 4,FREE,1,24,4,0,0,0.0
+1900,S,240 3,FREE,1,240,3,0,0,0.0
+1900,S,25 1,FREE,1,25,1,0,0,0.0
+1900,S,25 2,FREE,1,25,2,0,0,0.0
+1900,S,25 3,FREE,1,25,3,0,0,0.0
+1900,S,25 6,FREE,1,25,6,0,0,0.0
+1900,S,25 9,FREE,1,25,9,0,0,0.0
+1900,S,26 3,FREE,1,26,3,0,0,0.0
+1900,S,28 3,FREE,1,28,3,0,0,0.0
+1900,S,28 4,FREE,1,28,4,0,0,0.0
+1900,S,28 5,FREE,1,28,5,0,0,0.0
+1900,S,"3 "" Animal",DUTIABLE,9,34182,15597,33966,15467,3866.75
+1900,S,3 1,FREE,1,3,1,0,0,0.0
+1900,S,3 4,FREE,1,3,4,0,0,0.0
+1900,S,"3 Fancy goods, viz :",DUTIABLE,1,0,1692,0,1692,558.5
+1900,S,3 Lead and manufactures of,DUTIABLE,1,39761,134207,41427,138598,15750.26
+1900,S,3 Spices :,DUTIABLE,1,865044,91580,811335,83454,8163.64
+1900,S,30 5,FREE,1,30,5,0,0,0.0
+1900,S,33 4,FREE,1,33,4,0,0,0.0
+1900,S,35 9,FREE,1,35,9,0,0,0.0
+1900,S,359 9,FREE,1,359,9,0,0,0.0
+1900,S,"4 Drugs, dyes, chemicals and medicines— Acids",,1,0,49722,49684,12355,0.0
+1900,S,4. Wood and manufactures of :,DUTIABLE,1,0,37,37,37,7.4
+1900,S,40 6,FREE,1,40,6,0,0,0.0
+1900,S,42 3,FREE,1,42,3,0,0,0.0
+1900,S,5 1,FREE,2,10,2,0,0,0.0
+1900,S,5 2,FREE,1,5,2,0,0,0.0
+1900,S,5 3,FREE,1,5,3,0,0,0.0
+1900,S,5 4,FREE,1,5,4,0,0,0.0
+1900,S,5 7,FREE,1,5,7,0,0,0.0
+1900,S,50 5,FREE,3,150,15,0,0,0.0
+1900,S,56 5,FREE,1,56,5,0,0,0.0
+1900,S,60 9,FREE,1,60,9,0,0,0.0
+1900,S,600 3,FREE,1,600,3,0,0,0.0
+1900,S,61 2,FREE,1,61,2,0,0,0.0
+1900,S,62 5,FREE,1,62,5,0,0,0.0
+1900,S,66 6,FREE,1,66,6,0,0,0.0
+1900,S,7 1,FREE,1,7,1,0,0,0.0
+1900,S,7 2,FREE,1,7,2,0,0,0.0
+1900,S,70 1,FREE,1,70,1,0,0,0.0
+1900,S,700 8,FREE,1,700,8,0,0,0.0
+1900,S,775 9,FREE,1,775,9,0,0,0.0
+1900,S,80 4,FREE,1,80,4,0,0,0.0
+1900,S,"930,358 243",FREE,1,43596,43596,0,0,0.0
+1900,S,?,,31,23467,27465,1497,13668,0.0
+1900,S,?,DUTIABLE,313,20590575,2549890,20088620,5188573,1354620.23
+1900,S,Arabia,FREE,1,40200,5416,40200,5416,0.0
+1900,S,Argentina,FREE,3,1168137,571204,1168137,571204,0.0
+1900,S,Argentine Rep,FREE,1,0,2,0,2,0.0
+1900,S,Argentine Republic,DUTIABLE,1,0,40,0,40,14.0
+1900,S,Australasia,DUTIABLE,2,24,365,24,365,81.5
+1900,S,Australia,DUTIABLE,20,17413883,446602,13353684,349778,73431.2
+1900,S,Australia,FREE,16,82619,210805,82620,211132,0.0
+1900,S,Austria,,9,24869,17470,1148,12672,0.0
+1900,S,Austria,DUTIABLE,97,631928,453496,857945,274887,59809.92
+1900,S,Austria,FREE,7,1208,5991,1208,5991,0.0
+1900,S,B. E. India,DUTIABLE,1,199,195,211,203,53.29
+1900,S,B. E. Islands,DUTIABLE,1,1179,273,1179,273,54.6
+1900,S,B. East Indies,DUTIABLE,1,0,41,0,41,9.22
+1900,S,"B. Poss., other",FREE,1,8400,1095,8400,1095,0.0
+1900,S,B. West Indies,DUTIABLE,1,0,150,0,150,45.0
+1900,S,Barb. W. Indies,FREE,1,0,1043,0,1043,0.0
+1900,S,Belgium,,17,4236,41774,75797,155612,0.0
+1900,S,Belgium,DUTIABLE,107,121852468,3109784,119646965,3037328,899821.5
+1900,S,Belgium,FREE,39,513592,110857,514467,111153,0.0
+1900,S,Belgium— Quebec,,1,161,107,0,0,0.0
+1900,S,Br. Africa,,1,0,5,0,0,0.0
+1900,S,Br. Guiana,DUTIABLE,2,17242,4612,17242,4612,674.75
+1900,S,Brass and Manufactures of,DUTIABLE,1,0,161579,0,161620,47551.43
+1900,S,Brazil,FREE,3,1885521,231358,1885521,231358,0.0
+1900,S,"Breadstuffs, etc",,2,19,51,19,19,0.0
+1900,S,"Breadstuffs, etc",DUTIABLE,7,24461,23712,7709,11595,1024.97
+1900,S,Bricks and tiles,DUTIABLE,1,0,703,0,703,118.6
+1900,S,British Africa,DUTIABLE,2,458,200,458,200,132.35
+1900,S,British Africa,FREE,3,271399,87700,271399,87700,0.0
+1900,S,British East Indies,,1,2291,489,0,0,0.0
+1900,S,British East Indies,DUTIABLE,17,1114741,85439,1044376,76262,14738.07
+1900,S,British East Indies,FREE,9,7870897,1211039,7884824,1212309,0.0
+1900,S,British Guiana,,1,168951,4931,1601,23,0.0
+1900,S,British Guiana,DUTIABLE,5,703041,76336,493268,62561,118564.08
+1900,S,British Guiana,FREE,2,29,274,29,274,0.0
+1900,S,British West Indies,,2,40,201,15,1,0.0
+1900,S,British West Indies,DUTIABLE,41,10261902,733026,8774276,653021,119046.39
+1900,S,British West Indies,FREE,26,738825,126902,738826,127162,0.0
+1900,S,Can. Am. States,FREE,1,329907,42069,329907,42069,0.0
+1900,S,Can. W. Indies,DUTIABLE,1,0,10,0,9,1.8
+1900,S,Chile,FREE,1,1812534,28185,1812534,28185,0.0
+1900,S,China,,13,28666,8303,28179,10104,0.0
+1900,S,China,DUTIABLE,154,7121706,193176,6941422,355109,149971.54
+1900,S,China,FREE,19,3614633,412703,3614633,412708,0.0
+1900,S,China..... Japan..... United States,DUTIABLE,1,0,0,10598,692,105.98
+1900,S,Coffee,,1,7558,2125,0,0,0.0
+1900,S,Con. Am. States,FREE,1,0,15,0,15,0.0
+1900,S,"Cotton, manufactures of",DUTIABLE,10,1327453,103626,992722,88951,18524.05
+1900,S,Cuba,DUTIABLE,8,63450,220244,58226,207562,223041.05
+1900,S,Cuba,FREE,4,23027,15035,7746,9582,0.0
+1900,S,Danish West Indies,DUTIABLE,1,192,67,17,38,40.8
+1900,S,Danish West Indies,FREE,1,0,36,0,36,0.0
+1900,S,Denmark,,1,0,1,0,0,0.0
+1900,S,Denmark,DUTIABLE,5,60,453,19,81574,16332.3
+1900,S,Denmark,FREE,4,400,13498,400,13448,0.0
+1900,S,"Drugs, dyes, chemicals and medicines",DUTIABLE,3,1691,1960,74,53,181.7
+1900,S,Dutch East Indies,DUTIABLE,1,0,0,1276989,13921,8938.0
+1900,S,Dutch East Indies,FREE,1,62077,9638,62077,9638,0.0
+1900,S,Dutch W. Indies,DUTIABLE,1,8127,1435,12016,2279,210.0
+1900,S,Dutch W. Indies,FREE,2,176426,11747,176426,11705,0.0
+1900,S,E. Columbia,FREE,2,14156,5003,14156,5003,0.0
+1900,S,E. W. Indies,FREE,3,21379273,27495,21379273,27495,0.0
+1900,S,Earthen and chinaware,DUTIABLE,1,0,0,0,124516,28662.23
+1900,S,Earthen and clinaware,DUTIABLE,1,0,0,0,71024,20261.13
+1900,S,Egypt,DUTIABLE,4,2425,5517,2015,4598,7172.25
+1900,S,Fancy goods,,1,0,0,0,396,0.0
+1900,S,Fancy goods,DUTIABLE,1,0,45187,0,45187,10660.89
+1900,S,Feathers,DUTIABLE,1,0,3401,0,3401,773.0
+1900,S,Fish,,3,556,101,557,42,0.0
+1900,S,Fish,DUTIABLE,9,170330,181342,170330,179952,16573.43
+1900,S,"Flax, hemp and jute, manufactures of",DUTIABLE,1,759316,36195,750984,35769,2695.65
+1900,S,Fr. Africa,DUTIABLE,1,385,97,499,137,124.75
+1900,S,Fr. Poss. Africa,DUTIABLE,3,11444,298,11444,2791,570.1
+1900,S,France,,36,518003,515822,499900,472478,0.0
+1900,S,France,DUTIABLE,352,5185208,2669259,5058278,2749038,1198872.2
+1900,S,France,FREE,90,2471774,862526,2471778,863482,0.0
+1900,S,France— Quebec,,2,3622,717,0,0,0.0
+1900,S,France— Quebec,DUTIABLE,3,0,0,889,1014,314.98
+1900,S,France— Quebec,FREE,1,0,459,0,459,0.0
+1900,S,"Fruits, including nuts",DUTIABLE,13,595939,65386,322636,61020,15291.59
+1900,S,Furniture,DUTIABLE,1,632,1939,507,1695,1017.48
+1900,S,Furs and manufactures of,DUTIABLE,1,0,33192,0,32532,7647.29
+1900,S,Germany,,37,54018,375443,97808,255218,0.0
+1900,S,Germany,DUTIABLE,359,162430564,6789191,150012702,6948790,2038372.85
+1900,S,Germany,FREE,108,2407356,898723,2327155,880008,0.0
+1900,S,Germany— B. Columbia,DUTIABLE,1,104,396,104,390,134.16
+1900,S,Germany— Ontario,DUTIABLE,3,216,227,19527,5075,4477.73
+1900,S,Germany— Ontario. Quebec,DUTIABLE,1,0,0,67,99,10.0
+1900,S,Germany— Ontario..... Quebec,DUTIABLE,1,40,38,40,69,12.0
+1900,S,Glass and manufactures of,DUTIABLE,1,32,120,32,129,23.95
+1900,S,"Glass, manufactures of",DUTIABLE,1,287930,80315,287930,80315,21063.21
+1900,S,Gold and silver manufactures of,DUTIABLE,1,0,28381,0,28221,6538.81
+1900,S,Great Britain,,115,8948909,4723814,6183800,3575650,0.0
+1900,S,Great Britain,DUTIABLE,559,79162535,22481976,102554747,24068436,5592598.51
+1900,S,Great Britain,FREE,279,216587994,12329212,216578008,12477933,0.0
+1900,S,Greece,DUTIABLE,5,7132110,219048,6641173,305843,89285.76
+1900,S,Greece,FREE,2,6398,966,6398,983,0.0
+1900,S,Guatemala,FREE,1,53057,6028,53057,6028,0.0
+1900,S,"Gunpowder and other explosives, etc",DUTIABLE,1,0,12196,0,11076,2501.66
+1900,S,"Gutta percha and India-rubber, manufactures of",,1,0,27133,0,25711,0.0
+1900,S,Hair and manufactures of,DUTIABLE,1,0,781,0,781,209.64
+1900,S,"Hats, caps and bonnets",,1,0,49853,0,49542,0.0
+1900,S,Hawaii,FREE,3,12965,2414,12965,2414,0.0
+1900,S,Holland,,2,45,180,0,0,0.0
+1900,S,Holland,DUTIABLE,42,2793062,409899,3199682,286702,1149009.29
+1900,S,Holland,FREE,20,241481,216897,176281,180199,0.0
+1900,S,Hong Kong,FREE,10,3897,2280,3898,2173,0.0
+1900,S,Iceland,FREE,1,0,1073,0,1073,0.0
+1900,S,Iron and steel and manufactures of,,1,1,27,0,0,0.0
+1900,S,Iron and steel and manufactures of,DUTIABLE,12,18910,316143,18546,312778,71793.23
+1900,S,Italy,,5,1350,2342,1967,3254,0.0
+1900,S,Italy,DUTIABLE,58,341554,255464,266132,147760,39525.21
+1900,S,Italy,FREE,15,21895228,29456,21895229,29446,0.0
+1900,S,Japan,,13,10658,276730,7846,263449,0.0
+1900,S,Japan,DUTIABLE,108,1672492,166686,4798368,190627,66045.72
+1900,S,Japan,FREE,15,11131494,1301215,11131494,1301424,0.0
+1900,S,M. ft,FREE,1,8,8,0,0,0.0
+1900,S,"Metal, N.E.S. and manufactures of",DUTIABLE,8,0,16841,0,18843,5623.23
+1900,S,Mexico,DUTIABLE,6,3250,4597,2584,4924,5126.9
+1900,S,Mexico,FREE,4,327031,52697,319382,51294,0.0
+1900,S,"Mineral substances, not otherwise provided for",DUTIABLE,1,0,0,0,2152,418.1
+1900,S,Musical instruments,DUTIABLE,1,2,324,2,324,97.2
+1900,S,N. W. Tor,FREE,1,0,854,0,852,0.0
+1900,S,Newfoundland,,2,461,19,461,14,0.0
+1900,S,Newfoundland,DUTIABLE,32,248898,11245,250463,12429,2789.45
+1900,S,Newfoundland,FREE,55,2360382,310418,2360386,310024,0.0
+1900,S,Norway,,1,0,0,3000,161,0.0
+1900,S,Norway,DUTIABLE,5,1318,647,1348,858,182.5
+1900,S,Norway and Sweden,,2,110,247,110,238,0.0
+1900,S,Norway and Sweden,DUTIABLE,10,28915,58290,41115,57679,9413.3
+1900,S,Norway and Sweden,FREE,3,11807,344,11807,324,0.0
+1900,S,Oils,DUTIABLE,1,0,0,89445,17549,4473.0
+1900,S,P. Columbia,FREE,3,2184,17216,2184,17216,0.0
+1900,S,"Paper, and manufactures of",,1,0,2889,0,2889,0.0
+1900,S,"Paper, and manufactures of",DUTIABLE,1,6,2992,0,3183,953.54
+1900,S,Persia,DUTIABLE,1,351309,5689,348840,5611,1402.75
+1900,S,Peru,FREE,1,0,173,0,173,0.0
+1900,S,Plants and trees,DUTIABLE,1,2938,168,2938,168,88.14
+1900,S,Porto Rico,FREE,5,4820,3890,4820,4679,0.0
+1900,S,Portugal,,1,22500,1103,22500,1103,0.0
+1900,S,Portugal,DUTIABLE,18,775827,256188,791673,67208,28096.59
+1900,S,Portugal,FREE,3,3347920,4464,3347920,4464,0.0
+1900,S,"Provisions, not otherwise specified",,1,0,8,0,0,0.0
+1900,S,"Provisions, not otherwise specified",DUTIABLE,2,3092,435,3092,435,70.76
+1900,S,"Quinine, salts of",FREE,1,16545,5448,16545,5448,0.0
+1900,S,R. Columbia,FREE,2,53,128,54,46,0.0
+1900,S,Russia,,1,360,13,0,0,0.0
+1900,S,Russia,DUTIABLE,9,1969,15635,1974,15753,2403.1
+1900,S,Russia,FREE,5,137,8855,137,8833,0.0
+1900,S,"Silk, and manufactures of",,1,0,8,0,0,0.0
+1900,S,Soap,DUTIABLE,1,25313,1239,26918,1332,325.57
+1900,S,Soap:,DUTIABLE,1,3817319,200110,3950374,201557,29632.83
+1900,S,Spain,,3,8325,943,1066,57,0.0
+1900,S,Spain,DUTIABLE,39,8209597,554773,8363158,553282,183352.4
+1900,S,Spain,FREE,5,3901120,8927,3901120,8997,0.0
+1900,S,Spirits and wines,,1,426824,608943,370148,529411,0.0
+1900,S,Spirits and wines,DUTIABLE,34,84381,254841,73067,209870,100567.66
+1900,S,St. Pierre,,3,1063684,41972,0,0,0.0
+1900,S,St. Pierre,DUTIABLE,13,25113,1496,25198,1552,1361.59
+1900,S,St. Pierre,FREE,6,652,3776,652,3731,0.0
+1900,S,"Sugars, syrups and molasses",DUTIABLE,10,36913498,1127596,37073174,1117316,458547.0
+1900,S,Switzerland,,7,80,107200,91,95960,0.0
+1900,S,Switzerland,DUTIABLE,66,249365,356087,249873,351956,91842.81
+1900,S,Switzerland,FREE,6,45653,19906,45653,19906,0.0
+1900,S,THE FOREST—con,FREE,1,0,8,0,8,0.0
+1900,S,THE MINE—CON,FREE,1,0,8,0,8,0.0
+1900,S,Turkey,,6,500,32803,32754,11316,0.0
+1900,S,Turkey,DUTIABLE,23,1391041,105522,1205014,94678,21606.56
+1900,S,Turkey,FREE,3,7251,1454,7084,1354,0.0
+1900,S,Turkey in Europe,DUTIABLE,1,0,1835,0,1482,296.4
+1900,S,Turkey of Asia,DUTIABLE,4,1077787,317091,1233870,324598,65257.08
+1900,S,U. S. of Colombia,DUTIABLE,1,8097,2999,8097,2999,404.85
+1900,S,U.S. of Colombia,FREE,1,68,103,68,103,0.0
+1900,S,United States,,108,17731678,11506113,1767383,469672,0.0
+1900,S,United States,DUTIABLE,841,182673369,39112618,180650369,39496324,9709035.91
+1900,S,United States,FREE,478,186712134,36952693,184888356,36589310,0.0
+1900,S,Uruguay,FREE,1,0,22016,0,22016,0.0
+1900,S,"Vegetables, viz. :",DUTIABLE,9,212989,10370,212989,10370,2592.4
+1900,S,Venezuela,FREE,1,714219,67603,714219,67603,0.0
+1900,S,Willow or osier :,DUTIABLE,1,0,661,0,661,165.25
+1900,S,"Wood, manufactures of",DUTIABLE,3,0,3083372,0,3061081,902897.96
+1900,S,"Wool, manufactures of :",DUTIABLE,1,93395,41686,95490,42143,11481.77
+1900,S,Y. Res,FREE,1,0,10029,0,10029,0.0
+1900,S,Yukon,FREE,54,1682081,6744673,1682088,6743955,0.0
+1900,S,"and similar vehicles, N. E. S., includ",DUTIABLE,1,0,1081,0,1081,289.38
+1901,S,"1 Fancy goods, &c",DUTIABLE,1,0,1726,0,1675,544.72
+1901,S,"1 Provisions, N.E.S",,1,330151,14847,0,0,0.0
+1901,S,"1 Provisions, N.E.S",DUTIABLE,1,10006,2117,9338,2096,221.2
+1901,S,10 9,FREE,1,10,9,0,0,0.0
+1901,S,100 3,FREE,1,100,3,0,0,0.0
+1901,S,100 7,FREE,1,100,7,0,0,0.0
+1901,S,110 3,FREE,1,110,3,0,0,0.0
+1901,S,130 6,FREE,1,130,6,0,0,0.0
+1901,S,2 2,FREE,1,2,2,0,0,0.0
+1901,S,2 7,FREE,1,2,7,0,0,0.0
+1901,S,"2 Vegetables, viz.:",DUTIABLE,1,156657,9620,0,9604,2401.0
+1901,S,20 3,FREE,1,20,3,0,0,0.0
+1901,S,224 8,FREE,1,224,8,0,0,0.0
+1901,S,23 6,FREE,1,23,6,0,0,0.0
+1901,S,25 7,FREE,1,25,7,0,0,0.0
+1901,S,"4 Animals, living, viz. :",,1,200,20,0,0,0.0
+1901,S,"4 Breadstuffs, &c., viz",,1,18329,978,0,0,0.0
+1901,S,40 5,FREE,1,40,5,0,0,0.0
+1901,S,55 8,FREE,1,55,8,0,0,0.0
+1901,S,75 9,FREE,1,75,9,0,0,0.0
+1901,S,761 9,FREE,1,761,9,0,0,0.0
+1901,S,"8 Wool, manufactures of :",DUTIABLE,1,0,76635,82426,29870,7056.42
+1901,S,80 2,FREE,1,80,2,0,0,0.0
+1901,S,9 2,FREE,1,9,2,0,0,0.0
+1901,S,9 Animal,DUTIABLE,1,30282,13411,32781,14729,3682.25
+1901,S,?,,28,20442,2495,53247,210,0.0
+1901,S,?,DUTIABLE,149,3384328,380886,4213464,2143107,325184.41
+1901,S,Aden,FREE,1,12600,2185,12600,2185,0.0
+1901,S,Algers,FREE,1,0,21901,0,21901,0.0
+1901,S,Algiers,FREE,1,0,47672,0,47672,0.0
+1901,S,Arabia,FREE,1,89992,13716,89992,13716,0.0
+1901,S,Argentina,FREE,3,845442,388852,845442,388852,0.0
+1901,S,Argentine Republic,DUTIABLE,1,1000,1,1000,1,3.25
+1901,S,Australasia,,2,210,16,110,2,0.0
+1901,S,Australasia,DUTIABLE,4,574,1884,711,1517,127.4
+1901,S,Australasia,FREE,8,8536,116885,8536,118191,0.0
+1901,S,Australia,,6,2803,264,3153,66,0.0
+1901,S,Australia,DUTIABLE,10,5071338,112586,2322538,74855,14194.98
+1901,S,Australia,FREE,4,443731,62100,443731,62087,0.0
+1901,S,Austria Hungary,,2,100,63,100,20,0.0
+1901,S,Austria Hungary,DUTIABLE,14,13049,97413,13049,94946,30082.02
+1901,S,Austria Hungary,FREE,4,4,654,4,654,0.0
+1901,S,Austria-Hungary,,11,21181,234826,1360,391,0.0
+1901,S,Austria-Hungary,DUTIABLE,86,322373,156099,356534,153707,49729.82
+1901,S,Austria-Hungary,FREE,7,1,6815,2,6755,0.0
+1901,S,Austrin-Hungary,DUTIABLE,1,0,3071,0,3071,921.3
+1901,S,B. Honduras,FREE,1,0,43,0,43,0.0
+1901,S,B. S. Africa,,2,2,20,2,5,0.0
+1901,S,B. S. Africa,DUTIABLE,3,77,117,77,117,184.8
+1901,S,B. South Africa,DUTIABLE,1,0,25,0,25,5.0
+1901,S,B. W. I,,1,1,25,1,8,0.0
+1901,S,B. West Indies,DUTIABLE,1,0,10,0,10,2.0
+1901,S,Belgium,,14,1007,3818,2091,142,0.0
+1901,S,Belgium,DUTIABLE,123,137478480,3509150,139623696,3565545,1069587.16
+1901,S,Belgium,FREE,41,263442,212328,310948,211695,0.0
+1901,S,Brazil,DUTIABLE,1,33000,2709,33000,2709,270.9
+1901,S,Brazil,FREE,3,1331047,344846,1331047,344846,0.0
+1901,S,Brick and tiles,DUTIABLE,1,0,4190,0,4190,563.03
+1901,S,British Africa,,1,0,8,0,0,0.0
+1901,S,British Africa,DUTIABLE,4,1871,317,1871,317,171.45
+1901,S,British Africa,FREE,8,75655,42659,75656,42609,0.0
+1901,S,British East Indies,,4,539,104,541,51,0.0
+1901,S,British East Indies,DUTIABLE,21,12162475,304175,14608853,300248,72210.13
+1901,S,British East Indies,FREE,16,7618552,1066087,7618552,1066072,0.0
+1901,S,British Guiana,DUTIABLE,5,70624,29193,49683,20154,104574.13
+1901,S,British Guiana,FREE,5,1715,300,1716,292,0.0
+1901,S,British West Indies,,10,11126,1555,28712,50,0.0
+1901,S,British West Indies,DUTIABLE,40,25670941,1157532,21800940,1518646,316231.52
+1901,S,British West Indies,FREE,28,12410430,225699,12410432,225705,0.0
+1901,S,Central America,FREE,1,318430,29330,318430,29330,0.0
+1901,S,China,,36,45510,14084,9547,321,0.0
+1901,S,China,DUTIABLE,156,9902810,237864,9485023,411018,181175.21
+1901,S,China,FREE,16,7740661,577352,7740661,578130,0.0
+1901,S,Cuba,,3,0,135,50,25,0.0
+1901,S,Cuba,DUTIABLE,10,6440794,266730,6294254,257294,260548.61
+1901,S,Cuba,FREE,3,532756,76509,523961,73804,0.0
+1901,S,Danish West Indies,DUTIABLE,4,8720,1695,11925,2226,281.56
+1901,S,Danish West Indies,FREE,2,0,153,0,153,0.0
+1901,S,Denmark,,1,110,13,110,3,0.0
+1901,S,Denmark,DUTIABLE,14,778,2354,778,92551,18542.7
+1901,S,Denmark,FREE,5,85333,12687,85334,12597,0.0
+1901,S,"Drugs, dyes, chemicals and medicines",DUTIABLE,1,42181,12509,46016,14009,2368.28
+1901,S,"Drugs, dyes, chemicals and medicines— Acids",DUTIABLE,1,781,214,781,214,78.35
+1901,S,Dutch East Indies,,1,11200,345,0,0,0.0
+1901,S,Dutch East Indies,DUTIABLE,3,13210869,312844,4676238,135679,41439.3
+1901,S,Dutch East Indies,FREE,1,80317,11638,80317,11638,0.0
+1901,S,Dutch Guiana,FREE,1,19780,2138,19780,2138,0.0
+1901,S,Egypt,,2,20,177,20,11,0.0
+1901,S,Egypt,DUTIABLE,6,1386600,10331,1250000,10119,13644.7
+1901,S,Egypt,FREE,1,15570,1370,15570,1370,0.0
+1901,S,Equador,FREE,1,0,1064,0,1064,0.0
+1901,S,F. Poss. in Africa,DUTIABLE,1,581,205,230,59,75.2
+1901,S,Fish :,DUTIABLE,1,3659,109,3669,109,18.29
+1901,S,France,,45,43572,58753,8354,1410,0.0
+1901,S,France,DUTIABLE,354,40545906,3965349,38985265,4154726,1266870.25
+1901,S,France,FREE,102,4037305,1038454,4061662,1039477,0.0
+1901,S,France..... Holland..... United States,DUTIABLE,1,0,0,4,5,9.6
+1901,S,France..... United States,DUTIABLE,1,0,0,1,2,2.4
+1901,S,Fren. Poss. Africa,DUTIABLE,1,0,3836,0,3136,627.2
+1901,S,Germany,,49,335799,288424,82275,19721,0.0
+1901,S,Germany,DUTIABLE,333,74734192,4894086,90450247,5065733,1498863.61
+1901,S,Germany,FREE,121,2543418,837327,2549131,838909,0.0
+1901,S,Great Britain,,69,2829632,3064206,1291070,1152594,0.0
+1901,S,Great Britain,DUTIABLE,606,114656873,26143862,102547977,27187164,5870806.88
+1901,S,Great Britain,FREE,302,218470303,10663177,218870439,10682779,0.0
+1901,S,Greece,,1,37,12,37,4,0.0
+1901,S,Greece,DUTIABLE,7,2025020,139229,2793080,155635,28717.21
+1901,S,Greece,FREE,1,0,0,0,21,0.0
+1901,S,Hawaii,FREE,4,39933,6338,39933,6338,0.0
+1901,S,Holland,,6,2567,676,4532,39,0.0
+1901,S,Holland,DUTIABLE,48,6380351,588336,5946815,545323,1347955.43
+1901,S,Holland,FREE,25,339252,251195,474352,251185,0.0
+1901,S,Hong Kong,FREE,8,83755,10041,83755,12209,0.0
+1901,S,Iceland,,1,104,22,104,52,0.0
+1901,S,Iceland,FREE,1,0,634,0,634,0.0
+1901,S,Ireland,FREE,1,0,19,0,19,0.0
+1901,S,Iron and steel and manufactures of,DUTIABLE,1,2200,50,2200,3,1.0
+1901,S,Italy,,12,7324,3853,15055,241,0.0
+1901,S,Italy,DUTIABLE,62,540474,437074,443854,247105,53729.32
+1901,S,Italy,FREE,20,32633870,95635,32633871,95579,0.0
+1901,S,Japan,,19,5722,9806,3979,154,0.0
+1901,S,Japan,DUTIABLE,115,4947373,536026,4708570,530283,183095.03
+1901,S,Japan,FREE,21,9190117,1092106,9190117,1093094,0.0
+1901,S,Lbs. 1 2,FREE,1,1,2,0,0,0.0
+1901,S,Lbs. 26 2,FREE,1,26,2,0,0,0.0
+1901,S,Lbs. 6 8,FREE,1,6,8,0,0,0.0
+1901,S,Mexico,,1,0,8,1294,0,0.0
+1901,S,Mexico,DUTIABLE,7,347677,13401,297577,11690,17939.35
+1901,S,Mexico,FREE,3,42555,4337,41954,4302,0.0
+1901,S,Newfoundland,,13,3068,541,817,54,0.0
+1901,S,Newfoundland,DUTIABLE,30,929,1397,1092,249838,58626.28
+1901,S,Newfoundland,FREE,50,12549522,620962,12549525,620646,0.0
+1901,S,Norway,,2,576,168,577,24,0.0
+1901,S,Norway,DUTIABLE,2,250,175,0,40,10.0
+1901,S,Norway and Sweden,,4,548,688,934,18,0.0
+1901,S,Norway and Sweden,DUTIABLE,14,4735,10986,4729,10955,1699.9
+1901,S,Norway and Sweden,FREE,6,16855,4259,16855,4263,0.0
+1901,S,Oils:,DUTIABLE,1,34805,6742,35753,6752,2363.2
+1901,S,"Paper and manufactures of, not otherwise specified",DUTIABLE,1,48073,4998,49429,5105,2109.68
+1901,S,"Paper, and manufactures of, not otherwise specified:",DUTIABLE,1,238996,3544,238996,3544,693.2
+1901,S,Persia,DUTIABLE,2,1163600,17121,1111195,16168,4042.0
+1901,S,Peru,DUTIABLE,3,15001837,413373,10219125,291010,89219.49
+1901,S,Peru,FREE,1,150,12,150,0,0.0
+1901,S,Philippines,FREE,1,0,20,0,20,0.0
+1901,S,Porto Rico,FREE,3,400,63,400,282,0.0
+1901,S,Portugal,,2,0,3,19,29,0.0
+1901,S,Portugal,DUTIABLE,19,1015894,95204,1024716,91326,37027.74
+1901,S,Portugal,FREE,4,5608440,4642,5608440,4678,0.0
+1901,S,Russia,DUTIABLE,10,468245,31605,254462,210427,43132.15
+1901,S,Russia,FREE,5,225,27670,225,27655,0.0
+1901,S,S. Poss. in Africa,DUTIABLE,1,6,3,6,3,2.4
+1901,S,Slate and manufactures of,DUTIABLE,1,0,40,0,63,13.08
+1901,S,Soap,DUTIABLE,1,1754729,88190,0,89697,11925.09
+1901,S,Spain,,7,34986,2820,892,24,0.0
+1901,S,Spain,DUTIABLE,34,9925540,777212,8800975,680318,184252.81
+1901,S,Spain,FREE,8,4527340,44058,4527340,44227,0.0
+1901,S,Spirits and wines,,1,1408,1547,1792,1788,0.0
+1901,S,Spirits and wines,DUTIABLE,1,0,48,48,15,115.2
+1901,S,St. Pierre,,7,36787,1356,243,23,0.0
+1901,S,St. Pierre,DUTIABLE,16,3306,1173,3706,28089,6925.98
+1901,S,St. Pierre,FREE,10,1712,2769,1712,2734,0.0
+1901,S,"Sugars, syrups and molasses",DUTIABLE,1,5437,209,15197,360,79.5
+1901,S,Sweden,DUTIABLE,3,0,93,0,224,53.0
+1901,S,Sweden and Norway,DUTIABLE,1,0,161,0,161,40.25
+1901,S,Switzerland,,10,349,10077,649,211,0.0
+1901,S,Switzerland,DUTIABLE,72,618784,623476,553079,628263,175071.61
+1901,S,Switzerland,FREE,9,31914,12602,31915,12541,0.0
+1901,S,THE FOREST—Con,FREE,2,0,16,0,16,0.0
+1901,S,Turkey,,6,13420,552,6,5,0.0
+1901,S,Turkey,DUTIABLE,22,2309621,141247,2517081,155898,30430.11
+1901,S,Turkey,FREE,3,16807,3804,16800,3801,0.0
+1901,S,United States,,79,12755540,2507467,76932,534901,0.0
+1901,S,United States,DUTIABLE,745,194365570,49678752,169080873,42853109,10755053.27
+1901,S,United States,FREE,407,188472310,54975898,190014247,55376203,0.0
+1901,S,Venezuela,FREE,1,645284,60133,645284,60133,0.0
+1901,S,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines:",DUTIABLE,1,0,53,53,32,127.2
+1901,S,£,FREE,1,3875554,565907,3875544,565907,0.0
+1902,S,1 4,FREE,1,1,4,0,0,0.0
+1902,S,1 5,FREE,3,3,15,0,0,0.0
+1902,S,1 6,FREE,1,1,6,0,0,0.0
+1902,S,175 6,FREE,1,175,6,0,0,0.0
+1902,S,20 8,FREE,1,20,8,0,0,0.0
+1902,S,241 1,FREE,1,241,1,0,0,0.0
+1902,S,27 6,FREE,1,27,6,0,0,0.0
+1902,S,3 4,FREE,1,3,4,0,0,0.0
+1902,S,"3 Gunpowder and other explosives, &c",DUTIABLE,1,22748,14626,22748,14626,461.96
+1902,S,3 Leather and manufactures of,DUTIABLE,1,63381,16028,64985,16525,1809.75
+1902,S,30 5,FREE,1,30,5,0,0,0.0
+1902,S,350 9,FREE,1,350,9,0,0,0.0
+1902,S,5 Carriages and vehicles :,DUTIABLE,1,7,4265,0,4265,1208.79
+1902,S,50 2,FREE,1,50,2,0,0,0.0
+1902,S,6 Portable machines,,1,16,60,0,0,0.0
+1902,S,61 4,FREE,1,61,4,0,0,0.0
+1902,S,63 4,FREE,1,63,4,0,0,0.0
+1902,S,7 4,FREE,1,7,4,0,0,0.0
+1902,S,"7 Musical instruments, viz",DUTIABLE,1,0,3847,0,3847,674.64
+1902,S,73 9,FREE,1,73,9,0,0,0.0
+1902,S,9 3,FREE,1,9,3,0,0,0.0
+1902,S,?,,19,574959,107138,914,190,0.0
+1902,S,?,DUTIABLE,134,2942681,526190,3818130,1739006,355910.61
+1902,S,Aden,FREE,1,22240,3438,22240,3438,0.0
+1902,S,Arabia,FREE,1,96620,13127,96620,13127,0.0
+1902,S,Argentina,FREE,5,2607942,448123,2607942,448110,0.0
+1902,S,Australia,,3,262,124,398,49,0.0
+1902,S,Australia,DUTIABLE,15,566683,39985,328275,83091,19366.88
+1902,S,Australia,FREE,10,300727,112343,300727,112932,0.0
+1902,S,Austria,FREE,2,0,5360,0,5360,0.0
+1902,S,Austria Hungary,,1,0,26,101,0,0.0
+1902,S,Austria Hungary,DUTIABLE,9,809,1363,724,1116,412.7
+1902,S,Austria-Hungary,,8,313,1110,834,208,0.0
+1902,S,Austria-Hungary,DUTIABLE,85,866009,217017,668382,212375,68911.98
+1902,S,Austria-Hungary,FREE,7,0,3431,0,3616,0.0
+1902,S,B. F. Indies,DUTIABLE,1,0,2920,0,1938,678.3
+1902,S,Belgium,,11,8184,5225,4479,1527,0.0
+1902,S,Belgium,DUTIABLE,120,34152654,1404279,36418998,1456682,391103.25
+1902,S,Belgium,FREE,50,1444352,268407,1444353,268348,0.0
+1902,S,Belgium.....No,DUTIABLE,1,8000,65,8000,65,253.25
+1902,S,Brass and manufactures of,DUTIABLE,1,0,499,0,499,100.1
+1902,S,Brazil,DUTIABLE,2,914,451,914,451,94.58
+1902,S,Brazil,FREE,3,2801176,466158,2801176,466158,0.0
+1902,S,"Breadstuffs, &c",DUTIABLE,1,0,17551,0,17962,2566.33
+1902,S,Brit. E. Indies..No,DUTIABLE,1,10000,122,10000,122,456.5
+1902,S,Brit. W. Indies..No,DUTIABLE,1,32000,1271,36000,1410,1771.5
+1902,S,British Africa,DUTIABLE,1,0,1,0,1,0.35
+1902,S,British Africa,FREE,5,37345,15803,37345,15803,0.0
+1902,S,British East Indies,DUTIABLE,17,11675664,190670,11621208,191069,49128.54
+1902,S,British East Indies,FREE,11,6019586,873194,6019586,873194,0.0
+1902,S,British Guiana,DUTIABLE,8,10467315,634288,8930757,615369,153209.87
+1902,S,British Guiana,FREE,2,38,70,39,16,0.0
+1902,S,British Honduras,FREE,1,8288,1116,8288,1116,0.0
+1902,S,British West Indies,,7,59385,41319,303,37067,0.0
+1902,S,British West Indies,DUTIABLE,30,39339008,766463,36920223,832135,226113.21
+1902,S,British West Indies,FREE,23,21872530,117003,21872532,116960,0.0
+1902,S,C. Am. States,FREE,1,197387,26100,197387,26100,0.0
+1902,S,Cape Verde Islands,DUTIABLE,1,108,50,108,50,5.4
+1902,S,Cape de Verde,FREE,1,292960,1239,292960,1239,0.0
+1902,S,Cape de Verde I'ds,FREE,1,0,400,0,400,0.0
+1902,S,Chile,FREE,1,786826,13494,786826,13494,0.0
+1902,S,Chin,DUTIABLE,1,0,23,0,23,5.75
+1902,S,China,,21,22263,15005,2970,192,0.0
+1902,S,China,DUTIABLE,152,9179065,252479,9206105,251369,182314.48
+1902,S,China,FREE,16,1174834,190859,1174834,192325,0.0
+1902,S,China.....No,DUTIABLE,1,4000,42,4000,42,79.5
+1902,S,Coir and coir yarns,FREE,1,362,31,362,0,0.0
+1902,S,Cuba,DUTIABLE,8,13896,7561,13935,7552,1309.43
+1902,S,Cuba,FREE,4,127012,18804,118468,22505,0.0
+1902,S,Cuba.....No,DUTIABLE,2,5476900,227925,5888800,233380,251533.0
+1902,S,Danish West Indies,,1,0,0,78,187,0.0
+1902,S,Danish West Indies,DUTIABLE,2,55717,8914,21732,3587,382.91
+1902,S,Denmark,,2,1,1234,1,2,0.0
+1902,S,Denmark,DUTIABLE,11,72,999,79,9357,2719.3
+1902,S,Denmark,FREE,4,3111,7746,3111,7746,0.0
+1902,S,"Drugs, dyes, chemicals and medicines— Acids",DUTIABLE,1,12,3,0,3,1.8
+1902,S,Dutch East Indies,DUTIABLE,1,33271933,699853,18752610,419196,146115.92
+1902,S,Dutch East Indies,FREE,1,49747,6928,49747,6928,0.0
+1902,S,E. E. Indies,FREE,1,161529,17599,161529,17599,0.0
+1902,S,E. W. Indies,FREE,1,433749,31674,433749,31674,0.0
+1902,S,Earthenware and chinaware (see bricks and tiles,DUTIABLE,1,0,552102,0,515143,92904.0
+1902,S,Egypt,,2,0,7,0,0,0.0
+1902,S,Egypt,DUTIABLE,5,130,1336,135,1346,429.65
+1902,S,Egypt,FREE,1,0,0,0,26,0.0
+1902,S,Egypt.....No,DUTIABLE,1,1861722,13279,1835722,12690,18778.5
+1902,S,Fr. Poss. in Africa,DUTIABLE,1,0,0,340,125,98.2
+1902,S,France,,49,208429,96265,71397,20544,0.0
+1902,S,France,DUTIABLE,313,75346438,5393285,65335738,5186373,2089751.31
+1902,S,France,FREE,96,2909170,1121423,2909174,1122817,0.0
+1902,S,France.....No,DUTIABLE,1,23000,127,23000,127,220.75
+1902,S,French Africa,DUTIABLE,1,0,18120,0,16715,3343.0
+1902,S,French Africa,FREE,2,1164800,169129,1164800,169129,0.0
+1902,S,French West Indies,DUTIABLE,1,233,228,98,174,235.2
+1902,S,Germany,,39,483071,215204,595997,126004,0.0
+1902,S,Germany,DUTIABLE,348,197048301,8141823,196338014,8391508,2566866.57
+1902,S,Germany,FREE,132,3952714,1769351,3952895,1769138,0.0
+1902,S,Germany.....No,DUTIABLE,2,129300,1931,125300,1900,3391.0
+1902,S,Great Britain,,64,6443820,896240,813266,203882,0.0
+1902,S,Great Britain,DUTIABLE,599,100554796,31418947,98750077,31544268,7767442.43
+1902,S,Great Britain,FREE,286,227655187,13640880,227656714,13685835,0.0
+1902,S,Greece,,1,600,60,601,12,0.0
+1902,S,Greece,DUTIABLE,4,5622606,220458,5352203,218658,55348.74
+1902,S,Greece,FREE,1,0,0,0,30,0.0
+1902,S,"Gutta Percha and India-rubber, manufactures of",,1,0,159,0,0,0.0
+1902,S,Haiti,FREE,2,15362,2192,15363,2100,0.0
+1902,S,Hawaii,FREE,3,129616,15050,129616,15050,0.0
+1902,S,Holland,,6,19819,5371,800,43,0.0
+1902,S,Holland,DUTIABLE,41,4547978,474241,4437871,498986,1303272.45
+1902,S,Holland,FREE,23,105658,321102,149747,330963,0.0
+1902,S,Holland.....No,DUTIABLE,2,10000,92,10000,92,185.0
+1902,S,Hong Kong,FREE,6,32920,4306,32920,5424,0.0
+1902,S,Iceland,FREE,1,0,489,0,489,0.0
+1902,S,"Iron and manufactures of, steel and manufactures of, or both combined (wire and iron to be measured by Stubb's standard gauge)",DUTIABLE,1,103,9991,103,9991,1998.2
+1902,S,Italy,,10,8836,4783,3015,129,0.0
+1902,S,Italy,DUTIABLE,61,827943,567691,847640,590192,101375.58
+1902,S,Italy,FREE,17,42667078,177826,42667079,177732,0.0
+1902,S,Japan,,14,10478,3891,3786,184,0.0
+1902,S,Japan,DUTIABLE,119,3990930,547137,3989040,535529,181481.35
+1902,S,Japan,FREE,21,7494502,962751,7494503,963209,0.0
+1902,S,Japan.....No,DUTIABLE,1,0,0,13000,113,517.25
+1902,S,"Lime juice, crude only",FREE,1,728,693,728,693,0.0
+1902,S,M. ft,FREE,1,8,8,0,0,0.0
+1902,S,Malta,DUTIABLE,1,35,28,35,28,19.25
+1902,S,Malta.....No,DUTIABLE,1,351000,1262,311000,1114,2741.5
+1902,S,Mexico,DUTIABLE,5,26996,18288,26996,18288,3126.0
+1902,S,Mexico,FREE,6,596935,82873,597889,83022,0.0
+1902,S,Mexico.....No,DUTIABLE,2,521950,8158,524950,10853,17917.25
+1902,S,Musk in pods or grains,FREE,1,14,62,15,0,0.0
+1902,S,New Zealand,DUTIABLE,1,309,142,309,142,30.9
+1902,S,Newfoundland,,9,2786,1406,1391,43,0.0
+1902,S,Newfoundland,DUTIABLE,35,779564,30721,779558,34237,6860.04
+1902,S,Newfoundland,FREE,55,14693546,635970,14693520,635601,0.0
+1902,S,Norlandland,FREE,1,0,120,0,120,0.0
+1902,S,Norway and Sweden,,6,9548,1066,2400,51,0.0
+1902,S,Norway and Sweden,DUTIABLE,23,35466,54585,22980,45334,29906.5
+1902,S,Norway and Sweden,FREE,9,37156,5659,37156,5659,0.0
+1902,S,"Oils, viz.:",FREE,1,87028,41114,87028,41114,0.0
+1902,S,Persia,DUTIABLE,2,264592,4884,238384,4296,1104.0
+1902,S,Peru,DUTIABLE,2,1121815,19498,9253922,235314,78521.6
+1902,S,Philippines,FREE,2,0,80,0,124,0.0
+1902,S,"Plants and trees, viz.:",DUTIABLE,1,36,18,35,18,1.08
+1902,S,Porto Rico,FREE,2,182400,243,182400,605,0.0
+1902,S,Portugal,,2,5,6,0,0,0.0
+1902,S,Portugal,DUTIABLE,19,2263893,120600,2113607,111321,42699.56
+1902,S,Portugal,FREE,4,13835120,17323,13835120,17456,0.0
+1902,S,R. W. Indies,FREE,2,4664,489,4664,489,0.0
+1902,S,Russia,DUTIABLE,7,5460,849,5460,849,219.5
+1902,S,Russia,FREE,4,2160,75576,2160,75576,0.0
+1902,S,"Seeds, viz.:",FREE,1,5296,214,5296,214,0.0
+1902,S,Spain,,6,3226,2179,1924,76,0.0
+1902,S,Spain,DUTIABLE,45,7680558,725117,8657840,770980,250778.98
+1902,S,Spain,FREE,8,12075160,63158,12075160,63384,0.0
+1902,S,St. Pierre,,7,2066677,79038,732,118,0.0
+1902,S,St. Pierre,DUTIABLE,20,2074,1151,2252,1147,375.56
+1902,S,St. Pierre,FREE,8,40611,1590,40613,1390,0.0
+1902,S,St. Pierre.....No,DUTIABLE,1,6000,30,6000,30,52.5
+1902,S,"Sugars, syrups and molasses",DUTIABLE,1,8167431,178928,7940944,178209,89006.75
+1902,S,Switzerland,,9,1853,1112,298,80,0.0
+1902,S,Switzerland,DUTIABLE,68,225074,578623,222824,571260,147205.28
+1902,S,Switzerland,FREE,11,52061,17511,52061,17511,0.0
+1902,S,Switzerland.....No,DUTIABLE,2,10500,81,6500,52,124.0
+1902,S,"Tea of India, black, imported direct, or purchased in bond in United Kingdom",FREE,1,1322998,212643,1322998,212643,0.0
+1902,S,Turkey,,9,843,233,734,75,0.0
+1902,S,Turkey,DUTIABLE,32,2446451,95240,2433378,250900,59932.67
+1902,S,Turkey,FREE,4,2239,30853,55,29746,0.0
+1902,S,United States,,77,24104454,17721083,849434,582454,0.0
+1902,S,United States,DUTIABLE,737,174903233,42443535,170321519,40980011,10680259.62
+1902,S,United States,FREE,388,226795756,56022144,226209175,55775108,0.0
+1902,S,Uruguay,FREE,1,0,292804,0,292804,0.0
+1902,S,Venezuela,FREE,1,821081,62803,821081,62803,0.0
+1902,S,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines:",,1,2101,2106,2425,2167,0.0
+1903,S,* Total,FREE,1,0,46886,0,46886,0.0
+1903,S,1 1,FREE,3,3,3,0,0,0.0
+1903,S,1 2,FREE,1,1,2,0,0,0.0
+1903,S,1 3,FREE,1,1,3,0,0,0.0
+1903,S,10 2,FREE,1,10,2,0,0,0.0
+1903,S,169 3,FREE,1,169,3,0,0,0.0
+1903,S,2 Candles,,1,4693,594,0,582,0.0
+1903,S,"2,240 5",FREE,1,2240,5,0,0,0.0
+1903,S,3 1,FREE,1,3,1,0,0,0.0
+1903,S,3 3,FREE,1,3,3,0,0,0.0
+1903,S,3 Leather and manufactures of,DUTIABLE,1,261065,41653,266557,43371,4420.25
+1903,S,30 5,FREE,1,30,5,0,0,0.0
+1903,S,300 5,FREE,1,300,5,0,0,0.0
+1903,S,36 1,FREE,1,36,1,0,0,0.0
+1903,S,432 7,FREE,1,432,7,0,0,0.0
+1903,S,45 4,FREE,1,45,4,0,0,0.0
+1903,S,56 2,FREE,1,56,2,0,0,0.0
+1903,S,7 Carriages and vehicles:,,1,10,5600,0,5600,0.0
+1903,S,85 7,FREE,1,85,7,0,0,0.0
+1903,S,?,,36,231038,676413,26265,315,0.0
+1903,S,?,DUTIABLE,236,7866953,867074,15294711,5097186,1250792.48
+1903,S,"ANIMALS, ETC.— Con",FREE,1,0,8,0,0,0.0
+1903,S,Anchors,FREE,1,3601,11667,3601,11667,0.0
+1903,S,Arabia,FREE,2,111455,14294,111455,14294,0.0
+1903,S,Argentina,FREE,3,1264476,890723,1264476,890723,0.0
+1903,S,Australia,,3,59,98,76,182,0.0
+1903,S,Australia,DUTIABLE,15,84345,16127,79155,14064,2646.94
+1903,S,Australia,FREE,15,238651,82307,238652,82211,0.0
+1903,S,Austria Hungary,,2,0,774,41,14,0.0
+1903,S,Austria Hungary,DUTIABLE,9,20793,72763,20793,73111,23767.75
+1903,S,Austria Hungary,FREE,1,0,16,0,16,0.0
+1903,S,Austria-Hungary,,9,472,4653,4304,1371,0.0
+1903,S,Austria-Hungary,DUTIABLE,99,2099983,226511,2381985,230053,74004.97
+1903,S,Austria-Hungary,FREE,12,52,40065,52,40065,0.0
+1903,S,Austrian-Hungary,DUTIABLE,1,0,9,0,9,2.7
+1903,S,B. E. Indies No,DUTIABLE,1,38000,0,41000,353,1390.25
+1903,S,B. East Indies,,2,6444,741,242,8,0.0
+1903,S,B. East Indies,DUTIABLE,7,17254688,228375,11811688,289389,71318.27
+1903,S,B. East Indies,FREE,2,1000,302,1000,302,0.0
+1903,S,B. Guinea,FREE,1,199710,285,199710,285,0.0
+1903,S,B. W. Indies No,DUTIABLE,1,53250,0,62250,707,53.25
+1903,S,B. W. Indies. .... United States,DUTIABLE,1,0,0,2267,8731,1246.85
+1903,S,B. West Indies,,2,2131017,36602,149,5,0.0
+1903,S,B. West Indies,FREE,2,1115,541,1115,541,0.0
+1903,S,Belgium,,16,6377,8470,6392,1503,0.0
+1903,S,Belgium,DUTIABLE,133,46246843,1873746,55624376,2078616,606673.27
+1903,S,Belgium,FREE,65,2400380,747500,2400028,747096,0.0
+1903,S,Belgium No,DUTIABLE,1,10160,0,10160,98,187.25
+1903,S,Br. West Indies,FREE,1,0,50,0,50,0.0
+1903,S,Brazil,DUTIABLE,3,400,1293,400,1319,266.8
+1903,S,Brazil,FREE,2,3772521,265738,3772521,265738,0.0
+1903,S,Bristles,FREE,1,47330,46263,47330,46263,0.0
+1903,S,British Africa,DUTIABLE,3,0,158,0,158,48.05
+1903,S,British Africa,FREE,4,175619,48963,175619,48963,0.0
+1903,S,British East Indies,DUTIABLE,20,785065,80984,3560641,129928,34770.02
+1903,S,British East Indies,FREE,14,14862300,1743891,14861661,1743559,0.0
+1903,S,British Guiana,DUTIABLE,6,25764232,583917,29132035,602840,269408.83
+1903,S,British Guiana,FREE,3,5953,32907,5953,32907,0.0
+1903,S,British West Indies,,1,10,20,10,3,0.0
+1903,S,British West Indies,DUTIABLE,37,72400740,1630625,73063328,1761560,424464.56
+1903,S,British West Indies,FREE,22,17027489,1000911,17027490,1001860,0.0
+1903,S,C. Am. States,FREE,1,392641,50762,392641,50762,0.0
+1903,S,Cape de Verd. Isle,FREE,1,300,36,300,0,0.0
+1903,S,Central Am. States,FREE,1,0,200,0,200,0.0
+1903,S,Chile,FREE,1,5500609,100503,5500609,100503,0.0
+1903,S,China,,17,5245,12147,147812,35751,0.0
+1903,S,China,DUTIABLE,174,5301422,193157,5320303,193642,127836.12
+1903,S,China,FREE,21,1945477,311533,1945478,311423,0.0
+1903,S,China No,DUTIABLE,1,6000,0,6000,55,258896.75
+1903,S,Coke,FREE,1,15638,70469,15638,70469,0.0
+1903,S,Cuba,,1,0,36,0,0,0.0
+1903,S,Cuba,DUTIABLE,6,5457,4028,5468,3610,758.75
+1903,S,Cuba,FREE,3,267535,52631,116490,31892,0.0
+1903,S,Cuba No,DUTIABLE,1,6252345,0,5906445,66642,40.75
+1903,S,Cuba... No,DUTIABLE,1,9000,0,14000,12,27.0
+1903,S,Danish West Indies,,1,140,56,112,266,0.0
+1903,S,Danish West Indies,DUTIABLE,4,1472,236,26480,4198,487.98
+1903,S,Denmark,,1,180,48,180,90,0.0
+1903,S,Denmark,DUTIABLE,12,334,2475,329,2459,674.94
+1903,S,Denmark,FREE,3,2318,9951,2318,9951,0.0
+1903,S,"Drugs, dyes, chemicals and medicines— Acids",,1,0,8,0,0,0.0
+1903,S,Dutch East Indies,DUTIABLE,2,23114321,411003,25718375,438452,183443.9
+1903,S,Dutch East Indies,FREE,3,52128,10558,49438,7868,0.0
+1903,S,E. East Indies,DUTIABLE,1,25056,78515,21072,69419,14968.0
+1903,S,Earthenware and chinaware (see bricks and tiles),DUTIABLE,1,0,544295,0,519072,94809.92
+1903,S,Ecuador,FREE,1,20312,1523,20312,1523,0.0
+1903,S,Egypt,DUTIABLE,5,25,769,209,1153,500.66
+1903,S,Egypt,FREE,1,0,0,0,28,0.0
+1903,S,Egypt... No,DUTIABLE,1,2202700,0,2391900,2964,4332.0
+1903,S,"Fancy Goods, viz. :",DUTIABLE,1,0,0,0,736,188.31
+1903,S,Fiji Islands,DUTIABLE,3,11051613,231343,2097913,45728,12195.38
+1903,S,Fr. Poss. Africa,DUTIABLE,1,0,13993,0,14269,2855.8
+1903,S,France,,31,38558,59775,52663,14730,0.0
+1903,S,France,DUTIABLE,333,15975905,4651398,26345858,4623850,1933490.02
+1903,S,France,FREE,91,2712378,1424707,2712382,1424969,0.0
+1903,S,France No,DUTIABLE,1,1000,0,1000,12,6272.25
+1903,S,French Africa,DUTIABLE,2,0,237,48,252,83.1
+1903,S,French Africa,FREE,1,0,118834,0,118834,0.0
+1903,S,Germany,,38,337706,132200,232618,70742,0.0
+1903,S,Germany,DUTIABLE,350,191395660,9494364,202855317,9914891,3055118.02
+1903,S,Germany,FREE,143,7076350,3322191,7059174,3314790,0.0
+1903,S,Germany No,DUTIABLE,1,139000,0,139000,1805,681.75
+1903,S,Great Britain,,115,4239503,7224037,4333846,6279671,0.0
+1903,S,Great Britain,DUTIABLE,531,116357986,32646470,120933345,31686461,7320136.48
+1903,S,Great Britain,FREE,290,246317540,17042334,246333689,17017921,0.0
+1903,S,Greece,DUTIABLE,9,7402175,212791,7133006,205728,74361.65
+1903,S,Gums,DUTIABLE,1,1000,556,1000,556,74.13
+1903,S,Gutta percha,FREE,1,10,14,10,0,0.0
+1903,S,"Hair and manufactures of, not otherwise provided for",,1,0,132,0,132,0.0
+1903,S,Haiti,DUTIABLE,1,0,1,0,1,20.0
+1903,S,Haiti,FREE,1,1840,156,1840,156,0.0
+1903,S,"Hats, caps and bonnets, N.E.S",,1,0,445962,0,445911,0.0
+1903,S,Hawaii,FREE,3,24431,3159,24431,3159,0.0
+1903,S,Holland,,13,24976,4738,1188,618,0.0
+1903,S,Holland,DUTIABLE,73,3353013,737175,2932250,690393,1552109.72
+1903,S,Holland,FREE,28,770556,666894,768046,665522,0.0
+1903,S,Holland No,DUTIABLE,1,10000,0,20000,204,1010.75
+1903,S,Hong Kong,FREE,8,43145,6548,43145,6535,0.0
+1903,S,Iceland,DUTIABLE,1,0,7,0,7,3.5
+1903,S,Iceland,FREE,1,0,829,0,829,0.0
+1903,S,Italy,,7,578,514,261,25,0.0
+1903,S,Italy,DUTIABLE,82,1119079,425407,1140383,409164,86379.71
+1903,S,Italy,FREE,20,21642521,128728,21642521,128728,0.0
+1903,S,Japan,,19,18445,115967,11364,1734,0.0
+1903,S,Japan,DUTIABLE,134,4616039,612067,3989722,609057,203394.17
+1903,S,Japan,FREE,21,6935087,769712,6932955,769611,0.0
+1903,S,Japan No,DUTIABLE,1,45000,0,26000,310,10602.0
+1903,S,Lead and manufactures of,DUTIABLE,1,19507,35634,0,37557,3882.7
+1903,S,Malta,DUTIABLE,1,15,22,15,22,8.25
+1903,S,Malta... No,DUTIABLE,1,195000,0,207000,78,145.5
+1903,S,Mexico,,3,0,318,292,89,0.0
+1903,S,Mexico,DUTIABLE,8,137778,28809,137386,27935,3946.5
+1903,S,Mexico,FREE,6,1024033,88318,1022559,88060,0.0
+1903,S,Mexico No,DUTIABLE,1,341000,0,281000,2960,33739.75
+1903,S,"Musical instruments, viz",DUTIABLE,1,0,5003,0,5003,897.27
+1903,S,New Zealand,,2,156,175,175,61,0.0
+1903,S,New Zealand,DUTIABLE,2,0,136,0,126,35.3
+1903,S,New Zealand,FREE,6,7812,41592,7812,41592,0.0
+1903,S,Newfoundland,,6,3972,270,4005,34,0.0
+1903,S,Newfoundland,DUTIABLE,38,89243,8276,72220,59837,12396.32
+1903,S,Newfoundland,FREE,45,22464910,1188104,22464614,1187602,0.0
+1903,S,Norway and Sweden,,6,3320,182,3322,88,0.0
+1903,S,Norway and Sweden,DUTIABLE,32,20196,22355,15980,22335,4730.16
+1903,S,Norway and Sweden,FREE,10,224098,35456,224099,35382,0.0
+1903,S,Persia,DUTIABLE,2,30,250,30,250,87.5
+1903,S,"Persia, or extract of archill and cudbear",FREE,1,1545,123,1545,123,0.0
+1903,S,Peru,DUTIABLE,2,8100469,157864,4684671,80343,33658.11
+1903,S,"Plants and trees, viz.:",DUTIABLE,1,84,18,0,18,2.52
+1903,S,Porto Rico,FREE,1,14150,1800,14150,1800,0.0
+1903,S,Portugal,,2,0,394,384,115,0.0
+1903,S,Portugal,DUTIABLE,21,1828970,119579,1761174,126237,48492.0
+1903,S,Portugal,FREE,3,5475400,16013,5475400,16013,0.0
+1903,S,"Rubber, crude caoutchouc or India rubber unmanufactured",FREE,1,39276,5910,39276,5910,0.0
+1903,S,Russia,,3,5524,350,93,20,0.0
+1903,S,Russia,DUTIABLE,11,2468,39558,2467,36807,5748.7
+1903,S,Russia,FREE,7,62306,166674,62306,166674,0.0
+1903,S,Siam,FREE,1,3696,246,3696,246,0.0
+1903,S,Spain,,5,1672,508,1780,84,0.0
+1903,S,Spain,DUTIABLE,48,8622455,798125,8547374,764337,216670.17
+1903,S,Spain,FREE,9,19560000,74235,19560000,74235,0.0
+1903,S,St. Pierre,,5,522370,19852,171,85,0.0
+1903,S,St. Pierre,DUTIABLE,21,6295,3125,31964,4454,1769.85
+1903,S,St. Pierre,FREE,7,104,1424,105,1297,0.0
+1903,S,Switzerland,,12,7610,10561,9048,3173,0.0
+1903,S,Switzerland,DUTIABLE,71,337015,836722,348970,831434,223790.39
+1903,S,Switzerland,FREE,11,32804,21082,32804,21082,0.0
+1903,S,Switzerland No,DUTIABLE,1,4000,0,2900,33,32695.75
+1903,S,THE MINE—Con,FREE,1,0,8,0,8,0.0
+1903,S,Tin-foil,FREE,1,9442,1711,9442,1711,0.0
+1903,S,Turkey,,7,1712,555,390,327,0.0
+1903,S,Turkey,DUTIABLE,29,3101462,160048,3038109,155529,34436.98
+1903,S,Turkey,FREE,2,0,65088,0,65088,0.0
+1903,S,U. S. of Colombia,DUTIABLE,1,55,344,55,344,137.5
+1903,S,United States,,86,5765362,3077832,4642034,792267,0.0
+1903,S,United States,DUTIABLE,721,175022148,65926641,166422315,59386218,15156008.48
+1903,S,United States,FREE,396,310493258,65679674,308063186,63682681,0.0
+1903,S,Venezuela,FREE,1,503029,43148,503029,43148,0.0
+1903,S,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines:",DUTIABLE,1,2017,3860,4254,5805,1569.0
+1904,S,10 4,FREE,1,10,4,0,0,0.0
+1904,S,10 5,FREE,1,10,5,0,0,0.0
+1904,S,100 7,FREE,1,100,7,0,0,0.0
+1904,S,14 4,FREE,1,14,4,0,0,0.0
+1904,S,15 5,FREE,1,15,5,0,0,0.0
+1904,S,188 6,FREE,1,188,6,0,0,0.0
+1904,S,2 1,FREE,1,2,1,0,0,0.0
+1904,S,2 4,FREE,1,2,4,0,0,0.0
+1904,S,224 7,FREE,1,224,7,0,0,0.0
+1904,S,3 3,FREE,1,3,3,0,0,0.0
+1904,S,30 1,FREE,1,30,1,0,0,0.0
+1904,S,"32,664 106",FREE,1,4866,4866,0,0,0.0
+1904,S,389 6,FREE,1,389,6,0,0,0.0
+1904,S,40 5,FREE,1,40,5,0,0,0.0
+1904,S,400 5,FREE,1,400,5,0,0,0.0
+1904,S,47 4,FREE,1,47,4,0,0,0.0
+1904,S,5 6,FREE,1,5,6,0,0,0.0
+1904,S,56 2,FREE,1,56,2,0,0,0.0
+1904,S,60 6,FREE,1,60,6,0,0,0.0
+1904,S,?,,18,705047,15676,176943,27468,0.0
+1904,S,?,DUTIABLE,207,18164869,11356244,17651899,10756461,2595405.34
+1904,S,Arabia,FREE,2,82070,11187,82070,11187,0.0
+1904,S,Argentina,FREE,3,452972,498860,452972,498860,0.0
+1904,S,Aust. Hungary,,9,47,29568,44264,15241,0.0
+1904,S,Aust. Hungary,DUTIABLE,64,5322255,300396,7391797,347925,137615.29
+1904,S,Aust. Hungary,FREE,4,27,4647,27,4647,0.0
+1904,S,"Aust., Hungary",DUTIABLE,1,30,59,30,59,25.2
+1904,S,Aust.-Hungary,,5,0,16783,16581,5889,0.0
+1904,S,Aust.-Hungary,DUTIABLE,84,538792,384881,534952,495632,138764.47
+1904,S,Aust.-Hungary,FREE,16,35023,13554,35023,13554,0.0
+1904,S,Australia,,5,67643,11925,0,53640,0.0
+1904,S,Australia,DUTIABLE,26,58423,12058,50136,11488,2816.51
+1904,S,Australia,FREE,16,498637,74910,498638,74858,0.0
+1904,S,Australia... No,DUTIABLE,1,12000,93,12000,93,329.25
+1904,S,Austria,DUTIABLE,1,3750,128,3750,128,34.13
+1904,S,Austria,FREE,2,17591,2681,17591,2649,0.0
+1904,S,Austria-Hungary,DUTIABLE,1,0,3387,0,6251,1250.2
+1904,S,Austria-Hungary,FREE,3,0,8567,0,8567,0.0
+1904,S,B. E. Indies. No,DUTIABLE,1,19000,167,22000,177,782.25
+1904,S,B. East Indies,DUTIABLE,1,0,77,0,77,26.95
+1904,S,B. W. Indies. No,DUTIABLE,1,42400,1310,42000,1310,1554.5
+1904,S,Belgium,,10,11034,28793,31458,10173,0.0
+1904,S,Belgium,DUTIABLE,161,48742339,1855544,34031814,1506915,411121.48
+1904,S,Belgium,FREE,52,1269923,1239306,1264180,1233563,0.0
+1904,S,Belgium..... No,DUTIABLE,1,28800,654,29800,473,1174.25
+1904,S,Belgium....No,DUTIABLE,1,2000,26,2000,26,39.5
+1904,S,Br. Africa,DUTIABLE,1,0,179,0,179,35.8
+1904,S,Brazil,DUTIABLE,3,33650,3045,33650,3042,403.8
+1904,S,Brazil,FREE,1,2639517,176219,2639517,176219,0.0
+1904,S,"Brazil nuts, not shelled",DUTIABLE,1,0,0,1756,132,52.68
+1904,S,Bristles,FREE,1,36827,33544,36827,33544,0.0
+1904,S,British Africa,DUTIABLE,2,18393,6103,18393,6103,930.91
+1904,S,British Africa,FREE,6,46949,62854,46949,62854,0.0
+1904,S,British East Indies,,3,11765,1144,11,4,0.0
+1904,S,British East Indies,DUTIABLE,28,19023477,573630,10015486,429863,101197.56
+1904,S,British East Indies,FREE,16,10999351,1871735,10999351,1871735,0.0
+1904,S,British Guiana,DUTIABLE,8,109614033,2190268,113140864,2178089,660722.07
+1904,S,British Guiana,FREE,2,459,230,460,175,0.0
+1904,S,"British Poss., other",FREE,2,27874,3455,27874,3455,0.0
+1904,S,British West Indies,,3,11399,23844,20,7,0.0
+1904,S,British West Indies,DUTIABLE,46,205576645,4418529,166217510,3693241,884958.63
+1904,S,British West Indies,FREE,20,10994366,367649,11434446,467724,0.0
+1904,S,Cape Verde Islands,FREE,1,950000,925,950000,925,0.0
+1904,S,Central Am. States,FREE,1,570316,71042,570316,71042,0.0
+1904,S,Chile,FREE,2,4376819,87617,4376819,87617,0.0
+1904,S,China,,17,3296,12677,7256,5455,0.0
+1904,S,China,DUTIABLE,197,6637612,370579,6738917,1153566,157478.74
+1904,S,China,FREE,20,2282768,319458,2282768,319422,0.0
+1904,S,China and porcelain ware,DUTIABLE,2,0,101492,0,100933,20093.25
+1904,S,China..... No,DUTIABLE,1,16000,314,22000,413,1030.25
+1904,S,Cuba,,2,0,720,0,0,0.0
+1904,S,Cuba,DUTIABLE,8,14232,552,128228,3816,782.29
+1904,S,Cuba,FREE,2,300,196,300,150,0.0
+1904,S,Cuba..... No,DUTIABLE,1,6747000,285566,7062350,271457,293242.25
+1904,S,Cuba...No,DUTIABLE,1,36000,86,25000,46,206.5
+1904,S,Cwt. 2 6,FREE,1,2,6,0,0,0.0
+1904,S,Danish West Indies,DUTIABLE,3,7851,1727,31687,7894,640.29
+1904,S,Denmark,,3,250,237,210,68,0.0
+1904,S,Denmark,DUTIABLE,16,8112,1312,8092,1317,443.37
+1904,S,Denmark,FREE,7,30166,13590,30166,13590,0.0
+1904,S,"Drugs, dyes, chemicals and medicines :",DUTIABLE,1,5012,3774,4977,3819,4943.84
+1904,S,Dutch East Indies,DUTIABLE,3,21262620,445468,20241182,389704,145034.51
+1904,S,Dutch East Indies,FREE,1,175561,18012,175561,18012,0.0
+1904,S,Egypt,,1,0,37,37,11,0.0
+1904,S,Egypt,DUTIABLE,9,100,5236,100,3348,903.0
+1904,S,Egypt,FREE,1,0,1165,0,1165,0.0
+1904,S,Egypt..... No,DUTIABLE,2,2815000,20018,2510000,18076,26590.0
+1904,S,Fiji Islands,DUTIABLE,3,18017,284,18360,380,928.44
+1904,S,France,,27,15050,862358,811666,283122,0.0
+1904,S,France,DUTIABLE,392,7292155,4959779,7884490,4102267,1782648.84
+1904,S,France,FREE,95,2317097,1124584,2317136,1123884,0.0
+1904,S,France..... No,DUTIABLE,2,92000,277,82000,262,752.5
+1904,S,French Africa,,3,752,236,0,0,0.0
+1904,S,French Africa,FREE,3,832,28069,832,28069,0.0
+1904,S,Gannister,FREE,1,11986,2261,11986,2261,0.0
+1904,S,Germany,,26,2897,540590,477130,220768,0.0
+1904,S,Germany,DUTIABLE,373,29726724,4804059,41295177,5099133,1691850.47
+1904,S,Germany,FREE,116,3542072,1859145,3536616,1853366,0.0
+1904,S,Germany... No,DUTIABLE,2,153000,1950,88000,1004,1660.17
+1904,S,Germany..... United States,FREE,1,0,5,0,5,0.0
+1904,S,Gravels and sand,FREE,1,579,975,579,975,0.0
+1904,S,Great Britain,,36,107537,4536930,4980255,1248101,0.0
+1904,S,Great Britain,DUTIABLE,660,117278758,36339917,119070050,38616896,9337544.43
+1904,S,Great Britain,FREE,283,247469334,15326980,247391081,15216197,0.0
+1904,S,Greece,DUTIABLE,10,7659105,247768,7232371,229689,75288.27
+1904,S,Greece,FREE,1,286,33,286,0,0.0
+1904,S,Gross. 44 9,FREE,1,44,9,0,0,0.0
+1904,S,Gums:,DUTIABLE,1,12532,7081,11759,6737,917.37
+1904,S,Haiti,DUTIABLE,1,0,2,0,2,0.4
+1904,S,Haiti,FREE,1,2932,653,2932,653,0.0
+1904,S,Hawaii,FREE,1,15536,2260,15536,2260,0.0
+1904,S,Holland,,9,2136,6037,36714,12220,0.0
+1904,S,Holland,DUTIABLE,72,1778564,657594,2011182,1008422,1846425.55
+1904,S,Holland,FREE,23,204442,306870,204443,306765,0.0
+1904,S,Holland..... No,DUTIABLE,1,3500,56,2000,33,95.25
+1904,S,Hong Kong,FREE,12,44352,6527,44352,6527,0.0
+1904,S,Iceland,FREE,1,0,552,0,552,0.0
+1904,S,Indian Corn for purposes of distillation,DUTIABLE,1,1085032,554898,1112420,568536,83431.58
+1904,S,Indian or corn meal,DUTIABLE,1,0,122640,48410,122114,12102.5
+1904,S,Italy,,8,137,625,59915,15515,0.0
+1904,S,Italy,DUTIABLE,99,851680,1374860,1544178,370217,90650.48
+1904,S,Italy,FREE,23,17276868,85600,17276869,85514,0.0
+1904,S,Ivory unmanufactured,FREE,1,474,2628,474,2628,0.0
+1904,S,Japan,,22,4762,48328,19215,10679,0.0
+1904,S,Japan,DUTIABLE,178,5978517,900605,5552614,1814605,271661.52
+1904,S,Japan,FREE,16,9982747,1058414,9986247,1059052,0.0
+1904,S,Japan..... No,DUTIABLE,1,0,0,15000,184,529.0
+1904,S,"Lime juice, crude only",FREE,1,435,381,435,381,0.0
+1904,S,Malt,,1,0,800,0,0,0.0
+1904,S,Malt,DUTIABLE,2,684,55,444,621,50.8
+1904,S,Mexico,DUTIABLE,10,116194,28645,101460,26898,3669.45
+1904,S,Mexico,FREE,7,1123526,52353,1123526,52353,0.0
+1904,S,Mexico..... No,DUTIABLE,2,184500,4080,181000,3813,6737.25
+1904,S,New Zealand,,1,9840,2252,0,9264,0.0
+1904,S,New Zealand,DUTIABLE,5,0,415,3075,737,127.55
+1904,S,New Zealand,FREE,4,36657,16362,36657,16362,0.0
+1904,S,Newfoundland,,3,0,66,0,0,0.0
+1904,S,Newfoundland,DUTIABLE,36,26490,14313,43398,15744,2683.09
+1904,S,Newfoundland,FREE,49,17611097,1057563,17611102,1057021,0.0
+1904,S,Norway and Sweden,FREE,8,651833,144612,651953,144492,0.0
+1904,S,Norway-Sweden,,2,480,4,484,169,0.0
+1904,S,Norway-Sweden,DUTIABLE,32,166644,52020,165122,51784,15009.93
+1904,S,Norway—Sweden,,1,0,951,62774,23492,0.0
+1904,S,Norway—Sweden,DUTIABLE,7,8730,16993,8523,8727,3640.55
+1904,S,Oils : Mineral,DUTIABLE,1,0,3785,15966,3785,645.87
+1904,S,Persia,DUTIABLE,2,107200,2746,107200,2746,696.2
+1904,S,Peru,DUTIABLE,1,14645522,279394,9576918,187985,70054.41
+1904,S,Porto Rico,FREE,1,12406,1846,12406,1846,0.0
+1904,S,Portugal,,1,42,63,0,0,0.0
+1904,S,Portugal,DUTIABLE,16,729941,93905,859666,88292,42126.25
+1904,S,Portugal,FREE,1,1590100,1807,1590100,1807,0.0
+1904,S,R. W. Indies,DUTIABLE,1,0,1375,0,1375,259.22
+1904,S,Roumania,FREE,2,0,1932,0,1932,0.0
+1904,S,Russia,,1,0,1,1,0,0.0
+1904,S,Russia,DUTIABLE,22,2091795,82556,2120571,83679,30544.11
+1904,S,Russia,FREE,4,0,180030,0,180030,0.0
+1904,S,Slate and manufactures of :,DUTIABLE,1,185,1082,185,1082,138.75
+1904,S,Soap :,DUTIABLE,1,79719,3531,64559,2935,466.45
+1904,S,Spain,,3,600,629,60,18,0.0
+1904,S,Spain,DUTIABLE,56,9726765,774012,9599421,772938,228505.16
+1904,S,Spain,FREE,4,18652942,74887,18652942,74887,0.0
+1904,S,St. Pierre,,2,0,488,100,35,0.0
+1904,S,St. Pierre,DUTIABLE,33,7353,172995,19044,6646,1578.42
+1904,S,St. Pierre,FREE,11,497835,2554,497836,2483,0.0
+1904,S,"Sugars, syrups and molasses :",DUTIABLE,1,9482698,242293,9445912,240301,85340.98
+1904,S,Switzerland,,8,1186,53377,35743,12370,0.0
+1904,S,Switzerland,DUTIABLE,110,552302,1350172,269936,1598015,360303.83
+1904,S,Switzerland,FREE,15,94425,28488,94425,28488,0.0
+1904,S,Switzerland No,DUTIABLE,1,5000,56,9000,101,304.25
+1904,S,THE FISHERIES—Con,FREE,1,0,8,0,8,0.0
+1904,S,"Tea of India, black, imported direct, or purchased in bond in United Kingdom",FREE,1,1584350,259636,1584350,259636,0.0
+1904,S,Tools and implements,DUTIABLE,1,146554,656163,146287,650318,29665.45
+1904,S,Tubing :,DUTIABLE,1,0,57483,473572,57483,1960.45
+1904,S,Turkey,DUTIABLE,41,5187487,305767,4182027,198282,44597.82
+1904,S,Turkey,FREE,3,24379,13416,24379,13416,0.0
+1904,S,Turkey..... No,DUTIABLE,1,6000,86,9000,125,166.25
+1904,S,U. E. Indies,DUTIABLE,1,0,242,0,242,60.25
+1904,S,U. S. Colombia,DUTIABLE,1,0,10,0,10,2.0
+1904,S,United States,,37,2992847,3622211,1279576,3435061,0.0
+1904,S,United States,DUTIABLE,811,206963414,67593305,190505441,64522140,15597757.52
+1904,S,United States,FREE,366,193596992,66244848,192618480,64433816,0.0
+1904,S,Venezuela,FREE,1,353677,24135,353677,24135,0.0
+1904,S,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines:",DUTIABLE,1,4853,5745,4216,5758,1757.54
+1904,S,"Wool, manufactures of :",DUTIABLE,1,459174,117713,0,115190,27751.21
+1905,S,1 2,FREE,1,1,2,0,0,0.0
+1905,S,"1,800 5",FREE,1,1800,5,0,0,0.0
+1905,S,100 8,FREE,1,100,8,0,0,0.0
+1905,S,12 1,FREE,1,12,1,0,0,0.0
+1905,S,125 5,FREE,1,125,5,0,0,0.0
+1905,S,14 8,FREE,1,14,8,0,0,0.0
+1905,S,2 2,FREE,2,4,4,0,0,0.0
+1905,S,200 3,FREE,1,200,3,0,0,0.0
+1905,S,25 5,FREE,1,25,5,0,0,0.0
+1905,S,28 3,FREE,1,28,3,0,0,0.0
+1905,S,293 2,FREE,1,293,2,0,0,0.0
+1905,S,3 1,FREE,1,3,1,0,0,0.0
+1905,S,32 4,FREE,1,32,4,0,0,0.0
+1905,S,4 4,FREE,1,4,4,0,0,0.0
+1905,S,4 9,FREE,1,4,9,0,0,0.0
+1905,S,424 9,FREE,1,424,9,0,0,0.0
+1905,S,50 5,FREE,3,150,15,0,0,0.0
+1905,S,50 9,FREE,1,50,9,0,0,0.0
+1905,S,625 5,FREE,1,625,5,0,0,0.0
+1905,S,7 2,FREE,1,7,2,0,0,0.0
+1905,S,70 4,FREE,1,70,4,0,0,0.0
+1905,S,8 4,FREE,1,8,4,0,0,0.0
+1905,S,8 8,FREE,1,8,8,0,0,0.0
+1905,S,?,,13,22692,6850,15500,3536,0.0
+1905,S,?,DUTIABLE,199,7709710,551401,8927609,477885,162579.7
+1905,S,Anchors,FREE,1,2201,7366,2201,7366,0.0
+1905,S,Animal,DUTIABLE,1,436,268,436,268,44.67
+1905,S,"Animals, living, viz.:",,1,5334859,329078,0,0,0.0
+1905,S,Arabia,FREE,1,103536,13535,103536,13535,0.0
+1905,S,Argentina,FREE,3,485393,666602,485393,666602,0.0
+1905,S,Aust-Hungary,DUTIABLE,6,1120,35322,42845,7344,862.3
+1905,S,Aust. Hungary,,9,0,48092,46837,14016,0.0
+1905,S,Aust. Hungary,DUTIABLE,43,1034933,107365,349748,113319,37157.27
+1905,S,Aust. Hungary,FREE,6,60,4641,60,4641,0.0
+1905,S,Aust.-Hungary,,4,0,2956,2956,881,0.0
+1905,S,Aust.-Hungary,DUTIABLE,122,634888,469495,579924,460018,125142.32
+1905,S,Aust.-Hungary,FREE,15,67277,18266,67277,18266,0.0
+1905,S,Australia,,1,0,73,0,0,0.0
+1905,S,Australia,DUTIABLE,51,168890,28754,188105,30192,7349.29
+1905,S,Australia,FREE,23,317383,129497,317384,131119,0.0
+1905,S,Austria,DUTIABLE,1,0,32,0,32,11.2
+1905,S,Austria Hungary,DUTIABLE,1,0,0,480,34,8.5
+1905,S,B. F. Indies,DUTIABLE,3,0,110,0,110,34.2
+1905,S,Belgium,,11,3784,56406,55648,16351,0.0
+1905,S,Belgium,DUTIABLE,173,26433201,1407642,19172872,1194298,304021.17
+1905,S,Belgium,FREE,57,635682,523560,635445,523714,0.0
+1905,S,"Br. Poss., other",FREE,1,0,109,0,109,0.0
+1905,S,Brazil,DUTIABLE,4,33000,3726,33000,3756,503.7
+1905,S,Brazil,FREE,4,3636718,462250,3626303,461052,0.0
+1905,S,"Brazil nuts, not shelled",DUTIABLE,1,100,11,100,11,3.0
+1905,S,Brick and tiles: See earthenware,DUTIABLE,1,0,3713,0,3713,495.09
+1905,S,Bristles,FREE,1,53150,42582,53150,42582,0.0
+1905,S,British Africa,DUTIABLE,2,0,43,0,43,13.85
+1905,S,British Africa,FREE,6,99082,20929,99082,20929,0.0
+1905,S,British East Indies,,3,2543,1014,76,19,0.0
+1905,S,British East Indies,DUTIABLE,32,18233261,556157,18748744,588156,108828.27
+1905,S,British East Indies,FREE,18,11110562,1463181,11110562,1463185,0.0
+1905,S,British Guiana,DUTIABLE,8,80971072,2505689,92338609,2587196,544325.62
+1905,S,British Guiana,FREE,3,17597,2373,17598,2285,0.0
+1905,S,"British Poss., other",FREE,3,6600,2106,6600,2106,0.0
+1905,S,British West Indies,,2,58081,11182,0,0,0.0
+1905,S,British West Indies,DUTIABLE,52,195478427,5175450,160878782,4048707,823723.61
+1905,S,British West Indies,FREE,32,4215947,886274,4123603,871227,0.0
+1905,S,Cape Verde Islands,FREE,1,19830,1372,19830,1372,0.0
+1905,S,Central Am. States,FREE,1,620303,71886,620303,71886,0.0
+1905,S,Chile,FREE,1,7058100,149545,7058100,149545,0.0
+1905,S,China,,14,0,3090,5171,1450,0.0
+1905,S,China,DUTIABLE,231,7104525,272996,6810348,242872,168731.88
+1905,S,China,FREE,21,1607028,274039,1607029,273992,0.0
+1905,S,"China and porcelain ware, N.E.S",,1,0,53076,52124,10883,0.0
+1905,S,Coke,FREE,1,2727,8487,2727,8487,0.0
+1905,S,"Cotton, manufactures of:",DUTIABLE,1,47580,9434,45242,9285,1394.28
+1905,S,Cuba,DUTIABLE,10,146245,318701,144645,326579,331451.2
+1905,S,Cuba,FREE,5,98581,32091,140266,40282,0.0
+1905,S,DUTIABLE GOODS— Con,DUTIABLE,1,0,354,0,354,60.48
+1905,S,Danish West Indies,,2,94,43,0,0,0.0
+1905,S,Danish West Indies,DUTIABLE,1,30607,7110,42073,9822,736.28
+1905,S,Denmark,,4,20,223,219,66,0.0
+1905,S,Denmark,DUTIABLE,12,3168,1722,188,4248,861.68
+1905,S,Denmark,FREE,7,205,9068,205,9025,0.0
+1905,S,"Drugs, dyes, chemicals and medicines",,1,0,6,0,6,0.0
+1905,S,Dutch East Indies,DUTIABLE,2,37005846,670786,40640494,650782,282399.82
+1905,S,Dutch East Indies,FREE,1,40046,4749,40046,4749,0.0
+1905,S,Dutch Indies,DUTIABLE,1,0,0,4278,97,53.47
+1905,S,Dutch W. Indies,DUTIABLE,1,0,0,0,30,6.0
+1905,S,Ecuador,FREE,1,4500,700,4500,700,0.0
+1905,S,Egypt,DUTIABLE,12,32037,25911,31118,25212,29707.1
+1905,S,Egypt,FREE,4,0,1611,0,1764,0.0
+1905,S,Fiji Islands,DUTIABLE,1,17333357,416235,15137227,425536,70297.28
+1905,S,Fish,DUTIABLE,1,981,37,981,37,4.91
+1905,S,France,,23,4315,115177,126293,33230,0.0
+1905,S,France,DUTIABLE,413,7925543,5300889,8308862,4761988,2005310.64
+1905,S,France,FREE,101,2399232,1701827,2386637,1691833,0.0
+1905,S,French Africa,DUTIABLE,2,0,0,122,31,31.7
+1905,S,French Africa,FREE,1,0,29269,0,29269,0.0
+1905,S,French E. Indies,FREE,1,0,1881,0,1881,0.0
+1905,S,Germany,,18,1,272909,270239,107150,0.0
+1905,S,Germany,DUTIABLE,377,17252849,4832866,17380915,4995545,1705700.8
+1905,S,Germany,FREE,130,3958645,2163481,3982588,2206322,0.0
+1905,S,Glass and manufactures of:,DUTIABLE,1,2,2,2,2,0.2
+1905,S,"Gold and silver, mfrs. of",DUTIABLE,1,0,2462,0,2462,478.52
+1905,S,Great Britain,,33,328602,1523337,1829526,303280,0.0
+1905,S,Great Britain,DUTIABLE,701,117221828,41915628,120786745,41671653,10353462.38
+1905,S,Great Britain,FREE,315,104019271,14770565,104114696,14756992,0.0
+1905,S,Greece,DUTIABLE,11,6974225,214589,7130032,229055,74265.65
+1905,S,Greece,FREE,3,0,3717,0,3878,0.0
+1905,S,"Gross, 624",FREE,1,29,29,0,0,0.0
+1905,S,Gums :,DUTIABLE,1,7524,5011,7288,4878,650.43
+1905,S,"Gunpowder and other explosives, &c",DUTIABLE,1,54500,38884,54500,38884,1090.0
+1905,S,Hawaii,FREE,4,159004,19155,159004,19141,0.0
+1905,S,Holland,,6,0,11713,11713,3251,0.0
+1905,S,Holland,DUTIABLE,111,1610149,665905,1480514,673529,1587543.68
+1905,S,Holland,FREE,26,315404,366979,305093,364362,0.0
+1905,S,Hong Kong,FREE,9,47081,7024,47081,7024,0.0
+1905,S,Iceland,FREE,1,0,2087,0,2087,0.0
+1905,S,Indian corn for purposes of distillation,DUTIABLE,1,1192704,658174,1150688,634636,86301.7
+1905,S,Indian or corn meal,DUTIABLE,1,0,67709,0,25156,67856.0
+1905,S,Italy,,6,0,1488,3637,1231,0.0
+1905,S,Italy,DUTIABLE,117,2066888,402076,2149886,487932,95488.53
+1905,S,Italy,FREE,20,1247351,68471,1246941,68036,0.0
+1905,S,Japan,,11,0,67784,67813,20226,0.0
+1905,S,Japan,DUTIABLE,235,5202438,894624,5783459,592843,152769.81
+1905,S,Japan,FREE,24,8025872,952189,8025872,952690,0.0
+1905,S,Leather and manufactures of,DUTIABLE,1,302132,62432,0,62432,6431.2
+1905,S,Malt,DUTIABLE,1,0,1051,1051,2662,105.3
+1905,S,"Manufactures of, viz:",,1,0,60499,2846,712,0.0
+1905,S,Mexico,,2,20000,1968,6,2,0.0
+1905,S,Mexico,DUTIABLE,12,16402,20751,16242,20520,6546.43
+1905,S,Mexico,FREE,7,398252,37888,398252,37858,0.0
+1905,S,Mineral,DUTIABLE,1,12751,3030,0,3030,234.87
+1905,S,New Zealand,DUTIABLE,7,9929,1372,5927,2635,364.86
+1905,S,New Zealand,FREE,6,133951,36174,133951,36790,0.0
+1905,S,New-Zealand,DUTIABLE,1,49632,10211,47432,8634,1638.22
+1905,S,Newfoundland,,7,2857,4936,93,23,0.0
+1905,S,Newfoundland,DUTIABLE,42,52159,12498,51956,12414,3722.47
+1905,S,Newfoundland,FREE,54,18143263,1035037,18143267,1034610,0.0
+1905,S,Norway-Sweden,,2,0,2801,2801,703,0.0
+1905,S,Norway-Sweden,DUTIABLE,50,288851,90559,305275,94991,21892.82
+1905,S,Norway-Sweden,FREE,12,91260,23790,90987,23790,0.0
+1905,S,Norway—Sweden,,2,0,171,166,50,0.0
+1905,S,Norway—Sweden,DUTIABLE,5,8595,3446,9231,3550,1170.53
+1905,S,P. E. Indies,FREE,1,8714,1163,8714,1163,0.0
+1905,S,Persia,DUTIABLE,3,122428,3239,122428,3239,879.95
+1905,S,Peru,DUTIABLE,1,5895692,175300,3745542,70409,25925.52
+1905,S,Philippines,FREE,1,0,0,0,12,0.0
+1905,S,Porto Rico,FREE,3,3898,595,3898,656,0.0
+1905,S,Portugal,,3,1040,467,4,1,0.0
+1905,S,Portugal,DUTIABLE,22,841926,81996,811846,79913,39294.36
+1905,S,Portugal,FREE,3,101260,18345,101260,18371,0.0
+1905,S,Roumania,FREE,2,0,939,0,939,0.0
+1905,S,Russia,,3,0,371,371,112,0.0
+1905,S,Russia,DUTIABLE,16,1898894,79903,2340793,90388,33835.85
+1905,S,Russia,FREE,8,61969,164605,61969,164605,0.0
+1905,S,Spain,,1,57,170,0,0,0.0
+1905,S,Spain,DUTIABLE,49,8352770,701446,8166762,687230,216933.42
+1905,S,Spain,FREE,10,465602,41362,465602,41968,0.0
+1905,S,St. Pierre,,2,426164,21133,0,0,0.0
+1905,S,St. Pierre,DUTIABLE,30,3513,1876,3754,2548,1000.41
+1905,S,St. Pierre,FREE,9,1908,4189,1909,4077,0.0
+1905,S,"Sugars, syrups and molasses",DUTIABLE,1,17194240,574722,15490717,458617,125785.94
+1905,S,Switzerland,,7,80,2497,1109441,277579,0.0
+1905,S,Switzerland,DUTIABLE,122,571318,1739195,1040835,1411697,365740.4
+1905,S,Switzerland,FREE,17,44233,19791,44233,19791,0.0
+1905,S,THE FISHERIES—Con,FREE,2,0,16,0,16,0.0
+1905,S,"Tea of India, black, imported direct, or purchased in bond in United Kingdom",FREE,1,1702033,272714,1702033,272714,0.0
+1905,S,Tools and implements,DUTIABLE,1,0,3805,0,3805,816.9
+1905,S,Turkey,,1,0,26,26,8,0.0
+1905,S,Turkey,DUTIABLE,46,3197890,122034,3799941,171123,40019.74
+1905,S,Turkey,FREE,10,36257,70596,36263,70502,0.0
+1905,S,U. S. Colombia,DUTIABLE,1,0,16,0,16,3.2
+1905,S,U. S. of Colombia,FREE,1,22600,2436,22600,2436,0.0
+1905,S,U.S. of Colombia,DUTIABLE,1,16000,748,16000,748,160.0
+1905,S,United States,,37,53148,15375856,2951862,759955,0.0
+1905,S,United States,DUTIABLE,853,178441354,80031517,192099523,73780980,20388837.92
+1905,S,United States,FREE,418,305226807,80022784,304869372,80349074,0.0
+1905,S,Uruguay,FREE,1,0,40333,0,40333,0.0
+1905,S,Vegetable,DUTIABLE,1,54013,19227,54996,19638,2641.94
+1905,S,Venezuela,FREE,2,534383,40406,534383,40406,0.0
+1905,S,Zong Kong,FREE,1,0,358,0,358,0.0
+1905,S,"dressed, coloured or un",DUTIABLE,1,409793,311308,409793,311306,50914.01
+1905,S,of:,DUTIABLE,1,0,321,0,321,64.07
+1905,S,•,FREE,1,78,78,0,0,0.0
+1906,S,1 3,FREE,2,2,6,0,0,0.0
+1906,S,10 1,FREE,1,10,1,0,0,0.0
+1906,S,10 3,FREE,2,20,6,0,0,0.0
+1906,S,10 8,FREE,1,10,8,0,0,0.0
+1906,S,100 7,FREE,1,100,7,0,0,0.0
+1906,S,163 4,FREE,1,163,4,0,0,0.0
+1906,S,"2,200 8",FREE,1,2200,8,0,0,0.0
+1906,S,20 5,FREE,1,20,5,0,0,0.0
+1906,S,200 3,FREE,1,200,3,0,0,0.0
+1906,S,214 8,FREE,1,214,8,0,0,0.0
+1906,S,25 3,FREE,1,25,3,0,0,0.0
+1906,S,3 2,FREE,1,3,2,0,0,0.0
+1906,S,30 2,FREE,1,30,2,0,0,0.0
+1906,S,400 8,FREE,1,400,8,0,0,0.0
+1906,S,50 5,FREE,1,50,5,0,0,0.0
+1906,S,52 7,FREE,1,52,7,0,0,0.0
+1906,S,75 8,FREE,1,75,8,0,0,0.0
+1906,S,811 9,FREE,1,811,9,0,0,0.0
+1906,S,9 5,FREE,1,9,5,0,0,0.0
+1906,S,?,,14,71,417,421,128,0.0
+1906,S,?,DUTIABLE,208,6954531,408081,8743501,536298,179947.49
+1906,S,"Agricultural implements, N. E. S., viz. :",DUTIABLE,1,3,137,2,40,7.0
+1906,S,Animal,DUTIABLE,1,12829,6420,12600,6337,1584.25
+1906,S,"Animals, living, viz.:",DUTIABLE,1,6585642,386905,124795,7233,1871.93
+1906,S,Arabia,FREE,1,115850,15663,115850,15663,0.0
+1906,S,Argentina,FREE,3,1575442,1488053,1575442,1488053,0.0
+1906,S,Asphaltum or asphalt,FREE,1,465,918,465,918,0.0
+1906,S,Aust. Hungary,,5,0,17699,18002,6230,0.0
+1906,S,Aust. Hungary,DUTIABLE,53,688197,446000,1104450,348894,86820.4
+1906,S,Aust. Hungary,FREE,12,2497,48352,2497,48352,0.0
+1906,S,Aust.-Hmgary,DUTIABLE,1,1,7,1,7,4.5
+1906,S,Aust.-Hungary,,20,962,30291,88331,16868,0.0
+1906,S,Aust.-Hungary,DUTIABLE,122,706013,327091,581589,334050,99989.7
+1906,S,Aust.-Hungary,FREE,8,4570,1956,4570,1956,0.0
+1906,S,Australia,,4,6,1096,6701,1922,0.0
+1906,S,Australia,DUTIABLE,34,86819,32642,419621,28250,9072.3
+1906,S,Australia,FREE,26,10733431,5738447,10567356,5651674,0.0
+1906,S,B. Poss. other,FREE,1,1680,237,1680,237,0.0
+1906,S,"B. Poss., other",FREE,1,0,163,0,163,0.0
+1906,S,Belgium,,17,902,104896,113934,33955,0.0
+1906,S,Belgium,DUTIABLE,182,43786822,2261668,51899139,2699788,564703.16
+1906,S,Belgium,FREE,69,1065356,373617,1065359,373354,0.0
+1906,S,Br. Africa,FREE,1,0,1352,0,1352,0.0
+1906,S,Brazil,DUTIABLE,3,99000,11069,99000,11083,1248.6
+1906,S,Brazil,FREE,2,3763459,327683,3763459,327683,0.0
+1906,S,"Brazil nuts, not shelled",DUTIABLE,1,4378,416,4378,416,131.34
+1906,S,Bricks and tiles: Sec earthenware,DUTIABLE,1,0,4879,0,4879,670.39
+1906,S,British Africa,,1,0,3,9,3,0.0
+1906,S,British Africa,DUTIABLE,6,10821896,282995,5890517,160691,27383.98
+1906,S,British Africa,FREE,7,83732,13309,83732,13309,0.0
+1906,S,British East Indies,,2,0,1054,4116,1138,0.0
+1906,S,British East Indies,DUTIABLE,37,17815766,910965,18533116,783015,125827.56
+1906,S,British East Indies,FREE,23,20534868,2512081,20534868,2512081,0.0
+1906,S,British Guiana,,2,7624,485,0,0,0.0
+1906,S,British Guiana,DUTIABLE,9,96764757,2065444,105369264,2492617,635758.37
+1906,S,British Guiana,FREE,4,72912,12099,72912,12105,0.0
+1906,S,British West Indies,,3,64,56,33618,7066,0.0
+1906,S,British West Indies,DUTIABLE,43,223243283,4370045,222513176,4760682,1116247.94
+1906,S,British West Indies,FREE,27,4741706,1223573,4742590,1223988,0.0
+1906,S,Candles,DUTIABLE,1,3944,360,3444,321,53.68
+1906,S,Carriages and vehicles,DUTIABLE,1,0,299,0,299,92.52
+1906,S,Cent. Am. States,FREE,3,809291,100976,809291,100976,0.0
+1906,S,Champagne and all other sparkling wines,DUTIABLE,1,604,10504,551,9610,1931.9
+1906,S,Chile,FREE,2,5085142,109262,5085142,109262,0.0
+1906,S,China,,16,57,17605,20221,3788,0.0
+1906,S,China,DUTIABLE,212,5964812,255400,6098608,267054,165473.04
+1906,S,China,FREE,23,1246836,259134,1246837,259081,0.0
+1906,S,"China and porcelain ware, N.E.S",DUTIABLE,1,0,40113,40770,8804,30.0
+1906,S,Cuba,DUTIABLE,9,194645,385624,194241,380578,391887.25
+1906,S,Cuba,FREE,4,186387,59471,225630,58457,0.0
+1906,S,Danish West Indies,DUTIABLE,2,0,0,82,39,197.2
+1906,S,Denmark,,1,0,3431,194,48,0.0
+1906,S,Denmark,DUTIABLE,19,1629,4348,11747,13914,2853.52
+1906,S,Denmark,FREE,7,2000,22122,2000,22122,0.0
+1906,S,"Drugs, dyes, chemicals and medicines",DUTIABLE,1,61,42,61,42,9.15
+1906,S,Dutch East Indies,DUTIABLE,3,24854246,596994,32571428,838379,230495.79
+1906,S,Dutch East Indies,FREE,2,10000,1611,12519,4130,0.0
+1906,S,Egypt,,1,0,450,450,158,0.0
+1906,S,Egypt,DUTIABLE,7,48664,22278,47902,20623,29852.95
+1906,S,Egypt,FREE,5,37854,6885,37854,7061,0.0
+1906,S,Fiji Islands,DUTIABLE,1,13095152,454333,14755620,269080,69385.43
+1906,S,Fish,DUTIABLE,1,543,29,543,29,2.19
+1906,S,"Flax, hemp and jute—manufactures of, viz:",DUTIABLE,1,0,11291,11291,1548,1547.57
+1906,S,France,,38,9899,1352969,1344865,424575,0.0
+1906,S,France,DUTIABLE,406,8254119,5375202,8958359,4978588,2107759.15
+1906,S,France,FREE,103,2200329,1451539,2200334,1455873,0.0
+1906,S,French Africa,DUTIABLE,1,0,0,131,75,32.75
+1906,S,French Africa,FREE,1,0,14548,0,14548,0.0
+1906,S,French West Indies,FREE,2,2427,350,2427,350,0.0
+1906,S,Germany,,39,16976,1117699,920894,326159,0.0
+1906,S,Germany,DUTIABLE,352,9595197,3593848,9166430,4098867,2917379.11
+1906,S,Germany,FREE,142,4282804,2184520,4215218,2176122,0.0
+1906,S,Gibraltar,DUTIABLE,4,16,51,16,51,21.64
+1906,S,"Gold and silver, mfrs. of",DUTIABLE,1,0,1578,0,1578,269.04
+1906,S,Great Britain,,50,204718,7323924,6907125,1950003,0.0
+1906,S,Great Britain,DUTIABLE,686,170653162,39392693,176941776,48485074,19001251.43
+1906,S,Great Britain,FREE,310,89312646,15921515,89313261,15949488,0.0
+1906,S,Greece,DUTIABLE,15,8317383,289335,8528972,300845,88824.99
+1906,S,Greece,FREE,3,0,29,0,74,0.0
+1906,S,Gunns,DUTIABLE,1,10354,7716,11417,7582,1010.94
+1906,S,"Gunpowder and other explosives, &c",,1,0,1632717,0,0,0.0
+1906,S,"Gutta percha and India-rubber, manufactures of",DUTIABLE,1,263,0,0,263,44.67
+1906,S,Hawaii,FREE,4,133466,15779,133466,15779,0.0
+1906,S,Holland,,5,0,54228,117621,44876,0.0
+1906,S,Holland,DUTIABLE,96,756430,270514,793222,338209,56722.79
+1906,S,Holland,FREE,33,280105,561308,251673,556617,0.0
+1906,S,Hong Kong,FREE,11,19483,13628,19483,13628,0.0
+1906,S,Iceland,DUTIABLE,2,620,68,620,68,31.55
+1906,S,Iceland,FREE,1,0,2235,0,2235,0.0
+1906,S,Indian corn for purposes of distillation,DUTIABLE,1,79,45,79,45,5.92
+1906,S,"Indian corn, N.E.S",FREE,1,11,13,11,0,0.0
+1906,S,Indian or corn meal,DUTIABLE,1,7,21,7,21,1.16
+1906,S,Italy,,13,230,3855,113067,40574,0.0
+1906,S,Italy,DUTIABLE,113,1793911,1873156,2343895,494526,117302.52
+1906,S,Italy,FREE,22,1457230,54212,1457231,54154,0.0
+1906,S,Japan,,18,642,9096,113551,28909,0.0
+1906,S,Japan,DUTIABLE,220,7689683,1031994,6324823,992418,287882.46
+1906,S,Japan,FREE,21,6149743,620318,6149743,620960,0.0
+1906,S,Jute butts and jute,FREE,1,3894,17349,3894,17349,0.0
+1906,S,Leather and manufactures of,DUTIABLE,1,227039,55126,227039,55126,5541.4
+1906,S,M. 1 2,FREE,1,1,2,0,0,0.0
+1906,S,Malt,DUTIABLE,2,0,94152,94152,68240,14072.0
+1906,S,Manilla grass,FREE,1,22131,202795,22131,202795,0.0
+1906,S,"Meats, viz",DUTIABLE,1,3397,576,3397,576,45.98
+1906,S,Mexico,DUTIABLE,9,1776990,64372,1776921,64187,19262.85
+1906,S,Mexico,FREE,3,323317,730438,303317,730438,0.0
+1906,S,"Molasses produced in the process of the manufacture of cane sugar from the juice of the cane without any admixture with any other ingredient, when imported in the original package in which it was placed at the point of production and not afterwards subjected to any process of treating or mixing",DUTIABLE,1,321,8,321,8,2.41
+1906,S,"Musical instruments, viz",,1,0,13081,12197,2109,0.0
+1906,S,New Zealand,DUTIABLE,10,36952,8000,29699,5770,789.85
+1906,S,New Zealand,FREE,9,785680,294644,785680,295587,0.0
+1906,S,Newfoundland,,5,0,260,41,14,0.0
+1906,S,Newfoundland,DUTIABLE,36,11700,5205,7857,5429,1120.81
+1906,S,Newfoundland,FREE,47,24907295,1737725,24907299,1737302,0.0
+1906,S,Norway,,1,0,3197,3197,799,0.0
+1906,S,Norway,DUTIABLE,24,652198,70624,624784,64047,17837.75
+1906,S,Norway,FREE,5,184380,18586,184380,18586,0.0
+1906,S,Oils,DUTIABLE,1,0,8082,0,7590,2656.5
+1906,S,"Paper, and manufactures of, not otherwise specified",DUTIABLE,1,0,13417,0,13417,2690.0
+1906,S,"Perfumery, non-alcoholic, viz",,1,0,16710,16600,3597,0.0
+1906,S,Persia,,1,0,852,852,298,0.0
+1906,S,Persia,DUTIABLE,2,347637,7582,347637,7582,1895.5
+1906,S,Peru,DUTIABLE,2,3451092,70143,10687446,188852,74719.57
+1906,S,Phil,FREE,1,500,72,501,0,0.0
+1906,S,Philippines,FREE,2,0,50,0,138,0.0
+1906,S,"Plants and trees, viz",DUTIABLE,1,0,227,1032,227,21.68
+1906,S,Porto Rico,FREE,3,3475,457,3475,556,0.0
+1906,S,Portugal,DUTIABLE,18,793085,122459,799467,113203,44716.82
+1906,S,Portugal,FREE,4,943305,130048,943305,130068,0.0
+1906,S,R. W. Indies,FREE,1,0,28,0,28,0.0
+1906,S,Roumania,FREE,1,0,1215,0,1215,0.0
+1906,S,Russia,,3,0,43096,39140,6179,0.0
+1906,S,Russia,DUTIABLE,14,251509,18888,378157,35555,10460.39
+1906,S,Russia,FREE,7,5625,198068,5625,198068,0.0
+1906,S,"Seeds, viz",DUTIABLE,1,0,13040,0,12841,1107.31
+1906,S,"Seeds, viz.: Annato",FREE,1,25,46,25,0,0.0
+1906,S,Soap,DUTIABLE,1,37188,1616,44468,2051,321.13
+1906,S,Spain,DUTIABLE,59,13141548,886856,13235377,883494,289363.62
+1906,S,Spain,FREE,8,403010,44427,403010,45337,0.0
+1906,S,"Spirits and wines, viz",DUTIABLE,1,0,8,3,8,7.2
+1906,S,St. Pierre,,2,334504,17159,0,0,0.0
+1906,S,St. Pierre,DUTIABLE,35,23454,1578,2219,1742,524.31
+1906,S,St. Pierre,FREE,11,4664,3161,4664,3126,0.0
+1906,S,Sweden,,9,862,30715,30901,9148,0.0
+1906,S,Sweden,DUTIABLE,29,113465,41061,99601,28807,30149.75
+1906,S,Sweden,FREE,8,12612,9678,12612,9678,0.0
+1906,S,Switzerland,,11,0,94508,94382,32651,0.0
+1906,S,Switzerland,DUTIABLE,107,777933,1812993,466744,2303548,582883.4
+1906,S,Switzerland,FREE,11,130808,49499,130808,49632,0.0
+1906,S,"Tea of India, black",DUTIABLE,1,7796,1412,7796,1412,141.2
+1906,S,Tobacco and manufactures of,DUTIABLE,1,17114,38866,14489,34178,52011.0
+1906,S,Tubing,DUTIABLE,1,13746,55120,0,13746,55120.0
+1906,S,Turkey,,5,200,12587,149495,38560,0.0
+1906,S,Turkey,DUTIABLE,57,4942347,200364,4497160,699926,228101.08
+1906,S,Turkey,FREE,6,34166,152021,34166,152021,0.0
+1906,S,United States,,54,10925790,16755852,7014820,1858776,0.0
+1906,S,United States,DUTIABLE,849,186448929,77012895,182695171,76660975,17735593.76
+1906,S,United States,FREE,400,406437848,76281199,406406720,76160840,0.0
+1906,S,Uruguay,FREE,1,0,173893,0,173893,0.0
+1906,S,Vegetable,DUTIABLE,1,87544,40291,88072,40483,5430.02
+1906,S,Venezuela,FREE,1,679663,71864,679663,71864,0.0
+1906,S,"Wines of all kinds, except sparkling wines, including orange, lemon, strawberry, raspberry, elder and currant wines:",DUTIABLE,1,132,129,132,129,316.8
+1906,S,"Wool, manufactures of",DUTIABLE,1,100332,0,0,103281,24647.0
+1906,S,"dressed, coloured or un",DUTIABLE,1,3084,2927,3084,2927,195.2
+1907,S,1 5,FREE,1,1,5,0,0,0.0
+1907,S,"1,000 4",FREE,1,1000,4,0,0,0.0
+1907,S,"1,130 8",FREE,1,1130,8,0,0,0.0
+1907,S,100 2,FREE,1,100,2,0,0,0.0
+1907,S,100 5,FREE,1,100,5,0,0,0.0
+1907,S,12 4,FREE,1,12,4,0,0,0.0
+1907,S,15 3,FREE,1,15,3,0,0,0.0
+1907,S,2 7,FREE,1,2,7,0,0,0.0
+1907,S,"2,075 434",FREE,1,46,46,0,0,0.0
+1907,S,3 6,FREE,1,3,6,0,0,0.0
+1907,S,30 1,FREE,1,30,1,0,0,0.0
+1907,S,300 9,FREE,1,300,9,0,0,0.0
+1907,S,36 6,FREE,1,36,6,0,0,0.0
+1907,S,38 4,FREE,1,38,4,0,0,0.0
+1907,S,40 4,FREE,1,40,4,0,0,0.0
+1907,S,45 8,FREE,1,45,8,0,0,0.0
+1907,S,48 2,FREE,1,48,2,0,0,0.0
+1907,S,69 9,FREE,1,69,9,0,0,0.0
+1907,S,7 1,FREE,1,7,1,0,0,0.0
+1907,S,7 6,FREE,1,7,6,0,0,0.0
+1907,S,75 5,FREE,1,75,5,0,0,0.0
+1907,S,?,,20,0,9183,71137,6940,0.0
+1907,S,?,DUTIABLE,207,2702344,253604,4122147,825166,197537.59
+1907,S,Agricultural implements,DUTIABLE,2,1,134,1,134,22.93
+1907,S,Anchors,FREE,1,2978,9083,2978,9083,0.0
+1907,S,Animal oil,DUTIABLE,1,14403,5451,13623,5060,1265.0
+1907,S,"Animals, living, viz.:",,1,250,60,0,0,0.0
+1907,S,Arabia,FREE,1,32380,6275,32380,6275,0.0
+1907,S,Argentina,FREE,2,0,1494652,0,1494652,0.0
+1907,S,Aust. Hungary,,6,0,5522,5177,1397,0.0
+1907,S,Aust. Hungary,DUTIABLE,85,356135,361390,299777,417664,101532.22
+1907,S,Aust. Hungary,FREE,8,26345,4585,26345,4910,0.0
+1907,S,Aust.-Hungary,,11,0,64125,435576,56963,0.0
+1907,S,Aust.-Hungary,DUTIABLE,113,543930,324610,637571,336290,95110.71
+1907,S,Aust.-Hungary,FREE,16,22556,8961,22557,8877,0.0
+1907,S,Australia,,1,0,392,0,0,0.0
+1907,S,Australia,DUTIABLE,24,1315360,101439,1206969,93906,32856.68
+1907,S,Australia,FREE,18,181428,57302,181429,58262,0.0
+1907,S,B. Honduras,FREE,1,2027,203,2027,203,0.0
+1907,S,B. Poss. other,FREE,1,9900,1715,9900,1715,0.0
+1907,S,Belgium,,17,1874,65334,214135,35488,0.0
+1907,S,Belgium,DUTIABLE,169,2594957,1161817,19183335,1184290,240964.13
+1907,S,Belgium,FREE,65,749140,441663,749552,441509,0.0
+1907,S,Brazil,DUTIABLE,3,66275,5911,66275,5971,651.5
+1907,S,Brazil,FREE,1,4048501,357492,4048501,357492,0.0
+1907,S,"Brazil nuts, not shelled",DUTIABLE,1,3460,395,3460,390,103.8
+1907,S,Bricks and tiles: See earthenware,,1,0,19306,19306,1963,0.0
+1907,S,British Africa,,1,0,51,195324,39799,0.0
+1907,S,British Africa,DUTIABLE,2,141637889,3007036,134398133,2870896,685506.36
+1907,S,British Africa,FREE,2,0,17285,0,17285,0.0
+1907,S,British East Indies,,1,222096,3619,0,0,0.0
+1907,S,British East Indies,DUTIABLE,32,17272943,855621,16887555,818465,126088.15
+1907,S,British East Indies,FREE,20,2957553,3223752,2957553,3223837,0.0
+1907,S,British Guiana,DUTIABLE,9,541758,27104,544196,25251,107272.77
+1907,S,British Guiana,FREE,5,112,826,112,838,0.0
+1907,S,British West Indies,,3,2,45,40916,8489,0.0
+1907,S,British West Indies,DUTIABLE,47,76814418,1536958,113025717,2212610,640538.86
+1907,S,British West Indies,FREE,28,2281142,595156,2262953,587569,0.0
+1907,S,"British poss., other Newfoundland",FREE,1,0,1562,0,1562,0.0
+1907,S,Candles,DUTIABLE,1,300,43,300,43,7.17
+1907,S,Carriages and vehicles,DUTIABLE,1,7,3224,7,3224,787.47
+1907,S,Cent. Am. States,FREE,3,291196,39885,291196,39885,0.0
+1907,S,Champagne and all other sparkling wines,DUTIABLE,1,323,5441,269,4237,1378.9
+1907,S,Chile,,3,0,386,0,0,0.0
+1907,S,Chile,FREE,1,6167800,148030,6167800,148030,0.0
+1907,S,China,,20,10,15141,14977,3693,0.0
+1907,S,China,DUTIABLE,206,3250151,282863,3462436,176923,109810.15
+1907,S,China,FREE,23,1062874,238143,1062874,238119,0.0
+1907,S,China and porcelain ware,DUTIABLE,1,0,28082,0,27988,5869.9
+1907,S,Cuba,,2,0,110,60,21,0.0
+1907,S,Cuba,DUTIABLE,9,128379,367809,227419,361015,341383.97
+1907,S,Cuba,FREE,4,226186,107400,234764,74457,0.0
+1907,S,Danish West Indies,DUTIABLE,3,31184,7000,1764,408,164.6
+1907,S,Denmark,,2,0,1825,937,101,0.0
+1907,S,Denmark,DUTIABLE,14,6511,2780,5954,3211,1009.82
+1907,S,Denmark,FREE,8,14580,20588,14580,20588,0.0
+1907,S,"Drugs, dyes, chemicals and medicines",DUTIABLE,1,66,33,66,33,9.9
+1907,S,Dutch East Indies,DUTIABLE,5,39791760,711533,22871240,438324,163421.81
+1907,S,Dutch East Indies,FREE,2,47403,6639,30356,4082,0.0
+1907,S,Egypt,DUTIABLE,3,8684,20655,8123,19320,20208.85
+1907,S,Egypt,FREE,5,0,8550,0,8695,0.0
+1907,S,"Feathers and manufactures of feathers, N.O.P.; artificial feathers, fruits, grains, leaves, flowers and fancy braid, suitable for ornamenting hats (from Nov. 29, '06.):",DUTIABLE,1,0,171,0,171,46.7
+1907,S,Fiji Islands,DUTIABLE,2,10707815,185915,9228139,163668,47010.37
+1907,S,Fish,DUTIABLE,1,0,112,112,6,1.12
+1907,S,"Flax, hemp and jute—manufactures of, viz",DUTIABLE,1,0,24374,0,24374,3441.02
+1907,S,Fr. Poss. Africa,FREE,1,0,23801,0,23801,0.0
+1907,S,"Fr. Poss., Africa",,1,50904,438,0,0,0.0
+1907,S,France,,39,297,555185,859697,187713,0.0
+1907,S,France,DUTIABLE,394,7952210,4848359,7587873,5249014,2120549.32
+1907,S,France,FREE,80,921353,1007616,921356,1013047,0.0
+1907,S,Galls. 4 9,FREE,1,4,9,0,0,0.0
+1907,S,Germany,,37,4636,589529,463946,130228,0.0
+1907,S,Germany,DUTIABLE,369,4396719,3519598,4354984,3982830,2589429.73
+1907,S,Germany,FREE,111,3842844,961503,3737560,946726,0.0
+1907,S,Glass and manufactures of :,,1,0,106747,49723,7752,0.0
+1907,S,"Grain and products of, viz.:",DUTIABLE,1,57529,2055,57673,2070,414.0
+1907,S,Great Britain,,71,639138,2886586,2976778,754334,0.0
+1907,S,Great Britain,DUTIABLE,722,114560815,43676272,121413112,44063171,10712084.76
+1907,S,Great Britain,FREE,309,76442487,17105019,76432014,17129581,0.0
+1907,S,Greece,DUTIABLE,8,6996319,316335,6670663,295483,68350.39
+1907,S,Greece,FREE,4,0,189,0,288,0.0
+1907,S,Gums :,DUTIABLE,1,29632,29105,31824,29291,4250.0
+1907,S,"Gunpowder and other explosives, &c",DUTIABLE,1,41016,16157,41016,16157,821.32
+1907,S,"Gutta percha and India-rubber, manufactures of:",DUTIABLE,1,0,82,0,82,17.58
+1907,S,Hawaii,FREE,6,105622,18695,105622,18695,0.0
+1907,S,Holland,,8,52,49470,62946,23595,0.0
+1907,S,Holland,DUTIABLE,97,856140,393688,1005331,379927,61798.96
+1907,S,Holland,FREE,22,162923,313264,173041,315936,0.0
+1907,S,Hong Kong,FREE,6,878,7010,878,7010,0.0
+1907,S,Iceland,DUTIABLE,1,0,130,0,130,32.5
+1907,S,Iceland,FREE,1,0,1437,0,1437,0.0
+1907,S,Indian corn for purposes of distillation,DUTIABLE,1,967219,538942,985325,524370,70149.49
+1907,S,Indian or corn meal,DUTIABLE,1,0,62684,23957,63325,5989.25
+1907,S,"Iron and manufactures of, steel and manufactures of, or both combined",,1,0,76976,76780,14832,0.0
+1907,S,Italy,,9,28603,7075,65128,17047,0.0
+1907,S,Italy,DUTIABLE,112,1849512,314933,2000343,371217,90577.48
+1907,S,Italy,FREE,29,642785,79105,640362,76509,0.0
+1907,S,Japan,,26,12,10051,264142,51341,0.0
+1907,S,Japan,DUTIABLE,205,2285311,942145,2426779,936745,261680.74
+1907,S,Japan,FREE,24,6602268,683102,6602268,683593,0.0
+1907,S,Leather and manufactures of,DUTIABLE,1,504555,129265,504553,129265,13927.84
+1907,S,"Lime juice, crude only",FREE,1,334,482,334,482,0.0
+1907,S,Marble and mfrs. of,DUTIABLE,1,0,1125,0,1125,211.7
+1907,S,"Meats, viz:",DUTIABLE,1,11599,2242,11599,2242,175.62
+1907,S,"Metal, N.E.S., and manufactures of",DUTIABLE,1,0,750,0,750,128.14
+1907,S,Mexico,DUTIABLE,9,192654,19035,56758,8480,3980.9
+1907,S,Mexico,FREE,8,429903,206710,429904,206637,0.0
+1907,S,New Zealand,DUTIABLE,9,44520,9670,43305,8864,1368.76
+1907,S,New Zealand,FREE,6,84825,95533,84825,95820,0.0
+1907,S,Newfoundland,,3,0,239,10,2,0.0
+1907,S,Newfoundland,DUTIABLE,55,19835,7697,20014,10133,1657.7
+1907,S,Newfoundland,FREE,35,19894105,1429873,19894107,1430034,0.0
+1907,S,Norway,,2,0,1174,1012,253,0.0
+1907,S,Norway,DUTIABLE,50,658919,66485,582075,55705,16601.95
+1907,S,Norway,FREE,11,1788,9670,1788,9670,0.0
+1907,S,Oils,DUTIABLE,1,0,2419,12007,2440,218.28
+1907,S,Persia,DUTIABLE,5,889400,18139,845160,17498,5014.54
+1907,S,Peru,DUTIABLE,1,0,0,1045693,22413,7696.3
+1907,S,Peru,FREE,1,20,20,20,0,0.0
+1907,S,Philippines,FREE,1,0,0,0,38,0.0
+1907,S,Porto Rico,FREE,1,0,0,0,22,0.0
+1907,S,Portugal,,2,0,13,13,4,0.0
+1907,S,Portugal,DUTIABLE,26,1853665,113278,1758052,115770,43941.45
+1907,S,Portugal,FREE,4,36722,12283,36722,12314,0.0
+1907,S,"Provisions, not otherwise specified:",DUTIABLE,1,55239,13533,35949,8675,1152.07
+1907,S,Roumania,FREE,1,0,270,0,270,0.0
+1907,S,Russia,,3,0,21473,3374,1323,0.0
+1907,S,Russia,DUTIABLE,21,210183,13063,236648,15332,5166.81
+1907,S,Russia,FREE,5,1484,61100,1484,61100,0.0
+1907,S,"Seeds, viz. :",,1,0,59806,0,0,0.0
+1907,S,"Slate, and manufactures of",DUTIABLE,1,95,660,95,660,70.0
+1907,S,Soap,DUTIABLE,1,54475,2892,55125,2893,460.47
+1907,S,Spain,,5,5300,558,75,26,0.0
+1907,S,Spain,DUTIABLE,53,8046805,785802,7933211,775409,197557.26
+1907,S,Spain,FREE,9,750905,105464,750905,106266,0.0
+1907,S,St. Pierre,,4,0,46806,40,10,0.0
+1907,S,St. Pierre,DUTIABLE,22,1429,178401,18218,2254,739.07
+1907,S,St. Pierre,FREE,10,1203,2768,1203,2767,0.0
+1907,S,"Sugars, syrups and molasses :",DUTIABLE,1,22212937,662076,24732241,662845,203526.09
+1907,S,Sweden,,3,0,14134,13832,3979,0.0
+1907,S,Sweden,DUTIABLE,25,110382,126401,103718,132000,45820.62
+1907,S,Sweden,FREE,8,19569,17263,19569,17263,0.0
+1907,S,Switzerland,,12,352,257330,268605,93643,0.0
+1907,S,Switzerland,DUTIABLE,107,707586,1290148,735907,1297241,321976.79
+1907,S,Switzerland,FREE,14,101631,38141,101631,38141,0.0
+1907,S,THE FISHERIES—Con,FREE,1,0,8,0,0,0.0
+1907,S,"Tea of India, black",DUTIABLE,1,1049,156,14212,1380,138.0
+1907,S,"Tea of India, green",DUTIABLE,1,15066,1646,8935,1121,112.1
+1907,S,Tin-foil,FREE,1,64512,6425,64512,6425,0.0
+1907,S,Tobacco and manufactures of,DUTIABLE,1,18198,44533,16782,39610,60248.5
+1907,S,Tubing,DUTIABLE,1,9955,43062,9955,43062,13431.72
+1907,S,Turkey,,7,0,2831,693,254,0.0
+1907,S,Turkey,DUTIABLE,45,4962323,236608,5445670,231553,54335.37
+1907,S,Turkey,FREE,5,7927,119103,7927,119103,0.0
+1907,S,United States,,67,2005102,4477151,3680668,967500,0.0
+1907,S,United States,DUTIABLE,905,185568852,75565792,183322550,73237500,17713707.15
+1907,S,United States,FREE,415,451387973,72157130,451280876,72409148,0.0
+1907,S,Uruguay,FREE,2,0,217969,0,217969,0.0
+1907,S,Vegetable oil,DUTIABLE,1,50823,25694,50838,25708,3520.93
+1907,S,Venezuela,FREE,1,574202,52233,574202,52233,0.0
+1907,S,"Wool, manufactures of:",DUTIABLE,1,302006,90937,309315,93156,21674.81
+1907,S,"dressed, coloured or uncol",DUTIABLE,1,4946,3804,4946,3804,254.66
+1908,S,1 4,FREE,2,2,8,0,0,0.0
+1908,S,1 5,FREE,1,1,5,0,0,0.0
+1908,S,1 8,FREE,1,1,8,0,0,0.0
+1908,S,14 1,FREE,1,14,1,0,0,0.0
+1908,S,2 5,FREE,1,2,5,0,0,0.0
+1908,S,36 4,FREE,1,36,4,0,0,0.0
+1908,S,40 7,FREE,1,40,7,0,0,0.0
+1908,S,418 9,FREE,1,418,9,0,0,0.0
+1908,S,50 5,FREE,1,50,5,0,0,0.0
+1908,S,500 6,FREE,1,500,6,0,0,0.0
+1908,S,56 6,FREE,1,56,6,0,0,0.0
+1908,S,70 7,FREE,1,70,7,0,0,0.0
+1908,S,75 6,FREE,1,75,6,0,0,0.0
+1908,S,8 8,FREE,1,8,8,0,0,0.0
+1908,S,?,,25,250,1195640,1193249,104629,0.0
+1908,S,?,DUTIABLE,196,2163542,331092,10427060,468988,213850.67
+1908,S,Acids,DUTIABLE,1,0,316,316,271,47.4
+1908,S,Agricultural implements,DUTIABLE,3,821,73727,821,73727,14725.71
+1908,S,Anchors for vessels,FREE,1,4706,14966,4706,14966,0.0
+1908,S,Animal,DUTIABLE,1,5972,3098,6473,3409,852.25
+1908,S,"Animals, living, viz",DUTIABLE,1,6592,415,6592,415,98.88
+1908,S,Arabia,FREE,1,116180,19730,116180,19730,0.0
+1908,S,Argentina,FREE,3,269078,871270,269078,871270,0.0
+1908,S,Aust. Hungary,,8,0,105215,42333,10859,0.0
+1908,S,Aust. Hungary,DUTIABLE,78,55714,322091,104607,325628,100484.0
+1908,S,Aust. Hungary,FREE,17,12217,12187,12218,12231,0.0
+1908,S,Aust.-Hungary,,10,0,101911,36148,11206,0.0
+1908,S,Aust.-Hungary,DUTIABLE,124,8406643,786610,8361481,770094,206973.08
+1908,S,Aust.-Hungary,FREE,15,8792,26104,8792,26077,0.0
+1908,S,Australia,,2,0,1230,968,194,0.0
+1908,S,Australia,DUTIABLE,42,5511869,317565,4391319,228335,73320.71
+1908,S,Australia,FREE,18,489615,210448,489615,216995,0.0
+1908,S,B. F. Indies,DUTIABLE,1,0,7,0,7,2.45
+1908,S,B. Poss. other,FREE,1,8560,1298,8560,1298,0.0
+1908,S,"B. Poss., other",FREE,1,0,0,0,15,0.0
+1908,S,Belgium,,24,961,100326,286666,65015,0.0
+1908,S,Belgium,DUTIABLE,186,32363654,1502615,32287854,1559910,351710.65
+1908,S,Belgium,FREE,68,904131,757613,845734,746656,0.0
+1908,S,Br. Africa,FREE,1,0,50,0,50,0.0
+1908,S,Brazil,,1,1,160,0,0,0.0
+1908,S,Brazil,DUTIABLE,2,32959,2242,32959,2242,223.6
+1908,S,Brazil,FREE,3,4596358,348218,4592038,347575,0.0
+1908,S,"Brazil nuts, not shelled",DUTIABLE,1,0,0,3468,321,104.04
+1908,S,Brick and tiles: See earthenware,DUTIABLE,1,0,1710,0,1699,212.39
+1908,S,British Africa,DUTIABLE,3,2235,132,2235,132,41.55
+1908,S,British Africa,FREE,4,173929,31961,173929,31961,0.0
+1908,S,British East Indies,,6,0,145840,706,112,0.0
+1908,S,British East Indies,DUTIABLE,46,19720901,1010050,19785087,1014729,115805.82
+1908,S,British East Indies,FREE,19,26298059,2881579,26298059,2881552,0.0
+1908,S,British Guiana,,2,0,2850,2184,397,0.0
+1908,S,British Guiana,DUTIABLE,10,89990086,2073743,62465667,1371172,457320.37
+1908,S,British Guiana,FREE,7,25354,5185,25354,5149,0.0
+1908,S,British West Indies,,5,2665,2891,93739,24210,0.0
+1908,S,British West Indies,DUTIABLE,38,274914826,5962367,288717320,6446004,1589447.14
+1908,S,British West Indies,FREE,33,6351674,1253499,6339059,1250143,0.0
+1908,S,Cent Am. States,FREE,1,760787,84641,760787,84641,0.0
+1908,S,Cent. Am. States,FREE,1,275,275,275,275,0.0
+1908,S,Champagne and all other sparkling wines,DUTIABLE,1,275,5377,301,5181,1505.0
+1908,S,Chile,DUTIABLE,1,0,0,0,441,132.3
+1908,S,Chile,FREE,1,4989300,117365,4989300,117365,0.0
+1908,S,China,,19,48,6839,1049368,161119,0.0
+1908,S,China,DUTIABLE,237,5764015,353719,5864958,362126,189350.44
+1908,S,China,FREE,28,3949148,362574,3949149,362481,0.0
+1908,S,Cuba,,5,10,3234,2699,545,0.0
+1908,S,Cuba,DUTIABLE,8,128831,405388,115876,377726,380725.9
+1908,S,Cuba,FREE,6,219818,107277,206000,90588,0.0
+1908,S,Danish West Indies,,2,8,220,1,0,0.0
+1908,S,Danish West Indies,DUTIABLE,2,3219,650,3259,669,256.95
+1908,S,Denmark,,4,0,317,372,104,0.0
+1908,S,Denmark,DUTIABLE,13,1392,9446,1145,13019,1739.47
+1908,S,Denmark,FREE,9,4715,32674,4715,32674,0.0
+1908,S,"Drugs, dyes, chemicals and medicines",DUTIABLE,1,0,26,0,26,10.4
+1908,S,Dutch East Indies,DUTIABLE,6,15033098,307824,24889459,636479,220211.14
+1908,S,Dutch East Indies,FREE,3,62506,8739,63182,8834,0.0
+1908,S,Dutch W. Indies,FREE,1,22008,2231,22008,2231,0.0
+1908,S,Egypt,,3,0,666,75661,22755,0.0
+1908,S,Egypt,DUTIABLE,7,14872,38789,13433,33798,48643.4
+1908,S,Egypt,FREE,4,0,606,0,725,0.0
+1908,S,"Engines, &c",DUTIABLE,1,0,162,0,162,36.46
+1908,S,Fiji Islands,DUTIABLE,1,50476444,1039607,24190029,463631,125352.0
+1908,S,Fiji Islands,FREE,1,0,1712,0,1712,0.0
+1908,S,Fish -,DUTIABLE,1,360,19,360,19,3.6
+1908,S,"Flax, hemp and jute, manufactures of, viz",DUTIABLE,1,0,38505,0,38627,5887.95
+1908,S,Fr. Africa,FREE,1,0,14546,0,14546,0.0
+1908,S,Fr. E. Indies,FREE,2,303180,5911,303180,5911,0.0
+1908,S,France,,41,39718,787746,711471,218044,0.0
+1908,S,France,DUTIABLE,413,9917546,7935718,9753137,8019413,3190447.45
+1908,S,France,FREE,112,2180784,1459340,2180787,1463483,0.0
+1908,S,French Africa,DUTIABLE,1,10180,250,10180,250,63.62
+1908,S,"Fruits, including nuts, viz:",DUTIABLE,1,121,16,121,16,4.0
+1908,S,Germany,,34,226428,701975,517903,173503,0.0
+1908,S,Germany,DUTIABLE,398,8109219,5794342,7457690,6173589,3817048.26
+1908,S,Germany,FREE,132,5583858,2031357,5566323,2029102,0.0
+1908,S,Gibraltar,DUTIABLE,1,0,90,0,90,27.0
+1908,S,"Gold and silver, mfrs. of",DUTIABLE,1,0,6913,0,6913,1231.56
+1908,S,"Grain and products of, viz:",DUTIABLE,1,0,5,2,5,0.3
+1908,S,Gravels and sand,FREE,1,410,1232,410,1232,0.0
+1908,S,Great Britain,,48,231944,4503138,3370821,726702,0.0
+1908,S,Great Britain,DUTIABLE,762,251042749,68370440,244366091,67217415,16470066.69
+1908,S,Great Britain,FREE,345,106298106,23818585,106299442,23847374,0.0
+1908,S,Greece,,3,0,547,553,102,0.0
+1908,S,Greece,DUTIABLE,13,8939845,409010,8765280,414492,88405.91
+1908,S,Greece,FREE,2,0,100,0,166,0.0
+1908,S,Gross,FREE,1,100,100,0,0,0.0
+1908,S,"Gums, viz.— Amber, arabic, australian, copal, damar, elemy, kaurie, mastic, andarac, senegal, tragacanth, gedda, barberry, pontianac, and lac, crude, seed, button, stick, and shell",FREE,1,100608,15471,100608,15471,0.0
+1908,S,"Gunpowder and other explosives, &c",DUTIABLE,1,40658,13692,40658,13692,813.16
+1908,S,"Gutta percha and India-rubber, manufactures of",,3,0,31818,31818,9196,0.0
+1908,S,Haiti,DUTIABLE,1,0,30,0,30,9.0
+1908,S,Hawaii,FREE,4,77515,11536,77515,11536,0.0
+1908,S,Holland,,16,772,144474,37917,8782,0.0
+1908,S,Holland,DUTIABLE,116,2041038,809729,1980589,391250,88858.26
+1908,S,Holland,FREE,31,307663,544126,250654,507923,0.0
+1908,S,Hong Kong,FREE,6,0,6856,0,6905,0.0
+1908,S,Iceland,FREE,1,0,1573,0,1573,0.0
+1908,S,Indian corn for purposes of distillation,DUTIABLE,1,1167687,725601,1172738,725391,87955.35
+1908,S,Indian or corn meal,DUTIABLE,1,0,75,18,75,3.6
+1908,S,"Iron and manufactures of, steel and manufactures of, or both combined",,1,0,639,639,112,0.0
+1908,S,Italy,,21,923,39012,64782,18644,0.0
+1908,S,Italy,DUTIABLE,117,3330810,393173,3030836,400286,136239.39
+1908,S,Italy,FREE,31,1642072,375190,1642074,374986,0.0
+1908,S,Japan,,20,31120,129147,458948,163027,0.0
+1908,S,Japan,DUTIABLE,237,1503631,942598,1411393,984471,304586.17
+1908,S,Japan,FREE,25,20164571,1121720,20164571,1122184,0.0
+1908,S,"Junk, old",FREE,1,2423,8433,2423,8433,0.0
+1908,S,Laths,FREE,1,120,237,120,237,0.0
+1908,S,"Meats, viz. :",DUTIABLE,1,27668,4796,27633,4789,419.54
+1908,S,"Metals, N.O.P. and manufactures of :",,1,0,21763,21763,6028,0.0
+1908,S,Mexico,,1,0,9,9,2,0.0
+1908,S,Mexico,DUTIABLE,10,2284531,95705,2266690,95927,22946.3
+1908,S,Mexico,FREE,19,410185,835109,410185,835109,0.0
+1908,S,New Zealand,DUTIABLE,9,9513,2167,7375,1658,324.13
+1908,S,New Zealand,FREE,12,447138,240936,447138,241000,0.0
+1908,S,Newfoundland,,7,154,286,140,28,0.0
+1908,S,Newfoundland,DUTIABLE,30,36874,17527,36614,17843,4057.4
+1908,S,Newfoundland,FREE,40,14589007,1142956,14589008,1142893,0.0
+1908,S,Norway,,2,0,631,618,124,0.0
+1908,S,Norway,DUTIABLE,44,1033411,88823,983010,87872,32870.14
+1908,S,Norway,FREE,11,300,13649,300,13703,0.0
+1908,S,"Oakum, of jute or hemp",FREE,1,9090,35794,9090,35794,0.0
+1908,S,Oils,,1,0,9424,0,0,0.0
+1908,S,"Ores of metals, N.O.P",FREE,1,57388,10505,57388,10505,0.0
+1908,S,Persia,DUTIABLE,4,211209,9134,220109,9252,1460.35
+1908,S,Peru,DUTIABLE,1,0,0,2491173,51411,22012.0
+1908,S,Peru,FREE,1,0,20,0,20,0.0
+1908,S,Philippines,FREE,1,0,0,0,61,0.0
+1908,S,"Plants and trees, viz",DUTIABLE,1,100,22,100,22,2.0
+1908,S,Portable machines,DUTIABLE,1,1,36,1,36,9.0
+1908,S,Porto Rico,FREE,2,2047,252,2047,415,0.0
+1908,S,Portugal,,4,20,287,96,22,0.0
+1908,S,Portugal,DUTIABLE,22,861029,134780,666056,232850,54056.91
+1908,S,Portugal,FREE,4,26700,20067,26700,20116,0.0
+1908,S,Provisions not otherwise specified,DUTIABLE,1,298695,55103,230182,39241,8053.6
+1908,S,Roumania,FREE,2,0,1101,0,1101,0.0
+1908,S,Russia,,4,2,150,375,109,0.0
+1908,S,Russia,DUTIABLE,29,357738,62749,271257,54178,10471.11
+1908,S,Russia,FREE,12,513012,252988,513012,252988,0.0
+1908,S,Slate and manufactures of,DUTIABLE,1,0,14,0,14,4.2
+1908,S,Soap,DUTIABLE,1,126985,6694,0,6282,794.73
+1908,S,Spain,,6,70,13157,13381,3272,0.0
+1908,S,Spain,DUTIABLE,69,14260448,1065393,13305736,1301526,297794.98
+1908,S,Spain,FREE,11,9078325,2247700,9078325,2248499,0.0
+1908,S,"Spirits and wines, viz",DUTIABLE,1,0,0,17,9,54.4
+1908,S,St. Pierre,,3,803149,31041,12,4,0.0
+1908,S,St. Pierre,DUTIABLE,25,5529,3024,20634,2984,1251.7
+1908,S,St. Pierre,FREE,7,2113,5077,2113,5179,0.0
+1908,S,Sweden,,6,0,42677,574262,187563,0.0
+1908,S,Sweden,DUTIABLE,34,343339,105259,340340,102059,20461.16
+1908,S,Sweden,FREE,8,27927,43229,27927,43229,0.0
+1908,S,Switzerland,,10,0,476678,457271,159419,0.0
+1908,S,Switzerland,DUTIABLE,119,932535,2241496,829940,2322899,571292.34
+1908,S,Switzerland,FREE,11,111475,37936,111475,37936,0.0
+1908,S,"Tea of India, black",DUTIABLE,1,558,175,0,0,17.5
+1908,S,"Tea of India, green",DUTIABLE,1,19426,2595,0,0,62.5
+1908,S,Tobacco and manufactures of,DUTIABLE,1,23385,52428,22830,49489,80866.83
+1908,S,Tools and Implements,DUTIABLE,1,0,12513,0,12513,2525.2
+1908,S,Turkey,,4,0,278,32378,8897,0.0
+1908,S,Turkey,DUTIABLE,41,4869087,319136,4659225,308452,57316.91
+1908,S,Turkey,FREE,7,6563,216000,7138,216050,0.0
+1908,S,U. S. of Colombia,FREE,2,203761,24787,203761,24787,0.0
+1908,S,"Uncoloured cotton fabrics, bleached, viz",DUTIABLE,1,0,74077,0,74118,23298.93
+1908,S,United States,,49,3789276,13476913,3906364,862047,0.0
+1908,S,United States,DUTIABLE,884,190553017,112079054,180494386,103813497,25927021.88
+1908,S,United States,FREE,417,343835248,93997864,343469417,94431818,0.0
+1908,S,Uruguay,FREE,1,0,276715,0,276715,0.0
+1908,S,Vegetable,DUTIABLE,1,112561,64667,112546,64662,9934.05
+1908,S,Venezuela,FREE,2,638757,64441,638757,64441,0.0
+1908,S,Wood for fuel,FREE,1,37478,128747,37478,128747,0.0
+1908,S,"Wool, manufacturers of",DUTIABLE,1,0,119499,0,104537,23695.45
+1908,S,£,FREE,1,8331,39114,8331,39114,0.0

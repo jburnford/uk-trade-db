@@ -57,9 +57,17 @@ def is_country(txt):
     return False
 
 
-def parse_volume(tag, fy, md_path, out, diag):
+FREE_START_RE = re.compile(r'No\.\s*(?:1|37)\.?\s*[—-]\s*GENERAL STATEMENT OF IMPORTS', re.I)
+FREE_END_RE = re.compile(r'GENERAL STATEMENT OF EXPORTS|No\.\s*(?:3|38)\.\s*[—-]', re.I)
+
+
+def parse_volume(tag, fy, md_path, out, diag, only_free=False, regime='D'):
+    """only_free: the FY1898-1908 volumes print the dutiable goods across a spread (two
+    tables per page pair, joined by ca_align_spreads.py) and the FREE goods on single pages
+    in this regime-D layout with four value columns and no tariff groups; read only the
+    single-page tables (header without TARIFF / DUTY) inside the General Statement span."""
     text = md_path.read_text(errors='ignore')
-    m = START_RE.search(text)
+    m = (FREE_START_RE if only_free else START_RE).search(text)
     if not m:
         print(f'{fy}: GS caption not found', file=sys.stderr); return 0
     start = m.start()
@@ -70,10 +78,18 @@ def parse_volume(tag, fy, md_path, out, diag):
     last_end = 0
     nval = 5
     prev_html = None
+    under_imports = True
     for seq, tm in enumerate(P.TABLE_RE.finditer(body)):
         inter = body[last_end:tm.start()]
         last_end = tm.end()
-        if n_tab > 0 and END_RE.search(inter):
+        if only_free:
+            # the 1898+ OCR interleaves statements page by page: classify each table by the
+            # nearest preceding numbered caption instead of cutting a span
+            if FREE_START_RE.search(inter): under_imports = True
+            elif re.search(r'No\.\s*\d+\.?\s*[—-]\s*[A-Z]', inter): under_imports = False
+            if not under_imports:
+                diag['free_mode_other_statement_table'] += 1; continue
+        elif n_tab > 0 and END_RE.search(inter):
             break
         if tm.group(0) == prev_html:
             diag['duplicate_table_skipped'] += 1; continue     # the OCR emitted the same page twice (FY1897 t124)
@@ -84,6 +100,14 @@ def parse_volume(tag, fy, md_path, out, diag):
         hdr = ' '.join(c for k, _, c in P.parse_table(tm.group(0))[0] if k == 'th').upper() if P.parse_table(tm.group(0)) else ''
         table_recap = 'PROVINCES INTO WHICH' in hdr and 'COUNTR' not in hdr
         if table_recap: diag['recap_table'] += 1
+        if only_free:
+            hdr4 = ' '.join(c for row in P.parse_table(tm.group(0))[:4] for k, _, c in row if k == 'th').upper()
+            nvh = sum(1 for row in P.parse_table(tm.group(0))[:4] if all(k == 'th' for k, _, _ in row)
+                      for _, _, c in row if re.search(r'quantity|qty|value', c, re.I))
+            if 'TARIFF' in hdr4 or 'DUTY' in hdr4 or 'EXPORT' in hdr4 or 'PRODUCE OF CANADA' in hdr4 \
+                    or not ('QUANTITY' in hdr4 and 'VALUE' in hdr4) or nvh != 4:
+                diag['free_mode_skipped_table'] += 1; continue      # a spread half (dutiable), an export table, a summary
+            ctx['section'] = 'FREE'
         for row in P.parse_table(tm.group(0)):
             if all(k == 'th' for k, _, _ in row):
                 n = sum(1 for _, _, c in row if re.search(r'quantity|value|duty|^\$', c, re.I))
@@ -97,7 +121,7 @@ def parse_volume(tag, fy, md_path, out, diag):
             prev_texts = texts
             joined = ' '.join(texts).upper()
             if 'FREE GOODS' in joined: ctx['section'] = 'FREE'
-            if 'DUTIABLE GOODS' in joined: ctx['section'] = 'DUTIABLE'
+            if 'DUTIABLE GOODS' in joined and not only_free: ctx['section'] = 'DUTIABLE'
             if all(k == 'th' for k, _, _ in cells): continue
             # COLUMN MAP FROM THE HEADER (v3): every table opens with a th row naming the value
             # columns -- 'Quantity. Value. Quantity. Value. Duty.' (5, dutiable) or the same
@@ -174,7 +198,7 @@ def parse_volume(tag, fy, md_path, out, diag):
             def emit(kind, country, province):
                 if table_recap or RECAP_RE.match(ctx['article'] or ''):
                     kind = 'recap'; diag['recap_row'] += 1      # every kind: the recap prints province totals too
-                out.append(dict(fiscal_year=fy, volume=tag, table_seq=seq, row_seq=len(out), regime='D',
+                out.append(dict(fiscal_year=fy, volume=tag, table_seq=seq, row_seq=len(out), regime=regime,
                                 block_id=f'd{len(out)}', section=ctx['section'], section_label='',
                                 article_parent=ctx['parent'], article=ctx['article'] or '?',
                                 country=country, country_inferred='', province=province, row_kind=kind,

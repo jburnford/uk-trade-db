@@ -120,7 +120,16 @@ recapitulation; 1868–73 are incomplete (0.62–0.83 of print after the witness
   beneath it.
 - `canada_manual_repairs.csv`: hand repairs, strict match-or-abort.
 
-## Canada — `db/canada/spread_rows_<tag>.csv` (FY1898–1908, staged)
+## Canada — `db/canada/imports_general_rows_s.csv` (FY1898–1908, regime S)
+
+The rows schema above plus `gt_qty, gt_value, gt_duty` (General Tariff), `pt_qty, pt_value,
+pt_duty` (Preferential / Reciprocal Tariff), `sx_qty, sx_value, sx_duty` (surtax),
+`align_status` (`joined` keyed join of the two spread halves, `joined_weak` positional,
+`left_only` no consumption values, `right_only` no label, `single_page` a free-goods table
+read whole) and `closes` (the right half's own GT+PT==Total check: 2 = value and duty).
+`section_label` holds the era (`GP` / `SX`). FY1907 is nine months.
+
+## Canada — `db/canada/spread_rows_<tag>.csv` (FY1898–1908, intermediate)
 
 Spread-joined rows with tariff-group columns: `tot_*` (total imports), `gt_*` (General
 Tariff), `pt_*` (Preferential Tariff), `sx_*` (surtax), `efc_*` (entered for

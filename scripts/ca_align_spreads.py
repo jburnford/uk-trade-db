@@ -145,12 +145,21 @@ def left_rows(table_html, era='GP'):
     spec = ERA[era]
     nv, fields = spec['left_vals'], spec['left_fields']
     out = []
+    pending = []        # label-only rows (article heading, a dash-country opening a province run)
     for cells in expand_rowspans(table_html, 2 + nv):
         if not any(HAS_DIGIT.search(c) for c in cells[2:]):
-            continue                                # article heading / section banner
+            # an article heading / section banner / 'United States--' with no numbers: it is
+            # not a row to align, but its label belongs to the NEXT value row (2026-09-01:
+            # without this, FY1900 province runs under a dash-country had no article and no
+            # country at all in the joined rows)
+            pending.extend(c for c in cells if re.search(r'[A-Za-z]', c))    # '2 " Yeast cakes' keeps its item number
+            continue
         cells = fold_cents(cells, 2 + nv)
         vals = cells[-nv:] if len(cells) >= nv else [''] * (nv - len(cells)) + cells
         labels = cells[:-nv] if len(cells) > nv else []
+        if pending:
+            labels = pending + [l for l in labels if l not in pending]
+            pending = []
         rec = dict(labels=labels, raw=cells, era=era)
         for f, v in zip(fields, vals):
             rec[f] = num(v)

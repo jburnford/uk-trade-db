@@ -1,18 +1,14 @@
 fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_imp_value,gt_qty,gt_value,gt_duty,pt_qty,pt_value,pt_duty,sx_qty,sx_value,sx_duty,efc_qty,efc_value,efc_duty,closes
-1899,cdn_34_5_1899,0,24,GP,"2 "" "" casks.....",joined_weak,position,,54,23.54,23,8.64,,,,,,,54,23,8.64,2
 1899,cdn_34_5_1899,0,28,GP,,right_only,,,,,939,187.8,,4094,614.1,,,,,5033,801.9,2
-1899,cdn_34_5_1899,0,38,GP,"4 Animals, living, viz. :— Hogs..... > Ontario .....",joined_weak,position,40,6,40,6,0.6,,,,,,,,40,0.6,0
+1899,cdn_34_5_1899,0,38,GP,"4 Animals, living, viz. :— Hogs..... > United States— > Lbs. > Lbs. > Ontario .....",joined_weak,position,40,6,40,6,0.6,,,,,,,,40,0.6,0
 1899,cdn_34_5_1899,1,1,GP,Switzerland.....,left_only,,28,2226,,,,,,,,,,,,,
 1899,cdn_34_5_1899,1,4,GP,Quebec.....,joined_weak,position,628,38240,1,74,14.8,,,,,,,1.74,14.8,,-1
 1899,cdn_34_5_1899,1,20,GP,"3 "" Sheep..... > Great Britain.....",left_only,,46,2460,,,,,,,,,,,,,
 1899,cdn_34_5_1899,1,22,GP,Total..... > Quebec.....,joined_weak,position,65,2510,19,50,10.0,,,,,,,19.5,10.0,,-1
-1899,cdn_34_5_1899,2,17,GP,3 Baking powders..... > United States.....,joined_weak,position,23125,6135,1412,381,84.72,,117,22.39,,,,,498,107.11,2
+1899,cdn_34_5_1899,2,17,GP,3 Baking powders..... > Great Britain..... > Lbs. > Lbs. > United States.....,joined_weak,position,23125,6135,1412,381,84.72,,117,22.39,,,,,498,107.11,2
 1899,cdn_34_5_1899,5,12,GP,,right_only,,,,,21727,5430.5,,5830,1092.18,,,,,27557,6522.68,2
 1899,cdn_34_5_1899,5,20,GP,,right_only,,,,,,,,25,4.6899999999999995,,,,,25,4.6899999999999995,2
-1899,cdn_34_5_1899,5,37,GP,"Total..... > 4 Boats—Open pleasure sail boats, skiffs and canoes.....",joined_weak,position,,25,923.24,874,218.5,1,49,9.19,,,,25,923,227.69,2
-1899,cdn_34_5_1899,5,41,GP,"4 Boats—Open pleasure sail boats, skiffs and canoes.....",joined_weak,position,,23,867.21,777,194.25,,,,,,,21,777,194.25,2
-1899,cdn_34_5_1899,5,43,GP,"4 Boats—Open pleasure sail boats, skiffs and canoes.....",joined_weak,position,,85,1714.85,1714,428.5,,,,,,,85,1714,428.5,2
-1899,cdn_34_5_1899,6,0,GP,1 Bolsters and pillows..... > Great Britain.....,left_only,,,312,,,,,,,,,,,,,
+1899,cdn_34_5_1899,6,0,GP,DUTIABLE GOODS—Con. > 1 Bolsters and pillows..... > Great Britain.....,left_only,,,312,,,,,,,,,,,,,
 1899,cdn_34_5_1899,6,1,GP,United States.....,left_only,,,1749,,,,,,,,,,,,,
 1899,cdn_34_5_1899,6,2,GP,Total..... > Ontario.....,left_only,,,1458,,,,,,,,,,,,,
 1899,cdn_34_5_1899,6,3,GP,Quebec.....,left_only,,,167,,,,,,,,,,,,,
@@ -72,7 +68,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,15,40,GP,Quebec.....,joined_weak,position,136696,65627,106,65,19.57,,,,,,,106.65,19.57,,-1
 1899,cdn_34_5_1899,15,41,GP,Nova Scotia.....,joined_weak,position,84,89,79,85,25.5,5,4,0.9,,,,84.89,26.4,,-1
 1899,cdn_34_5_1899,15,46,GP,,right_only,,,,,1848,554.47,38.33,7.44,3767,,,,1881,561.91,,-1
-1899,cdn_34_5_1899,16,0,GP,1 Beans..... > Great Britain.....,joined_weak,position,36,65,23,38,3.1,13,27,1.46,,,,36.65,4.5600000000000005,1,-2
+1899,cdn_34_5_1899,16,0,GP,"DUTIABLE GOODS—Con. > Bush. > Bush. > Breadstuffs, &c.— > Grain and products of— > 1 Beans..... > Great Britain.....",joined_weak,position,36,65,23,38,3.1,13,27,1.46,,,,36.65,4.5600000000000005,1,-2
 1899,cdn_34_5_1899,16,4,GP,Japan.....,joined_weak,position,315,241,289,219,43.35,26.22,2.95,315,,,,241,46.3,,-1
 1899,cdn_34_5_1899,16,6,GP,Total.....,joined_weak,position,943,2078,935,2063,141.42,8.15,0.9,943,,,,2078,142.32,,-1
 1899,cdn_34_5_1899,16,7,GP,Quebec.....,joined_weak,position,552,1092,369,842,55.35,5.12,0.56,374,,,,854,55.91,,-1
@@ -83,7 +79,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,16,27,GP,Total.....,joined_weak,position,2205,939,2180,912,218.7,25.27,1.87,2205,,,,939,220.57,,-1
 1899,cdn_34_5_1899,16,35,GP,,joined_weak,position,837367,292060,107247,46353,10725.48,25.27,1.87,107272,,,,46380,10727.35,,-1
 1899,cdn_34_5_1899,16,36,GP,"5 "" Pease, N.E.S..... > Great Britain.....",joined_weak,position,531,873,471,798,47.1,60.75,4.47,531,,,,873,51.57,5,-2
-1899,cdn_34_5_1899,17,0,GP,1 Total..... > Ontario.....,joined_weak,position,2748,3519,2689,3445,269.29,59.74,4.43,2748,,,,3519,273.72,1,-2
+1899,cdn_34_5_1899,17,0,GP,"DUTIABLE GOODS—Con. > Breadstuffs, &c.— > Grain and products of - > Pease, N.E.S.— > 1 Total..... > Ontario.....",joined_weak,position,2748,3519,2689,3445,269.29,59.74,4.43,2748,,,,3519,273.72,1,-2
 1899,cdn_34_5_1899,17,7,GP,Yukon.....,joined_weak,position,96,90,96,90,9.6,,,,,,,96.9,9.6,,-1
 1899,cdn_34_5_1899,17,8,GP,,joined_weak,position,13276,10321,4561,5041,456.61,60.75,4.47,4621,,,,5116,461.08,,-1
 1899,cdn_34_5_1899,17,10,GP,Quebec.....,left_only,,365947,230251,365947,,,,,,,,,,,,
@@ -132,7 +128,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,22,19,GP,Manitoba.....,joined_weak,position,7218,1441,6612,1395,348.75,606.46,8.63,7218,,,,1441,357.38,,-1
 1899,cdn_34_5_1899,22,20,GP,B. Columbia.....,joined_weak,position,789,1974,759,1924,488.9,30.5,9.37,789,,,,1974,498.27,,-1
 1899,cdn_34_5_1899,22,26,GP,Quebec.....,joined_weak,position,104,73,98,71,17.75,6,2,0.38,,,,104.73,18.13,,-1
-1899,cdn_34_5_1899,23,0,GP,"1 Candles, tallow ..... > Great Britain.....",left_only,,116,10,,,,,,,,,,,,,
+1899,cdn_34_5_1899,23,0,GP,"DUTIABLE GOODS—Con. > 1 Candles, tallow ..... > Great Britain.....",left_only,,116,10,,,,,,,,,,,,,
 1899,cdn_34_5_1899,23,1,GP,"1 Candles, tallow ..... > United States.....",joined_weak,position,349055,31275,390795,33793,8448.25,116.1,1.88,390795,,,,33793,8448.25,1,-2
 1899,cdn_34_5_1899,23,5,GP,"1 Candles, tallow ..... > B. Columbia.....",joined_weak,position,211555,16620,253295,14320,3580.0,4,1,0.19,,,,253295,19138,4784.5,-2
 1899,cdn_34_5_1899,23,6,GP,"1 Candles, tallow ..... > N. W. Ter.....",joined_weak,position,4,1,,33793,8448.25,116.1,1.88,4,,,,1,0.19,,-1
@@ -140,7 +136,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,23,9,GP,"2 "" Paraffine wax..... > Great Britain.....",joined_weak,position,13620,1206,426,40,12.0,,,,,,,,,,0
 1899,cdn_34_5_1899,23,14,GP,,right_only,,,,,156,46.55,360.47,10.59,57980,,,,5224,1566.88,,-1
 1899,cdn_34_5_1899,23,15,GP,"2 "" Paraffine wax..... > United States.....",joined_weak,position,52245,4762,57980,96,28.8,,,,,,,,,,0
-1899,cdn_34_5_1899,23,16,GP,"2 "" Paraffine wax..... > Ontario.....",joined_weak,position,19624,1600,13474,13,3.9,84.16,3.6,19624,,,,1600,479.03,,-1
+1899,cdn_34_5_1899,23,16,GP,"2 "" Paraffine wax..... > Total..... > Ontario.....",joined_weak,position,19624,1600,13474,13,3.9,84.16,3.6,19624,,,,1600,479.03,,-1
 1899,cdn_34_5_1899,23,17,GP,"2 "" Paraffine wax..... > Quebec.....",joined_weak,position,13110,1418,10340,1378,413.4,200.13,2.93,13110,,,,1418,390.77,,-1
 1899,cdn_34_5_1899,23,19,GP,"3 "" All other, N. E. S..... > N. Brunswick.....",left_only,,892,96,892,,,,,,,,,,,,
 1899,cdn_34_5_1899,23,21,GP,"3 "" All other, N. E. S..... > B. Columbia.....",joined_weak,position,18209,1557,13964,5305,1591.18,3564,551,124.09,,,,335.29,7.5,,-1
@@ -152,7 +148,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,23,28,GP,"3 "" All other, N. E. S..... > Germany.....",left_only,,860,132,362,,,,,,,,,,,,
 1899,cdn_34_5_1899,23,29,GP,"3 "" All other, N. E. S..... > Japan.....",joined_weak,position,682,4,,46,11.5,498.86,16.12,12638,,,,1089,326.7,,-1
 1899,cdn_34_5_1899,23,30,GP,"4 Cane, reed or rattan, split or otherwise manufactured, N. O. P..... > United States.....",joined_weak,position,366624,33696,352349,32455,8116.0,682,4,0.75,,,,,,,0
-1899,cdn_34_5_1899,23,31,GP,"4 Cane, reed or rattan, split or otherwise manufactured, N. O. P..... > Ontario.....",joined_weak,position,67757,8304,61225,7610,1902.5,7687,786,147.4,,,,352349,32455,8116.0,-2
+1899,cdn_34_5_1899,23,31,GP,"4 Cane, reed or rattan, split or otherwise manufactured, N. O. P..... > Total..... > Ontario.....",joined_weak,position,67757,8304,61225,7610,1902.5,7687,786,147.4,,,,352349,32455,8116.0,-2
 1899,cdn_34_5_1899,23,32,GP,"4 Cane, reed or rattan, split or otherwise manufactured, N. O. P..... > Quebec.....",joined_weak,position,79376,8920,49564,6547,1636.75,40696,3042,570.32,,,,,,,0
 1899,cdn_34_5_1899,23,33,GP,"4 Cane, reed or rattan, split or otherwise manufactured, N. O. P..... > Nova Scotia.....",joined_weak,position,1731,294,1713,288,72.0,18,6,1.13,,,,,,,0
 1899,cdn_34_5_1899,23,34,GP,"4 Cane, reed or rattan, split or otherwise manufactured, N. O. P..... > N. Brunswick.....",joined_weak,position,3101,492,3101,492,123.0,,,,,,,,,,0
@@ -169,7 +165,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,27,2,GP,Total.....,left_only,,28799,4627,28799,,,,,,,,,,,,
 1899,cdn_34_5_1899,27,3,GP,Quebec.....,joined_weak,position,9,11,9,,,,,,,,,,,,0
 1899,cdn_34_5_1899,27,4,GP,B. Columbia....,joined_weak,position,30,88,30,,,,,,,,,,,,0
-1899,cdn_34_5_1899,27,6,GP,Ontario.....,left_only,,324,27797,324,,,,,,,,,,,,
+1899,cdn_34_5_1899,27,6,GP,2 Cash registers..... > United States— > Ontario.....,left_only,,324,27797,324,,,,,,,,,,,,
 1899,cdn_34_5_1899,27,7,GP,Quebec.....,left_only,,197,19501,197,,,,,,,,,,,,
 1899,cdn_34_5_1899,27,8,GP,Nova Scotia.....,left_only,,1,105,1,,,,,,,,,,,,
 1899,cdn_34_5_1899,27,9,GP,N. Brunswick....,left_only,,35,4370,35,,,,,,,,,,,,
@@ -186,7 +182,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,27,22,GP,Nova Scotia.....,left_only,,,47,,,,,,,,,,,,,
 1899,cdn_34_5_1899,27,23,GP,N. Brunswick....,left_only,,,118,,,,,,,,,,,,,
 1899,cdn_34_5_1899,27,24,GP,Manitoba.....,left_only,,,243,,,,,,,,,,,,,
-1899,cdn_34_5_1899,27,29,GP,Ontario.....,left_only,,1186,440,1186,,,,,,,,,,,,
+1899,cdn_34_5_1899,27,29,GP,"5 Cement, hydraulic or waterlime..... > United States— > Ontario.....",left_only,,1186,440,1186,,,,,,,,,,,,
 1899,cdn_34_5_1899,27,30,GP,Manitoba.....,left_only,,492,254,492,,,,,,,,,,,,
 1899,cdn_34_5_1899,27,32,GP,"6 "" Portland..... > Great Britain.....",left_only,,420380,124295,24646,,,,,,,,,,,,
 1899,cdn_34_5_1899,27,33,GP,Newfoundland.....,left_only,,34,25,34,,,,,,,,,,,,
@@ -230,11 +226,11 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,30,37,GP,"4 Cloths, not rubbered or made waterproof, whether of wool, cotton, unions, silk or ramie, sixty inches or over in width and weighing not more than seven ounces to the square yard imported exclusively for the manufacture of mackintosh clothing. > Great Britain— Quebec.....",left_only,,,154333,,,,,,,,,,,,,
 1899,cdn_34_5_1899,30,38,GP,"4 Cloths, not rubbered or made waterproof, whether of wool, cotton, unions, silk or ramie, sixty inches or over in width and weighing not more than seven ounces to the square yard imported exclusively for the manufacture of mackintosh clothing. > Great Britain— Quebec.....",left_only,,,27796,5136,,,,,,,,,,,,
 1899,cdn_34_5_1899,30,41,GP,"5 Coal, bituminous..... > Australasia.....",joined_weak,position,,12,20,20,6.36,,,,,,,12,20,6.36,2
-1899,cdn_34_5_1899,31,0,GP,Total..... > Ontario.....,joined_weak,position,2063292,3456615,2074308,3473707,1099383.24,3.15,1.35,2074311,,,,3473722,1099384.59,1,-2
+1899,cdn_34_5_1899,31,0,GP,"1 Coal, bituminous— > Total..... > Ontario.....",joined_weak,position,2063292,3456615,2074308,3473707,1099383.24,3.15,1.35,2074311,,,,3473722,1099384.59,1,-2
 1899,cdn_34_5_1899,31,7,GP,Yukon.....,joined_weak,position,10,60,10,60,5.3,,,,,,,10.6,5.3,,-1
 1899,cdn_34_5_1899,31,13,GP,B. Columbia.....,joined_weak,position,26,80,26,80,3.34,,,,,,,26.8,3.34,,-1
 1899,cdn_34_5_1899,31,36,GP,B. Columbia.....,joined_weak,position,3927,56,3927,56,19.63,,,,,,,3927.56,19.63,,-1
-1899,cdn_34_5_1899,32,9,GP,"2 Cocoa nut, desiccated, sweetened or not... > Great Britain.....",joined_weak,position,1078,98,402,25,20.1,1076.97,40.36,1478,,,,122,60.46,2,-2
+1899,cdn_34_5_1899,32,9,GP,"Lbs. > Lbs. > 2 Cocoa nut, desiccated, sweetened or not... > Great Britain.....",joined_weak,position,1078,98,402,25,20.1,1076.97,40.36,1478,,,,122,60.46,2,-2
 1899,cdn_34_5_1899,32,10,GP,B. E. Indies.....,joined_weak,position,810,74,,,,810,74,30.38,,,,810.74,30.38,,-1
 1899,cdn_34_5_1899,32,12,GP,Total..... > Ontario.....,joined_weak,position,378,66,378,66,18.94,,,,,,,378.66,18.94,,-1
 1899,cdn_34_5_1899,33,11,GP,France.....,left_only,,752,137,227,,,,,,,,,,,,
@@ -251,26 +247,21 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,34,13,GP,Quebec.....,joined_weak,position,218,91,,,,218,91,20.48,,,,218.91,20.48,,-1
 1899,cdn_34_5_1899,35,25,GP,Nova Scotia.....,joined_weak,position,37190,4973,37072,4950,742.5,118.23,2.6,37190,,,,4973,745.1,,-1
 1899,cdn_34_5_1899,35,31,GP,,joined_weak,position,280648,45144,280517,45116,6767.37,131.28,3.73,280648,,,,45144,6771.1,,-1
-1899,cdn_34_5_1899,36,16,GP,"1 Copper and manufactures of— All other manufactures of, N.O.P.... > 2 Cordage, cotton, of all kinds..... > Great Britain.....",joined_weak,position,68523,8613,14824,1276,319.0,,8040,1507.34,,,,,9316,1826.34,2
-1899,cdn_34_5_1899,36,29,GP,"3 "" N.E.S. (See Twines)..... > Great Britain.....",joined_weak,position,19849,1684,90,8,2.0,,1733,325.39,,,,,1741,327.39,2
+1899,cdn_34_5_1899,36,16,GP,"2 Cordage, cotton, of all kinds..... > Lbs. > Lbs. > Great Britain.....",joined_weak,position,68523,8613,14824,1276,319.0,,8040,1507.34,,,,,9316,1826.34,2
+1899,cdn_34_5_1899,36,29,GP,"3 "" N.E.S. (See Twines)..... > Lbs. > Lbs. > Great Britain.....",joined_weak,position,19849,1684,90,8,2.0,,1733,325.39,,,,,1741,327.39,2
 1899,cdn_34_5_1899,37,33,GP,,right_only,,,,,,,50,14,3.66,,,,50.14,3.66,,-1
-1899,cdn_34_5_1899,37,37,GP,"3 Corset clasps, busks, blanks and steels, and corset wires, tipped or untipped. .... > Total..... > Quebec.....",joined_weak,position,9046,3071,9028,3063,1072.05,68.22,5.76,9096,,,,3085,1077.81,,-1
-1899,cdn_34_5_1899,37,38,GP,"3 Corset clasps, busks, blanks and steels, and corset wires, tipped or untipped. .... > Total.....",joined_weak,position,,66,11.25,5,1.75,41,6,1.58,,,,66.11,3.33,,-1
-1899,cdn_34_5_1899,37,39,GP,"3 Corset clasps, busks, blanks and steels, and corset wires, tipped or untipped. .... > Total..... > N. Brunswick.....",joined_weak,position,503,289,483,277,96.95,20.12,3.15,503,,,,289,100.1,,-1
-1899,cdn_34_5_1899,37,40,GP,"3 Corset clasps, busks, blanks and steels, and corset wires, tipped or untipped. .... > Total.....",joined_weak,position,,57,10.57,10,3.5,,,,,,,57.1,3.5,,-1
-1899,cdn_34_5_1899,37,41,GP,"3 Corset clasps, busks, blanks and steels, and corset wires, tipped or untipped. .... > Total.....",joined_weak,position,,36,12.3,10,3.5,6,2,0.53,,,,36.12,4.03,,-1
+1899,cdn_34_5_1899,37,37,GP,Quebec.....,joined_weak,position,9046,3071,9028,3063,1072.05,68.22,5.76,9096,,,,3085,1077.81,,-1
+1899,cdn_34_5_1899,37,39,GP,N. Brunswick.....,joined_weak,position,503,289,483,277,96.95,20.12,3.15,503,,,,289,100.1,,-1
 1899,cdn_34_5_1899,37,42,GP,,joined_weak,position,11824,4068,11733,4038,1413.3,141.44,11.55,11874,,,,4082,1424.85,,-1
 1899,cdn_34_5_1899,38,4,GP,Nova Scotia. ....,joined_weak,position,50607,7658,48716,7587,1707.59,1891.71,12.98,50607,,,,7658,1720.57,,-1
 1899,cdn_34_5_1899,38,6,GP,Manitoba. ....,joined_weak,position,3016,268,2921,257,57.82,95.11,1.8599999999999999,3016,,,,268,59.68,,-1
-1899,cdn_34_5_1899,38,26,GP,France. ....,joined_weak,position,281763,18437,52449,2753,688.33,,15817,2965.69,,,,,18570,3654.02,2
+1899,cdn_34_5_1899,38,26,GP,"3 "" Gray, unbleached cotton fabrics. .... > Great Britain. .... > Yds. > Yds. > France. ....",joined_weak,position,281763,18437,52449,2753,688.33,,15817,2965.69,,,,,18570,3654.02,2
 1899,cdn_34_5_1899,38,27,GP,Germany. ....,joined_weak,position,401,63,401,63,15.75,,,,,,,401.63,15.75,,-1
 1899,cdn_34_5_1899,38,28,GP,Switzerland. ....,joined_weak,position,46877,1423,46617,1411,352.75,260.12,2.25,46877,,,,1423,355.0,,-1
 1899,cdn_34_5_1899,38,43,GP,Japan. ....,joined_weak,position,171,73,171,73,18.25,,,,,,,171.73,18.25,,-1
-1899,cdn_34_5_1899,40,16,GP,"2 "" Batts, batting and sheet wadding, not bleached, dyed or coloured.....",joined_weak,position,,57,19.57,19,4.75,,,,,,,57.19,4.75,,-1
-1899,cdn_34_5_1899,40,17,GP,"2 "" Batts, batting and sheet wadding, not bleached, dyed or coloured.....",joined_weak,position,,94,8.85,5,1.25,9,3,0.56,,,,94,8,1.81,2
 1899,cdn_34_5_1899,40,21,GP,"Germany ..... > 3 "" Knitting yarn, hosiery yarn or other cotton yarn not bleached, dyed or coloured .....",joined_weak,position,239,57,239,57,14.25,,,,,,,239.57,14.25,,-1
-1899,cdn_34_5_1899,40,32,GP,"4 "" Wadding, batting, bleached, dyed or coloured..... > Nova Scotia .....",joined_weak,position,602,113,502,102,25.5,100.11,2.03,602,,,,113,27.53,,-1
-1899,cdn_34_5_1899,40,33,GP,"4 "" Wadding, batting, bleached, dyed or coloured.....",joined_weak,position,,446.63,446,63,15.75,,,,,,,446.63,15.75,,-1
+1899,cdn_34_5_1899,40,32,GP,Nova Scotia .....,joined_weak,position,602,113,502,102,25.5,100.11,2.03,602,,,,113,27.53,,-1
+1899,cdn_34_5_1899,40,33,GP,N. Brunswick...,joined_weak,position,446,63,446,63,15.75,,,,,,,446.63,15.75,,-1
 1899,cdn_34_5_1899,41,16,GP,"4 "" Seamless bags..... > Great Britain.....",joined_weak,position,,326,,271,54.2,110.55,8.25,3341,,,,326,62.45,4,-2
 1899,cdn_34_5_1899,41,19,GP,Total..... > Ontario.....,joined_weak,position,16545,1701,16435,1646,329.29,110.55,8.25,16545,,,,1701,337.54,,-1
 1899,cdn_34_5_1899,41,25,GP,,joined_weak,position,23712,2887,23602,2832,566.44,110.55,8.25,23712,,,,2887,574.69,,-1
@@ -280,12 +271,12 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,42,33,GP,,right_only,,,,,98264,24567.95,,185713,34827.25,,,,,283977,59395.2,2
 1899,cdn_34_5_1899,42,43,GP,,right_only,,,,,137,34.25,,,,,,,,137,34.25,2
 1899,cdn_34_5_1899,43,16,GP,,right_only,,,,,,,100,63,14.18,,,,100,63,14.18,2
-1899,cdn_34_5_1899,47,21,GP,Great Britain .....,joined_weak,position,1586427,130972,111037,8903,2225.75,,122883,23048.71,,,,,131786,25274.46,2
+1899,cdn_34_5_1899,47,21,GP,Yds. > Yds. > Great Britain .....,joined_weak,position,1586427,130972,111037,8903,2225.75,,122883,23048.71,,,,,131786,25274.46,2
 1899,cdn_34_5_1899,47,44,GP,,joined_weak,position,,3727,884.29,7,2.1,3698,877,197.34,,,,3727,884,199.44,2
 1899,cdn_34_5_1899,48,27,GP,"3 Cuffs of cotton, linen, xylonite, xyolite or celluloid..... > Great Britain.....",left_only,,,1382,,,,,,,,,,,,,
 1899,cdn_34_5_1899,48,34,GP,N. Brunswick.....,joined_weak,position,488,75,,,,488,75,19.69,,,,488.75,19.69,,-1
 1899,cdn_34_5_1899,49,31,GP,,right_only,,,,,4,2.35,385,70,54.12,,,,400.74,56.47,4,-2
-1899,cdn_34_5_1899,49,32,GP,Belgium .....,joined_weak,position,113,24,15,70,9.3,,,,,,,62.7,9.3,,-1
+1899,cdn_34_5_1899,49,32,GP,"Acids— > Acetic and pyroligneous, N.E.S., not exceeding proof strength ..... > Great Britain ..... > Galls. > Galls. > Belgium .....",joined_weak,position,113,24,15,70,9.3,,,,,,,62.7,9.3,,-1
 1899,cdn_34_5_1899,49,35,GP,Quebec .....,joined_weak,position,,,62,70,9.3,,,,,,,62.7,9.3,,-1
 1899,cdn_34_5_1899,49,37,GP,N. Brunswick .....,joined_weak,position,117,33,30,18,4.5,374,65,52.8,,,,404.83,57.3,,-1
 1899,cdn_34_5_1899,49,38,GP,,joined_weak,position,145,43,109,93,16.45,385.7,54.12,494,,,,163,70.57,,-1
@@ -314,29 +305,24 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,51,24,GP,Manitoba.....,joined_weak,position,158,82,158,82,222.78,,,,,,,158.82,222.78,,-1
 1899,cdn_34_5_1899,51,25,GP,B. Columbia....,joined_weak,position,261,179,181,113,149.42,14.27,5.36,195,,,,140,154.78,,-1
 1899,cdn_34_5_1899,52,0,GP,"1 Drugs, dyes, chemicals and medicines— Acid phosphate, N.O.P. .... > Great Britain .....",joined_weak,position,228,54,,5,1.25,342,77,14.45,,,,342,77,14.45,-2
-1899,cdn_34_5_1899,52,18,GP,"3 "" Muriatic and nitric ..... > 2 "" Acids, mixed, N.E.S. ....",joined_weak,position,,4435,414.4,12,2.4,4395,402,60.65,,,,4435,414,63.05,2
-1899,cdn_34_5_1899,52,27,GP,"3 "" Muriatic and nitric ..... > 4 "" Sulphuric .....",joined_weak,position,,450.73,,,,450,73,11.37,,,,450,73,11.37,2
-1899,cdn_34_5_1899,52,33,GP,"4 "" Sulphuric .....",joined_weak,position,,1359.99,1359,99,24.75,,,,,,,1369,99,24.75,2
 1899,cdn_34_5_1899,53,7,GP,"2 "" Aniline dyes, in packages of less than 1 lb. weight..... > Great Britain.....",joined_weak,position,1205,511,,,,2101,608,91.2,,,,2101,608,91.2,2
 1899,cdn_34_5_1899,53,29,GP,P. E. Island....,joined_weak,position,188,159,165,136,34.0,23.23,4.31,188,,,,159,38.31,,-1
 1899,cdn_34_5_1899,53,44,GP,B. Columbia....,joined_weak,position,3778,568,3271,526,131.5,507.42,7.88,3778,,,,568,139.38,,-1
-1899,cdn_34_5_1899,54,15,GP,"2 "" Glycerine, N.E.S..... > Great Britain.....",joined_weak,position,314632,33381,76599,8069,1613.8,,26140,3921.0,,,,,34209,5534.8,2
+1899,cdn_34_5_1899,54,15,GP,"Lbs. > Lbs. > 2 "" Glycerine, N.E.S..... > Great Britain.....",joined_weak,position,314632,33381,76599,8069,1613.8,,26140,3921.0,,,,,34209,5534.8,2
 1899,cdn_34_5_1899,55,3,GP,Germany.....,joined_weak,position,25,69,25,69,25.0,,,,,,,25.69,25.0,,-1
 1899,cdn_34_5_1899,55,18,GP,Quebec.....,joined_weak,position,6821,686,6721,649,129.8,100.37,5.55,6821,,,,686,135.35,,-1
 1899,cdn_34_5_1899,55,20,GP,New Brunswick.....,joined_weak,position,144,91,144,91,18.2,,,,,,,144.91,18.2,,-1
 1899,cdn_34_5_1899,55,23,GP,,joined_weak,position,9549,1467,9449,1430,286.0,100.37,5.55,9549,,,,1467,291.55,,-1
-1899,cdn_34_5_1899,55,38,GP,Ontario.....,joined_weak,position,134488,12078,134713,12136,2427.2,221.66,9.9,134934,,,,12202,2437.1,,-1
+1899,cdn_34_5_1899,55,38,GP,Total ..... > Ontario.....,joined_weak,position,134488,12078,134713,12136,2427.2,221.66,9.9,134934,,,,12202,2437.1,,-1
 1899,cdn_34_5_1899,55,39,GP,Quebec.....,joined_weak,position,56059,6543,54522,6154,1230.8,421.83,12.45,54943,,,,6237,1243.25,,-1
 1899,cdn_34_5_1899,55,42,GP,Manitoba.....,joined_weak,position,16539,1495,15939,1435,287.0,600.6,9.0,16539,,,,1495,296.0,,-1
 1899,cdn_34_5_1899,55,43,GP,B. Columbia.....,joined_weak,position,4791,701,4572,637,127.4,219.64,9.6,4791,,,,701,137.0,,-1
 1899,cdn_34_5_1899,56,4,GP,"1 Drugs, dyes, chemicals and medicines— Magnesia..... > Nova Scotia.....",joined_weak,position,1604,65,303,13,2.6,1301,52,7.8,,,,1604.65,10.4,,-1
-1899,cdn_34_5_1899,56,22,GP,"3 "" Morphine..... > Great Britain.....",joined_weak,position,2695,2858,,,,,2405,360.75,,,,2245,,360.75,1
+1899,cdn_34_5_1899,56,22,GP,"3 "" Morphine..... > Oz. > Oz. > Great Britain.....",joined_weak,position,2695,2858,,,,,2405,360.75,,,,2245,,360.75,1
 1899,cdn_34_5_1899,56,30,GP,"4 "" Opium, powdered..... > United States.....",joined_weak,position,19,69,19,69,26.0,,,,,,,19.69,26.0,,-1
 1899,cdn_34_5_1899,56,34,GP,"5 "" Opium, prepared for smoking..... > New Brunswick.....",joined_weak,position,20,54,10,25,13.5,10,29,10.12,,,,20.54,23.62,,-1
-1899,cdn_34_5_1899,57,0,GP,"1 Drugs, dyes, chemicals and medicines— Proprietary medicines, in liquid form, containing alcohol..... > Great Britain.....",left_only,,,3542,,,,,,,,,,,,,
-1899,cdn_34_5_1899,57,36,GP,"3 "" Potash or potassa, bicarbonate of ..... > Great Britain.....",joined_weak,position,38687,555,,803,160.6,39307,592,88.8,,,,39307,592,88.8,-2
-1899,cdn_34_5_1899,57,40,GP,"3 "" Potash or potassa, bicarbonate of .....",joined_weak,position,,2600.59,,,,2600,59,8.85,,,,2600,59,8.85,2
-1899,cdn_34_5_1899,57,43,GP,"3 "" Potash or potassa, bicarbonate of .....",joined_weak,position,,25,4.25,4,0.8,,,,,,,25,4,0.8,2
+1899,cdn_34_5_1899,57,0,GP,"DUTIABLE GOODS—Con. > 1 Drugs, dyes, chemicals and medicines— Proprietary medicines, in liquid form, containing alcohol..... > Great Britain.....",left_only,,,3542,,,,,,,,,,,,,
+1899,cdn_34_5_1899,57,36,GP,"3 "" Potash or potassa, bicarbonate of ..... > Lbs. > Lbs. > Great Britain.....",joined_weak,position,38687,555,,803,160.6,39307,592,88.8,,,,39307,592,88.8,-2
 1899,cdn_34_5_1899,58,4,GP,Total.....,left_only,,5706591,70631,2390820,,,,,,,,,,,,
 1899,cdn_34_5_1899,58,9,GP,Manitoba....,joined_weak,position,207600,2752,196800,2685,537.0,22400,195,29.25,,,,,2880,566.25,2
 1899,cdn_34_5_1899,58,13,GP,,right_only,,,,,36069,7213.8,3200836,33558,5133.77,,,,5591656,69627,12347.57,2
@@ -351,19 +337,19 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,58,32,GP,New Brunswick.,joined_weak,position,260,62,260,62,21.7,,,,,,,260.62,21.7,,-1
 1899,cdn_34_5_1899,58,35,GP,P. E. Island....,joined_weak,position,371,80,371,80,28.0,,,,,,,371.8,28.0,,-1
 1899,cdn_34_5_1899,58,37,GP,,right_only,,,,,8212,2873.27,318.48,12.61,184942,,,,8260,2885.88,,-1
-1899,cdn_34_5_1899,59,0,GP,Total..... > Quebec.....,joined_weak,position,544,59,544,59,32.64,,,,,,,544.59,32.64,1,-2
+1899,cdn_34_5_1899,59,0,GP,"DUTIABLE GOODS—Con. > 1 Drugs, dyes, chemicals and medicines— Yeast, compressed, in packages weighing less than 50 lbs— > Total..... > Quebec.....",joined_weak,position,544,59,544,59,32.64,,,,,,,544.59,32.64,1,-2
 1899,cdn_34_5_1899,61,8,GP,,right_only,,,,,16,4.8,,,,,,,,16,4.8,2
 1899,cdn_34_5_1899,63,9,GP,"2 Electric light carbons and carbon points, of all kinds, N.E.S..... > Great Britain.....",joined_weak,position,,1,,,,1,0.26,,,,,1,0.26,2,0
 1899,cdn_34_5_1899,63,19,GP,"3 "" Carbons over 6 inches in circumference > Great Britain.....",left_only,,,980,,,,,,,,,,,,,
-1899,cdn_34_5_1899,64,0,GP,"1 Electric motors, generators, dynamos and sockets..... > Great Britain.....",left_only,,,566,,,,,,,,,,,,,
+1899,cdn_34_5_1899,64,0,GP,"DUTIABLE GOODS—Con. > 1 Electric motors, generators, dynamos and sockets..... > Great Britain.....",left_only,,,566,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,1,GP,"1 Electric motors, generators, dynamos and sockets..... > United States.....",left_only,,,120299,,,,,,,,,,,,,
-1899,cdn_34_5_1899,64,2,GP,"1 Electric motors, generators, dynamos and sockets..... > Ontario.....",left_only,,,80843,,,,,,,,,,,,,
+1899,cdn_34_5_1899,64,2,GP,"1 Electric motors, generators, dynamos and sockets..... > Total..... > Ontario.....",left_only,,,80843,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,3,GP,"1 Electric motors, generators, dynamos and sockets..... > Quebec.....",left_only,,,25308,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,4,GP,"1 Electric motors, generators, dynamos and sockets..... > Nova Scotia.....",left_only,,,12188,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,5,GP,"1 Electric motors, generators, dynamos and sockets..... > N. Brunswick.....",left_only,,,1097,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,6,GP,"1 Electric motors, generators, dynamos and sockets..... > B. Columbia.....",left_only,,,1429,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,7,GP,"1 Electric motors, generators, dynamos and sockets..... > .....",left_only,,,120865,,,,,,,,,,,,,
-1899,cdn_34_5_1899,64,8,GP,"2 Embroideries, not otherwise provided for. > Great Britain.....",left_only,,,18278,,,,,,,,,,,,,
+1899,cdn_34_5_1899,64,8,GP,"1 Electric motors, generators, dynamos and sockets..... > 2 Embroideries, not otherwise provided for. > Great Britain.....",left_only,,,18278,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,9,GP,"2 Embroideries, not otherwise provided for. > Austria.....",left_only,,,605,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,10,GP,"2 Embroideries, not otherwise provided for. > China.....",left_only,,,21,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,11,GP,"2 Embroideries, not otherwise provided for. > France.....",left_only,,,5756,,,,,,,,,,,,,
@@ -372,7 +358,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,64,14,GP,"2 Embroideries, not otherwise provided for. > Switzerland.....",left_only,,,8377,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,15,GP,"2 Embroideries, not otherwise provided for. > Turkey.....",left_only,,,633,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,16,GP,"2 Embroideries, not otherwise provided for. > United States.....",left_only,,,4807,,,,,,,,,,,,,
-1899,cdn_34_5_1899,64,17,GP,"2 Embroideries, not otherwise provided for. > Ontario.....",left_only,,,19531,,,,,,,,,,,,,
+1899,cdn_34_5_1899,64,17,GP,"2 Embroideries, not otherwise provided for. > Total..... > Ontario.....",left_only,,,19531,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,18,GP,"2 Embroideries, not otherwise provided for. > Quebec.....",left_only,,,25098,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,19,GP,"2 Embroideries, not otherwise provided for. > Nova Scotia.....",left_only,,,651,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,20,GP,"2 Embroideries, not otherwise provided for. > N. Brunswick.....",left_only,,,807,,,,,,,,,,,,,
@@ -384,13 +370,13 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,64,26,GP,3 Emery wheels and manufactures of emery. > France.....,left_only,,,87,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,27,GP,3 Emery wheels and manufactures of emery. > Germany.....,left_only,,,252,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,28,GP,3 Emery wheels and manufactures of emery. > United States.....,left_only,,,21692,,,,,,,,,,,,,
-1899,cdn_34_5_1899,64,29,GP,3 Emery wheels and manufactures of emery. > Ontario.....,left_only,,,14174,,,,,,,,,,,,,
+1899,cdn_34_5_1899,64,29,GP,3 Emery wheels and manufactures of emery. > Total..... > Ontario.....,left_only,,,14174,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,30,GP,3 Emery wheels and manufactures of emery. > Quebec.....,left_only,,,5391,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,31,GP,3 Emery wheels and manufactures of emery. > Nova Scotia.....,left_only,,,732,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,32,GP,3 Emery wheels and manufactures of emery. > N. Brunswick.....,left_only,,,1503,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,33,GP,3 Emery wheels and manufactures of emery. > Manitoba.....,left_only,,,17,,,,,,,,,,,,,
 1899,cdn_34_5_1899,64,34,GP,3 Emery wheels and manufactures of emery. > B. Columbia.....,left_only,,,591,,,,,,,,,,,,,
-1899,cdn_34_5_1899,68,0,GP,Total..... > Ontario.....,left_only,,,1218,,,,,,,,,,,,,
+1899,cdn_34_5_1899,68,0,GP,"DUTIABLE GOODS—Con. > 1 Fancy goods, viz— > Feathers, fancy, undressed— > Total..... > Ontario.....",left_only,,,1218,,,,,,,,,,,,,
 1899,cdn_34_5_1899,68,1,GP,Quebec.....,left_only,,,5352,,,,,,,,,,,,,
 1899,cdn_34_5_1899,68,2,GP,Nova Scotia.....,joined_weak,position,,95,,1004,200.8,214,32.1,,,,,1218,232.9,1,-2
 1899,cdn_34_5_1899,68,3,GP,N. Brunswick.....,joined_weak,position,,3,,5352,1076.4,95,21.38,,,,,5352,1070.4,,-1
@@ -430,7 +416,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,68,43,GP,N. Brunswick.....,joined_weak,position,,9,,9,1.8,,,,,,,9,1.8,,-1
 1899,cdn_34_5_1899,68,44,GP,B. Columbia.....,joined_weak,position,,191,,191,38.2,,,,,,,191,38.2,,-1
 1899,cdn_34_5_1899,68,45,GP,,joined_weak,position,,402,,402,80.4,,,,,,,402,80.4,,-1
-1899,cdn_34_5_1899,69,0,GP,"1 Laces, lace collars and similar goods, lace nets and nettings of cotton, linen, silk or other material. .... > Great Britain.....",joined_weak,position,,464483,,123455,43208.88,340771,89453.43,464226,,,,132662.31,,,0
+1899,cdn_34_5_1899,69,0,GP,"DUTIABLE GOODS—Con. > Fancy goods, viz— > 1 Laces, lace collars and similar goods, lace nets and nettings of cotton, linen, silk or other material. .... > Great Britain.....",joined_weak,position,,464483,,123455,43208.88,340771,89453.43,464226,,,,132662.31,,,0
 1899,cdn_34_5_1899,69,1,GP,"B. Pose., other.....",joined_weak,position,,447,,447,156.45,,,447,,,,156.45,,,0
 1899,cdn_34_5_1899,69,2,GP,Belgium.....,joined_weak,position,,1803,,1803,631.05,,,1803,,,,631.05,,,0
 1899,cdn_34_5_1899,69,3,GP,China.....,joined_weak,position,,69,,69,24.15,,,69,,,,24.15,,,0
@@ -484,7 +470,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,73,23,GP,,joined_weak,position,2062,53,2062,53,20.62,,,,,,,2062.53,20.62,,-1
 1899,cdn_34_5_1899,74,4,GP,Quebec . . . . .,joined_weak,position,1936,94,1936,94,19.36,,,,,,,1936.94,19.36,,-1
 1899,cdn_34_5_1899,74,11,GP,Quebec . . . . .,joined_weak,position,1705,119,625,45,11.25,1080.74,13.88,1705,,,,119,25.13,,-1
-1899,cdn_34_5_1899,74,29,GP,United States. . . . .,left_only,,108,8,,,,,,,,,,,,,
+1899,cdn_34_5_1899,74,29,GP,"5 "" "" canned, in cans not over one pint > Great Britain . . . . . > Lbs. > Lbs. > United States. . . . .",left_only,,108,8,,,,,,,,,,,,,
 1899,cdn_34_5_1899,74,30,GP,,joined_weak,position,58303,7284,57764,7069,1769.4,,8,2.43,,,,,7069,1769.4,-2
 1899,cdn_34_5_1899,75,0,GP,,right_only,,,,,964,173.61,,,,,,,6970,964,173.61,2
 1899,cdn_34_5_1899,75,1,GP,,right_only,,,,,44,18.0,,,,,,,720.44,18.0,,-1
@@ -516,7 +502,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,75,34,GP,"7 "" Salmon, fresh..... > United States— Ontario..... Quebec..... B. Columbia.... Yukon.....",joined_weak,position,,,,583,58.28,,,,,,,11656,583,58.28,2
 1899,cdn_34_5_1899,76,0,GP,,right_only,,,,,17,2.7,,,,,,,270.17,2.7,1,-2
 1899,cdn_34_5_1899,76,1,GP,,right_only,,,,,226,37.31,,,,,,,3731,226,37.31,2
-1899,cdn_34_5_1899,76,2,GP,"1 Fish— Salmon, smoked..... > United States— Ontario..... Quebec..... B. Columbia.....",joined_weak,position,,,,8,2.5,,,,,,,250,8,2.5,2
+1899,cdn_34_5_1899,76,2,GP,"DUTIABLE GOODS—Con. > Lbs. > Lbs. > 1 Fish— Salmon, smoked..... > United States— Ontario..... Quebec..... B. Columbia.....",joined_weak,position,,,,8,2.5,,,,,,,250,8,2.5,2
 1899,cdn_34_5_1899,76,4,GP,,right_only,,,,,,,600.26,4.88,600.26,,,,4.88,2,,-1
 1899,cdn_34_5_1899,76,6,GP,Ontario.....,joined_weak,position,28600,1306,28000,1280,320.0,600.26,4.88,28600,,,,1306,324.88,,-1
 1899,cdn_34_5_1899,76,8,GP,N. Brunswick...,joined_weak,position,1200,80,1200,80,20.0,,,,,,,1200.8,20.0,,-1
@@ -542,20 +528,19 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,79,5,GP,"1 All other, pickled or salted, in barrels > Nova Scotia....",joined_weak,position,3400,53,,67,12.89,75,2,0.56,,,,1364.69,13.45,,-1
 1899,cdn_34_5_1899,79,13,GP,"2 "" Prepared or preserved, N.E.S.. .... > France.....",joined_weak,position,1720,259,175,35,8.75,200,37,6.91,,,,375.72,15.66,,-1
 1899,cdn_34_5_1899,79,20,GP,"2 "" Prepared or preserved, N.E.S.. .... > New Brunswick..",joined_weak,position,5097,441,4497,392,98.0,600.49,9.19,5097,,,,441,107.19,,-1
-1899,cdn_34_5_1899,79,29,GP,"3 "" Fish oil—Cod, N.E.S. .... > Ontario.....",joined_weak,position,303,100,263,87,17.4,40.13,1.95,303,,,,100,19.35,,-1
+1899,cdn_34_5_1899,79,29,GP,"3 "" Fish oil—Cod, N.E.S. .... > Total..... > Ontario.....",joined_weak,position,303,100,263,87,17.4,40.13,1.95,303,,,,100,19.35,,-1
 1899,cdn_34_5_1899,79,31,GP,,joined_weak,position,553,252,513,239,47.8,40.13,1.95,553,,,,252,49.75,,-1
 1899,cdn_34_5_1899,80,13,GP,Nova Scotia....,joined_weak,position,123,65,123,65,13.0,,,,,,,123.65,13.0,,-1
-1899,cdn_34_5_1899,80,14,GP,,joined_weak,position,1373,235,1218,187,37.7,155.48,7.2,1373,,,,235,44.9,,-1
+1899,cdn_34_5_1899,80,14,GP,B. Columbia....,joined_weak,position,1373,235,1218,187,37.7,155.48,7.2,1373,,,,235,44.9,,-1
 1899,cdn_34_5_1899,80,19,GP,St. Pierre.....,left_only,,,1393,,,,,,,,,,,,,
 1899,cdn_34_5_1899,80,35,GP,Quebec.....,left_only,,,1632,,,,,,,,,,,,,
-1899,cdn_34_5_1899,82,13,GP,"2 „ Sail twine of flax or hemp, to be used for boats' and ships' sails..... > Total.....",joined_weak,position,,62,14.5,10,0.5,12,4,0.15,,,,62,14,0.65,2
 1899,cdn_34_5_1899,84,1,GP,Quebec.....,joined_weak,position,408,98,408,98,29.4,,,,,,,408.98,29.4,,-1
 1899,cdn_34_5_1899,84,4,GP,N. W. Ter.....,joined_weak,position,175,58,175,58,17.4,,,,,,,175.58,17.4,,-1
 1899,cdn_34_5_1899,84,8,GP,France.....,joined_weak,position,5705,707,5505,610,152.5,200.97,18.2,5705,,,,707,170.7,,-1
-1899,cdn_34_5_1899,85,10,GP,Belgium.....,joined_weak,position,198735,107374,14625,6409,1602.25,,101271,18988.49,,,,,107680,20590.74,2
+1899,cdn_34_5_1899,85,10,GP,""" Linen thread..... > Great Britain..... > Lbs. > Lbs. > Belgium.....",joined_weak,position,198735,107374,14625,6409,1602.25,,101271,18988.49,,,,,107680,20590.74,2
 1899,cdn_34_5_1899,85,12,GP,Germany.....,joined_weak,position,421,201,249,144,36.0,172.57,10.9,421,,,,201,46.9,,-1
 1899,cdn_34_5_1899,85,21,GP,P. E. Island.....,joined_weak,position,498,200,254,110,27.5,244.9,16.89,498,,,,200,44.39,,-1
-1899,cdn_34_5_1899,85,35,GP,United States.....,joined_weak,position,850,56,,1208,302.0,850,56,10.5,,,,850.56,10.5,,-1
+1899,cdn_34_5_1899,85,35,GP,"5 "" Yarn, singles, flax, hemp and jute, N.E.S..... > Great Britain..... > Lbs. > Lbs. > United States.....",joined_weak,position,850,56,,1208,302.0,850,56,10.5,,,,850.56,10.5,,-1
 1899,cdn_34_5_1899,85,37,GP,Total..... > Ontario.....,joined_weak,position,800,52,,,,800,52,9.75,,,,800.52,9.75,5,-2
 1899,cdn_34_5_1899,85,40,GP,,joined_weak,position,21098,1264,20248,1208,302.0,850.56,10.5,21098,,,,1264,312.5,,-1
 1899,cdn_34_5_1899,87,21,GP,Quebec.....,joined_weak,position,1424059,39965,1301402,37263,13014.62,,,,,,,1301462,37263,13014.62,2
@@ -659,10 +644,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,95,38,GP,,right_only,,,,,12671,2534.65,,7,1.05,,,,,12678,2535.7,2
 1899,cdn_34_5_1899,95,39,GP,,right_only,,,,,552,110.4,,,,,,,,552,110.4,2
 1899,cdn_34_5_1899,96,2,GP,,right_only,,,,,,,300,11,5.05,,,,300,11,5.05,2
-1899,cdn_34_5_1899,96,15,GP,1 Fruits in air-tight cans or other packages.,joined_weak,position,,32,4.32,4,0.72,,,,,,,32,4,0.72,2
-1899,cdn_34_5_1899,96,19,GP,1 Fruits in air-tight cans or other packages. > 2 Fruits preserved in brandy or preserved in other spirits. > France.....,joined_weak,position,,24,,35,32.0,,,,,,,16,35,32.0,2
-1899,cdn_34_5_1899,96,21,GP,Total..... > 2 Fruits preserved in brandy or preserved in other spirits.,joined_weak,position,,30,134.3,134,60.25,,,,,,,30,134,60.25,2
-1899,cdn_34_5_1899,96,22,GP,2 Fruits preserved in brandy or preserved in other spirits.,joined_weak,position,,18,121.25,137,51.5,,,,,,,25,137,51.5,2
+1899,cdn_34_5_1899,96,19,GP,2 Fruits preserved in brandy or preserved in other spirits. > France.....,joined_weak,position,,24,,35,32.0,,,,,,,16,35,32.0,2
 1899,cdn_34_5_1899,99,27,GP,,left_only,,27496,,,,,,,,,,,,,,
 1899,cdn_34_5_1899,99,30,GP,Nova Scotia.....,joined_weak,position,6169,158,5000,60,18.0,1169.98,22.06,6169,,,,158,40.06,,-1
 1899,cdn_34_5_1899,99,32,GP,Manitoba.....,joined_weak,position,26722,1788,26322,1772,531.6,400.16,3.6,26722,,,,1788,535.2,,-1
@@ -672,9 +654,9 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,104,10,GP,Total..... > Ontario.....,joined_weak,position,179428,6870,180354,6920,1729.8,112.27,5.06,180466,,,,6947,1734.86,,-1
 1899,cdn_34_5_1899,104,13,GP,N. Brunswick.....,joined_weak,position,6421,92,6421,92,23.0,,,,,,,6421.92,23.0,,-1
 1899,cdn_34_5_1899,104,33,GP,Nova Scotia.....,joined_weak,position,650,62,650,62,13.0,,,,,,,650.62,13.0,,-1
-1899,cdn_34_5_1899,105,0,GP,"1 Gunpowder and other explosives— Giant powder, nitro and other explosives ..... > Great Britain.....",left_only,,2050,499,2050,,,,,,,,,,,,
+1899,cdn_34_5_1899,105,0,GP,"DUTIABLE GOODS—Con. > 1 Gunpowder and other explosives— Giant powder, nitro and other explosives ..... > Great Britain.....",left_only,,2050,499,2050,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,1,GP,"1 Gunpowder and other explosives— Giant powder, nitro and other explosives ..... > United States.....",left_only,,441779,67153,441779,,,,,,,,,,,,
-1899,cdn_34_5_1899,105,2,GP,"1 Gunpowder and other explosives— Giant powder, nitro and other explosives ..... > Ontario.....",left_only,,36432,3706,36432,,,,,,,,,,,,
+1899,cdn_34_5_1899,105,2,GP,"1 Gunpowder and other explosives— Giant powder, nitro and other explosives ..... > Total ..... > Ontario.....",left_only,,36432,3706,36432,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,3,GP,"1 Gunpowder and other explosives— Giant powder, nitro and other explosives ..... > Quebec.....",left_only,,20,5,20,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,4,GP,"1 Gunpowder and other explosives— Giant powder, nitro and other explosives ..... > Nova Scotia.....",left_only,,6050,967,6050,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,5,GP,"1 Gunpowder and other explosives— Giant powder, nitro and other explosives ..... > N. Brunswick.....",left_only,,10000,1310,10000,,,,,,,,,,,,
@@ -682,7 +664,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,105,7,GP,"1 Gunpowder and other explosives— Giant powder, nitro and other explosives ..... > Yukon.....",joined_weak,position,2100,315,2100,,,,,,,,,,,,0
 1899,cdn_34_5_1899,105,9,GP,"2 "" Nitro-glycerine ..... > Great Britain.....",left_only,,2000,486,2000,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,10,GP,"2 "" Nitro-glycerine ..... > United States.....",left_only,,420,141,420,,,,,,,,,,,,
-1899,cdn_34_5_1899,105,11,GP,"2 "" Nitro-glycerine ..... > Ontario.....",joined_weak,position,20,5,20,,,2000,486,45.0,,,,,,,0
+1899,cdn_34_5_1899,105,11,GP,"2 "" Nitro-glycerine ..... > Total..... > Ontario.....",joined_weak,position,20,5,20,,,2000,486,45.0,,,,,,,0
 1899,cdn_34_5_1899,105,12,GP,"2 "" Nitro-glycerine ..... > Nova Scotia.....",joined_weak,position,2000,486,2000,141,12.6,,,,,,,,,,0
 1899,cdn_34_5_1899,105,13,GP,N. W. Ter.....,joined_weak,position,400,136,400,,,2000,486,45.0,,,,,,,0
 1899,cdn_34_5_1899,105,15,GP,"3 "" Gun, rifle and pistol cartridges or other ammunitions, N.O.P..... > Great Britain.....",left_only,,,22932,,,,,,,,,,,,,
@@ -691,7 +673,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,105,18,GP,"3 "" Gun, rifle and pistol cartridges or other ammunitions, N.O.P..... > France.....",left_only,,,130,,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,19,GP,"3 "" Gun, rifle and pistol cartridges or other ammunitions, N.O.P..... > Germany.....",left_only,,,256,,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,20,GP,"3 "" Gun, rifle and pistol cartridges or other ammunitions, N.O.P..... > United States.....",left_only,,,67694,,,,,,,,,,,,,
-1899,cdn_34_5_1899,105,21,GP,"3 "" Gun, rifle and pistol cartridges or other ammunitions, N.O.P..... > Ontario.....",left_only,,,23742,,,,,,,,,,,,,
+1899,cdn_34_5_1899,105,21,GP,"3 "" Gun, rifle and pistol cartridges or other ammunitions, N.O.P..... > Total ..... > Ontario.....",left_only,,,23742,,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,22,GP,"3 "" Gun, rifle and pistol cartridges or other ammunitions, N.O.P..... > Quebec.....",left_only,,,17584,,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,23,GP,"3 "" Gun, rifle and pistol cartridges or other ammunitions, N.O.P..... > Nova Scotia.....",left_only,,,2076,,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,24,GP,"3 "" Gun, rifle and pistol cartridges or other ammunitions, N.O.P..... > N. Brunswick.....",left_only,,,1277,,,,,,,,,,,,,
@@ -705,12 +687,12 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,105,32,GP,"4 "" Gun wads, percussion caps, primers and cartridge cases..... > France.....",left_only,,,2,,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,33,GP,"4 "" Gun wads, percussion caps, primers and cartridge cases..... > Germany.....",left_only,,,985,,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,34,GP,"4 "" Gun wads, percussion caps, primers and cartridge cases..... > United States.....",left_only,,,10460,,,,,,,,,,,,,
-1899,cdn_34_5_1899,105,35,GP,"4 "" Gun wads, percussion caps, primers and cartridge cases..... > Ontario.....",left_only,,,4863,,,,,,,,,,,,,
+1899,cdn_34_5_1899,105,35,GP,"4 "" Gun wads, percussion caps, primers and cartridge cases..... > Total ..... > Ontario.....",left_only,,,4863,,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,36,GP,"4 "" Gun wads, percussion caps, primers and cartridge cases..... > Quebec.....",left_only,,,3482,,,,,,,,,,,,,
 1899,cdn_34_5_1899,105,37,GP,"4 "" Gun wads, percussion caps, primers and cartridge cases..... > Nova Scotia.....",left_only,,,2254,,,,,,,,,,,,,
-1899,cdn_34_5_1899,106,0,GP,"1 Gun or pistol covers or cases, game bags, loading tools and cartridge belts of any material..... > Great Britain.....",left_only,,,575,,,,,,,,,,,,,
+1899,cdn_34_5_1899,106,0,GP,"DUTIABLE GOODS—Con. > 1 Gun or pistol covers or cases, game bags, loading tools and cartridge belts of any material..... > Great Britain.....",left_only,,,575,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,1,GP,"1 Gun or pistol covers or cases, game bags, loading tools and cartridge belts of any material..... > United States.....",left_only,,,4765,,,,,,,,,,,,,
-1899,cdn_34_5_1899,106,2,GP,"1 Gun or pistol covers or cases, game bags, loading tools and cartridge belts of any material..... > Ontario.....",left_only,,,1081,,,,,,,,,,,,,
+1899,cdn_34_5_1899,106,2,GP,"1 Gun or pistol covers or cases, game bags, loading tools and cartridge belts of any material..... > Total..... > Ontario.....",left_only,,,1081,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,3,GP,"1 Gun or pistol covers or cases, game bags, loading tools and cartridge belts of any material..... > Quebec.....",left_only,,,1678,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,4,GP,"1 Gun or pistol covers or cases, game bags, loading tools and cartridge belts of any material..... > Nova Scotia.....",left_only,,,87,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,5,GP,"1 Gun or pistol covers or cases, game bags, loading tools and cartridge belts of any material..... > N. Brunswick.....",left_only,,,125,,,,,,,,,,,,,
@@ -719,7 +701,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,106,11,GP,"2 Gutta percha and India-rubber, manufactures of :— Boots and shoes..... > Great Britain.....",left_only,,,262,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,12,GP,"2 Gutta percha and India-rubber, manufactures of :— Boots and shoes..... > France.....",left_only,,,16,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,13,GP,"2 Gutta percha and India-rubber, manufactures of :— Boots and shoes..... > United States.....",left_only,,,57591,,,,,,,,,,,,,
-1899,cdn_34_5_1899,106,14,GP,"2 Gutta percha and India-rubber, manufactures of :— Boots and shoes..... > Ontario.....",left_only,,,1943,,,,,,,,,,,,,
+1899,cdn_34_5_1899,106,14,GP,"2 Gutta percha and India-rubber, manufactures of :— Boots and shoes..... > Total..... > Ontario.....",left_only,,,1943,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,15,GP,"2 Gutta percha and India-rubber, manufactures of :— Boots and shoes..... > Quebec.....",left_only,,,2869,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,16,GP,"2 Gutta percha and India-rubber, manufactures of :— Boots and shoes..... > Nova Scotia.....",left_only,,,16838,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,17,GP,"2 Gutta percha and India-rubber, manufactures of :— Boots and shoes..... > N. Brunswick.....",left_only,,,2739,,,,,,,,,,,,,
@@ -731,17 +713,16 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,106,23,GP,,left_only,,,57869,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,24,GP,"3 "" Belting..... > Great Britain.....",left_only,,,565,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,25,GP,"3 "" Belting..... > United States.....",left_only,,,23226,,,,,,,,,,,,,
-1899,cdn_34_5_1899,106,26,GP,"3 "" Belting..... > Ontario.....",left_only,,,3440,,,,,,,,,,,,,
+1899,cdn_34_5_1899,106,26,GP,"3 "" Belting..... > Total..... > Ontario.....",left_only,,,3440,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,27,GP,"3 "" Belting..... > Quebec.....",left_only,,,6764,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,28,GP,"3 "" Belting..... > Nova Scotia.....",left_only,,,3489,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,29,GP,"3 "" Belting..... > N. Brunswick.....",left_only,,,5233,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,30,GP,"3 "" Belting..... > Manitoba.....",left_only,,,153,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,31,GP,"3 "" Belting..... > B. Columbia.....",left_only,,,4434,,,,,,,,,,,,,
 1899,cdn_34_5_1899,106,32,GP,"3 "" Belting..... > P. E. Island.....",left_only,,,13,,,,,,,,,,,,,
-1899,cdn_34_5_1899,108,27,GP,"2 Hair and manufactures of, not otherwise provided for— Braids, chains or cords..... > 3 "" Curled or dyed..... > Great Britain.....",joined_weak,position,,338,,53,10.6,,188,285,,,,42.75,,338,-1
-1899,cdn_34_5_1899,108,35,GP,,right_only,,,,,10724,2144.8,158,285,42.75,,,,375,56,11.2,-2
+1899,cdn_34_5_1899,108,27,GP,"3 "" Curled or dyed..... > Great Britain.....",joined_weak,position,,338,,53,10.6,,188,285,,,,42.75,,338,-1
 1899,cdn_34_5_1899,108,36,GP,,right_only,,,,,196,58.8,,7696,1731.81,,,,62547,11009,2187.55,-2
-1899,cdn_34_5_1899,108,38,GP,"3 "" Curled or dyed.....",left_only,,62546,11008,62359,,,,,,,,,,,,
+1899,cdn_34_5_1899,108,37,GP,,joined_weak,position,62546,11008,62359,742,222.6,,1605,361.13,,,,,,,0
 1899,cdn_34_5_1899,111,12,GP,,joined_weak,position,717555,136223,644348,114694,38672.94,64001,19562,2880.09,,,,708549,134256,41553.03,2
 1899,cdn_34_5_1899,112,0,GP,,right_only,,,,,17057,3411.47,,,,,,,102992,17057,3411.47,2
 1899,cdn_34_5_1899,112,1,GP,,right_only,,,,,12060,2412.0,,,,,,,217,12060,2412.0,2
@@ -779,7 +760,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,113,4,GP,,right_only,,,,,16909,3381.8,,,,,,,1137,16909,3381.8,2
 1899,cdn_34_5_1899,113,5,GP,,right_only,,,,,962,192.4,,,,,,,73,962,192.4,2
 1899,cdn_34_5_1899,113,6,GP,,right_only,,,,,13,2.6,,,,,,,2.13,2.6,,-1
-1899,cdn_34_5_1899,113,7,GP,"1 Iron and steel and manufactures of— Agricultural implements, N.E.S.— Harrows. .... > United States— Ontario . . . . . Quebec . . . . . Nova Scotia . . . . . N. Brunswick. . . . . Manitoba . . . . . B. Columbia . . . . . P. E. Island . . . . . N. W. Ter. ....",joined_weak,position,,,,2400,480.0,,,,,,,187,2400,480.0,2
+1899,cdn_34_5_1899,113,7,GP,"DUTIABLE GOODS—Con. > 1 Iron and steel and manufactures of— Agricultural implements, N.E.S.— Harrows. .... > United States— Ontario . . . . . Quebec . . . . . Nova Scotia . . . . . N. Brunswick. . . . . Manitoba . . . . . B. Columbia . . . . . P. E. Island . . . . . N. W. Ter. ....",joined_weak,position,,,,2400,480.0,,,,,,,187,2400,480.0,2
 1899,cdn_34_5_1899,113,9,GP,,right_only,,,,,347133,69425.1,,,,,,,3702,347133,69425.1,2
 1899,cdn_34_5_1899,113,10,GP,,right_only,,,,,8604,1720.8,,,,,,,116,8604,1720.8,2
 1899,cdn_34_5_1899,113,11,GP,,right_only,,,,,368,73.6,,,,,,,4,368,73.6,2
@@ -873,10 +854,10 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,116,17,GP,"2 "" Spades and shovels and spade and shovel blanks, and iron or steel cut to shape for the same..... > B. Columbia.....",joined_weak,position,1144,6770,1126,6697,2343.95,18.73,19.18,1144,,,,6770,2363.13,,-1
 1899,cdn_34_5_1899,116,19,GP,,right_only,,,,,203,70.9,5,9,2.37,,,,47,212,73.27,2
 1899,cdn_34_5_1899,116,20,GP,,right_only,,,,,1529,535.15,,,,,,,168,1529,535.15,2
-1899,cdn_34_5_1899,116,22,GP,"3 "" Weeders..... > Ontario.....",joined_weak,position,7539,52543,7539,52265,10453.0,,,,,,,,52265,10453.0,2
+1899,cdn_34_5_1899,116,22,GP,"3 "" Weeders..... > United States— > No. > No. > Ontario.....",joined_weak,position,7539,52543,7539,52265,10453.0,,,,,,,,52265,10453.0,2
 1899,cdn_34_5_1899,116,38,GP,,right_only,,,,,270,67.5,,,,,,,,270,67.5,2
 1899,cdn_34_5_1899,117,3,GP,1 Iron and steel and manufactures of— Anvils and vises..... > Total .....,left_only,,,,5380,,,,,,,,,,,,
-1899,cdn_34_5_1899,117,13,GP,"1 Iron and steel and manufactures of— Anvils and vises..... > 2 "" Cart or wagon skeins or boxes..... > United States.....",joined_weak,position,,1192,225,,,4450,763,171.67,,,,4450,763,171.67,2
+1899,cdn_34_5_1899,117,13,GP,United States.....,joined_weak,position,,1192,225,,,4450,763,171.67,,,,4450,763,171.67,2
 1899,cdn_34_5_1899,117,14,GP,"Total..... > 2 "" Cart or wagon skeins or boxes.....",joined_weak,position,,4790,826,225,67.4,,,,,,,1192,225,67.4,2
 1899,cdn_34_5_1899,117,15,GP,"2 "" Cart or wagon skeins or boxes.....",joined_weak,position,,139,6,63,18.8,4450,763,171.67,,,,4790,826,190.47,2
 1899,cdn_34_5_1899,117,16,GP,"2 "" Cart or wagon skeins or boxes.....",joined_weak,position,,200,38,6,1.8,,,,,,,130,6,1.8,2
@@ -885,11 +866,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,117,21,GP,"3 "" Springs, axles, axle bars, N.E.S., and axle blanks and parts thereof, of iron or steel, for railway or tramway or other vehicles..... > Great Britain.....",left_only,,,,149,,,,,,,,,,,,
 1899,cdn_34_5_1899,117,22,GP,"3 "" Springs, axles, axle bars, N.E.S., and axle blanks and parts thereof, of iron or steel, for railway or tramway or other vehicles..... > Belgium.....",left_only,,,,1,,,,,,,,,,,,
 1899,cdn_34_5_1899,117,25,GP,,right_only,,,,,36654,12828.67,,,,,,,11774,36654,12828.67,2
-1899,cdn_34_5_1899,117,28,GP,"3 "" Springs, axles, axle bars, N.E.S., and axle blanks and parts thereof, of iron or steel, for railway or tramway or other vehicles.....",joined_weak,position,,143,766.88,349,121.72,55,417,109.47,,,,143,766,231.19,2
 1899,cdn_34_5_1899,117,29,GP,"4 "" Bar iron or steel rolled whether in coils, bundles, rods or bars, compris- ing rounds, ovals, squares and flats, and rolled shapes, N.O.P.....",joined_weak,position,,78,100.78,100,35.0,,,,,,,78,100,35.0,2
-1899,cdn_34_5_1899,117,30,GP,"4 "" Bar iron or steel rolled whether in coils, bundles, rods or bars, compris- ing rounds, ovals, squares and flats, and rolled shapes, N.O.P.....",joined_weak,position,,11,54.11,54,18.9,,,,,,,11,54,18.9,2
-1899,cdn_34_5_1899,117,35,GP,"4 "" Bar iron or steel rolled whether in coils, bundles, rods or bars, compris- ing rounds, ovals, squares and flats, and rolled shapes, N.O.P.....",joined_weak,position,,67,70.67,70,23.45,,,,,,,67,70,23.45,2
-1899,cdn_34_5_1899,117,36,GP,"4 "" Bar iron or steel rolled whether in coils, bundles, rods or bars, compris- ing rounds, ovals, squares and flats, and rolled shapes, N.O.P.....",joined_weak,position,,255,388.73,150,25.55,182,238,47.78,,,,255,388,73.33,2
 1899,cdn_34_5_1899,118,0,GP,DUTIABLE GOODS— Con.,left_only,,,8,,,,,,,,,,,,,
 1899,cdn_34_5_1899,118,33,GP,,joined_weak,position,,752,1638.33,79,3.95,719,1559,58.47,,,,752,1638,62.42,2
 1899,cdn_34_5_1899,118,34,GP,,joined_weak,position,,132.82,132,82,4.1,,,,,,,132.82,4.1,,-1
@@ -950,7 +927,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,124,0,GP,,right_only,,,,,499,124.75,,,,,,,10,499,124.75,2
 1899,cdn_34_5_1899,124,1,GP,,right_only,,,,,35,8.75,,,,,,,1.35,8.75,,-1
 1899,cdn_34_5_1899,124,2,GP,,right_only,,,,,1540,385.0,,,,,,,21,1540,385.0,2
-1899,cdn_34_5_1899,124,3,GP,1 Iron and steel and manufactures of— Portable machines— Horse powers ..... > United States— Quebec..... Nova Scotia .... Manitoba .... B. Columbia....,joined_weak,position,,,,139,34.75,,,,,,,2,139,34.75,2
+1899,cdn_34_5_1899,124,3,GP,DUTIABLE GOODS—Con. > 1 Iron and steel and manufactures of— Portable machines— Horse powers ..... > United States— Quebec..... Nova Scotia .... Manitoba .... B. Columbia....,joined_weak,position,,,,139,34.75,,,,,,,2,139,34.75,2
 1899,cdn_34_5_1899,124,5,GP,,right_only,,,,,125,31.25,,,,,,,1,125,31.25,2
 1899,cdn_34_5_1899,124,6,GP,,right_only,,,,,71936,17984.09,,,,,,,100,71936,17984.09,2
 1899,cdn_34_5_1899,124,7,GP,,right_only,,,,,1613,403.34,,,,,,,7,1613,403.34,2
@@ -978,11 +955,9 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,124,33,GP,Total. .... > Ontario ..... Quebec. .... Nova Scotia.... N. Brunswick... Manitoba .... B. Columbia .... P. E. Island.... N. W. Ter.....,joined_weak,position,,,,1436,359.0,,,,,,,86,1436,359.0,2
 1899,cdn_34_5_1899,125,37,GP,,joined_weak,position,1587,91910,1587,92040,23023.77,1,12,2.25,,,,1586,92052,23026.02,2
 1899,cdn_34_5_1899,126,18,GP,"2 "" Malleable iron castings and iron or steel castings, N.E.S..... > Great Britain.....",joined_weak,position,,161,,163,40.75,114,188,30.14,,,,161,351,70.89,2
-1899,cdn_34_5_1899,126,23,GP,"2 "" Malleable iron castings and iron or steel castings, N.E.S..... > N. Brunswick.....",joined_weak,position,,161,351.47,163,40.75,114,188,30.14,,,,161,351,70.89,2
-1899,cdn_34_5_1899,126,24,GP,"2 "" Malleable iron castings and iron or steel castings, N.E.S..... > Manitoba.....",joined_weak,position,,12,28.12,28,7.0,,,,,,,12.28,7.0,,-1
-1899,cdn_34_5_1899,126,26,GP,"2 "" Malleable iron castings and iron or steel castings, N.E.S..... > N. W. Ter.....",joined_weak,position,,16,95.16,95,23.75,,,,,,,16.95,23.75,,-1
+1899,cdn_34_5_1899,126,26,GP,N. W. Ter.....,joined_weak,position,16,95,16,95,23.75,,,,,,,16.95,23.75,,-1
 1899,cdn_34_5_1899,126,38,GP,,right_only,,,,,6,1.8,59793,2265,509.92,,,,59893,2271,511.72,2
-1899,cdn_34_5_1899,126,40,GP,"4 "" Nails and spikes, wrought and pressed, trunk, clout, coopers, cigar box, Hungarian, horse shoe and other nails, N.E.S..... > Germany.....",joined_weak,position,,350.75,,,,350,75,16.88,,,,350.75,16.88,,-1
+1899,cdn_34_5_1899,126,40,GP,France..... > Germany.....,joined_weak,position,350,75,,,,350,75,16.88,,,,350.75,16.88,,-1
 1899,cdn_34_5_1899,127,5,GP,B. Columbia.....,joined_weak,position,15738,708,14138,642,192.6,1600.66,14.85,15738,,,,708,207.45,,-1
 1899,cdn_34_5_1899,127,10,GP,"2 "" Nails and spikes, cut and railway spikes..... > Great Britain.....",joined_weak,position,52957,1281,,,,59229,1440,222.11,,,,59229,1440,222.11,2
 1899,cdn_34_5_1899,127,12,GP,Total > Ontario.....,joined_weak,position,45782,944,43449,803,217.26,2333.51,8.75,45782,,,,944,226.01,,-1
@@ -993,17 +968,17 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,129,16,GP,B. Columbia.....,joined_weak,position,2528,4246,2520,4234,882.33,8.12,2.1,2528,,,,4246,884.43,,-1
 1899,cdn_34_5_1899,130,0,GP,,right_only,,,,,,,10269,16966,2697.7,,,,,,,0
 1899,cdn_34_5_1899,130,3,GP,,joined_weak,position,73609,102547,62859,84339,22003.24,10269,16966,2697.7,,,,73125,101305,24700.94,2
-1899,cdn_34_5_1899,131,0,GP,"1 Iron and steel and manufactures of— Safes, doors for safes and vaults..... > United States—",left_only,,,8,,,,,,,,,,,,,
+1899,cdn_34_5_1899,131,0,GP,"DUTIABLE GOODS—Con. > 1 Iron and steel and manufactures of— Safes, doors for safes and vaults..... > United States—",left_only,,,8,,,,,,,,,,,,,
 1899,cdn_34_5_1899,131,16,GP,Total ..... > N. Brunswick.....,joined_weak,position,6819,787,6343,697,243.95,476.9,23.63,6819,,,,787,267.58,,-1
 1899,cdn_34_5_1899,131,18,GP,Total ..... > B. Columbia.....,joined_weak,position,6276,1131,6276,1131,395.85,545.4,10.49,6821,,,,1171,406.34,,-1
 1899,cdn_34_5_1899,131,20,GP,Total ..... > N. W. Ter.....,joined_weak,position,940,72,940,72,25.2,,,,,,,940.72,25.2,,-1
-1899,cdn_34_5_1899,131,38,GP,"4 "" Skates, of all kinds and parts thereof. > Great Britain.....",joined_weak,position,59,114,30,78,27.3,29.36,9.45,59,,,,114,36.75,4,-2
+1899,cdn_34_5_1899,131,38,GP,"4 "" Skates, of all kinds and parts thereof. > Pairs. > Pairs. > Great Britain.....",joined_weak,position,59,114,30,78,27.3,29.36,9.45,59,,,,114,36.75,4,-2
 1899,cdn_34_5_1899,132,0,GP,,right_only,,,,,912,319.3,40725,14153,3765.17,,,,42345,15065,4084.47,2
 1899,cdn_34_5_1899,132,1,GP,,right_only,,,,,18787,6575.45,95592,37257,9779.95,,,,141323,56044,16355.4,2
 1899,cdn_34_5_1899,132,2,GP,,right_only,,,,,7,2.45,1,4,1.05,,,,5,11,3.5,2
 1899,cdn_34_5_1899,132,3,GP,,right_only,,,,,96,33.6,28,32,8.4,,,,89,128,42.0,2
 1899,cdn_34_5_1899,132,4,GP,,right_only,,,,,300,105.0,,,,,,,304,300,105.0,2
-1899,cdn_34_5_1899,132,5,GP,1 Iron and steel and manufactures of— Skates of all kinds and parts thereof— Total..... > Ontario..... Quebec..... Nova Scotia..... N. Brunswick..... B. Columbia..... Yukon.....,joined_weak,position,,,,62,21.7,,,,,,,100,62,21.7,2
+1899,cdn_34_5_1899,132,5,GP,DUTIABLE GOODS—Con. > 1 Iron and steel and manufactures of— Skates of all kinds and parts thereof— Total..... > Ontario..... Quebec..... Nova Scotia..... N. Brunswick..... B. Columbia..... Yukon.....,joined_weak,position,,,,62,21.7,,,,,,,100,62,21.7,2
 1899,cdn_34_5_1899,132,6,GP,,joined_weak,position,135981,54385,47620,20164,7057.5,136346,51446,13554.57,,,,184166,71610,20612.07,2
 1899,cdn_34_5_1899,132,7,GP,,right_only,,,,,222353,11117.65,651,1015,38.06,,,,651,1015,38.06,-2
 1899,cdn_34_5_1899,132,8,GP,,right_only,,,,,,,,,,,,,214528,222353,11117.65,-2
@@ -1033,7 +1008,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,133,0,GP,,right_only,,,,,1764,264.6,,,,,,,1106,1764,264.6,2
 1899,cdn_34_5_1899,133,1,GP,,right_only,,,,,16109,2416.35,6297,10232,1151.1,,,,16353,26341,3567.45,2
 1899,cdn_34_5_1899,133,2,GP,,right_only,,,,,11278,1691.7,,,,,,,6824,11278,1691.7,2
-1899,cdn_34_5_1899,133,3,GP,1 Iron and steel and manufactures of— Swedish rolled iron and Swedish rolled steel nail rods under half an inch in diameter for the manufacture of horse-shoe nail ..... > Great Britain..... Norway and Sweden United States.....,joined_weak,position,,,,17804,2670.6,6297,10232,1151.1,,,,17453,28036,3821.7,2
+1899,cdn_34_5_1899,133,3,GP,DUTIABLE GOODS—Con. > 1 Iron and steel and manufactures of— Swedish rolled iron and Swedish rolled steel nail rods under half an inch in diameter for the manufacture of horse-shoe nail ..... > Great Britain..... Norway and Sweden United States.....,joined_weak,position,,,,17804,2670.6,6297,10232,1151.1,,,,17453,28036,3821.7,2
 1899,cdn_34_5_1899,133,4,GP,Total ..... > Quebec..... N. Brunswick...,joined_weak,position,,,,11347,1702.05,,,,,,,6830,11347,1702.05,2
 1899,cdn_34_5_1899,133,6,GP,,right_only,,,,,264,79.2,,,,,,,71,264,79.2,2
 1899,cdn_34_5_1899,133,7,GP,,right_only,,,,,96,28.8,,,,,,,42.96,28.8,,-1
@@ -1129,14 +1104,14 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,140,34,GP,,right_only,,,,,1295,388.57,,421,94.74,,,,,1716,483.31,2
 1899,cdn_34_5_1899,140,35,GP,,right_only,,,,,702,210.6,,,,,,,,702,210.6,2
 1899,cdn_34_5_1899,140,38,GP,,right_only,,,,,161,18.31,,,,,,,,161,48.31,0
-1899,cdn_34_5_1899,141,0,GP,1 Iron and steel and manufactures of— Tools and implements— Axes..... > Great Britain.....,left_only,,3,9,,,,,,,,,,,,,
+1899,cdn_34_5_1899,141,0,GP,DUTIABLE GOODS—Con. > 1 Iron and steel and manufactures of— Tools and implements— Axes..... > Great Britain.....,left_only,,3,9,,,,,,,,,,,,,
 1899,cdn_34_5_1899,141,1,GP,United States.....,joined_weak,position,9777,41547,9737,41401,10353.1,1,1,0.19,,,,1,41401,10353.1,-2
 1899,cdn_34_5_1899,141,5,GP,,joined_weak,position,,70,289.7,289,72.25,,,,,,,70,289,72.25,2
 1899,cdn_34_5_1899,141,8,GP,,joined_weak,position,,18,94.18,94,23.5,,,,,,,18.94,23.5,,-1
 1899,cdn_34_5_1899,143,7,GP,"2 Jellies, jams and preserves, N.E.S. .... > Great Britain.....",joined_weak,position,,41918,,1950,851.36,590503,40386,14404.69,,,,616581,42338,15256.05,0
 1899,cdn_34_5_1899,143,8,GP,"2 Jellies, jams and preserves, N.E.S. .... > Australasia.....",joined_weak,position,328,13,461,23,15.63,,,,,,,481,23,15.63,2
 1899,cdn_34_5_1899,143,15,GP,"2 Jellies, jams and preserves, N.E.S. .... > United States.....",joined_weak,position,95929,8825,93068,8571,3025.54,,,,,,,93088,8571,3025.54,2
-1899,cdn_34_5_1899,143,36,GP,Ontario..... > .....,joined_weak,position,292306,,,266356,79906.8,,24234,5453.13,,,,,290590,85359.93,2
+1899,cdn_34_5_1899,143,36,GP,Total..... > Ontario..... > .....,joined_weak,position,292306,,,266356,79906.8,,24234,5453.13,,,,,290590,85359.93,2
 1899,cdn_34_5_1899,143,37,GP,Quebec..... > .....,joined_weak,position,147594,,,136806,41041.65,,10882,2448.52,,,,,147688,43490.17,2
 1899,cdn_34_5_1899,143,38,GP,Nova Scotia..... > .....,joined_weak,position,7239,,,6729,2018.62,,510,114.79,,,,,7239,2133.41,2
 1899,cdn_34_5_1899,143,39,GP,N. Brunswick..... > .....,joined_weak,position,5100,,,4647,1394.1,,453,101.93,,,,,5100,1496.03,2
@@ -1145,15 +1120,12 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,143,42,GP,P. E. Island..... > .....,joined_weak,position,681,,,556,166.8,,75,16.89,,,,,631,183.69,2
 1899,cdn_34_5_1899,143,43,GP,N. W. Ter..... > .....,joined_weak,position,554,,,505,151.5,,49,10.35,,,,,554,161.85,2
 1899,cdn_34_5_1899,143,44,GP,Yukon..... > .....,joined_weak,position,1533,,,1533,459.9,,,,,,,,1533,459.9,2
-1899,cdn_34_5_1899,144,20,GP,"2 Lead and manufactures of— Old, scrap, pig and block.....",joined_weak,position,,2398,579.58,175,26.25,2342,404,45.45,,,,2398,579,71.7,2
 1899,cdn_34_5_1899,144,23,GP,"3 "" Bars, and in sheets ..... > United States.....",joined_weak,position,121,413,73,248,62.0,,,,,,,72,248,62.0,2
-1899,cdn_34_5_1899,144,28,GP,"3 "" Bars, and in sheets .....",joined_weak,position,,1341,4469.19,76,19.0,1322,4393,823.68,,,,1341,4469,842.68,2
-1899,cdn_34_5_1899,144,38,GP,"4 "" Pipe.....",joined_weak,position,,1450,64.5,15,5.25,1400,49,12.86,,,,1450.64,18.11,,-1
-1899,cdn_34_5_1899,144,40,GP,"4 "" Pipe.....",joined_weak,position,,30,2.3,2,0.7,,,,,,,30,2,0.7,2
+1899,cdn_34_5_1899,144,38,GP,B. Columbia.....,joined_weak,position,1450,64,50,15,5.25,1400,49,12.86,,,,1450.64,18.11,,-1
 1899,cdn_34_5_1899,146,0,GP,,right_only,,,,,231,34.65,,,,,,,554,231,34.65,2
 1899,cdn_34_5_1899,146,1,GP,,right_only,,,,,7260,1089.0,103343,39205,4410.86,,,,126652,46465,5499.86,2
 1899,cdn_34_5_1899,146,2,GP,,right_only,,,,,85,12.75,,,,,,,256.85,12.75,,-1
-1899,cdn_34_5_1899,146,3,GP,1 > Leather and manufactures of— Belting leather of all kinds— Total..... > Ontario..... Quebec..... Nova Scotia.... N. Brunswick...,joined_weak,position,,,,1882,282.3,,,,,,,7609,1882,282.3,2
+1899,cdn_34_5_1899,146,3,GP,DUTIABLE GOODS—Con. > 1 > Leather and manufactures of— Belting leather of all kinds— Total..... > Ontario..... Quebec..... Nova Scotia.... N. Brunswick...,joined_weak,position,,,,1882,282.3,,,,,,,7609,1882,282.3,2
 1899,cdn_34_5_1899,146,5,GP,,right_only,,,,,,,79,134,17.59,,,,79,134,17.59,2
 1899,cdn_34_5_1899,146,7,GP,,right_only,,,,,93,13.95,,,,,,,503.93,13.95,,-1
 1899,cdn_34_5_1899,146,8,GP,,right_only,,,,,48,7.2,,,,,,,200.48,7.2,,-1
@@ -1218,34 +1190,26 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,150,26,GP,France.....,joined_weak,position,261,519,257,599,119.8,179,362,54.3,,,,466,961,174.1,2
 1899,cdn_34_5_1899,150,31,GP,Nova Scotia.....,joined_weak,position,1112,1568,1048,1483,296.6,64.85,12.75,1112,,,,1568,309.35,,-1
 1899,cdn_34_5_1899,150,33,GP,Manitoba.....,joined_weak,position,139,229,117,188,37.6,72.96,14.4,189,,,,284,52.0,,-1
-1899,cdn_34_5_1899,151,34,GP,4 Malt . . . . .,joined_weak,position,,41,37.41,50780,9350.51,,,,,,,41,37,6.15,-2
-1899,cdn_34_5_1899,151,36,GP,4 Malt . . . . .,joined_weak,position,,63,50.63,51975,9630.21,346,365,38.93,,,,63,50,9.45,-2
 1899,cdn_34_5_1899,154,33,GP,"4 "" Britannia metal, manufactures of, not plated..... > France.....",left_only,,,152,,,,,,,,,,,,,
 1899,cdn_34_5_1899,154,34,GP,"4 "" Britannia metal, manufactures of, not plated..... > Germany.....",left_only,,,1462,,,,,,,,,,,,,
 1899,cdn_34_5_1899,154,42,GP,B. Columbia.....,left_only,,,11,,,,,,,,,,,,,
-1899,cdn_34_5_1899,155,0,GP,,left_only,,,8,,,,,,,,,,,,,
+1899,cdn_34_5_1899,155,0,GP,DUTIABLE GOODS—Con.,left_only,,,8,,,,,,,,,,,,,
 1899,cdn_34_5_1899,156,33,GP,,joined_weak,position,,49,784.25,95,33.25,24,689,180.87,,,,49,784,214.12,2
 1899,cdn_34_5_1899,156,34,GP,,joined_weak,position,,18,108.18,108,37.8,,,,,,,18,108,37.8,2
 1899,cdn_34_5_1899,156,38,GP,,joined_weak,position,,1.38,,,,1,38,9.98,,,,1,38,9.98,2
 1899,cdn_34_5_1899,159,1,GP,"1 Metal, N.E.S., and manufactures of— Stereotypes, electrotypes and celluloids almanacs, calendars, illustrated pamphlets, &c.— > Ontario.....",joined_weak,position,53169,2372,51811,2333,769.96,1796.34,20.2,53107,,,,2367,790.16,,-1
-1899,cdn_34_5_1899,159,8,GP,"1 Metal, N.E.S., and manufactures of— Stereotypes, electrotypes and celluloids almanacs, calendars, illustrated pamphlets, &c.—",joined_weak,position,259109,9384,247190,8940,3711.43,1867.39,21.27,249047,,,,8979,3732.7,,-1
+1899,cdn_34_5_1899,159,8,GP,"1 Metal, N.E.S., and manufactures of— Stereotypes, electrotypes and celluloids almanacs, calendars, illustrated pamphlets, &c.— > N. W. Ter.....",joined_weak,position,259109,9384,247190,8940,3711.43,1867.39,21.27,249047,,,,8979,3732.7,,-1
 1899,cdn_34_5_1899,160,24,GP,"4 Milk, condensed..... > Great Britain.....",joined_weak,position,,14232,,5974,2335.76,44294,3014,1086.0,,,,116107,8988,3421.76,2
 1899,cdn_34_5_1899,160,29,GP,"4 Milk, condensed..... > United States.....",joined_weak,position,1551970,141978,1508053,137711,49013.07,,,,,,,1508052,137711,49013.07,2
 1899,cdn_34_5_1899,160,32,GP,"4 Milk, condensed..... > Nova Scotia.....",joined_weak,position,20524,1611,13136,1423,589.3,3168,248,83.57,,,,21304,1671,672.87,2
 1899,cdn_34_5_1899,160,35,GP,"4 Milk, condensed..... > B. Columbia.....",joined_weak,position,1192335,100731,1087473,88647,33721.14,35244,2312,859.06,,,,1072716,90959,34580.2,2
 1899,cdn_34_5_1899,160,38,GP,,joined_weak,position,1759833,157626,1587553,144329,51597.73,51054,3444,1250.79,,,,1638576,147773,52848.52,2
-1899,cdn_34_5_1899,161,0,GP,"1 Mineral substances, not otherwise provided for: Asbestos, in any form other than crude, and all manufactures of.. .. > Great Britain.....",left_only,,,1078,,,,,,,,,,,,,
+1899,cdn_34_5_1899,161,0,GP,"DUTIABLE GOODS—Con. > 1 Mineral substances, not otherwise provided for: Asbestos, in any form other than crude, and all manufactures of.. .. > Great Britain.....",left_only,,,1078,,,,,,,,,,,,,
 1899,cdn_34_5_1899,161,21,GP,,right_only,,,,,1354,338.5,,150,28.12,,,,,150,28.12,-2
 1899,cdn_34_5_1899,161,24,GP,,left_only,,,21108,,,,,,,,,,,,,
-1899,cdn_34_5_1899,163,0,GP,1 Mucilage..... > Great Britain.....,left_only,,,107,,,,,,,,,,,,,
+1899,cdn_34_5_1899,163,0,GP,DUTIABLE GOODS—Con. > 1 Mucilage..... > Great Britain.....,left_only,,,107,,,,,,,,,,,,,
 1899,cdn_34_5_1899,163,1,GP,1 Mucilage..... > China.....,left_only,,,1,,,,,,,,,,,,,
-1899,cdn_34_5_1899,163,30,GP,"3 "" Cabinet organs..... > Total.....",joined_weak,position,,74,6154.74,6154,1846.2,,,,,,,74,6154,1846.2,2
-1899,cdn_34_5_1899,163,31,GP,"3 "" Cabinet organs.....",joined_weak,position,,27,3986.27,3986,1195.8,,,,,,,27,3986,1195.8,2
-1899,cdn_34_5_1899,163,32,GP,"3 "" Cabinet organs.....",joined_weak,position,,27,1370.27,1370,410.85,,,,,,,27,1370,410.85,2
-1899,cdn_34_5_1899,163,33,GP,"3 "" Cabinet organs.....",joined_weak,position,,16,547.16,547,164.1,,,,,,,16,547,164.1,2
-1899,cdn_34_5_1899,163,34,GP,"3 "" Cabinet organs.....",joined_weak,position,,16,600.16,600,180.0,,,,,,,16,600,180.0,2
-1899,cdn_34_5_1899,163,35,GP,"3 "" Cabinet organs.....",joined_weak,position,,28,1900.28,1900,570.0,,,,,,,28,1900,570.0,2
-1899,cdn_34_5_1899,163,40,GP,"3 "" Cabinet organs..... > 4 "" Parts of organs..... > France.....",left_only,,,63,,,,,,,,,,,,,
+1899,cdn_34_5_1899,163,40,GP,France.....,left_only,,,63,,,,,,,,,,,,,
 1899,cdn_34_5_1899,164,9,GP,,right_only,,,,,,,1,,,,,,,,,0
 1899,cdn_34_5_1899,164,15,GP,Quebec.....,joined_weak,position,178,30989,176,29751,8925.3,1,513,115.42,,,,176,30264,9040.72,2
 1899,cdn_34_5_1899,165,31,GP,Quebec.....,joined_weak,position,25567,3711,23257,3128,1094.8,207,211,55.39,,,,23444,3339,1150.19,2
@@ -1325,7 +1289,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,167,39,GP,"5 "" "" refined ..... > Great Britain.. .. United States.....",joined_weak,position,,,,2663,532.6,,,,,,,11120,2663,532.6,2
 1899,cdn_34_5_1899,167,40,GP,,right_only,,,,,52,10.4,,,,,,,101.52,10.4,,-1
 1899,cdn_34_5_1899,167,41,GP,Total..... > Ontario..... Quebec..... Nova Scotia.... N. Brunswick... Manitoba..... B. Columbia.... N. W. Ter.....,joined_weak,position,,,,3,0.6,,,,,,,5,3,0.6,2
-1899,cdn_34_5_1899,168,0,GP,"1 Flaxseed or linseed, raw or boiled.... > Great Britain....",left_only,,1018291,322380,82176,,,,,,,,,,,,
+1899,cdn_34_5_1899,168,0,GP,"DUTIABLE GOODS—Con. > Oils, vegetable— > 1 Flaxseed or linseed, raw or boiled.... > Great Britain....",left_only,,1018291,322380,82176,,,,,,,,,,,,
 1899,cdn_34_5_1899,168,1,GP,United States....,left_only,,14017,6107,14017,,,,,,,,,,,,
 1899,cdn_34_5_1899,168,2,GP,Total ..... > Ontario.....,left_only,,48509,10292,9938,,,,,,,,,,,,
 1899,cdn_34_5_1899,168,3,GP,Quebec.....,left_only,,729362,236112,55967,,,,,,,,,,,,
@@ -1442,7 +1406,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,175,16,GP,,right_only,,,,,193,48.25,,,,,,,745,193,48.25,2
 1899,cdn_34_5_1899,175,17,GP,,right_only,,,,,4203,1050.75,20227,715,134.08,,,,68461,4918,1184.83,2
 1899,cdn_34_5_1899,175,18,GP,,right_only,,,,,16,4.0,12154,532,99.87,,,,12345,548,103.87,2
-1899,cdn_34_5_1899,175,19,GP,"1 Paints and colours— Oxides, fire proofs, umbers, &c.— Total..... > Ontario..... Quebec..... Nova Scotia..... N. Brunswick..... Manitoba..... B. Columbia.....",joined_weak,position,,,,4652,1163.0,,,,,,,71468,4652,1163.0,2
+1899,cdn_34_5_1899,175,19,GP,"DUTIABLE GOODS—Con. > 1 Paints and colours— Oxides, fire proofs, umbers, &c.— Total..... > Ontario..... Quebec..... Nova Scotia..... N. Brunswick..... Manitoba..... B. Columbia.....",joined_weak,position,,,,4652,1163.0,,,,,,,71468,4652,1163.0,2
 1899,cdn_34_5_1899,175,20,GP,,joined_weak,position,1347818,20706,663568,3456,864.0,,,,,,,36475,3456,864.0,2
 1899,cdn_34_5_1899,175,21,GP,,right_only,,,,,498,124.5,350.14,2.63,17433,,,,512,127.13,,-1
 1899,cdn_34_5_1899,175,22,GP,"2 "" Paints, ground or mixed in, or with, either japan, varnish, lacquers, liquid dryers, collodion, oil finish or oil varnish..... > Great Britain..... Germany..... United States.....",joined_weak,position,,,,517,129.25,,,,,,,15934,517,129.25,2
@@ -1463,18 +1427,18 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,177,4,GP,1 Paper and manufactures of— Cards for playing..... > United States.....,joined_weak,position,335888,23323,336900,23490,20208.07,,,,,,,336800,23490,20208.07,2
 1899,cdn_34_5_1899,177,8,GP,1 Paper and manufactures of— Cards for playing..... > New Brunswick.....,joined_weak,position,2227,204,1747,127,104.82,480.77,21.6,2227,,,,204,126.42,,-1
 1899,cdn_34_5_1899,177,9,GP,"2 "" Calendered, including writing and note paper, ruled..... > Manitoba.....",joined_weak,position,19622,1318,19572,1296,1174.32,50.22,2.25,19622,,,,1318,1176.57,,-1
-1899,cdn_34_5_1899,177,38,GP,"4 "" Envelopes..... > China.....",joined_weak,position,6258,6944,151,172,60.2,,6792,1777.06,,,,,6276,1837.26,0
+1899,cdn_34_5_1899,177,38,GP,"4 "" Envelopes..... > Great Britain..... > Thousand. > Thousand. > China.....",joined_weak,position,6258,6944,151,172,60.2,,6792,1777.06,,,,,6276,1837.26,0
 1899,cdn_34_5_1899,177,39,GP,"4 "" Envelopes..... > France.....",joined_weak,position,6,7,6,7,2.45,,,,,,,,6,2.45,0
 1899,cdn_34_5_1899,177,40,GP,"4 "" Envelopes..... > Germany.....",joined_weak,position,173,233,173,233,81.55,,,,,,,,173,81.55,0
 1899,cdn_34_5_1899,177,41,GP,"4 "" Envelopes..... > United States.....",joined_weak,position,43,91,43,91,31.85,,,,,,,,43,31.85,0
 1899,cdn_34_5_1899,178,4,GP,Manitoba.....,joined_weak,position,634,502,601,426,149.1,33.76,19.95,634,,,,502,169.05,,-1
 1899,cdn_34_5_1899,178,6,GP,P. E. Island.....,joined_weak,position,148,144,76,49,17.15,72.95,24.93,148,,,,144,42.08,,-1
 1899,cdn_34_5_1899,178,38,GP,"5 "" Borders and bordering.... > Great Britain.....",joined_weak,position,89,67,9,12,4.2,80,55,14.44,,,,89.67,18.64,5,-2
-1899,cdn_34_5_1899,179,0,GP,1 > Total..... > Ontario.....,joined_weak,position,21790,3889,21710,3834,1342.15,80.55,14.44,21790,,,,3889,1356.59,1,-2
+1899,cdn_34_5_1899,179,0,GP,DUTIABLE GOODS—Con. > Paper and manufactures of— > Borders and bordering— > 1 > Total..... > Ontario.....,joined_weak,position,21790,3889,21710,3834,1342.15,80.55,14.44,21790,,,,3889,1356.59,1,-2
 1899,cdn_34_5_1899,179,6,GP,,joined_weak,position,,79,27.79,27,9.45,,,,,,,79.27,9.45,,-1
 1899,cdn_34_5_1899,179,7,GP,,joined_weak,position,,11,5.11,5,1.75,,,,,,,11,5,1.75,2
 1899,cdn_34_5_1899,179,8,GP,,joined_weak,position,28173,5815,28576,5891,2062.19,80.55,14.44,28656,,,,5946,2076.63,,-1
-1899,cdn_34_5_1899,180,0,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Great Britain .....",joined_weak,position,,71379,,10245,3583.3,61512,16146.79,,,,,71757,19730.09,1,-2
+1899,cdn_34_5_1899,180,0,GP,"DUTIABLE GOODS—Con. > 1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Great Britain .....",joined_weak,position,,71379,,10245,3583.3,61512,16146.79,,,,,71757,19730.09,1,-2
 1899,cdn_34_5_1899,180,1,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Hong Kong .....",joined_weak,position,,36,,36,12.6,,,,,,,36,12.6,,-1
 1899,cdn_34_5_1899,180,2,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Austria .....",joined_weak,position,,984,,429,150.15,555,145.7,,,,,984,295.85,,-1
 1899,cdn_34_5_1899,180,3,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Belgium .....",joined_weak,position,,5887,,4415,1545.25,1285,337.32,,,,,5700,1882.57,,-1
@@ -1484,20 +1448,20 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,180,7,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Japan .....",joined_weak,position,,1572,,1411,493.85,198,51.99,,,,,1609,545.84,,-1
 1899,cdn_34_5_1899,180,8,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Switzerland .....",joined_weak,position,,6,,6,2.1,,,,,,,6,2.1,,-1
 1899,cdn_34_5_1899,180,9,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > United States .....",joined_weak,position,,277233,,279177,97714.84,,,,,,,279177,97714.84,,-1
-1899,cdn_34_5_1899,180,10,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Total ..... > Ontario .....",joined_weak,position,,190298,,159264,55742.4,30482,8000.3,,,,,189746,63742.7,,-1
-1899,cdn_34_5_1899,180,11,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Quebec .....",joined_weak,position,,128918,,102337,35817.95,30367,7971.61,,,,,132704,43789.56,,-1
-1899,cdn_34_5_1899,180,12,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Nova Scotia .....",joined_weak,position,,26401,,15223,5327.99,11335,2975.56,,,,,26558,8303.55,,-1
-1899,cdn_34_5_1899,180,13,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > N. Brunswick .....",joined_weak,position,,13727,,11710,4098.5,1974,518.18,,,,,13684,4616.68,,-1
-1899,cdn_34_5_1899,180,14,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Manitoba .....",joined_weak,position,,15094,,11508,4027.8,3703,972.08,,,,,15211,4999.88,,-1
-1899,cdn_34_5_1899,180,15,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > B. Columbia .....",joined_weak,position,,20272,,17056,5970.1,3344,877.52,,,,,20400,6847.62,,-1
-1899,cdn_34_5_1899,180,16,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > P. E. Island .....",joined_weak,position,,990,,600,210.0,560,147.01,,,,,1160,357.01,,-1
-1899,cdn_34_5_1899,180,17,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > N. W. Ter .....",joined_weak,position,,359,,258,90.3,101,26.51,,,,,359,116.81,,-1
-1899,cdn_34_5_1899,180,18,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. .... > Yukon .....",joined_weak,position,,4160,,4160,1456.0,,,,,,,4160,1456.0,,-1
-1899,cdn_34_5_1899,180,19,GP,"1 Paper and manufactures of— Papeteries, pads not printed, papier- machéware, N.O.P., and manufac- tures of paper, N.E.S. ....",joined_weak,position,,400219,,322116,112741.04,81866,21488.77,,,,,403982,134229.81,,-1
+1899,cdn_34_5_1899,180,10,GP,Total ..... > Ontario .....,joined_weak,position,,190298,,159264,55742.4,30482,8000.3,,,,,189746,63742.7,,-1
+1899,cdn_34_5_1899,180,11,GP,Quebec .....,joined_weak,position,,128918,,102337,35817.95,30367,7971.61,,,,,132704,43789.56,,-1
+1899,cdn_34_5_1899,180,12,GP,Nova Scotia .....,joined_weak,position,,26401,,15223,5327.99,11335,2975.56,,,,,26558,8303.55,,-1
+1899,cdn_34_5_1899,180,13,GP,N. Brunswick .....,joined_weak,position,,13727,,11710,4098.5,1974,518.18,,,,,13684,4616.68,,-1
+1899,cdn_34_5_1899,180,14,GP,Manitoba .....,joined_weak,position,,15094,,11508,4027.8,3703,972.08,,,,,15211,4999.88,,-1
+1899,cdn_34_5_1899,180,15,GP,B. Columbia .....,joined_weak,position,,20272,,17056,5970.1,3344,877.52,,,,,20400,6847.62,,-1
+1899,cdn_34_5_1899,180,16,GP,P. E. Island .....,joined_weak,position,,990,,600,210.0,560,147.01,,,,,1160,357.01,,-1
+1899,cdn_34_5_1899,180,17,GP,N. W. Ter .....,joined_weak,position,,359,,258,90.3,101,26.51,,,,,359,116.81,,-1
+1899,cdn_34_5_1899,180,18,GP,Yukon .....,joined_weak,position,,4160,,4160,1456.0,,,,,,,4160,1456.0,,-1
+1899,cdn_34_5_1899,180,19,GP,,joined_weak,position,,400219,,322116,112741.04,81866,21488.77,,,,,403982,134229.81,,-1
 1899,cdn_34_5_1899,180,20,GP,"2 "" Printing paper ..... > Great Britain .....",joined_weak,position,,29112,,2256,564.0,440571,26784,5022.12,,,,492707,29040,5586.12,2
-1899,cdn_34_5_1899,180,27,GP,"2 "" Printing paper ..... > N. Brunswick .....",joined_weak,position,43934,3126,30582,2131,532.75,7228,551,103.31,,,,37820,2682,636.06,2
+1899,cdn_34_5_1899,180,27,GP,N. Brunswick .....,joined_weak,position,43934,3126,30582,2131,532.75,7228,551,103.31,,,,37820,2682,636.06,2
 1899,cdn_34_5_1899,182,11,GP,,right_only,,,,,,,23,2,0.45,,,,23,2,0.45,2
-1899,cdn_34_5_1899,184,9,GP,"2 Pickles, in bottles, jars or similar vessels.. > Great Britain.....",joined_weak,position,65612,70614,2494,2627,919.45,64421,69050,18122.17,,,,66855,71677,19041.62,2
+1899,cdn_34_5_1899,184,9,GP,"Galls. > Galls. > 2 Pickles, in bottles, jars or similar vessels.. > Great Britain.....",joined_weak,position,65612,70614,2494,2627,919.45,64421,69050,18122.17,,,,66855,71677,19041.62,2
 1899,cdn_34_5_1899,184,12,GP,China.....,joined_weak,position,249,95,249,95,33.25,,,,,,,249.95,33.25,,-1
 1899,cdn_34_5_1899,184,26,GP,N. W. Ter.....,joined_weak,position,319,115,290,85,29.75,29.3,7.87,319,,,,115,37.62,,-1
 1899,cdn_34_5_1899,184,29,GP,"8 "" in bulk ..... > Great Britain.....",joined_weak,position,9067,5350,294,192,67.2,7914,5700,1495.33,,,,8148,5892,1562.53,2
@@ -1538,10 +1502,6 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,187,14,GP,"3 "" "" "" all other..... > Great Britain.....",joined_weak,position,100,66,100,66,19.8,,,,,,,100.66,19.8,3,-2
 1899,cdn_34_5_1899,187,16,GP,United States.....,joined_weak,position,90,68,90,68,20.4,,,,,,,90.68,20.4,,-1
 1899,cdn_34_5_1899,188,13,GP,"2 Printing presses, printing machines, folding machines, book-binders', bookbinding, ruling, embossing and paper cutting machines..... > United States.....",joined_weak,position,523,201524,523,200290,20029.0,,,,,,,522,200290,20029.0,2
-1899,cdn_34_5_1899,188,16,GP,"2 Printing presses, printing machines, folding machines, book-binders', bookbinding, ruling, embossing and paper cutting machines.....",joined_weak,position,,25,11563.25,11563,1156.3,,,,,,,25,11563,1156.3,2
-1899,cdn_34_5_1899,188,17,GP,"2 Printing presses, printing machines, folding machines, book-binders', bookbinding, ruling, embossing and paper cutting machines.....",joined_weak,position,,15,2751.15,2751,275.1,,,,,,,15,2751,275.1,2
-1899,cdn_34_5_1899,188,18,GP,"2 Printing presses, printing machines, folding machines, book-binders', bookbinding, ruling, embossing and paper cutting machines.....",joined_weak,position,,21,4154.21,4154,415.4,,,,,,,21,4154,415.4,2
-1899,cdn_34_5_1899,188,19,GP,"2 Printing presses, printing machines, folding machines, book-binders', bookbinding, ruling, embossing and paper cutting machines.....",joined_weak,position,,17,1734.16,1701,170.1,1,33,2.48,,,,17,1734,172.58,2
 1899,cdn_34_5_1899,188,38,GP,"4 Provisions, not otherwise specified :— Butter..... > United States.....",joined_weak,position,2320671,425713,559267,132775,22370.82,,,,,,,559257,132775,22370.82,2
 1899,cdn_34_5_1899,189,10,GP,Germany.....,joined_weak,position,364,67,364,67,10.92,,,,,,,364.67,10.92,,-1
 1899,cdn_34_5_1899,189,18,GP,Nova Scotia.....,joined_weak,position,2341,522,1982,428,59.46,359.94,8.1,2341,,,,522,67.56,,-1
@@ -1552,10 +1512,10 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,190,34,GP,N. Brunswick....,joined_weak,position,17576,2103,17371,2047,511.75,301.36,6.74,17672,,,,2083,518.49,,-1
 1899,cdn_34_5_1899,191,19,GP,Total..... > Ontario.....,joined_weak,position,425,75,425,75,26.25,,,,,,,425.75,26.25,,-1
 1899,cdn_34_5_1899,191,33,GP,N. W. Ter.....,joined_weak,position,1875,60,1875,60,37.5,,,,,,,1875.6,37.5,,-1
-1899,cdn_34_5_1899,192,8,GP,Great Britain.....,left_only,,960,209,,,,,,,,,,,,,
+1899,cdn_34_5_1899,192,8,GP,"2 "" Dried or smoked meats, and meats preserved in any other way than salted or pickled, N.E.S..... > Lbs. > Lbs. > Great Britain.....",left_only,,960,209,,,,,,,,,,,,,
 1899,cdn_34_5_1899,192,31,GP,,joined_weak,position,,25,5.25,5,0.75,,,,,,,25,5,0.75,2
 1899,cdn_34_5_1899,192,36,GP,"4 "" Other meats, salted, N.E.S..... > Australasia.....",left_only,,200,18,,,,,,,,,,,,,
-1899,cdn_34_5_1899,194,0,GP,1 Railway or travelling rugs and lap dusters of all kinds—,left_only,,,8,,,,,,,,,,,,,
+1899,cdn_34_5_1899,194,0,GP,DUTIABLE GOODS—Con. > 1 Railway or travelling rugs and lap dusters of all kinds—,left_only,,,8,,,,,,,,,,,,,
 1899,cdn_34_5_1899,194,23,GP,Quebec.....,joined_weak,position,46240,81,46240,81,23.12,,,,,,,46240.81,23.12,,-1
 1899,cdn_34_5_1899,194,29,GP,Quebec.....,joined_weak,position,47440,93,46800,90,23.4,,,,,,,46800.9,23.4,,-1
 1899,cdn_34_5_1899,194,32,GP,"5 Salt, N.E.S., in bags, barrels or other packages..... > Great Britain.....",joined_weak,position,2726,55,100,2,0.08,2626,53,1.49,,,,2726.55,1.5699999999999998,5,-2
@@ -1566,7 +1526,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,195,40,GP,Japan.....,joined_weak,position,310,56,310,56,19.6,,,,,,,310.56,19.6,,-1
 1899,cdn_34_5_1899,196,15,GP,Australasia.....,left_only,,,316,,,,,,,,,,,,,
 1899,cdn_34_5_1899,196,44,GP,,left_only,,,381868,,,,,,,,,,,,,
-1899,cdn_34_5_1899,200,21,GP,Ontario.....,joined_weak,position,21,63,21,63,9.45,,,,,,,21.63,9.45,,-1
+1899,cdn_34_5_1899,200,21,GP,Total..... > Ontario.....,joined_weak,position,21,63,21,63,9.45,,,,,,,21.63,9.45,,-1
 1899,cdn_34_5_1899,201,0,GP,DUTIABLE GOODS—Con.,left_only,,,8,,,,,,,,,,,,,
 1899,cdn_34_5_1899,201,3,GP,Manitoba.....,left_only,,,8,,,,,,,,,,,,,
 1899,cdn_34_5_1899,201,7,GP,,joined_weak,position,,7,41.13,229,80.15,,,,,,,7.41,14.35,,-1
@@ -1576,7 +1536,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,201,40,GP,,right_only,,,,,2538,888.3,5,94,24.68,,,,5.9399999999999995,24.68,,-1
 1899,cdn_34_5_1899,201,42,GP,,left_only,,,378,2978.9,,,,,,,,,,,,
 1899,cdn_34_5_1899,201,44,GP,,joined_weak,position,,8.31,,,,6,23,6.04,,,,8.31,8.84,,-1
-1899,cdn_34_5_1899,202,0,GP,,left_only,,,8,,,,,,,,,,,,,
+1899,cdn_34_5_1899,202,0,GP,DUTIABLE GOODS—Con.,left_only,,,8,,,,,,,,,,,,,
 1899,cdn_34_5_1899,202,39,GP,United States.....,joined_weak,position,255099,11106,255099,11127,2783.4,,,,,,,255095,11127,2783.4,2
 1899,cdn_34_5_1899,203,19,GP,Total..... > N. W. Ter.....,left_only,,,3,,,,,,,,,,,,,
 1899,cdn_34_5_1899,203,31,GP,4 Soap:— Common or laundry..... > Germany.....,left_only,,1516,137,,,,,,,,,,,,,
@@ -1601,7 +1561,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,209,20,GP,Danish W. Indies.....,joined_weak,position,,,113,63,271.2,,,,,,,113.63,271.2,,-1
 1899,cdn_34_5_1899,209,41,GP,China.....,joined_weak,position,157,85,137,81,328.8,,,,,,,137.81,328.8,,-1
 1899,cdn_34_5_1899,212,16,GP,"2 "" "" containing more than 36 per cent of proof spirits..... > Great Britain.....",left_only,,2,7,,,,,,,,,,,,,
-1899,cdn_34_5_1899,212,18,GP,B. Columbia.....,left_only,,2,7,,,,,,,,,,,,,
+1899,cdn_34_5_1899,212,18,GP,Total..... > B. Columbia.....,left_only,,2,7,,,,,,,,,,,,,
 1899,cdn_34_5_1899,214,3,GP,N. Brunswick.....,left_only,,56,122,,,,,,,,,,,,,
 1899,cdn_34_5_1899,214,9,GP,Azores.....,left_only,,44,44,,,,,,,,,,,,,
 1899,cdn_34_5_1899,215,1,GP,,left_only,,,44.51,,,,,,,,,,,,,
@@ -1611,15 +1571,8 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,215,36,GP,,left_only,,,31,109.31,,,,,,,,,,,,
 1899,cdn_34_5_1899,215,37,GP,,joined_weak,position,,12.44,,109,46.03,,,,,,,31,109,46.03,2
 1899,cdn_34_5_1899,215,40,GP,,joined_weak,position,,328,326.81,94,63.03,,,,,,,81,94,63.03,2
-1899,cdn_34_5_1899,217,3,GP,1 > Germany.....,left_only,,80,341,,,,,,,,,,,,,
-1899,cdn_34_5_1899,217,13,GP,1,joined_weak,position,,29,30.56,66,48.92,,,,,,,56,66,48.92,2
-1899,cdn_34_5_1899,217,16,GP,"2 > "" 35 "" 36 """,joined_weak,position,,28,81.28,81,39.7,,,,,,,28,81,39.7,2
-1899,cdn_34_5_1899,217,24,GP,"2 > "" 35 "" 36 """,joined_weak,position,,56,112.58,55,48.4,,,,,,,58,55,48.4,2
-1899,cdn_34_5_1899,217,27,GP,"2 > "" 35 "" 36 """,joined_weak,position,,14,37.41,81,46.58,,,,,,,41,81,46.58,2
-1899,cdn_34_5_1899,217,28,GP,"2 > "" 35 "" 36 """,joined_weak,position,8195,10900,8225,11021,7861.7,,,,,,,8285,11021,7861.7,2
-1899,cdn_34_5_1899,217,30,GP,"3 > "" 36 "" 37 """,joined_weak,position,,75,14.75,14,47.7,,,,,,,75,14,47.7,2
-1899,cdn_34_5_1899,217,34,GP,"3 > "" 36 "" 37 """,joined_weak,position,,38,79.38,79,45.74,,,,,,,38,79,45.74,2
-1899,cdn_34_5_1899,217,41,GP,"3 > "" 36 "" 37 "" > 4 > "" 37 "" 38 """,joined_weak,position,,58,96.58,96,64.18,,,,,,,58,96,64.18,2
+1899,cdn_34_5_1899,217,3,GP,Germany.....,left_only,,80,341,,,,,,,,,,,,,
+1899,cdn_34_5_1899,217,28,GP,,joined_weak,position,8195,10900,8225,11021,7861.7,,,,,,,8285,11021,7861.7,2
 1899,cdn_34_5_1899,218,0,GP,,right_only,,,,,270,129.8,,,,,,,80,270,129.8,2
 1899,cdn_34_5_1899,218,1,GP,,right_only,,,,,321,278.16,,,,,,,298,321,278.16,2
 1899,cdn_34_5_1899,218,2,GP,,right_only,,,,,309,184.2,,,,,,,150,309,184.2,2
@@ -1653,7 +1606,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,219,17,GP,,right_only,,,,,447,81.68,,,,,,,25,447,81.68,2
 1899,cdn_34_5_1899,219,18,GP,,right_only,,,,,75,19.8,,,,,,,13,75,19.8,2
 1899,cdn_34_5_1899,219,19,GP,,right_only,,,,,552,101.48,,,,,,,6,552,101.48,2
-1899,cdn_34_5_1899,219,20,GP,4 Sponges ..... > Great Britain.....,joined_weak,position,,13029,,3361,672.2,,9374,1406.65,,,,3,12735,2078.85,2
+1899,cdn_34_5_1899,219,20,GP,"3 "" In bottles containing over one quart each..... > Great Britain... { gall. 34 } 524 { 25 } > France..... { doz. 17 } 307 { 13 } > France..... { gall. 26 } 307 { 6 } > France..... { doz. 13 } 307 { 3 } > Total ..... > B. Columbia.. { galls. 60 } 831 { 31 } > B. Columbia.. { doz. 30 } 831 { 16 } > 4 Sponges ..... > Great Britain.....",joined_weak,position,,13029,,3361,672.2,,9374,1406.65,,,,3,12735,2078.85,2
 1899,cdn_34_5_1899,219,21,GP,B. W. Indies..,joined_weak,position,,2358,,585,117.0,,3023,452.1,,,,16,3608,569.1,2
 1899,cdn_34_5_1899,219,37,GP,,right_only,,,,,926,963.54,5600,224,63.0,,,,5600,224,63.0,-2
 1899,cdn_34_5_1899,220,0,GP,,right_only,,,,,22750,10567.82,43614,2789,508.45,,,,748120,25539,11076.27,2
@@ -1687,7 +1640,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,223,1,GP,,right_only,,,,,164,63.25,3591668,86324,19240.19,,,,3591668,86324,19240.19,-2
 1899,cdn_34_5_1899,223,6,GP,Belgium.....,left_only,,113120,3960,,,,,,,,,,,,,
 1899,cdn_34_5_1899,223,25,GP,Australasia.....,joined_weak,position,17980041,427965,,618,200.0,7484450,179789,37914.03,,,,7484450,179789,37914.03,-2
-1899,cdn_34_5_1899,224,35,GP,Ontario.....,joined_weak,position,12145,2228,11699,2155,438.72,,,,,,,11669,2155,438.72,2
+1899,cdn_34_5_1899,224,35,GP,United States— > Ontario.....,joined_weak,position,12145,2228,11699,2155,438.72,,,,,,,11669,2155,438.72,2
 1899,cdn_34_5_1899,225,4,GP,,right_only,,,,,,,1526,461,110.62,,,,1526,461,110.62,2
 1899,cdn_34_5_1899,225,7,GP,,right_only,,,,,,,475,103,16.91,,,,475,103,16.91,2
 1899,cdn_34_5_1899,225,8,GP,,right_only,,,,,,,1051,358,93.71,,,,1051,358,93.71,2
@@ -1726,34 +1679,31 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,229,29,GP,,right_only,,,,,15997,3999.1,,3594,673.88,,,,,19591,4672.98,2
 1899,cdn_34_5_1899,230,31,GP,2 Tobacco and manufactures of :— Cigarettes..... > Mexico .....,left_only,,52,13,,,,,,,,,,,,,
 1899,cdn_34_5_1899,231,14,GP,1 Tobacco and manufactures of— Cigars ..... > Switzerland.....,joined_weak,position,43,60,43,60,144.0,,,,,,,43.6,144.0,,-1
-1899,cdn_34_5_1899,232,4,GP,1 Tobacco and manufactures of — Snuff—,joined_weak,position,,41,25.41,25,20.5,,,,,,,41.25,20.5,,-1
-1899,cdn_34_5_1899,232,8,GP,"1 Tobacco and manufactures of — Snuff— > 2 "" All other manufactures of tobacco, N.E.S..... > Newfoundland.....",left_only,,36,7,,,,,,,,,,,,,
-1899,cdn_34_5_1899,232,9,GP,"1 Tobacco and manufactures of — Snuff— > 2 "" All other manufactures of tobacco, N.E.S.....",joined_weak,position,,22,9.22,9,11.0,,,,,,,22,9,11.0,2
-1899,cdn_34_5_1899,232,11,GP,"2 "" All other manufactures of tobacco, N.E.S.....",joined_weak,position,,46,12.46,12,23.0,,,,,,,46.12,23.0,,-1
+1899,cdn_34_5_1899,232,8,GP,Newfoundland.....,left_only,,36,7,,,,,,,,,,,,,
 1899,cdn_34_5_1899,232,16,GP,"2 "" All other manufactures of tobacco, N.E.S.....",joined_weak,position,,173.6,173,60,86.85,,,,,,,173.6,86.85,,-1
-1899,cdn_34_5_1899,232,31,GP,"4 "" Foreign raw leaf tobacco samples, stemmed..... > B. Columbia.....",joined_weak,position,22058,14677,100,60,15.0,,,,,,,100.6,15.0,,-1
-1899,cdn_34_5_1899,232,33,GP,"4 "" Foreign raw leaf tobacco samples, stemmed..... > Quebec.....",joined_weak,position,17293,4677,,,,,,,,,,,,,0
+1899,cdn_34_5_1899,232,31,GP,B. Columbia.....,joined_weak,position,22058,14677,100,60,15.0,,,,,,,100.6,15.0,,-1
+1899,cdn_34_5_1899,232,33,GP,United States— > Quebec.....,joined_weak,position,17293,4677,,,,,,,,,,,,,0
 1899,cdn_34_5_1899,235,22,GP,"2 Varnish, lacquers, japans, japan dryers, liquid dryers, and oil finish, N.E.S.... > China .....",joined_weak,position,,7,3,3,2.0,,,,,,,7,3,2.0,2
 1899,cdn_34_5_1899,235,25,GP,"2 Varnish, lacquers, japans, japan dryers, liquid dryers, and oil finish, N.E.S.... > United States. ....",left_only,,,37235,54232,,,,,,,,,,,,
-1899,cdn_34_5_1899,235,26,GP,"2 Varnish, lacquers, japans, japan dryers, liquid dryers, and oil finish, N.E.S.... > Total..... > Ontario .....",joined_weak,position,,26917,44619,54382,18392.74,,,,,,,37566,54382,18392.74,2
-1899,cdn_34_5_1899,235,27,GP,"2 Varnish, lacquers, japans, japan dryers, liquid dryers, and oil finish, N.E.S.... > Total..... > Quebec .....",joined_weak,position,,16553,30723,37397,12344.4,2592,7222,1471.9,,,,26917,44619,13816.3,2
-1899,cdn_34_5_1899,235,28,GP,"2 Varnish, lacquers, japans, japan dryers, liquid dryers, and oil finish, N.E.S.... > Total..... > Nova Scotia .....",joined_weak,position,,1778,3670,13801,4617.71,7794,17126,3738.03,,,,17081,30927,8355.74,2
-1899,cdn_34_5_1899,235,29,GP,"2 Varnish, lacquers, japans, japan dryers, liquid dryers, and oil finish, N.E.S.... > Total..... > N. Brunswick.. ..",joined_weak,position,,759,2099,1813,562.39,790,1863,398.52,,,,1778,3676,960.91,2
-1899,cdn_34_5_1899,235,30,GP,"2 Varnish, lacquers, japans, japan dryers, liquid dryers, and oil finish, N.E.S.... > Total..... > Manitoba .....",joined_weak,position,,350,1003,913,256.24,403,1229,245.8,,,,766,2142,502.04,2
+1899,cdn_34_5_1899,235,26,GP,Total..... > Ontario .....,joined_weak,position,,26917,44619,54382,18392.74,,,,,,,37566,54382,18392.74,2
+1899,cdn_34_5_1899,235,27,GP,Quebec .....,joined_weak,position,,16553,30723,37397,12344.4,2592,7222,1471.9,,,,26917,44619,13816.3,2
+1899,cdn_34_5_1899,235,28,GP,Nova Scotia .....,joined_weak,position,,1778,3670,13801,4617.71,7794,17126,3738.03,,,,17081,30927,8355.74,2
+1899,cdn_34_5_1899,235,29,GP,N. Brunswick.. ..,joined_weak,position,,759,2099,1813,562.39,790,1863,398.52,,,,1778,3676,960.91,2
+1899,cdn_34_5_1899,235,30,GP,Manitoba .....,joined_weak,position,,350,1003,913,256.24,403,1229,245.8,,,,766,2142,502.04,2
 1899,cdn_34_5_1899,235,31,GP,B. Columbia.. .. > Total.....,joined_weak,position,,3364,2715,998,269.46,2,5,1.02,,,,350,1003,270.48,2
 1899,cdn_34_5_1899,235,32,GP,P. E. Island ..... > Total.....,joined_weak,position,,17,58,2857,1312.44,3,5,1.12,,,,3710,2862,1313.56,2
 1899,cdn_34_5_1899,235,33,GP,N. W. Ter. .... > Total.....,joined_weak,position,,50,192,39,9.9,6,19,3.75,,,,17,58,13.65,2
 1899,cdn_34_5_1899,235,34,GP,Yukon ..... > Total.....,joined_weak,position,,66,86,192,48.4,,,,,,,50,192,48.4,2
 1899,cdn_34_5_1899,235,35,GP,Total.....,joined_weak,position,,49854,85165,86,30.4,,,,,,,66,86,30.4,2
 1899,cdn_34_5_1899,235,36,GP,"3 Vegetables, viz.:— Melons ..... > China.....",joined_weak,position,,87,,58096,19451.34,11590,27469,5860.14,,,,50735,85565,25311.48,2
-1899,cdn_34_5_1899,235,38,GP,"3 Vegetables, viz.:— Melons ..... > Total..... > Ontario .....",joined_weak,position,,162775,5492,10212,2553.18,,,,,,,210947,10212,2553.18,2
-1899,cdn_34_5_1899,235,39,GP,"3 Vegetables, viz.:— Melons ..... > Total..... > Quebec .....",joined_weak,position,,10717,743,5492,1373.0,,,,,,,162775,5492,1373.0,2
-1899,cdn_34_5_1899,235,40,GP,"3 Vegetables, viz.:— Melons ..... > Total..... > Nova Scotia .....",joined_weak,position,,5552,914,743,185.75,,,,,,,10717,743,185.75,2
-1899,cdn_34_5_1899,235,41,GP,"3 Vegetables, viz.:— Melons ..... > Total..... > N. Brunswick.. ..",joined_weak,position,,4208,717,914,228.68,,,,,,,5552,914,228.68,2
-1899,cdn_34_5_1899,235,42,GP,"3 Vegetables, viz.:— Melons ..... > Total..... > Manitoba .....",joined_weak,position,,15769,929,717,179.25,,,,,,,4208,717,179.25,2
-1899,cdn_34_5_1899,235,43,GP,"3 Vegetables, viz.:— Melons ..... > Total..... > B. Columbia.. ..",joined_weak,position,,16234,1191,929,232.25,,,,,,,15769,929,232.25,2
-1899,cdn_34_5_1899,235,44,GP,"3 Vegetables, viz.:— Melons ..... > Total.....",joined_weak,position,,,188.5,1179,294.75,,,,,,,10034,1179,294.75,2
-1899,cdn_34_5_1899,235,45,GP,"3 Vegetables, viz.:— Melons ..... > Total..... > N. W. Ter.....",joined_weak,position,,1791,197,50,12.5,,,,,,,188,50,12.5,2
+1899,cdn_34_5_1899,235,38,GP,Total..... > Ontario .....,joined_weak,position,,162775,5492,10212,2553.18,,,,,,,210947,10212,2553.18,2
+1899,cdn_34_5_1899,235,39,GP,Quebec .....,joined_weak,position,,10717,743,5492,1373.0,,,,,,,162775,5492,1373.0,2
+1899,cdn_34_5_1899,235,40,GP,Nova Scotia .....,joined_weak,position,,5552,914,743,185.75,,,,,,,10717,743,185.75,2
+1899,cdn_34_5_1899,235,41,GP,N. Brunswick.. ..,joined_weak,position,,4208,717,914,228.68,,,,,,,5552,914,228.68,2
+1899,cdn_34_5_1899,235,42,GP,Manitoba .....,joined_weak,position,,15769,929,717,179.25,,,,,,,4208,717,179.25,2
+1899,cdn_34_5_1899,235,43,GP,B. Columbia.. ..,joined_weak,position,,16234,1191,929,232.25,,,,,,,15769,929,232.25,2
+1899,cdn_34_5_1899,235,44,GP,P. E. Island....,joined_weak,position,,188,50,1179,294.75,,,,,,,10034,1179,294.75,2
+1899,cdn_34_5_1899,235,45,GP,N. W. Ter.....,joined_weak,position,,1791,197,50,12.5,,,,,,,188,50,12.5,2
 1899,cdn_34_5_1899,235,46,GP,Total.....,joined_weak,position,,211234,10233,197,49.25,,,,,,,1791,197,49.25,2
 1899,cdn_34_5_1899,237,9,GP,Total .....,left_only,,1237197,65829,1055309,,,,,,,,,,,,
 1899,cdn_34_5_1899,237,19,GP,"2 "" Fresh or dry salted, N.O.P. .... > Great Britain. ....",joined_weak,position,,14043,,51914,15831.22,224489,18186,2528.58,,,,1279798,70100,18359.8,2
@@ -1766,13 +1716,13 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,238,10,GP,"2 Vinegar, containing 1 degree above strength of proof or 7 degrees of absolute acid. .... > Great Britain.....",left_only,,425,358,,,,,,,,,,,,,
 1899,cdn_34_5_1899,238,11,GP,"2 Vinegar, containing 1 degree above strength of proof or 7 degrees of absolute acid. .... > France.....",joined_weak,position,17,6,17,,,304,63,40.04,,,,304,63,40.04,2
 1899,cdn_34_5_1899,238,13,GP,"2 Vinegar, containing 1 degree above strength of proof or 7 degrees of absolute acid. .... > B. Columbia....",joined_weak,position,425,358,,6,2.89,304,63,40.04,,,,304,63,40.04,-2
-1899,cdn_34_5_1899,238,15,GP,Ontario.....,left_only,,2562,215,,,,,,,,,,,,,
+1899,cdn_34_5_1899,238,15,GP,"3 "" "" 2 degrees above proof. .... > United States— > Ontario.....",left_only,,2562,215,,,,,,,,,,,,,
 1899,cdn_34_5_1899,238,28,GP,,right_only,,,,,,,10,6,9.76,,,,10,6,9.76,2
 1899,cdn_34_5_1899,238,30,GP,"9 "" "" 61 degrees above proof. .... > Ontario .....",joined_weak,position,43,27,93,,,10,6,9.76,,,,10,6,9.76,2
 1899,cdn_34_5_1899,239,0,GP,DUTIABLE GOODS—Con.,left_only,,,8,,,,,,,,,,,,,
-1899,cdn_34_5_1899,239,1,GP,United States .....,joined_weak,position,207,195,,,,80,19,85.26,,,,80.19,85.26,1,-2
+1899,cdn_34_5_1899,239,1,GP,"1 Vinegar, 64 degrees above proof. > Germany .. > United States .....",joined_weak,position,207,195,,,,80,19,85.26,,,,80.19,85.26,1,-2
 1899,cdn_34_5_1899,239,2,GP,Total .....,joined_weak,position,207,195,,,,80,19,85.26,,,,80.19,85.26,,-1
-1899,cdn_34_5_1899,239,4,GP,Ontario .....,joined_weak,position,,,40,56,62.0,20,24,24.41,,,,60.8,86.41,3,-2
+1899,cdn_34_5_1899,239,4,GP,"3 "" "" 70 degrees above proof. > Germany— > Ontario .....",joined_weak,position,,,40,56,62.0,20,24,24.41,,,,60.8,86.41,3,-2
 1899,cdn_34_5_1899,239,6,GP,5 Recapitulation by countries of vinegar above strength of proof ..... > Great Britain .....,joined_weak,position,432,383,,,,311,88,48.29,,,,311.88,48.29,5,-2
 1899,cdn_34_5_1899,239,9,GP,Germany .....,joined_weak,position,,,155,213,236.4,110.49,119.43,265,,,,262,355.83,,-1
 1899,cdn_34_5_1899,239,11,GP,6 Recapitulation of vinegar above strength of proof by provinces ..... > Ontario .....,joined_weak,position,6755,747,4107,550,1065.64,110.49,119.43,4217,,,,599,1185.07,6,-2
@@ -1815,24 +1765,17 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,247,34,GP,,right_only,,,,,1045,365.75,20930,7948,2086.34,,,,22443,8993,2452,0
 1899,cdn_34_5_1899,247,40,GP,Total.....,left_only,,849870,513513,36448,,,,,,,,,,,,
 1899,cdn_34_5_1899,247,48,GP,,right_only,,,,,21464,7512.85,855273,512087,134423.35,,,,891721,533551,141936,0
-1899,cdn_34_5_1899,248,6,GP,"1 Wool, manufactures of— Felt cloth, N.E.S. ....",joined_weak,position,,16,29.16,29,10.15,,,,,,,16,29,10.15,2
-1899,cdn_34_5_1899,248,38,GP,"4 "" Bed comforters and counterpanes....",joined_weak,position,,88,42.88,42,14.7,,,,,,,88,42,14.7,2
-1899,cdn_34_5_1899,249,22,GP,""" Shirts of wool. ....",joined_weak,position,,191,1169.48,326,113.3,143,843,221.33,,,,191,1169,334.63,2
-1899,cdn_34_5_1899,249,24,GP,""" Shirts of wool. ....",joined_weak,position,,346,1551.44,179,62.65,282,1306,342.82,,,,326,1485,405.47,2
-1899,cdn_34_5_1899,250,13,GP,"2 "" Yarns costing 30c. per lb. and over imported on the cop, tube or in the hank by manufacturers of woollen goods for use in their products..... > Great Britain .....",joined_weak,position,274225,122816,,4558,911.6,267721,120175,18031.88,,,,278519,124733,18943.48,2
+1899,cdn_34_5_1899,250,13,GP,"2 "" Yarns costing 30c. per lb. and over imported on the cop, tube or in the hank by manufacturers of woollen goods for use in their products..... > Lbs. > Great Britain .....",joined_weak,position,274225,122816,,4558,911.6,267721,120175,18031.88,,,,278519,124733,18943.48,2
 1899,cdn_34_5_1899,251,13,GP,Switzerland.....,joined_weak,position,4912,744,,,,7888,1444,269.6,,,,7888,1444,269.6,2
 1899,cdn_34_5_1899,252,18,GP,,joined_weak,position,20662,,,3310,1158.5,,17352,4556.04,,,,,20662,5714.54,2
 1899,cdn_34_5_1899,252,34,GP,"5 "" "" Tapestry ..... > Belgium .....",joined_weak,position,50,58,50,58,20.3,,,,,,,50.58,20.3,,-1
 1899,cdn_34_5_1899,252,38,GP,"5 "" "" Tapestry ..... > Persia.....",joined_weak,position,450,75,450,75,26.25,,,,,,,450.75,26.25,,-1
-1899,cdn_34_5_1899,253,4,GP,"1 > Wool, manufactures of— Carpets, tapestry—",joined_weak,position,,32318,12551.32,34,11.9,52286,12517,3285.72,,,,32318,12551,3297.62,2
 1899,cdn_34_5_1899,253,8,GP,"2 > "" "" Venetian..... > Great Britain— N. Brunswick...",joined_weak,position,175,341,,,,180,361,94.77,,,,180,361,94.77,2
 1899,cdn_34_5_1899,253,9,GP,"3 > "" "" Felts, printed.....",joined_weak,position,,1057,426.35,6,2.1,1022,420,110.2,,,,1057,426,112.3,2
-1899,cdn_34_5_1899,253,13,GP,"3 > "" "" Felts, printed.....",joined_weak,position,,225,23.35,6,2.1,190,17,4.46,,,,225.23,6.5600000000000005,,-1
-1899,cdn_34_5_1899,253,14,GP,"3 > "" "" Felts, printed.....",joined_weak,position,,222.73,,,,222,73,19.16,,,,222.73,19.16,,-1
-1899,cdn_34_5_1899,253,19,GP,"5 > "" "" Turkish and imitation Turkish",joined_weak,position,,18,33.18,33,11.55,,,,,,,18.33,11.55,,-1
-1899,cdn_34_5_1899,253,23,GP,"5 > "" "" Turkish and imitation Turkish > N. Brunswick...",joined_weak,position,2855,2301,,,,2581,1921,504.27,,,,2581,1921,504.27,2
+1899,cdn_34_5_1899,253,14,GP,N. Brunswick...,joined_weak,position,222,73,,,,222,73,19.16,,,,222.73,19.16,,-1
+1899,cdn_34_5_1899,253,23,GP,N. Brunswick...,joined_weak,position,2855,2301,,,,2581,1921,504.27,,,,2581,1921,504.27,2
 1899,cdn_34_5_1899,253,26,GP,,joined_weak,position,,84.48,,,,84,48,12.6,,,,84.48,12.6,,-1
-1899,cdn_34_5_1899,254,0,GP,"1 > Carpets, two-ply and three-ply, ingrain, of which the warp is composed wholly of cotton or other material than wool, worsted, &c.... > Great Britain.....",left_only,,2203,1267,140,,,,,,,,,,,,
+1899,cdn_34_5_1899,254,0,GP,"DUTIABLE GOODS— Con. > Wool, manufactures of— > Carpets— > 1 > Carpets, two-ply and three-ply, ingrain, of which the warp is composed wholly of cotton or other material than wool, worsted, &c.... > Great Britain.....",left_only,,2203,1267,140,,,,,,,,,,,,
 1899,cdn_34_5_1899,254,1,GP,United States.....,joined_weak,position,1327,1041,1327,,,2385,1351,354.63,,,,,,,0
 1899,cdn_34_5_1899,254,3,GP,,left_only,,,93,47.81,,,,,,,,,,,,
 1899,cdn_34_5_1899,254,5,GP,N. Brunswick....,left_only,,1234,810,,,,,,,,,,,,,
@@ -1847,7 +1790,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1899,cdn_34_5_1899,254,17,GP,N. Brunswick....,left_only,,1368,663,898,,,,,,,,,,,,
 1899,cdn_34_5_1899,254,18,GP,Manitoba.....,left_only,,437,294,437,,,,,,,,,,,,
 1899,cdn_34_5_1899,254,21,GP,N. W. Ter.....,left_only,,850,183,850,,,,,,,,,,,,
-1899,cdn_34_5_1899,254,23,GP,Ontario.....,left_only,,2513,473,2513,,,,,,,,,,,,
+1899,cdn_34_5_1899,254,23,GP,“ Shoddy ..... > United States— > Ontario.....,left_only,,2513,473,2513,,,,,,,,,,,,
 1899,cdn_34_5_1899,254,24,GP,,left_only,,,445.82,445,,,,,,,,,,,,
 1899,cdn_34_5_1899,254,26,GP,B. Columbia....,left_only,,2933,114,2933,,,,,,,,,,,,
 1899,cdn_34_5_1899,254,29,GP,"5 > Zinc, manufactures of, N.O.P..... > Great Britain.....",left_only,,,896,,,,,,,,,,,,,

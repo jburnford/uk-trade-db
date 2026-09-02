@@ -194,3 +194,12 @@ Regime D rows enter the exports through `imports_general_rows_d.csv` (read by
 to the vote; 1891–97 at .925/.896/.917/.982/.952/.923/1.015 of print. The UK↔Canada mirror passes
 every year 1890–1896 on the promoted data. Remaining under-read is diffuse (GB/US), filed for a
 third engine. Next: phase 6 (FY1898–1908 spread rows into the schema).
+
+## Phase 6 (2026-09-01): FY1898–1908 promoted
+
+`ca_align_spreads.py` keeps heading labels; `ca_promote_spreads.py` builds
+`imports_general_rows_s.csv` (regime S, tariff columns kept) from the spread rows PLUS the
+single-page free-goods tables read by `ca_parse_regimeD.parse_volume(only_free=True)` —
+the free half had never been parsed. N on val_efc .86–.97 for all eleven years; exports and
+origins report 1868–1908. See `reports/completion_log.md` (A2) and
+`reports/canada_spreads_promote.md`.

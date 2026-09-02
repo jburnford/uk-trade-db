@@ -2,14 +2,14 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,0,16,GP,7 Sheep ..... > Belgium .....,left_only,,27,600,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,0,17,GP,Germany .....,joined_weak,position,184,3652,,,,,,,,,,,,,0
 1903,statcan_nibi_w2_1903,0,23,GP,,right_only,,,,,35856,7171.2,,,,,,,,35856,7171.2,2
-1903,statcan_nibi_w2_1903,1,0,GP,1 Bagatelle tables or boards ..... > Great Britain.....,joined_weak,position,,25,,809,283.15,2.25,5.84,2.25,,,,5.84,1,,-1
+1903,statcan_nibi_w2_1903,1,0,GP,DETACHABLE GOODS—Con. > 1 Bagatelle tables or boards ..... > Great Britain.....,joined_weak,position,,25,,809,283.15,2.25,5.84,2.25,,,,5.84,1,,-1
 1903,statcan_nibi_w2_1903,1,2,GP,1 Bagatelle tables or boards ..... > Total .....,joined_weak,position,20,834,18,809,283.15,2.25,5.84,20,,,,834,288.99,,-1
 1903,statcan_nibi_w2_1903,1,3,GP,2 Baking powders. .... > Great Britain.....,joined_weak,position,,38,,52,8.4,244.38,9.76,384.9,,,,18.16,2,,-1
 1903,statcan_nibi_w2_1903,1,5,GP,2 Baking powders. .... > Total .....,joined_weak,position,364161,108362,362507,107532,21750.42,244.38,9.76,362751,,,,107570,21760.18,,-1
 1903,statcan_nibi_w2_1903,2,12,GP,Germany.....,left_only,,,20,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,2,21,GP,"6 Boats—Open pleasure sail boats, skiffs and canoes..... > Great Britain.....",joined_weak,position,14,1780,4,415,103.75,,1464,244.01,,,,,1879,347.76,2
 1903,statcan_nibi_w2_1903,2,30,GP,Total.....,left_only,,,8797,,,,,,,,,,,,,
-1903,statcan_nibi_w2_1903,3,0,GP,"Books—Novels or works of fiction, or literature of a similar character, unbound or paper bound, or in sheets, including freight rates for railways and telegraph rates, bound in book or pamphlet form, not including Christmas annuals or publications commonly known as juvenile and toy books. ....",left_only,,,,15229,,,,,,,,,,,,
+1903,statcan_nibi_w2_1903,3,0,GP,"DUTIABLE GOODS— Con. > 1 Books— Con. > Books—Novels or works of fiction, or literature of a similar character, unbound or paper bound, or in sheets, including freight rates for railways and telegraph rates, bound in book or pamphlet form, not including Christmas annuals or publications commonly known as juvenile and toy books. ....",left_only,,,,15229,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,3,13,GP,,joined_weak,position,,337,91,279,179.4,7528,1494,752.8,,,,8724,1773,932.2,2
 1903,statcan_nibi_w2_1903,3,14,GP,,joined_weak,position,,10,3,91,60.55,,,,,,,337.91,50.55,,-1
 1903,statcan_nibi_w2_1903,3,15,GP,,joined_weak,position,,118353,24029,3,1.5,,,,,,,10,3,1.5,2
@@ -56,7 +56,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,7,13,GP,Germany.....,left_only,,194000,3200,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,7,18,GP,4 Rice and sago flour and sago..... > Great Britain.....,joined_weak,position,800995,10712,,466,116.5,832388,11286,1881.0,,,,832388,11286,1881.0,-2
 1903,statcan_nibi_w2_1903,7,30,GP,Total.....,joined_weak,position,3636514,62774,396766,8615,2153.75,2951159,51102,8517.15,,,,3847925,59717,10670.9,2
-1903,statcan_nibi_w2_1903,8,0,GP,1 Beans..... > Great Britain.....,joined_weak,position,605,873,589,826,88.35,16.47,1.6,605,,,,873,89.95,1,-2
+1903,statcan_nibi_w2_1903,8,0,GP,"DUTIABLE GOODS— Con. > Bush. > Bush. > Breadstuffs, &c.— Con. > Grain and Products of— Con. > 1 Beans..... > Great Britain.....",joined_weak,position,605,873,589,826,88.35,16.47,1.6,605,,,,873,89.95,1,-2
 1903,statcan_nibi_w2_1903,8,10,GP,Total.....,joined_weak,position,25563,40049,25087,39256,3763.05,16.47,160,25103,,,,39303,3764.65,,-1
 1903,statcan_nibi_w2_1903,8,11,GP,2 Indian Corn for purposes of distillation..... > United States.....,joined_weak,position,827217,487054,843275,480602,60995.74,,,,,,,813275,480602,60995.74,2
 1903,statcan_nibi_w2_1903,8,28,GP,10 Oatmeal..... > Great Britain.....,left_only,,,86,,,,,,,,,,,,,
@@ -64,7 +64,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,9,2,GP,Japan.....,left_only,,,2,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,9,30,GP,8 Paving brick..... > Great Britain.....,joined_weak,position,568,8733,,,,,568,8733,,,,1164.42,568,8733,2
 1903,statcan_nibi_w2_1903,10,36,GP,France.....,joined_weak,position,50,51,50,51,12.75,,,,,,,50.51,12.75,,-1
-1903,statcan_nibi_w2_1903,11,15,GP,Paraffin wax > Great Britain,joined_weak,position,4693,594,,,,,582,116.4,,,,,582,,1
+1903,statcan_nibi_w2_1903,11,15,GP,2 Candles— > Lbs. > Lbs. > Paraffin wax > Great Britain,joined_weak,position,4693,594,,,,,582,116.4,,,,,582,,1
 1903,statcan_nibi_w2_1903,12,1,GP,"2 Freight wagons, drays and similar vehicles..... > Great Britain.....",left_only,,1,51,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,12,2,GP,United States.....,joined_weak,position,371,21875,370,21825,5456.25,1,51,8.5,,,,1.51,8.5,2,-2
 1903,statcan_nibi_w2_1903,12,3,GP,"3 Finished parts of buggies, carriages and similar vehicles, N.E.S., including parts of cutters, children's carriages, and sleds, N.O.P..... > Total.....",joined_weak,position,372,21926,370,21825,5456.25,1.51,8.5,370,,,,21825,5456.25,,-1
@@ -101,7 +101,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,18,17,GP,Total .....,joined_weak,position,3367,,,3367,1178.45,,,,,,,,3367,1178.45,2
 1903,statcan_nibi_w2_1903,18,31,GP,Total .....,joined_weak,position,414740,,,415299,103825.67,,3182,530.35,,,,,418481,104356.02,2
 1903,statcan_nibi_w2_1903,19,9,GP,Total . . . . .,joined_weak,position,12437390,843924,2399072,177062,44267.75,9694943,664129,110689.73,,,,12394015,841191,154957.48,2
-1903,statcan_nibi_w2_1903,23,0,GP,"1 Cotton, manufactures of—Con. Velvets, velveteens and plush fabrics, N.E.S. .... > Great Britain.....",joined_weak,position,1159506,264477,89144,27935,8380.8,1069717,236025,47305.0,,,,1168996,284451,52385,-2
+1903,statcan_nibi_w2_1903,23,0,GP,"DUTIABLE GOODS—Con. > 1 Cotton, manufactures of—Con. Velvets, velveteens and plush fabrics, N.E.S. .... > Great Britain.....",joined_weak,position,1159506,264477,89144,27935,8380.8,1069717,236025,47305.0,,,,1168996,284451,52385,-2
 1903,statcan_nibi_w2_1903,24,6,GP,,right_only,,,,,8,1.65,,,,,,,,11,8,-2
 1903,statcan_nibi_w2_1903,24,8,GP,"3 Acetic and pyroligneous, in excess of the strength of proof..... > Great Britain.....",joined_weak,position,3887,3284,,,,3078,2513,3131.26,,,,3078,2513,,1
 1903,statcan_nibi_w2_1903,24,19,GP,United States.....,joined_weak,position,74520,4140,72660,4016,803.2,,,,,,,72600,4016,803.2,2
@@ -111,7 +111,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,25,33,GP,E. East Indies.....,joined_weak,position,25056,78515,1560,4974,1560.0,20112,64445,13408.0,,,,21072,69419,14968.0,2
 1903,statcan_nibi_w2_1903,26,10,GP,3 Magnesia. .... > Great Britain. ....,joined_weak,position,17130,1486,,,,16930,1458,194.4,,,,16930,1458,194.4,2
 1903,statcan_nibi_w2_1903,26,26,GP,"7 Opium, prepared for smoking .... > United States. ....",joined_weak,position,3595,8088,,,,,,,,,,,,,0
-1903,statcan_nibi_w2_1903,27,0,GP,"1 Drugs, dyes, &c.— Con. Proprietary medicines, not otherwise provided for ..... > Great Britain.....",joined_weak,position,,76295,,3358,839.84,77306,12884.99,,,,,80664,13724.83,1,-2
+1903,statcan_nibi_w2_1903,27,0,GP,"DUTIABLE GOODS— Con. > 1 Drugs, dyes, &c.— Con. Proprietary medicines, not otherwise provided for ..... > Great Britain.....",joined_weak,position,,76295,,3358,839.84,77306,12884.99,,,,,80664,13724.83,1,-2
 1903,statcan_nibi_w2_1903,27,1,GP,Hong Kong.....,joined_weak,position,,1977,,1077,269.25,,,,,,,1077,269.25,,-1
 1903,statcan_nibi_w2_1903,27,2,GP,Newfoundland.....,joined_weak,position,,31,,31,7.75,,,,,,,31,7.75,,-1
 1903,statcan_nibi_w2_1903,27,3,GP,Belgium.....,joined_weak,position,,607,,607,151.75,,,,,,,607,151.75,,-1
@@ -128,17 +128,17 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,28,9,GP,Japan.....,left_only,,,97,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,28,37,GP,,right_only,,,,,46,13.8,,,,,,,,46,13.8,2
 1903,statcan_nibi_w2_1903,29,38,GP,Total .....,joined_weak,position,560646,122960,559236,122500,16777.08,,,,,,,569326,122500,16777.08,2
-1903,statcan_nibi_w2_1903,30,6,GP,"2 Electric light carbons and carbon points, of all kinds, N.E.S. ....",joined_weak,position,,77,963,433,151.55,41,530,123.67,,,,77,963,275.22,2
+1903,statcan_nibi_w2_1903,30,6,GP,"2 Electric light carbons and carbon points, of all kinds, N.E.S. .... > M.",joined_weak,position,,77,963,433,151.55,41,530,123.67,,,,77,963,275.22,2
 1903,statcan_nibi_w2_1903,30,7,GP,"2 Electric light carbons and carbon points, of all kinds, N.E.S. ....",joined_weak,position,,365,4606,4606,1612.1,,,,,,,365,4606,1612.1,2
 1903,statcan_nibi_w2_1903,30,8,GP,"2 Electric light carbons and carbon points, of all kinds, N.E.S. ....",joined_weak,position,,4452,36744,36744,12873.93,,,,,,,4452,36744,12873.93,2
 1903,statcan_nibi_w2_1903,30,9,GP,,joined_weak,position,,4894,42313,41783,14637.58,41,530,123.67,,,,4894,42813,14761.25,0
-1903,statcan_nibi_w2_1903,30,10,GP,3 Electric light carbons over 6 inches in circumference .....,joined_weak,position,,46960,10214,10214,1532.1,,,,,,,45960,10214,1532.1,2
+1903,statcan_nibi_w2_1903,30,10,GP,3 Electric light carbons over 6 inches in circumference ..... > No.,joined_weak,position,,46960,10214,10214,1532.1,,,,,,,45960,10214,1532.1,2
 1903,statcan_nibi_w2_1903,30,11,GP,3 Electric light carbons over 6 inches in circumference .....,joined_weak,position,,5463,522,522,78.3,,,,,,,5463,522,78.3,2
 1903,statcan_nibi_w2_1903,30,12,GP,3 Electric light carbons over 6 inches in circumference .....,joined_weak,position,,192749,22030,22030,3304.5,,,,,,,192749,22030,3304.5,2
 1903,statcan_nibi_w2_1903,30,13,GP,,joined_weak,position,,245172,32766,32766,4914.9,,,,,,,245172,32766,4914.9,2
 1903,statcan_nibi_w2_1903,32,20,GP,,right_only,,,,,8157,2874.92,,97,22.63,,,,,2398,839.3,-2
 1903,statcan_nibi_w2_1903,32,31,GP,,right_only,,,,,612,122.4,,,,,,,,64944,16237.08,-2
-1903,statcan_nibi_w2_1903,35,0,GP,"1 Fireworks, firecrackers and torpedoes, all kinds ..... > Hong Kong .....",left_only,,,8,,,,,,,,,,,,,
+1903,statcan_nibi_w2_1903,35,0,GP,"DUTIABLE GOODS— Con. > 1 Fireworks, firecrackers and torpedoes, all kinds ..... > Hong Kong .....",left_only,,,8,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,35,7,GP,"2 Fish— Cod, haddock, ling and pollock, fresh, imported otherwise than in barrels, etc. .... > United States .....",joined_weak,position,,,,26452,3769.53,,,,,,,753894,26452,3769.53,2
 1903,statcan_nibi_w2_1903,35,12,GP,St. Pierre .....,left_only,,522200,19296,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,36,5,GP,,right_only,,,,,8,,,8,,,,,,8,,-1
@@ -147,7 +147,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,36,18,GP,"11 Bait fish, fresh, not in barrels ... > United States. ....",joined_weak,position,9400,429,,,,,,,,,,,,,0
 1903,statcan_nibi_w2_1903,37,3,GP,Japan. ....,joined_weak,position,1641,69,1641,69,16.41,,,,,,,1641.69,16.41,,-1
 1903,statcan_nibi_w2_1903,37,9,GP,Norway and Sweden. ....,joined_weak,position,1000,64,1000,64,50.0,,,,,,,1000.64,50.0,,-1
-1903,statcan_nibi_w2_1903,37,11,GP,Great Britain. ....,joined_weak,position,5169,939,14710,2170,367.75,,41,2.67,,,,,2211,370.42,2
+1903,statcan_nibi_w2_1903,37,11,GP,"4 Anchovies and sardines in half boxes, measuring not more than 5 inches long, 4 inches wide and 1½ inches deep > ½ boxes. > ½ boxes. > Great Britain. ....",joined_weak,position,5169,939,14710,2170,367.75,,41,2.67,,,,,2211,370.42,2
 1903,statcan_nibi_w2_1903,37,16,GP,Total .....,joined_weak,position,13825,2610,27536,4427,688.41,159.41,2.67,27695,,,,4438,691.08,,-1
 1903,statcan_nibi_w2_1903,37,18,GP,Great Britain. ....,left_only,,540638,32872,558233,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,37,30,GP,,right_only,,,,,3,90,,,,,,,,3.9,,-1
@@ -156,7 +156,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,38,23,GP,Russia.....,joined_weak,position,,,68,73,18.25,,,,,,,68.73,18.25,,-1
 1903,statcan_nibi_w2_1903,39,0,GP,DUTIABLE GOODS—Con.,left_only,,,8,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,39,26,GP,St. Pierre.....,left_only,,,485,,,,,,,,,,,,,
-1903,statcan_nibi_w2_1903,40,0,GP,"1 Damask of linen, stair linen, diaper, napkins, doilies, table and tray cloths, quilts, and like articles of linen, N. O. P. > Great Britain.....",joined_weak,position,,529269,,32006,9604.6,498630,99726.0,,,,,530636,109330.6,1,-2
+1903,statcan_nibi_w2_1903,40,0,GP,"DUTIABLE GOODS—Con. > Flax, hemp and jute—Con. > 1 Damask of linen, stair linen, diaper, napkins, doilies, table and tray cloths, quilts, and like articles of linen, N. O. P. > Great Britain.....",joined_weak,position,,529269,,32006,9604.6,498630,99726.0,,,,,530636,109330.6,1,-2
 1903,statcan_nibi_w2_1903,40,1,GP,Austria-Hungary.....,joined_weak,position,,2864,,2864,859.2,,,,,,,2864,859.2,,-1
 1903,statcan_nibi_w2_1903,40,2,GP,Belgium.....,joined_weak,position,,36,,36,10.8,,,,,,,36,10.8,,-1
 1903,statcan_nibi_w2_1903,40,3,GP,China.....,joined_weak,position,,10,,10,3.0,,,,,,,10,3.0,,-1
@@ -230,7 +230,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,49,7,GP,Total.....,joined_weak,position,28622422,766868,21105744,555155,111031.0,7485290,211423,28190.14,,,,28590834,766578,139221.14,2
 1903,statcan_nibi_w2_1903,51,8,GP,Newfoundland .....,left_only,,,10,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,52,0,GP,,right_only,,,,,2594,778.2,,94712,18942.4,,,,97306,19720.6,,-1
-1903,statcan_nibi_w2_1903,52,1,GP,"1 Gunpowder and other explosives—Con. Gun, rifle and pistol cartridges, or other ammunitions, N.O.P. .... > Great Britain .....",joined_weak,position,,104749,,160,48.0,,,,,,,160,48.0,,-1
+1903,statcan_nibi_w2_1903,52,1,GP,"DUTIABLE GOODS—Con. > 1 Gunpowder and other explosives—Con. Gun, rifle and pistol cartridges, or other ammunitions, N.O.P. .... > Great Britain .....",joined_weak,position,,104749,,160,48.0,,,,,,,160,48.0,,-1
 1903,statcan_nibi_w2_1903,52,2,GP,Belgium .....,joined_weak,position,,160,,454,136.2,,,,,,,454,136.2,,-1
 1903,statcan_nibi_w2_1903,52,3,GP,Germany .....,joined_weak,position,,454,,130219,39065.7,,,,,,,130219,39065.7,,-1
 1903,statcan_nibi_w2_1903,52,4,GP,United States .....,joined_weak,position,,130430,,133427,40028.1,,94712,18942.4,,,,228139,58970.5,,-1
@@ -263,10 +263,10 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,52,32,GP,United States .....,joined_weak,position,,46011,,45871,16054.85,,,,,,,45871,16054.85,,-1
 1903,statcan_nibi_w2_1903,52,33,GP,Total .....,joined_weak,position,,46680,,46332,16112.25,,505,117.85,,,,46540,16230.1,,-1
 1903,statcan_nibi_w2_1903,54,0,GP,,right_only,,,,,2395,718.5,35221,7044.2,,,,,37616,7762.7,1,-2
-1903,statcan_nibi_w2_1903,54,1,GP,"1 Hat, cap and bonnet shapes. .... > Great Britain. ....",joined_weak,position,,37616,,421,126.3,,,,,,,421,126.3,,-1
+1903,statcan_nibi_w2_1903,54,1,GP,"DUTIABLE GOODS—Con. > 1 Hat, cap and bonnet shapes. .... > Great Britain. ....",joined_weak,position,,37616,,421,126.3,,,,,,,421,126.3,,-1
 1903,statcan_nibi_w2_1903,54,2,GP,France. ....,joined_weak,position,,421,,583,174.9,,,,,,,583,174.9,,-1
 1903,statcan_nibi_w2_1903,54,3,GP,Germany. ....,joined_weak,position,,583,,18654,5596.2,,,,,,,18654,5596.2,,-1
-1903,statcan_nibi_w2_1903,54,7,GP,"3 Honey, in the comb or otherwise, and imitations thereof. .... > Great Britain. . .",joined_weak,position,5201,177,,480,368.01,6279,210,125.58,,,,6279,210,125.58,-2
+1903,statcan_nibi_w2_1903,54,7,GP,"Lbs. > Lbs. > 3 Honey, in the comb or otherwise, and imitations thereof. .... > Great Britain. . .",joined_weak,position,5201,177,,480,368.01,6279,210,125.58,,,,6279,210,125.58,-2
 1903,statcan_nibi_w2_1903,54,11,GP,United States. ....,joined_weak,position,60214,5417,62606,6073,2264.13,45203,1872,904.06,,,,62606,5579,1878.18,-2
 1903,statcan_nibi_w2_1903,54,12,GP,Total. ....,joined_weak,position,121240,7886,75471,,,,,,,,,120674,7945,3168.19,-2
 1903,statcan_nibi_w2_1903,54,17,GP,United States. ....,joined_weak,position,373941,98888,352374,93716,22942.44,,,,,,,382374,93716,22942.44,2
@@ -292,7 +292,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,57,22,GP,Total .....,joined_weak,position,629480,1639930,89873,304766,15238.3,539486,1334942,44498.26,,,,629369,1639708,59736.56,2
 1903,statcan_nibi_w2_1903,59,17,GP,"5 Horse, mule, and ox shoes..... > Great Britain.....",joined_weak,position,,195,,,,195,39.0,,,,,195,39.0,5,0
 1903,statcan_nibi_w2_1903,59,28,GP,United States.....,joined_weak,position,19876,61265,19709,60795,21278.25,,,,,,,19700,60795,21278.25,2
-1903,statcan_nibi_w2_1903,60,0,GP,1 Iron in pigs..... > Great Britain.....,joined_weak,position,59335,856555,1562,22490,3905.0,55374,772425,92291.08,,,,56930,794915,96196.08,2
+1903,statcan_nibi_w2_1903,60,0,GP,DUTIABLE GOODS— Con. > Tons. > Tons. > Iron and steel— Con. > 1 Iron in pigs..... > Great Britain.....,joined_weak,position,59335,856555,1562,22490,3905.0,55374,772425,92291.08,,,,56930,794915,96196.08,2
 1903,statcan_nibi_w2_1903,60,11,GP,6 Grain crushers..... > Great Britain.....,joined_weak,position,6,66,,830,207.5,6,66,11.0,,,,6.66,11.0,6,-2
 1903,statcan_nibi_w2_1903,60,12,GP,United States.....,joined_weak,position,18,830,18,830,207.5,6.66,11.0,18,,,,830,207.5,,-1
 1903,statcan_nibi_w2_1903,60,14,GP,7 Wind mills..... > United States.....,left_only,,629,38146,629,,,,,,,,,,,,
@@ -312,13 +312,13 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,64,17,GP,,right_only,,,,,31438,11003.3,,,,,,,,,,0
 1903,statcan_nibi_w2_1903,64,20,GP,"7 Skelp iron or steel, sheared or rolled in grooves, imported by manufacturers of wrought iron or steel pipe for use only in the manufacture of wrought iron or steel pipe in their own fac- tories . . . . . > Total . . . . .",joined_weak,position,93456,35043,93657,,,,,93657,,,,35163,12307.05,,-1
 1903,statcan_nibi_w2_1903,65,0,GP,,right_only,,,,,1381,207.15,29.8,8.0,949,,,,1461,215.15,1,-2
-1903,statcan_nibi_w2_1903,65,1,GP,1. Iron and steel—Con. Swedish rolled iron and Swedish rolled steel nail rods under half an inch in diameter for the manufacture of horse-shoe nails..... > Great Britain..... Norway and Sweden. United States.....,joined_weak,position,,,,20703,3105.45,,,,,,,10772,20703,3105.45,2
+1903,statcan_nibi_w2_1903,65,1,GP,DUTIABLE GOODS—Con. > 1. Iron and steel—Con. Swedish rolled iron and Swedish rolled steel nail rods under half an inch in diameter for the manufacture of horse-shoe nails..... > Great Britain..... Norway and Sweden. United States.....,joined_weak,position,,,,20703,3105.45,,,,,,,10772,20703,3105.45,2
 1903,statcan_nibi_w2_1903,65,2,GP,,right_only,,,,,6,0.9,,,,,,,2,6.9,,-1
 1903,statcan_nibi_w2_1903,65,3,GP,Total .....,joined_weak,position,11723,22170,11694,22000,3313.5,29.8,8.0,11723,,,,22170,3321.5,,-1
 1903,statcan_nibi_w2_1903,65,5,GP,,right_only,,,,,2097,104.85,731852,79766,2659.04,,,,741061,81863,2763.89,2
 1903,statcan_nibi_w2_1903,65,6,GP,,right_only,,,,,201,10.05,,,,,,,1800,201,10.05,2
 1903,statcan_nibi_w2_1903,65,7,GP,,right_only,,,,,15875,793.75,,,,,,,141068,15875,793.75,2
-1903,statcan_nibi_w2_1903,65,8,GP,"3. Boiler tubes of wrought iron or steel, including flues and corrugated tubes for marine boilers..... > Great Britain..... Belgium..... Germany..... United States.....",joined_weak,position,,,,263665,13183.25,,,,,,,2135191,263665,13183.25,2
+1903,statcan_nibi_w2_1903,65,8,GP,"Tubing: > 3. Boiler tubes of wrought iron or steel, including flues and corrugated tubes for marine boilers..... > Great Britain..... Belgium..... Germany..... United States.....",joined_weak,position,,,,263665,13183.25,,,,,,,2135191,263665,13183.25,2
 1903,statcan_nibi_w2_1903,65,11,GP,,right_only,,,,,,,14651,694,46.27,,,,14651,694,46.27,2
 1903,statcan_nibi_w2_1903,65,12,GP,"5. Tubes, seamless steel, for bicycles..... > Great Britain..... United States.....",joined_weak,position,,,,13619,1361.9,,,,,,,133323,13619,1361.9,2
 1903,statcan_nibi_w2_1903,65,14,GP,,right_only,,,,,227,34.05,381195,57187,5718.7,,,,381897,57414,5752.75,2
@@ -338,9 +338,9 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,66,24,GP,United States,joined_weak,position,560232,16719,560232,16719,2507.85,560232,,,,,,16719,2507.85,,-1
 1903,statcan_nibi_w2_1903,69,11,GP,"4 Tools, hand or machine, of all kinds, N.O.P..... > Great Britain.....",left_only,,,50921,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,70,12,GP,United States.....,joined_weak,position,67965,8699,88845,8587,2237.83,,,,,,,68845,8587,2237.83,2
-1903,statcan_nibi_w2_1903,70,32,GP,"4. Old, scrap, pig and block..... > Great Britain.....",joined_weak,position,19507,35634,6774,2540,381.0,,35017,3501.7,,,,,37557,3882.7,2
+1903,statcan_nibi_w2_1903,70,32,GP,"Lead and manufactures of— > Cwt. > Cwt. > 4. Old, scrap, pig and block..... > Great Britain.....",joined_weak,position,19507,35634,6774,2540,381.0,,35017,3501.7,,,,,37557,3882.7,2
 1903,statcan_nibi_w2_1903,70,38,GP,5. Bars and in sheets..... > Great Britain.....,joined_weak,position,8947,26480,,7119,1779.75,10104,28279,4713.25,,,,10104,28279,4713.25,-2
-1903,statcan_nibi_w2_1903,71,0,GP,Shot and bullets ..... > Great Britain.....,joined_weak,position,54736,1880,,947,331.45,6128,250,58.34,,,,6128,250,58.34,-2
+1903,statcan_nibi_w2_1903,71,0,GP,1 Lead and manufactures of— Con. > Shot and bullets ..... > Great Britain.....,joined_weak,position,54736,1880,,947,331.45,6128,250,58.34,,,,6128,250,58.34,-2
 1903,statcan_nibi_w2_1903,72,4,GP,Newfoundland.....,joined_weak,position,3356,50,3356,50,7.5,,,,,,,3356.5,7.5,,-1
 1903,statcan_nibi_w2_1903,72,20,GP,Newfoundland.....,joined_weak,position,360,72,360,72,10.8,,,,,,,360.72,10.8,,-1
 1903,statcan_nibi_w2_1903,72,21,GP,France.....,joined_weak,position,165,72,165,72,10.8,,,,,,,165.72,10.8,,-1
@@ -352,7 +352,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,74,25,GP,Total.....,joined_weak,position,100611,75896,101251,11944,2986.0,,664,110.67,,,,,76594,15211.65,-2
 1903,statcan_nibi_w2_1903,75,13,GP,United States . . . . .,left_only,,,11129,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,75,14,GP,Total . . . . .,left_only,,,11242,,,,,,,,,,,,,
-1903,statcan_nibi_w2_1903,78,0,GP,Nickel anodes..... > Great Britain.....,left_only,,,167,,,,,,,,,,,,,
+1903,statcan_nibi_w2_1903,78,0,GP,"DUTIABLE GOODS—Con. > 1 Metal, N.E.S.— Con. > Nickel anodes..... > Great Britain.....",left_only,,,167,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,78,3,GP,"2 Patterns of brass, iron, steel or other metal ..... > Great Britain.....",left_only,,,129,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,78,6,GP,"3 Pins, N.O.P ..... > Great Britain.....",left_only,,,32065,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,78,7,GP,Austria-Hungary.....,left_only,,,240,,,,,,,,,,,,,
@@ -361,7 +361,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,78,10,GP,Germany.....,left_only,,,10264,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,78,11,GP,Switzerland.....,left_only,,,28,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,78,12,GP,United States.....,left_only,,,32947,,,,,,,,,,,,,
-1903,statcan_nibi_w2_1903,78,17,GP,Great Britain.....,left_only,,7992,219,2189,,,,,,,,,,,,
+1903,statcan_nibi_w2_1903,78,17,GP,Sqr. in. > Sqr. in. > Great Britain.....,left_only,,7992,219,2189,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,78,18,GP,Belgium.....,left_only,,350,20,350,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,78,19,GP,France.....,left_only,,88,1,88,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,78,20,GP,Germany.....,left_only,,10,1,10,,,,,,,,,,,,
@@ -390,7 +390,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,86,15,GP,Total.....,joined_weak,position,19247877,759459,15635457,640907,32045.35,3573329,117464,3915.47,,,,19208780,758371,35960.82,2
 1903,statcan_nibi_w2_1903,86,30,GP,"5. Paints, ground or mixed in, or with, either japan, varnish, lacquers, liquid dryers, collodion, oil finish or oil varnish..... > Great Britain.....",joined_weak,position,3480,235,2230,149,37.25,2998,211,35.17,,,,5328,360,72.42,2
 1903,statcan_nibi_w2_1903,87,0,GP,"1 Paints and colours ground in spirits, and all spirit varnishes and lacquers ..... > Great Britain.....",left_only,,2,4,,,,,,,,,,,,,
-1903,statcan_nibi_w2_1903,88,0,GP,"1 Paper and manufactures of—Con. Paper, felt or straw board..... > Great Britain.....",left_only,,,460,,,,,,,,,,,,,
+1903,statcan_nibi_w2_1903,88,0,GP,"HUTTABLE GOODS—Con. > 1 Paper and manufactures of—Con. Paper, felt or straw board..... > Great Britain.....",left_only,,,460,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,88,4,GP,"2 Hangings or wall paper, including borders..... > Great Britain.....",left_only,,85084,20567,27847,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,88,5,GP,"2 Hangings or wall paper, including borders..... > China.....",left_only,,2,2,2,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,88,6,GP,"2 Hangings or wall paper, including borders..... > France.....",left_only,,6278,2067,6373,,,,,,,,,,,,
@@ -430,12 +430,12 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,97,8,GP,,right_only,,,,,100,,,,,,,,,,,0
 1903,statcan_nibi_w2_1903,97,10,GP,"4 Salt, N.E.S., in bags, barrels or other packages ..... > United States .....",joined_weak,position,4164603,14706,4164867,14719,3123.81,100,2,0.05,,,,4164867,14719,3123.81,-2
 1903,statcan_nibi_w2_1903,97,16,GP,"6 Sauces and catsups, in bottles ..... > Great Britain .....",joined_weak,position,,46857,,555,194.25,26480,45644,10650.63,,,,26911,46199,10844.88,2
-1903,statcan_nibi_w2_1903,97,28,GP,"6 Sauces and catsups, in bottles ..... > 7 "" "" in bulk ..... > Great Britain .....",joined_weak,position,941,1684,,972,,,,,,,,,,,0
+1903,statcan_nibi_w2_1903,97,28,GP,"7 "" "" in bulk ..... > Great Britain .....",joined_weak,position,941,1684,,972,,,,,,,,,,,0
 1903,statcan_nibi_w2_1903,97,29,GP,,right_only,,,,,6,2.1,,1852,432.21,,,,972,1852,432.21,-2
 1903,statcan_nibi_w2_1903,97,33,GP,,right_only,,,,,5356,1874.6,972,1852,432.21,,,,12806,3951,1382.85,-2
 1903,statcan_nibi_w2_1903,97,34,GP,"United States ..... > 7 "" "" in bulk .....",joined_weak,position,12739,3844,12806,22170,7208,,,,,,,,,,0
 1903,statcan_nibi_w2_1903,97,35,GP,"Total ..... > 7 "" "" in bulk .....",joined_weak,position,22072,6933,21198,342,,,,,,,,,,,0
-1903,statcan_nibi_w2_1903,98,0,GP,,left_only,,,,8,,,,,,,,,,,,
+1903,statcan_nibi_w2_1903,98,0,GP,DUTIABLE GOODS— Con.,left_only,,,,8,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,98,1,GP,"1 Sausage casings, N.E.S. ....",left_only,,,,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,98,2,GP,,left_only,,,,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,100,35,GP,,right_only,,,,,552,204.52,,2889,674.1,,,,,3441,,1
@@ -498,7 +498,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,110,37,GP,Spain. ....,left_only,,40,158,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,110,39,GP,Total .....,joined_weak,position,17620,113313,18019,118026,30466.7,,,,,,,18012,118026,30466.7,2
 1903,statcan_nibi_w2_1903,111,4,GP,2 In bottles containing more than one quart each..... > France.....,left_only,,,,5,,,,,,,,,,,,
-1903,statcan_nibi_w2_1903,112,0,GP,"1 Stone and manufactures of—Con. Granite and freestones, dressed; all other building stone dressed, except marble ..... > Great Britain.....",left_only,,1,5,1,,,,,,,,,,,,
+1903,statcan_nibi_w2_1903,112,0,GP,"DUTIABLE GOODS—Con. > 1 Stone and manufactures of—Con. Granite and freestones, dressed; all other building stone dressed, except marble ..... > Great Britain.....",left_only,,1,5,1,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,112,1,GP,United States.....,joined_weak,position,2792,16659,2792,,,,,,,,,,,,0
 1903,statcan_nibi_w2_1903,112,4,GP,"3 Granite, manufactures of, N.O.P..... > Great Britain.....",left_only,,,50431,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,112,5,GP,Belgium.....,left_only,,,23,,,,,,,,,,,,,
@@ -552,15 +552,15 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,118,3,GP,St. Pierre.....,joined_weak,position,170,58,170,58,85.0,,,,,,,170.58,85.0,,-1
 1903,statcan_nibi_w2_1903,118,7,GP,United States.....,joined_weak,position,2339,1775,224,62,89.6,,,,,,,224.62,89.6,,-1
 1903,statcan_nibi_w2_1903,118,8,GP,Total.....,joined_weak,position,2344,1780,240,69,96.0,,,,,,,240.69,96.0,,-1
-1903,statcan_nibi_w2_1903,119,23,GP,"4 Varnish, lacquers, japans, japan dryers, liquid dryers and oil finish, not elsewhere specified..... > Hong Kong.....",joined_weak,position,12689,33424,176,434,122.0,,34275,6309.11,,,,,34769,6431.11,0
+1903,statcan_nibi_w2_1903,119,23,GP,"4 Varnish, lacquers, japans, japan dryers, liquid dryers and oil finish, not elsewhere specified..... > Great Britain ..... > Galls. > Galls. > Hong Kong.....",joined_weak,position,12689,33424,176,434,122.0,,34275,6309.11,,,,,34769,6431.11,0
 1903,statcan_nibi_w2_1903,119,26,GP,"4 Varnish, lacquers, japans, japan dryers, liquid dryers and oil finish, not elsewhere specified..... > Total .....",joined_weak,position,72730,108681,72735,108544,36267.8,,,,,,,72795,108544,36267.8,2
-1903,statcan_nibi_w2_1903,119,31,GP,6 Potatoes..... > B. W. Indies .....,joined_weak,position,180,90,31,32,4.65,149,58,14.9,,,,180.9,19.55,6,-2
+1903,statcan_nibi_w2_1903,119,31,GP,6 Potatoes..... > Great Britain ..... > Bush. > Bush. > B. W. Indies .....,joined_weak,position,180,90,31,32,4.65,149,58,14.9,,,,180.9,19.55,6,-2
 1903,statcan_nibi_w2_1903,119,32,GP,6 Potatoes..... > China .....,joined_weak,position,126,114,110,103,16.5,16.11,1.6,126,,,,114,18.1,,-1
 1903,statcan_nibi_w2_1903,119,35,GP,,joined_weak,position,407740,228817,407322,228779,61098.3,165.69,16.5,407487,,,,228848,61114.8,,-1
-1903,statcan_nibi_w2_1903,122,21,GP,Great Britain.....,joined_weak,position,40,40,,28817,5751.8,60,60,8.01,,,,60,60,8.01,-2
+1903,statcan_nibi_w2_1903,122,21,GP,"6 Barrels containing petroleum or its products, or any mixture of which petroleum forms a part, when such contents are chargeable with a specific duty..... > No. > No. > Great Britain.....",joined_weak,position,40,40,,28817,5751.8,60,60,8.01,,,,60,60,8.01,-2
 1903,statcan_nibi_w2_1903,123,0,GP,DUTIABLE GOODS—Con.,left_only,,,8,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,123,34,GP,,right_only,,,,,,,,,,,,,4081,,,0
-1903,statcan_nibi_w2_1903,124,0,GP,"1 Wood and manufactures of—Con. Veneers of wood, not over \frac{3}{8} of an inch in thickness ..... > Great Britain.....",left_only,,,18,,,,,,,,,,,,,
+1903,statcan_nibi_w2_1903,124,0,GP,"DUTIABLE GOODS—Con. > 1 Wood and manufactures of—Con. Veneers of wood, not over \frac{3}{8} of an inch in thickness ..... > Great Britain.....",left_only,,,18,,,,,,,,,,,,,
 1903,statcan_nibi_w2_1903,124,1,GP,"1 Wood and manufactures of—Con. Veneers of wood, not over \frac{3}{8} of an inch in thickness ..... > United States.....",joined_weak,position,,132747,,132747,9956.41,18,0.9,,,,,132747,9956.41,1,-2
 1903,statcan_nibi_w2_1903,124,2,GP,"1 Wood and manufactures of—Con. Veneers of wood, not over \frac{3}{8} of an inch in thickness ..... > Total.....",joined_weak,position,,132765,,132747,9956.41,18,0.9,,,,,132765,9957.31,,-1
 1903,statcan_nibi_w2_1903,124,3,GP,"2 Walking sticks and canes of all kinds, N.E.S ..... > Great Britain.....",joined_weak,position,,1636,,198,59.4,1438,287.6,,,,,1636,347.0,2,-2
@@ -578,8 +578,8 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,124,15,GP,"4 Wool, manufactures of :— Blankets..... > Germany.....",joined_weak,position,1531,249,1531,249,87.15,,,,,,,249,87.15,,-1
 1903,statcan_nibi_w2_1903,124,16,GP,"4 Wool, manufactures of :— Blankets..... > Italy.....",joined_weak,position,100,51,100,51,17.85,,,,,,,51,17.85,,-1
 1903,statcan_nibi_w2_1903,124,17,GP,"4 Wool, manufactures of :— Blankets..... > United States.....",joined_weak,position,12642,4934,12504,4835,1692.25,,,,,,,4835,1692.25,,-1
-1903,statcan_nibi_w2_1903,124,19,GP,"4 Wool, manufactures of :— Blankets..... > 5 Cassimeres cloths and doeskins..... > Great Britain.....",joined_weak,position,,2294538,,62088,21755.06,3964013,2225447,519270.63,,,,4094858,2287535,541025.69,2
-1903,statcan_nibi_w2_1903,124,20,GP,"4 Wool, manufactures of :— Blankets..... > 5 Cassimeres cloths and doeskins..... > Belgium.....",joined_weak,position,888,664,888,664,232.4,,,,,,,664,232.4,,-1
+1903,statcan_nibi_w2_1903,124,19,GP,5 Cassimeres cloths and doeskins..... > Great Britain.....,joined_weak,position,,2294538,,62088,21755.06,3964013,2225447,519270.63,,,,4094858,2287535,541025.69,2
+1903,statcan_nibi_w2_1903,124,20,GP,Belgium.....,joined_weak,position,888,664,888,664,232.4,,,,,,,664,232.4,,-1
 1903,statcan_nibi_w2_1903,124,22,GP,Germany..... > 5 Cassimeres cloths and doeskins.....,joined_weak,position,95398,50073,97333,50055,17839.96,,,,,,,97533,50035,17839.96,0
 1903,statcan_nibi_w2_1903,124,23,GP,Holland..... > 5 Cassimeres cloths and doeskins.....,joined_weak,position,670,401,670,401,140.35,,,,,,,401,140.35,,-1
 1903,statcan_nibi_w2_1903,124,24,GP,Switzerland..... > 5 Cassimeres cloths and doeskins.....,joined_weak,position,208,66,208,66,23.1,,,,,,,66,23.1,,-1
@@ -593,7 +593,7 @@ fiscal_year,volume,pair_id,row_seq,era,labels,align_status,key,tot_imp_qty,tot_i
 1903,statcan_nibi_w2_1903,124,37,GP,7 Tweeds ..... > Germany.....,joined_weak,position,68311,30320,68377,31359,11001.2,,,,,,,31359,11001.2,,-1
 1903,statcan_nibi_w2_1903,124,38,GP,7 Tweeds ..... > Holland.....,joined_weak,position,125,103,125,103,36.05,,,,,,,103,36.05,,-1
 1903,statcan_nibi_w2_1903,124,39,GP,7 Tweeds ..... > United States.....,joined_weak,position,3766,1157,3766,1157,404.95,,,,,,,1157,404.95,,-1
-1903,statcan_nibi_w2_1903,125,0,GP,"1 Wool, manufactures of—Con. Felt cloth, N.E.S. .... > Great Britain .....",joined_weak,position,36155,16225,10746,3819,1336.65,25435,12432,2900.97,,,,36185,16251,4237.62,2
+1903,statcan_nibi_w2_1903,125,0,GP,"DUTIABLE GOODS—Con. > Yds. > Yds. > 1 Wool, manufactures of—Con. Felt cloth, N.E.S. .... > Great Britain .....",joined_weak,position,36155,16225,10746,3819,1336.65,25435,12432,2900.97,,,,36185,16251,4237.62,2
 1903,statcan_nibi_w2_1903,125,16,GP,Total .....,joined_weak,position,105644,,,44050,15417.5,,61658,14387.12,,,,,105708,29804.62,2
 1903,statcan_nibi_w2_1903,125,27,GP,Total .....,joined_weak,position,111461,,,46536,13975.8,,65314,13062.8,,,,,111850,27038.6,2
 1903,statcan_nibi_w2_1903,125,36,GP,Germany .....,joined_weak,position,44346,68812,44011,68502,24252.03,,,,,,,41011,68502,24252.03,2

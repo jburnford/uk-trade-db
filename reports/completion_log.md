@@ -123,3 +123,29 @@ country_total is not).
   £4.84M. Ten null-outs in `reference/export_manual_repairs.csv` (column-crossing class, whole
   section); the mirror now skips printed subtotal articles like the explorer does. Explorer
   per-cell diff: 0 changed (it never summed 'Total' rows).
+
+## A2 — FY1898–1908 promoted (2026-09-01)
+
+- **The aligner dropped every label-only left-page row** (article headings, and `United
+  States—` opening a province run) because it aligns rows carrying numbers; FY1900 province
+  runs then had no article and no country. `ca_align_spreads.left_rows` now folds pending
+  heading labels onto the next value row (item-numbered headings included). All 13 spread
+  files re-aligned (1 s each).
+- `ca_promote_spreads.py`: the regime D state machine over the joined rows → regime `S` in
+  the rows schema, tariff-group columns (GT / PT-Reciprocal / SX) kept, `align_status` and
+  the right row's closure carried in `flags`.
+- **Half the statement was never a spread.** The free-goods part has no tariff columns, fits
+  on one page, and was never paired — dutiable-only sums read 0.48–0.59 of print. The regime
+  D parser gained `only_free` mode (single-page four-column tables under the nearest
+  `GENERAL STATEMENT OF IMPORTS` caption; export tables and spread halves excluded by their
+  own header) and the promotion pulls them in as `single_page` rows.
+- **N (val_efc) 1898–1908: .864 / .948 / .901 / .926 / .868 / .956 / .948 / .959 / .940 /
+  .960 / .968**; val_imp .90–1.04. Single witness, no Abstract oracle yet (the 1898+ abstracts
+  are not registered), 1898's `?` mass $8.7M (right-only rows without a left label).
+- Origins report and `exports/canada_imports_country_year.csv` now run **FY1868–1908**. The
+  mirror covers CY1870–1900: **30 years, 26 pass**, 1897–1900 at 0.95–1.10 single / 0.98–1.04
+  three-year on the promoted data.
+- Open for A2 close-out: the second witness for 1898/99 (StatCan) and 1900 (Canadiana, a
+  fetch-and-OCR item); the 1898 `?` mass; the Abstract by Countries for 1898–1908 as oracle
+  (`ca_parse_abstract` needs the StatCan volumes registered); FY1907 `fy_months`=9 in the
+  exports (the mirror already scales it).

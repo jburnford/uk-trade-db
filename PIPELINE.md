@@ -149,8 +149,15 @@ python3 scripts/ca_merge_regimeD.py [--dry-run]   # block vote + Abstract room -
 (`ca_parse_abstract.py` covers 1891–97 since 2026-09-01 and must have run first.
 `ca_export_country_year.py` reads the staging file beside the main corpus, so the exports and the
 origins report include FY1891–97 whenever it exists.)
-FY1898–1908: `ca_pair_spreads.py` + `ca_align_spreads.py` (→ `spread_rows_<tag>.csv`, graded
-verified / bracketed / flagged), `ca_compare_witnesses.py` (two-witness agreement).
+Regime S, FY1898–1908 — run in this order:
+
+```
+python3 scripts/ca_pair_spreads.py --fy 1898 ... --fy 1908       # -> reports/spread_pairs_<tag>.tsv (only when the OCR changes)
+python3 scripts/ca_align_spreads.py --tag <tag> --fy <fy>        # per witness file -> db/canada/spread_rows_<tag>.csv (1 s each)
+python3 scripts/ca_promote_spreads.py                            # spread rows + single-page FREE tables -> imports_general_rows_s.csv, reports/canada_spreads_promote.md
+```
+`ca_export_country_year.py` reads `_s.csv` beside the main corpus. `ca_compare_witnesses.py`
+measures two-witness agreement on the spread rows.
 
 Hand-repair channel: `reference/canada_manual_repairs.csv` (strict match-or-abort).
 Anchors: `reference/canada_printed_totals.csv` (national, FY1868–1908),

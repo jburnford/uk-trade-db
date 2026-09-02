@@ -1,6 +1,6 @@
 # Canadian imports by origin, fiscal years ending 30 June
 
-From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote - both scans fail there). Regime D FY1891-97 (new marginal layout, parsed by ca_parse_regimeD + the StatCan witness vote) reads 0.90-0.98 of print (1897 1.015): the remaining loss is diffuse and two-sided, concentrated in Great Britain and the United States - see reports/canada_regimeD_merge.md for the per-country check against the Abstract.
+From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country label lost in OCR). Regime A 1874-75 are sourced from the DOMINION RECAPITULATION (1874 within 1% of print; GB/US/Germany EfC within 1.5% of the printed country series); 1868-73 remain INCOMPLETE (0.62-0.83 of print after the witness vote - both scans fail there). Regime D FY1891-97 (new marginal layout, parsed by ca_parse_regimeD + the StatCan witness vote) reads 0.90-0.98 of print (1897 1.015): the remaining loss is diffuse and two-sided, concentrated in Great Britain and the United States - see reports/canada_regimeD_merge.md for the per-country check against the Abstract. Regime S FY1898-1908 (dutiable goods printed across a spread and re-joined by ca_align_spreads, free goods on single pages; ca_promote_spreads) reads 0.86-0.97 of print on value entered for consumption, single witness, no Abstract check yet - see reports/canada_spreads_promote.md.
 
 | FY | regime | total $ | Great Britain | United States | France | Germany | B.W. Indies | other named | ? | GB % | US % | other % (incl ?) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -34,6 +34,17 @@ From `exports/canada_imports_country_year.csv` (value imported, $; `?` = country
 | 1895 | D | 105,782,982 | 29,566,665 | 56,745,311 | 2,591,393 | 4,685,723 | 1,249,824 | 10,944,066 | 0 | 28.0 | 53.6 | 18.4 |
 | 1896 | D | 109,407,566 | 32,340,457 | 56,599,456 | 2,732,535 | 6,154,504 | 1,166,294 | 10,414,320 | 0 | 29.6 | 51.7 | 18.7 |
 | 1897 | D | 122,887,200 | 32,820,617 | 69,417,046 | 2,493,681 | 5,714,386 | 1,064,783 | 11,376,684 | 3 | 26.7 | 56.5 | 16.8 |
+| 1898 | S | 144,124,507 | 29,594,519 | 59,159,977 | 8,323,344 | 4,968,045 | 417,909 | 19,716,450 | 21,944,264 | 20.5 | 41.0 | 38.4 |
+| 1899 | S | 162,360,385 | 33,681,597 | 85,358,676 | 3,396,972 | 6,857,941 | 902,784 | 26,621,469 | 5,540,947 | 20.7 | 52.6 | 26.7 |
+| 1900 | S | 171,684,015 | 39,535,002 | 87,571,424 | 4,047,607 | 8,063,357 | 860,129 | 29,029,140 | 2,577,355 | 23.0 | 51.0 | 26.0 |
+| 1901 | S | 175,136,714 | 39,871,245 | 107,162,117 | 5,062,556 | 6,019,837 | 1,384,786 | 15,252,792 | 383,381 | 22.8 | 61.2 | 16.0 |
+| 1902 | S | 194,274,692 | 45,956,067 | 116,186,762 | 6,610,973 | 10,126,378 | 924,785 | 13,836,399 | 633,328 | 23.7 | 59.8 | 16.5 |
+| 1903 | S | 232,366,721 | 56,912,841 | 134,684,147 | 6,135,880 | 12,948,755 | 2,631,556 | 17,510,055 | 1,543,487 | 24.5 | 58.0 | 17.5 |
+| 1904 | S | 246,789,739 | 56,203,827 | 137,460,364 | 6,946,721 | 7,203,794 | 4,810,022 | 22,793,091 | 11,371,920 | 22.8 | 55.7 | 21.5 |
+| 1905 | S | 276,311,890 | 58,209,530 | 175,430,157 | 7,117,893 | 7,269,256 | 6,072,906 | 21,653,897 | 558,251 | 21.1 | 63.5 | 15.4 |
+| 1906 | S | 287,714,933 | 62,638,132 | 170,049,946 | 8,179,710 | 6,896,067 | 5,593,674 | 33,948,906 | 408,498 | 21.8 | 59.1 | 19.1 |
+| 1907 | S | 254,269,061 | 63,667,877 | 152,200,073 | 6,411,160 | 5,070,630 | 2,132,159 | 24,524,375 | 262,787 | 25.0 | 59.9 | 15.1 |
+| 1908 | S | 374,888,556 | 96,692,163 | 219,553,831 | 10,182,804 | 8,527,674 | 7,218,757 | 31,186,595 | 1,526,732 | 25.8 | 58.6 | 15.6 |
 
 ## Check on the value entered for consumption: parsed vs the printed Abstract by Countries
 
